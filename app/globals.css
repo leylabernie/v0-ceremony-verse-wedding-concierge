@@ -6,34 +6,14 @@
 
 /* CeremonyVerse Ethereal Boutique - Architectural Reset */
 :root {
-  /* Core Palette - ALWAYS MUTED ROSE FIRST */
-  --background-color: #F4E0E0;
-  --muted-rose: #F4E0E0;
-  --champagne: #FDFBF7;
-  --midnight-navy: #0A192F;
-  --brushed-gold: #C5A059;
-  
-  /* Semantic Tokens */
-  --background: var(--muted-rose);
-  --foreground: var(--midnight-navy);
-  --card: var(--champagne);
-  --card-foreground: var(--midnight-navy);
-  --popover: var(--champagne);
-  --popover-foreground: var(--midnight-navy);
-  --primary: var(--brushed-gold);
-  --primary-foreground: var(--midnight-navy);
-  --secondary: var(--champagne);
-  --secondary-foreground: var(--midnight-navy);
-  --muted: #EDD8D8;
-  --muted-foreground: #7A6670;
-  --accent: var(--brushed-gold);
-  --accent-foreground: var(--midnight-navy);
-  --destructive: #C84747;
-  --destructive-foreground: #FFFFFF;
-  --border: var(--brushed-gold);
-  --input: #E8D0C8;
-  --ring: var(--brushed-gold);
-  --radius: 1rem;
+  --cv-bg: #f8f6f2;          /* soft ivory */
+  --cv-foreground: #2f2f2f;  /* charcoal text */
+  --cv-muted: #6b6b6b;       /* secondary text */
+
+  --cv-accent: #3f6d5b;      /* sage green (primary brand color) */
+
+  --cv-card: #ffffff;        /* pure white cards */
+  --cv-border: #e6e0d8;      /* subtle borders */
 }
 
 @theme inline {
