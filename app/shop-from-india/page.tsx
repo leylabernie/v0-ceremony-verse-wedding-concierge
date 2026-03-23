@@ -1,12 +1,14 @@
 export const metadata = {
-  title: "Luxury Indian Wedding Sourcing | Bespoke Bridal Lehengas August 2026 | CeremonyVerse",
+  title: "Buy Bridal Lehenga from India USA | Luxury Indian Wedding Sourcing | CeremonyVerse",
   description:
-    "Work with a personal wedding shopper in India. Source bespoke bridal lehengas, sherwanis, and wedding outfits with live video shopping, trusted manufacturers, and US-based quality audit. August 2026 bookings now open.",
+    "Personal wedding shopper in India. Source bespoke bridal lehengas, sherwanis, and wedding outfits with live video shopping, trusted manufacturers, and US-based quality audit. August 2026 bookings open.",
 };
 
 export default function ShopFromIndiaPage() {
   return (
     <main className="min-h-screen bg-white">
+
+      {/* SCHEMA */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -24,71 +26,86 @@ export default function ShopFromIndiaPage() {
             serviceType: [
               "Luxury Indian Wedding Sourcing",
               "Personal Wedding Shopper India",
-              "Trusted Sherwani Sourcing",
-              "Live Video Shopping",
+              "Bespoke Bridal Lehengas",
+              "Sherwani Sourcing",
             ],
             offers: {
               "@type": "Offer",
               availabilityStarts: "2026-08-01",
-              description: "Now booking clients for August 2026 weddings.",
+              description:
+                "Now booking clients for August 2026 weddings.",
             },
           }),
         }}
       />
 
+      {/* HERO */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-semibold text-gray-900">
-            Luxury Indian Wedding Sourcing
+            Buy Your Wedding Outfits from India — Without Traveling
           </h1>
+
           <p className="mt-6 text-lg text-gray-600">
-            Bespoke bridal lehengas, sherwanis, and occasionwear sourced from trusted Indian manufacturers.
+            Work with a personal wedding shopper in India to source bespoke bridal lehengas, sherwanis, and wedding outfits directly from trusted manufacturers.
           </p>
+
           <p className="mt-4 text-lg text-gray-600">
-            August 2026 bookings are now open for couples who want authentic design, better quality control, and a safer way to shop from India.
+            See everything before you buy through live video shopping—plus US-based quality audit and secure shipping to your doorstep.
           </p>
+
+          <div className="mt-8">
+            <a
+              href="/contact"
+              className="bg-[#3f6d5b] text-white px-6 py-3 rounded-lg font-semibold"
+            >
+              Book Your Video Consultation
+            </a>
+          </div>
         </div>
       </section>
 
+      {/* VIDEO SHOPPING */}
       <section className="py-16 bg-[#f8f6f2]">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
-            Live Video Sourcing — See Before You Buy
+            Live Video Shopping — See Before You Buy
           </h2>
 
           <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-            No guesswork. No uncertainty. No risk.
+            No scams. No uncertainty. No surprises.
           </p>
 
           <p className="mt-4 text-lg text-gray-700 max-w-3xl mx-auto">
-            Experience real-time transparency with live high-definition video shopping. See the fabric weight, embroidery detail, and true colors directly from vetted elite boutiques in India before making a decision.
+            Join live high-definition video calls directly with vetted boutiques in India. See fabric weight, embroidery detail, and true colors in real time before making any decision.
           </p>
 
           <div className="mt-10 grid md:grid-cols-3 gap-6 text-left">
             <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <h3 className="font-semibold text-lg text-gray-900">Real-Time Transparency</h3>
+              <h3 className="font-semibold text-lg">Real-Time Transparency</h3>
               <p className="mt-2 text-gray-600">
-                Watch pieces live instead of relying on edited photos.
+                What you see live is exactly what you receive.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <h3 className="font-semibold text-lg text-gray-900">Trusted Boutiques Only</h3>
+              <h3 className="font-semibold text-lg">Trusted Manufacturers</h3>
               <p className="mt-2 text-gray-600">
-                Work only with vetted manufacturers and elite boutiques.
+                Only pre-vetted, high-end boutiques and designers.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <h3 className="font-semibold text-lg text-gray-900">See Every Detail</h3>
+              <h3 className="font-semibold text-lg">Inspect Every Detail</h3>
               <p className="mt-2 text-gray-600">
-                Review embroidery, finish, color, and overall quality live on video.
+                Review stitching, embroidery, and finishing live.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* WHAT WE SOURCE */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl text-center font-semibold text-gray-900">
@@ -97,36 +114,37 @@ export default function ShopFromIndiaPage() {
 
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">Bespoke Bridal Lehengas</h3>
-              <p className="mt-2 text-gray-600">
-                We source bespoke bridal lehengas with authentic craftsmanship from trusted Indian designers and ateliers. Each piece goes through a quality audit before shipping to the US.
+              <h3 className="font-semibold text-lg">Bespoke Bridal Lehengas</h3>
+              <p className="text-gray-600">
+                Authentic craftsmanship from India’s top designers. Every piece is quality-audited and shipped to the US.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">Custom Sherwanis</h3>
-              <p className="mt-2 text-gray-600">
-                We source groom sherwanis with authentic craftsmanship from vetted manufacturers. Every order is reviewed through a quality audit before shipping to the US.
+              <h3 className="font-semibold text-lg">Custom Sherwanis</h3>
+              <p className="text-gray-600">
+                Tailored sherwanis from trusted manufacturers with full quality audit and US shipping.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">Bridesmaid Outfits</h3>
-              <p className="mt-2 text-gray-600">
-                We help coordinate bridesmaid looks with authentic craftsmanship and production consistency. Orders are checked through a quality audit before shipping to the US.
+              <h3 className="font-semibold text-lg">Bridesmaid Outfits</h3>
+              <p className="text-gray-600">
+                Coordinated group outfits with consistent quality control and shipping to the US.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-lg text-gray-900">Accessories and Dupattas</h3>
-              <p className="mt-2 text-gray-600">
-                We source finishing pieces with authentic craftsmanship to complete the full wedding look. Each item is reviewed through a quality audit before shipping to the US.
+              <h3 className="font-semibold text-lg">Accessories & Dupattas</h3>
+              <p className="text-gray-600">
+                Handcrafted finishing pieces verified through quality audit before delivery.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* LEAD MAGNET */}
       <section className="bg-[#3f6d5b] text-white py-10">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h3 className="text-2xl font-semibold">
@@ -134,7 +152,7 @@ export default function ShopFromIndiaPage() {
           </h3>
 
           <p className="mt-3 text-white/90">
-            Download our curated Lookbook of the latest Champagne and Gold silhouettes.
+            Download our curated Bridal Lookbook featuring Champagne & Gold trends.
           </p>
 
           <form className="mt-6 flex flex-col md:flex-row gap-3 justify-center">
@@ -152,6 +170,7 @@ export default function ShopFromIndiaPage() {
           </form>
         </div>
       </section>
+
     </main>
   );
 }
