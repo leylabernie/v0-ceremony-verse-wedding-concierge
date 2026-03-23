@@ -136,7 +136,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 </p>
                 <button
                   onClick={() => onNavigate("contact")}
-                  className="group px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
+                  className="group px-10 py-3.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full text-sm
                     hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
                     transition-all duration-300 inline-flex items-center gap-3"
                 >
@@ -152,9 +152,9 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 </h3>
                 <ul className="space-y-4">
                   {activeService.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-4">
-                      <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full mt-2 flex-shrink-0" />
-                      <span className="text-midnight-navy/70 font-light">{feature}</span>
+                    <li key={index} className="flex items-baseline gap-4">
+                      <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full flex-shrink-0 translate-y-[3px]" />
+                      <span className="font-sans text-midnight-navy/70 text-base leading-[1.8]">{feature}</span>
                     </li>
                   ))}
                 </ul>

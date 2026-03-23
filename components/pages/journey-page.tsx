@@ -142,9 +142,9 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
 
                     <ul className="grid sm:grid-cols-2 gap-3">
                       {step.details.map((detail, i) => (
-                        <li key={i} className="flex items-center gap-3">
-                          <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full flex-shrink-0" />
-                          <span className="text-midnight-navy/70 text-sm font-light">{detail}</span>
+                        <li key={i} className="flex items-baseline gap-3">
+                          <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full flex-shrink-0 translate-y-[3px]" />
+                          <span className="font-sans text-midnight-navy/70 text-sm leading-[1.8]">{detail}</span>
                         </li>
                       ))}
                     </ul>

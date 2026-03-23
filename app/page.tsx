@@ -13,20 +13,11 @@ type PageType = "home" | "services" | "journey" | "faq" | "contact"
 
 export default function CeremonyVerse() {
   const [activePage, setActivePage] = useState<PageType>("home")
-  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const handleNavigate = (page: PageType) => {
     if (page === activePage) return
-    
-    setIsTransitioning(true)
-    
-    // Small delay for fade-out effect
-    setTimeout(() => {
-      setActivePage(page)
-      // Scroll to top on page change
-      window.scrollTo({ top: 0, behavior: "smooth" })
-      setIsTransitioning(false)
-    }, 150)
+    setActivePage(page)
+    window.scrollTo({ top: 0, behavior: "instant" })
   }
 
   // Update document title based on active page
@@ -67,12 +58,7 @@ export default function CeremonyVerse() {
         role="main"
         aria-label="Main content"
       >
-        <div
-          key={activePage}
-          className={`transition-opacity duration-300 ease-out ${
-            isTransitioning ? "opacity-0" : "opacity-100 animate-fade-in"
-          }`}
-        >
+        <div key={activePage} className="animate-fade-in">
           {renderPage()}
         </div>
       </main>

@@ -74,16 +74,29 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
+
+  /* Hard-set body background to prevent any navy flash during page transitions */
+  html, body {
+    background-color: #F4E0E0;
+    color: var(--midnight-navy);
   }
-  
-  /* Cormorant Garamond for headings with proper styling */
-  h1, h2, h3 {
-    font-family: var(--font-garamond);
+
+  body {
+    @apply text-foreground;
+    font-family: var(--font-sans), 'Inter', system-ui, sans-serif;
+  }
+
+  /* Cormorant Garamond for ALL heading levels — prevents font pop */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-garamond), 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: var(--midnight-navy);
+  }
+
+  /* All body-level text uses Inter */
+  p, li, span, label, input, textarea, select, button {
+    font-family: var(--font-sans), 'Inter', system-ui, sans-serif;
   }
 }
 
