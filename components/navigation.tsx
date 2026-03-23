@@ -26,18 +26,22 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-header">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold">
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
         <div className="flex items-center justify-between h-24">
-          {/* Logo - Far Left */}
+          {/* Logo - Far Left with Two-Tone Styling */}
           <div className="flex-shrink-0">
             <button
               onClick={() => handleNavClick("home")}
-              className="flex items-center group"
+              className="flex flex-col items-start group"
               aria-label="CeremonyVerse Home"
             >
-              <span className="text-xl sm:text-2xl font-semibold text-midnight-navy uppercase tracking-[0.2em]">
-                CEREMONYVERSE
+              <span className="text-xl sm:text-2xl uppercase tracking-[0.2em]">
+                <span className="font-semibold text-midnight-navy">CEREMONY</span>
+                <span className="font-light text-brushed-gold">VERSE</span>
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-midnight-navy/60 mt-0.5">
+                Heritage Sourcing & Bridal Concierge
               </span>
             </button>
           </div>
@@ -67,9 +71,9 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           <div className="hidden md:block flex-shrink-0">
             <button
               onClick={() => handleNavClick("contact")}
-              className="px-6 py-2.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium text-sm rounded-full
+              className="px-7 py-2.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium text-sm rounded-full
                 transition-all duration-300
-                hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]"
+                hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
               Book Consultation
             </button>
@@ -108,7 +112,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               <button
                 onClick={() => handleNavClick("contact")}
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
-                  hover:border-brushed-gold hover:text-brushed-gold transition-all duration-300 text-center"
+                  hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
                 Book Consultation
               </button>
