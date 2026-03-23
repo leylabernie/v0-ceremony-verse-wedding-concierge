@@ -3,36 +3,35 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* CeremonyVerse Luxury Color Palette */
+/* CeremonyVerse Ethereal Boutique Color Palette */
 :root {
-  /* Core Brand Colors */
-  --navy: #0A192F;
-  --gold: #C5A059;
-  --ivory: #FDFBF7;
-  --gold-light: #D4B87A;
-  --navy-light: #1A2F4F;
+  /* Ethereal Tonal Palette - Feminine & Antique Luxury */
+  --champagne: #FDFBF7;
+  --dusty-rose: #AF8C9D;
+  --midnight-navy: #0A192F;
+  --rose-gold: #D4AF37;
   
   /* Semantic Tokens */
-  --background: var(--ivory);
-  --foreground: var(--navy);
+  --background: var(--champagne);
+  --foreground: var(--midnight-navy);
   --card: #FFFFFF;
-  --card-foreground: var(--navy);
+  --card-foreground: var(--midnight-navy);
   --popover: #FFFFFF;
-  --popover-foreground: var(--navy);
-  --primary: var(--gold);
-  --primary-foreground: var(--navy);
-  --secondary: var(--navy);
-  --secondary-foreground: var(--ivory);
+  --popover-foreground: var(--midnight-navy);
+  --primary: var(--rose-gold);
+  --primary-foreground: var(--midnight-navy);
+  --secondary: var(--dusty-rose);
+  --secondary-foreground: var(--champagne);
   --muted: #F5F3EF;
-  --muted-foreground: #5A6B7A;
-  --accent: var(--gold-light);
-  --accent-foreground: var(--navy);
-  --destructive: #DC2626;
+  --muted-foreground: #8B7A8C;
+  --accent: var(--rose-gold);
+  --accent-foreground: var(--midnight-navy);
+  --destructive: #C84747;
   --destructive-foreground: #FFFFFF;
-  --border: #E5E2DC;
-  --input: #E5E2DC;
-  --ring: var(--gold);
-  --radius: 0.5rem;
+  --border: #E8DDD8;
+  --input: #E8DDD8;
+  --ring: var(--rose-gold);
+  --radius: 1rem;
 }
 
 @theme inline {
@@ -63,12 +62,11 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   
-  /* Custom Brand Colors */
-  --color-navy: var(--navy);
-  --color-gold: var(--gold);
-  --color-ivory: var(--ivory);
-  --color-gold-light: var(--gold-light);
-  --color-navy-light: var(--navy-light);
+  /* Ethereal Boutique Brand Colors */
+  --color-champagne: var(--champagne);
+  --color-dusty-rose: var(--dusty-rose);
+  --color-midnight-navy: var(--midnight-navy);
+  --color-rose-gold: var(--rose-gold);
 }
 
 @layer base {
@@ -77,6 +75,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image: 
+      repeating-linear-gradient(90deg, rgba(208, 178, 162, 0.025) 0px, transparent 1px, transparent 2px, rgba(208, 178, 162, 0.025) 3px),
+      repeating-linear-gradient(0deg, rgba(208, 178, 162, 0.025) 0px, transparent 1px, transparent 2px, rgba(208, 178, 162, 0.025) 3px);
+    background-size: 4px 4px;
   }
 }
 

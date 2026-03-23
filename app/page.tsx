@@ -59,7 +59,7 @@ export default function CeremonyVerse() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-ivory">
+    <div className="min-h-screen flex flex-col bg-champagne">
       <Navigation activePage={activePage} onNavigate={handleNavigate} />
       
       <main 
