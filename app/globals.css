@@ -87,13 +87,42 @@
     background-color: #F4E0E0;
     color: var(--midnight-navy);
     font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
-  /* ALL headings use Cormorant Garamond */
-  h1, h2, h3, h4, h5, h6 {
+  /* ALL headings use Cormorant Garamond with larger sizes */
+  h1 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.05em;
+    color: var(--midnight-navy);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--midnight-navy);
+    font-size: 2.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--midnight-navy);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
     color: var(--midnight-navy);
   }
 
@@ -101,6 +130,11 @@
   p, li, span, label, input, textarea, select, button, a, div {
     font-family: 'Cormorant Garamond', Georgia, serif;
     color: var(--midnight-navy);
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
   }
 }
 

@@ -115,15 +115,15 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div className="animate-fade-in silk-grain bg-muted-rose">
 
       {/* Hero */}
-      <section className="py-24 sm:py-32 relative">
+      <section className="py-28 sm:py-36 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
+          <p className="text-brushed-gold text-base font-medium tracking-[0.2em] uppercase mb-8">
             Our Services
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy mb-6 tracking-wide">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-midnight-navy mb-8 tracking-wide">
             What We Source
           </h1>
-          <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
+          <p className="text-midnight-navy/70 text-xl max-w-2xl mx-auto leading-relaxed">
             From coordinated groomsmen parties to authentic heritage silks, we handle every detail
             of your wedding sourcing with meticulous care.
           </p>
@@ -137,13 +137,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
           {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-3 mb-16">
+          <div className="flex flex-wrap justify-center gap-4 mb-16">
             {services.map((service) => (
               <button
                 key={service.id}
                 onClick={() => setActiveTab(service.id)}
                 className={cn(
-                  "px-6 py-3 font-medium text-sm transition-all duration-300 rounded-full border",
+                  "px-8 py-3.5 font-medium text-base transition-all duration-300 rounded-full border",
                   activeTab === service.id
                     ? "bg-brushed-gold/15 text-midnight-navy border-brushed-gold"
                     : "bg-champagne text-midnight-navy/70 border-brushed-gold/30 hover:border-brushed-gold hover:text-midnight-navy"
@@ -162,36 +162,36 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Left: Title & Description */}
               <div>
-                <p className="text-brushed-gold text-sm font-medium tracking-[0.15em] uppercase mb-4">
+                <p className="text-brushed-gold text-base font-medium tracking-[0.15em] uppercase mb-4">
                   {activeService.tagline}
                 </p>
-                <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-wide">
                   {activeService.title}
                 </h2>
-                <p className="text-midnight-navy/60 text-lg leading-relaxed font-sans mb-8">
+                <p className="text-midnight-navy/70 text-xl leading-relaxed mb-10">
                   {activeService.description}
                 </p>
                 <button
                   onClick={() => onNavigate("contact")}
-                  className="group px-10 py-3.5 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full text-sm
-                    hover:bg-brushed-gold/10 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
+                  className="group px-10 py-4 bg-transparent text-midnight-navy border border-midnight-navy font-bold rounded-full text-base
+                    hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
                     transition-all duration-300 inline-flex items-center gap-3"
                 >
                   Inquire About This Service
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
 
               {/* Right: Features */}
               <div>
-                <h3 className="font-serif text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-8 tracking-wide">
                   What's Included
                 </h3>
-                <ul className="space-y-4">
+                <ul className="space-y-5">
                   {activeService.features.map((feature, index) => (
                     <li key={index} className="flex items-baseline gap-4">
-                      <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full flex-shrink-0 translate-y-[3px]" />
-                      <span className="font-sans text-midnight-navy/70 text-base leading-[1.8]">{feature}</span>
+                      <span className="w-2 h-2 bg-brushed-gold rounded-full flex-shrink-0 translate-y-[3px]" />
+                      <span className="text-midnight-navy/70 text-lg leading-[1.8]">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -204,26 +204,26 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       <FloralSeparator />
 
       {/* Pricing & Commitment */}
-      <section className="py-20 sm:py-28">
+      <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 sm:p-14">
-            <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-8 tracking-wide text-center">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-12 sm:p-16">
+            <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-10 tracking-wide text-center">
               Pricing & Commitment
             </h2>
-            <div className="space-y-8 text-midnight-navy/70 font-sans leading-[1.8]">
-              <p>
+            <div className="space-y-8 text-midnight-navy/70 leading-[1.8]">
+              <p className="text-xl text-center max-w-2xl mx-auto">
                 To secure your production slot for <strong className="text-midnight-navy">August 2026</strong>, 
                 a <strong className="text-midnight-navy">25% Non-Refundable Design Deposit</strong> is required 
                 upon contract signing. This initiates the factory audit and fabric sourcing phase.
               </p>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div className="border border-brushed-gold/20 rounded-xl p-6">
-                  <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-3">Design Deposit</h4>
-                  <p className="text-sm">25% of total order value, non-refundable. Secures your production slot and begins sourcing.</p>
+              <div className="grid sm:grid-cols-2 gap-8 mt-10">
+                <div className="border border-brushed-gold/20 rounded-xl p-8">
+                  <h4 className="font-serif text-2xl font-semibold text-midnight-navy mb-4">Design Deposit</h4>
+                  <p className="text-lg">25% of total order value, non-refundable. Secures your production slot and begins sourcing.</p>
                 </div>
-                <div className="border border-brushed-gold/20 rounded-xl p-6">
-                  <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-3">Balance Due</h4>
-                  <p className="text-sm">Remaining 75% due upon final approval, before garments ship from India.</p>
+                <div className="border border-brushed-gold/20 rounded-xl p-8">
+                  <h4 className="font-serif text-2xl font-semibold text-midnight-navy mb-4">Balance Due</h4>
+                  <p className="text-lg">Remaining 75% due upon final approval, before garments ship from India.</p>
                 </div>
               </div>
             </div>
@@ -234,30 +234,30 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       <FloralSeparator />
 
       {/* Logistics */}
-      <section className="py-20 sm:py-28">
+      <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 sm:p-14">
-            <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-8 tracking-wide text-center">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-12 sm:p-16">
+            <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-10 tracking-wide text-center">
               Global Logistics
             </h2>
             <div className="text-center">
-              <p className="text-midnight-navy/70 font-sans leading-[1.8] text-lg max-w-2xl mx-auto">
+              <p className="text-midnight-navy/70 leading-[1.8] text-xl max-w-2xl mx-auto">
                 <strong className="text-midnight-navy">Global Duty & Customs Management.</strong> We handle all 
                 import documentation, ensuring your garments arrive cleared and inspected via our US-based studio.
               </p>
             </div>
-            <div className="grid sm:grid-cols-3 gap-6 mt-10">
+            <div className="grid sm:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">Factory Audits</h4>
-                <p className="text-midnight-navy/60 text-sm font-sans">Physical inspections in India</p>
+                <h4 className="font-serif text-xl font-semibold text-midnight-navy mb-3">Factory Audits</h4>
+                <p className="text-midnight-navy/60 text-lg">Physical inspections in India</p>
               </div>
               <div className="text-center">
-                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">Customs Cleared</h4>
-                <p className="text-midnight-navy/60 text-sm font-sans">All import duties handled</p>
+                <h4 className="font-serif text-xl font-semibold text-midnight-navy mb-3">Customs Cleared</h4>
+                <p className="text-midnight-navy/60 text-lg">All import duties handled</p>
               </div>
               <div className="text-center">
-                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">US Inspection</h4>
-                <p className="text-midnight-navy/60 text-sm font-sans">Final QC at our studio</p>
+                <h4 className="font-serif text-xl font-semibold text-midnight-navy mb-3">US Inspection</h4>
+                <p className="text-midnight-navy/60 text-lg">Final QC at our studio</p>
               </div>
             </div>
           </div>
@@ -267,22 +267,22 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       <FloralSeparator />
 
       {/* CTA */}
-      <section className="py-24 sm:py-32">
+      <section className="py-28 sm:py-36">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-5xl sm:text-6xl font-semibold text-midnight-navy mb-10 tracking-[0.04em]">
             Ready to Begin?
           </h2>
-          <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8]">
+          <p className="text-midnight-navy/70 text-xl mb-14 leading-[1.8]">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
-              hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-12 py-4 bg-transparent text-midnight-navy border border-midnight-navy font-bold rounded-full text-lg
+              hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Book Free Consultation
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </section>

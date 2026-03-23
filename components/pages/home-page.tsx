@@ -34,35 +34,35 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* Hero Section - Clean Muted Rose Background */}
       <section className="min-h-[90vh] flex items-center justify-center">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center py-32 sm:py-40">
-          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
+          <p className="text-brushed-gold text-base font-medium tracking-[0.2em] uppercase mb-8">
             Your Personal Sourcing Team
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy leading-tight mb-6 tracking-wide">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-midnight-navy leading-tight mb-6 tracking-wide">
             Skip the Flights.
             <br />
             Skip the Scams.
           </h1>
-          <p className="text-brushed-gold text-sm font-light italic tracking-wider mb-10 uppercase">
+          <p className="text-brushed-gold text-base font-light italic tracking-wider mb-10 uppercase">
             Heritage Sourcing & Bridal Concierge — August 2026 Edition
           </p>
-          <p className="text-lg text-midnight-navy/60 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl text-midnight-navy/70 max-w-2xl mx-auto mb-14 leading-relaxed">
             Source authentic, custom-made wedding outfits and heritage weaves directly from 
             verified manufacturers in India. Vetted, verified, and yours alone.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <button
               onClick={() => onNavigate("contact")}
-              className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
-                hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+              className="group px-12 py-4 bg-transparent text-midnight-navy border border-midnight-navy font-bold rounded-full text-lg
+                hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
                 transition-all duration-300 flex items-center gap-3"
             >
               Book Your Consultation
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => onNavigate("journey")}
-              className="px-10 py-4 border border-brushed-gold/40 text-midnight-navy/70 font-medium rounded-full
-                hover:border-brushed-gold hover:text-midnight-navy
+              className="px-12 py-4 border border-midnight-navy/40 text-midnight-navy/70 font-bold rounded-full text-lg
+                hover:border-midnight-navy hover:text-midnight-navy
                 transition-all duration-300"
             >
               Learn How It Works
@@ -74,41 +74,41 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <FloralSeparator />
 
       {/* Signature Standards */}
-      <section className="py-24 sm:py-32">
+      <section className="py-28 sm:py-36">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
-            <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
+            <p className="text-brushed-gold text-base font-medium tracking-[0.2em] uppercase mb-6">
               Signature Standards
             </p>
-            <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy tracking-wide">
+            <h2 className="font-serif text-5xl sm:text-6xl font-semibold text-midnight-navy tracking-wide">
               The CeremonyVerse Guarantee
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-16">
             <div className="text-center">
-              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-5 tracking-wide">
                 Physical Factory Audits in India
               </h3>
-              <p className="text-midnight-navy/60 leading-relaxed font-sans">
+              <p className="text-midnight-navy/70 leading-relaxed text-lg">
                 Our team conducts in-person quality inspections at every manufacturing stage. 
                 Your pieces are never sourced sight unseen.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-5 tracking-wide">
                 Direct Artisan Sourcing
               </h3>
-              <p className="text-midnight-navy/60 leading-relaxed font-sans">
+              <p className="text-midnight-navy/70 leading-relaxed text-lg">
                 We work directly with verified heritage manufacturers. No middlemen, no markups. 
                 Every investment goes directly to craftsmanship.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-5 tracking-wide">
                 Inspected & Shipped from the USA
               </h3>
-              <p className="text-midnight-navy/60 leading-relaxed font-sans">
+              <p className="text-midnight-navy/70 leading-relaxed text-lg">
                 Completed pieces arrive at our USA inspection facility where we verify quality 
                 one final time before delivery to your door.
               </p>

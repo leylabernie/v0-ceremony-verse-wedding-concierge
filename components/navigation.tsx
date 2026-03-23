@@ -36,11 +36,11 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               className="flex flex-col items-start group"
               aria-label="CeremonyVerse Home"
             >
-              <span className="text-xl sm:text-2xl uppercase tracking-[0.2em]">
+              <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em]">
                 <span className="font-semibold text-midnight-navy">CEREMONY</span>
                 <span className="font-light text-brushed-gold">VERSE</span>
               </span>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-midnight-navy/60 mt-0.5">
+              <span className="text-xs uppercase tracking-[0.25em] text-midnight-navy/80 mt-1">
                 Heritage Sourcing & Bridal Concierge
               </span>
             </button>
@@ -48,16 +48,16 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
 
           {/* Desktop Navigation - Center, vertically aligned */}
           <div className="hidden md:flex items-center justify-center flex-1 px-8">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-6">
               {navItems.map((item) => (
                 <button
                   key={item.page}
                   onClick={() => handleNavClick(item.page)}
                   className={cn(
-                    "px-5 py-2 text-sm font-medium transition-all duration-200",
+                    "px-4 py-2 text-lg font-medium transition-all duration-200",
                     activePage === item.page
                       ? "text-brushed-gold"
-                      : "text-midnight-navy/60 hover:text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
                   )}
                   aria-current={activePage === item.page ? "page" : undefined}
                 >
@@ -71,7 +71,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           <div className="hidden md:block flex-shrink-0">
             <button
               onClick={() => handleNavClick("contact")}
-              className="px-7 py-2.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium text-sm rounded-full
+              className="px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
@@ -99,10 +99,10 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                   key={item.page}
                   onClick={() => handleNavClick(item.page)}
                   className={cn(
-                    "px-4 py-3 text-left font-medium transition-all duration-200",
+                    "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
                     activePage === item.page
                       ? "text-brushed-gold"
-                      : "text-midnight-navy/60 hover:text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
                   )}
                   aria-current={activePage === item.page ? "page" : undefined}
                 >
@@ -111,7 +111,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               ))}
               <button
                 onClick={() => handleNavClick("contact")}
-                className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
+                className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
                 Book Consultation
