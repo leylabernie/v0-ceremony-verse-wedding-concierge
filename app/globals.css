@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -5,7 +6,8 @@
 
 /* CeremonyVerse Ethereal Boutique - Architectural Reset */
 :root {
-  /* Core Palette */
+  /* Core Palette - ALWAYS MUTED ROSE FIRST */
+  --background-color: #F4E0E0;
   --muted-rose: #F4E0E0;
   --champagne: #FDFBF7;
   --midnight-navy: #0A192F;
@@ -35,9 +37,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans), 'Inter', system-ui, sans-serif;
-  --font-serif: var(--font-serif), 'Playfair Display', Georgia, serif;
-  --font-garamond: var(--font-garamond), 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-garamond: 'Cormorant Garamond', Georgia, serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -75,28 +77,29 @@
     @apply border-border outline-ring/50;
   }
 
-  /* Hard-set body background to prevent any navy flash during page transitions */
-  html, body {
+  /* CRITICAL: Hard-set Muted Rose as the global background — MUST be first thing browser sees */
+  html {
     background-color: #F4E0E0;
-    color: var(--midnight-navy);
   }
 
   body {
-    @apply text-foreground;
-    font-family: var(--font-sans), 'Inter', system-ui, sans-serif;
+    background-color: #F4E0E0;
+    color: var(--midnight-navy);
+    @apply font-sans;
   }
 
-  /* Cormorant Garamond for ALL heading levels — prevents font pop */
+  /* ALL headings use Cormorant Garamond serif font */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-garamond), 'Cormorant Garamond', Georgia, serif;
+    @apply font-serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: var(--midnight-navy);
   }
 
-  /* All body-level text uses Inter */
+  /* ALL body text, lists, buttons use Inter sans-serif */
   p, li, span, label, input, textarea, select, button {
-    font-family: var(--font-sans), 'Inter', system-ui, sans-serif;
+    @apply font-sans;
+    color: var(--midnight-navy);
   }
 }
 

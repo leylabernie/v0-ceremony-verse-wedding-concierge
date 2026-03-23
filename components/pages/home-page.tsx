@@ -23,7 +23,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Your Personal Sourcing Team
           </p>
-          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne leading-tight mb-8 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne leading-tight mb-8 tracking-wide">
             Skip the Flights.
             <br />
             Skip the Scams.
@@ -68,7 +68,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           <div className="grid md:grid-cols-3 gap-16">
             <div className="text-center">
-              <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                 Physical Factory Audits in India
               </h3>
               <p className="text-midnight-navy/60 leading-relaxed font-light">
@@ -77,7 +77,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </p>
             </div>
             <div className="text-center">
-              <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                 Direct Artisan Sourcing
               </h3>
               <p className="text-midnight-navy/60 leading-relaxed font-light">
@@ -86,7 +86,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </p>
             </div>
             <div className="text-center">
-              <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                 Inspected & Shipped from the USA
               </h3>
               <p className="text-midnight-navy/60 leading-relaxed font-light">
@@ -115,7 +115,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Large Card */}
             <div className="lg:col-span-2 bento-card p-10 flex flex-col justify-between min-h-[320px]">
               <div>
-                <h3 className="font-garamond text-3xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h3 className="font-serif text-3xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Groomsmen Studio
                 </h3>
                 <p className="text-midnight-navy/60 leading-relaxed font-light max-w-xl">
@@ -134,7 +134,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Small Card */}
             <div className="bento-card p-8 flex flex-col justify-between min-h-[320px]">
               <div>
-                <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Heritage Library
                 </h3>
                 <p className="text-midnight-navy/60 leading-relaxed font-light text-sm">
@@ -153,7 +153,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Small Card */}
             <div className="bento-card p-8 flex flex-col justify-between min-h-[280px]">
               <div>
-                <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Bridesmaid Bureau
                 </h3>
                 <p className="text-midnight-navy/60 leading-relaxed font-light text-sm">
@@ -172,7 +172,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Large Card */}
             <div className="lg:col-span-2 bento-card p-10 flex flex-col justify-between min-h-[280px]">
               <div>
-                <h3 className="font-garamond text-3xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h3 className="font-serif text-3xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Ceremony Details
                 </h3>
                 <p className="text-midnight-navy/60 leading-relaxed font-light max-w-xl">
@@ -199,7 +199,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
                 How We Work
               </p>
-              <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne tracking-wide">
+              <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-champagne tracking-wide">
                 The CeremonyVerse Protocol
               </h2>
             </div>
@@ -208,7 +208,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="flex gap-6">
                 <span className="font-garamond text-4xl text-brushed-gold/40 font-light">01</span>
                 <div>
-                  <h3 className="font-garamond text-xl font-semibold text-champagne mb-2 tracking-wide">
+                  <h3 className="font-serif text-xl font-semibold text-champagne mb-2 tracking-wide">
                     Direct Source Management
                   </h3>
                   <p className="text-champagne/60 leading-relaxed font-light">
@@ -221,7 +221,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="flex gap-6">
                 <span className="font-garamond text-4xl text-brushed-gold/40 font-light">02</span>
                 <div>
-                  <h3 className="font-garamond text-xl font-semibold text-champagne mb-2 tracking-wide">
+                  <h3 className="font-serif text-xl font-semibold text-champagne mb-2 tracking-wide">
                     Locked Design Gates
                   </h3>
                   <p className="text-champagne/60 leading-relaxed font-light">
@@ -234,7 +234,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="flex gap-6">
                 <span className="font-garamond text-4xl text-brushed-gold/40 font-light">03</span>
                 <div>
-                  <h3 className="font-garamond text-xl font-semibold text-champagne mb-2 tracking-wide">
+                  <h3 className="font-serif text-xl font-semibold text-champagne mb-2 tracking-wide">
                     Scheduled Concierge
                   </h3>
                   <p className="text-champagne/60 leading-relaxed font-light">
@@ -254,7 +254,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-8">
             Limited Availability
           </p>
-          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             August 2026 Wedding Season Now Open
           </h2>
           <p className="text-champagne/50 text-lg mb-14 leading-[1.8] font-light max-w-xl mx-auto">
