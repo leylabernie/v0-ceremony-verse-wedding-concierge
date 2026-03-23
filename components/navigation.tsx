@@ -15,7 +15,7 @@ const navItems: { label: string; page: PageType }[] = [
   { label: "Services", page: "services" },
   { label: "The Journey", page: "journey" },
   { label: "FAQ", page: "faq" },
-  { label: "Contact", page: "contact" },
+  { label: "Inquire", page: "contact" },
 ]
 
 export function Navigation({ activePage, onNavigate }: NavigationProps) {
