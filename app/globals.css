@@ -3,15 +3,14 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* CeremonyVerse Ethereal Boutique Color Palette */
+/* CeremonyVerse Ethereal Boutique - Architectural Reset */
 :root {
-  /* Ethereal Tonal Palette */
-  --champagne: #FDFBF7;
+  /* Core Palette */
   --muted-rose: #F4E0E0;
-  --dusty-rose: #AF8C9D;
+  --champagne: #FDFBF7;
   --midnight-navy: #0A192F;
-  --rose-gold: #D4AF37;
-
+  --brushed-gold: #C5A059;
+  
   /* Semantic Tokens */
   --background: var(--muted-rose);
   --foreground: var(--midnight-navy);
@@ -19,19 +18,19 @@
   --card-foreground: var(--midnight-navy);
   --popover: var(--champagne);
   --popover-foreground: var(--midnight-navy);
-  --primary: var(--rose-gold);
+  --primary: var(--brushed-gold);
   --primary-foreground: var(--midnight-navy);
-  --secondary: var(--dusty-rose);
-  --secondary-foreground: var(--champagne);
+  --secondary: var(--champagne);
+  --secondary-foreground: var(--midnight-navy);
   --muted: #EDD8D8;
   --muted-foreground: #7A6670;
-  --accent: var(--rose-gold);
+  --accent: var(--brushed-gold);
   --accent-foreground: var(--midnight-navy);
   --destructive: #C84747;
   --destructive-foreground: #FFFFFF;
-  --border: #D4AF37;
+  --border: var(--brushed-gold);
   --input: #E8D0C8;
-  --ring: var(--rose-gold);
+  --ring: var(--brushed-gold);
   --radius: 1rem;
 }
 
@@ -64,12 +63,11 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   
-  /* Ethereal Boutique Brand Colors */
-  --color-champagne: var(--champagne);
+  /* Brand Colors */
   --color-muted-rose: var(--muted-rose);
-  --color-dusty-rose: var(--dusty-rose);
+  --color-champagne: var(--champagne);
   --color-midnight-navy: var(--midnight-navy);
-  --color-rose-gold: var(--rose-gold);
+  --color-brushed-gold: var(--brushed-gold);
 }
 
 @layer base {
@@ -78,6 +76,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Cormorant Garamond for headings with proper styling */
+  h1, h2, h3 {
+    font-family: var(--font-garamond);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--midnight-navy);
   }
 }
 
@@ -93,55 +99,42 @@
   }
 }
 
-@keyframes fadeInSubtle {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .animate-fade-in {
   animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.animate-fade-in-subtle {
-  animation: fadeInSubtle 0.3s ease-out forwards;
-}
-
-/* Gold glow button effect */
-.btn-gold {
-  background-color: #FDFBF7;
-  color: #0A192F;
-  border: 1.5px solid #D4AF37;
-  font-weight: 600;
-  transition: all 0.3s ease;
+/* Elegant Boutique Button */
+.btn-elegant {
+  background-color: var(--champagne);
+  color: var(--midnight-navy);
+  border: 1px solid var(--brushed-gold);
+  font-weight: 500;
   border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
 }
 
-.btn-gold:hover {
-  background-color: #F4E0E0;
-  border-color: #D4AF37;
-  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.35);
+.btn-elegant:hover {
+  background-color: var(--muted-rose);
+  box-shadow: 0 8px 32px rgba(197, 160, 89, 0.2);
 }
 
-.btn-gold:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+/* Glassmorphism Header */
+.glass-header {
+  background: rgba(253, 251, 247, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--brushed-gold);
 }
 
-/* Glassmorphism utility */
-.glass {
-  background: rgba(253, 251, 247, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 160, 89, 0.2);
+/* Soft Bento Card */
+.bento-card {
+  background: var(--champagne);
+  border-radius: 1rem;
+  box-shadow: 0 8px 40px rgba(10, 25, 47, 0.06);
+  border: 1px solid rgba(197, 160, 89, 0.25);
 }
 
-.glass-dark {
-  background: rgba(10, 25, 47, 0.9);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 160, 89, 0.3);
+.bento-card:hover {
+  box-shadow: 0 16px 56px rgba(10, 25, 47, 0.1);
 }

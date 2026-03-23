@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, Shield, ArrowRight } from "lucide-react"
+import { ChevronDown, ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface FAQPageProps {
@@ -105,40 +105,36 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
   return (
     <div className="animate-fade-in">
 
-      {/* ── Hero ── */}
-      <section className="bg-midnight-navy py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-rose-gold/8 rounded-full blur-[100px]" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
-            <Shield className="w-4 h-4" />
-            <span>The Trust Center</span>
-          </div>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-champagne mb-6 text-balance">
-            Your Questions, Answered Honestly
+      {/* Hero */}
+      <section className="bg-midnight-navy py-24 sm:py-32 relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
+            The Trust Center
+          </p>
+          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
+            Your Questions, Answered
           </h1>
-          <p className="text-champagne/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             We know you have concerns about online sourcing. Scams, sizing disasters, and broken
             promises are real. Here's how we address them — directly.
           </p>
         </div>
       </section>
 
-      {/* ── FAQ Accordions ── */}
-      <section className="py-16 sm:py-20 bg-champagne">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* FAQ Accordions */}
+      <section className="py-24 sm:py-32 bg-muted-rose">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
           {faqCategories.map((category, catIdx) => (
-            <div key={catIdx} className="mb-14 last:mb-0">
-              <div className="mb-6 pb-4 border-b border-rose-gold/30">
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-midnight-navy mb-1">
+            <div key={catIdx} className="mb-16 last:mb-0">
+              <div className="mb-8">
+                <h2 className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy mb-2 tracking-wide">
                   {category.title}
                 </h2>
-                <p className="text-midnight-navy/55 text-sm">{category.description}</p>
+                <p className="text-midnight-navy/50 text-sm font-light">{category.description}</p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-4">
                 {category.faqs.map((faq, faqIdx) => {
                   const key = `${catIdx}-${faqIdx}`
                   const isOpen = !!openItems[key]
@@ -147,10 +143,8 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                     <div
                       key={faqIdx}
                       className={cn(
-                        "bg-midnight-navy rounded-xl overflow-hidden border transition-all duration-300",
-                        isOpen
-                          ? "border-rose-gold/40 shadow-[0_4px_20px_rgba(212,175,55,0.15)]"
-                          : "border-rose-gold/15 hover:border-rose-gold/30"
+                        "bento-card overflow-hidden transition-all duration-300",
+                        isOpen && "shadow-[0_12px_48px_rgba(10,25,47,0.1)]"
                       )}
                     >
                       <button
@@ -158,12 +152,12 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                         className="w-full px-6 py-5 flex items-start justify-between gap-4 text-left"
                         aria-expanded={isOpen}
                       >
-                        <span className="font-semibold text-champagne leading-snug pr-4">
+                        <span className="font-medium text-midnight-navy leading-snug pr-4">
                           {faq.question}
                         </span>
                         <ChevronDown
                           className={cn(
-                            "w-5 h-5 text-rose-gold flex-shrink-0 mt-0.5 transition-transform duration-300",
+                            "w-5 h-5 text-brushed-gold flex-shrink-0 mt-0.5 transition-transform duration-300",
                             isOpen && "rotate-180"
                           )}
                         />
@@ -174,8 +168,8 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                           isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
                         )}
                       >
-                        <div className="px-6 pb-6 border-t border-rose-gold/15">
-                          <p className="text-champagne/70 leading-relaxed pt-4">
+                        <div className="px-6 pb-6 border-t border-brushed-gold/20">
+                          <p className="text-midnight-navy/60 leading-relaxed pt-4 font-light">
                             {faq.answer}
                           </p>
                         </div>
@@ -189,26 +183,23 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-20 bg-midnight-navy relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent" />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl font-bold text-champagne mb-4 text-balance">
-            Still Have{" "}
-            <span className="text-rose-gold">Questions?</span>
+      {/* CTA */}
+      <section className="py-24 sm:py-32 bg-midnight-navy">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+            Still Have Questions?
           </h2>
-          <p className="text-champagne/70 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-champagne/60 text-lg mb-12 font-light leading-relaxed">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-8 py-4 bg-rose-gold text-midnight-navy font-semibold rounded-md
-              shadow-[0_4px_20px_rgba(212,175,55,0.35)]
-              hover:bg-rose-gold/90 hover:shadow-[0_4px_30px_rgba(212,175,55,0.65)]
+            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Ask Us Directly
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </section>

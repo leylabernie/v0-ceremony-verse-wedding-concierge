@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { cn } from "@/lib/utils"
-import { Users, Heart, BookOpen, Gift, ArrowRight, CheckCircle } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 interface ServicesPageProps {
   onNavigate: (page: "contact") => void
@@ -11,25 +11,23 @@ interface ServicesPageProps {
 const services = [
   {
     id: "groomsmen",
-    icon: Users,
     title: "Groomsmen Studio",
-    tagline: "Coordinated Groomsmen Sherwanis · USA Clients",
+    tagline: "Coordinated Wedding Parties",
     description:
       "Perfect coordination for your entire groomsmen party, from sherwanis to accessories — all made-to-measure.",
     features: [
-      "Color-matching for parties of any size (2 to 20+)",
+      "Color-matching for parties of any size",
       "Coordinated safas, stoles, and pocket squares",
       "Custom mojaris and footwear sourcing",
       "Made-to-measure with individual sizing",
       "Group pricing transparency",
-      "Pre-wedding video approval of all pieces",
+      "Pre-wedding video approval",
     ],
   },
   {
     id: "bridesmaids",
-    icon: Heart,
     title: "Bridesmaid Bureau",
-    tagline: "Custom Coordinated Bridesmaid Outfits",
+    tagline: "Custom Coordinated Ensembles",
     description:
       "Made-to-measure outfits in any custom hue, perfectly coordinated for your bridal party.",
     features: [
@@ -43,9 +41,8 @@ const services = [
   },
   {
     id: "heritage",
-    icon: BookOpen,
-    title: "The Heritage Library",
-    tagline: "Pure Kanchipuram Sourcing · GI-Tagged Weaves",
+    title: "Heritage Library",
+    tagline: "Authentic Heritage Weaves",
     description:
       "Authentic heritage weaves sourced directly from master weavers across India.",
     features: [
@@ -59,9 +56,8 @@ const services = [
   },
   {
     id: "ceremony",
-    icon: Gift,
-    title: "The Ceremony Details",
-    tagline: "Complete Wedding Accessory Sourcing",
+    title: "Ceremony Details",
+    tagline: "Complete Accessory Sourcing",
     description:
       "Every ceremonial detail, from welcome bags to mandap decor, sourced with care.",
     features: [
@@ -82,46 +78,41 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
   return (
     <div className="animate-fade-in">
 
-      {/* ── Hero ── */}
-      <section className="bg-midnight-navy py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-rose-gold/8 rounded-full blur-[100px]" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
+      {/* Hero */}
+      <section className="bg-midnight-navy py-24 sm:py-32 relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Services
-          </span>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-champagne mb-6 text-balance">
+          </p>
+          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
             What We Source
           </h1>
-          <p className="text-champagne/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             From coordinated groomsmen parties to authentic heritage silks, we handle every detail
-            of your wedding sourcing with meticulous care and factory-direct relationships.
+            of your wedding sourcing with meticulous care.
           </p>
         </div>
       </section>
 
-      {/* ── Tabs ── */}
-      <section className="py-16 sm:py-20 bg-champagne">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Service Tabs */}
+      <section className="py-24 sm:py-32 bg-muted-rose">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
           {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 mb-16">
             {services.map((service) => (
               <button
                 key={service.id}
                 onClick={() => setActiveTab(service.id)}
                 className={cn(
-                  "flex items-center gap-2 px-5 sm:px-7 py-3 rounded-lg font-medium transition-all duration-300 border",
+                  "px-6 py-3 font-medium text-sm transition-all duration-300 rounded-full border",
                   activeTab === service.id
-                    ? "bg-midnight-navy text-champagne border-midnight-navy shadow-[0_4px_20px_rgba(10,25,47,0.3)]"
-                    : "bg-white text-midnight-navy border-border hover:border-rose-gold/50 hover:text-rose-gold hover:shadow-[0_2px_12px_rgba(212,175,55,0.2)]"
+                    ? "bg-midnight-navy text-champagne border-midnight-navy"
+                    : "bg-champagne text-midnight-navy/70 border-brushed-gold/30 hover:border-brushed-gold hover:text-midnight-navy"
                 )}
               >
-                <service.icon className={cn("w-5 h-5", activeTab === service.id ? "text-gold" : "")} />
-                <span className="hidden sm:inline">{service.title}</span>
-                <span className="sm:hidden">{service.title.split(" ")[0]}</span>
+                {service.title}
               </button>
             ))}
           </div>
@@ -129,71 +120,67 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* Active Service Card */}
           <div
             key={activeService.id}
-            className="animate-fade-in bg-midnight-navy rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(10,25,47,0.25)] border border-rose-gold/20 relative"
+            className="animate-fade-in bento-card bg-champagne p-10 sm:p-14"
           >
-            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
-            <div className="grid lg:grid-cols-2 gap-0">
-
-              {/* Icon/Visual Side */}
-              <div className="bg-midnight-navy h-64 lg:h-auto min-h-[380px] flex flex-col items-center justify-center p-10 border-r border-rose-gold/15">
-                <div className="w-28 h-28 mb-6 bg-rose-gold/15 border border-rose-gold/30 rounded-full flex items-center justify-center
-                  shadow-[0_0_40px_rgba(212,175,55,0.2)]">
-                  <activeService.icon className="w-14 h-14 text-rose-gold" />
-                </div>
-                <span className="font-serif text-2xl font-bold text-champagne text-center mb-2">{activeService.title}</span>
-                <span className="text-rose-gold/80 text-sm text-center px-4">{activeService.tagline}</span>
-              </div>
-
-              {/* Content Side */}
-              <div className="p-8 sm:p-12">
-                <p className="text-champagne/75 text-lg mb-8 leading-relaxed">
+            <div className="grid lg:grid-cols-2 gap-12">
+              {/* Left: Title & Description */}
+              <div>
+                <p className="text-brushed-gold text-sm font-medium tracking-[0.15em] uppercase mb-4">
+                  {activeService.tagline}
+                </p>
+                <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                  {activeService.title}
+                </h2>
+                <p className="text-midnight-navy/60 text-lg leading-relaxed font-light mb-8">
                   {activeService.description}
                 </p>
+                <button
+                  onClick={() => onNavigate("contact")}
+                  className="group px-8 py-3 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
+                    hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.2)]
+                    transition-all duration-300 inline-flex items-center gap-2"
+                >
+                  Inquire About This Service
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
 
-                <ul className="space-y-3 mb-10">
+              {/* Right: Features */}
+              <div>
+                <h3 className="font-garamond text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                  What's Included
+                </h3>
+                <ul className="space-y-4">
                   {activeService.features.map((feature, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-rose-gold flex-shrink-0 mt-0.5" />
-                      <span className="text-champagne/80">{feature}</span>
+                    <li key={index} className="flex items-start gap-4">
+                      <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full mt-2 flex-shrink-0" />
+                      <span className="text-midnight-navy/70 font-light">{feature}</span>
                     </li>
                   ))}
                 </ul>
-
-                <button
-                  onClick={() => onNavigate("contact")}
-                  className="group px-8 py-4 bg-rose-gold text-midnight-navy font-semibold rounded-md
-                    shadow-[0_4px_20px_rgba(212,175,55,0.35)]
-                    hover:bg-rose-gold/90 hover:shadow-[0_4px_32px_rgba(212,175,55,0.65)]
-                    transition-all duration-300 inline-flex items-center gap-2"
-                >
-                  Inquire About {activeService.title}
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Bottom CTA ── */}
-      <section className="py-20 bg-midnight-navy relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent" />
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-champagne mb-4 text-balance">
-            Not Sure Where to{" "}
-            <span className="text-rose-gold">Start?</span>
+      {/* CTA */}
+      <section className="py-24 sm:py-32 bg-midnight-navy">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+            Not Sure Where to Start?
           </h2>
-          <p className="text-champagne/70 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-champagne/60 text-lg mb-12 font-light leading-relaxed">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-8 py-4 border-2 border-rose-gold text-rose-gold font-semibold rounded-md
-              hover:bg-rose-gold hover:text-midnight-navy hover:shadow-[0_4px_28px_rgba(212,175,55,0.55)]
+            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Book Free Consultation
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </section>

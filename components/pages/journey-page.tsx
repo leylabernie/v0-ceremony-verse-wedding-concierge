@@ -1,14 +1,6 @@
 "use client"
 
-import {
-  Lightbulb,
-  Building2,
-  Video,
-  Scissors,
-  ClipboardCheck,
-  Truck,
-  ArrowRight,
-} from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 interface JourneyPageProps {
   onNavigate: (page: "contact") => void
@@ -17,11 +9,10 @@ interface JourneyPageProps {
 const journeySteps = [
   {
     number: "01",
-    icon: Lightbulb,
     title: "Initial Vision",
     location: "United States",
     description:
-      "We begin with a comprehensive discovery call to understand your events, color palettes, style preferences, and budget. Our team creates a detailed sourcing brief tailored to your wedding vision.",
+      "A comprehensive discovery call to understand your events, color palettes, style preferences, and budget. We create a detailed sourcing brief tailored to your wedding vision.",
     details: [
       "One-on-one video consultation",
       "Style mood board creation",
@@ -31,7 +22,6 @@ const journeySteps = [
   },
   {
     number: "02",
-    icon: Building2,
     title: "Factory Vetting",
     location: "Delhi, Mumbai, Chennai",
     description:
@@ -45,7 +35,6 @@ const journeySteps = [
   },
   {
     number: "03",
-    icon: Video,
     title: "Design Approval",
     location: "Remote Collaboration",
     description:
@@ -59,7 +48,6 @@ const journeySteps = [
   },
   {
     number: "04",
-    icon: Scissors,
     title: "Custom Production",
     location: "Verified Workshops",
     description:
@@ -73,7 +61,6 @@ const journeySteps = [
   },
   {
     number: "05",
-    icon: ClipboardCheck,
     title: "Final Inspection",
     location: "India Quality Center",
     description:
@@ -87,7 +74,6 @@ const journeySteps = [
   },
   {
     number: "06",
-    icon: Truck,
     title: "USA Delivery",
     location: "Your Doorstep",
     description:
@@ -105,124 +91,89 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
   return (
     <div className="animate-fade-in">
 
-      {/* ── Hero ── */}
-      <section className="bg-midnight-navy py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-rose-gold/8 rounded-full blur-[100px]" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
+      {/* Hero */}
+      <section className="bg-midnight-navy py-24 sm:py-32 relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Process
-          </span>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-champagne mb-6 text-balance">
+          </p>
+          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
             The Sourcing Journey
           </h1>
-          <p className="text-champagne/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-relaxed">
             From your first consultation to delivery at your door — our meticulous six-step process
             ensures quality, authenticity, and your complete satisfaction.
           </p>
         </div>
       </section>
 
-      {/* ── Timeline ── */}
-      <section className="py-16 sm:py-24 bg-champagne">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            {/* Vertical spine */}
-            <div className="absolute left-1/2 top-8 bottom-8 w-px bg-rose-gold/25 -translate-x-1/2 hidden sm:block" />
-
-            <div className="space-y-0">
-              {journeySteps.map((step, index) => {
-                const isLeft = index % 2 === 0
-                return (
-                  <div
-                    key={step.number}
-                    className={`relative sm:flex sm:items-center ${
-                      isLeft ? "sm:flex-row" : "sm:flex-row-reverse"
-                    } ${index !== 0 ? "sm:mt-14" : ""}`}
-                  >
-                    {/* Central Node */}
-                    <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 bg-rose-gold border-4 border-champagne rounded-full items-center justify-center z-10
-                      shadow-[0_0_24px_rgba(212,175,55,0.5)]">
-                      <step.icon className="w-7 h-7 text-midnight-navy" />
-                    </div>
-
-                    {/* Card */}
-                    <div className={`sm:w-[calc(50%-2.5rem)] ${isLeft ? "sm:pr-10" : "sm:pl-10"} mb-8 sm:mb-0`}>
-                      <div className="bg-midnight-navy rounded-xl p-6 sm:p-8 border border-rose-gold/20 shadow-lg
-                        hover:border-rose-gold/40 hover:shadow-[0_4px_24px_rgba(212,175,55,0.15)]
-                        transition-all duration-300 relative overflow-hidden group">
-                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                        {/* Mobile icon row */}
-                        <div className="flex items-center gap-4 mb-4 sm:hidden">
-                          <div className="w-12 h-12 bg-rose-gold rounded-full flex items-center justify-center flex-shrink-0
-                            shadow-[0_0_16px_rgba(212,175,55,0.4)]">
-                            <step.icon className="w-6 h-6 text-midnight-navy" />
-                          </div>
-                          <div>
-                            <span className="font-serif text-rose-gold text-sm font-bold">Step {step.number}</span>
-                            <span className="block text-champagne/50 text-xs">{step.location}</span>
-                          </div>
-                        </div>
-
-                        {/* Desktop header */}
-                        <div className="hidden sm:flex items-center justify-between mb-4">
-                          <span className="font-serif text-rose-gold text-base font-bold">Step {step.number}</span>
-                          <span className="px-3 py-1 bg-white/5 border border-rose-gold/20 text-champagne/60 text-xs rounded-full">
-                            {step.location}
-                          </span>
-                        </div>
-
-                        <h3 className="font-serif text-2xl font-bold text-champagne mb-3">{step.title}</h3>
-                        <p className="text-champagne/65 mb-6 leading-relaxed text-sm">{step.description}</p>
-
-                        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                          {step.details.map((detail, i) => (
-                            <li key={i} className="flex items-center gap-2 text-sm text-champagne/70">
-                              <span className="w-1.5 h-1.5 bg-rose-gold rounded-full flex-shrink-0" />
-                              {detail}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-
-                    {/* Spacer */}
-                    <div className="hidden sm:block sm:w-[calc(50%-2.5rem)]" />
+      {/* Timeline */}
+      <section className="py-24 sm:py-32 bg-muted-rose">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="space-y-12">
+            {journeySteps.map((step, index) => (
+              <div
+                key={step.number}
+                className="bento-card p-8 sm:p-10"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-start gap-6">
+                  {/* Step Number */}
+                  <div className="flex-shrink-0">
+                    <span className="font-garamond text-5xl sm:text-6xl font-light text-brushed-gold/30">
+                      {step.number}
+                    </span>
                   </div>
-                )
-              })}
-            </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-4 mb-4">
+                      <h3 className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
+                        {step.title}
+                      </h3>
+                      <span className="text-sm text-brushed-gold font-medium tracking-wide">
+                        {step.location}
+                      </span>
+                    </div>
+                    
+                    <p className="text-midnight-navy/60 leading-relaxed font-light mb-6">
+                      {step.description}
+                    </p>
+
+                    <ul className="grid sm:grid-cols-2 gap-3">
+                      {step.details.map((detail, i) => (
+                        <li key={i} className="flex items-center gap-3">
+                          <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full flex-shrink-0" />
+                          <span className="text-midnight-navy/70 text-sm font-light">{detail}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* ── CTA ── */}
-      <section className="py-24 bg-midnight-navy relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent" />
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-rose-gold/8 rounded-full blur-[80px]" />
-        </div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-champagne mb-6 text-balance">
-            Ready to Begin Your{" "}
-            <span className="text-rose-gold">Journey?</span>
+      {/* CTA */}
+      <section className="py-24 sm:py-32 bg-midnight-navy">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+            Ready to Begin Your Journey?
           </h2>
-          <p className="text-champagne/70 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-champagne/60 text-lg mb-12 font-light leading-relaxed">
             Every great wedding outfit starts with a conversation. Let us understand your vision
             and show you exactly how we bring it to life.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-rose-gold text-midnight-navy font-semibold text-lg rounded-md
-              shadow-[0_4px_24px_rgba(212,175,55,0.4)]
-              hover:bg-rose-gold/90 hover:shadow-[0_4px_36px_rgba(212,175,55,0.7)]
+            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Start Your Journey Today
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </section>
