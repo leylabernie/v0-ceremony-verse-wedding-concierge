@@ -13,8 +13,9 @@ const services = [
     id: "groomsmen",
     icon: Users,
     title: "Groomsmen Studio",
-    tagline: "Coordinated Groomsmen Sherwanis USA",
-    description: "Perfect coordination for your entire groomsmen party, from sherwanis to accessories.",
+    tagline: "Coordinated Groomsmen Sherwanis · USA Clients",
+    description:
+      "Perfect coordination for your entire groomsmen party, from sherwanis to accessories — all made-to-measure.",
     features: [
       "Color-matching for parties of any size (2 to 20+)",
       "Coordinated safas, stoles, and pocket squares",
@@ -23,14 +24,14 @@ const services = [
       "Group pricing transparency",
       "Pre-wedding video approval of all pieces",
     ],
-    image: "Elegant sherwanis displayed on tailoring mannequins, showing intricate embroidery details and coordinated accessories in deep burgundy and gold",
   },
   {
     id: "bridesmaids",
     icon: Heart,
     title: "Bridesmaid Bureau",
     tagline: "Custom Coordinated Bridesmaid Outfits",
-    description: "Made-to-measure outfits in any custom hue, perfectly coordinated for your bridal party.",
+    description:
+      "Made-to-measure outfits in any custom hue, perfectly coordinated for your bridal party.",
     features: [
       "Lehengas, sarees, and anarkalis in custom colors",
       "Fabric and embroidery customization",
@@ -39,14 +40,14 @@ const services = [
       "Coordinated jewelry sets available",
       "Rush production available",
     ],
-    image: "Stunning lehengas in blush pink and coral on dress forms, showcasing delicate hand embroidery and flowing silhouettes",
   },
   {
     id: "heritage",
     icon: BookOpen,
     title: "The Heritage Library",
-    tagline: "Pure Kanchipuram Sourcing 2026",
-    description: "Authentic heritage weaves sourced directly from master weavers across India.",
+    tagline: "Pure Kanchipuram Sourcing · GI-Tagged Weaves",
+    description:
+      "Authentic heritage weaves sourced directly from master weavers across India.",
     features: [
       "Pure Kanchipuram silk sarees with GI tags",
       "Banarasi, Paithani, and Patola weaves",
@@ -55,14 +56,14 @@ const services = [
       "Antique and vintage piece sourcing",
       "Investment-grade heritage pieces",
     ],
-    image: "Luxurious Kanchipuram silk sarees draped elegantly, displaying rich gold zari borders and traditional temple motifs",
   },
   {
     id: "ceremony",
     icon: Gift,
     title: "The Ceremony Details",
     tagline: "Complete Wedding Accessory Sourcing",
-    description: "Every ceremonial detail, from welcome bags to mandap decor, sourced with care.",
+    description:
+      "Every ceremonial detail, from welcome bags to mandap decor, sourced with care.",
     features: [
       "Custom welcome bag items and gifts",
       "Wedding favors and mithai boxes",
@@ -71,119 +72,128 @@ const services = [
       "Pooja items and ceremonial accessories",
       "Custom packaging and presentation",
     ],
-    image: "Artfully arranged wedding accessories including ornate jewelry, decorative gift boxes, and ceremonial items with gold accents",
   },
 ]
 
 export function ServicesPage({ onNavigate }: ServicesPageProps) {
   const [activeTab, setActiveTab] = useState("groomsmen")
-  const activeService = services.find((s) => s.id === activeTab)
+  const activeService = services.find((s) => s.id === activeTab)!
 
   return (
     <div className="animate-fade-in">
-      {/* Hero Section */}
-      <section className="bg-navy py-20 sm:py-28">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 bg-gold/20 text-gold text-sm font-medium rounded-full mb-6">
+
+      {/* ── Hero ── */}
+      <section className="bg-navy py-20 sm:py-28 relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gold/8 rounded-full blur-[100px]" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-block px-4 py-1.5 border border-gold/40 text-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
             Our Services
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-ivory mb-6 text-balance">
             What We Source
           </h1>
-          <p className="text-ivory/80 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
-            From coordinated groomsmen parties to authentic heritage silks, we handle every detail 
+          <p className="text-ivory/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+            From coordinated groomsmen parties to authentic heritage silks, we handle every detail
             of your wedding sourcing with meticulous care and factory-direct relationships.
           </p>
         </div>
       </section>
 
-      {/* Services Tabs */}
+      {/* ── Tabs ── */}
       <section className="py-16 sm:py-20 bg-ivory">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
           {/* Tab Navigation */}
-          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
             {services.map((service) => (
               <button
                 key={service.id}
                 onClick={() => setActiveTab(service.id)}
                 className={cn(
-                  "flex items-center gap-2 px-4 sm:px-6 py-3 rounded-lg font-medium transition-all duration-200",
+                  "flex items-center gap-2 px-5 sm:px-7 py-3 rounded-lg font-medium transition-all duration-300 border",
                   activeTab === service.id
-                    ? "bg-navy text-ivory shadow-lg"
-                    : "bg-white text-navy hover:bg-muted border border-border"
+                    ? "bg-navy text-ivory border-navy shadow-[0_4px_20px_rgba(10,25,47,0.3)]"
+                    : "bg-white text-navy border-border hover:border-gold/50 hover:text-gold hover:shadow-[0_2px_12px_rgba(197,160,89,0.2)]"
                 )}
               >
-                <service.icon className="w-5 h-5" />
+                <service.icon className={cn("w-5 h-5", activeTab === service.id ? "text-gold" : "")} />
                 <span className="hidden sm:inline">{service.title}</span>
                 <span className="sm:hidden">{service.title.split(" ")[0]}</span>
               </button>
             ))}
           </div>
 
-          {/* Active Service Content */}
-          {activeService && (
-            <div className="glass rounded-2xl overflow-hidden shadow-xl animate-fade-in">
-              <div className="grid lg:grid-cols-2 gap-0">
-                {/* Image Side */}
-                <div className="bg-muted h-64 lg:h-auto min-h-[400px] flex items-center justify-center p-8">
-                  <div className="text-center max-w-md">
-                    <div className="w-24 h-24 mx-auto mb-6 bg-gold/20 rounded-full flex items-center justify-center">
-                      <activeService.icon className="w-12 h-12 text-gold" />
-                    </div>
-                    <p className="text-navy/60 text-sm italic">{activeService.image}</p>
-                  </div>
+          {/* Active Service Card */}
+          <div
+            key={activeService.id}
+            className="animate-fade-in bg-navy rounded-2xl overflow-hidden shadow-[0_8px_40px_rgba(10,25,47,0.25)] border border-gold/20 relative"
+          >
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+            <div className="grid lg:grid-cols-2 gap-0">
+
+              {/* Icon/Visual Side */}
+              <div className="bg-navy-light h-64 lg:h-auto min-h-[380px] flex flex-col items-center justify-center p-10 border-r border-gold/15">
+                <div className="w-28 h-28 mb-6 bg-gold/15 border border-gold/30 rounded-full flex items-center justify-center
+                  shadow-[0_0_40px_rgba(197,160,89,0.2)]">
+                  <activeService.icon className="w-14 h-14 text-gold" />
                 </div>
+                <span className="font-serif text-2xl font-bold text-ivory text-center mb-2">{activeService.title}</span>
+                <span className="text-gold/80 text-sm text-center px-4">{activeService.tagline}</span>
+              </div>
 
-                {/* Content Side */}
-                <div className="p-8 sm:p-12">
-                  <span className="inline-block px-3 py-1 bg-gold/10 text-gold text-xs font-semibold rounded-full mb-4">
-                    {activeService.tagline}
-                  </span>
-                  <h2 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
-                    {activeService.title}
-                  </h2>
-                  <p className="text-navy/70 text-lg mb-8">
-                    {activeService.description}
-                  </p>
+              {/* Content Side */}
+              <div className="p-8 sm:p-12">
+                <p className="text-ivory/75 text-lg mb-8 leading-relaxed">
+                  {activeService.description}
+                </p>
 
-                  <ul className="space-y-3 mb-10">
-                    {activeService.features.map((feature, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                        <span className="text-navy/80">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <ul className="space-y-3 mb-10">
+                  {activeService.features.map((feature, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                      <span className="text-ivory/80">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
 
-                  <button
-                    onClick={() => onNavigate("contact")}
-                    className="px-8 py-4 bg-gold text-navy font-semibold rounded-md hover:bg-gold-light transition-all duration-200 inline-flex items-center gap-2 group"
-                  >
-                    Inquire About {activeService.title}
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </div>
+                <button
+                  onClick={() => onNavigate("contact")}
+                  className="group px-8 py-4 bg-gold text-navy font-semibold rounded-md
+                    shadow-[0_4px_20px_rgba(197,160,89,0.35)]
+                    hover:bg-gold-light hover:shadow-[0_4px_32px_rgba(197,160,89,0.65)]
+                    transition-all duration-300 inline-flex items-center gap-2"
+                >
+                  Inquire About {activeService.title}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                </button>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="py-16 bg-muted">
+      {/* ── Bottom CTA ── */}
+      <section className="py-20 bg-navy relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl font-bold text-navy mb-4">
-            Not Sure Where to Start?
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ivory mb-4 text-balance">
+            Not Sure Where to{" "}
+            <span className="text-gold">Start?</span>
           </h2>
-          <p className="text-navy/70 text-lg mb-8">
+          <p className="text-ivory/70 text-lg mb-10 max-w-2xl mx-auto">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="px-8 py-4 bg-navy text-ivory font-semibold rounded-md hover:bg-navy-light transition-all duration-200 inline-flex items-center gap-2 group"
+            className="group px-8 py-4 border-2 border-gold text-gold font-semibold rounded-md
+              hover:bg-gold hover:text-navy hover:shadow-[0_4px_28px_rgba(197,160,89,0.55)]
+              transition-all duration-300 inline-flex items-center gap-2"
           >
             Book Free Consultation
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
           </button>
         </div>
       </section>
