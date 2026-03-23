@@ -102,7 +102,7 @@ export function ContactPage() {
 
   if (isSubmitted) {
     return (
-      <div className="animate-fade-in min-h-screen flex items-center justify-center bg-muted-rose py-24">
+      <div className="animate-fade-in min-h-screen flex items-center justify-center bg-radial-rose py-28">
         <div className="max-w-lg mx-auto px-6 text-center">
           <div className="w-20 h-20 border-2 border-brushed-gold rounded-full flex items-center justify-center mx-auto mb-8">
             <span className="font-garamond text-4xl text-brushed-gold">✓</span>
@@ -158,7 +158,7 @@ export function ContactPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-16 sm:py-24 bg-muted-rose">
+      <section className="py-20 sm:py-28 bg-radial-rose">
         <div className="max-w-2xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Progress Steps */}
           <div className="mb-12">
@@ -415,9 +415,9 @@ export function ContactPage() {
                   onClick={() => setCurrentStep((prev) => prev + 1)}
                   disabled={!canProceed()}
                   className={cn(
-                    "px-8 py-3 font-medium rounded-full transition-all duration-200 flex items-center gap-2 border",
+                    "px-8 py-3 font-medium rounded-full transition-all duration-200 flex items-center gap-3 border",
                     canProceed()
-                      ? "bg-champagne text-midnight-navy border-brushed-gold hover:bg-muted-rose"
+                      ? "bg-transparent text-midnight-navy border-midnight-navy hover:border-brushed-gold hover:bg-brushed-gold/5"
                       : "bg-brushed-gold/10 text-midnight-navy/40 border-brushed-gold/20 cursor-not-allowed"
                   )}
                 >
@@ -428,7 +428,9 @@ export function ContactPage() {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="px-8 py-3 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full hover:bg-muted-rose transition-all duration-200 flex items-center gap-2"
+                  className="px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
+                    hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
+                    transition-all duration-200 flex items-center gap-3"
                 >
                   Request Consultation
                   <ArrowRight className="w-4 h-4" />

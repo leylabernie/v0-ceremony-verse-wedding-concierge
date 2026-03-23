@@ -32,20 +32,20 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Source authentic, custom-made wedding outfits and heritage weaves directly from 
             verified manufacturers in India. Vetted, verified, and yours alone.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
             <button
               onClick={() => onNavigate("contact")}
-              className="group px-8 py-3 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-                hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.2)]
-                transition-all duration-300 flex items-center gap-2"
+              className="group px-9 py-3.5 bg-transparent text-champagne border border-champagne font-medium rounded-full
+                hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.15)]
+                transition-all duration-300 flex items-center gap-3"
             >
               Book Your Consultation
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
               onClick={() => onNavigate("journey")}
-              className="px-8 py-3 border border-brushed-gold/40 text-champagne/80 font-medium rounded-full
-                hover:border-brushed-gold hover:text-champagne
+              className="px-9 py-3.5 border border-champagne/40 text-champagne/70 font-medium rounded-full
+                hover:border-champagne hover:text-champagne
                 transition-all duration-300"
             >
               Learn How It Works
@@ -55,7 +55,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Signature Standards - Text Only, No Icons */}
-      <section className="py-24 sm:py-32 bg-muted-rose">
+      <section className="py-28 sm:py-36 bg-radial-rose">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
@@ -99,7 +99,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Bento Grid Services */}
-      <section className="py-24 sm:py-32 bg-champagne">
+      <section className="py-28 sm:py-36 bg-champagne">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
             <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
@@ -192,7 +192,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* The Protocol */}
-      <section className="py-24 sm:py-32 bg-muted-rose">
+      <section className="py-28 sm:py-36 bg-radial-rose">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="bento-card p-12 sm:p-16 bg-midnight-navy border-brushed-gold/40">
             <div className="text-center mb-12">
@@ -249,23 +249,23 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 sm:py-32 bg-midnight-navy">
+      <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
+          <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-8">
             Limited Availability
           </p>
-          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             August 2026 Wedding Season Now Open
           </h2>
-          <p className="text-champagne/60 text-lg mb-12 leading-relaxed font-light">
+          <p className="text-champagne/50 text-lg mb-14 leading-[1.8] font-light max-w-xl mx-auto">
             We curate a limited number of weddings to ensure individual attention and 
             manufacturing excellence for every client.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
-              transition-all duration-300 inline-flex items-center gap-2"
+            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
+              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+              transition-all duration-300 inline-flex items-center gap-3"
           >
             Reserve Your Consultation
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

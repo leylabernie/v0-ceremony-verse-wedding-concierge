@@ -30,40 +30,48 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-header">
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <button
-            onClick={() => handleNavClick("home")}
-            className="flex items-center gap-2 group"
-            aria-label="CeremonyVerse Home"
-          >
-            <span className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
-              Ceremony<span className="text-brushed-gold">Verse</span>
-            </span>
-          </button>
+        <div className="flex items-center justify-between h-24">
+          {/* Logo - Far Left */}
+          <div className="flex-shrink-0">
+            <button
+              onClick={() => handleNavClick("home")}
+              className="flex items-center gap-2 group"
+              aria-label="CeremonyVerse Home"
+            >
+              <span className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
+                Ceremony<span className="text-brushed-gold">Verse</span>
+              </span>
+            </button>
+          </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-2">
-            {navItems.map((item) => (
-              <button
-                key={item.page}
-                onClick={() => handleNavClick(item.page)}
-                className={cn(
-                  "px-4 py-2 text-sm font-medium transition-all duration-200",
-                  activePage === item.page
-                    ? "text-brushed-gold"
-                    : "text-midnight-navy/60 hover:text-brushed-gold"
-                )}
-                aria-current={activePage === item.page ? "page" : undefined}
-              >
-                {item.label}
-              </button>
-            ))}
+          {/* Desktop Navigation - Center */}
+          <div className="hidden md:flex items-center justify-center flex-1 px-8">
+            <div className="flex items-center gap-1">
+              {navItems.map((item) => (
+                <button
+                  key={item.page}
+                  onClick={() => handleNavClick(item.page)}
+                  className={cn(
+                    "px-5 py-2 text-sm font-medium transition-all duration-200",
+                    activePage === item.page
+                      ? "text-brushed-gold"
+                      : "text-midnight-navy/60 hover:text-brushed-gold"
+                  )}
+                  aria-current={activePage === item.page ? "page" : undefined}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* CTA Button - Far Right */}
+          <div className="hidden md:block flex-shrink-0">
             <button
               onClick={() => handleNavClick("contact")}
-              className="ml-6 px-6 py-2.5 bg-champagne text-midnight-navy border border-brushed-gold font-medium text-sm rounded-full
+              className="px-6 py-2.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium text-sm rounded-full
                 transition-all duration-300
-                hover:bg-muted-rose hover:shadow-[0_4px_20px_rgba(197,160,89,0.2)]"
+                hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]"
             >
               Book Consultation
             </button>
@@ -101,8 +109,8 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               ))}
               <button
                 onClick={() => handleNavClick("contact")}
-                className="mt-4 mx-4 px-6 py-3 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-                  hover:bg-muted-rose transition-all duration-300 text-center"
+                className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
+                  hover:border-brushed-gold hover:bg-brushed-gold/5 transition-all duration-300 text-center"
               >
                 Book Consultation
               </button>

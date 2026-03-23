@@ -87,6 +87,51 @@
   }
 }
 
+/* Radial gradient background for depth */
+.bg-radial-rose {
+  background: radial-gradient(ellipse at center, #FAF0F0 0%, #F4E0E0 60%, #EDD4D4 100%);
+}
+
+/* Ghost button style */
+.btn-ghost {
+  background: transparent;
+  color: var(--midnight-navy);
+  border: 1px solid var(--midnight-navy);
+  font-weight: 500;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(197, 160, 89, 0.08);
+  border-color: var(--brushed-gold);
+  box-shadow: 0 0 24px rgba(197, 160, 89, 0.15);
+}
+
+/* Premium list styling - no bullets */
+.premium-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.premium-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.premium-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 12px;
+  height: 1px;
+  background: var(--brushed-gold);
+}
+
 /* Page transition animations */
 @keyframes fadeIn {
   from {

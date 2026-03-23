@@ -96,7 +96,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* Service Tabs */}
-      <section className="py-24 sm:py-32 bg-muted-rose">
+      <section className="py-28 sm:py-36 bg-radial-rose">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
           {/* Tab Navigation */}
@@ -136,9 +136,9 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 </p>
                 <button
                   onClick={() => onNavigate("contact")}
-                  className="group px-8 py-3 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-                    hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.2)]
-                    transition-all duration-300 inline-flex items-center gap-2"
+                  className="group px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
+                    hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
+                    transition-all duration-300 inline-flex items-center gap-3"
                 >
                   Inquire About This Service
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -165,19 +165,19 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       </section>
 
       {/* CTA */}
-      <section className="py-24 sm:py-32 bg-midnight-navy">
+      <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Not Sure Where to Start?
           </h2>
-          <p className="text-champagne/60 text-lg mb-12 font-light leading-relaxed">
+          <p className="text-champagne/50 text-lg mb-14 font-light leading-[1.8]">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
-              transition-all duration-300 inline-flex items-center gap-2"
+            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
+              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+              transition-all duration-300 inline-flex items-center gap-3"
           >
             Book Free Consultation
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

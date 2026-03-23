@@ -109,7 +109,7 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 sm:py-32 bg-muted-rose">
+      <section className="py-28 sm:py-36 bg-radial-rose">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="space-y-12">
             {journeySteps.map((step, index) => (
@@ -157,20 +157,20 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
       </section>
 
       {/* CTA */}
-      <section className="py-24 sm:py-32 bg-midnight-navy">
+      <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-champagne mb-6 tracking-wide">
+          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-champagne/60 text-lg mb-12 font-light leading-relaxed">
+          <p className="text-champagne/50 text-lg mb-14 font-light leading-[1.8]">
             Every great wedding outfit starts with a conversation. Let us understand your vision
             and show you exactly how we bring it to life.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-champagne text-midnight-navy border border-brushed-gold font-medium rounded-full
-              hover:bg-muted-rose hover:shadow-[0_8px_32px_rgba(197,160,89,0.25)]
-              transition-all duration-300 inline-flex items-center gap-2"
+            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
+              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+              transition-all duration-300 inline-flex items-center gap-3"
           >
             Start Your Journey Today
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
