@@ -37,9 +37,9 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-sans), 'Inter', system-ui, sans-serif;
-  --font-serif: var(--font-serif), 'Cormorant Garamond', Georgia, serif;
-  --font-mono: 'Geist Mono', monospace;
+  --font-sans: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Cormorant Garamond', Georgia, serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -74,31 +74,67 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: 'Cormorant Garamond', Georgia, serif;
   }
 
   /* CRITICAL: Hard-set Muted Rose as the global background — MUST be first thing browser sees */
   html {
     background-color: #F4E0E0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
   }
 
   body {
     background-color: #F4E0E0;
     color: var(--midnight-navy);
-    @apply font-sans;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
-  /* ALL headings use Cormorant Garamond serif font */
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+  /* ALL headings use Cormorant Garamond with larger sizes */
+  h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.05em;
     color: var(--midnight-navy);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  /* ALL body text, lists, buttons use Inter sans-serif */
-  p, li, span, label, input, textarea, select, button {
-    @apply font-sans;
+  h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     color: var(--midnight-navy);
+    font-size: 2.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--midnight-navy);
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  h4, h5, h6 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--midnight-navy);
+  }
+
+  /* ALL text elements use Cormorant Garamond */
+  p, li, span, label, input, textarea, select, button, a, div {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--midnight-navy);
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.8;
   }
 }
 

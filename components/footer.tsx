@@ -15,11 +15,14 @@ export function Footer({ onNavigate }: FooterProps) {
           <div className="lg:col-span-1">
             <button
               onClick={() => onNavigate("home")}
-              className="font-serif text-2xl font-semibold tracking-wide mb-6 inline-block text-midnight-navy"
+              className="text-lg font-semibold uppercase tracking-[0.2em] mb-6 inline-block text-midnight-navy"
             >
-              Ceremony<span className="text-brushed-gold">Verse</span>
+              CEREMONYVERSE
             </button>
-            <p className="text-midnight-navy/50 text-sm leading-relaxed font-sans">
+            <p className="text-brushed-gold text-xs font-light italic tracking-wider mb-4 uppercase">
+              Heritage Sourcing & Bridal Concierge
+            </p>
+            <p className="text-midnight-navy/50 text-sm leading-relaxed">
               Your trusted personal sourcing team for authentic South Asian wedding 
               outfits and heritage weaves directly from India.
             </p>
@@ -36,7 +39,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 { label: "Our Services", page: "services" as PageType },
                 { label: "The Journey", page: "journey" as PageType },
                 { label: "FAQ", page: "faq" as PageType },
-                { label: "Contact", page: "contact" as PageType },
+                { label: "Inquire", page: "contact" as PageType },
               ].map((link) => (
                 <li key={link.page}>
                   <button
