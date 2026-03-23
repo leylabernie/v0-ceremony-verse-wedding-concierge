@@ -106,20 +106,20 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
     <div className="animate-fade-in">
 
       {/* ── Hero ── */}
-      <section className="bg-navy py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+      <section className="bg-midnight-navy py-20 sm:py-28 relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gold/8 rounded-full blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-rose-gold/8 rounded-full blur-[100px]" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-gold/40 text-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
             <Shield className="w-4 h-4" />
             <span>The Trust Center</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-ivory mb-6 text-balance">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-champagne mb-6 text-balance">
             Your Questions, Answered Honestly
           </h1>
-          <p className="text-ivory/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+          <p className="text-champagne/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
             We know you have concerns about online sourcing. Scams, sizing disasters, and broken
             promises are real. Here's how we address them — directly.
           </p>
@@ -127,15 +127,15 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
       </section>
 
       {/* ── FAQ Accordions ── */}
-      <section className="py-16 sm:py-20 bg-ivory">
+      <section className="py-16 sm:py-20 bg-champagne">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {faqCategories.map((category, catIdx) => (
             <div key={catIdx} className="mb-14 last:mb-0">
-              <div className="mb-6 pb-4 border-b border-gold/30">
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-navy mb-1">
+              <div className="mb-6 pb-4 border-b border-rose-gold/30">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-midnight-navy mb-1">
                   {category.title}
                 </h2>
-                <p className="text-navy/55 text-sm">{category.description}</p>
+                <p className="text-midnight-navy/55 text-sm">{category.description}</p>
               </div>
 
               <div className="space-y-3">
@@ -147,10 +147,10 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                     <div
                       key={faqIdx}
                       className={cn(
-                        "bg-navy rounded-xl overflow-hidden border transition-all duration-300",
+                        "bg-midnight-navy rounded-xl overflow-hidden border transition-all duration-300",
                         isOpen
-                          ? "border-gold/40 shadow-[0_4px_20px_rgba(197,160,89,0.15)]"
-                          : "border-gold/15 hover:border-gold/30"
+                          ? "border-rose-gold/40 shadow-[0_4px_20px_rgba(212,175,55,0.15)]"
+                          : "border-rose-gold/15 hover:border-rose-gold/30"
                       )}
                     >
                       <button
@@ -158,12 +158,12 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                         className="w-full px-6 py-5 flex items-start justify-between gap-4 text-left"
                         aria-expanded={isOpen}
                       >
-                        <span className="font-semibold text-ivory leading-snug pr-4">
+                        <span className="font-semibold text-champagne leading-snug pr-4">
                           {faq.question}
                         </span>
                         <ChevronDown
                           className={cn(
-                            "w-5 h-5 text-gold flex-shrink-0 mt-0.5 transition-transform duration-300",
+                            "w-5 h-5 text-rose-gold flex-shrink-0 mt-0.5 transition-transform duration-300",
                             isOpen && "rotate-180"
                           )}
                         />
@@ -174,8 +174,8 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                           isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
                         )}
                       >
-                        <div className="px-6 pb-6 border-t border-gold/15">
-                          <p className="text-ivory/70 leading-relaxed pt-4">
+                        <div className="px-6 pb-6 border-t border-rose-gold/15">
+                          <p className="text-champagne/70 leading-relaxed pt-4">
                             {faq.answer}
                           </p>
                         </div>
@@ -190,21 +190,21 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-20 bg-navy relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <section className="py-20 bg-midnight-navy relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent" />
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl font-bold text-ivory mb-4 text-balance">
+          <h2 className="font-serif text-3xl font-bold text-champagne mb-4 text-balance">
             Still Have{" "}
-            <span className="text-gold">Questions?</span>
+            <span className="text-rose-gold">Questions?</span>
           </h2>
-          <p className="text-ivory/70 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-champagne/70 text-lg mb-8 max-w-2xl mx-auto">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-8 py-4 bg-gold text-navy font-semibold rounded-md
-              shadow-[0_4px_20px_rgba(197,160,89,0.35)]
-              hover:bg-gold-light hover:shadow-[0_4px_30px_rgba(197,160,89,0.65)]
+            className="group px-8 py-4 bg-rose-gold text-midnight-navy font-semibold rounded-md
+              shadow-[0_4px_20px_rgba(212,175,55,0.35)]
+              hover:bg-rose-gold/90 hover:shadow-[0_4px_30px_rgba(212,175,55,0.65)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Ask Us Directly

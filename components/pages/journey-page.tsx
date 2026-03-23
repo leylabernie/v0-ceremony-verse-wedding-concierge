@@ -106,19 +106,19 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
     <div className="animate-fade-in">
 
       {/* ── Hero ── */}
-      <section className="bg-navy py-20 sm:py-28 relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent" />
+      <section className="bg-midnight-navy py-20 sm:py-28 relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold to-transparent" />
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-gold/8 rounded-full blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-rose-gold/8 rounded-full blur-[100px]" />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 border border-gold/40 text-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
+          <span className="inline-block px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
             Our Process
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-ivory mb-6 text-balance">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-champagne mb-6 text-balance">
             The Sourcing Journey
           </h1>
-          <p className="text-ivory/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
+          <p className="text-champagne/75 text-lg sm:text-xl max-w-3xl mx-auto text-pretty">
             From your first consultation to delivery at your door — our meticulous six-step process
             ensures quality, authenticity, and your complete satisfaction.
           </p>
@@ -126,11 +126,11 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
       </section>
 
       {/* ── Timeline ── */}
-      <section className="py-16 sm:py-24 bg-ivory">
+      <section className="py-16 sm:py-24 bg-champagne">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
             {/* Vertical spine */}
-            <div className="absolute left-1/2 top-8 bottom-8 w-px bg-gold/25 -translate-x-1/2 hidden sm:block" />
+            <div className="absolute left-1/2 top-8 bottom-8 w-px bg-rose-gold/25 -translate-x-1/2 hidden sm:block" />
 
             <div className="space-y-0">
               {journeySteps.map((step, index) => {
@@ -143,45 +143,45 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
                     } ${index !== 0 ? "sm:mt-14" : ""}`}
                   >
                     {/* Central Node */}
-                    <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 bg-gold border-4 border-ivory rounded-full items-center justify-center z-10
-                      shadow-[0_0_24px_rgba(197,160,89,0.5)]">
-                      <step.icon className="w-7 h-7 text-navy" />
+                    <div className="hidden sm:flex absolute left-1/2 -translate-x-1/2 w-16 h-16 bg-rose-gold border-4 border-champagne rounded-full items-center justify-center z-10
+                      shadow-[0_0_24px_rgba(212,175,55,0.5)]">
+                      <step.icon className="w-7 h-7 text-midnight-navy" />
                     </div>
 
                     {/* Card */}
                     <div className={`sm:w-[calc(50%-2.5rem)] ${isLeft ? "sm:pr-10" : "sm:pl-10"} mb-8 sm:mb-0`}>
-                      <div className="bg-navy rounded-xl p-6 sm:p-8 border border-gold/20 shadow-lg
-                        hover:border-gold/40 hover:shadow-[0_4px_24px_rgba(197,160,89,0.15)]
+                      <div className="bg-midnight-navy rounded-xl p-6 sm:p-8 border border-rose-gold/20 shadow-lg
+                        hover:border-rose-gold/40 hover:shadow-[0_4px_24px_rgba(212,175,55,0.15)]
                         transition-all duration-300 relative overflow-hidden group">
-                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                         {/* Mobile icon row */}
                         <div className="flex items-center gap-4 mb-4 sm:hidden">
-                          <div className="w-12 h-12 bg-gold rounded-full flex items-center justify-center flex-shrink-0
-                            shadow-[0_0_16px_rgba(197,160,89,0.4)]">
-                            <step.icon className="w-6 h-6 text-navy" />
+                          <div className="w-12 h-12 bg-rose-gold rounded-full flex items-center justify-center flex-shrink-0
+                            shadow-[0_0_16px_rgba(212,175,55,0.4)]">
+                            <step.icon className="w-6 h-6 text-midnight-navy" />
                           </div>
                           <div>
-                            <span className="font-serif text-gold text-sm font-bold">Step {step.number}</span>
-                            <span className="block text-ivory/50 text-xs">{step.location}</span>
+                            <span className="font-serif text-rose-gold text-sm font-bold">Step {step.number}</span>
+                            <span className="block text-champagne/50 text-xs">{step.location}</span>
                           </div>
                         </div>
 
                         {/* Desktop header */}
                         <div className="hidden sm:flex items-center justify-between mb-4">
-                          <span className="font-serif text-gold text-base font-bold">Step {step.number}</span>
-                          <span className="px-3 py-1 bg-white/5 border border-gold/20 text-ivory/60 text-xs rounded-full">
+                          <span className="font-serif text-rose-gold text-base font-bold">Step {step.number}</span>
+                          <span className="px-3 py-1 bg-white/5 border border-rose-gold/20 text-champagne/60 text-xs rounded-full">
                             {step.location}
                           </span>
                         </div>
 
-                        <h3 className="font-serif text-2xl font-bold text-ivory mb-3">{step.title}</h3>
-                        <p className="text-ivory/65 mb-6 leading-relaxed text-sm">{step.description}</p>
+                        <h3 className="font-serif text-2xl font-bold text-champagne mb-3">{step.title}</h3>
+                        <p className="text-champagne/65 mb-6 leading-relaxed text-sm">{step.description}</p>
 
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                           {step.details.map((detail, i) => (
-                            <li key={i} className="flex items-center gap-2 text-sm text-ivory/70">
-                              <span className="w-1.5 h-1.5 bg-gold rounded-full flex-shrink-0" />
+                            <li key={i} className="flex items-center gap-2 text-sm text-champagne/70">
+                              <span className="w-1.5 h-1.5 bg-rose-gold rounded-full flex-shrink-0" />
                               {detail}
                             </li>
                           ))}
@@ -200,25 +200,25 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-24 bg-navy relative overflow-hidden">
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+      <section className="py-24 bg-midnight-navy relative overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rose-gold/50 to-transparent" />
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-gold/8 rounded-full blur-[80px]" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] bg-rose-gold/8 rounded-full blur-[80px]" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ivory mb-6 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-champagne mb-6 text-balance">
             Ready to Begin Your{" "}
-            <span className="text-gold">Journey?</span>
+            <span className="text-rose-gold">Journey?</span>
           </h2>
-          <p className="text-ivory/70 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-champagne/70 text-lg mb-10 max-w-2xl mx-auto">
             Every great wedding outfit starts with a conversation. Let us understand your vision
             and show you exactly how we bring it to life.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-gold text-navy font-semibold text-lg rounded-md
-              shadow-[0_4px_24px_rgba(197,160,89,0.4)]
-              hover:bg-gold-light hover:shadow-[0_4px_36px_rgba(197,160,89,0.7)]
+            className="group px-10 py-4 bg-rose-gold text-midnight-navy font-semibold text-lg rounded-md
+              shadow-[0_4px_24px_rgba(212,175,55,0.4)]
+              hover:bg-rose-gold/90 hover:shadow-[0_4px_36px_rgba(212,175,55,0.7)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Start Your Journey Today

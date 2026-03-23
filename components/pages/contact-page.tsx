@@ -103,20 +103,20 @@ export function ContactPage() {
 
   if (isSubmitted) {
     return (
-      <div className="animate-fade-in min-h-screen flex items-center justify-center bg-ivory py-20">
+      <div className="animate-fade-in min-h-screen flex items-center justify-center bg-champagne py-20">
         <div className="max-w-lg mx-auto px-4 text-center">
-          <div className="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-            <CheckCircle className="w-10 h-10 text-gold" />
+          <div className="w-20 h-20 bg-rose-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle className="w-10 h-10 text-rose-gold" />
           </div>
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-navy mb-4">
+          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-midnight-navy mb-4">
             Request Received!
           </h1>
-          <p className="text-navy/70 text-lg mb-8">
+          <p className="text-midnight-navy/70 text-lg mb-8">
             Thank you for your interest in CeremonyVerse. Our sourcing team will review your 
             requirements and reach out within 24-48 hours to schedule your complimentary consultation.
           </p>
           <div className="glass rounded-xl p-6 text-left">
-            <h3 className="font-semibold text-navy mb-4">What happens next:</h3>
+            <h3 className="font-semibold text-midnight-navy mb-4">What happens next:</h3>
             <ul className="space-y-3">
               {[
                 "We review your sourcing requirements",
@@ -125,10 +125,10 @@ export function ContactPage() {
                 "You receive a customized sourcing proposal",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="w-6 h-6 bg-gold/20 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold text-gold">
+                  <span className="w-6 h-6 bg-rose-gold/20 rounded-full flex items-center justify-center flex-shrink-0 text-xs font-bold text-rose-gold">
                     {index + 1}
                   </span>
-                  <span className="text-navy/80">{item}</span>
+                  <span className="text-midnight-navy/80">{item}</span>
                 </li>
               ))}
             </ul>
@@ -141,15 +141,15 @@ export function ContactPage() {
   return (
     <div className="animate-fade-in">
       {/* Hero Section */}
-      <section className="bg-navy py-16 sm:py-20">
+      <section className="bg-midnight-navy py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-4 py-1.5 bg-gold/20 text-gold text-sm font-medium rounded-full mb-6">
+          <span className="inline-block px-4 py-1.5 bg-rose-gold/20 text-rose-gold text-sm font-medium rounded-full mb-6">
             Start Your Journey
           </span>
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-ivory mb-4 text-balance">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-champagne mb-4 text-balance">
             Luxury Intake Questionnaire
           </h1>
-          <p className="text-ivory/80 text-lg max-w-2xl mx-auto">
+          <p className="text-champagne/80 text-lg max-w-2xl mx-auto">
             Tell us about your wedding vision. This helps us prepare a tailored consultation 
             and sourcing proposal for you.
           </p>
@@ -157,7 +157,7 @@ export function ContactPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-12 sm:py-16 bg-ivory">
+      <section className="py-12 sm:py-16 bg-champagne">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Progress Steps */}
           <div className="mb-10">
@@ -169,8 +169,8 @@ export function ContactPage() {
                       className={cn(
                         "w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-200",
                         currentStep >= step.number
-                          ? "bg-gold text-navy"
-                          : "bg-muted text-navy/40"
+                          ? "bg-rose-gold text-midnight-navy"
+                          : "bg-muted text-midnight-navy/40"
                       )}
                     >
                       {currentStep > step.number ? (
@@ -182,7 +182,7 @@ export function ContactPage() {
                     <span
                       className={cn(
                         "hidden sm:block mt-2 text-xs font-medium",
-                        currentStep >= step.number ? "text-navy" : "text-navy/40"
+                        currentStep >= step.number ? "text-midnight-navy" : "text-midnight-navy/40"
                       )}
                     >
                       {step.title}
@@ -192,7 +192,7 @@ export function ContactPage() {
                     <div
                       className={cn(
                         "h-0.5 w-12 sm:w-24 mx-2",
-                        currentStep > step.number ? "bg-gold" : "bg-muted"
+                        currentStep > step.number ? "bg-rose-gold" : "bg-muted"
                       )}
                     />
                   )}
@@ -207,41 +207,41 @@ export function ContactPage() {
             {currentStep === 1 && (
               <div className="animate-fade-in">
                 <div className="flex items-center gap-3 mb-6">
-                  <Calendar className="w-6 h-6 text-gold" />
-                  <h2 className="font-serif text-2xl font-bold text-navy">Tell Us About You</h2>
+                  <Calendar className="w-6 h-6 text-rose-gold" />
+                  <h2 className="font-serif text-2xl font-bold text-midnight-navy">Tell Us About You</h2>
                 </div>
 
                 <div className="space-y-5">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-navy mb-2">
-                      Full Name <span className="text-gold">*</span>
+                    <label htmlFor="name" className="block text-sm font-medium text-midnight-navy mb-2">
+                      Full Name <span className="text-rose-gold">*</span>
                     </label>
                     <input
                       type="text"
                       id="name"
                       value={formData.name}
                       onChange={(e) => updateFormData("name", e.target.value)}
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all"
                       placeholder="Your full name"
                     />
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-navy mb-2">
-                        Email Address <span className="text-gold">*</span>
+                      <label htmlFor="email" className="block text-sm font-medium text-midnight-navy mb-2">
+                        Email Address <span className="text-rose-gold">*</span>
                       </label>
                       <input
                         type="email"
                         id="email"
                         value={formData.email}
                         onChange={(e) => updateFormData("email", e.target.value)}
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all"
                         placeholder="you@email.com"
                       />
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-navy mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-midnight-navy mb-2">
                         Phone Number
                       </label>
                       <input
@@ -249,7 +249,7 @@ export function ContactPage() {
                         id="phone"
                         value={formData.phone}
                         onChange={(e) => updateFormData("phone", e.target.value)}
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all"
                         placeholder="(555) 123-4567"
                       />
                     </div>
@@ -257,26 +257,26 @@ export function ContactPage() {
 
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label htmlFor="eventDate" className="block text-sm font-medium text-navy mb-2">
-                        Event Date <span className="text-gold">*</span>
+                      <label htmlFor="eventDate" className="block text-sm font-medium text-midnight-navy mb-2">
+                        Event Date <span className="text-rose-gold">*</span>
                       </label>
                       <input
                         type="date"
                         id="eventDate"
                         value={formData.eventDate}
                         onChange={(e) => updateFormData("eventDate", e.target.value)}
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all"
                       />
                     </div>
                     <div>
-                      <label htmlFor="eventType" className="block text-sm font-medium text-navy mb-2">
-                        Event Type <span className="text-gold">*</span>
+                      <label htmlFor="eventType" className="block text-sm font-medium text-midnight-navy mb-2">
+                        Event Type <span className="text-rose-gold">*</span>
                       </label>
                       <select
                         id="eventType"
                         value={formData.eventType}
                         onChange={(e) => updateFormData("eventType", e.target.value)}
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all"
                       >
                         <option value="">Select event type</option>
                         {eventTypes.map((type) => (
@@ -295,10 +295,10 @@ export function ContactPage() {
             {currentStep === 2 && (
               <div className="animate-fade-in">
                 <div className="flex items-center gap-3 mb-6">
-                  <Heart className="w-6 h-6 text-gold" />
-                  <h2 className="font-serif text-2xl font-bold text-navy">How Can We Help?</h2>
+                  <Heart className="w-6 h-6 text-rose-gold" />
+                  <h2 className="font-serif text-2xl font-bold text-midnight-navy">How Can We Help?</h2>
                 </div>
-                <p className="text-navy/70 mb-6">
+                <p className="text-midnight-navy/70 mb-6">
                   Select all the services you're interested in. You can discuss details during your consultation.
                 </p>
 
@@ -311,8 +311,8 @@ export function ContactPage() {
                       className={cn(
                         "p-4 rounded-xl border-2 text-left transition-all duration-200",
                         formData.services.includes(service.id)
-                          ? "border-gold bg-gold/10 text-navy"
-                          : "border-border bg-white text-navy/70 hover:border-gold/50"
+                          ? "border-rose-gold bg-rose-gold/10 text-midnight-navy"
+                          : "border-border bg-white text-midnight-navy/70 hover:border-rose-gold/50"
                       )}
                     >
                       <div className="flex items-center gap-3">
@@ -320,7 +320,7 @@ export function ContactPage() {
                           className={cn(
                             "w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0",
                             formData.services.includes(service.id)
-                              ? "border-gold bg-gold"
+                              ? "border-rose-gold bg-rose-gold"
                               : "border-border"
                           )}
                         >
@@ -340,10 +340,10 @@ export function ContactPage() {
             {currentStep === 3 && (
               <div className="animate-fade-in">
                 <div className="flex items-center gap-3 mb-6">
-                  <DollarSign className="w-6 h-6 text-gold" />
-                  <h2 className="font-serif text-2xl font-bold text-navy">Estimated Budget</h2>
+                  <DollarSign className="w-6 h-6 text-rose-gold" />
+                  <h2 className="font-serif text-2xl font-bold text-midnight-navy">Estimated Budget</h2>
                 </div>
-                <p className="text-navy/70 mb-6">
+                <p className="text-midnight-navy/70 mb-6">
                   This helps us tailor recommendations to your investment level. All budgets are welcome.
                 </p>
 
@@ -356,15 +356,15 @@ export function ContactPage() {
                       className={cn(
                         "p-4 rounded-xl border-2 text-left transition-all duration-200",
                         formData.budget === range
-                          ? "border-gold bg-gold/10 text-navy"
-                          : "border-border bg-white text-navy/70 hover:border-gold/50"
+                          ? "border-rose-gold bg-rose-gold/10 text-midnight-navy"
+                          : "border-border bg-white text-midnight-navy/70 hover:border-rose-gold/50"
                       )}
                     >
                       <div className="flex items-center gap-3">
                         <div
                           className={cn(
                             "w-5 h-5 rounded-full border-2 flex items-center justify-center flex-shrink-0",
-                            formData.budget === range ? "border-gold bg-gold" : "border-border"
+                            formData.budget === range ? "border-rose-gold bg-rose-gold" : "border-border"
                           )}
                         >
                           {formData.budget === range && (
@@ -383,10 +383,10 @@ export function ContactPage() {
             {currentStep === 4 && (
               <div className="animate-fade-in">
                 <div className="flex items-center gap-3 mb-6">
-                  <MessageSquare className="w-6 h-6 text-gold" />
-                  <h2 className="font-serif text-2xl font-bold text-navy">Additional Notes</h2>
+                  <MessageSquare className="w-6 h-6 text-rose-gold" />
+                  <h2 className="font-serif text-2xl font-bold text-midnight-navy">Additional Notes</h2>
                 </div>
-                <p className="text-navy/70 mb-6">
+                <p className="text-midnight-navy/70 mb-6">
                   Share any specific requirements, questions, or details about your wedding vision.
                 </p>
 
@@ -395,7 +395,7 @@ export function ContactPage() {
                   value={formData.message}
                   onChange={(e) => updateFormData("message", e.target.value)}
                   rows={6}
-                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-navy focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-border bg-white text-midnight-navy focus:outline-none focus:ring-2 focus:ring-rose-gold/50 focus:border-rose-gold transition-all resize-none"
                   placeholder="Tell us about your wedding vision, color preferences, specific items you're looking for, or any questions you have..."
                 />
               </div>
@@ -407,7 +407,7 @@ export function ContactPage() {
                 <button
                   type="button"
                   onClick={() => setCurrentStep((prev) => prev - 1)}
-                  className="px-6 py-3 text-navy font-medium rounded-lg hover:bg-muted transition-all duration-200 flex items-center gap-2"
+                  className="px-6 py-3 text-midnight-navy font-medium rounded-lg hover:bg-muted transition-all duration-200 flex items-center gap-2"
                 >
                   <ArrowLeft className="w-4 h-4" />
                   Back
@@ -424,8 +424,8 @@ export function ContactPage() {
                   className={cn(
                     "px-8 py-3 font-semibold rounded-lg transition-all duration-200 flex items-center gap-2",
                     canProceed()
-                      ? "bg-gold text-navy hover:bg-gold-light"
-                      : "bg-muted text-navy/40 cursor-not-allowed"
+                      ? "bg-rose-gold text-midnight-navy hover:bg-rose-gold/90"
+                      : "bg-muted text-midnight-navy/40 cursor-not-allowed"
                   )}
                 >
                   Continue
@@ -435,7 +435,7 @@ export function ContactPage() {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="px-8 py-3 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-all duration-200 flex items-center gap-2"
+                  className="px-8 py-3 bg-rose-gold text-midnight-navy font-semibold rounded-lg hover:bg-rose-gold/90 transition-all duration-200 flex items-center gap-2"
                 >
                   Request Sourcing Consult
                   <ArrowRight className="w-4 h-4" />
