@@ -1,38 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 /* =========================
-   DESIGN SYSTEM
+   CEREMONYVERSE DESIGN SYSTEM
    ========================= */
 
 :root {
-  /* Backgrounds */
-  --cv-bg: #f8f6f2;        /* page background (ivory) */
-  --cv-section: #ffffff;   /* sections */
+  /* Core palette */
+  --cv-bg: #f8f6f2;          /* soft ivory */
+  --cv-section: #ffffff;     /* pure white sections/cards */
   --cv-card: #ffffff;
+  --cv-foreground: #2f2f2f;  /* charcoal, not navy */
+  --cv-muted: #6f6a63;       /* warm muted text */
+  --cv-accent: #c7b28a;      /* warm beige-gold */
+  --cv-border: #e6dfd5;      /* subtle warm border */
 
-  /* Text */
-  --cv-foreground: #2f2f2f;
-  --cv-muted: #6b6b6b;
+  /* Legacy aliases used by your components */
+  --muted-rose: #f8f6f2;     /* map old pink utility to ivory */
+  --champagne: #ffffff;      /* map old beige utility to white */
+  --midnight-navy: #2f2f2f;  /* map old navy utility to charcoal */
+  --brushed-gold: #c7b28a;   /* warm beige-gold */
 
-  /* Accent */
-  --cv-accent: #3f6d5b;    /* sage green */
+  /* Theme tokens */
+  --background: var(--cv-bg);
+  --foreground: var(--cv-foreground);
+  --card: var(--cv-card);
+  --card-foreground: var(--cv-foreground);
+  --popover: #ffffff;
+  --popover-foreground: var(--cv-foreground);
+  --primary: var(--cv-accent);
+  --primary-foreground: #ffffff;
+  --secondary: #f3eee6;
+  --secondary-foreground: var(--cv-foreground);
+  --muted: #f3eee6;
+  --muted-foreground: var(--cv-muted);
+  --accent: #f3eee6;
+  --accent-foreground: var(--cv-foreground);
+  --destructive: #b42318;
+  --destructive-foreground: #ffffff;
+  --border: var(--cv-border);
+  --input: var(--cv-border);
+  --ring: rgba(199, 178, 138, 0.35);
+  --radius: 1rem;
+}
 
-  /* Borders */
-  --cv-border: #e6e0d8;
+@theme inline {
+  --font-sans: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'Cormorant Garamond', Georgia, serif;
 
-  /* Optional subtle tone */
-  --cv-soft: #f4ede7;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-muted-rose: var(--muted-rose);
+  --color-champagne: var(--champagne);
+  --color-midnight-navy: var(--midnight-navy);
+  --color-brushed-gold: var(--brushed-gold);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 /* =========================
-   BASE RESET
+   BASE
    ========================= */
 
 @layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+
   html {
     background-color: var(--cv-bg);
   }
@@ -40,35 +100,42 @@
   body {
     background-color: var(--cv-bg);
     color: var(--cv-foreground);
-    font-family: 'Cormorant Garamond', Georgia, serif; /* KEEP as requested */
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 18px;
     line-height: 1.7;
   }
 
-  * {
-    border-color: var(--cv-border);
-  }
-
-  /* Headings */
   h1 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    color: var(--cv-foreground);
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
   }
 
   h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
+    color: var(--cv-foreground);
     font-size: 2.75rem;
     margin-bottom: 1.25rem;
   }
 
   h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
+    color: var(--cv-foreground);
     font-size: 1.75rem;
     margin-bottom: 1rem;
+  }
+
+  h4, h5, h6,
+  p, li, span, label, input, textarea, select, button, a, div {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: var(--cv-foreground);
   }
 
   p {
@@ -76,38 +143,14 @@
     line-height: 1.8;
     color: var(--cv-muted);
   }
-}
 
-/* =========================
-   STRUCTURE
-   ========================= */
+  a {
+    text-decoration: none;
+  }
 
-.section {
-  background-color: var(--cv-section);
-}
-
-.card {
-  background: var(--cv-card);
-  border: 1px solid var(--cv-border);
-  border-radius: 1rem;
-  padding: 1.5rem;
-}
-
-/* =========================
-   BUTTONS
-   ========================= */
-
-.btn-primary {
-  background: var(--cv-accent);
-  color: white;
-  border-radius: 9999px;
-  padding: 0.75rem 2rem;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
+  button {
+    cursor: pointer;
+  }
 }
 
 /* =========================
@@ -115,33 +158,134 @@
    ========================= */
 
 .glass-header {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--cv-border);
 }
 
 /* =========================
-   OPTIONAL SOFT SECTION
+   BUTTONS
    ========================= */
 
-.bg-soft {
-  background-color: var(--cv-soft);
+.btn-primary {
+  background-color: var(--cv-accent);
+  color: white;
+  border: 1px solid var(--cv-accent);
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cv-foreground);
+  border: 1px solid var(--cv-border);
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(199, 178, 138, 0.08);
 }
 
 /* =========================
-   REMOVE OLD DECORATIVE STYLES
+   CARDS / BOXES
    ========================= */
 
-/* Disable any leftover pink/gradient effects */
-.bg-muted-rose,
-.bg-rose,
-.bg-pink,
-.bg-champagne {
-  background: none !important;
+.card {
+  background: #ffffff;
+  border: 1px solid var(--cv-border);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
 }
 
-/* Disable decorative radial backgrounds if used */
+/* =========================
+   DIVIDER
+   ========================= */
+
+.floral-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.floral-separator::before,
+.floral-separator::after {
+  content: "";
+  width: 96px;
+  height: 1px;
+  background: var(--cv-border);
+}
+
+/* =========================
+   ANIMATION
+   ========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* =========================
+   NEUTRALIZE OLD BACKGROUNDS
+   ========================= */
+
+.bg-muted-rose {
+  background-color: var(--cv-bg) !important;
+}
+
+.bg-champagne {
+  background-color: #ffffff !important;
+}
+
 .bg-radial-rose,
 .silk-grain {
   background: none !important;
+}
+
+.silk-grain::before {
+  content: none !important;
+}
+
+/* =========================
+   LISTS
+   ========================= */
+
+.premium-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.premium-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.premium-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 12px;
+  height: 1px;
+  background: var(--cv-accent);
 }
