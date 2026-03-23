@@ -33,11 +33,11 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           <div className="flex-shrink-0">
             <button
               onClick={() => handleNavClick("home")}
-              className="flex items-center gap-2 group"
+              className="flex items-center group"
               aria-label="CeremonyVerse Home"
             >
-              <span className="font-serif text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
-                Ceremony<span className="text-brushed-gold">Verse</span>
+              <span className="text-xl sm:text-2xl font-semibold text-midnight-navy uppercase tracking-[0.2em]">
+                CEREMONYVERSE
               </span>
             </button>
           </div>

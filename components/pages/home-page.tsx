@@ -37,12 +37,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Your Personal Sourcing Team
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy leading-tight mb-8 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy leading-tight mb-6 tracking-wide">
             Skip the Flights.
             <br />
             Skip the Scams.
           </h1>
-          <p className="text-lg text-midnight-navy/60 max-w-2xl mx-auto mb-12 leading-relaxed font-sans">
+          <p className="text-brushed-gold text-sm font-light italic tracking-wider mb-10 uppercase">
+            Heritage Sourcing & Bridal Concierge — August 2026 Edition
+          </p>
+          <p className="text-lg text-midnight-navy/60 max-w-2xl mx-auto mb-12 leading-relaxed">
             Source authentic, custom-made wedding outfits and heritage weaves directly from 
             verified manufacturers in India. Vetted, verified, and yours alone.
           </p>
