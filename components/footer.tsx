@@ -36,7 +36,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 { label: "Our Services", page: "services" as PageType },
                 { label: "The Journey", page: "journey" as PageType },
                 { label: "FAQ", page: "faq" as PageType },
-                { label: "Contact", page: "contact" as PageType },
+                { label: "Inquire", page: "contact" as PageType },
               ].map((link) => (
                 <li key={link.page}>
                   <button
