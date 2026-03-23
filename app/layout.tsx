@@ -1,14 +1,24 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Playfair_Display, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const playfair = Playfair_Display({ 
+  subsets: ["latin"],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  variable: '--font-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'CeremonyVerse | Premium South Asian Wedding Sourcing Concierge',
+  description: 'Source authentic, custom-made wedding outfits, ethical heritage weaves, jewelry, and ceremonial items directly from factory manufacturers in India. Your trusted personal sourcing team.',
+  keywords: 'South Asian wedding, Indian wedding outfits, custom sherwanis, lehengas, Kanchipuram silk sarees, wedding sourcing USA, groomsmen outfits',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />
