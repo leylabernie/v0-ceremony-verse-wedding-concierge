@@ -105,17 +105,17 @@ export function ContactPage() {
       <div className="animate-fade-in min-h-screen flex items-center justify-center bg-radial-rose py-28">
         <div className="max-w-lg mx-auto px-6 text-center">
           <div className="w-20 h-20 border-2 border-brushed-gold rounded-full flex items-center justify-center mx-auto mb-8">
-            <span className="font-garamond text-4xl text-brushed-gold">✓</span>
+            <span className="font-serif text-4xl text-brushed-gold">✓</span>
           </div>
-          <h1 className="font-garamond text-3xl sm:text-4xl font-semibold text-midnight-navy mb-4 tracking-wide">
+          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-4 tracking-wide">
             Request Received
           </h1>
-          <p className="text-midnight-navy/60 text-lg mb-10 font-light leading-relaxed">
+          <p className="text-midnight-navy/60 text-lg mb-10 font-sans leading-relaxed">
             Thank you for your interest in CeremonyVerse. Our sourcing team will review your 
             requirements and reach out within 24-48 hours to schedule your consultation.
           </p>
           <div className="bento-card p-8 text-left">
-            <h3 className="font-garamond text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
+            <h3 className="font-serif text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
               What happens next
             </h3>
             <ul className="space-y-4">
@@ -126,10 +126,10 @@ export function ContactPage() {
                 "You receive a customized proposal",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="font-garamond text-lg text-brushed-gold/60 font-light">
+                  <span className="font-serif text-lg text-brushed-gold/60 font-light">
                     0{index + 1}
                   </span>
-                  <span className="text-midnight-navy/70 font-light">{item}</span>
+                  <span className="text-midnight-navy/70 font-sans">{item}</span>
                 </li>
               ))}
             </ul>
@@ -147,10 +147,10 @@ export function ContactPage() {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
             Start Your Journey
           </p>
-          <h1 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-4 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-4 tracking-wide">
             Consultation Request
           </h1>
-          <p className="text-champagne/60 text-lg font-light leading-relaxed">
+          <p className="text-champagne/60 text-lg font-sans leading-relaxed">
             Tell us about your wedding vision. This helps us prepare a tailored consultation 
             and sourcing proposal for you.
           </p>
@@ -174,7 +174,7 @@ export function ContactPage() {
                           : "border-brushed-gold/30 bg-transparent text-midnight-navy/40"
                       )}
                     >
-                      <span className="font-garamond text-lg font-semibold">{step.number}</span>
+                      <span className="font-serif text-lg font-semibold">{step.number}</span>
                     </div>
                     <span
                       className={cn(
@@ -203,7 +203,7 @@ export function ContactPage() {
             {/* Step 1 */}
             {currentStep === 1 && (
               <div className="animate-fade-in">
-                <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-8 tracking-wide">
+                <h2 className="font-serif text-2xl font-semibold text-midnight-navy mb-8 tracking-wide">
                   Tell Us About You
                 </h2>
 
@@ -217,7 +217,7 @@ export function ContactPage() {
                       id="name"
                       value={formData.name}
                       onChange={(e) => updateFormData("name", e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-light"
+                      className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-sans"
                       placeholder="Your full name"
                     />
                   </div>
@@ -232,7 +232,7 @@ export function ContactPage() {
                         id="email"
                         value={formData.email}
                         onChange={(e) => updateFormData("email", e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-light"
+                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-sans"
                         placeholder="you@email.com"
                       />
                     </div>
@@ -245,7 +245,7 @@ export function ContactPage() {
                         id="phone"
                         value={formData.phone}
                         onChange={(e) => updateFormData("phone", e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-light"
+                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-sans"
                         placeholder="(555) 123-4567"
                       />
                     </div>
@@ -261,7 +261,7 @@ export function ContactPage() {
                         id="eventDate"
                         value={formData.eventDate}
                         onChange={(e) => updateFormData("eventDate", e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-light"
+                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-sans"
                       />
                     </div>
                     <div>
@@ -272,7 +272,7 @@ export function ContactPage() {
                         id="eventType"
                         value={formData.eventType}
                         onChange={(e) => updateFormData("eventType", e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-light"
+                        className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all font-sans"
                       >
                         <option value="">Select event type</option>
                         {eventTypes.map((type) => (
@@ -293,7 +293,7 @@ export function ContactPage() {
                 <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   How Can We Help?
                 </h2>
-                <p className="text-midnight-navy/60 mb-8 font-light">
+                <p className="text-midnight-navy/60 mb-8 font-sans">
                   Select all the services you're interested in.
                 </p>
 
@@ -337,7 +337,7 @@ export function ContactPage() {
                 <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Estimated Budget
                 </h2>
-                <p className="text-midnight-navy/60 mb-8 font-light">
+                <p className="text-midnight-navy/60 mb-8 font-sans">
                   This helps us tailor recommendations. All budgets are welcome.
                 </p>
 
@@ -379,7 +379,7 @@ export function ContactPage() {
                 <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Additional Notes
                 </h2>
-                <p className="text-midnight-navy/60 mb-8 font-light">
+                <p className="text-midnight-navy/60 mb-8 font-sans">
                   Share any specific requirements or questions about your wedding vision.
                 </p>
 
@@ -388,7 +388,7 @@ export function ContactPage() {
                   value={formData.message}
                   onChange={(e) => updateFormData("message", e.target.value)}
                   rows={6}
-                  className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all resize-none font-light"
+                  className="w-full px-4 py-3 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all resize-none font-sans"
                   placeholder="Tell us about your wedding vision, color preferences, specific items you're looking for..."
                 />
               </div>

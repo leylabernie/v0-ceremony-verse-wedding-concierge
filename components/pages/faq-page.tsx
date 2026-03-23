@@ -71,10 +71,10 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-10">
             The Trust Center
           </p>
-          <h1 className="font-garamond text-5xl sm:text-6xl lg:text-7xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Your Questions, Answered
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-[1.8]">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
             We know you have concerns about online sourcing. Scams, sizing disasters, and broken
             promises are real. Here's how we address them.
           </p>
@@ -94,7 +94,7 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                 <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-4">
                   {String(sectionIdx + 1).padStart(2, '0')}
                 </p>
-                <h2 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy tracking-[0.04em]">
+                <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy tracking-[0.04em]">
                   {section.category}
                 </h2>
               </div>
@@ -103,7 +103,7 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
               {sectionIdx === 2 && (
                 <div className="lg:w-80 h-48 lg:h-40 rounded-2xl bg-gradient-to-br from-brushed-gold/10 to-muted-rose border border-brushed-gold/30 flex items-center justify-center">
                   <div className="text-center px-6">
-                    <p className="font-garamond text-lg text-midnight-navy/40 italic">
+                    <p className="font-serif text-lg text-midnight-navy/40 italic">
                       Rose Gold Jewelry Detail
                     </p>
                     <p className="text-xs text-midnight-navy/30 mt-1">
@@ -121,10 +121,10 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                   key={faqIdx}
                   className="bento-card p-8 sm:p-10 flex flex-col min-h-[320px]"
                 >
-                  <h3 className="font-garamond text-xl sm:text-2xl font-semibold text-midnight-navy mb-6 tracking-wide leading-snug">
+                  <h3 className="font-serif text-xl sm:text-2xl font-semibold text-midnight-navy mb-6 tracking-wide leading-snug">
                     {faq.question}
                   </h3>
-                  <p className="text-midnight-navy/55 leading-[1.8] font-light text-[0.9rem] flex-1">
+                  <p className="text-midnight-navy/55 leading-[1.8] font-sans text-[0.9rem] flex-1">
                     {faq.answer}
                   </p>
                 </div>
@@ -141,20 +141,20 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
             <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-4">
               04
             </p>
-            <h2 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy tracking-[0.04em] mb-6">
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy tracking-[0.04em] mb-6">
               Timeline & Process
             </h2>
-            <p className="text-midnight-navy/50 text-lg max-w-2xl mx-auto font-light">
+            <p className="text-midnight-navy/50 text-lg max-w-2xl mx-auto font-sans">
               Production timelines and what to expect throughout your sourcing journey.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bento-card p-10 flex flex-col">
-              <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
                 When should I start?
               </h3>
-              <div className="text-midnight-navy/55 leading-[1.8] font-light space-y-4 flex-1">
+              <div className="text-midnight-navy/55 leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Ideal timeline is 6-8 months before your event.</p>
                 <ul className="premium-list pl-4">
                   <li>Consultation and design: 2-3 weeks</li>
@@ -167,10 +167,10 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
             </div>
 
             <div className="bento-card p-10 flex flex-col">
-              <h3 className="font-garamond text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
+              <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
                 How will I track my order?
               </h3>
-              <div className="text-midnight-navy/55 leading-[1.8] font-light space-y-4 flex-1">
+              <div className="text-midnight-navy/55 leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Complete visibility throughout production:</p>
                 <ul className="premium-list pl-4">
                   <li>Weekly email updates with photos</li>
@@ -188,10 +188,10 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
       {/* CTA */}
       <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Still Have Questions?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-light leading-[1.8] max-w-xl mx-auto">
+          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8] max-w-xl mx-auto">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <button

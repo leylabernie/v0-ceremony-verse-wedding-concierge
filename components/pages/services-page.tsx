@@ -85,10 +85,10 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Services
           </p>
-          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
             What We Source
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
             From coordinated groomsmen parties to authentic heritage silks, we handle every detail
             of your wedding sourcing with meticulous care.
           </p>
@@ -128,10 +128,10 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 <p className="text-brushed-gold text-sm font-medium tracking-[0.15em] uppercase mb-4">
                   {activeService.tagline}
                 </p>
-                <h2 className="font-garamond text-3xl sm:text-4xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-6 tracking-wide">
                   {activeService.title}
                 </h2>
-                <p className="text-midnight-navy/60 text-lg leading-relaxed font-light mb-8">
+                <p className="text-midnight-navy/60 text-lg leading-relaxed font-sans mb-8">
                   {activeService.description}
                 </p>
                 <button
@@ -147,7 +147,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
 
               {/* Right: Features */}
               <div>
-                <h3 className="font-garamond text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
+                <h3 className="font-serif text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
                   What's Included
                 </h3>
                 <ul className="space-y-4">
@@ -167,10 +167,10 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       {/* CTA */}
       <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Not Sure Where to Start?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-light leading-[1.8]">
+          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8]">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button

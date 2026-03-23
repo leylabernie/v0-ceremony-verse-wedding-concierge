@@ -38,7 +38,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               className="flex items-center gap-2 group"
               aria-label="CeremonyVerse Home"
             >
-              <span className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
+              <span className="font-serif text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
                 Ceremony<span className="text-brushed-gold">Verse</span>
               </span>
             </button>

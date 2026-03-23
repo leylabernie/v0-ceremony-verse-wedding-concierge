@@ -98,10 +98,10 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Process
           </p>
-          <h1 className="font-garamond text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
             The Sourcing Journey
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
             From your first consultation to delivery at your door — our meticulous six-step process
             ensures quality, authenticity, and your complete satisfaction.
           </p>
@@ -120,7 +120,7 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
                 <div className="flex flex-col sm:flex-row sm:items-start gap-6">
                   {/* Step Number */}
                   <div className="flex-shrink-0">
-                    <span className="font-garamond text-5xl sm:text-6xl font-light text-brushed-gold/30">
+                    <span className="font-serif text-5xl sm:text-6xl font-light text-brushed-gold/30">
                       {step.number}
                     </span>
                   </div>
@@ -128,7 +128,7 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-4 mb-4">
-                      <h3 className="font-garamond text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
+                      <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-midnight-navy tracking-wide">
                         {step.title}
                       </h3>
                       <span className="text-sm text-brushed-gold font-medium tracking-wide">
@@ -136,7 +136,7 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
                       </span>
                     </div>
                     
-                    <p className="text-midnight-navy/60 leading-relaxed font-light mb-6">
+                    <p className="text-midnight-navy/60 leading-relaxed font-sans mb-6">
                       {step.description}
                     </p>
 
@@ -159,10 +159,10 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
       {/* CTA */}
       <section className="py-28 sm:py-36 bg-midnight-navy">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-garamond text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-light leading-[1.8]">
+          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8]">
             Every great wedding outfit starts with a conversation. Let us understand your vision
             and show you exactly how we bring it to life.
           </p>

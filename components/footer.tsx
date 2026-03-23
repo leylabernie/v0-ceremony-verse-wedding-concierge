@@ -15,11 +15,11 @@ export function Footer({ onNavigate }: FooterProps) {
           <div className="lg:col-span-1">
             <button
               onClick={() => onNavigate("home")}
-              className="font-garamond text-2xl font-semibold tracking-wide mb-6 inline-block text-champagne"
+              className="font-serif text-2xl font-semibold tracking-wide mb-6 inline-block text-champagne"
             >
               Ceremony<span className="text-brushed-gold">Verse</span>
             </button>
-            <p className="text-champagne/50 text-sm leading-relaxed font-light">
+            <p className="text-champagne/50 text-sm leading-relaxed font-sans">
               Your trusted personal sourcing team for authentic South Asian wedding 
               outfits and heritage weaves directly from India.
             </p>
@@ -27,7 +27,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-garamond text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
+            <h3 className="font-serif text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
               Quick Links
             </h3>
             <ul className="space-y-4">
@@ -41,7 +41,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <li key={link.page}>
                   <button
                     onClick={() => onNavigate(link.page)}
-                    className="text-champagne/50 hover:text-brushed-gold transition-colors text-sm font-light"
+                    className="text-champagne/50 hover:text-brushed-gold transition-colors text-sm font-sans"
                   >
                     {link.label}
                   </button>
@@ -52,7 +52,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Services */}
           <div>
-            <h3 className="font-garamond text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
+            <h3 className="font-serif text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
               Services
             </h3>
             <ul className="space-y-4">
@@ -65,7 +65,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 <li key={service}>
                   <button
                     onClick={() => onNavigate("services")}
-                    className="text-champagne/50 hover:text-brushed-gold transition-colors text-sm font-light"
+                    className="text-champagne/50 hover:text-brushed-gold transition-colors text-sm font-sans"
                   >
                     {service}
                   </button>
@@ -76,7 +76,7 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Contact */}
           <div>
-            <h3 className="font-garamond text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
+            <h3 className="font-serif text-sm font-semibold uppercase tracking-[0.15em] text-brushed-gold mb-6">
               Get in Touch
             </h3>
             <ul className="space-y-4">
@@ -97,14 +97,14 @@ export function Footer({ onNavigate }: FooterProps) {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-brushed-gold/20">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-champagne/40 text-sm font-light">
+            <p className="text-champagne/40 text-sm font-sans">
               {new Date().getFullYear()} CeremonyVerse. All rights reserved.
             </p>
             <div className="flex items-center gap-8">
-              <button className="text-champagne/40 hover:text-brushed-gold transition-colors text-sm font-light">
+              <button className="text-champagne/40 hover:text-brushed-gold transition-colors text-sm font-sans">
                 Privacy Policy
               </button>
-              <button className="text-champagne/40 hover:text-brushed-gold transition-colors text-sm font-light">
+              <button className="text-champagne/40 hover:text-brushed-gold transition-colors text-sm font-sans">
                 Terms of Service
               </button>
             </div>
