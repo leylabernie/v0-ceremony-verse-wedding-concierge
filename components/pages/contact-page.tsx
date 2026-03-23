@@ -8,6 +8,7 @@ interface FormData {
   bridesmaidsCount: string
   groomsmenCount: string
   vision: string
+  contractAcknowledged: boolean
 }
 
 const initialFormData: FormData = {
@@ -16,18 +17,19 @@ const initialFormData: FormData = {
   bridesmaidsCount: "",
   groomsmenCount: "",
   vision: "",
+  contractAcknowledged: false,
 }
 
 export function ContactPage() {
   const [formData, setFormData] = useState<FormData>(initialFormData)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const updateFormData = (field: keyof FormData, value: string) => {
+  const updateFormData = (field: keyof FormData, value: string | boolean) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
   const canSubmit = () => {
-    return formData.name && formData.eventDate
+    return formData.name && formData.eventDate && formData.contractAcknowledged
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -182,6 +184,24 @@ export function ContactPage() {
                     className="w-full px-5 py-4 rounded-xl border border-brushed-gold/30 bg-white text-midnight-navy focus:outline-none focus:border-brushed-gold transition-all resize-none font-sans"
                     placeholder="Tell us about your dream wedding... color themes, cultural elements, specific items you're looking for..."
                   />
+                </div>
+
+                {/* Contract Acknowledgment Checkbox */}
+                <div className="border-t border-brushed-gold/20 pt-8">
+                  <label className="flex items-start gap-4 cursor-pointer group">
+                    <input
+                      type="checkbox"
+                      checked={formData.contractAcknowledged}
+                      onChange={(e) => updateFormData("contractAcknowledged", e.target.checked)}
+                      className="mt-1 w-5 h-5 rounded border-brushed-gold/50 text-brushed-gold focus:ring-brushed-gold cursor-pointer"
+                      required
+                    />
+                    <span className="text-sm text-midnight-navy/70 leading-relaxed font-sans">
+                      <span className="text-brushed-gold">*</span> I understand that CeremonyVerse operates on a 
+                      <strong className="text-midnight-navy"> 'Gate-Approval' contract system</strong>. Once a design 
+                      is approved, changes are permitted only within 24 hours.
+                    </span>
+                  </label>
                 </div>
 
                 {/* Submit Button - Navy background with Gold text */}

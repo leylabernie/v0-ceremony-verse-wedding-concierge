@@ -56,6 +56,21 @@ const services = [
     ],
   },
   {
+    id: "samples",
+    title: "Order Samples",
+    tagline: "Swatch Approval Kits",
+    description:
+      "For Heritage Silks and Custom Embroidery: We offer physical 'Swatch Approval' kits. For a flat fee, we ship authentic fabric swatches and thread samples from our Indian looms to your US doorstep before the full garment is cut.",
+    features: [
+      "Authentic fabric swatches from Indian looms",
+      "Thread and embroidery samples",
+      "Color-accurate material references",
+      "Shipped directly to your US address",
+      "Flat fee with no hidden costs",
+      "Applied toward final order",
+    ],
+  },
+  {
     id: "ceremony",
     title: "Ceremony Details",
     tagline: "Complete Accessory Sourcing",
@@ -188,11 +203,74 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
 
       <FloralSeparator />
 
+      {/* Pricing & Commitment */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 sm:p-14">
+            <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-8 tracking-wide text-center">
+              Pricing & Commitment
+            </h2>
+            <div className="space-y-8 text-midnight-navy/70 font-sans leading-[1.8]">
+              <p>
+                To secure your production slot for <strong className="text-midnight-navy">August 2026</strong>, 
+                a <strong className="text-midnight-navy">25% Non-Refundable Design Deposit</strong> is required 
+                upon contract signing. This initiates the factory audit and fabric sourcing phase.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="border border-brushed-gold/20 rounded-xl p-6">
+                  <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-3">Design Deposit</h4>
+                  <p className="text-sm">25% of total order value, non-refundable. Secures your production slot and begins sourcing.</p>
+                </div>
+                <div className="border border-brushed-gold/20 rounded-xl p-6">
+                  <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-3">Balance Due</h4>
+                  <p className="text-sm">Remaining 75% due upon final approval, before garments ship from India.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FloralSeparator />
+
+      {/* Logistics */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 sm:p-14">
+            <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-midnight-navy mb-8 tracking-wide text-center">
+              Global Logistics
+            </h2>
+            <div className="text-center">
+              <p className="text-midnight-navy/70 font-sans leading-[1.8] text-lg max-w-2xl mx-auto">
+                <strong className="text-midnight-navy">Global Duty & Customs Management.</strong> We handle all 
+                import documentation, ensuring your garments arrive cleared and inspected via our US-based studio.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-3 gap-6 mt-10">
+              <div className="text-center">
+                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">Factory Audits</h4>
+                <p className="text-midnight-navy/60 text-sm font-sans">Physical inspections in India</p>
+              </div>
+              <div className="text-center">
+                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">Customs Cleared</h4>
+                <p className="text-midnight-navy/60 text-sm font-sans">All import duties handled</p>
+              </div>
+              <div className="text-center">
+                <h4 className="font-serif text-lg font-semibold text-midnight-navy mb-2">US Inspection</h4>
+                <p className="text-midnight-navy/60 text-sm font-sans">Final QC at our studio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FloralSeparator />
+
       {/* CTA */}
       <section className="py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
-            Not Sure Where to Start?
+            Ready to Begin?
           </h2>
           <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8]">
             Book a complimentary consultation and let us guide you through the sourcing process.
