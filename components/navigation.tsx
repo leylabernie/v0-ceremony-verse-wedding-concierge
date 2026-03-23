@@ -61,10 +61,10 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
             ))}
             <button
               onClick={() => handleNavClick("contact")}
-              className="ml-4 px-5 py-2.5 bg-rose-gold text-midnight-navy font-semibold text-sm rounded-lg
+              className="ml-4 px-6 py-2.5 bg-champagne text-midnight-navy border-1.5 border-rose-gold font-semibold text-sm rounded-full
                 transition-all duration-300
-                hover:bg-rose-gold/90 hover:shadow-[0_8px_28px_rgba(212,175,55,0.4)]
-                focus:outline-none focus:ring-2 focus:ring-rose-gold/60"
+                hover:bg-muted-rose hover:shadow-[0_4px_16px_rgba(212,175,55,0.25)]
+                focus:outline-none focus:ring-2 focus:ring-rose-gold/50"
             >
               Book Consultation
             </button>
@@ -102,9 +102,9 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               ))}
               <button
                 onClick={() => handleNavClick("contact")}
-                className="mt-2 mx-4 px-5 py-3 bg-rose-gold text-midnight-navy font-semibold rounded-lg
-                  hover:bg-rose-gold/90 hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]
-                  transition-all duration-300 text-center"
+                className="mt-2 mx-4 px-6 py-3 bg-champagne text-midnight-navy border-1.5 border-rose-gold font-semibold rounded-full
+                  hover:bg-muted-rose hover:shadow-[0_4px_16px_rgba(212,175,55,0.25)]
+                  transition-all duration-300 text-center w-[calc(100%-2rem)]"
               >
                 Book Consultation
               </button>

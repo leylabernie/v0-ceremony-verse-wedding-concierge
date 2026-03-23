@@ -34,9 +34,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => onNavigate("contact")}
-              className="group px-8 py-4 bg-rose-gold text-midnight-navy font-semibold text-lg rounded-xl
-                shadow-[0_4px_24px_rgba(212,175,55,0.35)]
-                hover:bg-rose-gold/90 hover:shadow-[0_8px_40px_rgba(212,175,55,0.65)]
+              className="group px-8 py-3.5 bg-champagne text-midnight-navy border-1.5 border-rose-gold font-semibold text-base rounded-full
+                hover:bg-muted-rose hover:shadow-[0_6px_24px_rgba(212,175,55,0.25)]
                 transition-all duration-300 flex items-center gap-2"
             >
               Book Your Concierge Intake
@@ -44,9 +43,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </button>
             <button
               onClick={() => onNavigate("journey")}
-              className="px-8 py-4 border-2 border-rose-gold/40 text-champagne font-medium text-lg rounded-xl
-                hover:border-rose-gold hover:text-rose-gold hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]
-                transition-all duration-300"
+              className="px-8 py-3.5 border-1.5 border-rose-gold/40 text-midnight-navy font-semibold text-base rounded-full
+                hover:border-rose-gold hover:text-midnight-navy hover:shadow-[0_4px_16px_rgba(212,175,55,0.2)]
+                transition-all duration-300 bg-champagne/50"
             >
               Learn How It Works
             </button>
@@ -73,48 +72,40 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* ── The Vetting Vault ── */}
-      <section className="py-20 sm:py-28 bg-champagne">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-1.5 border border-rose-gold/40 text-rose-gold text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
-              The Vetting Standard
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-midnight-navy mb-4 text-balance">
-              The Vetting Vault: Our 2026 Sourcing Standard
+      {/* ── The CeremonyVerse Guarantee ── */}
+      <section className="py-32 sm:py-40 bg-champagne">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="font-garamond text-5xl sm:text-6xl lg:text-7xl font-light text-midnight-navy mb-8 text-balance leading-tight">
+              The CeremonyVerse Guarantee
             </h2>
-            <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto">
-              Three mandatory verification checkpoints ensure your wedding pieces meet our uncompromising quality standard.
+            <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-light">
+              Every piece you source through our studio carries three signatures of authenticity.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-12 md:gap-16">
             {[
               {
-                icon: Eye,
-                title: "Physical Factory Audits",
-                description: "In-person quality checks at every manufacturing stage. Our team visits partner facilities in Delhi, Mumbai, and Chennai to verify craftsmanship before your pieces move to the next stage."
+                title: "Physical Factory Audits in India",
+                description: "Our team conducts in-person quality inspections at every manufacturing stage in Delhi, Mumbai, and Chennai. Your pieces are never sourced sight unseen."
               },
               {
-                icon: Lock,
-                title: "Thread-Count & Dye Verification",
-                description: "Technical excellence meets luxury. We verify fabric composition, thread counts, and dye authenticity using industry standards. Heritage silks are tested for authenticity and durability."
+                title: "Direct Artisan Sourcing",
+                description: "We work directly with verified heritage manufacturers—no middlemen, no markups. Every rupee you invest goes directly to craftsmanship, not intermediaries."
               },
               {
-                icon: Video,
-                title: "Pre-Shipment Video Approval",
-                description: "HD video documentation of your completed pieces. You approve every stitch, every embroidery detail, and every accessory before your pieces ship to the USA."
+                title: "Inspected & Shipped from the USA",
+                description: "Your completed pieces arrive at our USA inspection facility where we verify quality one final time before delivery to your door."
               },
-            ].map((vault, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 border border-rose-gold/20 shadow-[0_4px_20px_rgba(212,175,55,0.1)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.2)] transition-all duration-300"
-              >
-                <div className="w-14 h-14 bg-rose-gold/15 border border-rose-gold/30 rounded-full flex items-center justify-center mb-6">
-                  <vault.icon className="w-7 h-7 text-rose-gold" />
-                </div>
-                <h3 className="font-serif text-xl font-bold text-midnight-navy mb-3">{vault.title}</h3>
-                <p className="text-midnight-navy/70 leading-relaxed">{vault.description}</p>
+            ].map((guarantee, index) => (
+              <div key={index} className="text-center">
+                <h3 className="font-garamond text-2xl sm:text-3xl font-light text-midnight-navy mb-4 leading-relaxed">
+                  {guarantee.title}
+                </h3>
+                <p className="text-midnight-navy/60 text-base leading-relaxed font-light">
+                  {guarantee.description}
+                </p>
               </div>
             ))}
           </div>
@@ -270,9 +261,8 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-rose-gold text-midnight-navy font-semibold text-lg rounded-xl
-              shadow-[0_4px_24px_rgba(212,175,55,0.4)]
-              hover:bg-rose-gold/90 hover:shadow-[0_8px_40px_rgba(212,175,55,0.7)]
+            className="group px-10 py-4 bg-champagne text-midnight-navy border-1.5 border-rose-gold font-semibold text-base rounded-full
+              hover:bg-muted-rose hover:shadow-[0_6px_28px_rgba(212,175,55,0.3)]
               transition-all duration-300 inline-flex items-center gap-2"
           >
             Reserve Your Intake Slot

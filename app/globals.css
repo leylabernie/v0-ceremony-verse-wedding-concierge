@@ -5,31 +5,32 @@
 
 /* CeremonyVerse Ethereal Boutique Color Palette */
 :root {
-  /* Ethereal Tonal Palette - Feminine & Antique Luxury */
+  /* Ethereal Tonal Palette */
   --champagne: #FDFBF7;
+  --muted-rose: #F4E0E0;
   --dusty-rose: #AF8C9D;
   --midnight-navy: #0A192F;
   --rose-gold: #D4AF37;
-  
+
   /* Semantic Tokens */
-  --background: var(--champagne);
+  --background: var(--muted-rose);
   --foreground: var(--midnight-navy);
-  --card: #FFFFFF;
+  --card: var(--champagne);
   --card-foreground: var(--midnight-navy);
-  --popover: #FFFFFF;
+  --popover: var(--champagne);
   --popover-foreground: var(--midnight-navy);
   --primary: var(--rose-gold);
   --primary-foreground: var(--midnight-navy);
   --secondary: var(--dusty-rose);
   --secondary-foreground: var(--champagne);
-  --muted: #F5F3EF;
-  --muted-foreground: #8B7A8C;
+  --muted: #EDD8D8;
+  --muted-foreground: #7A6670;
   --accent: var(--rose-gold);
   --accent-foreground: var(--midnight-navy);
   --destructive: #C84747;
   --destructive-foreground: #FFFFFF;
-  --border: #E8DDD8;
-  --input: #E8DDD8;
+  --border: #D4AF37;
+  --input: #E8D0C8;
   --ring: var(--rose-gold);
   --radius: 1rem;
 }
@@ -37,6 +38,7 @@
 @theme inline {
   --font-sans: var(--font-sans), 'Inter', system-ui, sans-serif;
   --font-serif: var(--font-serif), 'Playfair Display', Georgia, serif;
+  --font-garamond: var(--font-garamond), 'Cormorant Garamond', Georgia, serif;
   --font-mono: 'Geist Mono', monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -64,6 +66,7 @@
   
   /* Ethereal Boutique Brand Colors */
   --color-champagne: var(--champagne);
+  --color-muted-rose: var(--muted-rose);
   --color-dusty-rose: var(--dusty-rose);
   --color-midnight-navy: var(--midnight-navy);
   --color-rose-gold: var(--rose-gold);
@@ -75,10 +78,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background-image: 
-      repeating-linear-gradient(90deg, rgba(208, 178, 162, 0.025) 0px, transparent 1px, transparent 2px, rgba(208, 178, 162, 0.025) 3px),
-      repeating-linear-gradient(0deg, rgba(208, 178, 162, 0.025) 0px, transparent 1px, transparent 2px, rgba(208, 178, 162, 0.025) 3px);
-    background-size: 4px 4px;
   }
 }
 
@@ -113,21 +112,23 @@
 
 /* Gold glow button effect */
 .btn-gold {
-  background-color: #C5A059;
+  background-color: #FDFBF7;
   color: #0A192F;
+  border: 1.5px solid #D4AF37;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(197, 160, 89, 0.35);
+  border-radius: 9999px;
 }
 
 .btn-gold:hover {
-  background-color: #D4B87A;
-  box-shadow: 0 6px 32px rgba(197, 160, 89, 0.65), 0 0 20px rgba(197, 160, 89, 0.4);
+  background-color: #F4E0E0;
+  border-color: #D4AF37;
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.35);
 }
 
 .btn-gold:focus {
   outline: none;
-  box-shadow: 0 6px 32px rgba(197, 160, 89, 0.65), 0 0 0 3px rgba(197, 160, 89, 0.3);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
 }
 
 /* Glassmorphism utility */
