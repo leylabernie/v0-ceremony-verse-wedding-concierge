@@ -9,7 +9,7 @@ interface HomePageProps {
 
 function FloralSeparator() {
   return (
-    <div className="floral-separator my-8">
+    <div className="flex justify-center my-12">
       <div className="w-24 h-px bg-[var(--cv-border)]"></div>
     </div>
   )
@@ -17,11 +17,11 @@ function FloralSeparator() {
 
 export function HomePage({ onNavigate }: HomePageProps) {
   return (
-    <div className="animate-fade-in bg-[var(--cv-bg)]">
+    <div className="bg-[var(--cv-bg)]">
 
       {/* HERO */}
-      <section className="min-h-[90vh] flex items-center justify-center">
-        <div className="max-w-4xl mx-auto px-6 text-center py-32">
+      <section className="min-h-[85vh] flex items-center justify-center text-center px-6">
+        <div className="max-w-4xl py-24">
           <p className="text-[var(--cv-accent)] text-sm tracking-[0.2em] uppercase mb-6">
             Your Personal Sourcing Team
           </p>
@@ -40,7 +40,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={() => onNavigate("contact")}
-              className="btn-primary flex items-center gap-2"
+              className="bg-[var(--cv-accent)] text-white px-6 py-3 rounded-full flex items-center gap-2 justify-center"
             >
               Book Consultation
               <ArrowRight className="w-4 h-4" />
@@ -59,35 +59,29 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <FloralSeparator />
 
       {/* TRUST SECTION */}
-      <section className="py-24">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-semibold mb-10">
+      <section className="py-20 text-center px-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-semibold mb-10 text-[var(--cv-foreground)]">
             Why CeremonyVerse Works
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
             <div>
-              <h3 className="text-xl font-semibold mb-3">
-                Verified Manufacturers
-              </h3>
+              <h3 className="text-xl font-semibold mb-3">Verified Manufacturers</h3>
               <p className="text-[var(--cv-muted)]">
                 We only work with trusted and proven production partners.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">
-                Direct Sourcing
-              </h3>
+              <h3 className="text-xl font-semibold mb-3">Direct Sourcing</h3>
               <p className="text-[var(--cv-muted)]">
                 No middlemen. Better pricing and full transparency.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">
-                Final Quality Check
-              </h3>
+              <h3 className="text-xl font-semibold mb-3">Final Quality Check</h3>
               <p className="text-[var(--cv-muted)]">
                 Every item is checked before shipping to you.
               </p>
@@ -98,46 +92,42 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
       <FloralSeparator />
 
-      {/* SERVICES */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl text-center font-semibold mb-16">
+      {/* SERVICES GRID */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl text-center font-semibold mb-14 text-[var(--cv-foreground)]">
             What We Source
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
 
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-3">
-                Bridal Lehengas
-              </h3>
+            {/* CARD 1 */}
+            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Bridal Lehengas</h3>
               <p className="text-[var(--cv-muted)]">
                 Custom and ready bridal outfits sourced directly from India.
               </p>
             </div>
 
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-3">
-                Sherwanis
-              </h3>
+            {/* CARD 2 */}
+            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Sherwanis</h3>
               <p className="text-[var(--cv-muted)]">
                 Groom outfits tailored and verified before delivery.
               </p>
             </div>
 
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-3">
-                Bridesmaid Outfits
-              </h3>
+            {/* CARD 3 */}
+            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Bridesmaid Outfits</h3>
               <p className="text-[var(--cv-muted)]">
                 Coordinated looks for your wedding party.
               </p>
             </div>
 
-            <div className="card">
-              <h3 className="text-xl font-semibold mb-3">
-                Accessories
-              </h3>
+            {/* CARD 4 */}
+            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
+              <h3 className="text-xl font-semibold mb-3">Accessories</h3>
               <p className="text-[var(--cv-muted)]">
                 Dupattas, jewelry, and finishing pieces.
               </p>
@@ -150,9 +140,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <FloralSeparator />
 
       {/* CTA */}
-      <section className="py-24 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-4xl font-semibold mb-6">
+      <section className="py-20 text-center px-6">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-4xl font-semibold mb-6 text-[var(--cv-foreground)]">
             August 2026 Booking Open
           </h2>
 
@@ -162,7 +152,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           <button
             onClick={() => onNavigate("contact")}
-            className="btn-primary"
+            className="bg-[var(--cv-accent)] text-white px-6 py-3 rounded-full"
           >
             Reserve Your Spot
           </button>
