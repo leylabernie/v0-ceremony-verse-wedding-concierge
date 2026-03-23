@@ -31,14 +31,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <div className="animate-fade-in silk-grain bg-muted-rose">
 
-      {/* Hero Section - Muted Rose Background */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Subtle gold glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brushed-gold/8 rounded-full blur-[100px]" />
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center py-24">
+      {/* Hero Section - Clean Muted Rose Background */}
+      <section className="min-h-[90vh] flex items-center justify-center">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center py-32 sm:py-40">
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Your Personal Sourcing Team
           </p>
