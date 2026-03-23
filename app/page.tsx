@@ -63,13 +63,18 @@ export default function CeremonyVerse() {
       <Navigation activePage={activePage} onNavigate={handleNavigate} />
       
       <main 
-        className={`flex-1 pt-20 transition-opacity duration-150 ${
-          isTransitioning ? "opacity-0" : "opacity-100"
-        }`}
+        className="flex-1 pt-20"
         role="main"
         aria-label="Main content"
       >
-        {renderPage()}
+        <div
+          key={activePage}
+          className={`transition-opacity duration-300 ease-out ${
+            isTransitioning ? "opacity-0" : "opacity-100 animate-fade-in"
+          }`}
+        >
+          {renderPage()}
+        </div>
       </main>
       
       <Footer onNavigate={handleNavigate} />

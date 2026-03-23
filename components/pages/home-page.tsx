@@ -145,6 +145,64 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
+      {/* ── How We Work / The CeremonyVerse Protocol ── */}
+      <section className="py-20 sm:py-28 bg-ivory">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#0A192F] rounded-2xl p-8 sm:p-12 border-2 border-[#C5A059] shadow-[0_8px_40px_rgba(197,160,89,0.25)] relative overflow-hidden">
+            {/* Decorative gold corner accents */}
+            <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-[#C5A059] rounded-tl-2xl" />
+            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-[#C5A059] rounded-br-2xl" />
+            
+            <div className="text-center mb-10">
+              <span className="inline-block px-4 py-1.5 border border-[#C5A059]/50 text-[#C5A059] text-sm font-medium rounded-full mb-6 tracking-wider uppercase">
+                How We Work
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#FDFBF7] text-balance">
+                The CeremonyVerse Protocol
+              </h2>
+            </div>
+            
+            <ul className="space-y-8">
+              <li className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#C5A059]/20 border border-[#C5A059]/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-[#C5A059] font-bold text-lg">1</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#C5A059] text-lg mb-2">Direct Source Management</h3>
+                  <p className="text-[#FDFBF7]/80 leading-relaxed">
+                    All communications with manufacturers in India are handled exclusively by our studio to protect design integrity.
+                  </p>
+                </div>
+              </li>
+              
+              <li className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#C5A059]/20 border border-[#C5A059]/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-[#C5A059] font-bold text-lg">2</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#C5A059] text-lg mb-2">The 3-Point Approval</h3>
+                  <p className="text-[#FDFBF7]/80 leading-relaxed">
+                    Clients receive three mandatory approval gates (Fabric, Embroidery, and Final Pre-Shipment). Once a gate is closed, the design is locked.
+                  </p>
+                </div>
+              </li>
+              
+              <li className="flex items-start gap-4">
+                <div className="w-10 h-10 bg-[#C5A059]/20 border border-[#C5A059]/50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <span className="text-[#C5A059] font-bold text-lg">3</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-[#C5A059] text-lg mb-2">Concierge Boundaries</h3>
+                  <p className="text-[#FDFBF7]/80 leading-relaxed">
+                    To ensure quality, we follow a structured workflow. Consultations are scheduled; we do not utilize 24/7 instant messaging.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <section className="py-24 bg-navy relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
