@@ -11,7 +11,14 @@ import { ContactPage } from "@/components/pages/contact-page"
 import { PrivacyPage } from "@/components/pages/privacy-page"
 import { TermsPage } from "@/components/pages/terms-page"
 
-export type PageType = "home" | "services" | "journey" | "faq" | "contact" | "privacy" | "terms"
+export type PageType =
+  | "home"
+  | "services"
+  | "journey"
+  | "faq"
+  | "contact"
+  | "privacy"
+  | "terms"
 
 export default function CeremonyVerse() {
   const [activePage, setActivePage] = useState<PageType>("home")
@@ -22,10 +29,9 @@ export default function CeremonyVerse() {
     window.scrollTo({ top: 0, behavior: "instant" })
   }
 
-  // Update document title based on active page
   useEffect(() => {
     const titles: Record<PageType, string> = {
-      home: "CeremonyVerse | Premium South Asian Wedding Sourcing Concierge",
+      home: "CeremonyVerse | Indian Wedding Outfit Sourcing",
       services: "Our Services | CeremonyVerse",
       journey: "The Sourcing Journey | CeremonyVerse",
       faq: "FAQ - The Trust Center | CeremonyVerse",
@@ -58,10 +64,10 @@ export default function CeremonyVerse() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-muted-rose">
+    <div className="min-h-screen flex flex-col bg-[var(--cv-bg)]">
       <Navigation activePage={activePage} onNavigate={handleNavigate} />
-      
-      <main 
+
+      <main
         className="flex-1 pt-24"
         role="main"
         aria-label="Main content"
@@ -70,7 +76,7 @@ export default function CeremonyVerse() {
           {renderPage()}
         </div>
       </main>
-      
+
       <Footer onNavigate={handleNavigate} />
     </div>
   )
