@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 /* =========================
-   CLEAN DESIGN SYSTEM
+   DESIGN SYSTEM
    ========================= */
 
 :root {
-  /* Background system */
+  /* Backgrounds */
   --cv-bg: #f8f6f2;        /* page background (ivory) */
   --cv-section: #ffffff;   /* sections */
-  --cv-card: #ffffff;      /* cards */
+  --cv-card: #ffffff;
 
   /* Text */
   --cv-foreground: #2f2f2f;
@@ -24,30 +24,29 @@
   /* Borders */
   --cv-border: #e6e0d8;
 
-  /* Optional soft tint (VERY limited use only) */
+  /* Optional subtle tone */
   --cv-soft: #f4ede7;
 }
 
 /* =========================
-   BASE RESET (CRITICAL FIX)
+   BASE RESET
    ========================= */
 
 @layer base {
   html {
-    background-color: var(--cv-bg);   /* FIXED (no more pink) */
+    background-color: var(--cv-bg);
   }
 
   body {
-    background-color: var(--cv-bg);   /* FIXED */
+    background-color: var(--cv-bg);
     color: var(--cv-foreground);
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif; /* KEEP as requested */
     font-size: 18px;
     line-height: 1.7;
   }
 
   * {
     border-color: var(--cv-border);
-    font-family: 'Cormorant Garamond', Georgia, serif;
   }
 
   /* Headings */
@@ -80,15 +79,13 @@
 }
 
 /* =========================
-   STRUCTURE RULES
+   STRUCTURE
    ========================= */
 
-/* Section wrapper */
 .section {
   background-color: var(--cv-section);
 }
 
-/* Card style (IMPORTANT FIX) */
 .card {
   background: var(--cv-card);
   border: 1px solid var(--cv-border);
@@ -118,8 +115,8 @@
    ========================= */
 
 .glass-header {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--cv-border);
 }
 
@@ -129,4 +126,22 @@
 
 .bg-soft {
   background-color: var(--cv-soft);
+}
+
+/* =========================
+   REMOVE OLD DECORATIVE STYLES
+   ========================= */
+
+/* Disable any leftover pink/gradient effects */
+.bg-muted-rose,
+.bg-rose,
+.bg-pink,
+.bg-champagne {
+  background: none !important;
+}
+
+/* Disable decorative radial backgrounds if used */
+.bg-radial-rose,
+.silk-grain {
+  background: none !important;
 }
