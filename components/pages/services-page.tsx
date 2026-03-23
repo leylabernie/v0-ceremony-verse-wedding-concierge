@@ -3,9 +3,10 @@
 import { useState } from "react"
 import { cn } from "@/lib/utils"
 import { ArrowRight } from "lucide-react"
+import type { PageType } from "@/app/page"
 
 interface ServicesPageProps {
-  onNavigate: (page: "contact") => void
+  onNavigate: (page: PageType) => void
 }
 
 const services = [
@@ -71,32 +72,53 @@ const services = [
   },
 ]
 
+// Floral separator component
+function FloralSeparator() {
+  return (
+    <div className="floral-separator my-8">
+      <svg className="leaf" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path 
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5-2.5 2-5.5 2-8.5 0-4-2-7.5-2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.3"
+        />
+        <path 
+          d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.5-2.5-2-5.5-2-8.5 0-4 2-7.5 2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.2"
+        />
+      </svg>
+    </div>
+  )
+}
+
 export function ServicesPage({ onNavigate }: ServicesPageProps) {
   const [activeTab, setActiveTab] = useState("groomsmen")
   const activeService = services.find((s) => s.id === activeTab)!
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in silk-grain bg-muted-rose">
 
       {/* Hero */}
-      <section className="bg-midnight-navy py-24 sm:py-32 relative">
-        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+      <section className="py-24 sm:py-32 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Services
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy mb-6 tracking-wide">
             What We Source
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
+          <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
             From coordinated groomsmen parties to authentic heritage silks, we handle every detail
             of your wedding sourcing with meticulous care.
           </p>
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* Service Tabs */}
-      <section className="py-28 sm:py-36 bg-radial-rose">
+      <section className="py-20 sm:py-28">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
           {/* Tab Navigation */}
@@ -108,7 +130,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 className={cn(
                   "px-6 py-3 font-medium text-sm transition-all duration-300 rounded-full border",
                   activeTab === service.id
-                    ? "bg-midnight-navy text-champagne border-midnight-navy"
+                    ? "bg-brushed-gold/15 text-midnight-navy border-brushed-gold"
                     : "bg-champagne text-midnight-navy/70 border-brushed-gold/30 hover:border-brushed-gold hover:text-midnight-navy"
                 )}
               >
@@ -120,7 +142,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* Active Service Card */}
           <div
             key={activeService.id}
-            className="animate-fade-in bento-card bg-champagne p-10 sm:p-14"
+            className="animate-fade-in bg-champagne rounded-2xl border border-brushed-gold/30 p-10 sm:p-14"
           >
             <div className="grid lg:grid-cols-2 gap-12">
               {/* Left: Title & Description */}
@@ -136,8 +158,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
                 </p>
                 <button
                   onClick={() => onNavigate("contact")}
-                  className="group px-10 py-3.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full text-sm
-                    hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
+                  className="group px-10 py-3.5 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full text-sm
+                    hover:bg-brushed-gold/10 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
                     transition-all duration-300 inline-flex items-center gap-3"
                 >
                   Inquire About This Service
@@ -164,19 +186,21 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* CTA */}
-      <section className="py-28 sm:py-36 bg-midnight-navy">
+      <section className="py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
             Not Sure Where to Start?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8]">
+          <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8]">
             Book a complimentary consultation and let us guide you through the sourcing process.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
-              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Book Free Consultation

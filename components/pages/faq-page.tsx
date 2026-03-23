@@ -1,9 +1,10 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import type { PageType } from "@/app/page"
 
 interface FAQPageProps {
-  onNavigate: (page: "contact") => void
+  onNavigate: (page: PageType) => void
 }
 
 const faqSections = [
@@ -60,35 +61,56 @@ const faqSections = [
   }
 ]
 
+// Floral separator component
+function FloralSeparator() {
+  return (
+    <div className="floral-separator my-8">
+      <svg className="leaf" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path 
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5-2.5 2-5.5 2-8.5 0-4-2-7.5-2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.3"
+        />
+        <path 
+          d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.5-2.5-2-5.5-2-8.5 0-4 2-7.5 2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.2"
+        />
+      </svg>
+    </div>
+  )
+}
+
 export function FAQPage({ onNavigate }: FAQPageProps) {
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in silk-grain bg-muted-rose">
 
       {/* Hero */}
-      <section className="bg-midnight-navy py-28 sm:py-36 relative">
-        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+      <section className="py-24 sm:py-32 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-10">
             The Trust Center
           </p>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
             Your Questions, Answered
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
+          <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
             We know you have concerns about online sourcing. Scams, sizing disasters, and broken
             promises are real. Here's how we address them.
           </p>
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* FAQ Bento Grid Sections */}
       {faqSections.map((section, sectionIdx) => (
         <section 
           key={sectionIdx} 
-          className={`py-28 sm:py-36 ${sectionIdx % 2 === 0 ? 'bg-radial-rose' : 'bg-champagne'}`}
+          className="py-20 sm:py-28"
         >
           <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-            {/* Section Header with Visual Break */}
+            {/* Section Header */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
               <div className="lg:max-w-xl">
                 <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-4">
@@ -98,20 +120,6 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
                   {section.category}
                 </h2>
               </div>
-              
-              {/* Visual Placeholder - Luxury Image Area */}
-              {sectionIdx === 2 && (
-                <div className="lg:w-80 h-48 lg:h-40 rounded-2xl bg-gradient-to-br from-brushed-gold/10 to-muted-rose border border-brushed-gold/30 flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <p className="font-serif text-lg text-midnight-navy/40 italic">
-                      Rose Gold Jewelry Detail
-                    </p>
-                    <p className="text-xs text-midnight-navy/30 mt-1">
-                      Hero Image Placeholder
-                    </p>
-                  </div>
-                </div>
-              )}
             </div>
 
             {/* Bento Grid of FAQ Cards */}
@@ -119,23 +127,26 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
               {section.items.map((faq, faqIdx) => (
                 <div
                   key={faqIdx}
-                  className="bento-card p-8 sm:p-10 flex flex-col min-h-[320px]"
+                  className="bg-champagne rounded-2xl border border-brushed-gold/30 p-8 sm:p-10 flex flex-col min-h-[320px]"
                 >
                   <h3 className="font-serif text-xl sm:text-2xl font-semibold text-midnight-navy mb-6 tracking-wide leading-snug">
                     {faq.question}
                   </h3>
-                  <p className="text-midnight-navy/55 leading-[1.8] font-sans text-[0.9rem] flex-1">
+                  <p className="text-midnight-navy/60 leading-[1.8] font-sans text-[0.9rem] flex-1">
                     {faq.answer}
                   </p>
                 </div>
               ))}
             </div>
           </div>
+          {sectionIdx < faqSections.length - 1 && <FloralSeparator />}
         </section>
       ))}
 
+      <FloralSeparator />
+
       {/* Timeline & Process Section */}
-      <section className="py-28 sm:py-36 bg-radial-rose">
+      <section className="py-20 sm:py-28">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-20">
             <p className="text-brushed-gold text-sm font-medium tracking-[0.25em] uppercase mb-4">
@@ -144,17 +155,17 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
             <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy tracking-[0.04em] mb-6">
               Timeline & Process
             </h2>
-            <p className="text-midnight-navy/50 text-lg max-w-2xl mx-auto font-sans">
+            <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans">
               Production timelines and what to expect throughout your sourcing journey.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bento-card p-10 flex flex-col">
+            <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 flex flex-col">
               <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
                 When should I start?
               </h3>
-              <div className="text-midnight-navy/55 leading-[1.8] font-sans space-y-4 flex-1">
+              <div className="text-midnight-navy/60 leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Ideal timeline is 6-8 months before your event.</p>
                 <ul className="premium-list pl-4">
                   <li>Consultation and design: 2-3 weeks</li>
@@ -166,11 +177,11 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
               </div>
             </div>
 
-            <div className="bento-card p-10 flex flex-col">
+            <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-10 flex flex-col">
               <h3 className="font-serif text-2xl font-semibold text-midnight-navy mb-6 tracking-wide">
                 How will I track my order?
               </h3>
-              <div className="text-midnight-navy/55 leading-[1.8] font-sans space-y-4 flex-1">
+              <div className="text-midnight-navy/60 leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Complete visibility throughout production:</p>
                 <ul className="premium-list pl-4">
                   <li>Weekly email updates with photos</li>
@@ -185,19 +196,21 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* CTA */}
-      <section className="py-28 sm:py-36 bg-midnight-navy">
+      <section className="py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
             Still Have Questions?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8] max-w-xl mx-auto">
+          <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8] max-w-xl mx-auto">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
-              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Ask Us Directly

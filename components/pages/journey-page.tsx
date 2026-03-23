@@ -1,9 +1,10 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import type { PageType } from "@/app/page"
 
 interface JourneyPageProps {
-  onNavigate: (page: "contact") => void
+  onNavigate: (page: PageType) => void
 }
 
 const journeySteps = [
@@ -87,40 +88,61 @@ const journeySteps = [
   },
 ]
 
+// Floral separator component
+function FloralSeparator() {
+  return (
+    <div className="floral-separator my-8">
+      <svg className="leaf" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path 
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5-2.5 2-5.5 2-8.5 0-4-2-7.5-2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.3"
+        />
+        <path 
+          d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.5-2.5-2-5.5-2-8.5 0-4 2-7.5 2-11.5z" 
+          fill="#C5A059" 
+          fillOpacity="0.2"
+        />
+      </svg>
+    </div>
+  )
+}
+
 export function JourneyPage({ onNavigate }: JourneyPageProps) {
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in silk-grain bg-muted-rose">
 
       {/* Hero */}
-      <section className="bg-midnight-navy py-24 sm:py-32 relative">
-        <div className="absolute top-0 left-0 right-0 h-px bg-brushed-gold/40" />
+      <section className="py-24 sm:py-32 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-8">
             Our Process
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-champagne mb-6 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-midnight-navy mb-6 tracking-wide">
             The Sourcing Journey
           </h1>
-          <p className="text-champagne/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
+          <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-relaxed">
             From your first consultation to delivery at your door — our meticulous six-step process
             ensures quality, authenticity, and your complete satisfaction.
           </p>
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* Timeline */}
-      <section className="py-28 sm:py-36 bg-radial-rose">
+      <section className="py-20 sm:py-28">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="space-y-12">
-            {journeySteps.map((step, index) => (
+          <div className="space-y-8">
+            {journeySteps.map((step) => (
               <div
                 key={step.number}
-                className="bento-card p-8 sm:p-10"
+                className="bg-champagne rounded-2xl border border-brushed-gold/30 p-8 sm:p-10"
               >
                 <div className="flex flex-col sm:flex-row sm:items-start gap-6">
                   {/* Step Number */}
                   <div className="flex-shrink-0">
-                    <span className="font-serif text-5xl sm:text-6xl font-light text-brushed-gold/30">
+                    <span className="font-serif text-5xl sm:text-6xl font-light text-brushed-gold/40">
                       {step.number}
                     </span>
                   </div>
@@ -156,20 +178,22 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
         </div>
       </section>
 
+      <FloralSeparator />
+
       {/* CTA */}
-      <section className="py-28 sm:py-36 bg-midnight-navy">
+      <section className="py-24 sm:py-32">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-8 tracking-[0.04em]">
+          <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-8 tracking-[0.04em]">
             Ready to Begin Your Journey?
           </h2>
-          <p className="text-champagne/50 text-lg mb-14 font-sans leading-[1.8]">
+          <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8]">
             Every great wedding outfit starts with a conversation. Let us understand your vision
             and show you exactly how we bring it to life.
           </p>
           <button
             onClick={() => onNavigate("contact")}
-            className="group px-10 py-4 bg-transparent text-champagne border border-champagne font-medium rounded-full
-              hover:border-brushed-gold hover:text-brushed-gold hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
+              hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Start Your Journey Today

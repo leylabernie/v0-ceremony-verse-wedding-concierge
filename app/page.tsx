@@ -8,8 +8,10 @@ import { ServicesPage } from "@/components/pages/services-page"
 import { JourneyPage } from "@/components/pages/journey-page"
 import { FAQPage } from "@/components/pages/faq-page"
 import { ContactPage } from "@/components/pages/contact-page"
+import { PrivacyPage } from "@/components/pages/privacy-page"
+import { TermsPage } from "@/components/pages/terms-page"
 
-type PageType = "home" | "services" | "journey" | "faq" | "contact"
+export type PageType = "home" | "services" | "journey" | "faq" | "contact" | "privacy" | "terms"
 
 export default function CeremonyVerse() {
   const [activePage, setActivePage] = useState<PageType>("home")
@@ -28,6 +30,8 @@ export default function CeremonyVerse() {
       journey: "The Sourcing Journey | CeremonyVerse",
       faq: "FAQ - The Trust Center | CeremonyVerse",
       contact: "Contact Us | CeremonyVerse",
+      privacy: "Privacy Policy | CeremonyVerse",
+      terms: "Terms of Service | CeremonyVerse",
     }
     document.title = titles[activePage]
   }, [activePage])
@@ -44,6 +48,10 @@ export default function CeremonyVerse() {
         return <FAQPage onNavigate={handleNavigate} />
       case "contact":
         return <ContactPage />
+      case "privacy":
+        return <PrivacyPage onNavigate={handleNavigate} />
+      case "terms":
+        return <TermsPage onNavigate={handleNavigate} />
       default:
         return <HomePage onNavigate={handleNavigate} />
     }

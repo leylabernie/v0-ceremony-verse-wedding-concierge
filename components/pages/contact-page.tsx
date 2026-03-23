@@ -102,7 +102,7 @@ export function ContactPage() {
 
   if (isSubmitted) {
     return (
-      <div className="animate-fade-in min-h-screen flex items-center justify-center bg-radial-rose py-28">
+      <div className="animate-fade-in min-h-screen flex items-center justify-center silk-grain bg-muted-rose py-28">
         <div className="max-w-lg mx-auto px-6 text-center">
           <div className="w-20 h-20 border-2 border-brushed-gold rounded-full flex items-center justify-center mx-auto mb-8">
             <span className="font-serif text-4xl text-brushed-gold">✓</span>
@@ -114,7 +114,7 @@ export function ContactPage() {
             Thank you for your interest in CeremonyVerse. Our sourcing team will review your 
             requirements and reach out within 24-48 hours to schedule your consultation.
           </p>
-          <div className="bento-card p-8 text-left">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-8 text-left">
             <h3 className="font-serif text-xl font-semibold text-midnight-navy mb-6 tracking-wide">
               What happens next
             </h3>
@@ -140,17 +140,17 @@ export function ContactPage() {
   }
 
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in silk-grain bg-muted-rose">
       {/* Hero */}
-      <section className="bg-midnight-navy py-20 sm:py-24">
+      <section className="py-20 sm:py-24">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           <p className="text-brushed-gold text-sm font-medium tracking-[0.2em] uppercase mb-6">
             Start Your Journey
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-champagne mb-4 tracking-wide">
+          <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-4 tracking-wide">
             Consultation Request
           </h1>
-          <p className="text-champagne/60 text-lg font-sans leading-relaxed">
+          <p className="text-midnight-navy/60 text-lg font-sans leading-relaxed">
             Tell us about your wedding vision. This helps us prepare a tailored consultation 
             and sourcing proposal for you.
           </p>
@@ -158,7 +158,7 @@ export function ContactPage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-20 sm:py-28 bg-radial-rose">
+      <section className="pb-28 sm:pb-36">
         <div className="max-w-2xl mx-auto px-6 sm:px-8 lg:px-12">
           {/* Progress Steps */}
           <div className="mb-12">
@@ -199,7 +199,7 @@ export function ContactPage() {
           </div>
 
           {/* Form Card */}
-          <div className="bento-card p-8 sm:p-12">
+          <div className="bg-champagne rounded-2xl border border-brushed-gold/30 p-8 sm:p-12">
             {/* Step 1 */}
             {currentStep === 1 && (
               <div className="animate-fade-in">
@@ -290,7 +290,7 @@ export function ContactPage() {
             {/* Step 2 */}
             {currentStep === 2 && (
               <div className="animate-fade-in">
-                <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h2 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   How Can We Help?
                 </h2>
                 <p className="text-midnight-navy/60 mb-8 font-sans">
@@ -334,7 +334,7 @@ export function ContactPage() {
             {/* Step 3 */}
             {currentStep === 3 && (
               <div className="animate-fade-in">
-                <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h2 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Estimated Budget
                 </h2>
                 <p className="text-midnight-navy/60 mb-8 font-sans">
@@ -376,7 +376,7 @@ export function ContactPage() {
             {/* Step 4 */}
             {currentStep === 4 && (
               <div className="animate-fade-in">
-                <h2 className="font-garamond text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
+                <h2 className="font-serif text-2xl font-semibold text-midnight-navy mb-4 tracking-wide">
                   Additional Notes
                 </h2>
                 <p className="text-midnight-navy/60 mb-8 font-sans">
@@ -417,7 +417,7 @@ export function ContactPage() {
                   className={cn(
                     "px-8 py-3 font-medium rounded-full transition-all duration-200 flex items-center gap-3 border",
                     canProceed()
-                      ? "bg-transparent text-midnight-navy border-midnight-navy hover:border-brushed-gold hover:bg-brushed-gold/5"
+                      ? "bg-transparent text-midnight-navy border-brushed-gold hover:bg-brushed-gold/10"
                       : "bg-brushed-gold/10 text-midnight-navy/40 border-brushed-gold/20 cursor-not-allowed"
                   )}
                 >
@@ -428,8 +428,8 @@ export function ContactPage() {
                 <button
                   type="button"
                   onClick={handleSubmit}
-                  className="px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
-                    hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
+                  className="px-8 py-3 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
+                    hover:bg-brushed-gold/10 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]
                     transition-all duration-200 flex items-center gap-3"
                 >
                   Request Consultation

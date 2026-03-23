@@ -3,8 +3,7 @@
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
-
-type PageType = "home" | "services" | "journey" | "faq" | "contact"
+import type { PageType } from "@/app/page"
 
 interface NavigationProps {
   activePage: PageType
@@ -69,9 +68,9 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           <div className="hidden md:block flex-shrink-0">
             <button
               onClick={() => handleNavClick("contact")}
-              className="px-6 py-2.5 bg-transparent text-midnight-navy border border-midnight-navy font-medium text-sm rounded-full
+              className="px-6 py-2.5 bg-transparent text-midnight-navy border border-brushed-gold font-medium text-sm rounded-full
                 transition-all duration-300
-                hover:border-brushed-gold hover:bg-brushed-gold/5 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]"
+                hover:bg-brushed-gold/10 hover:shadow-[0_0_24px_rgba(197,160,89,0.15)]"
             >
               Book Consultation
             </button>
@@ -109,8 +108,8 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               ))}
               <button
                 onClick={() => handleNavClick("contact")}
-                className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-medium rounded-full
-                  hover:border-brushed-gold hover:bg-brushed-gold/5 transition-all duration-300 text-center"
+                className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
+                  hover:bg-brushed-gold/10 transition-all duration-300 text-center"
               >
                 Book Consultation
               </button>
