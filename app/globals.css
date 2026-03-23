@@ -1,271 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;600&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
-/* CeremonyVerse Ethereal Boutique - Architectural Reset */
+/* =========================
+   CLEAN DESIGN SYSTEM
+   ========================= */
+
 :root {
-  --cv-bg: #f8f6f2;          /* soft ivory */
-  --cv-foreground: #2f2f2f;  /* charcoal text */
-  --cv-muted: #6b6b6b;       /* secondary text */
+  /* Background system */
+  --cv-bg: #f8f6f2;        /* page background (ivory) */
+  --cv-section: #ffffff;   /* sections */
+  --cv-card: #ffffff;      /* cards */
 
-  --cv-accent: #3f6d5b;      /* sage green (primary brand color) */
+  /* Text */
+  --cv-foreground: #2f2f2f;
+  --cv-muted: #6b6b6b;
 
-  --cv-card: #ffffff;        /* pure white cards */
-  --cv-border: #e6e0d8;      /* subtle borders */
+  /* Accent */
+  --cv-accent: #3f6d5b;    /* sage green */
+
+  /* Borders */
+  --cv-border: #e6e0d8;
+
+  /* Optional soft tint (VERY limited use only) */
+  --cv-soft: #f4ede7;
 }
 
-@theme inline {
-  --font-sans: 'Cormorant Garamond', Georgia, serif;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-mono: 'Cormorant Garamond', Georgia, serif;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  
-  /* Brand Colors */
-  --color-muted-rose: var(--muted-rose);
-  --color-champagne: var(--champagne);
-  --color-midnight-navy: var(--midnight-navy);
-  --color-brushed-gold: var(--brushed-gold);
-}
+/* =========================
+   BASE RESET (CRITICAL FIX)
+   ========================= */
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-  }
-
-  /* CRITICAL: Hard-set Muted Rose as the global background — MUST be first thing browser sees */
   html {
-    background-color: #F4E0E0;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    background-color: var(--cv-bg);   /* FIXED (no more pink) */
   }
 
   body {
-    background-color: #F4E0E0;
-    color: var(--midnight-navy);
+    background-color: var(--cv-bg);   /* FIXED */
+    color: var(--cv-foreground);
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 18px;
     line-height: 1.7;
   }
 
-  /* ALL headings use Cormorant Garamond with larger sizes */
-  h1 {
+  * {
+    border-color: var(--cv-border);
     font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Headings */
+  h1 {
     font-weight: 600;
     letter-spacing: 0.05em;
-    color: var(--midnight-navy);
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
   }
 
   h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.05em;
-    color: var(--midnight-navy);
     font-size: 2.75rem;
     margin-bottom: 1.25rem;
   }
 
   h3 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     letter-spacing: 0.04em;
-    color: var(--midnight-navy);
     font-size: 1.75rem;
     margin-bottom: 1rem;
-  }
-
-  h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    color: var(--midnight-navy);
-  }
-
-  /* ALL text elements use Cormorant Garamond */
-  p, li, span, label, input, textarea, select, button, a, div {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    color: var(--midnight-navy);
   }
 
   p {
     font-size: 1.125rem;
     line-height: 1.8;
+    color: var(--cv-muted);
   }
 }
 
-/* Radial gradient background for depth */
-.bg-radial-rose {
-  background: radial-gradient(ellipse at center, #FAF0F0 0%, #F4E0E0 60%, #EDD4D4 100%);
+/* =========================
+   STRUCTURE RULES
+   ========================= */
+
+/* Section wrapper */
+.section {
+  background-color: var(--cv-section);
 }
 
-/* Ghost button style */
-.btn-ghost {
-  background: transparent;
-  color: var(--midnight-navy);
-  border: 1px solid var(--midnight-navy);
-  font-weight: 500;
-  border-radius: 9999px;
-  padding: 0.75rem 2rem;
-  transition: all 0.3s ease;
-}
-
-.btn-ghost:hover {
-  background: rgba(197, 160, 89, 0.08);
-  border-color: var(--brushed-gold);
-  box-shadow: 0 0 24px rgba(197, 160, 89, 0.15);
-}
-
-/* Premium list styling - no bullets */
-.premium-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.premium-list li {
-  position: relative;
-  padding-left: 1.5rem;
-  line-height: 1.8;
-  margin-bottom: 0.75rem;
-}
-
-.premium-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.75em;
-  width: 12px;
-  height: 1px;
-  background: var(--brushed-gold);
-}
-
-/* Page transition animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-/* Elegant Boutique Button */
-.btn-elegant {
-  background-color: var(--champagne);
-  color: var(--midnight-navy);
-  border: 1px solid var(--brushed-gold);
-  font-weight: 500;
-  border-radius: 9999px;
-  padding: 0.75rem 2rem;
-  transition: all 0.3s ease;
-}
-
-.btn-elegant:hover {
-  background-color: var(--muted-rose);
-  box-shadow: 0 8px 32px rgba(197, 160, 89, 0.2);
-}
-
-/* Glassmorphism Header */
-.glass-header {
-  background: rgba(253, 251, 247, 0.75);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--brushed-gold);
-}
-
-/* Silk Grain Texture Overlay */
-.silk-grain {
-  position: relative;
-}
-
-.silk-grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.015;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Floral Separator */
-.floral-separator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-
-.floral-separator::before,
-.floral-separator::after {
-  content: "";
-  flex: 1;
-  max-width: 120px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--brushed-gold), transparent);
-}
-
-.floral-separator .leaf {
-  width: 24px;
-  height: 24px;
-  opacity: 0.6;
-}
-
-/* Pill Button */
-.btn-pill {
-  background: transparent;
-  color: var(--midnight-navy);
-  border: 1px solid var(--brushed-gold);
-  font-weight: 500;
-  border-radius: 9999px;
-  padding: 0.875rem 2.5rem;
-  transition: all 0.3s ease;
-}
-
-.btn-pill:hover {
-  background: rgba(197, 160, 89, 0.08);
-  box-shadow: 0 0 24px rgba(197, 160, 89, 0.15);
-}
-
-/* Soft Bento Card */
-.bento-card {
-  background: var(--champagne);
+/* Card style (IMPORTANT FIX) */
+.card {
+  background: var(--cv-card);
+  border: 1px solid var(--cv-border);
   border-radius: 1rem;
-  box-shadow: 0 8px 40px rgba(10, 25, 47, 0.06);
-  border: 1px solid rgba(197, 160, 89, 0.25);
+  padding: 1.5rem;
 }
 
-.bento-card:hover {
-  box-shadow: 0 16px 56px rgba(10, 25, 47, 0.1);
+/* =========================
+   BUTTONS
+   ========================= */
+
+.btn-primary {
+  background: var(--cv-accent);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--cv-border);
+}
+
+/* =========================
+   OPTIONAL SOFT SECTION
+   ========================= */
+
+.bg-soft {
+  background-color: var(--cv-soft);
 }
