@@ -48,65 +48,51 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-<div className="mt-12 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {/* CARDS */}
+          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
 
-{/* CARDS */}
-<div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <Link href="/shop-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Shop From India Process
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Step-by-step guided sourcing and video shopping experience.
+              </p>
+            </Link>
 
-  <Link
-    href="/shop-from-india"
-    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-  >
-    <h3 className="text-lg font-semibold mb-2">
-      Shop From India Process
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Step-by-step guided sourcing and video shopping experience.
-    </p>
-  </Link>
+            <Link href="/buy-indian-wedding-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Buy Directly from India
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Learn how to access trusted sources without retail markups.
+              </p>
+            </Link>
 
-  <Link
-    href="/buy-indian-wedding-outfits-from-india"
-    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-  >
-    <h3 className="text-lg font-semibold mb-2">
-      Buy Directly from India
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Learn how to access trusted sources without retail markups.
-    </p>
-  </Link>
+            <Link href="/buy-bridal-lehenga-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Bridal Lehenga Guide
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Everything you need to buy your bridal lehenga from India.
+              </p>
+            </Link>
 
-  <Link
-    href="/buy-bridal-lehenga-from-india-usa"
-    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-  >
-    <h3 className="text-lg font-semibold mb-2">
-      Bridal Lehenga Guide
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Everything you need to buy your bridal lehenga from India.
-    </p>
-  </Link>
+            <Link href="/buy-sherwani-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Groom Sherwani Guide
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                A complete guide to sourcing groom outfits with proper fit and style.
+              </p>
+            </Link>
 
-  <Link
-    href="/buy-sherwani-from-india-usa"
-    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-  >
-    <h3 className="text-lg font-semibold mb-2">
-      Groom Sherwani Guide
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      A complete guide to sourcing groom outfits with proper fit and style.
-    </p>
-  </Link>
-
-</div>
+          </div>
 
         </div>
       </section>
 
-      {/* TRUST SECTION */}
+      {/* TRUST */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-5xl mx-auto">
 
@@ -121,7 +107,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Trusted Designers
               </h3>
               <p className="text-[var(--cv-muted)]">
-                We work with reliable designers and skilled makers, not unknown vendors.
+                We work with reliable designers and skilled makers.
               </p>
             </div>
 
@@ -130,7 +116,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Direct Access
               </h3>
               <p className="text-[var(--cv-muted)]">
-                Avoid retail markups by accessing the same sources directly through guided support.
+                Avoid retail markups with direct sourcing.
               </p>
             </div>
 
@@ -139,7 +125,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 Verified Quality
               </h3>
               <p className="text-[var(--cv-muted)]">
-                Every item is reviewed before delivery so you know exactly what you’re getting.
+                Every item is reviewed before delivery.
               </p>
             </div>
 
