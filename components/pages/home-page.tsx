@@ -1,19 +1,10 @@
 "use client"
 
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
 import type { PageType } from "@/app/page"
+import Link from "next/link"
 
 interface HomePageProps {
   onNavigate: (page: PageType) => void
-}
-
-function Divider() {
-  return (
-    <div className="flex justify-center my-16">
-      <div className="w-24 h-px bg-[var(--cv-border)]"></div>
-    </div>
-  )
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
@@ -21,208 +12,119 @@ export function HomePage({ onNavigate }: HomePageProps) {
     <div className="bg-[var(--cv-bg)]">
 
       {/* HERO */}
-      <section className="min-h-[85vh] flex items-center justify-center text-center px-6">
-        <div className="max-w-4xl py-24">
-          <p className="text-sm tracking-[0.2em] uppercase mb-6 text-[var(--cv-accent)]">
-            Your Personal Sourcing Team
+      <section className="py-28 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+
+          <p className="tracking-wide text-sm text-[var(--cv-muted)] mb-4">
+            YOUR PERSONAL SOURCING TEAM
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-semibold mb-6">
+          <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-6">
             Skip the Flights.
             <br />
             Skip the Scams.
           </h1>
 
-          <p className="text-lg text-[var(--cv-muted)] max-w-2xl mx-auto mb-10">
-            Source wedding outfits directly from trusted manufacturers in India.
-            No travel, no guesswork, no risk.
+          <p className="text-[var(--cv-muted)] text-lg mb-10">
+            Shop Indian wedding outfits directly from trusted designers and skilled makers — guided through live video, without travel or uncertainty.
           </p>
 
+          {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
+
             <button
               onClick={() => onNavigate("contact")}
-              className="btn-primary flex items-center gap-2 justify-center"
+              className="btn-primary"
             >
               Book Consultation
-              <ArrowRight className="w-4 h-4" />
             </button>
 
             <Link
-  href="/shop-from-india"
-  className="border border-[var(--cv-border)] px-6 py-3 rounded-full inline-block"
->
-  How It Works
-</Link>
+              href="/shop-from-india"
+              className="border border-[var(--cv-border)] px-6 py-3 rounded-full inline-block"
+            >
+              How It Works
+            </Link>
+
           </div>
-          <p className="mt-6 text-sm text-[var(--cv-muted)] text-center">
-  <Link href="/shop-from-india" className="underline">
-    View our sourcing process
-  </Link>
 
-  {" • "}
-
-  <Link href="/buy-indian-wedding-outfits-from-india" className="underline">
-    Learn how to buy directly from India
-  </Link>
-</p>
+          {/* INTERNAL LINKS (SEO + ACCESS) */}
           <p className="mt-6 text-sm text-[var(--cv-muted)] text-center">
-  Want to understand the process in detail?{" "}
-  <Link href="/buy-indian-wedding-outfits-from-india" className="underline">
-    Learn how to buy Indian wedding outfits from India →
-  </Link>
-</p>
+            <Link href="/shop-from-india" className="underline">
+              View our sourcing process
+            </Link>
+
+            {" • "}
+
+            <Link href="/buy-indian-wedding-outfits-from-india" className="underline">
+              Learn how to buy directly from India
+            </Link>
+          </p>
+
         </div>
       </section>
 
-      <Divider />
-
-      {/* TRUST */}
-      <section className="py-20 text-center px-6">
+      {/* TRUST SECTION */}
+      <section className="py-20 px-6 text-center">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl font-semibold mb-10">
+
+          <h2 className="text-3xl font-semibold mb-12">
             Why CeremonyVerse Works
           </h2>
 
           <div className="grid md:grid-cols-3 gap-10">
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Verified Manufacturers</h3>
-              <p className="text-[var(--cv-muted)]">
-                We only work with trusted and proven production partners.
-              </p>
-            </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">Direct Sourcing</h3>
+              <h3 className="font-semibold mb-2">
+                Trusted Designers
+              </h3>
               <p className="text-[var(--cv-muted)]">
-                No middlemen. Better pricing and full transparency.
+                We work with reliable designers and skilled makers, not unknown vendors.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-3">Final Quality Check</h3>
-              <p className="text-[var(--cv-muted)]">
-                Every item is checked before shipping to you.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Divider />
-
-      {/* SERVICES (SEO OPTIMIZED) */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl text-center font-semibold mb-14">
-            What We Source
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-
-            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Bridal Lehengas from India
+              <h3 className="font-semibold mb-2">
+                Direct Access
               </h3>
               <p className="text-[var(--cv-muted)]">
-                Authentic handcrafted bridal lehengas sourced directly from trusted manufacturers, with full quality audit and secure shipping to the US.
+                Avoid retail markups by accessing the same sources directly through guided support.
               </p>
             </div>
 
-            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Groom Sherwanis & Wedding Attire
+            <div>
+              <h3 className="font-semibold mb-2">
+                Verified Quality
               </h3>
               <p className="text-[var(--cv-muted)]">
-                Custom sherwanis and groom outfits created with authentic craftsmanship, verified through quality checks before delivery.
+                Every item is reviewed before delivery so you know exactly what you’re getting.
               </p>
             </div>
 
-            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Bridesmaid & Family Outfits
-              </h3>
-              <p className="text-[var(--cv-muted)]">
-                Coordinated outfits ensuring consistent design, sizing accuracy, and reliable shipping from India to the US.
-              </p>
-            </div>
-
-            <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 shadow-sm">
-              <h3 className="text-xl font-semibold mb-3">
-                Accessories & Wedding Details
-              </h3>
-              <p className="text-[var(--cv-muted)]">
-                Dupattas, jewelry, and finishing pieces sourced with quality inspection and delivered safely to complete your look.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <Divider />
-
-      {/* VIDEO SHOPPING (KILLER FEATURE) */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-
-          <div>
-            <p className="text-sm tracking-[0.2em] uppercase mb-4 text-[var(--cv-accent)]">
-              Live Video Sourcing
-            </p>
-
-            <h2 className="text-4xl font-semibold mb-6">
-              See Exactly What You're Buying — In Real Time
-            </h2>
-
-            <p className="text-[var(--cv-muted)] mb-6">
-              No guessing. No surprises. No scams.
-            </p>
-
-            <p className="text-[var(--cv-muted)] mb-6">
-              Join live video calls directly from boutiques in India and inspect fabrics,
-              embroidery, and colors before anything is made.
-            </p>
-
-            <ul className="space-y-3 text-[var(--cv-muted)]">
-              <li>• Inspect fabric and texture live</li>
-              <li>• Verify embroidery quality</li>
-              <li>• Confirm real colors</li>
-              <li>• Guided sourcing in real-time</li>
-            </ul>
-          </div>
-
-          <div className="bg-[var(--cv-bg)] border border-[var(--cv-border)] rounded-2xl p-10 text-center">
-            <div className="aspect-video bg-white rounded-xl flex items-center justify-center text-sm text-[var(--cv-muted)]">
-              Video Call Experience
-            </div>
-
-            <p className="mt-4 text-sm text-[var(--cv-muted)]">
-              Real boutiques. Real inventory.
-            </p>
           </div>
 
         </div>
       </section>
-
-      <Divider />
 
       {/* CTA */}
       <section className="py-20 text-center px-6">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-4xl font-semibold mb-6">
-            August 2026 Booking Open
+
+          <h2 className="text-3xl font-semibold mb-6">
+            Start Your Sourcing Journey
           </h2>
 
-          <p className="text-[var(--cv-muted)] mb-10">
-            Limited clients accepted to ensure quality and attention.
+          <p className="text-[var(--cv-muted)] mb-8">
+            From outfits to accessories and wedding details — everything handled with clarity and guidance.
           </p>
 
           <button
             onClick={() => onNavigate("contact")}
             className="btn-primary"
           >
-            Reserve Your Spot
+            Book Consultation
           </button>
+
         </div>
       </section>
 
