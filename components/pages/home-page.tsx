@@ -60,7 +60,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Shop From India Process
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 Step-by-step guided sourcing and video shopping experience.
               </p>
             </Link>
@@ -69,7 +69,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Buy Directly from India
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 Learn how to access trusted sources without retail markups.
               </p>
             </Link>
@@ -78,7 +78,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Bridal Lehenga Guide
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 Everything you need to buy your bridal lehenga from India.
               </p>
             </Link>
@@ -87,7 +87,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Groom Sherwani Guide
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 A complete guide to sourcing groom outfits with proper fit and style.
               </p>
             </Link>
@@ -96,7 +96,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Bridesmaid & Family Outfits
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 Coordinate outfits for your entire wedding party with consistent colors and sizing.
               </p>
             </Link>
@@ -105,7 +105,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h3 className="text-lg font-semibold mb-2">
                 Jewelry & Ceremonial Accessories
               </h3>
-              <p className="text-charcoal/70">
+              <p className="text-charcoal/80">
                 Source bridal jewelry, accessories, and ceremony essentials from trusted vendors.
               </p>
             </Link>
