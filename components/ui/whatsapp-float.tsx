@@ -2,17 +2,13 @@
 
 export default function WhatsAppFloat() {
   return (
-    <div style={{
-      position: "fixed",
-      bottom: "20px",
-      right: "20px",
-      background: "red",
-      color: "white",
-      padding: "10px 16px",
-      borderRadius: "999px",
-      zIndex: 9999
-    }}>
-      TEST
-    </div>
+    <a
+      href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="fixed bottom-6 right-6 z-[9999] bg-[#25D366] text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold hover:opacity-90 transition"
+    >
+      Message on WhatsApp
+    </a>
   )
 }
