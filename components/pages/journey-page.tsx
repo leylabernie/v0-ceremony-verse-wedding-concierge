@@ -22,18 +22,18 @@ const journeySteps = [
     ],
   },
   {
-    number: "02",
-    title: "Factory Vetting",
-    location: "India",
-    description:
-      "Our team verifies manufacturers, production quality, and reliability before any sourcing begins.",
-    details: [
-      "Factory inspections",
-      "Quality checks",
-      "Vendor verification",
-      "Production review",
-    ],
-  },
+  number: "02",
+  title: "Factory Vetting",
+  location: "India",
+  description:
+    "Our team verifies manufacturers, production quality, and reliability before any sourcing begins.",
+  details: [
+    "Factory inspections",
+    "Quality checks",
+    "Vendor verification",
+    "Production review",
+  ],
+},
   {
     number: "03",
     title: "Design Approval",
