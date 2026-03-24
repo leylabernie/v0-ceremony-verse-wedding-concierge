@@ -19,7 +19,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             YOUR PERSONAL SOURCING TEAM
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-semibold leading-tight mb-6">
+          <h1 className="font-['Cormorant_Garamond'] text-6xl md:text-8xl font-semibold leading-[0.95] tracking-[-0.02em] mb-6 text-[#1f1f1f]">
             Skip the Flights.
             <br />
             Skip the Scams.
