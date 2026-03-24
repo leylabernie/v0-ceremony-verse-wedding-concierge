@@ -166,7 +166,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <a
             href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
             target="_blank"
-            className="bg-primary text-white px-6 py-3 rounded-md text-sm font-medium hover:opacity-90 transition"
+            className="bg-[#1f1f1f] text-white px-8 py-4 rounded-md text-base font-semibold hover:opacity-90 transition"
           >
             Start on WhatsApp
           </a>
