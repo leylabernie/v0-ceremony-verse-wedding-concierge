@@ -164,12 +164,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </p>
 
           <a
-            href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
-            target="_blank"
-            className="bg-[#1f1f1f] text-white px-8 py-4 rounded-md text-base font-semibold hover:opacity-90 transition"
-          >
-            Message on WhatsApp
-          </a>
+  href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center bg-[#25D366] text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold hover:opacity-90 transition"
+>
+  Message on WhatsApp
+</a>
 
         </div>
       </section>
