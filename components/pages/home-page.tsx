@@ -25,6 +25,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Skip the Scams.
           </h1>
 
+          <p className="mt-4 text-base text-charcoal/70 max-w-xl mx-auto">
+  We help you source authentic Indian wedding outfits from trusted vendors — entirely from the U.S.
+</p>
+
           <p className="text-[var(--cv-muted)] text-lg mb-10">
             Skip expensive trips to India. We help you source authentic wedding outfits from trusted vendors — with guidance, transparency, and zero guesswork.
           </p>
