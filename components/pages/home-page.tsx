@@ -53,6 +53,24 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
+          <section className="mt-16 bg-sage/10 p-8 rounded-xl text-center">
+  <h2 className="text-2xl font-semibold mb-4">
+    Not sure where to start with wedding outfit shopping?
+  </h2>
+
+  <p className="text-sm text-charcoal/70 max-w-2xl mx-auto mb-6">
+    Most couples feel overwhelmed choosing the right vendors, negotiating prices, and avoiding low-quality pieces. We guide you step-by-step so you get exactly what you want — without traveling to India.
+  </p>
+
+  <a
+    href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
+    target="_blank"
+    className="bg-primary text-white px-6 py-3 rounded-md text-sm font-medium hover:opacity-90 transition"
+  >
+    Ask Us on WhatsApp
+  </a>
+</section>
+
           {/* FINAL CARDS */}
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
