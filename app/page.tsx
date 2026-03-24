@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { HomePage } from "@/components/pages/home-page"
+import HomePage from "@/components/pages/home-page"
 import { ServicesPage } from "@/components/pages/services-page"
 import { JourneyPage } from "@/components/pages/journey-page"
 import { FAQPage } from "@/components/pages/faq-page"
