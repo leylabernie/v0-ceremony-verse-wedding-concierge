@@ -42,8 +42,9 @@ export default function Page() {
         return <PrivacyPage />
       case "terms":
         return <TermsPage />
+      case "home":
       default:
-        return <HomePage />
+        return <HomePage onNavigate={handleNavigate} />
     }
   }
 
