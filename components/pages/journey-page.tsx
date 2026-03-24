@@ -23,15 +23,15 @@ const journeySteps = [
   },
   {
   number: "02",
-  title: "Factory Vetting",
+  title: "Boutique Sourcing & Ready-to-Wear Selection",
   location: "India",
   description:
-    "Our team verifies manufacturers, production quality, and reliability before any sourcing begins.",
+    "We help you select from trusted boutiques and designers offering ready-made outfits, ensuring quality, authenticity, and reliability before anything is finalized.",
   details: [
-    "Factory inspections",
-    "Quality checks",
-    "Vendor verification",
-    "Production review",
+    "Curated boutique selection",
+    "Ready-made outfit sourcing",
+    "Quality and finish verification",
+    "Fit and style guidance",
   ],
 },
   {
