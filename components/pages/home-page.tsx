@@ -48,38 +48,51 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-          {/* FEATURE CARDS */}
-          <div className="mt-12 grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+<div className="mt-12 grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-            {/* SHOP FROM INDIA */}
-            <Link
-              href="/shop-from-india"
-              className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-            >
-              <h3 className="text-lg font-semibold mb-2">
-                Shop From India Process
-              </h3>
+  {/* SHOP FROM INDIA */}
+  <Link
+    href="/shop-from-india"
+    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
+  >
+    <h3 className="text-lg font-semibold mb-2">
+      Shop From India Process
+    </h3>
 
-              <p className="text-[var(--cv-muted)]">
-                Understand how our guided sourcing and video shopping works step by step.
-              </p>
-            </Link>
+    <p className="text-[var(--cv-muted)]">
+      Understand how our guided sourcing and video shopping works step by step.
+    </p>
+  </Link>
 
-            {/* BUY DIRECT */}
-            <Link
-              href="/buy-indian-wedding-outfits-from-india"
-              className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
-            >
-              <h3 className="text-lg font-semibold mb-2">
-                Buy Directly from India
-              </h3>
+  {/* BUY DIRECT */}
+  <Link
+    href="/buy-indian-wedding-outfits-from-india"
+    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
+  >
+    <h3 className="text-lg font-semibold mb-2">
+      Buy Directly from India
+    </h3>
 
-              <p className="text-[var(--cv-muted)]">
-                Learn how to access trusted designers and avoid retail markups.
-              </p>
-            </Link>
+    <p className="text-[var(--cv-muted)]">
+      Learn how to access trusted designers and avoid retail markups.
+    </p>
+  </Link>
 
-          </div>
+  {/* LEHENGA PAGE (NEW) */}
+  <Link
+    href="/buy-bridal-lehenga-from-india-usa"
+    className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
+  >
+    <h3 className="text-lg font-semibold mb-2">
+      Bridal Lehenga Guide
+    </h3>
+
+    <p className="text-[var(--cv-muted)]">
+      Explore how to buy bridal lehengas from India with guidance and delivery to the USA.
+    </p>
+  </Link>
+
+</div>
 
         </div>
       </section>
