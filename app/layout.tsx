@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className="font-sans antialiased" style={{ backgroundColor: "var(--cv-bg)" }}>
 
         {children}
+        <WhatsAppFloat />
 
         {/* ✅ CLEAN SCHEMA (WORKING) */}
         <script
