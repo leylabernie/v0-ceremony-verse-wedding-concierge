@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Playfair_Display, Inter, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
+import WhatsAppFloat from "@/components/ui/whatsapp-float"
 
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
