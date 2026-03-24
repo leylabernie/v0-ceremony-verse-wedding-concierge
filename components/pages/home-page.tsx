@@ -48,27 +48,37 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-          {/* INTERNAL LINKS (FIXED + LARGER) */}
-          <div className="mt-8 text-center">
-            <p className="text-lg md:text-xl text-[var(--cv-muted)] leading-relaxed">
+          {/* FEATURE CARDS */}
+          <div className="mt-12 grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
 
-              <Link
-                href="/shop-from-india"
-                className="underline underline-offset-4 hover:text-black transition"
-              >
-                View our sourcing process
-              </Link>
+            {/* SHOP FROM INDIA */}
+            <Link
+              href="/shop-from-india"
+              className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
+            >
+              <h3 className="text-lg font-semibold mb-2">
+                Shop From India Process
+              </h3>
 
-              <span className="mx-2">•</span>
+              <p className="text-[var(--cv-muted)]">
+                Understand how our guided sourcing and video shopping works step by step.
+              </p>
+            </Link>
 
-              <Link
-                href="/buy-indian-wedding-outfits-from-india"
-                className="underline underline-offset-4 hover:text-black transition"
-              >
-                Learn how to buy directly from India
-              </Link>
+            {/* BUY DIRECT */}
+            <Link
+              href="/buy-indian-wedding-outfits-from-india"
+              className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 text-left hover:shadow-md transition"
+            >
+              <h3 className="text-lg font-semibold mb-2">
+                Buy Directly from India
+              </h3>
 
-            </p>
+              <p className="text-[var(--cv-muted)]">
+                Learn how to access trusted designers and avoid retail markups.
+              </p>
+            </Link>
+
           </div>
 
         </div>
