@@ -1,6 +1,5 @@
 "use client"
 
-import { ArrowRight } from "lucide-react"
 import type { PageType } from "@/app/page"
 
 interface JourneyPageProps {
@@ -10,103 +9,105 @@ interface JourneyPageProps {
 const journeySteps = [
   {
     number: "01",
-    title: "Initial Vision",
+    title: "Initial Consultation",
     location: "United States",
     description:
-      "A comprehensive discovery call to understand your events, color palettes, style preferences, and budget.",
+      "We understand your events, preferences, inspirations, and budget to guide your sourcing strategy.",
     details: [
-      "One-on-one video consultation",
-      "Style mood board creation",
-      "Budget planning",
-      "Event timeline mapping",
+      "One-on-one consultation",
+      "Style and reference review",
+      "Budget alignment",
+      "Event planning overview",
     ],
   },
   {
-  number: "02",
-  title: "Boutique Sourcing & Ready-to-Wear Selection",
-  location: "India",
-  description:
-    "We help you select from trusted boutiques and designers offering ready-made outfits, ensuring quality, authenticity, and reliability before anything is finalized.",
-  details: [
-    "Curated boutique selection",
-    "Ready-made outfit sourcing",
-    "Quality and finish verification",
-    "Fit and style guidance",
-  ],
-},
+    number: "02",
+    title: "Sourcing Strategy & Options",
+    location: "India",
+    description:
+      "We identify the best sourcing path for you — either ready-to-wear selections or custom-designed outfits created by skilled designers.",
+    details: [
+      "Direct access to trusted designers",
+      "Ready-made and custom options",
+      "Fabric and style recommendations",
+      "Price-conscious sourcing approach",
+    ],
+  },
   {
-  number: "03",
-  title: "Live Selection & Video Review",
-  location: "Remote",
-  description:
-    "You review and select outfits in real time through live video sessions, seeing fabrics, embroidery, and true colors before making your decision.",
-  details: [
-    "Live video outfit viewing",
-    "Real-time fabric and embroidery review",
-    "Color accuracy confirmation",
-    "Guided selection support",
-  ],
-},
+    number: "03",
+    title: "Live Video Selection",
+    location: "Remote",
+    description:
+      "You review outfits, fabrics, embroidery, and colors in real time through live video sessions before making your selections.",
+    details: [
+      "Live outfit viewing sessions",
+      "Fabric and embroidery inspection",
+      "Color accuracy confirmation",
+      "Guided selection support",
+    ],
+  },
   {
-  number: "04",
-  title: "Order Placement & Coordination",
-  location: "India",
-  description:
-    "Once you finalize your selections, we coordinate directly with boutiques and designers to secure your outfits and manage all communication on your behalf.",
-  details: [
-    "Order placement with trusted vendors",
-    "Measurement and sizing coordination",
-    "Ongoing order updates",
-    "Quality monitoring throughout the process",
-  ],
-},
+    number: "04",
+    title: "Design & Customization (If Needed)",
+    location: "India",
+    description:
+      "For custom outfits, designs are created based on your references with careful selection of fabrics, colors, and embellishments.",
+    details: [
+      "Reference-based outfit creation",
+      "Fabric sourcing and dyeing",
+      "Embellishment and detailing selection",
+      "Made-to-measure stitching",
+    ],
+  },
   {
     number: "05",
-    title: "Final Inspection",
-    location: "Quality Check",
+    title: "Order Coordination & Quality Checks",
+    location: "India",
     description:
-      "Every piece is inspected for quality before shipping.",
+      "We manage all communication, track progress, and ensure quality at every stage before items are finalized.",
     details: [
-      "Stitch inspection",
-      "Color check",
-      "Fit validation",
-      "Final review",
+      "Direct coordination with designers",
+      "Progress updates and tracking",
+      "Quality verification",
+      "Final approval before dispatch",
     ],
   },
   {
     number: "06",
-    title: "Delivery",
-    location: "Your Door",
+    title: "Delivery to Your Door",
+    location: "United States",
     description:
-      "Secure delivery directly to your home.",
+      "Your outfits and items are securely shipped and delivered to you with care and reliability.",
     details: [
-      "Tracked shipping",
-      "Secure packaging",
-      "Delivery updates",
-      "Final handoff",
+      "Secure international shipping",
+      "Delivery tracking",
+      "Careful packaging",
+      "Final delivery support",
     ],
   },
 ]
 
 export function JourneyPage({ onNavigate }: JourneyPageProps) {
   return (
-    <div className="animate-fade-in bg-[var(--cv-bg)]">
+    <div className="bg-[var(--cv-bg)]">
 
       {/* HERO */}
-      <section className="py-24 text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-24 text-center px-6">
+        <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-semibold mb-6">
-            The Sourcing Journey
+            How It Works
           </h1>
+
           <p className="text-[var(--cv-muted)] text-lg">
-            A clear, transparent process from consultation to delivery.
+            A guided, transparent process that gives you direct access to quality craftsmanship — without unnecessary markups or guesswork.
           </p>
         </div>
       </section>
 
-      {/* TIMELINE */}
-      <section className="py-16">
-        <div className="max-w-5xl mx-auto px-6 space-y-6">
+      {/* STEPS */}
+      <section className="py-16 px-6">
+        <div className="max-w-5xl mx-auto space-y-6">
+
           {journeySteps.map((step) => (
             <div
               key={step.number}
@@ -141,21 +142,26 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
               </div>
             </div>
           ))}
+
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 text-center">
-        <div className="max-w-2xl mx-auto px-6">
+      <section className="py-20 text-center px-6">
+        <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6">
-            Ready to Begin?
+            Start Your Sourcing Journey
           </h2>
+
+          <p className="text-[var(--cv-muted)] mb-8">
+            Get direct access to designers and makers without retail markups — all guided step by step.
+          </p>
 
           <button
             onClick={() => onNavigate("contact")}
-            className="px-6 py-3 border border-[var(--cv-border)] rounded-full"
+            className="btn-primary"
           >
-            Start Your Journey
+            Book Consultation
           </button>
         </div>
       </section>
