@@ -29,7 +29,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Shop Indian wedding outfits directly from trusted designers and skilled makers — guided through live video, without travel or uncertainty.
           </p>
 
-          {/* BUTTONS */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
 
             <button
@@ -48,55 +47,64 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-         {/* CARDS */}
-<div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* FINAL CARDS */}
+          <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-  <Link href="/shop-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-    <h3 className="text-lg font-semibold mb-2">
-      Shop From India Process
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Step-by-step guided sourcing and video shopping experience.
-    </p>
-  </Link>
+            <Link href="/shop-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Shop From India Process
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Step-by-step guided sourcing and video shopping experience.
+              </p>
+            </Link>
 
-  <Link href="/buy-indian-wedding-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-    <h3 className="text-lg font-semibold mb-2">
-      Buy Directly from India
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Learn how to access trusted sources without retail markups.
-    </p>
-  </Link>
+            <Link href="/buy-indian-wedding-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Buy Directly from India
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Learn how to access trusted sources without retail markups.
+              </p>
+            </Link>
 
-  <Link href="/buy-bridal-lehenga-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-    <h3 className="text-lg font-semibold mb-2">
-      Bridal Lehenga Guide
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Everything you need to buy your bridal lehenga from India.
-    </p>
-  </Link>
+            <Link href="/buy-bridal-lehenga-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Bridal Lehenga Guide
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Everything you need to buy your bridal lehenga from India.
+              </p>
+            </Link>
 
-  <Link href="/buy-sherwani-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-    <h3 className="text-lg font-semibold mb-2">
-      Groom Sherwani Guide
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      A complete guide to sourcing groom outfits with proper fit and style.
-    </p>
-  </Link>
+            <Link href="/buy-sherwani-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Groom Sherwani Guide
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                A complete guide to sourcing groom outfits with proper fit and style.
+              </p>
+            </Link>
 
-  <Link href="/bridesmaid-and-family-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-    <h3 className="text-lg font-semibold mb-2">
-      Bridesmaid & Family Outfits
-    </h3>
-    <p className="text-[var(--cv-muted)]">
-      Coordinate outfits for your entire wedding party with consistent colors and sizing.
-    </p>
-  </Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Bridesmaid & Family Outfits
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Coordinate outfits for your entire wedding party with consistency.
+              </p>
+            </Link>
 
-</div>
+            <Link href="/wedding-accessories-and-ceremony-items-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Accessories & Ceremony Items
+              </h3>
+              <p className="text-[var(--cv-muted)]">
+                Jewelry, dupattas, favors, and ceremony essentials sourced from India.
+              </p>
+            </Link>
+
+          </div>
 
         </div>
       </section>
@@ -152,7 +160,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            From outfits to accessories and wedding details — everything handled with clarity and guidance.
+            From outfits to details — everything handled with clarity.
           </p>
 
           <button
