@@ -47,13 +47,23 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             </p>
           </div>
 
+          {/* BRIDESMAIDS */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Bridesmaid Outfits & Coordination
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Coordinated bridesmaid outfits designed for consistency in color, fabric, and styling, with accurate sizing and reliable shipping from India.
+            </p>
+          </div>
+
           {/* GROOMSMEN */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
               Groomsmen & Wedding Party Coordination
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Coordinated outfits for groomsmen and wedding party members with consistent styling, accurate sizing, and reliable shipping from India.
+              Groomsmen outfits and coordinated wedding party looks managed for uniform style, proper fit, and smooth delivery timelines.
             </p>
           </div>
 
@@ -63,12 +73,12 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Family & Pet (Dog & Cat) Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Outfits for family members and even pets, designed to match your wedding aesthetic with attention to detail, comfort, and coordinated styling.
+              Outfits for family members and even pets, coordinated to match your wedding aesthetic with attention to comfort, detail, and overall styling.
             </p>
           </div>
 
           {/* ACCESSORIES */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 md:col-span-2">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
               Accessories & Final Styling Details
             </h3>
@@ -88,7 +98,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            From bride to groom to your entire wedding party — we handle the complexity so you don’t have to.
+            From bride to groom to bridesmaids, groomsmen, family, and even pets — we handle the complexity so you don’t have to.
           </p>
 
           <button
