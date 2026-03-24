@@ -55,6 +55,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
 </Link>
           </div>
           <p className="mt-6 text-sm text-[var(--cv-muted)] text-center">
+  <Link href="/shop-from-india" className="underline">
+    View our sourcing process
+  </Link>
+
+  {" • "}
+
+  <Link href="/buy-indian-wedding-outfits-from-india" className="underline">
+    Learn how to buy directly from India
+  </Link>
+</p>
+          <p className="mt-6 text-sm text-[var(--cv-muted)] text-center">
   Want to understand the process in detail?{" "}
   <Link href="/buy-indian-wedding-outfits-from-india" className="underline">
     Learn how to buy Indian wedding outfits from India →
