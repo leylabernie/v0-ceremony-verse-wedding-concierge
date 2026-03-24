@@ -35,7 +35,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               onClick={() => onNavigate("contact")}
               className="btn-primary"
             >
-              Book Consultation
+              <a
+  href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
+  target="_blank"
+  className="bg-primary text-white px-6 py-3 rounded-md text-sm font-medium hover:opacity-90 transition text-center"
+>
+  Get Outfit Help on WhatsApp
+</a>
             </button>
 
             <Link
