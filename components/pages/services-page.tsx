@@ -18,7 +18,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Wedding outfits sourced directly from trusted manufacturers in India.
+            Complete wedding outfit sourcing from trusted manufacturers in India — for every person in your celebration.
           </p>
         </div>
       </section>
@@ -27,39 +27,53 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
+          {/* BRIDE */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Bridal Lehengas from India
+              Bridal Lehengas & Wedding Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Authentic handcrafted bridal lehengas sourced with full quality checks and secure delivery to the US.
+              Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality audit, and secure delivery to the US.
             </p>
           </div>
 
+          {/* GROOM */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Groom Sherwanis
+              Groom Sherwanis & Attire
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Custom groom outfits made with verified craftsmanship and inspected before delivery.
+              Custom sherwanis and groom outfits created with verified craftsmanship, inspected before delivery, and tailored for your events.
             </p>
           </div>
 
+          {/* GROOMSMEN */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Bridesmaid & Family Outfits
+              Groomsmen & Wedding Party Coordination
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Coordinated outfits ensuring consistency, correct sizing, and reliable shipping.
+              Coordinated outfits for groomsmen and wedding party members with consistent styling, accurate sizing, and reliable shipping from India.
             </p>
           </div>
 
+          {/* FAMILY + PETS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Accessories & Details
+              Family & Pet (Dog & Cat) Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Jewelry, dupattas, and finishing pieces sourced and quality-checked before delivery.
+              Outfits for family members and even pets, designed to match your wedding aesthetic with attention to detail, comfort, and coordinated styling.
+            </p>
+          </div>
+
+          {/* ACCESSORIES */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 md:col-span-2">
+            <h3 className="text-xl font-semibold mb-3">
+              Accessories & Final Styling Details
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Dupattas, jewelry, and finishing pieces sourced with precision, quality-checked, and delivered to complete your entire wedding look.
             </p>
           </div>
 
@@ -72,6 +86,10 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           <h2 className="text-3xl font-semibold mb-6">
             Start Your Sourcing Process
           </h2>
+
+          <p className="text-[var(--cv-muted)] mb-8">
+            From bride to groom to your entire wedding party — we handle the complexity so you don’t have to.
+          </p>
 
           <button
             onClick={() => onNavigate("contact")}
