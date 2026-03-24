@@ -136,6 +136,51 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
+     <section className="py-24 bg-white">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    {/* LEFT CONTENT */}
+    <div>
+      <p className="text-sm tracking-[0.2em] uppercase mb-4 text-[var(--cv-accent)]">
+        Live Video Sourcing
+      </p>
+
+      <h2 className="text-4xl font-semibold mb-6">
+        See Exactly What You're Buying — In Real Time
+      </h2>
+
+      <p className="text-[var(--cv-muted)] mb-6">
+        No guessing. No surprises. No scams.
+      </p>
+
+      <p className="text-[var(--cv-muted)] mb-6">
+        Join live high-definition video calls directly from our trusted boutiques in India. 
+        You see the actual fabric, embroidery, color tones, and finishing details before anything is made.
+      </p>
+
+      <ul className="space-y-3 text-[var(--cv-muted)]">
+        <li>• Inspect fabric weight and texture live</li>
+        <li>• Verify embroidery quality and craftsmanship</li>
+        <li>• Confirm true colors under real lighting</li>
+        <li>• Speak directly while we guide the process</li>
+      </ul>
+    </div>
+
+    {/* RIGHT VISUAL BLOCK */}
+    <div className="bg-[var(--cv-section)] border border-[var(--cv-border)] rounded-2xl p-10 text-center">
+      <p className="text-lg mb-4">Live Session Preview</p>
+
+      <div className="aspect-video bg-[var(--cv-bg)] rounded-xl flex items-center justify-center text-sm text-[var(--cv-muted)]">
+        Video Call Experience
+      </div>
+
+      <p className="mt-4 text-sm text-[var(--cv-muted)]">
+        Real boutiques. Real inventory. No filters.
+      </p>
+    </div>
+
+  </div>
+</section> 
 
       <FloralSeparator />
 
