@@ -1,180 +1,84 @@
 "use client"
 
-import type { PageType } from "@/app/page"
-import Link from "next/link"
-
-interface HomePageProps {
-  onNavigate: (page: PageType) => void
-}
-
-export function HomePage({ onNavigate }: HomePageProps) {
+export default function HomePage() {
   return (
-    <div className="bg-[var(--cv-bg)]">
+    <main>
 
       {/* HERO */}
-      <section className="py-28 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-
-          <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
-            YOUR PERSONAL SOURCING TEAM
-          </p>
-
-          <h1 className="font-['Cormorant_Garamond'] text-6xl md:text-8xl font-semibold leading-[0.95] tracking-[-0.02em] mb-6 text-[#1f1f1f]">
-            Skip the Flights.
-            <br />
-            Skip the Scams.
-          </h1>
-
-          <p className="mt-8 max-w-2xl mx-auto text-xl md:text-2xl font-medium leading-relaxed text-[#5a4a42]">
-            We help you source authentic Indian wedding outfits from trusted vendors — entirely from the U.S.
-          </p>
-
-          <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-[#6a5c55]">
-            Skip expensive trips to India. We guide you through trusted vendors, pricing, and quality — so you get exactly what you want without the stress.
-          </p>
-
-          {/* BUTTONS */}
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-
-            <a
-              href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
-              target="_blank"
-              className="bg-[#1f1f1f] text-white px-8 py-4 rounded-md text-base font-semibold hover:opacity-90 transition text-center"
-            >
-              Message on WhatsApp
-            </a>
-
-            <Link
-              href="/shop-from-india"
-              className="border border-[var(--cv-border)] px-6 py-3 rounded-full inline-block"
-            >
-              How It Works
-            </Link>
-
-          </div>
-
-          {/* 6 CARDS */}
-          <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-
-            <Link href="/shop-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Shop From India Process
-              </h3>
-              <p className="text-charcoal/80">
-                Step-by-step guided sourcing and video shopping experience.
-              </p>
-            </Link>
-
-            <Link href="/buy-indian-wedding-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Buy Directly from India
-              </h3>
-              <p className="text-charcoal/80">
-                Learn how to access trusted sources without retail markups.
-              </p>
-            </Link>
-
-            <Link href="/buy-bridal-lehenga-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Bridal Lehenga Guide
-              </h3>
-              <p className="text-charcoal/80">
-                Everything you need to buy your bridal lehenga from India.
-              </p>
-            </Link>
-
-            <Link href="/buy-sherwani-from-india-usa" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Groom Sherwani Guide
-              </h3>
-              <p className="text-charcoal/80">
-                A complete guide to sourcing groom outfits with proper fit and style.
-              </p>
-            </Link>
-
-            <Link href="/bridesmaid-and-family-outfits-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Bridesmaid & Family Outfits
-              </h3>
-              <p className="text-charcoal/80">
-                Coordinate outfits for your entire wedding party with consistent colors and sizing.
-              </p>
-            </Link>
-
-            <Link href="/indian-wedding-jewelry-and-accessories" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
-              <h3 className="text-lg font-semibold mb-2">
-                Jewelry & Ceremonial Accessories
-              </h3>
-              <p className="text-charcoal/80">
-                Source bridal jewelry, accessories, and ceremony essentials from trusted vendors.
-              </p>
-            </Link>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* TRUST */}
       <section className="py-20 px-6 text-center">
-        <div className="max-w-5xl mx-auto">
+        <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
+          YOUR PERSONAL SOURCING TEAM
+        </p>
 
-          <h2 className="text-3xl font-semibold mb-12">
-            Why CeremonyVerse Works
-          </h2>
+        <h1 className="font-['Cormorant_Garamond'] text-6xl md:text-8xl font-semibold leading-[0.95] tracking-[-0.02em] mb-6 text-[#1f1f1f]">
+          Skip the Flights.<br />Skip the Scams.
+        </h1>
 
-          <div className="grid md:grid-cols-3 gap-10">
+        <p className="mt-8 max-w-2xl mx-auto text-xl md:text-2xl font-medium leading-relaxed text-[#5a4a42]">
+          We help you source authentic Indian wedding outfits directly from India — without the confusion, risk, or overwhelm.
+        </p>
 
-            <div>
-              <h3 className="font-semibold mb-2">Trusted Designers</h3>
-              <p className="text-charcoal/70">
-                We work with reliable designers and skilled makers.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">Direct Access</h3>
-              <p className="text-charcoal/70">
-                Avoid retail markups with direct sourcing.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold mb-2">Verified Quality</h3>
-              <p className="text-charcoal/70">
-                Every item is reviewed before delivery.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
+        <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-[#6a5c55]">
+          From bridal to family outfits, we guide you through every step using live video shopping and trusted sourcing.
+        </p>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 text-center px-6">
-        <div className="max-w-2xl mx-auto">
 
-          <h2 className="text-3xl font-semibold mb-6">
-            Start Your Sourcing Journey
-          </h2>
+      {/* FOUNDER / TRUST */}
+      <section className="py-16 px-6 bg-[#f9f6f3]">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-6 text-center">
+          Why CeremonyVerse Exists
+        </h2>
 
-          <p className="text-charcoal/70 mb-8">
-            From outfits to accessories and wedding details — everything handled with clarity and guidance.
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-lg md:text-xl font-medium text-[#5a4a42] mb-6">
+            I didn’t start CeremonyVerse as a business. I started it because of my own family.
           </p>
 
-          <a
-  href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center bg-[#25D366] text-white px-6 py-3 rounded-full shadow-lg text-sm font-semibold hover:opacity-90 transition"
->
-  Message on WhatsApp
-</a>
+          <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
+            Between my two sons’ weddings, my niece’s wedding, and helping friends’ families, I experienced everything firsthand — coordinating outfits across large families, managing budgets, handling different cultural traditions, and navigating the chaos of multi-day Indian weddings.
+          </p>
 
+          <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
+            Many of the people I helped were not familiar with Indian markets — especially South Indian and non-Gujarati families. Even those who traveled to India struggled with language barriers, trust issues with shops, and knowing where to go.
+          </p>
+
+          <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed">
+            I became the person they relied on — to guide, verify, negotiate, and make sure everything was right. CeremonyVerse is built on that experience — helping you get authentic outfits from India without the confusion, risk, or overwhelm.
+          </p>
         </div>
       </section>
 
-    </div>
+
+      {/* HOW IT WORKS */}
+      <section className="py-16 px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10">
+          How It Works
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
+          <div>
+            <p className="font-semibold text-[#1f1f1f] mb-2">1. Message Us</p>
+            <p className="text-sm text-[#6a5c55]">Start with WhatsApp. Tell us what you need.</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#1f1f1f] mb-2">2. Share Inspiration</p>
+            <p className="text-sm text-[#6a5c55]">Send photos, ideas, or requirements.</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#1f1f1f] mb-2">3. Live Video Shopping</p>
+            <p className="text-sm text-[#6a5c55]">See outfits in real-time before you buy.</p>
+          </div>
+
+          <div>
+            <p className="font-semibold text-[#1f1f1f] mb-2">4. Delivered to You</p>
+            <p className="text-sm text-[#6a5c55]">Everything arrives safely at your doorstep.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
   )
 }
