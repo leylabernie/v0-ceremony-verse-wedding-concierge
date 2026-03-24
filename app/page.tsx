@@ -45,7 +45,7 @@ export default function CeremonyVerse() {
   const renderPage = () => {
     switch (activePage) {
       case "home":
-        return <HomePage onNavigate={handleNavigate} />
+        return <HomePage />
       case "services":
         return <ServicesPage onNavigate={handleNavigate} />
       case "journey":
