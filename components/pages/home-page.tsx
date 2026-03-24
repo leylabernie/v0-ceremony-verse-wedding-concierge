@@ -15,7 +15,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-28 px-6 text-center">
         <div className="max-w-4xl mx-auto">
 
-          <p className="tracking-wide text-sm text-[var(--cv-muted)] mb-4">
+          className="tracking-wide text-sm text-charcoal/70 mb-4"
             YOUR PERSONAL SOURCING TEAM
           </p>
 
@@ -25,11 +25,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Skip the Scams.
           </h1>
 
-          <p className="mt-4 text-base text-charcoal/70 max-w-xl mx-auto">
+          className="mt-4 text-lg text-charcoal max-w-xl mx-auto"
   We help you source authentic Indian wedding outfits from trusted vendors — entirely from the U.S.
 </p>
 
-          <p className="text-[var(--cv-muted)] text-lg mb-10">
+          className="mt-3 text-base text-charcoal/90 max-w-2xl mx-auto"
             Skip expensive trips to India. We help you source authentic wedding outfits from trusted vendors — with guidance, transparency, and zero guesswork.
           </p>
 
