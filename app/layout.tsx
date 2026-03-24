@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}>
-      <body className="font-sans antialiased" style={{ backgroundColor: '#F4E0E0' }}>
+      <body className="font-sans antialiased" style={{ backgroundColor: 'var(--cv-bg)' }}>
         {children}
 
 <script
