@@ -289,3 +289,15 @@
   height: 1px;
   background: var(--cv-accent);
 }
+
+/* FIX floating WhatsApp button */
+a.fixed.bottom-6.right-6 {
+  background-color: #1f1f1f !important;
+  padding: 12px 18px !important;
+  font-weight: 600 !important;
+}
+
+/* Optional: update text look */
+a.fixed.bottom-6.right-6 {
+  font-size: 14px !important;
+}
