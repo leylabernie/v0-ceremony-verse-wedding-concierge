@@ -15,7 +15,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-28 px-6 text-center">
         <div className="max-w-4xl mx-auto">
 
-          <p className="tracking-wide text-sm text-charcoal/70 mb-4">
+          <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
             YOUR PERSONAL SOURCING TEAM
           </p>
 
