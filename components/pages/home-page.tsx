@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import type { PageType } from "@/app/page"
 
@@ -46,12 +47,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <ArrowRight className="w-4 h-4" />
             </button>
 
-            <button
-              onClick={() => onNavigate("journey")}
-              className="border border-[var(--cv-border)] px-6 py-3 rounded-full"
-            >
-              How It Works
-            </button>
+            <Link
+  href="/shop-from-india"
+  className="border border-[var(--cv-border)] px-6 py-3 rounded-full inline-block"
+>
+  How It Works
+</Link>
           </div>
         </div>
       </section>
