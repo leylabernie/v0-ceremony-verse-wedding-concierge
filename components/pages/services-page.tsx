@@ -18,7 +18,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Complete wedding outfit sourcing from trusted manufacturers in India — for every person in your celebration.
+            Complete wedding sourcing from India — outfits, accessories, gifts, and ceremonial items — all handled for you with quality checks and reliable delivery.
           </p>
         </div>
       </section>
@@ -33,7 +33,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Bridal Lehengas & Wedding Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality audit, and secure delivery to the US.
+              Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.
             </p>
           </div>
 
@@ -43,47 +43,87 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Groom Sherwanis & Attire
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Custom sherwanis and groom outfits created with verified craftsmanship, inspected before delivery, and tailored for your events.
+              Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.
             </p>
           </div>
 
           {/* BRIDESMAIDS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Bridesmaid Outfits & Coordination
+              Bridesmaid Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Coordinated bridesmaid outfits designed for consistency in color, fabric, and styling, with accurate sizing and reliable shipping from India.
+              Coordinated bridesmaid outfits with consistent colors, fabrics, and sizing for a cohesive wedding look.
             </p>
           </div>
 
           {/* GROOMSMEN */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Groomsmen & Wedding Party Coordination
+              Groomsmen Attire
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Groomsmen outfits and coordinated wedding party looks managed for uniform style, proper fit, and smooth delivery timelines.
+              Groomsmen outfits styled and sourced to match your wedding theme with accurate measurements and reliable delivery.
             </p>
           </div>
 
-          {/* FAMILY + PETS */}
+          {/* FAMILY */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Family & Pet (Dog & Cat) Outfits
+              Family Wedding Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Outfits for family members and even pets, coordinated to match your wedding aesthetic with attention to comfort, detail, and overall styling.
+              Sarees, lehengas, and traditional outfits for parents and extended family, coordinated for color and design consistency.
             </p>
           </div>
 
-          {/* ACCESSORIES */}
+          {/* PETS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="text-xl font-semibold mb-3">
-              Accessories & Final Styling Details
+              Pet Outfits (Dogs & Cats)
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Dupattas, jewelry, and finishing pieces sourced with precision, quality-checked, and delivered to complete your entire wedding look.
+              Custom outfits for pets designed to match your wedding theme while ensuring comfort and safety.
+            </p>
+          </div>
+
+          {/* JEWELRY */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Jewelry & Bridal Accessories
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.
+            </p>
+          </div>
+
+          {/* CEREMONIAL */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Ceremonial Items & Ritual Essentials
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.
+            </p>
+          </div>
+
+          {/* GIFTS */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Wedding Gifts & Return Gifts
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Thoughtful gift sourcing including sarees, hampers, and curated return gifts for guests and family.
+            </p>
+          </div>
+
+          {/* WELCOME BAGS */}
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <h3 className="text-xl font-semibold mb-3">
+              Welcome Bags & Event Details
+            </h3>
+            <p className="text-[var(--cv-muted)]">
+              Customized welcome bags, favors, and event details designed to enhance your guest experience.
             </p>
           </div>
 
@@ -98,7 +138,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            From bride to groom to bridesmaids, groomsmen, family, and even pets — we handle the complexity so you don’t have to.
+            From outfits to gifts to ceremonial details — we manage the entire sourcing process so you don’t have to.
           </p>
 
           <button
