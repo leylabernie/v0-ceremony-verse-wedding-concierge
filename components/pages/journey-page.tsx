@@ -35,18 +35,18 @@ const journeySteps = [
   ],
 },
   {
-    number: "03",
-    title: "Design Approval",
-    location: "Remote",
-    description:
-      "You review fabrics, embroidery, and colors via video before production begins.",
-    details: [
-      "Video fabric previews",
-      "Color confirmation",
-      "Design approval",
-      "Material selection",
-    ],
-  },
+  number: "03",
+  title: "Live Selection & Video Review",
+  location: "Remote",
+  description:
+    "You review and select outfits in real time through live video sessions, seeing fabrics, embroidery, and true colors before making your decision.",
+  details: [
+    "Live video outfit viewing",
+    "Real-time fabric and embroidery review",
+    "Color accuracy confirmation",
+    "Guided selection support",
+  ],
+},
   {
     number: "04",
     title: "Production",
