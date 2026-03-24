@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { HomePage } from "@/components/pages/home-page"
@@ -11,7 +11,7 @@ import { ContactPage } from "@/components/pages/contact-page"
 import { PrivacyPage } from "@/components/pages/privacy-page"
 import { TermsPage } from "@/components/pages/terms-page"
 
-export type PageType =
+type PageType =
   | "home"
   | "services"
   | "journey"
@@ -20,64 +20,38 @@ export type PageType =
   | "privacy"
   | "terms"
 
-export function HomePage() {
+export default function Page() {
   const [activePage, setActivePage] = useState<PageType>("home")
 
   const handleNavigate = (page: PageType) => {
-    if (page === activePage) return
     setActivePage(page)
     window.scrollTo({ top: 0, behavior: "instant" })
   }
 
-  useEffect(() => {
-    const titles: Record<PageType, string> = {
-      home: "CeremonyVerse | Indian Wedding Outfit Sourcing",
-      services: "Our Services | CeremonyVerse",
-      journey: "The Sourcing Journey | CeremonyVerse",
-      faq: "FAQ - The Trust Center | CeremonyVerse",
-      contact: "Contact Us | CeremonyVerse",
-      privacy: "Privacy Policy | CeremonyVerse",
-      terms: "Terms of Service | CeremonyVerse",
-    }
-    document.title = titles[activePage]
-  }, [activePage])
-
   const renderPage = () => {
     switch (activePage) {
-      case "home":
-        return <HomePage />
       case "services":
-        return <ServicesPage onNavigate={handleNavigate} />
+        return <ServicesPage />
       case "journey":
-        return <JourneyPage onNavigate={handleNavigate} />
+        return <JourneyPage />
       case "faq":
-        return <FAQPage onNavigate={handleNavigate} />
+        return <FAQPage />
       case "contact":
         return <ContactPage />
       case "privacy":
-        return <PrivacyPage onNavigate={handleNavigate} />
+        return <PrivacyPage />
       case "terms":
-        return <TermsPage onNavigate={handleNavigate} />
+        return <TermsPage />
       default:
-        return <HomePage onNavigate={handleNavigate} />
+        return <HomePage />
     }
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[var(--cv-bg)]">
-      <Navigation activePage={activePage} onNavigate={handleNavigate} />
-
-      <main
-        className="flex-1 pt-24"
-        role="main"
-        aria-label="Main content"
-      >
-        <div key={activePage} className="animate-fade-in">
-          {renderPage()}
-        </div>
-      </main>
-
-      <Footer onNavigate={handleNavigate} />
-    </div>
+    <>
+      <Navigation onNavigate={handleNavigate} />
+      {renderPage()}
+      <Footer />
+    </>
   )
 }
