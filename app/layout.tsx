@@ -59,37 +59,80 @@ export default function RootLayout({
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
+   <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "CeremonyVerse",
-      "url": "https://ceremonyverse.com",
-      "description": "Personal Indian wedding outfit sourcing service helping US-based clients shop directly from trusted manufacturers in India through live video consultations.",
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "serviceType": [
-        "Indian Wedding Outfit Sourcing",
-        "Bridal Lehenga Sourcing",
-        "Sherwani Sourcing"
-      ],
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "name": "Live Video Shopping",
-        "description": "Clients view fabrics and embroidery in real-time via video calls from verified boutiques in India."
-      },
-      "availableService": {
-        "@type": "Service",
-        "name": "August 2026 Availability",
-        "description": "Accepting limited clients for August 2026 weddings."
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-215-341-9990",
-        "contactType": "customer service"
-      }
+      "@graph": [
+
+        {
+          "@type": "ProfessionalService",
+          "name": "CeremonyVerse",
+          "url": "https://ceremonyverse.com",
+          "description": "Personal Indian wedding outfit sourcing service helping US-based clients shop directly from trusted designers in India.",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+          }
+        },
+
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+
+            {
+              "@type": "Question",
+              "name": "Can I buy Indian wedding outfits without traveling to India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. CeremonyVerse helps you shop directly from India through guided video sessions, so you can select outfits without traveling."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "How do I ensure quality when buying from India?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Each outfit is reviewed before delivery. You also see fabrics, colors, and designs during live video selection."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Can you help with bridesmaid and family outfits?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We coordinate outfits for bridesmaids, groomsmen, and family members with consistent colors, styles, and sizing."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "Do you offer custom bridal lehengas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can create custom designs or choose from ready options, with guidance throughout the process."
+              }
+            },
+
+            {
+              "@type": "Question",
+              "name": "How long does delivery take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timelines depend on design complexity, but we guide you with clear schedules and ensure delivery before your event."
+              }
+            }
+
+          ]
+        }
+
+      ]
     })
+  }}
+/>
   }}
 />
 
