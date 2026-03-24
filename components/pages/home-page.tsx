@@ -25,7 +25,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Skip the Scams.
           </h1>
 
-          <p className="mt-4 text-lg text-charcoal max-w-xl mx-auto">
+          <p className="mt-8 max-w-2xl mx-auto text-xl md:text-2xl font-medium leading-relaxed text-[#5a4a42]">
             We help you source authentic Indian wedding outfits from trusted vendors — entirely from the U.S.
           </p>
 
