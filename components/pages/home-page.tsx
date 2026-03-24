@@ -49,7 +49,27 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
 
           {/* INTERNAL LINKS (SEO + ACCESS) */}
-          <p className="mt-6 text-sm text-[var(--cv-muted)] text-center">
+          <div className="mt-8 text-center">
+  <p className="text-base md:text-lg text-[var(--cv-muted)] leading-relaxed">
+
+    <Link
+      href="/shop-from-india"
+      className="underline underline-offset-4 hover:text-black transition"
+    >
+      View our sourcing process
+    </Link>
+
+    {" • "}
+
+    <Link
+      href="/buy-indian-wedding-outfits-from-india"
+      className="underline underline-offset-4 hover:text-black transition"
+    >
+      Learn how to buy directly from India
+    </Link>
+
+  </p>
+</div>
             <Link href="/shop-from-india" className="underline">
               View our sourcing process
             </Link>
