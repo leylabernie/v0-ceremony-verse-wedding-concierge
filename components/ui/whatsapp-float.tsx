@@ -2,32 +2,34 @@
 
 export default function WhatsAppFloat() {
   return (
-    <div
+    <a
+      href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
+      target="_blank"
+      rel="noopener noreferrer"
       style={{
         position: "fixed",
         bottom: "24px",
         right: "24px",
         zIndex: 999999,
+        backgroundColor: "#25D366",
+        width: "56px",
+        height: "56px",
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        boxShadow: "0 10px 20px rgba(0,0,0,0.2)",
       }}
     >
-      <a
-        href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          backgroundColor: "#25D366",
-          color: "white",
-          padding: "12px 18px",
-          borderRadius: "999px",
-          fontWeight: 600,
-          fontSize: "14px",
-          boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
-          textDecoration: "none",
-          display: "inline-block",
-        }}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        width="28"
+        height="28"
+        fill="white"
       >
-        Message on WhatsApp
-      </a>
-    </div>
+        <path d="M16 .396C7.164.396 0 7.56 0 16.396c0 2.894.755 5.61 2.065 7.96L0 32l7.84-2.05a15.944 15.944 0 0 0 8.16 2.23c8.836 0 16-7.164 16-16S24.836.396 16 .396zm0 29.36c-2.6 0-5.06-.68-7.2-1.88l-.52-.31-4.65 1.22 1.24-4.53-.34-.53A13.43 13.43 0 0 1 2.6 16.4c0-7.4 6.02-13.42 13.42-13.42s13.42 6.02 13.42 13.42-6.02 13.42-13.42 13.42zm7.38-10.02c-.4-.2-2.36-1.16-2.72-1.3-.36-.14-.62-.2-.88.2s-1.02 1.3-1.26 1.56c-.24.26-.48.3-.88.1-.4-.2-1.7-.62-3.24-2-.8-.7-1.34-1.56-1.5-1.82-.16-.26-.02-.4.12-.6.14-.18.3-.48.44-.72.14-.24.2-.4.3-.66.1-.26.06-.48-.02-.68-.08-.2-.88-2.12-1.2-2.9-.32-.76-.64-.66-.88-.66h-.76c-.26 0-.68.1-1.04.48-.36.38-1.36 1.34-1.36 3.26s1.4 3.78 1.6 4.04c.2.26 2.76 4.2 6.68 5.88.94.4 1.68.64 2.26.82.94.3 1.8.26 2.48.16.76-.12 2.36-.96 2.7-1.9.34-.94.34-1.74.24-1.9-.1-.16-.36-.26-.76-.46z"/>
+      </svg>
+    </a>
   )
 }
