@@ -67,7 +67,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
     target="_blank"
     className="bg-primary text-white px-6 py-3 rounded-md text-sm font-medium hover:opacity-90 transition"
   >
-    Ask Us on WhatsApp
+    Get Vendor Recommendations on WhatsApp
   </a>
 </section>
 
