@@ -29,7 +29,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             We help you source authentic Indian wedding outfits from trusted vendors — entirely from the U.S.
           </p>
 
-          <p className="mt-3 text-base text-charcoal/90 max-w-2xl mx-auto">
+          <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-normal leading-relaxed text-[#6a5c55]">
             Skip expensive trips to India. We guide you through trusted vendors, pricing, and quality — so you get exactly what you want without the stress.
           </p>
 
