@@ -301,3 +301,16 @@ a.fixed.bottom-6.right-6 {
 a.fixed.bottom-6.right-6 {
   font-size: 14px !important;
 }
+
+/* Replace floating WhatsApp button text */
+a.fixed.bottom-6.right-6 {
+  font-size: 0 !important;
+  position: relative;
+}
+
+a.fixed.bottom-6.right-6::after {
+  content: "Message on WhatsApp";
+  font-size: 14px;
+  color: white;
+}
+
