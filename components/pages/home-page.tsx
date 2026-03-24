@@ -53,7 +53,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
           </div>
 
-          {/* 6 CARDS (RESTORED) */}
+          {/* 6 CARDS */}
           <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
             <Link href="/shop-from-india" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
@@ -98,6 +98,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </h3>
               <p className="text-charcoal/70">
                 Coordinate outfits for your entire wedding party with consistent colors and sizing.
+              </p>
+            </Link>
+
+            <Link href="/indian-wedding-jewelry-and-accessories" className="bg-white border border-[var(--cv-border)] rounded-2xl p-6 hover:shadow-md transition">
+              <h3 className="text-lg font-semibold mb-2">
+                Jewelry & Ceremonial Accessories
+              </h3>
+              <p className="text-charcoal/70">
+                Source bridal jewelry, accessories, and ceremony essentials from trusted vendors.
               </p>
             </Link>
 
