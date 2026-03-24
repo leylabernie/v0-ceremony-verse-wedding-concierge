@@ -26,7 +26,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg mb-10">
-            Shop Indian wedding outfits directly from trusted designers and skilled makers — guided through live video, without travel or uncertainty.
+            Skip expensive trips to India. We help you source authentic wedding outfits from trusted vendors — with guidance, transparency, and zero guesswork.
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
