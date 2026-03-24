@@ -20,7 +20,7 @@ export type PageType =
   | "privacy"
   | "terms"
 
-export default function CeremonyVerse() {
+export function HomePage() {
   const [activePage, setActivePage] = useState<PageType>("home")
 
   const handleNavigate = (page: PageType) => {
