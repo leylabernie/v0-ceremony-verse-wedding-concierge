@@ -41,7 +41,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               target="_blank"
               className="bg-[#1f1f1f] text-white px-8 py-4 rounded-md text-base font-semibold hover:opacity-90 transition text-center"
             >
-              Get Outfit Help on WhatsApp
+              Message on WhatsApp
             </a>
 
             <Link
