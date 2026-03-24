@@ -48,18 +48,18 @@ const journeySteps = [
   ],
 },
   {
-    number: "04",
-    title: "Production",
-    location: "Workshops",
-    description:
-      "Your outfits are produced with continuous oversight and progress updates.",
-    details: [
-      "Custom measurements",
-      "Production tracking",
-      "Progress updates",
-      "Quality checks",
-    ],
-  },
+  number: "04",
+  title: "Order Placement & Coordination",
+  location: "India",
+  description:
+    "Once you finalize your selections, we coordinate directly with boutiques and designers to secure your outfits and manage all communication on your behalf.",
+  details: [
+    "Order placement with trusted vendors",
+    "Measurement and sizing coordination",
+    "Ongoing order updates",
+    "Quality monitoring throughout the process",
+  ],
+},
   {
     number: "05",
     title: "Final Inspection",
