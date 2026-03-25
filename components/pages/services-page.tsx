@@ -58,36 +58,36 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GROOMSMEN */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-3">Popular Add-On</div>
-            <h3 className="text-xl font-semibold mb-3">
-              Groomsmen Attire
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Matching kurtas and bandhgalas for the entire groomsmen crew — sourced with accurate measurements and delivered with your groom's order.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-groomsmen.jpg" alt="Five matching ivory kurta sets with blue brocade Nehru jackets hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Popular Add-On</div>
+              <h3 className="text-xl font-semibold mb-3">Groomsmen Attire</h3>
+              <p className="text-[var(--cv-muted)]">Matching kurtas and bandhgalas for the entire groomsmen crew — sourced with accurate measurements and delivered with your groom's order.</p>
+            </div>
           </div>
 
           {/* FAMILY */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Family Wedding Outfits
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics for a unified look.
-            </p>
-            <p className="text-xs text-[var(--cv-accent)] mt-3 font-medium">✦ Vendors book 6–12 months out — start early</p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-bridesmaids.png" alt="Folded coordinated Indian family sarees in warm tones" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Family Wedding Outfits</h3>
+              <p className="text-[var(--cv-muted)]">Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics for a unified look.</p>
+              <p className="text-xs text-[var(--cv-accent)] mt-3 font-medium">✦ Vendors book 6–12 months out — start early</p>
+            </div>
           </div>
 
           {/* PETS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-3">Fan Favorite</div>
-            <h3 className="text-xl font-semibold mb-3">
-              Pet Outfits (Dogs & Cats)
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Custom sherwanis, lehengas, and bandanas for your fur babies — designed to match your wedding palette and made for comfort.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-pets.png" alt="Small dog in an ivory and gold embroidered Indian sherwani with a tiny safa turban at a wedding" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <div className="p-6">
+              <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Fan Favorite</div>
+              <h3 className="text-xl font-semibold mb-3">Pet Outfits (Dogs & Cats)</h3>
+              <p className="text-[var(--cv-muted)]">Custom sherwanis, lehengas, and bandanas for your fur babies — designed to match your wedding palette and made for comfort.</p>
+            </div>
           </div>
 
           {/* JEWELRY */}
@@ -111,13 +111,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GIFTS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Wedding Gifts & Return Gifts
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family, packaged beautifully.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-gifts.png" alt="Indian wedding return gifts — colourful wrapped boxes with gold ribbons, brass diyas and marigolds on a decorated table" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Wedding Gifts & Return Gifts</h3>
+              <p className="text-[var(--cv-muted)]">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family, packaged beautifully.</p>
+            </div>
           </div>
 
           {/* WELCOME BAGS */}

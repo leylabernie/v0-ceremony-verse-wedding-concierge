@@ -21,10 +21,10 @@ const blocks = [
     img: "/images/services-bridal-gold.jpg",
   },
   {
-    title: "Groom Outfits",
-    desc: "Sherwanis, bandhgalas, and coordinated ceremony outfits.",
+    title: "Groom & Groomsmen",
+    desc: "Sherwanis, bandhgalas, and matching groomsmen kurta sets.",
     page: "services" as PageType,
-    img: "/images/services-groom.jpg",
+    img: "/images/services-groomsmen.jpg",
   },
   {
     title: "Bridesmaid & Family Outfits",
