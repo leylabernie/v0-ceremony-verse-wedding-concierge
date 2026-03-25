@@ -174,14 +174,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           Worried about scams, wrong colors, or outfits that don't fit? We source directly from India — with live video so you see every item before it ships, and quality checks before it leaves.
         </p>
 
-        {/* Pain signals */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 max-w-2xl mx-auto">
-          {["No scams", "See it before it ships", "Perfect fit guaranteed", "Everything included"].map((tag) => (
-            <span key={tag} className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full" style={{ background: "#f0ebe3", color: "#6a5c55", border: "1px solid #e6dfd5" }}>
-              <span style={{ color: "#c7b28a" }}>✓</span> {tag}
-            </span>
-          ))}
-        </div>
+
 
         {/* Social proof bar */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-[#8a6f63]">
