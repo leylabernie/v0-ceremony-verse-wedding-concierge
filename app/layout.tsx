@@ -40,7 +40,8 @@ export default function RootLayout({
           "https://www.instagram.com/ceremonyverse",
           "https://www.pinterest.com/ceremonyverse",
           "https://www.tiktok.com/@ceremonyverse",
-          "https://wa.me/12153419990"
+          "https://wa.me/12153419990",
+          "https://www.trustpilot.com/review/ceremonyverse.com"
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",

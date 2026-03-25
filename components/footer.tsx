@@ -185,7 +185,18 @@ export function Footer({ onNavigate }: FooterProps) {
                 </svg>
                 hello@ceremonyverse.com
               </a>
-              <p className="text-xs text-[#8a6f63] leading-relaxed mt-4">
+              <a
+                href="https://www.trustpilot.com/review/ceremonyverse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 mt-4 text-xs text-[#6a5c55] hover:text-[#c7b28a] transition"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#c7b28a">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                Review us on Trustpilot
+              </a>
+              <p className="text-xs text-[#8a6f63] leading-relaxed mt-3">
                 Serving US-based families nationwide.<br/>
                 Based in the Philadelphia area.
               </p>
