@@ -270,17 +270,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                problem: ""What arrived looked nothing like the photos"",
+                problem: "What arrived looked nothing like the photos",
                 solution: "You approve the exact item on live video — same fabric, same embroidery, reserved with your order number. If anything changes before shipping, we halt it.",
                 icon: "🎥",
               },
               {
-                problem: ""I was terrified of getting scammed"",
+                problem: "I was terrified of getting scammed",
                 solution: "We physically visit every artisan workshop. No Instagram sellers, no blind ordering. 100+ US families have trusted us — and we have never had a scam incident.",
                 icon: "🛡️",
               },
               {
-                problem: ""Sizing was a complete nightmare"",
+                problem: "Sizing was a complete nightmare",
                 solution: "We guide every family member through measurements on video call. 99% first-time fit rate across 100+ families and thousands of individual outfits.",
                 icon: "📏",
               },

@@ -1,5 +1,3 @@
-"use client"
-
 export const metadata = {
   title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
   description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",

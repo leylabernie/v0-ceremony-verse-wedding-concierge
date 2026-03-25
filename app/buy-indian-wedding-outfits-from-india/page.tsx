@@ -1,5 +1,3 @@
-"use client"
-
 export const metadata = {
   title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
   description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America's trusted NRI wedding shopping concierge.",
