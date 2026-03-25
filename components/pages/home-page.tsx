@@ -30,19 +30,19 @@ const testimonials = [
     names: "Kaval & April",
     initials: "KA",
     color: "#c7b28a",
-    location: "New Jersey",
+    location: "Philadelphia, PA",
     quote:
-      "We had no idea where to start. CeremonyVerse took us from completely lost to fully dressed — every single person in our wedding party. The live video sessions made it feel like we were right there in the market.",
-    detail: "Full wedding party — 14 outfits sourced",
+      "We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed everyone — bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. The live video sessions made it feel like we were right there in the market.",
+    detail: "4-day wedding · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · ceremonial items · gifts · welcome bags",
   },
   {
     names: "Karan & Sonal",
     initials: "KS",
     color: "#b09872",
-    location: "Chicago, IL",
+    location: "Destination Wedding, Mexico",
     quote:
-      "I was terrified of getting scammed ordering from India online. Having someone physically inspect the outfits before they shipped gave us so much peace of mind. The lehenga was even more beautiful in person.",
-    detail: "Bridal lehenga + groom sherwani",
+      "Planning a 4-day destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
+    detail: "4-day destination wedding · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
   },
   {
     names: "Charlie & Viola",
@@ -50,35 +50,44 @@ const testimonials = [
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
-      "As a non-South Asian groom, I had no frame of reference for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.",
-    detail: "Intercultural wedding — full family coordination",
+      "As a non-South Asian groom, I had no frame of reference for any of this. CeremonyVerse sourced the bridesmaids outfits and my sherwani — and walked me through every decision patiently. Our families were blown away.",
+    detail: "Bridesmaids outfits + groom sherwani · intercultural wedding",
   },
   {
     names: "Dhan & Christina",
     initials: "DC",
     color: "#c7b28a",
-    location: "Atlanta, GA",
+    location: "USA",
     quote:
-      "Coordinating bridesmaid outfits for 8 girls across three states felt impossible. CeremonyVerse handled every measurement, every follow-up, and every delivery. Flawless.",
-    detail: "8 bridesmaid outfits + bridal look",
+      "CeremonyVerse made the entire bridal and groom outfit process smooth and stress-free. Everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
+    detail: "Bride & groom outfits",
   },
   {
     names: "Shincy",
-    initials: "S",
+    initials: "SH",
     color: "#b09872",
-    location: "Dallas, TX",
+    location: "USA",
     quote:
-      "I was planning my wedding from the US while my family was in Kerala. CeremonyVerse bridged that gap completely — they sourced outfits my mom would have chosen herself, and she approves of everything.",
-    detail: "Full bridal + family package",
+      "I was having my wedding in India but couldn't find the right lehenga in Delhi on my own. CeremonyVerse sourced my bridal lehenga from Delhi for me — handling everything remotely so I didn't have to stress while planning from abroad.",
+    detail: "Bridal lehenga sourced from Delhi · wedding in India",
   },
   {
     names: "Swati",
     initials: "SW",
     color: "#8a7060",
-    location: "Houston, TX",
+    location: "USA",
     quote:
-      "The pricing transparency alone was worth everything. I knew exactly what I was paying for at every stage. No surprises, no markups, no stress. I'd recommend CeremonyVerse to every NRI bride.",
-    detail: "Bridal lehenga + 6 family outfits",
+      "I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked put-together at every event.",
+    detail: "Multiple wedding guest outfits",
+  },
+  {
+    names: "Shilpa",
+    initials: "SP",
+    color: "#c7b28a",
+    location: "USA",
+    quote:
+      "I went to India for my own shopping but knew coordinating 12 bridesmaid outfits remotely would be a nightmare. CeremonyVerse handled all 12 — every measurement, every fitting, every delivery. I didn't have to worry about a single one.",
+    detail: "12 bridesmaid outfits sourced while bride shopped in India",
   },
 ]
 
@@ -493,7 +502,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charlie & Viola</p>
-                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; Intercultural wedding</p>
+                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; Bridesmaids + groom sherwani</p>
                 </div>
               </div>
             </div>

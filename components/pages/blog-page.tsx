@@ -238,11 +238,11 @@ The nehru collar sherwani with minimal embroidery is the clean, modern choice fo
   {
     tag: "Real Wedding",
     title: "Kaval & April's Wedding: 14 Outfits Sourced Across Three Ceremonies",
-    excerpt: "An intercultural wedding in Philadelphia — how we coordinated a Sikh ceremony, a Hindu ceremony, and a Western reception for 14 members of the wedding party.",
+    excerpt: "A 4-day Hindu and Christian wedding in Philadelphia — 14 bridesmaids, 14 groomsmen, bridal and reception lehenga, full family, pet outfits, ceremonial items, return gifts, and welcome bags. All of it.",
     date: "January 5, 2026",
     readTime: "9 min read",
     slug: "kaval-april-wedding-story",
-    content: `Kaval messaged us in March, ten months before his wedding. He and April were planning three events: an Anand Karaj (Sikh ceremony), a Hindu wedding ceremony, and a Western reception — all in Philadelphia, over two days.
+    content: `Kaval messaged us in March, ten months before his wedding. He and April were planning a 4-day Hindu and Christian wedding in Philadelphia — and they needed everything: bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family outfits, their dog's outfit, ceremonial items, return gifts, sweets, and welcome bags.
 
 April had never worn Indian clothes. Kaval's family was split between New Jersey and California. April's family was from Ohio and had no reference point for Indian dress codes.
 
@@ -250,7 +250,7 @@ April had never worn Indian clothes. Kaval's family was split between New Jersey
 
 **The brief**
 
-Kaval wanted his family in coordinated deep pink and gold for the Anand Karaj, navy and gold for the Hindu ceremony, and western formal for the reception. April would wear a lengha (her spelling) for the Anand Karaj and a lehenga for the Hindu ceremony — both sourced from India. Her family would wear coordinated Western-Indian fusion outfits.
+Kaval wanted coordinated outfits across all four days — different color palettes for each ceremony. April needed a bridal lehenga and a separate reception lehenga. 14 bridesmaids and 14 groomsmen needed coordinated sets. Both families needed outfits. Their small dog needed a wedding outfit. And the non-outfit items — ceremonial pieces, return gifts, sweets, welcome bags — all needed to be sourced and shipped.
 
 **The outfit map**
 
@@ -266,7 +266,7 @@ Kaval's 5 groomsmen were across three states. We sent them all the measurement g
 
 **What Kaval said afterward**
 
-"We had no idea where to start. CeremonyVerse took us from completely lost to fully dressed — every single person in our wedding party. The live video sessions made it feel like we were right there in the market."
+"We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed literally everyone — including our dog. The live video sessions made it feel like we were right there in the market."
 
 If you're planning an intercultural wedding and don't know where to begin, this is exactly what we're here for.`
   },
