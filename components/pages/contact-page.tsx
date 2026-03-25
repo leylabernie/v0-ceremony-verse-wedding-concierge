@@ -235,7 +235,7 @@ export function ContactPage() {
           {/* Calendly inline widget */}
           <div
             className="calendly-inline-widget rounded-2xl overflow-hidden"
-            data-url="https://calendly.com/lab-bhamini/consultation?hide_gdpr_banner=1&primary_color=c7b28a"
+            data-url="https://calendly.com/lab-bhamini/30min?hide_gdpr_banner=1&primary_color=c7b28a"
             style={{ minWidth: "320px", height: "700px", border: "1px solid var(--cv-border)" }}
           />
           <script
