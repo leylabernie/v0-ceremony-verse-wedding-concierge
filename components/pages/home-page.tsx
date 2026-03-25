@@ -228,7 +228,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Real differentiators */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {[
-                "Manufacturer-direct pricing",
+                "Direct from our India partners",
                 "Custom stitched to your measurements",
                 "Fabric sourced & dyed to your shade",
                 "Dedicated jewelry supplier",
@@ -260,7 +260,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               },
               {
                 problem: "I was terrified of getting scammed",
-                solution: "We work directly with our trusted supply chain in India — manufacturers, designers, and fabric suppliers we know personally. No random Instagram sellers. You see everything on live video before it ships.",
+                solution: "We work directly with our trusted partners in India — skilled craftspeople, designers, and fabric specialists we know personally. No random Instagram sellers. You see everything on live video before it ships.",
                 icon: "🛡️",
               },
               {
@@ -299,7 +299,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Between multiple family weddings and helping friends navigate the chaos of Indian bridal shopping from the US, I saw the same story repeat itself: families spending thousands, getting burned by scammers, or just giving up and settling for whatever an American boutique had in stock.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            I knew there was a better way. I built direct relationships across India — a manufacturer who supplies outfits worldwide, a local designer and tailor who custom-stitches to your exact measurements, a fabric specialist who sources and dyes fabrics to your chosen shade, and a dedicated bridal jewelry supplier. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for entire families across multiple states.
+            I knew there was a better way. I built direct relationships across India — a skilled outfit specialist who sources ready and semi-custom pieces, a local designer and tailor who custom-stitches to your exact measurements, a fabric expert who sources and dyes fabrics to your chosen shade, and a dedicated bridal jewelry supplier. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for entire families across multiple states.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed font-medium">
             CeremonyVerse is that knowledge, turned into a service. — <em>Bhamini, Founder</em>

@@ -13,7 +13,7 @@ const faqSections = [
     items: [
       {
         question: "How do I know this isn't a scam?",
-        answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with a trusted supply chain in India — a manufacturer, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
+        answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with trusted partners in India — skilled craftspeople, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
       },
       {
         question: "What if quality doesn't match?",
@@ -21,7 +21,7 @@ const faqSections = [
       },
       {
         question: "How do you verify your sourcing partners?",
-        answer: "We work with a carefully selected supply chain built over time — a manufacturer who supplies outfits worldwide, a local designer and tailor who custom-stitches to your exact measurements and references, a fabric specialist who sources and dyes fabrics to your chosen color shade, and a dedicated bridal jewelry supplier. Every partner is someone we know personally."
+        answer: "We work with a carefully chosen circle of partners built over time — an outfit specialist who sources both ready-made and semi-custom pieces, a local designer and tailor who custom-stitches to your exact measurements and references, a fabric expert who sources and dyes fabrics to your chosen color shade, and a dedicated bridal jewelry supplier. Every partner is someone we know personally."
       }
     ]
   },

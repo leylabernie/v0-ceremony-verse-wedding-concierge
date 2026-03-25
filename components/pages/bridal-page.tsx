@@ -71,7 +71,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "No flying to India required", desc: "We handle everything remotely. Live video shopping sessions let you see and approve every detail before anything is made or shipped." },
-              { title: "Our verified supply chain", desc: "We work with our trusted network in India — manufacturers, designers, fabric specialists, and jewelry suppliers we know personally. No Instagram sellers, no middlemen, no surprises." },
+              { title: "Our verified supply chain", desc: "We work with our trusted partners in India — skilled outfit specialists, designers, fabric experts, and jewelry suppliers we know personally. No Instagram sellers, no middlemen, no surprises." },
               { title: "Transparent pricing", desc: "You see exactly what you pay — outfit cost, our sourcing fee, shipping, and customs. Most brides save vs. US boutiques." },
               { title: "Guaranteed fit", desc: "We collect 15+ measurements and build in alteration allowance. custom-fitted to your measurements. If alterations are needed due to our error, we cover the cost." },
             ].map((item, i) => (
