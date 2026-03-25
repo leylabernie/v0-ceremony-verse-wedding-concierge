@@ -33,7 +33,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* BRIDE */}
           <button type="button" onClick={() => onNavigate("bridal")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga" style={{ width: "100%", height: "16rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Bridal Lehengas & Wedding Outfits</h3>
               <p className="text-[var(--cv-muted)] text-sm">Sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.</p>
@@ -44,7 +44,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* GROOM */}
           <button type="button" onClick={() => onNavigate("groom")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani" style={{ width: "100%", height: "16rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Groom Sherwanis & Attire</h3>
               <p className="text-[var(--cv-muted)] text-sm">Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.</p>
@@ -55,7 +55,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* BRIDESMAIDS */}
           <button type="button" onClick={() => onNavigate("bridesmaids")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridesmaids.jpg" alt="Pastel bridesmaid lehengas on rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-bridesmaids.jpg" alt="Pastel bridesmaid lehengas on rack" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "left center", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Bridesmaid Outfits</h3>
               <p className="text-[var(--cv-muted)] text-sm">Coordinated lehengas in matching palettes — consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
@@ -66,7 +66,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* GROOMSMEN */}
           <button type="button" onClick={() => onNavigate("groomsmen")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-groomsmen.jpg" alt="Ivory kurta sets on rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-groomsmen.jpg" alt="Ivory kurta sets on rack" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center center", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Popular Add-On</div>
               <h3 className="text-xl font-semibold mb-2">Groomsmen Attire</h3>
@@ -78,7 +78,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* FAMILY */}
           <button type="button" onClick={() => onNavigate("family")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian family sarees" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
+            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian family sarees" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Family Wedding Outfits</h3>
               <p className="text-[var(--cv-muted)] text-sm">Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics.</p>
@@ -89,7 +89,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* PETS */}
           <button type="button" onClick={() => onNavigate("pets")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-pets.jpg" alt="Two dogs in Indian wedding outfits" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-pets.jpg" alt="Two dogs dressed for a wedding — shih tzu and maltese with teal headpiece" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center center", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Fan Favorite</div>
               <h3 className="text-xl font-semibold mb-2">Pet Outfits (Dogs & Cats)</h3>
@@ -101,7 +101,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* JEWELRY */}
           <button type="button" onClick={() => onNavigate("jewelry")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan necklace set" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan necklace set" style={{ width: "100%", height: "16rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Jewelry & Bridal Accessories</h3>
               <p className="text-[var(--cv-muted)] text-sm">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
@@ -112,7 +112,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* CEREMONIAL */}
           <button type="button" onClick={() => onNavigate("ceremonial")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-ceremonial2.png" alt="Mehndi ceremony with marigolds and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-ceremonial2.png" alt="Mehndi ceremony with marigolds and brass diyas" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Ceremonial Items & Ritual Essentials</h3>
               <p className="text-[var(--cv-muted)] text-sm">Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.</p>
@@ -123,7 +123,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* GIFTS */}
           <button type="button" onClick={() => onNavigate("gifts")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-gifts.jpg" alt="Silk potli gift bags with roses in a gold ballroom setting" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center bottom", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Wedding Gifts & Return Gifts</h3>
               <p className="text-[var(--cv-muted)] text-sm">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family.</p>
@@ -134,7 +134,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* WELCOME BAGS */}
           <button type="button" onClick={() => onNavigate("welcomebags")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center center", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Welcome Bags & Event Details</h3>
               <p className="text-[var(--cv-muted)] text-sm">Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.</p>
