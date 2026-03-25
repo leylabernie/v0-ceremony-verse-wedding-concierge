@@ -16,6 +16,7 @@ interface HomePageProps {
 export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <main>
+      {/* HERO */}
       <section className="py-20 px-6 text-center">
         <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
           Your Personal Sourcing Team
@@ -54,6 +55,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
+      {/* WHY SECTION */}
       <section className="py-16 px-6 bg-[#f9f6f3]">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-6 text-center">
           Why CeremonyVerse Exists
@@ -78,6 +80,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10">
           How It Works
@@ -113,6 +116,72 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
         </div>
       </section>
+
+      {/* ✅ RESTORED 6 BLOCKS */}
+      <section className="py-20 px-6 bg-[#f9f6f3]">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-12 text-center">
+          What We Source For You
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Bridal Outfits
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Lehengas, sarees, reception looks, and custom bridal designs.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Groom Outfits
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Sherwanis, bandhgalas, and coordinated ceremony outfits.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Bridesmaid & Family Outfits
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Coordinated looks for bridesmaids, siblings, and family members.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Groomsmen Outfits
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Matching or complementary styles for groomsmen.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Jewelry & Accessories
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Bridal jewelry, footwear, clutches, and finishing details.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+              Ceremonial Items & Wedding Essentials
+            </h3>
+            <p className="text-sm text-[#6a5c55]">
+              Dupattas, pagdis, kalire, welcome bags, and ceremony essentials.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   )
 }
