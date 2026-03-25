@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Buy Wedding Outfits from India USA | Personal Wedding Shopper India | CeremonyVerse",
   description:
-    "Work with a personal wedding shopper in India to buy bridal lehengas, sherwanis, and wedding outfits with live video shopping, trusted manufacturers, and US-based quality checks. August 2026 bookings open.",
+    "Work with a personal wedding shopper in India to buy bridal lehengas, sherwanis, and wedding outfits with live video shopping, trusted artisan partners, and US-based quality checks. August 2026 bookings open.",
 };
 
 export default function ShopFromIndiaPage() {
@@ -18,7 +18,7 @@ export default function ShopFromIndiaPage() {
             name: "CeremonyVerse",
             url: "https://ceremonyverse.com/shop-from-india",
             description:
-              "Indian wedding outfit sourcing service with live video shopping from trusted manufacturers in India.",
+              "Indian wedding outfit sourcing service with live video shopping from trusted artisan workshops in India.",
             areaServed: {
               "@type": "Country",
               name: "United States",
@@ -47,7 +47,7 @@ export default function ShopFromIndiaPage() {
           </h1>
 
           <p className="mt-6 text-lg text-[var(--cv-muted)]">
-            Work with a personal wedding shopper in India to find bridal lehengas, sherwanis, and wedding outfits from trusted manufacturers—without the stress of traveling or dealing with unknown vendors.
+            Work with a personal wedding shopper in India to find bridal lehengas, sherwanis, and wedding outfits from trusted craftspeople—without the stress of traveling or dealing with unknown vendors.
           </p>
 
           <p className="mt-4 text-lg text-[var(--cv-muted)]">
@@ -91,7 +91,7 @@ export default function ShopFromIndiaPage() {
             <div className="p-6 bg-white rounded-2xl shadow-sm">
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Trusted Sellers Only</h3>
               <p className="mt-2 text-[var(--cv-muted)]">
-                We work only with verified and reliable manufacturers.
+                We work only with verified and reliable artisan workshops.
               </p>
             </div>
 
@@ -123,7 +123,7 @@ export default function ShopFromIndiaPage() {
             <div>
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Sherwanis for Grooms</h3>
               <p className="text-[var(--cv-muted)]">
-                Find well-fitted sherwanis from reliable manufacturers with full quality review before delivery.
+                Find well-fitted sherwanis from skilled craftspeople with full quality review before delivery.
               </p>
             </div>
 

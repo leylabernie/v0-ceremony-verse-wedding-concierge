@@ -50,7 +50,7 @@ export function TermsPage({ onNavigate }: TermsPageProps) {
               </h2>
               <p className="mb-4">
                 CeremonyVerse provides wedding outfit sourcing and concierge services, connecting clients 
-                with verified manufacturers in India. Our services include:
+                with verified artisan partners in India. Our services include:
               </p>
               <ul className="space-y-3 ml-6">
                 <li className="flex items-start gap-3">
@@ -59,7 +59,7 @@ export function TermsPage({ onNavigate }: TermsPageProps) {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full mt-2.5 flex-shrink-0" />
-                  <span>Manufacturer vetting and quality assurance</span>
+                  <span>Artisan vetting and quality assurance</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-1.5 h-1.5 bg-brushed-gold rounded-full mt-2.5 flex-shrink-0" />
@@ -139,7 +139,7 @@ export function TermsPage({ onNavigate }: TermsPageProps) {
                 Limitation of Liability
               </h2>
               <p>
-                CeremonyVerse acts as an intermediary between clients and manufacturers. While we 
+                CeremonyVerse acts as an intermediary between clients and our sourcing partners. While we 
                 conduct thorough vetting and quality control, we cannot guarantee against all 
                 manufacturing defects or shipping delays. Our liability is limited to the value of 
                 services provided.

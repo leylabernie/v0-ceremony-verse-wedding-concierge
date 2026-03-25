@@ -13,15 +13,15 @@ const faqSections = [
     items: [
       {
         question: "How do I know this isn't a scam?",
-        answer: "Unlike Instagram sellers, we don't hide behind a screen. Our team physically visits every manufacturer, documents factory conditions, and verifies production capabilities in person. We provide video walkthroughs and never ask for full payment upfront."
+        answer: "Unlike Instagram sellers, we don't hide behind a screen. Our team physically visits every artisan workshop, documents working conditions, and verifies production capabilities in person. We provide video walkthroughs and never ask for full payment upfront."
       },
       {
         question: "What if quality doesn't match?",
         answer: "You approve fabrics via detailed HD video showing thread count, weave quality, and color under natural light. That exact bolt is reserved with your order number. If anything doesn't match, we halt shipping and resolve it at our cost."
       },
       {
-        question: "How do you verify manufacturers?",
-        answer: "We personally visit every manufacturer. We check business licenses, inspect facilities, verify labor practices, and review client history. Only 15-20 vetted manufacturers across India make our network."
+        question: "How do you verify your sourcing partners?",
+        answer: "We personally visit every artisan workshop and vetted partner. We check business licenses, inspect facilities, verify labor practices, and review client history. Only 15–20 carefully vetted workshops across India make our network."
       }
     ]
   },
@@ -47,7 +47,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "Radical transparency: factory cost, our 15-20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save 30-50% compared to US boutiques."
+        answer: "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save 30-50% compared to US boutiques."
       },
       {
         question: "What's the payment schedule?",

@@ -21,7 +21,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
             Your Dream Lehenga,<br />Sourced from India
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl mb-10" style={{ color: "rgba(255,255,255,0.85)" }}>
-            From bridal lehengas to reception looks — we find authentic, handcrafted outfits directly from India’s best manufacturers. Live video verification. Quality guaranteed. Delivered to your door.
+            From bridal lehengas to reception looks — we find authentic, handcrafted outfits directly from India’s finest artisan workshops. Live video verification. Quality guaranteed. Delivered to your door.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
@@ -71,8 +71,8 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "No flying to India required", desc: "We handle everything remotely. Live video shopping sessions let you see and approve every detail before anything is made or shipped." },
-              { title: "Only vetted manufacturers", desc: "We work with 15–20 manufacturers we've personally visited. No Instagram sellers, no middlemen, no surprises." },
-              { title: "Transparent pricing", desc: "You see exactly what you pay — factory cost, our sourcing fee, shipping, and customs. Most brides save 30–50% vs. US boutiques." },
+              { title: "Only verified ateliers", desc: "We work with 15–20 artisan workshops we've personally visited. No Instagram sellers, no middlemen, no surprises." },
+              { title: "Transparent pricing", desc: "You see exactly what you pay — outfit cost, our sourcing fee, shipping, and customs. Most brides save 30–50% vs. US boutiques." },
               { title: "Guaranteed fit", desc: "We collect 15+ measurements and build in alteration allowance. 99% first-time fit rate. If alterations are needed due to our error, we cover the cost." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
@@ -93,7 +93,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
           {[
             { step: "01", title: "Share Your Vision", desc: "Send references, color preferences, event dates, and budget. We take it from there." },
-            { step: "02", title: "We Curate Options", desc: "We shortlist outfits from trusted manufacturers that match your vision and budget." },
+            { step: "02", title: "We Curate Options", desc: "We shortlist outfits from trusted artisans that match your vision and budget." },
             { step: "03", title: "Live Video Review", desc: "Join a video session to see fabrics, embroidery, and colors in real time before deciding." },
             { step: "04", title: "Quality Check & Ship", desc: "We inspect every piece before it ships, then deliver directly to your US address." },
           ].map((item, i) => (

@@ -71,15 +71,15 @@ const pricingTiers = [
     desc: "For the self-directed bride who just needs a curated starting point.",
     features: [
       "Personalized outfit style guide",
-      "Curated list of 3–5 vetted vendors",
+      "Curated list of 3–5 vetted artisan workshops",
       "Budget guidance and style notes",
       "One 30-min consultation call",
     ],
     cta: "Get Started",
   },
   {
-    name: "Guided Video Shopping",
-    price: "From $499",
+    name: "Guided Sourcing",
+    price: "From $599",
     desc: "Live sourcing sessions so you can see and approve every piece before it ships.",
     features: [
       "Everything in Style Guide tier",
@@ -93,10 +93,10 @@ const pricingTiers = [
   },
   {
     name: "Full Bridal Concierge",
-    price: "From $1,200",
+    price: "From $1,499",
     desc: "We handle everything — from first inspiration to your door.",
     features: [
-      "Everything in Video Shopping tier",
+      "Everything in Guided Sourcing tier",
       "Full wedding party coordination",
       "Custom design sourcing",
       "Measurement management for all members",
@@ -139,7 +139,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <span className="w-px h-6 bg-[#e6dfd5] hidden sm:block" />
           <span className="flex items-center gap-2">
             <span className="text-2xl font-semibold text-[#1f1f1f]">15–20</span>
-            vetted India manufacturers
+            trusted artisan workshops
           </span>
           <span className="w-px h-6 bg-[#e6dfd5] hidden sm:block" />
           <span className="flex items-center gap-2">
@@ -201,7 +201,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Between multiple family weddings and helping friends navigate the chaos of Indian bridal shopping from the US, I saw the same story repeat itself: families spending thousands, getting burned by scammers, or just giving up and settling for whatever an American boutique had in stock.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            I knew there was a better way. I built direct relationships with 15–20 trusted manufacturers across India. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for 10+ family members across multiple states.
+            I knew there was a better way. I built direct relationships with 15–20 trusted artisan workshops across India. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for 10+ family members across multiple states.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed font-medium">
             CeremonyVerse is that knowledge, turned into a service. — <em>Bhamini, Founder</em>
@@ -317,9 +317,25 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
             Choose Your Level of Support
           </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-xl mx-auto">
-            Every tier includes direct access to vetted Indian manufacturers. No hidden markups — just our sourcing fee, clearly itemized.
+          <p className="text-center text-[#6a5c55] mb-8 max-w-xl mx-auto">
+            Every tier includes direct access to our vetted sourcing network in India. No hidden markups — just our sourcing fee, clearly itemized.
           </p>
+
+          {/* FREE TIER HIGHLIGHT */}
+          <div className="max-w-2xl mx-auto mb-10 rounded-2xl border border-[#c7b28a] bg-[#faf8f4] p-6 text-center">
+            <span className="inline-block text-xs font-medium tracking-widest uppercase text-[#c7b28a] mb-2">Always Free</span>
+            <h3 className="text-xl font-semibold text-[#1f1f1f] mb-2">Free Consultation — No Commitment</h3>
+            <p className="text-sm text-[#6a5c55] mb-4">
+              Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
+            </p>
+            <button
+              type="button"
+              onClick={() => onNavigate?.("contact")}
+              className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            >
+              Book Free Consultation →
+            </button>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {pricingTiers.map((tier, i) => (
@@ -369,7 +385,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
 
           <p className="text-center text-xs text-[#8a6f63] mt-6">
-            All tiers include itemized quotes showing factory cost, sourcing fee, shipping, and customs. Most clients save 30–50% vs. US boutiques.
+            All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs. Most clients save 30–50% vs. US boutiques.
           </p>
         </div>
       </section>

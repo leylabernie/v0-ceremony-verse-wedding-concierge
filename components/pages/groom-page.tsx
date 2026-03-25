@@ -71,9 +71,9 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "No guesswork on fit", desc: "We collect detailed measurements and build in allowance. Sherwanis are tailored to your exact size — no alterations needed in most cases." },
-              { title: "Verified craftsmanship", desc: "Every manufacturer we work with has been personally vetted. We inspect stitching, embroidery, and fabric quality before anything ships." },
+              { title: "Verified craftsmanship", desc: "Every artisan workshop we work with has been personally vetted. We inspect stitching, embroidery, and fabric quality before anything ships." },
               { title: "Coordinated with the bridal look", desc: "We ensure groom and groomsmen attire complements the bridal party colors, fabrics, and overall wedding aesthetic." },
-              { title: "Save 30–50% vs. US stores", desc: "Direct factory access means no boutique markup. You get better quality at a fraction of what US stores charge for the same craftsmanship." },
+              { title: "Save 30–50% vs. US stores", desc: "Direct sourcing means no boutique markup. You get better quality at a fraction of what US stores charge for the same craftsmanship." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
                 <span className="text-[#c7b28a] font-semibold text-lg mt-0.5">—</span>

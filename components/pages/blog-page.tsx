@@ -24,7 +24,7 @@ const posts = [
   {
     tag: "Budget Guide",
     title: "What Does a Bridal Lehenga Actually Cost? A Transparent Breakdown",
-    excerpt: "Factory price, sourcing fee, shipping, customs — we break down every line item so you know exactly what you're paying and why.",
+    excerpt: "Outfit cost, sourcing fee, shipping, customs — we break down every line item so you know exactly what you're paying and why.",
     date: "February 14, 2026",
     readTime: "5 min read",
   },

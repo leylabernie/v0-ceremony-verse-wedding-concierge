@@ -1,22 +1,11 @@
 "use client"
 
 import type { PageType } from "@/app/page"
-import { useState } from "react"
-
 interface FooterProps {
   onNavigate: (page: PageType) => void
 }
 
 export function Footer({ onNavigate }: FooterProps) {
-  const [email, setEmail] = useState("")
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setEmail("")
-  }
-
   return (
     <footer>
 
@@ -24,46 +13,32 @@ export function Footer({ onNavigate }: FooterProps) {
       <div className="bg-[#1f1f1f] py-14 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="tracking-[0.15em] text-xs font-medium text-[#c7b28a] mb-3 uppercase">
-            Free Style Guide
+            Free Download
           </p>
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">
-            Planning your 2026–2027 wedding? Get our free Style Guide.
+            Indian Wedding Outfit Checklist
           </h2>
           <p className="text-white/60 mb-2 text-sm max-w-lg mx-auto">
-            Our free Style Guide covers outfit inspiration, vendor timelines, and ceremony-by-ceremony styling. — 
+            Every outfit, every ceremony — nothing forgotten. Mehndi through Reception, with accessories, timeline, and ordering guide.
           </p>
           <p className="text-[#c7b28a] text-xs mb-8">
             Top vendors book 6–12 months out. Download now and start planning.
           </p>
-
-          {submitted ? (
-            <div className="inline-flex items-center gap-2 text-[#c7b28a] font-medium">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <polyline points="20,6 9,17 4,12" />
-              </svg>
-              Style Guide is on its way to your inbox!
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto"
-            >
-              <input
-                type="email"
-                required
-                placeholder="Your email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="border border-white/20 bg-white/10 text-white placeholder-white/40 rounded-full px-5 py-3 w-full outline-none focus:border-[#c7b28a] transition"
-              />
-              <button
-                type="submit"
-                className="bg-[#c7b28a] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition whitespace-nowrap"
-              >
-                Download Free
-              </button>
-            </form>
-          )}
+          <a
+            href="/wedding-outfit-checklist.pdf"
+            download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
+            className="inline-flex items-center gap-3 bg-[#c7b28a] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="7,10 12,15 17,10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Free Checklist (PDF)
+          </a>
+          <p className="text-white/40 text-xs mt-4">
+            No email required — instant download
+          </p>
         </div>
       </div>
 
