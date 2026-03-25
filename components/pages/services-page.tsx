@@ -121,13 +121,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* WELCOME BAGS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Welcome Bags & Event Details
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags on table with roses, petals and gold candles" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Welcome Bags & Event Details</h3>
+              <p className="text-[var(--cv-muted)]">Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.</p>
+            </div>
           </div>
 
         </div>

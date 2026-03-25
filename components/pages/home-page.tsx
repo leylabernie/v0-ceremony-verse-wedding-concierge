@@ -39,10 +39,10 @@ const blocks = [
     img: "/images/services-jewelry3.jpg",
   },
   {
-    title: "Ceremonial Items",
-    desc: "Ritual items, dupattas, and traditional ceremony essentials.",
+    title: "Welcome Bags & Gifts",
+    desc: "Personalized welcome bags, return gifts, and curated hampers for guests.",
     page: "services" as PageType,
-    img: "/images/services-ceremonial.png",
+    img: "/images/services-welcomebags.jpg",
   },
   {
     title: "Pet Outfits (Dogs & Cats)",
