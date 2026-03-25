@@ -50,20 +50,21 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* BRIDESMAIDS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian bridesmaid sarees in blush and sage" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-bridesmaids.jpg" alt="Five coordinated pastel bridesmaid lehengas in blush, mint, sky blue, lavender and peach hanging on a gold rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Bridesmaid Outfits</h3>
-              <p className="text-[var(--cv-muted)]">Coordinated bridesmaid outfits with consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
+              <p className="text-[var(--cv-muted)]">Coordinated bridesmaid lehengas and outfits sourced in matching palettes — consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
             </div>
           </div>
 
           {/* GROOMSMEN */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-3">Popular Add-On</div>
             <h3 className="text-xl font-semibold mb-3">
               Groomsmen Attire
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Groomsmen outfits styled and sourced to match your wedding theme with accurate measurements and reliable delivery.
+              Matching kurtas and bandhgalas for the entire groomsmen crew — sourced with accurate measurements and delivered with your groom's order.
             </p>
           </div>
 
@@ -73,17 +74,19 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Family Wedding Outfits
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Sarees, lehengas, and traditional outfits for parents and extended family, coordinated for color and design consistency.
+              Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics for a unified look.
             </p>
+            <p className="text-xs text-[var(--cv-accent)] mt-3 font-medium">✦ Vendors book 6–12 months out — start early</p>
           </div>
 
           {/* PETS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
+            <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-3">Fan Favorite</div>
             <h3 className="text-xl font-semibold mb-3">
               Pet Outfits (Dogs & Cats)
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Custom outfits for pets designed to match your wedding theme while ensuring comfort and safety.
+              Custom sherwanis, lehengas, and bandanas for your fur babies — designed to match your wedding palette and made for comfort.
             </p>
           </div>
 
@@ -113,7 +116,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Wedding Gifts & Return Gifts
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Thoughtful gift sourcing including sarees, hampers, and curated return gifts for guests and family.
+              Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family, packaged beautifully.
             </p>
           </div>
 
@@ -123,7 +126,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
               Welcome Bags & Event Details
             </h3>
             <p className="text-[var(--cv-muted)]">
-              Customized welcome bags, favors, and event details designed to enhance your guest experience.
+              Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.
             </p>
           </div>
 
