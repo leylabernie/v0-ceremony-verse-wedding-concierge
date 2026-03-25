@@ -35,7 +35,7 @@ export default function Page() {
 
   return (
     <>
-      <Navigation onNavigate={handleNavigate} />
+      <Navigation activePage={activePage} onNavigate={handleNavigate} />
 
       {activePage === "home" && <HomePage onNavigate={handleNavigate} />}
       {activePage === "services" && <ServicesPage onNavigate={handleNavigate} />}
