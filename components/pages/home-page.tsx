@@ -28,36 +28,54 @@ interface HomePageProps {
 const testimonials = [
   {
     names: "Kaval & April",
+    initials: "KA",
+    color: "#c7b28a",
+    location: "New Jersey",
     quote:
       "We had no idea where to start. CeremonyVerse took us from completely lost to fully dressed — every single person in our wedding party. The live video sessions made it feel like we were right there in the market.",
     detail: "Full wedding party — 14 outfits sourced",
   },
   {
     names: "Karan & Sonal",
+    initials: "KS",
+    color: "#b09872",
+    location: "Chicago, IL",
     quote:
       "I was terrified of getting scammed ordering from India online. Having someone physically inspect the outfits before they shipped gave us so much peace of mind. The lehenga was even more beautiful in person.",
     detail: "Bridal lehenga + groom sherwani",
   },
   {
     names: "Charlie & Viola",
+    initials: "CV",
+    color: "#8a7060",
+    location: "Philadelphia, PA",
     quote:
       "As a non-South Asian groom, I had no frame of reference for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.",
     detail: "Intercultural wedding — full family coordination",
   },
   {
     names: "Dhan & Christina",
+    initials: "DC",
+    color: "#c7b28a",
+    location: "Atlanta, GA",
     quote:
       "Coordinating bridesmaid outfits for 8 girls across three states felt impossible. CeremonyVerse handled every measurement, every follow-up, and every delivery. Flawless.",
     detail: "8 bridesmaid outfits + bridal look",
   },
   {
     names: "Shincy",
+    initials: "S",
+    color: "#b09872",
+    location: "Dallas, TX",
     quote:
       "I was planning my wedding from the US while my family was in Kerala. CeremonyVerse bridged that gap completely — they sourced outfits my mom would have chosen herself, and she approves of everything.",
     detail: "Full bridal + family package",
   },
   {
     names: "Swati",
+    initials: "SW",
+    color: "#8a7060",
+    location: "Houston, TX",
     quote:
       "The pricing transparency alone was worth everything. I knew exactly what I was paying for at every stage. No surprises, no markups, no stress. I'd recommend CeremonyVerse to every NRI bride.",
     detail: "Bridal lehenga + 6 family outfits",
@@ -407,12 +425,78 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
                   {t.quote}
                 </p>
-                <div className="border-t border-[#e6dfd5] pt-4">
-                  <p className="font-semibold text-[#1f1f1f]">{t.names}</p>
-                  <p className="text-xs text-[#8a6f63] mt-1">{t.detail}</p>
+                <div className="border-t border-[#e6dfd5] pt-4 flex items-center gap-3">
+                  <div
+                    className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold shrink-0"
+                    style={{ background: t.color }}
+                  >
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-[#1f1f1f] text-sm">{t.names}</p>
+                    <p className="text-xs text-[#8a6f63]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* INTERCULTURAL COUPLES SECTION */}
+      <section className="py-20 px-6" style={{ background: "#fff" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "var(--cv-accent)" }}>
+                Not South Asian? No Problem.
+              </p>
+              <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-5" style={{ color: "#1f1f1f" }}>
+                We guide intercultural couples every step of the way.
+              </h2>
+              <p className="text-base leading-relaxed mb-4" style={{ color: "#6a5c55" }}>
+                If you or your partner are navigating an Indian wedding for the first time, you're not alone. Many of our clients are non-South Asian partners who have never worn a sherwani or lehenga — and have no idea where to start.
+              </p>
+              <p className="text-base leading-relaxed mb-6" style={{ color: "#6a5c55" }}>
+                We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Ceremony-by-ceremony outfit guidance",
+                  "Both families coordinated together",
+                  "Cultural context explained clearly",
+                  "Non-South Asian sizing and fit support",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="text-sm mt-0.5" style={{ color: "var(--cv-accent)" }}>—</span>
+                    <span className="text-sm" style={{ color: "#2f2f2f" }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => onNavigate?.("contact")}
+                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
+                style={{ background: "#c7b28a", color: "#fff" }}
+              >
+                Book a Free Consultation
+              </button>
+            </div>
+            <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
+              <p className="text-[#c7b28a] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
+              <p className="text-base leading-relaxed mb-6 font-['Cormorant_Garamond'] text-xl italic" style={{ color: "#2f2f2f" }}>
+                As a non-South Asian groom, I had no frame of reference for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
+              </p>
+              <div className="flex items-center gap-3 border-t pt-4" style={{ borderColor: "#e6dfd5" }}>
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold" style={{ background: "#8a7060" }}>
+                  CV
+                </div>
+                <div>
+                  <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charlie & Viola</p>
+                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; Intercultural wedding</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

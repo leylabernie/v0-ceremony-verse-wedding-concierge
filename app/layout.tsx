@@ -5,7 +5,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Indian Wedding Outfit Sourcing from India | Bridal Concierge for US Families | CeremonyVerse",
-  description: "CeremonyVerse helps US-based South Asian families source authentic bridal lehengas, sherwanis, bridesmaid outfits, and jewelry directly from India — with live video shopping, quality checks, and delivery to your door. No flights. No scams.",
+  description: "CeremonyVerse is a US-based Indian wedding shopping concierge. We help families source authentic bridal lehengas, sherwanis, bridesmaid outfits, and jewelry directly from India — with live video shopping, quality checks, and delivery to your door.",
   keywords: "Indian wedding outfit sourcing USA, bridal lehenga from India, buy sherwani USA, Indian bridal concierge, NRI wedding shopping, Indian wedding outfits delivered USA, live video shopping India, South Asian bridal lehenga",
   openGraph: {
     title: "Indian Wedding Outfit Sourcing from India | CeremonyVerse",
