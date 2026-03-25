@@ -40,9 +40,9 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/logo-transparent.png"
+                src="/images/logo-nav.png"
                 alt="CeremonyVerse"
-                style={{ height: "52px", width: "auto", display: "block" }}
+                style={{ height: "56px", width: "auto", display: "block" }}
               />
             </button>
           </div>
