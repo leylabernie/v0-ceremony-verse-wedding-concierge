@@ -195,10 +195,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* HERO IMAGE */}
       <section className="px-6 pb-4">
         <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-bridal.png"
             alt="Ivory and gold embroidered bridal lehenga sourced from India"
-            className="w-full object-cover max-h-[480px]"
+            width={1440}
+            height={480}
+            style={{ width: "100%", height: "auto", maxHeight: "480px", objectFit: "cover", display: "block" }}
           />
         </div>
       </section>

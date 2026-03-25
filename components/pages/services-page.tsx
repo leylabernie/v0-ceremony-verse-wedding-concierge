@@ -49,7 +49,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
 
           {/* BRIDESMAIDS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
-            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian bridesmaid sarees in blush and sage" className="w-full h-48 object-cover" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian bridesmaid sarees in blush and sage" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Bridesmaid Outfits</h3>
               <p className="text-[var(--cv-muted)]">Coordinated bridesmaid outfits with consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
@@ -88,7 +89,8 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
 
           {/* JEWELRY */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
-            <img src="/images/services-jewelry.png" alt="Indian bridal jewelry including kundan necklace and jhumka earrings" className="w-full h-48 object-cover" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-jewelry.png" alt="Indian bridal jewelry including kundan necklace and jhumka earrings" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Jewelry & Bridal Accessories</h3>
               <p className="text-[var(--cv-muted)]">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
