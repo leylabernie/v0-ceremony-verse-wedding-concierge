@@ -103,7 +103,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* CEREMONIAL */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-ceremonial.png" alt="Indian wedding ceremonial items including marigolds, sindoor, dupatta and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-ceremonial2.png" alt="Bride's hands with intricate mehndi henna at Indian ceremony with marigolds and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Ceremonial Items & Ritual Essentials</h3>
               <p className="text-[var(--cv-muted)]">Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.</p>

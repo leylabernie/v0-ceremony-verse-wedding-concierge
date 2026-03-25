@@ -58,6 +58,40 @@ const faqSections = [
         answer: "Yes. For orders over $3,000, we offer extended plans across 4-6 months aligned with wedding timelines. We accept credit cards, bank transfers, and most payment methods."
       }
     ]
+  },
+  {
+    category: "Shipping & Delivery",
+    items: [
+      {
+        question: "How long does shipping take from India to the US?",
+        answer: "Standard international shipping takes 2–3 weeks. For urgent timelines, expedited shipping (7–10 days) is available at an additional cost. We always recommend building in extra buffer time before your wedding date."
+      },
+      {
+        question: "Do you handle customs and import duties?",
+        answer: "Yes. We prepare all shipping documentation and advise on expected customs duties. Import duties on clothing typically range from 12–27% of the declared value. These are itemized in your quote upfront — no surprises at the door."
+      },
+      {
+        question: "What if my outfit arrives damaged?",
+        answer: "Every shipment is fully insured. If an item arrives damaged, we file the insurance claim and coordinate a replacement or repair at no cost to you. We've never had an unresolved shipping issue."
+      }
+    ]
+  },
+  {
+    category: "The Process",
+    items: [
+      {
+        question: "Do I need to travel to India?",
+        answer: "Not at all. Everything happens remotely via WhatsApp video calls, Zoom sessions, and live video shopping. Most of our clients are US-based and have never set foot in India for their wedding shopping."
+      },
+      {
+        question: "Can I source just one item, or do I need a full package?",
+        answer: "You can source as little as one piece. Many clients start with just the bridal lehenga, then come back for bridesmaids, jewelry, and family outfits once they see how the process works."
+      },
+      {
+        question: "What regions of India do you source from?",
+        answer: "We source from specialized craft clusters across India: Surat and Kolkata for embroidered lehengas, Varanasi for Banarasi silk, Jaipur for Rajasthani and block print styles, and Mumbai for contemporary designer looks."
+      }
+    ]
   }
 ]
 
