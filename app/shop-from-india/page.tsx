@@ -1,3 +1,5 @@
+import { SeoNav } from "@/components/seo-nav"
+
 export const metadata = {
   title: "Buy Wedding Outfits from India USA | Personal Wedding Shopper India | CeremonyVerse",
   description:
@@ -7,6 +9,7 @@ export const metadata = {
 export default function ShopFromIndiaPage() {
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
+      <SeoNav />
 
       {/* SCHEMA */}
       <script

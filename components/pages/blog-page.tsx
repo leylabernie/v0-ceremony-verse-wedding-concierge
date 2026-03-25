@@ -73,16 +73,16 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
       {/* COMING SOON BANNER */}
       <section className="py-6 px-6" style={{ background: "var(--cv-accent)" }}>
         <p className="text-center text-white text-sm font-medium tracking-wide">
-          ✦ Full articles launching soon — follow us on{" "}
+          Full articles launching soon — follow us on{" "}
           <a
             href="https://www.instagram.com/ceremonyverse"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-2"
+            className="underline underline-offset-2 font-semibold"
           >
             Instagram @ceremonyverse
           </a>{" "}
-          for updates ✦
+          for updates
         </p>
       </section>
 

@@ -1,8 +1,11 @@
 "use client"
 
+import { SeoNav } from "@/components/seo-nav"
+
 export default function AccessoriesPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <SeoNav />
 
       <section className="py-24 text-center px-6">
         <div className="max-w-4xl mx-auto">

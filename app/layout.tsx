@@ -45,8 +45,8 @@ export default function RootLayout({
           "name": "Wedding Sourcing Services",
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Style Guide & Vendor List", "description": "Curated vendor style guide for Indian wedding outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "149" } } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guided Video Shopping", "description": "Live video shopping sessions with India vendors for bridal outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "499" } } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Bridal Concierge", "description": "End-to-end bridal outfit sourcing and coordination for your wedding", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "1200" } } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guided Sourcing", "description": "Live video shopping sessions with India vendors for bridal outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "599" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Bridal Concierge", "description": "End-to-end bridal outfit sourcing and coordination for your wedding", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "1499" } } }
           ]
         }
       },
@@ -66,7 +66,7 @@ export default function RootLayout({
           {
             "@type": "Question",
             "name": "What is the pricing for CeremonyVerse services?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Services start at $149 for a Style Guide & Vendor List, $499 for Guided Video Shopping, and $1,200 for Full Bridal Concierge packages." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Services start at $149 for a Style Guide & Vendor List, $599 for Guided Sourcing, and $1,499 for Full Bridal Concierge packages. A free consultation is always available with no commitment required." }
           },
           {
             "@type": "Question",
@@ -90,7 +90,7 @@ export default function RootLayout({
       <body>
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c7b28a", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
-          ✦ Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
+          * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
         {/* Spacer so body content starts below fixed urgency bar + nav (40px + 96px = 136px) */}

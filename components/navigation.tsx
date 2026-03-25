@@ -13,8 +13,10 @@ interface NavigationProps {
 const navItems: { label: string; page: PageType }[] = [
   { label: "Home", page: "home" },
   { label: "Services", page: "services" },
-  { label: "The Journey", page: "journey" },
+  { label: "How It Works", page: "journey" },
   { label: "FAQ", page: "faq" },
+  { label: "Blog", page: "blog" },
+  { label: "Contact", page: "contact" },
 ]
 
 export function Navigation({ activePage, onNavigate }: NavigationProps) {

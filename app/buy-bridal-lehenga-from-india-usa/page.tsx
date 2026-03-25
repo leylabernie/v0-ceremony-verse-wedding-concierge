@@ -1,8 +1,11 @@
 "use client"
 
+import { SeoNav } from "@/components/seo-nav"
+
 export default function BridalLehengaPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <SeoNav />
 
       {/* HERO */}
       <section className="py-24 text-center px-6">
