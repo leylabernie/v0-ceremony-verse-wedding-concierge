@@ -1,15 +1,6 @@
 "use client"
 
-type PageType =
-  | "home"
-  | "services"
-  | "journey"
-  | "faq"
-  | "contact"
-  | "privacy"
-  | "terms"
-  | "bridal"
-  | "groom"
+import type { PageType } from "@/app/page"
 
 interface GroomPageProps {
   onNavigate?: (page: PageType) => void

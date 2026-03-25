@@ -24,13 +24,13 @@ export function Footer({ onNavigate }: FooterProps) {
       <div className="bg-[#1f1f1f] py-14 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <p className="tracking-[0.15em] text-xs font-medium text-[#c7b28a] mb-3 uppercase">
-            Free Resource
+            Free Style Guide
           </p>
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">
-            Planning for 2026? Get the Lookbook.
+            Planning your 2026–2027 wedding? Get our free Style Guide.
           </h2>
           <p className="text-white/60 mb-2 text-sm max-w-lg mx-auto">
-            52 pages of Champagne & Gold bridal inspiration — real outfits sourced from India, curated for US families. Color palettes, fabric guides, and ceremony-by-ceremony styling.
+            Our free Style Guide covers outfit inspiration, vendor timelines, and ceremony-by-ceremony styling. — 
           </p>
           <p className="text-[#c7b28a] text-xs mb-8">
             Top vendors book 6–12 months out. Download now and start planning.
@@ -41,7 +41,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <polyline points="20,6 9,17 4,12" />
               </svg>
-              Lookbook on its way to your inbox!
+              Style Guide is on its way to your inbox!
             </div>
           ) : (
             <form

@@ -28,38 +28,38 @@ const blocks = [
   {
     title: "Bridal Outfits",
     desc: "Lehengas, sarees, reception looks, and custom bridal designs.",
-    page: "services" as PageType,
+    page: "bridal" as PageType,
     img: "/images/services-bridal-gold.jpg",
   },
   {
     title: "Groom & Groomsmen",
     desc: "Sherwanis, bandhgalas, and matching groomsmen kurta sets.",
-    page: "services" as PageType,
+    page: "groom" as PageType,
     img: "/images/services-groomsmen.jpg",
   },
   {
     title: "Bridesmaid & Family Outfits",
     desc: "Coordinated lehengas and sarees for the entire family.",
-    page: "services" as PageType,
+    page: "bridesmaids" as PageType,
     img: "/images/services-bridesmaids.jpg",
   },
   {
     title: "Jewelry & Accessories",
     desc: "Bridal kundan sets, jhumkas, maang tikka, and finishing details.",
-    page: "services" as PageType,
+    page: "jewelry" as PageType,
     img: "/images/services-jewelry3.jpg",
   },
   {
     title: "Welcome Bags & Gifts",
     desc: "Personalized welcome bags, return gifts, and curated hampers for guests.",
-    page: "services" as PageType,
+    page: "welcomebags" as PageType,
     img: "/images/services-gifts.jpg",
   },
   {
     title: "Pet Outfits (Dogs & Cats)",
     desc: "Custom sherwanis and lehengas for your fur babies — matched to your palette.",
-    page: "services" as PageType,
-    img: null,
+    page: "pets" as PageType,
+    img: "/images/services-pets.jpg",
   },
 ]
 
@@ -104,11 +104,11 @@ const testimonials = [
 
 const pricingTiers = [
   {
-    name: "Lookbook & Vendor List",
+    name: "Style Guide & Vendor List",
     price: "From $149",
     desc: "For the self-directed bride who just needs a curated starting point.",
     features: [
-      "Personalized outfit lookbook",
+      "Personalized outfit style guide",
       "Curated list of 3–5 vetted vendors",
       "Budget guidance and style notes",
       "One 30-min consultation call",
@@ -120,7 +120,7 @@ const pricingTiers = [
     price: "From $499",
     desc: "Live sourcing sessions so you can see and approve every piece before it ships.",
     features: [
-      "Everything in Lookbook tier",
+      "Everything in Style Guide tier",
       "2–4 live video shopping sessions",
       "Fabric & embroidery quality checks",
       "Color accuracy confirmation",
@@ -147,9 +147,9 @@ const pricingTiers = [
 
 export function HomePage({ onNavigate }: HomePageProps) {
   return (
-    <main>
+    <main className="">
       {/* HERO */}
-      <section className="py-20 px-6 text-center">
+      <section className="pb-20 px-6 text-center">
         <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
           Your Personal Sourcing Team
         </p>

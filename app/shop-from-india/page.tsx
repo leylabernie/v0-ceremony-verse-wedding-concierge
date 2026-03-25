@@ -186,7 +186,7 @@ export default function ShopFromIndiaPage() {
           </h3>
 
           <p className="mt-3 text-white/90">
-            Download our curated bridal lookbook with the latest Champagne & Gold styles.
+            Download our curated bridal style guide with the latest Champagne & Gold styles.
           </p>
 
           <form className="mt-6 flex flex-col md:flex-row gap-3 justify-center">
@@ -199,7 +199,7 @@ export default function ShopFromIndiaPage() {
               type="submit"
               className="bg-white text-[var(--cv-accent)] px-6 py-3 rounded-lg font-semibold"
             >
-              Get the Lookbook
+              Get the Style Guide
             </button>
           </form>
         </div>

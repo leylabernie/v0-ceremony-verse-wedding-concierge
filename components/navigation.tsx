@@ -26,7 +26,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
   }
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold">
+    <header className="fixed left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold" style={{ top: "40px" }}>
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
         <div className="flex items-center justify-between h-24">
           {/* Logo - Far Left with Two-Tone Styling */}

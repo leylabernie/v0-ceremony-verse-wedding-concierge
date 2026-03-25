@@ -1,13 +1,6 @@
 "use client"
 
-type PageType =
-  | "home"
-  | "services"
-  | "journey"
-  | "faq"
-  | "contact"
-  | "privacy"
-  | "terms"
+import type { PageType } from "@/app/page"
 
 interface BridalPageProps {
   onNavigate?: (page: PageType) => void

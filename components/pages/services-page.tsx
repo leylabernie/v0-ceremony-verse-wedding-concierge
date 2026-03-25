@@ -31,107 +31,116 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
           {/* BRIDE */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("bridal")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("bridal")}>
+          <button type="button" onClick={() => onNavigate("bridal")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga with intricate embroidery hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Bridal Lehengas & Wedding Outfits</h3>
-              <p className="text-[var(--cv-muted)]">Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.</p>
+              <h3 className="text-xl font-semibold mb-2">Bridal Lehengas & Wedding Outfits</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* GROOM */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("groom")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("groom")}>
+          <button type="button" onClick={() => onNavigate("groom")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani with safa and mojari on marble surface" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Groom Sherwanis & Attire</h3>
-              <p className="text-[var(--cv-muted)]">Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.</p>
+              <h3 className="text-xl font-semibold mb-2">Groom Sherwanis & Attire</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* BRIDESMAIDS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("bridesmaids")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("bridesmaids")}>
+          <button type="button" onClick={() => onNavigate("bridesmaids")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridesmaids.jpg" alt="Five coordinated pastel bridesmaid lehengas in blush, mint, sky blue, lavender and peach hanging on a gold rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-bridesmaids.jpg" alt="Pastel bridesmaid lehengas on rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Bridesmaid Outfits</h3>
-              <p className="text-[var(--cv-muted)]">Coordinated bridesmaid lehengas and outfits sourced in matching palettes — consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
+              <h3 className="text-xl font-semibold mb-2">Bridesmaid Outfits</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Coordinated lehengas in matching palettes — consistent colors, fabrics, and sizing for a cohesive wedding look.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* GROOMSMEN */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("groomsmen")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("groomsmen")}>
+          <button type="button" onClick={() => onNavigate("groomsmen")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-groomsmen.jpg" alt="Five matching ivory kurta sets with blue brocade Nehru jackets hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-groomsmen.jpg" alt="Ivory kurta sets on rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Popular Add-On</div>
-              <h3 className="text-xl font-semibold mb-3">Groomsmen Attire</h3>
-              <p className="text-[var(--cv-muted)]">Matching kurtas and bandhgalas for the entire groomsmen crew — sourced with accurate measurements and delivered with your groom's order.</p>
+              <h3 className="text-xl font-semibold mb-2">Groomsmen Attire</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Matching kurtas and bandhgalas for the entire crew — sourced with accurate measurements alongside the groom's order.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* FAMILY */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("family")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("family")}>
+          <button type="button" onClick={() => onNavigate("family")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-bridesmaids.png" alt="Folded coordinated Indian family sarees in warm tones" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
+            <img src="/images/services-bridesmaids.png" alt="Coordinated Indian family sarees" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Family Wedding Outfits</h3>
-              <p className="text-[var(--cv-muted)]">Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics for a unified look.</p>
-              <p className="text-xs text-[var(--cv-accent)] mt-3 font-medium">✦ Vendors book 6–12 months out — start early</p>
+              <h3 className="text-xl font-semibold mb-2">Family Wedding Outfits</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* PETS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("pets")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("pets")}>
+          <button type="button" onClick={() => onNavigate("pets")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-pets.jpg" alt="Two small dogs in Indian wedding outfits — shih tzu in gold sherwani and maltese in teal lehenga" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-pets.jpg" alt="Two dogs in Indian wedding outfits" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Fan Favorite</div>
-              <h3 className="text-xl font-semibold mb-3">Pet Outfits (Dogs & Cats)</h3>
-              <p className="text-[var(--cv-muted)]">Custom sherwanis, lehengas, and bandanas for your fur babies — designed to match your wedding palette and made for comfort.</p>
+              <h3 className="text-xl font-semibold mb-2">Pet Outfits (Dogs & Cats)</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Custom sherwanis, lehengas, and bandanas for your fur babies — matched to your wedding palette and made for comfort.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* JEWELRY */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("jewelry")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("jewelry")}>
+          <button type="button" onClick={() => onNavigate("jewelry")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan choker necklace set with chandbali earrings, maang tikka and matha patti on velvet tray with rose petals" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan necklace set" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Jewelry & Bridal Accessories</h3>
-              <p className="text-[var(--cv-muted)]">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
+              <h3 className="text-xl font-semibold mb-2">Jewelry & Bridal Accessories</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* CEREMONIAL */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("ceremonial")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("ceremonial")}>
+          <button type="button" onClick={() => onNavigate("ceremonial")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-ceremonial2.png" alt="Bride's hands with intricate mehndi henna at Indian ceremony with marigolds and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-ceremonial2.png" alt="Mehndi ceremony with marigolds and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Ceremonial Items & Ritual Essentials</h3>
-              <p className="text-[var(--cv-muted)]">Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.</p>
+              <h3 className="text-xl font-semibold mb-2">Ceremonial Items & Ritual Essentials</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* GIFTS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("gifts")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("gifts")}>
+          <button type="button" onClick={() => onNavigate("gifts")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags in emerald, navy, blush, lavender and gold with pearl tassels and dried roses on marble table" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Wedding Gifts & Return Gifts</h3>
-              <p className="text-[var(--cv-muted)]">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family, packaged beautifully.</p>
+              <h3 className="text-xl font-semibold mb-2">Wedding Gifts & Return Gifts</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
           {/* WELCOME BAGS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("welcomebags")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("welcomebags")}>
+          <button type="button" onClick={() => onNavigate("welcomebags")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags on table with roses, petals and gold candles" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-3">Welcome Bags & Event Details</h3>
-              <p className="text-[var(--cv-muted)]">Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.</p>
+              <h3 className="text-xl font-semibold mb-2">Welcome Bags & Event Details</h3>
+              <p className="text-[var(--cv-muted)] text-sm">Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests.</p>
+              <p className="text-[var(--cv-accent)] text-xs font-medium mt-3">Tap to explore →</p>
             </div>
-          </div>
+          </button>
 
         </div>
       </section>
