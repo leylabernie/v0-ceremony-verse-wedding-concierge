@@ -1,5 +1,17 @@
 "use client"
 
+export const metadata = {
+  title: "Buy Bridal Lehenga from India | Custom NRI Bridal Lehenga Delivered to USA | CeremonyVerse",
+  description: "Source your dream bridal lehenga directly from India. CeremonyVerse offers live video shopping, custom measurements, quality checks, and delivery to your US door. Serving NRI brides across the United States. Save 30-50% vs US boutiques.",
+  keywords: "buy bridal lehenga from India USA, custom bridal lehenga NRI, bridal lehenga delivered to USA, Indian bridal lehenga online USA, NRI bride lehenga, bridal lehenga from India, lehenga choli from India USA, designer lehenga USA, affordable bridal lehenga India, CeremonyVerse bridal lehenga",
+  openGraph: {
+    title: "Buy Bridal Lehenga from India | Custom NRI Bridal Lehenga Delivered to USA | CeremonyVerse",
+    description: "Source your dream bridal lehenga directly from India. CeremonyVerse offers live video shopping, custom measurements, quality checks, and delivery to your US door. Serving NRI brides across the United States. Save 30-50% vs US boutiques.",
+    type: "website",
+  },
+};
+
+
 import { SeoNav } from "@/components/seo-nav"
 
 export default function BridalLehengaPage() {

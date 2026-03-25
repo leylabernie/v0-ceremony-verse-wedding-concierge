@@ -193,8 +193,20 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
         </div>
 
+        {/* SEO keyword footer */}
+        <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-[#e6dfd5]">
+          <p className="text-[10px] text-[#b0a898] leading-relaxed text-center">
+            CeremonyVerse — Indian Wedding Shopping Concierge USA &nbsp;·&nbsp;
+            Bridal Lehenga from India &nbsp;·&nbsp; Custom Sherwani USA &nbsp;·&nbsp;
+            Bridesmaid Outfits from India &nbsp;·&nbsp; Indian Wedding Jewelry USA &nbsp;·&nbsp;
+            Welcome Bags &amp; Gifts &nbsp;·&nbsp; Ceremonial Items &nbsp;·&nbsp;
+            NRI Wedding Shopping &nbsp;·&nbsp; Live Video Shopping India &nbsp;·&nbsp;
+            South Asian Wedding Concierge &nbsp;·&nbsp; Serving families across the United States
+          </p>
+        </div>
+
         {/* Bottom bar */}
-        <div className="max-w-6xl mx-auto mt-12 pt-8 border-t border-[#e6dfd5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8a6f63]">
+        <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-[#e6dfd5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8a6f63]">
           <p>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <button onClick={() => onNavigate("privacy")} className="hover:text-[#c7b28a] transition">
