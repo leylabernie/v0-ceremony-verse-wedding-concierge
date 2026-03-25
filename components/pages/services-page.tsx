@@ -11,13 +11,16 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
     <div className="bg-[var(--cv-bg)]">
 
       {/* HERO */}
-      <section className="py-24 text-center px-6">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-semibold mb-6">
+      <section className="relative text-center overflow-hidden" style={{ minHeight: "380px" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/services-hero.png" alt="Indian wedding flat lay with lehenga, jewelry, marigolds and brass diya on marble" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", zIndex: 0 }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.65) 100%)", zIndex: 1 }} />
+        <div className="relative py-20 px-6" style={{ zIndex: 2 }}>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>Everything You Need</p>
+          <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>
             What We Source
           </h1>
-
-          <p className="text-[var(--cv-muted)] text-lg">
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>
             Complete wedding sourcing from India — outfits, accessories, gifts, and ceremonial items — all handled for you with quality checks and reliable delivery.
           </p>
         </div>
