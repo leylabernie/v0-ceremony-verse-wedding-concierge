@@ -155,6 +155,7 @@ export function Footer({ onNavigate }: FooterProps) {
               {[
                 { label: "How It Works", page: "journey" as PageType },
                 { label: "FAQ / Trust Center", page: "faq" as PageType },
+                { label: "Blog & Guides", page: "blog" as PageType },
                 { label: "Book Consultation", page: "contact" as PageType },
                 { label: "Privacy Policy", page: "privacy" as PageType },
                 { label: "Terms of Service", page: "terms" as PageType },

@@ -13,6 +13,7 @@ import { PrivacyPage } from "@/components/pages/privacy-page"
 import { TermsPage } from "@/components/pages/terms-page"
 import { BridalPage } from "@/components/pages/bridal-page"
 import { GroomPage } from "@/components/pages/groom-page"
+import { BlogPage } from "@/components/pages/blog-page"
 
 type PageType =
   | "home"
@@ -24,6 +25,7 @@ type PageType =
   | "terms"
   | "bridal"
   | "groom"
+  | "blog"
 
 export default function Page() {
   const [activePage, setActivePage] = useState<PageType>("home")
@@ -46,6 +48,7 @@ export default function Page() {
       {activePage === "terms" && <TermsPage onNavigate={handleNavigate} />}
       {activePage === "bridal" && <BridalPage onNavigate={handleNavigate} />}
       {activePage === "groom" && <GroomPage onNavigate={handleNavigate} />}
+      {activePage === "blog" && <BlogPage onNavigate={handleNavigate} />}
 
       <Footer onNavigate={handleNavigate} />
     </>
