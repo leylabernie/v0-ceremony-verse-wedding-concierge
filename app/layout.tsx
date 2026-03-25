@@ -1,5 +1,7 @@
 import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
+import MobileStickyCTA from "@/components/mobile-sticky-cta";
+import Script from "next/script";
 
 export const metadata = {
   title: "Indian Wedding Outfit Sourcing from India | Bridal Concierge for US Families | CeremonyVerse",
@@ -17,13 +19,81 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const schemaOrg = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "CeremonyVerse",
+        "description": "US-based South Asian wedding outfit sourcing concierge. We source bridal lehengas, sherwanis, bridesmaid outfits, and jewelry directly from India via live video shopping.",
+        "url": "https://v0-ceremony-verse-wedding-concierge.vercel.app",
+        "telephone": "+12153419990",
+        "email": "hello@ceremonyverse.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "areaServed": "US",
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.instagram.com/ceremonyverse",
+          "https://www.pinterest.com/ceremonyverse"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Wedding Sourcing Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lookbook & Vendor List", "description": "Curated vendor list and lookbook for Indian wedding outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "149" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guided Video Shopping", "description": "Live video shopping sessions with India vendors for bridal outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "499" } } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Bridal Concierge", "description": "End-to-end bridal outfit sourcing and coordination for your wedding", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "1200" } } }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does CeremonyVerse source outfits from India?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We connect you directly with vetted vendors in India via live video shopping sessions. You browse in real time, ask questions, and we handle quality checks, negotiation, and shipping to the US." }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance should I start the sourcing process?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We recommend starting 6–12 months before your wedding date, as top vendors book out quickly and custom outfits require production time." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the pricing for CeremonyVerse services?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Services start at $149 for a Lookbook & Vendor List, $499 for Guided Video Shopping, and $1,200 for Full Bridal Concierge packages." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you ship to all US states?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we serve clients across the United States. All outfits are quality-checked in India before being shipped directly to your US address." }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="schema-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+        />
+      </head>
       <body>
         {children}
 
         {/* SINGLE WhatsApp Button (global) */}
         <WhatsAppButton />
+        {/* Mobile sticky CTA bar */}
+        <MobileStickyCTA />
       </body>
     </html>
   );

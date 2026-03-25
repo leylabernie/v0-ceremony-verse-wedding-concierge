@@ -93,7 +93,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* JEWELRY */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-jewelry2.jpg" alt="Gold jhumka earrings with pearl drops and sindoor dish on marble with marigolds" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan choker necklace set with chandbali earrings, maang tikka and matha patti on velvet tray with rose petals" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Jewelry & Bridal Accessories</h3>
               <p className="text-[var(--cv-muted)]">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
