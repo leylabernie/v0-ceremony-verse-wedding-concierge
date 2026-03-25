@@ -11,6 +11,14 @@ type PageType =
   | "bridal"
   | "groom"
   | "blog"
+  | "bridesmaids"
+  | "groomsmen"
+  | "family"
+  | "jewelry"
+  | "ceremonial"
+  | "gifts"
+  | "welcomebags"
+  | "pets"
 
 interface HomePageProps {
   onNavigate?: (page: PageType) => void

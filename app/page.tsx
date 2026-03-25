@@ -14,8 +14,16 @@ import { TermsPage } from "@/components/pages/terms-page"
 import { BridalPage } from "@/components/pages/bridal-page"
 import { GroomPage } from "@/components/pages/groom-page"
 import { BlogPage } from "@/components/pages/blog-page"
+import { BridesmaidsPage } from "@/components/pages/bridesmaids-page"
+import { GroomsmenPage } from "@/components/pages/groomsmen-page"
+import { FamilyPage } from "@/components/pages/family-page"
+import { JewelryPage } from "@/components/pages/jewelry-page"
+import { CeremonialPage } from "@/components/pages/ceremonial-page"
+import { GiftsPage } from "@/components/pages/gifts-page"
+import { WelcomeBagsPage } from "@/components/pages/welcomebags-page"
+import { PetsPage } from "@/components/pages/pets-page"
 
-type PageType =
+export type PageType =
   | "home"
   | "services"
   | "journey"
@@ -26,6 +34,14 @@ type PageType =
   | "bridal"
   | "groom"
   | "blog"
+  | "bridesmaids"
+  | "groomsmen"
+  | "family"
+  | "jewelry"
+  | "ceremonial"
+  | "gifts"
+  | "welcomebags"
+  | "pets"
 
 export default function Page() {
   const [activePage, setActivePage] = useState<PageType>("home")
@@ -49,6 +65,14 @@ export default function Page() {
       {activePage === "bridal" && <BridalPage onNavigate={handleNavigate} />}
       {activePage === "groom" && <GroomPage onNavigate={handleNavigate} />}
       {activePage === "blog" && <BlogPage onNavigate={handleNavigate} />}
+      {activePage === "bridesmaids" && <BridesmaidsPage onNavigate={handleNavigate} />}
+      {activePage === "groomsmen" && <GroomsmenPage onNavigate={handleNavigate} />}
+      {activePage === "family" && <FamilyPage onNavigate={handleNavigate} />}
+      {activePage === "jewelry" && <JewelryPage onNavigate={handleNavigate} />}
+      {activePage === "ceremonial" && <CeremonialPage onNavigate={handleNavigate} />}
+      {activePage === "gifts" && <GiftsPage onNavigate={handleNavigate} />}
+      {activePage === "welcomebags" && <WelcomeBagsPage onNavigate={handleNavigate} />}
+      {activePage === "pets" && <PetsPage onNavigate={handleNavigate} />}
 
       <Footer onNavigate={handleNavigate} />
     </>

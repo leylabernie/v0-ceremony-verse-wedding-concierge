@@ -31,7 +31,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
           {/* BRIDE */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("bridal")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("bridal")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga with intricate embroidery hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
@@ -41,7 +41,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GROOM */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("groom")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("groom")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani with safa and mojari on marble surface" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
@@ -51,7 +51,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* BRIDESMAIDS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("bridesmaids")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("bridesmaids")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-bridesmaids.jpg" alt="Five coordinated pastel bridesmaid lehengas in blush, mint, sky blue, lavender and peach hanging on a gold rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
@@ -61,7 +61,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GROOMSMEN */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("groomsmen")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("groomsmen")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-groomsmen.jpg" alt="Five matching ivory kurta sets with blue brocade Nehru jackets hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
@@ -72,7 +72,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* FAMILY */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("family")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("family")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-bridesmaids.png" alt="Folded coordinated Indian family sarees in warm tones" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center", display: "block" }} />
             <div className="p-6">
@@ -83,9 +83,9 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* PETS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("pets")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("pets")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-pets.png" alt="Small dog in an ivory and gold embroidered Indian sherwani with a tiny safa turban at a wedding" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
+            <img src="/images/services-pets.jpg" alt="Two small dogs in Indian wedding outfits — shih tzu in gold sherwani and maltese in teal lehenga" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Fan Favorite</div>
               <h3 className="text-xl font-semibold mb-3">Pet Outfits (Dogs & Cats)</h3>
@@ -94,7 +94,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* JEWELRY */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("jewelry")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("jewelry")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-jewelry3.jpg" alt="Bridal kundan choker necklace set with chandbali earrings, maang tikka and matha patti on velvet tray with rose petals" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
@@ -104,7 +104,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* CEREMONIAL */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("ceremonial")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("ceremonial")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-ceremonial2.png" alt="Bride's hands with intricate mehndi henna at Indian ceremony with marigolds and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
@@ -114,7 +114,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GIFTS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("gifts")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("gifts")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags in emerald, navy, blush, lavender and gold with pearl tassels and dried roses on marble table" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
@@ -124,7 +124,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* WELCOME BAGS */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" onClick={() => onNavigate("welcomebags")} role="button" tabIndex={0} onKeyDown={e => e.key === "Enter" && onNavigate("welcomebags")}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/services-welcomebags.jpg" alt="Personalized monogram jute welcome bags on table with roses, petals and gold candles" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">

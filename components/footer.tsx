@@ -129,12 +129,14 @@ export function Footer({ onNavigate }: FooterProps) {
             <p className="text-xs tracking-widest text-[#8a6f63] uppercase font-medium mb-4">Services</p>
             <ul className="space-y-2">
               {[
-                { label: "Bridal Outfits", page: "services" as PageType },
-                { label: "Groom Attire", page: "services" as PageType },
-                { label: "Bridesmaid & Family", page: "services" as PageType },
-                { label: "Jewelry & Accessories", page: "services" as PageType },
-                { label: "Pet Outfits", page: "services" as PageType },
-                { label: "Ceremonial Items", page: "services" as PageType },
+                { label: "Bridal Outfits", page: "bridal" as PageType },
+                { label: "Groom Attire", page: "groom" as PageType },
+                { label: "Bridesmaid Outfits", page: "bridesmaids" as PageType },
+                { label: "Family Outfits", page: "family" as PageType },
+                { label: "Jewelry & Accessories", page: "jewelry" as PageType },
+                { label: "Pet Outfits", page: "pets" as PageType },
+                { label: "Ceremonial Items", page: "ceremonial" as PageType },
+                { label: "Gifts & Welcome Bags", page: "gifts" as PageType },
               ].map((item) => (
                 <li key={item.label}>
                   <button
