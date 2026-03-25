@@ -1,9 +1,9 @@
 import { SeoNav } from "@/components/seo-nav"
 
 export const metadata = {
-  title: "Buy Wedding Outfits from India USA | Personal Wedding Shopper India | CeremonyVerse",
+  title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
   description:
-    "Work with a personal wedding shopper in India to buy bridal lehengas, sherwanis, and wedding outfits with live video shopping, trusted artisan partners, and US-based quality checks. August 2026 bookings open.",
+    "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
 };
 
 export default function ShopFromIndiaPage() {
