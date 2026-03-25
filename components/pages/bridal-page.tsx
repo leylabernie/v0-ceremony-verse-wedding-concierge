@@ -18,29 +18,34 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
     <main>
 
       {/* HERO */}
-      <section className="py-20 px-6 text-center">
-        <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase">Bridal Sourcing</p>
-        <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-7xl font-semibold text-[#1f1f1f] mb-6">
-          Your Dream Lehenga,<br />Sourced from India
-        </h1>
-        <p className="max-w-2xl mx-auto text-lg md:text-xl text-[#5a4a42] mb-10">
-          From bridal lehengas to reception looks — we find authentic, handcrafted outfits directly from India's best manufacturers. Live video verification. Quality guaranteed. Delivered to your door.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => onNavigate?.("contact")}
-            className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-          >
-            Start Your Bridal Sourcing
-          </button>
-          <a
-            href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20bridal%20outfit%20sourcing%20from%20CeremonyVerse."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-[#25D366] text-[#25D366] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#25D366] hover:text-white transition"
-          >
-            WhatsApp Us
-          </a>
+      <section className="relative text-center overflow-hidden" style={{ minHeight: "480px" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/bridal-hero.png" alt="Indian bride in red and gold bridal lehenga in a marble palace" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", zIndex: 0 }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.6) 100%)", zIndex: 1 }} />
+        <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
+          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#c7b28a" }}>Bridal Sourcing</p>
+          <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-7xl font-semibold mb-6" style={{ color: "#fff" }}>
+            Your Dream Lehenga,<br />Sourced from India
+          </h1>
+          <p className="max-w-2xl mx-auto text-lg md:text-xl mb-10" style={{ color: "rgba(255,255,255,0.85)" }}>
+            From bridal lehengas to reception looks — we find authentic, handcrafted outfits directly from India’s best manufacturers. Live video verification. Quality guaranteed. Delivered to your door.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button
+              onClick={() => onNavigate?.("contact")}
+              className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            >
+              Start Your Bridal Sourcing
+            </button>
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20bridal%20outfit%20sourcing%20from%20CeremonyVerse."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-white hover:text-[#1f1f1f] transition"
+            >
+              WhatsApp Us
+            </a>
+          </div>
         </div>
       </section>
 

@@ -113,7 +113,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* GIFTS */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-gifts.png" alt="Indian wedding return gifts — colourful wrapped boxes with gold ribbons, brass diyas and marigolds on a decorated table" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags in emerald, navy, blush, lavender and gold with pearl tassels and dried roses on marble table" style={{ width: "100%", height: "12rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Wedding Gifts & Return Gifts</h3>
               <p className="text-[var(--cv-muted)]">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family, packaged beautifully.</p>

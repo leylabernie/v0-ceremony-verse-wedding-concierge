@@ -45,7 +45,7 @@ const blocks = [
     title: "Welcome Bags & Gifts",
     desc: "Personalized welcome bags, return gifts, and curated hampers for guests.",
     page: "services" as PageType,
-    img: "/images/services-welcomebags.jpg",
+    img: "/images/services-gifts.jpg",
   },
   {
     title: "Pet Outfits (Dogs & Cats)",
