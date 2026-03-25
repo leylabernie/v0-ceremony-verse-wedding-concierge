@@ -126,8 +126,8 @@ export function PrivacyPage({ onNavigate }: PrivacyPageProps) {
               <div className="mt-4 p-6 bg-champagne rounded-xl border border-brushed-gold/30">
                 <p className="font-sans">
                   <strong className="text-midnight-navy">CeremonyVerse</strong><br />
-                  Email: privacy@ceremonyverse.com<br />
-                  Phone: +1 (555) 123-4567
+                  Email: hello@ceremonyverse.com<br />
+                  WhatsApp: +1 (215) 341-9990
                 </p>
               </div>
             </section>

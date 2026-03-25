@@ -38,13 +38,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* GROOM */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Groom Sherwanis & Attire
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-groom.jpg" alt="Full length ivory and gold sherwani with safa and mojari on marble surface" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Groom Sherwanis & Attire</h3>
+              <p className="text-[var(--cv-muted)]">Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery.</p>
+            </div>
           </div>
 
           {/* BRIDESMAIDS */}
@@ -98,13 +98,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           </div>
 
           {/* CEREMONIAL */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Ceremonial Items & Ritual Essentials
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-ceremonial.png" alt="Indian wedding ceremonial items including marigolds, sindoor, dupatta and brass diyas" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Ceremonial Items & Ritual Essentials</h3>
+              <p className="text-[var(--cv-muted)]">Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals.</p>
+            </div>
           </div>
 
           {/* GIFTS */}
