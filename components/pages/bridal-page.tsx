@@ -108,6 +108,44 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
         </div>
       </section>
 
+      {/* PRICE COMPARISON */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-center" style={{ color: "#c7b28a" }}>The Numbers</p>
+          <h2 className="text-3xl font-semibold text-center mb-10 text-[#1f1f1f]">Why Source from India?</h2>
+          <div className="overflow-x-auto rounded-2xl border border-[#e6dfd5]">
+            <table className="w-full text-sm">
+              <thead>
+                <tr style={{ background: "#1f1f1f", color: "#fff" }}>
+                  <th className="text-left px-6 py-4 font-medium">Outfit Type</th>
+                  <th className="text-center px-6 py-4 font-medium">US Boutique</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#c7b28a" }}>CeremonyVerse</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#c7b28a" }}>Your Savings</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { item: "Bridal Lehenga (heavy embroidery)", us: "$3,500–$8,000", cv: "$1,200–$3,500", save: "Up to 60%" },
+                  { item: "Groom Sherwani", us: "$800–$2,500", cv: "$350–$900", save: "Up to 55%" },
+                  { item: "Bridesmaid Lehenga (set of 6)", us: "$3,000–$6,000", cv: "$900–$2,400", save: "Up to 65%" },
+                  { item: "Bridal Jewelry Set", us: "$600–$2,000", cv: "$200–$700", save: "Up to 65%" },
+                ].map((row, i) => (
+                  <tr key={i} style={{ background: i % 2 === 0 ? "#fff" : "#f9f6f3" }}>
+                    <td className="px-6 py-4 text-[#1f1f1f] font-medium">{row.item}</td>
+                    <td className="px-6 py-4 text-center text-[#6a5c55] line-through">{row.us}</td>
+                    <td className="px-6 py-4 text-center font-semibold text-[#1f1f1f]">{row.cv}</td>
+                    <td className="px-6 py-4 text-center font-semibold" style={{ color: "#c7b28a" }}>{row.save}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-[#8a6f63] mt-4 text-center">
+            Estimates based on comparable quality items. Itemized quotes provided for every order.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6 bg-[#1f1f1f] text-white text-center">
         <p className="tracking-[0.15em] text-xs font-medium text-[#c7b28a] mb-4 uppercase">Ready to Begin?</p>
