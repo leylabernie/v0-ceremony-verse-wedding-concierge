@@ -192,6 +192,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </p>
       </section>
 
+      {/* HERO IMAGE */}
+      <section className="px-6 pb-4">
+        <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden">
+          <img
+            src="/images/hero-bridal.png"
+            alt="Ivory and gold embroidered bridal lehenga sourced from India"
+            className="w-full object-cover max-h-[480px]"
+          />
+        </div>
+      </section>
+
       {/* FOUNDER STORY */}
       <section className="py-16 px-6 bg-[#f9f6f3]">
         <div className="max-w-4xl mx-auto text-center">
