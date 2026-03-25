@@ -158,100 +158,92 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
 export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <main className="">
-      {/* HERO */}
-      <section className="pb-12 px-6 text-center">
-        <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
-          US-Based Indian Wedding Shopping Concierge
-        </p>
+      {/* HERO — full width image + overlay text */}
+      <section style={{ position: "relative", overflow: "hidden", background: "#1a1008" }}>
+        {/* Background image */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-lehenga.jpg"
+          alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
+          style={{
+            position: "absolute", inset: 0, width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "center",
+            opacity: 0.45, display: "block",
+          }}
+        />
+        {/* Gradient overlay — left side darker for text readability */}
+        <div style={{
+          position: "absolute", inset: 0,
+          background: "linear-gradient(105deg, rgba(26,16,8,0.92) 0%, rgba(26,16,8,0.75) 45%, rgba(26,16,8,0.3) 100%)",
+        }} />
 
-        <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6 text-[#1f1f1f]">
-          Everything for your Indian wedding,
-          <br />
-          sourced from India and delivered to your door.
-        </h1>
+        {/* Content */}
+        <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
+          <div style={{ maxWidth: "640px" }}>
+            <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "20px", fontWeight: 500 }}>
+              US-Based Indian Wedding Shopping Concierge
+            </p>
+            <h1 style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "clamp(2.4rem, 5vw, 3.8rem)",
+              fontWeight: 600, lineHeight: 1.12,
+              color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
+            }}>
+              Everything for your Indian wedding, sourced from India and delivered to your door.
+            </h1>
+            <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
+              Bridal lehengas, sherwanis, jewelry, gifts, welcome bags, ceremonial items and more — sourced directly from India with live video shopping, quality checks, and US delivery.
+            </p>
 
-        <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed text-[#5a4a42]">
-          Worried about scams, wrong colors, or outfits that don't fit? We source directly from India — with live video so you see every item before it ships, and quality checks before it leaves.
-        </p>
+            {/* CTAs */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
+              <button
+                type="button"
+                onClick={() => onNavigate?.("contact")}
+                style={{ background: "#c7b28a", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer" }}
+              >
+                Book Free Consultation
+              </button>
+              <button
+                type="button"
+                onClick={() => onNavigate?.("journey")}
+                style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", cursor: "pointer" }}
+              >
+                How It Works
+              </button>
+              <a
+                href="/wedding-outfit-checklist.pdf"
+                download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
+                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.6)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.2)", textDecoration: "none" }}
+              >
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                  <polyline points="7,10 12,15 17,10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Free Checklist
+              </a>
+            </div>
 
-
-
-        {/* Social proof bar */}
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-[#8a6f63]">
-          <span className="flex items-center gap-2">
-            <span className="text-2xl font-semibold text-[#1f1f1f]">100+</span>
-            US families served
-          </span>
-          <span className="w-px h-6 bg-[#e6dfd5] hidden sm:block" />
-          <span className="flex items-center gap-2">
-            <span className="text-2xl font-semibold text-[#1f1f1f]">15–20</span>
-            trusted artisan workshops
-          </span>
-          <span className="w-px h-6 bg-[#e6dfd5] hidden sm:block" />
-          <span className="flex items-center gap-2">
-            <span className="text-2xl font-semibold text-[#1f1f1f]">99%</span>
-            first-time fit rate
-          </span>
-        </div>
-
-        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            type="button"
-            onClick={() => onNavigate?.("contact")}
-            className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-          >
-            Book Free Consultation
-          </button>
-          <button
-            type="button"
-            onClick={() => onNavigate?.("journey")}
-            className="inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
-          >
-            How It Works
-          </button>
-        </div>
-
-        <p className="mt-4 text-xs text-[#8a6f63]">
-          Top vendors book 6–12 months in advance — start early.
-        </p>
-      </section>
-
-      {/* FREE CHECKLIST — above the fold on mobile */}
-      <section className="px-6 pb-8">
-        <div className="max-w-2xl mx-auto rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 px-7 py-5" style={{ background: "#1f1f1f" }}>
-          <div>
-            <p className="text-xs font-medium tracking-widest uppercase mb-1" style={{ color: "#c7b28a" }}>Free Download</p>
-            <p className="text-white font-semibold text-sm">Indian Wedding Outfit Checklist</p>
-            <p className="text-xs mt-0.5" style={{ color: "rgba(255,255,255,0.5)" }}>Every outfit, every ceremony — nothing forgotten</p>
+            {/* Stats */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "28px" }}>
+              {[
+                { num: "100+", label: "US families served" },
+                { num: "15–20", label: "artisan workshops" },
+                { num: "99%", label: "first-time fit rate" },
+                { num: "30–50%", label: "savings vs boutiques" },
+              ].map((s) => (
+                <div key={s.num}>
+                  <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#c7b28a", lineHeight: 1 }}>{s.num}</p>
+                  <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.55)", marginTop: "3px" }}>{s.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <a
-            href="/wedding-outfit-checklist.pdf"
-            download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
-            className="inline-flex items-center gap-2 whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium shrink-0 transition hover:opacity-90"
-            style={{ background: "#c7b28a", color: "#fff" }}
-          >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-              <polyline points="7,10 12,15 17,10"/>
-              <line x1="12" y1="15" x2="12" y2="3"/>
-            </svg>
-            Download Free
-          </a>
         </div>
-      </section>
-
-      {/* HERO IMAGE */}
-      <section className="px-6 pb-4">
-        <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/hero-lehenga.jpg"
-            alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
-            width={1440}
-            height={480}
-            style={{ width: "100%", height: "auto", maxHeight: "520px", objectFit: "cover", display: "block" }}
-          />
-        </div>
+        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "11px", color: "rgba(255,255,255,0.35)", paddingBottom: "18px" }}>
+          Top vendors book 6–12 months in advance — start early
+        </p>
       </section>
 
       {/* PAIN POINTS STRIP */}
