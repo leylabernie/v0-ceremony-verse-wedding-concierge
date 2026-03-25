@@ -14,6 +14,39 @@ interface HomePageProps {
 }
 
 export function HomePage({ onNavigate }: HomePageProps) {
+  const blocks = [
+    {
+      title: "Bridal Outfits",
+      desc: "Lehengas, sarees, reception looks, and custom bridal designs.",
+      page: "services" as PageType,
+    },
+    {
+      title: "Groom Outfits",
+      desc: "Sherwanis, bandhgalas, and coordinated ceremony outfits.",
+      page: "services" as PageType,
+    },
+    {
+      title: "Bridesmaid & Family Outfits",
+      desc: "Coordinated looks for bridesmaids, siblings, and family members.",
+      page: "services" as PageType,
+    },
+    {
+      title: "Groomsmen Outfits",
+      desc: "Matching or complementary styles for groomsmen.",
+      page: "services" as PageType,
+    },
+    {
+      title: "Jewelry & Accessories",
+      desc: "Bridal jewelry, footwear, clutches, and finishing details.",
+      page: "services" as PageType,
+    },
+    {
+      title: "Ceremonial Items & Wedding Essentials",
+      desc: "Dupattas, pagdis, kalire, welcome bags, and ceremony essentials.",
+      page: "services" as PageType,
+    },
+  ]
+
   return (
     <main>
       {/* HERO */}
@@ -55,7 +88,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* WHY SECTION */}
+      {/* WHY */}
       <section className="py-16 px-6 bg-[#f9f6f3]">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-6 text-center">
           Why CeremonyVerse Exists
@@ -67,121 +100,70 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </p>
 
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            Between my two sons’ weddings, my niece’s wedding, and helping friends’ families, I experienced firsthand what it takes to coordinate outfits across large families, budgets, timelines, and multiple wedding events.
+            Between multiple family weddings and helping friends, I saw how difficult it is to coordinate outfits across people, budgets, and timelines.
           </p>
 
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            Many of the people I helped were not familiar with Indian markets. Even those who traveled to India still needed help navigating language barriers, trust issues, and the pressure of making the right choices.
+            Many families don’t know how to navigate Indian markets or trust online sellers.
           </p>
 
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed">
-            CeremonyVerse is built on that real experience — helping families source authentic Indian wedding outfits with more clarity, more confidence, and less stress.
+            CeremonyVerse brings clarity, trust, and real guidance into that process.
           </p>
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* HOW */}
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10">
           How It Works
         </h2>
 
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#1f1f1f] mb-2">1. Message Us</p>
-            <p className="text-sm text-[#6a5c55]">
-              Start with WhatsApp and tell us what you need.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#1f1f1f] mb-2">2. Share Inspiration</p>
-            <p className="text-sm text-[#6a5c55]">
-              Send photos, colors, references, or event requirements.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#1f1f1f] mb-2">3. Live Video Shopping</p>
-            <p className="text-sm text-[#6a5c55]">
-              Review styles, fabrics, and details in real time before you decide.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <p className="font-semibold text-[#1f1f1f] mb-2">4. Delivered to You</p>
-            <p className="text-sm text-[#6a5c55]">
-              We help you move from selection to delivery with less chaos.
-            </p>
-          </div>
+          {[
+            "Message Us",
+            "Share Inspiration",
+            "Live Video Shopping",
+            "Delivered to You",
+          ].map((step, i) => (
+            <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
+              <p className="font-semibold text-[#1f1f1f] mb-2">
+                {i + 1}. {step}
+              </p>
+              <p className="text-sm text-[#6a5c55]">
+                Simple, guided process from start to finish.
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* ✅ RESTORED 6 BLOCKS */}
+      {/* CLICKABLE BLOCKS */}
       <section className="py-20 px-6 bg-[#f9f6f3]">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-12 text-center">
           What We Source For You
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {blocks.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => onNavigate?.(item.page)}
+              className="text-left bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition hover:-translate-y-1"
+            >
+              <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+                {item.title}
+              </h3>
 
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Bridal Outfits
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Lehengas, sarees, reception looks, and custom bridal designs.
-            </p>
-          </div>
+              <p className="text-sm text-[#6a5c55]">{item.desc}</p>
 
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Groom Outfits
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Sherwanis, bandhgalas, and coordinated ceremony outfits.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Bridesmaid & Family Outfits
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Coordinated looks for bridesmaids, siblings, and family members.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Groomsmen Outfits
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Matching or complementary styles for groomsmen.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Jewelry & Accessories
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Bridal jewelry, footwear, clutches, and finishing details.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-sm">
-            <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-              Ceremonial Items & Wedding Essentials
-            </h3>
-            <p className="text-sm text-[#6a5c55]">
-              Dupattas, pagdis, kalire, welcome bags, and ceremony essentials.
-            </p>
-          </div>
-
+              <p className="mt-4 text-sm font-medium text-[#8a6f63]">
+                Explore →
+              </p>
+            </button>
+          ))}
         </div>
       </section>
-
     </main>
   )
 }
