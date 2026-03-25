@@ -113,21 +113,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* HERO */}
       <section className="pb-20 px-6 text-center">
         <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
-          Your Personal Sourcing Team
+          Indian Wedding Outfits, Sourced from India
         </p>
 
-        <h1 className="font-['Cormorant_Garamond'] text-6xl md:text-8xl font-semibold leading-[0.95] tracking-[-0.02em] mb-6 text-[#1f1f1f]">
-          Skip the Flights.
+        <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-6xl font-semibold leading-[1.1] tracking-[-0.01em] mb-6 text-[#1f1f1f]">
+          Your family, dressed
           <br />
-          Skip the Scams.
+          for every ceremony.
         </h1>
 
         <p className="mt-8 max-w-2xl mx-auto text-xl md:text-2xl font-medium leading-relaxed text-[#5a4a42]">
-          We source authentic Indian wedding outfits directly from India for US-based families — with live video shopping, quality checks, and delivery to your door.
+          We help US-based families find authentic Indian wedding outfits — sourced directly from India, with live video shopping, quality checks, and delivered to your door.
         </p>
 
         <p className="mt-4 max-w-xl mx-auto text-base md:text-lg font-normal leading-relaxed text-[#6a5c55]">
-          No flights. No scams. No overwhelm.
+          From the bride's lehenga to the whole family — every outfit, every ceremony, taken care of.
         </p>
 
         {/* Social proof bar */}
