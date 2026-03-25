@@ -168,13 +168,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
           style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
             objectFit: "cover", objectPosition: "center",
-            opacity: 0.45, display: "block",
+            opacity: 0.72, display: "block",
           }}
         />
         {/* Gradient overlay — left side darker for text readability */}
         <div style={{
           position: "absolute", inset: 0,
-          background: "linear-gradient(105deg, rgba(26,16,8,0.92) 0%, rgba(26,16,8,0.75) 45%, rgba(26,16,8,0.3) 100%)",
+          background: "linear-gradient(105deg, rgba(26,16,8,0.78) 0%, rgba(26,16,8,0.55) 45%, rgba(26,16,8,0.15) 100%)",
         }} />
 
         {/* Content */}
