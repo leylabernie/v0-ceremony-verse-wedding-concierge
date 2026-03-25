@@ -113,7 +113,7 @@ const pricingTiers = [
     features: [
       "Everything in Style Guide tier",
       "2–4 live video shopping sessions",
-      "Fabric & embroidery quality checks",
+      "Fabric sourcing & color matching to your shade",
       "Color accuracy confirmation",
       "Pre-shipping inspection",
     ],
@@ -225,18 +225,17 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </a>
             </div>
 
-            {/* Stats */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "28px" }}>
+            {/* Real differentiators */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {[
-                { num: "100+", label: "US families served" },
-                { num: "15–20", label: "artisan workshops" },
-                { num: "99%", label: "first-time fit rate" },
-                { num: "30–50%", label: "savings vs boutiques" },
-              ].map((s) => (
-                <div key={s.num}>
-                  <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#c7b28a", lineHeight: 1 }}>{s.num}</p>
-                  <p style={{ fontSize: "11px", color: "rgba(255,255,255,0.55)", marginTop: "3px" }}>{s.label}</p>
-                </div>
+                "Manufacturer-direct pricing",
+                "Custom stitched to your measurements",
+                "Fabric sourced & dyed to your shade",
+                "Dedicated jewelry supplier",
+              ].map((tag) => (
+                <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
+                  {tag}
+                </span>
               ))}
             </div>
           </div>
@@ -261,12 +260,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
               },
               {
                 problem: "I was terrified of getting scammed",
-                solution: "We physically visit every artisan workshop. No Instagram sellers, no blind ordering. 100+ US families have trusted us — and we have never had a scam incident.",
+                solution: "We work directly with our trusted supply chain in India — manufacturers, designers, and fabric suppliers we know personally. No random Instagram sellers. You see everything on live video before it ships.",
                 icon: "🛡️",
               },
               {
                 problem: "Sizing was a complete nightmare",
-                solution: "We guide every family member through measurements on video call. 99% first-time fit rate across 100+ families and thousands of individual outfits.",
+                solution: "Every outfit is stitched by our local tailor partner to your exact measurements. We guide you through the measurement process on a video call and your tailor customizes every piece specifically for you.",
                 icon: "📏",
               },
             ].map((item, i) => (
@@ -300,7 +299,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Between multiple family weddings and helping friends navigate the chaos of Indian bridal shopping from the US, I saw the same story repeat itself: families spending thousands, getting burned by scammers, or just giving up and settling for whatever an American boutique had in stock.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            I knew there was a better way. I built direct relationships with 15–20 trusted artisan workshops across India. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for 10+ family members across multiple states.
+            I knew there was a better way. I built direct relationships across India — a manufacturer who supplies outfits worldwide, a local designer and tailor who custom-stitches to your exact measurements, a fabric specialist who sources and dyes fabrics to your chosen shade, and a dedicated bridal jewelry supplier. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for entire families across multiple states.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed font-medium">
             CeremonyVerse is that knowledge, turned into a service. — <em>Bhamini, Founder</em>
@@ -322,7 +321,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             },
             {
               title: "Share Inspiration",
-              desc: "Send us your Pinterest boards, Instagram saves, or references. We'll match styles to verified designers in India.",
+              desc: "Send us your Pinterest boards, Instagram saves, or references. We work with our designer and tailor in India to match or recreate your vision exactly.",
             },
             {
               title: "Live Video Shopping",
@@ -362,7 +361,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#8a6f63" }}>Everything Covered</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">We Source It All</h2>
           <p className="text-[#6a5c55] mb-10 max-w-xl mx-auto">
-            From the bride's lehenga to the groom's sherwani, bridesmaid coordination, family outfits, jewelry, ceremonial items, gifts, welcome bags — and yes, even pet outfits.
+            From ready-made outfits to fully custom pieces stitched to your measurements — bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry sourced directly from our supplier, ceremonial items, gifts, welcome bags, and even pet outfits.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {[
@@ -395,7 +394,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               { icon: "🎥", stat: "Live Video", sub: "See before you buy" },
               { icon: "✅", stat: "Quality Checked", sub: "Inspected before shipping" },
               { icon: "🇮🇳", stat: "Direct from India", sub: "No middlemen, no markups" },
-              { icon: "🤝", stat: "100+ Families", sub: "Served across the US" },
+              { icon: "🤝", stat: "End-to-End", sub: "From fabric to your door" },
             ].map((t, i) => (
               <div key={i}>
                 <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
@@ -484,7 +483,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </div>
 
           <p className="text-center text-xs text-[#8a6f63] mt-6">
-            All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs. Most clients save 30–50% vs. US boutiques.
+            All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs — fully transparent, no surprises.
           </p>
         </div>
       </section>

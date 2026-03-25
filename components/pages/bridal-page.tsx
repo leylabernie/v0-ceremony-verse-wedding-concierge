@@ -71,9 +71,9 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { title: "No flying to India required", desc: "We handle everything remotely. Live video shopping sessions let you see and approve every detail before anything is made or shipped." },
-              { title: "Only verified ateliers", desc: "We work with 15–20 artisan workshops we've personally visited. No Instagram sellers, no middlemen, no surprises." },
-              { title: "Transparent pricing", desc: "You see exactly what you pay — outfit cost, our sourcing fee, shipping, and customs. Most brides save 30–50% vs. US boutiques." },
-              { title: "Guaranteed fit", desc: "We collect 15+ measurements and build in alteration allowance. 99% first-time fit rate. If alterations are needed due to our error, we cover the cost." },
+              { title: "Our verified supply chain", desc: "We work with our trusted network in India — manufacturers, designers, fabric specialists, and jewelry suppliers we know personally. No Instagram sellers, no middlemen, no surprises." },
+              { title: "Transparent pricing", desc: "You see exactly what you pay — outfit cost, our sourcing fee, shipping, and customs. Most brides save vs. US boutiques." },
+              { title: "Guaranteed fit", desc: "We collect 15+ measurements and build in alteration allowance. custom-fitted to your measurements. If alterations are needed due to our error, we cover the cost." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
                 <span className="text-[#c7b28a] font-semibold text-lg mt-0.5">—</span>

@@ -13,7 +13,7 @@ const faqSections = [
     items: [
       {
         question: "How do I know this isn't a scam?",
-        answer: "Unlike Instagram sellers, we don't hide behind a screen. Our team physically visits every artisan workshop, documents working conditions, and verifies production capabilities in person. We provide video walkthroughs and never ask for full payment upfront."
+        answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with a trusted supply chain in India — a manufacturer, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
       },
       {
         question: "What if quality doesn't match?",
@@ -21,7 +21,7 @@ const faqSections = [
       },
       {
         question: "How do you verify your sourcing partners?",
-        answer: "We personally visit every artisan workshop and vetted partner. We check business licenses, inspect facilities, verify labor practices, and review client history. Only 15–20 carefully vetted workshops across India make our network."
+        answer: "We work with a carefully selected supply chain built over time — a manufacturer who supplies outfits worldwide, a local designer and tailor who custom-stitches to your exact measurements and references, a fabric specialist who sources and dyes fabrics to your chosen color shade, and a dedicated bridal jewelry supplier. Every partner is someone we know personally."
       }
     ]
   },
@@ -34,7 +34,7 @@ const faqSections = [
       },
       {
         question: "How do you handle large parties?",
-        answer: "Coordinating 8-15 groomsmen is our specialty. We provide video tutorials for self-measurement, virtual sizing sessions, individual profiles, and extra allowances for weight fluctuations. 99% first-time fit rate."
+        answer: "Coordinating 8-15 groomsmen is our specialty. We provide video tutorials for self-measurement, virtual sizing sessions, individual profiles, and extra allowances for weight fluctuations. custom-fitted to your measurements."
       },
       {
         question: "What's your alteration policy?",
@@ -47,7 +47,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save 30-50% compared to US boutiques."
+        answer: "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save vs. US boutiques."
       },
       {
         question: "What's the payment schedule?",
