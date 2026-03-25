@@ -24,44 +24,6 @@ interface HomePageProps {
   onNavigate?: (page: PageType) => void
 }
 
-const blocks = [
-  {
-    title: "Bridal Outfits",
-    desc: "Lehengas, sarees, reception looks, and custom bridal designs.",
-    page: "bridal" as PageType,
-    img: "/images/services-bridal-gold.jpg",
-  },
-  {
-    title: "Groom & Groomsmen",
-    desc: "Sherwanis, bandhgalas, and matching groomsmen kurta sets.",
-    page: "groom" as PageType,
-    img: "/images/services-groomsmen.jpg",
-  },
-  {
-    title: "Bridesmaid & Family Outfits",
-    desc: "Coordinated lehengas and sarees for the entire family.",
-    page: "bridesmaids" as PageType,
-    img: "/images/services-bridesmaids.jpg",
-  },
-  {
-    title: "Jewelry & Accessories",
-    desc: "Bridal kundan sets, jhumkas, maang tikka, and finishing details.",
-    page: "jewelry" as PageType,
-    img: "/images/services-jewelry3.jpg",
-  },
-  {
-    title: "Welcome Bags & Gifts",
-    desc: "Personalized welcome bags, return gifts, and curated hampers for guests.",
-    page: "welcomebags" as PageType,
-    img: "/images/services-gifts.jpg",
-  },
-  {
-    title: "Pet Outfits (Dogs & Cats)",
-    desc: "Custom sherwanis and lehengas for your fur babies — matched to your palette.",
-    page: "pets" as PageType,
-    img: "/images/services-pets.jpg",
-  },
-]
 
 const testimonials = [
   {
@@ -295,42 +257,31 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </button>
       </section>
 
-      {/* WHAT WE SOURCE */}
-      <section className="py-20 px-6 bg-[#f9f6f3]">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-12 text-center">
-          What We Source For You
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {blocks.map((item, index) => (
-            <button
-              key={index}
-              onClick={() => onNavigate?.(item.page)}
-              className="text-left bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition hover:-translate-y-1"
-            >
-              {item.img ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  style={{ width: "100%", height: "10rem", objectFit: "cover", display: "block" }}
-                />
-              ) : (
-                <div style={{ width: "100%", height: "10rem", background: "#f0ebe3", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "2.5rem" }}>
-                  🐾
-                </div>
-              )}
-              <div className="p-6">
-                <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-[#6a5c55]">{item.desc}</p>
-                <p className="mt-4 text-sm font-medium text-[#8a6f63]">
-                  Explore →
-                </p>
-              </div>
-            </button>
-          ))}
+      {/* WHAT WE SOURCE — compact teaser, links to Services page */}
+      <section className="py-16 px-6 bg-[#f9f6f3]">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#8a6f63" }}>Everything Covered</p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">We Source It All</h2>
+          <p className="text-[#6a5c55] mb-10 max-w-xl mx-auto">
+            From the bride's lehenga to the groom's sherwani, bridesmaid coordination, family outfits, jewelry, ceremonial items, gifts, welcome bags — and yes, even pet outfits.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            {[
+              "Bridal Lehengas", "Groom Sherwanis", "Bridesmaid Outfits", "Groomsmen Attire",
+              "Family Outfits", "Jewelry & Accessories", "Ceremonial Items", "Wedding Gifts",
+              "Welcome Bags", "Pet Outfits 🐾"
+            ].map((label) => (
+              <span key={label} className="px-4 py-2 bg-white border border-[#e6dfd5] rounded-full text-sm text-[#2f2f2f] font-medium">
+                {label}
+              </span>
+            ))}
+          </div>
+          <button
+            onClick={() => onNavigate?.("services")}
+            className="btn-primary"
+          >
+            See All Services
+          </button>
         </div>
       </section>
 
