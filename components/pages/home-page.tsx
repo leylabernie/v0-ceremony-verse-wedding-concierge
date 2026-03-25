@@ -121,17 +121,29 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
         <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
           {[
-            "Message Us",
-            "Share Inspiration",
-            "Live Video Shopping",
-            "Delivered to You",
+            {
+              title: "Message Us",
+              desc: "Reach out via WhatsApp or our booking form. Tell us about your events, party size, and budget range.",
+            },
+            {
+              title: "Share Inspiration",
+              desc: "Send us your Pinterest boards, Instagram saves, or references. We'll match styles to verified designers in India.",
+            },
+            {
+              title: "Live Video Shopping",
+              desc: "Join a live video session to see outfits, fabrics, and embroidery in real time — before committing to anything.",
+            },
+            {
+              title: "Delivered to You",
+              desc: "Your outfits are quality-checked, carefully packaged, and shipped directly to your door in the US.",
+            },
           ].map((step, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
               <p className="font-semibold text-[#1f1f1f] mb-2">
-                {i + 1}. {step}
+                {i + 1}. {step.title}
               </p>
               <p className="text-sm text-[#6a5c55]">
-                Simple, guided process from start to finish.
+                {step.desc}
               </p>
             </div>
           ))}
