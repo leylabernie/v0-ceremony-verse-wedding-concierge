@@ -51,7 +51,7 @@ export function Footer({ onNavigate }: FooterProps) {
             <button onClick={() => onNavigate("home")} className="text-left mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/images/logo-light.png"
+                src="/images/logo-transparent.png"
                 alt="CeremonyVerse"
                 style={{ height: "56px", width: "auto", display: "block" }}
               />
