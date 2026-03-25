@@ -205,6 +205,27 @@ export function Footer({ onNavigate }: FooterProps) {
           </p>
         </div>
 
+        {/* SEO ceremony pages */}
+        <div className="max-w-6xl mx-auto mb-8 pt-6 border-t border-[#e6dfd5]">
+          <p className="text-xs text-[#8a6f63] mb-3 font-medium uppercase tracking-widest">Ceremony Guides</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            {[
+              { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa" },
+              { label: "Sangeet Night Outfits", href: "/sangeet-outfits-usa" },
+              { label: "Baraat Outfits", href: "/baraat-outfits-usa" },
+              { label: "Bridal Lehenga Sourcing", href: "/services/bridal-lehengas" },
+              { label: "Intercultural Weddings", href: "/services/intercultural-indian-weddings" },
+              { label: "Shop from India", href: "/shop-from-india" },
+              { label: "Buy Bridal Lehenga USA", href: "/buy-bridal-lehenga-from-india-usa" },
+              { label: "Buy Sherwani USA", href: "/buy-sherwani-from-india-usa" },
+            ].map((link) => (
+              <a key={link.label} href={link.href} className="text-xs text-[#8a6f63] hover:text-[#c7b28a] transition">
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom bar */}
         <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-[#e6dfd5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8a6f63]">
           <p>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
