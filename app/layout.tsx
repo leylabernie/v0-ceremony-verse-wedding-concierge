@@ -28,7 +28,7 @@ export default function RootLayout({
         "description": "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and delivery to your US door.",
         "url": "https://v0-ceremony-verse-wedding-concierge.vercel.app",
         "telephone": "+12153419990",
-        "email": "hello@ceremonyverse.com",
+        "email": "bhamini@ceremonyverse.com",
         "address": {
           "@type": "PostalAddress",
           "addressRegion": "PA",

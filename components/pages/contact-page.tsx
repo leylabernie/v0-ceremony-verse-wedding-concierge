@@ -59,7 +59,7 @@ export function ContactPage() {
           bridesmaids: formData.bridesmaidsCount || "0",
           groomsmen: formData.groomsmenCount || "0",
           wedding_vision: formData.vision || "Not provided",
-          to_email: "hello@ceremonyverse.com",
+          to_email: "bhamini@ceremonyverse.com",
         }),
       })
 
@@ -199,7 +199,7 @@ export function ContactPage() {
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <a
-              href="mailto:hello@ceremonyverse.com"
+              href="mailto:bhamini@ceremonyverse.com"
               className="flex items-center gap-2 transition hover:opacity-80"
               style={{ color: "var(--cv-muted)" }}
             >
@@ -207,7 +207,7 @@ export function ContactPage() {
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22,7-10,7L2,7"/>
               </svg>
-              hello@ceremonyverse.com
+              bhamini@ceremonyverse.com
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <span style={{ color: "var(--cv-muted)" }}>Response within 24–48 hrs</span>

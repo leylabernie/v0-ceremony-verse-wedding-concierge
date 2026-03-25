@@ -176,14 +176,14 @@ export function Footer({ onNavigate }: FooterProps) {
                 WhatsApp Us
               </a>
               <a
-                href="mailto:hello@ceremonyverse.com"
+                href="mailto:bhamini@ceremonyverse.com"
                 className="flex items-center gap-2 text-sm text-[#6a5c55] hover:text-[#c7b28a] transition"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <rect x="2" y="4" width="20" height="16" rx="2"/>
                   <path d="m22,7-10,7L2,7"/>
                 </svg>
-                hello@ceremonyverse.com
+                bhamini@ceremonyverse.com
               </a>
               <a
                 href="https://www.trustpilot.com/review/ceremonyverse.com"
