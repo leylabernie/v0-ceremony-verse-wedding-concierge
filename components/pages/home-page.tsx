@@ -18,31 +18,37 @@ const blocks = [
     title: "Bridal Outfits",
     desc: "Lehengas, sarees, reception looks, and custom bridal designs.",
     page: "services" as PageType,
+    img: "/images/services-bridal-gold.jpg",
   },
   {
     title: "Groom Outfits",
     desc: "Sherwanis, bandhgalas, and coordinated ceremony outfits.",
     page: "services" as PageType,
+    img: "/images/services-groom.jpg",
   },
   {
     title: "Bridesmaid & Family Outfits",
-    desc: "Coordinated looks for bridesmaids, siblings, and family members.",
+    desc: "Coordinated lehengas and sarees for the entire family.",
     page: "services" as PageType,
-  },
-  {
-    title: "Groomsmen Outfits",
-    desc: "Matching or complementary styles for groomsmen.",
-    page: "services" as PageType,
+    img: "/images/services-bridesmaids.jpg",
   },
   {
     title: "Jewelry & Accessories",
-    desc: "Bridal jewelry, footwear, clutches, and finishing details.",
+    desc: "Bridal kundan sets, jhumkas, maang tikka, and finishing details.",
     page: "services" as PageType,
+    img: "/images/services-jewelry3.jpg",
+  },
+  {
+    title: "Ceremonial Items",
+    desc: "Ritual items, dupattas, and traditional ceremony essentials.",
+    page: "services" as PageType,
+    img: "/images/services-ceremonial.png",
   },
   {
     title: "Pet Outfits (Dogs & Cats)",
-    desc: "Custom outfits for your furry family members, coordinated to match your wedding theme.",
+    desc: "Custom sherwanis and lehengas for your fur babies — matched to your palette.",
     page: "services" as PageType,
+    img: null,
   },
 ]
 
@@ -289,17 +295,54 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <button
               key={index}
               onClick={() => onNavigate?.(item.page)}
-              className="text-left bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition hover:-translate-y-1"
+              className="text-left bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition hover:-translate-y-1"
             >
-              <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
-                {item.title}
-              </h3>
-              <p className="text-sm text-[#6a5c55]">{item.desc}</p>
-              <p className="mt-4 text-sm font-medium text-[#8a6f63]">
-                Explore →
-              </p>
+              {item.img ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  style={{ width: "100%", height: "10rem", objectFit: "cover", display: "block" }}
+                />
+              ) : (
+                <div style={{ width: "100%", height: "10rem", background: "#f0ebe3", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "2.5rem" }}>
+                  🐾
+                </div>
+              )}
+              <div className="p-6">
+                <h3 className="font-semibold text-lg mb-2 text-[#1f1f1f]">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-[#6a5c55]">{item.desc}</p>
+                <p className="mt-4 text-sm font-medium text-[#8a6f63]">
+                  Explore →
+                </p>
+              </div>
             </button>
           ))}
+        </div>
+      </section>
+
+      {/* TRUST SIGNALS STRIP */}
+      <section className="py-12 px-6" style={{ background: "#fff", borderTop: "1px solid #e6dfd5", borderBottom: "1px solid #e6dfd5" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#8a6f63" }}>
+            Why Families Trust CeremonyVerse
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {[
+              { icon: "🎥", stat: "Live Video", sub: "See before you buy" },
+              { icon: "✅", stat: "Quality Checked", sub: "Inspected before shipping" },
+              { icon: "🇮🇳", stat: "Direct from India", sub: "No middlemen, no markups" },
+              { icon: "🤝", stat: "100+ Families", sub: "Served across the US" },
+            ].map((t, i) => (
+              <div key={i}>
+                <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
+                <p style={{ fontWeight: 600, fontSize: "0.95rem", color: "#1f1f1f", marginBottom: "2px" }}>{t.stat}</p>
+                <p style={{ fontSize: "0.75rem", color: "#8a6f63" }}>{t.sub}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
