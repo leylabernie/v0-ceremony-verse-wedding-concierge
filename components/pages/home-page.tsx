@@ -1,5 +1,7 @@
 "use client"
 
+import React from "react"
+
 type PageType =
   | "home"
   | "services"
@@ -134,11 +136,30 @@ const pricingTiers = [
   },
 ]
 
+function FaqItem({ question, answer }: { question: string; answer: string }) {
+  const [open, setOpen] = React.useState(false)
+  return (
+    <div style={{ borderBottom: "1px solid #e6dfd5" }}>
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between py-5 text-left gap-4"
+      >
+        <span className="font-medium text-sm md:text-base" style={{ color: "#1f1f1f" }}>{question}</span>
+        <span className="shrink-0 text-lg transition-transform" style={{ color: "#c7b28a", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
+      </button>
+      {open && (
+        <p className="text-sm leading-relaxed pb-5" style={{ color: "#6a5c55" }}>{answer}</p>
+      )}
+    </div>
+  )
+}
+
 export function HomePage({ onNavigate }: HomePageProps) {
   return (
     <main className="">
       {/* HERO */}
-      <section className="pb-20 px-6 text-center">
+      <section className="pb-12 px-6 text-center">
         <p className="tracking-[0.15em] text-xs md:text-sm font-medium text-[#8a6f63] mb-6 uppercase">
           US-Based Indian Wedding Shopping Concierge
         </p>
@@ -149,16 +170,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
           sourced from India and delivered to your door.
         </h1>
 
-        <p className="mt-8 max-w-2xl mx-auto text-xl md:text-2xl font-medium leading-relaxed text-[#5a4a42]">
-          From bridal lehengas and sherwanis to jewelry, ceremonial items, gifts, welcome bags, and more — we source everything for your Indian wedding directly from India, with live video shopping, quality checks, and delivery to your US door.
+        <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed text-[#5a4a42]">
+          Worried about scams, wrong colors, or outfits that don't fit? We source directly from India — with live video so you see every item before it ships, and quality checks before it leaves.
         </p>
 
-        <p className="mt-4 max-w-xl mx-auto text-base md:text-lg font-normal leading-relaxed text-[#6a5c55]">
-          Outfits, jewelry, gifts, sweets, welcome bags, ceremonial items — one trusted team handles it all for US-based families.
-        </p>
+        {/* Pain signals */}
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 max-w-2xl mx-auto">
+          {["No scams", "See it before it ships", "Perfect fit guaranteed", "Everything included"].map((tag) => (
+            <span key={tag} className="inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full" style={{ background: "#f0ebe3", color: "#6a5c55", border: "1px solid #e6dfd5" }}>
+              <span style={{ color: "#c7b28a" }}>✓</span> {tag}
+            </span>
+          ))}
+        </div>
 
         {/* Social proof bar */}
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-8 text-sm text-[#8a6f63]">
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-8 text-sm text-[#8a6f63]">
           <span className="flex items-center gap-2">
             <span className="text-2xl font-semibold text-[#1f1f1f]">100+</span>
             US families served
@@ -175,7 +201,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </span>
         </div>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             type="button"
             onClick={() => onNavigate?.("contact")}
@@ -183,7 +209,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
           >
             Book Free Consultation
           </button>
-
           <button
             type="button"
             onClick={() => onNavigate?.("journey")}
@@ -198,17 +223,79 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </p>
       </section>
 
+      {/* FREE CHECKLIST — above the fold on mobile */}
+      <section className="px-6 pb-8">
+        <div className="max-w-2xl mx-auto rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 px-7 py-5" style={{ background: "#1f1f1f" }}>
+          <div>
+            <p className="text-xs font-medium tracking-widest uppercase mb-1" style={{ color: "#c7b28a" }}>Free Download</p>
+            <p className="text-white font-semibold text-sm">Indian Wedding Outfit Checklist</p>
+            <p className="text-xs mt-0.5" style={{ color: "rgba(255,255,255,0.5)" }}>Every outfit, every ceremony — nothing forgotten</p>
+          </div>
+          <a
+            href="/wedding-outfit-checklist.pdf"
+            download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
+            className="inline-flex items-center gap-2 whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium shrink-0 transition hover:opacity-90"
+            style={{ background: "#c7b28a", color: "#fff" }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+              <polyline points="7,10 12,15 17,10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download Free
+          </a>
+        </div>
+      </section>
+
       {/* HERO IMAGE */}
       <section className="px-6 pb-4">
         <div className="max-w-6xl mx-auto rounded-2xl overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero-lehenga.jpg"
-            alt="Red and gold bridal lehenga with intricate zardozi embroidery, sourced from India for US families"
+            alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
             width={1440}
             height={480}
             style={{ width: "100%", height: "auto", maxHeight: "520px", objectFit: "cover", display: "block" }}
           />
+        </div>
+      </section>
+
+      {/* PAIN POINTS STRIP */}
+      <section className="py-14 px-6" style={{ background: "#1f1f1f" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#c7b28a" }}>
+            Why NRI Families Struggle — And How We Fix It
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                problem: ""What arrived looked nothing like the photos"",
+                solution: "You approve the exact item on live video — same fabric, same embroidery, reserved with your order number. If anything changes before shipping, we halt it.",
+                icon: "🎥",
+              },
+              {
+                problem: ""I was terrified of getting scammed"",
+                solution: "We physically visit every artisan workshop. No Instagram sellers, no blind ordering. 100+ US families have trusted us — and we have never had a scam incident.",
+                icon: "🛡️",
+              },
+              {
+                problem: ""Sizing was a complete nightmare"",
+                solution: "We guide every family member through measurements on video call. 99% first-time fit rate across 100+ families and thousands of individual outfits.",
+                icon: "📏",
+              },
+            ].map((item, i) => (
+              <div key={i} className="rounded-2xl p-7" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(199,178,138,0.2)" }}>
+                <div className="text-2xl mb-4">{item.icon}</div>
+                <p className="font-['Cormorant_Garamond'] text-lg font-semibold italic mb-3 leading-snug" style={{ color: "#c7b28a" }}>
+                  {item.problem}
+                </p>
+                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+                  {item.solution}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -537,6 +624,62 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-xs text-[#8a6f63] mt-4">
             ⭐ Tag us on your wedding day for a feature
           </p>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-20 px-6" style={{ background: "#f9f6f3" }}>
+        <div className="max-w-3xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-4 text-center" style={{ color: "var(--cv-accent)" }}>
+            Common Questions
+          </p>
+          <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f" }}>
+            Everything you need to know
+          </h2>
+          <div className="space-y-0">
+            {[
+              {
+                q: "What exactly does CeremonyVerse source?",
+                a: "Everything for your Indian wedding — bridal lehengas, sherwanis, bridesmaid and groomsmen outfits, family attire, jewelry, ceremonial items, return gifts, sweets, welcome bags, and even pet outfits. If it's for an Indian wedding, we can source it from India."
+              },
+              {
+                q: "How do I know what I see is what I'll actually receive?",
+                a: "We do live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light. That specific piece is reserved with your name and order number. We also do a final inspection before it ships. If anything doesn't match, we halt shipping and resolve it."
+              },
+              {
+                q: "How much does it cost? Is there a hidden markup?",
+                a: "No hidden markup. Our sourcing fee is 15–20% of the outfit cost, clearly itemized. You see the full breakdown: outfit cost, sourcing fee, shipping, and customs. Services start at $149 for a Style Guide, $599 for Guided Sourcing, and $1,499 for Full Bridal Concierge. A free consultation is always available."
+              },
+              {
+                q: "How far in advance should I start?",
+                a: "6–12 months before your wedding date. Top artisan workshops book quickly and custom outfits need production time. The bridal lehenga alone takes 14–20 weeks for quality custom work. If your wedding is sooner, contact us — we'll tell you honestly what's achievable."
+              },
+              {
+                q: "Can you coordinate outfits for a large family across multiple states?",
+                a: "This is one of our specialties. We've coordinated 14 bridesmaids and 14 groomsmen across multiple states, full families for 4-day weddings, and destination weddings in Mexico. We collect all measurements, manage all communication, and ship everything together."
+              },
+              {
+                q: "Do you help with intercultural weddings where one partner isn't South Asian?",
+                a: "Yes — and we love this work. We explain every ceremony, dress code, and cultural context clearly. We've helped many couples where one partner had never worn Indian clothes before. No assumptions, no jargon, no judgment."
+              },
+              {
+                q: "Do you ship to all US states?",
+                a: "Yes. We serve families across the entire United States — New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and everywhere in between. All items are quality-checked in India before being shipped to your US address."
+              },
+            ].map((item, i) => (
+              <FaqItem key={i} question={item.q} answer={item.a} />
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <button
+              type="button"
+              onClick={() => onNavigate?.("faq")}
+              className="text-sm font-medium transition hover:opacity-70"
+              style={{ color: "var(--cv-accent)" }}
+            >
+              See all FAQ →
+            </button>
+          </div>
         </div>
       </section>
 
