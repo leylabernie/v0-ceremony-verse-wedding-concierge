@@ -89,7 +89,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* PETS */}
           <button type="button" onClick={() => onNavigate("pets")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-pets.jpg" alt="Two dogs dressed for a wedding — shih tzu and maltese with teal headpiece" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center center", display: "block" }} />
+            <img src="/images/services-pets.jpg" alt="Two dogs dressed for a wedding — shih tzu in gold sherwani and maltese in teal lehenga" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center top", display: "block" }} />
             <div className="p-6">
               <div className="text-xs font-medium text-[var(--cv-accent)] uppercase tracking-widest mb-2">Fan Favorite</div>
               <h3 className="text-xl font-semibold mb-2">Pet Outfits (Dogs & Cats)</h3>
@@ -123,7 +123,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* GIFTS */}
           <button type="button" onClick={() => onNavigate("gifts")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-gifts.jpg" alt="Silk potli gift bags with roses in a gold ballroom setting" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center bottom", display: "block" }} />
+            <img src="/images/services-gifts.jpg" alt="Colourful silk potli bags in emerald, navy, burgundy and lavender in a gold ballroom" style={{ width: "100%", height: "16rem", objectFit: "cover", objectPosition: "center center", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Wedding Gifts & Return Gifts</h3>
               <p className="text-[var(--cv-muted)] text-sm">Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family.</p>
