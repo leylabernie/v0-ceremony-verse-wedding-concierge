@@ -215,6 +215,44 @@ export function ContactPage() {
         </div>
       </section>
 
+      {/* CALENDLY BOOKING */}
+      <section className="pb-8 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-6">
+            <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>
+              Fastest Way to Connect
+            </p>
+            <h2
+              className="font-['Cormorant_Garamond'] text-3xl font-semibold mb-2"
+              style={{ color: "var(--cv-foreground)" }}
+            >
+              Pick a Time That Works for You
+            </h2>
+            <p className="text-sm" style={{ color: "var(--cv-muted)" }}>
+              Free 30-minute consultation — no commitment required
+            </p>
+          </div>
+          {/* Calendly inline widget */}
+          <div
+            className="calendly-inline-widget rounded-2xl overflow-hidden"
+            data-url="https://calendly.com/ceremonyverse/consultation?hide_gdpr_banner=1&primary_color=c7b28a"
+            style={{ minWidth: "320px", height: "700px", border: "1px solid var(--cv-border)" }}
+          />
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
+          />
+        </div>
+      </section>
+
+      {/* DIVIDER */}
+      <div className="max-w-3xl mx-auto px-6 py-4 text-center">
+        <p className="text-xs" style={{ color: "var(--cv-muted)" }}>
+          — or fill out the form below and we'll reach out within 24–48 hours —
+        </p>
+      </div>
+
       {/* FORM */}
       <section className="pb-28 px-6">
         <div className="max-w-xl mx-auto">

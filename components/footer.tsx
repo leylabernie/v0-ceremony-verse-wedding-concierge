@@ -49,12 +49,12 @@ export function Footer({ onNavigate }: FooterProps) {
           {/* Brand */}
           <div className="md:col-span-1">
             <button onClick={() => onNavigate("home")} className="text-left mb-4">
-              <span className="text-xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
-                CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
-              </span>
-              <p className="text-xs tracking-widest text-[#8a6f63] mt-1 uppercase">
-                Heritage Sourcing & Bridal Concierge
-              </p>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-light.png"
+                alt="CeremonyVerse"
+                style={{ height: "56px", width: "auto", display: "block" }}
+              />
             </button>
             <p className="text-sm text-[#6a5c55] leading-relaxed">
               Helping US-based South Asian families source authentic Indian wedding outfits — directly from India, with live video shopping and delivery to your door.
