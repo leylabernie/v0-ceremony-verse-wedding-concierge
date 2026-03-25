@@ -35,15 +35,15 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           <div className="flex-shrink-0">
             <button
               onClick={() => handleNavClick("home")}
-              className="flex items-center group"
+              className="flex flex-col items-start group"
               aria-label="CeremonyVerse Home"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo-nav.png"
-                alt="CeremonyVerse"
-                style={{ height: "56px", width: "auto", display: "block" }}
-              />
+              <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
+                CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#8a6f63] mt-0.5">
+                Indian Wedding Shopping Made Easy
+              </span>
             </button>
           </div>
 
