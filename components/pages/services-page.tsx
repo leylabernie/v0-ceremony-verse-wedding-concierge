@@ -28,13 +28,13 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
           {/* BRIDE */}
-          <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-3">
-              Bridal Lehengas & Wedding Outfits
-            </h3>
-            <p className="text-[var(--cv-muted)]">
-              Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.
-            </p>
+          <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/services-bridal-gold.jpg" alt="Champagne gold bridal lehenga with intricate embroidery hanging on a wooden rack" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-3">Bridal Lehengas & Wedding Outfits</h3>
+              <p className="text-[var(--cv-muted)]">Bridal lehengas and outfits sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US.</p>
+            </div>
           </div>
 
           {/* GROOM */}
@@ -90,7 +90,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* JEWELRY */}
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-jewelry.png" alt="Indian bridal jewelry including kundan necklace and jhumka earrings" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-jewelry2.jpg" alt="Gold jhumka earrings with pearl drops and sindoor dish on marble with marigolds" style={{ width: "100%", height: "12rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-3">Jewelry & Bridal Accessories</h3>
               <p className="text-[var(--cv-muted)]">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
