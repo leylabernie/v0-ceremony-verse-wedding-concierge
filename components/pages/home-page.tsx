@@ -635,7 +635,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Behind-the-scenes sourcing, real client outfits, and wedding inspiration direct from India.
           </p>
           <a
-            href="https://www.instagram.com/ceremonyverse"
+            href="https://www.instagram.com/ceremonyverse/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition"

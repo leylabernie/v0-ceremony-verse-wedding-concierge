@@ -62,7 +62,7 @@ export function Footer({ onNavigate }: FooterProps) {
             {/* Social icons */}
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="https://www.instagram.com/ceremonyverse"
+                href="https://www.instagram.com/ceremonyverse/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="CeremonyVerse on Instagram"
@@ -75,7 +75,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 </svg>
               </a>
               <a
-                href="https://www.pinterest.com/ceremonyverse"
+                href="https://www.pinterest.com/ceremonyverse/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="CeremonyVerse on Pinterest"
