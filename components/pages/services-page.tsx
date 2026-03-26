@@ -101,7 +101,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
           {/* JEWELRY */}
           <button type="button" onClick={() => onNavigate("jewelry")} className="text-left bg-white border border-[var(--cv-border)] rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-200 hover:-translate-y-1 w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/services-jewelry3.jpg" alt="Bridal kundan necklace set" style={{ width: "100%", height: "16rem", objectFit: "cover", display: "block" }} />
+            <img src="/images/services-jewelry-real.jpg" alt="Authentic kundan polki bridal jewelry set with emerald green stones — sourced from India for NRI brides in USA by CeremonyVerse" style={{ width: "100%", height: "16rem", objectFit: "cover", display: "block" }} />
             <div className="p-6">
               <h3 className="text-xl font-semibold mb-2">Jewelry & Bridal Accessories</h3>
               <p className="text-[var(--cv-muted)] text-sm">Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail.</p>
