@@ -215,6 +215,46 @@ export function ContactPage() {
         </div>
       </section>
 
+      {/* DOCUMENTS */}
+      <section className="px-6 pb-4">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-3">
+          <a
+            href="/ceremonyverse-intake-questionnaire.pdf"
+            download
+            className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
+            style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c7b28a" strokeWidth="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+            <div>
+              <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Client Intake Questionnaire</p>
+              <p className="text-xs" style={{ color: "#8a6f63" }}>Download & complete before your consultation</p>
+            </div>
+          </a>
+          <a
+            href="/ceremonyverse-service-agreement.pdf"
+            download
+            className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
+            style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c7b28a" strokeWidth="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <path d="M9 15l2 2 4-4"/>
+            </svg>
+            <div>
+              <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Service Agreement</p>
+              <p className="text-xs" style={{ color: "#8a6f63" }}>Review our terms before signing</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* CALENDLY BOOKING */}
       <section className="pb-8 px-6">
         <div className="max-w-3xl mx-auto">
