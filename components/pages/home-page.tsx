@@ -31,6 +31,7 @@ const testimonials = [
   {
     names: "Kaval & April",
     initials: "KA",
+    photo: "",
     color: "#c7b28a",
     location: "Philadelphia, PA",
     quote:
@@ -40,6 +41,7 @@ const testimonials = [
   {
     names: "Karan & Sonal",
     initials: "KS",
+    photo: "/images/testimonial-karan-sonal.jpg",
     color: "#b09872",
     location: "Destination Wedding, Mexico",
     quote:
@@ -49,6 +51,7 @@ const testimonials = [
   {
     names: "Charlie & Viola",
     initials: "CV",
+    photo: "/images/testimonial-charlie-viola.jpg",
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
@@ -58,6 +61,7 @@ const testimonials = [
   {
     names: "Dhan & Christina",
     initials: "DC",
+    photo: "/images/testimonial-dhan-christina.jpg",
     color: "#c7b28a",
     location: "USA",
     quote:
@@ -67,6 +71,7 @@ const testimonials = [
   {
     names: "Shincy",
     initials: "SH",
+    photo: "/images/testimonial-shincy.jpg",
     color: "#b09872",
     location: "USA",
     quote:
@@ -76,6 +81,7 @@ const testimonials = [
   {
     names: "Swati",
     initials: "SW",
+    photo: "/images/testimonial-swati.jpg",
     color: "#8a7060",
     location: "USA",
     quote:
@@ -85,6 +91,7 @@ const testimonials = [
   {
     names: "Shilpa",
     initials: "SP",
+    photo: "",
     color: "#c7b28a",
     location: "USA",
     quote:
@@ -506,12 +513,22 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   {t.quote}
                 </p>
                 <div className="border-t border-[#e6dfd5] pt-4 flex items-center gap-3">
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold shrink-0"
-                    style={{ background: t.color }}
-                  >
-                    {t.initials}
-                  </div>
+                  {t.photo ? (
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img
+                      src={t.photo}
+                      alt={t.names}
+                      className="w-12 h-12 rounded-full object-cover shrink-0"
+                      style={{ border: "2px solid var(--cv-border)" }}
+                    />
+                  ) : (
+                    <div
+                      className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xs font-semibold shrink-0"
+                      style={{ background: t.color }}
+                    >
+                      {t.initials}
+                    </div>
+                  )}
                   <div>
                     <p className="font-semibold text-[#1f1f1f] text-sm">{t.names}</p>
                     <p className="text-xs text-[#8a6f63]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
