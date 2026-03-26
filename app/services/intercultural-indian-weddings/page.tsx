@@ -28,7 +28,7 @@ export default function InterculturalWeddingPage() {
           <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontStyle: "italic", color: "#f0ebe3", lineHeight: 1.6, marginBottom: "16px" }}>
             "As a South Indian Christian couple, we wanted outfits that truly honored our heritage. CeremonyVerse walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away."
           </p>
-          <p style={{ fontSize: "13px", color: "#c7b28a", fontWeight: 500 }}>— Charlie &amp; Viola, Philadelphia PA · Intercultural wedding</p>
+          <p style={{ fontSize: "13px", color: "#c7b28a", fontWeight: 500 }}>— Charly &amp; Viola, Philadelphia PA · Intercultural wedding</p>
         </div>
       </section>
 

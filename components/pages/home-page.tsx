@@ -49,13 +49,13 @@ const testimonials = [
     detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
   },
   {
-    names: "Charlie & Viola",
+    names: "Charly & Viola",
     initials: "CV",
     photo: "/images/testimonial-charlie-viola.jpg",
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
-      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charlie's outfit beautifully — every decision made with care. Our families were blown away.",
+      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
     detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
   },
   {
@@ -633,7 +633,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   CV
                 </div>
                 <div>
-                  <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charlie & Viola</p>
+                  <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charly & Viola</p>
                   <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; South Indian Christian wedding</p>
                 </div>
               </div>
