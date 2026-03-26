@@ -444,7 +444,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* PRICING TIERS */}
-      <section className="py-20 px-6">
+      <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
             Transparent Pricing
@@ -526,7 +526,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-20 px-6 bg-[#f9f6f3]">
+      <section className="py-12 px-6 bg-[#f9f6f3]">
         <div className="max-w-6xl mx-auto">
           <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
             Client Stories
