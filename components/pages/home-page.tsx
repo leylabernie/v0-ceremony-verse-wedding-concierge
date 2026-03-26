@@ -35,8 +35,8 @@ const testimonials = [
     color: "#c7b28a",
     location: "Philadelphia, PA",
     quote:
-      "We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed everyone — bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. The live video sessions made it feel like we were right there in the market.",
-    detail: "4-day wedding · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · ceremonial items · gifts · welcome bags",
+      "We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
+    detail: "4-day wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
   },
   {
     names: "Karan & Sonal",
@@ -97,6 +97,16 @@ const testimonials = [
     quote:
       "I went to India for my own shopping but knew coordinating 12 bridesmaid outfits remotely would be a nightmare. CeremonyVerse handled all 12 — every measurement, every fitting, every delivery. I didn't have to worry about a single one.",
     detail: "12 bridesmaid outfits sourced while bride shopped in India",
+  },
+  {
+    names: "Druma & Parin",
+    initials: "DP",
+    photo: "/images/testimonial-druma-parin.jpg",
+    color: "#b09872",
+    location: "USA",
+    quote:
+      "Bhamini travelled to Kanchipuram specifically to source pure silk sarees for our wedding — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail and personal care she put in was extraordinary.",
+    detail: "Pure Kanchipuram silk sarees + custom matching outfits",
   },
 ]
 
@@ -372,9 +382,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
             {[
-              "Bridal Lehengas", "Groom Sherwanis", "Bridesmaid Outfits", "Groomsmen Attire",
-              "Family Outfits", "Jewelry & Accessories", "Ceremonial Items", "Wedding Gifts",
-              "Welcome Bags", "Pet Outfits 🐾"
+              "Bridal Lehengas", "Groom Sherwanis", "Kanchipuram Silk Sarees", "Bridesmaid Outfits",
+              "Groomsmen Attire", "Family Outfits", "Jewelry & Accessories", "Ceremonial Items",
+              "Wedding Gifts", "Welcome Bags", "Custom Boutique Outfits", "Pet Outfits 🐾"
             ].map((label) => (
               <span key={label} className="px-4 py-2 bg-white border border-[#e6dfd5] rounded-full text-sm text-[#2f2f2f] font-medium">
                 {label}
