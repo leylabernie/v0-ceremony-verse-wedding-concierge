@@ -325,8 +325,28 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10">
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-14">
+          <div>
+            <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>Live From India</p>
+            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#1f1f1f] mb-5">
+              You see every item before you buy — live, from India.
+            </h2>
+            <p className="text-base leading-relaxed" style={{ color: "#6a5c55" }}>
+              This is a real video call with our team in India, showing you actual outfits spread out in front of you. You see the fabric, the embroidery, the weight, the color in natural light — and that exact piece gets reserved with your name. No surprises when it arrives.
+            </p>
+          </div>
+          <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid #e6dfd5" }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/live-video-shopping-india.jpg"
+              alt="Real bridal lehenga workshop in India — CeremonyVerse live video shopping experience for NRI brides in USA"
+              style={{ width: "100%", height: "320px", objectFit: "cover", display: "block" }}
+            />
+          </div>
+        </div>
+
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10 text-center">
           How It Works
         </h2>
 
