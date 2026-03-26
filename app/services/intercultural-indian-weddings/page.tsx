@@ -13,10 +13,10 @@ export default function InterculturalWeddingPage() {
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "16px" }}>Intercultural Indian Weddings</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.15, marginBottom: "24px" }}>
-          New to Indian weddings? We guide you through every outfit, every ceremony.
+          South Indian, Gujarati, or intercultural — we know every tradition.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "32px" }}>
-          If you or your partner are navigating an Indian wedding for the first time, you're not alone. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
+          Whether you're a South Indian Christian family, a Gujarati couple, an intercultural family, or a non-South Asian partner — CeremonyVerse understands your specific traditions and ceremonies. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
         </p>
         <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#c7b28a", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
           Book Free Consultation — CeremonyVerse.com

@@ -35,8 +35,8 @@ const testimonials = [
     color: "#c7b28a",
     location: "Philadelphia, PA",
     quote:
-      "We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
-    detail: "4-day wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
+      "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
+    detail: "4-day Gujarati & South Indian Christian wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
   },
   {
     names: "Karan & Sonal",
@@ -45,8 +45,8 @@ const testimonials = [
     color: "#b09872",
     location: "Destination Wedding, Mexico",
     quote:
-      "Planning a 4-day destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-    detail: "4-day destination wedding · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
+      "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
+    detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
   },
   {
     names: "Charlie & Viola",
@@ -55,8 +55,8 @@ const testimonials = [
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
-      "As a non-South Asian groom, I had no frame of reference for any of this. CeremonyVerse sourced the bridesmaids outfits and my sherwani — and walked me through every decision patiently. Our families were blown away.",
-    detail: "Bridesmaids outfits + groom sherwani · intercultural wedding",
+      "As a non-South Asian Christian groom marrying into a South Indian family, I had no frame of reference for any of this. CeremonyVerse sourced the bridesmaids outfits and my outfit — and walked me through every decision patiently. Our families were blown away.",
+    detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
   },
   {
     names: "Dhan & Christina",
@@ -65,8 +65,8 @@ const testimonials = [
     color: "#c7b28a",
     location: "USA",
     quote:
-      "CeremonyVerse made the entire bridal and groom outfit process smooth and stress-free. Everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
-    detail: "Bride & groom outfits",
+      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
+    detail: "South Indian Christian wedding · bride & groom outfits",
   },
   {
     names: "Shincy",
@@ -75,8 +75,8 @@ const testimonials = [
     color: "#b09872",
     location: "USA",
     quote:
-      "I was having my wedding in India but couldn't find the right lehenga in Delhi on my own. CeremonyVerse sourced my bridal lehenga from Delhi for me — handling everything remotely so I didn't have to stress while planning from abroad.",
-    detail: "Bridal lehenga sourced from Delhi · wedding in India",
+      "As a South Indian Christian bride, I was having my wedding in India but couldn't find the right outfit from abroad. CeremonyVerse sourced my bridal outfit from Delhi for me — handling everything remotely so I didn't have to stress while planning from the US.",
+    detail: "South Indian Christian bride · outfit sourced from Delhi · wedding in India",
   },
   {
     names: "Swati",
@@ -85,8 +85,8 @@ const testimonials = [
     color: "#8a7060",
     location: "USA",
     quote:
-      "I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked put-together at every event.",
-    detail: "Multiple wedding guest outfits",
+      "As a Gujarati girl I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked stunning at every event.",
+    detail: "Gujarati wedding guest · multiple outfits",
   },
   {
     names: "Shilpa",
@@ -105,8 +105,8 @@ const testimonials = [
     color: "#b09872",
     location: "USA",
     quote:
-      "Bhamini travelled to Kanchipuram specifically to source pure silk sarees for our wedding — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail and personal care she put in was extraordinary.",
-    detail: "Pure Kanchipuram silk sarees + custom matching outfits",
+      "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
+    detail: "Gujarati wedding · Pure Kanchipuram silk sarees + custom matching outfits",
   },
 ]
 
@@ -590,13 +590,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "var(--cv-accent)" }}>
-                Not South Asian? No Problem.
+                South Indian, Gujarati, or from any background — we know Indian weddings.
               </p>
               <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-5" style={{ color: "#1f1f1f" }}>
                 We guide intercultural couples every step of the way.
               </h2>
               <p className="text-base leading-relaxed mb-4" style={{ color: "#6a5c55" }}>
-                If you or your partner are navigating an Indian wedding for the first time, you're not alone. Many of our clients are non-South Asian partners who have never worn a sherwani or lehenga — and have no idea where to start.
+                Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Many of our clients are non-South Asian partners who have never worn a sherwani or lehenga — and have no idea where to start.
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ color: "#6a5c55" }}>
                 We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
@@ -634,7 +634,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charlie & Viola</p>
-                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; Bridesmaids + groom sherwani</p>
+                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; South Indian Christian wedding</p>
                 </div>
               </div>
             </div>

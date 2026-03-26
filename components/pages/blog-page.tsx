@@ -238,11 +238,11 @@ The nehru collar sherwani with minimal embroidery is the clean, modern choice fo
   {
     tag: "Real Wedding",
     title: "Kaval & April's Wedding: 14 Outfits Sourced Across Three Ceremonies",
-    excerpt: "A 4-day Hindu and Christian wedding in Philadelphia — 14 bridesmaids, 14 groomsmen, bridal and reception lehenga, full family, pet outfits, ceremonial items, return gifts, and welcome bags. All of it.",
+    excerpt: "A 4-day Gujarati and South Indian Christian wedding in Philadelphia — 14 bridesmaids, 14 groomsmen, bridal and reception lehenga, full family, pet outfits, ceremonial items, return gifts, and welcome bags. All of it.",
     date: "January 5, 2026",
     readTime: "9 min read",
     slug: "kaval-april-wedding-story",
-    content: `Kaval messaged us in March, ten months before his wedding. He and April were planning a 4-day Hindu and Christian wedding in Philadelphia — and they needed everything: bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family outfits, their dog's outfit, ceremonial items, return gifts, sweets, and welcome bags.
+    content: `Kaval messaged us in March, ten months before his wedding. He and April were planning a 4-day Gujarati and South Indian Christian wedding in Philadelphia — and they needed everything: bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family outfits, their dog's outfit, ceremonial items, return gifts, sweets, and welcome bags.
 
 April had never worn Indian clothes. Kaval's family was split between New Jersey and California. April's family was from Ohio and had no reference point for Indian dress codes.
 
@@ -266,7 +266,7 @@ Kaval's 5 groomsmen were across three states. We sent them all the measurement g
 
 **What Kaval said afterward**
 
-"We had no idea where to start with a 4-day Hindu and Christian wedding. CeremonyVerse dressed literally everyone — including our dog. The live video sessions made it feel like we were right there in the market."
+"We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed literally everyone — including our dog. The live video sessions made it feel like we were right there in the market."
 
 If you're planning an intercultural wedding and don't know where to begin, this is exactly what we're here for.`
   },
