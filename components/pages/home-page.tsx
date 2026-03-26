@@ -55,7 +55,7 @@ const testimonials = [
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
-      "As a non-South Asian Christian groom marrying into a South Indian family, I had no frame of reference for any of this. CeremonyVerse sourced the bridesmaids outfits and my outfit — and walked me through every decision patiently. Our families were blown away.",
+      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charlie's outfit beautifully — every decision made with care. Our families were blown away.",
     detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
   },
   {
@@ -593,10 +593,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 South Indian, Gujarati, or from any background — we know Indian weddings.
               </p>
               <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-5" style={{ color: "#1f1f1f" }}>
-                We guide intercultural couples every step of the way.
+                South Indian, Gujarati, or any tradition — we know your wedding.
               </h2>
               <p className="text-base leading-relaxed mb-4" style={{ color: "#6a5c55" }}>
-                Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Many of our clients are non-South Asian partners who have never worn a sherwani or lehenga — and have no idea where to start.
+                Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Our clients include South Indian Christian families, Gujarati families, and couples from all backgrounds.
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ color: "#6a5c55" }}>
                 We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
@@ -626,7 +626,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
               <p className="text-[#c7b28a] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
               <p className="text-base leading-relaxed mb-6 font-['Cormorant_Garamond'] text-xl italic" style={{ color: "#2f2f2f" }}>
-                As a non-South Asian groom, I had no frame of reference for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
+                As a South Indian Christian couple, we wanted outfits that truly honored our heritage for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
               </p>
               <div className="flex items-center gap-3 border-t pt-4" style={{ borderColor: "#e6dfd5" }}>
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold" style={{ background: "#8a7060" }}>
