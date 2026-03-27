@@ -136,6 +136,7 @@ export default function RootLayout({
         <meta name="twitter:site" content="@ceremonyverse" />
         <meta name="twitter:title" content="Everything for Your Indian Wedding, Sourced from India | CeremonyVerse" />
         <meta name="twitter:description" content="Bridal lehengas, sherwanis, jewelry, gifts, welcome bags & more — sourced from India, delivered to your US door. America's Indian wedding shopping concierge." />
+        <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
         <Script
           id="breadcrumb-schema"
           type="application/ld+json"
