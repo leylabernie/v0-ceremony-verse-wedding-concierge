@@ -208,8 +208,8 @@ export function Footer({ onNavigate }: FooterProps) {
                 Review us on Trustpilot
               </a>
               <p className="text-xs text-[#8a6f63] leading-relaxed mt-3">
-                Serving US-based families nationwide.<br/>
-                Based in the Philadelphia area.
+                Serving US-based families nationwide.
+                Available by appointment.
               </p>
             </div>
           </div>

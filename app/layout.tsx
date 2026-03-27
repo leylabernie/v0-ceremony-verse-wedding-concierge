@@ -29,12 +29,7 @@ export default function RootLayout({
         "url": "https://v0-ceremony-verse-wedding-concierge.vercel.app",
         "telephone": "+12153419990",
         "email": "bhamini@ceremonyverse.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressRegion": "PA",
-          "addressCountry": "US"
-        },
-        "areaServed": "US",
+"areaServed": "US",
         "priceRange": "$$",
         "sameAs": [
           "https://www.instagram.com/ceremonyverse",
