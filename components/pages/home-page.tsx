@@ -711,6 +711,30 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 q: "Do you ship to all US states?",
                 a: "Yes. We serve families across the entire United States — New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and everywhere in between. All items are quality-checked in India before being shipped to your US address."
               },
+              {
+                q: "Do I have to pay US customs duties on a lehenga I order from India?",
+                a: "It depends on how your outfit arrives. If you carry it home yourself after a trip to India, the $800 duty-free personal exemption applies and the current Section 122 surcharge explicitly excludes accompanied baggage. If your outfit is shipped from India to your US address, full commercial duties now apply — the de minimis exemption was eliminated in August 2025. CeremonyVerse helps you plan around this from the start."
+              },
+              {
+                q: "How far in advance do I need to order my Indian wedding outfit from India?",
+                a: "For custom bridal lehengas or heavily embroidered pieces, plan for at least 4–6 months from order to delivery — this accounts for production time (6–12 weeks for complex pieces), shipping, and customs clearance. During peak wedding season (November–February), add an extra buffer. For semi-custom or ready-to-wear pieces, 8–12 weeks is usually workable."
+              },
+              {
+                q: "How do you handle sizing when I can't do in-person fittings?",
+                a: "We use detailed measurement guides that go beyond basic measurements — capturing high waist, blouse back length, shoulder width, and other measurements specific to Indian silhouettes. These are shared directly with our artisan partners in India, and most pieces include seam allowance for final alterations. We always recommend budgeting for one round of alterations with a local tailor after delivery."
+              },
+              {
+                q: "What if my outfit arrives damaged or looks different from what I approved?",
+                a: "CeremonyVerse documents every order with reference photos, written specifications, and your written approval at the design stage before production begins. If a piece arrives with a quality issue, we work directly with the source to determine whether repair, partial credit, or a remake is appropriate. Our established vendor relationships give us far more leverage than an individual buyer would have."
+              },
+              {
+                q: "Can you help with Gujarati wedding traditions — Garba outfits, Pithi, Mameru?",
+                a: "Yes. Gujarati weddings have specific outfit conventions — chaniya choli for Garba, color expectations for Pithi, regional embroidery styles like Kutch and Bandhani. We understand these distinctions and source outfits that are culturally aligned across all functions, not just generically Indian. We have dressed multiple Gujarati families for multi-day weddings including destination weddings."
+              },
+              {
+                q: "Do you work with South Indian Christian weddings?",
+                a: "Yes. South Indian Christian weddings — Kerala Christian, Tamil Christian, Telugu Christian — have distinct outfit traditions blending church ceremony aesthetics with South Indian elements like Kanjivaram silk, kasavu sets, and gold temple jewelry. We can help you navigate what is traditional within your specific denomination and family background, and source pieces that feel authentic."
+              },
             ].map((item, i) => (
               <FaqItem key={i} question={item.q} answer={item.a} />
             ))}
