@@ -9,6 +9,18 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "south-indian-christian-wedding-outfit-guide",
+    title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
+    description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
+    date: "March 2026",
+  },
+  {
+    slug: "nri-wedding-planning-timeline",
+    title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
+    description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
+    date: "March 2026",
+  },
+  {
     slug: "how-to-buy-bridal-lehenga-from-india-usa",
     title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
     description: "Step-by-step guide for NRI brides — from finding a trustworthy sourcing partner to getting your lehenga through customs and to your doorstep.",
