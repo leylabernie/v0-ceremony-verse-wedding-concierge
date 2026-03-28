@@ -192,7 +192,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             <li><strong>Work with a concierge who understands the full picture.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we have dressed multiple Gujarati families from end to end — including a 4-day destination wedding in Mexico where we coordinated outfits for an entire family across every ceremony. For that wedding, we sourced pure Kanchipuram silk for the mothers with a dedicated sourcing trip directly to Kanchipuram, working with master weavers there to select the right weight, weave, and color for each family member. This is the level of care and specificity that a Gujarati multi-ceremony wedding deserves.
+            At CeremonyVerse, we have dressed multiple Gujarati families from end to end — including a 4-day destination wedding in Mexico where we coordinated outfits for an entire family across every ceremony, and a wedding where we made a dedicated sourcing trip to Kanchipuram to select pure silk sarees for the family — working directly with weavers there to find the right weight, weave, and color for each family member. This is the level of care and specificity that a Gujarati multi-ceremony wedding deserves.
           </p>
 
           {/* CTA Box */}
