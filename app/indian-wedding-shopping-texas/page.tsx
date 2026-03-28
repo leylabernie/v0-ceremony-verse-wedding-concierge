@@ -33,7 +33,7 @@ export default function IndianWeddingShoppingTexasPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Why Texas families struggle with Indian wedding shopping
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "Sparse Local Options", desc: "While Hillcroft in Houston and parts of Irving/Plano have Indian boutiques, the selection pales compared to what's available in India. Finding the exact lehenga style, color, and embroidery you envisioned often means settling." },
               { title: "Spread-Out Communities", desc: "Texas is vast. Your bridal party might be spread across Houston, Dallas, Austin, and San Antonio. Coordinating in-person shopping trips is impractical — but CeremonyVerse manages measurements and ordering remotely." },

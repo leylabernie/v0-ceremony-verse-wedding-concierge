@@ -33,7 +33,7 @@ export default function IndianWeddingShoppingNewJerseyPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Why NJ families struggle with Indian wedding shopping
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "Limited Local Selection", desc: "Boutiques on Oak Tree Road or in Jersey City carry a fraction of what's available in India. You're choosing from what was imported — not from the full range of designs, fabrics, and embroidery styles." },
               { title: "Markups of 3–5×", desc: "The same lehenga that costs ₹50,000 in Chandni Chowk can be priced at $2,000–$3,500 in a NJ showroom. You deserve India pricing with US convenience." },

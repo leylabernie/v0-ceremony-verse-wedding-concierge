@@ -33,7 +33,7 @@ export default function GujaratiWeddingOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Outfits for every Gujarati ceremony
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "Garba Night — Chaniya Choli", desc: "The Garba is the heart of a Gujarati wedding celebration. We source vibrant, mirror-work chaniya cholis from Kutch and Jaipur — designed for spinning and dancing, with the right flare and weight for movement." },
               { title: "Mehndi Ceremony", desc: "Bright, festive outfits in yellows, greens, and oranges. Comfortable enough for sitting through mehndi application, yet photo-ready. Coordinated pieces for the bridal party sourced together." },

@@ -33,7 +33,7 @@ export default function IndianWeddingShoppingNewYorkPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Why New York families struggle with Indian wedding shopping
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "NYC Showroom Premiums", desc: "Manhattan and Queens showrooms carry stunning pieces — but at dramatic markups. The overhead of a New York storefront gets passed directly to you, often tripling what you'd pay in India." },
               { title: "Overwhelming but Limited Choices", desc: "Jackson Heights has dozens of shops, yet each carries a narrow import selection. You see the same styles repeated. In India, the variety is truly limitless — CeremonyVerse opens that door for you." },

@@ -33,7 +33,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             What makes South Indian Christian weddings distinct
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "Church Ceremony Bridal Saree", desc: "The church wedding calls for a bridal saree in white, cream, or soft pastels — a departure from the bold reds of Hindu ceremonies. Kerala Christian brides often wear a kasavu saree with gold border, while Tamil Christian brides may choose a Kanchipuram silk in ivory or blush." },
               { title: "Set Mundu & Kasavu", desc: "For Kerala Christian families, the traditional set mundu (white with gold kasavu border) is central to the wedding aesthetic. Grooms often wear a matching mundu and shirt. We source authentic handwoven kasavu sets directly from Kerala weavers." },

@@ -33,7 +33,7 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Why California families struggle with Indian wedding shopping
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
               { title: "Bay Area Boutique Premiums", desc: "Shops along Fremont's Paseo Padre or in Sunnyvale carry curated selections — but the Silicon Valley cost of doing business means prices that are a multiple of what you'd pay in India for the same craftsmanship." },
               { title: "Busy Professional Schedules", desc: "California's tech-driven Indian community often has demanding work schedules. Between product launches and wedding planning, carving out weeks for an India shopping trip isn't realistic for most couples." },
