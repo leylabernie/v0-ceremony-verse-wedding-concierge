@@ -525,32 +525,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* HERO VIDEO */}
-      <section className="py-16 px-6" style={{ background: "#1f1f1f" }}>
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#c7b28a" }}>
-            Real Families. Real Stories.
-          </p>
-          <h2 className="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold mb-8" style={{ color: "#f8f6f2" }}>
-            Every outfit has a story behind it
-          </h2>
-          <div style={{ borderRadius: "12px", overflow: "hidden", maxWidth: "640px", margin: "0 auto", boxShadow: "0 20px 60px rgba(0,0,0,0.4)" }}>
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              style={{ width: "100%", display: "block" }}
-            >
-              <source src="/hero-video.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <p className="mt-6 text-sm" style={{ color: "#6f6a63" }}>
-            Real clients. Real outfits. Sourced from India, delivered to the US.
-          </p>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
       <section className="py-12 px-6 bg-[#f9f6f3]">
         <div className="max-w-6xl mx-auto">
