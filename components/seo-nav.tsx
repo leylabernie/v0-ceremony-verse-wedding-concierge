@@ -33,6 +33,9 @@ export function SeoNav() {
         <a href="/#services" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none" }}>
           Services
         </a>
+        <a href="/how-it-works" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none" }}>
+          How It Works
+        </a>
         <a
           href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
           target="_blank"

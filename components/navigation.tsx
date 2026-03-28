@@ -10,10 +10,10 @@ interface NavigationProps {
   onNavigate: (page: PageType) => void
 }
 
-const navItems: { label: string; page: PageType }[] = [
+const navItems: { label: string; page?: PageType; href?: string }[] = [
   { label: "Home", page: "home" },
   { label: "Services", page: "services" },
-  { label: "How It Works", page: "journey" },
+  { label: "How It Works", href: "/how-it-works" },
   { label: "FAQ", page: "faq" },
   { label: "Blog", page: "blog" },
   { label: "Contact", page: "contact" },
@@ -50,21 +50,31 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
           {/* Desktop Navigation - Center, vertically aligned */}
           <div className="hidden md:flex items-center justify-center flex-1 px-8">
             <div className="flex items-center gap-6">
-              {navItems.map((item) => (
-                <button
-                  key={item.page}
-                  onClick={() => handleNavClick(item.page)}
-                  className={cn(
-                    "px-4 py-2 text-lg font-medium transition-all duration-200",
-                    activePage === item.page
-                      ? "text-brushed-gold"
-                      : "text-midnight-navy hover:text-brushed-gold"
-                  )}
-                  aria-current={activePage === item.page ? "page" : undefined}
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.href ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="px-4 py-2 text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <button
+                    key={item.page}
+                    onClick={() => handleNavClick(item.page!)}
+                    className={cn(
+                      "px-4 py-2 text-lg font-medium transition-all duration-200",
+                      activePage === item.page
+                        ? "text-brushed-gold"
+                        : "text-midnight-navy hover:text-brushed-gold"
+                    )}
+                    aria-current={activePage === item.page ? "page" : undefined}
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
             </div>
           </div>
 
@@ -95,21 +105,31 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
         {mobileMenuOpen && (
           <div className="md:hidden py-6 border-t border-brushed-gold/30 animate-fade-in">
             <div className="flex flex-col gap-2">
-              {navItems.map((item) => (
-                <button
-                  key={item.page}
-                  onClick={() => handleNavClick(item.page)}
-                  className={cn(
-                    "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
-                    activePage === item.page
-                      ? "text-brushed-gold"
-                      : "text-midnight-navy hover:text-brushed-gold"
-                  )}
-                  aria-current={activePage === item.page ? "page" : undefined}
-                >
-                  {item.label}
-                </button>
-              ))}
+              {navItems.map((item) =>
+                item.href ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="px-4 py-3 text-left text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <button
+                    key={item.page}
+                    onClick={() => handleNavClick(item.page!)}
+                    className={cn(
+                      "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
+                      activePage === item.page
+                        ? "text-brushed-gold"
+                        : "text-midnight-navy hover:text-brushed-gold"
+                    )}
+                    aria-current={activePage === item.page ? "page" : undefined}
+                  >
+                    {item.label}
+                  </button>
+                )
+              )}
               <button
                 onClick={() => handleNavClick("contact")}
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
