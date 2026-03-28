@@ -55,7 +55,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="px-4 py-2 text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold"
+                    className="px-4 py-2 text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold whitespace-nowrap"
                   >
                     {item.label}
                   </a>
@@ -64,7 +64,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                     key={item.page}
                     onClick={() => handleNavClick(item.page!)}
                     className={cn(
-                      "px-4 py-2 text-lg font-medium transition-all duration-200",
+                      "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
                       activePage === item.page
                         ? "text-brushed-gold"
                         : "text-midnight-navy hover:text-brushed-gold"
