@@ -27,14 +27,20 @@ export function SeoNav() {
         CEREMONY<span style={{ color: "#c7b28a", fontWeight: 300 }}>VERSE</span>
       </a>
       <div style={{ display: "flex", alignItems: "center", gap: "16px", flexWrap: "wrap" }}>
-        <a href="/" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none" }}>
+        <a href="/" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Home
         </a>
-        <a href="/#services" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none" }}>
+        <a href="/#services" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Services
         </a>
-        <a href="/how-it-works" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none" }}>
+        <a href="/how-it-works" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           How It Works
+        </a>
+        <a href="/blog" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
+          Blog
+        </a>
+        <a href="/#faq" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
+          FAQ
         </a>
         <a
           href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."

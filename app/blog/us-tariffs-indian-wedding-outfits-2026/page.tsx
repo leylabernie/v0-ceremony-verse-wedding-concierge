@@ -1,3 +1,4 @@
+import { SeoNav } from "@/components/seo-nav";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function TariffsBlogPost() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
