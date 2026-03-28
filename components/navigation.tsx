@@ -16,6 +16,7 @@ const navItems: { label: string; page?: PageType; href?: string }[] = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "FAQ", page: "faq" },
   { label: "Blog", page: "blog" },
+  { label: "Free Guides", href: "/free-guides" },
   { label: "Contact", page: "contact" },
 ]
 

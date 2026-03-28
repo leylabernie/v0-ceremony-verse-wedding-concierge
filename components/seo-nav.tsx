@@ -39,6 +39,9 @@ export function SeoNav() {
         <a href="/blog" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Blog
         </a>
+        <a href="/free-guides" style={{ fontSize: "0.85rem", color: "#c7b28a", textDecoration: "none", whiteSpace: "nowrap", fontWeight: 600 }}>
+          Free Guides
+        </a>
         <a href="/#faq" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           FAQ
         </a>
