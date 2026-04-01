@@ -198,7 +198,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
             <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "20px", fontWeight: 500 }}>
-              The Indian Wedding Shopping Concierge for NRI Families in the US
+              Risk-Free Indian Wedding Shopping from the US
             </p>
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -206,10 +206,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              Authentic Indian wedding outfits and jewelry, sourced from India and delivered to your US door.
+              The safest way to shop for your Indian wedding from the US — without scams, sizing disasters, or endless vendor chasing.
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-              For NRI families in the US planning Indian weddings — bridal lehengas, sherwanis, jewelry, gifts, welcome bags and more. You approve every item live on video before it ships. Custom-stitched to your exact measurements. Delivered to your door.
+              Authentic bridal lehengas, sherwanis, jewelry, and more — sourced directly from India, verified live on video before shipping, and delivered to your US door. You see exactly what you’re buying. No surprises. No scams. No regrets.
             </p>
 
             {/* CTAs */}
@@ -265,25 +265,38 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* PAIN POINTS STRIP */}
       <section className="py-14 px-6" style={{ background: "#1f1f1f" }}>
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#c7b28a" }}>
-            Why NRI Families Struggle — And How We Fix It
+          <p className="text-center text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>
+            The 5 Biggest Risks When Buying Indian Wedding Outfits from India
+          </p>
+          <p className="text-center text-[#6a5c55] mb-8 max-w-2xl mx-auto text-sm">
+            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's what can go wrong — and how we prevent it.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
+                        {[
               {
-                problem: "What arrived looked nothing like the photos",
-                solution: "You approve the exact item on live video — same fabric, same embroidery, reserved with your order number. If anything changes before shipping, we halt it.",
+                problem: "Instagram vs. Reality: Fabric looks completely different",
+                solution: "You approve the exact item on live video — actual fabric draped, embroidery up close, color in natural light. That specific piece is reserved with your order number. If anything changes before shipping, we halt it immediately.",
                 icon: "🎥",
               },
               {
-                problem: "I was terrified of getting scammed",
-                solution: "We work directly with our trusted partners in India — skilled craftspeople, designers, and fabric specialists we know personally. No random Instagram sellers. You see everything on live video before it ships.",
+                problem: "Fake vendors, stolen images, no accountability",
+                solution: "We work only with vetted artisan partners we know personally — skilled craftspeople, designers, and fabric specialists. No random Instagram sellers. You see everything live before committing. We have US presence and accountability.",
                 icon: "🛡️",
               },
               {
-                problem: "Sizing was a complete nightmare",
-                solution: "Every outfit is stitched by our local tailor partner to your exact measurements. We guide you through the measurement process on a video call and your tailor customizes every piece specifically for you.",
+                problem: "Sizing disasters: Blouses misfitted, family chaos",
+                solution: "We collect 15+ precise measurements and build in strategic ease allowances. Every piece is custom-stitched to your exact silhouette. We offer a 100% fit guarantee with alteration cost coverage up to $150 per garment.",
                 icon: "📏",
+              },
+              {
+                problem: "Logistics anxiety: Customs duties, delays, damage risk",
+                solution: "We handle all shipping documentation, advise on customs duties upfront (typically 12-27%), and fully insure every shipment. We have never had an unresolved shipping issue.",
+                icon: "📦",
+              },
+              {
+                problem: "Time + cognitive overload: WhatsApp chaos, vendor chasing",
+                solution: "We manage all communication, timelines, and vendor coordination. You get milestone-based updates and payment protection (25% deposit, 35% after approval, 30% after inspection, 10% on delivery).",
+                icon: "⏱️",
               },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl p-7" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(199,178,138,0.2)" }}>
@@ -522,6 +535,88 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-center text-xs text-[#8a6f63] mt-6">
             All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs — fully transparent, no surprises.
           </p>
+        </div>
+      </section>
+
+      {/* TRUST ENGINE — How We Verify & Prevent Failures */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
+            Our Verification System
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
+            How We Prevent Failures
+          </h2>
+          <p className="text-center text-[#6a5c55] mb-12 max-w-2xl mx-auto">
+            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's exactly how we prevent every risk.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Vendor Verification */}
+            <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
+              <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">How We Verify Vendors</h3>
+              <ul className="space-y-3 text-[#6a5c55] text-sm">
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span><strong>Personal Relationships:</strong> Direct relationships with skilled craftspeople, designers, and suppliers across India — not random Instagram sellers.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span><strong>Live Video Verification:</strong> You see the exact item — actual fabric draped, embroidery up close, color in natural light — before committing to anything.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span><strong>Order Documentation:</strong> Every order is documented with reference photos and your written approval before production begins.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span><strong>Pre-Shipping Inspection:</strong> Final quality check in India before anything ships to the US.</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Risk Prevention */}
+            <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
+              <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">What Can Go Wrong (& How We Prevent It)</h3>
+              <ul className="space-y-3 text-[#6a5c55] text-sm">
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span><strong>Fabric mismatch:</strong> You approve the exact bolt on video. That specific piece is reserved with your order number.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span><strong>Sizing disasters:</strong> 15+ precise measurements + custom stitching + 100% fit guarantee with alteration coverage up to $150/garment.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span><strong>Shipping damage:</strong> Full insurance on all shipments. We've never had an unresolved shipping issue.</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span><strong>Payment risk:</strong> Milestone-based protection: 25% deposit, 35% after approval, 30% after inspection, 10% on delivery.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Real Client Results */}
+          <div className="mt-12 rounded-2xl p-10 bg-[#1f1f1f] text-white">
+            <h3 className="text-2xl font-semibold mb-6">Real Client Results</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-sm">
+              <div>
+                <p className="text-[#c7b28a] text-2xl font-bold mb-2">14+14</p>
+                <p className="text-white/70">Bridesmaids & Groomsmen coordinated across multiple states</p>
+              </div>
+              <div>
+                <p className="text-[#c7b28a] text-2xl font-bold mb-2">4-Day Weddings</p>
+                <p className="text-white/70">Destination weddings (Mexico, India) with full party coordination</p>
+              </div>
+              <div>
+                <p className="text-[#c7b28a] text-2xl font-bold mb-2">30-50%</p>
+                <p className="text-white/70">Typical savings vs. US Indian boutiques</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

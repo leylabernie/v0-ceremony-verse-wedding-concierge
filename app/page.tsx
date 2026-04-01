@@ -22,6 +22,8 @@ import { CeremonialPage } from "@/components/pages/ceremonial-page"
 import { GiftsPage } from "@/components/pages/gifts-page"
 import { WelcomeBagsPage } from "@/components/pages/welcomebags-page"
 import { PetsPage } from "@/components/pages/pets-page"
+import { GuideBuyLehengaSafely } from "@/components/pages/guide-buy-lehenga-safely"
+import { GuideCustomsDuty } from "@/components/pages/guide-customs-duty"
 
 export type PageType =
   | "home"
@@ -42,6 +44,8 @@ export type PageType =
   | "gifts"
   | "welcomebags"
   | "pets"
+  | "guide-buy-lehenga-safely"
+  | "guide-customs-duty"
 
 export default function Page() {
   const [activePage, setActivePage] = useState<PageType>("home")
@@ -73,6 +77,8 @@ export default function Page() {
       {activePage === "gifts" && <GiftsPage onNavigate={handleNavigate} />}
       {activePage === "welcomebags" && <WelcomeBagsPage onNavigate={handleNavigate} />}
       {activePage === "pets" && <PetsPage onNavigate={handleNavigate} />}
+      {activePage === "guide-buy-lehenga-safely" && <GuideBuyLehengaSafely onNavigate={handleNavigate} />}
+      {activePage === "guide-customs-duty" && <GuideCustomsDuty onNavigate={handleNavigate} />}
 
       <Footer onNavigate={handleNavigate} />
     </>
