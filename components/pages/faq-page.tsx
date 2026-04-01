@@ -12,6 +12,10 @@ const faqSections = [
     category: "Trust & Authenticity",
     items: [
       {
+        question: "How do NRI brides buy a lehenga from India without getting scammed?",
+        answer: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+      },
+      {
         question: "How do I know this isn't a scam?",
         answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with trusted partners in India — skilled craftspeople, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
       },
@@ -129,8 +133,8 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
             Your Questions, Answered
           </h1>
           <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
-            We know you have concerns about online sourcing. Scams, sizing disasters, and broken
-            promises are real. Here's how we address them.
+            For NRI families planning Indian weddings in the US — scams, sizing disasters, and broken
+            promises are real concerns. Here's exactly how CeremonyVerse addresses every one of them.
           </p>
         </div>
       </section>

@@ -43,7 +43,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                 CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#8a6f63] mt-0.5">
-                Indian Wedding Shopping Made Easy
+                Authentic Indian Wedding Shopping for NRI Families
               </span>
             </button>
           </div>
@@ -87,7 +87,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              Book Consultation
+              Book Free Consultation
             </button>
           </div>
 
@@ -136,7 +136,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
-                Book Consultation
+                Book Free Consultation
               </button>
             </div>
           </div>

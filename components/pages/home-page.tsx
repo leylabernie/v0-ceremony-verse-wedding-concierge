@@ -198,7 +198,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
             <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "20px", fontWeight: 500 }}>
-              US-Based Indian Wedding Shopping Concierge
+              The Indian Wedding Shopping Concierge for NRI Families in the US
             </p>
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -206,10 +206,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              Everything for your Indian wedding, sourced from India and delivered to your door.
+              Authentic Indian wedding outfits and jewelry, sourced from India and delivered to your US door.
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-              Bridal lehengas, sherwanis, jewelry, gifts, welcome bags, ceremonial items and more — sourced directly from India with live video shopping, quality checks, and US delivery.
+              For NRI families in the US planning Indian weddings — bridal lehengas, sherwanis, jewelry, gifts, welcome bags and more. You approve every item live on video before it ships. Custom-stitched to your exact measurements. Delivered to your door.
             </p>
 
             {/* CTAs */}
@@ -245,10 +245,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Real differentiators */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {[
-                "Direct from our India partners",
+                "Live video approved before shipping",
                 "Custom stitched to your measurements",
-                "Fabric sourced & dyed to your shade",
-                "Dedicated jewelry supplier",
+                "Vetted artisan partners — no Instagram sellers",
+                "US delivery to all 50 states",
               ].map((tag) => (
                 <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
                   {tag}
@@ -310,10 +310,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Built from a real family need
           </h2>
           <p className="text-lg md:text-xl font-medium text-[#5a4a42] mb-6">
-            I didn't start CeremonyVerse as a business. I started it because of my own family.
+            I didn't start CeremonyVerse as a business. I started it because of my own family — and because this is your wedding. You shouldn't have to settle.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
-            Between multiple family weddings and helping friends navigate the chaos of Indian bridal shopping from the US, I saw the same story repeat itself: families spending thousands, getting burned by scammers, or just giving up and settling for whatever an American boutique had in stock.
+            Between multiple family weddings and helping friends navigate the chaos of Indian bridal shopping from the US, I saw the same story repeat itself: NRI families spending thousands, getting burned by scammers, receiving items that looked nothing like the photos, or just giving up and settling for whatever an American boutique had in stock.
           </p>
           <p className="text-base md:text-lg text-[#6a5c55] leading-relaxed mb-4">
             I knew there was a better way. I built direct relationships across India — a skilled outfit specialist who sources ready and semi-custom pieces, a local designer and tailor who custom-stitches to your exact measurements, a fabric expert who sources and dyes fabrics to your chosen shade, and a dedicated bridal jewelry supplier. I learned how to do live video verification, how to handle international shipping, how to coordinate sizing for entire families across multiple states.
@@ -428,10 +428,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
-              { icon: "🎥", stat: "Live Video", sub: "See before you buy" },
-              { icon: "✅", stat: "Quality Checked", sub: "Inspected before shipping" },
-              { icon: "🇮🇳", stat: "Direct from India", sub: "No middlemen, no markups" },
-              { icon: "🤝", stat: "End-to-End", sub: "From fabric to your door" },
+              { icon: "🎥", stat: "Live Video Approval", sub: "You see every item before it ships" },
+              { icon: "✅", stat: "Quality Checked", sub: "Inspected in India before shipping" },
+              { icon: "🛡️", stat: "Vetted Partners Only", sub: "No random Instagram sellers" },
+              { icon: "📦", stat: "US Delivery", sub: "All 50 states, door to door" },
             ].map((t, i) => (
               <div key={i}>
                 <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
@@ -531,9 +531,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
             Client Stories
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-12 text-center">
-            Families Who Trusted Us
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
+            NRI Families Who Trusted Us
           </h2>
+          <p className="text-center text-[#6a5c55] mb-12 max-w-xl mx-auto">
+            Real stories from NRI families across the US — from Philadelphia to Houston to destination weddings in Mexico.
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
@@ -678,11 +681,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <p className="text-xs tracking-widest uppercase font-medium mb-4 text-center" style={{ color: "var(--cv-accent)" }}>
             Common Questions
           </p>
-          <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f" }}>
+          <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f" }}>
             Everything you need to know
           </h2>
+          <p className="text-center text-[#6a5c55] mb-12 max-w-xl mx-auto">
+            Questions NRI families ask us most — from how to buy a lehenga from India safely, to sizing, shipping, and what to expect.
+          </p>
           <div className="space-y-0">
             {[
+              {
+                q: "How do NRI brides buy a lehenga from India without getting scammed?",
+                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+              },
               {
                 q: "What exactly does CeremonyVerse source?",
                 a: "Everything for your Indian wedding — bridal lehengas, sherwanis, bridesmaid and groomsmen outfits, family attire, jewelry, ceremonial items, return gifts, sweets, welcome bags, and even pet outfits. If it's for an Indian wedding, we can source it from India."
@@ -755,14 +765,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* FINAL CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#c7b28a" }}>For NRI Families Planning Indian Weddings</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">
-            Ready to start sourcing?
+            This is your wedding. You shouldn't have to settle.
           </h2>
           <p className="text-[#6a5c55] mb-2">
-            Book a free 30-minute consultation. We'll review your vision, timeline, and budget — no commitment required.
+            Book a free 30-minute consultation. We'll review your vision, timeline, and budget — and tell you exactly what's achievable. No commitment required.
           </p>
           <p className="text-sm text-[#8a6f63] mb-8">
-            Top vendors book 6–12 months in advance. If your wedding is within the year, don't wait.
+            Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button

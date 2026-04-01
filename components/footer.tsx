@@ -53,11 +53,11 @@ export function Footer({ onNavigate }: FooterProps) {
                 CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
               </span>
               <p className="text-[10px] tracking-widest text-[#8a6f63] mt-1 uppercase">
-                Indian Wedding Shopping Made Easy
+                Authentic Indian Wedding Shopping for NRI Families
               </p>
             </button>
             <p className="text-sm text-[#6a5c55] leading-relaxed">
-              Helping US-based South Asian families source authentic Indian wedding outfits — directly from India, with live video shopping and delivery to your door.
+              The Indian wedding shopping concierge for NRI families in the US. We source authentic outfits, jewelry, and gifts directly from India — with live video approval before anything ships — and deliver to your US door.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-4 mt-6">
@@ -218,12 +218,13 @@ export function Footer({ onNavigate }: FooterProps) {
         {/* SEO keyword footer */}
         <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-[#e6dfd5]">
           <p className="text-[10px] text-[#b0a898] leading-relaxed text-center">
-            CeremonyVerse — Indian Wedding Shopping Concierge USA &nbsp;·&nbsp;
-            Bridal Lehenga from India &nbsp;·&nbsp; Custom Sherwani USA &nbsp;·&nbsp;
+            CeremonyVerse — Indian Wedding Shopping Concierge for NRI Families in the USA &nbsp;·&nbsp;
+            Buy Bridal Lehenga from India USA &nbsp;·&nbsp; NRI Bridal Lehenga &nbsp;·&nbsp; Custom Sherwani from India USA &nbsp;·&nbsp;
             Bridesmaid Outfits from India &nbsp;·&nbsp; Indian Wedding Jewelry USA &nbsp;·&nbsp;
             Welcome Bags &amp; Gifts &nbsp;·&nbsp; Ceremonial Items &nbsp;·&nbsp;
-            NRI Wedding Shopping &nbsp;·&nbsp; Live Video Shopping India &nbsp;·&nbsp;
-            South Asian Wedding Concierge &nbsp;·&nbsp; Serving families across the United States
+            NRI Wedding Shopping &nbsp;·&nbsp; Indian Wedding Outfits US Delivery &nbsp;·&nbsp;
+            Live Video Shopping India &nbsp;·&nbsp; South Asian Wedding Concierge &nbsp;·&nbsp;
+            Serving NRI families across all US states
           </p>
         </div>
 
