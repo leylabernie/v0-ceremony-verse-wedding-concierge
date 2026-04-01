@@ -596,61 +596,6 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* REAL WEDDINGS GALLERY */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
-            Real Weddings, Real Results
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            See What We've Done
-          </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-2xl mx-auto">
-            These are real NRI families who trusted us. From 14-bridesmaid coordination to destination weddings in Mexico, here's proof that we deliver.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Case Study 1: 14+14 Coordination */}
-            <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#c7b28a]/20 to-[#8a6f63]/10 h-48 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-[#c7b28a] mb-2">14+14</p>
-                  <p className="text-[#6a5c55] font-medium">Bridesmaids & Groomsmen</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">4-Day Gujarati & South Indian Wedding</h3>
-                <p className="text-[#6a5c55] text-sm mb-4">Coordinated outfits for 14 bridesmaids and 14 groomsmen across multiple states, plus full family, ceremonial items, and gifts.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Kanchipuram Silk</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Full Coordination</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Philadelphia, PA</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Case Study 2: Destination Wedding */}
-            <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#c7b28a]/20 to-[#8a6f63]/10 h-48 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-[#c7b28a] mb-2">4 Days</p>
-                  <p className="text-[#6a5c55] font-medium">Destination Wedding</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">Gujarati Destination Wedding in Mexico</h3>
-                <p className="text-[#6a5c55] text-sm mb-4">Coordinated outfits for bride, groom, full bridal party, and entire family for each day. Plus ceremonial items, gifts, and welcome bags.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Multi-Day</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">International</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Mexico</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
       <section className="py-12 px-6 bg-[#f9f6f3]">
         <div className="max-w-6xl mx-auto">
