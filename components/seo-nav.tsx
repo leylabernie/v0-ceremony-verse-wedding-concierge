@@ -45,6 +45,9 @@ export function SeoNav() {
         <a href="/pricing" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Pricing
         </a>
+        <a href="/real-weddings" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
+          Real Weddings
+        </a>
         <a href="/free-guides" style={{ fontSize: "0.85rem", color: "#c7b28a", textDecoration: "none", whiteSpace: "nowrap", fontWeight: 600 }}>
           Free Guides
         </a>

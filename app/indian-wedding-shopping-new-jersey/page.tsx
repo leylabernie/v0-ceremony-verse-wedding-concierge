@@ -92,6 +92,28 @@ export default function IndianWeddingShoppingNewJerseyPage() {
         </div>
       </section>
 
+
+      {/* FAQ */}
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Frequently asked questions
+          </h2>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>How does CeremonyVerse compare to shopping on Oak Tree Road in Edison?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>Oak Tree Road has great options, but selection is limited to what’s in stock and prices reflect NJ retail overhead. With CeremonyVerse, you access India’s full range of artisan craftspeople — more styles, custom stitching to your measurements, and typically 40–60% savings on comparable quality.</p>
+            </div>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>What is the typical delivery timeline to New Jersey addresses?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>From consultation to delivery at your NJ door, the typical timeline is 8–12 weeks. We schedule video shopping sessions around Eastern Time, and shipping from India to New Jersey usually takes 7–10 business days via express courier.</p>
+            </div>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>Can you source outfits for Gujarati and South Indian weddings common in the NJ community?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>Yes. New Jersey has large Gujarati, Telugu, Tamil, and Punjabi communities. We source ceremony-specific outfits for all traditions — including chaniya cholis for garba, pattu sarees for muhurtham, and coordinated family sets across every ceremony.</p>
+            </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "48px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto" }}>

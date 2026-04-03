@@ -130,6 +130,45 @@ export default function RootLayout({
     ]
   };
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Source Indian Wedding Outfits from India to the USA",
+    "description": "Step-by-step process for NRI families to source authentic Indian wedding outfits from India using CeremonyVerse's concierge service.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Book a Free Consultation",
+        "text": "Schedule a free 30-minute consultation to discuss your wedding vision, timeline, outfit needs, and budget. We listen and advise — no pressure."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Live Video Shopping from India",
+        "text": "Join a live video call where we walk you through options from our vetted artisan partners in India. See actual fabrics, embroidery, and colors in real time. The exact piece you approve is reserved for you."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Custom Measurements and Production",
+        "text": "We collect 15+ precise measurements and manage custom stitching with strategic ease allowances. Production typically takes 6-12 weeks for bridal pieces."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Quality Inspection and Shipping",
+        "text": "Every item is inspected in India before shipping. We handle all customs documentation, insure every shipment, and deliver to your US door. You pay milestone-based: 25% deposit, 35% after approval, 30% after inspection, 10% on delivery."
+      }
+    ],
+    "totalTime": "P6M",
+    "estimatedCost": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": "149-1499"
+    }
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -186,6 +225,11 @@ export default function RootLayout({
           id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+        />
+        <Script
+          id="howto-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
         />
       </head>
       <body>

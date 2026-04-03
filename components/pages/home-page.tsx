@@ -36,7 +36,7 @@ const testimonials = [
     location: "Philadelphia, PA",
     quote:
       "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
-    detail: "4-day Gujarati & South Indian Christian wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
+    detail: "4-day <a href='/gujarati-wedding-outfits-usa' style=\"color:#c7b28a;text-decoration:underline\">Gujarati</a> & <a href='/south-indian-christian-wedding-outfits-usa' style=\"color:#c7b28a;text-decoration:underline\">South Indian Christian</a> wedding · <a href='/kanchipuram-silk-sarees-usa' style=\"color:#c7b28a;text-decoration:underline\">Kanchipuram silk sarees</a> · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
   },
   {
     names: "Karan & Sonal",
@@ -46,7 +46,7 @@ const testimonials = [
     location: "Destination Wedding, Mexico",
     quote:
       "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-    detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
+    detail: "4-day <a href='/gujarati-wedding-outfits-usa' style=\"color:#c7b28a;text-decoration:underline\">Gujarati</a> destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
   },
   {
     names: "Charly & Viola",
@@ -56,7 +56,7 @@ const testimonials = [
     location: "Philadelphia, PA",
     quote:
       "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
-    detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
+    detail: "<a href='/south-indian-christian-wedding-outfits-usa' style=\"color:#c7b28a;text-decoration:underline\">South Indian Christian</a> wedding · Philadelphia · bridesmaids outfits + groom outfit",
   },
   {
     names: "Dhan & Christina",
@@ -106,7 +106,7 @@ const testimonials = [
     location: "USA",
     quote:
       "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
-    detail: "Gujarati wedding · Pure Kanchipuram silk sarees + custom matching outfits",
+    detail: "<a href='/gujarati-wedding-outfits-usa' style=\"color:#c7b28a;text-decoration:underline\">Gujarati</a> wedding · Pure <a href='/kanchipuram-silk-sarees-usa' style=\"color:#c7b28a;text-decoration:underline\">Kanchipuram silk sarees</a> + custom matching outfits",
   },
 ]
 
@@ -697,7 +697,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   )}
                   <div>
                     <p className="font-semibold text-[#1f1f1f] text-sm">{t.names}</p>
-                    <p className="text-xs text-[#8a6f63]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
+                    <p className="text-xs text-[#8a6f63]" dangerouslySetInnerHTML={{ __html: `${t.location} &nbsp;·&nbsp; ${t.detail}` }} />
                   </div>
                 </div>
               </div>

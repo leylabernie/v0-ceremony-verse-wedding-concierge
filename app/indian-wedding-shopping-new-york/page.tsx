@@ -92,6 +92,28 @@ export default function IndianWeddingShoppingNewYorkPage() {
         </div>
       </section>
 
+
+      {/* FAQ */}
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Frequently asked questions
+          </h2>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>How does CeremonyVerse compare to shopping in Jackson Heights, Queens?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>Jackson Heights offers variety, but you’re limited to whatever’s on the rack, and quality can be inconsistent. With CeremonyVerse, you see the exact piece you’re buying via live video from India, get custom stitching to your measurements, and a quality inspection before it ships.</p>
+            </div>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>Can you coordinate outfits for a large wedding party spread across the Tri-State area?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>That’s exactly what we do best. Whether your bridesmaids are in Manhattan, family is in Long Island, and in-laws are in Connecticut, we manage every measurement and coordination detail remotely. Everyone gets their own video measurement session.</p>
+            </div>
+            <div style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>What ceremonies do you typically source outfits for in New York Indian weddings?</h3>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>We source outfits for every ceremony — mehndi, sangeet, haldi, baraat, main ceremony, and reception. For Tri-State area weddings, we commonly coordinate 6–12+ outfits per person across all events, plus accessories and ceremonial items.</p>
+            </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "48px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto" }}>

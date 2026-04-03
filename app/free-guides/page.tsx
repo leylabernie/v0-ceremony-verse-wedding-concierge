@@ -258,6 +258,72 @@ export default function FreeGuidesPage() {
         We respect your privacy. No spam. Unsubscribe anytime.
       </p>
 
+      {/* FAQ */}
+      <div
+        style={{
+          maxWidth: "680px",
+          margin: "0 auto",
+          padding: "2rem 1.5rem 0",
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "1.8rem",
+            fontWeight: 600,
+            color: "#1f1f1f",
+            textAlign: "center",
+            marginBottom: "1.5rem",
+          }}
+        >
+          Frequently asked questions
+        </h2>
+        {[
+          {
+            q: "Are the guides really free?",
+            a: "Yes, completely free. We ask for your email so we can send you the download link and occasional wedding planning tips. You can unsubscribe anytime.",
+          },
+          {
+            q: "Who are these guides for?",
+            a: "NRI brides and families in the US who are planning an Indian wedding and want to source outfits, jewelry, or ceremony items from India. Whether you're just starting to research or actively shopping, there's a guide for your stage.",
+          },
+          {
+            q: "Will I be signed up for marketing emails?",
+            a: "You'll receive a few helpful wedding planning emails after downloading. Every email has a one-click unsubscribe link. We never share your email with third parties.",
+          },
+        ].map((item) => (
+          <div
+            key={item.q}
+            style={{
+              borderBottom: "1px solid #e6dfd5",
+              padding: "18px 0",
+            }}
+          >
+            <h3
+              style={{
+                fontWeight: 600,
+                fontSize: "14px",
+                color: "#1f1f1f",
+                marginBottom: "8px",
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+            >
+              {item.q}
+            </h3>
+            <p
+              style={{
+                fontSize: "13px",
+                lineHeight: 1.6,
+                color: "#6a5c55",
+                fontFamily: "'DM Sans', sans-serif",
+              }}
+            >
+              {item.a}
+            </p>
+          </div>
+        ))}
+      </div>
+
       {/* Bottom CTA */}
       <div
         style={{
