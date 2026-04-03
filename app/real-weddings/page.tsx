@@ -79,17 +79,17 @@ const weddingStories = [
   },
   {
     accentColor: "#d4c09a",
-    type: "South Indian Christian Wedding in India",
+    type: "South Indian Christian Engagement & Wedding",
     couple: "Shincy",
-    location: "USA (Wedding in India)",
+    location: "Bangalore, India (Bride based in USA)",
     sourced: [
-      "Bridal outfit sourced from Delhi",
-      "Full remote coordination from the US",
-      "Cross-timezone fittings & measurement management",
-      "End-to-end shipping & logistics to India",
+      "Sage green engagement lehenga sourced from Delhi",
+      "Sourced remotely from the US while bride traveled to India with mother-in-law",
+      "Cross-timezone coordination between USA and India",
+      "Delivery coordinated to India for the engagement",
     ],
     quote: "CeremonyVerse sourced my bridal outfit from Delhi for me \u2014 handling everything remotely so I didn\u2019t have to stress while planning from the US.",
-    highlight: "Entire bridal outfit sourced & coordinated remotely across US-India time zones",
+    highlight: "Sage green engagement lehenga sourced from Delhi to Bangalore while bride was in India",
   },
 ]
 
