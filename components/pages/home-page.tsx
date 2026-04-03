@@ -206,10 +206,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              The safest way to shop for your Indian wedding from the US — without scams, sizing disasters, or endless vendor chasing.
+              Shop All of India — From Your Couch in the US.
             </h1>
+            <p style={{ fontSize: "clamp(15px, 1.8vw, 17px)", lineHeight: 1.7, color: "rgba(199,178,138,0.9)", marginBottom: "20px", maxWidth: "520px", fontStyle: "italic" }}>
+              Because your Indian wedding deserves the real thing — authentic fabrics, master craftsmen, and the pride of wearing something your family will talk about for years.
+            </p>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-              Authentic bridal lehengas, sherwanis, jewelry, and more — sourced directly from India, verified live on video before shipping, and delivered to your US door. You see exactly what you’re buying. No surprises. No scams. No regrets.
+              The only wedding concierge that sources authentic bridal lehengas, sherwanis, and family outfits directly from India’s best artisans — verified live on video, custom-stitched to your measurements, and delivered to your US door.
             </p>
 
             {/* CTAs */}

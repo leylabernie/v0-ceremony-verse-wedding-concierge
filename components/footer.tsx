@@ -231,6 +231,7 @@ export function Footer({ onNavigate }: FooterProps) {
               { label: "Baraat Outfits", href: "/baraat-outfits-usa" },
               { label: "Bridal Lehenga Sourcing", href: "/services/bridal-lehengas" },
               { label: "Intercultural Weddings", href: "/services/intercultural-indian-weddings" },
+              { label: "Punjabi & Sikh Weddings", href: "/punjabi-sikh-wedding-outfits-usa" },
               { label: "Shop from India", href: "/shop-from-india" },
               { label: "Buy Bridal Lehenga USA", href: "/buy-bridal-lehenga-from-india-usa" },
               { label: "Buy Sherwani USA", href: "/buy-sherwani-from-india-usa" },
