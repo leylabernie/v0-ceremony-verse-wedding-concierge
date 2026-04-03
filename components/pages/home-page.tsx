@@ -268,7 +268,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       <section className="py-14 px-6" style={{ background: "#1f1f1f" }}>
         <div className="max-w-5xl mx-auto">
           <p className="text-center text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>
-            The 5 Biggest Risks When Buying Indian Wedding Outfits from India
+            The 6 Biggest Risks When Buying Indian Wedding Outfits from India
           </p>
           <p className="text-center text-[#6a5c55] mb-8 max-w-2xl mx-auto text-sm">
             NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's what can go wrong — and how we prevent it.
@@ -299,6 +299,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 problem: "Time + cognitive overload: WhatsApp chaos, vendor chasing",
                 solution: "We manage all communication, timelines, and vendor coordination. You get milestone-based updates and payment protection (25% deposit, 35% after approval, 30% after inspection, 10% on delivery).",
                 icon: "⏱️",
+              },
+              {
+                problem: "Family expectations across two cultures and continents",
+                solution: "We understand Gujarati, Punjabi, South Indian Christian, and intercultural wedding traditions. We help coordinate outfits for both families — even when one side has never worn Indian clothes before — so nobody feels left out or underdressed.",
+                icon: "👨‍👩‍👧‍👦",
               },
             ].map((item, i) => (
               <div key={i} className="rounded-2xl p-7" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(199,178,138,0.2)" }}>
