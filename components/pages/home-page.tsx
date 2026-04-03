@@ -149,7 +149,7 @@ const pricingTiers = [
       "End-to-end shipping & delivery support",
       "Dedicated sourcing manager",
     ],
-    cta: "Apply Now",
+    cta: "Plan My Wedding Party",
   },
 ]
 
@@ -166,7 +166,7 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         <span className="shrink-0 text-lg transition-transform" style={{ color: "#c7b28a", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
       </button>
       {open && (
-        <p className="text-sm leading-relaxed pb-5" style={{ color: "#6a5c55" }}>{answer}</p>
+        <p className="text-sm leading-relaxed pb-5" style={{ color: "#6a5c55" }} dangerouslySetInnerHTML={{ __html: answer }} />
       )}
     </div>
   )
@@ -229,8 +229,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 How It Works
               </button>
               <a
-                href="/wedding-outfit-checklist.pdf"
-                download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
+                href="/free-guides"
                 style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.6)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.2)", textDecoration: "none" }}
               >
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -849,7 +848,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               },
               {
                 q: "Do I have to pay US customs duties on a lehenga I order from India?",
-                a: "It depends on how your outfit arrives. If you carry it home yourself after a trip to India, the $800 duty-free personal exemption applies and the current Section 122 surcharge explicitly excludes accompanied baggage. If your outfit is shipped from India to your US address, full commercial duties now apply — the de minimis exemption was eliminated in August 2025. CeremonyVerse helps you plan around this from the start."
+                a: "It depends on how your outfit arrives. If you carry it home yourself after a trip to India, the $800 duty-free personal exemption applies and the current Section 122 surcharge explicitly excludes accompanied baggage. If your outfit is shipped from India to your US address, full commercial duties now apply — the de minimis exemption was eliminated in August 2025. CeremonyVerse helps you plan around this from the start. Read our full guide: <a href='/blog/us-tariffs-indian-wedding-outfits-2026' style=\"color:#c7b28a;text-decoration:underline\">US Tariffs on Indian Wedding Outfits 2026</a>."
               },
               {
                 q: "How far in advance do I need to order my Indian wedding outfit from India?",

@@ -25,8 +25,7 @@ export function Footer({ onNavigate }: FooterProps) {
             Top vendors book 6–12 months out. Download now and start planning.
           </p>
           <a
-            href="/wedding-outfit-checklist.pdf"
-            download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
+            href="/free-guides"
             className="inline-flex items-center gap-3 bg-[#c7b28a] text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -34,10 +33,10 @@ export function Footer({ onNavigate }: FooterProps) {
               <polyline points="7,10 12,15 17,10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            Download Free Checklist (PDF)
+            Get Free Checklist
           </a>
           <p className="text-white/40 text-xs mt-4">
-            No email required — instant download
+            Enter your email — download instantly
           </p>
         </div>
       </div>
@@ -215,16 +214,10 @@ export function Footer({ onNavigate }: FooterProps) {
           </div>
         </div>
 
-        {/* SEO keyword footer */}
+        {/* Footer tagline */}
         <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-[#e6dfd5]">
           <p className="text-[10px] text-[#b0a898] leading-relaxed text-center">
-            CeremonyVerse — Indian Wedding Shopping Concierge for NRI Families in the USA &nbsp;·&nbsp;
-            Buy Bridal Lehenga from India USA &nbsp;·&nbsp; NRI Bridal Lehenga &nbsp;·&nbsp; Custom Sherwani from India USA &nbsp;·&nbsp;
-            Bridesmaid Outfits from India &nbsp;·&nbsp; Indian Wedding Jewelry USA &nbsp;·&nbsp;
-            Welcome Bags &amp; Gifts &nbsp;·&nbsp; Ceremonial Items &nbsp;·&nbsp;
-            NRI Wedding Shopping &nbsp;·&nbsp; Indian Wedding Outfits US Delivery &nbsp;·&nbsp;
-            Live Video Shopping India &nbsp;·&nbsp; South Asian Wedding Concierge &nbsp;·&nbsp;
-            Serving NRI families across all US states
+            CeremonyVerse — The Indian Wedding Shopping Concierge for NRI Families. Serving families across all US states.
           </p>
         </div>
 
