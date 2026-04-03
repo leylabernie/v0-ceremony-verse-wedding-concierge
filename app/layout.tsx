@@ -5,7 +5,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
-  description: "CeremonyVerse is the US-based Indian wedding shopping concierge for NRI families. We source authentic bridal lehengas, sherwanis, jewelry, gifts, and welcome bags directly from India — with live video approval before anything ships — and deliver to your US door. Serving NRI and South Asian families across all US states.",
+  description: "CeremonyVerse is the Indian wedding shopping concierge for NRI and South Asian families worldwide. We source authentic bridal lehengas, sherwanis, jewelry, gifts, and welcome bags directly from India — with live video approval before anything ships — and deliver to your door in the USA, Canada, UK, Australia, and New Zealand.",
   keywords: "Indian wedding shopping USA, NRI Indian wedding shopping, Indian wedding concierge USA, NRI bride USA, buy bridal lehenga from India USA, NRI bridal lehenga, custom bridal lehenga from India, bridal lehenga delivered to USA, buy sherwani from India USA, NRI groom sherwani, Indian wedding outfits US delivery, source Indian wedding items from India, bridesmaid outfits from India, groomsmen kurta from India, Indian family outfits wedding USA, Indian wedding jewelry USA, kundan jewelry from India USA, Indian wedding gifts USA, Indian wedding welcome bags USA, Indian ceremonial items USA, NRI wedding shopping, South Asian wedding USA, live video shopping India, Indian wedding outfit quality check, affordable bridal lehenga India USA, intercultural Indian wedding USA, how to buy lehenga from India, where to buy Indian wedding outfits in USA, best Indian wedding concierge USA, Indian wedding personal shopper USA, CeremonyVerse",
   icons: {
     icon: [
@@ -16,7 +16,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
-    description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced directly from India, approved live on video before shipping, delivered to your US door. The trusted Indian wedding shopping concierge for NRI families.",
+    description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced directly from India, approved live on video before shipping, delivered to your door in the USA, Canada, UK, Australia & NZ. The trusted Indian wedding shopping concierge for NRI families worldwide.",
     type: "website",
     url: "https://ceremonyverse.com",
     images: [
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     site: "@ceremonyverse",
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
-    description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your US door.",
+    description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your door worldwide.",
     images: ["https://ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
@@ -50,12 +50,12 @@ export default function RootLayout({
       {
         "@type": "LocalBusiness",
         "name": "CeremonyVerse",
-        "description": "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and delivery to your US door.",
+        "description": "CeremonyVerse is an Indian wedding shopping concierge serving NRI and South Asian families in the USA, Canada, UK, Australia, and New Zealand. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and international delivery.",
         "url": "https://ceremonyverse.com",
         "image": "https://ceremonyverse.com/images/hero-lehenga.jpg",
         "telephone": "+12153419990",
         "email": "bhamini@ceremonyverse.com",
-        "areaServed": "US",
+        "areaServed": ["US", "CA", "GB", "AU", "NZ"],
         "priceRange": "$$",
         "sameAs": [
           "https://www.instagram.com/ceremonyverse",
@@ -88,7 +88,7 @@ export default function RootLayout({
           {
             "@type": "Question",
             "name": "What does CeremonyVerse do?",
-            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding directly from India — bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, ceremonial items, wedding gifts, welcome bags, sweets, and more. We offer live video shopping, quality checks, and delivery to your US door." }
+            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding directly from India — bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, ceremonial items, wedding gifts, welcome bags, sweets, and more. We offer live video shopping, quality checks, and international delivery." }
           },
           {
             "@type": "Question",
@@ -122,8 +122,8 @@ export default function RootLayout({
           },
           {
             "@type": "Question",
-            "name": "Do you ship Indian wedding items to all US states?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, CeremonyVerse serves families across all US states. We have worked with clients in New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and many more. All items are quality-checked in India before being shipped to your US address." }
+            "name": "Do you ship Indian wedding items internationally?",
+            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse serves families in the USA, Canada, UK, Australia, and New Zealand. We have worked with clients across North America, the UK, and the Asia-Pacific region. All items are quality-checked in India before being shipped to your international address." }
           }
         ]
       }
@@ -213,7 +213,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@ceremonyverse" />
         <meta name="twitter:title" content="Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse" />
-        <meta name="twitter:description" content="Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your US door." />
+        <meta name="twitter:description" content="Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your door worldwide." />
         <meta name="twitter:image" content="https://ceremonyverse.com/images/hero-lehenga.jpg" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
         <Script

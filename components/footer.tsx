@@ -56,7 +56,7 @@ export function Footer({ onNavigate }: FooterProps) {
               </p>
             </button>
             <p className="text-sm text-[#6a5c55] leading-relaxed">
-              The Indian wedding shopping concierge for NRI families in the US. We source authentic outfits, jewelry, and gifts directly from India — with live video approval before anything ships — and deliver to your US door.
+              The Indian wedding shopping concierge for NRI families worldwide. We source authentic outfits, jewelry, and gifts directly from India — with live video approval before anything ships — and deliver to your door in the USA, Canada, UK, Australia & New Zealand.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-4 mt-6">
@@ -207,7 +207,7 @@ export function Footer({ onNavigate }: FooterProps) {
                 Review us on Trustpilot
               </a>
               <p className="text-xs text-[#8a6f63] leading-relaxed mt-3">
-                Serving US-based families nationwide.
+                Serving NRI families in the USA, Canada, UK, Australia & New Zealand.
                 Available by appointment.
               </p>
             </div>
@@ -217,7 +217,7 @@ export function Footer({ onNavigate }: FooterProps) {
         {/* Footer tagline */}
         <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-[#e6dfd5]">
           <p className="text-[10px] text-[#b0a898] leading-relaxed text-center">
-            CeremonyVerse — The Indian Wedding Shopping Concierge for NRI Families. Serving families across all US states.
+            CeremonyVerse — The Indian Wedding Shopping Concierge for NRI Families Worldwide. Serving families in the USA, Canada, UK, Australia & New Zealand.
           </p>
         </div>
 
@@ -238,6 +238,10 @@ export function Footer({ onNavigate }: FooterProps) {
               { label: "Shop from India", href: "/shop-from-india" },
               { label: "Buy Bridal Lehenga USA", href: "/buy-bridal-lehenga-from-india-usa" },
               { label: "Buy Sherwani USA", href: "/buy-sherwani-from-india-usa" },
+              { label: "Indian Wedding Shopping Canada", href: "/indian-wedding-shopping-canada" },
+              { label: "Indian Wedding Shopping UK", href: "/indian-wedding-shopping-uk" },
+              { label: "Indian Wedding Shopping Australia", href: "/indian-wedding-shopping-australia" },
+              { label: "Indian Wedding Shopping NZ", href: "/indian-wedding-shopping-new-zealand" },
             ].map((link) => (
               <a key={link.label} href={link.href} className="text-xs text-[#8a6f63] hover:text-[#c7b28a] transition">
                 {link.label}
