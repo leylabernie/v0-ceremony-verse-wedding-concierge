@@ -77,6 +77,20 @@ const weddingStories = [
     quote: "I didn't have to worry about a single one.",
     highlight: "12 bridesmaids coordinated remotely while bride was in India",
   },
+  {
+    accentColor: "#d4c09a",
+    type: "South Indian Christian Wedding in India",
+    couple: "Shincy",
+    location: "USA (Wedding in India)",
+    sourced: [
+      "Bridal outfit sourced from Delhi",
+      "Full remote coordination from the US",
+      "Cross-timezone fittings & measurement management",
+      "End-to-end shipping & logistics to India",
+    ],
+    quote: "CeremonyVerse sourced my bridal outfit from Delhi for me \u2014 handling everything remotely so I didn\u2019t have to stress while planning from the US.",
+    highlight: "Entire bridal outfit sourced & coordinated remotely across US-India time zones",
+  },
 ]
 
 const stats = [
