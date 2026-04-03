@@ -270,6 +270,22 @@ Kaval's 5 groomsmen were across three states. We sent them all the measurement g
 
 If you're planning an intercultural wedding and don't know where to begin, this is exactly what we're here for.`
   },
+  {
+    tag: "Punjabi Guide",
+    title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
+    excerpt: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
+    date: "April 3, 2026",
+    readTime: "10 min read",
+    slug: "punjabi-sikh-wedding-outfit-guide",
+  },
+  {
+    tag: "Cost Guide",
+    title: "How Much Does a Bridal Lehenga from India Really Cost? Real Examples",
+    excerpt: "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
+    date: "April 3, 2026",
+    readTime: "8 min read",
+    slug: "how-much-does-bridal-lehenga-from-india-cost",
+  },
 ]
 
 export function BlogPage({ onNavigate }: BlogPageProps) {
@@ -388,7 +404,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
             <div
               key={i}
               className="bg-white border border-[var(--cv-border)] rounded-2xl p-7 flex flex-col cursor-pointer hover:shadow-md transition-shadow"
-              onClick={() => setActivePost(post)}
+              onClick={() => post.content ? setActivePost(post) : window.location.assign(`/blog/${post.slug}`)}
             >
               <div className="flex items-center justify-between mb-4">
                 <span

@@ -38,6 +38,18 @@ const posts = [
     description: "The tariff landscape changed multiple times in 2025. Here is what actually applies to your lehenga — and how to plan around it.",
     date: "March 2026",
   },
+  {
+    slug: "punjabi-sikh-wedding-outfit-guide",
+    title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
+    description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
+    date: "April 2026",
+  },
+  {
+    slug: "how-much-does-bridal-lehenga-from-india-cost",
+    title: "How Much Does a Bridal Lehenga from India Really Cost? Real Examples",
+    description: "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
+    date: "April 2026",
+  },
 ];
 
 export default function BlogIndexPage() {
