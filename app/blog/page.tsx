@@ -9,6 +9,36 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "indian-wedding-shopping-without-going-to-india",
+    title: "How to Source Your Indian Wedding Outfits from India — Without Going to India",
+    description: "The complete guide for NRI families: 4 ways to get Indian wedding outfits, compared honestly. Plus the step-by-step concierge process that eliminates the risk.",
+    date: "April 2026",
+  },
+  {
+    slug: "sabyasachi-alternatives-nri-brides",
+    title: "Sabyasachi Alternatives: How NRI Brides Get Designer-Quality Lehengas from India for Less",
+    description: "You don't need to spend $15,000 on a label. Here's how NRI brides are getting artisan-quality lehengas sourced directly from India's best craftspeople.",
+    date: "April 2026",
+  },
+  {
+    slug: "how-many-outfits-for-indian-wedding",
+    title: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide",
+    description: "From mehndi to reception — how many outfits you actually need, broken down by tradition (Hindu, Gujarati, South Indian, Bengali, Sikh) with budget tips.",
+    date: "April 2026",
+  },
+  {
+    slug: "what-non-indian-partner-should-wear-indian-wedding",
+    title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
+    description: "Lehenga or saree? Sherwani or suit? The honest, practical guide for non-Indian partners entering an Indian wedding — from someone who dresses intercultural couples.",
+    date: "April 2026",
+  },
+  {
+    slug: "nri-groom-outfit-guide-sherwani-from-india",
+    title: "The NRI Groom's Guide to Sourcing a Sherwani from India",
+    description: "Everything the groom needs to know: sherwani styles, fabrics, remote fitting, accessories, timeline, and a full cost breakdown for sourcing from India.",
+    date: "April 2026",
+  },
+  {
     slug: "south-indian-christian-wedding-outfit-guide",
     title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
     description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
