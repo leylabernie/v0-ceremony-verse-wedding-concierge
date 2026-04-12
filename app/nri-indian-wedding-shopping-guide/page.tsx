@@ -18,8 +18,33 @@ export const metadata: Metadata = {
 };
 
 export default function NriWeddingShoppingGuide() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Complete Guide: How NRI Families Shop for Indian Weddings from the US",
+    "description": "The definitive guide for NRI families shopping for Indian weddings from the US. Covers outfits, jewelry, gifts, customs, timeline, costs, and how to avoid scams.",
+    "author": {
+      "@type": "Organization",
+      "name": "CeremonyVerse"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CeremonyVerse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ceremonyverse.com/images/logo-nav.png"
+      }
+    },
+    "datePublished": "2026-04-12",
+    "image": "https://ceremonyverse.com/images/hero-lehenga.jpg"
+  };
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <SeoNav />
 
       {/* Hero */}
@@ -76,9 +101,19 @@ export default function NriWeddingShoppingGuide() {
           <p style={{ marginTop: "1.2rem" }}>
             Let&rsquo;s begin.
           </p>
+          <div style={{ background: "#fff", padding: "1.5rem", borderRadius: "8px", border: "1px solid #e6dfd5", marginTop: "2rem" }}>
+            <p style={{ fontWeight: 600, marginBottom: "0.5rem" }}>Quick Links:</p>
+            <ul style={{ listStyle: "none", padding: 0, fontSize: "0.9rem" }}>
+              <li><a href="#why-hard" style={{ color: "#c7b28a" }}>• Why NRI Shopping is Hard</a></li>
+              <li><a href="#options" style={{ color: "#c7b28a" }}>• Sourcing Options Compared</a></li>
+              <li><a href="#scams" style={{ color: "#c7b28a" }}>• How to Avoid Scams</a></li>
+              <li><a href="/pricing" style={{ color: "#c7b28a" }}>• View Sourcing Fees</a></li>
+            </ul>
+          </div>
 
           {/* ── Section 1 ── */}
           <h2
+            id="why-hard"
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.7rem",
@@ -179,6 +214,7 @@ export default function NriWeddingShoppingGuide() {
 
           {/* ── Section 2 ── */}
           <h2
+            id="options"
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.7rem",

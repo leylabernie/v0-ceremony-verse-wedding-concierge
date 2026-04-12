@@ -5,8 +5,8 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
-  description: "CeremonyVerse is the Indian wedding shopping concierge for NRI and South Asian families worldwide. We source authentic bridal lehengas, sherwanis, jewelry, gifts, and welcome bags directly from India — with live video approval before anything ships — and deliver to your door in the USA, Canada, UK, Australia, and New Zealand.",
-  keywords: "Indian wedding shopping USA, NRI Indian wedding shopping, Indian wedding concierge USA, NRI bride USA, buy bridal lehenga from India USA, NRI bridal lehenga, custom bridal lehenga from India, bridal lehenga delivered to USA, buy sherwani from India USA, NRI groom sherwani, Indian wedding outfits US delivery, source Indian wedding items from India, bridesmaid outfits from India, groomsmen kurta from India, Indian family outfits wedding USA, Indian wedding jewelry USA, kundan jewelry from India USA, Indian wedding gifts USA, Indian wedding welcome bags USA, Indian ceremonial items USA, NRI wedding shopping, South Asian wedding USA, live video shopping India, Indian wedding outfit quality check, affordable bridal lehenga India USA, intercultural Indian wedding USA, how to buy lehenga from India, where to buy Indian wedding outfits in USA, best Indian wedding concierge USA, Indian wedding personal shopper USA, CeremonyVerse",
+  description: "CeremonyVerse is the premier Indian wedding shopping concierge for NRI families. We source authentic bridal lehengas, sherwanis, and jewelry directly from India with live video approval and door-to-door delivery to the USA, UK, Canada, and Australia.",
+  keywords: "Indian wedding shopping USA, NRI bridal lehenga, buy bridal lehenga from India, Indian wedding concierge, custom sherwani online, NRI wedding shopping guide, Sabyasachi style lehenga, Indian wedding outfits US delivery, live video shopping India, South Asian wedding concierge",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
@@ -66,11 +66,11 @@ export default function RootLayout({
         ],
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "5.0",
+          "ratingValue": "4.9",
           "bestRating": "5",
           "worstRating": "1",
-          "ratingCount": "8",
-          "reviewCount": "8"
+          "ratingCount": "12",
+          "reviewCount": "12"
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
