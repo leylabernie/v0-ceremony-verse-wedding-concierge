@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 
+import { CustomsCalculator } from "@/components/customs-calculator"
+
 export const metadata = {
   title: "Indian Wedding Concierge Pricing | CeremonyVerse",
   description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
@@ -89,8 +91,43 @@ const comparisonRows = [
 ]
 
 export default function PricingPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I avoid lehenga scams on Instagram?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CeremonyVerse uses a 3-step verification process: (1) Live Video Approval - you see the actual piece on video before purchase, (2) Vetted Partners - we work only with established artisan workshops in India with years of track record, (3) Milestone Payments - you pay in stages (25% deposit, 35% after approval, 30% after inspection, 10% on delivery), never in full upfront. This protects you from the common scams where you pay upfront and never receive the item."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Section 122 surcharge for 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Section 122 surcharge is a temporary 15% import surcharge imposed by the US government in February 2026. It stacks on top of the base tariff rate (18% for Indian garments). This means a $2,000 lehenga will incur approximately $300 in Section 122 surcharge alone. Use our Customs & Tariffs Calculator to estimate the total landed cost for your specific item."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a Sabyasachi style lehenga for under $2,000?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Our Artisan-Direct model connects you with master embroiderers and designers in India who create pieces comparable to Sabyasachi's aesthetic at 30-50% lower cost. You pay for the actual labor and materials, not the luxury brand markup. A custom bridal lehenga sourced through CeremonyVerse typically costs $1,200-$2,500 including all US duties and fees, versus $4,000-$8,000+ at US boutiques."
+        }
+      }
+    ]
+  };
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <SeoNav />
 
       {/* Hero */}
@@ -292,6 +329,9 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
+
+      {/* Customs Calculator Section */}
+      <CustomsCalculator />
 
       {/* Bottom CTA */}
       <section style={{ padding: "48px 24px 72px", textAlign: "center", background: "#fff" }}>

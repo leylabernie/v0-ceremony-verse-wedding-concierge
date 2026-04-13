@@ -55,12 +55,19 @@ export default function RootLayout({
         "image": "https://ceremonyverse.com/images/hero-lehenga.jpg",
         "telephone": "+12153419990",
         "email": "bhamini@ceremonyverse.com",
-        "areaServed": ["US", "CA", "GB", "AU", "NZ"],
+        "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}],
         "priceRange": "$$",
+        "knowsAbout": ["NRI Wedding Shopping", "Indian Bridal Fashion", "US Customs & Tariffs", "Gujarati Wedding Traditions", "South Indian Christian Weddings", "Punjabi Sikh Weddings", "Bengali Wedding Traditions"],
+        "founder": {
+          "@type": "Person",
+          "name": "Bhamini",
+          "jobTitle": "Founder & Sourcing Expert"
+        },
         "sameAs": [
           "https://www.instagram.com/ceremonyverse",
           "https://www.pinterest.com/ceremonyverse",
           "https://www.tiktok.com/@ceremonyverse",
+          "https://www.facebook.com/profile.php?id=61585573921802",
           "https://wa.me/12153419990",
           "https://www.trustpilot.com/review/ceremonyverse.com"
         ],

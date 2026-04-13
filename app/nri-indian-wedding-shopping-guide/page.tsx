@@ -108,6 +108,7 @@ export default function NriWeddingShoppingGuide() {
               <li><a href="#options" style={{ color: "#c7b28a" }}>• Sourcing Options Compared</a></li>
               <li><a href="#scams" style={{ color: "#c7b28a" }}>• How to Avoid Scams</a></li>
               <li><a href="/pricing" style={{ color: "#c7b28a" }}>• View Sourcing Fees</a></li>
+              <li><a href="/pricing#customs-calculator" style={{ color: "#c7b28a" }}>• 2026 Customs Calculator</a></li>
             </ul>
           </div>
 
