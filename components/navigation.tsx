@@ -40,7 +40,7 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               className="flex flex-col items-start group"
               aria-label="CeremonyVerse Home"
             >
-              <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
+              <span className="font-garamond text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
                 CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#8a6f63] mt-0.5">
