@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears | CeremonyVerse",
   description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
   keywords: "south indian christian wedding outfits, kerala christian wedding dress, tamil christian wedding outfit, south indian christian bride, NRI south indian christian wedding",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+  },
   openGraph: {
     title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
     description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+    url: "https://ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
   },
 };
 

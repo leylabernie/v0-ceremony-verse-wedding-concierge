@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide | CeremonyVerse",
   description: "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
   keywords: "how many outfits for Indian wedding, Indian wedding outfit count, Indian bride outfit list, how many outfits for Indian wedding bride, Indian wedding outfit shopping timeline",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/how-many-outfits-for-indian-wedding",
+  },
   openGraph: {
     title: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide",
     description: "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-many-outfits-for-indian-wedding",
+    url: "https://ceremonyverse.com/blog/how-many-outfits-for-indian-wedding",
   },
 };
 

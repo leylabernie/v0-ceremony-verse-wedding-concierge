@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "The NRI Groom's Guide to Sourcing a Sherwani from India | CeremonyVerse",
   description: "Everything NRI grooms need to know about sourcing a custom sherwani from India — fabric, fit, cost breakdown, and how to coordinate with the bride's outfit.",
   keywords: "sherwani for NRI groom, Indian groom wear for NRI, custom sherwani from India, buy sherwani from India USA, wedding sherwani cost",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+  },
   openGraph: {
     title: "The NRI Groom's Guide to Sourcing a Sherwani from India",
     description: "Everything NRI grooms need to know about sourcing a custom sherwani from India — fabric, fit, cost breakdown, and how to coordinate with the bride's outfit.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+    url: "https://ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
   },
 };
 

@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "How Much Does a Bridal Lehenga from India Cost? Real Examples | CeremonyVerse",
   description: "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
   keywords: "bridal lehenga cost from India, how much does lehenga cost India USA, NRI bridal lehenga price, lehenga price from India shipped to USA, Indian wedding outfit cost",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/how-much-does-bridal-lehenga-from-india-cost",
+  },
   openGraph: {
     title: "How Much Does a Bridal Lehenga from India Cost? Real Examples",
     description: "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-much-does-bridal-lehenga-from-india-cost",
+    url: "https://ceremonyverse.com/blog/how-much-does-bridal-lehenga-from-india-cost",
   },
 };
 

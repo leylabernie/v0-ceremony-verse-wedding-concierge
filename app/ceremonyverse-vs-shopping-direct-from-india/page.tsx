@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "CeremonyVerse vs Shopping Direct from India | Compare",
   description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+  },
   keywords: "buy lehenga from India vs concierge, Indian wedding shopping comparison, CeremonyVerse vs direct shopping India",
-}
+  openGraph: {
+    title: "CeremonyVerse vs Shopping Direct from India | Compare",
+    description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
+    type: "website",
+    url: "https://ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+  };
 
 const comparisonRows = [
   {

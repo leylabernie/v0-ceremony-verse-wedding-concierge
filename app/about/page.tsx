@@ -3,7 +3,15 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "About Bhamini — Founder of CeremonyVerse",
   description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
-}
+  alternates: {
+    canonical: "https://ceremonyverse.com/about",
+  },
+  openGraph: {
+    title: "About Bhamini — Founder of CeremonyVerse",
+    description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
+    type: "website",
+    url: "https://ceremonyverse.com/about",
+  };
 
 export default function AboutPage() {
   return (

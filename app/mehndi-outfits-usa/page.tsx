@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
   description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/mehndi-outfits-usa",
+  },
   keywords: "mehndi outfit USA, haldi ceremony outfit USA, mehndi lehenga from India, haldi outfit NRI bride, mehndi ceremony dress USA, yellow lehenga USA, mehndi bridesmaid outfits, Indian mehndi outfit delivered USA, haldi outfit from India, mehndi dress for NRI wedding",
-}
+  openGraph: {
+    title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
+    description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
+    type: "website",
+    url: "https://ceremonyverse.com/mehndi-outfits-usa",
+  };
 
 export default function MehndiOutfitsPage() {
   return (

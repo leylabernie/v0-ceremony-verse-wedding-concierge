@@ -14,6 +14,9 @@ export const metadata = {
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  alternates: {
+    canonical: "https://ceremonyverse.com",
+  },
   openGraph: {
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
     description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced directly from India, approved live on video before shipping, delivered to your door in the USA, Canada, UK, Australia & NZ. The trusted Indian wedding shopping concierge for NRI families worldwide.",

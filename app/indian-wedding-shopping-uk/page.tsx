@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Indian Wedding Shopping from India | UK Families | CeremonyVerse",
   description: "Indian wedding in the UK? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to London, Leicester, Birmingham, or anywhere in the UK.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-uk",
+  },
   keywords: "Indian wedding shopping UK, buy lehenga from India London, Indian wedding concierge UK, Southall Indian bridal wear, Birmingham Indian wedding outfits, Leicester Indian wedding clothes",
-}
+  openGraph: {
+    title: "Indian Wedding Shopping from India | UK Families | CeremonyVerse",
+    description: "Indian wedding in the UK? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to London, Leicester, Birmingham, or anywhere in the UK.",
+    type: "website",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-uk",
+  };
 
 export default function IndianWeddingShoppingUKPage() {
   return (

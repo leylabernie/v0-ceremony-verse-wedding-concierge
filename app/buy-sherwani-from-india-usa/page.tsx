@@ -2,6 +2,9 @@ export const metadata = {
   title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
   description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",
   keywords: "buy sherwani from India USA, custom sherwani NRI groom, sherwani delivered to USA, Indian groom outfit USA, sherwani online USA, bandhgala from India, kurta set wedding USA, NRI groom sherwani, Indian groom attire USA, CeremonyVerse sherwani",
+  alternates: {
+    canonical: "https://ceremonyverse.com/buy-sherwani-from-india-usa",
+  },
   openGraph: {
     title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
     description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",

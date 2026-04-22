@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Press & Media — CeremonyVerse | Indian Wedding Shopping Concierge",
   description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/press",
+  },
   keywords: "CeremonyVerse press, CeremonyVerse media, NRI wedding concierge press, Indian wedding shopping press kit, Bhamini CeremonyVerse founder, indian wedding media",
-}
+  openGraph: {
+    title: "Press & Media — CeremonyVerse | Indian Wedding Shopping Concierge",
+    description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
+    type: "website",
+    url: "https://ceremonyverse.com/press",
+  };
 
 const storyAngles = [
   {
@@ -39,7 +47,7 @@ const quickFacts = [
   { label: "Headquarters", value: "Philadelphia, PA, USA" },
   { label: "What", value: "Indian wedding shopping concierge" },
   { label: "Markets", value: "USA, Canada, UK, Australia, New Zealand" },
-  { label: "Website", value: "ceremonyverse.com", href: "https://www.ceremonyverse.com" },
+  { label: "Website", value: "ceremonyverse.com", href: "https://ceremonyverse.com" },
   { label: "Press Contact", value: "bhamini@ceremonyverse.com", href: "mailto:bhamini@ceremonyverse.com" },
 ]
 
@@ -87,7 +95,7 @@ export default function PressPage() {
                   borderBottom: i < quickFacts.length - 1 ? "1px solid #e6dfd5" : "none",
                   gap: "24px",
                   flexWrap: "wrap",
-                }}
+                };
               >
                 <span style={{ fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", fontWeight: 600, color: "#1f1f1f", minWidth: "130px", flexShrink: 0 }}>
                   {fact.label}
@@ -157,7 +165,7 @@ export default function PressPage() {
               borderRadius: "16px",
               padding: "40px 36px",
               textAlign: "center",
-            }}
+            };
           >
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.3rem", fontStyle: "italic", color: "#1f1f1f", marginBottom: "12px", lineHeight: 1.5 }}>
               Media features coming soon.

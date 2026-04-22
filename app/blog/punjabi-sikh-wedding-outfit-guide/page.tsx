@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered | CeremonyVerse",
   description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
   keywords: "punjabi wedding outfit guide, sikh wedding what to wear, anand karaj bridal outfit, punjabi wedding ceremonies outfits, NRI punjabi wedding guide",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+  },
   openGraph: {
     title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
     description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+    url: "https://ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
   },
 };
 

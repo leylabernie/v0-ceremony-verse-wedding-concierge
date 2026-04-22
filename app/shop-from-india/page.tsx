@@ -4,6 +4,15 @@ export const metadata = {
   title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
   description:
     "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/shop-from-india",
+  },
+  openGraph: {
+    title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
+    description: "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
+    type: "website",
+    url: "https://ceremonyverse.com/shop-from-india",
+  },
 };
 
 export default function ShopFromIndiaPage() {
@@ -39,7 +48,7 @@ export default function ShopFromIndiaPage() {
                 "Now booking clients for August 2026 weddings.",
             },
           }),
-        }}
+        };
       />
 
       {/* HERO */}

@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Real Weddings — NRI Families We've Dressed | CeremonyVerse",
   description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/real-weddings",
+  },
   keywords: "NRI wedding stories, indian wedding concierge results, real NRI weddings, CeremonyVerse portfolio, indian wedding outfits sourced from india",
-}
+  openGraph: {
+    title: "Real Weddings — NRI Families We've Dressed | CeremonyVerse",
+    description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
+    type: "website",
+    url: "https://ceremonyverse.com/real-weddings",
+  };
 
 const weddingStories = [
   {

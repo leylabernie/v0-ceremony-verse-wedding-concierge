@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "South Indian Christian Wedding Outfits from India | NRI USA | CeremonyVerse",
   description: "Planning a South Indian Christian wedding in the USA? CeremonyVerse sources Kerala Christian sarees, Kanchipuram silk, bridesmaids outfits, and bridal wear from India — delivered to your US door.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/south-indian-christian-wedding-outfits-usa",
+  },
   keywords: "south indian christian wedding outfits usa, kerala christian wedding saree usa, NRI south indian christian wedding, kanchipuram silk usa, south indian bridal saree usa",
-}
+  openGraph: {
+    title: "South Indian Christian Wedding Outfits from India | NRI USA | CeremonyVerse",
+    description: "Planning a South Indian Christian wedding in the USA? CeremonyVerse sources Kerala Christian sarees, Kanchipuram silk, bridesmaids outfits, and bridal wear from India — delivered to your US door.",
+    type: "website",
+    url: "https://ceremonyverse.com/south-indian-christian-wedding-outfits-usa",
+  };
 
 export default function SouthIndianChristianWeddingOutfitsPage() {
   return (

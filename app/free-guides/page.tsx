@@ -110,7 +110,7 @@ export default function FreeGuidesPage() {
           background: "#2f2f2f",
           padding: "4rem 1.5rem 3rem",
           textAlign: "center",
-        }}
+        };
       >
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
@@ -120,7 +120,7 @@ export default function FreeGuidesPage() {
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               marginBottom: "1rem",
-            }}
+            };
           >
             CeremonyVerse · Free Resources
           </p>
@@ -132,7 +132,7 @@ export default function FreeGuidesPage() {
               color: "#f8f6f2",
               lineHeight: 1.2,
               margin: "0 0 1rem",
-            }}
+            };
           >
             Free Resources for NRI Brides
           </h1>
@@ -143,7 +143,7 @@ export default function FreeGuidesPage() {
               lineHeight: 1.7,
               maxWidth: "520px",
               margin: "0 auto",
-            }}
+            };
           >
             Choose one guide — enter your email — download instantly
           </p>
@@ -156,14 +156,14 @@ export default function FreeGuidesPage() {
           maxWidth: "860px",
           margin: "0 auto",
           padding: "3rem 1.5rem 2rem",
-        }}
+        };
       >
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "1.5rem",
-          }}
+          };
         >
           {guides.map((guide) => (
             <div
@@ -178,16 +178,16 @@ export default function FreeGuidesPage() {
                 alignItems: "flex-start",
                 gap: "0.75rem",
                 transition: "box-shadow 0.2s, transform 0.2s",
-              }}
+              };
               onMouseEnter={(e) => {
                 e.currentTarget.style.boxShadow =
                   "0 8px 30px rgba(199, 178, 138, 0.15)";
                 e.currentTarget.style.transform = "translateY(-2px)";
-              }}
+              };
               onMouseLeave={(e) => {
                 e.currentTarget.style.boxShadow = "none";
                 e.currentTarget.style.transform = "translateY(0)";
-              }}
+              };
             >
               <span style={{ fontSize: "2rem", lineHeight: 1 }}>
                 {guide.icon}
@@ -200,7 +200,7 @@ export default function FreeGuidesPage() {
                   color: "#2f2f2f",
                   lineHeight: 1.3,
                   margin: 0,
-                }}
+                };
               >
                 {guide.title}
               </h2>
@@ -211,7 +211,7 @@ export default function FreeGuidesPage() {
                   lineHeight: 1.65,
                   margin: 0,
                   flex: 1,
-                }}
+                };
               >
                 {guide.description}
               </p>
@@ -229,7 +229,7 @@ export default function FreeGuidesPage() {
                   cursor: "pointer",
                   transition: "background 0.2s",
                   fontFamily: "'DM Sans', sans-serif",
-                }}
+                };
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.background = "#b29d74")
                 }
@@ -253,7 +253,7 @@ export default function FreeGuidesPage() {
           padding: "0 1.5rem 2rem",
           maxWidth: "860px",
           margin: "0 auto",
-        }}
+        };
       >
         We respect your privacy. No spam. Unsubscribe anytime.
       </p>
@@ -264,7 +264,7 @@ export default function FreeGuidesPage() {
           maxWidth: "680px",
           margin: "0 auto",
           padding: "2rem 1.5rem 0",
-        }}
+        };
       >
         <h2
           style={{
@@ -274,7 +274,7 @@ export default function FreeGuidesPage() {
             color: "#1f1f1f",
             textAlign: "center",
             marginBottom: "1.5rem",
-          }}
+          };
         >
           Frequently asked questions
         </h2>
@@ -297,7 +297,7 @@ export default function FreeGuidesPage() {
             style={{
               borderBottom: "1px solid #e6dfd5",
               padding: "18px 0",
-            }}
+            };
           >
             <h3
               style={{
@@ -306,7 +306,7 @@ export default function FreeGuidesPage() {
                 color: "#1f1f1f",
                 marginBottom: "8px",
                 fontFamily: "'DM Sans', sans-serif",
-              }}
+              };
             >
               {item.q}
             </h3>
@@ -316,7 +316,7 @@ export default function FreeGuidesPage() {
                 lineHeight: 1.6,
                 color: "#6a5c55",
                 fontFamily: "'DM Sans', sans-serif",
-              }}
+              };
             >
               {item.a}
             </p>
@@ -331,14 +331,14 @@ export default function FreeGuidesPage() {
           padding: "2rem 1.5rem 4rem",
           maxWidth: "860px",
           margin: "0 auto",
-        }}
+        };
       >
         <div
           style={{
             background: "#2f2f2f",
             borderRadius: "12px",
             padding: "2.5rem 2rem",
-          }}
+          };
         >
           <h2
             style={{
@@ -347,7 +347,7 @@ export default function FreeGuidesPage() {
               fontWeight: 600,
               color: "#f8f6f2",
               margin: "0 0 0.75rem",
-            }}
+            };
           >
             Ready to start sourcing?
           </h2>
@@ -357,7 +357,7 @@ export default function FreeGuidesPage() {
               fontSize: "0.95rem",
               marginBottom: "1.5rem",
               lineHeight: 1.7,
-            }}
+            };
           >
             Get expert help sourcing your Indian wedding outfits directly from
             India.
@@ -377,7 +377,7 @@ export default function FreeGuidesPage() {
               textDecoration: "none",
               transition: "background 0.2s",
               fontFamily: "'DM Sans', sans-serif",
-            }}
+            };
           >
             Book a Free Consultation →
           </a>
@@ -396,10 +396,10 @@ export default function FreeGuidesPage() {
             justifyContent: "center",
             zIndex: 1000,
             padding: "1rem",
-          }}
+          };
           onClick={(e) => {
             if (e.target === e.currentTarget) handleCloseModal();
-          }}
+          };
         >
           <div
             style={{
@@ -410,7 +410,7 @@ export default function FreeGuidesPage() {
               width: "100%",
               position: "relative",
               boxShadow: "0 20px 60px rgba(0,0,0,0.2)",
-            }}
+            };
           >
             {/* Close button */}
             <button
@@ -426,7 +426,7 @@ export default function FreeGuidesPage() {
                 cursor: "pointer",
                 lineHeight: 1,
                 padding: "4px",
-              }}
+              };
               aria-label="Close"
             >
               ×
@@ -445,7 +445,7 @@ export default function FreeGuidesPage() {
                     fontWeight: 600,
                     color: "#2f2f2f",
                     marginBottom: "0.75rem",
-                  }}
+                  };
                 >
                   Your guide is downloading!
                 </h3>
@@ -455,7 +455,7 @@ export default function FreeGuidesPage() {
                     color: "#6f6a63",
                     lineHeight: 1.7,
                     marginBottom: "1rem",
-                  }}
+                  };
                 >
                   Check your email for more wedding planning tips from
                   CeremonyVerse.
@@ -472,7 +472,7 @@ export default function FreeGuidesPage() {
                     fontWeight: 600,
                     cursor: "pointer",
                     fontFamily: "'DM Sans', sans-serif",
-                  }}
+                  };
                 >
                   Done
                 </button>
@@ -492,7 +492,7 @@ export default function FreeGuidesPage() {
                       color: "#2f2f2f",
                       lineHeight: 1.3,
                       margin: "0 0 0.5rem",
-                    }}
+                    };
                   >
                     {guides.find((g) => g.key === activeGuide)?.title}
                   </h3>
@@ -500,7 +500,7 @@ export default function FreeGuidesPage() {
                     style={{
                       fontSize: "0.85rem",
                       color: "#9a948d",
-                    }}
+                    };
                   >
                     Enter your email to download instantly
                   </p>
@@ -524,7 +524,7 @@ export default function FreeGuidesPage() {
                       marginBottom: "0.75rem",
                       boxSizing: "border-box",
                       transition: "border-color 0.2s",
-                    }}
+                    };
                     onFocus={(e) =>
                       (e.currentTarget.style.borderColor = "#c7b28a")
                     }
@@ -540,7 +540,7 @@ export default function FreeGuidesPage() {
                         fontSize: "0.82rem",
                         marginBottom: "0.75rem",
                         textAlign: "center",
-                      }}
+                      };
                     >
                       {error}
                     </p>
@@ -561,7 +561,7 @@ export default function FreeGuidesPage() {
                       cursor: loading ? "not-allowed" : "pointer",
                       fontFamily: "'DM Sans', sans-serif",
                       transition: "background 0.2s",
-                    }}
+                    };
                   >
                     {loading ? "Sending..." : "Download Free Guide"}
                   </button>
@@ -574,7 +574,7 @@ export default function FreeGuidesPage() {
                     textAlign: "center",
                     marginTop: "1rem",
                     lineHeight: 1.5,
-                  }}
+                  };
                 >
                   No spam. Unsubscribe anytime.
                 </p>

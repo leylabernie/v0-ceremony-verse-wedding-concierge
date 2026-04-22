@@ -5,7 +5,15 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
   description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
-};
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog",
+  },
+  openGraph: {
+    title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
+    description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
+    type: "website",
+    url: "https://ceremonyverse.com/blog",
+  }};
 
 const posts = [
   {

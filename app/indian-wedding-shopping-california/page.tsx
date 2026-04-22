@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Indian Wedding Shopping from India | California NRI Families | CeremonyVerse",
   description: "NRI bride in California? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your CA door.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-california",
+  },
   keywords: "Indian wedding shopping California, NRI bride California, buy lehenga from India Bay Area, Indian wedding concierge California",
-}
+  openGraph: {
+    title: "Indian Wedding Shopping from India | California NRI Families | CeremonyVerse",
+    description: "NRI bride in California? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your CA door.",
+    type: "website",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-california",
+  };
 
 export default function IndianWeddingShoppingCaliforniaPage() {
   return (

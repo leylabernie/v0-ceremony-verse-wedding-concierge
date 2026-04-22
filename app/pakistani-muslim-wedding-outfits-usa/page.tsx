@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Pakistani & Muslim Wedding Outfits from India | NRI USA | CeremonyVerse",
   description: "Planning a Pakistani or Muslim wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, sharara sets, and family outfits from South Asia — delivered to your US door.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/pakistani-muslim-wedding-outfits-usa",
+  },
   keywords: "pakistani wedding outfits usa, muslim wedding outfits usa, NRI pakistani wedding, pakistani bridal lehenga usa, nikah outfit usa, walima outfit usa",
-}
+  openGraph: {
+    title: "Pakistani & Muslim Wedding Outfits from India | NRI USA | CeremonyVerse",
+    description: "Planning a Pakistani or Muslim wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, sharara sets, and family outfits from South Asia — delivered to your US door.",
+    type: "website",
+    url: "https://ceremonyverse.com/pakistani-muslim-wedding-outfits-usa",
+  };
 
 export default function PakistaniMuslimWeddingOutfitsPage() {
   return (

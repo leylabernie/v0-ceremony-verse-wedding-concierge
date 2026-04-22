@@ -6,11 +6,14 @@ export const metadata: Metadata = {
   title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide | CeremonyVerse",
   description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between. CeremonyVerse helps intercultural couples get it right.",
   keywords: "what to wear to Indian wedding as non-Indian, non-Indian wearing Indian wedding clothes, fusion Indian wedding outfit, Hindu Christian wedding outfit, intercultural Indian wedding outfits",
+  alternates: {
+    canonical: "https://ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+  },
   openGraph: {
     title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
     description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+    url: "https://ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
   },
 };
 

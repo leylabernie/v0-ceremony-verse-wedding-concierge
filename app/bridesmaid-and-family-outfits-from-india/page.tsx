@@ -2,6 +2,9 @@ export const metadata = {
   title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
   description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",
   keywords: "Indian bridesmaid outfits USA, bridesmaid lehenga from India, family outfits Indian wedding USA, coordinate Indian wedding party USA, saree bridesmaid USA, Indian wedding family coordination, NRI family outfits wedding, CeremonyVerse bridesmaid outfits",
+  alternates: {
+    canonical: "https://ceremonyverse.com/bridesmaid-and-family-outfits-from-india",
+  },
   openGraph: {
     title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
     description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",

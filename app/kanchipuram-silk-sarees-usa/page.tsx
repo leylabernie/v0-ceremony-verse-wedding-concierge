@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
   description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
+  },
   keywords: "Kanchipuram silk sarees USA, buy Kanchipuram saree online USA, pure silk saree from India delivered USA, NRI Kanchipuram saree, South Indian wedding saree USA, Kanchi pattu saree USA, authentic Kanchipuram silk NRI, Kanchipuram saree delivered USA, CeremonyVerse Kanchipuram",
-}
+  openGraph: {
+    title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
+    description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
+    type: "website",
+    url: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
+  };
 
 export default function KanchipuramSareesPage() {
   const sarees = [

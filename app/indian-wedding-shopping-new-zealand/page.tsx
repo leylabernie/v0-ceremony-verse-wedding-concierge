@@ -3,8 +3,16 @@ import { SeoNav } from "@/components/seo-nav"
 export const metadata = {
   title: "Indian Wedding Shopping from India | New Zealand NRI Families | CeremonyVerse",
   description: "NRI bride in New Zealand? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NZ door.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-new-zealand",
+  },
   keywords: "Indian wedding shopping New Zealand, NRI bride New Zealand, buy lehenga from India Auckland, Indian wedding concierge New Zealand, Indian wedding Auckland Wellington",
-}
+  openGraph: {
+    title: "Indian Wedding Shopping from India | New Zealand NRI Families | CeremonyVerse",
+    description: "NRI bride in New Zealand? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NZ door.",
+    type: "website",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-new-zealand",
+  };
 
 export default function IndianWeddingShoppingNewZealandPage() {
   return (

@@ -5,8 +5,16 @@ import { CustomsCalculator } from "@/components/customs-calculator"
 export const metadata = {
   title: "Indian Wedding Concierge Pricing | CeremonyVerse",
   description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
+  alternates: {
+    canonical: "https://ceremonyverse.com/pricing",
+  },
   keywords: "indian wedding concierge pricing, NRI wedding sourcing cost, bridal concierge india usa, indian wedding outfit sourcing fee, ceremonyverse pricing",
-}
+  openGraph: {
+    title: "Indian Wedding Concierge Pricing | CeremonyVerse",
+    description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
+    type: "website",
+    url: "https://ceremonyverse.com/pricing",
+  };
 
 const WA_LINK = "https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
 
@@ -156,7 +164,7 @@ export default function PricingPage() {
                 border: tier.featured ? "2px solid #c7b28a" : "1px solid #e6dfd5",
                 position: "relative",
                 boxShadow: tier.featured ? "0 4px 24px rgba(199,178,138,0.18)" : "none",
-              }}
+              };
             >
               {tier.badge && (
                 <div style={{
@@ -173,7 +181,7 @@ export default function PricingPage() {
                   padding: "4px 16px",
                   borderRadius: "999px",
                   whiteSpace: "nowrap",
-                }}>
+                };>
                   {tier.badge}
                 </div>
               )}
@@ -209,7 +217,7 @@ export default function PricingPage() {
                   fontSize: "14px",
                   fontWeight: 600,
                   textDecoration: "none",
-                }}
+                };
               >
                 {tier.cta}
               </a>
@@ -261,7 +269,7 @@ export default function PricingPage() {
                   borderBottom: i < 3 ? "1px solid #e6dfd5" : "none",
                   flexWrap: "wrap",
                   gap: "6px",
-                }}
+                };
               >
                 <div>
                   <span style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f" }}>{row.label}</span>
@@ -298,7 +306,7 @@ export default function PricingPage() {
                   gridTemplateColumns: "1fr 2fr",
                   gap: "16px",
                   alignItems: "center",
-                }}
+                };
               >
                 <div>
                   <p style={{ fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#c7b28a", fontWeight: 500, marginBottom: "4px" }}>
