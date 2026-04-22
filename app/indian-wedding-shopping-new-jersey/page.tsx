@@ -12,7 +12,8 @@ export const metadata = {
     description: "NRI bride in New Jersey? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NJ door.",
     type: "website",
     url: "https://ceremonyverse.com/indian-wedding-shopping-new-jersey",
-  };
+  },
+};
 
 export default function IndianWeddingShoppingNewJerseyPage() {
   return (

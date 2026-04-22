@@ -12,7 +12,8 @@ export const metadata = {
     description: "Indian wedding in the UK? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to London, Leicester, Birmingham, or anywhere in the UK.",
     type: "website",
     url: "https://ceremonyverse.com/indian-wedding-shopping-uk",
-  };
+  },
+};
 
 export default function IndianWeddingShoppingUKPage() {
   return (

@@ -12,7 +12,8 @@ export const metadata = {
     description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door. NRI wedding specialists.",
     type: "website",
     url: "https://ceremonyverse.com/sangeet-outfits-usa",
-  };
+  },
+};
 
 export default function SangeetOutfitsPage() {
   return (

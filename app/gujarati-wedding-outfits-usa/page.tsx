@@ -12,7 +12,8 @@ export const metadata = {
     description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/gujarati-wedding-outfits-usa",
-  };
+  },
+};
 
 export default function GujaratiWeddingOutfitsPage() {
   return (

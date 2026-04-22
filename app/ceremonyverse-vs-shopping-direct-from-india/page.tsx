@@ -12,7 +12,8 @@ export const metadata = {
     description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
     type: "website",
     url: "https://ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
-  };
+  },
+};
 
 const comparisonRows = [
   {

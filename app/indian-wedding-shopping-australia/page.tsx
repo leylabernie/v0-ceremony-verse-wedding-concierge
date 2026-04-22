@@ -12,7 +12,8 @@ export const metadata = {
     description: "NRI bride in Australia? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your Australian door.",
     type: "website",
     url: "https://ceremonyverse.com/indian-wedding-shopping-australia",
-  };
+  },
+};
 
 export default function IndianWeddingShoppingAustraliaPage() {
   return (

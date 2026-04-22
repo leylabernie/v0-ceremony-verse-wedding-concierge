@@ -12,7 +12,8 @@ export const metadata = {
     description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
-  };
+  },
+};
 
 export default function PunjabiSikhWeddingOutfitsPage() {
   return (

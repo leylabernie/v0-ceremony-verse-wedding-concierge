@@ -12,7 +12,8 @@ export const metadata = {
     description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
-  };
+  },
+};
 
 export default function KanchipuramSareesPage() {
   const sarees = [

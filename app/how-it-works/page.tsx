@@ -11,7 +11,8 @@ export const metadata = {
     description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/how-it-works",
-  };
+  },
+};
 
 const steps = [
   {
@@ -118,7 +119,7 @@ export default function HowItWorksPage() {
             color: "#c7b28a",
             marginBottom: "14px",
             fontWeight: 500,
-          };
+          }}
         >
           Our Process
         </p>
@@ -130,7 +131,7 @@ export default function HowItWorksPage() {
             color: "#1f1f1f",
             lineHeight: 1.12,
             marginBottom: "22px",
-          };
+          }}
         >
           How CeremonyVerse works — from your vision to your door.
         </h1>
@@ -143,7 +144,7 @@ export default function HowItWorksPage() {
             marginBottom: "32px",
             maxWidth: "600px",
             margin: "0 auto 32px",
-          };
+          }}
         >
           Six clear steps. No guesswork. You see and approve everything before it ships — because your wedding outfits are too important for surprises.
         </p>
@@ -161,7 +162,7 @@ export default function HowItWorksPage() {
                 alignItems: "flex-start",
                 padding: "32px 0",
                 borderBottom: i < steps.length - 1 ? "1px solid #e6dfd5" : "none",
-              };
+              }}
             >
               <div
                 style={{
@@ -172,7 +173,7 @@ export default function HowItWorksPage() {
                   lineHeight: 1,
                   minWidth: "52px",
                   flexShrink: 0,
-                };
+                }}
               >
                 {step.number}
               </div>
@@ -185,7 +186,7 @@ export default function HowItWorksPage() {
                     color: "#1f1f1f",
                     marginBottom: "10px",
                     lineHeight: 1.25,
-                  };
+                  }}
                 >
                   {step.title}
                 </h2>
@@ -195,7 +196,7 @@ export default function HowItWorksPage() {
                     fontSize: "15px",
                     lineHeight: 1.7,
                     color: "#6a5c55",
-                  };
+                  }}
                 >
                   {step.description}
                 </p>
@@ -217,7 +218,7 @@ export default function HowItWorksPage() {
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
-            };
+            }}
           >
             Everything You Need
           </p>
@@ -229,7 +230,7 @@ export default function HowItWorksPage() {
               color: "#1f1f1f",
               textAlign: "center",
               marginBottom: "36px",
-            };
+            }}
           >
             What we source
           </h2>
@@ -242,7 +243,7 @@ export default function HowItWorksPage() {
                   borderRadius: "14px",
                   padding: "24px",
                   border: "1px solid #e6dfd5",
-                };
+                }}
               >
                 <h3
                   style={{
@@ -251,7 +252,7 @@ export default function HowItWorksPage() {
                     fontSize: "14px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
-                  };
+                  }}
                 >
                   {item.title}
                 </h3>
@@ -261,7 +262,7 @@ export default function HowItWorksPage() {
                     fontSize: "13px",
                     lineHeight: 1.6,
                     color: "#6a5c55",
-                  };
+                  }}
                 >
                   {item.desc}
                 </p>
@@ -283,7 +284,7 @@ export default function HowItWorksPage() {
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
-            };
+            }}
           >
             Simple Pricing
           </p>
@@ -295,7 +296,7 @@ export default function HowItWorksPage() {
               color: "#1f1f1f",
               textAlign: "center",
               marginBottom: "36px",
-            };
+            }}
           >
             Service tiers
           </h2>
@@ -309,7 +310,7 @@ export default function HowItWorksPage() {
                   padding: "28px 24px",
                   border: "1px solid #e6dfd5",
                   textAlign: "center",
-                };
+                }}
               >
                 <p
                   style={{
@@ -320,7 +321,7 @@ export default function HowItWorksPage() {
                     color: "#c7b28a",
                     fontWeight: 600,
                     marginBottom: "8px",
-                  };
+                  }}
                 >
                   {tier.name}
                 </p>
@@ -331,7 +332,7 @@ export default function HowItWorksPage() {
                     fontWeight: 600,
                     color: "#1f1f1f",
                     marginBottom: "12px",
-                  };
+                  }}
                 >
                   {tier.price}
                 </p>
@@ -341,7 +342,7 @@ export default function HowItWorksPage() {
                     fontSize: "13px",
                     lineHeight: 1.6,
                     color: "#6a5c55",
-                  };
+                  }}
                 >
                   {tier.description}
                 </p>
@@ -362,7 +363,7 @@ export default function HowItWorksPage() {
               color: "#1f1f1f",
               textAlign: "center",
               marginBottom: "32px",
-            };
+            }}
           >
             Frequently asked questions
           </h2>
@@ -375,7 +376,7 @@ export default function HowItWorksPage() {
                   fontSize: "14px",
                   color: "#1f1f1f",
                   marginBottom: "8px",
-                };
+                }}
               >
                 {item.q}
               </h3>
@@ -385,7 +386,7 @@ export default function HowItWorksPage() {
                   fontSize: "13px",
                   lineHeight: 1.6,
                   color: "#6a5c55",
-                };
+                }}
               >
                 {item.a}
               </p>
@@ -404,7 +405,7 @@ export default function HowItWorksPage() {
               fontWeight: 600,
               color: "#1f1f1f",
               marginBottom: "14px",
-            };
+            }}
           >
             Ready to get started?
           </h2>
@@ -415,7 +416,7 @@ export default function HowItWorksPage() {
               lineHeight: 1.7,
               color: "#6a5c55",
               marginBottom: "28px",
-            };
+            }}
           >
             Book a free consultation — no commitment, no pressure. Or message us directly on WhatsApp.
           </p>
@@ -432,7 +433,7 @@ export default function HowItWorksPage() {
                 fontSize: "14px",
                 fontWeight: 600,
                 textDecoration: "none",
-              };
+              }}
             >
               Book Free Consultation
             </a>
@@ -451,7 +452,7 @@ export default function HowItWorksPage() {
                 fontWeight: 600,
                 textDecoration: "none",
                 border: "1px solid #c7b28a",
-              };
+              }}
             >
               WhatsApp +1 (215) 341-9990
             </a>

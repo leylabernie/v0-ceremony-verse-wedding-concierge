@@ -12,7 +12,8 @@ export const metadata = {
     description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
     type: "website",
     url: "https://ceremonyverse.com/services/bridal-lehengas",
-  };
+  },
+};
 
 export default function BridalLehengaServicePage() {
   return (

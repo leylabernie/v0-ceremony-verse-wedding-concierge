@@ -12,7 +12,8 @@ export const metadata = {
     description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
     type: "website",
     url: "https://ceremonyverse.com/real-weddings",
-  };
+  },
+};
 
 const weddingStories = [
   {

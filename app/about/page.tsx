@@ -11,7 +11,8 @@ export const metadata = {
     description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
     type: "website",
     url: "https://ceremonyverse.com/about",
-  };
+  },
+};
 
 export default function AboutPage() {
   return (

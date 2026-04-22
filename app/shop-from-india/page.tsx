@@ -48,7 +48,7 @@ export default function ShopFromIndiaPage() {
                 "Now booking clients for August 2026 weddings.",
             },
           }),
-        };
+        }}
       />
 
       {/* HERO */}

@@ -60,7 +60,7 @@ export default function NriWeddingShoppingGuide() {
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               marginBottom: "1rem",
-            };
+            }}
           >
             CeremonyVerse · April 2026 · NRI Wedding Guide
           </p>
@@ -72,7 +72,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#f8f6f2",
               lineHeight: 1.25,
               margin: "0 0 1.5rem",
-            };
+            }}
           >
             The Complete Guide: How NRI Families Shop for Indian Weddings from the US
           </h1>
@@ -90,7 +90,7 @@ export default function NriWeddingShoppingGuide() {
             fontSize: "1.05rem",
             lineHeight: 1.8,
             color: "#2f2f2f",
-          };
+          }}
         >
           <p>
             You are planning an Indian wedding from across the ocean. The guest list spans two continents. The ceremonies span three days. The outfit requirements — for the bride, the groom, both families, the bridesmaids, the groomsmen, and possibly even the family dog — span every category of Indian textile artistry you can imagine.
@@ -125,7 +125,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             Why Shopping for an Indian Wedding from the US Is So Hard
           </h2>
@@ -141,7 +141,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Distance and the inability to touch
           </h3>
@@ -157,7 +157,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Trust without proximity
           </h3>
@@ -173,7 +173,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Sizing across two systems
           </h3>
@@ -189,7 +189,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             US customs complexity
           </h3>
@@ -205,7 +205,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Coordination across families and time zones
           </h3>
@@ -226,7 +226,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             The Three Ways NRI Families Source Wedding Outfits
           </h2>
@@ -242,7 +242,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Option 1: US boutiques — convenient but expensive and limited
           </h3>
@@ -258,7 +258,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Option 2: Buying direct from India — best prices, highest risk
           </h3>
@@ -274,7 +274,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Option 3: A sourcing concierge — structured, verified, and accountable
           </h3>
@@ -294,7 +294,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             What You Need to Source for an Indian Wedding
           </h2>
@@ -310,7 +310,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Bridal lehenga or saree
           </h3>
@@ -326,7 +326,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Groom sherwani and wedding suit
           </h3>
@@ -342,7 +342,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Bridesmaids
           </h3>
@@ -358,7 +358,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Groomsmen
           </h3>
@@ -374,7 +374,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Both families — mothers, fathers, siblings
           </h3>
@@ -390,7 +390,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Jewelry
           </h3>
@@ -406,7 +406,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Ceremonial items — puja thalis, kalash, mandap accessories
           </h3>
@@ -422,7 +422,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Return gifts and favors
           </h3>
@@ -438,7 +438,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Welcome bags
           </h3>
@@ -454,7 +454,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Sweets and mithai
           </h3>
@@ -470,7 +470,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Pet outfits
           </h3>
@@ -487,7 +487,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             The Ideal Timeline: When to Start Sourcing
           </h2>
@@ -506,7 +506,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             12 months out — establish your sourcing plan
           </h3>
@@ -522,7 +522,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             9 months out — finalize bridal and key anchor pieces
           </h3>
@@ -538,7 +538,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             6 months out — all clothing finalized and in production
           </h3>
@@ -554,7 +554,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             3 months out — shipments arriving, alterations beginning
           </h3>
@@ -571,7 +571,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             How Live Video Shopping Works
           </h2>
@@ -608,7 +608,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             How to Take Measurements for Indian Outfits
           </h2>
@@ -654,7 +654,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             Understanding Customs Duties and Shipping in 2026
           </h2>
@@ -670,7 +670,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             De minimis exemption: eliminated for commercial shipments
           </h3>
@@ -686,7 +686,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Current duty rates: 12–27% on Indian textiles
           </h3>
@@ -702,7 +702,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Section 122 surcharge
           </h3>
@@ -718,7 +718,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Personal baggage exemption: $800 still applies
           </h3>
@@ -734,7 +734,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Shipping methods and insurance
           </h3>
@@ -751,7 +751,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             How to Avoid Getting Scammed
           </h2>
@@ -767,7 +767,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Red flags — walk away if you see these
           </h3>
@@ -788,7 +788,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Green flags — what trustworthy sourcing looks like
           </h3>
@@ -809,7 +809,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             What a Concierge Actually Does (And Doesn&rsquo;t Do)
           </h2>
@@ -831,7 +831,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Vendor vetting
           </h3>
@@ -847,7 +847,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Live video shopping sessions
           </h3>
@@ -863,7 +863,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Measurement management
           </h3>
@@ -879,7 +879,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Production monitoring and quality inspection
           </h3>
@@ -895,7 +895,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Shipping coordination and customs documentation
           </h3>
@@ -911,7 +911,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Fit guarantee
           </h3>
@@ -928,7 +928,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             Real Cost Examples
           </h2>
@@ -960,7 +960,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             Cultural Considerations by Community
           </h2>
@@ -976,7 +976,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Gujarati weddings
           </h3>
@@ -992,7 +992,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Punjabi and Sikh weddings
           </h3>
@@ -1008,7 +1008,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             South Indian Christian weddings
           </h3>
@@ -1024,7 +1024,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Intercultural and fusion weddings
           </h3>
@@ -1044,7 +1044,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             Frequently Asked Questions
           </h2>
@@ -1057,7 +1057,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             How far in advance should we contact CeremonyVerse?
           </h3>
@@ -1073,7 +1073,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Do you only serve families in the US?
           </h3>
@@ -1089,7 +1089,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             What if I am not happy with the outfit when it arrives?
           </h3>
@@ -1105,7 +1105,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Can I see pricing before committing?
           </h3>
@@ -1121,7 +1121,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             What if family members in India want to be involved in the shopping?
           </h3>
@@ -1137,7 +1137,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             How do customs duties work, practically speaking?
           </h3>
@@ -1153,7 +1153,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Is it possible to do all the sourcing in one India trip?
           </h3>
@@ -1169,7 +1169,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "1.8rem",
               marginBottom: "0.6rem",
-            };
+            }}
           >
             Do you help with jewelry, gifts, and non-clothing items, or only outfits?
           </h3>
@@ -1186,7 +1186,7 @@ export default function NriWeddingShoppingGuide() {
               color: "#2f2f2f",
               marginTop: "2.5rem",
               marginBottom: "1rem",
-            };
+            }}
           >
             The Bottom Line
           </h2>
@@ -1211,7 +1211,7 @@ export default function NriWeddingShoppingGuide() {
               padding: "2rem",
               marginTop: "2.5rem",
               textAlign: "center",
-            };
+            }}
           >
             <p
               style={{
@@ -1219,7 +1219,7 @@ export default function NriWeddingShoppingGuide() {
                 fontSize: "1.4rem",
                 color: "#f8f6f2",
                 marginBottom: "0.75rem",
-              };
+              }}
             >
               Ready to Start?
             </p>
@@ -1229,7 +1229,7 @@ export default function NriWeddingShoppingGuide() {
                 fontSize: "0.95rem",
                 marginBottom: "1.5rem",
                 lineHeight: 1.6,
-              };
+              }}
             >
               Tell us about your wedding — dates, family size, ceremony types, and how much you have figured out so far. We will let you know exactly how we can help and what the process looks like for your situation. No obligation, no pressure.
             </p>
@@ -1247,7 +1247,7 @@ export default function NriWeddingShoppingGuide() {
                 fontSize: "0.95rem",
                 textDecoration: "none",
                 letterSpacing: "0.03em",
-              };
+              }}
             >
               Message Us on WhatsApp
             </a>
@@ -1274,7 +1274,7 @@ export default function NriWeddingShoppingGuide() {
               marginTop: "3rem",
               paddingTop: "1.5rem",
               borderTop: "1px solid #e6dfd5",
-            };
+            }}
           >
             <p style={{ fontSize: "0.8rem", color: "#6f6a63", lineHeight: 1.7 }}>
               <strong>Sources &amp; further reading:</strong>{" "}

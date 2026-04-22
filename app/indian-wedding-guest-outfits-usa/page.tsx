@@ -12,7 +12,8 @@ export const metadata = {
     description: "Need Indian wedding guest outfits in the USA? CeremonyVerse sources lehengas, sarees, anarkalis, and sherwanis from India — live video shopping, custom stitching, delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/indian-wedding-guest-outfits-usa",
-  };
+  },
+};
 
 export default function IndianWeddingGuestOutfitsPage() {
   return (

@@ -12,7 +12,8 @@ export const metadata = {
     description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
     type: "website",
     url: "https://ceremonyverse.com/mehndi-outfits-usa",
-  };
+  },
+};
 
 export default function MehndiOutfitsPage() {
   return (

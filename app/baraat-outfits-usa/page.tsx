@@ -12,7 +12,8 @@ export const metadata = {
     description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
     type: "website",
     url: "https://ceremonyverse.com/baraat-outfits-usa",
-  };
+  },
+};
 
 export default function BaraatOutfitsPage() {
   return (

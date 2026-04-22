@@ -12,7 +12,8 @@ export const metadata = {
     description: "Planning a South Indian Christian wedding in the USA? CeremonyVerse sources Kerala Christian sarees, Kanchipuram silk, bridesmaids outfits, and bridal wear from India — delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/south-indian-christian-wedding-outfits-usa",
-  };
+  },
+};
 
 export default function SouthIndianChristianWeddingOutfitsPage() {
   return (

@@ -12,7 +12,8 @@ export const metadata = {
     description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
     type: "website",
     url: "https://ceremonyverse.com/services/intercultural-indian-weddings",
-  };
+  },
+};
 
 export default function InterculturalWeddingPage() {
   return (

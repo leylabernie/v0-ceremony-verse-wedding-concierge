@@ -12,7 +12,8 @@ export const metadata = {
     description: "Planning a Bengali wedding in the USA? CeremonyVerse sources authentic Banarasi silk sarees, bridal lehengas, sherwanis, and family outfits from India — delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/bengali-wedding-outfits-usa",
-  };
+  },
+};
 
 export default function BengaliWeddingOutfitsPage() {
   return (
