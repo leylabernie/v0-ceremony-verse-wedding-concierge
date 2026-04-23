@@ -14,8 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/buy-indian-wedding-outfits-from-india", priority: 0.9, changeFrequency: "monthly" as const },
 
     // Service pages
+    { path: "/services", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/services/bridal-lehengas", priority: 0.9, changeFrequency: "monthly" as const },
     { path: "/services/intercultural-indian-weddings", priority: 0.8, changeFrequency: "monthly" as const },
+
+    // Contact page
+    { path: "/contact", priority: 0.9, changeFrequency: "monthly" as const },
 
     // Ceremony & outfit landing pages
     { path: "/mehndi-outfits-usa", priority: 0.8, changeFrequency: "monthly" as const },
