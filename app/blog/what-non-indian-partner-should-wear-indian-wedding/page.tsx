@@ -28,8 +28,20 @@ export const metadata: Metadata = {
 };
 
 export default function NonIndianPartnerIndianWeddingBlogPost() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
+    "description": "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between. CeremonyVerse helps intercultural couples get it right.",
+    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
+    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
+    "datePublished": "2026-03-01",
+    "dateModified": "2026-04-23",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding" }
+  };
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

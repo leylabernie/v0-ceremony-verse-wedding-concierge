@@ -28,8 +28,20 @@ export const metadata: Metadata = {
 };
 
 export default function HowManyOutfitsForIndianWeddingBlogPost() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide",
+    "description": "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
+    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
+    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
+    "datePublished": "2026-03-01",
+    "dateModified": "2026-04-23",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/how-many-outfits-for-indian-wedding" }
+  };
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

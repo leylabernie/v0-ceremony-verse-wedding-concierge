@@ -28,8 +28,20 @@ export const metadata: Metadata = {
 };
 
 export default function NriWeddingPlanningTimeline() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The NRI Wedding Planning Timeline: When to Order Everything from India",
+    "description": "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
+    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
+    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
+    "datePublished": "2026-03-01",
+    "dateModified": "2026-04-23",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline" }
+  };
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
