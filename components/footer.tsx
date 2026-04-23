@@ -47,14 +47,14 @@ export function Footer({ onNavigate }: FooterProps) {
 
           {/* Brand */}
           <div className="md:col-span-1">
-            <button onClick={() => onNavigate("home")} className="text-left mb-4">
+            <a href="/" onClick={(e) => { e.preventDefault(); onNavigate("home") }} className="text-left mb-4 block">
               <span className="text-xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
                 CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
               </span>
               <p className="text-[10px] tracking-widest text-[#8a6f63] mt-1 uppercase">
                 Authentic Indian Wedding Shopping for NRI Families
               </p>
-            </button>
+            </a>
             <p className="text-sm text-[#6a5c55] leading-relaxed">
               The Indian wedding shopping concierge for NRI families worldwide. We source authentic outfits, jewelry, and gifts directly from India — with live video approval before anything ships — and deliver to your door in the USA, Canada, UK, Australia & New Zealand.
             </p>
@@ -120,53 +120,55 @@ export function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          {/* Services */}
+          {/* Services — now uses <a> tags for SEO crawlability */}
           <div>
             <p className="text-xs tracking-widest text-[#8a6f63] uppercase font-medium mb-4">Services</p>
             <ul className="space-y-2">
               {[
-                { label: "Bridal Outfits", page: "bridal" as PageType },
-                { label: "Groom Attire", page: "groom" as PageType },
-                { label: "Bridesmaid Outfits", page: "bridesmaids" as PageType },
-                { label: "Family Outfits", page: "family" as PageType },
-                { label: "Jewelry & Accessories", page: "jewelry" as PageType },
-                { label: "Pet Outfits", page: "pets" as PageType },
-                { label: "Ceremonial Items", page: "ceremonial" as PageType },
-                { label: "Gifts & Welcome Bags", page: "gifts" as PageType },
+                { label: "Bridal Outfits", href: "/services/bridal-lehengas" },
+                { label: "Groom Attire", href: "/buy-sherwani-from-india-usa" },
+                { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india" },
+                { label: "Family Outfits", href: "/bridesmaid-and-family-outfits-from-india" },
+                { label: "Jewelry & Accessories", href: "/wedding-accessories-and-ceremony-items-from-india" },
+                { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india" },
+                { label: "Gifts & Welcome Bags", href: "/wedding-accessories-and-ceremony-items-from-india" },
               ].map((item) => (
                 <li key={item.label}>
-                  <button
-                    onClick={() => onNavigate(item.page)}
+                  <a
+                    href={item.href}
                     className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left"
                   >
                     {item.label}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company — now uses <a> tags for SEO crawlability */}
           <div>
             <p className="text-xs tracking-widest text-[#8a6f63] uppercase font-medium mb-4">Company</p>
             <ul className="space-y-2">
-              {[
-                { label: "How It Works", page: "journey" as PageType },
-                { label: "FAQ / Trust Center", page: "faq" as PageType },
-                { label: "Blog & Guides", page: "blog" as PageType },
-                { label: "Book Consultation", page: "contact" as PageType },
-                { label: "Privacy Policy", page: "privacy" as PageType },
-                { label: "Terms of Service", page: "terms" as PageType },
-              ].map((item) => (
-                <li key={item.label}>
-                  <button
-                    onClick={() => onNavigate(item.page)}
-                    className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left"
-                  >
-                    {item.label}
-                  </button>
-                </li>
-              ))}
+              <li>
+                <a href="/how-it-works" className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left">
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a href="/how-it-works#faq" className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left">
+                  FAQ / Trust Center
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left">
+                  Blog & Guides
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" className="text-sm text-[#6a5c55] hover:text-[#c7b28a] transition text-left">
+                  Book Consultation
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -254,13 +256,13 @@ export function Footer({ onNavigate }: FooterProps) {
         <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-[#e6dfd5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8a6f63]">
           <p>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <button onClick={() => onNavigate("privacy")} className="hover:text-[#c7b28a] transition">
+            <a href="/how-it-works" onClick={(e) => { e.preventDefault(); onNavigate("privacy") }} className="hover:text-[#c7b28a] transition">
               Privacy Policy
-            </button>
+            </a>
             <span>·</span>
-            <button onClick={() => onNavigate("terms")} className="hover:text-[#c7b28a] transition">
+            <a href="/how-it-works" onClick={(e) => { e.preventDefault(); onNavigate("terms") }} className="hover:text-[#c7b28a] transition">
               Terms of Service
-            </button>
+            </a>
           </div>
         </div>
       </div>
