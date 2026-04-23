@@ -185,7 +185,7 @@ export default function RootLayout({
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ceremonyverse.com" },
       { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ceremonyverse.com/services/bridal-lehengas" },
-      { "@type": "ListItem", "position": 3, "name": "Book Consultation", "item": "https://www.ceremonyverse.com/#contact" }
+      { "@type": "ListItem", "position": 3, "name": "Book Consultation", "item": "https://www.ceremonyverse.com/contact" }
     ]
   };
 

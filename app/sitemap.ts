@@ -52,6 +52,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/free-guides", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/real-weddings", priority: 0.8, changeFrequency: "monthly" as const },
     { path: "/press", priority: 0.6, changeFrequency: "monthly" as const },
+    { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
 
     // Blog index
     { path: "/blog", priority: 0.8, changeFrequency: "weekly" as const },

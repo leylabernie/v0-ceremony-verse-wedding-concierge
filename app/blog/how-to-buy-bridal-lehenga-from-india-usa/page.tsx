@@ -215,7 +215,7 @@ export default function LehengaBuyingGuideBlogPost() {
               CeremonyVerse is a US-based Indian wedding shopping concierge that specializes in exactly this: sourcing bridal lehengas, family outfits, and trousseau pieces from India for NRI brides and families across the United States. We do live video shopping, handle the logistics, and stay with you through every step.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#c7b28a", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation

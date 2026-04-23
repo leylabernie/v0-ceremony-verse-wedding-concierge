@@ -256,11 +256,11 @@ export function Footer({ onNavigate }: FooterProps) {
         <div className="max-w-6xl mx-auto mt-6 pt-6 border-t border-[#e6dfd5] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#8a6f63]">
           <p>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a href="/how-it-works" onClick={(e) => { e.preventDefault(); onNavigate("privacy") }} className="hover:text-[#c7b28a] transition">
+            <a href="/privacy" onClick={(e) => { e.preventDefault(); onNavigate("privacy") }} className="hover:text-[#c7b28a] transition">
               Privacy Policy
             </a>
             <span>·</span>
-            <a href="/how-it-works" onClick={(e) => { e.preventDefault(); onNavigate("terms") }} className="hover:text-[#c7b28a] transition">
+            <a href="/terms" onClick={(e) => { e.preventDefault(); onNavigate("terms") }} className="hover:text-[#c7b28a] transition">
               Terms of Service
             </a>
           </div>

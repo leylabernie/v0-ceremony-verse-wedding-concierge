@@ -240,7 +240,7 @@ export default function NriWeddingPlanningTimeline() {
               Book a free consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#c7b28a", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation

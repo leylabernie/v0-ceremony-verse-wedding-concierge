@@ -203,7 +203,7 @@ export default function SouthIndianChristianWeddingGuide() {
               Book a free consultation. Tell us your ceremony schedule, family structure, and budget — we&apos;ll handle the rest.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#c7b28a", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation

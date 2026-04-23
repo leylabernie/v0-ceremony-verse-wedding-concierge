@@ -187,7 +187,7 @@ export default function LehengaCostBlogPost() {
             By the time that lehenga sits on a rack in a New Jersey boutique, it may have tripled or quadrupled in price from what the artisan was paid. A sourcing concierge — operating in India, working directly with artisans and workshops — cuts out the importer and boutique layers entirely. You pay artisan prices plus a transparent service fee, and still come out well ahead.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            This is the model <Link href="/how-to-buy-bridal-lehenga-from-india-usa" style={{ color: "#c7b28a" }}>explained in detail in our lehenga buying guide</Link> — and why NRI brides increasingly choose to source from India rather than shop locally.
+            This is the model <Link href="/blog/how-to-buy-bridal-lehenga-from-india-usa" style={{ color: "#c7b28a" }}>explained in detail in our lehenga buying guide</Link> — and why NRI brides increasingly choose to source from India rather than shop locally.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

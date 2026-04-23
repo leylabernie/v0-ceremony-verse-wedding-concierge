@@ -363,7 +363,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* FAQ */}
-      <section style={{ padding: "48px 24px 64px", background: "#fff" }}>
+      <section id="faq" style={{ padding: "48px 24px 64px", background: "#fff" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <h2
             style={{
