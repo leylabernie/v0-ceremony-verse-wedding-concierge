@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
   keywords: "NRI wedding planning timeline, when to order Indian wedding outfit USA, Indian wedding outfit timeline, NRI bride checklist, how early to order lehenga from India",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog/nri-wedding-planning-timeline",
+    canonical: "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
   },
   openGraph: {
     title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
     description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
     type: "article",
-    url: "https://ceremonyverse.com/blog/nri-wedding-planning-timeline",
+    url: "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

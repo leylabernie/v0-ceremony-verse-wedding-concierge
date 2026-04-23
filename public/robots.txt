@@ -23,4 +23,4 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-Sitemap: https://ceremonyverse.com/sitemap.xml
+Sitemap: https://www.ceremonyverse.com/sitemap.xml

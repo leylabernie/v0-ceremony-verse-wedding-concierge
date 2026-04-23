@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
   keywords: "how to buy lehenga from India, buy bridal lehenga from India USA, NRI bride lehenga India, lehenga from India delivered USA",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+    canonical: "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
   },
   openGraph: {
     title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
     description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
     type: "article",
-    url: "https://ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+    url: "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

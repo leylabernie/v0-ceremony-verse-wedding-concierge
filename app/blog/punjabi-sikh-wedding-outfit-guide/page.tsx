@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
   keywords: "punjabi wedding outfit guide, sikh wedding what to wear, anand karaj bridal outfit, punjabi wedding ceremonies outfits, NRI punjabi wedding guide",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+    canonical: "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
   },
   openGraph: {
     title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
     description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
     type: "article",
-    url: "https://ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+    url: "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

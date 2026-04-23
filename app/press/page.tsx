@@ -5,18 +5,18 @@ export const metadata = {
   title: "Press & Media — CeremonyVerse | Indian Wedding Shopping Concierge",
   description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
   alternates: {
-    canonical: "https://ceremonyverse.com/press",
+    canonical: "https://www.ceremonyverse.com/press",
   },
   keywords: "CeremonyVerse press, CeremonyVerse media, NRI wedding concierge press, Indian wedding shopping press kit, Bhamini CeremonyVerse founder, indian wedding media",
   openGraph: {
     title: "Press & Media — CeremonyVerse | Indian Wedding Shopping Concierge",
     description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
     type: "website",
-    url: "https://ceremonyverse.com/press",
+    url: "https://www.ceremonyverse.com/press",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
@@ -58,7 +58,7 @@ const quickFacts = [
   { label: "Headquarters", value: "Philadelphia, PA, USA" },
   { label: "What", value: "Indian wedding shopping concierge" },
   { label: "Markets", value: "USA, Canada, UK, Australia, New Zealand" },
-  { label: "Website", value: "ceremonyverse.com", href: "https://ceremonyverse.com" },
+  { label: "Website", value: "ceremonyverse.com", href: "https://www.ceremonyverse.com" },
   { label: "Press Contact", value: "bhamini@ceremonyverse.com", href: "mailto:bhamini@ceremonyverse.com" },
 ]
 

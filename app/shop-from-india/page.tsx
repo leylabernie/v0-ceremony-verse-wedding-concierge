@@ -6,17 +6,17 @@ export const metadata = {
   description:
     "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
   alternates: {
-    canonical: "https://ceremonyverse.com/shop-from-india",
+    canonical: "https://www.ceremonyverse.com/shop-from-india",
   },
   openGraph: {
     title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
     description: "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
     type: "website",
-    url: "https://ceremonyverse.com/shop-from-india",
+    url: "https://www.ceremonyverse.com/shop-from-india",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
@@ -38,7 +38,7 @@ export default function ShopFromIndiaPage() {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             name: "CeremonyVerse",
-            url: "https://ceremonyverse.com/shop-from-india",
+            url: "https://www.ceremonyverse.com/shop-from-india",
             description:
               "Indian wedding outfit sourcing service with live video shopping from trusted artisan workshops in India.",
             areaServed: {

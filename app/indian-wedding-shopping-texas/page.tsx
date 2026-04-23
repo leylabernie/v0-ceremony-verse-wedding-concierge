@@ -5,18 +5,18 @@ export const metadata = {
   title: "Indian Wedding Shopping from India | Texas NRI Families | CeremonyVerse",
   description: "NRI bride in Texas? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your TX door.",
   alternates: {
-    canonical: "https://ceremonyverse.com/indian-wedding-shopping-texas",
+    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-texas",
   },
   keywords: "Indian wedding shopping Texas, NRI bride Texas, buy lehenga from India Texas, Indian wedding concierge Houston Dallas",
   openGraph: {
     title: "Indian Wedding Shopping from India | Texas NRI Families | CeremonyVerse",
     description: "NRI bride in Texas? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your TX door.",
     type: "website",
-    url: "https://ceremonyverse.com/indian-wedding-shopping-texas",
+    url: "https://www.ceremonyverse.com/indian-wedding-shopping-texas",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
