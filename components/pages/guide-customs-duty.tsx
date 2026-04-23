@@ -257,12 +257,15 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
             <p className="text-white/80 mb-8 max-w-xl mx-auto">
               CeremonyVerse manages all shipping documentation, advises on customs duties upfront, and ensures full insurance on every shipment. No surprises at your door.
             </p>
-            <button
-              onClick={() => onNavigate?.("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brushed-gold text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition"
+              style={{ textDecoration: "none" }}
             >
               Book Free Consultation →
-            </button>
+            </a>
           </div>
         </div>
       </section>

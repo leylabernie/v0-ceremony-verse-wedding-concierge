@@ -365,14 +365,15 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
             <p className="text-sm mb-6" style={{ color: "var(--cv-muted)" }}>
               No commitment required. We'll review your vision, timeline, and budget.
             </p>
-            <button
-              type="button"
-              onClick={() => onNavigate("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#c7b28a", color: "#fff" }}
+              style={{ background: "#c7b28a", color: "#fff", textDecoration: "none" }}
             >
               Book Free Consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -442,14 +443,15 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
             Book a free consultation — no commitment, no pressure.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <button
-              type="button"
-              onClick={() => onNavigate("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#c7b28a", color: "#fff" }}
+              style={{ background: "#c7b28a", color: "#fff", textDecoration: "none" }}
             >
               Book Free Consultation
-            </button>
+            </a>
             <a
               href="https://www.instagram.com/ceremonyverse"
               target="_blank"

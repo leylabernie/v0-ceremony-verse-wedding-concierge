@@ -45,7 +45,7 @@ export function JewelryPage({ onNavigate }: Props) {
         <h2 className="text-3xl font-semibold mb-4">Complete your bridal look</h2>
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">From a single statement necklace to a full bridal jewelry trousseau — we source pieces that complement your lehenga and budget.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
+          <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" className="btn-primary">Book Free Consultation</a>
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20bridal%20jewelry%20sourcing." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
         </div>
       </section>

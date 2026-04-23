@@ -156,12 +156,15 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
             From outfits to gifts to ceremonial details — we manage the entire sourcing process so you don’t have to.
           </p>
 
-          <button
-            onClick={() => onNavigate("contact")}
+          <a
+            href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary"
+            style={{ textDecoration: "none" }}
           >
             Book Consultation
-          </button>
+          </a>
         </div>
       </section>
 

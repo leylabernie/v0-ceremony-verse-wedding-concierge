@@ -218,12 +218,14 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <button
-              onClick={() => onNavigate("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               Book Free Consultation
-            </button>
+            </a>
             <a
               href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20learn%20about%20the%20sourcing%20process."
               target="_blank"

@@ -217,20 +217,20 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
             {/* CTAs */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("contact")}
-                style={{ background: "#c7b28a", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer" }}
+              <a
+                href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ background: "#c7b28a", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer", textDecoration: "none", display: "inline-block" }}
               >
                 Book Free Consultation
-              </button>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("journey")}
-                style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", cursor: "pointer" }}
+              </a>
+              <a
+                href="/how-it-works"
+                style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", cursor: "pointer", textDecoration: "none", display: "inline-block" }}
               >
                 How It Works
-              </button>
+              </a>
               <a
                 href="/free-guides"
                 style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.6)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.2)", textDecoration: "none" }}
@@ -379,13 +379,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
           ))}
         </div>
 
-        <button
-          type="button"
-          onClick={() => onNavigate?.("journey")}
+        <a
+          href="/how-it-works"
           className="mt-8 inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
         >
           See Full Process →
-        </button>
+        </a>
       </section>
 
       {/* WHAT WE SOURCE — compact teaser, links to Services page */}
@@ -407,12 +406,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </span>
             ))}
           </div>
-          <button
-            onClick={() => onNavigate?.("services")}
+          <a
+            href="/services/bridal-lehengas"
             className="btn-primary"
           >
             See All Services
-          </button>
+          </a>
         </div>
       </section>
 
@@ -459,13 +458,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <p className="text-sm text-[#6a5c55] mb-4">
               Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
             </p>
-            <button
-              type="button"
-              onClick={() => onNavigate?.("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Book Free Consultation →
-            </button>
+            </a>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -500,17 +500,18 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     </li>
                   ))}
                 </ul>
-                <button
-                  type="button"
-                  onClick={() => onNavigate?.("contact")}
-                  className={`w-full py-3 rounded-full text-sm font-medium transition ${
+                <a
+                  href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full py-3 rounded-full text-sm font-medium transition text-center block ${
                     tier.featured
                       ? "bg-[#c7b28a] text-white hover:opacity-90"
                       : "border border-[#1f1f1f] text-[#1f1f1f] hover:bg-[#1f1f1f] hover:text-white"
                   }`}
                 >
                   {tier.cta}
-                </button>
+                </a>
               </div>
             ))}
           </div>
@@ -750,14 +751,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </div>
                 ))}
               </div>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("contact")}
+              <a
+                href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
-                style={{ background: "#c7b28a", color: "#fff" }}
+                style={{ background: "#c7b28a", color: "#fff", textDecoration: "none" }}
               >
                 Book a Free Consultation
-              </button>
+              </a>
             </div>
             <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
               <p className="text-[#c7b28a] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
@@ -883,14 +885,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
             ))}
           </div>
           <div className="text-center mt-10">
-            <button
-              type="button"
-              onClick={() => onNavigate?.("faq")}
+            <a
+              href="/how-it-works#faq"
               className="text-sm font-medium transition hover:opacity-70"
               style={{ color: "var(--cv-accent)" }}
             >
               See all FAQ →
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -909,13 +910,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              type="button"
-              onClick={() => onNavigate?.("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Book Free Consultation
-            </button>
+            </a>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20wedding%20sourcing%20services%20from%20CeremonyVerse."
               target="_blank"

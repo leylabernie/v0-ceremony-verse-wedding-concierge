@@ -245,15 +245,17 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
           <p className="text-midnight-navy/60 text-lg mb-14 font-sans leading-[1.8] max-w-xl mx-auto">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
-          <button
-            onClick={() => onNavigate("contact")}
+          <a
+            href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+            target="_blank"
+            rel="noopener noreferrer"
             className="group px-10 py-4 bg-transparent text-midnight-navy border border-brushed-gold font-medium rounded-full
               hover:bg-brushed-gold/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Ask Us Directly
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </section>
     </div>

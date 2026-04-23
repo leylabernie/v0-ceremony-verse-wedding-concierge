@@ -24,12 +24,15 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
             From bridal lehengas to reception looks — we find authentic, handcrafted outfits directly from India’s finest artisan workshops. Live video verification. Quality guaranteed. Delivered to your door.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() => onNavigate?.("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              style={{ textDecoration: "none" }}
             >
               Start Your Bridal Sourcing
-            </button>
+            </a>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20bridal%20outfit%20sourcing%20from%20CeremonyVerse."
               target="_blank"
@@ -154,12 +157,15 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
           Book a free 30-minute consultation. We'll review your vision, budget, and timeline — no commitment required.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => onNavigate?.("contact")}
+          <a
+            href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            style={{ textDecoration: "none" }}
           >
             Book Free Consultation
-          </button>
+          </a>
           <a
             href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20bridal%20outfit%20sourcing%20from%20CeremonyVerse."
             target="_blank"

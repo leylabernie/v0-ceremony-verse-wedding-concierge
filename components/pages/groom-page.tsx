@@ -24,12 +24,15 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
             From traditional sherwanis to contemporary bandhgalas — we source authentic groom outfits with verified craftsmanship, perfect fit, and delivery to the US.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              onClick={() => onNavigate?.("contact")}
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              style={{ textDecoration: "none" }}
             >
               Start Groom Sourcing
-            </button>
+            </a>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20groom%20outfit%20sourcing%20from%20CeremonyVerse."
               target="_blank"
@@ -133,12 +136,15 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
           Book a free consultation. We'll match your style, coordinate with the bridal look, and source the right outfit — stress free.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={() => onNavigate?.("contact")}
+          <a
+            href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            style={{ textDecoration: "none" }}
           >
             Book Free Consultation
-          </button>
+          </a>
           <a
             href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20groom%20outfit%20sourcing%20from%20CeremonyVerse."
             target="_blank"
