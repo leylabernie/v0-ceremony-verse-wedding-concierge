@@ -5,17 +5,17 @@ export const metadata = {
   title: "About Bhamini — Founder of CeremonyVerse",
   description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/about",
+    canonical: "https://ceremonyverse.com/about",
   },
   openGraph: {
     title: "About Bhamini — Founder of CeremonyVerse",
     description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
     type: "website",
-    url: "https://www.ceremonyverse.com/about",
+    url: "https://ceremonyverse.com/about",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

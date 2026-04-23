@@ -5,18 +5,18 @@ export const metadata = {
   title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
   description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/services/intercultural-indian-weddings",
+    canonical: "https://ceremonyverse.com/services/intercultural-indian-weddings",
   },
   keywords: "intercultural Indian wedding outfits USA, non-Indian partner Indian wedding, Indian wedding outfit for non-South Asian groom, mixed culture Indian wedding USA, sherwani for non-Indian groom, Indian wedding guide non-Indian partner, intercultural wedding concierge USA, Indian American wedding USA",
   openGraph: {
     title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
     description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
     type: "website",
-    url: "https://www.ceremonyverse.com/services/intercultural-indian-weddings",
+    url: "https://ceremonyverse.com/services/intercultural-indian-weddings",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

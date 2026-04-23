@@ -5,17 +5,17 @@ export const metadata = {
   title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
   description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/how-it-works",
+    canonical: "https://ceremonyverse.com/how-it-works",
   },
   openGraph: {
     title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
     description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/how-it-works",
+    url: "https://ceremonyverse.com/how-it-works",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

@@ -5,18 +5,18 @@ export const metadata = {
   title: "Indian Wedding Shopping from India | New York NRI Families | CeremonyVerse",
   description: "NRI bride in New York? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NY door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-new-york",
   },
   keywords: "Indian wedding shopping New York, NRI bride New York, buy lehenga from India NYC, Indian wedding concierge New York",
   openGraph: {
     title: "Indian Wedding Shopping from India | New York NRI Families | CeremonyVerse",
     description: "NRI bride in New York? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NY door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-new-york",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

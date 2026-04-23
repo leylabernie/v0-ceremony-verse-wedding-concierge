@@ -3,7 +3,7 @@ export const metadata = {
   description: "Source Indian wedding jewelry, ceremonial items, welcome bags, return gifts, sweets, and more directly from India. CeremonyVerse delivers everything for your Indian wedding to your US door. Kundan jewelry, puja items, potli bags, mithai and more.",
   keywords: "Indian wedding jewelry USA, kundan jewelry from India USA, Indian wedding ceremonial items USA, puja items Indian wedding USA, Indian wedding welcome bags, potli bags USA, Indian wedding return gifts, mithai USA, Indian wedding sweets delivered USA, CeremonyVerse accessories",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india",
+    canonical: "https://ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india",
   },
   openGraph: {
     title: "Indian Wedding Jewelry, Gifts & Ceremonial Items from India | Delivered to USA | CeremonyVerse",
@@ -12,7 +12,7 @@ export const metadata = {
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

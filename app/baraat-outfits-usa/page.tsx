@@ -5,18 +5,18 @@ export const metadata = {
   title: "Baraat Outfits from India | Groom Sherwani & Groomsmen Kurta Sets | CeremonyVerse",
   description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/baraat-outfits-usa",
+    canonical: "https://ceremonyverse.com/baraat-outfits-usa",
   },
   keywords: "baraat outfit USA, baraat sherwani from India, groom baraat sherwani USA, groomsmen kurta baraat USA, baraat outfit NRI groom, Indian groom baraat outfit, sherwani for baraat delivered USA, baraat groomsmen matching sets, baraat family outfits USA, Indian baraat ceremony outfit USA",
   openGraph: {
     title: "Baraat Outfits from India | Groom Sherwani & Groomsmen Kurta Sets | CeremonyVerse",
     description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
     type: "website",
-    url: "https://www.ceremonyverse.com/baraat-outfits-usa",
+    url: "https://ceremonyverse.com/baraat-outfits-usa",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

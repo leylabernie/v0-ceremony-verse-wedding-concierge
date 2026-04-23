@@ -5,18 +5,18 @@ export const metadata = {
   title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
   description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/kanchipuram-silk-sarees-usa",
+    canonical: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
   },
   keywords: "Kanchipuram silk sarees USA, buy Kanchipuram saree online USA, pure silk saree from India delivered USA, NRI Kanchipuram saree, South Indian wedding saree USA, Kanchi pattu saree USA, authentic Kanchipuram silk NRI, Kanchipuram saree delivered USA, CeremonyVerse Kanchipuram",
   openGraph: {
     title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
     description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/kanchipuram-silk-sarees-usa",
+    url: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

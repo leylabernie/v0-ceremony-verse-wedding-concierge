@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between. CeremonyVerse helps intercultural couples get it right.",
   keywords: "what to wear to Indian wedding as non-Indian, non-Indian wearing Indian wedding clothes, fusion Indian wedding outfit, Hindu Christian wedding outfit, intercultural Indian wedding outfits",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+    canonical: "https://ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
   },
   openGraph: {
     title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
     description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+    url: "https://ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

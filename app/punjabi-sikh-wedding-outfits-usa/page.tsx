@@ -5,18 +5,18 @@ export const metadata = {
   title: "Punjabi & Sikh Wedding Outfits from India | NRI USA | CeremonyVerse",
   description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
+    canonical: "https://ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
   },
   keywords: "punjabi wedding outfits usa, sikh wedding outfits usa, NRI punjabi wedding, anand karaj bridal lehenga usa, punjabi bridal lehenga from india, sikh groom sherwani usa",
   openGraph: {
     title: "Punjabi & Sikh Wedding Outfits from India | NRI USA | CeremonyVerse",
     description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
+    url: "https://ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

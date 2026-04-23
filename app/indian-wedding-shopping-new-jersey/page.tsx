@@ -5,18 +5,18 @@ export const metadata = {
   title: "Indian Wedding Shopping from India | New Jersey NRI Families | CeremonyVerse",
   description: "NRI bride in New Jersey? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NJ door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-new-jersey",
   },
   keywords: "Indian wedding shopping New Jersey, NRI bride New Jersey, buy lehenga from India NJ, Indian wedding concierge New Jersey",
   openGraph: {
     title: "Indian Wedding Shopping from India | New Jersey NRI Families | CeremonyVerse",
     description: "NRI bride in New Jersey? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NJ door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-new-jersey",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

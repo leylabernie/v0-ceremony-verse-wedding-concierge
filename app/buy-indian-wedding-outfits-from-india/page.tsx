@@ -3,7 +3,7 @@ export const metadata = {
   description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America's trusted NRI wedding shopping concierge.",
   keywords: "buy Indian wedding outfits from India, Indian wedding shopping USA, NRI wedding outfits, source Indian wedding from USA, Indian wedding outfit concierge, South Asian wedding outfits USA, Indian wedding personal shopper, CeremonyVerse",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/buy-indian-wedding-outfits-from-india",
+    canonical: "https://ceremonyverse.com/buy-indian-wedding-outfits-from-india",
   },
   openGraph: {
     title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
@@ -12,7 +12,7 @@ export const metadata = {
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

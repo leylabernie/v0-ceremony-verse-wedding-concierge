@@ -5,18 +5,18 @@ export const metadata = {
   title: "Indian Wedding Shopping from India | Australia NRI Families | CeremonyVerse",
   description: "NRI bride in Australia? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your Australian door.",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+    canonical: "https://ceremonyverse.com/indian-wedding-shopping-australia",
   },
   keywords: "Indian wedding shopping Australia, NRI bride Australia, buy lehenga from India Sydney, Indian wedding concierge Australia, Harris Park Indian wedding",
   openGraph: {
     title: "Indian Wedding Shopping from India | Australia NRI Families | CeremonyVerse",
     description: "NRI bride in Australia? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your Australian door.",
     type: "website",
-    url: "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+    url: "https://ceremonyverse.com/indian-wedding-shopping-australia",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
   keywords: "south indian christian wedding outfits, kerala christian wedding dress, tamil christian wedding outfit, south indian christian bride, NRI south indian christian wedding",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+    canonical: "https://ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
   },
   openGraph: {
     title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
     description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+    url: "https://ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

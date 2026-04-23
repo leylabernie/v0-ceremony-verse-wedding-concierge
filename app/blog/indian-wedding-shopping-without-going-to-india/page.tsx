@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
   keywords: "Indian wedding shopping without going to India, buy Indian wedding clothes from abroad, NRI wedding shopping, how to buy Indian bridal clothes from India living abroad",
   alternates: {
-    canonical: "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+    canonical: "https://ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
   },
   openGraph: {
     title: "How to Source Your Indian Wedding Outfits from India — Without Going to India",
     description: "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
     type: "article",
-    url: "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+    url: "https://ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
   
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
