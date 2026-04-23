@@ -137,7 +137,7 @@ export default function HowItWorksPage() {
         </h1>
         <p
           style={{
-            fontFamily: "'DM Sans', sans-serif",
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "17px",
             lineHeight: 1.7,
             color: "#6a5c55",
@@ -192,7 +192,7 @@ export default function HowItWorksPage() {
                 </h2>
                 <p
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "15px",
                     lineHeight: 1.7,
                     color: "#6a5c55",
@@ -247,7 +247,7 @@ export default function HowItWorksPage() {
               >
                 <h3
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontWeight: 600,
                     fontSize: "14px",
                     color: "#1f1f1f",
@@ -258,7 +258,7 @@ export default function HowItWorksPage() {
                 </h3>
                 <p
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "13px",
                     lineHeight: 1.6,
                     color: "#6a5c55",
@@ -314,7 +314,7 @@ export default function HowItWorksPage() {
               >
                 <p
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "12px",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
@@ -338,7 +338,7 @@ export default function HowItWorksPage() {
                 </p>
                 <p
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "13px",
                     lineHeight: 1.6,
                     color: "#6a5c55",
@@ -371,7 +371,7 @@ export default function HowItWorksPage() {
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3
                 style={{
-                  fontFamily: "'DM Sans', sans-serif",
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontWeight: 600,
                   fontSize: "14px",
                   color: "#1f1f1f",
@@ -382,7 +382,7 @@ export default function HowItWorksPage() {
               </h3>
               <p
                 style={{
-                  fontFamily: "'DM Sans', sans-serif",
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontSize: "13px",
                   lineHeight: 1.6,
                   color: "#6a5c55",
@@ -411,7 +411,7 @@ export default function HowItWorksPage() {
           </h2>
           <p
             style={{
-              fontFamily: "'DM Sans', sans-serif",
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "15px",
               lineHeight: 1.7,
               color: "#6a5c55",

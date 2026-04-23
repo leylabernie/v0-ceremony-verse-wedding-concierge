@@ -86,7 +86,7 @@ export default function NriWeddingShoppingGuide() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div
           style={{
-            fontFamily: "'DM Sans', sans-serif",
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
             fontSize: "1.05rem",
             lineHeight: 1.8,
             color: "#2f2f2f",

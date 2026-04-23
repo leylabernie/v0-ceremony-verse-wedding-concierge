@@ -38,7 +38,7 @@ export default function IndianWeddingShoppingWithoutGoingToIndiaBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             Every NRI family planning an Indian wedding eventually runs into the same wall. The outfits you want — the real ones, the kind with weight and embroidery and presence — are in India. You are in the US, Canada, the UK, or Australia. And getting from here to there, in both the logistical and emotional sense, is far more complicated than anyone told you it would be.

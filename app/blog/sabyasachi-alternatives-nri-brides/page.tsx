@@ -38,7 +38,7 @@ export default function SabyasachiAlternativesBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             If you have been planning an Indian wedding for more than a week, you have already thought about Sabyasachi. Every NRI bride does. The deep jewel tones, the heavy silk, the zardozi that catches light from across a banquet hall — his aesthetic has become the dominant visual language of the Indian luxury wedding. You see it on Bollywood stars, on your Instagram feed, and in the &ldquo;goals&rdquo; folders on your phone.

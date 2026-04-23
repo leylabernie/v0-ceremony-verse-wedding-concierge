@@ -38,7 +38,7 @@ export default function NonIndianPartnerIndianWeddingBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             More Indian weddings in the US, Canada, and UK are intercultural than ever before. An Indian partner marrying someone from a different cultural background is no longer unusual — it is increasingly the norm among second-generation NRI families. And with that shift comes a question that does not have a single simple answer: what does the non-Indian partner wear?

@@ -38,7 +38,7 @@ export default function PunjabiSikhWeddingOutfitGuide() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             A Punjabi wedding is not a single event — it is a week-long celebration of family, faith, food, and fashion that unfolds across multiple ceremonies, each with its own mood, meaning, and dress code. If you are an NRI family planning a Punjabi or Sikh wedding from the US, you already know the logistical weight of this: coordinating outfits for a bride, groom, both families, bridesmaids, and groomsmen — across different cities, different time zones, and different ceremonies — is a genuinely complex undertaking.

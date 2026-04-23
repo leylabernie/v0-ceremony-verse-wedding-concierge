@@ -38,7 +38,7 @@ export default function TariffsBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             If you have been planning your Indian wedding in the US and scrolling through lehenga inspiration at midnight, you have probably hit a wall of headlines about tariffs on Indian imports. The confusion is completely understandable. In the past twelve months alone, tariff rates on Indian goods swung from 26% to 50%, then back down after a Supreme Court ruling, and now sit under a new temporary framework. It is a lot to track — and none of it was designed with NRI brides in mind.

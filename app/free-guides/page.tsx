@@ -228,7 +228,7 @@ export default function FreeGuidesPage() {
                   fontWeight: 600,
                   cursor: "pointer",
                   transition: "background 0.2s",
-                  fontFamily: "'DM Sans', sans-serif",
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
                 }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.background = "#b29d74")
@@ -305,7 +305,7 @@ export default function FreeGuidesPage() {
                 fontSize: "14px",
                 color: "#1f1f1f",
                 marginBottom: "8px",
-                fontFamily: "'DM Sans', sans-serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
               }}
             >
               {item.q}
@@ -315,7 +315,7 @@ export default function FreeGuidesPage() {
                 fontSize: "13px",
                 lineHeight: 1.6,
                 color: "#6a5c55",
-                fontFamily: "'DM Sans', sans-serif",
+                fontFamily: "'Cormorant Garamond', Georgia, serif",
               }}
             >
               {item.a}
@@ -376,7 +376,7 @@ export default function FreeGuidesPage() {
               fontWeight: 600,
               textDecoration: "none",
               transition: "background 0.2s",
-              fontFamily: "'DM Sans', sans-serif",
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
             }}
           >
             Book a Free Consultation →
@@ -471,7 +471,7 @@ export default function FreeGuidesPage() {
                     fontSize: "0.85rem",
                     fontWeight: 600,
                     cursor: "pointer",
-                    fontFamily: "'DM Sans', sans-serif",
+                    fontFamily: "'Cormorant Garamond', Georgia, serif",
                   }}
                 >
                   Done
@@ -520,7 +520,7 @@ export default function FreeGuidesPage() {
                       border: "1px solid #e6dfd5",
                       borderRadius: "8px",
                       outline: "none",
-                      fontFamily: "'DM Sans', sans-serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       marginBottom: "0.75rem",
                       boxSizing: "border-box",
                       transition: "border-color 0.2s",
@@ -559,7 +559,7 @@ export default function FreeGuidesPage() {
                       fontSize: "0.9rem",
                       fontWeight: 600,
                       cursor: loading ? "not-allowed" : "pointer",
-                      fontFamily: "'DM Sans', sans-serif",
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
                       transition: "background 0.2s",
                     }}
                   >

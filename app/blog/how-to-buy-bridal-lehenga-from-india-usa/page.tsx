@@ -38,7 +38,7 @@ export default function LehengaBuyingGuideBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             You have spent hours scrolling through Instagram reels of embroidered bridal lehengas. The zardozi is flawless. The ombre dupatta catches the light perfectly. The price seems almost too good. You are in love — and you have not even touched the fabric yet.

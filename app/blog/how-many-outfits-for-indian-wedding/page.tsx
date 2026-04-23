@@ -38,7 +38,7 @@ export default function HowManyOutfitsForIndianWeddingBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             &ldquo;How many outfits do I actually need?&rdquo; is one of the first questions NRI brides ask — and one of the hardest to answer with a single number. The honest answer depends entirely on your tradition, your ceremony schedule, and your family&rsquo;s expectations. A South Indian bride doing a single-day muhurtham has a fundamentally different wardrobe than a Gujarati bride navigating three nights of garba, a pithi, a vidhi, a pheras ceremony, and a reception.

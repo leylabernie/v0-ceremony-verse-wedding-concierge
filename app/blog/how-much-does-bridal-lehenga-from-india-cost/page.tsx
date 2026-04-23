@@ -38,7 +38,7 @@ export default function LehengaCostBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             &ldquo;How much does a bridal lehenga from India actually cost?&rdquo; is the single most common question NRI brides ask us. And it is a completely fair question — because the answer you find on Instagram, in boutiques, or from random WhatsApp sellers is almost always incomplete.

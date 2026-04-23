@@ -38,7 +38,7 @@ export default function SouthIndianChristianWeddingGuide() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             South Indian Christian weddings occupy a beautiful and specific space in the world of Indian weddings. They are not Hindu ceremonies adapted for church — they are their own tradition, shaped by centuries of faith, regional heritage, and family pride. And when it comes to dressing for them, the rules are distinct enough that what works for a North Indian Christian wedding, a Hindu South Indian wedding, or even a Western church ceremony will not always translate.

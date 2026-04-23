@@ -38,7 +38,7 @@ export default function NRIGroomOutfitGuideBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             Every conversation about NRI wedding outfits eventually arrives at the same place: the bride&rsquo;s lehenga. Hours of research, multiple video calls with artisans, careful fabric comparisons. And the groom? He is wearing &ldquo;something nice,&rdquo; sourced in a weekend, picked from whatever the local Indian menswear store had in stock.

@@ -38,7 +38,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             A Gujarati wedding is not a single event. It is a celebration that unfolds across multiple days, with each ceremony carrying its own meaning, mood, and dress code. From the electric energy of Garba night to the sacred hush of the Saptapadi, each moment calls for something distinct — and getting the outfits right is part of how families honor these traditions.
