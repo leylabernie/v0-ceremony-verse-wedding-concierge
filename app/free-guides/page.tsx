@@ -1,6 +1,7 @@
 "use client";
 
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import { useState } from "react";
 
 type GuideKey = "price-guide" | "checklist" | "timeline" | "vendor-flags";
@@ -583,6 +584,7 @@ export default function FreeGuidesPage() {
           </div>
         </div>
       )}
+    <SeoFooter />
     </main>
   );
 }

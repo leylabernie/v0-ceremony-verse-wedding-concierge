@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
     type: "website",
     url: "https://ceremonyverse.com/services/bridal-lehengas",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -66,6 +76,7 @@ export default function BridalLehengaServicePage() {
           ))}
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

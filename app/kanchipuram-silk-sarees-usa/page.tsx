@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/kanchipuram-silk-sarees-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -116,6 +126,7 @@ export default function KanchipuramSareesPage() {
           ))}
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

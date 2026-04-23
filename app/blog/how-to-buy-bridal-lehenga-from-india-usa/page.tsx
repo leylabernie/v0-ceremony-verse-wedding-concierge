@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
     type: "article",
     url: "https://ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -234,6 +244,7 @@ export default function LehengaBuyingGuideBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

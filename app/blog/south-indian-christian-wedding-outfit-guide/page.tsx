@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
     type: "article",
     url: "https://ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -226,6 +236,7 @@ export default function SouthIndianChristianWeddingGuide() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

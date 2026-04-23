@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between.",
     type: "article",
     url: "https://ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -261,6 +271,7 @@ export default function NonIndianPartnerIndianWeddingBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

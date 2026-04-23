@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
     type: "website",
     url: "https://ceremonyverse.com/shop-from-india",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -68,7 +78,7 @@ export default function ShopFromIndiaPage() {
 
           <div className="mt-8">
             <a
-              href="/contact"
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
               className="bg-[var(--cv-accent)] text-white px-6 py-3 rounded-lg font-semibold"
             >
               Book a Video Consultation
@@ -217,6 +227,7 @@ export default function ShopFromIndiaPage() {
         </div>
       </section>
 
+    <SeoFooter />
     </main>
   );
 }

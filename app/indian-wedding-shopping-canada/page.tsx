@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | Canada NRI Families | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "NRI bride in Canada? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to Toronto, Vancouver, Calgary, or anywhere in Canada.",
     type: "website",
     url: "https://ceremonyverse.com/indian-wedding-shopping-canada",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -136,6 +146,7 @@ export default function IndianWeddingShoppingCanadaPage() {
           </a>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "Everything NRI grooms need to know about sourcing a custom sherwani from India — fabric, fit, cost breakdown, and how to coordinate with the bride's outfit.",
     type: "article",
     url: "https://ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -332,6 +342,7 @@ export default function NRIGroomOutfitGuideBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

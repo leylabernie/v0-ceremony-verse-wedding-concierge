@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
     type: "article",
     url: "https://ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -186,6 +196,7 @@ export default function TariffsBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

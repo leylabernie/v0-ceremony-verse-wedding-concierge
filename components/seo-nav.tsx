@@ -6,13 +6,12 @@ import { useState } from "react"
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
+  { label: "Services", href: "/services/bridal-lehengas" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
-  { label: "FAQ", href: "/#faq" },
   { label: "Blog", href: "/blog" },
   { label: "Free Guides", href: "/free-guides" },
-  { label: "Contact", href: "/#contact" },
 ]
 
 export function SeoNav() {

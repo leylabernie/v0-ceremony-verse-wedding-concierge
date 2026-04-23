@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
     type: "website",
     url: "https://ceremonyverse.com/mehndi-outfits-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -75,6 +85,7 @@ export default function MehndiOutfitsPage() {
           ))}
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

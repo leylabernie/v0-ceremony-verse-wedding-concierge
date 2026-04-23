@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
     type: "article",
     url: "https://ceremonyverse.com/blog/how-many-outfits-for-indian-wedding",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -262,6 +272,7 @@ export default function HowManyOutfitsForIndianWeddingBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

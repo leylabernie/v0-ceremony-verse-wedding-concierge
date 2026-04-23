@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
@@ -11,6 +12,15 @@ export const metadata = {
     description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/how-it-works",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -459,6 +469,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

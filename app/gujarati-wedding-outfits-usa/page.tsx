@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Gujarati Wedding Outfits from India | NRI Families USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/gujarati-wedding-outfits-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -117,6 +127,7 @@ export default function GujaratiWeddingOutfitsPage() {
           </a>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

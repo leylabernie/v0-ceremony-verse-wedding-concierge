@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Real Weddings — NRI Families We've Dressed | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
     type: "website",
     url: "https://ceremonyverse.com/real-weddings",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -243,6 +253,7 @@ export default function RealWeddingsPage() {
           </p>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

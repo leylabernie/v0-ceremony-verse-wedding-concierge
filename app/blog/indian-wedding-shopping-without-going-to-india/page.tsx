@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -14,6 +15,15 @@ export const metadata: Metadata = {
     description: "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
     type: "article",
     url: "https://ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -344,6 +354,7 @@ export default function IndianWeddingShoppingWithoutGoingToIndiaBlogPost() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

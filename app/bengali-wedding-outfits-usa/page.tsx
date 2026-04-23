@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Bengali Wedding Outfits from India | NRI USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Planning a Bengali wedding in the USA? CeremonyVerse sources authentic Banarasi silk sarees, bridal lehengas, sherwanis, and family outfits from India — delivered to your US door.",
     type: "website",
     url: "https://ceremonyverse.com/bengali-wedding-outfits-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -121,6 +131,7 @@ export default function BengaliWeddingOutfitsPage() {
           </a>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

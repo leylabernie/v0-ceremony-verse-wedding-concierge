@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -1321,6 +1322,7 @@ export default function NriWeddingShoppingGuide() {
           </Link>
         </div>
       </article>
+    <SeoFooter />
     </main>
   );
 }

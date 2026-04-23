@@ -1,4 +1,5 @@
-import { SeoNav } from "@/components/seo-nav";
+import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -13,6 +14,15 @@ export const metadata: Metadata = {
     description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
     type: "website",
     url: "https://ceremonyverse.com/blog",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   }};
 
 const posts = [
@@ -137,6 +147,7 @@ export default function BlogIndexPage() {
           ))}
         </div>
       </div>
+    <SeoFooter />
     </main>
   );
 }

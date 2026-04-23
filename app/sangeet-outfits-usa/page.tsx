@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Sangeet Night Outfits from India | Delivered to USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door. NRI wedding specialists.",
     type: "website",
     url: "https://ceremonyverse.com/sangeet-outfits-usa",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -75,6 +85,7 @@ export default function SangeetOutfitsPage() {
           ))}
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

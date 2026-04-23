@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
     type: "website",
     url: "https://ceremonyverse.com/services/intercultural-indian-weddings",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -77,6 +87,7 @@ export default function InterculturalWeddingPage() {
           </div>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

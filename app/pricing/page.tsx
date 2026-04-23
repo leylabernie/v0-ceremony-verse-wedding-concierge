@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 import { CustomsCalculator } from "@/components/customs-calculator"
 
@@ -14,6 +15,15 @@ export const metadata = {
     description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
     type: "website",
     url: "https://ceremonyverse.com/pricing",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -361,6 +371,7 @@ export default function PricingPage() {
           </a>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

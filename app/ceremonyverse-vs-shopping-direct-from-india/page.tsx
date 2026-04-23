@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { SeoFooter } from "@/components/seo-footer"
 
 export const metadata = {
   title: "CeremonyVerse vs Shopping Direct from India | Compare",
@@ -12,6 +13,15 @@ export const metadata = {
     description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
     type: "website",
     url: "https://ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+  
+    images: [
+      {
+        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
+      },
+    ],
   },
 };
 
@@ -229,6 +239,7 @@ export default function CeremonyVerseVsDirectPage() {
           </a>
         </div>
       </section>
+    <SeoFooter />
     </div>
   )
 }

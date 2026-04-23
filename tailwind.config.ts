@@ -8,15 +8,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Cormorant Garamond', 'Georgia', 'serif'],
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
         garamond: ['Cormorant Garamond', 'Georgia', 'serif'],
       },
       colors: {
-        'muted-rose': '#F4E0E0',
-        'champagne': '#FDFBF7',
-        'midnight-navy': '#0A192F',
-        'brushed-gold': '#C5A059',
+        'muted-rose': '#f8f6f2',
+        'champagne': '#ffffff',
+        'midnight-navy': '#2f2f2f',
+        'brushed-gold': '#c7b28a',
       },
     },
   },
