@@ -5,18 +5,18 @@ export const metadata = {
   title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
   description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
   alternates: {
-    canonical: "https://ceremonyverse.com/services/bridal-lehengas",
+    canonical: "https://www.ceremonyverse.com/services/bridal-lehengas",
   },
   keywords: "bridal lehenga from India USA, NRI bridal lehenga, custom bridal lehenga India, buy bridal lehenga online USA, bridal lehenga delivered USA, Indian bridal lehenga NRI, lehenga choli from India, designer bridal lehenga USA, affordable bridal lehenga from India, bridal lehenga sourcing concierge USA",
   openGraph: {
     title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
     description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
     type: "website",
-    url: "https://ceremonyverse.com/services/bridal-lehengas",
+    url: "https://www.ceremonyverse.com/services/bridal-lehengas",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

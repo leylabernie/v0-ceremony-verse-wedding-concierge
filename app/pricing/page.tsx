@@ -7,18 +7,18 @@ export const metadata = {
   title: "Indian Wedding Concierge Pricing | CeremonyVerse",
   description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
   alternates: {
-    canonical: "https://ceremonyverse.com/pricing",
+    canonical: "https://www.ceremonyverse.com/pricing",
   },
   keywords: "indian wedding concierge pricing, NRI wedding sourcing cost, bridal concierge india usa, indian wedding outfit sourcing fee, ceremonyverse pricing",
   openGraph: {
     title: "Indian Wedding Concierge Pricing | CeremonyVerse",
     description: "Transparent pricing for CeremonyVerse's Indian wedding shopping concierge. From $149 for a Style Guide to $1,499 for Full Bridal Concierge. No hidden fees.",
     type: "website",
-    url: "https://ceremonyverse.com/pricing",
+    url: "https://www.ceremonyverse.com/pricing",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

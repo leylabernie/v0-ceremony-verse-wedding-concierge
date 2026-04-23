@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const BASE_URL = "https://ceremonyverse.com";
+const BASE_URL = "https://www.ceremonyverse.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [

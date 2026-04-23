@@ -10,22 +10,29 @@ interface NavigationProps {
   onNavigate: (page: PageType) => void
 }
 
-const navItems: { label: string; page?: PageType; href?: string }[] = [
-  { label: "Home", page: "home" },
-  { label: "Services", page: "services" },
+// Unified nav items - same items/order as SeoNav for consistency
+// Each item has an href for SEO crawlability + optional SPA page for in-page navigation
+const navItems: { label: string; page?: PageType; href: string }[] = [
+  { label: "Home", page: "home", href: "/" },
+  { label: "Services", page: "services", href: "/services/bridal-lehengas" },
   { label: "How It Works", href: "/how-it-works" },
+  { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
-  { label: "FAQ", page: "faq" },
-  { label: "Blog", page: "blog" },
+  { label: "Blog", page: "blog", href: "/blog" },
   { label: "Free Guides", href: "/free-guides" },
-  { label: "Contact", page: "contact" },
 ]
+
+const WHATAPP_LINK = "https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
 
 export function Navigation({ activePage, onNavigate }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const handleNavClick = (page: PageType) => {
-    onNavigate(page)
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, page?: PageType) => {
+    // If a SPA page is defined, prevent default navigation and use SPA routing
+    if (page) {
+      e.preventDefault()
+      onNavigate(page)
+    }
     setMobileMenuOpen(false)
   }
 
@@ -33,10 +40,11 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
     <header className="fixed left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold" style={{ top: "40px" }}>
       <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
         <div className="flex items-center justify-between h-24">
-          {/* Logo - Far Left with Two-Tone Styling */}
+          {/* Logo - Far Left with Two-Tone Styling - uses <a> for SEO */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => handleNavClick("home")}
+            <a
+              href="/"
+              onClick={(e) => { e.preventDefault(); onNavigate("home"); setMobileMenuOpen(false); }}
               className="flex flex-col items-start group"
               aria-label="CeremonyVerse Home"
             >
@@ -46,50 +54,43 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#8a6f63] mt-0.5">
                 Authentic Indian Wedding Shopping for NRI Families
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Desktop Navigation - Center, vertically aligned */}
           <div className="hidden md:flex items-center justify-center flex-1 px-8">
             <div className="flex items-center gap-6">
-              {navItems.map((item) =>
-                item.href ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="px-4 py-2 text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold whitespace-nowrap"
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <button
-                    key={item.page}
-                    onClick={() => handleNavClick(item.page!)}
-                    className={cn(
-                      "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
-                      activePage === item.page
-                        ? "text-brushed-gold"
-                        : "text-midnight-navy hover:text-brushed-gold"
-                    )}
-                    aria-current={activePage === item.page ? "page" : undefined}
-                  >
-                    {item.label}
-                  </button>
-                )
-              )}
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.page)}
+                  className={cn(
+                    "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
+                    item.page && activePage === item.page
+                      ? "text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
+                  )}
+                  aria-current={item.page && activePage === item.page ? "page" : undefined}
+                >
+                  {item.label}
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* CTA Button - Far Right */}
+          {/* CTA Button - Far Right - uses <a> for SEO */}
           <div className="hidden md:block flex-shrink-0">
-            <button
-              onClick={() => handleNavClick("contact")}
+            <a
+              href={WHATAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
-                hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
+                hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)] inline-block text-center"
             >
               Book Free Consultation
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,38 +108,30 @@ export function Navigation({ activePage, onNavigate }: NavigationProps) {
         {mobileMenuOpen && (
           <div className="md:hidden py-6 border-t border-brushed-gold/30 animate-fade-in">
             <div className="flex flex-col gap-2">
-              {navItems.map((item) =>
-                item.href ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="px-4 py-3 text-left text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold"
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <button
-                    key={item.page}
-                    onClick={() => handleNavClick(item.page!)}
-                    className={cn(
-                      "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
-                      activePage === item.page
-                        ? "text-brushed-gold"
-                        : "text-midnight-navy hover:text-brushed-gold"
-                    )}
-                    aria-current={activePage === item.page ? "page" : undefined}
-                  >
-                    {item.label}
-                  </button>
-                )
-              )}
-              <button
-                onClick={() => handleNavClick("contact")}
+              {navItems.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.page)}
+                  className={cn(
+                    "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
+                    item.page && activePage === item.page
+                      ? "text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
+                  )}
+                >
+                  {item.label}
+                </a>
+              ))}
+              <a
+                href={WHATAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
                 Book Free Consultation
-              </button>
+              </a>
             </div>
           </div>
         )}

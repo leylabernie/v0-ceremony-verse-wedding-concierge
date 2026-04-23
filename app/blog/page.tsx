@@ -7,17 +7,17 @@ export const metadata: Metadata = {
   title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
   description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog",
+    canonical: "https://www.ceremonyverse.com/blog",
   },
   openGraph: {
     title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
     description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
     type: "website",
-    url: "https://ceremonyverse.com/blog",
+    url: "https://www.ceremonyverse.com/blog",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

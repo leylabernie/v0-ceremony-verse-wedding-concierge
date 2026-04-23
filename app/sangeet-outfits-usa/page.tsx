@@ -5,18 +5,18 @@ export const metadata = {
   title: "Sangeet Night Outfits from India | Delivered to USA | CeremonyVerse",
   description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door. NRI wedding specialists.",
   alternates: {
-    canonical: "https://ceremonyverse.com/sangeet-outfits-usa",
+    canonical: "https://www.ceremonyverse.com/sangeet-outfits-usa",
   },
   keywords: "sangeet outfit USA, sangeet lehenga from India, sangeet night dress NRI, sangeet outfit delivered USA, Indian sangeet ceremony outfit, jewel tone lehenga USA, sangeet bridesmaid outfits, sangeet night wear from India, sangeet outfit for NRI bride, sangeet coordination USA",
   openGraph: {
     title: "Sangeet Night Outfits from India | Delivered to USA | CeremonyVerse",
     description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door. NRI wedding specialists.",
     type: "website",
-    url: "https://ceremonyverse.com/sangeet-outfits-usa",
+    url: "https://www.ceremonyverse.com/sangeet-outfits-usa",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

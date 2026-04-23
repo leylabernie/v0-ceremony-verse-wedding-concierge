@@ -10,14 +10,14 @@ export const metadata: Metadata = {
   keywords:
     "NRI Indian wedding shopping guide, how to shop for Indian wedding from USA, NRI wedding planning guide, Indian wedding outfit sourcing guide",
   alternates: {
-    canonical: "https://ceremonyverse.com/nri-indian-wedding-shopping-guide",
+    canonical: "https://www.ceremonyverse.com/nri-indian-wedding-shopping-guide",
   },
   openGraph: {
     title: "Complete NRI Indian Wedding Shopping Guide | CeremonyVerse",
     description:
       "The definitive guide for NRI families shopping for Indian weddings from the US. Covers outfits, jewelry, gifts, customs, timeline, costs, and how to avoid scams.",
     type: "article",
-    url: "https://ceremonyverse.com/nri-indian-wedding-shopping-guide",
+    url: "https://www.ceremonyverse.com/nri-indian-wedding-shopping-guide",
   },
 };
 
@@ -36,11 +36,11 @@ export default function NriWeddingShoppingGuide() {
       "name": "CeremonyVerse",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ceremonyverse.com/images/logo-nav.png"
+        "url": "https://www.ceremonyverse.com/images/logo-nav.png"
       }
     },
     "datePublished": "2026-04-12",
-    "image": "https://ceremonyverse.com/images/hero-lehenga.jpg"
+    "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg"
   };
 
   return (

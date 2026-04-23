@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "NRI brides: get Sabyasachi-quality craftsmanship at $800–$3,000 instead of $5,000–$25,000 by sourcing directly from India's artisan regions. Here is exactly how.",
   keywords: "Sabyasachi alternatives, affordable Sabyasachi inspired lehenga, designer lehenga alternatives India, luxury lehenga without designer price",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
+    canonical: "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
   },
   openGraph: {
     title: "Sabyasachi Alternatives: How NRI Brides Get Designer-Quality Lehengas from India for Less",
     description: "NRI brides: get Sabyasachi-quality craftsmanship at $800–$3,000 instead of $5,000–$25,000 by sourcing directly from India's artisan regions. Here is exactly how.",
     type: "article",
-    url: "https://ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
+    url: "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

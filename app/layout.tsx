@@ -15,16 +15,16 @@ export const metadata = {
     apple: "/icon.svg",
   },
   alternates: {
-    canonical: "https://ceremonyverse.com",
+    canonical: "https://www.ceremonyverse.com",
   },
   openGraph: {
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
     description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced directly from India, approved live on video before shipping, delivered to your door in the USA, Canada, UK, Australia & NZ. The trusted Indian wedding shopping concierge for NRI families worldwide.",
     type: "website",
-    url: "https://ceremonyverse.com",
+    url: "https://www.ceremonyverse.com",
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "Red and gold bridal lehenga sourced from India for NRI brides in USA — CeremonyVerse Indian wedding shopping concierge",
@@ -38,7 +38,7 @@ export const metadata = {
     site: "@ceremonyverse",
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
     description: "Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your door worldwide.",
-    images: ["https://ceremonyverse.com/images/hero-lehenga.jpg"],
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 
@@ -54,8 +54,8 @@ export default function RootLayout({
         "@type": "LocalBusiness",
         "name": "CeremonyVerse",
         "description": "CeremonyVerse is an Indian wedding shopping concierge serving NRI and South Asian families in the USA, Canada, UK, Australia, and New Zealand. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and international delivery.",
-        "url": "https://ceremonyverse.com",
-        "image": "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        "url": "https://www.ceremonyverse.com",
+        "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         "telephone": "+12153419990",
         "email": "bhamini@ceremonyverse.com",
         "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}],
@@ -183,9 +183,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ceremonyverse.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://ceremonyverse.com/#services" },
-      { "@type": "ListItem", "position": 3, "name": "Book Consultation", "item": "https://ceremonyverse.com/#contact" }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ceremonyverse.com" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ceremonyverse.com/services/bridal-lehengas" },
+      { "@type": "ListItem", "position": 3, "name": "Book Consultation", "item": "https://www.ceremonyverse.com/#contact" }
     ]
   };
 
@@ -205,6 +205,7 @@ export default function RootLayout({
             gtag('config', 'G-8K8YLBERPM');
           `}
         </Script>
+        {/* Only meta tags NOT already handled by Next.js metadata API */}
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="author" content="CeremonyVerse" />
         <meta name="geo.region" content="US" />
@@ -213,19 +214,8 @@ export default function RootLayout({
         <meta name="revisit-after" content="7 days" />
         <meta name="category" content="Indian Wedding Shopping, Bridal Concierge, Wedding Services" />
         <meta name="classification" content="Business" />
-        <meta property="og:site_name" content="CeremonyVerse" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:url" content="https://ceremonyverse.com" />
-        <meta property="og:image" content="https://ceremonyverse.com/images/hero-lehenga.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Red and gold bridal lehenga sourced from India for NRI brides in USA — CeremonyVerse Indian wedding shopping concierge" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@ceremonyverse" />
-        <meta name="twitter:title" content="Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse" />
-        <meta name="twitter:description" content="Bridal lehengas, sherwanis, jewelry, gifts & welcome bags — sourced from India, approved live on video, delivered to your door worldwide." />
-        <meta name="twitter:image" content="https://ceremonyverse.com/images/hero-lehenga.jpg" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
+        {/* Removed duplicate og: and twitter: meta tags — Next.js metadata API generates these automatically from the `metadata` export above. Having both caused duplicate OG tags on subpages. */}
         <Script
           id="breadcrumb-schema"
           type="application/ld+json"

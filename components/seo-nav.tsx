@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
+// Unified nav items - same items/order as homepage Navigation for consistency
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services/bridal-lehengas" },
@@ -14,8 +15,13 @@ const navItems = [
   { label: "Free Guides", href: "/free-guides" },
 ]
 
+const WHATAPP_LINK = "https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+
 export function SeoNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  // Get current path to highlight active nav item
+  const currentPath = typeof window !== "undefined" ? window.location.pathname : ""
 
   return (
     <header className="fixed left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold" style={{ top: "40px" }}>
@@ -44,7 +50,13 @@ export function SeoNav() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="px-4 py-2 text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold whitespace-nowrap"
+                  className={cn(
+                    "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
+                    currentPath === item.href
+                      ? "text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
+                  )}
+                  aria-current={currentPath === item.href ? "page" : undefined}
                 >
                   {item.label}
                 </a>
@@ -55,7 +67,7 @@ export function SeoNav() {
           {/* CTA Button - Far Right */}
           <div className="hidden md:block flex-shrink-0">
             <a
-              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+              href={WHATAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
@@ -85,13 +97,18 @@ export function SeoNav() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="px-4 py-3 text-left text-lg font-medium transition-all duration-200 text-midnight-navy hover:text-brushed-gold"
+                  className={cn(
+                    "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
+                    currentPath === item.href
+                      ? "text-brushed-gold"
+                      : "text-midnight-navy hover:text-brushed-gold"
+                  )}
                 >
                   {item.label}
                 </a>
               ))}
               <a
-                href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+                href={WHATAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full

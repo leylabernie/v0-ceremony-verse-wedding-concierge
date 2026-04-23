@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
   keywords: "gujarati wedding outfits, gujarati wedding outfit guide, gujarati bride outfit, garba night outfit, chaniya choli USA",
   alternates: {
-    canonical: "https://ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
+    canonical: "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
   },
   openGraph: {
     title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
     description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
     type: "article",
-    url: "https://ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
+    url: "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",

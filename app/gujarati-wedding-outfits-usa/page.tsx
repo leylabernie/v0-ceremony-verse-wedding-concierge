@@ -5,18 +5,18 @@ export const metadata = {
   title: "Gujarati Wedding Outfits from India | NRI Families USA | CeremonyVerse",
   description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
   alternates: {
-    canonical: "https://ceremonyverse.com/gujarati-wedding-outfits-usa",
+    canonical: "https://www.ceremonyverse.com/gujarati-wedding-outfits-usa",
   },
   keywords: "gujarati wedding outfits usa, chaniya choli from india usa, gujarati lehenga usa, NRI gujarati wedding, gujarati bridal lehenga",
   openGraph: {
     title: "Gujarati Wedding Outfits from India | NRI Families USA | CeremonyVerse",
     description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
     type: "website",
-    url: "https://ceremonyverse.com/gujarati-wedding-outfits-usa",
+    url: "https://www.ceremonyverse.com/gujarati-wedding-outfits-usa",
   
     images: [
       {
-        url: "https://ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
