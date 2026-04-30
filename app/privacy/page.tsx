@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Privacy Policy | CeremonyVerse",
@@ -16,9 +18,15 @@ export const metadata = {
 };
 
 export default function PrivacyPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Privacy Policy", path: "/privacy" },
+  ])
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-privacy" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
       <section style={{ padding: "80px 24px 72px" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3rem)", fontWeight: 600, color: "#1f1f1f", marginBottom: "8px" }}>

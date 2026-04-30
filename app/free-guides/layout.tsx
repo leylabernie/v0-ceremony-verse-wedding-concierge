@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { buildFAQSchema, jsonLd } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildFAQSchema, jsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Free NRI Wedding Planning Guides | CeremonyVerse",
@@ -25,6 +25,11 @@ export const metadata: Metadata = {
 };
 
 export default function FreeGuidesLayout({ children }: { children: React.ReactNode }) {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Free Guides", path: "/free-guides" },
+  ]);
+
   const faqSchema = buildFAQSchema([
     {
       question: "Are the guides really free?",
@@ -42,6 +47,11 @@ export default function FreeGuidesLayout({ children }: { children: React.ReactNo
 
   return (
     <>
+      <Script
+        id="breadcrumb-schema-free-guides"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }}
+      />
       <Script
         id="faq-schema-free-guides"
         type="application/ld+json"

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { buildBreadcrumbSchema, buildServiceSchema, jsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Book Your Free Indian Wedding Consultation | CeremonyVerse",
@@ -24,5 +26,33 @@ export const metadata: Metadata = {
 };
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Book Consultation", path: "/contact" },
+  ]);
+
+  const serviceSchema = buildServiceSchema({
+    name: "Free Indian Wedding Consultation",
+    description: "Schedule a free 30-minute consultation with CeremonyVerse. Tell us about your Indian wedding vision and we'll prepare a tailored sourcing proposal — bridal lehengas, sherwanis, jewelry, and more sourced directly from India.",
+    path: "/contact",
+    priceFrom: "0",
+    priceCurrency: "USD",
+    areaServed: ["USA", "UK", "Canada", "Australia", "New Zealand"],
+  });
+
+  return (
+    <>
+      <Script
+        id="breadcrumb-schema-contact"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }}
+      />
+      <Script
+        id="service-schema-contact"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }}
+      />
+      {children}
+    </>
+  );
 }

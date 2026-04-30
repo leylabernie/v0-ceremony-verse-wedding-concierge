@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "CeremonyVerse vs Shopping Direct from India | Compare",
@@ -69,9 +71,32 @@ const comparisonRows = [
 ]
 
 export default function CeremonyVerseVsDirectPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "CeremonyVerse vs Shopping Direct", path: "/ceremonyverse-vs-shopping-direct-from-india" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "Is it cheaper to shop directly from India for my wedding outfits?", answer: "The outfit itself may look cheaper when shopping direct, but the sticker price rarely tells the full story. If you receive the wrong item, there is no refund or time to reorder. Sizing mistakes cost $200-500 in US alterations. Quality mismatches mean double the cost and wait. CeremonyVerse's milestone-based payments, live video verification, and quality inspections eliminate these hidden costs." },
+    { question: "When does shopping directly from India make sense?", answer: "If you have a trusted family member in India who can physically visit shops, handle quality inspections, negotiate pricing, manage shipping logistics, and be available to fix problems when they arise, shopping direct can work well. CeremonyVerse exists for families who don't have that person on the ground, or whose contact is already stretched thin." },
+    { question: "What makes CeremonyVerse different from shopping on Instagram or WhatsApp?", answer: "Instagram and WhatsApp vendors show you filtered photos. CeremonyVerse shows you the actual garment on a live video call — fabric, embroidery, color in natural light — before you commit. We also use milestone-based payments so you never pay for the next stage until you have approved the previous one, and we inspect every item before it leaves India." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "CeremonyVerse Indian Wedding Sourcing Concierge",
+    description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
+    path: "/ceremonyverse-vs-shopping-direct-from-india",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["USA", "UK", "Canada", "Australia", "New Zealand"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-vs-direct" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-vs-direct" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-vs-direct" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 56px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

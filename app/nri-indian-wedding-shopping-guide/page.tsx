@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Complete NRI Indian Wedding Shopping Guide | CeremonyVerse",
@@ -22,33 +24,24 @@ export const metadata: Metadata = {
 };
 
 export default function NriWeddingShoppingGuide() {
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "The Complete Guide: How NRI Families Shop for Indian Weddings from the US",
-    "description": "The definitive guide for NRI families shopping for Indian weddings from the US. Covers outfits, jewelry, gifts, customs, timeline, costs, and how to avoid scams.",
-    "author": {
-      "@type": "Organization",
-      "name": "CeremonyVerse"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "CeremonyVerse",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.ceremonyverse.com/images/logo-nav.png"
-      }
-    },
-    "datePublished": "2026-04-12",
-    "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg"
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "NRI Indian Wedding Shopping Guide", path: "/nri-indian-wedding-shopping-guide" },
+  ]);
+
+  const articleSchema = buildBlogPostingSchema({
+    title: "The Complete Guide: How NRI Families Shop for Indian Weddings from the US",
+    description: "The definitive guide for NRI families shopping for Indian weddings from the US. Covers outfits, jewelry, gifts, customs, timeline, costs, and how to avoid scams.",
+    path: "/nri-indian-wedding-shopping-guide",
+    datePublished: "2026-04-12",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["NRI Indian wedding shopping guide", "how to shop for Indian wedding from USA", "NRI wedding planning guide", "Indian wedding outfit sourcing guide"],
+  });
 
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <Script id="breadcrumb-schema-nri-guide" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="article-schema-nri-guide" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <SeoNav />
 
       {/* Hero */}

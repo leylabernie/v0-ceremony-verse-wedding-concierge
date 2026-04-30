@@ -2,7 +2,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import Script from "next/script";
-import { buildWebSiteSchema, buildOrganizationSchema, buildVideoObjectSchema, jsonLd } from "@/lib/schema";
+import { buildOrganizationSchema, buildVideoObjectSchema, jsonLd } from "@/lib/schema";
 
 export const metadata = {
   title: "Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
@@ -17,6 +17,14 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://www.ceremonyverse.com",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com",
+    },
   },
   openGraph: {
     title: "Authentic Indian Wedding Shopping for NRI Families | CeremonyVerse",
@@ -132,7 +140,25 @@ export default function RootLayout({
     }
   };
 
-  const websiteSchema = buildWebSiteSchema();
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CeremonyVerse",
+    "url": "https://www.ceremonyverse.com",
+    "description": "The premier Indian wedding shopping concierge for NRI families. Source authentic bridal lehengas, sherwanis, and jewelry directly from India with live video approval and door-to-door delivery.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CeremonyVerse",
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.ceremonyverse.com/blog?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
   const organizationSchema = buildOrganizationSchema();
   const videoSchema = buildVideoObjectSchema({
     name: "How CeremonyVerse Sources Indian Wedding Outfits from India",
