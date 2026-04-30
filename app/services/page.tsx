@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
 import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
@@ -187,6 +188,28 @@ export default function ServicesPage() {
                 <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
                 <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.desc}</p>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section style={{ padding: "48px 24px", borderTop: "1px solid #e6dfd5" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "28px" }}>
+            Related Reading
+          </h2>
+          <div style={{ display: "grid", gap: "16px" }}>
+            {[
+              { title: "How to Buy a Bridal Lehenga from India", desc: "Step-by-step guide for NRI brides buying a lehenga from India — from research to delivery.", href: "/blog/how-to-buy-bridal-lehenga-from-india-usa" },
+              { title: "How Much Does a Bridal Lehenga Cost?", desc: "Real price ranges for bridal lehengas from India, including shipping and customs to the USA.", href: "/blog/how-much-does-bridal-lehenga-from-india-cost" },
+              { title: "Avoiding Scams When Buying Indian Wedding Outfits", desc: "Red flags and protection strategies every NRI family should know before ordering from India.", href: "/blog/avoiding-scams-buying-indian-wedding-outfits-online" },
+              { title: "Complete Indian Wedding Jewelry Guide", desc: "What to buy, where to source it, and how much to budget for bridal jewelry from India.", href: "/blog/indian-wedding-jewelry-guide-nri-brides" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href} style={{ textDecoration: "none", display: "block", background: "#f9f6f3", borderRadius: "14px", padding: "20px 24px", border: "1px solid #e6dfd5", transition: "box-shadow 0.2s" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#2f2f2f", marginBottom: "4px" }}>{article.title}</h3>
+                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55", margin: 0 }}>{article.desc}</p>
+              </Link>
             ))}
           </div>
         </div>

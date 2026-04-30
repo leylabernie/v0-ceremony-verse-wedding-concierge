@@ -1,5 +1,6 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Link from "next/link"
 import Script from "next/script"
 import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
@@ -179,6 +180,27 @@ export default function IndianWeddingShoppingTexasPage() {
               <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>Can you accommodate the diverse Indian communities in Texas (Gujarati, Telugu, Tamil, Punjabi)?</h3>
               <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>Yes. Texas has vibrant Gujarati, Telugu, Tamil, Punjabi, and Bengali communities. We source tradition-specific outfits for each — from Kanjeevaram sarees for Tamil weddings to bandhani lehengas for Gujarati celebrations. Our team understands the specific requirements of each ceremony.</p>
             </div>
+        </div>
+      </section>
+
+      {/* Explore Our Services */}
+      <section style={{ padding: "48px 24px", borderTop: "1px solid #e6dfd5" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "28px" }}>
+            Explore Our Services
+          </h2>
+          <div style={{ display: "grid", gap: "16px" }}>
+            {[
+              { title: "Browse All Services", desc: "Bridal lehengas, sherwanis, jewelry, ceremonial items, and more — all sourced from India.", href: "/services" },
+              { title: "See Pricing", desc: "Transparent pricing from $149 for a Style Guide to $1,499 for Full Bridal Concierge.", href: "/pricing" },
+              { title: "Read Our Guides", desc: "Free downloadable guides with real prices, timelines, and vendor red flags.", href: "/free-guides" },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} style={{ textDecoration: "none", display: "block", background: "#f9f6f3", borderRadius: "14px", padding: "20px 24px", border: "1px solid #e6dfd5", transition: "box-shadow 0.2s" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#2f2f2f", marginBottom: "4px" }}>{link.title}</h3>
+                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55", margin: 0 }}>{link.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

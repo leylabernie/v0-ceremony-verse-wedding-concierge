@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
 import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
@@ -119,6 +120,26 @@ export default function SangeetOutfitsPage() {
               <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.a}</p>
             </div>
           ))}
+        </div>
+      </section>
+      {/* More Wedding Outfit Guides */}
+      <section style={{ padding: "48px 24px", borderTop: "1px solid #e6dfd5" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "28px" }}>
+            More Wedding Outfit Guides
+          </h2>
+          <div style={{ display: "grid", gap: "16px" }}>
+            {[
+              { title: "Matching Bridesmaid Outfits for an Indian Wedding", desc: "How to coordinate bridesmaid looks without the drama.", href: "/blog/matching-bridesmaid-outfits-indian-wedding" },
+              { title: "Bridal Lehenga Styles & Trends for 2026", desc: "What NRI brides are actually wearing this year.", href: "/blog/bridal-lehenga-styles-trends-2026" },
+              { title: "Browse All CeremonyVerse Services", desc: "Bridal lehengas, sherwanis, jewelry, ceremonial items, and more.", href: "/services" },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} style={{ textDecoration: "none", display: "block", background: "#f9f6f3", borderRadius: "14px", padding: "20px 24px", border: "1px solid #e6dfd5", transition: "box-shadow 0.2s" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#2f2f2f", marginBottom: "4px" }}>{link.title}</h3>
+                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55", margin: 0 }}>{link.desc}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     <SeoFooter />

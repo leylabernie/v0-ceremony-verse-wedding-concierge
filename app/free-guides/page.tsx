@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import { useState } from "react";
@@ -323,6 +324,73 @@ export default function FreeGuidesPage() {
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Latest from Our Blog */}
+      <div
+        style={{
+          maxWidth: "680px",
+          margin: "0 auto",
+          padding: "2.5rem 1.5rem 0",
+          borderTop: "1px solid #e6dfd5",
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: "'Cormorant Garamond', Georgia, serif",
+            fontSize: "1.8rem",
+            fontWeight: 600,
+            color: "#1f1f1f",
+            textAlign: "center",
+            marginBottom: "1.5rem",
+          }}
+        >
+          Latest from Our Blog
+        </h2>
+        <div style={{ display: "grid", gap: "1rem" }}>
+          {[
+            { title: "How to Buy a Bridal Lehenga from India", desc: "Step-by-step guide for NRI brides — from choosing a style to getting it delivered.", href: "/blog/how-to-buy-bridal-lehenga-from-india-usa" },
+            { title: "Avoiding Scams When Buying Indian Wedding Outfits", desc: "Red flags and protection strategies every NRI family should know.", href: "/blog/avoiding-scams-buying-indian-wedding-outfits-online" },
+            { title: "Indian Wedding Outfit Timeline", desc: "Exactly when to order every outfit so nothing arrives late.", href: "/blog/indian-wedding-outfit-timeline-when-to-order" },
+            { title: "Complete Indian Wedding Jewelry Guide", desc: "What to buy, where to source it, and how much to budget for bridal jewelry.", href: "/blog/indian-wedding-jewelry-guide-nri-brides" },
+          ].map((article) => (
+            <Link
+              key={article.href}
+              href={article.href}
+              style={{
+                textDecoration: "none",
+                display: "block",
+                background: "#f9f6f3",
+                borderRadius: "14px",
+                padding: "1.25rem 1.5rem",
+                border: "1px solid #e6dfd5",
+                transition: "box-shadow 0.2s",
+              }}
+            >
+              <h3
+                style={{
+                  fontWeight: 600,
+                  fontSize: "15px",
+                  color: "#2f2f2f",
+                  marginBottom: "4px",
+                  margin: 0,
+                }}
+              >
+                {article.title}
+              </h3>
+              <p
+                style={{
+                  fontSize: "13px",
+                  lineHeight: 1.6,
+                  color: "#6a5c55",
+                  margin: "4px 0 0",
+                }}
+              >
+                {article.desc}
+              </p>
+            </Link>
+          ))}
+        </div>
       </div>
 
       {/* Bottom CTA */}

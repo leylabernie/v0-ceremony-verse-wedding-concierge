@@ -1,4 +1,5 @@
 import Script from "next/script"
+import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
 import { buildBreadcrumbSchema, buildFAQSchema, jsonLd } from "@/lib/schema"
@@ -56,6 +57,7 @@ const faqCategories = [
         question: "How do NRI brides buy a lehenga from India without getting scammed?",
         answer:
           "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India.",
+        links: [{ label: "Read our scam prevention guide →", href: "/blog/avoiding-scams-buying-indian-wedding-outfits-online" }],
       },
       {
         question: "How do I know this isn't a scam?",
@@ -101,11 +103,13 @@ const faqCategories = [
         question: "How is pricing structured?",
         answer:
           "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save vs. US boutiques.",
+        links: [{ label: "See full pricing details →", href: "/pricing" }],
       },
       {
         question: "What's the payment schedule?",
         answer:
           "Milestone-based protection: 25% deposit to reserve, 35% after fabric approval, 30% after final inspection, 10% upon delivery. You never pay for the next stage until you've approved the previous one.",
+        links: [{ label: "See full pricing details →", href: "/pricing" }],
       },
       {
         question: "Do you accept payment plans?",
@@ -121,11 +125,13 @@ const faqCategories = [
         question: "How long does shipping take from India to the US?",
         answer:
           "Standard international shipping takes 2–3 weeks. For urgent timelines, expedited shipping (7–10 days) is available at an additional cost. We always recommend building in extra buffer time before your wedding date.",
+        links: [{ label: "See our outfit ordering timeline →", href: "/blog/indian-wedding-outfit-timeline-when-to-order" }],
       },
       {
         question: "Do you handle customs and import duties?",
         answer:
           "Yes. We prepare all shipping documentation and advise on expected customs duties. Import duties on clothing typically range from 12–27% of the declared value. These are itemized in your quote upfront — no surprises at the door.",
+        links: [{ label: "Calculate your customs duties →", href: "/pricing" }],
       },
       {
         question: "What if my outfit arrives damaged?",
@@ -146,6 +152,7 @@ const faqCategories = [
         question: "Can I source just one item, or do I need a full package?",
         answer:
           "You can source as little as one piece. Many clients start with just the bridal lehenga, then come back for bridesmaids, jewelry, and family outfits once they see how the process works.",
+        links: [{ label: "Browse all our services →", href: "/services" }],
       },
       {
         question: "What regions of India do you source from?",
@@ -161,6 +168,7 @@ const globalFaqs = [
     question: "What does CeremonyVerse do?",
     answer:
       "CeremonyVerse is an Indian wedding shopping concierge for NRI families. We source authentic bridal lehengas, sherwanis, bridesmaid and groomsmen outfits, family attire, jewelry, ceremonial items, return gifts, sweets, welcome bags, and even pet outfits — all directly from India. You see and approve every piece via live video before it ships, and we deliver to your door in the USA, Canada, UK, Australia, and New Zealand.",
+    links: [{ label: "Browse all services →", href: "/services" }],
   },
   {
     question: "How does CeremonyVerse source Indian wedding items from India to the USA?",
@@ -171,21 +179,25 @@ const globalFaqs = [
     question: "Can I buy a bridal lehenga from India and have it delivered to the USA?",
     answer:
       "Yes — that's our core service. You browse and approve your bridal lehenga via live video shopping, we have it custom-stitched to your exact measurements by our tailor partner in India, inspect it for quality, and ship it insured directly to your US address. Custom bridal lehengas typically take 14–20 weeks from order to delivery. Most clients save 30–50% compared to US Indian boutiques.",
+    links: [{ label: "Read our bridal lehenga buying guide →", href: "/blog/how-to-buy-bridal-lehenga-from-india-usa" }],
   },
   {
     question: "How much does it cost to source Indian wedding outfits from India?",
     answer:
       "Our sourcing fee is 15–20% of the outfit cost, clearly itemized. Service tiers start at $149 for a Style Guide & Vendor List, $599 for Guided Sourcing with live video shopping, and $1,499 for Full Bridal Concierge covering your entire wedding party. The outfit cost itself, shipping, and customs duties are separate — and quoted upfront before you commit. No hidden markups.",
+    links: [{ label: "See full pricing details →", href: "/pricing" }],
   },
   {
     question: "Do you only source outfits or other Indian wedding items too?",
     answer:
       "We source everything for your Indian wedding — not just outfits. That includes bridal lehengas, sherwanis, bridesmaid and groomsmen outfits, family attire, jewelry and accessories, ceremonial items like pooja thalis and kalire, return gifts, sweets, welcome bags, and even matching pet outfits. If it's for an Indian wedding, we can source it from India.",
+    links: [{ label: "Browse all services →", href: "/services" }],
   },
   {
     question: "How far in advance should I contact CeremonyVerse?",
     answer:
       "6–12 months before your wedding date. Top artisan workshops book quickly and custom outfits need production time. The bridal lehenga alone takes 14–20 weeks for quality custom work. If your wedding is sooner, contact us anyway — we'll tell you honestly what's achievable given your timeline and what tradeoffs to expect.",
+    links: [{ label: "See our outfit timeline guide →", href: "/blog/indian-wedding-outfit-timeline-when-to-order" }],
   },
   {
     question: "Do you serve intercultural couples who are new to Indian weddings?",
@@ -367,6 +379,15 @@ export default function FAQPage() {
                   >
                     {faq.answer}
                   </p>
+                  {faq.links && faq.links.length > 0 && (
+                    <div style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "4px" }}>
+                      {faq.links.map((link: { label: string; href: string }) => (
+                        <Link key={link.href} href={link.href} style={{ fontSize: "13px", color: "#c7b28a", textDecoration: "none", fontWeight: 500 }}>
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -441,6 +462,15 @@ export default function FAQPage() {
                 >
                   {faq.answer}
                 </p>
+                {faq.links && faq.links.length > 0 && (
+                  <div style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "4px" }}>
+                    {faq.links.map((link: { label: string; href: string }) => (
+                      <Link key={link.href} href={link.href} style={{ fontSize: "13px", color: "#c7b28a", textDecoration: "none", fontWeight: 500 }}>
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
