@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | Australia NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingAustraliaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping Australia", path: "/indian-wedding-shopping-australia" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How long does shipping take to Australia, and are customs and GST handled?",
+      answer: "Shipping from India to Australia typically takes 7–14 business days via express courier. We handle all customs documentation and provide accurate GST import declarations upfront so you know the full landed cost before ordering — no surprise charges at delivery.",
+    },
+    {
+      question: "How do video shopping sessions work across the AEST time difference?",
+      answer: "Our India-based specialists offer flexible session windows scheduled around AEST. We coordinate early morning slots in India that align with convenient evening times in Australia, so you never have to compromise on sleep or work for a shopping session.",
+    },
+    {
+      question: "Can you coordinate outfits for family members spread across different Australian states?",
+      answer: "Absolutely. We manage individual measurement sessions and outfit coordination for family members in Sydney, Melbourne, Brisbane, Perth, or anywhere in Australia. Each person joins their own virtual session, and we ensure every outfit coordinates seamlessly for every ceremony.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for Australia NRI Families",
+    description: "NRI bride in Australia? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your Australian door.",
+    path: "/indian-wedding-shopping-australia",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["Australia"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-australia" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-australia" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-australia" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

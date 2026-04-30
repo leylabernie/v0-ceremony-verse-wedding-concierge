@@ -265,6 +265,39 @@ export function buildAggregateRatingSchema(rating: number, count: number, bestRa
   };
 }
 
+// ─── VideoObject (for video rich snippets) ───────────────────
+export interface VideoObjectSchemaInput {
+  name: string;
+  description: string;
+  path: string;
+  uploadDate: string;
+  duration?: string;
+  thumbnailUrl?: string;
+  contentUrl?: string;
+}
+
+export function buildVideoObjectSchema(input: VideoObjectSchemaInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: input.name,
+    description: input.description,
+    url: `${BASE_URL}${input.path}`,
+    uploadDate: input.uploadDate,
+    ...(input.duration && { duration: input.duration }),
+    thumbnailUrl: input.thumbnailUrl || `${BASE_URL}/images/hero-lehenga.jpg`,
+    contentUrl: input.contentUrl || `${BASE_URL}/hero-video.mp4`,
+    publisher: {
+      "@type": "Organization",
+      name: "CeremonyVerse",
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/images/logo-nav.png`,
+      },
+    },
+  };
+}
+
 // ─── Helper: Combine multiple schemas into @graph ────────────
 export function combineSchemas(...schemas: object[]) {
   return {

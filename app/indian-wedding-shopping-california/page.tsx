@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | California NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingCaliforniaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping California", path: "/indian-wedding-shopping-california" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How far in advance should California NRI brides start ordering from India?",
+      answer: "We recommend 4–6 months before your first ceremony. This gives enough time for style discovery, live video shopping sessions, custom stitching, quality inspection, and shipping to California. Rush orders (6–8 weeks) are sometimes possible.",
+    },
+    {
+      question: "Can you coordinate outfits for family members across Northern and Southern California?",
+      answer: "Absolutely. We manage measurements and coordination for family members anywhere in California — Bay Area, LA, San Diego, Sacramento. Everyone joins their own video measurement session, and we ensure all outfits coordinate perfectly.",
+    },
+    {
+      question: "Do you handle customs and import duties for shipments to California?",
+      answer: "Yes. We handle all customs documentation for shipments to California. The current US duty on Indian garments is around 12–20% depending on fabric composition. We provide a full cost estimate upfront so there are no surprises.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for California NRI Families",
+    description: "NRI bride in California? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your CA door.",
+    path: "/indian-wedding-shopping-california",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["USA"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-california" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-california" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-california" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

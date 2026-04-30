@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | Canada NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingCanadaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping Canada", path: "/indian-wedding-shopping-canada" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How does shipping and customs work for deliveries to Canada?",
+      answer: "We handle all customs documentation for shipments through the Canada Border Services Agency. Import duties on Indian garments typically range from 12–18% depending on fabric composition. We provide a full landed cost estimate before you place any order so there are no surprises at the border.",
+    },
+    {
+      question: "How far in advance should Canadian families start the process?",
+      answer: "We recommend starting 4–6 months before your first ceremony. This allows time for consultations, live video shopping sessions, custom stitching, quality inspection in India, and shipping to Canada. Rush timelines of 6–8 weeks are sometimes possible depending on the outfit type.",
+    },
+    {
+      question: "How does CeremonyVerse compare to shopping at Brampton or Gerrard Street East boutiques?",
+      answer: "Brampton and Gerrard Street shops are convenient but carry a limited selection at retail markups. CeremonyVerse gives you direct access to India's full artisan market — custom stitching, your exact measurements, and the complete range of fabrics and embroidery styles — often at a comparable or lower total cost once you factor in the sourcing savings from India.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for Canada NRI Families",
+    description: "NRI bride in Canada? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to Toronto, Vancouver, Calgary, or anywhere in Canada.",
+    path: "/indian-wedding-shopping-canada",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["Canada"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-canada" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-canada" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-canada" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

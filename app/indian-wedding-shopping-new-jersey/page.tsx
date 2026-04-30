@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | New Jersey NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingNewJerseyPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping New Jersey", path: "/indian-wedding-shopping-new-jersey" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How does CeremonyVerse compare to shopping on Oak Tree Road in Edison?",
+      answer: "Oak Tree Road has great options, but selection is limited to what's in stock and prices reflect NJ retail overhead. With CeremonyVerse, you access India's full range of artisan craftspeople — more styles, custom stitching to your measurements, and typically 40–60% savings on comparable quality.",
+    },
+    {
+      question: "What is the typical delivery timeline to New Jersey addresses?",
+      answer: "From consultation to delivery at your NJ door, the typical timeline is 8–12 weeks. We schedule video shopping sessions around Eastern Time, and shipping from India to New Jersey usually takes 7–10 business days via express courier.",
+    },
+    {
+      question: "Can you source outfits for Gujarati and South Indian weddings common in the NJ community?",
+      answer: "Yes. New Jersey has large Gujarati, Telugu, Tamil, and Punjabi communities. We source ceremony-specific outfits for all traditions — including chaniya cholis for garba, pattu sarees for muhurtham, and coordinated family sets across every ceremony.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for New Jersey NRI Families",
+    description: "NRI bride in New Jersey? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NJ door.",
+    path: "/indian-wedding-shopping-new-jersey",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["USA"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-new-jersey" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-new-jersey" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-new-jersey" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

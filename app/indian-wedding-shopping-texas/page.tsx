@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | Texas NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingTexasPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping Texas", path: "/indian-wedding-shopping-texas" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "Where do most Texas NRI families currently shop for Indian wedding outfits?",
+      answer: "Houston's Hillcroft Avenue and the DFW Metroplex have Indian clothing stores, but options are limited compared to what's available directly from India. CeremonyVerse gives you access to artisans across Delhi, Jaipur, Surat, and Kanchipuram without leaving Texas.",
+    },
+    {
+      question: "How do you handle the logistics of shipping to Texas from India?",
+      answer: "We handle everything — customs documentation, duty estimates, and express shipping. Packages typically arrive at your Texas door within 7–10 business days after final quality inspection. We provide tracking throughout.",
+    },
+    {
+      question: "Can you accommodate the diverse Indian communities in Texas (Gujarati, Telugu, Tamil, Punjabi)?",
+      answer: "Yes. Texas has vibrant Gujarati, Telugu, Tamil, Punjabi, and Bengali communities. We source tradition-specific outfits for each — from Kanjeevaram sarees for Tamil weddings to bandhani lehengas for Gujarati celebrations. Our team understands the specific requirements of each ceremony.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for Texas NRI Families",
+    description: "NRI bride in Texas? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your TX door.",
+    path: "/indian-wedding-shopping-texas",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["USA"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-texas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-texas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-texas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

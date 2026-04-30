@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Guide & content pages
     { path: "/about", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-01" },
     { path: "/how-it-works", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-10" },
+    { path: "/faq", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-01" },
     { path: "/pricing", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-04-15" },
     { path: "/nri-indian-wedding-shopping-guide", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-04-20" },
     { path: "/ceremonyverse-vs-shopping-direct-from-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-05" },

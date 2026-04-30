@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | UK Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingUKPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping UK", path: "/indian-wedding-shopping-uk" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How does CeremonyVerse compare to shopping at Southall or Green Street?",
+      answer: "Southall Broadway and Green Street are excellent for off-the-rack and semi-custom options, but they can't match the breadth of India's artisan market for truly bespoke, custom-fitted pieces. CeremonyVerse gives you direct access to India's full range — your exact measurements, your exact specifications — often at a comparable or better total cost once you factor in the sourcing savings from working directly with Indian craftspeople.",
+    },
+    {
+      question: "How do you handle post-Brexit customs for UK deliveries?",
+      answer: "We manage all UK customs declarations, import VAT documentation, and shipping paperwork on your behalf. Post-Brexit imports from India involve specific HMRC requirements, and we handle them end-to-end. We provide a full landed cost estimate — including all applicable duties and import VAT — before you place any order, so there are no surprise charges.",
+    },
+    {
+      question: "How far in advance should UK families start the process?",
+      answer: "We recommend starting 4–6 months before your first ceremony. This allows time for consultations, live video shopping sessions scheduled around UK time zones, custom stitching, quality inspection in India, and shipping to the UK. Rush timelines of 6–8 weeks are sometimes possible depending on the outfit type and complexity.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for UK Families",
+    description: "Indian wedding in the UK? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to London, Leicester, Birmingham, or anywhere in the UK.",
+    path: "/indian-wedding-shopping-uk",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["United Kingdom"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-uk" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-uk" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-uk" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

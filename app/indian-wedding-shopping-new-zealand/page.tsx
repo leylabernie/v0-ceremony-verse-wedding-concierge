@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | New Zealand NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingNewZealandPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping New Zealand", path: "/indian-wedding-shopping-new-zealand" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How long does shipping take to New Zealand, and how is customs handled?",
+      answer: "Shipping from India to New Zealand typically takes 10–16 business days via express international courier. We prepare all customs documentation and provide a full landed cost estimate — including any NZ import duties — before you confirm your order, so there are no surprises at delivery.",
+    },
+    {
+      question: "How do video shopping sessions work given New Zealand's time difference?",
+      answer: "New Zealand is one of the first time zones in the world, which actually works in your favour. Our India-based specialists schedule early morning sessions that align with comfortable evening times in NZ. We coordinate all scheduling around NZST so you never have to set an inconvenient alarm for a shopping appointment.",
+    },
+    {
+      question: "What Indian wedding traditions and communities do you serve in New Zealand?",
+      answer: "We serve all major Indian wedding traditions present in New Zealand — Punjabi, South Indian (Tamil, Telugu, Kannada), Gujarati, Maharashtrian, and more. Our sourcing team understands the specific outfit requirements for each ceremony type, from Mehndi and Sangeet attire to main ceremony bridal and groom looks, and coordinated family outfits.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for New Zealand NRI Families",
+    description: "NRI bride in New Zealand? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NZ door.",
+    path: "/indian-wedding-shopping-new-zealand",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["New Zealand"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-new-zealand" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-new-zealand" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-new-zealand" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

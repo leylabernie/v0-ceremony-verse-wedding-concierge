@@ -2,7 +2,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import Script from "next/script";
-import { buildWebSiteSchema, buildOrganizationSchema, jsonLd } from "@/lib/schema";
+import { buildWebSiteSchema, buildOrganizationSchema, buildVideoObjectSchema, jsonLd } from "@/lib/schema";
 
 export const metadata = {
   title: "Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
@@ -48,97 +48,49 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const schemaOrg = {
+  // LocalBusiness schema — global on every page (correct per Google guidelines)
+  const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "name": "CeremonyVerse",
-        "description": "CeremonyVerse is an Indian wedding shopping concierge serving NRI and South Asian families in the USA, Canada, UK, Australia, and New Zealand. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and international delivery.",
-        "url": "https://www.ceremonyverse.com",
-        "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
-        "telephone": "+12153419990",
-        "email": "bhamini@ceremonyverse.com",
-        "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}],
-        "priceRange": "$$",
-        "knowsAbout": ["NRI Wedding Shopping", "Indian Bridal Fashion", "US Customs & Tariffs", "Gujarati Wedding Traditions", "South Indian Christian Weddings", "Punjabi Sikh Weddings", "Bengali Wedding Traditions"],
-        "founder": {
-          "@type": "Person",
-          "name": "Bhamini",
-          "jobTitle": "Founder & Sourcing Expert"
-        },
-        "sameAs": [
-          "https://www.instagram.com/ceremonyverse",
-          "https://www.pinterest.com/ceremonyverse",
-          "https://www.tiktok.com/@ceremonyverse",
-          "https://www.facebook.com/profile.php?id=61585573921802",
-          "https://wa.me/12153419990",
-          "https://www.trustpilot.com/review/ceremonyverse.com"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": "12",
-          "reviewCount": "12"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Wedding Sourcing Services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Style Guide & Vendor List", "description": "Curated vendor style guide for Indian wedding outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "149" } } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guided Sourcing", "description": "Live video shopping sessions with India vendors for bridal outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "599" } } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Bridal Concierge", "description": "End-to-end bridal outfit sourcing and coordination for your wedding", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "1499" } } }
-          ]
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What does CeremonyVerse do?",
-            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding directly from India — bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, ceremonial items, wedding gifts, welcome bags, sweets, and more. We offer live video shopping, quality checks, and international delivery." }
-          },
-          {
-            "@type": "Question",
-            "name": "How does CeremonyVerse source Indian wedding items from India to the USA?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We connect you with our vetted network of artisan workshops across India via live video shopping sessions. You see items in real time, approve fabrics and quality, and we handle measurements, production, inspection, and international shipping to your US address." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I buy a bridal lehenga from India and have it delivered to the USA?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. CeremonyVerse specializes in sourcing custom bridal lehengas directly from India for NRI brides in the USA. We offer live video shopping so you can see the actual fabric and embroidery before purchasing, and we handle all shipping and customs to deliver to your US door." }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does it cost to source Indian wedding outfits from India?",
-            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse services start at $149 for a Style Guide & Vendor List, $599 for Guided Sourcing with live video sessions, and $1,499 for Full Bridal Concierge. A free 30-minute consultation is always available. Most clients save 30-50% compared to US Indian boutiques." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you only source outfits or other Indian wedding items too?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We source everything for Indian weddings — bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, ceremonial puja items, return gifts, welcome bags, sweets, and even pet outfits. We are a complete Indian wedding shopping concierge." }
-          },
-          {
-            "@type": "Question",
-            "name": "How far in advance should I contact CeremonyVerse?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We recommend starting 6-12 months before your wedding date. Top artisan workshops book quickly and custom outfits require production time. If your wedding is sooner, contact us and we will tell you honestly what is achievable." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you serve intercultural couples who are new to Indian weddings?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. CeremonyVerse has extensive experience with intercultural weddings. We guide non-South Asian partners through every step — explaining ceremonies, dress codes, and what each family member typically wears. We have helped many couples where one partner had never worn Indian clothes before." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you ship Indian wedding items internationally?",
-            "acceptedAnswer": { "@type": "Answer", "text": "CeremonyVerse serves families in the USA, Canada, UK, Australia, and New Zealand. We have worked with clients across North America, the UK, and the Asia-Pacific region. All items are quality-checked in India before being shipped to your international address." }
-          }
-        ]
-      }
-    ]
+    "@type": "LocalBusiness",
+    "name": "CeremonyVerse",
+    "description": "CeremonyVerse is an Indian wedding shopping concierge serving NRI and South Asian families in the USA, Canada, UK, Australia, and New Zealand. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and international delivery.",
+    "url": "https://www.ceremonyverse.com",
+    "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+    "telephone": "+12153419990",
+    "email": "bhamini@ceremonyverse.com",
+    "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}],
+    "priceRange": "$$",
+    "knowsAbout": ["NRI Wedding Shopping", "Indian Bridal Fashion", "US Customs & Tariffs", "Gujarati Wedding Traditions", "South Indian Christian Weddings", "Punjabi Sikh Weddings", "Bengali Wedding Traditions"],
+    "founder": {
+      "@type": "Person",
+      "name": "Bhamini",
+      "jobTitle": "Founder & Sourcing Expert"
+    },
+    "sameAs": [
+      "https://www.instagram.com/ceremonyverse",
+      "https://www.pinterest.com/ceremonyverse",
+      "https://www.tiktok.com/@ceremonyverse",
+      "https://www.facebook.com/profile.php?id=61585573921802",
+      "https://wa.me/12153419990",
+      "https://www.trustpilot.com/review/ceremonyverse.com"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "12",
+      "reviewCount": "12"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Wedding Sourcing Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Style Guide & Vendor List", "description": "Curated vendor style guide for Indian wedding outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "149" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Guided Sourcing", "description": "Live video shopping sessions with India vendors for bridal outfits", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "599" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Bridal Concierge", "description": "End-to-end bridal outfit sourcing and coordination for your wedding", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "1499" } } }
+      ]
+    }
   };
 
   const howToSchema = {
@@ -182,6 +134,13 @@ export default function RootLayout({
 
   const websiteSchema = buildWebSiteSchema();
   const organizationSchema = buildOrganizationSchema();
+  const videoSchema = buildVideoObjectSchema({
+    name: "How CeremonyVerse Sources Indian Wedding Outfits from India",
+    description: "See how CeremonyVerse connects NRI families with India's best artisan workshops through live video shopping, custom measurements, quality inspections, and international delivery.",
+    path: "/",
+    uploadDate: "2026-01-15",
+    duration: "PT2M",
+  });
 
   return (
     <html lang="en">
@@ -211,9 +170,9 @@ export default function RootLayout({
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
         {/* Removed duplicate og: and twitter: meta tags — Next.js metadata API generates these automatically from the `metadata` export above. Having both caused duplicate OG tags on subpages. */}
         <Script
-          id="schema-org"
+          id="localbusiness-schema"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
         <Script
           id="howto-schema"
@@ -229,6 +188,11 @@ export default function RootLayout({
           id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLd(organizationSchema) }}
+        />
+        <Script
+          id="video-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(videoSchema) }}
         />
       </head>
       <body>

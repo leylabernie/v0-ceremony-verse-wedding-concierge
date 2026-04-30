@@ -1,17 +1,29 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
-    // Enable Next.js Image Optimization for better Core Web Vitals
-    // Remote images from ceremonyverse.com are allowed
-    remotePatterns: [
+    remotePatterns: [{ protocol: 'https', hostname: 'www.ceremonyverse.com' }],
+  },
+  async redirects() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'www.ceremonyverse.com',
+        source: '/consultation',
+        destination: '/contact',
+        permanent: true,
       },
-    ],
+    ]
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+        ],
+      },
+    ]
   },
 }
 

@@ -1,5 +1,7 @@
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import Script from "next/script"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | New York NRI Families | CeremonyVerse",
@@ -34,9 +36,41 @@ export const metadata = {
 };
 
 export default function IndianWeddingShoppingNewYorkPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Shopping New York", path: "/indian-wedding-shopping-new-york" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    {
+      question: "How does CeremonyVerse compare to shopping in Jackson Heights, Queens?",
+      answer: "Jackson Heights offers variety, but you're limited to whatever's on the rack, and quality can be inconsistent. With CeremonyVerse, you see the exact piece you're buying via live video from India, get custom stitching to your measurements, and a quality inspection before it ships.",
+    },
+    {
+      question: "Can you coordinate outfits for a large wedding party spread across the Tri-State area?",
+      answer: "That's exactly what we do best. Whether your bridesmaids are in Manhattan, family is in Long Island, and in-laws are in Connecticut, we manage every measurement and coordination detail remotely. Everyone gets their own video measurement session.",
+    },
+    {
+      question: "What ceremonies do you typically source outfits for in New York Indian weddings?",
+      answer: "We source outfits for every ceremony — mehndi, sangeet, haldi, baraat, main ceremony, and reception. For Tri-State area weddings, we commonly coordinate 6–12+ outfits per person across all events, plus accessories and ceremonial items.",
+    },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge for New York NRI Families",
+    description: "NRI bride in New York? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NY door.",
+    path: "/indian-wedding-shopping-new-york",
+    priceFrom: "149",
+    priceCurrency: "USD",
+    areaServed: ["USA"],
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      <Script id="breadcrumb-schema-new-york" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-new-york" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-new-york" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

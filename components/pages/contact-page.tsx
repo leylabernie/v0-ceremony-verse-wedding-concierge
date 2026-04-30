@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import type { PageType } from "@/app/page"
 
 interface FormData {
   name: string
@@ -24,7 +25,7 @@ const initialFormData: FormData = {
   contractAcknowledged: false,
 }
 
-export function ContactPage() {
+export function ContactPage({ onNavigate }: { onNavigate: (page: PageType) => void }) {
   const [formData, setFormData] = useState<FormData>(initialFormData)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
