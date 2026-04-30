@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function MehndiOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Mehndi Outfits USA", path: "/mehndi-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What colors are traditional for Mehndi outfits?", answer: "Yellow is the most traditional Mehndi color, followed by orange, green, and pink. Many brides choose a bright yellow for Haldi and a more elaborate look for the Mehndi function. We source across all color preferences." },
+    { question: "Should the Mehndi outfit be comfortable?", answer: "Yes — you'll be sitting for extended periods during the Mehndi application. We recommend flats or low heels and a comfortable silhouette. We factor this into our sourcing recommendations." },
+    { question: "How far in advance should I order Mehndi outfits?", answer: "6–8 months before your ceremony date is ideal. Mehndi outfits are often ordered after the bridal lehenga — but don't leave them too late, especially if bridesmaid coordination is involved." },
+    { question: "Can you coordinate bridesmaid outfits in matching colors?", answer: "Yes — this is one of our specialties. We collect all measurements, source coordinating pieces, and manage the entire process so everything arrives together." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Mehndi & Haldi Ceremony Outfits from India",
+    description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door.",
+    path: "/mehndi-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -86,6 +107,9 @@ export default function MehndiOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-mehndi-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-mehndi-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-mehndi-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

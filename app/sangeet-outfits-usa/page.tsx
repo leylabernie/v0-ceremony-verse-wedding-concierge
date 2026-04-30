@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Sangeet Night Outfits from India | Delivered to USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function SangeetOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Sangeet Outfits USA", path: "/sangeet-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What colors work best for a Sangeet outfit?", answer: "Jewel tones photograph beautifully under evening lighting — deep emerald, sapphire blue, rich plum, and burgundy are all popular. Many brides choose a bold color contrast to their bridal lehenga." },
+    { question: "Should the Sangeet outfit be different from the wedding lehenga?", answer: "Yes — most brides wear a separate look for the Sangeet. It's typically lighter and more dance-friendly than the bridal lehenga, but equally show-stopping." },
+    { question: "Can you source matching outfits for the whole party?", answer: "Absolutely. We coordinate the bride, bridesmaids, groomsmen, and family into a cohesive palette — managing all measurements and shipping together." },
+    { question: "How early should I order Sangeet outfits?", answer: "Order at least 5–8 months before your Sangeet date, especially if you're coordinating multiple people. Custom stitching takes time and we need measurements from everyone." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Sangeet Night Outfits from India",
+    description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door.",
+    path: "/sangeet-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -86,6 +107,9 @@ export default function SangeetOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-sangeet-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-sangeet-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-sangeet-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Pakistani & Muslim Wedding Outfits from India | NRI USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function PakistaniMuslimWeddingOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Pakistani & Muslim Wedding Outfits USA", path: "/pakistani-muslim-wedding-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What is the difference between a Nikah and Walima outfit?", answer: "The Nikah is the formal religious ceremony — brides typically wear deep reds, maroons, or emerald greens with heavy zardozi work. The Walima is the reception hosted by the groom's family — brides often change into a lighter, more contemporary silhouette in pastels." },
+    { question: "Can you source both Pakistani and Indian bridal outfits?", answer: "Yes. We have deep knowledge of both Pakistani and Indian bridal aesthetics and direct relationships with artisans in Lahore, Delhi, Lucknow, and Hyderabad — the four cities that define South Asian bridal embroidery." },
+    { question: "What should I wear for a Mehndi ceremony?", answer: "The Mehndi is the most colorful event — vibrant yellows, greens, and multi-color outfits. Brides often wear pishwas or ghararas embellished with gota and mirror work. We coordinate family outfits in complementary bright hues." },
+    { question: "How do you handle cross-border sourcing and shipping?", answer: "We handle the full logistics of getting your outfits from South Asia to your US door, including customs documentation and insured transit. Our cross-border expertise ensures smooth delivery regardless of origin." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Pakistani & Muslim Wedding Outfits from South Asia",
+    description: "Planning a Pakistani or Muslim wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, sharara sets, and family outfits from South Asia — delivered to your US door.",
+    path: "/pakistani-muslim-wedding-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -128,6 +149,9 @@ export default function PakistaniMuslimWeddingOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-pakistani-muslim" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-pakistani-muslim" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-pakistani-muslim" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

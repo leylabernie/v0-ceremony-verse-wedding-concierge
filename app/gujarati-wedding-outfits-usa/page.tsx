@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Gujarati Wedding Outfits from India | NRI Families USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function GujaratiWeddingOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Gujarati Wedding Outfits USA", path: "/gujarati-wedding-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What outfits are needed for a Gujarati wedding?", answer: "A Gujarati wedding spans multiple ceremonies — Garba, Mehndi, Haldi, Mameru, Saptapadi, and Reception — each with its own outfit requirement. We source outfits for every ceremony from India." },
+    { question: "Can you source chaniya cholis for Garba night?", answer: "Yes — we source vibrant, mirror-work chaniya cholis from Kutch and Jaipur, designed for spinning and dancing with the right flare and weight for movement." },
+    { question: "How far in advance should I start planning Gujarati wedding outfits?", answer: "We recommend starting 8–12 months before your wedding. Gujarati weddings require multiple outfits per person across several ceremonies, and custom stitching takes time." },
+    { question: "Can you coordinate outfits for the entire Gujarati family?", answer: "Absolutely. We manage measurements for both families, coordinate colors across ceremonies, and deliver everything together — one point of contact for the entire wedding." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Gujarati Wedding Outfits from India",
+    description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
+    path: "/gujarati-wedding-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -128,6 +149,9 @@ export default function GujaratiWeddingOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-gujarati-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-gujarati-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-gujarati-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

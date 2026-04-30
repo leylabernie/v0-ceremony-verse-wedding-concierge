@@ -6,6 +6,14 @@ export const metadata = {
   description: "NRI bride in New Zealand? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NZ door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/",
+    },
   },
   keywords: "Indian wedding shopping New Zealand, NRI bride New Zealand, buy lehenga from India Auckland, Indian wedding concierge New Zealand, Indian wedding Auckland Wellington",
   openGraph: {

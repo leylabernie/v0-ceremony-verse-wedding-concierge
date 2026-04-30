@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
@@ -115,6 +117,24 @@ const faqs = [
 ]
 
 export default function HowItWorksPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "How It Works", path: "/how-it-works" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How long does the whole process take?", answer: "From consultation to delivery, the typical timeline is 8–12 weeks. Rush orders (6 weeks) are sometimes possible depending on the complexity. We recommend starting 4–6 months before your first ceremony to keep things relaxed." },
+    { question: "Can I see the outfit before paying?", answer: "Yes. During your live video shopping session, you see the exact outfit — fabric, color, embroidery — in real time. You approve the specific piece before any payment is collected. After stitching, we do a final video inspection with you before shipping." },
+    { question: "What if something is wrong when it arrives?", answer: "We handle it. If an outfit doesn't match what you approved — in color, fit, or quality — we work with our team in India to fix or replace it. Our quality inspection before shipping is designed to catch issues early, but if anything slips through, we make it right." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "CeremonyVerse Indian Wedding Sourcing Process",
+    description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
+    path: "/how-it-works",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh", color: "#2f2f2f" }}>
       <SeoNav />
@@ -472,6 +492,9 @@ export default function HowItWorksPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-how-it-works" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-how-it-works" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-how-it-works" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

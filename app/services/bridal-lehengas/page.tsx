@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
@@ -26,6 +28,28 @@ export const metadata = {
 };
 
 export default function BridalLehengaServicePage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Bridal Lehengas", path: "/services/bridal-lehengas" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How much does a bridal lehenga from India cost?", answer: "Quality bridal lehengas from India cost $900–$4,000 depending on fabric and embroidery. With our sourcing fee, shipping, and customs, total cost is typically 30–50% less than a US boutique for equivalent quality." },
+    { question: "How long does sourcing a bridal lehenga take?", answer: "Allow 14–20 weeks for custom production plus shipping. We recommend starting 10–12 months before your wedding date." },
+    { question: "What if my lehenga doesn't fit?", answer: "We guide every measurement on video call and maintain a 99% first-time fit rate. Minor alterations, if needed, can be done by any local tailor." },
+    { question: "What styles are available?", answer: "All styles — heavy zardozi embroidery, thread work, mirror work, raw silk, georgette, tissue silk, any color. We source based on your specific vision." },
+    { question: "Can I see designs before deciding?", answer: "Yes — we do live video shopping sessions where you see actual items in real time. You never commit to anything without seeing it first." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Bridal Lehenga Sourcing",
+    description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques.",
+    path: "/services/bridal-lehengas",
+    priceFrom: "599",
+    image: "/images/services-bridal-gold.jpg",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -77,6 +101,9 @@ export default function BridalLehengaServicePage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-bridal-lehengas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-bridal-lehengas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-bridal-lehengas" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

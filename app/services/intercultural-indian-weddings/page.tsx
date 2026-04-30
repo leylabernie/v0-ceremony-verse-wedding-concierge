@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
@@ -26,6 +28,26 @@ export const metadata = {
 };
 
 export default function InterculturalWeddingPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Intercultural Indian Weddings", path: "/services/intercultural-indian-weddings" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What should a non-South Asian partner wear to an Indian wedding?", answer: "We guide non-South Asian partners through every ceremony's dress code — from a sherwani for the Baraat to a kurta for the Sangeet. We explain the cultural significance of each outfit and source everything custom-stitched to your measurements." },
+    { question: "Can you coordinate outfits for both families in an intercultural wedding?", answer: "Yes. We coordinate outfits for both families — ensuring cultural authenticity for the Indian side and comfortable, appropriate options for the non-South Asian side. Everything is sourced together so the overall look is cohesive." },
+    { question: "How do you handle different ceremony requirements?", answer: "Each ceremony has its own dress code and cultural significance. We create a ceremony-by-ceremony outfit plan, explaining what to wear, when, and why — so both families feel confident and comfortable." },
+    { question: "What if the groom has never worn Indian clothing before?", answer: "Many of our clients are first-time sherwani wearers. We guide you through styles, fit, and how to wear it — and we custom-stitch every piece so it feels natural and comfortable." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Intercultural Indian Wedding Outfit Sourcing",
+    description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, ceremony, and cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits.",
+    path: "/services/intercultural-indian-weddings",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -88,6 +110,9 @@ export default function InterculturalWeddingPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-intercultural-weddings" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-intercultural-weddings" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-intercultural-weddings" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

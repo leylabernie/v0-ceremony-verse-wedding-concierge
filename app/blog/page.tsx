@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
@@ -101,8 +103,14 @@ const posts = [
 ];
 
 export default function BlogIndexPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+  ]);
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <Script id="breadcrumb-schema-blog" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
       <SeoNav />
 
       {/* Hero */}

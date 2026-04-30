@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Guest Outfits from India | NRI USA | CeremonyVerse",
@@ -26,6 +28,26 @@ export const metadata = {
 };
 
 export default function IndianWeddingGuestOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Indian Wedding Guest Outfits USA", path: "/indian-wedding-guest-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "I'm attending a wedding in 6 weeks — is that enough time?", answer: "It's tight. We recommend a minimum of 8–10 weeks for sourcing from India. If you're under that timeline, reach out immediately and we'll let you know what's realistic based on your needs." },
+    { question: "Can you help me figure out what to wear?", answer: "Yes — our Style Guide service ($149) includes a personalized lookbook based on the event type, dress code, your preferences, and body type. Or start with a free consultation to talk it through." },
+    { question: "I need outfits for my whole family. Can you coordinate everything?", answer: "Absolutely. Coordinated family sets are one of our most popular requests. We collect everyone's measurements, source complementary outfits, and ship everything together." },
+    { question: "How do measurements work if I'm in the US?", answer: "We send you a simple measurement guide. You can measure at home or visit a local tailor to get your numbers. We review everything before stitching begins." },
+    { question: "What if I don't like what I see on the video call?", answer: "No pressure to buy. The live video session lets you see multiple options in real time. If nothing feels right, we keep looking — or we adjust the brief and schedule another session." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Guest Outfits from India",
+    description: "Need Indian wedding guest outfits in the USA? CeremonyVerse sources lehengas, sarees, anarkalis, and sherwanis from India — live video shopping, custom stitching, delivered to your US door.",
+    path: "/indian-wedding-guest-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -190,6 +212,9 @@ export default function IndianWeddingGuestOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-guest-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-guest-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-guest-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

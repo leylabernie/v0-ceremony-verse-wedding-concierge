@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function NonIndianPartnerIndianWeddingBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
-    "description": "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between. CeremonyVerse helps intercultural couples get it right.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide", path: "/blog/what-non-indian-partner-should-wear-indian-wedding" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
+    description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between. CeremonyVerse helps intercultural couples get it right.",
+    path: "/blog/what-non-indian-partner-should-wear-indian-wedding",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["what to wear to Indian wedding as non-Indian", "non-Indian wearing Indian wedding clothes", "fusion Indian wedding outfit", "intercultural Indian wedding outfits"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-non-indian-partner" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-non-indian-partner" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

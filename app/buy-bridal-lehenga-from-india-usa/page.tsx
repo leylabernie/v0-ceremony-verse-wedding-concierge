@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export const metadata = {
   title: "Buy Bridal Lehenga from India | Custom NRI Bridal Lehenga Delivered to USA | CeremonyVerse",
   description: "Source your dream bridal lehenga directly from India. CeremonyVerse offers live video shopping, custom measurements, quality checks, and delivery to your US door. Serving NRI brides across the United States. Save 30-50% vs US boutiques.",
@@ -24,8 +26,29 @@ export const metadata = {
 
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export default function BridalLehengaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Buy Bridal Lehenga from India", path: "/buy-bridal-lehenga-from-india-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How much does a bridal lehenga from India cost with delivery to the USA?", answer: "Quality bridal lehengas sourced from India typically cost $900–$4,000 including sourcing fee, shipping, and customs. This is usually 30–50% less than US boutiques for equivalent quality." },
+    { question: "How does live video shopping work for bridal lehengas?", answer: "We connect you with trusted designers and makers in India via live video call. You see the fabric, embroidery, and colors in real time before making any decision. The exact piece you approve is reserved for you." },
+    { question: "How long does it take to get a bridal lehenga delivered to the USA?", answer: "Allow 14–20 weeks for custom production plus shipping. We recommend starting 10–12 months before your wedding date for the best selection and stress-free process." },
+    { question: "What if the bridal lehenga doesn't fit when it arrives?", answer: "Every outfit is custom stitched to your exact measurements with our guided measurement process. We maintain a 99% first-time fit rate, and minor alterations can be done by any local tailor." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Buy Bridal Lehenga from India (Delivered to USA)",
+    description: "Source your dream bridal lehenga directly from India. CeremonyVerse offers live video shopping, custom measurements, quality checks, and delivery to your US door.",
+    path: "/buy-bridal-lehenga-from-india-usa",
+    priceFrom: "599",
+    image: "/images/services-bridal-gold.jpg",
+  })
+
   return (
     <div className="bg-[var(--cv-bg)]">
       <SeoNav />
@@ -138,6 +161,9 @@ export default function BridalLehengaPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-buy-bridal-lehenga" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-buy-bridal-lehenga" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-buy-bridal-lehenga" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export const metadata = {
   title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
   description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America's trusted NRI wedding shopping concierge.",
@@ -24,8 +26,28 @@ export const metadata = {
 
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export default function BuyFromIndiaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Buy Indian Wedding Outfits from India", path: "/buy-indian-wedding-outfits-from-india" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "Can I buy Indian wedding outfits from India without traveling?", answer: "Yes. CeremonyVerse provides live video shopping sessions with trusted designers and makers in India. You review options in real time, approve what you like, and we handle the rest — from measurements to delivery." },
+    { question: "What types of wedding outfits can I source from India?", answer: "We source bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, accessories, and ceremonial items — everything you need for an Indian wedding." },
+    { question: "How much can I save by sourcing from India vs US boutiques?", answer: "Most clients save 30–50% compared to US boutiques for equivalent quality. You're sourcing directly from the same artisan workshops without retail markups." },
+    { question: "How does the quality check process work?", answer: "Every outfit is reviewed before shipping so you know what to expect. We verify stitching, color accuracy, and fabric quality against what you approved during the live video session." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Buy Indian Wedding Outfits from India",
+    description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more.",
+    path: "/buy-indian-wedding-outfits-from-india",
+    priceFrom: "149",
+  })
+
   return (
     <div className="bg-[var(--cv-bg)]">
       <SeoNav />
@@ -140,6 +162,9 @@ export default function BuyFromIndiaPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-buy-indian-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-buy-indian-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-buy-indian-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

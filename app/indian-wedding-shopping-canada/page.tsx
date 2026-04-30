@@ -6,6 +6,14 @@ export const metadata = {
   description: "NRI bride in Canada? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to Toronto, Vancouver, Calgary, or anywhere in Canada.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/",
+    },
   },
   keywords: "Indian wedding shopping Canada, NRI bride Canada, buy lehenga from India Toronto, Indian wedding concierge Canada, Brampton Indian wedding outfits, Vancouver Indian bridal wear",
   openGraph: {

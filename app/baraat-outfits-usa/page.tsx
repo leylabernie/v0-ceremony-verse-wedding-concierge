@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Baraat Outfits from India | Groom Sherwani & Groomsmen Kurta Sets | CeremonyVerse",
@@ -26,6 +28,26 @@ export const metadata = {
 };
 
 export default function BaraatOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Baraat Outfits USA", path: "/baraat-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "Should the Baraat sherwani be different from the wedding sherwani?", answer: "Many grooms wear the same sherwani for both the Baraat and the wedding ceremony, while others prefer a separate look. We can source one or both depending on your preference and budget." },
+    { question: "How long does a custom sherwani take?", answer: "Allow 12–16 weeks for a custom sherwani — measurements, production, and shipping. We recommend starting at least 10 months before your wedding date." },
+    { question: "Can you coordinate groomsmen across multiple states?", answer: "Yes — we send the measurement guide to each groomsman, follow up to collect all measurements, and ship to a single address or individually. Multi-state coordination is something we do regularly." },
+    { question: "What if the groom has never worn a sherwani before?", answer: "No problem at all. We guide non-South Asian grooms through everything — what styles look best, how to wear it, and what accessories go with it. Many of our clients are first-time sherwani wearers." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Baraat Outfits from India",
+    description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA.",
+    path: "/baraat-outfits-usa",
+    priceFrom: "599",
+    image: "/images/services-groom.jpg",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -86,6 +108,9 @@ export default function BaraatOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-baraat-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-baraat-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-baraat-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

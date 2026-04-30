@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export const metadata = {
   title: "Indian Wedding Jewelry, Gifts & Ceremonial Items from India | Delivered to USA | CeremonyVerse",
   description: "Source Indian wedding jewelry, ceremonial items, welcome bags, return gifts, sweets, and more directly from India. CeremonyVerse delivers everything for your Indian wedding to your US door. Kundan jewelry, puja items, potli bags, mithai and more.",
@@ -24,8 +26,29 @@ export const metadata = {
 
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export default function AccessoriesPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Wedding Accessories & Ceremony Items", path: "/wedding-accessories-and-ceremony-items-from-india" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What wedding accessories can I source from India?", answer: "We source bridal and bridesmaid jewelry, dupattas, pagdi, pooja essentials, ceremony items, wedding favors, welcome bags, potli bags, mithai, and more — all directly from India with quality verification." },
+    { question: "Can you source authentic puja items and ceremonial supplies?", answer: "Yes. We source authentic pooja thalis, kalire, coconut decorations, and ceremony-specific items from trusted suppliers in India, ensuring they meet your cultural and ritual requirements." },
+    { question: "How do you handle shipping fragile items like jewelry from India?", answer: "Every item is carefully packaged for international transit. We handle all customs documentation and insure the shipment so your jewelry and accessories arrive safely at your US door." },
+    { question: "Can you put together welcome bags for wedding guests?", answer: "Yes — we curate and assemble custom welcome bags with Indian sweets, herbal teas, personalized items, and cultural touches, then ship them to your US address ready for distribution." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Wedding Accessories & Ceremony Items from India",
+    description: "Source Indian wedding jewelry, ceremonial items, welcome bags, return gifts, sweets, and more directly from India. Delivered to your US door.",
+    path: "/wedding-accessories-and-ceremony-items-from-india",
+    priceFrom: "149",
+    image: "/images/services-jewelry-real.jpg",
+  })
+
   return (
     <div className="bg-[var(--cv-bg)]">
       <SeoNav />
@@ -111,6 +134,9 @@ export default function AccessoriesPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-wedding-accessories" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-wedding-accessories" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-wedding-accessories" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

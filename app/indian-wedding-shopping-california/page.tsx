@@ -6,6 +6,14 @@ export const metadata = {
   description: "NRI bride in California? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your CA door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-california",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/indian-wedding-shopping-california",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/",
+    },
   },
   keywords: "Indian wedding shopping California, NRI bride California, buy lehenga from India Bay Area, Indian wedding concierge California",
   openGraph: {

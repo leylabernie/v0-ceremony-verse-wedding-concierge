@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026 | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function TariffsBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
-    "description": "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026", path: "/blog/us-tariffs-indian-wedding-outfits-2026" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
+    description: "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
+    path: "/blog/us-tariffs-indian-wedding-outfits-2026",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["US tariffs Indian wedding outfits", "Indian lehenga import USA", "NRI bride lehenga from India 2026", "Indian wedding tariffs 2026"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-us-tariffs" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-us-tariffs" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

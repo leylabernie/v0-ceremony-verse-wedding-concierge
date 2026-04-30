@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "About Bhamini — Founder of CeremonyVerse",
@@ -25,6 +27,11 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+  ])
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -158,6 +165,7 @@ export default function AboutPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-about" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
     </div>
   )
 }

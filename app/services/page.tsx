@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Services — Bridal Lehengas, Sherwanis, Jewelry & More | CeremonyVerse",
@@ -86,32 +88,27 @@ const services = [
 ]
 
 export default function ServicesPage() {
-  const servicesSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Indian Wedding Shopping Concierge",
-    "provider": {
-      "@type": "Organization",
-      "name": "CeremonyVerse",
-      "url": "https://www.ceremonyverse.com",
-      "telephone": "+12153419990",
-      "areaServed": ["US", "CA", "GB", "AU", "NZ"],
-    },
-    "description": "Complete Indian wedding sourcing services — bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, ceremonial items, gifts, and welcome bags sourced from India with live video approval.",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "USD",
-      "price": "149",
-      "description": "Starting from $149 for Style Guide & Vendor List",
-    },
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What services does CeremonyVerse offer?", answer: "CeremonyVerse offers complete Indian wedding sourcing services including bridal lehengas, groom sherwanis, bridesmaid outfits, family attire, jewelry, ceremonial items, wedding gifts, and welcome bags — all sourced from India with live video approval." },
+    { question: "How much do CeremonyVerse services cost?", answer: "Our sourcing fee starts at $149 for a Style Guide & Vendor List, $599 for Guided Sourcing, and $1,499 for Full Bridal Concierge. Outfit costs, shipping, and customs are separate and quoted upfront." },
+    { question: "Do you source everything from India?", answer: "Yes. All outfits and items are sourced directly from vetted artisan workshops in India. We work with weavers, embroiderers, and tailors across India's major bridal markets including Delhi, Jaipur, Kanchipuram, Varanasi, and Surat." },
+    { question: "What countries do you deliver to?", answer: "We primarily deliver to the USA, but also serve clients in Canada, UK, Australia, and New Zealand. All items are shipped with full customs documentation and insured transit." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping Concierge",
+    description: "Complete Indian wedding sourcing services — bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, ceremonial items, gifts, and welcome bags sourced from India with live video approval.",
+    path: "/services",
+    priceFrom: "149",
+  })
 
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
-      />
       <SeoNav />
 
       {/* Hero */}
@@ -198,6 +195,9 @@ export default function ServicesPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-services" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-services" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-services" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

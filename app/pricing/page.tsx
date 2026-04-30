@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema"
 
 import { CustomsCalculator } from "@/components/customs-calculator"
 
@@ -110,6 +112,11 @@ const comparisonRows = [
 ]
 
 export default function PricingPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Pricing", path: "/pricing" },
+  ])
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -148,6 +155,7 @@ export default function PricingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <SeoNav />
+      <Script id="breadcrumb-schema-pricing" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

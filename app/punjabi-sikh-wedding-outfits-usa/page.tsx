@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Punjabi & Sikh Wedding Outfits from India | NRI USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function PunjabiSikhWeddingOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Punjabi & Sikh Wedding Outfits USA", path: "/punjabi-sikh-wedding-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What makes a Punjabi Sikh wedding different from other Indian weddings?", answer: "Punjabi and Sikh weddings include unique ceremonies like the Chunni, Jaggo, and the sacred Anand Karaj in the Gurudwara. Each has specific outfit requirements, from the traditional red bridal lehenga to the groom's sherwani with safa and kalgi." },
+    { question: "Can you source authentic chooda and kalire from India?", answer: "Yes. We source authentic chooda sets and hand-crafted kalire directly from Amritsar and Ludhiana markets — the real thing, blessed and traditional." },
+    { question: "How do you coordinate a large Punjabi wedding party across US states?", answer: "We send measurement guides to each bridesmaid and groomsman, follow up to collect all numbers, and source matching sets from a single artisan partner. Everything can be shipped to one address or individually across states." },
+    { question: "What is the typical timeline for sourcing Punjabi wedding outfits?", answer: "We recommend starting 8–12 months before the wedding. Punjabi weddings involve many ceremonies and many people, so early planning ensures the best selection and stress-free delivery." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Punjabi & Sikh Wedding Outfits from India",
+    description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
+    path: "/punjabi-sikh-wedding-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -133,6 +154,9 @@ export default function PunjabiSikhWeddingOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-punjabi-sikh-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-punjabi-sikh-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-punjabi-sikh-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

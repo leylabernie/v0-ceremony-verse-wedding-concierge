@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function KanchipuramSareesPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Kanchipuram Silk Sarees USA", path: "/kanchipuram-silk-sarees-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How much does a Kanchipuram silk saree cost?", answer: "Authentic Kanchipuram pure silk sarees range from approximately $150–$800 depending on the weight of silk, zari work, and design complexity. We source directly to ensure you get authentic quality at the best price." },
+    { question: "How do I know it's authentic?", answer: "We source only Silk Mark certified sarees from verified weavers in Kanchipuram. We have personally visited the source and know exactly what we're sourcing. No synthetic silk, no fake zari." },
+    { question: "Can you source specific colors or designs?", answer: "Yes — tell us your wedding color palette and we'll source sarees that coordinate with the bridal and groom outfits. We can also source matching blouse fabric or arrange custom blouse stitching." },
+    { question: "How long does it take?", answer: "We recommend allowing 6–8 weeks for Kanchipuram saree sourcing, including selection, shipping, and delivery. Start early if you need multiple sarees for family members." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Kanchipuram Silk Sarees for US Families",
+    description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. Handwoven with pure mulberry silk and real gold or silver zari thread.",
+    path: "/kanchipuram-silk-sarees-usa",
+    priceFrom: "149",
+  })
+
   const sarees = [
     { src: "/images/kanchipuram-red-silk.jpg", name: "Kancheepuram Silk Red", desc: "Classic bridal red with gold zari border — the most traditional choice for South Indian weddings." },
     { src: "/images/kanchipuram-orange-silk.jpg", name: "Kancheepuram Silk Orange", desc: "Vibrant orange with intricate gold border — perfect for the bride or mother of the bride." },
@@ -127,6 +148,9 @@ export default function KanchipuramSareesPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-kanchipuram-sarees" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-kanchipuram-sarees" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-kanchipuram-sarees" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

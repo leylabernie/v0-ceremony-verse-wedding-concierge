@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
@@ -26,40 +28,28 @@ export const metadata = {
 };
 
 export default function ShopFromIndiaPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Shop from India", path: "/shop-from-india" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How does live video shopping from India work?", answer: "We connect you with trusted boutiques in India via live video call. You see the actual fabric, embroidery, and colors in real time — no edited images. The exact piece you approve is reserved and shipped to you." },
+    { question: "What can I buy from India through CeremonyVerse?", answer: "We source bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, dupattas, ceremonial items, wedding gifts, welcome bags, and more — everything for your Indian wedding." },
+    { question: "How do you ensure quality when shopping from India?", answer: "We work only with verified and reliable artisan workshops. Before anything ships, we check embroidery, stitching, and finishing. If something doesn't match what you approved on video, we fix it before shipping." },
+    { question: "How much does it cost to shop from India with CeremonyVerse?", answer: "Our sourcing fee starts at $149 for a Style Guide and goes up to $1,499 for Full Bridal Concierge. Outfit costs, shipping, and customs are separate and quoted upfront before you commit." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Indian Wedding Shopping from India to USA",
+    description: "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery.",
+    path: "/shop-from-india",
+    priceFrom: "149",
+  })
+
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
       <SeoNav />
-
-      {/* SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "CeremonyVerse",
-            url: "https://www.ceremonyverse.com/shop-from-india",
-            description:
-              "Indian wedding outfit sourcing service with live video shopping from trusted artisan workshops in India.",
-            areaServed: {
-              "@type": "Country",
-              name: "United States",
-            },
-            serviceType: [
-              "Indian Wedding Outfit Sourcing",
-              "Personal Wedding Shopper India",
-              "Bridal Lehenga Sourcing",
-              "Sherwani Sourcing",
-            ],
-            offers: {
-              "@type": "Offer",
-              availabilityStarts: "2026-08-01",
-              description:
-                "Now booking clients for August 2026 weddings.",
-            },
-          }),
-        }}
-      />
 
       {/* HERO */}
       <section className="py-20 px-6 text-center">
@@ -228,6 +218,9 @@ export default function ShopFromIndiaPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-shop-from-india" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-shop-from-india" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-shop-from-india" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </main>
   );
 }

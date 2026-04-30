@@ -2,6 +2,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import Script from "next/script";
+import { buildWebSiteSchema, buildOrganizationSchema, jsonLd } from "@/lib/schema";
 
 export const metadata = {
   title: "Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
@@ -179,15 +180,8 @@ export default function RootLayout({
     }
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ceremonyverse.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ceremonyverse.com/services/bridal-lehengas" },
-      { "@type": "ListItem", "position": 3, "name": "Book Consultation", "item": "https://www.ceremonyverse.com/contact" }
-    ]
-  };
+  const websiteSchema = buildWebSiteSchema();
+  const organizationSchema = buildOrganizationSchema();
 
   return (
     <html lang="en">
@@ -217,11 +211,6 @@ export default function RootLayout({
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
         {/* Removed duplicate og: and twitter: meta tags — Next.js metadata API generates these automatically from the `metadata` export above. Having both caused duplicate OG tags on subpages. */}
         <Script
-          id="breadcrumb-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-        />
-        <Script
           id="schema-org"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
@@ -230,6 +219,16 @@ export default function RootLayout({
           id="howto-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }}
+        />
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(organizationSchema) }}
         />
       </head>
       <body>

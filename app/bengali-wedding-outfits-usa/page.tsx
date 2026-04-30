@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Bengali Wedding Outfits from India | NRI USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function BengaliWeddingOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Bengali Wedding Outfits USA", path: "/bengali-wedding-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What does a Bengali bride traditionally wear?", answer: "A Bengali bride traditionally wears a red Banarasi silk saree with gold zari work, draped in the distinctive Bengali style (seedha pallu). We source directly from Varanasi weavers to ensure authentic handwoven Benarasi silk." },
+    { question: "Can you source authentic topor and mukut for the Bengali groom?", answer: "Yes. We source handcrafted topors (ceremonial crowns) and mukut directly from Kolkata artisans, along with matching dhoti-kurta sets for the groom." },
+    { question: "What is the Gaye Holud outfit requirement?", answer: "Yellow is the color of the Gaye Holud — turmeric yellow sarees, salwar sets, and coordinated family outfits. Both sides of the family need to be outfitted since the bride and groom each have separate haldi ceremonies." },
+    { question: "Can you source shankha pola and alta?", answer: "Yes. We source authentic shankha pola sets (red and white bangles) and alta (red dye) from Kolkata — essential Bengali bridal elements that carry deep cultural meaning." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Bengali Wedding Outfits from India",
+    description: "Planning a Bengali wedding in the USA? CeremonyVerse sources authentic Banarasi silk sarees, bridal lehengas, sherwanis, and family outfits from India — delivered to your US door.",
+    path: "/bengali-wedding-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -132,6 +153,9 @@ export default function BengaliWeddingOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-bengali-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-bengali-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-bengali-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Sabyasachi Alternatives: Designer-Quality Lehengas for NRI Brides for Less | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function SabyasachiAlternativesBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Sabyasachi Alternatives: Designer-Quality Lehengas for NRI Brides for Less",
-    "description": "NRI brides: get Sabyasachi-quality craftsmanship at $800–$3,000 instead of $5,000–$25,000 by sourcing directly from India's artisan regions. Here is exactly how.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "Sabyasachi Alternatives: Designer-Quality Lehengas for NRI Brides for Less", path: "/blog/sabyasachi-alternatives-nri-brides" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "Sabyasachi Alternatives: Designer-Quality Lehengas for NRI Brides for Less",
+    description: "NRI brides: get Sabyasachi-quality craftsmanship at $800–$3,000 instead of $5,000–$25,000 by sourcing directly from India's artisan regions. Here is exactly how.",
+    path: "/blog/sabyasachi-alternatives-nri-brides",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["Sabyasachi alternatives", "affordable Sabyasachi inspired lehenga", "designer lehenga alternatives India", "luxury lehenga without designer price"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-sabyasachi-alternatives" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-sabyasachi-alternatives" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

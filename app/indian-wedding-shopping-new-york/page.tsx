@@ -6,6 +6,14 @@ export const metadata = {
   description: "NRI bride in New York? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NY door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/",
+    },
   },
   keywords: "Indian wedding shopping New York, NRI bride New York, buy lehenga from India NYC, Indian wedding concierge New York",
   openGraph: {

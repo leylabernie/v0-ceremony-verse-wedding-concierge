@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "How Much Does a Bridal Lehenga from India Cost? Real Examples | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function LehengaCostBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How Much Does a Bridal Lehenga from India Cost? Real Examples",
-    "description": "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/how-much-does-bridal-lehenga-from-india-cost" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "How Much Does a Bridal Lehenga from India Cost? Real Examples", path: "/blog/how-much-does-bridal-lehenga-from-india-cost" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "How Much Does a Bridal Lehenga from India Cost? Real Examples",
+    description: "Real cost breakdown for NRI brides: bridal lehenga prices from India including outfit, customs, shipping, and concierge fees. No hidden costs.",
+    path: "/blog/how-much-does-bridal-lehenga-from-india-cost",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["bridal lehenga cost from India", "how much does lehenga cost India USA", "NRI bridal lehenga price", "lehenga price from India shipped to USA"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-lehenga-cost" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-lehenga-cost" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

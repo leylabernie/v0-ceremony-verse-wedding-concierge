@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "How to Source Your Indian Wedding Outfits from India — Without Going to India | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function IndianWeddingShoppingWithoutGoingToIndiaBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How to Source Your Indian Wedding Outfits from India — Without Going to India",
-    "description": "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "How to Source Your Indian Wedding Outfits from India — Without Going to India", path: "/blog/indian-wedding-shopping-without-going-to-india" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "How to Source Your Indian Wedding Outfits from India — Without Going to India",
+    description: "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
+    path: "/blog/indian-wedding-shopping-without-going-to-india",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["Indian wedding shopping without going to India", "buy Indian wedding clothes from abroad", "NRI wedding shopping"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-indian-wedding-shopping" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-indian-wedding-shopping" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

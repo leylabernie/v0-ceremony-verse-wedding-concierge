@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export const metadata = {
   title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
   description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",
@@ -24,8 +26,29 @@ export const metadata = {
 
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export default function BridesmaidPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Bridesmaid & Family Outfits from India", path: "/bridesmaid-and-family-outfits-from-india" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "Can you coordinate matching bridesmaid outfits from India?", answer: "Yes. We coordinate lehengas, sarees, or salwar sets for your entire bridal party — ensuring consistent colors, fabrics, and sizing. All measurements are collected and managed by us." },
+    { question: "How do you handle sizing for multiple bridesmaids in different states?", answer: "We send measurement guides to each person and follow up to collect accurate numbers. Every outfit is custom-stitched to individual measurements and can be shipped to a single address or individually." },
+    { question: "Can we choose different styles but the same color family?", answer: "Absolutely. We can source identical outfits or complementary styles in a coordinated color palette — whatever matches your wedding vision." },
+    { question: "How far in advance should we order bridesmaid outfits?", answer: "We recommend ordering 5–8 months before the ceremony, especially when coordinating multiple people. Custom stitching takes time and we need measurements from everyone." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Bridesmaid & Family Outfits from India",
+    description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA.",
+    path: "/bridesmaid-and-family-outfits-from-india",
+    priceFrom: "599",
+    image: "/images/services-bridesmaids.jpg",
+  })
+
   return (
     <div className="bg-[var(--cv-bg)]">
       <SeoNav />
@@ -138,6 +161,9 @@ export default function BridesmaidPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-bridesmaid-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-bridesmaid-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-bridesmaid-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

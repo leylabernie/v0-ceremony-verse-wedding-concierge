@@ -1,3 +1,5 @@
+import Script from "next/script"
+
 export const metadata = {
   title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
   description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",
@@ -24,8 +26,29 @@ export const metadata = {
 
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export default function SherwaniPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Buy Sherwani from India", path: "/buy-sherwani-from-india-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "How much does a sherwani from India cost with delivery to the USA?", answer: "Custom sherwanis sourced from India typically range from $300–$2,000 depending on fabric and embroidery. With our sourcing fee, shipping, and customs, total cost is significantly less than US boutiques for equivalent quality." },
+    { question: "How does custom sizing work for sherwanis?", answer: "We guide you through a detailed measurement process and have your sherwani custom-stitched to your exact measurements. No off-the-rack sizing — your outfit is made specifically for you." },
+    { question: "What styles of sherwanis are available?", answer: "We source full-length sherwanis, bandhgalas, Indo-western suits, and kurta sets — in any color and fabric. Classic ivory, bold jewel tones, and everything in between from India's top groom outfit markets." },
+    { question: "How long does it take to get a sherwani delivered to the USA?", answer: "Allow 12–16 weeks for a custom sherwani including production and shipping. We recommend starting at least 8–10 months before your wedding date." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "Buy Sherwani from India (Delivered to USA)",
+    description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address.",
+    path: "/buy-sherwani-from-india-usa",
+    priceFrom: "599",
+    image: "/images/services-groom.jpg",
+  })
+
   return (
     <div className="bg-[var(--cv-bg)]">
       <SeoNav />
@@ -138,6 +161,9 @@ export default function SherwaniPage() {
       </section>
 
     <SeoFooter />
+      <Script id="breadcrumb-schema-buy-sherwani" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-buy-sherwani" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-buy-sherwani" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

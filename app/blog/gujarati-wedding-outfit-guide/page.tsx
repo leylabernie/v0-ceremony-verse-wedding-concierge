@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function GujaratiWeddingOutfitGuideBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
-    "description": "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony", path: "/blog/gujarati-wedding-outfit-guide" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
+    description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
+    path: "/blog/gujarati-wedding-outfit-guide",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["gujarati wedding outfits", "gujarati wedding outfit guide", "gujarati bride outfit", "garba night outfit", "chaniya choli USA"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-gujarati-wedding-outfit-guide" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-gujarati-wedding-outfit-guide" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

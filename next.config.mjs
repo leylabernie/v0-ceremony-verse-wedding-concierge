@@ -4,7 +4,14 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Enable Next.js Image Optimization for better Core Web Vitals
+    // Remote images from ceremonyverse.com are allowed
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.ceremonyverse.com',
+      },
+    ],
   },
 }
 

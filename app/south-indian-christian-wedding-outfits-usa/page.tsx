@@ -1,5 +1,7 @@
+import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
+import { buildBreadcrumbSchema, buildFAQSchema, buildServiceSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "South Indian Christian Wedding Outfits from India | NRI USA | CeremonyVerse",
@@ -26,6 +28,25 @@ export const metadata = {
 };
 
 export default function SouthIndianChristianWeddingOutfitsPage() {
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "South Indian Christian Wedding Outfits USA", path: "/south-indian-christian-wedding-outfits-usa" },
+  ])
+
+  const faqSchema = buildFAQSchema([
+    { question: "What do South Indian Christian brides wear for the church ceremony?", answer: "South Indian Christian brides typically wear a white, cream, or soft pastel saree for the church ceremony. Kerala Christian brides often choose a kasavu saree with gold border, while Tamil Christian brides may choose a Kanchipuram silk in ivory or blush." },
+    { question: "Can you source authentic Kanchipuram silk sarees for the family?", answer: "Yes. We source directly from Kanchipuram — the only place where authentic Kanchipuram silk is woven — ensuring pure zari and genuine silk for mothers, aunties, and senior family members." },
+    { question: "How do you handle different Kerala and Tamil Christian traditions?", answer: "Kerala Christian (Syro-Malabar, Latin Catholic, Marthoma) and Tamil Christian families each have nuanced traditions. We understand these differences and source outfits that honor your specific community's heritage." },
+    { question: "Can you coordinate bridesmaid outfits for a South Indian Christian wedding?", answer: "Yes. Bridesmaids at South Indian Christian weddings are often coordinated in matching sarees or churidars in pastels or complementary shades. We collect all measurements and source matching sets from a single artisan partner for perfect color consistency." },
+  ])
+
+  const serviceSchema = buildServiceSchema({
+    name: "South Indian Christian Wedding Outfits from India",
+    description: "Planning a South Indian Christian wedding in the USA? CeremonyVerse sources Kerala Christian sarees, Kanchipuram silk, bridesmaids outfits, and bridal wear from India — delivered to your US door.",
+    path: "/south-indian-christian-wedding-outfits-usa",
+    priceFrom: "149",
+  })
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
@@ -128,6 +149,9 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
         </div>
       </section>
     <SeoFooter />
+      <Script id="breadcrumb-schema-south-indian-christian" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="faq-schema-south-indian-christian" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
+      <Script id="service-schema-south-indian-christian" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(serviceSchema) }} />
     </div>
   )
 }

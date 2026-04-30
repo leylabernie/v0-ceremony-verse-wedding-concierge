@@ -2,6 +2,8 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { buildBreadcrumbSchema, buildBlogPostingSchema, jsonLd } from "@/lib/schema";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide | CeremonyVerse",
@@ -28,20 +30,26 @@ export const metadata: Metadata = {
 };
 
 export default function HowManyOutfitsForIndianWeddingBlogPost() {
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide",
-    "description": "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
-    "author": { "@type": "Person", "name": "Bhamini", "url": "https://www.ceremonyverse.com/about" },
-    "publisher": { "@type": "Organization", "name": "CeremonyVerse", "url": "https://www.ceremonyverse.com" },
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-04-23",
-    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.ceremonyverse.com/blog/how-many-outfits-for-indian-wedding" }
-  };
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide", path: "/blog/how-many-outfits-for-indian-wedding" },
+  ]);
+
+  const blogSchema = buildBlogPostingSchema({
+    title: "How Many Outfits Does an Indian Bride Need? A Ceremony-by-Ceremony Guide",
+    description: "A complete ceremony-by-ceremony breakdown of how many outfits an Indian bride needs — from mehndi to reception — with outfit counts by tradition and budget tips.",
+    path: "/blog/how-many-outfits-for-indian-wedding",
+    datePublished: "2026-03-01",
+    dateModified: "2026-04-23",
+    image: "/images/hero-lehenga.jpg",
+    keywords: ["how many outfits for Indian wedding", "Indian wedding outfit count", "Indian bride outfit list", "Indian wedding outfit shopping timeline"],
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+      <Script id="breadcrumb-schema-how-many-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-schema-how-many-outfits" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
