@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "how to buy lehenga from India, buy bridal lehenga from India USA, NRI bride lehenga India, lehenga from India delivered USA",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
+    },
   },
   openGraph: {
     title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
+    description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

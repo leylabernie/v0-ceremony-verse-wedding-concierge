@@ -8,6 +8,14 @@ export const metadata = {
   description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/how-it-works",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/how-it-works",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/how-it-works",
+    },
   },
   openGraph: {
     title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
@@ -23,6 +31,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
+    description: "CeremonyVerse\'s step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -8,6 +8,14 @@ export const metadata = {
   description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/ceremonyverse-vs-shopping-direct-from-india",
+    },
   },
   keywords: "buy lehenga from India vs concierge, Indian wedding shopping comparison, CeremonyVerse vs direct shopping India",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "CeremonyVerse vs Shopping Direct from India | Compare",
+    description: "Should you buy Indian wedding outfits directly from India or use CeremonyVerse's concierge? Compare risks, costs, and outcomes side by side.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "punjabi wedding outfit guide, sikh wedding what to wear, anand karaj bridal outfit, punjabi wedding ceremonies outfits, NRI punjabi wedding guide",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/punjabi-sikh-wedding-outfit-guide",
+    },
   },
   openGraph: {
     title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Punjabi & Sikh Wedding Outfit Guide: Every Ceremony Covered",
+    description: "Complete outfit guide for Punjabi and Sikh weddings — Roka to Reception. What to wear, what to source from India, and how NRI families coordinate it all.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

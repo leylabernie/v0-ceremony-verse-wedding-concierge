@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "south indian christian wedding outfits, kerala christian wedding dress, tamil christian wedding outfit, south indian christian bride, NRI south indian christian wedding",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
+    },
   },
   openGraph: {
     title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
+    description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

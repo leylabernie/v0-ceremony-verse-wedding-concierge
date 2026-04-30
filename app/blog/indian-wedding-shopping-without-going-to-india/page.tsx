@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "Indian wedding shopping without going to India, buy Indian wedding clothes from abroad, NRI wedding shopping, how to buy Indian bridal clothes from India living abroad",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/indian-wedding-shopping-without-going-to-india",
+    },
   },
   openGraph: {
     title: "How to Source Your Indian Wedding Outfits from India — Without Going to India",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "How to Source Your Indian Wedding Outfits from India — Without Going to India",
+    description: "NRI families: here is how to buy Indian wedding clothes from India without flying there — live video shopping, custom stitching, and white-glove shipping handled for you.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

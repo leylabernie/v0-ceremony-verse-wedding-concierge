@@ -8,6 +8,14 @@ export const metadata = {
   description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/about",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/about",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/about",
+    },
   },
   openGraph: {
     title: "About Bhamini — Founder of CeremonyVerse",
@@ -23,6 +31,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "About Bhamini — Founder of CeremonyVerse",
+    description: "Meet Bhamini, founder of CeremonyVerse — the US-based Indian wedding shopping concierge for NRI families. Based in Philadelphia, sourcing directly from India.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

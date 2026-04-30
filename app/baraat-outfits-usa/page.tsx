@@ -8,6 +8,14 @@ export const metadata = {
   description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/baraat-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/baraat-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/baraat-outfits-usa",
+    },
   },
   keywords: "baraat outfit USA, baraat sherwani from India, groom baraat sherwani USA, groomsmen kurta baraat USA, baraat outfit NRI groom, Indian groom baraat outfit, sherwani for baraat delivered USA, baraat groomsmen matching sets, baraat family outfits USA, Indian baraat ceremony outfit USA",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Baraat Outfits from India | Groom Sherwani & Groomsmen Kurta Sets | CeremonyVerse",
+    description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

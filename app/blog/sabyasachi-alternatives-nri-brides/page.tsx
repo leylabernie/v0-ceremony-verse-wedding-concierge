@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "Sabyasachi alternatives, affordable Sabyasachi inspired lehenga, designer lehenga alternatives India, luxury lehenga without designer price",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/sabyasachi-alternatives-nri-brides",
+    },
   },
   openGraph: {
     title: "Sabyasachi Alternatives: How NRI Brides Get Designer-Quality Lehengas from India for Less",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Sabyasachi Alternatives: How NRI Brides Get Designer-Quality Lehengas from India for Less",
+    description: "NRI brides: get Sabyasachi-quality craftsmanship at $800–$3,000 instead of $5,000–$25,000 by sourcing directly from India's artisan regions. Here is exactly how.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -2,7 +2,7 @@ import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema";
+import { buildBreadcrumbSchema, buildBlogSchema, jsonLd } from "@/lib/schema";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog",
+    },
   },
   openGraph: {
     title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
@@ -25,6 +33,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
+    description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   }};
 
 const posts = [
@@ -108,9 +123,21 @@ export default function BlogIndexPage() {
     { name: "Blog", path: "/blog" },
   ]);
 
+  const blogSchema = buildBlogSchema({
+    name: "CeremonyVerse Blog — Indian Wedding Tips & Guides for NRI Families",
+    description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
+    path: "/blog",
+    posts: posts.map((post) => ({
+      title: post.title,
+      path: `/blog/${post.slug}`,
+      datePublished: "2026-03-01",
+    })),
+  });
+
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <Script id="breadcrumb-schema-blog" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }} />
+      <Script id="blog-index-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(blogSchema) }} />
       <SeoNav />
 
       {/* Hero */}

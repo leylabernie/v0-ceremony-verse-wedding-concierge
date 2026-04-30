@@ -8,6 +8,14 @@ export const metadata = {
   description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/press",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/press",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/press",
+    },
   },
   keywords: "CeremonyVerse press, CeremonyVerse media, NRI wedding concierge press, Indian wedding shopping press kit, Bhamini CeremonyVerse founder, indian wedding media",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Press & Media — CeremonyVerse | Indian Wedding Shopping Concierge",
+    description: "Press and media resources for CeremonyVerse — the Indian wedding shopping concierge for NRI families in the US, Canada, UK, Australia, and New Zealand. Founded by Bhamini, based in Philadelphia.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

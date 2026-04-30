@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "NRI wedding planning timeline, when to order Indian wedding outfit USA, Indian wedding outfit timeline, NRI bride checklist, how early to order lehenga from India",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
+    },
   },
   openGraph: {
     title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
+    description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -6,6 +6,14 @@ export const metadata = {
   keywords: "buy Indian wedding outfits from India, Indian wedding shopping USA, NRI wedding outfits, source Indian wedding from USA, Indian wedding outfit concierge, South Asian wedding outfits USA, Indian wedding personal shopper, CeremonyVerse",
   alternates: {
     canonical: "https://www.ceremonyverse.com/buy-indian-wedding-outfits-from-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/buy-indian-wedding-outfits-from-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/buy-indian-wedding-outfits-from-india",
+    },
   },
   openGraph: {
     title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
@@ -20,6 +28,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
+    description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America\'s trusted NRI wedding shopping concierge.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

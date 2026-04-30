@@ -21,6 +21,13 @@ export const metadata: Metadata = {
     type: "article",
     url: "https://www.ceremonyverse.com/nri-indian-wedding-shopping-guide",
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Complete NRI Indian Wedding Shopping Guide | CeremonyVerse",
+    description: "The definitive guide for NRI families shopping for Indian weddings from the US. Covers outfits, jewelry, gifts, customs, timeline, costs, and how to avoid scams.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
+  },
 };
 
 export default function NriWeddingShoppingGuide() {

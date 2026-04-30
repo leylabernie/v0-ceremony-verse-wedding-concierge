@@ -8,6 +8,14 @@ export const metadata = {
   description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/services/intercultural-indian-weddings",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/services/intercultural-indian-weddings",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/services/intercultural-indian-weddings",
+    },
   },
   keywords: "intercultural Indian wedding outfits USA, non-Indian partner Indian wedding, Indian wedding outfit for non-South Asian groom, mixed culture Indian wedding USA, sherwani for non-Indian groom, Indian wedding guide non-Indian partner, intercultural wedding concierge USA, Indian American wedding USA",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
+    description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

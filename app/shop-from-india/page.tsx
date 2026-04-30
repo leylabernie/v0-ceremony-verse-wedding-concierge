@@ -9,6 +9,14 @@ export const metadata = {
     "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/shop-from-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/shop-from-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/shop-from-india",
+    },
   },
   openGraph: {
     title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
+    description: "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

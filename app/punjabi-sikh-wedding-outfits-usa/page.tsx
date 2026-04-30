@@ -8,6 +8,14 @@ export const metadata = {
   description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/punjabi-sikh-wedding-outfits-usa",
+    },
   },
   keywords: "punjabi wedding outfits usa, sikh wedding outfits usa, NRI punjabi wedding, anand karaj bridal lehenga usa, punjabi bridal lehenga from india, sikh groom sherwani usa",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Punjabi & Sikh Wedding Outfits from India | NRI USA | CeremonyVerse",
+    description: "Planning a Punjabi or Sikh wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, and family outfits from India's top Punjabi bridal markets — delivered to your US door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

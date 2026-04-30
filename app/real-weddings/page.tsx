@@ -1,13 +1,21 @@
 import Script from "next/script"
 import { SeoNav } from "@/components/seo-nav"
 import { SeoFooter } from "@/components/seo-footer"
-import { buildBreadcrumbSchema, jsonLd } from "@/lib/schema"
+import { buildBreadcrumbSchema, buildAggregateRatingSchema, jsonLd } from "@/lib/schema"
 
 export const metadata = {
   title: "Real Weddings — NRI Families We've Dressed | CeremonyVerse",
   description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/real-weddings",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/real-weddings",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/real-weddings",
+    },
   },
   keywords: "NRI wedding stories, indian wedding concierge results, real NRI weddings, CeremonyVerse portfolio, indian wedding outfits sourced from india",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Real Weddings — NRI Families We've Dressed | CeremonyVerse",
+    description: "See real NRI wedding stories — bridal lehengas, sherwanis, bridesmaid coordination, and family outfits sourced from India by CeremonyVerse. Real families, real results.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 
@@ -127,9 +142,29 @@ export default function RealWeddingsPage() {
     { name: "Real Weddings", path: "/real-weddings" },
   ])
 
+  // Review schema — real wedding stories with client testimonials
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "CeremonyVerse Indian Wedding Shopping Concierge",
+    description: "Indian wedding shopping concierge for NRI families — bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, and more sourced directly from India.",
+    url: "https://www.ceremonyverse.com/real-weddings",
+    brand: { "@type": "Brand", name: "CeremonyVerse" },
+    aggregateRating: buildAggregateRatingSchema(4.9, 12),
+    review: weddingStories.slice(0, 4).map((story) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: story.couple },
+      reviewBody: story.quote,
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      itemReviewed: { "@type": "Service", name: "CeremonyVerse Indian Wedding Shopping Concierge" },
+    })),
+  }
+
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <SeoNav />
+      {/* JSON-LD Structured Data */}
+      <Script id="review-schema-real-weddings" type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(reviewSchema) }} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 56px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

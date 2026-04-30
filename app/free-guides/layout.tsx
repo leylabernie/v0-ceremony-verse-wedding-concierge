@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   description: "Download free Indian wedding planning guides — price guide, outfit checklist, planning timeline, and vendor red flags. For NRI brides and families sourcing from India.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/free-guides",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/free-guides",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/free-guides",
+    },
   },
   openGraph: {
     title: "Free NRI Wedding Planning Guides | CeremonyVerse",
@@ -21,6 +29,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Free NRI Wedding Planning Guides | CeremonyVerse",
+    description: "Download free Indian wedding planning guides — price guide, outfit checklist, planning timeline, and vendor red flags. For NRI brides and families sourcing from India.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -8,6 +8,14 @@ export const metadata = {
   description: "Planning a Pakistani or Muslim wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, sharara sets, and family outfits from South Asia — delivered to your US door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/pakistani-muslim-wedding-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/pakistani-muslim-wedding-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/pakistani-muslim-wedding-outfits-usa",
+    },
   },
   keywords: "pakistani wedding outfits usa, muslim wedding outfits usa, NRI pakistani wedding, pakistani bridal lehenga usa, nikah outfit usa, walima outfit usa",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Pakistani & Muslim Wedding Outfits from India | NRI USA | CeremonyVerse",
+    description: "Planning a Pakistani or Muslim wedding in the USA? CeremonyVerse sources bridal lehengas, sherwanis, sharara sets, and family outfits from South Asia — delivered to your US door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

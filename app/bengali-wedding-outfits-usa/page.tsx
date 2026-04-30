@@ -8,6 +8,14 @@ export const metadata = {
   description: "Planning a Bengali wedding in the USA? CeremonyVerse sources authentic Banarasi silk sarees, bridal lehengas, sherwanis, and family outfits from India — delivered to your US door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/bengali-wedding-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/bengali-wedding-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/bengali-wedding-outfits-usa",
+    },
   },
   keywords: "bengali wedding outfits usa, NRI bengali wedding, bengali bridal saree usa, banarasi silk saree usa, bengali wedding what to wear",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Bengali Wedding Outfits from India | NRI USA | CeremonyVerse",
+    description: "Planning a Bengali wedding in the USA? CeremonyVerse sources authentic Banarasi silk sarees, bridal lehengas, sherwanis, and family outfits from India — delivered to your US door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

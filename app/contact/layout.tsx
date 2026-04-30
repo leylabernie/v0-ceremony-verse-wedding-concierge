@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   description: "Schedule a free 30-minute consultation with CeremonyVerse. Tell us about your Indian wedding vision and we'll prepare a tailored sourcing proposal — bridal lehengas, sherwanis, jewelry, and more sourced directly from India.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/contact",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/contact",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/contact",
+    },
   },
   keywords: "book indian wedding consultation, free wedding consultation, NRI wedding planner, bridal lehenga consultation, indian wedding concierge booking",
   openGraph: {
@@ -22,6 +30,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Book Your Free Indian Wedding Consultation | CeremonyVerse",
+    description: "Schedule a free 30-minute consultation with CeremonyVerse. Tell us about your Indian wedding vision and we'll prepare a tailored sourcing proposal.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

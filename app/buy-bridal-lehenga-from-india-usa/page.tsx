@@ -6,6 +6,14 @@ export const metadata = {
   keywords: "buy bridal lehenga from India USA, custom bridal lehenga NRI, bridal lehenga delivered to USA, Indian bridal lehenga online USA, NRI bride lehenga, bridal lehenga from India, lehenga choli from India USA, designer lehenga USA, affordable bridal lehenga India, CeremonyVerse bridal lehenga",
   alternates: {
     canonical: "https://www.ceremonyverse.com/buy-bridal-lehenga-from-india-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/buy-bridal-lehenga-from-india-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/buy-bridal-lehenga-from-india-usa",
+    },
   },
   openGraph: {
     title: "Buy Bridal Lehenga from India | Custom NRI Bridal Lehenga Delivered to USA | CeremonyVerse",
@@ -20,6 +28,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Buy Bridal Lehenga from India | Custom NRI Bridal Lehenga Delivered to USA | CeremonyVerse",
+    description: "Source your dream bridal lehenga directly from India. CeremonyVerse offers live video shopping, custom measurements, quality checks, and delivery to your US door. Serving NRI brides across the United States. Save 30-50% vs US boutiques.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

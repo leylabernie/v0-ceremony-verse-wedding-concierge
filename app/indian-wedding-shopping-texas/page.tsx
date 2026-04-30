@@ -33,6 +33,13 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Wedding Shopping from India | Texas NRI Families | CeremonyVerse",
+    description: "NRI bride in Texas? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your TX door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
+  },
 };
 
 export default function IndianWeddingShoppingTexasPage() {

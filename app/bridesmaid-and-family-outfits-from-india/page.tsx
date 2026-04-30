@@ -6,6 +6,14 @@ export const metadata = {
   keywords: "Indian bridesmaid outfits USA, bridesmaid lehenga from India, family outfits Indian wedding USA, coordinate Indian wedding party USA, saree bridesmaid USA, Indian wedding family coordination, NRI family outfits wedding, CeremonyVerse bridesmaid outfits",
   alternates: {
     canonical: "https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india",
+    },
   },
   openGraph: {
     title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
@@ -20,6 +28,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
+    description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

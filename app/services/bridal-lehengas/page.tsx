@@ -8,6 +8,14 @@ export const metadata = {
   description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/services/bridal-lehengas",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/services/bridal-lehengas",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/services/bridal-lehengas",
+    },
   },
   keywords: "bridal lehenga from India USA, NRI bridal lehenga, custom bridal lehenga India, buy bridal lehenga online USA, bridal lehenga delivered USA, Indian bridal lehenga NRI, lehenga choli from India, designer bridal lehenga USA, affordable bridal lehenga from India, bridal lehenga sourcing concierge USA",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
+    description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

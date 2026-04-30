@@ -171,6 +171,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect for performance — critical third-party origins */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K8YLBERPM"
@@ -181,7 +186,10 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-8K8YLBERPM');
+            gtag('config', 'G-8K8YLBERPM', {
+              send_page_view: true,
+              cookie_flags: 'SameSite=None;Secure'
+            });
           `}
         </Script>
         {/* Only meta tags NOT already handled by Next.js metadata API */}
@@ -194,6 +202,8 @@ export default function RootLayout({
         <meta name="category" content="Indian Wedding Shopping, Bridal Concierge, Wedding Services" />
         <meta name="classification" content="Business" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
+        {/* Google Search Console verification — replace with your actual verification code */}
+        <meta name="google-site-verification" content="PENDING_VERIFICATION" />
         {/* Removed duplicate og: and twitter: meta tags — Next.js metadata API generates these automatically from the `metadata` export above. Having both caused duplicate OG tags on subpages. */}
         <Script
           id="localbusiness-schema"

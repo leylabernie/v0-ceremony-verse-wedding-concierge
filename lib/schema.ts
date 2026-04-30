@@ -298,6 +298,39 @@ export function buildVideoObjectSchema(input: VideoObjectSchemaInput) {
   };
 }
 
+// ─── Blog (for blog index page) ───────────────────────────────
+export interface BlogSchemaInput {
+  name: string;
+  description: string;
+  path: string;
+  posts: { title: string; path: string; datePublished: string }[];
+}
+
+export function buildBlogSchema(input: BlogSchemaInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    name: input.name,
+    description: input.description,
+    url: `${BASE_URL}${input.path}`,
+    publisher: {
+      "@type": "Organization",
+      name: "CeremonyVerse",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/images/logo-nav.png`,
+      },
+    },
+    blogPost: input.posts.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      url: `${BASE_URL}${post.path}`,
+      datePublished: post.datePublished,
+    })),
+  };
+}
+
 // ─── Helper: Combine multiple schemas into @graph ────────────
 export function combineSchemas(...schemas: object[]) {
   return {

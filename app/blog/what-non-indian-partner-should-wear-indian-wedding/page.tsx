@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "what to wear to Indian wedding as non-Indian, non-Indian wearing Indian wedding clothes, fusion Indian wedding outfit, Hindu Christian wedding outfit, intercultural Indian wedding outfits",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/what-non-indian-partner-should-wear-indian-wedding",
+    },
   },
   openGraph: {
     title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "What Should a Non-Indian Partner Wear to an Indian Wedding? A Complete Guide",
+    description: "A practical guide for non-Indian partners getting married into Indian families — lehenga, sherwani, sangeet, mehndi, and everything in between.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

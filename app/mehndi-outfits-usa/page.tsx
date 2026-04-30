@@ -8,6 +8,14 @@ export const metadata = {
   description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/mehndi-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/mehndi-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/mehndi-outfits-usa",
+    },
   },
   keywords: "mehndi outfit USA, haldi ceremony outfit USA, mehndi lehenga from India, haldi outfit NRI bride, mehndi ceremony dress USA, yellow lehenga USA, mehndi bridesmaid outfits, Indian mehndi outfit delivered USA, haldi outfit from India, mehndi dress for NRI wedding",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
+    description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

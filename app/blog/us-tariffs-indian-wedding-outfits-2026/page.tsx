@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "US tariffs Indian wedding outfits, Indian lehenga import USA, NRI bride lehenga from India 2026, buy lehenga from India USA, Indian wedding tariffs 2026, lehenga customs USA",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026",
+    },
   },
   openGraph: {
     title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
+    description: "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

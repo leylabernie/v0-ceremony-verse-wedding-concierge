@@ -9,6 +9,14 @@ export const metadata = {
     "Answers to common questions about CeremonyVerse's Indian wedding shopping concierge service for NRI families. Trust, pricing, shipping, sizing, and process FAQs.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/faq",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/faq",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/faq",
+    },
   },
   keywords:
     "Indian wedding FAQ, NRI wedding shopping questions, bridal lehenga from India FAQ, Indian wedding concierge FAQ, CeremonyVerse FAQ, Indian wedding shipping, Indian wedding outfit sizing, Indian wedding pricing",
@@ -26,6 +34,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge FAQ",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "FAQ — Indian Wedding Shopping Concierge | CeremonyVerse",
+    description: "Answers to common questions about CeremonyVerse's Indian wedding shopping concierge service for NRI families. Trust, pricing, shipping, sizing, and process FAQs.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 }
 

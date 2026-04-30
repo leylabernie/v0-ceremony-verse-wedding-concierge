@@ -8,6 +8,14 @@ export const metadata = {
   description: "Need Indian wedding guest outfits in the USA? CeremonyVerse sources lehengas, sarees, anarkalis, and sherwanis from India — live video shopping, custom stitching, delivered to your US door.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/indian-wedding-guest-outfits-usa",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/indian-wedding-guest-outfits-usa",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/indian-wedding-guest-outfits-usa",
+    },
   },
   keywords: "indian wedding guest outfits usa, lehenga for wedding guest usa, indian wedding guest dress usa, NRI wedding guest outfit, buy indian outfit for wedding usa",
   openGraph: {
@@ -24,6 +32,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Wedding Guest Outfits from India | NRI USA | CeremonyVerse",
+    description: "Need Indian wedding guest outfits in the USA? CeremonyVerse sources lehengas, sarees, anarkalis, and sherwanis from India — live video shopping, custom stitching, delivered to your US door.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

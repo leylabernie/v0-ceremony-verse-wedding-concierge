@@ -8,6 +8,14 @@ export const metadata = {
   description: "Complete Indian wedding sourcing services from CeremonyVerse. Bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, ceremonial items, gifts, and welcome bags — all sourced from India with live video approval and delivered to the USA, Canada, UK, Australia & NZ.",
   alternates: {
     canonical: "https://www.ceremonyverse.com/services",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/services",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/services",
+    },
   },
   keywords: "indian wedding services, bridal lehenga sourcing, sherwani from india, bridesmaid outfits, indian wedding concierge, NRI wedding shopping, wedding jewelry from india",
   openGraph: {
@@ -23,6 +31,13 @@ export const metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Wedding Services — Bridal Lehengas, Sherwanis, Jewelry & More | CeremonyVerse",
+    description: "Complete Indian wedding sourcing services from CeremonyVerse. Bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, ceremonial items, gifts, and welcome bags — all sourced from India with live video approval.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

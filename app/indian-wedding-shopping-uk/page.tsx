@@ -33,6 +33,13 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Indian Wedding Shopping from India | UK Families | CeremonyVerse",
+    description: "Indian wedding in the UK? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to London, Leicester, Birmingham, or anywhere in the UK.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
+  },
 };
 
 export default function IndianWeddingShoppingUKPage() {

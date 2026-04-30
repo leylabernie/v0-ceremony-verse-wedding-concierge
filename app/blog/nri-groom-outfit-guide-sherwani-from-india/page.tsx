@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "sherwani for NRI groom, Indian groom wear for NRI, custom sherwani from India, buy sherwani from India USA, wedding sherwani cost",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/nri-groom-outfit-guide-sherwani-from-india",
+    },
   },
   openGraph: {
     title: "The NRI Groom's Guide to Sourcing a Sherwani from India",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "The NRI Groom's Guide to Sourcing a Sherwani from India",
+    description: "Everything NRI grooms need to know about sourcing a custom sherwani from India — fabric, fit, cost breakdown, and how to coordinate with the bride's outfit.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   keywords: "gujarati wedding outfits, gujarati wedding outfit guide, gujarati bride outfit, garba night outfit, chaniya choli USA",
   alternates: {
     canonical: "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
+    languages: {
+      "en-US": "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
+      "en-GB": "https://www.ceremonyverse.com/indian-wedding-shopping-uk",
+      "en-CA": "https://www.ceremonyverse.com/indian-wedding-shopping-canada",
+      "en-AU": "https://www.ceremonyverse.com/indian-wedding-shopping-australia",
+      "en-NZ": "https://www.ceremonyverse.com/indian-wedding-shopping-new-zealand",
+      "x-default": "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
+    },
   },
   openGraph: {
     title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
@@ -26,6 +34,13 @@ export const metadata: Metadata = {
         alt: "CeremonyVerse — Indian Wedding Shopping Concierge",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ceremonyverse",
+    title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
+    description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
   },
 };
 
