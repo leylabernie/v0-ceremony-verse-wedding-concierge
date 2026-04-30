@@ -202,8 +202,8 @@ export default function RootLayout({
         <meta name="category" content="Indian Wedding Shopping, Bridal Concierge, Wedding Services" />
         <meta name="classification" content="Business" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
-        {/* Google Search Console verification — replace with your actual verification code */}
-        <meta name="google-site-verification" content="PENDING_VERIFICATION" />
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="OiNuMrzHTUF6J3sTSpPGLRptCHEEBDiEknyTj-WuVRk" />
         {/* Removed duplicate og: and twitter: meta tags — Next.js metadata API generates these automatically from the `metadata` export above. Having both caused duplicate OG tags on subpages. */}
         <Script
           id="localbusiness-schema"
