@@ -1,0 +1,11 @@
+$ next dev
+▲ Next.js 16.2.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.13.72:3000
+✓ Ready in 388ms
+
+Persisting failed: Unable to commit operations
+
+Caused by:
+    0: Unable to open meta file 00000005.meta
+    1: Invalid argument (os error 22)
