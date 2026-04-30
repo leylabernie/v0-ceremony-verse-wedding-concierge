@@ -26,3 +26,18 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# junk files - never commit these
+skills/
+download/
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!components.json
+!next-env.d.ts
+generate_seo_report.py
+dev.log
+worklog.md
+upload/
+v0-ceremony-verse-wedding-concierge

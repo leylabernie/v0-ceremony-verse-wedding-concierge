@@ -1,0 +1,11 @@
+skills/
+download/
+upload/
+generate_seo_report.py
+dev.log
+worklog.md
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!components.json

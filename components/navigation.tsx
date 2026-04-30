@@ -14,11 +14,11 @@ interface NavigationProps {
 // Each item has an href for SEO crawlability + optional SPA page for in-page navigation
 const navItems: { label: string; page?: PageType; href: string }[] = [
   { label: "Home", page: "home", href: "/" },
-  { label: "Services", page: "services", href: "/services/bridal-lehengas" },
+  { label: "Services", href: "/services" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
-  { label: "Blog", page: "blog", href: "/blog" },
+  { label: "Blog", href: "/blog" },
   { label: "Free Guides", href: "/free-guides" },
 ]
 

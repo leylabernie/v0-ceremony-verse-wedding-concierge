@@ -7,7 +7,7 @@ import { useState } from "react"
 // Unified nav items - same items/order as homepage Navigation for consistency
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services/bridal-lehengas" },
+  { label: "Services", href: "/services" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
   { label: "About", href: "/about" },
@@ -52,11 +52,11 @@ export function SeoNav() {
                   href={item.href}
                   className={cn(
                     "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
-                    currentPath === item.href
+                    currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href))
                       ? "text-brushed-gold"
                       : "text-midnight-navy hover:text-brushed-gold"
                   )}
-                  aria-current={currentPath === item.href ? "page" : undefined}
+                  aria-current={currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href)) ? "page" : undefined}
                 >
                   {item.label}
                 </a>
@@ -99,7 +99,7 @@ export function SeoNav() {
                   href={item.href}
                   className={cn(
                     "px-4 py-3 text-left text-lg font-medium transition-all duration-200",
-                    currentPath === item.href
+                    currentPath === item.href || (item.href !== "/" && currentPath.startsWith(item.href))
                       ? "text-brushed-gold"
                       : "text-midnight-navy hover:text-brushed-gold"
                   )}
