@@ -156,7 +156,6 @@ export default function RealWeddingsPage() {
       author: { "@type": "Person", name: story.couple },
       reviewBody: story.quote,
       reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      itemReviewed: { "@type": "Service", name: "CeremonyVerse Indian Wedding Shopping Concierge" },
     })),
   }
 
