@@ -1,6 +1,7 @@
 import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
-import MobileStickyCTA from "@/components/mobile-sticky-cta";
+import StickyCTABar from "@/components/sticky-cta-bar";
+import { ExitIntentPopup } from "@/components/exit-intent-popup";
 import Script from "next/script";
 import { buildOrganizationSchema, buildVideoObjectSchema, jsonLd } from "@/lib/schema";
 
@@ -234,7 +235,7 @@ export default function RootLayout({
       <body>
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c7b28a", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
-          * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
+          * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; <a href="/quiz" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Take our Style Quiz</a> &nbsp;·&nbsp;
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
         {/* Spacer so body content starts below fixed urgency bar + nav (40px + 96px = 136px) */}
@@ -243,8 +244,10 @@ export default function RootLayout({
 
         {/* SINGLE WhatsApp Button (global) */}
         <WhatsAppButton />
-        {/* Mobile sticky CTA bar */}
-        <MobileStickyCTA />
+        {/* Sticky CTA bar (mobile + desktop) */}
+        <StickyCTABar />
+        {/* Exit intent popup (desktop only) */}
+        <ExitIntentPopup />
       </body>
     </html>
   );

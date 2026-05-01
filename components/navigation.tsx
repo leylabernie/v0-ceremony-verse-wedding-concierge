@@ -20,6 +20,7 @@ const navItems: { label: string; page?: PageType; href: string }[] = [
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Free Guides", href: "/free-guides" },
+  { label: "Style Quiz ✨", href: "/quiz" },
 ]
 
 const WHATAPP_LINK = "https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
