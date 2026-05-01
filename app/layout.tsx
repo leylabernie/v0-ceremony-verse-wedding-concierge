@@ -164,7 +164,7 @@ export default function RootLayout({
     name: "How CeremonyVerse Sources Indian Wedding Outfits from India",
     description: "See how CeremonyVerse connects NRI families with India's best artisan workshops through live video shopping, custom measurements, quality inspections, and international delivery.",
     path: "/",
-    uploadDate: "2026-01-15",
+    uploadDate: "2026-01-15T00:00:00+05:30",
     duration: "PT2M",
   });
 
