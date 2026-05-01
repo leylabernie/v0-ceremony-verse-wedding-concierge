@@ -80,6 +80,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog/how-many-outfits-for-indian-wedding", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-03-05" },
     { path: "/blog/what-non-indian-partner-should-wear-indian-wedding", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-02-28" },
     { path: "/blog/nri-groom-outfit-guide-sherwani-from-india", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-02-20" },
+    { path: "/blog/indian-wedding-jewelry-guide-nri-brides", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-22" },
+    { path: "/blog/indian-wedding-outfit-timeline-when-to-order", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-22" },
+    { path: "/blog/avoiding-scams-buying-indian-wedding-outfits-online", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-22" },
+    { path: "/blog/bridal-lehenga-styles-trends-2026", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-22" },
+    { path: "/blog/matching-bridesmaid-outfits-indian-wedding", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-04-22" },
+    { path: "/blog/how-to-ship-indian-wedding-outfits-to-usa", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-01" },
+    { path: "/blog/indian-wedding-ceremonies-outfit-guide", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-01" },
+    { path: "/blog/custom-vs-readymade-indian-wedding-outfits", priority: 0.8, changeFrequency: "monthly", lastModified: "2026-05-01" },
+
+    // Ad landing pages
+    { path: "/quiz", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-04-23" },
+    { path: "/bridal-lehenga-free-consultation", priority: 0.9, changeFrequency: "monthly", lastModified: "2026-05-01" },
   ];
 
   return routes.map(({ path, priority, changeFrequency, lastModified, images }) => ({

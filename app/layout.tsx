@@ -61,15 +61,31 @@ export default function RootLayout({
   // LocalBusiness schema — global on every page (correct per Google guidelines)
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "WeddingShop"],
     "name": "CeremonyVerse",
     "description": "CeremonyVerse is an Indian wedding shopping concierge serving NRI and South Asian families in the USA, Canada, UK, Australia, and New Zealand. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and international delivery.",
     "url": "https://www.ceremonyverse.com",
     "image": "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
     "telephone": "+12153419990",
     "email": "bhamini@ceremonyverse.com",
-    "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2208 Michener St",
+      "addressLocality": "Philadelphia",
+      "addressRegion": "PA",
+      "postalCode": "19115",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.0758",
+      "longitude": "-75.0475"
+    },
+    "areaServed": [{"@type": "Country", "name": "USA"}, {"@type": "Country", "name": "UK"}, {"@type": "Country", "name": "Canada"}, {"@type": "Country", "name": "Australia"}, {"@type": "Country", "name": "New Zealand"}],
     "priceRange": "$$",
+    "currenciesAccepted": "USD, GBP, CAD, AUD, NZD",
+    "paymentAccepted": "Credit Card, PayPal, Bank Transfer",
+    "openingHours": "Mo-Fr 09:00-18:00 EST",
     "knowsAbout": ["NRI Wedding Shopping", "Indian Bridal Fashion", "US Customs & Tariffs", "Gujarati Wedding Traditions", "South Indian Christian Weddings", "Punjabi Sikh Weddings", "Bengali Wedding Traditions"],
     "founder": {
       "@type": "Person",
