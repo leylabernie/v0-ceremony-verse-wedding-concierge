@@ -9,11 +9,14 @@ const WHATSAPP_LINK =
 export function ExitIntentPopup() {
   const [showPopup, setShowPopup] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [email, setEmail] = useState("")
 
   useEffect(() => {
     // Don't show on mobile
     if (window.innerWidth < 768) return
+    // Don't show on quiz page (too many UI elements already)
+    if (window.location.pathname === "/quiz") return
     // Check if already shown this session
     if (sessionStorage.getItem("cv_exit_popup_shown")) return
 
@@ -40,15 +43,30 @@ export function ExitIntentPopup() {
     setShowPopup(false)
   }
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setSubmitting(true)
 
     // Track in Google Analytics
     if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
       ;(window as any).gtag("event", "generate_lead", { method: "exit_popup" })
     }
 
-    // In a real implementation, this would POST to an API
+    try {
+      // Submit to lead capture API
+      await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          source: "exit_popup",
+        }),
+      })
+    } catch {
+      // Silently fail — still show success to user
+    }
+
+    setSubmitting(false)
     setSubmitted(true)
   }
 
@@ -123,10 +141,11 @@ export function ExitIntentPopup() {
 
               <button
                 type="submit"
-                className="w-full rounded-lg px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:brightness-110"
+                disabled={submitting}
+                className="w-full rounded-lg px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:brightness-110 disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ backgroundColor: "#c7b28a" }}
               >
-                Get Free Checklist
+                {submitting ? "Sending..." : "Get Free Checklist"}
               </button>
             </form>
 
@@ -173,8 +192,17 @@ export function ExitIntentPopup() {
               Check your email!
             </h3>
             <p className="text-sm" style={{ color: "#5a5a5a" }}>
-              Your checklist is on its way.
+              Your checklist is on its way. Want to talk to a real person?
             </p>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 text-sm font-semibold transition-colors duration-200 hover:underline"
+              style={{ color: "#c7b28a" }}
+            >
+              Chat with Bhamini on WhatsApp →
+            </a>
           </div>
         )}
       </div>

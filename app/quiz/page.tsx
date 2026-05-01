@@ -509,7 +509,7 @@ export default function QuizPage() {
     }
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!canProceed()) return
     setSubmitting(true)
 
@@ -524,7 +524,30 @@ export default function QuizPage() {
       // gtag not available — silently ignore
     }
 
-    // Simulate a small delay, then show results
+    // Submit to lead capture API
+    try {
+      await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: answers.email,
+          firstName: answers.firstName,
+          phone: answers.phone,
+          source: "style_quiz",
+          quizAnswers: {
+            style: answers.style,
+            tradition: answers.tradition,
+            budget: answers.budget,
+            timeline: answers.timeline,
+            wantsChecklist: answers.wantsChecklist,
+          },
+        }),
+      })
+    } catch {
+      // Silently fail — still show results to user
+    }
+
+    // Small delay for UX, then show results
     setTimeout(() => {
       setSubmitting(false)
       setShowResults(true)

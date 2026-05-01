@@ -2,6 +2,7 @@ import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
 import StickyCTABar from "@/components/sticky-cta-bar";
 import { ExitIntentPopup } from "@/components/exit-intent-popup";
+import { SocialProofNotification } from "@/components/social-proof-notification";
 import Script from "next/script";
 import { buildOrganizationSchema, buildVideoObjectSchema, jsonLd } from "@/lib/schema";
 
@@ -248,6 +249,8 @@ export default function RootLayout({
         <StickyCTABar />
         {/* Exit intent popup (desktop only) */}
         <ExitIntentPopup />
+        {/* Social proof notifications */}
+        <SocialProofNotification />
       </body>
     </html>
   );
