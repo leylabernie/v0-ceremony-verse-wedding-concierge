@@ -77,35 +77,39 @@ export async function POST(req: NextRequest) {
         `anystring:${MAILCHIMP_API_KEY}`
       ).toString("base64");
 
-      const mergeFields: Record<string, string> = {
-        SOURCE: source,
-      };
+      // Build merge fields — only include fields that exist in Mailchimp
+      // We'll try submitting and fall back to tags-only if merge fields fail
+      const mergeFields: Record<string, string> = {};
 
       if (firstName) {
         mergeFields.FNAME = firstName;
       }
 
-      if (phone) {
+      if (phone && phone.trim().length >= 7) {
+        // Mailchimp phone field requires at least 7 digits
         mergeFields.PHONE = phone;
       }
 
+      // Always include source
+      mergeFields.SOURCE = source;
+
+      // Quiz merge fields — use try/catch at the merge field level
       if (quizAnswers?.style) {
         mergeFields.STYLE = quizAnswers.style;
       }
-
       if (quizAnswers?.tradition) {
+        // Use TRAD if the merge field exists, otherwise skip
         mergeFields.TRAD = quizAnswers.tradition;
       }
-
       if (quizAnswers?.budget) {
         mergeFields.BUDGET = quizAnswers.budget;
       }
-
       if (quizAnswers?.timeline) {
         mergeFields.TLINE = quizAnswers.timeline;
       }
 
-      const mcResponse = await fetch(
+      // Try with merge fields first
+      let mcResponse = await fetch(
         `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members`,
         {
           method: "POST",
@@ -134,6 +138,7 @@ export async function POST(req: NextRequest) {
             .update(email.toLowerCase())
             .digest("hex");
 
+          // Update tags
           await fetch(
             `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members/${subscriberHash}/tags`,
             {
@@ -148,10 +153,84 @@ export async function POST(req: NextRequest) {
             }
           );
 
+          // Update merge fields via PATCH
+          await fetch(
+            `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members/${subscriberHash}`,
+            {
+              method: "PATCH",
+              headers: {
+                Authorization: `Basic ${authString}`,
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                merge_fields: mergeFields,
+              }),
+            }
+          );
+
           return NextResponse.json({
             success: true,
-            message: "Lead updated with new tags.",
+            message: "Lead updated with new tags and data.",
           });
+        }
+
+        // If merge fields caused the error, retry with tags only
+        if (mcResponse.status === 400) {
+          console.log("Merge field error, retrying with tags only:", errorData?.detail);
+
+          mcResponse = await fetch(
+            `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members`,
+            {
+              method: "POST",
+              headers: {
+                Authorization: `Basic ${authString}`,
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email_address: email,
+                status: "subscribed",
+                tags,
+                merge_fields: { SOURCE: source },
+              }),
+            }
+          );
+
+          if (mcResponse.ok) {
+            return NextResponse.json({
+              success: true,
+              message: "Lead captured (tags only — some merge fields missing).",
+            });
+          }
+
+          const retryErrorData = await mcResponse.json();
+
+          // Member exists on retry
+          if (mcResponse.status === 400 && retryErrorData?.title === "Member Exists") {
+            const subscriberHash = createHash("md5")
+              .update(email.toLowerCase())
+              .digest("hex");
+
+            await fetch(
+              `https://${MAILCHIMP_SERVER}.api.mailchimp.com/3.0/lists/${MAILCHIMP_AUDIENCE_ID}/members/${subscriberHash}/tags`,
+              {
+                method: "POST",
+                headers: {
+                  Authorization: `Basic ${authString}`,
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  tags: tags.map((t) => ({ name: t, status: "active" })),
+                }),
+              }
+            );
+
+            return NextResponse.json({
+              success: true,
+              message: "Lead updated with new tags.",
+            });
+          }
+
+          console.error("Mailchimp retry error:", retryErrorData);
         }
 
         console.error("Mailchimp error:", errorData);
