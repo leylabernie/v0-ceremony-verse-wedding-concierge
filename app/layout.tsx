@@ -1,6 +1,7 @@
 import "./globals.css";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
+import { Navigation } from "@/components/navigation";
 import Script from "next/script";
 
 export const metadata = {
@@ -186,6 +187,10 @@ export default function RootLayout({
           * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
+
+        {/* Navigation — appears on ALL pages */}
+        <Navigation />
+
         {/* Spacer so body content starts below fixed urgency bar + nav (40px + 96px = 136px) */}
         <div style={{ height: "136px" }} />
         {children}

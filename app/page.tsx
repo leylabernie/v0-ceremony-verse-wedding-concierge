@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 import { HomePage } from "@/components/pages/home-page"
@@ -57,8 +56,6 @@ export default function Page() {
 
   return (
     <>
-      <Navigation />
-
       {activePage === "home" && <HomePage onNavigate={handleNavigate} />}
       {activePage === "services" && <ServicesPage onNavigate={handleNavigate} />}
       {activePage === "journey" && <JourneyPage onNavigate={handleNavigate} />}

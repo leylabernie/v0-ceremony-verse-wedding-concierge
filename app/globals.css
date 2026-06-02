@@ -95,6 +95,10 @@
 
   html {
     background-color: var(--cv-bg);
+    /* Lock root font-size for consistent rem calculations across all pages */
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -138,6 +142,7 @@
     color: var(--cv-foreground);
   }
 
+  /* Consistent paragraph sizing across ALL pages */
   p {
     font-size: 1.125rem;
     line-height: 1.8;
