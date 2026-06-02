@@ -1,111 +1,112 @@
-import { SeoNav } from "@/components/seo-nav"
+import Image from "next/image";
+import Link from "next/link";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Indian Wedding Shopping from India | New Jersey NRI Families | CeremonyVerse",
-  description: "NRI bride in New Jersey? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your NJ door.",
-  keywords: "Indian wedding shopping New Jersey, NRI bride New Jersey, buy lehenga from India NJ, Indian wedding concierge New Jersey",
-}
+export const metadata: Metadata = {
+  title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
+  description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey. We handle sourcing, coordination, and logistics for NJ brides.",
+  openGraph: {
+    title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
+    description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey.",
+    url: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+    siteName: "CeremonyVerse",
+    images: [
+      {
+        url: "https://www.ceremonyverse.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
+    description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey.",
+  },
+  alternates: {
+    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+  },
+};
 
-export default function IndianWeddingShoppingNewJerseyPage() {
+const localSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "CeremonyVerse - NJ Wedding Shopping",
+  "image": "https://www.ceremonyverse.com/og-image.jpg",
+  "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+  "telephone": "+1-555-019-2834",
+  "areaServed": {
+    "@type": "State",
+    "name": "New Jersey"
+  },
+  "description": "Expert Indian wedding outfit shopping concierge for brides in New Jersey. We handle sourcing, coordination, and logistics.",
+  "priceRange": "$$$",
+  "serviceType": "Wedding Shopping Concierge"
+};
+
+export default function NewJerseyPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <SeoNav />
-
-      {/* Hero */}
-      <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "14px", fontWeight: 500 }}>
-          New Jersey NRI Families
-        </p>
-        <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          Indian Wedding Shopping from India — Serving New Jersey NRI Families
-        </h1>
-        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          New Jersey is home to one of the largest Indian diaspora populations in the United States, with thriving communities in Edison, Jersey City, and Parsippany. If you are planning an Indian wedding from NJ, CeremonyVerse connects you directly with India's finest craftspeople — so you get bridal lehengas, sherwanis, and family outfits that match the quality and variety available back home.
-        </p>
-        <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#c7b28a", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
-          Book Free Consultation
-        </a>
-      </section>
-
-      {/* Pain Points */}
-      <section style={{ padding: "48px 24px", background: "#fff" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
-            Why NJ families struggle with Indian wedding shopping
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
-            {[
-              { title: "Limited Local Selection", desc: "Boutiques on Oak Tree Road or in Jersey City carry a fraction of what's available in India. You're choosing from what was imported — not from the full range of designs, fabrics, and embroidery styles." },
-              { title: "Markups of 3–5×", desc: "The same lehenga that costs ₹50,000 in Chandni Chowk can be priced at $2,000–$3,500 in a NJ showroom. You deserve India pricing with US convenience." },
-              { title: "No Time for India Trips", desc: "Between work schedules and wedding planning, flying to India for a shopping trip is often impractical. Coordinating family outfits across two countries adds another layer of stress." },
-              { title: "Fit & Quality Uncertainty", desc: "Ordering online from India without guidance risks wrong sizing, mismatched colors, or fabrics that don't meet expectations. Returns across borders are a nightmare." },
-            ].map((item) => (
-              <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.desc}</p>
-              </div>
-            ))}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
+      />
+      <div className="bg-white">
+        {/* Hero Section */}
+        <div className="relative bg-stone-900 text-white py-24">
+          <div className="absolute inset-0 overflow-hidden">
+            <Image
+              src="/hero-nj.jpg" 
+              alt="Indian wedding shopping in New Jersey"
+              fill
+              className="object-cover opacity-40"
+              sizes="100vw"
+            />
+          </div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Indian Wedding Shopping in New Jersey
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+              Your personal shopping concierge for Indian wedding outfits. We source, coordinate, and manage logistics for NJ brides.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
+            >
+              Book Your Consultation
+            </Link>
           </div>
         </div>
-      </section>
 
-      {/* What CeremonyVerse Does */}
-      <section style={{ padding: "48px 24px" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "24px" }}>
-            How CeremonyVerse serves New Jersey families
-          </h2>
-          <div style={{ fontSize: "15px", lineHeight: 1.8, color: "#6a5c55" }}>
-            <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse is your personal Indian wedding concierge. We work with artisan partners across Delhi, Jaipur, Lucknow, Surat, Kanchipuram, and Kolkata to source exactly what you need — bridal lehengas, groom sherwanis, bridesmaids outfits, family sarees, and everything in between.
+        {/* Content Section */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="prose prose-lg mx-auto text-stone-700">
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">Serving New Jersey Brides</h2>
+            <p className="mb-6">
+              Planning an Indian wedding in New Jersey? From Edison to Jersey City, we help NRIs and local brides navigate the complex world of Indian wedding attire. Our shopping concierge service handles everything from vendor selection to final alterations.
             </p>
-            <p style={{ marginBottom: "16px" }}>
-              Here's how it works: you tell us your vision, your budget, and your ceremony schedule. We take you on live video shopping sessions with our outfit specialists in India, showing you fabrics, embroidery, and stitching in real time. You choose, we handle measurements, custom tailoring, quality checks, and doorstep delivery to your home in Edison, Jersey City, Parsippany, or anywhere in New Jersey.
-            </p>
-            <p style={{ marginBottom: "16px" }}>
-              Whether you are a bride looking for a show-stopping reception lehenga, a mother-of-the-bride who wants a coordinated silk saree set, or a groom who wants a perfectly fitted sherwani — we have you covered. Every outfit is custom stitched to your exact measurements.
-            </p>
+            <h3 className="text-2xl font-bold text-stone-900 mt-8 mb-4">How We Help NJ Brides</h3>
+            <ul className="list-disc pl-6 space-y-2 mb-8">
+              <li>Virtual and in-person shopping coordination</li>
+              <li>Vendor management across India and the US</li>
+              <li>Timeline management for all ceremonies</li>
+              <li>Logistics and shipping coordination</li>
+            </ul>
+            
+            <div className="mt-12 text-center">
+              <Link
+                href="/contact"
+                className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
+              >
+                Start Your Shopping Journey
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
-
-      {/* Pricing */}
-      <section style={{ padding: "48px 24px", background: "#fff" }}>
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
-            Pricing
-          </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
-            {[
-              { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide", price: "$149", desc: "A curated lookbook tailored to your ceremonies, body type, and budget — with specific recommendations from India's top outfit specialists." },
-              { tier: "Guided Sourcing", price: "$599", desc: "Live video shopping sessions, direct access to artisan partners in India, measurement guidance, and managed ordering for your key outfits." },
-              { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for the entire wedding party — bride, groom, bridesmaids, groomsmen, and family. Every ceremony covered." },
-            ].map((item) => (
-              <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
-                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#c7b28a", marginBottom: "10px" }}>{item.price}</p>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section style={{ padding: "48px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "16px" }}>
-            Ready to start your wedding shopping?
-          </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "24px" }}>
-            Book a free consultation at ceremonyverse.com or message us on WhatsApp at +1 (215) 341-9990. We'll walk you through exactly how we can help your New Jersey family shop from India with confidence.
-          </p>
-          <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#c7b28a", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
-            WhatsApp Us Now
-          </a>
-        </div>
-      </section>
-    </div>
-  )
+      </div>
+    </>
+  );
 }
