@@ -13,6 +13,11 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
+      {
+        source: '/sourcing-disclaimer',
+        destination: '/contact',
+        permanent: true,
+      },
     ]
   },
 }
