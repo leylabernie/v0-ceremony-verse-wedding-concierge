@@ -22,7 +22,7 @@ export function Footer({ onNavigate }: FooterProps) {
             Every outfit, every ceremony — nothing forgotten. Mehndi through Reception, with accessories, timeline, and ordering guide.
           </p>
           <p className="text-[#c7b28a] text-xs mb-8">
-            Top vendors book 6–12 months out. Download now and start planning.
+            Top vendors book 6–12 months out. Download now and start sourcing.
           </p>
           <a
             href="/wedding-outfit-checklist.pdf"
