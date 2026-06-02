@@ -79,7 +79,42 @@ export default function Page() {
       {activePage === "pets" && <PetsPage onNavigate={handleNavigate} />}
       {activePage === "guide-buy-lehenga-safely" && <GuideBuyLehengaSafely onNavigate={handleNavigate} />}
       {activePage === "guide-customs-duty" && <GuideCustomsDuty onNavigate={handleNavigate} />}
-
+      {/* NEW SEO SECTION: Blog Links */}
+      <section className="py-16 bg-stone-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12 text-stone-800">
+            Latest Wedding Shopping Guides
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Blog Post 1 */}
+            <a href="/blog/how-to-plan-mehndi-outfit" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  How to Plan Your Mehndi Outfit Shopping
+                </h3>
+                <p className="text-stone-600 mb-4">
+                  A complete guide to sourcing the perfect mehndi outfit, from fabric selection to vendor coordination.
+                </p>
+                <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+            
+            {/* Blog Post 2 */}
+            <a href="/blog/intercultural-wedding-outfit-guide" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  Intercultural Wedding Outfit Guide
+                </h3>
+                <p className="text-stone-600 mb-4">
+                  Navigating outfit choices for intercultural ceremonies with style and respect for both traditions.
+                </p>
+                <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      
       <Footer onNavigate={handleNavigate} />
     </>
   )
