@@ -10,6 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/free-guides`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    
+    // --- ADDED THESE TWO MISSING PAGES ---
+    { url: `${baseUrl}/consultation`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${baseUrl}/sourcing-disclaimer`, lastModified: new Date(), changeFrequency: 'yearly' as const, priority: 0.3 },
   ]
 
   const locationPages = [
