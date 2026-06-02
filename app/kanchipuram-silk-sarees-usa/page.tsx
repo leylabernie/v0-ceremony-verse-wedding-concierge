@@ -24,19 +24,19 @@ export default function KanchipuramSareesPage() {
 
       {/* HERO */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "14px" }}>
+        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#a69260", marginBottom: "14px" }}>
           Kanchipuram Silk Sarees
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Pure Kanchipuram silk, sourced from the source.
         </h1>
-        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "12px", maxWidth: "600px", margin: "0 auto 12px" }}>
+        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "12px", maxWidth: "600px", margin: "0 auto 12px" }}>
           We travel to Kanchipuram — the silk weaving capital of India — to hand-select pure silk sarees for our clients. Every saree is hand-woven with pure mulberry silk and real gold or silver zari thread.
         </p>
-        <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#8a6f63", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
+        <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#5e4a40", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
           This is not sourced from a catalog. We go there so you don't have to.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#c7b28a", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -58,7 +58,7 @@ export default function KanchipuramSareesPage() {
                 />
                 <div style={{ padding: "16px" }}>
                   <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "6px" }}>{saree.name}</h3>
-                  <p style={{ fontSize: "12px", color: "#6a5c55", lineHeight: 1.5 }}>{saree.desc}</p>
+                  <p style={{ fontSize: "12px", color: "#4d403a", lineHeight: 1.5 }}>{saree.desc}</p>
                 </div>
               </div>
             ))}
@@ -81,7 +81,7 @@ export default function KanchipuramSareesPage() {
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "13px", color: "#6a5c55", lineHeight: 1.6 }}>{item.desc}</p>
+                <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -102,7 +102,7 @@ export default function KanchipuramSareesPage() {
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.a}</p>
+              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>

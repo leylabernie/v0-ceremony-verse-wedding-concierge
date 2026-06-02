@@ -10,7 +10,7 @@ export function BridesmaidsPage({ onNavigate }: Props) {
         <img src="/images/services-bridesmaids.jpg" alt="Pastel bridesmaid lehengas on rack" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.62) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>For the Squad</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>For the Squad</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Bridesmaid Outfits</h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Coordinated lehengas, sarees, and salwar sets sourced in matching palettes — so your girls look stunning and cohesive on every ceremony.</p>
         </div>

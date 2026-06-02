@@ -44,9 +44,9 @@ export function Navigation() {
               onClick={handleLinkClick}
             >
               <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
-                CEREMONY<span className="font-light text-[#c7b28a]">VERSE</span>
+                CEREMONY<span className="font-light text-[#a69260]">VERSE</span>
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#8a6f63] mt-0.5">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
                 Authentic Indian Wedding Shopping for NRI Families
               </span>
             </Link>

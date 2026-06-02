@@ -13,16 +13,16 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "14px", fontWeight: 500 }}>
+        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#a69260", marginBottom: "14px", fontWeight: 500 }}>
           South Indian Christian Wedding Specialists
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           South Indian Christian Wedding Outfits Sourced from India — For NRI Families in the USA
         </h1>
-        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
+        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           South Indian Christian weddings carry a distinctive elegance — blending church traditions with the rich textile heritage of Kerala and Tamil Nadu. CeremonyVerse understands exactly what each ceremony calls for, from the church procession saree to the reception outfit, and sources everything directly from India.
         </p>
-        <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#c7b28a", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -44,7 +44,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.desc}</p>
+                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -57,7 +57,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "24px" }}>
             Our experience with South Indian Christian weddings
           </h2>
-          <div style={{ fontSize: "15px", lineHeight: 1.8, color: "#6a5c55" }}>
+          <div style={{ fontSize: "15px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
               CeremonyVerse has dressed South Indian Christian families in Philadelphia — understanding exactly what each ceremony calls for, from the church procession to the reception. We know that a Kerala Christian wedding saree isn't the same as a Tamil Christian one, and that the outfit expectations for a Syro-Malabar ceremony differ from a Latin Catholic celebration.
             </p>
@@ -86,8 +86,8 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
-                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#c7b28a", marginBottom: "10px" }}>{item.price}</p>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#6a5c55" }}>{item.desc}</p>
+                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#a69260", marginBottom: "10px" }}>{item.price}</p>
+                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -100,10 +100,10 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "16px" }}>
             Planning a South Indian Christian wedding in the USA?
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#6a5c55", marginBottom: "24px" }}>
+          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4d403a", marginBottom: "24px" }}>
             Book a free consultation at ceremonyverse.com or message us on WhatsApp at +1 (215) 341-9990. Whether your family is Kerala Christian or Tamil Christian, we'll source outfits that honor your traditions — directly from India.
           </p>
-          <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#c7b28a", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+          <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
             WhatsApp Us Now
           </a>
         </div>

@@ -32,7 +32,7 @@ const testimonials = [
     names: "Kaval & April",
     initials: "KA",
     photo: "",
-    color: "#c7b28a",
+    color: "#a69260",
     location: "Philadelphia, PA",
     quote:
       "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
@@ -62,7 +62,7 @@ const testimonials = [
     names: "Dhan & Christina",
     initials: "DC",
     photo: "/images/testimonial-dhan-christina.jpg",
-    color: "#c7b28a",
+    color: "#a69260",
     location: "USA",
     quote:
       "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
@@ -92,7 +92,7 @@ const testimonials = [
     names: "Shilpa",
     initials: "SP",
     photo: "",
-    color: "#c7b28a",
+    color: "#a69260",
     location: "USA",
     quote:
       "I went to India for my own shopping but knew coordinating 12 bridesmaid outfits remotely would be a nightmare. CeremonyVerse handled all 12 — every measurement, every fitting, every delivery. I didn't have to worry about a single one.",
@@ -163,10 +163,10 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
         className="w-full flex items-center justify-between py-5 text-left gap-4"
       >
         <span className="font-medium text-sm md:text-base" style={{ color: "#1f1f1f" }}>{question}</span>
-        <span className="shrink-0 text-lg transition-transform" style={{ color: "#c7b28a", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
+        <span className="shrink-0 text-lg transition-transform" style={{ color: "#a69260", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
       </button>
       {open && (
-        <p className="text-sm leading-relaxed pb-5" style={{ color: "#6a5c55" }}>{answer}</p>
+        <p className="text-sm leading-relaxed pb-5" style={{ color: "#4d403a" }}>{answer}</p>
       )}
     </div>
   )
@@ -182,6 +182,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         <img
           src="/images/hero-lehenga.jpg"
           alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
+          fetchPriority="high"
           style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
             objectFit: "cover", objectPosition: "center",
@@ -197,7 +198,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         {/* Content */}
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
-            <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#c7b28a", marginBottom: "20px", fontWeight: 500 }}>
+            <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#a69260", marginBottom: "20px", fontWeight: 500 }}>
               Risk-Free Indian Wedding Shopping from the US
             </p>
             <h1 style={{
@@ -217,7 +218,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <button
                 type="button"
                 onClick={() => onNavigate?.("contact")}
-                style={{ background: "#c7b28a", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer" }}
+                style={{ background: "#a69260", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer" }}
               >
                 Book Free Consultation
               </button>
@@ -265,10 +266,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* PAIN POINTS STRIP */}
       <section className="py-14 px-6" style={{ background: "#1f1f1f" }}>
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>
+          <p className="text-center text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>
             The 5 Biggest Risks When Buying Indian Wedding Outfits from India
           </p>
-          <p className="text-center text-[#6a5c55] mb-8 max-w-2xl mx-auto text-sm">
+          <p className="text-center text-[#4d403a] mb-8 max-w-2xl mx-auto text-sm">
             NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's what can go wrong — and how we prevent it.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
@@ -301,7 +302,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             ].map((item, i) => (
               <div key={i} className="rounded-2xl p-7" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(199,178,138,0.2)" }}>
                 <div className="text-2xl mb-4">{item.icon}</div>
-                <p className="font-['Cormorant_Garamond'] text-lg font-semibold italic mb-3 leading-snug" style={{ color: "#c7b28a" }}>
+                <p className="font-['Cormorant_Garamond'] text-lg font-semibold italic mb-3 leading-snug" style={{ color: "#a69260" }}>
                   {item.problem}
                 </p>
                 <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
@@ -321,7 +322,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#1f1f1f] mb-5">
               You see every item before you buy — live, from India.
             </h2>
-            <p className="text-base leading-relaxed" style={{ color: "#6a5c55" }}>
+            <p className="text-base leading-relaxed" style={{ color: "#4d403a" }}>
               This is a real video call with our team in India, showing you actual outfits spread out in front of you. You see the fabric, the embroidery, the weight, the color in natural light — and that exact piece gets reserved with your name. No surprises when it arrives.
             </p>
           </div>
@@ -359,13 +360,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
             },
           ].map((step, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-xs tracking-widest text-[#c7b28a] font-medium mb-3 uppercase">
+              <p className="text-xs tracking-widest text-[#a69260] font-medium mb-3 uppercase">
                 Step {i + 1}
               </p>
               <p className="font-semibold text-[#1f1f1f] mb-2">
                 {step.title}
               </p>
-              <p className="text-sm text-[#6a5c55]">
+              <p className="text-sm text-[#4d403a]">
                 {step.desc}
               </p>
             </div>
@@ -384,9 +385,9 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* WHAT WE SOURCE — compact teaser, links to Services page */}
       <section className="py-16 px-6 bg-[#f9f6f3]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#8a6f63" }}>Everything Covered</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#5e4a40" }}>Everything Covered</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">We Source It All</h2>
-          <p className="text-[#6a5c55] mb-10 max-w-xl mx-auto">
+          <p className="text-[#4d403a] mb-10 max-w-xl mx-auto">
             From ready-made outfits to fully custom pieces stitched to your measurements — bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry sourced directly from our supplier, ceremonial items, gifts, welcome bags, and even pet outfits.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-10">
@@ -412,7 +413,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* TRUST SIGNALS STRIP */}
       <section className="py-12 px-6" style={{ background: "#fff", borderTop: "1px solid #e6dfd5", borderBottom: "1px solid #e6dfd5" }}>
         <div className="max-w-5xl mx-auto">
-          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#8a6f63" }}>
+          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#5e4a40" }}>
             Why Families Trust CeremonyVerse
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -425,7 +426,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div key={i}>
                 <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
                 <p style={{ fontWeight: 600, fontSize: "0.95rem", color: "#1f1f1f", marginBottom: "2px" }}>{t.stat}</p>
-                <p style={{ fontSize: "0.75rem", color: "#8a6f63" }}>{t.sub}</p>
+                <p style={{ fontSize: "0.75rem", color: "#5e4a40" }}>{t.sub}</p>
               </div>
             ))}
           </div>
@@ -435,27 +436,27 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* PRICING TIERS */}
       <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
             Transparent Pricing
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
             Choose Your Level of Support
           </h2>
-          <p className="text-center text-[#6a5c55] mb-8 max-w-xl mx-auto">
+          <p className="text-center text-[#4d403a] mb-8 max-w-xl mx-auto">
             Every tier includes direct access to our vetted sourcing network in India. No hidden markups — just our sourcing fee, clearly itemized.
           </p>
 
           {/* FREE TIER HIGHLIGHT */}
-          <div className="max-w-2xl mx-auto mb-10 rounded-2xl border border-[#c7b28a] bg-[#faf8f4] p-6 text-center">
-            <span className="inline-block text-xs font-medium tracking-widest uppercase text-[#c7b28a] mb-2">Always Free</span>
+          <div className="max-w-2xl mx-auto mb-10 rounded-2xl border border-[#a69260] bg-[#faf8f4] p-6 text-center">
+            <span className="inline-block text-xs font-medium tracking-widest uppercase text-[#a69260] mb-2">Always Free</span>
             <h3 className="text-xl font-semibold text-[#1f1f1f] mb-2">Free Consultation — No Commitment</h3>
-            <p className="text-sm text-[#6a5c55] mb-4">
+            <p className="text-sm text-[#4d403a] mb-4">
               Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
             </p>
             <button
               type="button"
               onClick={() => onNavigate?.("contact")}
-              className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="inline-flex items-center justify-center bg-[#a69260] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Book Free Consultation →
             </button>
@@ -467,28 +468,28 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 key={i}
                 className={`rounded-2xl p-8 flex flex-col ${
                   tier.featured
-                    ? "bg-[#1f1f1f] text-white border-2 border-[#c7b28a] relative"
+                    ? "bg-[#1f1f1f] text-white border-2 border-[#a69260] relative"
                     : "bg-white border border-[#e6dfd5]"
                 }`}
               >
                 {tier.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#c7b28a] text-white text-xs font-medium px-4 py-1 rounded-full tracking-wider">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#a69260] text-white text-xs font-medium px-4 py-1 rounded-full tracking-wider">
                     MOST POPULAR
                   </div>
                 )}
-                <p className={`text-sm font-medium tracking-wide mb-1 ${tier.featured ? "text-[#c7b28a]" : "text-[#8a6f63]"}`}>
+                <p className={`text-sm font-medium tracking-wide mb-1 ${tier.featured ? "text-[#a69260]" : "text-[#5e4a40]"}`}>
                   {tier.name}
                 </p>
                 <p className={`text-3xl font-semibold mb-3 ${tier.featured ? "text-white" : "text-[#1f1f1f]"}`}>
                   {tier.price}
                 </p>
-                <p className={`text-sm mb-6 leading-relaxed ${tier.featured ? "text-white/70" : "text-[#6a5c55]"}`}>
+                <p className={`text-sm mb-6 leading-relaxed ${tier.featured ? "text-white/70" : "text-[#4d403a]"}`}>
                   {tier.desc}
                 </p>
                 <ul className="space-y-2 mb-8 flex-1">
                   {tier.features.map((f, fi) => (
-                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.featured ? "text-white/80" : "text-[#6a5c55]"}`}>
-                      <span className="text-[#c7b28a] mt-0.5">—</span>
+                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.featured ? "text-white/80" : "text-[#4d403a]"}`}>
+                      <span className="text-[#a69260] mt-0.5">—</span>
                       {f}
                     </li>
                   ))}
@@ -498,7 +499,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   onClick={() => onNavigate?.("contact")}
                   className={`w-full py-3 rounded-full text-sm font-medium transition ${
                     tier.featured
-                      ? "bg-[#c7b28a] text-white hover:opacity-90"
+                      ? "bg-[#a69260] text-white hover:opacity-90"
                       : "border border-[#1f1f1f] text-[#1f1f1f] hover:bg-[#1f1f1f] hover:text-white"
                   }`}
                 >
@@ -508,7 +509,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             ))}
           </div>
 
-          <p className="text-center text-xs text-[#8a6f63] mt-6">
+          <p className="text-center text-xs text-[#5e4a40] mt-6">
             All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs — fully transparent, no surprises.
           </p>
         </div>
@@ -517,13 +518,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* TRUST ENGINE — How We Verify & Prevent Failures */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
             Our Verification System
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
             How We Prevent Failures
           </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
             NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's exactly how we prevent every risk.
           </p>
 
@@ -531,21 +532,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Vendor Verification */}
             <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
               <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">How We Verify Vendors</h3>
-              <ul className="space-y-3 text-[#6a5c55] text-sm">
+              <ul className="space-y-3 text-[#4d403a] text-sm">
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span className="text-[#a69260] font-bold">✓</span>
                   <span><strong>Personal Relationships:</strong> Direct relationships with skilled craftspeople, designers, and suppliers across India — not random Instagram sellers.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span className="text-[#a69260] font-bold">✓</span>
                   <span><strong>Live Video Verification:</strong> You see the exact item — actual fabric draped, embroidery up close, color in natural light — before committing to anything.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span className="text-[#a69260] font-bold">✓</span>
                   <span><strong>Order Documentation:</strong> Every order is documented with reference photos and your written approval before production begins.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">✓</span>
+                  <span className="text-[#a69260] font-bold">✓</span>
                   <span><strong>Pre-Shipping Inspection:</strong> Final quality check in India before anything ships to the US.</span>
                 </li>
               </ul>
@@ -554,21 +555,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* Risk Prevention */}
             <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
               <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">What Can Go Wrong (& How We Prevent It)</h3>
-              <ul className="space-y-3 text-[#6a5c55] text-sm">
+              <ul className="space-y-3 text-[#4d403a] text-sm">
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span className="text-[#a69260] font-bold">🚫</span>
                   <span><strong>Fabric mismatch:</strong> You approve the exact bolt on video. That specific piece is reserved with your order number.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span className="text-[#a69260] font-bold">🚫</span>
                   <span><strong>Sizing disasters:</strong> 15+ precise measurements + custom stitching + 100% fit guarantee with alteration coverage up to $150/garment.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span className="text-[#a69260] font-bold">🚫</span>
                   <span><strong>Shipping damage:</strong> Full insurance on all shipments. We've never had an unresolved shipping issue.</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-[#c7b28a] font-bold">🚫</span>
+                  <span className="text-[#a69260] font-bold">🚫</span>
                   <span><strong>Payment risk:</strong> Milestone-based protection: 25% deposit, 35% after approval, 30% after inspection, 10% on delivery.</span>
                 </li>
               </ul>
@@ -580,15 +581,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <h3 className="text-2xl font-semibold mb-6">Real Client Results</h3>
             <div className="grid md:grid-cols-3 gap-6 text-sm">
               <div>
-                <p className="text-[#c7b28a] text-2xl font-bold mb-2">14+14</p>
+                <p className="text-[#a69260] text-2xl font-bold mb-2">14+14</p>
                 <p className="text-white/70">Bridesmaids & Groomsmen coordinated across multiple states</p>
               </div>
               <div>
-                <p className="text-[#c7b28a] text-2xl font-bold mb-2">4-Day Weddings</p>
+                <p className="text-[#a69260] text-2xl font-bold mb-2">4-Day Weddings</p>
                 <p className="text-white/70">Destination weddings (Mexico, India) with full party coordination</p>
               </div>
               <div>
-                <p className="text-[#c7b28a] text-2xl font-bold mb-2">30-50%</p>
+                <p className="text-[#a69260] text-2xl font-bold mb-2">30-50%</p>
                 <p className="text-white/70">Typical savings vs. US Indian boutiques</p>
               </div>
             </div>
@@ -599,51 +600,51 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* REAL WEDDINGS GALLERY */}
       <section className="py-16 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
             Real Weddings, Real Results
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
             See What We've Done
           </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
             These are real NRI families who trusted us. From 14-bridesmaid coordination to destination weddings in Mexico, here's proof that we deliver.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
             {/* Case Study 1: 14+14 Coordination */}
             <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#c7b28a]/20 to-[#8a6f63]/10 h-48 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#a69260]/20 to-[#5e4a40]/10 h-48 flex items-center justify-center">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-[#c7b28a] mb-2">14+14</p>
-                  <p className="text-[#6a5c55] font-medium">Bridesmaids & Groomsmen</p>
+                  <p className="text-4xl font-bold text-[#a69260] mb-2">14+14</p>
+                  <p className="text-[#4d403a] font-medium">Bridesmaids & Groomsmen</p>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">4-Day Gujarati & South Indian Wedding</h3>
-                <p className="text-[#6a5c55] text-sm mb-4">Coordinated outfits for 14 bridesmaids and 14 groomsmen across multiple states, plus full family, ceremonial items, and gifts.</p>
+                <p className="text-[#4d403a] text-sm mb-4">Coordinated outfits for 14 bridesmaids and 14 groomsmen across multiple states, plus full family, ceremonial items, and gifts.</p>
                 <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Kanchipuram Silk</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Full Coordination</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Philadelphia, PA</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Kanchipuram Silk</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Full Coordination</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Philadelphia, PA</span>
                 </div>
               </div>
             </div>
             
             {/* Case Study 2: Destination Wedding */}
             <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#c7b28a]/20 to-[#8a6f63]/10 h-48 flex items-center justify-center">
+              <div className="bg-gradient-to-br from-[#a69260]/20 to-[#5e4a40]/10 h-48 flex items-center justify-center">
                 <div className="text-center">
-                  <p className="text-4xl font-bold text-[#c7b28a] mb-2">4 Days</p>
-                  <p className="text-[#6a5c55] font-medium">Destination Wedding</p>
+                  <p className="text-4xl font-bold text-[#a69260] mb-2">4 Days</p>
+                  <p className="text-[#4d403a] font-medium">Destination Wedding</p>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">Gujarati Destination Wedding in Mexico</h3>
-                <p className="text-[#6a5c55] text-sm mb-4">Coordinated outfits for bride, groom, full bridal party, and entire family for each day. Plus ceremonial items, gifts, and welcome bags.</p>
+                <p className="text-[#4d403a] text-sm mb-4">Coordinated outfits for bride, groom, full bridal party, and entire family for each day. Plus ceremonial items, gifts, and welcome bags.</p>
                 <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Multi-Day</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">International</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#6a5c55]">Mexico</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Multi-Day</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">International</span>
+                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Mexico</span>
                 </div>
               </div>
             </div>
@@ -654,20 +655,20 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* TESTIMONIALS */}
       <section className="py-12 px-6 bg-[#f9f6f3]">
         <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#8a6f63] mb-4 uppercase text-center">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
             Client Stories
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
             NRI Families Who Trusted Us
           </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-xl mx-auto">
+          <p className="text-center text-[#4d403a] mb-12 max-w-xl mx-auto">
             Real stories from NRI families across the US — from Philadelphia to Houston to destination weddings in Mexico.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 flex flex-col shadow-sm">
-                <p className="text-[#c7b28a] text-2xl mb-4 leading-none">"</p>
+                <p className="text-[#a69260] text-2xl mb-4 leading-none">"</p>
                 <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
                   {t.quote}
                 </p>
@@ -690,7 +691,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   )}
                   <div>
                     <p className="font-semibold text-[#1f1f1f] text-sm">{t.names}</p>
-                    <p className="text-xs text-[#8a6f63]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
+                    <p className="text-xs text-[#5e4a40]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
                   </div>
                 </div>
               </div>
@@ -724,10 +725,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-5" style={{ color: "#1f1f1f" }}>
                 South Indian, Gujarati, or any tradition — we know your wedding.
               </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "#6a5c55" }}>
+              <p className="text-base leading-relaxed mb-4" style={{ color: "#4d403a" }}>
                 Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Our clients include South Indian Christian families, Gujarati families, and couples from all backgrounds.
               </p>
-              <p className="text-base leading-relaxed mb-6" style={{ color: "#6a5c55" }}>
+              <p className="text-base leading-relaxed mb-6" style={{ color: "#4d403a" }}>
                 We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
               </p>
               <div className="space-y-3">
@@ -747,13 +748,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 type="button"
                 onClick={() => onNavigate?.("contact")}
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
-                style={{ background: "#c7b28a", color: "#fff" }}
+                style={{ background: "#a69260", color: "#fff" }}
               >
                 Book a Free Consultation
               </button>
             </div>
             <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
-              <p className="text-[#c7b28a] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
+              <p className="text-[#a69260] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
               <p className="text-base leading-relaxed mb-6 font-['Cormorant_Garamond'] text-xl italic" style={{ color: "#2f2f2f" }}>
                 As a South Indian Christian couple, we wanted outfits that truly honored our heritage for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
               </p>
@@ -763,7 +764,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </div>
                 <div>
                   <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charly & Viola</p>
-                  <p className="text-xs" style={{ color: "#8a6f63" }}>Philadelphia, PA &nbsp;·&nbsp; South Indian Christian wedding</p>
+                  <p className="text-xs" style={{ color: "#5e4a40" }}>Philadelphia, PA &nbsp;·&nbsp; South Indian Christian wedding</p>
                 </div>
               </div>
             </div>
@@ -780,7 +781,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <h2 className="text-2xl font-semibold mb-3" style={{ color: "#1f1f1f" }}>
             @ceremonyverse on Instagram
           </h2>
-          <p className="text-[#6a5c55] mb-6 text-sm">
+          <p className="text-[#4d403a] mb-6 text-sm">
             Behind-the-scenes sourcing, real client outfits, and wedding inspiration direct from India.
           </p>
           <a
@@ -795,7 +796,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </svg>
             Follow @ceremonyverse
           </a>
-          <p className="text-xs text-[#8a6f63] mt-4">
+          <p className="text-xs text-[#5e4a40] mt-4">
             ⭐ Tag us on your wedding day for a feature
           </p>
         </div>
@@ -810,7 +811,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
           <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f" }}>
             Everything you need to know
           </h2>
-          <p className="text-center text-[#6a5c55] mb-12 max-w-xl mx-auto">
+          <p className="text-center text-[#4d403a] mb-12 max-w-xl mx-auto">
             Questions NRI families ask us most — from how to buy a lehenga from India safely, to sizing, shipping, and what to expect.
           </p>
           <div className="space-y-0">
@@ -891,21 +892,21 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* FINAL CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#c7b28a" }}>For NRI Families Planning Indian Weddings</p>
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#a69260" }}>For NRI Families Planning Indian Weddings</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">
             This is your wedding. You shouldn't have to settle.
           </h2>
-          <p className="text-[#6a5c55] mb-2">
+          <p className="text-[#4d403a] mb-2">
             Book a free 30-minute consultation. We'll review your vision, timeline, and budget — and tell you exactly what's achievable. No commitment required.
           </p>
-          <p className="text-sm text-[#8a6f63] mb-8">
+          <p className="text-sm text-[#5e4a40] mb-8">
             Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               type="button"
               onClick={() => onNavigate?.("contact")}
-              className="inline-flex items-center justify-center bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="inline-flex items-center justify-center bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Book Free Consultation
             </button>

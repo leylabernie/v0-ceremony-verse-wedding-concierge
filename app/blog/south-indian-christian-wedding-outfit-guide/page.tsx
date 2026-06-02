@@ -21,13 +21,13 @@ export default function SouthIndianChristianWeddingGuide() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#c7b28a", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             South Indian Christian Wedding Outfit Guide: What Every Family Member Wears
           </h1>
-          <p style={{ color: "#c7b28a", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Kerala Christian and Tamil Christian wedding attire — from the church ceremony to the reception — for NRI families sourcing from India.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function SouthIndianChristianWeddingGuide() {
             The Church Ceremony
           </h3>
           <p>
-            The church ceremony is the heart of a Kerala Christian wedding, and the attire reflects that gravity. The most traditional garment for women — including the bride — is the <strong>kasavu saree</strong>: a white or cream cotton-silk saree with a gold zari border. As noted in <a href="https://www.haradhi.com/post/kerala-kasavu-saree-and-set-mundu-two-symbols-of-grace-and-tradition" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>Kerala textile traditions</a>, the white represents purity and the kasavu (gold border) represents prosperity — a pairing that has defined Malayali ceremonial dress for generations.
+            The church ceremony is the heart of a Kerala Christian wedding, and the attire reflects that gravity. The most traditional garment for women — including the bride — is the <strong>kasavu saree</strong>: a white or cream cotton-silk saree with a gold zari border. As noted in <a href="https://www.haradhi.com/post/kerala-kasavu-saree-and-set-mundu-two-symbols-of-grace-and-tradition" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>Kerala textile traditions</a>, the white represents purity and the kasavu (gold border) represents prosperity — a pairing that has defined Malayali ceremonial dress for generations.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             For the bride specifically, the <strong>Manthrakodi</strong> — the white or off-white saree gifted by the groom&apos;s family — is a central part of the ceremony itself. It is worn with minimal embellishment, allowing the sanctity of the occasion to speak.
@@ -88,7 +88,7 @@ export default function SouthIndianChristianWeddingGuide() {
             Tamil Christian weddings share the reverence for the church ceremony but bring noticeably more color into the wider celebration. <strong>Kanchipuram silk sarees</strong> — handwoven in the temple town of Kanchipuram, Tamil Nadu — are the dominant fabric across nearly every role: mothers, aunties, family members, and often the bride herself for reception events.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            For the church ceremony, Tamil Christian brides may also wear white or cream, but the tradition is somewhat more flexible than in Kerala, and some families choose a rich colored Kanchipuram silk saree for the church itself. Coral, dusty pink, and champagne are popular compromises — festive without departing from the ceremony&apos;s dignity. The <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>Kanchipuram tradition for wedding sarees</a> runs deep in Tamil family culture and extends well beyond the bridal couple.
+            For the church ceremony, Tamil Christian brides may also wear white or cream, but the tradition is somewhat more flexible than in Kerala, and some families choose a rich colored Kanchipuram silk saree for the church itself. Coral, dusty pink, and champagne are popular compromises — festive without departing from the ceremony&apos;s dignity. The <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>Kanchipuram tradition for wedding sarees</a> runs deep in Tamil family culture and extends well beyond the bridal couple.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             A note on the half saree: in some Tamil Christian families — particularly those with roots in more traditional communities — the younger sisters of the bride or young female relatives wear a <strong>half saree</strong> (pavadai dhavani) for pre-wedding events or the reception. It is a three-piece outfit with a skirt, blouse, and dupatta that signals youth and marks a coming-of-age moment within the celebration.
@@ -139,7 +139,7 @@ export default function SouthIndianChristianWeddingGuide() {
             For many South Indian families — both Kerala Christian and Tamil Christian — <strong>Kanchipuram silk sarees</strong> for the mothers, mothers-in-law, and senior aunties are not a question. This is simply what is worn. The only real decisions are color and design.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Mothers of the bride and groom typically choose rich, classic shades: deep maroon, emerald green, navy, or royal blue, with temple borders or floral motifs in gold zari. As <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>Kumaran Silks notes</a>, these colors carry a sense of dignity and occasion that lighter or more casual fabrics cannot replicate.
+            Mothers of the bride and groom typically choose rich, classic shades: deep maroon, emerald green, navy, or royal blue, with temple borders or floral motifs in gold zari. As <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>Kumaran Silks notes</a>, these colors carry a sense of dignity and occasion that lighter or more casual fabrics cannot replicate.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Aunties and cousins have more flexibility — they may choose Kanchipuram silk as well, or opt for a soft silk, Banarasi, or contemporary saree in complementary tones. The guiding principle is to not compete with the mother-of-the-bride or the bride herself in terms of weight or grandeur.
@@ -186,17 +186,17 @@ export default function SouthIndianChristianWeddingGuide() {
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", color: "#f8f6f2", marginBottom: "0.75rem" }}>
               Ready to start sourcing?
             </p>
-            <p style={{ color: "#c7b28a", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
+            <p style={{ color: "#a69260", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
               Book a free consultation. Tell us your ceremony schedule, family structure, and budget — we&apos;ll handle the rest.
             </p>
             <Link
               href="/#contact"
-              style={{ display: "inline-block", background: "#c7b28a", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
+              style={{ display: "inline-block", background: "#a69260", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
             </Link>
             <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
-              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#c7b28a" }}>+1 (215) 341-9990</a>
+              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
@@ -218,7 +218,7 @@ export default function SouthIndianChristianWeddingGuide() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#c7b28a", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
         </div>

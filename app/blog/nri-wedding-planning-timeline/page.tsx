@@ -21,13 +21,13 @@ export default function NriWeddingPlanningTimeline() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#c7b28a", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             The NRI Wedding Planning Timeline: When to Order Everything from India
           </h1>
-          <p style={{ color: "#c7b28a", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
             A month-by-month guide so nothing falls through the cracks — from the bridal lehenga to the welcome bags.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function NriWeddingPlanningTimeline() {
             When you live in Philadelphia, Houston, or Toronto, none of that is possible. Every step — initial consultation, fabric selection, measuring, sampling, production, quality review, shipping, customs clearance, and final alteration — has to be planned in advance and executed with a clear window of time. A delay at any stage creates a domino effect that&apos;s very hard to recover from.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Add to this the reality that US customs clearance for international shipments is not always predictable. Packages are held. Duties are assessed. Clearance can take days or, occasionally, weeks. According to <a href="https://g3fashion.com/blog/fashion/how-to-buy-lehenga-choli-in-the-usa-guide/" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>G3Fashion&apos;s shipping guide</a>, international shipping from India alone adds 5–8 business days on top of production time — and that&apos;s under normal conditions. The safest approach is to assume packages will take longer than expected and plan accordingly.
+            Add to this the reality that US customs clearance for international shipments is not always predictable. Packages are held. Duties are assessed. Clearance can take days or, occasionally, weeks. According to <a href="https://g3fashion.com/blog/fashion/how-to-buy-lehenga-choli-in-the-usa-guide/" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>G3Fashion&apos;s shipping guide</a>, international shipping from India alone adds 5–8 business days on top of production time — and that&apos;s under normal conditions. The safest approach is to assume packages will take longer than expected and plan accordingly.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Here is your complete month-by-month timeline.
@@ -86,7 +86,7 @@ export default function NriWeddingPlanningTimeline() {
             The bridal lehenga is the single item that requires the most lead time. It is heavily embroidered, often custom-made, and the one piece you absolutely cannot compromise on. This is where your timeline either holds or breaks down.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Why this early?</strong> Top designers and outfit specialists in Delhi, Mumbai, and Hyderabad book up months in advance. If you are set on a specific designer&apos;s work, or want a fully custom piece, the 10–12 month window is not just ideal — it is necessary. As the <a href="https://www.reddit.com/r/DesiWeddings/comments/1h0gqkp/timeline_to_buy_bridal_lehenga/" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>DesiWeddings community</a> notes, most brides secure their lehenga 8 to 12 months in advance precisely because they know how stressful last-minute changes can be.
+            <strong>Why this early?</strong> Top designers and outfit specialists in Delhi, Mumbai, and Hyderabad book up months in advance. If you are set on a specific designer&apos;s work, or want a fully custom piece, the 10–12 month window is not just ideal — it is necessary. As the <a href="https://www.reddit.com/r/DesiWeddings/comments/1h0gqkp/timeline_to_buy_bridal_lehenga/" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>DesiWeddings community</a> notes, most brides secure their lehenga 8 to 12 months in advance precisely because they know how stressful last-minute changes can be.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li>Begin virtual consultations with outfit specialists, reviewing options based on your ceremony type, color palette, and silhouette preferences</li>
@@ -146,7 +146,7 @@ export default function NriWeddingPlanningTimeline() {
             <li>Confirm all outfits ordered so far have shipped or have confirmed dispatch dates</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            As <a href="https://www.reddit.com/r/DesiWeddings/comments/1pw1bgo/what_most_nri_brides_dont_realize_about_ordering/" target="_blank" rel="noopener noreferrer" style={{ color: "#c7b28a" }}>noted by NRI brides on DesiWeddings</a>, jewelry is often the most underestimated category for lead time. Custom or semi-custom pieces especially need to be ordered with the same intentionality as the lehenga.
+            As <a href="https://www.reddit.com/r/DesiWeddings/comments/1pw1bgo/what_most_nri_brides_dont_realize_about_ordering/" target="_blank" rel="noopener noreferrer" style={{ color: "#a69260" }}>noted by NRI brides on DesiWeddings</a>, jewelry is often the most underestimated category for lead time. Custom or semi-custom pieces especially need to be ordered with the same intentionality as the lehenga.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -223,17 +223,17 @@ export default function NriWeddingPlanningTimeline() {
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", color: "#f8f6f2", marginBottom: "0.75rem" }}>
               Ready to start planning?
             </p>
-            <p style={{ color: "#c7b28a", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
+            <p style={{ color: "#a69260", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
               Book a free consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
             </p>
             <Link
               href="/#contact"
-              style={{ display: "inline-block", background: "#c7b28a", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
+              style={{ display: "inline-block", background: "#a69260", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
             </Link>
             <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
-              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#c7b28a" }}>+1 (215) 341-9990</a>
+              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
@@ -256,7 +256,7 @@ export default function NriWeddingPlanningTimeline() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#c7b28a", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
         </div>

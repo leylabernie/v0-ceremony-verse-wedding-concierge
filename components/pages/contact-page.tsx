@@ -94,7 +94,7 @@ export function ContactPage() {
             className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8"
             style={{ border: "2px solid var(--cv-accent)" }}
           >
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c7b28a" strokeWidth="2">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="2">
               <polyline points="20,6 9,17 4,12" />
             </svg>
           </div>
@@ -107,7 +107,7 @@ export function ContactPage() {
           >
             Application Received
           </h1>
-          <p className="text-lg leading-relaxed mb-10" style={{ color: "#6a5c55" }}>
+          <p className="text-lg leading-relaxed mb-10" style={{ color: "#4d403a" }}>
             Thank you, {formData.name}. Our team will review your vision and reach out within 24–48 hours at{" "}
             <strong style={{ color: "var(--cv-foreground)" }}>{formData.email}</strong>.
           </p>
@@ -135,7 +135,7 @@ export function ContactPage() {
                   >
                     0{index + 1}
                   </span>
-                  <span className="text-sm leading-relaxed" style={{ color: "#6a5c55" }}>
+                  <span className="text-sm leading-relaxed" style={{ color: "#4d403a" }}>
                     {item}
                   </span>
                 </li>
@@ -176,7 +176,7 @@ export function ContactPage() {
           >
             Book Your Free Consultation
           </h1>
-          <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#6a5c55" }}>
+          <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
             Tell us about your wedding vision. We&apos;ll prepare a tailored sourcing proposal — no commitment required.
           </p>
 
@@ -224,7 +224,7 @@ export function ContactPage() {
             className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
             style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c7b28a" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="1.5">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
               <line x1="16" y1="13" x2="8" y2="13"/>
@@ -233,7 +233,7 @@ export function ContactPage() {
             </svg>
             <div>
               <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Client Intake Questionnaire</p>
-              <p className="text-xs" style={{ color: "#8a6f63" }}>Download & complete before your consultation</p>
+              <p className="text-xs" style={{ color: "#5e4a40" }}>Download & complete before your consultation</p>
             </div>
           </a>
           <a
@@ -242,14 +242,14 @@ export function ContactPage() {
             className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
             style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c7b28a" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="1.5">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
               <path d="M9 15l2 2 4-4"/>
             </svg>
             <div>
               <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Service Agreement</p>
-              <p className="text-xs" style={{ color: "#8a6f63" }}>Review our terms before signing</p>
+              <p className="text-xs" style={{ color: "#5e4a40" }}>Review our terms before signing</p>
             </div>
           </a>
         </div>
@@ -467,7 +467,7 @@ export function ContactPage() {
                       checked={formData.contractAcknowledged}
                       onChange={(e) => updateFormData("contractAcknowledged", e.target.checked)}
                       className="mt-0.5 w-4 h-4 cursor-pointer rounded"
-                      style={{ accentColor: "#c7b28a" }}
+                      style={{ accentColor: "#a69260" }}
                       required
                     />
                     <span className="text-sm leading-relaxed" style={{ color: "var(--cv-muted)" }}>
@@ -485,7 +485,7 @@ export function ContactPage() {
                   disabled={!canSubmit() || isLoading}
                   className="w-full py-4 rounded-full text-sm font-semibold transition"
                   style={{
-                    background: canSubmit() && !isLoading ? "#c7b28a" : "#e6dfd5",
+                    background: canSubmit() && !isLoading ? "#a69260" : "#e6dfd5",
                     color: canSubmit() && !isLoading ? "#fff" : "#b0a898",
                     cursor: canSubmit() && !isLoading ? "pointer" : "not-allowed",
                   }}

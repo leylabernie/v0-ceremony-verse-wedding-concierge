@@ -14,15 +14,15 @@
   --cv-section: #ffffff;     /* pure white sections/cards */
   --cv-card: #ffffff;
   --cv-foreground: #2f2f2f;  /* charcoal, not navy */
-  --cv-muted: #6f6a63;       /* warm muted text */
-  --cv-accent: #c7b28a;      /* warm beige-gold */
+  --cv-muted: #4d453d;       /* warm muted text — darker for WCAG contrast */
+  --cv-accent: #a69260;      /* warm beige-gold — darker for WCAG contrast */
   --cv-border: #e6dfd5;      /* subtle warm border */
 
   /* Legacy aliases used by your components */
   --muted-rose: #f8f6f2;     /* map old pink utility to ivory */
   --champagne: #ffffff;      /* map old beige utility to white */
   --midnight-navy: #2f2f2f;  /* map old navy utility to charcoal */
-  --brushed-gold: #c7b28a;   /* warm beige-gold */
+  --brushed-gold: #a69260;   /* warm beige-gold — darker for WCAG contrast */
 
   /* Theme tokens */
   --background: var(--cv-bg);

@@ -10,7 +10,7 @@ export function CeremonialPage({ onNavigate }: Props) {
         <img src="/images/services-ceremonial2.png" alt="Mehndi ceremony with brass diyas and marigolds" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", zIndex: 0 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c7b28a" }}>Sacred Traditions</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>Sacred Traditions</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Ceremonial Items & Ritual Essentials</h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Authentic ritual items sourced from India to ensure every ceremony is performed with the right materials — from the mandap to the mehndi night.</p>
         </div>

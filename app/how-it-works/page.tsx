@@ -107,7 +107,7 @@ export default function HowItWorksPage() {
             fontSize: "11px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#c7b28a",
+            color: "#a69260",
             marginBottom: "14px",
             fontWeight: 500,
           }}
@@ -131,7 +131,7 @@ export default function HowItWorksPage() {
             fontFamily: "'DM Sans', sans-serif",
             fontSize: "17px",
             lineHeight: 1.7,
-            color: "#6a5c55",
+            color: "#4d403a",
             marginBottom: "32px",
             maxWidth: "600px",
             margin: "0 auto 32px",
@@ -160,7 +160,7 @@ export default function HowItWorksPage() {
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontSize: "2.4rem",
                   fontWeight: 300,
-                  color: "#c7b28a",
+                  color: "#a69260",
                   lineHeight: 1,
                   minWidth: "52px",
                   flexShrink: 0,
@@ -186,7 +186,7 @@ export default function HowItWorksPage() {
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "15px",
                     lineHeight: 1.7,
-                    color: "#6a5c55",
+                    color: "#4d403a",
                   }}
                 >
                   {step.description}
@@ -205,7 +205,7 @@ export default function HowItWorksPage() {
               fontSize: "11px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#c7b28a",
+              color: "#a69260",
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
@@ -252,7 +252,7 @@ export default function HowItWorksPage() {
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "13px",
                     lineHeight: 1.6,
-                    color: "#6a5c55",
+                    color: "#4d403a",
                   }}
                 >
                   {item.desc}
@@ -271,7 +271,7 @@ export default function HowItWorksPage() {
               fontSize: "11px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#c7b28a",
+              color: "#a69260",
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
@@ -309,7 +309,7 @@ export default function HowItWorksPage() {
                     fontSize: "12px",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#c7b28a",
+                    color: "#a69260",
                     fontWeight: 600,
                     marginBottom: "8px",
                   }}
@@ -332,7 +332,7 @@ export default function HowItWorksPage() {
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: "13px",
                     lineHeight: 1.6,
-                    color: "#6a5c55",
+                    color: "#4d403a",
                   }}
                 >
                   {tier.description}
@@ -376,7 +376,7 @@ export default function HowItWorksPage() {
                   fontFamily: "'DM Sans', sans-serif",
                   fontSize: "13px",
                   lineHeight: 1.6,
-                  color: "#6a5c55",
+                  color: "#4d403a",
                 }}
               >
                 {item.a}
@@ -405,7 +405,7 @@ export default function HowItWorksPage() {
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "15px",
               lineHeight: 1.7,
-              color: "#6a5c55",
+              color: "#4d403a",
               marginBottom: "28px",
             }}
           >
@@ -417,7 +417,7 @@ export default function HowItWorksPage() {
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                background: "#c7b28a",
+                background: "#a69260",
                 color: "#fff",
                 padding: "13px 30px",
                 borderRadius: "999px",
@@ -442,7 +442,7 @@ export default function HowItWorksPage() {
                 fontSize: "14px",
                 fontWeight: 600,
                 textDecoration: "none",
-                border: "1px solid #c7b28a",
+                border: "1px solid #a69260",
               }}
             >
               WhatsApp +1 (215) 341-9990

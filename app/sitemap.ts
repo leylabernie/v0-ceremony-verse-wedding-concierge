@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/free-guides`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/faq`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    // Blog posts — individual URLs so Google discovers each article
+    { url: `${baseUrl}/blog/south-indian-christian-wedding-outfit-guide`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/nri-wedding-planning-timeline`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/how-to-buy-bridal-lehenga-from-india-usa`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/gujarati-wedding-outfit-guide`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/blog/us-tariffs-indian-wedding-outfits-2026`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
   return staticPages

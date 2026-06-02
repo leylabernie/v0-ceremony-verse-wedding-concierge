@@ -16,7 +16,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
         <img src="/images/groom-hero.png" alt="Indian groom in ivory gold sherwani with blue safa in palace hall" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", zIndex: 0 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.62) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#c7b28a" }}>Groom Sourcing</p>
+          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#a69260" }}>Groom Sourcing</p>
           <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-7xl font-semibold mb-6" style={{ color: "#fff" }}>
             Sherwanis & Groom Attire<br />Sourced from India
           </h1>
@@ -26,7 +26,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => onNavigate?.("contact")}
-              className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Start Groom Sourcing
             </button>
@@ -58,7 +58,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
           ].map((item, i) => (
             <div key={i} className="bg-white p-6 rounded-2xl shadow-sm border border-[#e6dfd5]">
               <h3 className="font-semibold text-[#1f1f1f] mb-2">{item.title}</h3>
-              <p className="text-sm text-[#6a5c55] leading-relaxed">{item.desc}</p>
+              <p className="text-sm text-[#4d403a] leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -76,10 +76,10 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
               { title: "Save 30–50% vs. US stores", desc: "Direct sourcing means no boutique markup. You get better quality at a fraction of what US stores charge for the same craftsmanship." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
-                <span className="text-[#c7b28a] font-semibold text-lg mt-0.5">—</span>
+                <span className="text-[#a69260] font-semibold text-lg mt-0.5">—</span>
                 <div>
                   <h3 className="font-semibold text-[#1f1f1f] mb-1">{item.title}</h3>
-                  <p className="text-sm text-[#6a5c55] leading-relaxed">{item.desc}</p>
+                  <p className="text-sm text-[#4d403a] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -90,7 +90,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
       {/* PRICE COMPARISON */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-center" style={{ color: "#c7b28a" }}>The Numbers</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-center" style={{ color: "#a69260" }}>The Numbers</p>
           <h2 className="text-3xl font-semibold text-center mb-10 text-[#1f1f1f]">What You Save Sourcing from India</h2>
           <div className="overflow-x-auto rounded-2xl border border-[#e6dfd5]">
             <table className="w-full text-sm">
@@ -98,8 +98,8 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
                 <tr style={{ background: "#1f1f1f", color: "#fff" }}>
                   <th className="text-left px-6 py-4 font-medium">Item</th>
                   <th className="text-center px-6 py-4 font-medium">US Boutique</th>
-                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#c7b28a" }}>CeremonyVerse</th>
-                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#c7b28a" }}>Savings</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#a69260" }}>CeremonyVerse</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#a69260" }}>Savings</th>
                 </tr>
               </thead>
               <tbody>
@@ -111,21 +111,21 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
                 ].map((row, i) => (
                   <tr key={i} style={{ background: i % 2 === 0 ? "#fff" : "#f9f6f3" }}>
                     <td className="px-6 py-4 text-[#1f1f1f] font-medium">{row.item}</td>
-                    <td className="px-6 py-4 text-center text-[#6a5c55] line-through">{row.us}</td>
+                    <td className="px-6 py-4 text-center text-[#4d403a] line-through">{row.us}</td>
                     <td className="px-6 py-4 text-center font-semibold text-[#1f1f1f]">{row.cv}</td>
-                    <td className="px-6 py-4 text-center font-semibold" style={{ color: "#c7b28a" }}>{row.save}</td>
+                    <td className="px-6 py-4 text-center font-semibold" style={{ color: "#a69260" }}>{row.save}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#8a6f63] mt-4 text-center">Estimates based on comparable quality. Every order includes an itemized quote.</p>
+          <p className="text-xs text-[#5e4a40] mt-4 text-center">Estimates based on comparable quality. Every order includes an itemized quote.</p>
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-20 px-6 bg-[#1f1f1f] text-white text-center">
-        <p className="tracking-[0.15em] text-xs font-medium text-[#c7b28a] mb-4 uppercase">Ready to Begin?</p>
+        <p className="tracking-[0.15em] text-xs font-medium text-[#a69260] mb-4 uppercase">Ready to Begin?</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Let's find your perfect groom look.
         </h2>
@@ -135,7 +135,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => onNavigate?.("contact")}
-            className="bg-[#c7b28a] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            className="bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
           >
             Book Free Consultation
           </button>

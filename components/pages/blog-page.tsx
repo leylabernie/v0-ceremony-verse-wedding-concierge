@@ -353,7 +353,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
               type="button"
               onClick={() => onNavigate("contact")}
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#c7b28a", color: "#fff" }}
+              style={{ background: "#a69260", color: "#fff" }}
             >
               Book Free Consultation
             </button>
@@ -430,7 +430,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
               type="button"
               onClick={() => onNavigate("contact")}
               className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#c7b28a", color: "#fff" }}
+              style={{ background: "#a69260", color: "#fff" }}
             >
               Book Free Consultation
             </button>

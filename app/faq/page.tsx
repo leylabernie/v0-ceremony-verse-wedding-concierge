@@ -125,13 +125,13 @@ export default function FAQPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-6">
+          <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-6">
             The Trust Center
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#1f1f1f] mb-6 tracking-[0.04em]">
             Your Questions, Answered
           </h1>
-          <p className="text-[#6a5c55] text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
+          <p className="text-[#4d403a] text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
             For NRI families planning Indian weddings in the US — scams, sizing disasters, and broken
             promises are real concerns. Here's exactly how CeremonyVerse addresses every one of them.
           </p>
@@ -147,7 +147,7 @@ export default function FAQPage() {
             {/* Section Header */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
               <div className="lg:max-w-xl">
-                <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+                <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-3">
                   {String(sectionIdx + 1).padStart(2, '0')}
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em]">
@@ -166,7 +166,7 @@ export default function FAQPage() {
                   <h3 className="font-serif text-xl sm:text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide leading-snug">
                     {faq.question}
                   </h3>
-                  <p className="text-[#6a5c55] leading-[1.8] font-sans text-[0.9rem] flex-1">
+                  <p className="text-[#4d403a] leading-[1.8] font-sans text-[0.9rem] flex-1">
                     {faq.answer}
                   </p>
                 </div>
@@ -183,13 +183,13 @@ export default function FAQPage() {
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+            <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-3">
               06
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em] mb-4">
               Timeline & Process
             </h2>
-            <p className="text-[#6a5c55] text-lg max-w-2xl mx-auto font-sans">
+            <p className="text-[#4d403a] text-lg max-w-2xl mx-auto font-sans">
               Production timelines and what to expect throughout your sourcing journey.
             </p>
           </div>
@@ -199,7 +199,7 @@ export default function FAQPage() {
               <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide">
                 When should I start?
               </h3>
-              <div className="text-[#6a5c55] leading-[1.8] font-sans space-y-4 flex-1">
+              <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Ideal timeline is 6-8 months before your event.</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Consultation and design: 2-3 weeks</li>
@@ -215,7 +215,7 @@ export default function FAQPage() {
               <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide">
                 How will I track my order?
               </h3>
-              <div className="text-[#6a5c55] leading-[1.8] font-sans space-y-4 flex-1">
+              <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Complete visibility throughout production:</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Weekly email updates with photos</li>
@@ -238,13 +238,13 @@ export default function FAQPage() {
           <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#1f1f1f] mb-6 tracking-[0.04em]">
             Still Have Questions?
           </h2>
-          <p className="text-[#6a5c55] text-lg mb-10 font-sans leading-[1.8] max-w-xl mx-auto">
+          <p className="text-[#4d403a] text-lg mb-10 font-sans leading-[1.8] max-w-xl mx-auto">
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <Link
             href="/contact"
-            className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#c7b28a] font-medium rounded-full
-              hover:bg-[#c7b28a]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#a69260] font-medium rounded-full
+              hover:bg-[#a69260]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Ask Us Directly
