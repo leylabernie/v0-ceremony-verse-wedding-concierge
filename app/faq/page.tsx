@@ -1,20 +1,259 @@
+"use client"
+
+import { ArrowRight } from "lucide-react"
+import Link from "next/link"
+
+const faqSections = [
+  {
+    category: "Trust & Authenticity",
+    items: [
+      {
+        question: "How do NRI brides buy a lehenga from India without getting scammed?",
+        answer: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+      },
+      {
+        question: "How do I know this isn't a scam?",
+        answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with trusted partners in India — skilled craftspeople, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
+      },
+      {
+        question: "What if quality doesn't match?",
+        answer: "You approve fabrics via detailed HD video showing thread count, weave quality, and color under natural light. That exact bolt is reserved with your order number. If anything doesn't match, we halt shipping and resolve it at our cost."
+      },
+      {
+        question: "How do you verify your sourcing partners?",
+        answer: "We work with a carefully chosen circle of partners built over time — an outfit specialist who sources both ready-made and semi-custom pieces, a local designer and tailor who custom-stitches to your exact measurements and references, a fabric expert who sources and dyes fabrics to your chosen color shade, and a dedicated bridal jewelry supplier. Every partner is someone we know personally."
+      }
+    ]
+  },
+  {
+    category: "Sizing & Fit",
+    items: [
+      {
+        question: "What if the outfits don't fit?",
+        answer: "We collect 15+ precise body measurements and build in strategic ease allowances. Every piece is made 0.5-1 inch larger for professional alterations. Our 100% fit guarantee covers alteration costs if adjustments are needed."
+      },
+      {
+        question: "How do you handle large parties?",
+        answer: "Coordinating 8-15 groomsmen is our specialty. We provide video tutorials for self-measurement, virtual sizing sessions, individual profiles, and extra allowances for weight fluctuations. custom-fitted to your measurements."
+      },
+      {
+        question: "What's your alteration policy?",
+        answer: "We guarantee fit. If alterations are needed due to our measurement error, we cover the cost up to $150 per garment. For quality defects, we replace the item entirely at our expense."
+      }
+    ]
+  },
+  {
+    category: "Pricing & Payments",
+    items: [
+      {
+        question: "How is pricing structured?",
+        answer: "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save vs. US boutiques."
+      },
+      {
+        question: "What's the payment schedule?",
+        answer: "Milestone-based protection: 25% deposit to reserve, 35% after fabric approval, 30% after final inspection, 10% upon delivery. You never pay for the next stage until you've approved the previous one."
+      },
+      {
+        question: "Do you accept payment plans?",
+        answer: "Yes. For orders over $3,000, we offer extended plans across 4-6 months aligned with wedding timelines. We accept credit cards, bank transfers, and most payment methods."
+      }
+    ]
+  },
+  {
+    category: "Shipping & Delivery",
+    items: [
+      {
+        question: "How long does shipping take from India to the US?",
+        answer: "Standard international shipping takes 2–3 weeks. For urgent timelines, expedited shipping (7–10 days) is available at an additional cost. We always recommend building in extra buffer time before your wedding date."
+      },
+      {
+        question: "Do you handle customs and import duties?",
+        answer: "Yes. We prepare all shipping documentation and advise on expected customs duties. Import duties on clothing typically range from 12–27% of the declared value. These are itemized in your quote upfront — no surprises at the door."
+      },
+      {
+        question: "What if my outfit arrives damaged?",
+        answer: "Every shipment is fully insured. If an item arrives damaged, we file the insurance claim and coordinate a replacement or repair at no cost to you. We've never had an unresolved shipping issue."
+      }
+    ]
+  },
+  {
+    category: "The Process",
+    items: [
+      {
+        question: "Do I need to travel to India?",
+        answer: "Not at all. Everything happens remotely via WhatsApp video calls, Zoom sessions, and live video shopping. Most of our clients are US-based and have never set foot in India for their wedding shopping."
+      },
+      {
+        question: "Can I source just one item, or do I need a full package?",
+        answer: "You can source as little as one piece. Many clients start with just the bridal lehenga, then come back for bridesmaids, jewelry, and family outfits once they see how the process works."
+      },
+      {
+        question: "What regions of India do you source from?",
+        answer: "We source from specialized craft clusters across India: Surat and Kolkata for embroidered lehengas, Varanasi for Banarasi silk, Jaipur for Rajasthani and block print styles, and Mumbai for contemporary designer looks."
+      }
+    ]
+  }
+]
+
+// Floral separator component
+function FloralSeparator() {
+  return (
+    <div className="floral-separator my-8 flex justify-center">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c1.5-2.5 2-5.5 2-8.5 0-4-2-7.5-2-11.5z"
+          fill="#C5A059"
+          fillOpacity="0.3"
+        />
+        <path
+          d="M12 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.5-2.5-2-5.5-2-8.5 0-4 2-7.5 2-11.5z"
+          fill="#C5A059"
+          fillOpacity="0.2"
+        />
+      </svg>
+    </div>
+  )
+}
+
 export const metadata = {
-  title: 'FAQ | Ceremonyverse',
-  description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families.',
+  title: 'FAQ | CeremonyVerse',
+  description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families. Trust, sizing, pricing, shipping, and process answered.',
 }
 
 export default function FAQPage() {
   return (
-    <main className="min-h-screen bg-white px-6 py-12">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h1>
-        <p className="text-gray-700 text-lg mb-4">
-          Welcome to the Ceremonyverse FAQ. Here you will find answers about our sourcing process, timelines, and pricing for NRI weddings.
-        </p>
-        <p className="text-gray-600 mt-8">
-          Have more questions? <a href="/contact" className="text-blue-600 underline">Contact us here</a>.
-        </p>
-      </div>
-    </main>
+    <div className="min-h-screen bg-[#faf8f5]">
+
+      {/* Hero */}
+      <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 relative">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-6">
+            The Trust Center
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#1f1f1f] mb-6 tracking-[0.04em]">
+            Your Questions, Answered
+          </h1>
+          <p className="text-[#6a5c55] text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
+            For NRI families planning Indian weddings in the US — scams, sizing disasters, and broken
+            promises are real concerns. Here's exactly how CeremonyVerse addresses every one of them.
+          </p>
+        </div>
+      </section>
+
+      <FloralSeparator />
+
+      {/* FAQ Bento Grid Sections */}
+      {faqSections.map((section, sectionIdx) => (
+        <section key={sectionIdx} className="py-16 sm:py-24">
+          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+            {/* Section Header */}
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+              <div className="lg:max-w-xl">
+                <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+                  {String(sectionIdx + 1).padStart(2, '0')}
+                </p>
+                <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em]">
+                  {section.category}
+                </h2>
+              </div>
+            </div>
+
+            {/* Bento Grid of FAQ Cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {section.items.map((faq, faqIdx) => (
+                <div
+                  key={faqIdx}
+                  className="bg-white rounded-2xl border border-[#e6dfd5] p-8 sm:p-10 flex flex-col min-h-[320px] hover:shadow-lg transition-shadow duration-300"
+                >
+                  <h3 className="font-serif text-xl sm:text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide leading-snug">
+                    {faq.question}
+                  </h3>
+                  <p className="text-[#6a5c55] leading-[1.8] font-sans text-[0.9rem] flex-1">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          {sectionIdx < faqSections.length - 1 && <FloralSeparator />}
+        </section>
+      ))}
+
+      <FloralSeparator />
+
+      {/* Timeline & Process Section */}
+      <section className="py-16 sm:py-24">
+        <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-16">
+            <p className="text-[#c7b28a] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+              06
+            </p>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em] mb-4">
+              Timeline & Process
+            </h2>
+            <p className="text-[#6a5c55] text-lg max-w-2xl mx-auto font-sans">
+              Production timelines and what to expect throughout your sourcing journey.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-2xl border border-[#e6dfd5] p-10 flex flex-col hover:shadow-lg transition-shadow duration-300">
+              <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide">
+                When should I start?
+              </h3>
+              <div className="text-[#6a5c55] leading-[1.8] font-sans space-y-4 flex-1">
+                <p>Ideal timeline is 6-8 months before your event.</p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Consultation and design: 2-3 weeks</li>
+                  <li>Fabric sourcing and approval: 3-4 weeks</li>
+                  <li>Production: 6-10 weeks</li>
+                  <li>Quality inspection: 1 week</li>
+                  <li>Shipping: 2-3 weeks</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl border border-[#e6dfd5] p-10 flex flex-col hover:shadow-lg transition-shadow duration-300">
+              <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f] mb-6 tracking-wide">
+                How will I track my order?
+              </h3>
+              <div className="text-[#6a5c55] leading-[1.8] font-sans space-y-4 flex-1">
+                <p>Complete visibility throughout production:</p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Weekly email updates with photos</li>
+                  <li>Client portal with real-time status</li>
+                  <li>Direct WhatsApp with your sourcing manager</li>
+                  <li>Video calls at key milestones</li>
+                  <li>Full shipping tracking once dispatched</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <FloralSeparator />
+
+      {/* CTA */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#1f1f1f] mb-6 tracking-[0.04em]">
+            Still Have Questions?
+          </h2>
+          <p className="text-[#6a5c55] text-lg mb-10 font-sans leading-[1.8] max-w-xl mx-auto">
+            Schedule a free consultation and let us address your specific situation directly.
+          </p>
+          <Link
+            href="/contact"
+            className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#c7b28a] font-medium rounded-full
+              hover:bg-[#c7b28a]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+              transition-all duration-300 inline-flex items-center gap-3"
+          >
+            Ask Us Directly
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
+      </section>
+    </div>
   )
 }

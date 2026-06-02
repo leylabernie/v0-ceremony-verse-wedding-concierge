@@ -30,7 +30,7 @@ export function SeoNav() {
         <a href="/" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Home
         </a>
-        <a href="/#services" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
+        <a href="/services" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           Services
         </a>
         <a href="/how-it-works" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
@@ -42,7 +42,7 @@ export function SeoNav() {
         <a href="/free-guides" style={{ fontSize: "0.85rem", color: "#c7b28a", textDecoration: "none", whiteSpace: "nowrap", fontWeight: 600 }}>
           Free Guides
         </a>
-        <a href="/#faq" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
+        <a href="/faq" style={{ fontSize: "0.85rem", color: "#6a5c55", textDecoration: "none", whiteSpace: "nowrap" }}>
           FAQ
         </a>
         <a
