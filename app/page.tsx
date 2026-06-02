@@ -57,7 +57,7 @@ export default function Page() {
 
   return (
     <>
-      <Navigation activePage={activePage} onNavigate={handleNavigate} />
+      <Navigation />
 
       {activePage === "home" && <HomePage onNavigate={handleNavigate} />}
       {activePage === "services" && <ServicesPage onNavigate={handleNavigate} />}
@@ -87,26 +87,26 @@ export default function Page() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Blog Post 1 */}
-            <a href="/blog/how-to-plan-mehndi-outfit" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            <a href="/blog/nri-wedding-planning-timeline" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
-                  How to Plan Your Mehndi Outfit Shopping
+                  The NRI Wedding Planning Timeline
                 </h3>
                 <p className="text-stone-600 mb-4">
-                  A complete guide to sourcing the perfect mehndi outfit, from fabric selection to vendor coordination.
+                  Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India.
                 </p>
                 <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
               </div>
             </a>
-            
+
             {/* Blog Post 2 */}
-            <a href="/blog/intercultural-wedding-outfit-guide" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            <a href="/blog/how-to-buy-bridal-lehenga-from-india-usa" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
-                  Intercultural Wedding Outfit Guide
+                  How to Buy a Bridal Lehenga from India
                 </h3>
                 <p className="text-stone-600 mb-4">
-                  Navigating outfit choices for intercultural ceremonies with style and respect for both traditions.
+                  Step-by-step guide for NRI brides — from finding a trustworthy sourcing partner to delivery.
                 </p>
                 <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
               </div>

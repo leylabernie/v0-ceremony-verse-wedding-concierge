@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      // This tells Google to stop crawling your static font/media files
-      disallow: '/_next/static/media/', 
+      // Block Next.js static assets from being crawled (fonts, JS chunks, CSS, images)
+      disallow: ['/_next/static/', '/_next/image/'],
     },
     sitemap: 'https://www.ceremonyverse.com/sitemap.xml',
   }
