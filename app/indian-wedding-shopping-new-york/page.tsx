@@ -36,7 +36,7 @@ const localSchema = {
   "name": "CeremonyVerse - NY Wedding Shopping",
   "image": "https://www.ceremonyverse.com/og-image.jpg",
   "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
-  "telephone": "+1-555-019-2834",
+  "telephone": "+1-215-341-9990",
   "areaServed": {
     "@type": "State",
     "name": "New York"
