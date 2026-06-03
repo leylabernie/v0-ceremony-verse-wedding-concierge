@@ -180,8 +180,10 @@ export function HomePage({ onNavigate }: HomePageProps) {
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/hero-lehenga.jpg"
+          src="/images/hero-lehenga.webp"
           alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
+          width={1935}
+          height={1080}
           fetchPriority="high"
           style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
