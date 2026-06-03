@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog/gujarati-wedding-outfit-guide`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/us-tariffs-indian-wedding-outfits-2026`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/blog/how-much-does-bridal-lehenga-cost-india-2026`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/blog/how-to-buy-sherwani-from-india-usa`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
   return staticPages
