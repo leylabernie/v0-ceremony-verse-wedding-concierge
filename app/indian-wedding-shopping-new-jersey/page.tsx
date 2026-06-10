@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
-  description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey. We handle sourcing, coordination, and logistics for NJ brides.",
+  title: "Indian Wedding Shopping in New Jersey | Buy Bridal Lehenga from India in NJ | CeremonyVerse",
+  description: "Skip the Edison markup. Get your bridal lehenga and wedding outfits directly from India with live video shopping. Serving brides in Edison, Jersey City, Princeton, and across New Jersey.",
   openGraph: {
     title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
     description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey.",
@@ -66,11 +66,11 @@ export default function NewJerseyPage() {
             />
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Indian Wedding Shopping in New Jersey
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Indian Wedding Shopping in New Jersey: <br/>Buy Directly from India
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Your personal shopping concierge for Indian wedding outfits. We source, coordinate, and manage logistics for NJ brides.
+              Skip the high markups in Edison. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NJ.
             </p>
             <Link
               href="/contact"
@@ -84,9 +84,9 @@ export default function NewJerseyPage() {
         {/* Content Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="prose prose-lg mx-auto text-stone-700">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">Serving New Jersey Brides</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">Why NJ Brides Choose CeremonyVerse</h2>
             <p className="mb-6">
-              Planning an Indian wedding in New Jersey? From Edison to Jersey City, we help NRIs and local brides navigate the complex world of Indian wedding attire. Our shopping concierge service handles everything from vendor selection to final alterations.
+              New Jersey is home to some of the largest Indian communities in the USA, but local boutiques often have limited collections and high markups. Whether you are in <strong>Edison, Jersey City, Princeton, or Parsippany</strong>, CeremonyVerse gives you direct access to the latest 2026 bridal trends from India without the $3,000 flight.
             </p>
             <h3 className="text-2xl font-bold text-stone-900 mt-8 mb-4">How We Help NJ Brides</h3>
             <ul className="list-disc pl-6 space-y-2 mb-8">
