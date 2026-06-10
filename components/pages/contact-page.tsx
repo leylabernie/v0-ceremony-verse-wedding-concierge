@@ -177,7 +177,7 @@ export function ContactPage() {
             Book Your Free Consultation
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Tell us about your wedding vision. We&apos;ll prepare a tailored sourcing proposal — no commitment required.
+            Save 30-50% on your dream wedding outfits by sourcing directly from India. Tell us about your vision, and we&apos;ll prepare a tailored sourcing proposal — no commitment required.
           </p>
 
           {/* Quick contact strip */}

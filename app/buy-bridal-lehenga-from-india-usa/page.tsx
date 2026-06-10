@@ -11,10 +11,37 @@ export const metadata = {
 
 
 import { SeoNav } from "@/components/seo-nav"
+import Script from "next/script"
 
 export default function BridalLehengaPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <Script id="bridal-lehenga-schema" type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Bridal Lehenga Sourcing & Concierge",
+          "description": "Custom bridal lehenga sourcing directly from India for NRI brides in the USA. Includes live video shopping, quality checks, and door-to-door delivery.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "CeremonyVerse"
+          },
+          "areaServed": "US",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Bridal Lehenga Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Live Video Bridal Shopping"
+                }
+              }
+            ]
+          }
+        })}
+      </Script>
       <SeoNav />
 
       {/* HERO */}

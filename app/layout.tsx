@@ -188,6 +188,8 @@ export default function RootLayout({
         <meta name="twitter:description" content="Skip the $3,000 India flight. Live video approval, custom stitching, delivery to all 50 states." />
         <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.jpg" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
+        {/* Google Search Console Verification */}
+        <meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE_HERE" />
         <Script
           id="breadcrumb-schema"
           type="application/ld+json"
