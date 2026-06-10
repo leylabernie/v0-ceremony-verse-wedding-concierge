@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Indian Wedding Shopping in New York | CeremonyVerse",
-  description: "Expert Indian wedding outfit shopping concierge for brides in New York. We handle sourcing, coordination, and logistics for NY brides.",
+  title: "Indian Wedding Shopping in New York | Buy Bridal Lehenga from India in NY | CeremonyVerse",
+  description: "Skip the Jackson Heights markup. Get your bridal lehenga and wedding outfits directly from India with live video shopping. Serving brides in Queens, Manhattan, Long Island, and across New York.",
   openGraph: {
     title: "Indian Wedding Shopping in New York | CeremonyVerse",
     description: "Expert Indian wedding outfit shopping concierge for brides in New York.",
@@ -65,11 +65,11 @@ export default function NewYorkPage() {
             />
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Indian Wedding Shopping in New York
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Indian Wedding Shopping in New York: <br/>Buy Directly from India
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Your personal shopping concierge for Indian wedding outfits. We source, coordinate, and manage logistics for NY brides.
+              Skip the high markups in Jackson Heights. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NY.
             </p>
             <Link
               href="/contact"
@@ -82,9 +82,9 @@ export default function NewYorkPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="prose prose-lg mx-auto text-stone-700">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">Serving New York Brides</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">Why NY Brides Choose CeremonyVerse</h2>
             <p className="mb-6">
-              Planning an Indian wedding in New York? From Queens to Manhattan, we help NRIs and local brides navigate the complex world of Indian wedding attire. Our shopping concierge service handles everything from vendor selection to final alterations.
+              New York is a global hub for Indian fashion, but local boutiques in <strong>Jackson Heights, Queens, and Hicksville</strong> often come with high overhead costs. CeremonyVerse gives you direct access to top artisan workshops in India, ensuring you get authentic craftsmanship without the premium New York price tag.
             </p>
             <h3 className="text-2xl font-bold text-stone-900 mt-8 mb-4">How We Help NY Brides</h3>
             <ul className="list-disc pl-6 space-y-2 mb-8">

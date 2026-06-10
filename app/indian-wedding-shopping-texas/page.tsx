@@ -92,6 +92,27 @@ export default function IndianWeddingShoppingTexasPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section style={{ padding: "48px 24px", background: "#f8f6f2" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Frequently Asked Questions for Texas NRI Brides
+          </h2>
+          <div style={{ spaceY: "24px" }}>
+            {[
+              { q: "How much can I save by sourcing from India vs. Texas boutiques?", a: "Most Texas NRI brides save between 30% and 50% by using CeremonyVerse. Even after shipping and our concierge fee, the total cost for a designer-quality lehenga is significantly lower than local Houston or Dallas prices." },
+              { q: "Do you serve brides in smaller Texas cities like Austin or San Antonio?", a: "Absolutely. While we focus on major hubs like Houston and Dallas, we provide door-to-door delivery and virtual shopping sessions for NRI families in Austin, San Antonio, El Paso, and across the entire state of Texas." },
+              { q: "How do you ensure the quality of the outfits before they ship to Texas?", a: "We have an in-person quality control team in India that inspects every outfit for fabric quality, embroidery detail, and measurement accuracy. We send you high-resolution photos and videos for final approval before the shipment leaves for Texas." },
+            ].map((faq, index) => (
+              <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: "1px solid #e6dfd5" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "16px", color: "#1f1f1f", marginBottom: "8px" }}>{faq.q}</h3>
+                <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4d403a" }}>{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section style={{ padding: "48px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto" }}>
