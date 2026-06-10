@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How Much Does a Bridal Lehenga Cost in India in 2026? Real Prices for NRI Brides | CeremonyVerse",
-  description: "Real 2026 bridal lehenga prices from India — from budget-friendly ₹45,000 options to luxury ₹5,00,000+ pieces. What NRI brides actually pay when sourcing from India, including customs duties and shipping to the USA.",
-  keywords: "bridal lehenga cost india 2026, how much does a bridal lehenga cost, lehenga price india, buy bridal lehenga from india usa, NRI bride lehenga cost, indian bridal lehenga price, lehenga shopping india budget",
+  title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices | CeremonyVerse",
+  description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
+  keywords: [
+    "how much does a bridal lehenga cost in india including shipping to usa",
+    "bridal lehenga cost india 2026",
+    "nri bride lehenga budget",
+    "lehenga price with customs usa",
+    "how much does a bridal lehenga cost",
+    "lehenga price india",
+    "buy bridal lehenga from india usa",
+  ],
   openGraph: {
-    title: "How Much Does a Bridal Lehenga Cost in India in 2026?",
-    description: "Real 2026 bridal lehenga prices from India — from budget-friendly options to luxury pieces. What NRI brides actually pay.",
+    title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices",
+    description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
     type: "article",
     url: "https://www.ceremonyverse.com/blog/how-much-does-bridal-lehenga-cost-india-2026",
   },
@@ -23,10 +31,10 @@ export default function BridalLehengaCostGuide() {
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
-            How Much Does a Bridal Lehenga Cost in India in 2026?
+            How Much Does a Bridal Lehenga Cost in India? Real 2026 Prices with Shipping to the USA
           </h1>
           <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Real prices NRI brides pay — from ₹45,000 budget finds to ₹5,00,000+ luxury pieces. Plus customs, shipping, and what most blogs won&apos;t tell you.
+            Real prices NRI brides pay — from ₹45,000 budget finds to high-end designer pieces. Plus customs, shipping, and what most blogs won&apos;t tell you.
           </p>
         </div>
       </div>
@@ -43,7 +51,15 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Bridal Lehenga Price Ranges in 2026 (Converted to USD)
+            What NRI Brides Actually Pay: Total Cost Breakdown (Lehenga + Customs + Shipping)
+          </h2>
+
+          <p>
+            The price tag on the lehenga is only the starting point. Here is what you will actually pay to get your dream outfit from an Indian market to your US door — including every fee most brides forget to budget for.
+          </p>
+
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
+            Bridal Lehenga Price Ranges from India: Budget to High-End (with USD Conversion)
           </h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
@@ -72,7 +88,7 @@ export default function BridalLehengaCostGuide() {
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$2,940 – $5,300</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0" }}>Luxury (designer label, fully custom)</td>
+                  <td style={{ padding: "0.6rem 0" }}>High-end designer (fully custom)</td>
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹4,50,000+</td>
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$5,300+</td>
                 </tr>
@@ -98,7 +114,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            The Hidden Costs NRI Brides Forget
+            Hidden Costs NRI Brides Forget: Customs, Shipping, and Alterations
           </h2>
 
           <p>
@@ -143,7 +159,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            This is why at CeremonyVerse we do <strong>live video shopping sessions</strong> — you see the actual fabric, the actual embroidery, the actual color in natural light. The piece you approve is the piece that gets reserved with your order number. No catalog photos. No surprises.
+            This is why at CeremonyVerse we do <strong>live video shopping sessions</strong> — you see the actual fabric, the actual embroidery, the actual color in natural light. The piece you approve is the piece that gets reserved with your order number. No catalog photos. No surprises. Learn more about <Link href="/services/bridal-lehengas" style={{ color: "#a69260" }}>our bridal lehenga sourcing service</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -158,34 +174,54 @@ export default function BridalLehengaCostGuide() {
             <li style={{ marginBottom: "0.8rem" }}><strong>$1,500 – $2,500 total:</strong> A beautiful, well-made lehenga with machine embroidery and good fabric. Perfect for brides who want something elegant without the premium price tag.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>$2,500 – $4,000 total:</strong> A high-quality lehenga with hand embroidery, silk or silk-blend fabric, and custom measurements. This is the sweet spot for most NRI brides.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>$4,000 – $7,000 total:</strong> A premium piece with zardozi or heavy handwork, pure silk, fully custom. Equivalent to what you would pay $8,000-$12,000 for in a US boutique.</li>
-            <li><strong>$7,000+ total:</strong> Luxury designer-equivalent pieces with real gold thread, fully custom design, and white-glove service.</li>
+            <li><strong>$7,000+ total:</strong> High-end designer-style pieces with real gold thread, fully custom design, and full handling and support.</li>
           </ul>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Ready to Start Sourcing Your Lehenga?
-          </h2>
-
-          <p>
-            Every bride&apos;s vision is different — and every budget can work with the right guidance. The key is knowing what to prioritize (fabric quality and embroidery technique) and what to be realistic about (customs costs, shipping time, and the risk of buying sight unseen).
-          </p>
-
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we guide NRI brides through the entire process — from understanding your budget and style preferences to live video shopping in India, quality inspection before shipping, and delivery to your US door. <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>Book a free 30-minute consultation</Link> and we will help you plan your lehenga sourcing with a clear timeline and budget — no commitment required.
+            Not sure where to start? Check out our guide on <Link href="/blog/when-should-nri-brides-order-wedding-outfits-india" style={{ color: "#a69260" }}>when to order your lehenga from India</Link> to make sure you plan your budget and timeline together. And if you want to protect yourself from vendor fraud, read about the <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>common scams when buying lehengas from India</Link>.
           </p>
 
-          <div style={{ background: "#2f2f2f", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem", textAlign: "center" }}>
-            <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.8rem" }}>
-              Download Our Free Guide
+          {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
+          <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f", fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              Related Guides for NRI Brides:
             </p>
-            <p style={{ color: "#f8f6f2", fontSize: "1.1rem", fontWeight: 600, marginBottom: "1rem" }}>
-              India Sourcing Price Guide for NRI Brides
+            <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>
+                  How to buy a lehenga from India safely: 10 scams NRI brides must avoid
+                </Link>
+              </li>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#a69260" }}>
+                  When to order your wedding outfits from India so nothing arrives late
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>
+                  How much are US customs duties on Indian wedding lehengas?
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* ─── LEAD-FIRST CTA ─── */}
+          <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              Sourcing a lehenga from India can save you $3,000-$8,000 compared to US boutiques — but only if you budget correctly for every cost, including the ones most brides forget. One wrong estimate and that savings disappears into unexpected customs fees or a last-minute alteration rush.
             </p>
-            <p style={{ color: "#b0a898", fontSize: "0.9rem", marginBottom: "1.5rem" }}>
-              Real price ranges for lehengas, sherwanis, jewelry, and more — plus a complete budget calculator.
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
+              Want to avoid budget surprises?
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#a69260", color: "#fff", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              <strong>Download our free India Sourcing Price Guide</strong> — real 2026 price ranges for lehengas, sherwanis, jewelry, and family outfits, plus a customs and shipping cost calculator built for NRI brides. Drop your email below and we&apos;ll send it instantly.
+            </p>
+            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Free Price Guide →
             </Link>
+            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+              Already have your budget planned? <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>Book a free 20-minute video consultation</Link> and we&apos;ll show you real lehengas from our partners in India — no commitment, just real options and real prices.
+            </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />

@@ -2,12 +2,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Buy a Sherwani from India for Your US Wedding — Complete 2026 Guide | CeremonyVerse",
-  description: "Step-by-step guide for NRI grooms buying a sherwani from India — what to budget, how to get the right fit, avoid scams, and handle customs & shipping to the USA.",
-  keywords: "buy sherwani from india usa, sherwani for groom from india, how to buy sherwani online india, NRI groom sherwani shopping, sherwani price india 2026, indian groom outfit usa",
+  title: "How to Buy a Sherwani from India for a US Wedding: Complete Guide with Prices & Sizing | CeremonyVerse",
+  description: "Complete guide for NRI grooms buying a sherwani from India — what to budget, how to get the right fit, avoid scams, and handle customs & shipping to the USA.",
+  keywords: [
+    "how to buy sherwani from india usa",
+    "sherwani price india 2026",
+    "NRI groom sherwani",
+    "sherwani sizing guide",
+    "buy sherwani online india",
+    "sherwani shipping usa",
+  ],
   openGraph: {
-    title: "How to Buy a Sherwani from India for Your US Wedding",
-    description: "Complete guide for NRI grooms — sherwani prices, sizing, scams to avoid, customs & shipping to USA.",
+    title: "How to Buy a Sherwani from India for a US Wedding: Prices, Sizing & Shipping",
+    description: "Complete guide for NRI grooms — sherwani prices from India, sizing secrets, scam warnings, and shipping to USA.",
     type: "article",
     url: "https://www.ceremonyverse.com/blog/how-to-buy-sherwani-from-india-usa",
   },
@@ -23,7 +30,7 @@ export default function SherwaniGuidePage() {
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
-            How to Buy a Sherwani from India for Your US Wedding
+            How to Buy a Sherwani from India for Your US Wedding: Prices, Sizing & Shipping
           </h1>
           <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
             The complete guide for NRI grooms — real prices, sizing secrets, scam warnings, and how to get your sherwani delivered to your door without surprises.
@@ -43,7 +50,7 @@ export default function SherwaniGuidePage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            How Much Does a Sherwani Cost in India in 2026?
+            How Much Does a Groom Sherwani Cost in India? (Delivered to the USA)
           </h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
@@ -72,7 +79,7 @@ export default function SherwaniGuidePage() {
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$650 – $1,410</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0" }}>Luxury (designer label, bespoke, heavy zardozi)</td>
+                  <td style={{ padding: "0.6rem 0" }}>High-end designer (fully custom)</td>
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹1,20,000+</td>
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$1,410+</td>
                 </tr>
@@ -81,15 +88,15 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>What most NRI grooms spend:</strong> The sweet spot for most of our clients is the mid-to-premium range — roughly ₹35,000 to ₹75,000 ($410-$880). At this price point, you get a high-quality silk sherwani with genuine hand embroidery that looks significantly better than anything in the $1,500+ range at a US boutique.
+            <strong>What most NRI grooms spend:</strong> The sweet spot for most of our clients is the mid-to-premium range — roughly ₹35,000 to ₹75,000 ($410-$880). At this price point, you get a high-quality silk sherwani with genuine hand embroidery that looks significantly better than anything in the $1,500+ range at a US boutique. Planning your <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#a69260" }}>complete Indian wedding outfit checklist</Link> early helps you coordinate the groom&apos;s sherwani with what the bride and family are wearing.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            The Sizing Problem (And How to Solve It)
+            How to Take Sherwani Measurements at Home for the Best Fit
           </h2>
 
           <p>
-            Sherwani sizing is the #1 issue NRI grooms face when ordering from India. Indian sizing charts are different from US sizing. A "Large" in India is often closer to a US Medium. And sherwanis are designed to be worn over a kurta, so the fit is intentionally looser — which means measurements matter even more.
+            Sherwani sizing is the #1 issue NRI grooms face when ordering from India. Indian sizing charts are different from US sizing. A &quot;Large&quot; in India is often closer to a US Medium. And sherwanis are designed to be worn over a kurta, so the fit is intentionally looser — which means measurements matter even more.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -115,7 +122,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            5 Scams to Watch For When Buying a Sherwani Online
+            What to Watch Out For: Common Sherwani Scams Targeting NRI Grooms
           </h2>
 
           <p>
@@ -127,11 +134,11 @@ export default function SherwaniGuidePage() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>2. The "pure silk" lie.</strong> Many sellers label synthetic silk blends as "pure silk." Real silk has a distinctive sheen and drape that synthetic fabrics cannot replicate. <em>How to avoid it:</em> On a video call, ask the seller to do the burn test on a small thread from an inner seam — real silk smells like burnt hair and leaves a crumbly ash. Synthetic smells like plastic and leaves a hard bead.
+            <strong>2. The &quot;pure silk&quot; lie.</strong> Many sellers label synthetic silk blends as &quot;pure silk.&quot; Real silk has a distinctive sheen and drape that synthetic fabrics cannot replicate. <em>How to avoid it:</em> On a video call, ask the seller to do the burn test on a small thread from an inner seam — real silk smells like burnt hair and leaves a crumbly ash. Synthetic smells like plastic and leaves a hard bead.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>3. The sizing switch.</strong> You send your measurements. The workshop cuts the sherwani to a standard template instead — saving them time and fabric. When it arrives, it is "close enough" but does not fit right. <em>How to avoid it:</em> Ask for photos of the cutting process with a measuring tape visible against the fabric. At CeremonyVerse, we verify every cut against the submitted measurements before sewing begins.
+            <strong>3. The sizing switch.</strong> You send your measurements. The workshop cuts the sherwani to a standard template instead — saving them time and fabric. When it arrives, it is &quot;close enough&quot; but does not fit right. <em>How to avoid it:</em> Ask for photos of the cutting process with a measuring tape visible against the fabric. At CeremonyVerse, we verify every cut against the submitted measurements before sewing begins.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -184,7 +191,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>Compare this to US boutiques:</strong> A sherwani of equivalent quality at an Indian boutique in New Jersey, Texas, or California typically costs $1,200-$2,500. Buying from India — even with all the extra costs — usually saves you $400-$1,000+.
+            <strong>Compare this to US boutiques:</strong> A sherwani of equivalent quality at an Indian boutique in New Jersey, Texas, or California typically costs $1,200-$2,500. Buying from India — even with all the extra costs — usually saves you $400-$1,000+. Read our full guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>shipping wedding outfits from India to USA</Link> for customs and delivery timeline details.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -242,31 +249,51 @@ export default function SherwaniGuidePage() {
             </table>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Ready to Source Your Sherwani?
-          </h2>
-
-          <p>
-            Buying a sherwani from India does not have to be stressful. With the right process — clear measurements, live video verification, milestone payments, and proper shipping — you get a significantly better outfit for significantly less money than US boutiques charge.
-          </p>
-
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we handle the entire process for NRI grooms and their families. From understanding your style preferences to coordinating groomsmen outfits to delivery at your US door — we manage it all. <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>Book a free 30-minute consultation</Link> and we will walk you through exactly what your sherwani will cost, how long it will take, and how the process works — no commitment required.
+            Timing matters just as much for the groom as it does for the bride. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#a69260" }}>when to order your wedding outfits from India</Link> guide for a full month-by-month timeline that covers both bride and groom planning.
           </p>
 
-          <div style={{ background: "#2f2f2f", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem", textAlign: "center" }}>
-            <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.8rem" }}>
-              Also Read
+          {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
+          <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f", fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              Related Guides for NRI Grooms & Brides:
             </p>
-            <p style={{ color: "#f8f6f2", fontSize: "1.1rem", fontWeight: 600, marginBottom: "1rem" }}>
-              How Much Does a Bridal Lehenga Cost in India in 2026?
+            <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#a69260" }}>
+                  How much a bridal lehenga costs from India with shipping
+                </Link>
+              </li>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#a69260" }}>
+                  Complete Indian wedding outfit checklist for the whole family
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>
+                  Common scams when buying wedding outfits from India
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* ─── LEAD-FIRST CTA ─── */}
+          <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              A groom&apos;s sherwani is just as visible as the bride&apos;s lehenga in every wedding photo — but most NRI grooms leave it to the last minute and end up overpaying at a US rental shop or settling for something that doesn&apos;t fit right. Sourcing from India gives you better quality at half the price, if you plan ahead.
             </p>
-            <p style={{ color: "#b0a898", fontSize: "0.9rem", marginBottom: "1.5rem" }}>
-              Real prices NRI brides pay — from budget-friendly options to luxury pieces.
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
+              Want us to help you find the perfect sherwani?
             </p>
-            <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ display: "inline-block", background: "#a69260", color: "#fff", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>
-              Read the Lehenga Price Guide →
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              <strong>Grab our free Groom&apos;s Outfit Planning Guide</strong> — sherwani measurement worksheet, price comparison table (India vs. US), and timeline for when to order so it arrives with time to spare. Enter your email and we&apos;ll send it over.
+            </p>
+            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+              Download the Groom&apos;s Guide →
             </Link>
+            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+              Want us to find your sherwani for you? <Link href="/services" style={{ color: "#a69260", fontWeight: 600 }}>See how our groom sourcing works</Link> — live video shopping, custom measurements, delivery to your door.
+            </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />

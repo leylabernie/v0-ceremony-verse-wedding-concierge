@@ -2,9 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "When Should NRI Brides Order Wedding Outfits from India? Timeline Guide | CeremonyVerse",
+  title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late) | CeremonyVerse",
   description: "Month-by-month timeline for NRI brides ordering wedding outfits from India — when to start, when to order, when items ship, and buffer time you need.",
-  keywords: "when to order indian wedding outfits, NRI bride timeline, order lehenga from india timeline, indian wedding shopping schedule, how far in advance order bridal lehenga",
+  keywords: [
+    "when to order indian wedding outfits from india",
+    "NRI wedding shopping from India timeline when to order",
+    "order lehenga from india timeline",
+    "indian wedding shopping schedule",
+    "how far in advance order bridal lehenga",
+    "nri bride timeline",
+  ],
+  openGraph: {
+    title: "When Should NRI Brides Order Wedding Outfits from India? Month-by-Month Timeline",
+    description: "Month-by-month timeline for NRI brides ordering wedding outfits from India — when to start, when to order, when items ship, and buffer time you need.",
+    type: "article",
+    url: "https://www.ceremonyverse.com/blog/when-to-order-indian-wedding-outfits-nri-bride",
+  },
 };
 
 export default function TimelineGuidePage() {
@@ -14,7 +27,7 @@ export default function TimelineGuidePage() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
-            How Far in Advance Should NRI Brides Order Wedding Outfits from India?
+            When Should NRI Brides Order Wedding Outfits from India? Month-by-Month Timeline
           </h1>
           <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
             The realistic month-by-month timeline — from first consultation to delivery at your door. Plus what happens if you are behind schedule.
@@ -25,7 +38,7 @@ export default function TimelineGuidePage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>The #1 question we get from NRI brides is not "how much will it cost?" — it is "am I too late?" The answer depends on how far out your wedding is and what you still need. Here is the complete timeline we use with our clients, plus the absolute minimum time needed for each type of outfit.</p>
+          <p>The #1 question we get from NRI brides is not &quot;how much will it cost?&quot; — it is &quot;am I too late?&quot; The answer depends on how far out your wedding is and what you still need. Here is the complete timeline we use with our clients, plus the absolute minimum time needed for each type of outfit.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Ideal Timeline: 6-8 Months Before Wedding</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
@@ -44,7 +57,7 @@ export default function TimelineGuidePage() {
             </table>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Minimum Time Needed by Outfit Type</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How Late Is Too Late? Minimum Lead Times for Each Type of Outfit</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Outfit</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Min. Order Time</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Production</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Shipping</th></tr></thead>
@@ -60,7 +73,12 @@ export default function TimelineGuidePage() {
             </table>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What If You Are Behind Schedule?</h2>
+          <p style={{ marginTop: "1.2rem" }}>
+            These are the absolute minimums. If you are at the minimum lead time, you have no room for errors, delays, or rework. We strongly recommend adding 4-6 weeks of buffer to every order. For shipping time estimates, see our guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>how long shipping from India actually takes</Link>.
+          </p>
+
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What Happens If Your Outfit Arrives Late: Backup Plans for NRI Brides</h2>
+
           <p><strong>4 months out and nothing ordered:</strong> Still doable for most outfits. Skip custom designs and go with ready-made or semi-custom options. You will pay slightly more for expedited production (20-30% surcharge at most workshops). Bridal lehenga is still possible if you order this week.</p>
           <p style={{ marginTop: "1rem" }}><strong>3 months out:</strong> You need to move fast. Focus on the bridal lehenga and groom sherwani first — those have the longest production times. Bridesmaid and parent outfits can still be sourced if you act immediately. Consider express shipping (3-5 days vs. 7-12 days).</p>
           <p style={{ marginTop: "1rem" }}><strong>2 months or less:</strong> Custom outfits are likely not possible. Your options: (1) Buy ready-made from a boutique in India and ship express, (2) Find a US-based Indian boutique and pay the premium, (3) Work with a concierge who has ready stock. We keep a small selection of ready-made pieces for exactly this situation — <Link href="/contact" style={{ color: "#a69260" }}>contact us</Link> to check availability.</p>
@@ -68,14 +86,50 @@ export default function TimelineGuidePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Golden Rule</h2>
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Start 2 months earlier than you think you need to.</p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Every NRI bride we have worked with has said the same thing: "I wish I started sooner." Workshops get busy. Fabric dye lots sell out. Embroidery artisans book up. The earlier you start, the more options you have, the less stress you feel, and the better the final result.</p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Every NRI bride we have worked with has said the same thing: &quot;I wish I started sooner.&quot; Workshops get busy. Fabric dye lots sell out. Embroidery artisans book up. The earlier you start, the more options you have, the less stress you feel, and the better the final result. Planning your budget alongside your timeline? Check out <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#a69260" }}>what a bridal lehenga costs from India</Link> to budget realistically.</p>
           </div>
 
-          <div style={{ background: "#2f2f2f", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem", textAlign: "center" }}>
-            <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.8rem" }}>Not Sure If You Have Enough Time?</p>
-            <p style={{ color: "#f8f6f2", fontSize: "1.1rem", fontWeight: 600, marginBottom: "1rem" }}>Book a Free Timeline Consultation</p>
-            <p style={{ color: "#b0a898", fontSize: "0.9rem", marginBottom: "1.5rem" }}>Tell us your wedding date and what you need. We will tell you exactly what is possible and create a realistic timeline.</p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#a69260", color: "#fff", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation →</Link>
+          {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
+          <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f", fontSize: "0.9rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+              Related Guides for NRI Brides:
+            </p>
+            <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>
+                  How long shipping from India actually takes
+                </Link>
+              </li>
+              <li style={{ marginBottom: "0.4rem" }}>
+                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#a69260" }}>
+                  How much a bridal lehenga costs from India with shipping
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>
+                  How to avoid scams when buying from India
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* ─── LEAD-FIRST CTA ─── */}
+          <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
+            <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              The difference between a relaxed bride and a panicked bride often comes down to one thing: when she started. Brides who begin 8+ months out get better prices, better vendors, and actual time for alterations. Brides who wait until 3 months out pay more, stress more, and settle more.
+            </p>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
+              Want our free planning timeline?
+            </p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
+              <strong>Download our free NRI Wedding Planning Timeline</strong> — month-by-month checklist telling you exactly when to order every outfit, when to schedule fittings, and when items should ship to hit your wedding date with room to spare. Enter your email and we&apos;ll send it.
+            </p>
+            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+              Get the Free Timeline →
+            </Link>
+            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+              Not sure if you&apos;re on track? <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>Book a free timeline review call</Link> — tell us your wedding date and we&apos;ll map out exactly what needs to happen when, plus whether you still have time to source from India.
+            </p>
           </div>
 
           <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits from India with live video approval and insured delivery. <Link href="/how-it-works" style={{ color: "#a69260" }}>Learn how we work</Link>.</p>

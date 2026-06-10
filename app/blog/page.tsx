@@ -3,51 +3,58 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Blog — Indian Wedding Tips & Guides for NRI Families | CeremonyVerse",
-  description: "Expert guides for NRI brides and families — how to source Indian wedding outfits from India, tariff updates, Gujarati wedding traditions, and more.",
+  title: "Blog — Indian Wedding Shopping Guides for NRI Families | CeremonyVerse",
+  description: "Expert guides for NRI brides and families — how to buy lehengas from India without getting scammed, shipping to USA, customs duties, outfit checklists, and timelines.",
+  keywords: [
+    "NRI wedding shopping guides",
+    "how to buy lehenga from india",
+    "indian wedding outfit checklist",
+    "ship wedding outfits india to usa",
+    "NRI bride timeline",
+  ],
 };
 
 const posts = [
   {
     slug: "how-much-does-bridal-lehenga-cost-india-2026",
-    title: "How Much Does a Bridal Lehenga Cost in India in 2026? Real Prices for NRI Brides",
-    description: "Real 2026 bridal lehenga prices from India — from budget-friendly ₹45,000 options to luxury ₹5,00,000+ pieces. What NRI brides actually pay when sourcing from India.",
+    title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices",
+    description: "Real 2026 bridal lehenga prices from India — budget to high-end with USD conversion. Total cost breakdown including customs, shipping, and hidden costs NRI brides forget.",
     date: "June 2026",
   },
   {
     slug: "how-to-buy-sherwani-from-india-usa",
-    title: "How to Buy a Sherwani from India for Your US Wedding — Complete 2026 Guide",
-    description: "Step-by-step guide for NRI grooms buying a sherwani from India — what to budget, how to get the right fit, avoid scams, and handle customs & shipping to the USA.",
+    title: "How to Buy a Sherwani from India for a US Wedding: Complete Guide with Prices & Sizing",
+    description: "Step-by-step guide for NRI grooms — sherwani prices from India, how to take measurements at home, scam warnings, and shipping to USA.",
     date: "June 2026",
   },
   {
     slug: "indian-wedding-outfit-checklist-every-ceremony",
-    title: "Indian Wedding Outfit Checklist: What Every Family Member Needs for Every Ceremony",
-    description: "The complete outfit-by-ceremony checklist for NRI families — from the bride and groom to parents, siblings, and guests. 42-51 total outfits, nothing missed.",
+    title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42-51 Outfits)",
+    description: "The complete outfit-by-ceremony checklist for NRI families — from the bride and groom to parents, siblings, and guests. Total cost comparison: India vs. US stores.",
     date: "June 2026",
   },
   {
     slug: "indian-wedding-outfit-scams-nri-brides",
-    title: "10 Scams to Avoid When Buying Indian Wedding Outfits from India",
-    description: "The 10 most common scams NRI brides face when buying lehengas, sherwanis, and wedding outfits from India — and exactly how to avoid each one.",
+    title: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
+    description: "How to buy a lehenga from India safely — 10 scams NRI brides must avoid, how to verify sellers before sending money, and the safest way to buy as an NRI bride.",
     date: "June 2026",
   },
   {
     slug: "how-to-coordinate-bridesmaid-lehengas-india-usa",
-    title: "How to Coordinate Bridesmaid Lehengas from India for a US Wedding",
-    description: "How to source matching bridesmaid lehengas from India — color coordination, sizing for multiple bodies, consistent quality, and group order logistics.",
+    title: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding",
+    description: "How to get consistent colors when ordering multiple lehengas from India — sizing for different bodies, bridesmaid prices per person, and group order logistics.",
     date: "June 2026",
   },
   {
     slug: "shipping-indian-wedding-outfits-usa-customs-duties",
-    title: "Shipping Indian Wedding Outfits to USA: Customs, Duties & Timeline 2026",
-    description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA — customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
+    title: "Shipping Wedding Outfits from India to USA: Customs, Duties & Delivery Timeline",
+    description: "How much are US customs duties on Indian wedding lehengas? How long does shipping take? Everything NRI families need to know about delivery from India.",
     date: "June 2026",
   },
   {
     slug: "when-to-order-indian-wedding-outfits-nri-bride",
-    title: "When Should NRI Brides Order Wedding Outfits from India? Timeline Guide",
-    description: "Month-by-month timeline for NRI brides ordering wedding outfits from India — when to start, when to order, when items ship, and buffer time you need.",
+    title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
+    description: "Month-by-month timeline for NRI brides — minimum lead times for each outfit type, what to do if you are behind schedule, and backup plans.",
     date: "June 2026",
   },
   {
@@ -100,7 +107,7 @@ export default function BlogIndexPage() {
             CeremonyVerse · Resources
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
-            Indian Wedding Guides
+            Indian Wedding Shopping Guides
           </h1>
           <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Expert advice for NRI brides and families sourcing Indian wedding outfits from the USA.

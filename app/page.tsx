@@ -76,36 +76,91 @@ export default function Page() {
       {activePage === "pets" && <PetsPage onNavigate={handleNavigate} />}
       {activePage === "guide-buy-lehenga-safely" && <GuideBuyLehengaSafely onNavigate={handleNavigate} />}
       {activePage === "guide-customs-duty" && <GuideCustomsDuty onNavigate={handleNavigate} />}
-      {/* NEW SEO SECTION: Blog Links */}
+      {/* ─── TIER 3: HOMEPAGE → BLOG AUTHORITY FLOW ─── */}
       <section className="py-16 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12 text-stone-800">
-            Latest Wedding Shopping Guides
+          <h2 className="text-3xl font-bold text-center mb-4 text-stone-800">
+            Free Wedding Shopping Guides for NRI Families
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Blog Post 1 */}
-            <a href="/blog/nri-wedding-planning-timeline" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+          <p className="text-center text-stone-600 mb-12 max-w-2xl mx-auto">
+            Real advice from a team that has sourced hundreds of outfits from India for NRI families across all 50 states.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Blog Post 1 — Scams (highest traffic) */}
+            <a href="/blog/indian-wedding-outfit-scams-nri-brides/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
-                  The NRI Wedding Planning Timeline
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  How to Avoid the 10 Most Common Scams When Buying from India
                 </h3>
-                <p className="text-stone-600 mb-4">
-                  Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India.
+                <p className="text-stone-600 text-sm mb-4">
+                  Real scams that NRI brides have fallen for — and the exact steps to protect yourself and your money.
                 </p>
-                <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
               </div>
             </a>
 
-            {/* Blog Post 2 */}
-            <a href="/blog/how-to-buy-bridal-lehenga-from-india-usa" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+            {/* Blog Post 2 — Outfit Checklist */}
+            <a href="/blog/indian-wedding-outfit-checklist-every-ceremony/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
-                  How to Buy a Bridal Lehenga from India
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  See the Complete Outfit Checklist for Your Family
                 </h3>
-                <p className="text-stone-600 mb-4">
-                  Step-by-step guide for NRI brides — from finding a trustworthy sourcing partner to delivery.
+                <p className="text-stone-600 text-sm mb-4">
+                  42-51 outfits across all ceremonies — who needs what, and how much it all costs from India vs. US stores.
                 </p>
-                <span className="text-amber-700 font-medium group-hover:underline">Read Guide →</span>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+
+            {/* Blog Post 3 — Lehenga Cost */}
+            <a href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  Real 2026 Lehenga Prices from India (with Shipping to USA)
+                </h3>
+                <p className="text-stone-600 text-sm mb-4">
+                  Budget breakdown from ₹45,000 to ₹5,00,000+ — including customs, shipping, and hidden costs.
+                </p>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+
+            {/* Blog Post 4 — Sherwani Guide */}
+            <a href="/blog/how-to-buy-sherwani-from-india-usa/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  How to Buy a Sherwani from India: Prices, Sizing & Scams
+                </h3>
+                <p className="text-stone-600 text-sm mb-4">
+                  The complete NRI groom guide — real prices, how to take measurements at home, and shipping tips.
+                </p>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+
+            {/* Blog Post 5 — Shipping */}
+            <a href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  Shipping from India to USA: Customs, Duties & Timeline
+                </h3>
+                <p className="text-stone-600 text-sm mb-4">
+                  How much customs duties really cost, how long delivery takes, and how to avoid border delays.
+                </p>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
+              </div>
+            </a>
+
+            {/* Blog Post 6 — Timeline */}
+            <a href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-stone-800 group-hover:text-amber-700 mb-2">
+                  When to Order So Nothing Arrives Late
+                </h3>
+                <p className="text-stone-600 text-sm mb-4">
+                  Month-by-month timeline for NRI brides — minimum lead times and backup plans if you are behind schedule.
+                </p>
+                <span className="text-amber-700 font-medium text-sm group-hover:underline">Read Guide →</span>
               </div>
             </a>
           </div>
