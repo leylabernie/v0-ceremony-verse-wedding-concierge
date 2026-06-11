@@ -1,10 +1,6 @@
-// import { SeoNav } from "@/components/seo-nav"
+"use client"
 
-export const metadata = {
-  title: "Community Outreach Templates | Internal Resources | CeremonyVerse",
-  robots: "noindex, nofollow", // Keep this internal
-}
-
+// Internal outreach templates for community engagement
 export default function OutreachTemplatesPage() {
   const templates = [
     {
@@ -21,23 +17,27 @@ export default function OutreachTemplatesPage() {
     }
   ]
 
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text)
+    alert("Template copied to clipboard!")
+  }
+
   return (
-    <div className="bg-[var(--cv-bg)] min-h-screen">
-      {/* <SeoNav /> */}
+    <div className="bg-stone-50 min-h-screen">
       <div className="max-w-4xl mx-auto py-20 px-6">
-        <h1 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-10">Internal Outreach Templates</h1>
-        <p className="mb-12 text-[var(--cv-muted)]">Use these templates to engage authentically with the NRI wedding community on Reddit and Facebook.</p>
+        <h1 className="font-serif text-4xl font-semibold mb-10 text-stone-900">Internal Outreach Templates</h1>
+        <p className="mb-12 text-stone-600">Use these templates to engage authentically with the NRI wedding community on Reddit and Facebook.</p>
         
         <div className="space-y-12">
           {templates.map((template, index) => (
-            <div key={index} className="bg-white p-8 rounded-2xl border border-[var(--cv-border)]">
-              <h2 className="text-xl font-bold mb-4">{template.title}</h2>
-              <div className="bg-stone-50 p-6 rounded-xl font-mono text-sm border border-stone-100">
+            <div key={index} className="bg-white p-8 rounded-2xl border border-stone-200 shadow-sm">
+              <h2 className="text-xl font-bold mb-4 text-stone-800">{template.title}</h2>
+              <div className="bg-stone-50 p-6 rounded-xl font-mono text-sm border border-stone-100 text-stone-700 leading-relaxed">
                 {template.content}
               </div>
               <button 
-                onClick={() => navigator.clipboard.writeText(template.content)}
-                className="mt-4 text-sm font-medium text-[var(--cv-accent)] hover:underline"
+                onClick={() => copyToClipboard(template.content)}
+                className="mt-4 text-sm font-medium text-amber-700 hover:text-amber-800 hover:underline transition-colors"
               >
                 Copy to Clipboard
               </button>
