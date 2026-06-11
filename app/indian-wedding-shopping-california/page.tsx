@@ -1,4 +1,4 @@
-import { SeoNav } from "@/components/seo-nav"
+// import { SeoNav } from "@/components/seo-nav"
 
 export const metadata = {
   title: "Indian Wedding Shopping from India | California NRI Families | CeremonyVerse",
@@ -9,7 +9,7 @@ export const metadata = {
 export default function IndianWeddingShoppingCaliforniaPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-      <SeoNav />
+      {/* <SeoNav /> */}
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

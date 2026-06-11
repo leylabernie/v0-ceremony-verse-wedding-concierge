@@ -1,4 +1,4 @@
-import { SeoNav } from "@/components/seo-nav"
+// import { SeoNav } from "@/components/seo-nav"
 
 export const metadata = {
   title: "Community Outreach Templates | Internal Resources | CeremonyVerse",
@@ -23,7 +23,7 @@ export default function OutreachTemplatesPage() {
 
   return (
     <div className="bg-[var(--cv-bg)] min-h-screen">
-      <SeoNav />
+      {/* <SeoNav /> */}
       <div className="max-w-4xl mx-auto py-20 px-6">
         <h1 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-10">Internal Outreach Templates</h1>
         <p className="mb-12 text-[var(--cv-muted)]">Use these templates to engage authentically with the NRI wedding community on Reddit and Facebook.</p>

@@ -1,4 +1,4 @@
-import { SeoNav } from "@/components/seo-nav"
+// import { SeoNav } from "@/components/seo-nav"
 import Link from "next/link"
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 export default function AvoidScamsPage() {
   return (
     <div className="bg-[var(--cv-bg)] min-h-screen">
-      <SeoNav />
+      {/* <SeoNav /> */}
 
       <article className="max-w-4xl mx-auto py-20 px-6">
         <header className="text-center mb-16">
