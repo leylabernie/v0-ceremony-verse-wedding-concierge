@@ -36,14 +36,21 @@ const localSchema = {
   "name": "CeremonyVerse - NJ Wedding Shopping",
   "image": "https://www.ceremonyverse.com/og-image.jpg",
   "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
-  "telephone": "+1-555-019-2834",
+  "telephone": "+1 (215) 341-9990",
   "areaServed": {
     "@type": "State",
     "name": "New Jersey"
   },
   "description": "Expert Indian wedding outfit shopping concierge for brides in New Jersey. We handle sourcing, coordination, and logistics.",
   "priceRange": "$$$",
-  "serviceType": "Wedding Shopping Concierge"
+  "serviceType": "Wedding Shopping Concierge",
+  "email": "bhamini@ceremonyverse.com",
+  "sameAs": [
+    "https://www.instagram.com/ceremonyverse",
+    "https://www.pinterest.com/ceremonyverse",
+    "https://www.tiktok.com/@ceremonyverse",
+    "https://wa.me/12153419990"
+  ]
 };
 
 export default function NewJerseyPage() {
@@ -95,6 +102,18 @@ export default function NewJerseyPage() {
               <li>Timeline management for all ceremonies</li>
               <li>Logistics and shipping coordination</li>
             </ul>
+            
+            <h3 className="text-2xl font-bold text-stone-900 mt-12 mb-6">What NJ Brides Say</h3>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
+                <p className="text-stone-700 mb-4 italic">"Bhamini made the entire process stress-free. I was so worried about getting scammed, but the live video shopping sessions gave me complete confidence. My lehenga arrived perfectly fitted."</p>
+                <p className="font-semibold text-stone-900">— Swati, Jersey City</p>
+              </div>
+              <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
+                <p className="text-stone-700 mb-4 italic">"Coordinating outfits for 12 bridesmaids across different states seemed impossible. CeremonyVerse handled everything with such professionalism. Highly recommend!"</p>
+                <p className="font-semibold text-stone-900">— Karan & Sonal, Edison</p>
+              </div>
+            </div>
             
             <div className="mt-12 text-center">
               <Link

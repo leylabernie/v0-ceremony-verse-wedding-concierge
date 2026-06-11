@@ -83,6 +83,11 @@ export default function FreeGuidesPage() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+
+        // Redirect to thank you page after 2 seconds
+        setTimeout(() => {
+          window.location.href = `/thank-you?guide=${activeGuide}&email=${encodeURIComponent(email)}`;
+        }, 2000);
       } else {
         setError(data.error || "Something went wrong. Please try again.");
       }
@@ -395,7 +400,9 @@ export default function FreeGuidesPage() {
                   CeremonyVerse.
                 </p>
                 <button
-                  onClick={handleCloseModal}
+                  onClick={() => {
+                    window.location.href = `/thank-you?guide=${activeGuide}&email=${encodeURIComponent(email)}`;
+                  }}
                   style={{
                     background: "#a69260",
                     color: "#fff",
@@ -408,7 +415,7 @@ export default function FreeGuidesPage() {
                     fontFamily: "'DM Sans', sans-serif",
                   }}
                 >
-                  Done
+                  See What's Next →
                 </button>
               </div>
             ) : (

@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
+import Script from "next/script"
 
 const faqSections = [
   {
@@ -118,9 +119,36 @@ export const metadata = {
   description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families. Trust, sizing, pricing, shipping, and process answered.',
 }
 
+// Generate FAQ Schema for SEO
+const generateFAQSchema = () => {
+  const faqItems = faqSections.flatMap(section =>
+    section.items.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  )
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems
+  }
+}
+
 export default function FAQPage() {
+  const faqSchema = generateFAQSchema()
+
   return (
     <div className="min-h-screen bg-[#faf8f5]">
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
       {/* Hero */}
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 relative">
