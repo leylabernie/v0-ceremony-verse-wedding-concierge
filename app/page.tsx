@@ -78,18 +78,21 @@ export default function HomePage() {
               <Link href="/guide" className="block text-center border border-stone-900 py-3 uppercase text-xs tracking-wider hover:bg-stone-900 hover:text-white">Get the Guide</Link>
             </div>
 
-            {/* Tier 2 - DARK CARD WITH LIGHT TEXT */}
+            {/* Tier 2 - FIXED: FORCED WHITE TEXT */}
             <div className="bg-stone-900 p-10 border border-stone-800 relative">
               <div className="absolute top-0 right-0 bg-amber-600 text-white text-xs px-3 py-1 uppercase">Most Popular</div>
               <h3 className="text-2xl font-serif font-bold text-white mb-2">Sourcing Concierge</h3>
               <p className="text-4xl font-serif font-bold text-amber-400 mb-6">$599</p>
-              <ul className="space-y-3 mb-8 text-stone-200 text-sm">
-                <li>✓ Everything in Style Guide</li>
-                <li>✓ We source 3-5 options for you</li>
-                <li>✓ Live video verification calls</li>
-                <li>✓ Vendor negotiation</li>
-                <li>✓ Direct shipping to US</li>
+              
+              {/* THIS IS THE FIXED PART - TEXT IS NOW EXPLICITLY WHITE */}
+              <ul className="space-y-3 mb-8 text-white text-sm font-light">
+                <li className="flex gap-2"><span className="text-amber-400">✓</span> Everything in Style Guide</li>
+                <li className="flex gap-2"><span className="text-amber-400">✓</span> We source 3-5 options for you</li>
+                <li className="flex gap-2"><span className="text-amber-400">✓</span> Live video verification calls</li>
+                <li className="flex gap-2"><span className="text-amber-400">✓</span> Vendor negotiation</li>
+                <li className="flex gap-2"><span className="text-amber-400">✓</span> Direct shipping to US</li>
               </ul>
+              
               <Link href="/contact" className="block text-center bg-amber-600 hover:bg-amber-700 text-white py-3 uppercase text-xs tracking-wider">Book Consultation</Link>
             </div>
 
