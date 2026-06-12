@@ -1,8 +1,10 @@
+"use client";
+
 import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-// 1. This component handles reading the URL parameters
+// This component handles reading the URL parameters
 function ThankYouMessage() {
   const searchParams = useSearchParams();
   // This checks if your form passed a name (e.g., ?name=Sarah)
@@ -29,7 +31,7 @@ function ThankYouMessage() {
   );
 }
 
-// 2. This is the main page. The <Suspense> wrapper fixes the Vercel build error!
+// The Suspense wrapper and "use client" directive fix the Vercel build error!
 export default function ThankYouPage() {
   return (
     <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-stone-500">Loading...</div>}>
