@@ -145,7 +145,7 @@ export default function HomePage() {
           <p className="mb-6">Making NRI bridal shopping safe, seamless, and stress-free.</p>
           <div className="flex justify-center gap-6 mb-8">
             <a href="mailto:hello@ceremonyverse.com" className="hover:text-rose-400 transition-colors">hello@ceremonyverse.com</a>
-            <a href="https://wa.me/YOUR_NUMBER" className="hover:text-rose-400 transition-colors">WhatsApp Us</a>
+            <a href="https://wa.me/+1-215-341-9990" className="hover:text-rose-400 transition-colors">WhatsApp Us</a>
           </div>
           <p className="text-sm text-stone-600">© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
         </div>
