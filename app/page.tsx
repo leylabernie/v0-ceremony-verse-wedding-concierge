@@ -1,4 +1,4 @@
-import HomePage from '../components/pages/home-page';
+import { HomePage } from '../components/pages/home-page';
 
 export const metadata = {
   title: 'CeremonyVerse | Bespoke Indian Bridal Shopping for NRI Brides',
@@ -6,6 +6,4 @@ export const metadata = {
   keywords: 'buy lehenga online USA, NRI bride shopping India, Indian bridal wear delivery to US',
 };
 
-export default function Page() {
-  return <HomePage />;
-}
+export default HomePage;
