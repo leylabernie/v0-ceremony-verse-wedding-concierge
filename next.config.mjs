@@ -36,11 +36,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/indian-destination-wedding-planner-mexico',
-        destination: '/',
-        permanent: true,
-      },
-      {
         source: '/indian-wedding-planner-philadelphia',
         destination: '/services',
         permanent: true,
