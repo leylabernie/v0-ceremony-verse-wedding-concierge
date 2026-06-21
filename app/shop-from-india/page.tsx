@@ -1,9 +1,9 @@
 import { SeoNav } from "@/components/seo-nav"
 
 export const metadata = {
-  title: "Indian Wedding Shopping from India to USA | Outfits, Jewelry, Gifts & More | CeremonyVerse",
+  title: "Shop Indian Wedding Outfits from India to USA | Group Wardrobe Concierge | CeremonyVerse",
   description:
-    "CeremonyVerse sources everything for your Indian wedding from India to the USA — bridal lehengas, sherwanis, jewelry, ceremonial items, gifts, welcome bags and more. Live video shopping, quality checks, US delivery. Serving NRI families nationwide.",
+    "Source affordable bridal lehengas, sherwanis, and coordinated bridesmaid sets directly from India. Live video shopping and quality checks ensure you get high-end quality without the boutique markup.",
 };
 
 export default function ShopFromIndiaPage() {
