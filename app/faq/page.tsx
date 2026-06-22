@@ -270,7 +270,7 @@ export default function FAQPage() {
             Schedule a free consultation and let us address your specific situation directly.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#a69260] font-medium rounded-full
               hover:bg-[#a69260]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"

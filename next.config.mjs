@@ -9,15 +9,21 @@ const nextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      // ─── NEW SEO REDIRECTS ───
+      {
+        source: '/blog/when-should-nri-brides-order-wedding-outfits-india',
+        destination: '/blog/when-to-order-indian-wedding-outfits-nri-bride/',
+        permanent: true,
+      },
       // ─── EXISTING REDIRECTS ───
       {
         source: '/consultation',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       {
         source: '/sourcing-disclaimer',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       // ─── DOMAIN NORMALIZATION: non-www → www ───
@@ -37,7 +43,7 @@ const nextConfig = {
       },
       {
         source: '/indian-wedding-planner-philadelphia',
-        destination: '/services',
+        destination: '/services/',
         permanent: true,
       },
       // ─── LEGACY PAGES ───
@@ -48,12 +54,12 @@ const nextConfig = {
       },
       {
         source: '/shopping-from-india',
-        destination: '/services',
+        destination: '/services/',
         permanent: true,
       },
       {
         source: '/forms/virtual-shopping',
-        destination: '/services',
+        destination: '/services/',
         permanent: true,
       },
     ]

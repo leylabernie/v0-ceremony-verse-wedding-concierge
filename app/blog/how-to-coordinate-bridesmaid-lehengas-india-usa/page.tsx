@@ -38,7 +38,7 @@ export default function BridesmaidGuidePage() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>Coordinating bridesmaid outfits for an Indian wedding in the US is one of the most logistically challenging parts of wedding planning. You need 4-8 outfits that match in color and style but fit 4-8 completely different body types — all arriving on time, all looking consistent in photos, and all within a reasonable budget. Most NRI brides who try to buy bridesmaid lehengas from India on their own end up with color mismatches, sizing disasters, or bridesmaids wearing outfits that look like they came from different weddings.</p>
-          <p style={{ marginTop: "1.2rem" }}>At CeremonyVerse, we have coordinated bridesmaid outfits for over 30 NRI weddings. Here is exactly how to do it right — whether you work with us or manage the process yourself. Start with our <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#a69260" }}>full wedding outfit checklist</Link> to see how bridesmaid outfits fit into your overall plan.</p>
+          <p style={{ marginTop: "1.2rem" }}>At CeremonyVerse, we have coordinated bridesmaid outfits for over 30 NRI weddings. Here is exactly how to do it right — whether you work with us or manage the process yourself. Start with our <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#a69260" }}>full wedding outfit checklist</Link> to see how bridesmaid outfits fit into your overall plan.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Get Consistent Colors When Ordering Multiple Lehengas from India</h2>
 
@@ -126,17 +126,17 @@ export default function BridesmaidGuidePage() {
             </p>
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#a69260" }}>
+                <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#a69260" }}>
                   Full wedding outfit checklist for the whole family
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#a69260" }}>
+                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#a69260" }}>
                   When to order so bridesmaid outfits arrive on time
                 </Link>
               </li>
               <li>
-                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides/" style={{ color: "#a69260" }}>
                   How to avoid scams when ordering group outfits from India
                 </Link>
               </li>
@@ -154,15 +154,15 @@ export default function BridesmaidGuidePage() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
               <strong>Download our Bridesmaid Ordering Worksheet</strong> — color coordination template, measurement collection form for each bridesmaid, and group order checklist. Drop your email and it&apos;s yours.
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+            <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Bridesmaid Worksheet →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
-              Want us to coordinate your whole bridesmaid order? <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>See how group ordering works</Link> — consistent colors, accurate sizing for every body, one delivery to your door.
+              Want us to coordinate your whole bridesmaid order? <Link href="/contact/" style={{ color: "#a69260", fontWeight: 600 }}>See how group ordering works</Link> — consistent colors, accurate sizing for every body, one delivery to your door.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire directly from India for NRI weddings. <Link href="/contact" style={{ color: "#a69260" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire directly from India for NRI weddings. <Link href="/contact/" style={{ color: "#a69260" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
       </article>
     </main>

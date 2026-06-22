@@ -227,7 +227,7 @@ export default function NriWeddingPlanningTimeline() {
               Book a free consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
             </p>
             <Link
-              href="/#contact"
+              href="/contact/"
               style={{ display: "inline-block", background: "#a69260", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -256,7 +256,7 @@ export default function NriWeddingPlanningTimeline() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog/" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
         </div>

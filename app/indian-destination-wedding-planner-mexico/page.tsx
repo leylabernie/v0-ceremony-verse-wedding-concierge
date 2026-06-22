@@ -25,7 +25,7 @@ export default function MexicoDestinationPage() {
             <a href="#wardrobe" className="bg-[var(--cv-accent)] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg">
               Book Group Wardrobe Sourcing
             </a>
-            <a href="/contact" className="bg-white border-2 border-[var(--cv-accent)] text-[var(--cv-accent)] px-8 py-4 rounded-lg font-bold text-lg">
+            <a href="/contact/" className="bg-white border-2 border-[var(--cv-accent)] text-[var(--cv-accent)] px-8 py-4 rounded-lg font-bold text-lg">
               Get Mexico Vendor List
             </a>
           </div>
@@ -98,7 +98,7 @@ export default function MexicoDestinationPage() {
                 </li>
               </ul>
               <div className="mt-10">
-                <a href="/shop-from-india" className="inline-block bg-[#a69260] text-white px-8 py-4 rounded-lg font-bold transition-transform hover:scale-105">
+                <a href="/shop-from-india/" className="inline-block bg-[#a69260] text-white px-8 py-4 rounded-lg font-bold transition-transform hover:scale-105">
                   Explore Sourcing Packages
                 </a>
               </div>
@@ -126,7 +126,7 @@ export default function MexicoDestinationPage() {
             Whether you need a vendor list or a full wardrobe concierge, we are here to help you build your dream wedding without the stress.
           </p>
           <div className="mt-10">
-            <a href="/contact" className="bg-[var(--cv-accent)] text-white px-10 py-5 rounded-xl font-bold text-xl shadow-xl">
+            <a href="/contact/" className="bg-[var(--cv-accent)] text-white px-10 py-5 rounded-xl font-bold text-xl shadow-xl">
               Start Your Free Consultation
             </a>
           </div>

@@ -75,7 +75,7 @@ export default function ServicesPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
 
           <ServiceCard
-            href="/services/bridal-lehengas"
+            href="/services/bridal-lehengas/"
             image="/images/services-bridal-gold.jpg"
             imageAlt="Champagne gold bridal lehenga"
             title="Bridal Lehengas & Wedding Outfits"
@@ -83,7 +83,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/buy-sherwani-from-india-usa"
+            href="/buy-sherwani-from-india-usa/"
             image="/images/services-groom.jpg"
             imageAlt="Full length ivory and gold sherwani"
             title="Groom Sherwanis & Attire"
@@ -91,7 +91,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/bridesmaid-and-family-outfits-from-india"
+            href="/bridesmaid-and-family-outfits-from-india/"
             image="/images/services-bridesmaids.jpg"
             imageAlt="Pastel bridesmaid lehengas on rack"
             title="Bridesmaid Outfits"
@@ -99,7 +99,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/bridesmaid-and-family-outfits-from-india"
+            href="/bridesmaid-and-family-outfits-from-india/"
             image="/images/services-groomsmen.jpg"
             imageAlt="Ivory kurta sets on rack"
             badge="Popular Add-On"
@@ -108,7 +108,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/bridesmaid-and-family-outfits-from-india"
+            href="/bridesmaid-and-family-outfits-from-india/"
             image="/images/services-bridesmaids.png"
             imageAlt="Coordinated Indian family sarees"
             title="Family Wedding Outfits"
@@ -116,7 +116,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/contact"
+            href="/contact/"
             image="/images/services-pets.jpg"
             imageAlt="Two dogs dressed for a wedding — shih tzu in gold sherwani and maltese in teal lehenga"
             badge="Fan Favorite"
@@ -125,7 +125,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/wedding-accessories-and-ceremony-items-from-india"
+            href="/wedding-accessories-and-ceremony-items-from-india/"
             image="/images/services-jewelry-real.jpg"
             imageAlt="Authentic kundan polki bridal jewelry set with emerald green stones — sourced from India for NRI brides in USA by CeremonyVerse"
             title="Jewelry & Bridal Accessories"
@@ -133,7 +133,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/wedding-accessories-and-ceremony-items-from-india"
+            href="/wedding-accessories-and-ceremony-items-from-india/"
             image="/images/services-ceremonial2.png"
             imageAlt="Mehndi ceremony with marigolds and brass diyas"
             title="Ceremonial Items & Ritual Essentials"
@@ -141,7 +141,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/wedding-accessories-and-ceremony-items-from-india"
+            href="/wedding-accessories-and-ceremony-items-from-india/"
             image="/images/services-gifts.jpg"
             imageAlt="Colourful silk potli bags in emerald, navy, burgundy and lavender in a gold ballroom"
             title="Wedding Gifts & Return Gifts"
@@ -149,7 +149,7 @@ export default function ServicesPage() {
           />
 
           <ServiceCard
-            href="/wedding-accessories-and-ceremony-items-from-india"
+            href="/wedding-accessories-and-ceremony-items-from-india/"
             image="/images/services-welcomebags.jpg"
             imageAlt="Personalized monogram jute welcome bags"
             title="Welcome Bags & Event Details"
@@ -169,7 +169,7 @@ export default function ServicesPage() {
             From outfits to gifts to ceremonial details — we manage the entire sourcing process so you don't have to.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-block px-8 py-3 bg-[#a69260] text-white font-medium rounded-full
               hover:opacity-90 transition-opacity duration-300"
           >

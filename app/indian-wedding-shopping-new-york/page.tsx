@@ -72,7 +72,7 @@ export default function NewYorkPage() {
               Skip the high markups in Jackson Heights. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NY.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
             >
               Book Your Consultation
@@ -96,7 +96,7 @@ export default function NewYorkPage() {
             
             <div className="mt-12 text-center">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
               >
                 Start Your Shopping Journey
