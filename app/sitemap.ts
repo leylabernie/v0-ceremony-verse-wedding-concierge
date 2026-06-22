@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { regionalPages } from '@/lib/regional-data'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.ceremonyverse.com'
@@ -34,6 +35,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/south-indian-christian-wedding-outfits-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/gujarati-wedding-outfits-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/indian-wedding-guest-outfits-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
+
+    // ─── PRIORITY 0.7: Programmatic Regional Pages ───
+    ...regionalPages.map((page) => ({
+      url: `${baseUrl}/weddings/${page.slug}/`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
 
     // ─── PRIORITY 0.7: Geographic & Special Topic Pages ───
     { url: `${baseUrl}/indian-wedding-shopping-texas/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
