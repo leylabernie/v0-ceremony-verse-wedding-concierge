@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Indian Wedding Guest Outfits from India | NRI USA | CeremonyVerse",
-  description: "Need Indian wedding guest outfits in the USA? CeremonyVerse sources lehengas, sarees, anarkalis, and sherwanis from India — live video shopping, custom stitching, delivered to your US door.",
-  keywords: "indian wedding guest outfits usa, lehenga for wedding guest usa, indian wedding guest dress usa, NRI wedding guest outfit, buy indian outfit for wedding usa",
-}
+export const metadata = buildMetadata({
+  path: "/indian-wedding-guest-outfits-usa/",
+  title: "Indian Wedding Guest Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "Indian wedding guest outfits sourced from India \u2014 sarees, anarkalis, lehengas, and kurtas for men and women attending Indian weddings in the USA."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Indian Wedding Guest Outfit Sourcing",
+  description: "Indian wedding guest outfits sourced from India \u2014 sarees, anarkalis, lehengas, and kurtas for men and women, with custom stitching and US delivery.",
+  url: "/indian-wedding-guest-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Wedding Guest Outfits", url: "/indian-wedding-guest-outfits-usa/" },
+]);
 
 export default function IndianWeddingGuestOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

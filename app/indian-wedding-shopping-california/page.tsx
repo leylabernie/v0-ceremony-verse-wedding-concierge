@@ -1,14 +1,30 @@
-// import { SeoNav } from "@/components/seo-nav"
 
-export const metadata = {
-  title: "Indian Wedding Shopping from India | California NRI Families | CeremonyVerse",
-  description: "NRI bride in California? CeremonyVerse sources bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your CA door.",
-  keywords: "Indian wedding shopping California, NRI bride California, buy lehenga from India Bay Area, Indian wedding concierge California",
-}
+
+// import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/indian-wedding-shopping-california/",
+  title: "Indian Wedding Shopping from India \u2014 California NRI Families",
+  description: "California NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India \u2014 live video shopping, custom stitching, delivered to your CA door."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "California Indian Wedding Sourcing Service",
+  description: "Indian wedding outfit sourcing for NRI families in California \u2014 Bay Area, Los Angeles, San Diego, Sacramento, Fresno \u2014 with US delivery.",
+  url: "/indian-wedding-shopping-california/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "California NRI Families", url: "/indian-wedding-shopping-california/" },
+]);
 
 export default function IndianWeddingShoppingCaliforniaPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       {/* <SeoNav /> */}
 
       {/* Hero */}

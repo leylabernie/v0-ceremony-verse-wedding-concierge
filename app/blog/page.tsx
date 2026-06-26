@@ -1,18 +1,22 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Blog — Indian Wedding Shopping Guides for NRI Families | CeremonyVerse",
-  description: "Expert guides for NRI brides and families — how to buy lehengas from India without getting scammed, shipping to USA, customs duties, outfit checklists, and timelines.",
-  keywords: [
-    "NRI wedding shopping guides",
-    "how to buy lehenga from india",
-    "indian wedding outfit checklist",
-    "ship wedding outfits india to usa",
-    "NRI bride timeline",
-  ],
-};
+export const metadata = buildMetadata({
+  path: "/blog/",
+  title: "Indian Wedding Shopping Guides for NRI Families",
+  description: "Expert guides for NRI brides and families \u2014 how to buy lehengas from India without getting scammed, shipping to USA, customs duties, outfit checklists, and timelines."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "CeremonyVerse Blog \u2014 Indian Wedding Shopping Guides",
+  description: "In-depth guides for NRI families on buying Indian wedding outfits from India \u2014 avoiding scams, customs, sizing, timelines, and real bride stories.",
+  url: "/blog/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+]);
 
 const posts = [
   {
@@ -98,6 +102,9 @@ const posts = [
 export default function BlogIndexPage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* Hero */}

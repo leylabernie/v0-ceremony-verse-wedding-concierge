@@ -1,30 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42-51 Outfits) | CeremonyVerse",
-  description: "The complete outfit-by-ceremony checklist for NRI families — from the bride and groom to parents, siblings, and guests. 42-51 total outfits, nothing missed.",
-  keywords: [
-    "indian wedding outfit checklist for nri families usa",
-    "what to wear indian wedding",
-    "indian wedding guest outfit guide",
-    "indian wedding family outfits",
-    "mehndi outfit",
-    "sangeet outfit",
-    "haldi outfit",
-    "indian wedding outfit count",
-  ],
-  openGraph: {
-    title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42-51 Outfits)",
-    description: "The complete outfit-by-ceremony checklist for NRI families — from the bride and groom to parents, siblings, and guests. 42-51 total outfits, nothing missed.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/indian-wedding-outfit-checklist-every-ceremony",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/indian-wedding-outfit-checklist-every-ceremony/",
+  title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42\u201351 Outfits)",
+  description: "The complete outfit-by-ceremony checklist for NRI families \u2014 from the bride and groom to parents, siblings, and guests. 42\u201351 total outfits, nothing missed.",
+  keywords: ["indian wedding outfit checklist for nri families usa", "what to wear indian wedding", "indian wedding family outfits", "indian wedding outfit count"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42\u201351 Outfits)",
+  description: "The complete outfit-by-ceremony checklist for NRI families \u2014 from the bride and groom to parents, siblings, and guests. 42\u201351 total outfits, nothing missed.",
+  url: "/blog/indian-wedding-outfit-checklist-every-ceremony/",
+  datePublished: "2026-03-01",
+  keywords: ["indian wedding outfit checklist for nri families usa", "what to wear indian wedding", "indian wedding family outfits", "indian wedding outfit count"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "Indian Wedding Outfit Checklist for NRI Families: Who Needs ", url: "/blog/indian-wedding-outfit-checklist-every-ceremony/" },
+]);
 
 export default function OutfitChecklistPage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>

@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Script from "next/script"
+import { buildMetadata, buildFaqSchema, buildBreadcrumb, JsonLd } from "@/lib/seo"
 
 const faqSections = [
   {
@@ -114,41 +114,32 @@ function FloralSeparator() {
   )
 }
 
-export const metadata = {
-  title: 'FAQ | CeremonyVerse',
-  description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families. Trust, sizing, pricing, shipping, and process answered.',
-}
+export const metadata = buildMetadata({
+  path: '/faq',
+  title: 'FAQ — Indian Wedding Outfit Sourcing for NRI Families',
+  description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families. Trust, sizing, pricing, shipping, customs, and process answered in detail.',
+  keywords: 'Indian wedding outfit sourcing FAQ, NRI bride questions, lehenga from India scams, customs duties Indian wedding outfits, bridal lehenga sizing',
+});
 
-// Generate FAQ Schema for SEO
+// Generate FAQ Schema for SEO (rendered server-side via JsonLd component)
 const generateFAQSchema = () => {
   const faqItems = faqSections.flatMap(section =>
     section.items.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
+      question: item.question,
+      answer: item.answer,
     }))
   )
-
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems
-  }
+  return buildFaqSchema(faqItems)
 }
 
 export default function FAQPage() {
   const faqSchema = generateFAQSchema()
+  const breadcrumb = buildBreadcrumb([{ name: 'FAQ', url: '/faq/' }])
 
   return (
     <div className="min-h-screen bg-[#faf8f5]">
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <JsonLd id="faq-schema" data={faqSchema} />
+      <JsonLd id="breadcrumb-schema" data={breadcrumb} />
 
       {/* Hero */}
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 relative">

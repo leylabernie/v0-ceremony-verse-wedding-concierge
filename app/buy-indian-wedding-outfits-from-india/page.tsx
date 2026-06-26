@@ -1,20 +1,29 @@
-export const metadata = {
-  title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
-  description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America's trusted NRI wedding shopping concierge.",
-  keywords: "buy Indian wedding outfits from India, Indian wedding shopping USA, NRI wedding outfits, source Indian wedding from USA, Indian wedding outfit concierge, South Asian wedding outfits USA, Indian wedding personal shopper, CeremonyVerse",
-  openGraph: {
-    title: "Buy Indian Wedding Outfits from India | NRI Wedding Shopping Concierge | CeremonyVerse",
-    description: "Everything for your Indian wedding sourced directly from India and delivered to the USA. Bridal lehengas, sherwanis, bridesmaid outfits, family attire, jewelry, gifts, and more. CeremonyVerse is America's trusted NRI wedding shopping concierge.",
-    type: "website",
-  },
-};
-
-
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/buy-indian-wedding-outfits-from-india/",
+  title: "Buy Indian Wedding Outfits from India \u2014 Full Wedding Party Sourcing",
+  description: "Source the entire wedding party's outfits from India \u2014 bride, groom, bridesmaids, groomsmen, family \u2014 with live video shopping, custom stitching, and US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Full Wedding Party Outfit Sourcing",
+  description: "End-to-end sourcing for the entire Indian wedding party \u2014 bride, groom, bridesmaids, groomsmen, and family outfits \u2014 directly from India with US delivery.",
+  url: "/buy-indian-wedding-outfits-from-india/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Buy Indian Wedding Outfits", url: "/buy-indian-wedding-outfits-from-india/" },
+]);
+
 
 export default function BuyFromIndiaPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* HERO */}

@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Sangeet Night Outfits from India | Delivered to USA | CeremonyVerse",
-  description: "Source stunning Sangeet night outfits from India — jewel-tone lehengas, embellished sarees, statement jewelry. Custom stitched, coordinated for the full party, delivered to your US door. NRI wedding specialists.",
-  keywords: "sangeet outfit USA, sangeet lehenga from India, sangeet night dress NRI, sangeet outfit delivered USA, Indian sangeet ceremony outfit, jewel tone lehenga USA, sangeet bridesmaid outfits, sangeet night wear from India, sangeet outfit for NRI bride, sangeet coordination USA",
-}
+export const metadata = buildMetadata({
+  path: "/sangeet-outfits-usa/",
+  title: "Sangeet Ceremony Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "Sangeet ceremony outfits sourced from India \u2014 dance-ready lehengas, anarkalis, and Indo-western fusion for brides, bridesmaids, and family. US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Sangeet Ceremony Outfit Sourcing",
+  description: "Sangeet ceremony outfits sourced from India \u2014 dance-ready lehengas, anarkalis, and Indo-western fusion for the bride, bridesmaids, and family.",
+  url: "/sangeet-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Sangeet Outfits", url: "/sangeet-outfits-usa/" },
+]);
 
 export default function SangeetOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

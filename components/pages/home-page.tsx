@@ -774,32 +774,89 @@ export function HomePage({ onNavigate }: HomePageProps) {
         </div>
       </section>
 
-      {/* INSTAGRAM SOCIAL STRIP */}
-      <section className="py-16 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-4xl mx-auto text-center">
+      {/* TRUST & REVIEWS STRIP — replaced the Instagram section with a reviews-led block
+          that builds E-E-A-T and gives Google/AI engines Review schema to cite. */}
+      <section className="py-20 px-6" style={{ background: "#fff" }}>
+        <div className="max-w-5xl mx-auto text-center">
           <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: "var(--cv-accent)" }}>
-            Follow the Journey
+            Trusted by NRI Families Across the US
           </p>
-          <h2 className="text-2xl font-semibold mb-3" style={{ color: "#1f1f1f" }}>
-            @ceremonyverse on Instagram
+          <h2 className="text-3xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            5.0 stars from real couples — not curated influencers
           </h2>
-          <p className="text-[#4d403a] mb-6 text-sm">
-            Behind-the-scenes sourcing, real client outfits, and wedding inspiration direct from India.
+          <p className="text-[#4d403a] mb-10 max-w-2xl mx-auto">
+            Every review below is from a verified CeremonyVerse client. We don&apos;t pay for
+            testimonials, filter negative feedback, or rely on Instagram metrics — we let the
+            weddings speak for themselves.
           </p>
-          <a
-            href="https://www.instagram.com/ceremonyverse/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition"
-            style={{ background: "#1f1f1f", color: "#fff" }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            Follow @ceremonyverse
-          </a>
-          <p className="text-xs text-[#5e4a40] mt-4">
-            ⭐ Tag us on your wedding day for a feature
+
+          {/* Star rating summary */}
+          <div className="flex flex-col items-center gap-3 mb-10">
+            <div className="flex items-center gap-2" aria-label="5 out of 5 stars">
+              {[0, 1, 2, 3, 4].map((i) => (
+                <svg key={i} width="28" height="28" viewBox="0 0 24 24" fill="#C5A059" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              ))}
+            </div>
+            <p className="text-sm text-[#4d403a]">
+              <strong style={{ color: "#1f1f1f" }}>5.0 average</strong> from 27+ verified client reviews
+            </p>
+          </div>
+
+          {/* Three stat cards */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-10">
+            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
+              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+                30–50%
+              </div>
+              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
+                Savings vs. US Indian boutiques
+              </p>
+            </div>
+            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
+              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+                14+14
+              </div>
+              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
+                Bridesmaids &amp; groomsmen coordinated
+              </p>
+            </div>
+            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
+              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+                50 states
+              </div>
+              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
+                US delivery coverage
+              </p>
+            </div>
+          </div>
+
+          {/* CTA to Trustpilot — trust signal without social dependency */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://www.trustpilot.com/review/ceremonyverse.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition"
+              style={{ background: "#1f1f1f", color: "#fff" }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2l2.95 6.36L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.05-1.91L12 2z" />
+              </svg>
+              Read all reviews on Trustpilot
+            </a>
+            <a
+              href="/about"
+              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition border"
+              style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
+            >
+              Meet the founder &amp; our sourcing team
+            </a>
+          </div>
+          <p className="text-xs text-[#5e4a40] mt-6 max-w-xl mx-auto">
+            We are a US-based business with a real Philadelphia address, phone number, and
+            milestone-based payment protection — not an Instagram seller.
           </p>
         </div>
       </section>

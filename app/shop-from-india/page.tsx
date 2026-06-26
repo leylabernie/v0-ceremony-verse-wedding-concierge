@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Shop Indian Wedding Outfits from India to USA | Group Wardrobe Concierge | CeremonyVerse",
-  description:
-    "Source affordable bridal lehengas, sherwanis, and coordinated bridesmaid sets directly from India. Live video shopping and quality checks ensure you get high-end quality without the boutique markup.",
-};
+export const metadata = buildMetadata({
+  path: "/shop-from-india/",
+  title: "Shop Indian Wedding Outfits from India \u2014 Live Video Sourcing to USA",
+  description: "Shop authentic Indian wedding outfits directly from India \u2014 bridal lehengas, sherwanis, sarees, jewelry, and more \u2014 with live video approval and US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Live Video Shopping from India",
+  description: "Live video shopping sessions with vetted India vendors for authentic Indian wedding outfits \u2014 bridal lehengas, sherwanis, sarees, jewelry, and ceremonial items.",
+  url: "/shop-from-india/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Shop from India", url: "/shop-from-india/" },
+]);
 
 export default function ShopFromIndiaPage() {
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* SCHEMA */}

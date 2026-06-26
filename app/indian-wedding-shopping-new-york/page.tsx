@@ -1,34 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Indian Wedding Shopping in New York | Buy Bridal Lehenga from India in NY | CeremonyVerse",
-  description: "Skip the Jackson Heights markup. Get your bridal lehenga and wedding outfits directly from India with live video shopping. Serving brides in Queens, Manhattan, Long Island, and across New York.",
-  openGraph: {
-    title: "Indian Wedding Shopping in New York | CeremonyVerse",
-    description: "Expert Indian wedding outfit shopping concierge for brides in New York.",
-    url: "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
-    siteName: "CeremonyVerse",
-    images: [
-      {
-        url: "https://www.ceremonyverse.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Indian Wedding Shopping in New York | CeremonyVerse",
-    description: "Expert Indian wedding outfit shopping concierge for brides in New York.",
-  },
-  alternates: {
-    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-york",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/indian-wedding-shopping-new-york/",
+  title: "Indian Wedding Shopping from India \u2014 New York NRI Families",
+  description: "New York NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India \u2014 live video shopping, custom stitching, delivered to your NY door."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "New York Indian Wedding Sourcing Service",
+  description: "Indian wedding outfit sourcing for NRI families in New York \u2014 NYC, Long Island, Westchester, Albany, Buffalo \u2014 with US delivery.",
+  url: "/indian-wedding-shopping-new-york/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "New York NRI Families", url: "/indian-wedding-shopping-new-york/" },
+]);
 
 const localSchema = {
   "@context": "https://schema.org",
@@ -53,6 +42,9 @@ export default function NewYorkPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
       />
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <div className="bg-white">
         <div className="relative bg-stone-900 text-white py-24">
           <div className="absolute inset-0 overflow-hidden">

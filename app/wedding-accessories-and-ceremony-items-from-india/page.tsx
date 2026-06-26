@@ -1,20 +1,29 @@
-export const metadata = {
-  title: "Indian Wedding Jewelry, Gifts & Ceremonial Items from India | Delivered to USA | CeremonyVerse",
-  description: "Source Indian wedding jewelry, ceremonial items, welcome bags, return gifts, sweets, and more directly from India. CeremonyVerse delivers everything for your Indian wedding to your US door. Kundan jewelry, puja items, potli bags, mithai and more.",
-  keywords: "Indian wedding jewelry USA, kundan jewelry from India USA, Indian wedding ceremonial items USA, puja items Indian wedding USA, Indian wedding welcome bags, potli bags USA, Indian wedding return gifts, mithai USA, Indian wedding sweets delivered USA, CeremonyVerse accessories",
-  openGraph: {
-    title: "Indian Wedding Jewelry, Gifts & Ceremonial Items from India | Delivered to USA | CeremonyVerse",
-    description: "Source Indian wedding jewelry, ceremonial items, welcome bags, return gifts, sweets, and more directly from India. CeremonyVerse delivers everything for your Indian wedding to your US door. Kundan jewelry, puja items, potli bags, mithai and more.",
-    type: "website",
-  },
-};
-
-
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/wedding-accessories-and-ceremony-items-from-india/",
+  title: "Indian Wedding Accessories & Ceremony Items \u2014 Sourced from India",
+  description: "Source all Indian wedding ceremony items from India \u2014 puja thalis, kalash, mangalsutra, kaleeras, return gifts, sweets, and welcome bags \u2014 with US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Wedding Accessories & Ceremony Item Sourcing",
+  description: "Complete sourcing of Indian wedding accessories and ceremony items \u2014 puja thalis, kalash, mangalsutra, kaleeras, return gifts, sweets, and welcome bags \u2014 delivered to the USA.",
+  url: "/wedding-accessories-and-ceremony-items-from-india/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Accessories & Ceremony Items", url: "/wedding-accessories-and-ceremony-items-from-india/" },
+]);
+
 
 export default function AccessoriesPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       <section className="py-24 text-center px-6">

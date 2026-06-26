@@ -1,22 +1,36 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026 | CeremonyVerse",
-  description: "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
-  keywords: "US tariffs Indian wedding outfits, Indian lehenga import USA, NRI bride lehenga from India 2026, buy lehenga from India USA, Indian wedding tariffs 2026, lehenga customs USA",
-  openGraph: {
-    title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
-    description: "What do the new US tariffs mean for your Indian wedding lehenga? Here's exactly what NRI brides need to know — and how CeremonyVerse handles it.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/us-tariffs-indian-wedding-outfits-2026",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/us-tariffs-indian-wedding-outfits-2026/",
+  title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
+  description: "How the August 2025 de minimis removal and current US tariffs affect Indian wedding outfit shipments \u2014 real duty calculations and legal ways to reduce costs.",
+  keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
+  description: "How the August 2025 de minimis removal and current US tariffs affect Indian wedding outfit shipments \u2014 real duty calculations and legal ways to reduce costs.",
+  url: "/blog/us-tariffs-indian-wedding-outfits-2026/",
+  datePublished: "2026-03-01",
+  keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need t", url: "/blog/us-tariffs-indian-wedding-outfits-2026/" },
+]);
 
 export default function TariffsBlogPost() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

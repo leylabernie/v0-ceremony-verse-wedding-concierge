@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Bridal Lehenga Sourcing from India for NRI Brides in USA | CeremonyVerse",
-  description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality inspection, delivery to your US door. Save 30–50% vs US boutiques. CeremonyVerse — NRI bridal lehenga specialists.",
-  keywords: "bridal lehenga from India USA, NRI bridal lehenga, custom bridal lehenga India, buy bridal lehenga online USA, bridal lehenga delivered USA, Indian bridal lehenga NRI, lehenga choli from India, designer bridal lehenga USA, affordable bridal lehenga from India, bridal lehenga sourcing concierge USA",
-}
+export const metadata = buildMetadata({
+  path: "/services/bridal-lehengas/",
+  title: "Bridal Lehenga Sourcing Service \u2014 Custom Bridal Lehengas from India",
+  description: "Our flagship service \u2014 sourcing custom bridal lehengas from India with live video approval, 15+ measurement fitting, custom stitching, and US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Bridal Lehenga Sourcing Service",
+  description: "Custom bridal lehenga sourcing from India \u2014 zardozi, gota patti, sequin, and mirror work, with live video approval, custom stitching, and US delivery.",
+  url: "/services/bridal-lehengas/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Bridal Lehengas", url: "/services/bridal-lehengas/" },
+]);
 
 export default function BridalLehengaServicePage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#a69260", marginBottom: "16px" }}>Bridal Lehenga Sourcing</p>

@@ -1,9 +1,21 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "How CeremonyVerse Works — Indian Wedding Shopping from India to USA",
-  description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door.",
-}
+export const metadata = buildMetadata({
+  path: "/how-it-works/",
+  title: "How CeremonyVerse Works \u2014 Indian Wedding Shopping from India to USA",
+  description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "CeremonyVerse Sourcing Process",
+  description: "Five-step process for sourcing Indian wedding outfits from India to the USA: free consultation, style discovery, live video shopping in India, custom stitching, quality inspection, and door-to-door US delivery.",
+  url: "/how-it-works/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "How It Works", url: "/how-it-works/" },
+]);
 
 const steps = [
   {
@@ -98,6 +110,9 @@ const faqs = [
 export default function HowItWorksPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh", color: "#2f2f2f" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* Hero */}

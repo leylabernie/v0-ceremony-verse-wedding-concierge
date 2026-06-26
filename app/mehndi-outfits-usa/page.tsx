@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Mehndi & Haldi Ceremony Outfits from India | Delivered to USA | CeremonyVerse",
-  description: "Source authentic Mehndi and Haldi ceremony outfits directly from India. Yellow lehengas, orange salwar sets, bridesmaid coordination, family outfits — custom stitched and delivered to your US door. NRI wedding specialists.",
-  keywords: "mehndi outfit USA, haldi ceremony outfit USA, mehndi lehenga from India, haldi outfit NRI bride, mehndi ceremony dress USA, yellow lehenga USA, mehndi bridesmaid outfits, Indian mehndi outfit delivered USA, haldi outfit from India, mehndi dress for NRI wedding",
-}
+export const metadata = buildMetadata({
+  path: "/mehndi-outfits-usa/",
+  title: "Mehndi Ceremony Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "Vibrant Mehndi ceremony outfits sourced from India \u2014 bright yellows, oranges, and greens with floral embroidery, for brides, bridesmaids, and family. US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Mehndi Ceremony Outfit Sourcing",
+  description: "Vibrant Mehndi ceremony outfits sourced from India \u2014 choli, lehenga, anarkali, and kurta sets in traditional henna colors, with custom stitching and US delivery.",
+  url: "/mehndi-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Mehndi Outfits", url: "/mehndi-outfits-usa/" },
+]);
 
 export default function MehndiOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

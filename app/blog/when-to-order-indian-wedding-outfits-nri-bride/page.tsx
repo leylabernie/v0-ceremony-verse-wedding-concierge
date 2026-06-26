@@ -1,28 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late) | CeremonyVerse",
-  description: "Month-by-month timeline for NRI brides ordering wedding outfits from India — when to start, when to order, when items ship, and buffer time you need.",
-  keywords: [
-    "when to order indian wedding outfits from india",
-    "NRI wedding shopping from India timeline when to order",
-    "order lehenga from india timeline",
-    "indian wedding shopping schedule",
-    "how far in advance order bridal lehenga",
-    "nri bride timeline",
-  ],
-  openGraph: {
-    title: "When Should NRI Brides Order Wedding Outfits from India? Month-by-Month Timeline",
-    description: "Month-by-month timeline for NRI brides ordering wedding outfits from India — when to start, when to order, when items ship, and buffer time you need.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/when-to-order-indian-wedding-outfits-nri-bride",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/when-to-order-indian-wedding-outfits-nri-bride/",
+  title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
+  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock in vendors, and how to build in buffer for customs and alterations.",
+  keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
+  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock in vendors, and how to build in buffer for customs and alterations.",
+  url: "/blog/when-to-order-indian-wedding-outfits-nri-bride/",
+  datePublished: "2026-03-01",
+  keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "When to Order Indian Wedding Outfits from India: NRI Timelin", url: "/blog/when-to-order-indian-wedding-outfits-nri-bride/" },
+]);
 
 export default function TimelineGuidePage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>

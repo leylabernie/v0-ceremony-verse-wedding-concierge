@@ -1,20 +1,29 @@
-export const metadata = {
-  title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
-  description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",
-  keywords: "Indian bridesmaid outfits USA, bridesmaid lehenga from India, family outfits Indian wedding USA, coordinate Indian wedding party USA, saree bridesmaid USA, Indian wedding family coordination, NRI family outfits wedding, CeremonyVerse bridesmaid outfits",
-  openGraph: {
-    title: "Indian Bridesmaid & Family Outfits from India | Coordinated Wedding Outfits USA | CeremonyVerse",
-    description: "Coordinate bridesmaid lehengas, family sarees, and wedding party outfits sourced directly from India. CeremonyVerse manages all measurements, coordination, and delivery to the USA. Perfect for NRI families planning Indian weddings.",
-    type: "website",
-  },
-};
-
-
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/bridesmaid-and-family-outfits-from-india/",
+  title: "Bridesmaid & Family Outfits from India \u2014 Coordinated for US Weddings",
+  description: "Coordinate 2\u201320+ bridesmaid and family outfits from India \u2014 color matching, fabric consistency, individual sizing, and group shipping to your US wedding."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Bridesmaid & Family Outfit Coordination",
+  description: "Coordinated sourcing of bridesmaid and family outfits from India \u2014 color matching, fabric consistency, individual sizing across multiple states, and group shipping.",
+  url: "/bridesmaid-and-family-outfits-from-india/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Bridesmaid & Family Outfits", url: "/bridesmaid-and-family-outfits-from-india/" },
+]);
+
 
 export default function BridesmaidPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* HERO */}

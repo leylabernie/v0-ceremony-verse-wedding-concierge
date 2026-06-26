@@ -1,22 +1,36 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How to Buy a Bridal Lehenga from India When You Live in the USA | CeremonyVerse",
-  description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
-  keywords: "how to buy lehenga from India, buy bridal lehenga from India USA, NRI bride lehenga India, lehenga from India delivered USA",
-  openGraph: {
-    title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
-    description: "Step-by-step guide for NRI brides buying a bridal lehenga from India — live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-to-buy-bridal-lehenga-from-india-usa",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
+  title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
+  description: "Step-by-step guide for NRI brides buying a bridal lehenga from India \u2014 live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
+  keywords: ["how to buy lehenga from India", "buy bridal lehenga from India USA", "NRI bride lehenga India", "lehenga from India delivered USA"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "How to Buy a Bridal Lehenga from India When You Live in the USA",
+  description: "Step-by-step guide for NRI brides buying a bridal lehenga from India \u2014 live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
+  url: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
+  datePublished: "2026-03-01",
+  keywords: ["how to buy lehenga from India", "buy bridal lehenga from India USA", "NRI bride lehenga India", "lehenga from India delivered USA"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "How to Buy a Bridal Lehenga from India When You Live in the ", url: "/blog/how-to-buy-bridal-lehenga-from-india-usa/" },
+]);
 
 export default function LehengaBuyingGuideBlogPost() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

@@ -1,27 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding | CeremonyVerse",
-  description: "How to order bridesmaid lehengas from India: color coordination, sizing for multiple bodies, group order logistics, and delivery to your US door.",
-  keywords: [
-    "how to order bridesmaid lehengas from india",
-    "bridesmaid lehengas india usa",
-    "coordinate bridesmaid outfits indian wedding",
-    "buy bridesmaid lehengas from india",
-    "NRI wedding bridesmaid outfits",
-  ],
-  openGraph: {
-    title: "How to Order Bridesmaid Lehengas from India: Color, Sizing & Delivery Guide",
-    description: "How to source matching bridesmaid lehengas from India — color coordination, sizing for multiple bodies, consistent quality, and group order logistics.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-to-coordinate-bridesmaid-lehengas-india-usa",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/",
+  title: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding",
+  description: "How to coordinate 2\u201314 bridesmaid lehengas from India \u2014 sizing across multiple states, color matching, fabric consistency, and shipping logistics for NRI brides.",
+  keywords: ["matching bridesmaid lehengas from India", "coordinate bridesmaid outfits USA wedding", "bridesmaid lehenga sizing guide", "order multiple lehengas from India"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding",
+  description: "How to coordinate 2\u201314 bridesmaid lehengas from India \u2014 sizing across multiple states, color matching, fabric consistency, and shipping logistics for NRI brides.",
+  url: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/",
+  datePublished: "2026-03-01",
+  keywords: ["matching bridesmaid lehengas from India", "coordinate bridesmaid outfits USA wedding", "bridesmaid lehenga sizing guide", "order multiple lehengas from India"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "How to Order Matching Bridesmaid Lehengas from India for a U", url: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" },
+]);
 
 export default function BridesmaidGuidePage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>

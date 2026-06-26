@@ -1,22 +1,36 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "The NRI Wedding Planning Timeline: When to Order Everything from India | CeremonyVerse",
-  description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
-  keywords: "NRI wedding planning timeline, when to order Indian wedding outfit USA, Indian wedding outfit timeline, NRI bride checklist, how early to order lehenga from India",
-  openGraph: {
-    title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
-    description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/nri-wedding-planning-timeline",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/nri-wedding-planning-timeline/",
+  title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
+  description: "A 12-month NRI wedding planning timeline \u2014 when to start sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India for a stress-free US wedding.",
+  keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "The NRI Wedding Planning Timeline: When to Order Everything from India",
+  description: "A 12-month NRI wedding planning timeline \u2014 when to start sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India for a stress-free US wedding.",
+  url: "/blog/nri-wedding-planning-timeline/",
+  datePublished: "2026-03-01",
+  keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "The NRI Wedding Planning Timeline: When to Order Everything ", url: "/blog/nri-wedding-planning-timeline/" },
+]);
 
 export default function NriWeddingPlanningTimeline() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

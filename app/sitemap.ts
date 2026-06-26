@@ -1,40 +1,339 @@
 import { MetadataRoute } from 'next'
 
+const baseUrl = 'https://www.ceremonyverse.com'
+
+// All known hero/testimonial images used on the site
+const siteImages = [
+  '/images/hero-lehenga.webp',
+  '/images/hero-lehenga.jpg',
+  '/images/live-video-shopping-india.jpg',
+  '/images/services-hero.png',
+  '/images/testimonial-karan-sonal.jpg',
+  '/images/testimonial-charlie-viola.jpg',
+  '/images/testimonial-dhan-christina.jpg',
+  '/images/testimonial-shincy.jpg',
+  '/images/testimonial-swati.jpg',
+  '/images/testimonial-druma-parin.jpg',
+]
+
+interface SitemapEntry {
+  url: string
+  lastModified?: Date | string
+  changeFrequency?: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
+  priority?: number
+  images?: string[]
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.ceremonyverse.com'
+  const now = new Date()
 
   // Pages sorted by priority — highest value pages first
-  const pages: MetadataRoute.Sitemap = [
+  const pages: SitemapEntry[] = [
     // ─── HIGHEST PRIORITY: Commercial pages ───
-    { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
-    { url: `${baseUrl}/services/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/how-it-works/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/contact/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/free-guides/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    {
+      url: baseUrl,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 1,
+      images: siteImages.slice(0, 4),
+    },
+    {
+      url: `${baseUrl}/services/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+      images: ['/images/services-hero.png'],
+    },
+    {
+      url: `${baseUrl}/pricing/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/about/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/how-it-works/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/free-guides/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
 
     // ─── HIGH PRIORITY: Blog listing ───
-    { url: `${baseUrl}/blog/`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.8 },
+    {
+      url: `${baseUrl}/blog/`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+
+    // ─── HIGH PRIORITY: Commercial landing pages (keyword-targeted) ───
+    {
+      url: `${baseUrl}/buy-bridal-lehenga-from-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+      images: ['/images/hero-lehenga.webp'],
+    },
+    {
+      url: `${baseUrl}/buy-sherwani-from-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/buy-indian-wedding-outfits-from-india/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/shop-from-india/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/kanchipuram-silk-sarees-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/avoid-indian-wedding-shopping-scams/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+
+    // ─── MEDIUM-HIGH: Service sub-pages ───
+    {
+      url: `${baseUrl}/services/bridal-lehengas/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/services/intercultural-indian-weddings/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/bridesmaid-and-family-outfits-from-india/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/wedding-accessories-and-ceremony-items-from-india/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/indian-destination-wedding-planner-mexico/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
+    // ─── MEDIUM: Ceremony-specific pages ───
+    {
+      url: `${baseUrl}/mehndi-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/sangeet-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/baraat-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/south-indian-christian-wedding-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/gujarati-wedding-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-guest-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+
+    // ─── MEDIUM: State pages ───
+    {
+      url: `${baseUrl}/indian-wedding-shopping-texas/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-shopping-california/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-shopping-new-york/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-shopping-new-jersey/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
-    { url: `${baseUrl}/blog/indian-wedding-outfit-scams-nri-brides/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/indian-wedding-outfit-checklist-every-ceremony/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/how-much-does-bridal-lehenga-cost-india-2026/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/how-to-buy-sherwani-from-india-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/shipping-indian-wedding-outfits-usa-customs-duties/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/when-to-order-indian-wedding-outfits-nri-bride/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/blog/nri-bride-lehenga-sourcing-new-jersey-story/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },
+    {
+      url: `${baseUrl}/blog/indian-wedding-outfit-scams-nri-brides/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/indian-wedding-outfit-checklist-every-ceremony/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/how-much-does-bridal-lehenga-cost-india-2026/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-buy-sherwani-from-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/shipping-indian-wedding-outfits-usa-customs-duties/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/when-to-order-indian-wedding-outfits-nri-bride/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/nri-bride-lehenga-sourcing-new-jersey-story/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/nri-bridal-lehenga-sizing-guide/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
 
     // ─── MEDIUM: Supporting blog posts ───
-    { url: `${baseUrl}/blog/south-indian-christian-wedding-outfit-guide/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/blog/nri-wedding-planning-timeline/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/blog/how-to-buy-bridal-lehenga-from-india-usa/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/blog/gujarati-wedding-outfit-guide/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/blog/us-tariffs-indian-wedding-outfits-2026/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.6 },
+    {
+      url: `${baseUrl}/blog/south-indian-christian-wedding-outfit-guide/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/nri-wedding-planning-timeline/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/how-to-buy-bridal-lehenga-from-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/gujarati-wedding-outfit-guide/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/us-tariffs-indian-wedding-outfits-2026/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
 
     // ─── LOWER: Utility pages ───
-    { url: `${baseUrl}/faq/`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    {
+      url: `${baseUrl}/faq/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/partner-with-us/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.4,
+    },
   ]
 
-  return pages
+  // Convert to Next.js sitemap format with image extension
+  return pages.map((p) => ({
+    url: p.url,
+    lastModified: p.lastModified,
+    changeFrequency: p.changeFrequency,
+    priority: p.priority,
+    // Next.js MetadataRoute.Sitemap supports images via the `images` field
+    ...(p.images && p.images.length
+      ? {
+          images: p.images.map((img) => ({
+            url: img.startsWith('http') ? img : `${baseUrl}${img}`,
+          })),
+        }
+      : {}),
+  })) as MetadataRoute.Sitemap
 }

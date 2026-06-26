@@ -1,15 +1,30 @@
-// import { SeoNav } from "@/components/seo-nav"
 import Link from "next/link"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "How to Avoid Scams When Buying Indian Wedding Outfits from India | CeremonyVerse",
-  description: "Protect yourself from scams when shopping for Indian wedding outfits from abroad. Our expert guide covers vetting vendors, secure payments, and quality control.",
-  keywords: "avoid Indian wedding shopping scams, buy lehenga from India safely, NRI wedding shopping guide, CeremonyVerse scam prevention",
-}
+// import { SeoNav } from "@/components/seo-nav"
+
+export const metadata = buildMetadata({
+  path: "/avoid-indian-wedding-shopping-scams/",
+  title: "Avoid Indian Wedding Shopping Scams \u2014 NRI Buyer Protection Guide",
+  description: "How to avoid getting scammed when buying Indian wedding outfits from India \u2014 fake vendors, stolen images, bait-and-switch tactics, and how CeremonyVerse verifies every partner."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "NRI Wedding Shopping Scam Prevention",
+  description: "How CeremonyVerse prevents the most common Indian wedding shopping scams \u2014 vendor verification, live video approval, milestone payments, and order documentation.",
+  url: "/avoid-indian-wedding-shopping-scams/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Avoid Scams", url: "/avoid-indian-wedding-shopping-scams/" },
+]);
 
 export default function AvoidScamsPage() {
   return (
     <div className="bg-[var(--cv-bg)] min-h-screen">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       {/* <SeoNav /> */}
 
       <article className="max-w-4xl mx-auto py-20 px-6">

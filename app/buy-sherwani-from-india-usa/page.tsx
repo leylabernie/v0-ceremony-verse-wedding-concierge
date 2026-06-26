@@ -1,20 +1,29 @@
-export const metadata = {
-  title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
-  description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",
-  keywords: "buy sherwani from India USA, custom sherwani NRI groom, sherwani delivered to USA, Indian groom outfit USA, sherwani online USA, bandhgala from India, kurta set wedding USA, NRI groom sherwani, Indian groom attire USA, CeremonyVerse sherwani",
-  openGraph: {
-    title: "Buy Sherwani from India | Custom Indian Groom Outfit Delivered to USA | CeremonyVerse",
-    description: "Source your perfect sherwani directly from India with CeremonyVerse. Live video shopping, custom stitching to your measurements, quality inspection, and delivery to your US address. Full-length sherwanis, bandhgalas, and kurta sets for Indian weddings in the USA.",
-    type: "website",
-  },
-};
-
-
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/buy-sherwani-from-india-usa/",
+  title: "Buy Sherwani from India \u2014 Groom Sherwani Delivered to USA",
+  description: "Source a custom groom sherwani directly from India \u2014 fabric options, fit guidance, live video shopping, and delivery to your US door. Coordinated groomsmen outfits available."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Groom Sherwani Sourcing & Concierge",
+  description: "Custom groom sherwani sourcing directly from India \u2014 fabric selection, fit guidance, live video shopping, coordinated groomsmen outfits, and US delivery.",
+  url: "/buy-sherwani-from-india-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Buy Sherwani from India", url: "/buy-sherwani-from-india-usa/" },
+]);
+
 
 export default function SherwaniPage() {
   return (
     <div className="bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* HERO */}

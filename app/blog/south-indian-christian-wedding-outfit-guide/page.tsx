@@ -1,22 +1,36 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears | CeremonyVerse",
-  description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
-  keywords: "south indian christian wedding outfits, kerala christian wedding dress, tamil christian wedding outfit, south indian christian bride, NRI south indian christian wedding",
-  openGraph: {
-    title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
-    description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/south-indian-christian-wedding-outfit-guide",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/south-indian-christian-wedding-outfit-guide/",
+  title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
+  description: "Outfit-by-outfit guide for South Indian Christian weddings \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions, fabrics, colors, and sourcing from India.",
+  keywords: ["south indian christian wedding outfits", "kerala christian wedding dress", "tamil christian wedding attire", "south indian christian bride lehenga"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
+  description: "Outfit-by-outfit guide for South Indian Christian weddings \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions, fabrics, colors, and sourcing from India.",
+  url: "/blog/south-indian-christian-wedding-outfit-guide/",
+  datePublished: "2026-03-01",
+  keywords: ["south indian christian wedding outfits", "kerala christian wedding dress", "tamil christian wedding attire", "south indian christian bride lehenga"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "South Indian Christian Wedding Outfit Guide: What Every Fami", url: "/blog/south-indian-christian-wedding-outfit-guide/" },
+]);
 
 export default function SouthIndianChristianWeddingGuide() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

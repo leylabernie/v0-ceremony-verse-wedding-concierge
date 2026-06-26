@@ -1,15 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "NRI Bride Story: Sourcing a Bridal Lehenga from India to New Jersey | CeremonyVerse",
-  description: "Real story of an NRI bride in New Jersey who sourced her bridal lehenga from India — the process, the challenges, the cost, and how it turned out better than any US boutique option.",
-  keywords: "NRI bride lehenga story, buy lehenga from india to usa, indian bride new jersey lehenga, real wedding lehenga sourcing story",
-};
+export const metadata = buildMetadata({
+  path: "/blog/nri-bride-lehenga-sourcing-new-jersey-story/",
+  title: "NRI Bride Story: Sourcing a Bridal Lehenga from India to New Jersey",
+  description: "A real NRI bride's experience sourcing her bridal lehenga from India to New Jersey \u2014 what worked, what almost went wrong, and how she saved 40% vs. US boutiques.",
+  keywords: ["NRI bride New Jersey lehenga", "bridal lehenga sourcing story", "Indian wedding shopping NJ", "real bride story lehenga from India"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "NRI Bride Story: Sourcing a Bridal Lehenga from India to New Jersey",
+  description: "A real NRI bride's experience sourcing her bridal lehenga from India to New Jersey \u2014 what worked, what almost went wrong, and how she saved 40% vs. US boutiques.",
+  url: "/blog/nri-bride-lehenga-sourcing-new-jersey-story/",
+  datePublished: "2026-03-01",
+  keywords: ["NRI bride New Jersey lehenga", "bridal lehenga sourcing story", "Indian wedding shopping NJ", "real bride story lehenga from India"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "NRI Bride Story: Sourcing a Bridal Lehenga from India to New", url: "/blog/nri-bride-lehenga-sourcing-new-jersey-story/" },
+]);
 
 export default function BrideStoryPage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · Client Story · June 2026</p>

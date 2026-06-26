@@ -1,10 +1,21 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Kanchipuram Silk Sarees for US Families | Pure Silk Sourced from India | CeremonyVerse",
-  description: "Authentic Kanchipuram pure silk sarees sourced directly from Kanchipuram, India for US-based families. CeremonyVerse travels to Kanchipuram to select the finest silk sarees for your wedding. Delivered to your US door.",
-  keywords: "Kanchipuram silk sarees USA, buy Kanchipuram saree online USA, pure silk saree from India delivered USA, NRI Kanchipuram saree, South Indian wedding saree USA, Kanchi pattu saree USA, authentic Kanchipuram silk NRI, Kanchipuram saree delivered USA, CeremonyVerse Kanchipuram",
-}
+export const metadata = buildMetadata({
+  path: "/kanchipuram-silk-sarees-usa/",
+  title: "Buy Kanchipuram Silk Sarees from India \u2014 Delivered to USA",
+  description: "Authentic pure Kanchipuram (Kanjivaram) silk sarees sourced directly from weavers in Tamil Nadu, with hallmark certification, live video approval, and US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Kanchipuram Silk Saree Sourcing",
+  description: "Authentic pure Kanchipuram silk sarees sourced directly from Tamil Nadu weavers \u2014 hallmark certification, live video approval, custom blouse stitching, and US delivery.",
+  url: "/kanchipuram-silk-sarees-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Kanchipuram Silk Sarees", url: "/kanchipuram-silk-sarees-usa/" },
+]);
 
 export default function KanchipuramSareesPage() {
   const sarees = [
@@ -20,6 +31,9 @@ export default function KanchipuramSareesPage() {
 
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* HERO */}

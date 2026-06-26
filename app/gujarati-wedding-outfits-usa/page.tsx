@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Gujarati Wedding Outfits from India | NRI Families USA | CeremonyVerse",
-  description: "Planning a Gujarati wedding in the USA? CeremonyVerse sources authentic chaniya cholis, bridal lehengas, sherwanis, and family outfits from India — live video shopping, delivered to your US door.",
-  keywords: "gujarati wedding outfits usa, chaniya choli from india usa, gujarati lehenga usa, NRI gujarati wedding, gujarati bridal lehenga",
-}
+export const metadata = buildMetadata({
+  path: "/gujarati-wedding-outfits-usa/",
+  title: "Gujarati Wedding Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "Gujarati wedding outfits for Garba, Mehndi, Pithi, Mameru, wedding ceremony, and reception \u2014 chaniya choli, lehenga, sherwani, and sarees with US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Gujarati Wedding Outfit Sourcing",
+  description: "Gujarati wedding outfits sourced from India \u2014 chaniya choli for Garba, traditional Mameru outfits, ceremony lehengas and sherwanis, with US delivery.",
+  url: "/gujarati-wedding-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Gujarati Wedding Outfits", url: "/gujarati-wedding-outfits-usa/" },
+]);
 
 export default function GujaratiWeddingOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* Hero */}

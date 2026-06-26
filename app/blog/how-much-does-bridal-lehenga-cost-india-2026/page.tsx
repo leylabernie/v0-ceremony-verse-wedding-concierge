@@ -1,29 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices | CeremonyVerse",
+export const metadata = buildMetadata({
+  path: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
+  title: "Bridal Lehenga Cost in India (Including Shipping to USA) \u2014 2026 Prices",
   description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
-  keywords: [
-    "how much does a bridal lehenga cost in india including shipping to usa",
-    "bridal lehenga cost india 2026",
-    "nri bride lehenga budget",
-    "lehenga price with customs usa",
-    "how much does a bridal lehenga cost",
-    "lehenga price india",
-    "buy bridal lehenga from india usa",
-  ],
-  openGraph: {
-    title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices",
-    description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-much-does-bridal-lehenga-cost-india-2026",
-  },
-};
+  keywords: ["how much does a bridal lehenga cost in india including shipping to usa", "bridal lehenga cost india 2026", "nri bride lehenga budget", "lehenga price with customs usa"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "Bridal Lehenga Cost in India (Including Shipping to USA) \u2014 2026 Prices",
+  description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
+  url: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
+  datePublished: "2026-03-01",
+  keywords: ["how much does a bridal lehenga cost in india including shipping to usa", "bridal lehenga cost india 2026", "nri bride lehenga budget", "lehenga price with customs usa"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "Bridal Lehenga Cost in India (Including Shipping to USA) \u2014 2", url: "/blog/how-much-does-bridal-lehenga-cost-india-2026/" },
+]);
 
 export default function BridalLehengaCostGuide() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
@@ -49,6 +55,27 @@ export default function BridalLehengaCostGuide() {
           <p style={{ marginTop: "1.2rem" }}>
             At CeremonyVerse, we have helped dozens of NRI brides source lehengas from India. We have seen prices range from ₹45,000 (about $530 USD) for a simple, well-made piece to well over ₹5,00,000 (about $5,900 USD) for heavily embroidered, designer-label lehengas with custom detailing. In this guide, we break down exactly what drives those prices — so you can plan your budget realistically and avoid the two most common mistakes NRI brides make: overspending on a lehenga that looks different in person, or underspending and ending up with something that does not match the quality you expected.
           </p>
+
+          {/* TL;DR + Key Takeaways — optimized for AI Overviews / Perplexity / ChatGPT Search */}
+          <div style={{ background: "#fff8ec", border: "1px solid #e6d8b8", borderRadius: "12px", padding: "1.5rem 1.75rem", marginTop: "2rem", marginBottom: "2rem" }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.3rem", fontWeight: 600, color: "#2f2f2f", marginBottom: "0.75rem", marginTop: 0 }}>
+              TL;DR — What a bridal lehenga from India costs delivered to the USA in 2026
+            </p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#2f2f2f", marginBottom: "1rem" }}>
+              A custom bridal lehenga sourced from India and delivered to your US door costs <strong>$800–$3,500 total</strong> — including the outfit ($530–$2,940), live video shopping, custom stitching, international shipping ($80–$200), and US customs duties (12–27% of declared value, $100–$600). The same lehenga at a US Indian boutique runs <strong>$2,500–$8,000</strong>. Most NRI brides save <strong>30–50%</strong> sourcing from India — but only if they budget correctly for every cost, including the ones most blogs forget.
+            </p>
+            <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#a69260", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
+            <ul style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#2f2f2f", paddingLeft: "1.25rem", margin: 0 }}>
+              <li><strong>Budget tier:</strong> ₹45,000–₹80,000 ($530–$940) for machine embroidery on silk-blend fabric.</li>
+              <li><strong>Mid-range:</strong> ₹1,00,000–₹2,50,000 ($1,180–$2,940) for hand embroidery on pure silk — most NRI brides land here.</li>
+              <li><strong>High-end:</strong> ₹3,00,000–₹5,00,000+ ($3,530–$5,900+) for zardozi/dabka heavy work or designer-label recreation.</li>
+              <li><strong>US customs duties:</strong> 12–27% of declared value as of August 2025 — de minimis exemption has been eliminated for shipped goods.</li>
+              <li><strong>International shipping:</strong> $80–$200 via DHL or FedEx, fully insured. Plan 2–3 weeks for delivery.</li>
+              <li><strong>Total cost comparison:</strong> $1,000–$4,800 India-direct vs. $2,500–$8,000+ at US boutiques for the same lehenga.</li>
+              <li><strong>Hidden costs most brides forget:</strong> local alterations ($75–$200), insurance, and rush fees if you start late.</li>
+            </ul>
+          </div>
+
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             What NRI Brides Actually Pay: Total Cost Breakdown (Lehenga + Customs + Shipping)

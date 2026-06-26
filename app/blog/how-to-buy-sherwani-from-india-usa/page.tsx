@@ -1,28 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How to Buy a Sherwani from India for a US Wedding: Complete Guide with Prices & Sizing | CeremonyVerse",
-  description: "Complete guide for NRI grooms buying a sherwani from India — what to budget, how to get the right fit, avoid scams, and handle customs & shipping to the USA.",
-  keywords: [
-    "how to buy sherwani from india usa",
-    "sherwani price india 2026",
-    "NRI groom sherwani",
-    "sherwani sizing guide",
-    "buy sherwani online india",
-    "sherwani shipping usa",
-  ],
-  openGraph: {
-    title: "How to Buy a Sherwani from India for a US Wedding: Prices, Sizing & Shipping",
-    description: "Complete guide for NRI grooms — sherwani prices from India, sizing secrets, scam warnings, and shipping to USA.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/how-to-buy-sherwani-from-india-usa",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/how-to-buy-sherwani-from-india-usa/",
+  title: "How to Buy a Sherwani from India for a US Wedding (Complete Guide with Prices)",
+  description: "Complete guide for grooms and groomsmen buying a sherwani from India to the USA \u2014 fabric, fit, customs, shipping, and how to coordinate the full wedding party.",
+  keywords: ["how to buy a sherwani from India USA", "sherwani price India 2026", "buy sherwani online USA", "groom sherwani customs duties"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "How to Buy a Sherwani from India for a US Wedding (Complete Guide with Prices)",
+  description: "Complete guide for grooms and groomsmen buying a sherwani from India to the USA \u2014 fabric, fit, customs, shipping, and how to coordinate the full wedding party.",
+  url: "/blog/how-to-buy-sherwani-from-india-usa/",
+  datePublished: "2026-03-01",
+  keywords: ["how to buy a sherwani from India USA", "sherwani price India 2026", "buy sherwani online USA", "groom sherwani customs duties"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "How to Buy a Sherwani from India for a US Wedding (Complete ", url: "/blog/how-to-buy-sherwani-from-india-usa/" },
+]);
 
 export default function SherwaniGuidePage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>

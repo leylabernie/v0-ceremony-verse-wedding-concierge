@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Intercultural Indian Wedding Outfits & Guide USA | CeremonyVerse",
-  description: "Planning an intercultural Indian wedding? CeremonyVerse guides non-South Asian partners through every outfit, every ceremony, and every cultural detail. Sherwani sourcing, bridesmaid coordination, full family outfits. US-based Indian wedding concierge.",
-  keywords: "intercultural Indian wedding outfits USA, non-Indian partner Indian wedding, Indian wedding outfit for non-South Asian groom, mixed culture Indian wedding USA, sherwani for non-Indian groom, Indian wedding guide non-Indian partner, intercultural wedding concierge USA, Indian American wedding USA",
-}
+export const metadata = buildMetadata({
+  path: "/services/intercultural-indian-weddings/",
+  title: "Intercultural Indian Wedding Outfit Sourcing \u2014 For Mixed-Culture Couples",
+  description: "Outfit sourcing for intercultural Indian weddings \u2014 we explain ceremonies, dress codes, and cultural context for non-South Asian partners and coordinate both families."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Intercultural Indian Wedding Sourcing",
+  description: "Outfit sourcing for intercultural Indian weddings \u2014 cultural context explained clearly, both families coordinated, dress codes translated for non-South Asian partners.",
+  url: "/services/intercultural-indian-weddings/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Intercultural Indian Weddings", url: "/services/intercultural-indian-weddings/" },
+]);
 
 export default function InterculturalWeddingPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#a69260", marginBottom: "16px" }}>Intercultural Indian Weddings</p>

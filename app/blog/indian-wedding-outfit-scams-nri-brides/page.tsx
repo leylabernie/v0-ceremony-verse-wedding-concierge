@@ -1,29 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides | CeremonyVerse",
-  description: "How to buy a lehenga from India safely: 10 scams NRI brides must avoid. Real stories, warning signs, and the exact verification process to protect your money and your wedding.",
-  keywords: [
-    "how to buy lehenga from india online without getting scammed",
-    "indian wedding outfit scams",
-    "buy lehenga from india scam",
-    "NRI bride scam",
-    "indian wedding shopping fraud",
-    "how to avoid lehenga scam",
-    "verify indian lehenga seller",
-  ],
-  openGraph: {
-    title: "How to Buy a Lehenga from India Safely: 10 Scams NRI Brides Must Avoid",
-    description: "How to buy a lehenga from India safely: 10 scams NRI brides must avoid. Real stories, warning signs, and the exact verification process.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/indian-wedding-outfit-scams-nri-brides",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/indian-wedding-outfit-scams-nri-brides/",
+  title: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
+  description: "10 specific scam patterns NRI brides face when buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
+  keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
+  description: "10 specific scam patterns NRI brides face when buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
+  url: "/blog/indian-wedding-outfit-scams-nri-brides/",
+  datePublished: "2026-03-01",
+  keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "How to Buy Lehengas from India Without Getting Scammed: 10 R", url: "/blog/indian-wedding-outfit-scams-nri-brides/" },
+]);
 
 export default function ScamsGuidePage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>

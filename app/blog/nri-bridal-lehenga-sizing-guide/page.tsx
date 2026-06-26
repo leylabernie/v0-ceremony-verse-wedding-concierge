@@ -1,14 +1,35 @@
 import { SeoNav } from "@/components/seo-nav"
-import { Metadata } from "next"
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo"
 
-export const metadata: Metadata = {
-  title: "NRI Bridal Lehenga Sizing Guide | How to Measure for India Sourcing",
-  description: "Avoid sizing disasters when buying your lehenga from India. Our step-by-step guide for NRI brides covers measurements, ease, and alterations for the perfect fit.",
-}
+export const metadata = buildMetadata({
+  path: "/blog/nri-bridal-lehenga-sizing-guide/",
+  title: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at Home",
+  description: "How to take 15+ precise bridal lehenga measurements at home for custom stitching in India \u2014 blouse, skirt, dupatta, and ease allowances for NRI brides.",
+  keywords: ["bridal lehenga sizing guide", "how to take lehenga measurements at home", "NRI bride measurements", "lehenga blouse measurement guide"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at Home",
+  description: "How to take 15+ precise bridal lehenga measurements at home for custom stitching in India \u2014 blouse, skirt, dupatta, and ease allowances for NRI brides.",
+  url: "/blog/nri-bridal-lehenga-sizing-guide/",
+  datePublished: "2026-03-01",
+  keywords: ["bridal lehenga sizing guide", "how to take lehenga measurements at home", "NRI bride measurements", "lehenga blouse measurement guide"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at", url: "/blog/nri-bridal-lehenga-sizing-guide/" },
+]);
 
 export default function SizingGuidePage() {
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">

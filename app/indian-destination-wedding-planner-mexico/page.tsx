@@ -1,14 +1,29 @@
 import { SeoNav } from "@/components/seo-nav"
 import { Metadata } from "next"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Indian Destination Wedding Planner Mexico | Affordable Luxury for NRI Families",
-  description: "Expert guidance for Indian weddings in Mexico (Cancun, Riviera Maya, Cabo). Master your logistics, decor, and DJs, then source your group wardrobe from India with our concierge.",
-}
+export const metadata = buildMetadata({
+  path: "/indian-destination-wedding-planner-mexico/",
+  title: "Indian Destination Wedding Planner Mexico \u2014 Outfit Sourcing & Coordination",
+  description: "Indian destination wedding outfit coordination for Mexico weddings \u2014 bride, groom, full bridal party, family, ceremonial items, and gifts, all coordinated and shipped."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Mexico Destination Indian Wedding Sourcing",
+  description: "Indian destination wedding outfit sourcing for Mexico weddings \u2014 full bridal party coordination, family outfits, ceremonial items, and international shipping logistics.",
+  url: "/indian-destination-wedding-planner-mexico/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Mexico Destination Weddings", url: "/indian-destination-wedding-planner-mexico/" },
+]);
 
 export default function MexicoDestinationPage() {
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* HERO SECTION */}

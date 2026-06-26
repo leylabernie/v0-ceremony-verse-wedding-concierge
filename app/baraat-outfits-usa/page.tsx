@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "Baraat Outfits from India | Groom Sherwani & Groomsmen Kurta Sets | CeremonyVerse",
-  description: "Source authentic Baraat outfits from India — full-length groom sherwanis, coordinated groomsmen kurta sets, family attire. Custom stitched to measurements, delivered to USA. CeremonyVerse — NRI wedding specialists.",
-  keywords: "baraat outfit USA, baraat sherwani from India, groom baraat sherwani USA, groomsmen kurta baraat USA, baraat outfit NRI groom, Indian groom baraat outfit, sherwani for baraat delivered USA, baraat groomsmen matching sets, baraat family outfits USA, Indian baraat ceremony outfit USA",
-}
+export const metadata = buildMetadata({
+  path: "/baraat-outfits-usa/",
+  title: "Baraat Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "Baraat outfits for the groom, groomsmen, and family \u2014 sherwanis, safas (turbans), and coordinated accessories sourced from India with US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Baraat Outfit Sourcing",
+  description: "Baraat outfits for the groom, groomsmen, and family \u2014 sherwanis, safas, sehra, and coordinated accessories sourced from India with US delivery.",
+  url: "/baraat-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Baraat Outfits", url: "/baraat-outfits-usa/" },
+]);
 
 export default function BaraatOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>

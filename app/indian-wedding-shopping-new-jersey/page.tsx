@@ -1,34 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Indian Wedding Shopping in New Jersey | Buy Bridal Lehenga from India in NJ | CeremonyVerse",
-  description: "Skip the Edison markup. Get your bridal lehenga and wedding outfits directly from India with live video shopping. Serving brides in Edison, Jersey City, Princeton, and across New Jersey.",
-  openGraph: {
-    title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
-    description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey.",
-    url: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
-    siteName: "CeremonyVerse",
-    images: [
-      {
-        url: "https://www.ceremonyverse.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Indian Wedding Shopping in New Jersey | CeremonyVerse",
-    description: "Expert Indian wedding outfit shopping concierge for brides in New Jersey.",
-  },
-  alternates: {
-    canonical: "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/indian-wedding-shopping-new-jersey/",
+  title: "Indian Wedding Shopping from India \u2014 New Jersey NRI Families",
+  description: "New Jersey NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India \u2014 live video shopping, custom stitching, delivered to your NJ door."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "New Jersey Indian Wedding Sourcing Service",
+  description: "Indian wedding outfit sourcing for NRI families in New Jersey \u2014 Edison, Jersey City, Princeton, Iselin, Parsippany \u2014 with US delivery.",
+  url: "/indian-wedding-shopping-new-jersey/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "New Jersey NRI Families", url: "/indian-wedding-shopping-new-jersey/" },
+]);
 
 const localSchema = {
   "@context": "https://schema.org",
@@ -60,6 +49,9 @@ export default function NewJerseyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
       />
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <div className="bg-white">
         {/* Hero Section */}
         <div className="relative bg-stone-900 text-white py-24">

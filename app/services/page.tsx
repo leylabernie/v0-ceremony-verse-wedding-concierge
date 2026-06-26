@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 interface ServiceCardProps {
   href?: string
@@ -34,6 +35,9 @@ function ServiceCard({ href, image, imageAlt, badge, title, description }: Servi
   if (href) {
     return (
       <Link href={href} className={className}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
         {content}
       </Link>
     )
@@ -42,10 +46,21 @@ function ServiceCard({ href, image, imageAlt, badge, title, description }: Servi
   return <div className={className}>{content}</div>
 }
 
-export const metadata = {
-  title: 'Our Services | CeremonyVerse',
-  description: 'Complete wedding sourcing from India — bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, gifts, and ceremonial items. All handled for you with quality checks and reliable delivery.',
-}
+export const metadata = buildMetadata({
+  path: "/services/",
+  title: "Indian Wedding Sourcing Services \u2014 Lehengas, Sherwanis, Jewelry & More",
+  description: "Complete Indian wedding sourcing services from India \u2014 bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, gifts, and ceremonial items. All handled with quality checks and reliable US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Indian Wedding Sourcing Services",
+  description: "Complete Indian wedding sourcing from India \u2014 bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, gifts, ceremonial items, and welcome bags, with live video shopping, quality checks, and delivery to all 50 US states.",
+  url: "/services/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Services", url: "/services/" },
+]);
 
 export default function ServicesPage() {
   return (

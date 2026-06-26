@@ -1,22 +1,36 @@
 import { SeoNav } from "@/components/seo-nav";
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony | CeremonyVerse",
-  description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
-  keywords: "gujarati wedding outfits, gujarati wedding outfit guide, gujarati bride outfit, garba night outfit, chaniya choli USA",
-  openGraph: {
-    title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
-    description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/gujarati-wedding-outfit-guide",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/gujarati-wedding-outfit-guide/",
+  title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
+  description: "Complete Gujarati wedding outfit guide \u2014 Garba/chaniya choli, Mehndi, Pithi, Mameru, wedding ceremony, and reception. What each family member wears for each function.",
+  keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
+  description: "Complete Gujarati wedding outfit guide \u2014 Garba/chaniya choli, Mehndi, Pithi, Mameru, wedding ceremony, and reception. What each family member wears for each function.",
+  url: "/blog/gujarati-wedding-outfit-guide/",
+  datePublished: "2026-03-01",
+  keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremo", url: "/blog/gujarati-wedding-outfit-guide/" },
+]);
 
 export default function GujaratiWeddingOutfitGuideBlogPost() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <SeoNav />
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>

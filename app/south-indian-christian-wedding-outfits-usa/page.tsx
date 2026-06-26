@@ -1,14 +1,28 @@
 import { SeoNav } from "@/components/seo-nav"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
-export const metadata = {
-  title: "South Indian Christian Wedding Outfits from India | NRI USA | CeremonyVerse",
-  description: "Planning a South Indian Christian wedding in the USA? CeremonyVerse sources Kerala Christian sarees, Kanchipuram silk, bridesmaids outfits, and bridal wear from India — delivered to your US door.",
-  keywords: "south indian christian wedding outfits usa, kerala christian wedding saree usa, NRI south indian christian wedding, kanchipuram silk usa, south indian bridal saree usa",
-}
+export const metadata = buildMetadata({
+  path: "/south-indian-christian-wedding-outfits-usa/",
+  title: "South Indian Christian Wedding Outfits \u2014 Sourced from India, Delivered to USA",
+  description: "South Indian Christian wedding outfits \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions. Sarees, suits, and family outfits with US delivery."
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "South Indian Christian Wedding Outfit Sourcing",
+  description: "South Indian Christian wedding outfits sourced from India \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions including Kanjivaram silk and kasavu sets.",
+  url: "/south-indian-christian-wedding-outfits-usa/",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "South Indian Christian Outfits", url: "/south-indian-christian-wedding-outfits-usa/" },
+]);
 
 export default function SouthIndianChristianWeddingOutfitsPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+    
       <SeoNav />
 
       {/* Hero */}

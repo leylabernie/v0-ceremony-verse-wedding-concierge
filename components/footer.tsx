@@ -233,6 +233,9 @@ export function Footer({ onNavigate }: FooterProps) {
           <p className="text-xs text-[#5e4a40] mb-3 font-medium uppercase tracking-widest">Ceremony Guides</p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             {[
+              { label: "About CeremonyVerse", href: "/about" },
+              { label: "Pricing", href: "/pricing" },
+              { label: "How It Works", href: "/how-it-works" },
               { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa" },
               { label: "Sangeet Night Outfits", href: "/sangeet-outfits-usa" },
               { label: "Baraat Outfits", href: "/baraat-outfits-usa" },
@@ -241,6 +244,8 @@ export function Footer({ onNavigate }: FooterProps) {
               { label: "Shop from India", href: "/shop-from-india" },
               { label: "Buy Bridal Lehenga USA", href: "/buy-bridal-lehenga-from-india-usa" },
               { label: "Buy Sherwani USA", href: "/buy-sherwani-from-india-usa" },
+              { label: "Kanchipuram Silk Sarees", href: "/kanchipuram-silk-sarees-usa" },
+              { label: "Avoid Wedding Shopping Scams", href: "/avoid-indian-wedding-shopping-scams" },
             ].map((link) => (
               <a key={link.label} href={link.href} className="text-xs text-[#5e4a40] hover:text-[#a69260] transition">
                 {link.label}

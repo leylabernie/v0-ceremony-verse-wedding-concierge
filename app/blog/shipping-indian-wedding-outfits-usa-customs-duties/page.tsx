@@ -1,28 +1,35 @@
-import type { Metadata } from "next";
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Shipping Wedding Outfits from India to USA: Customs, Duties & Delivery Timeline | CeremonyVerse",
-  description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA — customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
-  keywords: [
-    "shipping wedding outfits from india to usa",
-    "how much are us customs duties on indian wedding lehengas",
-    "how long does shipping take from india to usa wedding outfits",
-    "customs duties indian clothes usa",
-    "import lehenga usa",
-    "DHL shipping india usa wedding outfits",
-  ],
-  openGraph: {
-    title: "How to Ship Indian Wedding Outfits to the USA: Customs, Duties & Timeline 2026",
-    description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA — customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
-    type: "article",
-    url: "https://www.ceremonyverse.com/blog/shipping-indian-wedding-outfits-usa-customs-duties",
-  },
-};
+export const metadata = buildMetadata({
+  path: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
+  title: "Shipping Indian Wedding Outfits to USA: Customs, Duties & Delivery Timeline",
+  description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA \u2014 customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
+  keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
+  publishedTime: "2026-03-01",
+  authorName: "CeremonyVerse",
+  ogType: "article",
+});
+
+const blogPostingSchema = buildBlogPosting({
+  headline: "Shipping Indian Wedding Outfits to USA: Customs, Duties & Delivery Timeline",
+  description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA \u2014 customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
+  url: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
+  datePublished: "2026-03-01",
+  keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Blog", url: "/blog/" },
+  { name: "Shipping Indian Wedding Outfits to USA: Customs, Duties & De", url: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/" },
+]);
 
 export default function ShippingGuidePage() {
   return (
     <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
