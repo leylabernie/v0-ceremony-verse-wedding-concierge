@@ -2,26 +2,11 @@ import { MetadataRoute } from 'next'
 
 const baseUrl = 'https://www.ceremonyverse.com'
 
-// All known hero/testimonial images used on the site
-const siteImages = [
-  '/images/hero-lehenga.webp',
-  '/images/hero-lehenga.jpg',
-  '/images/live-video-shopping-india.jpg',
-  '/images/services-hero.png',
-  '/images/testimonial-karan-sonal.jpg',
-  '/images/testimonial-charlie-viola.jpg',
-  '/images/testimonial-dhan-christina.jpg',
-  '/images/testimonial-shincy.jpg',
-  '/images/testimonial-swati.jpg',
-  '/images/testimonial-druma-parin.jpg',
-]
-
 interface SitemapEntry {
   url: string
   lastModified?: Date | string
   changeFrequency?: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never'
   priority?: number
-  images?: string[]
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -35,14 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,
-      images: siteImages.slice(0, 4),
     },
     {
       url: `${baseUrl}/services/`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.9,
-      images: ['/images/services-hero.png'],
     },
     {
       url: `${baseUrl}/pricing/`,
@@ -89,7 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,
-      images: ['/images/hero-lehenga.webp'],
     },
     {
       url: `${baseUrl}/buy-sherwani-from-india-usa/`,
@@ -321,19 +303,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  // Convert to Next.js sitemap format with image extension
+  // Convert to Next.js sitemap format.
+  // NOTE: Next.js MetadataRoute.Sitemap does NOT natively support the Google
+  // image-sitemap extension. Including `images` here causes the image objects
+  // to be stringified as "[object Object]" in the XML output, which Google
+  // Search Console rejects as "Invalid URL" errors. Image sitemap entries
+  // are emitted separately via app/sitemap-images.xml/route.ts.
   return pages.map((p) => ({
     url: p.url,
-    lastModified: p.lastModified,
+    lastModified: p.lastModified as Date | undefined,
     changeFrequency: p.changeFrequency,
     priority: p.priority,
-    // Next.js MetadataRoute.Sitemap supports images via the `images` field
-    ...(p.images && p.images.length
-      ? {
-          images: p.images.map((img) => ({
-            url: img.startsWith('http') ? img : `${baseUrl}${img}`,
-          })),
-        }
-      : {}),
-  })) as MetadataRoute.Sitemap
+  }))
 }
