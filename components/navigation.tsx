@@ -11,10 +11,9 @@ const navItems: { label: string; href: string }[] = [
   { label: "Services", href: "/services" },
   { label: "Pricing", href: "/pricing" },
   { label: "How It Works", href: "/how-it-works" },
-  { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
+  { label: "Free Guides", href: "/free-guides" },
 ]
 
 export function Navigation() {
