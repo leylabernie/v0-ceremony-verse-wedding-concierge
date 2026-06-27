@@ -242,6 +242,7 @@ export function Footer({ onNavigate }: FooterProps) {
               { label: "Bridal Lehenga Sourcing", href: "/services/bridal-lehengas" },
               { label: "Intercultural Weddings", href: "/services/intercultural-indian-weddings" },
               { label: "Shop from India", href: "/shop-from-india" },
+              { label: "How to Buy a Bridal Lehenga from India to USA", href: "/how-to-buy-bridal-lehenga-from-india-to-usa" },
               { label: "Buy Bridal Lehenga USA", href: "/buy-bridal-lehenga-from-india-usa" },
               { label: "Buy Sherwani USA", href: "/buy-sherwani-from-india-usa" },
               { label: "Kanchipuram Silk Sarees", href: "/kanchipuram-silk-sarees-usa" },

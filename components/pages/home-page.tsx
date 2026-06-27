@@ -181,7 +181,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/hero-lehenga.webp"
-          alt="Red and gold bridal lehenga with intricate zardozi embroidery sourced from India for NRI bride in USA by CeremonyVerse Indian wedding shopping concierge"
+          alt="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA"
           width={1935}
           height={1080}
           fetchPriority="high"
@@ -332,7 +332,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/live-video-shopping-india.jpg"
-              alt="Real bridal lehenga workshop in India — CeremonyVerse live video shopping experience for NRI brides in USA"
+              alt="Live video shopping session in India showing real bridal lehengas to NRI brides in the USA before purchase"
               style={{ width: "100%", height: "320px", objectFit: "cover", display: "block" }}
             />
           </div>

@@ -68,6 +68,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── HIGH PRIORITY: Commercial landing pages (keyword-targeted) ───
     {
+      url: `${baseUrl}/how-to-buy-bridal-lehenga-from-india-to-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/buy-bridal-lehenga-from-india-usa/`,
       lastModified: now,
       changeFrequency: 'monthly',

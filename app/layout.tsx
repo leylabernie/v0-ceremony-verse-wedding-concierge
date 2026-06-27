@@ -14,11 +14,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Affordable Indian Wedding Shopping Concierge for NRI Families | CeremonyVerse",
+      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Skip the $3,000 India flight. We source bridal lehengas, sherwanis & family outfits directly from India — live video approval, custom stitching, delivery to all 50 states. Free consult.",
+    "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
   keywords: [
     "how to buy lehenga from India online without getting scammed",
     "Indian wedding outfit checklist for NRI families USA",
@@ -30,6 +30,9 @@ export const metadata = {
     "ship Indian wedding outfits to USA customs duties",
     "Indian wedding shopping USA",
     "NRI Indian wedding shopping",
+    "custom bridal lehenga India to USA",
+    "return gifts from India to USA",
+    "live video shopping India wedding",
     "CeremonyVerse",
   ],
   icons: {
@@ -39,9 +42,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "How to Buy Indian Wedding Outfits from India (USA Delivery) | CeremonyVerse",
+      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
     description:
-      "Skip the $3,000 India flight. We source bridal lehengas, sherwanis & family outfits directly from India — live video approval, custom stitching, delivery to all 50 states. Free consult.",
+      "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -50,7 +53,7 @@ export const metadata = {
         url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
         width: 1200,
         height: 630,
-        alt: "Red and gold bridal lehenga sourced from India for NRI brides in USA — CeremonyVerse Indian wedding shopping concierge",
+        alt: "Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse",
       },
     ],
   },
@@ -105,7 +108,7 @@ export default function RootLayout({
         <meta property="og:image" content="https://www.ceremonyverse.com/images/hero-lehenga.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Red and gold bridal lehenga sourced from India for NRI brides in USA — CeremonyVerse Indian wedding shopping concierge" />
+        <meta property="og:image:alt" content="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@ceremonyverse" />
         <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.jpg" />
