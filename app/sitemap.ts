@@ -208,6 +208,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
     {
+      url: `${baseUrl}/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/custom-sherwani-sizing-guide-india-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/indian-wedding-return-gifts-bulk-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/indian-wedding-outfit-scams-nri-brides/`,
       lastModified: now,
       changeFrequency: 'monthly',

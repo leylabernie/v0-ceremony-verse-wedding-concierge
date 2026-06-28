@@ -20,6 +20,24 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "how-to-buy-authentic-kanchipuram-silk-sarees-online-usa",
+    title: "How to Buy Authentic Kanchipuram Silk Sarees Online: An NRI Bride's Guide",
+    description: "Spot fake Kanjivaram silk online — the Zari Test, Silk Mark India certification, Korvai border inspection, and how to source real Kanchipuram wedding sarees from India to the USA without getting scammed.",
+    date: "June 2026",
+  },
+  {
+    slug: "custom-sherwani-sizing-guide-india-usa",
+    title: "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
+    description: "The 5 critical sherwani measurements every groom must get right, how to choose between Banarasi brocade, raw silk, and velvet, and how to guarantee a perfect custom fit from India to the USA.",
+    date: "June 2026",
+  },
+  {
+    slug: "indian-wedding-return-gifts-bulk-usa",
+    title: "How to Source and Ship Unique Indian Wedding Return Gifts to the USA in Bulk",
+    description: "Source 100+ unique wedding favors directly from India — potli bags, brass diyas, block-print linen, and resin coasters — without massive shipping bills or US customs seizures.",
+    date: "June 2026",
+  },
+  {
     slug: "how-much-does-bridal-lehenga-cost-india-2026",
     title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices",
     description: "Real 2026 bridal lehenga prices from India — budget to high-end with USD conversion. Total cost breakdown including customs, shipping, and hidden costs NRI brides forget.",
