@@ -12,4 +12,3 @@ export const metadata = buildMetadata({
 });
 
 export default HomePage;
-
