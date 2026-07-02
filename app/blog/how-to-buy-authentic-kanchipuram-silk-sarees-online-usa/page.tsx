@@ -317,7 +317,7 @@ export default function KanchipuramSilkGuideBlogPost() {
 
           <p>
             Many NRI brides turn to brick-and-mortar boutiques in major US hubs
-            like New Jersey, Chicago, or the Bay Area out of convenience. The
+            like New Jersey, <Link href="/indian-wedding-shopping-illinois/" style={{ color: "#a69260" }}>Chicago</Link>, or the Bay Area out of convenience. The
             idea of touching the fabric in person feels safer than buying
             online. However, these physical storefronts come with massive
             markups that often double or triple the actual artisan price.
@@ -649,7 +649,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             }}
           >
             <strong>About CeremonyVerse:</strong> We source authentic
-            Kanchipuram silk sarees, bridal lehengas, sherwanis, and family
+            Kanchipuram silk sarees, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#a69260" }}>Banarasi silk sarees</Link>, bridal lehengas, sherwanis, and family
             wedding attire directly from India&apos;s heritage weavers for NRI
             brides in the USA. Every saree is verified with the Silk Mark India
             holographic tag and physically inspected before shipping.{" "}

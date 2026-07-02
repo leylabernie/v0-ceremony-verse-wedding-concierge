@@ -57,6 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/link-to-us/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
 
     // ─── HIGH PRIORITY: Blog listing ───
     {
@@ -122,6 +128,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/banarasi-silk-sarees-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/avoid-indian-wedding-shopping-scams/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -161,6 +173,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // ─── MEDIUM: Ceremony-specific pages ───
+    {
+      url: `${baseUrl}/haldi-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/reception-outfits-usa/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
     {
       url: `${baseUrl}/mehndi-outfits-usa/`,
       lastModified: now,
@@ -219,6 +243,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/indian-wedding-shopping-new-jersey/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-shopping-illinois/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,

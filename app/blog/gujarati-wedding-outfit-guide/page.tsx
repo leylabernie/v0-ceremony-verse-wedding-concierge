@@ -87,7 +87,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             Pithi / Haldi: Keep It Light and Let It Get Stained
           </h2>
           <p>
-            The Pithi ceremony — the Gujarati equivalent of the Haldi — is when turmeric paste is applied to the bride and groom&#39;s face and body by family members. It is joyful, messy, and deeply symbolic: the turmeric paste is believed to bless and beautify the couple before their wedding day.
+            The Pithi ceremony — the Gujarati equivalent of the <Link href="/haldi-outfits-usa/" style={{ color: "#a69260" }}>Haldi</Link> — is when turmeric paste is applied to the bride and groom&#39;s face and body by family members. It is joyful, messy, and deeply symbolic: the turmeric paste is believed to bless and beautify the couple before their wedding day.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             The outfit rule here is simple: <strong>do not wear anything you love</strong>. Turmeric stains permanently, and it will land on whatever you are wearing — whether you are the one receiving the pithi or just standing nearby.
@@ -189,7 +189,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             A silk or tissue saree is another popular choice for the reception — it photographs beautifully and allows more freedom of movement than a heavy bridal lehenga. This is also the moment for statement jewelry: chandelier earrings, a cocktail-style necklace, or a bold mathapatti that might have been too much for the ceremony.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Family members at the reception can wear their most glam outfits: heavily embroidered lehengas, silk sarees, or chic Indo-Western fusion pieces. The reception dress code, especially in the US, tends to be flexible — and guests are often encouraged to dress as elaborately as they like.
+            Family members at the <Link href="/reception-outfits-usa/" style={{ color: "#a69260" }}>reception</Link> can wear their most glam outfits: heavily embroidered lehengas, silk sarees, or chic Indo-Western fusion pieces. The reception dress code, especially in the US, tends to be flexible — and guests are often encouraged to dress as elaborately as they like.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

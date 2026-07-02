@@ -226,7 +226,7 @@ export default function NriWeddingPlanningTimeline() {
             A Real Example: Four-Day Destination Wedding in Mexico
           </h2>
           <p>
-            One of the most complex engagements we&apos;ve ever managed at CeremonyVerse was a 4-day Gujarati destination wedding in Mexico. Four full ceremonies — Garba, Haldi, Vidhi, and Reception — for the full bridal party and both families, coordinated across multiple US cities and sourced from India. Starting the process 10 months in advance made it possible. Every piece arrived on time. Every family member was dressed appropriately for each ceremony. Not a single outfit was a last-minute scramble.
+            One of the most complex engagements we&apos;ve ever managed at CeremonyVerse was a 4-day Gujarati destination wedding in Mexico. Four full ceremonies — Garba, <Link href="/haldi-outfits-usa/" style={{ color: "#a69260" }}>Haldi</Link>, Vidhi, and <Link href="/reception-outfits-usa/" style={{ color: "#a69260" }}>Reception</Link> — for the full bridal party and both families, coordinated across multiple US cities and sourced from India. Starting the process 10 months in advance made it possible. Every piece arrived on time. Every family member was dressed appropriately for each ceremony. Not a single outfit was a last-minute scramble.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             That kind of outcome doesn&apos;t happen by accident. It happens because of planning.

@@ -139,7 +139,7 @@ export default function TimelineGuidePage() {
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits from India with live video approval and insured delivery. <Link href="/how-it-works" style={{ color: "#a69260" }}>Learn how we work</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits from India with live video approval and insured delivery. <Link href="/how-it-works" style={{ color: "#a69260" }}>Learn how we work</Link>, or browse our dedicated sourcing pages for <Link href="/haldi-outfits-usa/" style={{ color: "#a69260" }}>Haldi outfits</Link> and <Link href="/reception-outfits-usa/" style={{ color: "#a69260" }}>Reception outfits</Link>.</p>
         </div>
       </article>
     </main>

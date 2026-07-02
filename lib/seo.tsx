@@ -301,11 +301,7 @@ export function buildLocalBusinessSchema(): object {
     areaServed: "US",
     priceRange: "$$",
     sameAs: [
-      "https://www.instagram.com/ceremonyverse",
-      "https://www.pinterest.com/ceremonyverse",
-      "https://www.tiktok.com/@ceremonyverse",
       "https://wa.me/12153419990",
-      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
     aggregateRating: {
       "@type": "AggregateRating",
