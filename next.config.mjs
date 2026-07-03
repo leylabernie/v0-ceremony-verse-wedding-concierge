@@ -36,6 +36,21 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/indian-wedding-shopping-canada',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-australia',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-new-zealand',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/indian-wedding-planner-philadelphia',
         destination: '/services',
         permanent: true,
@@ -54,6 +69,47 @@ const nextConfig = {
       {
         source: '/forms/virtual-shopping',
         destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/journey',
+        destination: '/how-it-works',
+        permanent: true,
+      },
+      {
+        source: '/our-story',
+        destination: '/about',
+        permanent: true,
+      },
+      {
+        source: '/wedding-glossary',
+        destination: '/faq',
+        permanent: true,
+      },
+      {
+        source: '/refund-policy',
+        destination: '/terms',
+        permanent: true,
+      },
+      {
+        source: '/baraat-outfit-shopping',
+        destination: '/baraat-outfits-usa',
+        permanent: true,
+      },
+      // ─── LEGACY BLOG POST SLUGS ───
+      {
+        source: '/indian-wedding-outfits-shipping-to-usa',
+        destination: '/blog/shipping-indian-wedding-outfits-usa-customs-duties',
+        permanent: true,
+      },
+      {
+        source: '/blog/gujarati-wedding-planning-guide',
+        destination: '/blog/gujarati-wedding-outfit-guide',
+        permanent: true,
+      },
+      {
+        source: '/blog/sherwani-vs-bandhgala-groom-guide',
+        destination: '/blog',
         permanent: true,
       },
     ]
