@@ -20,6 +20,12 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "how-to-choose-indian-wedding-jewelry-usa",
+    title: "How to Choose Indian Wedding Jewelry in the USA: An NRI Bride's Complete Guide",
+    description: "Kundan vs Polki vs Temple vs Meenakari — how to choose authentic Indian bridal jewelry from the USA. BIS Hallmark verification, fake jewelry red flags, budget tiers, and how NRI brides source heirloom pieces directly from India.",
+    date: "July 2026",
+  },
+  {
     slug: "how-to-buy-authentic-kanchipuram-silk-sarees-online-usa",
     title: "How to Buy Authentic Kanchipuram Silk Sarees Online: An NRI Bride's Guide",
     description: "Spot fake Kanjivaram silk online — the Zari Test, Silk Mark India certification, Korvai border inspection, and how to source real Kanchipuram wedding sarees from India to the USA without getting scammed.",
