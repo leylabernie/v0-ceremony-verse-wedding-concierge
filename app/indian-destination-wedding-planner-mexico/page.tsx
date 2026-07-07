@@ -98,7 +98,7 @@ export default function MexicoDestinationPage() {
                 Your Secret Weapon: <br />
                 <span className="text-[#a69260]">Group Wardrobe Sourcing</span>
               </h2>
-              <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+              <p className="mt-6 text-lg text-gray-200 leading-relaxed">
                 The biggest stress for Mexico destination weddings? Getting the outfits right. Most NRI families waste thousands on overpriced US boutiques or risk scams on Instagram.
               </p>
               <ul className="mt-8 space-y-4">
@@ -120,13 +120,13 @@ export default function MexicoDestinationPage() {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden relative border border-gray-700">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-500 italic p-10 text-center">
+                <div className="absolute inset-0 flex items-center justify-center text-gray-300 italic p-10 text-center">
                   [Interactive Wireframe: Image showing coordinated wedding party in Mexico with "Sourced by CeremonyVerse" overlay]
                 </div>
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-black p-6 rounded-2xl shadow-2xl max-w-xs">
                 <p className="font-bold text-sm">"We saved $4,200 on our Mexico wedding party outfits by sourcing through CeremonyVerse."</p>
-                <p className="mt-2 text-xs text-gray-500">— Anjali S., NYC</p>
+                <p className="mt-2 text-xs text-gray-600">— Anjali S., NYC</p>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import React from "react"
 
 type PageType =
@@ -41,7 +42,7 @@ const testimonials = [
   {
     names: "Karan & Sonal",
     initials: "KS",
-    photo: "/images/testimonial-karan-sonal.jpg",
+    photo: "/images/testimonial-karan-sonal.webp",
     color: "#b09872",
     location: "Destination Wedding, Mexico",
     quote:
@@ -51,7 +52,7 @@ const testimonials = [
   {
     names: "Charly & Viola",
     initials: "CV",
-    photo: "/images/testimonial-charlie-viola.jpg",
+    photo: "/images/testimonial-charlie-viola.webp",
     color: "#8a7060",
     location: "Philadelphia, PA",
     quote:
@@ -61,7 +62,7 @@ const testimonials = [
   {
     names: "Dhan & Christina",
     initials: "DC",
-    photo: "/images/testimonial-dhan-christina.jpg",
+    photo: "/images/testimonial-dhan-christina.webp",
     color: "#a69260",
     location: "USA",
     quote:
@@ -71,7 +72,7 @@ const testimonials = [
   {
     names: "Shincy",
     initials: "SH",
-    photo: "/images/testimonial-shincy.jpg",
+    photo: "/images/testimonial-shincy.webp",
     color: "#b09872",
     location: "USA",
     quote:
@@ -81,7 +82,7 @@ const testimonials = [
   {
     names: "Swati",
     initials: "SW",
-    photo: "/images/testimonial-swati.jpg",
+    photo: "/images/testimonial-swati.webp",
     color: "#8a7060",
     location: "USA",
     quote:
@@ -101,7 +102,7 @@ const testimonials = [
   {
     names: "Druma & Parin",
     initials: "DP",
-    photo: "/images/testimonial-druma-parin.jpg",
+    photo: "/images/testimonial-druma-parin.webp",
     color: "#b09872",
     location: "USA",
     quote:
@@ -178,15 +179,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* HERO — full width image + overlay text */}
       <section style={{ position: "relative", overflow: "hidden", background: "#1a1008" }}>
         {/* Background image */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src="/images/hero-lehenga.webp"
           alt="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA"
-          width={1935}
-          height={1080}
-          fetchPriority="high"
+          fill
+          priority
+          sizes="100vw"
           style={{
-            position: "absolute", inset: 0, width: "100%", height: "100%",
             objectFit: "cover", objectPosition: "center",
             opacity: 0.72, display: "block",
           }}
@@ -328,12 +327,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
               This is a real video call with our team in India, showing you actual outfits spread out in front of you. You see the fabric, the embroidery, the weight, the color in natural light — and that exact piece gets reserved with your name. No surprises when it arrives.
             </p>
           </div>
-          <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid #e6dfd5" }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/live-video-shopping-india.jpg"
+          <div className="relative rounded-2xl overflow-hidden" style={{ border: "1px solid #e6dfd5", height: "320px" }}>
+            <Image
+              src="/images/live-video-shopping-india.webp"
               alt="Live video shopping session in India showing real bridal lehengas to NRI brides in the USA before purchase"
-              style={{ width: "100%", height: "320px", objectFit: "cover", display: "block" }}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
             />
           </div>
         </div>
@@ -676,10 +676,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 </p>
                 <div className="border-t border-[#e6dfd5] pt-4 flex items-center gap-3">
                   {t.photo ? (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
+                    <Image
                       src={t.photo}
                       alt={t.names}
+                      width={48}
+                      height={48}
                       className="w-12 h-12 rounded-full object-cover shrink-0"
                       style={{ border: "2px solid var(--cv-border)" }}
                     />

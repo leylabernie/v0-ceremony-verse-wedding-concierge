@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import Image from "next/image"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -64,12 +65,15 @@ export default function KanchipuramSareesPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {sarees.map((saree) => (
               <div key={saree.src} style={{ borderRadius: "14px", overflow: "hidden", border: "1px solid #e6dfd5", background: "#f9f6f3" }}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={saree.src}
-                  alt={`${saree.name} — pure Kanchipuram silk saree sourced from India for US families by CeremonyVerse`}
-                  style={{ width: "100%", height: "280px", objectFit: "cover", display: "block" }}
-                />
+                <div className="relative" style={{ width: "100%", height: "280px" }}>
+                  <Image
+                    src={saree.src}
+                    alt={`${saree.name} — pure Kanchipuram silk saree sourced from India for US families by CeremonyVerse`}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
                 <div style={{ padding: "16px" }}>
                   <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "6px" }}>{saree.name}</h3>
                   <p style={{ fontSize: "12px", color: "#4d403a", lineHeight: 1.5 }}>{saree.desc}</p>

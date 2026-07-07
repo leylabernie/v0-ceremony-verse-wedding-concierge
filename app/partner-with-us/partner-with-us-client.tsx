@@ -11,7 +11,7 @@ export function PartnerWithUsPage() {
       <section className="py-24 px-6 bg-[#1f1f1f] text-white">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Grow Your Business with <br /><span className="text-[#a69260]">CeremonyVerse</span></h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
             We are the premier destination for NRI families planning Indian weddings. We drive high-intent traffic and vetted leads to the best vendors in the industry.
           </p>
         </div>
@@ -75,7 +75,7 @@ export function PartnerWithUsPage() {
                 <button type="submit" className="w-full bg-[var(--cv-accent)] text-white font-bold py-4 rounded-lg mt-4 shadow-lg hover:opacity-90 transition-opacity" onClick={(e) => e.preventDefault()}>
                   Submit Application
                 </button>
-                <p className="text-xs text-center text-gray-500 mt-4 italic">
+                <p className="text-xs text-center text-gray-600 mt-4 italic">
                   Note: We only accept 3 vendors per category per region to maintain quality standards.
                 </p>
               </form>

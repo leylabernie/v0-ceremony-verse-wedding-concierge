@@ -1,4 +1,6 @@
 "use client"
+
+import Image from "next/image"
 import type { PageType } from "@/app/page"
 interface Props { onNavigate: (page: PageType) => void }
 
@@ -6,8 +8,14 @@ export function GroomsmenPage({ onNavigate }: Props) {
   return (
     <div className="bg-[var(--cv-bg)]">
       <section className="relative text-center overflow-hidden" style={{ minHeight: "380px" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/services-groomsmen.jpg" alt="Groomsmen kurta sets on rack" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: 0 }} />
+        <Image
+          src="/images/services-groomsmen.webp"
+          alt="Groomsmen kurta sets on rack"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center", zIndex: 0 }}
+        />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.62) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
           <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>Popular Add-On</p>

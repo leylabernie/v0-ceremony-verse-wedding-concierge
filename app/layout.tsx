@@ -1,9 +1,27 @@
 import "./globals.css";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import Script from "next/script";
 import { JsonLd, buildLocalBusinessSchema, buildGlobalFaqSchema } from "@/lib/seo";
+
+// Build-time font loading via next/font — eliminates the render-blocking
+// Google Fonts @import that was in globals.css. Fonts are downloaded at
+// build time and self-hosted by Vercel; no runtime network roundtrip.
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 // Root metadata: title/description are defaults; individual pages override.
 // NOTE: We intentionally do NOT set `alternates.canonical` here. Setting it
@@ -50,7 +68,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.jpg",
+        url: "https://www.ceremonyverse.com/images/hero-lehenga.webp",
         width: 1200,
         height: 630,
         alt: "Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse",
@@ -60,7 +78,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@ceremonyverse",
-    images: ["https://www.ceremonyverse.com/images/hero-lehenga.jpg"],
+    images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
   },
 };
 
@@ -73,13 +91,14 @@ export default function RootLayout({
   const globalFaqSchema = buildGlobalFaqSchema();
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
-        {/* Preconnect to Google Fonts for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Google Analytics — deferred via strategy=afterInteractive so it
+            never blocks first paint. The two preconnect <link> tags below
+            speed up the GA fetch when it does happen, but they are
+            non-blocking hints only. */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
 
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K8YLBERPM"
           strategy="afterInteractive"
@@ -105,13 +124,13 @@ export default function RootLayout({
         <meta name="classification" content="Business" />
         <meta property="og:site_name" content="CeremonyVerse" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="https://www.ceremonyverse.com/images/hero-lehenga.jpg" />
+        <meta property="og:image" content="https://www.ceremonyverse.com/images/hero-lehenga.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@ceremonyverse" />
-        <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.jpg" />
+        <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.webp" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
 
         {/*

@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 import type { PageType } from "@/app/page"
 
 interface BridalPageProps {
@@ -12,8 +14,14 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
 
       {/* HERO */}
       <section className="relative text-center overflow-hidden" style={{ minHeight: "480px" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/bridal-hero.png" alt="Indian bride in red and gold bridal lehenga in a marble palace" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", zIndex: 0 }} />
+        <Image
+          src="/images/bridal-hero.webp"
+          alt="Indian bride in red and gold bridal lehenga in a marble palace"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: "cover", objectPosition: "center top", zIndex: 0 }}
+        />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.6) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
           <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#a69260" }}>Bridal Sourcing</p>

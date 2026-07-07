@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 interface ServiceCardProps {
@@ -13,12 +14,15 @@ interface ServiceCardProps {
 function ServiceCard({ href, image, imageAlt, badge, title, description }: ServiceCardProps) {
   const content = (
     <>
-      <img
-        src={image}
-        alt={imageAlt}
-        className="w-full h-64 object-cover block"
-        loading="lazy"
-      />
+      <div className="relative w-full h-64">
+        <Image
+          src={image}
+          alt={imageAlt}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover"
+        />
+      </div>
       <div className="p-6">
         {badge && (
           <div className="text-xs font-medium text-[#a69260] uppercase tracking-widest mb-2">{badge}</div>
@@ -35,9 +39,6 @@ function ServiceCard({ href, image, imageAlt, badge, title, description }: Servi
   if (href) {
     return (
       <Link href={href} className={className}>
-      <JsonLd id="schema-service" data={serviceSchema} />
-      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-    
         {content}
       </Link>
     )
@@ -65,13 +66,18 @@ const breadcrumbSchema = buildBreadcrumb([
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-[#faf8f5]">
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
 
       {/* HERO */}
       <section className="relative text-center overflow-hidden" style={{ minHeight: "380px" }}>
-        <img
-          src="/images/services-hero.png"
+        <Image
+          src="/images/services-hero.webp"
           alt="Indian wedding flat lay with lehenga, jewelry, marigolds and brass diya on marble"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/65" />
         <div className="relative py-20 px-6 z-10">
@@ -91,7 +97,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/services/bridal-lehengas"
-            image="/images/services-bridal-gold.jpg"
+            image="/images/services-bridal-gold.webp"
             imageAlt="Champagne gold bridal lehenga"
             title="Bridal Lehengas & Wedding Outfits"
             description="Sourced directly from India with authentic craftsmanship, full quality checks, and secure shipping to the US."
@@ -99,7 +105,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/buy-sherwani-from-india-usa"
-            image="/images/services-groom.jpg"
+            image="/images/services-groom.webp"
             imageAlt="Full length ivory and gold sherwani"
             title="Groom Sherwanis & Attire"
             description="Custom sherwanis and groom outfits with verified craftsmanship, tailored fit, and inspection before delivery."
@@ -107,7 +113,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/bridesmaid-and-family-outfits-from-india"
-            image="/images/services-bridesmaids.jpg"
+            image="/images/services-bridesmaids.webp"
             imageAlt="Pastel bridesmaid lehengas on rack"
             title="Bridesmaid Outfits"
             description="Coordinated lehengas in matching palettes — consistent colors, fabrics, and sizing for a cohesive wedding look."
@@ -115,7 +121,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/bridesmaid-and-family-outfits-from-india"
-            image="/images/services-groomsmen.jpg"
+            image="/images/services-groomsmen.webp"
             imageAlt="Ivory kurta sets on rack"
             badge="Popular Add-On"
             title="Groomsmen Attire"
@@ -124,7 +130,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/bridesmaid-and-family-outfits-from-india"
-            image="/images/services-bridesmaids.png"
+            image="/images/services-bridesmaids.webp"
             imageAlt="Coordinated Indian family sarees"
             title="Family Wedding Outfits"
             description="Sarees, lehengas, and traditional outfits for parents, in-laws, and extended family — coordinated across colors and fabrics."
@@ -132,7 +138,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/contact"
-            image="/images/services-pets.jpg"
+            image="/images/services-pets.webp"
             imageAlt="Two dogs dressed for a wedding — shih tzu in gold sherwani and maltese in teal lehenga"
             badge="Fan Favorite"
             title="Pet Outfits (Dogs & Cats)"
@@ -141,7 +147,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/wedding-accessories-and-ceremony-items-from-india"
-            image="/images/services-jewelry-real.jpg"
+            image="/images/services-jewelry-real.webp"
             imageAlt="Authentic kundan polki bridal jewelry set with emerald green stones — sourced from India for NRI brides in USA by CeremonyVerse"
             title="Jewelry & Bridal Accessories"
             description="Bridal jewelry, accessories, and finishing pieces sourced with quality verification and attention to detail."
@@ -149,7 +155,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/wedding-accessories-and-ceremony-items-from-india"
-            image="/images/services-ceremonial2.png"
+            image="/images/services-ceremonial2.webp"
             imageAlt="Mehndi ceremony with marigolds and brass diyas"
             title="Ceremonial Items & Ritual Essentials"
             description="Items needed for traditional ceremonies sourced accurately to match cultural requirements and rituals."
@@ -157,7 +163,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/wedding-accessories-and-ceremony-items-from-india"
-            image="/images/services-gifts.jpg"
+            image="/images/services-gifts.webp"
             imageAlt="Colourful silk potli bags in emerald, navy, burgundy and lavender in a gold ballroom"
             title="Wedding Gifts & Return Gifts"
             description="Thoughtful gift sourcing — sarees, dry fruit hampers, silver items, and curated return gifts for guests and family."
@@ -165,7 +171,7 @@ export default function ServicesPage() {
 
           <ServiceCard
             href="/wedding-accessories-and-ceremony-items-from-india"
-            image="/images/services-welcomebags.jpg"
+            image="/images/services-welcomebags.webp"
             imageAlt="Personalized monogram jute welcome bags"
             title="Welcome Bags & Event Details"
             description="Custom welcome bags filled with Indian sweets, herbal teas, mehndi kits, and keepsakes — a memorable first impression for out-of-town guests."

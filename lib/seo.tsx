@@ -17,7 +17,7 @@ export const SITE_URL = "https://www.ceremonyverse.com";
 export const SITE_NAME = "CeremonyVerse";
 export const SITE_EMAIL = "bhamini@ceremonyverse.com";
 export const SITE_PHONE = "+12153419990";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.jpg`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.webp`;
 
 interface BuildMetadataOpts {
   /** Path beginning with `/` — e.g. `/blog/how-to-buy-bridal-lehenga-from-india-usa/`. Trailing slash optional. */
@@ -288,7 +288,7 @@ export function buildLocalBusinessSchema(): object {
     description:
       "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and delivery to your US door.",
     url: SITE_URL,
-    image: `${SITE_URL}/images/hero-lehenga.jpg`,
+    image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
