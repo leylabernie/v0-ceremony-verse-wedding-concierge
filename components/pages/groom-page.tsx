@@ -137,7 +137,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Let's find your perfect groom look.
         </h2>
-        <p className="text-white/60 mb-8 max-w-md mx-auto text-sm">
+        <p className="text-white/90 mb-8 max-w-md mx-auto text-sm">
           Book a free consultation. We'll match your style, coordinate with the bridal look, and source the right outfit — stress free.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

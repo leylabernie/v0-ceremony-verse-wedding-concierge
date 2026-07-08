@@ -158,7 +158,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Let's find your perfect bridal look.
         </h2>
-        <p className="text-white/60 mb-8 max-w-md mx-auto text-sm">
+        <p className="text-white/90 mb-8 max-w-md mx-auto text-sm">
           Book a free 30-minute consultation. We'll review your vision, budget, and timeline — no commitment required.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

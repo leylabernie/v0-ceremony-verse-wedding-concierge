@@ -18,7 +18,7 @@ export function Footer({ onNavigate }: FooterProps) {
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-3">
             Indian Wedding Outfit Checklist
           </h2>
-          <p className="text-white/60 mb-2 text-sm max-w-lg mx-auto">
+          <p className="text-white/90 mb-2 text-sm max-w-lg mx-auto">
             Every outfit, every ceremony — nothing forgotten. Mehndi through Reception, with accessories, timeline, and ordering guide.
           </p>
           <p className="text-[#a69260] text-xs mb-8">
@@ -36,7 +36,7 @@ export function Footer({ onNavigate }: FooterProps) {
             </svg>
             Download Free Checklist (PDF)
           </a>
-          <p className="text-white/40 text-xs mt-4">
+          <p className="text-white/75 text-xs mt-4">
             No email required — instant download
           </p>
         </div>

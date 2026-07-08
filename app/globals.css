@@ -1,5 +1,15 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
+/* tw-animate-css removed — it was only used by shadcn/ui components that
+   are not imported by any route. Dropping it cuts ~10KB of CSS animations
+   for unused dialog/toast/sheet/tooltip transitions. */
+
+/* Tailwind v4 source scanning — by default it scans the entire project
+   including the 58 unused shadcn/ui components in components/ui/, which
+   generates hundreds of CSS rules for variants like
+   data-[state=open]:animate-in fade-in-0 zoom-in-95 that are never used.
+   The @source not directive below excludes that directory from the scan.
+   This should cut the CSS bundle significantly. */
+@source not "../components/ui";
 
 @custom-variant dark (&:is(.dark *));
 
