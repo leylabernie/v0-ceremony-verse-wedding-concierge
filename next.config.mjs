@@ -4,7 +4,14 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Enable Vercel's image optimization so next/image serves right-sized
+    // WebP/AVIF per device instead of the original full-size file. With
+    // unoptimized:true (previous setting), a 167KB hero WebP was served
+    // identical to mobile and desktop — Vercel can now downscale to ~30KB
+    // for mobile viewports.
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   trailingSlash: true,
   async redirects() {

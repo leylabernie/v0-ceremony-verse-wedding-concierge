@@ -1,31 +1,6 @@
-"use client"
-
 import Image from "next/image"
-import React from "react"
-
-type PageType =
-  | "home"
-  | "services"
-  | "journey"
-  | "faq"
-  | "contact"
-  | "privacy"
-  | "terms"
-  | "bridal"
-  | "groom"
-  | "blog"
-  | "bridesmaids"
-  | "groomsmen"
-  | "family"
-  | "jewelry"
-  | "ceremonial"
-  | "gifts"
-  | "welcomebags"
-  | "pets"
-
-interface HomePageProps {
-  onNavigate?: (page: PageType) => void
-}
+import Link from "next/link"
+import { FaqItem } from "./faq-item"
 
 
 const testimonials = [
@@ -154,26 +129,8 @@ const pricingTiers = [
   },
 ]
 
-function FaqItem({ question, answer }: { question: string; answer: string }) {
-  const [open, setOpen] = React.useState(false)
-  return (
-    <div style={{ borderBottom: "1px solid #e6dfd5" }}>
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between py-5 text-left gap-4"
-      >
-        <span className="font-medium text-sm md:text-base" style={{ color: "#1f1f1f" }}>{question}</span>
-        <span className="shrink-0 text-lg transition-transform" style={{ color: "#a69260", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
-      </button>
-      {open && (
-        <p className="text-sm leading-relaxed pb-5" style={{ color: "#4d403a" }}>{answer}</p>
-      )}
-    </div>
-  )
-}
 
-export function HomePage({ onNavigate }: HomePageProps) {
+export function HomePage() {
   return (
     <main className="">
       {/* HERO — full width image + overlay text */}
@@ -216,24 +173,20 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
             {/* CTAs */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("contact")}
-                style={{ background: "#a69260", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", cursor: "pointer" }}
-              >
+              <Link style={{ background: "#a69260", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
+        href="/contact"
+      >
                 Book Free Consultation
-              </button>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("journey")}
-                style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", cursor: "pointer" }}
-              >
+              </Link>
+              <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
+        href="/how-it-works"
+      >
                 How It Works
-              </button>
+              </Link>
               <a
                 href="/wedding-outfit-checklist.pdf"
                 download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
-                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.6)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.2)", textDecoration: "none" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.85)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none" }}
               >
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
@@ -252,14 +205,14 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 "Vetted artisan partners — no Instagram sellers",
                 "US delivery to all 50 states",
               ].map((tag) => (
-                <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.7)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
+                <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
                   {tag}
                 </span>
               ))}
             </div>
           </div>
         </div>
-        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "11px", color: "rgba(255,255,255,0.35)", paddingBottom: "18px" }}>
+        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "11px", color: "rgba(255,255,255,0.75)", paddingBottom: "18px" }}>
           Top vendors book 6–12 months in advance — start early
         </p>
       </section>
@@ -306,7 +259,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <p className="font-['Cormorant_Garamond'] text-lg font-semibold italic mb-3 leading-snug" style={{ color: "#a69260" }}>
                   {item.problem}
                 </p>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.7)" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.88)" }}>
                   {item.solution}
                 </p>
               </div>
@@ -375,13 +328,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
           ))}
         </div>
 
-        <button
-          type="button"
-          onClick={() => onNavigate?.("journey")}
-          className="mt-8 inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
-        >
+        <Link className="mt-8 inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
+        href="/how-it-works"
+      >
           See Full Process →
-        </button>
+        </Link>
       </section>
 
       {/* WHAT WE SOURCE — compact teaser, links to Services page */}
@@ -403,12 +354,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </span>
             ))}
           </div>
-          <button
-            onClick={() => onNavigate?.("services")}
-            className="btn-primary"
-          >
+          <Link className="btn-primary"
+        href="/services"
+      >
             See All Services
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -455,13 +405,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <p className="text-sm text-[#4d403a] mb-4">
               Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
             </p>
-            <button
-              type="button"
-              onClick={() => onNavigate?.("contact")}
-              className="inline-flex items-center justify-center bg-[#a69260] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-            >
+            <Link className="inline-flex items-center justify-center bg-[#a69260] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+        href="/contact"
+      >
               Book Free Consultation →
-            </button>
+            </Link>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -485,7 +433,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 <p className={`text-3xl font-semibold mb-3 ${tier.featured ? "text-white" : "text-[#1f1f1f]"}`}>
                   {tier.price}
                 </p>
-                <p className={`text-sm mb-6 leading-relaxed ${tier.featured ? "text-white/70" : "text-[#4d403a]"}`}>
+                <p className={`text-sm mb-6 leading-relaxed ${tier.featured ? "text-white/90" : "text-[#4d403a]"}`}>
                   {tier.desc}
                 </p>
                 <ul className="space-y-2 mb-8 flex-1">
@@ -496,17 +444,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
                     </li>
                   ))}
                 </ul>
-                <button
-                  type="button"
-                  onClick={() => onNavigate?.("contact")}
-                  className={`w-full py-3 rounded-full text-sm font-medium transition ${
+                <Link className={`w-full py-3 rounded-full text-sm font-medium transition ${
                     tier.featured
                       ? "bg-[#a69260] text-white hover:opacity-90"
                       : "border border-[#1f1f1f] text-[#1f1f1f] hover:bg-[#1f1f1f] hover:text-white"
                   }`}
-                >
+        href="/contact"
+      >
                   {tier.cta}
-                </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -584,15 +530,15 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="grid md:grid-cols-3 gap-6 text-sm">
               <div>
                 <p className="text-[#a69260] text-2xl font-bold mb-2">14+14</p>
-                <p className="text-white/70">Bridesmaids & Groomsmen coordinated across multiple states</p>
+                <p className="text-white/90">Bridesmaids & Groomsmen coordinated across multiple states</p>
               </div>
               <div>
                 <p className="text-[#a69260] text-2xl font-bold mb-2">4-Day Weddings</p>
-                <p className="text-white/70">Destination weddings (Mexico, India) with full party coordination</p>
+                <p className="text-white/90">Destination weddings (Mexico, India) with full party coordination</p>
               </div>
               <div>
                 <p className="text-[#a69260] text-2xl font-bold mb-2">30-50%</p>
-                <p className="text-white/70">Typical savings vs. US Indian boutiques</p>
+                <p className="text-white/90">Typical savings vs. US Indian boutiques</p>
               </div>
             </div>
           </div>
@@ -747,14 +693,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
                   </div>
                 ))}
               </div>
-              <button
-                type="button"
-                onClick={() => onNavigate?.("contact")}
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
+              <Link className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
                 style={{ background: "#a69260", color: "#fff" }}
-              >
+        href="/contact"
+      >
                 Book a Free Consultation
-              </button>
+              </Link>
             </div>
             <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
               <p className="text-[#a69260] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
@@ -937,14 +881,12 @@ export function HomePage({ onNavigate }: HomePageProps) {
             ))}
           </div>
           <div className="text-center mt-10">
-            <button
-              type="button"
-              onClick={() => onNavigate?.("faq")}
-              className="text-sm font-medium transition hover:opacity-70"
+            <Link className="text-sm font-medium transition hover:opacity-70"
               style={{ color: "var(--cv-accent)" }}
-            >
+        href="/faq"
+      >
               See all FAQ →
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -963,13 +905,11 @@ export function HomePage({ onNavigate }: HomePageProps) {
             Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
-              type="button"
-              onClick={() => onNavigate?.("contact")}
-              className="inline-flex items-center justify-center bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-            >
+            <Link className="inline-flex items-center justify-center bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+        href="/contact"
+      >
               Book Free Consultation
-            </button>
+            </Link>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20wedding%20sourcing%20services%20from%20CeremonyVerse."
               target="_blank"
