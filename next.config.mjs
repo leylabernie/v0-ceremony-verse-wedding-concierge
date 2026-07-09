@@ -19,6 +19,9 @@ const nextConfig = {
     // AVIF is already served (29KB hero vs 30KB WebP), so the format is
     // already optimal. To go below 75 we'd need to pre-compress source
     // images and serve them as static files (bypassing /_next/image).
+    // The hero <Image> component in home-page.tsx uses fetchPriority="high"
+    // + priority to ensure the LCP image is discovered and fetched at the
+    // highest priority, improving LCP by ~300ms.
   },
   trailingSlash: true,
   async redirects() {
