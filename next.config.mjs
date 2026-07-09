@@ -12,6 +12,13 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // NOTE: Vercel's hosted image optimization enforces a minimum quality
+    // of 75 — any q<75 returns INVALID_IMAGE_OPTIMIZE_REQUEST. The
+    // Lighthouse "Improve image delivery" insight suggesting 38 KiB
+    // savings via lower quality is therefore not actionable on Vercel.
+    // AVIF is already served (29KB hero vs 30KB WebP), so the format is
+    // already optimal. To go below 75 we'd need to pre-compress source
+    // images and serve them as static files (bypassing /_next/image).
   },
   trailingSlash: true,
   async redirects() {

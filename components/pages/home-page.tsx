@@ -141,6 +141,7 @@ export function HomePage() {
           alt="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           style={{
             objectFit: "cover", objectPosition: "center",
