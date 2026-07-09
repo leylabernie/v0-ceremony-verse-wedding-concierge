@@ -64,7 +64,7 @@ export default function PricingPage() {
       {/* HERO */}
       <section className="py-20 px-6 text-center" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#a69260" }}>
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
             Transparent Pricing
           </p>
           <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -369,14 +369,14 @@ export default function PricingPage() {
             <a
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </a>
             <a
               href="/how-it-works"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#f8f6f2" }}
+              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
               See How It Works
             </a>

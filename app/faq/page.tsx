@@ -144,7 +144,7 @@ export default function FAQPage() {
       {/* Hero */}
       <section className="pt-32 pb-16 sm:pt-40 sm:pb-24 relative">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
-          <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-6">
+          <p className="text-[#7a6841] text-sm font-medium tracking-[0.25em] uppercase mb-6">
             The Trust Center
           </p>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#1f1f1f] mb-6 tracking-[0.04em]">
@@ -166,7 +166,7 @@ export default function FAQPage() {
             {/* Section Header */}
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
               <div className="lg:max-w-xl">
-                <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+                <p className="text-[#7a6841] text-sm font-medium tracking-[0.25em] uppercase mb-3">
                   {String(sectionIdx + 1).padStart(2, '0')}
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em]">
@@ -202,7 +202,7 @@ export default function FAQPage() {
       <section className="py-16 sm:py-24">
         <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center mb-16">
-            <p className="text-[#a69260] text-sm font-medium tracking-[0.25em] uppercase mb-3">
+            <p className="text-[#7a6841] text-sm font-medium tracking-[0.25em] uppercase mb-3">
               06
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#1f1f1f] tracking-[0.04em] mb-4">
@@ -262,8 +262,8 @@ export default function FAQPage() {
           </p>
           <Link
             href="/contact"
-            className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#a69260] font-medium rounded-full
-              hover:bg-[#a69260]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
+            className="group px-10 py-4 bg-transparent text-[#1f1f1f] border border-[#7a6841] font-medium rounded-full
+              hover:bg-[#7a6841]/10 hover:shadow-[0_0_32px_rgba(197,160,89,0.2)]
               transition-all duration-300 inline-flex items-center gap-3"
           >
             Ask Us Directly

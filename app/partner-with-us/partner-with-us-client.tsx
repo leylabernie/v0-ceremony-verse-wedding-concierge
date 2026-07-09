@@ -10,7 +10,7 @@ export function PartnerWithUsPage() {
       {/* HERO SECTION */}
       <section className="py-24 px-6 bg-[#1f1f1f] text-white">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Grow Your Business with <br /><span className="text-[#a69260]">CeremonyVerse</span></h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Grow Your Business with <br /><span className="text-[#7a6841]">CeremonyVerse</span></h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
             We are the premier destination for NRI families planning Indian weddings. We drive high-intent traffic and vetted leads to the best vendors in the industry.
           </p>

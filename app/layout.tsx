@@ -93,17 +93,24 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
-        {/* Google Analytics — deferred via strategy=afterInteractive so it
-            never blocks first paint. The two preconnect <link> tags below
-            speed up the GA fetch when it does happen, but they are
-            non-blocking hints only. */}
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        {/*
+          Google Analytics — loaded with strategy="lazyOnload" so the 165KB
+          gtag bundle is fetched ONLY after the page has finished loading and
+          the browser is idle. This keeps it completely off the critical path
+          for FCP/LCP/TBT, which directly addresses the largest Performance
+          bottleneck identified in Round-4 Lighthouse analysis (Script Eval
+          823ms, TBT 600ms, gtag.js = 165KB = biggest single JS transfer).
 
+          The preconnect <link> is intentionally OMITTED — with lazyOnload the
+          connection to googletagmanager.com is only opened after onload, so a
+          preconnect would actually hurt by establishing an unused connection
+          during the critical period.
+        */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8K8YLBERPM"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -145,7 +152,7 @@ export default function RootLayout({
       </head>
       <body>
         {/* Urgency announcement bar — fixed at very top */}
-        <div style={{ background: "#1f1f1f", color: "#a69260", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
+        <div style={{ background: "#1f1f1f", color: "#c5a059", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
           * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>

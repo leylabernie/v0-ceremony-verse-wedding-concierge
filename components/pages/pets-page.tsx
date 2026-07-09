@@ -18,7 +18,7 @@ export function PetsPage({ onNavigate }: Props) {
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.55) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>Fan Favorite</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>Fan Favorite</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Pet Outfits for Dogs & Cats</h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Your fur babies deserve to look the part too. Custom Indian wedding outfits for dogs and cats — matched to your wedding palette and made for comfort.</p>
         </div>

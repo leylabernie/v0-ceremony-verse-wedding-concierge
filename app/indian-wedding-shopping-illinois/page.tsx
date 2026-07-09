@@ -94,7 +94,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             fontSize: "11px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#a69260",
+            color: "#7a6841",
             marginBottom: "14px",
             fontWeight: 500,
           }}
@@ -134,7 +134,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
           style={{
             display: "inline-flex",
             alignItems: "center",
-            background: "#a69260",
+            background: "#7a6841",
             color: "#fff",
             padding: "13px 30px",
             borderRadius: "999px",
@@ -326,7 +326,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 >
                   {item.city}
                 </p>
-                <p style={{ fontSize: "11px", color: "#a69260" }}>{item.note}</p>
+                <p style={{ fontSize: "11px", color: "#7a6841" }}>{item.note}</p>
               </div>
             ))}
           </div>
@@ -402,7 +402,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                     fontFamily: "'Cormorant Garamond', Georgia, serif",
                     fontSize: "1.6rem",
                     fontWeight: 600,
-                    color: "#a69260",
+                    color: "#7a6841",
                     marginBottom: "10px",
                   }}
                 >
@@ -517,7 +517,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             style={{
               display: "inline-flex",
               alignItems: "center",
-              background: "#a69260",
+              background: "#7a6841",
               color: "#fff",
               padding: "13px 30px",
               borderRadius: "999px",

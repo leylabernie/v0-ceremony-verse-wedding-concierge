@@ -23,7 +23,7 @@ export function FaqItem({ question, answer }: { question: string; answer: string
         <span className="font-medium text-sm md:text-base" style={{ color: "#1f1f1f" }}>{question}</span>
         <span
           className="shrink-0 text-lg transition-transform"
-          style={{ color: "#a69260", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}
+          style={{ color: "#7a6841", transform: open ? "rotate(45deg)" : "rotate(0deg)" }}
         >
           +
         </span>

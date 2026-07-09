@@ -60,7 +60,7 @@ export default function KanchipuramSilkGuideBlogPost() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -84,7 +84,7 @@ export default function KanchipuramSilkGuideBlogPost() {
           </h1>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.95rem",
               lineHeight: 1.7,
             }}
@@ -144,7 +144,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             trousseau fits together, see our{" "}
             <Link
               href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
             </Link>
@@ -317,7 +317,7 @@ export default function KanchipuramSilkGuideBlogPost() {
 
           <p>
             Many NRI brides turn to brick-and-mortar boutiques in major US hubs
-            like New Jersey, <Link href="/indian-wedding-shopping-illinois/" style={{ color: "#a69260" }}>Chicago</Link>, or the Bay Area out of convenience. The
+            like New Jersey, <Link href="/indian-wedding-shopping-illinois/" style={{ color: "#7a6841" }}>Chicago</Link>, or the Bay Area out of convenience. The
             idea of touching the fabric in person feels safer than buying
             online. However, these physical storefronts come with massive
             markups that often double or triple the actual artisan price.
@@ -405,7 +405,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -435,7 +435,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -465,7 +465,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -496,7 +496,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -539,7 +539,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/kanchipuram-silk-sarees-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Kanchipuram Silk Sarees USA — our dedicated service page
                 </Link>
@@ -547,7 +547,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   How to buy a bridal lehenga from India when you live in the
                   USA
@@ -556,7 +556,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/indian-wedding-outfit-scams-nri-brides"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   10 red flags every NRI bride must avoid when buying from
                   India
@@ -565,7 +565,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               <li>
                 <Link
                   href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   US customs duties on Indian silk sarees — full breakdown
                 </Link>
@@ -611,7 +611,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               href="/contact"
               style={{
                 display: "inline-block",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#fff",
                 padding: "13px 32px",
                 borderRadius: "999px",
@@ -634,7 +634,7 @@ export default function KanchipuramSilkGuideBlogPost() {
                 href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20source%20an%20authentic%20Kanchipuram%20silk%20saree."
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#a69260", fontWeight: 600 }}
+                style={{ color: "#7a6841", fontWeight: 600 }}
               >
                 Message Bhamini directly →
               </a>
@@ -649,11 +649,11 @@ export default function KanchipuramSilkGuideBlogPost() {
             }}
           >
             <strong>About CeremonyVerse:</strong> We source authentic
-            Kanchipuram silk sarees, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#a69260" }}>Banarasi silk sarees</Link>, bridal lehengas, sherwanis, and family
+            Kanchipuram silk sarees, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>, bridal lehengas, sherwanis, and family
             wedding attire directly from India&apos;s heritage weavers for NRI
             brides in the USA. Every saree is verified with the Silk Mark India
             holographic tag and physically inspected before shipping.{" "}
-            <Link href="/contact" style={{ color: "#a69260" }}>
+            <Link href="/contact" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding trousseau.

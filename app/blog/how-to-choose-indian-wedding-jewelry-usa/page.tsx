@@ -62,7 +62,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -86,7 +86,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           </h1>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.95rem",
               lineHeight: 1.7,
             }}
@@ -146,7 +146,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             directly from India. For the broader trousseau picture, see our{" "}
             <Link
               href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
             </Link>
@@ -266,7 +266,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             you are wearing a{" "}
             <Link
               href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               Kanchipuram silk saree
             </Link>
@@ -383,7 +383,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             ceremony approach is exactly what we walk through in our{" "}
             <Link
               href="/blog/when-to-order-indian-wedding-outfits-nri-bride"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               NRI wedding timeline guide
             </Link>
@@ -623,7 +623,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               on Indian wedding shopping scams, see our{" "}
               <Link
                 href="/blog/indian-wedding-outfit-scams-nri-brides"
-                style={{ color: "#a69260" }}
+                style={{ color: "#7a6841" }}
               >
                 10 red flags every NRI bride must avoid
               </Link>
@@ -743,7 +743,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             logistics work end-to-end, see our{" "}
             <Link
               href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               guide to shipping Indian wedding outfits and jewelry to the USA
             </Link>
@@ -786,7 +786,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -817,7 +817,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -848,7 +848,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -863,7 +863,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               neckline of your outfit. If your{" "}
               <Link
                 href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
-                style={{ color: "#a69260" }}
+                style={{ color: "#7a6841" }}
               >
                 bridal lehenga
               </Link>{" "}
@@ -886,7 +886,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -931,7 +931,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/wedding-accessories-and-ceremony-items-from-india/"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Wedding accessories and ceremony items from India — our
                   service page
@@ -940,7 +940,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   How to buy a bridal lehenga from India when you live in the
                   USA
@@ -949,7 +949,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/indian-wedding-outfit-scams-nri-brides"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   10 red flags every NRI bride must avoid when buying from
                   India
@@ -958,7 +958,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Shipping Indian wedding outfits and jewelry to the USA —
                   customs and duties
@@ -967,7 +967,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   How to buy authentic Kanchipuram silk sarees online
                 </Link>
@@ -975,7 +975,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               <li>
                 <Link
                   href="/avoid-indian-wedding-shopping-scams/"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Avoid Indian wedding shopping scams — full guide
                 </Link>
@@ -1021,7 +1021,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               href="/contact"
               style={{
                 display: "inline-block",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#fff",
                 padding: "13px 32px",
                 borderRadius: "999px",
@@ -1044,7 +1044,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20source%20authentic%20Indian%20wedding%20jewelry."
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#a69260", fontWeight: 600 }}
+                style={{ color: "#7a6841", fontWeight: 600 }}
               >
                 Message Bhamini directly →
               </a>
@@ -1065,7 +1065,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             India&apos;s heritage artisans for NRI brides in the USA. Every
             solid-gold piece is BIS Hallmark-verified and physically inspected
             before shipping.{" "}
-            <Link href="/contact" style={{ color: "#a69260" }}>
+            <Link href="/contact" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding jewelry and full trousseau.

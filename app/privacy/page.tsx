@@ -27,13 +27,13 @@ export default function PrivacyPage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · Legal
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
             Privacy Policy
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Last updated: July 2026
           </p>
         </div>
@@ -185,7 +185,7 @@ export default function PrivacyPage() {
           </ul>
           <p style={{ marginTop: "1rem" }}>
             To exercise any of these rights, email{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#a69260" }}>bhamini@ceremonyverse.com</a>{" "}
+            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
             with the subject line &quot;Privacy Request.&quot; We will respond within 30 days.
           </p>
 
@@ -240,18 +240,18 @@ export default function PrivacyPage() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>
               Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#a69260" }}>
+              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
                 bhamini@ceremonyverse.com
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
               WhatsApp:{" "}
-              <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>
+              <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
                 +1 (215) 341-9990
               </a>
             </li>
             <li>
-              <Link href="/contact" style={{ color: "#a69260" }}>
+              <Link href="/contact" style={{ color: "#7a6841" }}>
                 Book a free 30-minute consultation →
               </Link>
             </li>

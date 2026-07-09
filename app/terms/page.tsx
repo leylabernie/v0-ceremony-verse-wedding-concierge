@@ -27,13 +27,13 @@ export default function TermsPage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · Legal
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
             Terms of Service
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Last updated: July 2026
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function TermsPage() {
           <p style={{ marginTop: "1rem" }}>
             For a detailed breakdown of how US customs handles Indian wedding outfits and jewelry,
             see our{" "}
-            <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>
+            <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#7a6841" }}>
               shipping and customs duties guide
             </Link>
             . For textiles, the current US Harmonized Tariff Schedule rate is typically 5.7% to
@@ -175,9 +175,9 @@ export default function TermsPage() {
             United States. Any disputes will be resolved in the state or federal courts located in
             Philadelphia County, Pennsylvania. We will always attempt to resolve any concern
             informally first — please reach out to{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#a69260" }}>bhamini@ceremonyverse.com</a>{" "}
+            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
             or by WhatsApp at{" "}
-            <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>+1 (215) 341-9990</a>.
+            <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -189,18 +189,18 @@ export default function TermsPage() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>
               Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#a69260" }}>
+              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
                 bhamini@ceremonyverse.com
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
               WhatsApp:{" "}
-              <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>
+              <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
                 +1 (215) 341-9990
               </a>
             </li>
             <li>
-              <Link href="/contact" style={{ color: "#a69260" }}>
+              <Link href="/contact" style={{ color: "#7a6841" }}>
                 Book a free 30-minute consultation →
               </Link>
             </li>

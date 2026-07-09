@@ -95,7 +95,7 @@ export default function ReceptionOutfitsPage() {
             fontSize: "11px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#a69260",
+            color: "#7a6841",
             marginBottom: "14px",
             fontWeight: 500,
           }}
@@ -134,7 +134,7 @@ export default function ReceptionOutfitsPage() {
           style={{
             display: "inline-flex",
             alignItems: "center",
-            background: "#a69260",
+            background: "#7a6841",
             color: "#fff",
             padding: "13px 30px",
             borderRadius: "999px",
@@ -468,7 +468,7 @@ export default function ReceptionOutfitsPage() {
             style={{
               fontSize: "15px",
               lineHeight: 1.7,
-              color: "#a69260",
+              color: "#7a6841",
               marginBottom: "24px",
               maxWidth: "500px",
               margin: "0 auto 24px",
@@ -482,7 +482,7 @@ export default function ReceptionOutfitsPage() {
             href="/#contact"
             style={{
               display: "inline-block",
-              background: "#a69260",
+              background: "#7a6841",
               color: "#2f2f2f",
               padding: "13px 30px",
               borderRadius: "999px",
@@ -495,7 +495,7 @@ export default function ReceptionOutfitsPage() {
           </a>
           <p style={{ color: "#6f6a63", fontSize: "13px", marginTop: "16px" }}>
             Or WhatsApp:{" "}
-            <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>
+            <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
               +1 (215) 341-9990
             </a>
           </p>

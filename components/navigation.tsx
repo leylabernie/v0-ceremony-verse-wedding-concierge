@@ -40,11 +40,10 @@ export function Navigation() {
             <Link
               href="/"
               className="flex flex-col items-start group"
-              aria-label="CeremonyVerse Home"
               onClick={handleLinkClick}
             >
               <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
-                CEREMONY<span className="font-light text-[#a69260]">VERSE</span>
+                CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
                 Authentic Indian Wedding Shopping for NRI Families

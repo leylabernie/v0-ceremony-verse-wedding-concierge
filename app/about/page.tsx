@@ -51,7 +51,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="py-20 px-6" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#a69260" }}>
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
             About CeremonyVerse
           </p>
           <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -276,7 +276,7 @@ export default function AboutPage() {
       {/* STATS */}
       <section className="py-20 px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-5xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "#a69260" }}>
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "#7a6841" }}>
             By the Numbers
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -285,19 +285,19 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#a69260", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4+</div>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4+</div>
               <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Years in business</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#a69260", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>27+</div>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>27+</div>
               <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>5-star client reviews</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#a69260", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>50</div>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>50</div>
               <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>US states served</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#a69260", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>0</div>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>0</div>
               <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Unresolved shipping issues</p>
             </div>
           </div>

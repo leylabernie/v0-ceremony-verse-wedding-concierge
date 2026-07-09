@@ -33,13 +33,13 @@ export default function BridalLehengaCostGuide() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How Much Does a Bridal Lehenga Cost in India? Real 2026 Prices with Shipping to the USA
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Real prices NRI brides pay — from ₹45,000 budget finds to high-end designer pieces. Plus customs, shipping, and what most blogs won&apos;t tell you.
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function BridalLehengaCostGuide() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#2f2f2f", marginBottom: "1rem" }}>
               A custom bridal lehenga sourced from India and delivered to your US door costs <strong>$800–$3,500 total</strong> — including the outfit ($530–$2,940), live video shopping, custom stitching, international shipping ($80–$200), and US customs duties (12–27% of declared value, $100–$600). The same lehenga at a US Indian boutique runs <strong>$2,500–$8,000</strong>. Most NRI brides save <strong>30–50%</strong> sourcing from India — but only if they budget correctly for every cost, including the ones most blogs forget.
             </p>
-            <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#a69260", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
+            <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#7a6841", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
             <ul style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#2f2f2f", paddingLeft: "1.25rem", margin: 0 }}>
               <li><strong>Budget tier:</strong> ₹45,000–₹80,000 ($530–$940) for machine embroidery on silk-blend fabric.</li>
               <li><strong>Mid-range:</strong> ₹1,00,000–₹2,50,000 ($1,180–$2,940) for hand embroidery on pure silk — most NRI brides land here.</li>
@@ -149,7 +149,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Customs duties and import fees (12-28% of declared value):</strong> When your lehenga ships from India to the US, US Customs applies duties based on the declared value and the Harmonized Tariff Schedule classification for woven apparel. As of 2026, duty rates for Indian bridal wear range from 12% to 28% depending on the fabric composition and whether it is classified as hand-loomed or machine-made. On a ₹2,00,000 lehenga, expect to pay $1,400-$3,300 in customs duties alone. Read our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026" style={{ color: "#a69260" }}>2026 tariff guide</Link> for the latest rates.
+            <strong>Customs duties and import fees (12-28% of declared value):</strong> When your lehenga ships from India to the US, US Customs applies duties based on the declared value and the Harmonized Tariff Schedule classification for woven apparel. As of 2026, duty rates for Indian bridal wear range from 12% to 28% depending on the fabric composition and whether it is classified as hand-loomed or machine-made. On a ₹2,00,000 lehenga, expect to pay $1,400-$3,300 in customs duties alone. Read our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026" style={{ color: "#7a6841" }}>2026 tariff guide</Link> for the latest rates.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -186,7 +186,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            This is why at CeremonyVerse we do <strong>live video shopping sessions</strong> — you see the actual fabric, the actual embroidery, the actual color in natural light. The piece you approve is the piece that gets reserved with your order number. No catalog photos. No surprises. Learn more about <Link href="/services/bridal-lehengas" style={{ color: "#a69260" }}>our bridal lehenga sourcing service</Link>.
+            This is why at CeremonyVerse we do <strong>live video shopping sessions</strong> — you see the actual fabric, the actual embroidery, the actual color in natural light. The piece you approve is the piece that gets reserved with your order number. No catalog photos. No surprises. Learn more about <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>our bridal lehenga sourcing service</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -205,7 +205,7 @@ export default function BridalLehengaCostGuide() {
           </ul>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Not sure where to start? Check out our guide on <Link href="/blog/when-should-nri-brides-order-wedding-outfits-india" style={{ color: "#a69260" }}>when to order your lehenga from India</Link> to make sure you plan your budget and timeline together. And if you want to protect yourself from vendor fraud, read about the <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>common scams when buying lehengas from India</Link>.
+            Not sure where to start? Check out our guide on <Link href="/blog/when-should-nri-brides-order-wedding-outfits-india" style={{ color: "#7a6841" }}>when to order your lehenga from India</Link> to make sure you plan your budget and timeline together. And if you want to protect yourself from vendor fraud, read about the <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#7a6841" }}>common scams when buying lehengas from India</Link>.
           </p>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
@@ -215,17 +215,17 @@ export default function BridalLehengaCostGuide() {
             </p>
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#a69260" }}>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#7a6841" }}>
                   How to buy a lehenga from India safely: 10 scams NRI brides must avoid
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#a69260" }}>
+                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>
                   When to order your wedding outfits from India so nothing arrives late
                 </Link>
               </li>
               <li>
-                <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#a69260" }}>
+                <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#7a6841" }}>
                   How much are US customs duties on Indian wedding lehengas?
                 </Link>
               </li>
@@ -243,18 +243,18 @@ export default function BridalLehengaCostGuide() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
               <strong>Download our free India Sourcing Price Guide</strong> — real 2026 price ranges for lehengas, sherwanis, jewelry, and family outfits, plus a customs and shipping cost calculator built for NRI brides. Drop your email below and we&apos;ll send it instantly.
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#a69260", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Free Price Guide →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
-              Already have your budget planned? <Link href="/contact" style={{ color: "#a69260", fontWeight: 600 }}>Book a free 20-minute video consultation</Link> and we&apos;ll show you real lehengas from our partners in India — no commitment, just real options and real prices.
+              Already have your budget planned? <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 20-minute video consultation</Link> and we&apos;ll show you real lehengas from our partners in India — no commitment, just real options and real prices.
             </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
           <p style={{ fontSize: "0.85rem", color: "#5e4a40" }}>
-            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, sherwanis, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/how-it-works" style={{ color: "#a69260" }}>Learn how we work</Link> or <Link href="/faq" style={{ color: "#a69260" }}>read our FAQ</Link>.
+            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, sherwanis, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/how-it-works" style={{ color: "#7a6841" }}>Learn how we work</Link> or <Link href="/faq" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 
         </div>

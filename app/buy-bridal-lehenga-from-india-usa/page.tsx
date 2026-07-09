@@ -62,7 +62,7 @@ export default function BridalLehengaPage() {
       {/* HERO */}
       <section className="py-20 text-center px-6" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#a69260" }}>
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
             Bridal Lehenga Sourcing · India → USA
           </p>
           <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -78,14 +78,14 @@ export default function BridalLehengaPage() {
             <a
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book a Free Consultation
             </a>
             <a
               href="/how-it-works"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#f8f6f2" }}
+              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
               See How It Works
             </a>
@@ -463,7 +463,7 @@ export default function BridalLehengaPage() {
       {/* CTA */}
       <section className="py-20 text-center px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-2xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#a69260" }}>
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
             Start Your Bridal Lehenga Journey
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -473,7 +473,7 @@ export default function BridalLehengaPage() {
             Tell us about your wedding date, ceremonies, and vision. We&apos;ll recommend the right
             sourcing tier for you and show you real lehengas from our India partners.
           </p>
-          <p className="text-sm mb-8" style={{ color: "#a69260" }}>
+          <p className="text-sm mb-8" style={{ color: "#7a6841" }}>
             Top India vendors book 6–12 months in advance — if your wedding is within the year, reach
             out now.
           </p>
@@ -481,7 +481,7 @@ export default function BridalLehengaPage() {
             <a
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </a>

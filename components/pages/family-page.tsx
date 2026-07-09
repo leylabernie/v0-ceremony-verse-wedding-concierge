@@ -18,7 +18,7 @@ export function FamilyPage({ onNavigate }: Props) {
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.65) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>For the Whole Family</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>For the Whole Family</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Family Wedding Outfits</h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Sarees, lehengas, and traditional outfits for parents, in-laws, siblings, and extended family — coordinated so everyone looks unified and beautiful.</p>
         </div>

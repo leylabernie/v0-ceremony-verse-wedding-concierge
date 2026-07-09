@@ -116,7 +116,7 @@ export default function IndianBridalWearTexasPage() {
         <div className="max-w-4xl mx-auto">
           <p
             className="text-xs tracking-widest uppercase font-medium mb-4"
-            style={{ color: "#a69260" }}
+            style={{ color: "#7a6841" }}
           >
             Indian Bridal Wear Concierge · Houston &amp; Dallas-Fort Worth
           </p>
@@ -142,7 +142,7 @@ export default function IndianBridalWearTexasPage() {
             <Link
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Your CeremonyVerse Consultation Now
             </Link>
@@ -151,7 +151,7 @@ export default function IndianBridalWearTexasPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#f8f6f2" }}
+              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
               WhatsApp Bhamini
             </a>
@@ -213,7 +213,7 @@ export default function IndianBridalWearTexasPage() {
           <div className="grid md:grid-cols-3 gap-6">
             <div
               className="bg-white border border-[#e6dfd5] rounded-2xl p-8"
-              style={{ borderTop: "4px solid #a69260" }}
+              style={{ borderTop: "4px solid #7a6841" }}
             >
               <h3
                 className="font-semibold text-xl mb-3"
@@ -235,7 +235,7 @@ export default function IndianBridalWearTexasPage() {
             </div>
             <div
               className="bg-white border border-[#e6dfd5] rounded-2xl p-8"
-              style={{ borderTop: "4px solid #a69260" }}
+              style={{ borderTop: "4px solid #7a6841" }}
             >
               <h3
                 className="font-semibold text-xl mb-3"
@@ -257,7 +257,7 @@ export default function IndianBridalWearTexasPage() {
             </div>
             <div
               className="bg-white border border-[#e6dfd5] rounded-2xl p-8"
-              style={{ borderTop: "4px solid #a69260" }}
+              style={{ borderTop: "4px solid #7a6841" }}
             >
               <h3
                 className="font-semibold text-xl mb-3"
@@ -320,7 +320,7 @@ export default function IndianBridalWearTexasPage() {
             </div>
             <div
               className="bg-white border border-[#e6dfd5] rounded-2xl p-6"
-              style={{ borderLeft: "4px solid #a69260" }}
+              style={{ borderLeft: "4px solid #7a6841" }}
             >
               <h3
                 className="font-semibold mb-3"
@@ -368,7 +368,7 @@ export default function IndianBridalWearTexasPage() {
             <Link
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Your CeremonyVerse Consultation Now
             </Link>
@@ -377,7 +377,7 @@ export default function IndianBridalWearTexasPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#f8f6f2" }}
+              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
               WhatsApp Bhamini Directly
             </a>
@@ -387,35 +387,35 @@ export default function IndianBridalWearTexasPage() {
           <div className="mt-16 pt-10" style={{ borderTop: "1px solid #4a4a4a" }}>
             <p
               className="text-xs tracking-widest uppercase font-medium mb-4"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               More for Texas Couples
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
                 href="/indian-wedding-shopping-texas"
-                className="text-[#f8f6f2] hover:text-[#a69260] transition-colors"
+                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Texas Indian Wedding Shopping
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
                 href="/blog/indian-wedding-return-gifts-bulk-usa"
-                className="text-[#f8f6f2] hover:text-[#a69260] transition-colors"
+                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Bulk Wedding Return Gifts Guide
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
                 href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa"
-                className="text-[#f8f6f2] hover:text-[#a69260] transition-colors"
+                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Coordinating Bridesmaid Lehengas
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
                 href="/how-to-buy-bridal-lehenga-from-india-to-usa"
-                className="text-[#f8f6f2] hover:text-[#a69260] transition-colors"
+                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 How to Buy a Bridal Lehenga from India
               </Link>

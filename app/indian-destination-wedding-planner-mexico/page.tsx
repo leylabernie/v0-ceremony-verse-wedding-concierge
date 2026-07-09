@@ -96,24 +96,24 @@ export default function MexicoDestinationPage() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold leading-tight">
                 Your Secret Weapon: <br />
-                <span className="text-[#a69260]">Group Wardrobe Sourcing</span>
+                <span className="text-[#7a6841]">Group Wardrobe Sourcing</span>
               </h2>
               <p className="mt-6 text-lg text-gray-200 leading-relaxed">
                 The biggest stress for Mexico destination weddings? Getting the outfits right. Most NRI families waste thousands on overpriced US boutiques or risk scams on Instagram.
               </p>
               <ul className="mt-8 space-y-4">
                 <li className="flex items-center gap-3 text-gray-200">
-                  <span className="text-[#a69260] font-bold">✓</span> Matching Bridesmaid & Groomsmen sets from India
+                  <span className="text-[#7a6841] font-bold">✓</span> Matching Bridesmaid & Groomsmen sets from India
                 </li>
                 <li className="flex items-center gap-3 text-gray-200">
-                  <span className="text-[#a69260] font-bold">✓</span> Full quality inspection & live video approval
+                  <span className="text-[#7a6841] font-bold">✓</span> Full quality inspection & live video approval
                 </li>
                 <li className="flex items-center gap-3 text-gray-200">
-                  <span className="text-[#a69260] font-bold">✓</span> Direct door-to-door shipping to the USA or Mexico
+                  <span className="text-[#7a6841] font-bold">✓</span> Direct door-to-door shipping to the USA or Mexico
                 </li>
               </ul>
               <div className="mt-10">
-                <a href="/shop-from-india" className="inline-block bg-[#a69260] text-white px-8 py-4 rounded-lg font-bold transition-transform hover:scale-105">
+                <a href="/shop-from-india" className="inline-block bg-[#7a6841] text-white px-8 py-4 rounded-lg font-bold transition-transform hover:scale-105">
                   Explore Sourcing Packages
                 </a>
               </div>

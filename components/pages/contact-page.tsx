@@ -94,7 +94,7 @@ export function ContactPage() {
             className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8"
             style={{ border: "2px solid var(--cv-accent)" }}
           >
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="2">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#7a6841" strokeWidth="2">
               <polyline points="20,6 9,17 4,12" />
             </svg>
           </div>
@@ -224,7 +224,7 @@ export function ContactPage() {
             className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
             style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a6841" strokeWidth="1.5">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
               <line x1="16" y1="13" x2="8" y2="13"/>
@@ -242,7 +242,7 @@ export function ContactPage() {
             className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
             style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a69260" strokeWidth="1.5">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a6841" strokeWidth="1.5">
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
               <polyline points="14 2 14 8 20 8"/>
               <path d="M9 15l2 2 4-4"/>
@@ -467,7 +467,7 @@ export function ContactPage() {
                       checked={formData.contractAcknowledged}
                       onChange={(e) => updateFormData("contractAcknowledged", e.target.checked)}
                       className="mt-0.5 w-4 h-4 cursor-pointer rounded"
-                      style={{ accentColor: "#a69260" }}
+                      style={{ accentColor: "#7a6841" }}
                       required
                     />
                     <span className="text-sm leading-relaxed" style={{ color: "var(--cv-muted)" }}>
@@ -485,7 +485,7 @@ export function ContactPage() {
                   disabled={!canSubmit() || isLoading}
                   className="w-full py-4 rounded-full text-sm font-semibold transition"
                   style={{
-                    background: canSubmit() && !isLoading ? "#a69260" : "#e6dfd5",
+                    background: canSubmit() && !isLoading ? "#7a6841" : "#e6dfd5",
                     color: canSubmit() && !isLoading ? "#fff" : "#b0a898",
                     cursor: canSubmit() && !isLoading ? "pointer" : "not-allowed",
                   }}

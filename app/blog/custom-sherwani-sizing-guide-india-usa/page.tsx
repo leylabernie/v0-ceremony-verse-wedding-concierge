@@ -61,7 +61,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -85,7 +85,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           </h1>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.95rem",
               lineHeight: 1.7,
             }}
@@ -146,7 +146,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             the full groom outfit checklist, see our{" "}
             <Link
               href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
             </Link>
@@ -297,7 +297,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -329,7 +329,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -361,7 +361,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -420,7 +420,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -452,7 +452,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -484,7 +484,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -530,7 +530,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/buy-sherwani-from-india-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Buy a Sherwani from India — Delivered to Your US Door
                 </Link>
@@ -538,7 +538,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/how-to-buy-sherwani-from-india-usa"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   How to Buy a Sherwani from India — complete guide with prices
                 </Link>
@@ -546,7 +546,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Groom outfit checklist for every ceremony
                 </Link>
@@ -554,7 +554,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               <li>
                 <Link
                   href="/blog/indian-wedding-outfit-scams-nri-brides"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Red flags to avoid when buying Indian wedding outfits online
                 </Link>
@@ -601,7 +601,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               href="/contact"
               style={{
                 display: "inline-block",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#fff",
                 padding: "13px 32px",
                 borderRadius: "999px",
@@ -624,7 +624,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
                 href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20talk%20about%20a%20custom%20sherwani%20from%20India."
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#a69260", fontWeight: 600 }}
+                style={{ color: "#7a6841", fontWeight: 600 }}
               >
                 Message Bhamini directly →
               </a>
@@ -643,7 +643,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             India&apos;s premium menswear designers for NRI grooms in the USA.
             Every sherwani goes through a live Masterji measurement call and a
             pre-shipment fitting on a custom mannequin before it ships.{" "}
-            <Link href="/contact" style={{ color: "#a69260" }}>
+            <Link href="/contact" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding outfit.

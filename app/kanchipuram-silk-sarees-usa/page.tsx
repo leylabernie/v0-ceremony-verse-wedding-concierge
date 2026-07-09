@@ -39,7 +39,7 @@ export default function KanchipuramSareesPage() {
 
       {/* HERO */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#a69260", marginBottom: "14px" }}>
+        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px" }}>
           Kanchipuram Silk Sarees
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
@@ -51,7 +51,7 @@ export default function KanchipuramSareesPage() {
         <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#5e4a40", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
           This is not sourced from a catalog. We go there so you don't have to.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>

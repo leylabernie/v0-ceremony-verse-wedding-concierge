@@ -61,7 +61,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -85,7 +85,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
           </h1>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.95rem",
               lineHeight: 1.7,
             }}
@@ -147,7 +147,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             wedding plan, see our{" "}
             <Link
               href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-              style={{ color: "#a69260" }}
+              style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
             </Link>
@@ -195,7 +195,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -226,7 +226,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -257,7 +257,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -288,7 +288,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -477,7 +477,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -509,7 +509,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -541,7 +541,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -572,7 +572,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               style={{
                 fontWeight: 600,
                 marginBottom: "0.5rem",
-                color: "#a69260",
+                color: "#7a6841",
                 textTransform: "uppercase",
                 fontSize: "0.8rem",
                 letterSpacing: "0.08em",
@@ -616,7 +616,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/indian-wedding-outfit-checklist-every-ceremony"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Full Indian wedding outfit &amp; favor checklist
                 </Link>
@@ -624,7 +624,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   US customs duties on Indian wedding items — full breakdown
                 </Link>
@@ -632,7 +632,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
                   href="/blog/when-to-order-indian-wedding-outfits-nri-bride"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   When to order: full NRI wedding timeline
                 </Link>
@@ -640,7 +640,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               <li>
                 <Link
                   href="/wedding-accessories-and-ceremony-items-from-india"
-                  style={{ color: "#a69260" }}
+                  style={{ color: "#7a6841" }}
                 >
                   Wedding accessories &amp; ceremonial items from India
                 </Link>
@@ -687,7 +687,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               href="/contact"
               style={{
                 display: "inline-block",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#fff",
                 padding: "13px 32px",
                 borderRadius: "999px",
@@ -710,7 +710,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
                 href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20talk%20about%20bulk%20wedding%20return%20gifts%20from%20India."
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#a69260", fontWeight: 600 }}
+                style={{ color: "#7a6841", fontWeight: 600 }}
               >
                 Message Bhamini directly →
               </a>
@@ -730,7 +730,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             families in the USA. Every bulk order is physically inspected,
             compacted for shipping, and customs-cleared under the correct HS
             codes.{" "}
-            <Link href="/contact" style={{ color: "#a69260" }}>
+            <Link href="/contact" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding favor needs.

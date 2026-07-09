@@ -23,7 +23,7 @@ export function ServicesPage({ onNavigate }: ServicesPageProps) {
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.65) 100%)", zIndex: 1 }} />
         <div className="relative py-20 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>Everything You Need</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>Everything You Need</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>
             What We Source
           </h1>

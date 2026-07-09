@@ -25,11 +25,11 @@ function ServiceCard({ href, image, imageAlt, badge, title, description }: Servi
       </div>
       <div className="p-6">
         {badge && (
-          <div className="text-xs font-medium text-[#a69260] uppercase tracking-widest mb-2">{badge}</div>
+          <div className="text-xs font-medium text-[#7a6841] uppercase tracking-widest mb-2">{badge}</div>
         )}
         <h3 className="text-xl font-semibold mb-2 text-[#1f1f1f]">{title}</h3>
         <p className="text-[#5e4a40] text-sm leading-relaxed">{description}</p>
-        {href && <p className="text-[#a69260] text-xs font-medium mt-3">Explore →</p>}
+        {href && <p className="text-[#7a6841] text-xs font-medium mt-3">Explore →</p>}
       </div>
     </>
   )
@@ -81,7 +81,7 @@ export default function ServicesPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/65" />
         <div className="relative py-20 px-6 z-10">
-          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-[#a69260]">Everything You Need</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-[#7a6841]">Everything You Need</p>
           <h1 className="text-4xl sm:text-5xl font-semibold mb-6 text-white">
             What We Source
           </h1>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-8 py-3 bg-[#a69260] text-white font-medium rounded-full
+            className="inline-block px-8 py-3 bg-[#7a6841] text-white font-medium rounded-full
               hover:opacity-90 transition-opacity duration-300"
           >
             Book Consultation

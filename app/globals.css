@@ -30,14 +30,14 @@
   --cv-card: #ffffff;
   --cv-foreground: #2f2f2f;  /* charcoal, not navy */
   --cv-muted: #4d453d;       /* warm muted text — darker for WCAG contrast */
-  --cv-accent: #a69260;      /* warm beige-gold — darker for WCAG contrast */
+  --cv-accent: #7a6841;      /* darker beige-gold for WCAG 4.5:1 contrast on white text */
   --cv-border: #e6dfd5;      /* subtle warm border */
 
   /* Legacy aliases used by your components */
   --muted-rose: #f8f6f2;     /* map old pink utility to ivory */
   --champagne: #ffffff;      /* map old beige utility to white */
   --midnight-navy: #2f2f2f;  /* map old navy utility to charcoal */
-  --brushed-gold: #a69260;   /* warm beige-gold — darker for WCAG contrast */
+  --brushed-gold: #7a6841;   /* darker beige-gold for WCAG 4.5:1 contrast on white text */
 
   /* Theme tokens */
   --background: var(--cv-bg);

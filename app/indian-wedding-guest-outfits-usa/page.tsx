@@ -26,7 +26,7 @@ export default function IndianWeddingGuestOutfitsPage() {
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#a69260", marginBottom: "14px", fontWeight: 500 }}>
+        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
           Wedding Guest Outfits
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
@@ -35,7 +35,7 @@ export default function IndianWeddingGuestOutfitsPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           Attending an Indian wedding in the US and need the perfect outfit? We source lehengas, sarees, anarkalis, sharara sets, and sherwanis directly from India — live video shopping, custom stitched to your measurements, and delivered to your door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -98,7 +98,7 @@ export default function IndianWeddingGuestOutfitsPage() {
               { step: "03", title: "Delivered to Your US Door", desc: "We handle packaging, international shipping, and customs clearance. Your outfit arrives at your home in the US, ready to wear." },
             ].map((item) => (
               <div key={item.step} style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
-                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#a69260", lineHeight: 1 }}>{item.step}</span>
+                <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#7a6841", lineHeight: 1 }}>{item.step}</span>
                 <div>
                   <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "6px" }}>{item.title}</h3>
                   <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
@@ -135,7 +135,7 @@ export default function IndianWeddingGuestOutfitsPage() {
               { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for the bride or entire family across all wedding events. Multiple outfits, full coordination." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
-                <p style={{ fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#a69260", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
+                <p style={{ fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
                 <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#1f1f1f", marginBottom: "10px" }}>{item.price}</p>
                 <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
@@ -175,7 +175,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Start with a free consultation — we'll help you figure out what you need, what's realistic for your timeline, and how to get it sourced from India.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#a69260", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+            <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation — ceremonyverse.com
             </a>
             <a href="https://wa.me/12153419990" style={{ fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>

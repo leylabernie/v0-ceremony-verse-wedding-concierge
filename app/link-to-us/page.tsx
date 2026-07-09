@@ -51,7 +51,7 @@ export default function LinkToUsPage() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -72,7 +72,7 @@ export default function LinkToUsPage() {
           >
             Link to CeremonyVerse
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             If CeremonyVerse helped you with your Indian wedding shopping — sourcing a bridal
             lehenga, sherwani, family outfits, or any wedding items from India — we would be
             honored if you linked back to us. A simple link from your wedding website, blog,
@@ -260,7 +260,7 @@ export default function LinkToUsPage() {
             </p>
             <p
               style={{
-                color: "#a69260",
+                color: "#7a6841",
                 fontSize: "0.95rem",
                 marginBottom: "1.5rem",
                 lineHeight: 1.6,
@@ -273,7 +273,7 @@ export default function LinkToUsPage() {
               href="/contact/"
               style={{
                 display: "inline-block",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#2f2f2f",
                 padding: "0.8rem 2rem",
                 borderRadius: "4px",

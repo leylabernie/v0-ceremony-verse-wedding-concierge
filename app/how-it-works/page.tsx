@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
             fontSize: "11px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#a69260",
+            color: "#7a6841",
             marginBottom: "14px",
             fontWeight: 500,
           }}
@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
                   fontSize: "2.4rem",
                   fontWeight: 300,
-                  color: "#a69260",
+                  color: "#7a6841",
                   lineHeight: 1,
                   minWidth: "52px",
                   flexShrink: 0,
@@ -220,7 +220,7 @@ export default function HowItWorksPage() {
               fontSize: "11px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#a69260",
+              color: "#7a6841",
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
@@ -286,7 +286,7 @@ export default function HowItWorksPage() {
               fontSize: "11px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
-              color: "#a69260",
+              color: "#7a6841",
               marginBottom: "14px",
               fontWeight: 500,
               textAlign: "center",
@@ -324,7 +324,7 @@ export default function HowItWorksPage() {
                     fontSize: "12px",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#a69260",
+                    color: "#7a6841",
                     fontWeight: 600,
                     marginBottom: "8px",
                   }}
@@ -432,7 +432,7 @@ export default function HowItWorksPage() {
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                background: "#a69260",
+                background: "#7a6841",
                 color: "#fff",
                 padding: "13px 30px",
                 borderRadius: "999px",
@@ -457,7 +457,7 @@ export default function HowItWorksPage() {
                 fontSize: "14px",
                 fontWeight: 600,
                 textDecoration: "none",
-                border: "1px solid #a69260",
+                border: "1px solid #7a6841",
               }}
             >
               WhatsApp +1 (215) 341-9990

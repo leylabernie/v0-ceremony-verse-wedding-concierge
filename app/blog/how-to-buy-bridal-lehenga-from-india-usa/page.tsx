@@ -35,13 +35,13 @@ export default function LehengaBuyingGuideBlogPost() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How to Buy a Bridal Lehenga from India When You Live in the USA
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             A step-by-step guide for NRI brides — from finding a trustworthy sourcing partner to getting your dream lehenga through customs and to your doorstep.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function LehengaBuyingGuideBlogPost() {
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            A US-based Indian wedding shopping concierge like <Link href="/" style={{ color: "#a69260" }}>CeremonyVerse</Link> offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions.
+            A US-based Indian wedding shopping concierge like <Link href="/" style={{ color: "#7a6841" }}>CeremonyVerse</Link> offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -212,17 +212,17 @@ export default function LehengaBuyingGuideBlogPost() {
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", color: "#f8f6f2", marginBottom: "0.75rem" }}>
               Ready to start your search?
             </p>
-            <p style={{ color: "#a69260", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
+            <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
               CeremonyVerse is a US-based Indian wedding shopping concierge that specializes in exactly this: sourcing bridal lehengas, family outfits, and trousseau pieces from India for NRI brides and families across the United States. We do live video shopping, handle the logistics, and stay with you through every step.
             </p>
             <Link
               href="/#contact"
-              style={{ display: "inline-block", background: "#a69260", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
+              style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
             </Link>
             <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
-              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>+1 (215) 341-9990</a>
+              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
@@ -240,7 +240,7 @@ export default function LehengaBuyingGuideBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to CeremonyVerse
           </Link>
         </div>

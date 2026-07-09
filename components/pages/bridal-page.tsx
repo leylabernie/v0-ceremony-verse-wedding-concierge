@@ -24,7 +24,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.6) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#a69260" }}>Bridal Sourcing</p>
+          <p className="tracking-[0.15em] text-xs font-medium mb-4 uppercase" style={{ color: "#7a6841" }}>Bridal Sourcing</p>
           <h1 className="font-['Cormorant_Garamond'] text-5xl md:text-7xl font-semibold mb-6" style={{ color: "#fff" }}>
             Your Dream Lehenga,<br />Sourced from India
           </h1>
@@ -34,7 +34,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => onNavigate?.("contact")}
-              className="bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+              className="bg-[#7a6841] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
             >
               Start Your Bridal Sourcing
             </button>
@@ -84,7 +84,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
               { title: "Guaranteed fit", desc: "We collect 15+ measurements and build in alteration allowance. custom-fitted to your measurements. If alterations are needed due to our error, we cover the cost." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
-                <span className="text-[#a69260] font-semibold text-lg mt-0.5">—</span>
+                <span className="text-[#7a6841] font-semibold text-lg mt-0.5">—</span>
                 <div>
                   <h3 className="font-semibold text-[#1f1f1f] mb-1">{item.title}</h3>
                   <p className="text-sm text-[#4d403a] leading-relaxed">{item.desc}</p>
@@ -106,7 +106,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
             { step: "04", title: "Quality Check & Ship", desc: "We inspect every piece before it ships, then deliver directly to your US address." },
           ].map((item, i) => (
             <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-xs tracking-widest text-[#a69260] font-medium mb-3 uppercase">Step {item.step}</p>
+              <p className="text-xs tracking-widest text-[#7a6841] font-medium mb-3 uppercase">Step {item.step}</p>
               <h3 className="font-semibold text-[#1f1f1f] mb-2">{item.title}</h3>
               <p className="text-sm text-[#4d403a]">{item.desc}</p>
             </div>
@@ -117,7 +117,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
       {/* PRICE COMPARISON */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-center" style={{ color: "#a69260" }}>The Numbers</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4 text-center" style={{ color: "#7a6841" }}>The Numbers</p>
           <h2 className="text-3xl font-semibold text-center mb-10 text-[#1f1f1f]">Why Source from India?</h2>
           <div className="overflow-x-auto rounded-2xl border border-[#e6dfd5]">
             <table className="w-full text-sm">
@@ -125,8 +125,8 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
                 <tr style={{ background: "#1f1f1f", color: "#fff" }}>
                   <th className="text-left px-6 py-4 font-medium">Outfit Type</th>
                   <th className="text-center px-6 py-4 font-medium">US Boutique</th>
-                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#a69260" }}>CeremonyVerse</th>
-                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#a69260" }}>Your Savings</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#7a6841" }}>CeremonyVerse</th>
+                  <th className="text-center px-6 py-4 font-medium" style={{ color: "#7a6841" }}>Your Savings</th>
                 </tr>
               </thead>
               <tbody>
@@ -140,7 +140,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
                     <td className="px-6 py-4 text-[#1f1f1f] font-medium">{row.item}</td>
                     <td className="px-6 py-4 text-center text-[#4d403a] line-through">{row.us}</td>
                     <td className="px-6 py-4 text-center font-semibold text-[#1f1f1f]">{row.cv}</td>
-                    <td className="px-6 py-4 text-center font-semibold" style={{ color: "#a69260" }}>{row.save}</td>
+                    <td className="px-6 py-4 text-center font-semibold" style={{ color: "#7a6841" }}>{row.save}</td>
                   </tr>
                 ))}
               </tbody>
@@ -154,7 +154,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
 
       {/* CTA */}
       <section className="py-20 px-6 bg-[#1f1f1f] text-white text-center">
-        <p className="tracking-[0.15em] text-xs font-medium text-[#a69260] mb-4 uppercase">Ready to Begin?</p>
+        <p className="tracking-[0.15em] text-xs font-medium text-[#7a6841] mb-4 uppercase">Ready to Begin?</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Let's find your perfect bridal look.
         </h2>
@@ -164,7 +164,7 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button
             onClick={() => onNavigate?.("contact")}
-            className="bg-[#a69260] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
+            className="bg-[#7a6841] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
           >
             Book Free Consultation
           </button>

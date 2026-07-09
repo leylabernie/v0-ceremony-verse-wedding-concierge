@@ -120,7 +120,7 @@ export function FreeGuidesPage() {
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.8rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
@@ -143,7 +143,7 @@ export function FreeGuidesPage() {
           </h1>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "1rem",
               lineHeight: 1.7,
               maxWidth: "520px",
@@ -224,7 +224,7 @@ export function FreeGuidesPage() {
                 onClick={() => handleGetGuide(guide.key)}
                 style={{
                   marginTop: "0.5rem",
-                  background: "#a69260",
+                  background: "#7a6841",
                   color: "#fff",
                   border: "none",
                   borderRadius: "999px",
@@ -239,7 +239,7 @@ export function FreeGuidesPage() {
                   (e.currentTarget.style.background = "#b29d74")
                 }
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.background = "#a69260")
+                  (e.currentTarget.style.background = "#7a6841")
                 }
               >
                 Get Free Guide
@@ -292,7 +292,7 @@ export function FreeGuidesPage() {
           </h2>
           <p
             style={{
-              color: "#a69260",
+              color: "#7a6841",
               fontSize: "0.95rem",
               marginBottom: "1.5rem",
               lineHeight: 1.7,
@@ -307,7 +307,7 @@ export function FreeGuidesPage() {
             rel="noopener noreferrer"
             style={{
               display: "inline-block",
-              background: "#a69260",
+              background: "#7a6841",
               color: "#fff",
               padding: "12px 32px",
               borderRadius: "999px",
@@ -404,7 +404,7 @@ export function FreeGuidesPage() {
                     window.location.href = `/thank-you?guide=${activeGuide}&email=${encodeURIComponent(email)}`;
                   }}
                   style={{
-                    background: "#a69260",
+                    background: "#7a6841",
                     color: "#fff",
                     border: "none",
                     borderRadius: "999px",
@@ -467,7 +467,7 @@ export function FreeGuidesPage() {
                       transition: "border-color 0.2s",
                     }}
                     onFocus={(e) =>
-                      (e.currentTarget.style.borderColor = "#a69260")
+                      (e.currentTarget.style.borderColor = "#7a6841")
                     }
                     onBlur={(e) =>
                       (e.currentTarget.style.borderColor = "#e6dfd5")
@@ -493,7 +493,7 @@ export function FreeGuidesPage() {
                     style={{
                       width: "100%",
                       padding: "12px",
-                      background: loading ? "#d4c9a8" : "#a69260",
+                      background: loading ? "#d4c9a8" : "#7a6841",
                       color: "#fff",
                       border: "none",
                       borderRadius: "999px",

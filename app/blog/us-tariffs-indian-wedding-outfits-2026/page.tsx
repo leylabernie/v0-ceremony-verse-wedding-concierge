@@ -35,13 +35,13 @@ export default function TariffsBlogPost() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             The tariff landscape changed multiple times in 2025. Here is what actually applies to your lehenga — and how to plan around it.
           </p>
         </div>
@@ -162,17 +162,17 @@ export default function TariffsBlogPost() {
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", color: "#f8f6f2", marginBottom: "0.75rem" }}>
               Ready to start sourcing?
             </p>
-            <p style={{ color: "#a69260", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
+            <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
               Book a free 30-minute consultation. Bring your budget, inspiration photos, and timeline — we will handle the rest.
             </p>
             <Link
               href="/#contact"
-              style={{ display: "inline-block", background: "#a69260", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
+              style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
             </Link>
             <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
-              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#a69260" }}>+1 (215) 341-9990</a>
+              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
@@ -192,7 +192,7 @@ export default function TariffsBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/" style={{ color: "#a69260", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to CeremonyVerse
           </Link>
         </div>

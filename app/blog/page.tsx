@@ -134,13 +134,13 @@ export default function BlogIndexPage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#a69260", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · Resources
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
             Indian Wedding Shopping Guides
           </h1>
-          <p style={{ color: "#a69260", fontSize: "0.95rem", lineHeight: 1.7 }}>
+          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
             Expert advice for NRI brides and families sourcing Indian wedding outfits from the USA.
           </p>
         </div>
@@ -156,7 +156,7 @@ export default function BlogIndexPage() {
               style={{ textDecoration: "none" }}
             >
               <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "8px", padding: "2rem", transition: "box-shadow 0.2s" }}>
-                <p style={{ fontSize: "0.78rem", color: "#a69260", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+                <p style={{ fontSize: "0.78rem", color: "#7a6841", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
                   {post.date}
                 </p>
                 <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#2f2f2f", lineHeight: 1.3, marginBottom: "0.75rem" }}>
@@ -165,7 +165,7 @@ export default function BlogIndexPage() {
                 <p style={{ fontSize: "0.95rem", color: "#6f6a63", lineHeight: 1.7, marginBottom: "1rem" }}>
                   {post.description}
                 </p>
-                <span style={{ fontSize: "0.85rem", color: "#a69260", fontWeight: 600 }}>
+                <span style={{ fontSize: "0.85rem", color: "#7a6841", fontWeight: 600 }}>
                   Read more →
                 </span>
               </div>

@@ -107,7 +107,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
         <div className="max-w-4xl mx-auto">
           <p
             className="text-xs tracking-widest uppercase font-medium mb-4"
-            style={{ color: "#a69260" }}
+            style={{ color: "#7a6841" }}
           >
             NRI Bridal Lehenga Sourcing Guide · India → USA
           </p>
@@ -134,14 +134,14 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <a
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book a Free Consultation
             </a>
             <a
               href="#challenges"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#f8f6f2" }}
+              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
               See the 3 Biggest Risks (and Fixes)
             </a>
@@ -272,7 +272,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <div className="flex items-center gap-4 mb-5">
               <span
                 className="flex items-center justify-center w-12 h-12 rounded-full text-xl font-semibold flex-shrink-0"
-                style={{ background: "#a69260", color: "#fff" }}
+                style={{ background: "#7a6841", color: "#fff" }}
               >
                 1
               </span>
@@ -325,7 +325,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <div className="flex items-center gap-4 mb-5">
               <span
                 className="flex items-center justify-center w-12 h-12 rounded-full text-xl font-semibold flex-shrink-0"
-                style={{ background: "#a69260", color: "#fff" }}
+                style={{ background: "#7a6841", color: "#fff" }}
               >
                 2
               </span>
@@ -379,7 +379,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <div className="flex items-center gap-4 mb-5">
               <span
                 className="flex items-center justify-center w-12 h-12 rounded-full text-xl font-semibold flex-shrink-0"
-                style={{ background: "#a69260", color: "#fff" }}
+                style={{ background: "#7a6841", color: "#fff" }}
               >
                 3
               </span>
@@ -435,7 +435,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
         <div className="max-w-5xl mx-auto">
           <p
             className="text-xs tracking-widest uppercase font-medium mb-3 text-center"
-            style={{ color: "#a69260" }}
+            style={{ color: "#7a6841" }}
           >
             The CeremonyVerse Difference
           </p>
@@ -465,7 +465,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             >
               <h3
                 className="font-semibold text-xl mb-3"
-                style={{ color: "#a69260" }}
+                style={{ color: "#7a6841" }}
               >
                 Curation
               </h3>
@@ -485,7 +485,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             >
               <h3
                 className="font-semibold text-xl mb-3"
-                style={{ color: "#a69260" }}
+                style={{ color: "#7a6841" }}
               >
                 Transparency
               </h3>
@@ -505,7 +505,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             >
               <h3
                 className="font-semibold text-xl mb-3"
-                style={{ color: "#a69260" }}
+                style={{ color: "#7a6841" }}
               >
                 Peace of Mind
               </h3>
@@ -549,7 +549,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <Link
               href="/contact"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#a69260", color: "#fff" }}
+              style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Your Free Consultation
             </Link>
@@ -558,7 +558,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#a69260", color: "#1f1f1f" }}
+              style={{ borderColor: "#7a6841", color: "#1f1f1f" }}
             >
               WhatsApp Bhamini Directly
             </a>
@@ -575,28 +575,28 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
                 href="/buy-bridal-lehenga-from-india-usa"
-                className="text-[#1f1f1f] hover:text-[#a69260] transition-colors"
+                className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 Buy a Bridal Lehenga from India — Delivered to USA
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
                 href="/blog/how-much-does-bridal-lehenga-cost-india-2026"
-                className="text-[#1f1f1f] hover:text-[#a69260] transition-colors"
+                className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 How Much Does a Bridal Lehenga Cost in 2026?
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
                 href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
-                className="text-[#1f1f1f] hover:text-[#a69260] transition-colors"
+                className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 US Customs Duties on Indian Wedding Outfits
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
                 href="/avoid-indian-wedding-shopping-scams"
-                className="text-[#1f1f1f] hover:text-[#a69260] transition-colors"
+                className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 Avoid Indian Wedding Shopping Scams
               </Link>

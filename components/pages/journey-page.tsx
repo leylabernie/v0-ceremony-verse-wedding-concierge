@@ -20,7 +20,7 @@ const journeySteps = [
       "Budget alignment",
       "Event planning overview",
     ],
-    accent: "#a69260",
+    accent: "#7a6841",
   },
   {
     number: "02",
@@ -50,7 +50,7 @@ const journeySteps = [
       "Color accuracy confirmation",
       "Guided selection support",
     ],
-    accent: "#a69260",
+    accent: "#7a6841",
   },
   {
     number: "04",
@@ -80,7 +80,7 @@ const journeySteps = [
       "Quality verification",
       "Final approval before dispatch",
     ],
-    accent: "#a69260",
+    accent: "#7a6841",
   },
   {
     number: "06",

@@ -18,7 +18,7 @@ export function WelcomeBagsPage({ onNavigate }: Props) {
         />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.65) 100%)", zIndex: 1 }} />
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#a69260" }}>First Impressions Matter</p>
+          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>First Impressions Matter</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Welcome Bags & Event Details</h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Curated welcome bags that greet your out-of-town guests with Indian sweets, keepsakes, and a taste of your wedding story.</p>
         </div>
