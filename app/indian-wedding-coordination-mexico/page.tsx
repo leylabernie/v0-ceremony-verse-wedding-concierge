@@ -141,12 +141,12 @@ export default function MexicoCoordinationPage() {
             and on-site coordination in Mexico.
           </p>
 
-          {/* Featured large photos — service images */}
+          {/* Featured large photos — couple portraits */}
           <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/services-bridal-gold.webp"
-                alt="Champagne gold bridal lehenga with handwork — the kind of piece we source direct from Surat"
+                src="/images/sourcing/couple-portrait.webp"
+                alt="Indian wedding couple in red lehenga and cream sherwani at sunset — the kind of coordinated look we source and deliver"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -154,8 +154,8 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/services-ceremonial2.webp"
-                alt="Mehndi ceremony setup with marigolds and brass diyas — coordinated decor for multi-day events"
+                src="/images/sourcing/couple-mandap.webp"
+                alt="Indian wedding couple under decorated mandap with floral garlands — ceremony coordination"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -163,17 +163,17 @@ export default function MexicoCoordinationPage() {
             </div>
           </div>
 
-          {/* Grid of more service images */}
+          {/* Grid of product/outfit photos */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/images/services-bridal-gold.webp", alt: "Bridal lehenga with gold handwork" },
-              { src: "/images/services-groom.webp", alt: "Groom sherwani — coordinated with bride" },
-              { src: "/images/services-bridesmaids.webp", alt: "Coordinated bridesmaid lehengas" },
-              { src: "/images/services-groomsmen.webp", alt: "Groomsmen in matching kurtas" },
-              { src: "/images/services-jewelry-real.webp", alt: "Bridal jewelry — kundan and polki" },
-              { src: "/images/services-ceremonial.webp", alt: "Ceremonial items for Hindu rituals" },
-              { src: "/images/services-welcomebags.webp", alt: "Welcome bags for destination wedding guests" },
-              { src: "/images/services-gifts.webp", alt: "Return gifts for wedding guests" },
+              { src: "/images/sourcing/bride-traditional.webp", alt: "Bride in embroidered traditional outfit with floral decor" },
+              { src: "/images/sourcing/champagne-lehenga.webp", alt: "Woman modeling beaded champagne lehenga — sourced direct from India" },
+              { src: "/images/sourcing/bridesmaid-green.webp", alt: "Coordinated green bridesmaid outfit — matching palette for wedding party" },
+              { src: "/images/sourcing/groomsmen-lavender.webp", alt: "Groomsmen in matching lavender outfits with pink turbans" },
+              { src: "/images/sourcing/bridal-jewelry.webp", alt: "Bridal jewelry set — choker, earrings, maang tikka with pearls and gemstones" },
+              { src: "/images/sourcing/cream-outfit.webp", alt: "Bride in cream-colored traditional outfit with sheer veil" },
+              { src: "/images/sourcing/gold-sequin-lehenga.webp", alt: "Gold sequined lehenga on mannequin — direct from shop" },
+              { src: "/images/sourcing/kanchipuram-saree.webp", alt: "Pure silk Kanchipuram saree in red and gold with brass lamps" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
                 <Image
@@ -213,11 +213,11 @@ export default function MexicoCoordinationPage() {
             </p>
           </div>
 
-          {/* Service image — no personal photos */}
+          {/* Sourcing shop photo */}
           <div className="mt-8 relative aspect-[3/2] rounded-2xl overflow-hidden">
             <Image
-              src="/images/services-hero.webp"
-              alt="Indian wedding flat lay with lehenga, jewelry, marigolds and brass diya — the kind of details we coordinate for Mexico destination weddings"
+              src="/images/sourcing/lehenga-shop.webp"
+              alt="Real lehenga shop in India — person displaying a red bridal skirt with gold embroidery, the kind of direct sourcing we do"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"

@@ -259,8 +259,8 @@ export default function MexicoDestinationPage() {
             <div className="relative">
               <div className="aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden relative border border-gray-700">
                 <Image
-                  src="/images/services-hero.webp"
-                  alt="Indian wedding flat lay with lehenga, jewelry, marigolds and brass diya — the details we coordinate for Mexico destination weddings"
+                  src="/images/sourcing/couple-mandap.webp"
+                  alt="Indian wedding couple under decorated mandap with floral garlands — the kind of ceremony we coordinate for Mexico destination weddings"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
