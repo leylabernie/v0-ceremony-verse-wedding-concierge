@@ -107,8 +107,11 @@ export default function AboutPage() {
             </p>
             <p>
               For both sons&apos; weddings, I sourced the outfits from India through my family&apos;s connections in
-              Surat and Delhi. Live video shopping. Family inspection before shipping. Direct pricing — no boutique
-              markup. The same process I now offer every CeremonyVerse client.
+              Surat and Delhi. I also went myself to Kanchipuram and Banaras to source pure silk sarees —
+              hallmark-certified, real zari, the authentic textile. The weavers there told me their sarees take a
+              year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from
+              the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara
+              boutique. That&apos;s the markup I cut out — for lehengas, for sarees, for everything.
             </p>
             <p>
               I built CeremonyVerse to be the partner I wished I had — a US-based business with US accountability,
@@ -231,11 +234,15 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Kanchipuram Weavers</h3>
+              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Kanchipuram &amp; Banaras Silk Sarees</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Direct relationships with weavers in Kanchipuram, Tamil Nadu for pure Kanjivaram silk sarees —
-                hallmark-certified, real zari, the authentic textile. I travel to Kanchipuram personally to source
-                these.
+                I go myself to Kanchipuram and Banaras to source silk sarees — I don&apos;t send someone else, and I
+                don&apos;t buy through middlemen. Pure silk, hallmark-certified, with real zari. I also source art silk
+                and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to
+                reach Gujarat through the distribution chain — by the time a pure silk Kanchipuram lands in a posh
+                Vadodara shop, it&apos;s been marked up nearly 3x. I bought one direct from the weaver for 20,000 rupees;
+                the same saree (not even as nice) was 56,000 rupees in a Vadodara boutique. That&apos;s the markup I cut
+                out for you.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">

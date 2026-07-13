@@ -826,6 +826,10 @@ export function HomePage() {
                 a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact piece — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. My family has been in Surat's fabric trade for generations, and I source from the same places US Indian boutiques source from — without the boutique markup. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
               },
               {
+                q: "Can you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
+                a: "Yes — I go myself to Kanchipuram and Banaras. Not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas."
+              },
+              {
                 q: "What exactly does CeremonyVerse do?",
                 a: "Two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team."
               },

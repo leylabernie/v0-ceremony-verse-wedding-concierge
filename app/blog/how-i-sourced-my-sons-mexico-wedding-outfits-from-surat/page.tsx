@@ -199,6 +199,15 @@ export default function BlogPost() {
             ends up in US boutiques, without the boutique markup.
           </p>
 
+          <p>
+            The same thing applies to silk sarees. I go myself to Kanchipuram and Banaras — not someone I send, me
+            personally. Pure silk, hallmark-certified, real zari. The weavers there told me their sarees take a year
+            to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver
+            for 20,000 rupees; I then went to a posh shop in Vadodara and found the same saree — not even as nice —
+            for 56,000 rupees. That&apos;s nearly 3x markup. For my son&apos;s wedding, I sourced all the silk sarees this
+            way. It&apos;s the same principle as the lehengas: go to the source, skip the chain.
+          </p>
+
           <h2 className="text-2xl font-semibold mt-10 mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             What I&apos;d Do Differently — And What I Now Do For Every Bride
           </h2>

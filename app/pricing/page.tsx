@@ -148,6 +148,13 @@ export default function PricingPage() {
                   <td className="p-4 font-semibold">~50%</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
+                  <td className="p-4 font-semibold">Pure silk Kanchipuram saree</td>
+                  <td className="p-4 text-[#4d403a]">Hallmark-certified, real zari — I go myself to the weavers</td>
+                  <td className="p-4">~56,000 rupees in Vadodara boutique</td>
+                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>~20,000 rupees direct from weaver</td>
+                  <td className="p-4 font-semibold">~65%</td>
+                </tr>
+                <tr className="border-t border-[#e6dfd5]">
                   <td className="p-4 font-semibold">Custom recreation (designer-inspired)</td>
                   <td className="p-4 text-[#4d403a]">Custom piece, ~85% similar to reference</td>
                   <td className="p-4">$3,000–$8,000+ designer label</td>

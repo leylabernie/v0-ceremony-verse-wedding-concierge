@@ -466,6 +466,14 @@ export function buildGlobalFaqSchema(): object {
       },
       {
         "@type": "Question",
+        name: "Do you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. I go myself to Kanchipuram and Banaras — not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas.",
+        },
+      },
+      {
+        "@type": "Question",
         name: "How far in advance should I contact CeremonyVerse?",
         acceptedAnswer: {
           "@type": "Answer",

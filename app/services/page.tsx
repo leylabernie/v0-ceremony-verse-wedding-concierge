@@ -322,6 +322,15 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
+              href="/kanchipuram-silk-sarees-usa"
+              image="/images/kanchipuram-red-silk.jpg"
+              imageAlt="Pure silk Kanchipuram bridal saree in deep red with gold zari border — hallmark certified, sourced direct from weavers"
+              badge="I Go Myself"
+              title="Kanchipuram &amp; Banaras Silk Sarees"
+              description="Pure silk, hallmark-certified, real zari — I go myself to Kanchipuram and Banaras to source direct from weavers. Also art silk and semi-silk gift sarees. A saree I bought for 20k rupees direct was 56k in a Vadodara boutique — that's the markup I cut out."
+            />
+
+            <ServiceCard
               href="/contact"
               image="/images/services-pets.webp"
               imageAlt="Two dogs dressed for a wedding — shih tzu in gold sherwani and maltese in teal lehenga"
