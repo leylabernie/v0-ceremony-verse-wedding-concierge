@@ -234,6 +234,80 @@ export default function MexicoCoordinationPage() {
         </div>
       </section>
 
+      {/* NEPHEW'S MEXICO WEDDING — MORE RECENT EXPERIENCE */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>
+            Another Family Mexico Wedding — My Nephew&apos;s
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            More recent Mexico wedding experience
+          </h2>
+          <p className="text-[#4d403a] leading-relaxed mb-8 max-w-3xl">
+            My nephew also got married in Mexico — a 3-day Hindu wedding. More recent experience means
+            I&apos;ve stayed current with Mexico venue logistics, vendor availability, and what works for Indian
+            ceremonies in Cancun and Riviera Maya. Every family wedding sharpens the process I now offer you.
+          </p>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/son-weddings/nephew-mexico-01.webp"
+                alt="Nephew's Mexico wedding — outdoor Hindu ceremony with palm trees, man in pink kurta, woman in purple lehenga"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/son-weddings/nephew-mexico-02.webp"
+                alt="Nephew's Mexico wedding — indoor Hindu ceremony, woman in orange and purple lehenga with henna"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/son-weddings/nephew-mexico-05.webp"
+                alt="Nephew's Mexico wedding — outdoor ceremony, woman in pink and green sari with gold jewelry, palm trees"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/son-weddings/nephew-mexico-03.webp"
+                alt="Nephew's Mexico wedding — bride getting ready, light blue dress during prep"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
+              <Image
+                src="/images/son-weddings/nephew-mexico-04.webp"
+                alt="Nephew's Mexico wedding — hair styling during bridal prep"
+                fill
+                sizes="(max-width: 768px) 50vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#1f1f1f] flex items-center justify-center p-6">
+              <p className="text-center text-[#d4c8b8] text-sm font-medium" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+                Three family Mexico weddings.
+                <br />
+                <span style={{ color: "#7a6841" }}>Same vetted vendors.</span>
+                <br />
+                <span className="text-xs">Son #2 + Nephew + (your wedding next?)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* VENDOR NETWORK DETAIL */}
       <section className="py-20 px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-5xl mx-auto">

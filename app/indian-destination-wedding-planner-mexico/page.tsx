@@ -89,7 +89,7 @@ export default function MexicoDestinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             I&apos;m not a wedding planner who read a book about Indian weddings.
             <br />
-            I&apos;m a mother who&apos;s done this — twice.
+            I&apos;m a mother who&apos;s done this — twice for my own sons, plus my nephew&apos;s Mexico wedding. Three family Mexico weddings and counting.
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">

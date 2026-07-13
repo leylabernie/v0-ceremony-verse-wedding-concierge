@@ -352,8 +352,8 @@ export default function AboutPage() {
               <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>5-star client reviews</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>2</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Sons&apos; weddings coordinated</p>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>3</div>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Family Mexico weddings coordinated</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>50</div>
