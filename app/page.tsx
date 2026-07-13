@@ -3,12 +3,12 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata = buildMetadata({
   path: '/',
-  // SEO Title Tag (max 60 chars target) — exact field per SEO brief
-  title: 'Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse',
-  // Meta Description (max 160 chars target) — exact field per SEO brief
+  // SEO Title Tag (max 60 chars target)
+  title: 'Indian Wedding Outfit Sourcing & Mexico Coordination | CeremonyVerse',
+  // Meta Description (max 160 chars target)
   description:
-    'Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.',
-  keywords: 'buy lehenga online USA, NRI bride shopping India, Indian bridal wear delivery to US, affordable wedding attire India, custom bridal lehenga India to USA, sherwani from India, return gifts from India, live video shopping India',
+    "Source Indian wedding outfits direct from Surat & Delhi — same handwork as US boutiques, half the price. Mexico wedding coordination in Cancun & Riviera Maya.",
+  keywords: 'Indian wedding outfit sourcing, Surat lehenga direct, Delhi wedding outfits USA, Mexico Indian wedding coordination, Cancun Indian wedding, NRI bridal concierge, live video shopping India, skip boutique markup',
 });
 
 export default HomePage;
