@@ -280,7 +280,7 @@ export default function MexicoCoordinationPage() {
             <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
               <Image
                 src="/images/son-weddings/nephew-mexico-03.webp"
-                alt="Nephew's Mexico wedding — bride getting ready, light blue dress during prep"
+alt="Nephew's Mexico wedding — guest hair styling by the beauty team we hired in Mexico"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover"
@@ -289,7 +289,7 @@ export default function MexicoCoordinationPage() {
             <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
               <Image
                 src="/images/son-weddings/nephew-mexico-04.webp"
-                alt="Nephew's Mexico wedding — hair styling during bridal prep"
+alt="Nephew's Mexico wedding — guest hair styling by the Mexico beauty team, in progress"
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover"
@@ -305,6 +305,12 @@ export default function MexicoCoordinationPage() {
               </p>
             </div>
           </div>
+
+          <p className="text-sm text-[#6f6a63] text-center mt-6 italic max-w-2xl mx-auto">
+            The prep photos show our Mexico beauty team in action — styling hair for wedding guests.
+            This is the same network you get access to: professionals who know Indian wedding looks and
+            work efficiently for large guest counts.
+          </p>
         </div>
       </section>
 
