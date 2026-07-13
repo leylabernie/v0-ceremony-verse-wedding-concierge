@@ -153,56 +153,42 @@ export default function AboutPage() {
 
       <hr className="border-[#e6dfd5] max-w-4xl mx-auto" />
 
-      {/* SON'S WEDDING PHOTO GALLERY */}
+      {/* SERVICE IMAGES — no personal photos */}
       <section className="py-20 px-6" style={{ background: "#fff" }}>
         <div className="max-w-6xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Real Photos — My Son&apos;s 4-Day Hindu &amp; Christian Wedding
+            What We Source &amp; Coordinate
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            The wedding that started it all
+            The full scope of what we handle
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            Originally planned for Mexico, pivoted to New Jersey after COVID. Four days. Hindu and Christian
-            ceremonies. Coordinated outfits for bride, groom, full bridal party, and family across all events.
-            This is the experience I now bring to your wedding.
+            From outfits sourced direct from Surat and Delhi to full Mexico wedding coordination —
+            bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry, ceremonial items,
+            gifts, welcome bags, and on-site logistics.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/images/son-weddings/son-wedding-nj-bride-groom.webp", alt: "Bride in red and gold lehenga with groom in white sherwani and turban — Hindu ceremony portrait" },
-              { src: "/images/son-weddings/son-wedding-nj-family.webp", alt: "Family portrait — coordinated outfits across generations" },
-              { src: "/images/son-weddings/son-wedding-mexico-baarat.webp", alt: "Son's Mexico wedding at Hard Rock Cafe — baarat procession with palm trees" },
-              { src: "/images/son-weddings/son-wedding-01.webp", alt: "Full bridal party in coordinated Indian wedding attire at the New Jersey venue" },
-              { src: "/images/son-weddings/son-wedding-02.webp", alt: "Hindu ceremony — bride in red lehenga with groom in sherwani" },
-              { src: "/images/son-weddings/son-wedding-03.webp", alt: "Christian ceremony in church — bride in white gown" },
-              { src: "/images/son-weddings/son-wedding-04.webp", alt: "Bride in white gown and groom in suit with bridal party — Christian ceremony" },
-              { src: "/images/son-weddings/son-wedding-05.webp", alt: "Hindu wedding ceremony rituals" },
-              { src: "/images/son-weddings/son-wedding-06.webp", alt: "Bridal party in coordinated Indian wedding attire" },
-              { src: "/images/son-weddings/son-wedding-07.webp", alt: "Couple in traditional Hindu wedding attire outdoors" },
-              { src: "/images/son-weddings/son-wedding-08.webp", alt: "Christian ceremony — bride in white gown" },
-              { src: "/images/son-weddings/son-wedding-09.webp", alt: "Bridal party combining Hindu and Christian ceremony elements" },
+              { src: "/images/services-bridal-gold.webp", alt: "Bridal lehenga with gold handwork" },
+              { src: "/images/services-groom.webp", alt: "Groom sherwani — coordinated with bride" },
+              { src: "/images/services-bridesmaids.webp", alt: "Coordinated bridesmaid lehengas" },
+              { src: "/images/services-groomsmen.webp", alt: "Groomsmen in matching kurtas" },
+              { src: "/images/services-jewelry-real.webp", alt: "Bridal jewelry — kundan and polki" },
+              { src: "/images/services-ceremonial2.webp", alt: "Mehndi ceremony setup with marigolds" },
+              { src: "/images/services-welcomebags.webp", alt: "Welcome bags for destination wedding guests" },
+              { src: "/images/services-gifts.webp", alt: "Return gifts for wedding guests" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/indian-wedding-coordination-mexico"
-              className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#1f1f1f", color: "#fff" }}
-            >
-              Read the Full Wedding Story →
-            </Link>
           </div>
         </div>
       </section>
