@@ -17,7 +17,7 @@ const blogPostingSchema = buildBlogPosting({
   headline: "How I Sourced My Son's Mexico Wedding Outfits from Surat",
   description: "First-person story: how Bhamini sourced outfits for her son's 4-day Indian wedding in Mexico from Surat and Delhi — live video shopping, family inspection, direct pricing.",
   url: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
-  image: "/images/services-hero.webp",
+  image: "/images/sourcing/couple-portrait.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
   authorName: "Bhamini, Founder of CeremonyVerse",
   keywords: ["Mexico Indian wedding", "Surat lehenga sourcing", "NRI bride", "Indian wedding outfits", "CeremonyVerse", "son wedding story"],
@@ -71,8 +71,8 @@ export default function BlogPost() {
         {/* Featured image */}
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12">
           <Image
-            src="/images/services-hero.webp"
-            alt="Indian wedding flat lay — lehenga, jewelry, marigolds and ceremonial items coordinated for a destination wedding"
+            src="/images/sourcing/couple-portrait.webp"
+            alt="Indian wedding couple in red lehenga and cream sherwani — the coordinated look we source and deliver"
             fill
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
@@ -164,8 +164,8 @@ export default function BlogPost() {
           {/* In-line photo — service image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden my-8 not-prose">
             <Image
-              src="/images/services-bridal-gold.webp"
-              alt="Champagne gold bridal lehenga with handwork — the kind of piece we source direct from Surat"
+              src="/images/sourcing/champagne-lehenga.webp"
+              alt="Champagne beaded lehenga modeled — the kind of piece we source direct from Surat"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"
@@ -252,12 +252,12 @@ export default function BlogPost() {
           {/* Photo grid — service images, no personal photos */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-8 not-prose">
             {[
-              { src: "/images/services-bridal-gold.webp", alt: "Bridal lehenga with gold handwork — sourced direct from Surat" },
-              { src: "/images/services-groom.webp", alt: "Groom sherwani — coordinated with bride" },
-              { src: "/images/services-bridesmaids.webp", alt: "Coordinated bridesmaid lehengas in matching palette" },
-              { src: "/images/services-jewelry-real.webp", alt: "Bridal jewelry — kundan and polki, sourced direct" },
-              { src: "/images/services-ceremonial2.webp", alt: "Mehndi ceremony with marigolds and brass diyas" },
-              { src: "/images/services-welcomebags.webp", alt: "Welcome bags for destination wedding guests" },
+              { src: "/images/sourcing/bride-traditional.webp", alt: "Bride in embroidered traditional outfit — sourced direct" },
+              { src: "/images/sourcing/couple-portrait.webp", alt: "Couple in coordinated wedding outfits — red lehenga and cream sherwani" },
+              { src: "/images/sourcing/bridesmaid-green.webp", alt: "Coordinated green bridesmaid outfit" },
+              { src: "/images/sourcing/bridal-jewelry.webp", alt: "Bridal jewelry set — sourced direct" },
+              { src: "/images/sourcing/kanchipuram-saree.webp", alt: "Pure silk Kanchipuram saree — direct from weavers" },
+              { src: "/images/sourcing/real-lehenga-shop.webp", alt: "Real lehenga shop — direct sourcing in action" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
                 <Image

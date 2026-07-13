@@ -170,14 +170,14 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/images/services-bridal-gold.webp", alt: "Bridal lehenga with gold handwork" },
-              { src: "/images/services-groom.webp", alt: "Groom sherwani — coordinated with bride" },
-              { src: "/images/services-bridesmaids.webp", alt: "Coordinated bridesmaid lehengas" },
-              { src: "/images/services-groomsmen.webp", alt: "Groomsmen in matching kurtas" },
-              { src: "/images/services-jewelry-real.webp", alt: "Bridal jewelry — kundan and polki" },
-              { src: "/images/services-ceremonial2.webp", alt: "Mehndi ceremony setup with marigolds" },
-              { src: "/images/services-welcomebags.webp", alt: "Welcome bags for destination wedding guests" },
-              { src: "/images/services-gifts.webp", alt: "Return gifts for wedding guests" },
+              { src: "/images/sourcing/bride-traditional.webp", alt: "Bride in embroidered traditional outfit with floral decor" },
+              { src: "/images/sourcing/couple-portrait.webp", alt: "Couple in red lehenga and cream sherwani — coordinated wedding outfits" },
+              { src: "/images/sourcing/champagne-lehenga.webp", alt: "Champagne beaded lehenga — sourced direct from India" },
+              { src: "/images/sourcing/kanchipuram-saree.webp", alt: "Pure silk Kanchipuram saree — sourced direct from weavers" },
+              { src: "/images/sourcing/bridesmaid-green.webp", alt: "Coordinated green bridesmaid outfit" },
+              { src: "/images/sourcing/groomsmen-lavender.webp", alt: "Groomsmen in matching lavender outfits with pink turbans" },
+              { src: "/images/sourcing/bridal-jewelry.webp", alt: "Bridal jewelry set with pearls and gemstones" },
+              { src: "/images/sourcing/real-lehenga-shop.webp", alt: "Real lehenga shop — red dresses on hangers, direct sourcing" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
                 <Image
