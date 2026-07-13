@@ -164,8 +164,8 @@ export default function BlogPost() {
           {/* In-line photo — service image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden my-8 not-prose">
             <Image
-              src="/images/sourcing/champagne-lehenga.webp"
-              alt="Champagne beaded lehenga modeled — the kind of piece we source direct from Surat"
+              src="/images/sourcing/bride-traditional.webp"
+              alt="Bride in embroidered traditional outfit — the kind of piece we source direct from Surat"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"

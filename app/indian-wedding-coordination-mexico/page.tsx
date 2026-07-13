@@ -167,12 +167,9 @@ export default function MexicoCoordinationPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { src: "/images/sourcing/bride-traditional.webp", alt: "Bride in embroidered traditional outfit with floral decor" },
-              { src: "/images/sourcing/champagne-lehenga.webp", alt: "Woman modeling beaded champagne lehenga — sourced direct from India" },
               { src: "/images/sourcing/bridesmaid-green.webp", alt: "Coordinated green bridesmaid outfit — matching palette for wedding party" },
               { src: "/images/sourcing/groomsmen-lavender.webp", alt: "Groomsmen in matching lavender outfits with pink turbans" },
               { src: "/images/sourcing/bridal-jewelry.webp", alt: "Bridal jewelry set — choker, earrings, maang tikka with pearls and gemstones" },
-              { src: "/images/sourcing/cream-outfit.webp", alt: "Bride in cream-colored traditional outfit with sheer veil" },
-              { src: "/images/sourcing/gold-sequin-lehenga.webp", alt: "Gold sequined lehenga on mannequin — direct from shop" },
               { src: "/images/sourcing/kanchipuram-saree.webp", alt: "Pure silk Kanchipuram saree in red and gold with brass lamps" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">

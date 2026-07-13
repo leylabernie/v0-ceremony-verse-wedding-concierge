@@ -172,7 +172,6 @@ export default function AboutPage() {
             {[
               { src: "/images/sourcing/bride-traditional.webp", alt: "Bride in embroidered traditional outfit with floral decor" },
               { src: "/images/sourcing/couple-portrait.webp", alt: "Couple in red lehenga and cream sherwani — coordinated wedding outfits" },
-              { src: "/images/sourcing/champagne-lehenga.webp", alt: "Champagne beaded lehenga — sourced direct from India" },
               { src: "/images/sourcing/kanchipuram-saree.webp", alt: "Pure silk Kanchipuram saree — sourced direct from weavers" },
               { src: "/images/sourcing/bridesmaid-green.webp", alt: "Coordinated green bridesmaid outfit" },
               { src: "/images/sourcing/groomsmen-lavender.webp", alt: "Groomsmen in matching lavender outfits with pink turbans" },
