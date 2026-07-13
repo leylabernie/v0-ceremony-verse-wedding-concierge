@@ -126,27 +126,27 @@ export default function MexicoCoordinationPage() {
         </div>
       </section>
 
-      {/* PHOTO GALLERY — SON 1 NJ WEDDING */}
+      {/* PHOTO GALLERY — REPLACED WITH SERVICE IMAGES (no personal photos) */}
       <section className="py-16 px-6" style={{ background: "#fff" }}>
         <div className="max-w-6xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Real Photos — Son&apos;s 4-Day Hindu &amp; Christian Wedding in New Jersey
+            What We Coordinate
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Hindu ceremony, Christian ceremony, and everything in between
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            These are real photos from my son&apos;s wedding — the same coordination I now offer your family.
             Four days. Hindu and Christian ceremonies. Coordinated outfits for bride, groom, full bridal party,
-            and family across all events.
+            and family across all events. Live video shopping for outfits, family inspection before shipping,
+            and on-site coordination in Mexico.
           </p>
 
-          {/* Featured large photo — high-quality portraits */}
+          {/* Featured large photos — service images */}
           <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/son-weddings/son-wedding-nj-bride-groom.webp"
-                alt="Bhamini's son's wedding — bride in red and gold lehenga with groom in white sherwani and turban, floral garlands, Hindu ceremony"
+                src="/images/services-bridal-gold.webp"
+                alt="Champagne gold bridal lehenga with handwork — the kind of piece we source direct from Surat"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -154,8 +154,8 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/son-weddings/son-wedding-nj-family.webp"
-                alt="Family portrait from the wedding — man in white sherwani with turban, woman in pink and green saree, child in matching attire"
+                src="/images/services-ceremonial2.webp"
+                alt="Mehndi ceremony setup with marigolds and brass diyas — coordinated decor for multi-day events"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -163,21 +163,17 @@ export default function MexicoCoordinationPage() {
             </div>
           </div>
 
-          {/* Grid of more photos */}
+          {/* Grid of more service images */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { src: "/images/son-weddings/son-wedding-02.webp", alt: "Hindu ceremony — bride in red lehenga with groom in sherwani" },
-              { src: "/images/son-weddings/son-wedding-03.webp", alt: "Christian ceremony in church — bride in white gown" },
-              { src: "/images/son-weddings/son-wedding-05.webp", alt: "Hindu wedding ceremony rituals" },
-              { src: "/images/son-weddings/son-wedding-06.webp", alt: "Bridal party in coordinated Indian wedding attire" },
-              { src: "/images/son-weddings/son-wedding-07.webp", alt: "Couple in traditional Hindu wedding attire outdoors" },
-              { src: "/images/son-weddings/son-wedding-08.webp", alt: "Christian ceremony — bride in white gown" },
-              { src: "/images/son-weddings/son-wedding-09.webp", alt: "Bridal party combining Hindu and Christian ceremony elements" },
-              { src: "/images/son-weddings/son-wedding-10.webp", alt: "Couple portraits — bride in white gown with Hindu hair accessory" },
-              { src: "/images/son-weddings/son-wedding-11.webp", alt: "Bride in red and gold lehenga with bridesmaids in navy blue" },
-              { src: "/images/son-weddings/son-wedding-12.webp", alt: "Bridal party — pink Indian attire and bride in white gown" },
-              { src: "/images/son-weddings/son-wedding-13.webp", alt: "Full bridal party in coordinated Indian wedding attire" },
-              { src: "/images/son-weddings/son-wedding-14.webp", alt: "Bridesmaids in traditional Indian attire with bride in white gown" },
+              { src: "/images/services-bridal-gold.webp", alt: "Bridal lehenga with gold handwork" },
+              { src: "/images/services-groom.webp", alt: "Groom sherwani — coordinated with bride" },
+              { src: "/images/services-bridesmaids.webp", alt: "Coordinated bridesmaid lehengas" },
+              { src: "/images/services-groomsmen.webp", alt: "Groomsmen in matching kurtas" },
+              { src: "/images/services-jewelry-real.webp", alt: "Bridal jewelry — kundan and polki" },
+              { src: "/images/services-ceremonial.webp", alt: "Ceremonial items for Hindu rituals" },
+              { src: "/images/services-welcomebags.webp", alt: "Welcome bags for destination wedding guests" },
+              { src: "/images/services-gifts.webp", alt: "Return gifts for wedding guests" },
             ].map((photo, i) => (
               <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
                 <Image
@@ -217,99 +213,41 @@ export default function MexicoCoordinationPage() {
             </p>
           </div>
 
-          {/* Real Mexico wedding photo */}
+          {/* Service image — no personal photos */}
           <div className="mt-8 relative aspect-[3/2] rounded-2xl overflow-hidden">
             <Image
-              src="/images/son-weddings/son-wedding-mexico-baarat.webp"
-              alt="Bhamini's son's Mexico wedding at the Hard Rock Cafe — baarat procession with groom in white sherwani and turban, family in coordinated Indian wedding attire, palm trees and resort setting in Cancun"
+              src="/images/services-hero.webp"
+              alt="Indian wedding flat lay with lehenga, jewelry, marigolds and brass diya — the kind of details we coordinate for Mexico destination weddings"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"
             />
           </div>
           <p className="text-sm text-[#6f6a63] text-center mt-3 italic">
-            Real photo from my son&apos;s 4-day Mexico wedding at the Hard Rock Cafe — baarat procession outdoors
-            with the resort&apos;s palm trees in the background.
+            Every detail coordinated — outfits, ceremonial items, decor, welcome bags, and on-site logistics
+            across all four days.
           </p>
         </div>
       </section>
 
-      {/* NEPHEW'S MEXICO WEDDING — MORE RECENT EXPERIENCE */}
+      {/* NEPHEW'S MEXICO WEDDING — text only, no personal photos */}
       <section className="py-20 px-6">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>
             Another Family Mexico Wedding — My Nephew&apos;s
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             More recent Mexico wedding experience
           </h2>
-          <p className="text-[#4d403a] leading-relaxed mb-8 max-w-3xl">
+          <p className="text-[#4d403a] leading-relaxed mb-4 max-w-3xl">
             My nephew also got married in Mexico — a 3-day Hindu wedding. More recent experience means
             I&apos;ve stayed current with Mexico venue logistics, vendor availability, and what works for Indian
             ceremonies in Cancun and Riviera Maya. Every family wedding sharpens the process I now offer you.
           </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/images/son-weddings/nephew-mexico-01.webp"
-                alt="Nephew's Mexico wedding — outdoor Hindu ceremony with palm trees, man in pink kurta, woman in purple lehenga"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/images/son-weddings/nephew-mexico-02.webp"
-                alt="Nephew's Mexico wedding — indoor Hindu ceremony, woman in orange and purple lehenga with henna"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/images/son-weddings/nephew-mexico-05.webp"
-                alt="Nephew's Mexico wedding — outdoor ceremony, woman in pink and green sari with gold jewelry, palm trees"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/images/son-weddings/nephew-mexico-03.webp"
-alt="Nephew's Mexico wedding — guest hair styling by the beauty team we hired in Mexico"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden">
-              <Image
-                src="/images/son-weddings/nephew-mexico-04.webp"
-alt="Nephew's Mexico wedding — guest hair styling by the Mexico beauty team, in progress"
-                fill
-                sizes="(max-width: 768px) 50vw, 33vw"
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/4] rounded-xl overflow-hidden bg-[#1f1f1f] flex items-center justify-center p-6">
-              <p className="text-center text-[#d4c8b8] text-sm font-medium" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                Three family Mexico weddings.
-                <br />
-                <span style={{ color: "#7a6841" }}>Same vetted vendors.</span>
-                <br />
-                <span className="text-xs">Son #2 + Nephew + (your wedding next?)</span>
-              </p>
-            </div>
-          </div>
-
-          <p className="text-sm text-[#6f6a63] text-center mt-6 italic max-w-2xl mx-auto">
-            The prep photos show our Mexico beauty team in action — styling hair for wedding guests.
-            This is the same network you get access to: professionals who know Indian wedding looks and
-            work efficiently for large guest counts.
+          <p className="text-[#4d403a] leading-relaxed max-w-3xl">
+            Three family Mexico weddings — same vetted vendors, same tested process. Son #2&apos;s Hard Rock Cafe
+            wedding, my nephew&apos;s wedding, and the New Jersey COVID pivot that started it all. Your wedding
+            could be next.
           </p>
         </div>
       </section>
