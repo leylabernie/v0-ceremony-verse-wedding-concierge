@@ -89,11 +89,11 @@ const testimonials = [
 const pricingTiers = [
   {
     name: "Style Guide & Vendor List",
-    price: "From $149",
+    price: "From $249",
     desc: "For the self-directed bride who just needs a curated starting point.",
     features: [
       "Personalized outfit style guide",
-      "Curated list of 3–5 vetted artisan workshops",
+      "Curated list of options from Surat & Delhi",
       "Budget guidance and style notes",
       "One 30-min consultation call",
     ],
@@ -101,26 +101,26 @@ const pricingTiers = [
   },
   {
     name: "Guided Sourcing",
-    price: "From $599",
-    desc: "Live sourcing sessions so you can see and approve every piece before it ships.",
+    price: "From $799",
+    desc: "Live video shopping so you see and pick every piece before it ships.",
     features: [
       "Everything in Style Guide tier",
       "2–4 live video shopping sessions",
-      "Fabric sourcing & color matching to your shade",
+      "Fabric & color matching to your shade",
       "Color accuracy confirmation",
-      "Pre-shipping inspection",
+      "Family inspection before shipping",
     ],
     cta: "Book Consultation",
     featured: true,
   },
   {
     name: "Full Bridal Concierge",
-    price: "From $1,499",
+    price: "From $2,499",
     desc: "We handle everything — from first inspiration to your door.",
     features: [
       "Everything in Guided Sourcing tier",
-      "Full wedding party coordination",
-      "Custom design sourcing",
+      "Full wedding party coordination (up to 8)",
+      "Custom recreation via local boutique",
       "Measurement management for all members",
       "End-to-end shipping & delivery support",
       "Dedicated sourcing manager",
@@ -158,7 +158,7 @@ export function HomePage() {
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
             <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#7a6841", marginBottom: "20px", fontWeight: 500 }}>
-              Risk-Free Indian Wedding Shopping from the US
+              Indian Wedding Outfits from Surat &amp; Delhi · Mexico Wedding Coordination
             </p>
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -166,10 +166,10 @@ export function HomePage() {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              The safest way to shop for your Indian wedding from the US — without scams, sizing disasters, or endless vendor chasing.
+              That lehenga you saw at the Edison boutique for $500? We can get you something similar — and often better — for $300 landed at your door.
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
-              Authentic bridal lehengas, sherwanis, jewelry, and more — sourced directly from India, verified live on video before shipping, and delivered to your US door. You see exactly what you’re buying. No surprises. No scams. No regrets.
+              My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do — without the boutique markup. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
             </p>
 
             {/* CTAs */}
@@ -201,10 +201,10 @@ export function HomePage() {
             {/* Real differentiators */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {[
-                "Live video approved before shipping",
-                "Custom stitched to your measurements",
-                "Vetted artisan partners — no Instagram sellers",
-                "US delivery to all 50 states",
+                "Live video shopping — see and pick every piece",
+                "Family inspection before shipping",
+                "Direct from Surat & Delhi — no boutique markup",
+                "Mexico wedding coordination in Cancun & Riviera Maya",
               ].map((tag) => (
                 <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
                   {tag}
@@ -823,19 +823,23 @@ export function HomePage() {
             {[
               {
                 q: "How do NRI brides buy a lehenga from India without getting scammed?",
-                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact piece — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. My family has been in Surat's fabric trade for generations, and I source from the same places US Indian boutiques source from — without the boutique markup. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
               },
               {
-                q: "What exactly does CeremonyVerse source?",
-                a: "Everything for your Indian wedding — bridal lehengas, sherwanis, bridesmaid and groomsmen outfits, family attire, jewelry, ceremonial items, return gifts, sweets, welcome bags, and even pet outfits. If it's for an Indian wedding, we can source it from India."
+                q: "Can you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
+                a: "Yes — I go myself to Kanchipuram and Banaras. Not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas."
               },
               {
-                q: "How do I know what I see is what I'll actually receive?",
-                a: "We do live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light. That specific piece is reserved with your name and order number. We also do a final inspection before it ships. If anything doesn't match, we halt shipping and resolve it."
+                q: "What exactly does CeremonyVerse do?",
+                a: "Two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team."
               },
               {
-                q: "How much does it cost? Is there a hidden markup?",
-                a: "No hidden markup. Our sourcing fee is 15–20% of the outfit cost, clearly itemized. You see the full breakdown: outfit cost, sourcing fee, shipping, and customs. Services start at $149 for a Style Guide, $599 for Guided Sourcing, and $1,499 for Full Bridal Concierge. A free consultation is always available."
+                q: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
+                a: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the boutique markup or the designer-label price. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost."
+              },
+              {
+                q: "How much does it cost?",
+                a: "No hidden markup. Our service fee is flat and clearly itemized — not a percentage of outfit cost. You see the full breakdown: outfit cost, our service fee, shipping, and customs. Sourcing services start at $249 for a Style Guide, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico coordination starts at $499 for Vendor Network Access. A free consultation is always available."
               },
               {
                 q: "How far in advance should I start?",

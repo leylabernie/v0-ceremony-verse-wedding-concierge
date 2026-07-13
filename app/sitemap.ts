@@ -169,7 +169,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/indian-destination-wedding-planner-mexico/`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-coordination-mexico/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
 
     // ─── MEDIUM: Ceremony-specific pages ───
@@ -255,6 +261,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
+    {
+      url: `${baseUrl}/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: `${baseUrl}/blog/how-to-choose-indian-wedding-jewelry-usa/`,
       lastModified: now,

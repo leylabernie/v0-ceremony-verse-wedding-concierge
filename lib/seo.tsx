@@ -286,7 +286,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding from India — outfits, jewelry, ceremonial items, gifts, welcome bags, and more — with live video shopping, quality checks, and delivery to your US door.",
+      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, no boutique markup. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -342,7 +342,7 @@ export function buildLocalBusinessSchema(): object {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Wedding Sourcing Services",
+      name: "Wedding Sourcing & Coordination Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -350,9 +350,9 @@ export function buildLocalBusinessSchema(): object {
             "@type": "Service",
             name: "Style Guide & Vendor List",
             description:
-              "Curated vendor style guide for Indian wedding outfits",
+              "Curated starting point for self-directed brides sourcing Indian wedding outfits from Surat and Delhi",
           },
-          price: "149",
+          price: "249",
           priceCurrency: "USD",
         },
         {
@@ -361,9 +361,9 @@ export function buildLocalBusinessSchema(): object {
             "@type": "Service",
             name: "Guided Sourcing",
             description:
-              "Live video shopping sessions with India vendors for bridal outfits",
+              "Live video shopping sessions with families in Surat and Delhi for bridal outfits",
           },
-          price: "599",
+          price: "799",
           priceCurrency: "USD",
         },
         {
@@ -372,9 +372,42 @@ export function buildLocalBusinessSchema(): object {
             "@type": "Service",
             name: "Full Bridal Concierge",
             description:
-              "End-to-end bridal outfit sourcing and coordination for your wedding",
+              "End-to-end outfit sourcing and coordination for bride, groom, and party up to 8",
           },
-          price: "1499",
+          price: "2499",
+          priceCurrency: "USD",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mexico Vendor Network Access",
+            description:
+              "Vetted planner, DJ, photographers, decorator, and beauty contacts for Cancun and Riviera Maya",
+          },
+          price: "499",
+          priceCurrency: "USD",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mexico Day-Of Coordination",
+            description:
+              "Single-event on-site coordination for Indian weddings in Mexico",
+          },
+          price: "1500",
+          priceCurrency: "USD",
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Mexico 4-Day Full Coordination",
+            description:
+              "Full multi-day event coordination for Indian weddings in Cancun and Riviera Maya, like a 4-day event",
+          },
+          price: "4500",
           priceCurrency: "USD",
         },
       ],
@@ -396,15 +429,15 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse is a US-based Indian wedding shopping concierge. We source everything for your Indian wedding directly from India — bridal lehengas, sherwanis, bridesmaid outfits, groomsmen attire, family outfits, jewelry, ceremonial puja items, return gifts, welcome bags, sweets, and more. We offer live video shopping, quality checks, and delivery to your US door.",
+          text: "CeremonyVerse offers two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, and direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team.",
         },
       },
       {
         "@type": "Question",
-        name: "How does CeremonyVerse source Indian wedding items from India to the USA?",
+        name: "How does CeremonyVerse source Indian wedding outfits from India to the USA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We connect you with our vetted network of artisan workshops across India via live video shopping sessions. You see items in real time, approve fabrics and quality, and we handle measurements, production, inspection, and international shipping to your US address.",
+          text: "My family has been in Surat's fabric trade for generations. Through those connections, I source from the same places US Indian boutiques source from. You shop via live video sessions, see and pick the actual pieces, my family inspects before shipping, and we handle all shipping and customs to deliver to your US door.",
         },
       },
       {
@@ -412,7 +445,7 @@ export function buildGlobalFaqSchema(): object {
         name: "Can I buy a bridal lehenga from India and have it delivered to the USA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. CeremonyVerse specializes in sourcing custom bridal lehengas directly from India for NRI brides in the USA. We offer live video shopping so you can see the actual fabric and embroidery before purchasing, and we handle all shipping and customs to deliver to your US door.",
+          text: "Yes. CeremonyVerse specializes in sourcing bridal lehengas direct from Surat and Delhi for NRI brides in the USA. We offer live video shopping so you can see the actual fabric and embroidery before purchasing, and we handle all shipping and customs to deliver to your US door.",
         },
       },
       {
@@ -420,7 +453,23 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse services start at $149 for a Style Guide & Vendor List, $599 for Guided Sourcing with live video sessions, and $1,499 for Full Bridal Concierge. A free 30-minute consultation is always available. Most clients save 30-50% compared to US Indian boutiques.",
+          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing with live video sessions, and $2,499 for Full Bridal Concierge. Mexico coordination starts at $499 for Vendor Network Access, $1,500 for Day-Of Coordination, and $4,500+ for 4-Day Full Coordination. A free 30-minute consultation is always available. Most clients save 40-60% compared to US Indian boutiques.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Do you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. I go myself to Kanchipuram and Banaras — not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas.",
         },
       },
       {
@@ -428,7 +477,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How far in advance should I contact CeremonyVerse?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We recommend starting 6-12 months before your wedding date. Top artisan workshops book quickly and custom outfits require production time. If your wedding is sooner, contact us and we will tell you honestly what is achievable.",
+          text: "We recommend starting 6-12 months before your wedding date. Top families who do this work book quickly and custom outfits require production time. If your wedding is sooner, contact us and we will tell you honestly what is achievable.",
         },
       },
       {
