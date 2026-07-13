@@ -170,6 +170,9 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
+              { src: "/images/son-weddings/son-wedding-nj-bride-groom.webp", alt: "Bride in red and gold lehenga with groom in white sherwani and turban — Hindu ceremony portrait" },
+              { src: "/images/son-weddings/son-wedding-nj-family.webp", alt: "Family portrait — coordinated outfits across generations" },
+              { src: "/images/son-weddings/son-wedding-mexico-baarat.webp", alt: "Son's Mexico wedding at Hard Rock Cafe — baarat procession with palm trees" },
               { src: "/images/son-weddings/son-wedding-01.webp", alt: "Full bridal party in coordinated Indian wedding attire at the New Jersey venue" },
               { src: "/images/son-weddings/son-wedding-02.webp", alt: "Hindu ceremony — bride in red lehenga with groom in sherwani" },
               { src: "/images/son-weddings/son-wedding-03.webp", alt: "Christian ceremony in church — bride in white gown" },

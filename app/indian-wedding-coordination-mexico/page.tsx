@@ -141,12 +141,12 @@ export default function MexicoCoordinationPage() {
             and family across all events.
           </p>
 
-          {/* Featured large photo */}
+          {/* Featured large photo — high-quality portraits */}
           <div className="grid md:grid-cols-2 gap-4 mb-4">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/son-weddings/son-wedding-01.webp"
-                alt="Bhamini's son's wedding — full bridal party in coordinated Indian wedding attire at the New Jersey venue"
+                src="/images/son-weddings/son-wedding-nj-bride-groom.webp"
+                alt="Bhamini's son's wedding — bride in red and gold lehenga with groom in white sherwani and turban, floral garlands, Hindu ceremony"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -154,8 +154,8 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/son-weddings/son-wedding-04.webp"
-                alt="Bride in white gown and groom in suit with bridal party — Christian ceremony portion of the interfaith wedding"
+                src="/images/son-weddings/son-wedding-nj-family.webp"
+                alt="Family portrait from the wedding — man in white sherwani with turban, woman in pink and green saree, child in matching attire"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover"
@@ -217,13 +217,20 @@ export default function MexicoCoordinationPage() {
             </p>
           </div>
 
-          {/* Placeholder for Mexico photos */}
-          <div className="mt-8 bg-white border border-dashed border-[#7a6841] rounded-2xl p-8 text-center">
-            <p className="text-sm text-[#6f6a63]">
-              <strong>Photos from the Mexico Hard Rock wedding:</strong> Coming soon. We&apos;ll add real photos
-              from my son&apos;s Mexico wedding in a follow-up update. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Contact me</Link> if you want to see them sooner.
-            </p>
+          {/* Real Mexico wedding photo */}
+          <div className="mt-8 relative aspect-[3/2] rounded-2xl overflow-hidden">
+            <Image
+              src="/images/son-weddings/son-wedding-mexico-baarat.webp"
+              alt="Bhamini's son's Mexico wedding at the Hard Rock Cafe — baarat procession with groom in white sherwani and turban, family in coordinated Indian wedding attire, palm trees and resort setting in Cancun"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              className="object-cover"
+            />
           </div>
+          <p className="text-sm text-[#6f6a63] text-center mt-3 italic">
+            Real photo from my son&apos;s 4-day Mexico wedding at the Hard Rock Cafe — baarat procession outdoors
+            with the resort&apos;s palm trees in the background.
+          </p>
         </div>
       </section>
 

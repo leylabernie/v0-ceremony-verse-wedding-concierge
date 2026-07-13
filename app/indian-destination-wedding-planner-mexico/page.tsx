@@ -259,8 +259,8 @@ export default function MexicoDestinationPage() {
             <div className="relative">
               <div className="aspect-[4/5] bg-gray-800 rounded-3xl overflow-hidden relative border border-gray-700">
                 <Image
-                  src="/images/son-weddings/son-wedding-01.webp"
-                  alt="Bhamini's son's wedding — full bridal party in coordinated Indian wedding attire"
+                  src="/images/son-weddings/son-wedding-mexico-baarat.webp"
+                  alt="Bhamini's son's Mexico wedding at the Hard Rock Cafe — baarat procession with palm trees and resort setting in Cancun"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"

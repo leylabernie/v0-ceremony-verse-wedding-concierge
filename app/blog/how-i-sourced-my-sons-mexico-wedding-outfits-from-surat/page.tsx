@@ -17,7 +17,7 @@ const blogPostingSchema = buildBlogPosting({
   headline: "How I Sourced My Son's Mexico Wedding Outfits from Surat",
   description: "First-person story: how Bhamini sourced outfits for her son's 4-day Indian wedding in Mexico from Surat and Delhi — live video shopping, family inspection, direct pricing.",
   url: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
-  image: "/images/son-weddings/son-wedding-01.webp",
+  image: "/images/son-weddings/son-wedding-mexico-baarat.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
   authorName: "Bhamini, Founder of CeremonyVerse",
   keywords: ["Mexico Indian wedding", "Surat lehenga sourcing", "NRI bride", "Indian wedding outfits", "CeremonyVerse", "son wedding story"],
@@ -71,8 +71,8 @@ export default function BlogPost() {
         {/* Featured image */}
         <div className="relative aspect-[16/9] rounded-2xl overflow-hidden mb-12">
           <Image
-            src="/images/son-weddings/son-wedding-01.webp"
-            alt="Bhamini's son's wedding — full bridal party in coordinated Indian wedding attire"
+            src="/images/son-weddings/son-wedding-mexico-baarat.webp"
+            alt="Bhamini's son's Mexico wedding at the Hard Rock Cafe — baarat procession with palm trees and resort setting"
             fill
             sizes="(max-width: 768px) 100vw, 800px"
             className="object-cover"
@@ -252,6 +252,9 @@ export default function BlogPost() {
           {/* Photo grid inline */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-8 not-prose">
             {[
+              { src: "/images/son-weddings/son-wedding-nj-bride-groom.webp", alt: "Bride in red and gold lehenga with groom in white sherwani and turban — Hindu ceremony" },
+              { src: "/images/son-weddings/son-wedding-nj-family.webp", alt: "Family portrait — coordinated outfits across generations" },
+              { src: "/images/son-weddings/son-wedding-mexico-baarat.webp", alt: "Mexico wedding baarat procession — outdoor with palm trees" },
               { src: "/images/son-weddings/son-wedding-02.webp", alt: "Hindu ceremony — bride in red lehenga" },
               { src: "/images/son-weddings/son-wedding-05.webp", alt: "Hindu wedding ceremony rituals" },
               { src: "/images/son-weddings/son-wedding-09.webp", alt: "Bridal party combining Hindu and Christian elements" },
