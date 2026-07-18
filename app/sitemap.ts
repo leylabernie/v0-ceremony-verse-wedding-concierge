@@ -72,6 +72,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    // ─── HIGH PRIORITY: Real Weddings ───
+    {
+      url: `${baseUrl}/real-weddings/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+
     // ─── HIGH PRIORITY: Commercial landing pages (keyword-targeted) ───
     {
       url: `${baseUrl}/how-to-buy-bridal-lehenga-from-india-to-usa/`,
