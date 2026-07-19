@@ -129,6 +129,34 @@ const nextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      {
+        source: '/blog/sherwani-vs-bandhgala-groom-guide/',
+        destination: '/blog/',
+        permanent: true,
+      },
+      // ─── DEAD URLS GETTING GSC IMPRESSIONS — redirect to live pages ───
+      // 100 impressions, position 7.9 — page 1 traffic going to 404!
+      {
+        source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire',
+        destination: '/blog/nri-bridal-lehenga-sizing-guide',
+        permanent: true,
+      },
+      {
+        source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire/',
+        destination: '/blog/nri-bridal-lehenga-sizing-guide/',
+        permanent: true,
+      },
+      // 140 impressions, position 75.8 — funnel to money page
+      {
+        source: '/blog/indian-destination-wedding-mexico-complete-guide',
+        destination: '/indian-destination-wedding-planner-mexico',
+        permanent: true,
+      },
+      {
+        source: '/blog/indian-destination-wedding-mexico-complete-guide/',
+        destination: '/indian-destination-wedding-planner-mexico/',
+        permanent: true,
+      },
     ]
   },
   // ─── SECURITY HEADERS ───

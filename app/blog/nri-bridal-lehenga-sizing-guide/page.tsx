@@ -3,8 +3,8 @@ import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/
 
 export const metadata = buildMetadata({
   path: "/blog/nri-bridal-lehenga-sizing-guide/",
-  title: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at Home",
-  description: "How to take 15+ precise bridal lehenga measurements at home for custom stitching in India \u2014 blouse, skirt, dupatta, and ease allowances for NRI brides.",
+  title: "NRI Bridal Lehenga Sizing Guide | CeremonyVerse",
+  description: "Take 15+ precise bridal lehenga measurements at home for perfect custom fits from India. Free master measurement sheet for NRI brides.",
   keywords: ["bridal lehenga sizing guide", "how to take lehenga measurements at home", "NRI bride measurements", "lehenga blouse measurement guide"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
