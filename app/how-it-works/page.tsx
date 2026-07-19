@@ -3,8 +3,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/how-it-works/",
-  title: "How CeremonyVerse Works \u2014 Indian Wedding Shopping from India to USA",
-  description: "CeremonyVerse's step-by-step process: free consultation, live video shopping in India, custom stitching to your measurements, quality inspection, and delivery to your US door."
+  title: "How CeremonyVerse Works — India to USA",
+  description: "Free consultation, live video shopping in India, custom stitching, quality inspection, and delivery to your US door."
 });
 
 const serviceSchema = buildServiceSchema({
@@ -76,18 +76,18 @@ const pricingTiers = [
     description: "A no-commitment conversation about your wedding, your needs, and what's possible. Always free.",
   },
   {
-    name: "Starter",
-    price: "$149",
-    description: "For couples sourcing 1–2 key outfits. Includes style discovery, one live video shopping session, and measurement guidance.",
+    name: "Style Guide & Vendor List",
+    price: "$249",
+    description: "For couples sourcing 1–2 key outfits. Includes style discovery, curated vendor contacts, and measurement guidance.",
   },
   {
-    name: "Essentials",
-    price: "$599",
-    description: "For couples sourcing outfits across multiple ceremonies. Includes multiple video sessions, bridesmaid/groomsmen coordination, and quality inspection.",
+    name: "Guided Sourcing",
+    price: "$799",
+    description: "For couples sourcing outfits across multiple ceremonies. Includes multiple live video sessions, bridesmaid/groomsmen coordination, and quality inspection.",
   },
   {
-    name: "Full Wedding",
-    price: "$1,499",
+    name: "Full Bridal Concierge",
+    price: "$2,499",
     description: "End-to-end sourcing for your entire wedding party — every ceremony, every outfit, every family member. Dedicated coordinator, unlimited sessions, and priority shipping.",
   },
 ]
@@ -428,7 +428,7 @@ export default function HowItWorksPage() {
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="/"
+              href="/contact"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

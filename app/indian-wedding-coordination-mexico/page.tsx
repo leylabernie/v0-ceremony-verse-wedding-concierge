@@ -5,8 +5,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
-  title: "Indian Wedding Coordination in Mexico — Cancun & Riviera Maya | CeremonyVerse",
-  description: "I coordinated my own son's 4-day Indian wedding in Mexico. Vetted vendors — planner, DJ, photographers, decorator, beauty — plus full multi-day coordination in Cancun and Riviera Maya. Interfaith ceremonies welcome.",
+  title: "Indian Wedding Coordination Mexico — My Son's Real Wedding",
+  description: "I coordinated my own son's 4-day Indian wedding in Mexico. Vetted vendors for Cancun & Riviera Maya — planner, DJ, photographers, decorator, beauty.",
   keywords: "Indian wedding coordination Mexico, Cancun Indian wedding planner, Riviera Maya Indian wedding, Mexico destination wedding Indian, interfaith wedding Mexico, Hindu Christian wedding Mexico",
 });
 

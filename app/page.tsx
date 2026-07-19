@@ -4,7 +4,7 @@ import { buildMetadata } from '@/lib/seo';
 export const metadata = buildMetadata({
   path: '/',
   // SEO Title Tag (max 60 chars target)
-  title: 'Indian Wedding Outfit Sourcing & Mexico Coordination | CeremonyVerse',
+  title: 'Indian Wedding Outfits from India & Mexico Planning',
   // Meta Description (max 160 chars target)
   description:
     "Source Indian wedding outfits direct from Surat & Delhi — same handwork as US boutiques, half the price. Mexico wedding coordination in Cancun & Riviera Maya.",

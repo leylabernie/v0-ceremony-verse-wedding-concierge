@@ -4,8 +4,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/services/",
-  title: "Indian Wedding Outfit Sourcing & Mexico Coordination | CeremonyVerse",
-  description: "Two services: outfit sourcing from Surat & Delhi (live video shopping, family inspection, no boutique markup) and Mexico wedding coordination in Cancun & Riviera Maya (vetted vendors from my own son's wedding).",
+  title: "Outfit Sourcing from India & Mexico Wedding Coordination",
+  description: "Two services: outfit sourcing from Surat & Delhi (live video shopping, no boutique markup) and Mexico wedding coordination in Cancun & Riviera Maya with vetted vendors.",
   keywords: "Indian wedding sourcing services, Surat lehenga sourcing, Delhi wedding outfits, Mexico Indian wedding coordination, Cancun Indian wedding, Riviera Maya Indian wedding, NRI bridal concierge",
 });
 
