@@ -43,6 +43,18 @@ const faqSchema = buildFaqSchema([
     question: "Can you source our Indian wedding outfits for our Mexico wedding too?",
     answer: "Yes — this is one of our most popular combinations. We source your outfits from Surat and Delhi via live video shopping, and coordinate your Mexico event with our vetted vendors. One team, one point of contact, full coverage. Outfits can be shipped to your US address or directly to your Mexico resort.",
   },
+  {
+    question: "How far in advance should we start planning our Indian wedding in Mexico?",
+    answer: "Ideally 9-12 months before your wedding date. Top resorts in Cancun and Riviera Maya book out 12-18 months in advance for weekend dates, especially during peak season (November through April). If your wedding is sooner, contact us — we will tell you honestly what is achievable. Indian outfits need 8-12 weeks for custom stitching, so factor that in as well.",
+  },
+  {
+    question: "Do Mexican resorts accommodate Hindu ceremonies, mandaps, and Indian food?",
+    answer: "Yes, most large all-inclusive resorts in Cancun and Riviera Maya have experience with Indian weddings. They allow external decorators for mandaps, can arrange Indian vegetarian and non-vegetarian catering menus, and provide space for multi-day events like mehndi, sangeet, and the main ceremony. The key is picking a resort that has done it before — that is part of what our vendor network helps with.",
+  },
+  {
+    question: "What legal requirements do we need for a wedding in Mexico?",
+    answer: "For a legally binding ceremony in Mexico, you need valid passports, tourist cards, birth certificates (apostilled and translated), a pre-nuptial medical certificate from a Mexican clinic, and four witnesses. Many couples do a legal ceremony at their local courthouse in the US and a symbolic ceremony in Mexico — this simplifies paperwork significantly. We can connect you with a wedding planner who handles the legal logistics.",
+  },
 ]);
 
 export default function MexicoDestinationPage() {
@@ -84,13 +96,14 @@ export default function MexicoDestinationPage() {
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Why Trust Me With Your Mexico Wedding
+            Real Experience — Not a Textbook
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            I&apos;m not a wedding planner who read a book about Indian weddings.
-            <br />
-            I&apos;m a mother who&apos;s done this — twice for my own sons, plus my nephew&apos;s Mexico wedding. Three family Mexico weddings and counting.
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            Why Plan an Indian Destination Wedding in Mexico?
           </h2>
+          <p className="text-lg text-center mb-12 max-w-3xl mx-auto" style={{ color: "#4d403a" }}>
+            I&apos;m not a wedding planner who read a book about Indian weddings. I&apos;m a mother who&apos;s done this — twice for my own sons, plus my nephew&apos;s Mexico wedding. Three family Mexico weddings and counting.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
@@ -135,10 +148,10 @@ export default function MexicoDestinationPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>
-              Insider Destination Hub
+              Vendor Selection &amp; Coordination
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-              What I learned planning Indian weddings in Mexico
+              How We Coordinate Your Indian Destination Wedding in Mexico
             </h2>
           </div>
 
@@ -216,6 +229,109 @@ export default function MexicoDestinationPage() {
         </div>
       </section>
 
+      {/* TOP WEDDING RESORTS IN MEXICO */}
+      <section className="py-20 px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "#7a6841" }}>
+            Venue Guidance
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            Top Wedding Resorts in Mexico for Indian Ceremonies
+          </h2>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#d4c8b8" }}>
+            Not every resort can handle a 4-day Indian wedding with mandap, Indian catering, and 200+ guests. Here is what I tell every couple about choosing the right venue.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-xl font-semibold mb-3" style={{ color: "#f8f6f2" }}>Cancun — More Flights, More Resort Options</h3>
+              <p className="leading-relaxed" style={{ color: "#d4c8b8" }}>
+                Cancun has the most direct flights from US cities, which matters when you are flying in 150-200 guests. Large all-inclusive resorts like the Hard Rock, Moon Palace, and Fairmont Mayakoba have experience with Indian weddings — they understand multi-day event schedules, external decorator access for mandaps, and Indian catering requirements. The tradeoff is a busier, more commercial feel.
+              </p>
+            </div>
+            <div className="p-8 rounded-2xl border border-gray-700">
+              <h3 className="text-xl font-semibold mb-3" style={{ color: "#f8f6f2" }}>Riviera Maya — Boutique Venues, Quieter Beaches</h3>
+              <p className="leading-relaxed" style={{ color: "#d4c8b8" }}>
+                Thirty minutes south of the Cancun airport, Riviera Maya offers boutique resorts and private villa rentals with a more intimate atmosphere. Venues like Xcaret, Excellence Playa Mujeres, and Grand Velas Riviera Maya are popular with Indian couples who want a resort that feels exclusive. Guest count typically works best under 150.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 p-6 rounded-2xl border border-[#7a6841] max-w-3xl mx-auto">
+            <h3 className="text-lg font-semibold mb-2" style={{ color: "#7a6841" }}>What to Ask Any Resort Before Booking</h3>
+            <ul className="space-y-2 text-sm" style={{ color: "#d4c8b8" }}>
+              <li>Have you hosted Indian weddings before? Can you share examples?</li>
+              <li>Do you allow external decorators to build a mandap?</li>
+              <li>Can the kitchen prepare Indian vegetarian and non-vegetarian menus?</li>
+              <li>How many events can we spread across our stay? (You need 3-4 event spaces for mehndi, sangeet, ceremony, reception)</li>
+              <li>Is there a mandatory guest room minimum or food &amp; beverage minimum?</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* PLANNING TIMELINE */}
+      <section className="py-20 px-6">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            From Booking to Big Day
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            Planning Timeline: Your Indian Wedding in Mexico
+          </h2>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#4d403a" }}>
+            Based on my own three family Mexico weddings, here is a realistic timeline for planning an Indian destination wedding in Cancun or Riviera Maya.
+          </p>
+
+          <div className="space-y-8">
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-xl font-semibold" style={{ color: "var(--cv-accent)" }}>12-9</span>
+                </div>
+                <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Months Before: Book Resort &amp; Core Vendors</h3>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Lock in your resort date — peak season (November-April) fills 12-18 months out. Book your coordinator (us), start outfit sourcing for the bride and groom, and block hotel room rates for your guests. Send save-the-dates so guests can book flights early.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-xl font-semibold" style={{ color: "var(--cv-accent)" }}>9-6</span>
+                </div>
+                <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Months Before: Outfits, Decor &amp; Entertainment</h3>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Finalize bride and groom outfits (8-12 weeks for custom stitching). Coordinate bridesmaid and family outfit sourcing. Book decorator for mandap design, DJ for sangeet, photographers, and beauty artists. Begin outfit sourcing for the full bridal party and family.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-xl font-semibold" style={{ color: "var(--cv-accent)" }}>6-3</span>
+                </div>
+                <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Months Before: Catering, Logistics &amp; Guest Travel</h3>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Finalize catering menu with the resort. Arrange guest transportation from airport to resort. Confirm room block numbers. Receive and inspect all outfits from India. Plan welcome bags and favors. Confirm ceremony details with your priest or officiant.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-xl font-semibold" style={{ color: "var(--cv-accent)" }}>1 mo</span>
+                </div>
+                <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Before: Final Confirmations &amp; Rehearsal</h3>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Final vendor confirmations, detailed day-of timelines for each event, and a full rehearsal. Ship outfits to your US address or directly to the Mexico resort. This is where day-of or full coordination kicks in — we handle the rest so you can enjoy your wedding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* OUTFIT SOURCING UPSELL */}
       <section className="py-20 px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-6xl mx-auto px-6">
@@ -225,9 +341,9 @@ export default function MexicoDestinationPage() {
                 Outfit Sourcing Add-On
               </p>
               <h2 className="text-3xl md:text-5xl font-semibold leading-tight mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                Skip the US boutique markup.
+                Indian Wedding Outfits for Your Mexico Destination Wedding
                 <br />
-                <span style={{ color: "#7a6841" }}>Source direct from Surat &amp; Delhi.</span>
+                <span style={{ color: "#7a6841" }}>Source Direct from Surat &amp; Delhi.</span>
               </h2>
               <p className="text-lg leading-relaxed mb-6" style={{ color: "#d4c8b8" }}>
                 Most brides planning a Mexico wedding also need Indian outfits — bride, groom, full bridal party,
@@ -285,7 +401,7 @@ export default function MexicoDestinationPage() {
             Mexico Coordination Pricing
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Three tiers — pick the level of support you need
+            Indian Wedding Packages in Mexico
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -329,7 +445,7 @@ export default function MexicoDestinationPage() {
             Mexico Destination Wedding FAQ
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Questions about Indian weddings in Mexico
+            Frequently Asked Questions About Indian Destination Weddings in Mexico
           </h2>
 
           <div className="space-y-6">
@@ -366,6 +482,34 @@ export default function MexicoDestinationPage() {
                 Yes — this is one of our most popular combinations. We source your outfits from Surat and Delhi via
                 live video shopping, and coordinate your Mexico event with our vetted vendors. One team, one point of
                 contact, full coverage. Outfits can be shipped to your US address or directly to your Mexico resort.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How far in advance should we start planning our Indian wedding in Mexico?</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Ideally 9-12 months before your wedding date. Top resorts in Cancun and Riviera Maya book out 12-18
+                months in advance for weekend dates, especially during peak season (November through April). If your
+                wedding is sooner, contact us — we will tell you honestly what is achievable. Indian outfits need
+                8-12 weeks for custom stitching, so factor that in as well.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Do Mexican resorts accommodate Hindu ceremonies, mandaps, and Indian food?</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Yes, most large all-inclusive resorts in Cancun and Riviera Maya have experience with Indian weddings.
+                They allow external decorators for mandaps, can arrange Indian vegetarian and non-vegetarian catering
+                menus, and provide space for multi-day events like mehndi, sangeet, and the main ceremony. The key is
+                picking a resort that has done it before — that is part of what our vendor network helps with.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>What legal requirements do we need for a wedding in Mexico?</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                For a legally binding ceremony in Mexico, you need valid passports, tourist cards, birth certificates
+                (apostilled and translated), a pre-nuptial medical certificate from a Mexican clinic, and four
+                witnesses. Many couples do a legal ceremony at their local courthouse in the US and a symbolic
+                ceremony in Mexico — this simplifies paperwork significantly. We can connect you with a wedding
+                planner who handles the legal logistics.
               </p>
             </div>
           </div>
