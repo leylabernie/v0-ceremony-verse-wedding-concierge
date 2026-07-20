@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-sherwani-from-india-usa/",
-  title: "How to Buy a Sherwani from India for a US Wedding (Complete Guide with Prices)",
+  title: "How to Buy a Sherwani from India for a US Wedding",
   description: "Complete guide for grooms and groomsmen buying a sherwani from India to the USA \u2014 fabric, fit, customs, shipping, and how to coordinate the full wedding party.",
   keywords: ["how to buy a sherwani from India USA", "sherwani price India 2026", "buy sherwani online USA", "groom sherwani customs duties"],
   publishedTime: "2026-03-01",

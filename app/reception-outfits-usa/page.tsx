@@ -8,9 +8,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 // "bride reception outfit", "groom reception outfit"
 export const metadata = buildMetadata({
   path: "/reception-outfits-usa/",
-  title: "Indian Wedding Reception Outfits USA — Reception Lehengas & Gowns from India",
+  title: "Indian Wedding Reception Outfits USA — Sourced from India",
   description:
-    "Show-stopping Indian wedding reception outfits sourced from India and delivered to your US door. Modern reception lehengas, indo-western gowns, sherwanis, and coordinated party outfits — custom stitched to your measurements.",
+    "Indian wedding reception outfits sourced from India and delivered to your US door. Reception lehengas, indo-western gowns, and sherwanis — custom stitched to your measurements.",
   keywords: [
     "reception outfits usa",
     "reception lehenga",

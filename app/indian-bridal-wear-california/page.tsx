@@ -19,9 +19,9 @@ import {
 export const metadata = buildMetadata({
   path: "/indian-bridal-wear-california/",
   title:
-    "Custom Indian Wedding Outfits & Bridal Wear in California | CeremonyVerse",
+    "Indian Bridal Wear & Wedding Outfits — California",
   description:
-    "Bay Area and LA brides: skip the Sunnyvale boutique markups and Artesia traffic. Source custom bridal lehengas, sherwanis, and family outfits directly from India with live video shopping and California door delivery.",
+    "Bay Area & LA brides: skip boutique markups. Source bridal lehengas, sherwanis, and family outfits from India with live video shopping and California delivery.",
   keywords:
     "indian bridal boutique bay area, lehenga shop sunnyvale, indian wedding dress los angeles, indian bridal wear california, custom bridal lehenga bay area, sherwani los angeles",
 });

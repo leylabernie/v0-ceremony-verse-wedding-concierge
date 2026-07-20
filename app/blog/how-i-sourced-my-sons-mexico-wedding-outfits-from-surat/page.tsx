@@ -5,8 +5,8 @@ import { buildMetadata, buildBlogPosting, buildBreadcrumb, buildFaqSchema, JsonL
 
 export const metadata = buildMetadata({
   path: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
-  title: "How I Sourced My Son's Mexico Wedding Outfits from Surat — CeremonyVerse Story",
-  description: "First-person story: how Bhamini sourced outfits for her son's 4-day Indian wedding in Mexico from Surat and Delhi — live video shopping, family inspection, direct pricing. Real photos included.",
+  title: "How I Sourced My Son's Mexico Wedding Outfits from Surat",
+  description: "How Bhamini sourced outfits for her son's 4-day Mexico wedding from Surat and Delhi — live video shopping, family inspection, direct pricing.",
   keywords: "Mexico Indian wedding outfits, Surat lehenga sourcing, NRI bride Mexico wedding, Indian wedding outfit sourcing story, Bhamini CeremonyVerse, son wedding Mexico outfits",
   publishedTime: "2026-07-14T10:00:00-05:00",
   authorName: "Bhamini, Founder of CeremonyVerse",

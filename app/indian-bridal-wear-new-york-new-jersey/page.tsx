@@ -23,9 +23,9 @@ import {
 export const metadata = buildMetadata({
   path: "/indian-bridal-wear-new-york-new-jersey/",
   title:
-    "Indian Bridal Wear & Lehenga Sourcing for NY & NJ Couples | CeremonyVerse",
+    "Indian Bridal Wear & Lehenga Sourcing — NY & NJ",
   description:
-    "Skip Edison boutique markups and Jackson Heights crowds. Source custom bridal lehengas, sherwanis, and return gifts directly from India to NY & NJ with live video shopping and Tri-State door delivery.",
+    "Skip Edison boutique markups. Source bridal lehengas, sherwanis, and return gifts from India to NY & NJ with live video shopping and Tri-State delivery.",
   keywords:
     "indian bridal wear new jersey, indian wedding shops edison nj, lehenga shops in nyc, indian bridal boutique new jersey, custom bridal lehenga NY NJ, sherwani shops new york",
 });

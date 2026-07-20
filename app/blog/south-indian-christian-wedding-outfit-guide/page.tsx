@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/south-indian-christian-wedding-outfit-guide/",
-  title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
+  title: "South Indian Christian Wedding Outfit Guide",
   description: "Outfit-by-outfit guide for South Indian Christian weddings \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions, fabrics, colors, and sourcing from India.",
   keywords: ["south indian christian wedding outfits", "kerala christian wedding dress", "tamil christian wedding attire", "south indian christian bride lehenga"],
   publishedTime: "2026-03-01",

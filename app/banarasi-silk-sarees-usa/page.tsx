@@ -8,9 +8,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 // "banarasi zari saree", "organza banarasi saree"
 export const metadata = buildMetadata({
   path: "/banarasi-silk-sarees-usa/",
-  title: "Buy Banarasi Silk Sarees from India — Delivered to USA | CeremonyVerse",
+  title: "Banarasi Silk Sarees from India — Delivered to USA",
   description:
-    "Authentic pure Banarasi silk sarees hand-woven in Varanasi and delivered to your US door. Pure katan silk, organza, tissue, and shattir varieties with real gold and silver zari — Silk Mark certified with live video approval.",
+    "Authentic Banarasi silk sarees hand-woven in Varanasi, delivered to your US door. Pure katan, organza, and tissue with real zari — Silk Mark certified.",
   keywords: [
     "banarasi silk saree usa",
     "buy banarasi saree from india",

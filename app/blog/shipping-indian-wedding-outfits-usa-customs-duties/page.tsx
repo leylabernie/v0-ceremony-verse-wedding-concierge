@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
-  title: "Shipping Indian Wedding Outfits to USA: Customs, Duties & Delivery Timeline",
+  title: "Shipping Indian Wedding Outfits to USA: Customs & Duties",
   description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA \u2014 customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
   publishedTime: "2026-03-01",

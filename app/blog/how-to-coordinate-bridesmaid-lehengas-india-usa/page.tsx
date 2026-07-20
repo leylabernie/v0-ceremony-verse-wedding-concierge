@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/",
-  title: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding",
+  title: "How to Order Matching Bridesmaid Lehengas from India",
   description: "How to coordinate 2\u201314 bridesmaid lehengas from India \u2014 sizing across multiple states, color matching, fabric consistency, and shipping logistics for NRI brides.",
   keywords: ["matching bridesmaid lehengas from India", "coordinate bridesmaid outfits USA wedding", "bridesmaid lehenga sizing guide", "order multiple lehengas from India"],
   publishedTime: "2026-03-01",

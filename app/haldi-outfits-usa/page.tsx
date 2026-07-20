@@ -7,7 +7,7 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 // "lightweight haldi lehenga", "haldi function outfits", "haldi outfits for bride"
 export const metadata = buildMetadata({
   path: "/haldi-outfits-usa/",
-  title: "Haldi Ceremony Outfits USA — Yellow Haldi Dresses & Lehengas from India",
+  title: "Haldi Ceremony Outfits USA — Sourced from India",
   description:
     "Bright, cheerful Haldi ceremony outfits sourced from India and delivered to your US door. Yellow haldi dresses, lightweight lehengas, anarkalis, and coordinated family outfits — custom stitched to your measurements.",
   keywords: [

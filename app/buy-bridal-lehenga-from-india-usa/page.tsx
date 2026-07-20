@@ -4,7 +4,7 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/buy-bridal-lehenga-from-india-usa/",
-  title: "Buy Bridal Lehenga from India — Custom NRI Bridal Lehenga Delivered to USA",
+  title: "Buy Bridal Lehenga from India — Delivered to USA",
   description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality checks, and delivery to your US door. Save 30–50% vs US boutiques.",
   keywords: "buy bridal lehenga from India USA, custom bridal lehenga NRI, bridal lehenga delivered to USA, Indian bridal lehenga online USA, NRI bride lehenga, affordable bridal lehenga India",
 });

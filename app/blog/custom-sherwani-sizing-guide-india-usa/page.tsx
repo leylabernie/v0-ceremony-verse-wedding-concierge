@@ -4,9 +4,9 @@ import Link from "next/link";
 export const metadata = buildMetadata({
   path: "/blog/custom-sherwani-sizing-guide-india-usa/",
   title:
-    "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
+    "Custom Sherwani Sizing Guide: Source from India, Fit in the US",
   description:
-    "The 5 critical sherwani measurements every groom must get right, how to choose between Banarasi brocade, raw silk, and velvet, and how to guarantee a perfect custom fit from India to the USA.",
+    "5 critical sherwani measurements every groom must get right. Choose fabric and guarantee a perfect custom fit from India to the USA.",
   keywords: [
     "custom sherwani online USA",
     "Indian groom wear shopping from India",
@@ -24,7 +24,7 @@ const blogPostingSchema = buildBlogPosting({
   headline:
     "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
   description:
-    "The 5 critical sherwani measurements every groom must get right, how to choose between Banarasi brocade, raw silk, and velvet, and how to guarantee a perfect custom fit from India to the USA.",
+    "5 critical sherwani measurements every groom must get right. Choose fabric and guarantee a perfect custom fit from India to the USA.",
   url: "/blog/custom-sherwani-sizing-guide-india-usa/",
   datePublished: "2026-06-28",
   keywords: [

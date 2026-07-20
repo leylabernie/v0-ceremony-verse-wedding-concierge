@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
-  title: "Bridal Lehenga Cost in India (Including Shipping to USA) \u2014 2026 Prices",
+  title: "Bridal Lehenga Cost in India + Shipping to USA (2026)",
   description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
   keywords: ["how much does a bridal lehenga cost in india including shipping to usa", "bridal lehenga cost india 2026", "nri bride lehenga budget", "lehenga price with customs usa"],
   publishedTime: "2026-03-01",

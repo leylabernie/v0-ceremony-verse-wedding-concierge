@@ -6,7 +6,7 @@ import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 export const metadata = buildMetadata({
   path: "/about",
   title: "About CeremonyVerse — Bhamini's Story",
-  description: "My family has been in Surat's fabric trade for generations. I coordinated my own sons' 4-day weddings — one interfaith in NJ, one at Hard Rock Mexico. Now I help your family.",
+  description: "Surat fabric family. Coordinated my sons' 4-day weddings — one interfaith in NJ, one at Hard Rock Mexico. Now I help your family.",
   keywords: "CeremonyVerse founder, Bhamini CeremonyVerse, Surat fabric trade family, Mexico wedding coordinator, interfaith wedding planner, NRI wedding concierge, Indian wedding outfit sourcing",
 });
 

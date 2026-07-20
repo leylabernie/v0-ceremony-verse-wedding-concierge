@@ -4,7 +4,7 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/pricing",
-  title: "CeremonyVerse Pricing — Transparent Sourcing & Coordination Fees",
+  title: "CeremonyVerse Pricing — Sourcing & Coordination",
   description:
     "Transparent pricing: Indian wedding outfit sourcing from $249, Mexico wedding coordination from $499. No hidden markups. See full breakdown.",
   keywords: "CeremonyVerse pricing, Indian wedding sourcing cost, Mexico wedding coordination pricing, NRI bridal concierge fee, Surat lehenga sourcing cost",

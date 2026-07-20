@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/when-to-order-indian-wedding-outfits-nri-bride/",
-  title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
-  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock in vendors, and how to build in buffer for customs and alterations.",
+  title: "When to Order Indian Wedding Outfits: NRI Timeline",
+  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock vendors, and customs buffer.",
   keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -12,8 +12,8 @@ export const metadata = buildMetadata({
 });
 
 const blogPostingSchema = buildBlogPosting({
-  headline: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
-  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock in vendors, and how to build in buffer for customs and alterations.",
+  headline: "When to Order Indian Wedding Outfits: NRI Timeline",
+  description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock vendors, and customs buffer.",
   url: "/blog/when-to-order-indian-wedding-outfits-nri-bride/",
   datePublished: "2026-03-01",
   keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],

@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-scams-nri-brides/",
-  title: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
-  description: "10 specific scam patterns NRI brides face when buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
+  title: "10 Red Flags When Buying Lehengas from India — NRI Scam Guide",
+  description: "10 scam patterns NRI brides face buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
   keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
-  description: "10 specific scam patterns NRI brides face when buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
+  description: "10 scam patterns NRI brides face buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
   url: "/blog/indian-wedding-outfit-scams-nri-brides/",
   datePublished: "2026-03-01",
   keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],

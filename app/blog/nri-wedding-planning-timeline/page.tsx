@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/nri-wedding-planning-timeline/",
-  title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
+  title: "NRI Wedding Planning Timeline: When to Order from India",
   description: "A 12-month NRI wedding planning timeline \u2014 when to start sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India for a stress-free US wedding.",
   keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],
   publishedTime: "2026-03-01",

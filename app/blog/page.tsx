@@ -147,9 +147,9 @@ export default function BlogIndexPage() {
       </div>
 
       {/* Posts */}
-      <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
+      <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 2rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {posts.map((post) => (
+          {posts.map((post, i) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -171,6 +171,103 @@ export default function BlogIndexPage() {
               </div>
             </Link>
           ))}
+        </div>
+      </div>
+
+      {/* CONVERSION CTA — after every 5 posts and at bottom */}
+      {posts.length > 5 && (
+        <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 1.5rem" }}>
+          <div style={{ background: "#1f1f1f", borderRadius: "12px", padding: "2.5rem", textAlign: "center" }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "0.75rem", lineHeight: 1.25 }}>
+              Ready to source your wedding outfits from India?
+            </p>
+            <p style={{ fontSize: "0.95rem", color: "#d4c8b8", lineHeight: 1.7, marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
+              Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget — and tell you honestly what&apos;s achievable.
+            </p>
+            <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+              <Link
+                href="/contact"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "#7a6841",
+                  color: "#fff",
+                  padding: "12px 28px",
+                  borderRadius: "999px",
+                  fontSize: "0.875rem",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                }}
+              >
+                Book Free Consultation
+              </Link>
+              <a
+                href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "transparent",
+                  color: "#f8f6f2",
+                  padding: "12px 28px",
+                  borderRadius: "999px",
+                  fontSize: "0.875rem",
+                  fontWeight: 600,
+                  textDecoration: "none",
+                  border: "1px solid #7a6841",
+                }}
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Bottom CTA */}
+      <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
+        <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", textAlign: "center" }}>
+          <p style={{ fontSize: "1rem", fontWeight: 600, color: "#2f2f2f", marginBottom: "0.5rem" }}>
+            Not sure where to start?
+          </p>
+          <p style={{ fontSize: "0.9rem", color: "#6f6a63", lineHeight: 1.7, marginBottom: "1.25rem" }}>
+            Every guide above comes from real experience dressing NRI families across the US. When you&apos;re ready to move from reading to doing, we&apos;re here.
+          </p>
+          <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link
+              href="/contact"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                background: "#1f1f1f",
+                color: "#fff",
+                padding: "12px 28px",
+                borderRadius: "999px",
+                fontSize: "0.875rem",
+                fontWeight: 600,
+                textDecoration: "none",
+              }}
+            >
+              Get Started →
+            </Link>
+            <Link
+              href="/how-it-works"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                color: "#7a6841",
+                padding: "12px 28px",
+                borderRadius: "999px",
+                fontSize: "0.875rem",
+                fontWeight: 600,
+                textDecoration: "none",
+                border: "1px solid #e6dfd5",
+              }}
+            >
+              See How It Works
+            </Link>
+          </div>
         </div>
       </div>
     </main>

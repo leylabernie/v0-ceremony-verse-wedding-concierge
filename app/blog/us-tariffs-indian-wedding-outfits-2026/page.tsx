@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/us-tariffs-indian-wedding-outfits-2026/",
-  title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
+  title: "US Tariffs on Indian Wedding Outfits: NRI Guide 2026",
   description: "How the August 2025 de minimis removal and current US tariffs affect Indian wedding outfit shipments \u2014 real duty calculations and legal ways to reduce costs.",
   keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
   publishedTime: "2026-03-01",

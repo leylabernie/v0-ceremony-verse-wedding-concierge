@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-checklist-every-ceremony/",
-  title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42\u201351 Outfits)",
+  title: "Indian Wedding Outfit Checklist: 42–51 Outfits for NRI Families",
   description: "The complete outfit-by-ceremony checklist for NRI families \u2014 from the bride and groom to parents, siblings, and guests. 42\u201351 total outfits, nothing missed.",
   keywords: ["indian wedding outfit checklist for nri families usa", "what to wear indian wedding", "indian wedding family outfits", "indian wedding outfit count"],
   publishedTime: "2026-03-01",

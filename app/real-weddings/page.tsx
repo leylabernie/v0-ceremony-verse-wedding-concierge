@@ -5,7 +5,7 @@ import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/real-weddings",
-  title: "Real Weddings — NRI Brides & Grooms We've Dressed | CeremonyVerse",
+  title: "Real Weddings — NRI Brides & Grooms We've Dressed",
   description:
     "See real Indian weddings we've helped coordinate — from 4-day interfaith celebrations in New Jersey to destination weddings in Mexico. Outfits sourced direct from Surat and Delhi, coordinated by Bhamini.",
   keywords: [

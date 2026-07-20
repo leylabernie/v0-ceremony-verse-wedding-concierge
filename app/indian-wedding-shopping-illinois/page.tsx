@@ -8,9 +8,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 // "buy lehenga from india chicago", "nri indian wedding shopping illinois"
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-illinois/",
-  title: "Indian Wedding Shopping from India — Illinois NRI Families (Chicago, Naperville, Schaumburg)",
+  title: "Indian Wedding Shopping from India — Illinois NRI Families",
   description:
-    "Illinois NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your IL door. Serving Chicago, Naperville, Schaumburg, Aurora, Evanston, and across Illinois.",
+    "Illinois NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your IL door.",
   keywords: [
     "indian wedding shopping illinois",
     "indian wedding shopping chicago",

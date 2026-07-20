@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-choose-indian-wedding-jewelry-usa/",
-  title: "How to Choose Indian Wedding Jewelry in the USA: NRI Bride's Complete Guide",
+  title: "How to Choose Indian Wedding Jewelry in the USA",
   description:
-    "How to choose Indian wedding jewelry from the USA — Kundan vs Polki vs Temple vs Meenakari, BIS Hallmark verification, fake jewelry red flags, budget tiers, and how NRI brides source authentic bridal sets from India.",
+    "How to choose Indian wedding jewelry from the USA — Kundan vs Polki vs Temple vs Meenakari — BIS Hallmark verification, fake red flags, and how NRI brides source bridal sets from India.",
   keywords: [
     "how to choose Indian wedding jewelry USA",
     "Kundan vs Polki jewelry difference",
@@ -24,7 +24,7 @@ const blogPostingSchema = buildBlogPosting({
   headline:
     "How to Choose Indian Wedding Jewelry in the USA: NRI Bride's Complete Guide",
   description:
-    "How to choose Indian wedding jewelry from the USA — Kundan vs Polki vs Temple vs Meenakari, BIS Hallmark verification, fake jewelry red flags, budget tiers, and how NRI brides source authentic bridal sets from India.",
+    "How to choose Indian wedding jewelry from the USA — Kundan vs Polki vs Temple vs Meenakari — BIS Hallmark verification, fake red flags, and how NRI brides source bridal sets from India.",
   url: "/blog/how-to-choose-indian-wedding-jewelry-usa/",
   datePublished: "2026-07-03",
   keywords: [

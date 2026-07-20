@@ -348,10 +348,27 @@ export default function HowItWorksPage() {
                     fontSize: "13px",
                     lineHeight: 1.6,
                     color: "#4d403a",
+                    marginBottom: "16px",
                   }}
                 >
                   {tier.description}
                 </p>
+                <a
+                  href={tier.name === "Free Consultation" ? "/contact" : "/contact"}
+                  style={{
+                    display: "inline-block",
+                    background: tier.name === "Free Consultation" ? "transparent" : "#7a6841",
+                    color: tier.name === "Free Consultation" ? "#7a6841" : "#fff",
+                    padding: "10px 24px",
+                    borderRadius: "999px",
+                    fontSize: "13px",
+                    fontWeight: 600,
+                    textDecoration: "none",
+                    border: tier.name === "Free Consultation" ? "1px solid #7a6841" : "1px solid #7a6841",
+                  }}
+                >
+                  {tier.name === "Free Consultation" ? "Book Free Call" : "Get Started"}
+                </a>
               </div>
             ))}
           </div>

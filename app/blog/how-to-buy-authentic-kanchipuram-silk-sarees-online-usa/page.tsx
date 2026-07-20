@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/",
-  title: "How to Buy Authentic Kanchipuram Silk Sarees Online: An NRI Bride's Guide",
+  title: "How to Buy Authentic Kanchipuram Silk Sarees Online",
   description:
-    "Spot fake Kanjivaram silk online. The Zari Test, Silk Mark India certification, Korvai border inspection, and how to source real Kanchipuram wedding sarees from India to the USA without getting scammed.",
+    "Spot fake Kanjivaram silk online — Zari Test, Silk Mark certification, and how to source real Kanchipuram sarees from India to the USA.",
   keywords: [
     "how to identify real Kanchipuram silk online",
     "authentic Kanjivaram sarees USA",
@@ -23,7 +23,7 @@ const blogPostingSchema = buildBlogPosting({
   headline:
     "How to Buy Authentic Kanchipuram Silk Sarees Online: An NRI Bride's Guide",
   description:
-    "Spot fake Kanjivaram silk online. The Zari Test, Silk Mark India certification, Korvai border inspection, and how to source real Kanchipuram wedding sarees from India to the USA without getting scammed.",
+    "Spot fake Kanjivaram silk online — Zari Test, Silk Mark certification, and how to source real Kanchipuram sarees from India to the USA.",
   url: "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/",
   datePublished: "2026-06-28",
   keywords: [

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/gujarati-wedding-outfit-guide/",
-  title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
+  title: "Gujarati Wedding Outfit Guide: Every Ceremony",
   description: "Complete Gujarati wedding outfit guide \u2014 Garba/chaniya choli, Mehndi, Pithi, Mameru, wedding ceremony, and reception. What each family member wears for each function.",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
   publishedTime: "2026-03-01",
