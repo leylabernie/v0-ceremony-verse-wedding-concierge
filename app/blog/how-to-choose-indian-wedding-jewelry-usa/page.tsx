@@ -63,7 +63,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           <p
             style={{
               color: "#7a6841",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               marginBottom: "1rem",
@@ -110,7 +110,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
         <div
           style={{
             fontFamily: "'DM Sans', sans-serif",
-            fontSize: "1.05rem",
+            fontSize: "1.125rem",
             lineHeight: 1.8,
             color: "#2f2f2f",
           }}
@@ -788,7 +788,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "0.5rem",
                 color: "#7a6841",
                 textTransform: "uppercase",
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.08em",
               }}
             >
@@ -819,7 +819,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "0.5rem",
                 color: "#7a6841",
                 textTransform: "uppercase",
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.08em",
               }}
             >
@@ -850,7 +850,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "0.5rem",
                 color: "#7a6841",
                 textTransform: "uppercase",
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.08em",
               }}
             >
@@ -888,7 +888,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "0.5rem",
                 color: "#7a6841",
                 textTransform: "uppercase",
-                fontSize: "0.8rem",
+                fontSize: "0.9rem",
                 letterSpacing: "0.08em",
               }}
             >
@@ -1034,8 +1034,8 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             </Link>
             <p
               style={{
-                fontSize: "0.85rem",
-                color: "#6f6a63",
+                fontSize: "0.95rem",
+                color: "#4d403a",
                 marginTop: "1rem",
               }}
             >
@@ -1054,7 +1054,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           <p
             style={{
               marginTop: "2rem",
-              fontSize: "0.85rem",
+              fontSize: "0.95rem",
               color: "#5e4a40",
             }}
           >

@@ -220,7 +220,7 @@ export default function MexicoCoordinationPage() {
               className="object-cover"
             />
           </div>
-          <p className="text-sm text-[#6f6a63] text-center mt-3 italic">
+          <p className="text-sm text-[#4d403a] text-center mt-3 italic">
             Every detail coordinated — outfits, ceremonial items, decor, welcome bags, and on-site logistics
             across all four days.
           </p>
@@ -363,13 +363,13 @@ export default function MexicoCoordinationPage() {
             </div>
           </div>
 
-          <p className="text-center text-sm text-[#6f6a63] mt-4 mb-2">
+          <p className="text-center text-sm text-[#4d403a] mt-4 mb-2">
             Read the full story of how I sourced every outfit for my son&apos;s 4-day Mexico wedding{" "}
             <Link href="/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/" className="underline" style={{ color: "var(--cv-accent)" }}>
               from Surat and Delhi →
             </Link>
           </p>
-          <p className="text-center text-sm text-[#6f6a63] mt-2">
+          <p className="text-center text-sm text-[#4d403a] mt-2">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
             <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
           </p>

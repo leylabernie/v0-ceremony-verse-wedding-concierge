@@ -387,7 +387,7 @@ export default function MexicoDestinationPage() {
                   &quot;I coordinated my own son&apos;s 4-day wedding in Mexico. The vendors I used are the vendors I now
                   connect you with.&quot;
                 </p>
-                <p className="mt-2 text-xs text-[#6f6a63]">— Bhamini, Founder of CeremonyVerse</p>
+                <p className="mt-2 text-xs text-[#4d403a]">— Bhamini, Founder of CeremonyVerse</p>
               </div>
             </div>
           </div>
@@ -431,7 +431,7 @@ export default function MexicoDestinationPage() {
             </div>
           </div>
 
-          <p className="text-center text-sm text-[#6f6a63] mt-8">
+          <p className="text-center text-sm text-[#4d403a] mt-8">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
             <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
           </p>

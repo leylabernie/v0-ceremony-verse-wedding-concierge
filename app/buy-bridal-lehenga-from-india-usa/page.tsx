@@ -327,7 +327,7 @@ export default function BridalLehengaPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#6f6a63] text-center">
+          <p className="text-xs text-[#4d403a] text-center">
             US customs duties (12–27%) and DHL/FedEx international shipping are itemized in your
             quote upfront — no surprise fees at delivery. <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Read our full 2026 price breakdown →</Link>
           </p>

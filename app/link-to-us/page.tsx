@@ -133,7 +133,7 @@ export default function LinkToUsPage() {
               <p
                 style={{
                   fontSize: "0.95rem",
-                  color: "#6f6a63",
+                  color: "#4d403a",
                   margin: "0 0 1rem",
                   lineHeight: 1.7,
                   padding: "0.75rem",

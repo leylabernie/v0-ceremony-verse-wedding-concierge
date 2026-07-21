@@ -25,14 +25,14 @@ export default function InterculturalWeddingPage() {
     
       <SeoNav />
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Intercultural Indian Weddings</p>
+        <p style={{ fontSize: "13px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Intercultural Indian Weddings</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.15, marginBottom: "24px" }}>
           South Indian, Gujarati, or intercultural — we know every tradition.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px" }}>
           Whether you're a South Indian Christian family, a Gujarati couple, an intercultural family, or a non-South Asian partner — CeremonyVerse understands your specific traditions and ceremonies. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, textDecoration: "none" }}>
           Book Free Consultation — CeremonyVerse.com
         </a>
       </section>
@@ -42,7 +42,7 @@ export default function InterculturalWeddingPage() {
           <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontStyle: "italic", color: "#f0ebe3", lineHeight: 1.6, marginBottom: "16px" }}>
             "As a South Indian Christian couple, we wanted outfits that truly honored our heritage. CeremonyVerse walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away."
           </p>
-          <p style={{ fontSize: "13px", color: "#7a6841", fontWeight: 500 }}>— Charly &amp; Viola, Philadelphia PA · Intercultural wedding</p>
+          <p style={{ fontSize: "15px", color: "#7a6841", fontWeight: 500 }}>— Charly &amp; Viola, Philadelphia PA · Intercultural wedding</p>
         </div>
       </section>
 
@@ -58,8 +58,8 @@ export default function InterculturalWeddingPage() {
               ["Reception", "Semi-formal — lighter lehenga or saree, guests in smart attire"],
             ].map(([c, d]) => (
               <div key={c} style={{ marginBottom: "12px" }}>
-                <p style={{ fontSize: "11px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "#7a6841", marginBottom: "2px" }}>{c}</p>
-                <p style={{ fontSize: "13px", color: "#4d403a" }}>{d}</p>
+                <p style={{ fontSize: "13px", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", color: "#7a6841", marginBottom: "2px" }}>{c}</p>
+                <p style={{ fontSize: "15px", color: "#4d403a" }}>{d}</p>
               </div>
             ))}
           </div>
@@ -76,7 +76,7 @@ export default function InterculturalWeddingPage() {
             ].map((item) => (
               <div key={item} style={{ display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "10px" }}>
                 <span style={{ color: "#7a6841", marginTop: "2px" }}>—</span>
-                <span style={{ fontSize: "13px", color: "#2f2f2f", lineHeight: 1.5 }}>{item}</span>
+                <span style={{ fontSize: "15px", color: "#2f2f2f", lineHeight: 1.5 }}>{item}</span>
               </div>
             ))}
           </div>

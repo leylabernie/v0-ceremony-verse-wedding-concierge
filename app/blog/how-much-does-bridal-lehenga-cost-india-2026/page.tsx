@@ -33,7 +33,7 @@ export default function BridalLehengaCostGuide() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
@@ -47,7 +47,7 @@ export default function BridalLehengaCostGuide() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             If you are an NRI bride planning to source your bridal lehenga from India, the first question on your mind is almost certainly: <strong>how much is this going to cost?</strong> The honest answer — which most blogs and Instagram sellers won&apos;t give you — is that it depends dramatically on what you want, where you buy it, and whether you are seeing the actual piece before you pay.
@@ -64,7 +64,7 @@ export default function BridalLehengaCostGuide() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#2f2f2f", marginBottom: "1rem" }}>
               A custom bridal lehenga sourced from India and delivered to your US door costs <strong>$800–$3,500 total</strong> — including the outfit ($530–$2,940), live video shopping, custom stitching, international shipping ($80–$200), and US customs duties (12–27% of declared value, $100–$600). The same lehenga at a US Indian boutique runs <strong>$2,500–$8,000</strong>. Most NRI brides save <strong>30–50%</strong> sourcing from India — but only if they budget correctly for every cost, including the ones most blogs forget.
             </p>
-            <p style={{ fontSize: "0.85rem", fontWeight: 600, color: "#7a6841", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
+            <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "#7a6841", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
             <ul style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#2f2f2f", paddingLeft: "1.25rem", margin: 0 }}>
               <li><strong>Budget tier:</strong> ₹45,000–₹80,000 ($530–$940) for machine embroidery on silk-blend fabric.</li>
               <li><strong>Mid-range:</strong> ₹1,00,000–₹2,50,000 ($1,180–$2,940) for hand embroidery on pure silk — most NRI brides land here.</li>
@@ -246,14 +246,14 @@ export default function BridalLehengaCostGuide() {
             <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Free Price Guide →
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Already have your budget planned? <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 20-minute video consultation</Link> and we&apos;ll show you real lehengas from our partners in India — no commitment, just real options and real prices.
             </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
-          <p style={{ fontSize: "0.85rem", color: "#5e4a40" }}>
+          <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
             <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, sherwanis, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/how-it-works" style={{ color: "#7a6841" }}>Learn how we work</Link> or <Link href="/faq" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 

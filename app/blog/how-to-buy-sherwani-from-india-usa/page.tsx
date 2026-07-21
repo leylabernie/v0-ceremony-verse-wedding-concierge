@@ -33,7 +33,7 @@ export default function SherwaniGuidePage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
@@ -47,7 +47,7 @@ export default function SherwaniGuidePage() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             Most wedding advice online is written for brides. But if you are an NRI groom — or a parent, sibling, or friend helping one — you know that finding the right sherwani in the US is just as frustrating. US boutiques charge $800-$2,500 for sherwanis that cost a third of that in India. And buying from India online? That opens the door to scams, sizing disasters, and outfits that look nothing like the photo.
@@ -298,14 +298,14 @@ export default function SherwaniGuidePage() {
             <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Download the Groom&apos;s Guide →
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Want us to find your sherwani for you? <Link href="/services" style={{ color: "#7a6841", fontWeight: 600 }}>See how our groom sourcing works</Link> — live video shopping, custom measurements, delivery to your door.
             </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
-          <p style={{ fontSize: "0.85rem", color: "#5e4a40" }}>
+          <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
             <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/services" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 

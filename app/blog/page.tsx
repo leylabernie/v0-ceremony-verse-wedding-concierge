@@ -134,7 +134,7 @@ export default function BlogIndexPage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · Resources
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
@@ -162,10 +162,10 @@ export default function BlogIndexPage() {
                 <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#2f2f2f", lineHeight: 1.3, marginBottom: "0.75rem" }}>
                   {post.title}
                 </h2>
-                <p style={{ fontSize: "0.95rem", color: "#6f6a63", lineHeight: 1.7, marginBottom: "1rem" }}>
+                <p style={{ fontSize: "0.95rem", color: "#4d403a", lineHeight: 1.7, marginBottom: "1rem" }}>
                   {post.description}
                 </p>
-                <span style={{ fontSize: "0.85rem", color: "#7a6841", fontWeight: 600 }}>
+                <span style={{ fontSize: "0.95rem", color: "#7a6841", fontWeight: 600 }}>
                   Read more →
                 </span>
               </div>
@@ -231,7 +231,7 @@ export default function BlogIndexPage() {
           <p style={{ fontSize: "1rem", fontWeight: 600, color: "#2f2f2f", marginBottom: "0.5rem" }}>
             Not sure where to start?
           </p>
-          <p style={{ fontSize: "0.9rem", color: "#6f6a63", lineHeight: 1.7, marginBottom: "1.25rem" }}>
+          <p style={{ fontSize: "0.9rem", color: "#4d403a", lineHeight: 1.7, marginBottom: "1.25rem" }}>
             Every guide above comes from real experience dressing NRI families across the US. When you&apos;re ready to move from reading to doing, we&apos;re here.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>

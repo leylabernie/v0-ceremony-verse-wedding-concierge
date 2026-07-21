@@ -64,7 +64,7 @@ export default function BlogPost() {
           A first-person story about coordinating outfits for two 4-day weddings — one pivoted to New Jersey after
           COVID, one at the Hard Rock Cafe in Mexico — and what I learned that I now use to help other NRI families.
         </p>
-        <p className="text-sm text-[#6f6a63] mb-12">
+        <p className="text-sm text-[#4d403a] mb-12">
           By <strong style={{ color: "#1f1f1f" }}>Bhamini, Founder of CeremonyVerse</strong> · Published July 14, 2026
         </p>
 
@@ -311,11 +311,11 @@ export default function BlogPost() {
           <div className="grid md:grid-cols-2 gap-4">
             <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" className="block p-4 bg-white border border-[#e6dfd5] rounded-xl hover:shadow-md transition">
               <p className="font-semibold text-[#1f1f1f]">How Much Does a Bridal Lehenga Cost from India in 2026?</p>
-              <p className="text-sm text-[#6f6a63] mt-1">Full pricing breakdown by tier, with US boutique comparisons.</p>
+              <p className="text-sm text-[#4d403a] mt-1">Full pricing breakdown by tier, with US boutique comparisons.</p>
             </Link>
             <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" className="block p-4 bg-white border border-[#e6dfd5] rounded-xl hover:shadow-md transition">
               <p className="font-semibold text-[#1f1f1f]">When to Order Indian Wedding Outfits as an NRI Bride</p>
-              <p className="text-sm text-[#6f6a63] mt-1">Timeline guidance — when to start, when to ship, when to tailor.</p>
+              <p className="text-sm text-[#4d403a] mt-1">Timeline guidance — when to start, when to ship, when to tailor.</p>
             </Link>
           </div>
         </div>

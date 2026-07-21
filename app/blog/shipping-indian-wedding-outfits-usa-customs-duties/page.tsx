@@ -32,7 +32,7 @@ export default function ShippingGuidePage() {
       
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How to Ship Indian Wedding Outfits to the USA: Customs, Duties & Timeline 2026
           </h1>
@@ -43,7 +43,7 @@ export default function ShippingGuidePage() {
       </div>
 
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>You found the perfect lehenga. The sherwani fits. The bridesmaid outfits match. Now comes the part that makes most NRI families nervous: getting everything from India to the USA without customs seizures, surprise duty bills, or shipping disasters.</p>
           <p style={{ marginTop: "1.2rem" }}>At CeremonyVerse, we ship wedding outfits for NRI families every week. Here is exactly what you need to know about shipping Indian wedding outfits to the US in 2026 — the costs, the customs process, the timelines, and how to protect yourself. Timing your shipment right is critical — read our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>when to order so outfits arrive on time</Link> guide alongside this one.</p>
@@ -160,12 +160,12 @@ export default function ShippingGuidePage() {
             <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Download the Shipping Calculator →
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Don&apos;t want to deal with customs paperwork yourself? <Link href="/services" style={{ color: "#7a6841", fontWeight: 600 }}>See how we handle international delivery</Link> — we prepare all documentation, insure every package, track delivery to your door.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source and ship Indian wedding outfits for NRI families — handling quality inspection, customs documentation, insured shipping, and delivery to your US door. <Link href="/faq" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source and ship Indian wedding outfits for NRI families — handling quality inspection, customs documentation, insured shipping, and delivery to your US door. <Link href="/faq" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
         </div>
       </article>
     </main>

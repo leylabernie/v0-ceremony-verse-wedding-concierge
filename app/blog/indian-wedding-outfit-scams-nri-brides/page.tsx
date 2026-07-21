@@ -32,7 +32,7 @@ export default function ScamsGuidePage() {
       
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How to Buy a Lehenga from India Safely: 10 Scams NRI Brides Must Avoid
           </h1>
@@ -43,7 +43,7 @@ export default function ScamsGuidePage() {
       </div>
 
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>Every week, we hear from NRI brides who lost money, time, or their dream outfit to a scam. The Indian wedding outfit market online is largely unregulated, and Instagram/WhatsApp sellers know that NRI brides are desperate, time-constrained, and often buying without seeing the product in person. Here are the 10 scams we see most often — and exactly how to avoid each one.</p>
 
@@ -155,12 +155,12 @@ export default function ScamsGuidePage() {
             <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Download the Red Flags Checklist →
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Rather skip the risk entirely? <Link href="/services" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 15-minute call</Link> to see if we&apos;re the right fit.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
         </div>
       </article>
     </main>

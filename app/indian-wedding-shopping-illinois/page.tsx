@@ -91,7 +91,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
       >
         <p
           style={{
-            fontSize: "11px",
+            fontSize: "13px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             color: "#7a6841",
@@ -138,7 +138,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             color: "#fff",
             padding: "13px 30px",
             borderRadius: "999px",
-            fontSize: "14px",
+            fontSize: "15px",
             fontWeight: 600,
             textDecoration: "none",
           }}
@@ -199,14 +199,14 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 <h3
                   style={{
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
                   }}
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>
                   {item.desc}
                 </p>
               </div>
@@ -319,14 +319,14 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 <p
                   style={{
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "4px",
                   }}
                 >
                   {item.city}
                 </p>
-                <p style={{ fontSize: "11px", color: "#7a6841" }}>{item.note}</p>
+                <p style={{ fontSize: "13px", color: "#7a6841" }}>{item.note}</p>
               </div>
             ))}
           </div>
@@ -390,7 +390,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 <h3
                   style={{
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "4px",
                   }}
@@ -408,7 +408,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 >
                   {item.price}
                 </p>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>
                   {item.desc}
                 </p>
               </div>
@@ -477,7 +477,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 >
                   {faq.q}
                 </h3>
-                <p style={{ fontSize: "14px", lineHeight: 1.6, color: "#4d403a" }}>{faq.a}</p>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{faq.a}</p>
               </div>
             ))}
           </div>
@@ -521,7 +521,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               color: "#fff",
               padding: "13px 30px",
               borderRadius: "999px",
-              fontSize: "14px",
+              fontSize: "15px",
               fontWeight: 600,
               textDecoration: "none",
             }}
@@ -571,7 +571,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
                   background: "#f9f6f3",
                   border: "1px solid #e6dfd5",
                   borderRadius: "999px",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   color: "#4d403a",
                   textDecoration: "none",
                 }}

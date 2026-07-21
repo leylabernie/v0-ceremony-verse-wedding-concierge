@@ -25,14 +25,14 @@ export default function BridalLehengaServicePage() {
     
       <SeoNav />
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Bridal Lehenga Sourcing</p>
+        <p style={{ fontSize: "13px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Bridal Lehenga Sourcing</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.15, marginBottom: "24px" }}>
           Your dream bridal lehenga, sourced from India and delivered to your US door.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
           The most beautiful bridal lehengas are made in India. CeremonyVerse brings them to you — with live video shopping so you see every detail before you buy, custom stitching to your exact measurements, quality inspection before shipping, and full delivery to your door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, textDecoration: "none" }}>
           Book Free Consultation — CeremonyVerse.com
         </a>
         <p style={{ fontSize: "12px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Response within 24–48 hours</p>
@@ -48,7 +48,7 @@ export default function BridalLehengaServicePage() {
           ].map((item) => (
             <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "16px", padding: "28px", border: "1px solid #e6dfd5" }}>
               <h3 style={{ fontWeight: 600, color: "#1f1f1f", marginBottom: "8px", fontSize: "15px" }}>{item.title}</h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -65,8 +65,8 @@ export default function BridalLehengaServicePage() {
             { q: "Can I see designs before deciding?", a: "Yes — we do live video shopping sessions where you see actual items in real time. You never commit to anything without seeing it first." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "20px 0" }}>
-              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>

@@ -164,7 +164,7 @@ export default function PricingPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#6f6a63] text-center mt-4 max-w-2xl mx-auto">
+          <p className="text-xs text-[#4d403a] text-center mt-4 max-w-2xl mx-auto">
             &quot;Landed&quot; means delivered to your US door — outfit cost, our service fee, shipping, and customs all included.
             Brides often tell us the piece they receive is even better than what they saw at a boutique, because at the same
             price point, you can afford heavier handwork or better fabric when you skip the markup.
@@ -220,8 +220,8 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Curated list of options from Surat &amp; Delhi</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Budget guidance and style notes</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> One 30-min consultation call</li>
-                <li className="flex gap-2 text-[#6f6a63]">✗ Live video shopping sessions</li>
-                <li className="flex gap-2 text-[#6f6a63]">✗ Pre-shipping inspection</li>
+                <li className="flex gap-2 text-[#4d403a]">✗ Live video shopping sessions</li>
+                <li className="flex gap-2 text-[#4d403a]">✗ Pre-shipping inspection</li>
               </ul>
               <a
                 href="/contact"
@@ -277,7 +277,7 @@ export default function PricingPage() {
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> End-to-end shipping &amp; delivery support</li>
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Dedicated sourcing manager</li>
                 </ul>
-                <p className="text-xs text-[#6f6a63] mt-3">
+                <p className="text-xs text-[#4d403a] mt-3">
                   For parties larger than 8 or full wedding party (15+), custom pricing applies — typically $3,999+. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
                 </p>
               </div>
@@ -323,7 +323,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Two photographer contacts (main + budget for mehndi/haldi)</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Decorator contact</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Beauty contacts (Indian parlor + American HD makeup in Mexico)</li>
-                <li className="flex gap-2 text-[#6f6a63]">✗ On-site coordination</li>
+                <li className="flex gap-2 text-[#4d403a]">✗ On-site coordination</li>
               </ul>
               <a
                 href="/contact"
@@ -346,7 +346,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Vendor liaison day-of</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Timeline management</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Day-of issue resolution</li>
-                <li className="flex gap-2 text-[#6f6a63]">✗ Multi-day coordination</li>
+                <li className="flex gap-2 text-[#4d403a]">✗ Multi-day coordination</li>
               </ul>
               <a
                 href="/contact"
@@ -375,7 +375,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Welcome bag &amp; favor sourcing</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Interfaith ceremony coordination</li>
               </ul>
-              <p className="text-xs text-[#6f6a63] mt-3">
+              <p className="text-xs text-[#4d403a] mt-3">
                 Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
               </p>
               <a
@@ -459,7 +459,7 @@ export default function PricingPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#6f6a63] text-center mt-4">
+          <p className="text-xs text-[#4d403a] text-center mt-4">
             Compare to $400–$5,000+ for the same handwork at a US Indian boutique. Most clients save 40–60%
             even after paying our service fee.
           </p>

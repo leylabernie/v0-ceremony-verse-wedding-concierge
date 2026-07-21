@@ -35,7 +35,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
@@ -49,7 +49,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             A Gujarati wedding is not a single event. It is a celebration that unfolds across multiple days, with each ceremony carrying its own meaning, mood, and dress code. From the electric energy of Garba night to the sacred hush of the Saptapadi, each moment calls for something distinct — and getting the outfits right is part of how families honor these traditions.
@@ -225,17 +225,17 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             >
               Book Free Consultation
             </Link>
-            <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
+            <p style={{ color: "#4d403a", fontSize: "0.95rem", marginTop: "1rem" }}>
               Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
           {/* Sources */}
           <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #e6dfd5" }}>
-            <p style={{ fontSize: "0.8rem", color: "#6f6a63", lineHeight: 1.7 }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", lineHeight: 1.7 }}>
               <strong>Sources:</strong>{" "}
-              <a href="https://www.weddingwire.in/wedding-tips/gujarati-wedding--c1225" target="_blank" rel="noopener noreferrer" style={{ color: "#6f6a63" }}>WeddingWire — Decoding Gujarati Weddings</a>{" · "}
-              <a href="https://www.saptapadistudio.com/post/gujarati-wedding-ceremony-traditions-a-step-by-step-guide-for-destination-weddings-in-mexico" target="_blank" rel="noopener noreferrer" style={{ color: "#6f6a63" }}>Saptapadi Studio — Gujarati Wedding Ceremony Traditions</a>
+              <a href="https://www.weddingwire.in/wedding-tips/gujarati-wedding--c1225" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>WeddingWire — Decoding Gujarati Weddings</a>{" · "}
+              <a href="https://www.saptapadistudio.com/post/gujarati-wedding-ceremony-traditions-a-step-by-step-guide-for-destination-weddings-in-mexico" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>Saptapadi Studio — Gujarati Wedding Ceremony Traditions</a>
             </p>
           </div>
 
@@ -246,7 +246,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
           <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
-          <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#6f6a63" }}>
+          <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
             More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/gujarati-wedding-outfits-usa/" style={{ color: "#7a6841" }}>Gujarati Wedding Outfits</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>

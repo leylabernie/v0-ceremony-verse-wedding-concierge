@@ -35,7 +35,7 @@ export default function NriWeddingPlanningTimeline() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
             CeremonyVerse · March 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
@@ -49,7 +49,7 @@ export default function NriWeddingPlanningTimeline() {
 
       {/* Article Body */}
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
             One of the most common stories we hear at CeremonyVerse goes something like this: a couple gets engaged, celebrates, enjoys the moment — and then looks up six months before the wedding and realizes they haven&apos;t ordered anything from India yet. The bridal lehenga hasn&apos;t been chosen. The mothers&apos; sarees haven&apos;t been sourced. The bridesmaid outfits are a vague idea in a group chat that nobody has followed up on.
@@ -246,23 +246,23 @@ export default function NriWeddingPlanningTimeline() {
             >
               Book Free Consultation
             </Link>
-            <p style={{ color: "#6f6a63", fontSize: "0.85rem", marginTop: "1rem" }}>
+            <p style={{ color: "#4d403a", fontSize: "0.95rem", marginTop: "1rem" }}>
               Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
             </p>
           </div>
 
           {/* Sources */}
           <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #e6dfd5" }}>
-            <p style={{ fontSize: "0.8rem", color: "#6f6a63", lineHeight: 1.7 }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", lineHeight: 1.7 }}>
               <strong>Sources:</strong>{" "}
-              <a href="https://g3fashion.com/blog/fashion/how-to-buy-lehenga-choli-in-the-usa-guide/" target="_blank" rel="noopener noreferrer" style={{ color: "#6f6a63" }}>G3Fashion: How to Buy Lehenga Choli in the USA</a>{" · "}
-              <a href="https://www.reddit.com/r/DesiWeddings/comments/1h0gqkp/timeline_to_buy_bridal_lehenga/" target="_blank" rel="noopener noreferrer" style={{ color: "#6f6a63" }}>DesiWeddings: Timeline to Buy Bridal Lehenga</a>{" · "}
-              <a href="https://www.reddit.com/r/DesiWeddings/comments/1pw1bgo/what_most_nri_brides_dont_realize_about_ordering/" target="_blank" rel="noopener noreferrer" style={{ color: "#6f6a63" }}>DesiWeddings: What NRI Brides Don&apos;t Realize About Ordering</a>
+              <a href="https://g3fashion.com/blog/fashion/how-to-buy-lehenga-choli-in-the-usa-guide/" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>G3Fashion: How to Buy Lehenga Choli in the USA</a>{" · "}
+              <a href="https://www.reddit.com/r/DesiWeddings/comments/1h0gqkp/timeline_to_buy_bridal_lehenga/" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>DesiWeddings: Timeline to Buy Bridal Lehenga</a>{" · "}
+              <a href="https://www.reddit.com/r/DesiWeddings/comments/1pw1bgo/what_most_nri_brides_dont_realize_about_ordering/" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>DesiWeddings: What NRI Brides Don&apos;t Realize About Ordering</a>
             </p>
           </div>
 
           {/* Tagline */}
-          <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#6f6a63", fontStyle: "italic", lineHeight: 1.7 }}>
+          <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
             CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. We help NRI families source Indian wedding outfits, sarees, lehengas, sherwanis, and more — coordinating directly with craftspeople and artisan partners across India so you don&apos;t have to.
           </p>
 
@@ -273,7 +273,7 @@ export default function NriWeddingPlanningTimeline() {
           <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
-          <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#6f6a63" }}>
+          <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
             More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>

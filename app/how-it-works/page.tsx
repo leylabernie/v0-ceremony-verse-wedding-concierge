@@ -119,7 +119,7 @@ export default function HowItWorksPage() {
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p
           style={{
-            fontSize: "11px",
+            fontSize: "13px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             color: "#7a6841",
@@ -217,7 +217,7 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "11px",
+              fontSize: "13px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
               color: "#7a6841",
@@ -255,7 +255,7 @@ export default function HowItWorksPage() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
                   }}
@@ -265,7 +265,7 @@ export default function HowItWorksPage() {
                 <p
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "13px",
+                    fontSize: "15px",
                     lineHeight: 1.6,
                     color: "#4d403a",
                   }}
@@ -283,7 +283,7 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <p
             style={{
-              fontSize: "11px",
+              fontSize: "13px",
               letterSpacing: "0.22em",
               textTransform: "uppercase",
               color: "#7a6841",
@@ -345,7 +345,7 @@ export default function HowItWorksPage() {
                 <p
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: "13px",
+                    fontSize: "15px",
                     lineHeight: 1.6,
                     color: "#4d403a",
                     marginBottom: "16px",
@@ -361,7 +361,7 @@ export default function HowItWorksPage() {
                     color: tier.name === "Free Consultation" ? "#7a6841" : "#fff",
                     padding: "10px 24px",
                     borderRadius: "999px",
-                    fontSize: "13px",
+                    fontSize: "15px",
                     fontWeight: 600,
                     textDecoration: "none",
                     border: tier.name === "Free Consultation" ? "1px solid #7a6841" : "1px solid #7a6841",
@@ -396,7 +396,7 @@ export default function HowItWorksPage() {
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
                   fontWeight: 600,
-                  fontSize: "14px",
+                  fontSize: "15px",
                   color: "#1f1f1f",
                   marginBottom: "8px",
                 }}
@@ -406,7 +406,7 @@ export default function HowItWorksPage() {
               <p
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: "13px",
+                  fontSize: "15px",
                   lineHeight: 1.6,
                   color: "#4d403a",
                 }}
@@ -453,7 +453,7 @@ export default function HowItWorksPage() {
                 color: "#fff",
                 padding: "13px 30px",
                 borderRadius: "999px",
-                fontSize: "14px",
+                fontSize: "15px",
                 fontWeight: 600,
                 textDecoration: "none",
               }}
@@ -471,7 +471,7 @@ export default function HowItWorksPage() {
                 color: "#1f1f1f",
                 padding: "13px 30px",
                 borderRadius: "999px",
-                fontSize: "14px",
+                fontSize: "15px",
                 fontWeight: 600,
                 textDecoration: "none",
                 border: "1px solid #7a6841",

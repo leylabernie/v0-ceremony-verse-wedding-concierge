@@ -165,7 +165,7 @@ export default function RealWeddingsPage() {
             >
               27+
             </div>
-            <p className="text-xs uppercase tracking-wider text-[#6f6a63]">
+            <p className="text-xs uppercase tracking-wider text-[#4d403a]">
               5-Star Reviews
             </p>
           </div>
@@ -179,7 +179,7 @@ export default function RealWeddingsPage() {
             >
               50
             </div>
-            <p className="text-xs uppercase tracking-wider text-[#6f6a63]">
+            <p className="text-xs uppercase tracking-wider text-[#4d403a]">
               US States Served
             </p>
           </div>
@@ -193,7 +193,7 @@ export default function RealWeddingsPage() {
             >
               40–60%
             </div>
-            <p className="text-xs uppercase tracking-wider text-[#6f6a63]">
+            <p className="text-xs uppercase tracking-wider text-[#4d403a]">
               Savings vs. US Boutiques
             </p>
           </div>
@@ -207,7 +207,7 @@ export default function RealWeddingsPage() {
             >
               4+
             </div>
-            <p className="text-xs uppercase tracking-wider text-[#6f6a63]">
+            <p className="text-xs uppercase tracking-wider text-[#4d403a]">
               Years in Business
             </p>
           </div>
@@ -238,7 +238,7 @@ export default function RealWeddingsPage() {
               >
                 {wedding.couple}
               </h2>
-              <p className="text-[#6f6a63] text-sm">{wedding.type}</p>
+              <p className="text-[#4d403a] text-sm">{wedding.type}</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-10">

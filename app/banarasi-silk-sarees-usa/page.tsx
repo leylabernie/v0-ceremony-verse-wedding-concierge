@@ -92,7 +92,7 @@ export default function BanarasiSareesPage() {
       >
         <p
           style={{
-            fontSize: "11px",
+            fontSize: "13px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             color: "#7a6841",
@@ -150,7 +150,7 @@ export default function BanarasiSareesPage() {
             color: "#fff",
             padding: "13px 30px",
             borderRadius: "999px",
-            fontSize: "14px",
+            fontSize: "15px",
             fontWeight: 600,
             textDecoration: "none",
           }}
@@ -230,14 +230,14 @@ export default function BanarasiSareesPage() {
                 <h3
                   style={{
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
                   }}
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>
                   {item.desc}
                 </p>
               </div>
@@ -320,7 +320,7 @@ export default function BanarasiSareesPage() {
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>
                   {item.desc}
                 </p>
               </div>
@@ -381,14 +381,14 @@ export default function BanarasiSareesPage() {
                 <h3
                   style={{
                     fontWeight: 600,
-                    fontSize: "14px",
+                    fontSize: "15px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
                   }}
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6 }}>
+                <p style={{ fontSize: "15px", color: "#4d403a", lineHeight: 1.6 }}>
                   {item.desc}
                 </p>
               </div>
@@ -458,7 +458,7 @@ export default function BanarasiSareesPage() {
                 background: "#fff",
                 border: "1px solid #e6dfd5",
                 borderRadius: "999px",
-                fontSize: "13px",
+                fontSize: "15px",
                 color: "#4d403a",
                 textDecoration: "none",
               }}
@@ -517,14 +517,14 @@ export default function BanarasiSareesPage() {
               <h3
                 style={{
                   fontWeight: 600,
-                  fontSize: "14px",
+                  fontSize: "15px",
                   color: "#1f1f1f",
                   marginBottom: "8px",
                 }}
               >
                 {item.q}
               </h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>
@@ -575,14 +575,14 @@ export default function BanarasiSareesPage() {
               color: "#2f2f2f",
               padding: "13px 30px",
               borderRadius: "999px",
-              fontSize: "14px",
+              fontSize: "15px",
               fontWeight: 600,
               textDecoration: "none",
             }}
           >
             Book Free Consultation
           </a>
-          <p style={{ color: "#6f6a63", fontSize: "13px", marginTop: "16px" }}>
+          <p style={{ color: "#4d403a", fontSize: "15px", marginTop: "16px" }}>
             Or WhatsApp:{" "}
             <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
               +1 (215) 341-9990

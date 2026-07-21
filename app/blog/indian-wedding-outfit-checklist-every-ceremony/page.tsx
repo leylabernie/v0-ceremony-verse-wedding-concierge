@@ -32,7 +32,7 @@ export default function OutfitChecklistPage() {
       
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.8rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             The Complete Indian Wedding Outfit Checklist for NRI Families in the USA
           </h1>
@@ -43,7 +43,7 @@ export default function OutfitChecklistPage() {
       </div>
 
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.05rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>Planning an Indian wedding in the US means coordinating outfits for 8-15+ people across 5-7 different events. Most NRI families we work with forget at least 3-4 outfits until the week before — leading to panic shopping at overpriced US boutiques. This checklist prevents that. Use it alongside our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link> to keep your group orders on track. For ceremony-specific outfit guidance, see our dedicated pages on <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link>, <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>, and <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>.</p>
 
@@ -173,12 +173,12 @@ export default function OutfitChecklistPage() {
             <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Printable Checklist + Budget Tracker →
             </Link>
-            <p style={{ fontSize: "0.9rem", color: "#6f6a63", marginTop: "0.8rem" }}>
+            <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Overwhelmed by the outfit count? <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build a realistic budget and timeline for your full family&apos;s wedding wardrobe — most families save $9,000-$17,000 compared to buying everything in the US.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.85rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
       </article>
     </main>

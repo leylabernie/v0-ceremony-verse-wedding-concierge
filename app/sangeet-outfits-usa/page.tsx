@@ -26,7 +26,7 @@ export default function SangeetOutfitsPage() {
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
+        <p style={{ fontSize: "13px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
           Sangeet Night
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
@@ -35,7 +35,7 @@ export default function SangeetOutfitsPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           The Sangeet is your most photogenic night — deep emerald, sapphire blue, rich plum. We source show-stopping looks for the bride, coordinated outfits for the full bridal party, and statement jewelry — all from India, all delivered to your US door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -54,8 +54,8 @@ export default function SangeetOutfitsPage() {
               { title: "Family Outfits", desc: "Semi-formal Indian wear for both families — sarees, lehengas, and kurta sets coordinated to the evening palette." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
+                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -74,8 +74,8 @@ export default function SangeetOutfitsPage() {
             { q: "How early should I order Sangeet outfits?", a: "Order at least 5–8 months before your Sangeet date, especially if you're coordinating multiple people. Custom stitching takes time and we need measurements from everyone." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
-              <h3 style={{ fontWeight: 600, fontSize: "14px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ fontSize: "13px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
+              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>

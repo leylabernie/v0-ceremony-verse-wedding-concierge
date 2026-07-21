@@ -212,7 +212,7 @@ export function FreeGuidesPage() {
               <p
                 style={{
                   fontSize: "0.9rem",
-                  color: "#6f6a63",
+                  color: "#4d403a",
                   lineHeight: 1.65,
                   margin: 0,
                   flex: 1,
@@ -391,7 +391,7 @@ export function FreeGuidesPage() {
                 <p
                   style={{
                     fontSize: "0.9rem",
-                    color: "#6f6a63",
+                    color: "#4d403a",
                     lineHeight: 1.7,
                     marginBottom: "1rem",
                   }}
