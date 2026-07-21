@@ -130,7 +130,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
           and delivered to your door.
         </p>
         <a
-          href="/#contact"
+          href="/contact"
           style={{
             display: "inline-flex",
             alignItems: "center",

@@ -142,7 +142,7 @@ export default function BanarasiSareesPage() {
           Each saree is Silk Mark certified. We show it to you on live video before you pay.
         </p>
         <a
-          href="/#contact"
+          href="/contact"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -568,7 +568,7 @@ export default function BanarasiSareesPage() {
             from Varanasi within a week.
           </p>
           <a
-            href="/#contact"
+            href="/contact"
             style={{
               display: "inline-block",
               background: "#7a6841",

@@ -205,7 +205,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             <li><strong>Establish a color story per ceremony, not identical outfits.</strong> Bridesmaids in coordinating shades of the same color family look intentional without looking like a uniform.</li>
             <li><strong>Brief immediate family first.</strong> The two mothers and the mothers-in-law should coordinate with each other and with the bride before anyone else.</li>
             <li><strong>Start sourcing early.</strong> For a 4-day wedding with multiple ceremonies, the bride and immediate family may need 8 to 12 outfits total. That requires time.</li>
-            <li><strong>Work with a concierge who understands the full picture.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
+            <li><strong>Work with a <Link href="/services" style={{ color: "#7a6841" }}>concierge who understands the full picture</Link>.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
             At CeremonyVerse, we have dressed multiple Gujarati families from end to end — including a 4-day destination wedding in Mexico where we coordinated outfits for an entire family across every ceremony, and a wedding where we made a dedicated sourcing trip to Kanchipuram to select pure silk sarees for the family — working directly with weavers there to find the right weight, weave, and color for each family member. This is the level of care and specificity that a Gujarati multi-ceremony wedding deserves.
@@ -220,7 +220,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
               Whether you are looking for a single bridal lehenga or coordinating outfits for an entire family across multiple ceremonies, CeremonyVerse is here to help. We are a US-based Indian wedding shopping concierge with live video shopping, full logistics support, and a deep knowledge of every ceremony and tradition.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -243,9 +243,12 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
-            ← Back to CeremonyVerse
+          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+            ← Back to Blog
           </Link>
+          <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#6f6a63" }}>
+            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/gujarati-wedding-outfits-usa/" style={{ color: "#7a6841" }}>Gujarati Wedding Outfits</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
+          </p>
         </div>
       </article>
     </main>

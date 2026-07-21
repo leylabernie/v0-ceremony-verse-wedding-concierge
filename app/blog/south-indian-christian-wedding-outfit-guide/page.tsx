@@ -150,13 +150,13 @@ export default function SouthIndianChristianWeddingGuide() {
             Mothers and Family: Why Kanchipuram Silk Is Non-Negotiable
           </h2>
           <p>
-            For many South Indian families — both Kerala Christian and Tamil Christian — <strong>Kanchipuram silk sarees</strong> for the mothers, mothers-in-law, and senior aunties are not a question. This is simply what is worn. The only real decisions are color and design.
+            For many South Indian families — both Kerala Christian and Tamil Christian — <strong><Link href="/kanchipuram-silk-sarees-usa/" style={{ color: "#7a6841" }}>Kanchipuram silk sarees</Link></strong> for the mothers, mothers-in-law, and senior aunties are not a question. This is simply what is worn. The only real decisions are color and design.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Mothers of the bride and groom typically choose rich, classic shades: deep maroon, emerald green, navy, or royal blue, with temple borders or floral motifs in gold zari. As <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>Kumaran Silks notes</a>, these colors carry a sense of dignity and occasion that lighter or more casual fabrics cannot replicate.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Aunties and cousins have more flexibility — they may choose Kanchipuram silk as well, or opt for a soft silk, Banarasi, or contemporary saree in complementary tones. The guiding principle is to not compete with the mother-of-the-bride or the bride herself in terms of weight or grandeur.
+            Aunties and cousins have more flexibility — they may choose Kanchipuram silk as well, or opt for a soft silk, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi</Link>, or contemporary saree in complementary tones. The guiding principle is to not compete with the mother-of-the-bride or the bride herself in terms of weight or grandeur.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             For families sourcing from the US, Kanchipuram silk sarees typically need to be ordered directly from Chennai or Kanchipuram-based artisan partners, as the quality of genuine Kanchipuram — with its distinctive korvai borders and pure mulberry silk — is difficult to replicate or reliably source outside India.
@@ -204,7 +204,7 @@ export default function SouthIndianChristianWeddingGuide() {
               Book a free consultation. Tell us your ceremony schedule, family structure, and budget — we&apos;ll handle the rest.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -235,6 +235,9 @@ export default function SouthIndianChristianWeddingGuide() {
           <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
+          <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#6f6a63" }}>
+            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ color: "#7a6841" }}>South Indian Christian Outfits</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link>
+          </p>
         </div>
       </article>
     </main>

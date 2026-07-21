@@ -105,7 +105,7 @@ export default function LehengaBuyingGuideBlogPost() {
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            A US-based Indian wedding shopping concierge like <Link href="/" style={{ color: "#7a6841" }}>CeremonyVerse</Link> offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions.
+            A US-based <Link href="/services" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> like CeremonyVerse offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions. See our <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works" style={{ color: "#7a6841" }}>how the process works</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -167,7 +167,7 @@ export default function LehengaBuyingGuideBlogPost() {
             US import duties in 2026
           </h3>
           <p>
-            As of late 2025, the US eliminated the de minimis exemption for commercial shipments from India. There is currently a 25% tariff on Indian textile imports. If your lehenga is shipped with a declared commercial value of $2,000, expect to pay roughly $500 in duties — which is why factoring this into your budget upfront matters.
+            As of late 2025, the US eliminated the de minimis exemption for commercial shipments from India. There is currently a 25% tariff on Indian textile imports. If your lehenga is shipped with a declared commercial value of $2,000, expect to pay roughly $500 in duties — which is why factoring this into your budget upfront matters. For a full breakdown of current tariff rates, see our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>US tariffs guide for NRI brides</Link>.
           </p>
 
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
@@ -216,7 +216,7 @@ export default function LehengaBuyingGuideBlogPost() {
               CeremonyVerse is a US-based Indian wedding shopping concierge that specializes in exactly this: sourcing bridal lehengas, family outfits, and trousseau pieces from India for NRI brides and families across the United States. We do live video shopping, handle the logistics, and stay with you through every step.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -240,9 +240,12 @@ export default function LehengaBuyingGuideBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
-            ← Back to CeremonyVerse
+          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+            ← Back to Blog
           </Link>
+          <p style={{ marginTop: "1rem", fontSize: "0.85rem", color: "#6f6a63" }}>
+            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link>
+          </p>
         </div>
       </article>
     </main>
