@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, buildHowToSchema, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
@@ -57,12 +57,27 @@ const faqSchema = buildFaqSchema([
   },
 ]);
 
+const howToSchema = buildHowToSchema({
+  name: "How to Plan an Indian Destination Wedding in Mexico",
+  description: "Step-by-step guide to planning your Indian destination wedding in Cancun or Riviera Maya — from choosing a resort to on-site coordination.",
+  url: "/indian-destination-wedding-planner-mexico/",
+  totalTime: "PT30M",
+  steps: [
+    { name: "Choose Your Resort and Dates", text: "Pick a resort in Cancun or Riviera Maya that has experience hosting Indian weddings. We recommend venues that allow external decorators for mandaps and can accommodate multi-day events like mehndi, sangeet, and the main ceremony." },
+    { name: "Book a Free Consultation with CeremonyVerse", text: "Tell us your wedding vision, guest count, dates, and budget. We will recommend the right coordination tier — vendor network access, day-of, or full 4-day coordination — and connect you with our vetted Mexico vendors." },
+    { name: "Source Outfits from India (Optional Add-On)", text: "Combine your Mexico wedding planning with our India outfit sourcing service. Live video shopping for bridal lehenga, sherwani, bridal party, and family outfits — custom stitched and delivered to your US address before the wedding." },
+    { name: "Coordinate Vendors and Logistics", text: "We help you book and coordinate all vendors — planner, DJ, photographers, decorator, makeup, hair, mehndi artist, priest or church, and caterer. For full coordination, we manage the entire timeline and vendor logistics." },
+    { name: "On-Site Event Coordination", text: "For day-of or full coordination, we are on-site in Mexico managing vendor setup, ceremony flow, guest experience, and troubleshooting throughout your wedding events." },
+  ],
+});
+
 export default function MexicoDestinationPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
+      <JsonLd id="schema-howto" data={howToSchema} />
 
       <SeoNav />
 

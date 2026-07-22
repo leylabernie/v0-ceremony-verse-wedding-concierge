@@ -276,6 +276,33 @@ export function buildFaqSchema(faqs: { question: string; answer: string }[]): ob
 }
 
 /**
+ * Build a HowTo schema from steps.
+ */
+export function buildHowToSchema(opts: {
+  name: string;
+  description: string;
+  url: string;
+  steps: { name: string; text: string }[];
+  totalTime?: string;
+}): object {
+  const url = opts.url.startsWith("http") ? opts.url : `${SITE_URL}${opts.url}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: opts.name,
+    description: opts.description,
+    url,
+    ...(opts.totalTime ? { totalTime: opts.totalTime } : {}),
+    step: opts.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  };
+}
+
+/**
  * The global LocalBusiness schema — used in layout.tsx.
  * Includes Review + AggregateRating for star-rich-snippet eligibility.
  */

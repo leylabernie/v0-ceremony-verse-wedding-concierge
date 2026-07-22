@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo"
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, buildHowToSchema, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
@@ -49,12 +49,27 @@ const faqSchema = buildFaqSchema([
   },
 ]);
 
+const howToSchema = buildHowToSchema({
+  name: "How to Plan an Indian Destination Wedding in Mexico",
+  description: "Step-by-step process for coordinating an Indian wedding in Cancun or Riviera Maya, Mexico — from vendor vetting to on-site event coordination.",
+  url: "/indian-wedding-coordination-mexico/",
+  totalTime: "PT30M",
+  steps: [
+    { name: "Book a Free Consultation", text: "Tell us about your wedding vision, guest count, preferred dates, and budget. We will discuss which coordination tier fits your needs — vendor network access, day-of coordination, or full 4-day coordination." },
+    { name: "Receive Vetted Vendor Contacts", text: "Get our curated list of vetted Mexico wedding vendors — planner, DJ, photographers, decorator, makeup and hair, mehndi artist, and priest or church contacts. Every vendor was used at our own family wedding in Cancun." },
+    { name: "Coordinate Venue and Catering", text: "For full coordination, we help you source and book the venue, caterer, and decor. We handle the Indian-specific requirements — mandap setup, Indian catering options, sangeet and haldi/mehndi spaces." },
+    { name: "Add Outfit Sourcing from India (Optional)", text: "Many couples combine Mexico coordination with our India outfit sourcing. Live video shopping for bridal lehenga, sherwani, bridal party, and family outfits — all delivered to your US address before the wedding." },
+    { name: "On-Site Coordination in Mexico", text: "For day-of or full coordination, we are on-site in Cancun or Riviera Maya managing timelines, vendor logistics, ceremony setup, and guest experience throughout your events." },
+  ],
+});
+
 export default function MexicoCoordinationPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
+      <JsonLd id="schema-howto" data={howToSchema} />
 
       <SeoNav />
 

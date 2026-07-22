@@ -1,5 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, buildHowToSchema, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/how-it-works/",
@@ -16,6 +16,40 @@ const serviceSchema = buildServiceSchema({
 const breadcrumbSchema = buildBreadcrumb([
   { name: "How It Works", url: "/how-it-works/" },
 ]);
+
+const faqSchema = buildFaqSchema([
+  {
+    question: "How long does the whole process take?",
+    answer: "From consultation to delivery, the typical timeline is 8–12 weeks. Rush orders (6 weeks) are sometimes possible depending on the complexity. We recommend starting 4–6 months before your first ceremony to keep things relaxed.",
+  },
+  {
+    question: "Can I see the outfit before paying?",
+    answer: "Yes. During your live video shopping session, you see the exact outfit — fabric, color, embroidery — in real time. You approve the specific piece before any payment is collected. After stitching, we do a final video inspection with you before shipping.",
+  },
+  {
+    question: "What if something is wrong when it arrives?",
+    answer: "We handle it. If an outfit doesn't match what you approved — in color, fit, or quality — we work with our team in India to fix or replace it. Our quality inspection before shipping is designed to catch issues early, but if anything slips through, we make it right.",
+  },
+  {
+    question: "Do you ship to all US states?",
+    answer: "Yes, CeremonyVerse delivers to all US states. We have worked with clients in New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and many more. All items are quality-checked in India before being shipped to your US address.",
+  },
+]);
+
+const howToSchema = buildHowToSchema({
+  name: "How to Source Indian Wedding Outfits from India to the USA",
+  description: "Six-step process for sourcing Indian wedding outfits from India to the USA through CeremonyVerse — from free consultation to door-to-door US delivery.",
+  url: "/how-it-works/",
+  totalTime: "PT2H",  // ISO 8601 duration
+  steps: [
+    { name: "Free Consultation", text: "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs. No sales pressure." },
+    { name: "Style Discovery", text: "Share your inspiration — Pinterest boards, Instagram saves, photos from weddings you loved. We work with our outfit specialists and designers in India to find pieces that match your vision, your culture, and your budget." },
+    { name: "Live Video Shopping in India", text: "Join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos. No surprises." },
+    { name: "Custom Stitching to Your Measurements", text: "We guide you through a detailed measurement process on a video call. Your blouse, your silhouette, your exact fit — stitched by our local tailor partner specifically for you. Not Indian standard sizing. Your measurements." },
+    { name: "Quality Inspection Before Shipping", text: "Before anything leaves India, we do a final inspection. We check the embroidery, the fabric, the stitching, the color — against what you approved. If anything is off, we fix it before it ships." },
+    { name: "Delivered to Your US Door", text: "Your outfits are carefully packaged and shipped directly to your address in the United States. We handle the customs documentation and keep you updated throughout." },
+  ],
+});
 
 const steps = [
   {
@@ -112,6 +146,8 @@ export default function HowItWorksPage() {
     <div style={{ background: "#f8f6f2", minHeight: "100vh", color: "#2f2f2f" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-faq" data={faqSchema} />
+      <JsonLd id="schema-howto" data={howToSchema} />
     
       <SeoNav />
 
