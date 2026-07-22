@@ -19,7 +19,7 @@ export default function MobileStickyCTA() {
       }}
       className="md:hidden"
     >
-      <p style={{ color: "#fff", fontSize: "0.8rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
+      <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
         Top vendors book 6–12 months out
       </p>
       <a
@@ -30,7 +30,7 @@ export default function MobileStickyCTA() {
           background: "#fff",
           color: "var(--cv-accent)",
           fontWeight: 700,
-          fontSize: "0.8rem",
+          fontSize: "0.9rem",
           padding: "8px 16px",
           borderRadius: "999px",
           whiteSpace: "nowrap",

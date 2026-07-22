@@ -121,7 +121,7 @@ export function FreeGuidesPage() {
           <p
             style={{
               color: "#7a6841",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               marginBottom: "1rem",
@@ -229,12 +229,11 @@ export function FreeGuidesPage() {
                   border: "none",
                   borderRadius: "999px",
                   padding: "10px 24px",
-                  fontSize: "0.85rem",
+                  fontSize: "0.95rem",
                   fontWeight: 600,
                   cursor: "pointer",
                   transition: "background 0.2s",
-                  fontFamily: "'DM Sans', sans-serif",
-                }}
+                                  }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.background = "#b29d74")
                 }
@@ -253,7 +252,7 @@ export function FreeGuidesPage() {
       <p
         style={{
           textAlign: "center",
-          fontSize: "0.82rem",
+          fontSize: "0.9rem",
           color: "#9a948d",
           padding: "0 1.5rem 2rem",
           maxWidth: "860px",
@@ -315,8 +314,7 @@ export function FreeGuidesPage() {
               fontWeight: 600,
               textDecoration: "none",
               transition: "background 0.2s",
-              fontFamily: "'DM Sans', sans-serif",
-            }}
+                          }}
           >
             Book a Free Consultation →
           </a>
@@ -409,11 +407,10 @@ export function FreeGuidesPage() {
                     border: "none",
                     borderRadius: "999px",
                     padding: "10px 28px",
-                    fontSize: "0.85rem",
+                    fontSize: "0.95rem",
                     fontWeight: 600,
                     cursor: "pointer",
-                    fontFamily: "'DM Sans', sans-serif",
-                  }}
+                                      }}
                 >
                   See What's Next →
                 </button>
@@ -439,7 +436,7 @@ export function FreeGuidesPage() {
                   </h3>
                   <p
                     style={{
-                      fontSize: "0.85rem",
+                      fontSize: "0.95rem",
                       color: "#9a948d",
                     }}
                   >
@@ -461,8 +458,7 @@ export function FreeGuidesPage() {
                       border: "1px solid #e6dfd5",
                       borderRadius: "8px",
                       outline: "none",
-                      fontFamily: "'DM Sans', sans-serif",
-                      marginBottom: "0.75rem",
+                                            marginBottom: "0.75rem",
                       boxSizing: "border-box",
                       transition: "border-color 0.2s",
                     }}
@@ -478,7 +474,7 @@ export function FreeGuidesPage() {
                     <p
                       style={{
                         color: "#c0392b",
-                        fontSize: "0.82rem",
+                        fontSize: "0.9rem",
                         marginBottom: "0.75rem",
                         textAlign: "center",
                       }}
@@ -500,8 +496,7 @@ export function FreeGuidesPage() {
                       fontSize: "0.9rem",
                       fontWeight: 600,
                       cursor: loading ? "not-allowed" : "pointer",
-                      fontFamily: "'DM Sans', sans-serif",
-                      transition: "background 0.2s",
+                                            transition: "background 0.2s",
                     }}
                   >
                     {loading ? "Sending..." : "Download Free Guide"}
@@ -510,7 +505,7 @@ export function FreeGuidesPage() {
 
                 <p
                   style={{
-                    fontSize: "0.75rem",
+                    fontSize: "0.95rem",
                     color: "#b5b0a8",
                     textAlign: "center",
                     marginTop: "1rem",

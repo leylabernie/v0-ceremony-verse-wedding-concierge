@@ -131,7 +131,7 @@ export default function IndianBridalWearTexasPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Whether you are planning a grand wedding in Houston or an elegant
             celebration in Dallas-Fort Worth, finding authentic, custom-tailored
@@ -222,7 +222,7 @@ export default function IndianBridalWearTexasPage() {
                 Unrivaled Bulk Sourcing
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Easily coordinate custom-tailored, matching outfits for your
@@ -244,7 +244,7 @@ export default function IndianBridalWearTexasPage() {
                 Wholesale Return Gifts
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Source beautiful, lightweight handcrafted favors (like silk
@@ -266,7 +266,7 @@ export default function IndianBridalWearTexasPage() {
                 Complete Customs &amp; Shipping Care
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Skip the headache of tracking international freight. We manage
@@ -308,7 +308,7 @@ export default function IndianBridalWearTexasPage() {
                 Texas Boutique Reality
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• Houston Hillcroft: $2,500–$8,000+ for a bridal lehenga</li>
@@ -329,7 +329,7 @@ export default function IndianBridalWearTexasPage() {
                 India Direct with CeremonyVerse
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
@@ -357,7 +357,7 @@ export default function IndianBridalWearTexasPage() {
           </h2>
           <p
             className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and

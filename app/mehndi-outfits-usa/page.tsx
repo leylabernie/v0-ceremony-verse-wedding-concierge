@@ -26,7 +26,7 @@ export default function MehndiOutfitsPage() {
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "13px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
+        <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
           Mehndi & Haldi Ceremony
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
@@ -35,7 +35,7 @@ export default function MehndiOutfitsPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           The Mehndi and Haldi ceremonies set the tone for everything that follows. We source bright, festive outfits — yellows, oranges, greens — custom stitched to your measurements and coordinated across your entire bridal party and family.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -54,8 +54,8 @@ export default function MehndiOutfitsPage() {
               { title: "Dupatta & Accessories", desc: "Contrasting or matching dupattas, floral jewelry, and mehndi-appropriate accessories sourced together." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -74,8 +74,8 @@ export default function MehndiOutfitsPage() {
             { q: "Can you coordinate bridesmaid outfits in matching colors?", a: "Yes — this is one of our specialties. We collect all measurements, source coordinating pieces, and manage the entire process so everything arrives together." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
-              <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
+              <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>

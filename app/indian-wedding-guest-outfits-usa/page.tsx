@@ -26,7 +26,7 @@ export default function IndianWeddingGuestOutfitsPage() {
       <SeoNav />
 
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
-        <p style={{ fontSize: "13px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
+        <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
           Wedding Guest Outfits
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
@@ -35,7 +35,7 @@ export default function IndianWeddingGuestOutfitsPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           Attending an Indian wedding in the US and need the perfect outfit? We source lehengas, sarees, anarkalis, sharara sets, and sherwanis directly from India — live video shopping, custom stitched to your measurements, and delivered to your door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
           Book Free Consultation
         </a>
       </section>
@@ -53,8 +53,8 @@ export default function IndianWeddingGuestOutfitsPage() {
               { title: "No Way to Coordinate with Family", desc: "When family members in India are shopping locally and you're in the US, it's nearly impossible to coordinate colors, styles, and formality levels across everyone." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -77,8 +77,8 @@ export default function IndianWeddingGuestOutfitsPage() {
               { title: "Coordinated Family Sets", desc: "Matching or complementary outfits for the entire family — parents, siblings, and extended family — all sourced together so everyone looks cohesive." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
-                <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
-                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -100,8 +100,8 @@ export default function IndianWeddingGuestOutfitsPage() {
               <div key={item.step} style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
                 <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#7a6841", lineHeight: 1 }}>{item.step}</span>
                 <div>
-                  <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "6px" }}>{item.title}</h3>
-                  <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                  <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "6px" }}>{item.title}</h3>
+                  <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -115,7 +115,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "12px" }}>
             Planning your timeline
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4d403a" }}>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a" }}>
             Wedding guests often start looking for outfits later than brides — but sourcing from India still takes time. Between live video sessions, fabric selection, custom stitching, and international shipping, plan for a <strong style={{ color: "#1f1f1f" }}>minimum of 8–10 weeks</strong> from your first consultation to delivery. The earlier you start, the more options you'll have.
           </p>
         </div>
@@ -135,9 +135,9 @@ export default function IndianWeddingGuestOutfitsPage() {
               { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for the bride or entire family across all wedding events. Multiple outfits, full coordination." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
-                <p style={{ fontSize: "12px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
+                <p style={{ fontSize: "17px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
                 <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#1f1f1f", marginBottom: "10px" }}>{item.price}</p>
-                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -158,8 +158,8 @@ export default function IndianWeddingGuestOutfitsPage() {
             { q: "What if I don't like what I see on the video call?", a: "No pressure to buy. The live video session lets you see multiple options in real time. If nothing feels right, we keep looking — or we adjust the brief and schedule another session." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
-              <h3 style={{ fontWeight: 600, fontSize: "15px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
+              <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>
@@ -171,14 +171,14 @@ export default function IndianWeddingGuestOutfitsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "16px" }}>
             Ready to find your outfit?
           </h2>
-          <p style={{ fontSize: "15px", lineHeight: 1.7, color: "#4d403a", marginBottom: "28px" }}>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "28px" }}>
             Start with a free consultation — we'll help you figure out what you need, what's realistic for your timeline, and how to get it sourced from India.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, textDecoration: "none" }}>
+            <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation — ceremonyverse.com
             </a>
-            <a href="https://wa.me/12153419990" style={{ fontSize: "15px", color: "#4d403a", textDecoration: "none" }}>
+            <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990
             </a>
           </div>

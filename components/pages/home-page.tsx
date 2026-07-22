@@ -157,7 +157,7 @@ export function HomePage() {
         {/* Content */}
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
-            <p style={{ fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#7a6841", marginBottom: "20px", fontWeight: 500 }}>
+            <p style={{ fontSize: "15px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#7a6841", marginBottom: "20px", fontWeight: 500 }}>
               Indian Wedding Outfits from Surat &amp; Delhi · Mexico Wedding Coordination
             </p>
             <h1 style={{
@@ -168,18 +168,18 @@ export function HomePage() {
             }}>
               That lehenga you saw at the Edison boutique for $500? We can get you something similar — and often better — for $300 landed at your door.
             </h1>
-            <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.8)", marginBottom: "36px", maxWidth: "520px" }}>
+            <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.92)", marginBottom: "36px", maxWidth: "520px" }}>
               My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do — without the boutique markup. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
             </p>
 
             {/* CTAs */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
-              <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "14px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
+              <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
         href="/contact"
       >
                 Book Free Consultation
               </Link>
-              <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "14px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
+              <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
         href="/how-it-works"
       >
                 How It Works
@@ -187,7 +187,7 @@ export function HomePage() {
               <a
                 href="/wedding-outfit-checklist.pdf"
                 download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
-                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.85)", padding: "13px 20px", borderRadius: "999px", fontSize: "13px", border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.85)", padding: "13px 20px", borderRadius: "999px", fontSize: "15px", border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none" }}
               >
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
@@ -206,14 +206,14 @@ export function HomePage() {
                 "Direct from Surat & Delhi — no boutique markup",
                 "Mexico wedding coordination in Cancun & Riviera Maya",
               ].map((tag) => (
-                <span key={tag} style={{ fontSize: "12px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
+                <span key={tag} style={{ fontSize: "15px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
                   {tag}
                 </span>
               ))}
             </div>
           </div>
         </div>
-        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "11px", color: "rgba(255,255,255,0.75)", paddingBottom: "18px" }}>
+        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "15px", color: "rgba(255,255,255,0.92)", paddingBottom: "18px" }}>
           Top vendors book 6–12 months in advance — start early
         </p>
       </section>
@@ -379,7 +379,7 @@ export function HomePage() {
               <div key={i}>
                 <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
                 <p style={{ fontWeight: 600, fontSize: "0.95rem", color: "#1f1f1f", marginBottom: "2px" }}>{t.stat}</p>
-                <p style={{ fontSize: "0.75rem", color: "#5e4a40" }}>{t.sub}</p>
+                <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>{t.sub}</p>
               </div>
             ))}
           </div>
@@ -439,7 +439,7 @@ export function HomePage() {
                 </p>
                 <ul className="space-y-2 mb-8 flex-1">
                   {tier.features.map((f, fi) => (
-                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.featured ? "text-white/80" : "text-[#4d403a]"}`}>
+                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.featured ? "text-white/90" : "text-[#4d403a]"}`}>
                       <span className="text-[#7a6841] mt-0.5">—</span>
                       {f}
                     </li>

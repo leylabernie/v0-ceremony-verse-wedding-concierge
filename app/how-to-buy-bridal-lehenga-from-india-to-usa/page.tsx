@@ -123,7 +123,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Skip the 200% boutique markups. Source a custom bridal lehenga,
             sherwani, and return gifts directly from India — with live video
@@ -450,7 +450,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
           </h2>
           <p
             className="text-center text-base md:text-lg leading-relaxed mb-14 max-w-3xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             If you want the cost savings of shopping directly in India without
             the stress of managing time zones, language barriers, and shipping
@@ -471,7 +471,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: "#d4c8b8" }}
+                style={{ color: "#e8dfd2" }}
               >
                 Hand-selecting outfits from trusted Indian weavers and
                 designers based on your budget. We maintain a vetted network of
@@ -491,7 +491,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: "#d4c8b8" }}
+                style={{ color: "#e8dfd2" }}
               >
                 Itemized breakdowns of fabric costs, tailoring fees, and actual
                 shipping rates — no hidden boutique markups. You see exactly
@@ -511,7 +511,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               </h3>
               <p
                 className="text-sm leading-relaxed"
-                style={{ color: "#d4c8b8" }}
+                style={{ color: "#e8dfd2" }}
               >
                 Rigorous physical quality checks and sizing audits before your
                 items are securely boxed and shipped directly to your doorstep

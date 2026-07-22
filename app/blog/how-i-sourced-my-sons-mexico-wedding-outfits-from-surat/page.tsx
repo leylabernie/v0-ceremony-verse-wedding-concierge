@@ -281,7 +281,7 @@ export default function BlogPost() {
           <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Planning a Mexico wedding? Need outfits sourced from India?
           </h2>
-          <p className="text-[#d4c8b8] mb-6 leading-relaxed">
+          <p className="text-[#e8dfd2] mb-6 leading-relaxed">
             Book a free 30-minute consultation. Tell me your vision, dates, and budget. I&apos;ll tell you honestly
             what I can do — outfit sourcing, Mexico coordination, or both.
           </p>

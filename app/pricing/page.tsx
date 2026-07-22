@@ -85,7 +85,7 @@ export default function PricingPage() {
           <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Two services. Flat fees. No hidden markups.
           </h1>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             Outfit sourcing from Surat and Delhi — direct from the same places US boutiques source from.
             Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son&apos;s wedding.
             Every quote is itemized in writing before you commit.
@@ -164,7 +164,7 @@ export default function PricingPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#4d403a] text-center mt-4 max-w-2xl mx-auto">
+          <p className="text-base text-[#4d403a] text-center mt-4 max-w-2xl mx-auto">
             &quot;Landed&quot; means delivered to your US door — outfit cost, our service fee, shipping, and customs all included.
             Brides often tell us the piece they receive is even better than what they saw at a boutique, because at the same
             price point, you can afford heavier handwork or better fabric when you skip the markup.
@@ -192,9 +192,9 @@ export default function PricingPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Always Free</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Free Consultation</h3>
-              <p className="text-sm text-[#4d403a] mb-6">No commitment required.</p>
+              <p className="text-base text-[#4d403a] mb-6">No commitment required.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$0</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> 30-minute video consultation</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Review your wedding vision, timeline, budget</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Honest assessment of what&apos;s achievable</li>
@@ -213,9 +213,9 @@ export default function PricingPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Self-Directed Bride</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Style Guide &amp; Vendor List</h3>
-              <p className="text-sm text-[#4d403a] mb-6">For brides who want a curated starting point.</p>
+              <p className="text-base text-[#4d403a] mb-6">For brides who want a curated starting point.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $249</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Personalized outfit style guide</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Curated list of options from Surat &amp; Delhi</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Budget guidance and style notes</li>
@@ -239,9 +239,9 @@ export default function PricingPage() {
               </div>
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Most Brides</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Guided Sourcing</h3>
-              <p className="text-sm text-[#4d403a] mb-6">Live video shopping so you see and pick every piece.</p>
+              <p className="text-base text-[#4d403a] mb-6">Live video shopping so you see and pick every piece.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $799</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Style Guide tier</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> 2–4 live video shopping sessions</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Fabric &amp; color matching to your shade</li>
@@ -265,11 +265,11 @@ export default function PricingPage() {
               <div className="flex-1">
                 <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Full Wedding Party</p>
                 <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Full Bridal Concierge</h3>
-                <p className="text-sm text-[#4d403a] mb-3">
+                <p className="text-base text-[#4d403a] mb-3">
                   We handle everything — from first inspiration to your door. For brides coordinating the full
                   wedding party (bride + groom + party up to 8 + family + jewelry + ceremonial items).
                 </p>
-                <ul className="grid md:grid-cols-2 gap-2 text-sm text-[#4d403a]">
+                <ul className="grid md:grid-cols-2 gap-2 text-base text-[#4d403a]">
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Guided Sourcing tier</li>
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Full wedding party coordination (up to 8)</li>
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Custom recreation via local boutique</li>
@@ -277,7 +277,7 @@ export default function PricingPage() {
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> End-to-end shipping &amp; delivery support</li>
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Dedicated sourcing manager</li>
                 </ul>
-                <p className="text-xs text-[#4d403a] mt-3">
+                <p className="text-base text-[#4d403a] mt-3">
                   For parties larger than 8 or full wedding party (15+), custom pricing applies — typically $3,999+. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
                 </p>
               </div>
@@ -315,9 +315,9 @@ export default function PricingPage() {
             <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>DIY with My Vendors</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Vendor Network Access</h3>
-              <p className="text-sm text-[#4d403a] mb-6">Vetted contacts — you take it from there.</p>
+              <p className="text-base text-[#4d403a] mb-6">Vetted contacts — you take it from there.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$499</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Mexico planner contact (boots on ground)</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> DJ contact (professional, wedding-seasoned)</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Two photographer contacts (main + budget for mehndi/haldi)</li>
@@ -338,9 +338,9 @@ export default function PricingPage() {
             <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Single Event</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Day-Of Coordination</h3>
-              <p className="text-sm text-[#4d403a] mb-6">One event, on-site coordination.</p>
+              <p className="text-base text-[#4d403a] mb-6">One event, on-site coordination.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$1,500</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Vendor Network Access</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> On-site coordination for one event</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Vendor liaison day-of</li>
@@ -364,9 +364,9 @@ export default function PricingPage() {
               </div>
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Multi-Day Event</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Day Full Coordination</h3>
-              <p className="text-sm text-[#4d403a] mb-6">Full event, like my son&apos;s wedding.</p>
+              <p className="text-base text-[#4d403a] mb-6">Full event, like my son&apos;s wedding.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $4,500</div>
-              <ul className="space-y-3 text-sm text-[#4d403a] flex-1">
+              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Day-Of Coordination</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Full multi-day on-site coordination</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Venue sourcing &amp; negotiation</li>
@@ -500,7 +500,7 @@ export default function PricingPage() {
           </div>
 
           <div className="mt-8 bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6 text-center">
-            <p className="text-sm text-[#4d403a] leading-relaxed">
+            <p className="text-base text-[#4d403a] leading-relaxed">
               <strong style={{ color: "#1f1f1f" }}>Payment plans available</strong> for orders over
               $3,000 — extended across 4–6 months aligned with your wedding timeline. We accept
               credit cards, bank transfers, and most major payment methods.
@@ -602,7 +602,7 @@ export default function PricingPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Not sure which tier is right for you?
           </h2>
-          <p className="text-[#d4c8b8] mb-8 leading-relaxed">
+          <p className="text-[#e8dfd2] mb-8 leading-relaxed">
             Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget —
             and recommend the tier that fits your needs. No commitment required.
           </p>

@@ -114,8 +114,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
       >
         <div
           style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "1.125rem",
+                        fontSize: "1.125rem",
             lineHeight: 1.8,
             color: "#2f2f2f",
           }}

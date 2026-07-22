@@ -68,7 +68,7 @@ export default function BridalLehengaPage() {
           <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Buy a Bridal Lehenga from India — Delivered to Your US Door
           </h1>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             Skip the $3,000 India flight and the 200% US boutique markup. Source your dream bridal
             lehenga directly from skilled designers in India — with live video shopping, custom
             stitching to your exact measurements, quality checks, and insured delivery to all 50
@@ -469,7 +469,7 @@ export default function BridalLehengaPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Book a free 30-minute consultation
           </h2>
-          <p className="text-[#d4c8b8] mb-2 leading-relaxed">
+          <p className="text-[#e8dfd2] mb-2 leading-relaxed">
             Tell us about your wedding date, ceremonies, and vision. We&apos;ll recommend the right
             sourcing tier for you and show you real lehengas from our India partners.
           </p>

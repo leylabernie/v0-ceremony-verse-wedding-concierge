@@ -131,7 +131,7 @@ export default function IndianBridalWearCaliforniaPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             From the Silicon Valley suburbs of San Jose and Sunnyvale to the
             cultural hubs of Los Angeles and Artesia, California is home to
@@ -225,7 +225,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 Live Virtual Shopping Sessions
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 We schedule real-time video consultations directly with premium
@@ -246,7 +246,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 Precision Sizing Audits
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Our team hosts a 3-way video call with a Master Tailor
@@ -267,7 +267,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 Insured California Door Delivery
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 From custom-tailoring to strict physical quality inspections
@@ -309,7 +309,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 California Boutique Reality
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• Sunnyvale/Fremont: $2,500–$8,000+ for a bridal lehenga</li>
@@ -330,7 +330,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 India Direct with CeremonyVerse
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
@@ -358,7 +358,7 @@ export default function IndianBridalWearCaliforniaPage() {
           </h2>
           <p
             className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and

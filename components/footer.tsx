@@ -36,7 +36,7 @@ export function Footer({ onNavigate }: FooterProps) {
             </svg>
             Download Free Checklist (PDF)
           </a>
-          <p className="text-white/75 text-xs mt-4">
+          <p className="text-white/90 text-xs mt-4">
             No email required — instant download
           </p>
         </div>

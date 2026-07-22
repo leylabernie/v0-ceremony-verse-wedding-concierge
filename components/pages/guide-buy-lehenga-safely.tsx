@@ -202,7 +202,7 @@ export function GuideBuyLehengaSafely({ onNavigate }: GuidePageProps) {
             <h2 className="font-serif text-3xl font-semibold mb-4">
               Ready to Source Your Bridal Lehenga Safely?
             </h2>
-            <p className="text-white/80 mb-8 max-w-xl mx-auto">
+            <p className="text-white/90 mb-8 max-w-xl mx-auto">
               CeremonyVerse specializes in exactly this — live video verification, vetted vendors, and milestone-based payment protection. Let's help you find the perfect lehenga without the risk.
             </p>
             <button

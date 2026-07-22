@@ -77,7 +77,7 @@ export default function MexicoDestinationPage() {
             <br />
             <span style={{ color: "#7a6841" }}>Now I coordinate yours.</span>
           </h1>
-          <p className="mt-6 text-xl max-w-3xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="mt-6 text-xl max-w-3xl mx-auto" style={{ color: "#e8dfd2" }}>
             Vetted vendors from my own son&apos;s wedding — planner, DJ, photographers, decorator, beauty.
             Outfit sourcing from Surat &amp; Delhi as an add-on. Cancun &amp; Riviera Maya. Interfaith ceremonies welcome.
           </p>
@@ -238,20 +238,20 @@ export default function MexicoDestinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Top Wedding Resorts in Mexico for Indian Ceremonies
           </h2>
-          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="text-center text-lg mb-12 max-w-3xl mx-auto" style={{ color: "#e8dfd2" }}>
             Not every resort can handle a 4-day Indian wedding with mandap, Indian catering, and 200+ guests. Here is what I tell every couple about choosing the right venue.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="p-8 rounded-2xl border border-gray-700">
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#f8f6f2" }}>Cancun — More Flights, More Resort Options</h3>
-              <p className="leading-relaxed" style={{ color: "#d4c8b8" }}>
+              <p className="leading-relaxed" style={{ color: "#e8dfd2" }}>
                 Cancun has the most direct flights from US cities, which matters when you are flying in 150-200 guests. Large all-inclusive resorts like the Hard Rock, Moon Palace, and Fairmont Mayakoba have experience with Indian weddings — they understand multi-day event schedules, external decorator access for mandaps, and Indian catering requirements. The tradeoff is a busier, more commercial feel.
               </p>
             </div>
             <div className="p-8 rounded-2xl border border-gray-700">
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#f8f6f2" }}>Riviera Maya — Boutique Venues, Quieter Beaches</h3>
-              <p className="leading-relaxed" style={{ color: "#d4c8b8" }}>
+              <p className="leading-relaxed" style={{ color: "#e8dfd2" }}>
                 Thirty minutes south of the Cancun airport, Riviera Maya offers boutique resorts and private villa rentals with a more intimate atmosphere. Venues like Xcaret, Excellence Playa Mujeres, and Grand Velas Riviera Maya are popular with Indian couples who want a resort that feels exclusive. Guest count typically works best under 150.
               </p>
             </div>
@@ -259,7 +259,7 @@ export default function MexicoDestinationPage() {
 
           <div className="mt-8 p-6 rounded-2xl border border-[#7a6841] max-w-3xl mx-auto">
             <h3 className="text-lg font-semibold mb-2" style={{ color: "#7a6841" }}>What to Ask Any Resort Before Booking</h3>
-            <ul className="space-y-2 text-sm" style={{ color: "#d4c8b8" }}>
+            <ul className="space-y-2 text-base" style={{ color: "#e8dfd2" }}>
               <li>Have you hosted Indian weddings before? Can you share examples?</li>
               <li>Do you allow external decorators to build a mandap?</li>
               <li>Can the kitchen prepare Indian vegetarian and non-vegetarian menus?</li>
@@ -345,23 +345,23 @@ export default function MexicoDestinationPage() {
                 <br />
                 <span style={{ color: "#7a6841" }}>Source Direct from Surat &amp; Delhi.</span>
               </h2>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: "#d4c8b8" }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "#e8dfd2" }}>
                 Most brides planning a Mexico wedding also need Indian outfits — bride, groom, full bridal party,
                 family across 4 days. Sourcing from US boutiques means 2x markup on every piece. I source direct
                 from the same places US boutiques do, through my family&apos;s connections in Surat and Delhi.
                 Live video shopping, family inspection, direct delivery to your US door or your Mexico resort.
               </p>
               <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3" style={{ color: "#d4c8b8" }}>
+                <li className="flex items-center gap-3" style={{ color: "#e8dfd2" }}>
                   <span className="text-[#7a6841] font-bold">✓</span> Sangeet/mehndi outfits from $150–$300 landed (vs. $400–$700 at US boutiques)
                 </li>
-                <li className="flex items-center gap-3" style={{ color: "#d4c8b8" }}>
+                <li className="flex items-center gap-3" style={{ color: "#e8dfd2" }}>
                   <span className="text-[#7a6841] font-bold">✓</span> Premium bridal lehengas from $1,500–$3,000 landed (vs. $2,500–$5,000 at boutiques)
                 </li>
-                <li className="flex items-center gap-3" style={{ color: "#d4c8b8" }}>
+                <li className="flex items-center gap-3" style={{ color: "#e8dfd2" }}>
                   <span className="text-[#7a6841] font-bold">✓</span> Coordinated bridesmaid lehengas in any color, custom-made within budget
                 </li>
-                <li className="flex items-center gap-3" style={{ color: "#d4c8b8" }}>
+                <li className="flex items-center gap-3" style={{ color: "#e8dfd2" }}>
                   <span className="text-[#7a6841] font-bold">✓</span> Live video shopping — see and pick every piece before it ships
                 </li>
               </ul>
@@ -383,7 +383,7 @@ export default function MexicoDestinationPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white text-[#1f1f1f] p-6 rounded-2xl shadow-2xl max-w-xs">
-                <p className="font-bold text-sm">
+                <p className="font-bold text-base">
                   &quot;I coordinated my own son&apos;s 4-day wedding in Mexico. The vendors I used are the vendors I now
                   connect you with.&quot;
                 </p>
@@ -409,15 +409,15 @@ export default function MexicoDestinationPage() {
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>DIY with My Vendors</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Vendor Network Access</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$499</div>
-              <p className="text-sm text-[#4d403a] mb-4">Vetted contacts for planner, DJ, photographers, decorator, and beauty. You take it from there.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
+              <p className="text-base text-[#4d403a] mb-4">Vetted contacts for planner, DJ, photographers, decorator, and beauty. You take it from there.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Single Event</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Day-Of Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$1,500</div>
-              <p className="text-sm text-[#4d403a] mb-4">On-site coordination for one event. Vendor liaison, timeline, day-of issue resolution.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <p className="text-base text-[#4d403a] mb-4">On-site coordination for one event. Vendor liaison, timeline, day-of issue resolution.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
             <div className="bg-white border-2 rounded-2xl p-8 relative" style={{ borderColor: "var(--cv-accent)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
@@ -426,12 +426,12 @@ export default function MexicoDestinationPage() {
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Multi-Day Event</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Day Full Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $4,500</div>
-              <p className="text-sm text-[#4d403a] mb-4">Full multi-day event like my son&apos;s wedding. Venue, caterer, decorator, makeup, hair, mehndi, priest, church, on-site coordination.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <p className="text-base text-[#4d403a] mb-4">Full multi-day event like my son&apos;s wedding. Venue, caterer, decorator, makeup, hair, mehndi, priest, church, on-site coordination.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
           </div>
 
-          <p className="text-center text-sm text-[#4d403a] mt-8">
+          <p className="text-center text-base text-[#4d403a] mt-8">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
             <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
           </p>
@@ -522,7 +522,7 @@ export default function MexicoDestinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Ready to plan your Mexico wedding?
           </h2>
-          <p className="text-[#d4c8b8] mb-8 leading-relaxed text-lg">
+          <p className="text-[#e8dfd2] mb-8 leading-relaxed text-lg">
             Book a free 30-minute consultation. Tell me your vision, your dates, and your budget. I&apos;ll tell you
             honestly what I can do — vendor access, day-of coordination, full 4-day coordination, or all of the
             above plus outfit sourcing from India.

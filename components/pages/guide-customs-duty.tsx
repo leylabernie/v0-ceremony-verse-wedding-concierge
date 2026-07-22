@@ -254,7 +254,7 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
             <h2 className="font-serif text-3xl font-semibold mb-4">
               Let Us Handle the Logistics
             </h2>
-            <p className="text-white/80 mb-8 max-w-xl mx-auto">
+            <p className="text-white/90 mb-8 max-w-xl mx-auto">
               CeremonyVerse manages all shipping documentation, advises on customs duties upfront, and ensures full insurance on every shipment. No surprises at your door.
             </p>
             <button

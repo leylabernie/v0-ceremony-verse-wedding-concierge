@@ -67,7 +67,7 @@ export default function MexicoCoordinationPage() {
           <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             I coordinated my own son&apos;s 4-day Indian wedding in Mexico.
           </h1>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             The vendors I used — planner, DJ, photographers, decorator, beauty — are the vendors I now connect you
             with. Interfaith ceremonies welcome. Outfits sourced from India as an add-on.
           </p>
@@ -220,7 +220,7 @@ export default function MexicoCoordinationPage() {
               className="object-cover"
             />
           </div>
-          <p className="text-sm text-[#4d403a] text-center mt-3 italic">
+          <p className="text-base text-[#4d403a] text-center mt-3 italic">
             Every detail coordinated — outfits, ceremonial items, decor, welcome bags, and on-site logistics
             across all four days.
           </p>
@@ -258,7 +258,7 @@ export default function MexicoCoordinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Every vendor tested at my own son&apos;s wedding
           </h2>
-          <p className="text-center text-[#d4c8b8] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#e8dfd2] mb-12 max-w-2xl mx-auto">
             I&apos;m not going to share specific vendor names publicly — these are my personal relationships, and
             that&apos;s the value I bring. But here&apos;s exactly what each vendor does and why I use them.
           </p>
@@ -266,7 +266,7 @@ export default function MexicoCoordinationPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Mexico Planner</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Professional, boots on the ground in Cancun and Riviera Maya. This is the person who makes sure
                 your venue permits are in order, your vendors show up on time, and your guests have what they need.
                 Not a resort wedding-package salesperson — an independent planner who works for you, not the resort.
@@ -274,7 +274,7 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>DJ</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Professional, wedding-seasoned. Killed it at my son&apos;s sangeet. Bollywood, bhangra, fusion, and
                 Western sets — this is not the generic resort DJ who doesn&apos;t know the difference between garba
                 and bhangra. He reads the room and keeps the dance floor full.
@@ -282,7 +282,7 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Photographer #1 — Main Day</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Professional, wedding-seasoned. Use this photographer for the main wedding day — ceremony, portraits,
                 reception. They know Indian weddings, they know the light in Cancun and Riviera Maya, and they
                 deliver on time.
@@ -290,7 +290,7 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Photographer #2 — Mehndi/Haldi/Sangeet</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Newer, family and portrait-focused. Use this photographer for mehndi, haldi, sangeet — the smaller
                 events where you don&apos;t need the wedding-day-level coverage. Saves budget for the main day.
                 Smart allocation.
@@ -298,7 +298,7 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Decorator — Mehndi &amp; Haldi</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Newer, does birthdays, showers, and engagements. Use for mehndi and haldi decor — bright, colorful,
                 festive, and affordable. Saves your main decor budget for the wedding ceremony mandap and reception
                 florals, which is where you want to spend.
@@ -306,7 +306,7 @@ export default function MexicoCoordinationPage() {
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Beauty — Indian Parlor + American HD</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-base text-white/90 leading-relaxed">
                 Two options. Indian parlor for traditional looks — some brides prefer this for the Hindu ceremony.
                 American HD makeup artist based in Mexico — best in Mexico, and honestly, most brides want this for
                 the main day because HD makeup holds up in the heat and photographs beautifully. I&apos;ll help you
@@ -317,7 +317,7 @@ export default function MexicoCoordinationPage() {
 
           <div className="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6">
             <h3 className="font-semibold text-lg mb-3" style={{ color: "#c5a059" }}>Bonus: Welcome Bags &amp; Party Favors</h3>
-            <p className="text-sm text-white/80 leading-relaxed">
+            <p className="text-base text-white/90 leading-relaxed">
               For my son&apos;s wedding, I sourced custom canvas welcome bags from China and jhumka party favors for
               the garba night. I can do the same for your wedding — welcome bags, favors, and small details that
               make a destination wedding feel personal. Sourced direct, no resort markup.
@@ -341,15 +341,15 @@ export default function MexicoCoordinationPage() {
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>DIY with My Vendors</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Vendor Network Access</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$499</div>
-              <p className="text-sm text-[#4d403a] mb-4">Vetted contacts for planner, DJ, photographers, decorator, and beauty. You take it from there.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
+              <p className="text-base text-[#4d403a] mb-4">Vetted contacts for planner, DJ, photographers, decorator, and beauty. You take it from there.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Single Event</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Day-Of Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$1,500</div>
-              <p className="text-sm text-[#4d403a] mb-4">On-site coordination for one event. Vendor liaison, timeline, day-of issue resolution.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <p className="text-base text-[#4d403a] mb-4">On-site coordination for one event. Vendor liaison, timeline, day-of issue resolution.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
             <div className="bg-white border-2 rounded-2xl p-8 relative" style={{ borderColor: "var(--cv-accent)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
@@ -358,18 +358,18 @@ export default function MexicoCoordinationPage() {
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Multi-Day Event</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Day Full Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $4,500</div>
-              <p className="text-sm text-[#4d403a] mb-4">Full multi-day event like my son&apos;s wedding. Venue, caterer, decorator, makeup, hair, mehndi, priest, church, on-site coordination.</p>
-              <a href="/contact" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <p className="text-base text-[#4d403a] mb-4">Full multi-day event like my son&apos;s wedding. Venue, caterer, decorator, makeup, hair, mehndi, priest, church, on-site coordination.</p>
+              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
           </div>
 
-          <p className="text-center text-sm text-[#4d403a] mt-4 mb-2">
+          <p className="text-center text-base text-[#4d403a] mt-4 mb-2">
             Read the full story of how I sourced every outfit for my son&apos;s 4-day Mexico wedding{" "}
             <Link href="/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/" className="underline" style={{ color: "var(--cv-accent)" }}>
               from Surat and Delhi →
             </Link>
           </p>
-          <p className="text-center text-sm text-[#4d403a] mt-2">
+          <p className="text-center text-base text-[#4d403a] mt-2">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
             <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
           </p>
@@ -442,7 +442,7 @@ export default function MexicoCoordinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             Let&apos;s talk about your Mexico wedding
           </h2>
-          <p className="text-[#d4c8b8] mb-8 leading-relaxed">
+          <p className="text-[#e8dfd2] mb-8 leading-relaxed">
             Book a free 30-minute consultation. Tell me your vision, your dates, and your budget. I&apos;ll tell
             you honestly what I can do — vendor access, day-of coordination, full 4-day coordination, or all of
             the above plus outfit sourcing from India.

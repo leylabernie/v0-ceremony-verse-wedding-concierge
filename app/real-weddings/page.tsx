@@ -142,7 +142,7 @@ export default function RealWeddingsPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             From 4-day interfaith celebrations in New Jersey to destination
             weddings in Mexico — these are the real families we&apos;ve dressed
@@ -474,7 +474,7 @@ export default function RealWeddingsPage() {
           >
             Let&apos;s talk about your wedding
           </h2>
-          <p className="text-[#d4c8b8] mb-8 leading-relaxed">
+          <p className="text-[#e8dfd2] mb-8 leading-relaxed">
             Book a free 30-minute consultation. Tell me your vision, timeline,
             and budget. I&apos;ll tell you honestly what I can do — outfit
             sourcing, Mexico coordination, or both.

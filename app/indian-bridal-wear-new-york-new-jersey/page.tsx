@@ -138,7 +138,7 @@ export default function IndianBridalWearNYNJPage() {
           </h1>
           <p
             className="text-lg leading-relaxed max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Skip the Edison boutique markups and the Jackson Heights crowds.
             Source custom bridal lehengas, sherwanis, and bulk return gifts
@@ -230,7 +230,7 @@ export default function IndianBridalWearNYNJPage() {
                 Direct-from-India Pricing
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Save up to 30% to 50% compared to local brick-and-mortar
@@ -251,7 +251,7 @@ export default function IndianBridalWearNYNJPage() {
                 Infinite Design Selection
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 Don&apos;t limit yourself to what a local shop has on a rack.
@@ -272,7 +272,7 @@ export default function IndianBridalWearNYNJPage() {
                 Stress-Free Tri-State Delivery
               </h3>
               <p
-                className="text-sm leading-relaxed"
+                className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 We handle all international air freight, US Customs clearance
@@ -313,7 +313,7 @@ export default function IndianBridalWearNYNJPage() {
                 Tri-State Boutique Reality
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• Edison &amp; Iselin: $2,500–$8,000+ for a bridal lehenga</li>
@@ -334,7 +334,7 @@ export default function IndianBridalWearNYNJPage() {
                 India Direct with CeremonyVerse
               </h3>
               <ul
-                className="space-y-2 text-sm leading-relaxed"
+                className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
                 <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
@@ -362,7 +362,7 @@ export default function IndianBridalWearNYNJPage() {
           </h2>
           <p
             className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
-            style={{ color: "#d4c8b8" }}
+            style={{ color: "#e8dfd2" }}
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and

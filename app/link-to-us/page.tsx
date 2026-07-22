@@ -52,7 +52,7 @@ export default function LinkToUsPage() {
           <p
             style={{
               color: "#7a6841",
-              fontSize: "0.8rem",
+              fontSize: "0.9rem",
               letterSpacing: "0.1em",
               textTransform: "uppercase",
               marginBottom: "1rem",
@@ -85,8 +85,7 @@ export default function LinkToUsPage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div
           style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: "1.05rem",
+                        fontSize: "1.125rem",
             lineHeight: 1.8,
             color: "#2f2f2f",
           }}
@@ -149,7 +148,7 @@ export default function LinkToUsPage() {
                   color: "#f8f6f2",
                   padding: "1rem",
                   borderRadius: "4px",
-                  fontSize: "0.85rem",
+                  fontSize: "0.95rem",
                   overflowX: "auto",
                   margin: 0,
                   fontFamily: "'DM Sans', monospace",

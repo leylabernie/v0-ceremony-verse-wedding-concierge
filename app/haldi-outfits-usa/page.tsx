@@ -91,7 +91,7 @@ export default function HaldiOutfitsPage() {
       >
         <p
           style={{
-            fontSize: "13px",
+            fontSize: "17px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             color: "#7a6841",
@@ -138,7 +138,7 @@ export default function HaldiOutfitsPage() {
             color: "#fff",
             padding: "13px 30px",
             borderRadius: "999px",
-            fontSize: "15px",
+            fontSize: "17px",
             fontWeight: 600,
             textDecoration: "none",
           }}
@@ -207,14 +207,14 @@ export default function HaldiOutfitsPage() {
                 <h3
                   style={{
                     fontWeight: 600,
-                    fontSize: "15px",
+                    fontSize: "17px",
                     color: "#1f1f1f",
                     marginBottom: "8px",
                   }}
                 >
                   {item.title}
                 </h3>
-                <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>
                   {item.desc}
                 </p>
               </div>
@@ -240,7 +240,7 @@ export default function HaldiOutfitsPage() {
           </h2>
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.8,
               color: "#4d403a",
               marginBottom: "1.2rem",
@@ -253,7 +253,7 @@ export default function HaldiOutfitsPage() {
           </p>
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.8,
               color: "#4d403a",
               marginBottom: "1.2rem",
@@ -267,7 +267,7 @@ export default function HaldiOutfitsPage() {
           </p>
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.8,
               color: "#4d403a",
             }}
@@ -353,14 +353,14 @@ export default function HaldiOutfitsPage() {
                   <h3
                     style={{
                       fontWeight: 600,
-                      fontSize: "15px",
+                      fontSize: "17px",
                       color: "#1f1f1f",
                       marginBottom: "6px",
                     }}
                   >
                     {item.name}
                   </h3>
-                  <p style={{ fontSize: "12px", lineHeight: 1.5, color: "#4d403a" }}>
+                  <p style={{ fontSize: "17px", lineHeight: 1.5, color: "#4d403a" }}>
                     {item.desc}
                   </p>
                 </div>
@@ -418,14 +418,14 @@ export default function HaldiOutfitsPage() {
               <h3
                 style={{
                   fontWeight: 600,
-                  fontSize: "15px",
+                  fontSize: "17px",
                   color: "#1f1f1f",
                   marginBottom: "8px",
                 }}
               >
                 {item.q}
               </h3>
-              <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
+              <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
         </div>
@@ -456,7 +456,7 @@ export default function HaldiOutfitsPage() {
           </h2>
           <p
             style={{
-              fontSize: "15px",
+              fontSize: "17px",
               lineHeight: 1.7,
               color: "#7a6841",
               marginBottom: "24px",
@@ -476,14 +476,14 @@ export default function HaldiOutfitsPage() {
               color: "#2f2f2f",
               padding: "13px 30px",
               borderRadius: "999px",
-              fontSize: "15px",
+              fontSize: "17px",
               fontWeight: 600,
               textDecoration: "none",
             }}
           >
             Book Free Consultation
           </a>
-          <p style={{ color: "#4d403a", fontSize: "15px", marginTop: "16px" }}>
+          <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}
             <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
               +1 (215) 341-9990
@@ -531,7 +531,7 @@ export default function HaldiOutfitsPage() {
                   background: "#fff",
                   border: "1px solid #e6dfd5",
                   borderRadius: "999px",
-                  fontSize: "15px",
+                  fontSize: "17px",
                   color: "#4d403a",
                   textDecoration: "none",
                 }}

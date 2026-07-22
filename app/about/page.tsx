@@ -60,7 +60,7 @@ export default function AboutPage() {
             <br />
             <span style={{ color: "#7a6841" }}>Now I help your family do the same.</span>
           </h1>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#d4c8b8" }}>
+          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             CeremonyVerse is the service I wished existed when I was planning my own sons&apos; weddings.
             Outfit sourcing direct from Surat and Delhi. Mexico wedding coordination in Cancun and Riviera Maya.
             All based on real experience — not theory.
@@ -330,19 +330,19 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4+</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Years in business</p>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>Years in business</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>27+</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>5-star client reviews</p>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>5-star client reviews</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>3</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>Family Mexico weddings coordinated</p>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>Family Mexico weddings coordinated</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>50</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#d4c8b8" }}>US states served</p>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>US states served</p>
             </div>
           </div>
         </div>

@@ -109,7 +109,7 @@ export default function ServicesPage() {
           <h1 className="text-4xl sm:text-5xl font-semibold mb-6 text-white">
             Outfits Sourced Direct. Mexico Weddings Coordinated.
           </h1>
-          <p className="text-lg max-w-2xl mx-auto text-white/85">
+          <p className="text-lg max-w-2xl mx-auto text-white/92">
             My family has been in Surat&apos;s fabric trade for generations. I source outfits from the same places
             US boutiques do — without the markup. I also coordinated my own son&apos;s 4-day Indian wedding in Mexico,
             and now connect you with the same vetted vendors.
@@ -383,7 +383,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             The vendors I used for my own son&apos;s wedding
           </h2>
-          <p className="text-center text-[#d4c8b8] mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[#e8dfd2] mb-12 max-w-2xl mx-auto">
             I coordinated my own son&apos;s 4-day Indian wedding in Mexico — venue, caterer, decorators, makeup, hair,
             mehndi, priest, and church. These are the vendors I now connect you with. No resort-package markup,
             no guessing.
@@ -392,40 +392,40 @@ export default function ServicesPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Mexico Planner</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Professional, boots on the ground in Cancun and Riviera Maya. Coordinates venue, permits, vendors,
                 and day-of logistics. Not a resort wedding-package salesperson.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>DJ</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Professional, wedding-seasoned. Killed it at my son&apos;s sangeet. Bollywood, bhangra, fusion, and
                 Western sets — not the generic resort DJ.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Photographer #1 (Main)</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Professional, wedding-seasoned. Use for the main wedding day — ceremony, portraits, reception.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Photographer #2 (Budget)</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Newer, family/portrait-focused. Use for mehndi, haldi, sangeet — saves budget for the main day.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Decorator</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Newer, does birthdays/showers/engagements. Use for mehndi and haldi decor — saves budget for the
                 main ceremony florals.
               </p>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#c5a059" }}>Beauty (Indian + American HD)</h3>
-              <p className="text-sm text-white/80 leading-relaxed">
+              <p className="text-sm text-white/90 leading-relaxed">
                 Indian parlor for traditional looks some brides prefer. American HD makeup artist in Mexico —
                 best in Mexico, all brides want this for the main day.
               </p>

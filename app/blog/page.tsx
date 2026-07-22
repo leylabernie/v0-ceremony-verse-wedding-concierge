@@ -156,7 +156,7 @@ export default function BlogIndexPage() {
               style={{ textDecoration: "none" }}
             >
               <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "8px", padding: "2rem", transition: "box-shadow 0.2s" }}>
-                <p style={{ fontSize: "0.78rem", color: "#7a6841", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
+                <p style={{ fontSize: "0.95rem", color: "#7a6841", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
                   {post.date}
                 </p>
                 <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#2f2f2f", lineHeight: 1.3, marginBottom: "0.75rem" }}>
@@ -181,7 +181,7 @@ export default function BlogIndexPage() {
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "0.75rem", lineHeight: 1.25 }}>
               Ready to source your wedding outfits from India?
             </p>
-            <p style={{ fontSize: "0.95rem", color: "#d4c8b8", lineHeight: 1.7, marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
+            <p style={{ fontSize: "0.95rem", color: "#e8dfd2", lineHeight: 1.7, marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
               Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget — and tell you honestly what&apos;s achievable.
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
