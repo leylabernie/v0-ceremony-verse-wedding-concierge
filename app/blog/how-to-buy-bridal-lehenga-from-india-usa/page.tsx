@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
-  title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
-  description: "Step-by-step guide for NRI brides buying a bridal lehenga from India \u2014 live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
-  keywords: ["how to buy lehenga from India", "buy bridal lehenga from India USA", "NRI bride lehenga India", "lehenga from India delivered USA"],
+  title: "How to Buy a Bridal Lehenga from India to USA in 2026 — Complete Step-by-Step Guide",
+  description: "How NRI brides buy a bridal lehenga from India and ship to USA: live video shopping, taking measurements at home, customs duties, shipping costs, and how to avoid scams. With real 2026 prices.",
+  keywords: ["how to buy bridal lehenga from India to USA", "buy lehenga from India online USA", "NRI bridal lehenga shipping customs", "Indian bridal lehenga USA 2026 guide", "live video shopping lehenga India"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
   ogType: "article",
@@ -243,6 +243,25 @@ export default function LehengaBuyingGuideBlogPost() {
           <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
+
+          {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
+          <div style={{ background: "#faf8f5", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.75rem", marginTop: "2rem", textAlign: "center" }}>
+            <p style={{ fontSize: "0.75rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "0.6rem" }}>
+              Ready to Source Your Bridal Lehenga?
+            </p>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
+              Skip the boutique markup — buy a custom bridal lehenga from India, delivered to your US door
+            </h3>
+            <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
+              Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
+            </p>
+            <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
+              <Link href="/buy-bridal-lehenga-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
+              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/pricing" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
+            </div>
+          </div>
+
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
             More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>

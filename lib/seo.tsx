@@ -304,7 +304,14 @@ export function buildHowToSchema(opts: {
 
 /**
  * The global LocalBusiness schema — used in layout.tsx.
- * Includes Review + AggregateRating for star-rich-snippet eligibility.
+ *
+ * NOTE: aggregateRating and review fields were intentionally REMOVED on
+ * 2026-07-26. They were declaring a 5.0/27-review rating that did not
+ * correspond to visible reviews on the page, which violates Google's
+ * structured data spam policy and risks a manual action suppressing
+ * the entire site's rankings. Reviews now live as visible HTML on the
+ * homepage and /real-weddings/ page; we can re-add review schema ONLY
+ * after those visible reviews are the same ones marked up here.
  */
 export function buildLocalBusinessSchema(): object {
   return {
@@ -329,43 +336,7 @@ export function buildLocalBusinessSchema(): object {
     priceRange: "$$",
     sameAs: [
       "https://wa.me/12153419990",
-    ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "27",
-      bestRating: "5",
-      worstRating: "1",
-    },
-    review: [
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        author: { "@type": "Person", name: "Kaval & April" },
-        reviewBody:
-          "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        author: { "@type": "Person", name: "Karan & Sonal" },
-        reviewBody:
-          "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        author: { "@type": "Person", name: "Charly & Viola" },
-        reviewBody:
-          "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
-      },
-      {
-        "@type": "Review",
-        reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-        author: { "@type": "Person", name: "Druma & Parin" },
-        reviewBody:
-          "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
-      },
+      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -441,6 +412,40 @@ export function buildLocalBusinessSchema(): object {
     },
   };
 }
+
+/**
+ * Visible testimonials data — used by both the homepage and the
+ * /real-weddings/ page. These are the SAME reviews that previously
+ * lived only in JSON-LD schema; making them visible HTML satisfies
+ * Google's structured data policy that review schema must point to
+ * visible reviews on the page.
+ *
+ * Returning an array (not schema) keeps presentation in the component
+ * layer. Schema consumers should NOT consume this — the visible HTML
+ * is what Google crawls for the review-content match.
+ */
+export const VISIBLE_TESTIMONIALS = [
+  {
+    couple: "Kaval & April",
+    ceremony: "4-day Gujarati + South Indian Christian wedding",
+    body: "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
+  },
+  {
+    couple: "Karan & Sonal",
+    ceremony: "4-day Gujarati destination wedding, Mexico",
+    body: "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
+  },
+  {
+    couple: "Charly & Viola",
+    ceremony: "South Indian Christian wedding",
+    body: "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
+  },
+  {
+    couple: "Druma & Parin",
+    ceremony: "Gujarati wedding, Kanchipuram sourcing",
+    body: "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
+  },
+] as const;
 
 /**
  * Global FAQ schema — used in layout.tsx so it appears on every page for AI citation.

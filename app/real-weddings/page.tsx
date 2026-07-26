@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
-import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import { buildMetadata, buildBreadcrumb, JsonLd, VISIBLE_TESTIMONIALS } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/real-weddings",
@@ -23,6 +23,31 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Real Weddings", url: "/real-weddings/" },
 ]);
+
+/**
+ * Page-specific Review schema — only on /real-weddings/ where these
+ * testimonials appear as visible HTML below. Per Google's policy,
+ * review schema must point to visible reviews on the SAME page.
+ */
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "CeremonyVerse Indian Wedding Sourcing & Coordination",
+  url: "https://www.ceremonyverse.com/real-weddings/",
+  review: VISIBLE_TESTIMONIALS.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.couple },
+    reviewBody: t.body,
+    reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+  })),
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: String(VISIBLE_TESTIMONIALS.length),
+    bestRating: "5",
+    worstRating: "1",
+  },
+};
 
 const weddings = [
   {
@@ -117,6 +142,7 @@ export default function RealWeddingsPage() {
   return (
     <div className="bg-[#faf8f5] min-h-screen">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-reviews" data={reviewsSchema} />
       <SeoNav />
 
       {/* HERO */}
@@ -458,6 +484,48 @@ export default function RealWeddingsPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* VISIBLE TESTIMONIALS — paired with the page-specific Review schema above.
+          Google requires review schema to point to visible reviews on the same page. */}
+      <section className="py-16 px-6" style={{ background: "#faf8f5" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="tracking-[0.15em] text-xs font-medium text-[#7a6841] mb-3 uppercase text-center">
+            What Our Couples Say
+          </p>
+          <h2
+            className="text-3xl md:text-4xl font-semibold mb-10 text-center"
+            style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: "#1f1f1f" }}
+          >
+            Reviews from NRI families we&apos;ve dressed
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {VISIBLE_TESTIMONIALS.map((t) => (
+              <div key={t.couple} className="bg-white rounded-2xl p-8 shadow-sm">
+                <p className="text-[#7a6841] text-3xl mb-3 leading-none">&ldquo;</p>
+                <p className="text-[#4d403a] text-base leading-relaxed mb-6">{t.body}</p>
+                <div className="border-t border-[#e6dfd5] pt-4">
+                  <p className="font-semibold text-[#1f1f1f] text-sm">{t.couple}</p>
+                  <p className="text-xs text-[#5e4a40] mt-1">{t.ceremony}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="https://www.trustpilot.com/review/ceremonyverse.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm"
+              style={{ color: "#7a6841" }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              Read all reviews on Trustpilot →
+            </a>
           </div>
         </div>
       </section>

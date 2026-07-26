@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/nri-wedding-planning-timeline/",
-  title: "NRI Wedding Planning Timeline: When to Order from India",
-  description: "A 12-month NRI wedding planning timeline \u2014 when to start sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India for a stress-free US wedding.",
-  keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],
+  title: "NRI Wedding Planning Timeline: When to Order Indian Wedding Outfits from India (12-Month Checklist)",
+  description: "Month-by-month NRI wedding planning timeline for sourcing Indian wedding outfits, jewelry, ceremonial items, return gifts, and welcome bags from India. Includes when to book video shopping sessions and how to avoid rush-shipping fees.",
+  keywords: ["NRI wedding planning timeline", "when to order Indian wedding outfits from India", "Indian wedding planning checklist USA", "NRI bride 12 month timeline", "Indian wedding outfit ordering schedule"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
   ogType: "article",
@@ -273,6 +273,25 @@ export default function NriWeddingPlanningTimeline() {
           <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
+
+          {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
+          <div style={{ background: "#faf8f5", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.75rem", marginTop: "2rem", textAlign: "center" }}>
+            <p style={{ fontSize: "0.75rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "0.6rem" }}>
+              Ready to Start Sourcing?
+            </p>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
+              Book a free consultation and map out your full sourcing timeline
+            </h3>
+            <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
+              In 30 minutes, we&apos;ll review your wedding date, ceremony list, and budget — and tell you exactly when each outfit needs to be ordered to arrive on time. No commitment, no pressure.
+            </p>
+            <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
+              <Link href="/contact" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation</Link>
+              <Link href="/services" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>See Services</Link>
+              <Link href="/pricing" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
+            </div>
+          </div>
+
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
             More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>

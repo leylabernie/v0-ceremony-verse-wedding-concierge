@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-sherwani-from-india-usa/",
-  title: "How to Buy a Sherwani from India for a US Wedding",
-  description: "Complete guide for grooms and groomsmen buying a sherwani from India to the USA \u2014 fabric, fit, customs, shipping, and how to coordinate the full wedding party.",
-  keywords: ["how to buy a sherwani from India USA", "sherwani price India 2026", "buy sherwani online USA", "groom sherwani customs duties"],
+  title: "How to Buy a Sherwani from India to USA in 2026 — Groom's Complete Guide",
+  description: "Step-by-step guide for grooms buying a sherwani from India and shipping to USA: fabric choices (silk vs velvet), how to take sherwani measurements, customs duties, shipping costs, and coordinating groomsmen outfits.",
+  keywords: ["how to buy sherwani from India to USA", "buy sherwani online USA 2026", "groom sherwani India shipping customs", "sherwani measurements guide", "Indian groom outfit USA"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
   ogType: "article",
@@ -259,6 +259,24 @@ export default function SherwaniGuidePage() {
           <p style={{ marginTop: "1.2rem" }}>
             Timing matters just as much for the groom as it does for the bride. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>when to order your wedding outfits from India</Link> guide for a full month-by-month timeline that covers both bride and groom planning.
           </p>
+
+          {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
+          <div style={{ background: "#faf8f5", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.75rem", marginTop: "2.5rem", textAlign: "center" }}>
+            <p style={{ fontSize: "0.75rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "0.6rem" }}>
+              Ready to Source Your Sherwani?
+            </p>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
+              Skip the boutique markup — buy a custom sherwani from India, delivered to your US door
+            </h3>
+            <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
+              Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
+            </p>
+            <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
+              <Link href="/buy-sherwani-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Sherwani from India</Link>
+              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/how-it-works" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
+            </div>
+          </div>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>

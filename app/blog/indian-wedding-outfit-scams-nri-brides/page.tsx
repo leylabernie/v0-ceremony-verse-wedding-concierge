@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-scams-nri-brides/",
-  title: "10 Red Flags When Buying Lehengas from India — NRI Scam Guide",
-  description: "10 scam patterns NRI brides face buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
-  keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],
+  title: "10 Indian Wedding Outfit Scams NRI Brides Must Avoid (2026 Verified Vendor Checklist)",
+  description: "Real scam patterns NRI brides face buying lehengas online from India — fake Instagram sellers, bait-and-switch fabrics, stolen images, customs fraud — plus a 7-point vendor verification checklist.",
+  keywords: ["Indian wedding outfit scams NRI brides", "fake lehenga seller Instagram India", "how to verify Indian wedding vendor online", "lehenga bait and switch scam", "avoid lehenga scam India to USA"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
   ogType: "article",
@@ -116,6 +116,24 @@ export default function ScamsGuidePage() {
           <p style={{ marginTop: "1.2rem" }}>
             Learn more about <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>safe bridal lehenga sourcing from India</Link> — with real prices, verified vendors, and delivery to all 50 states.
           </p>
+
+          {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
+          <div style={{ background: "#faf8f5", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.75rem", marginTop: "2.5rem", textAlign: "center" }}>
+            <p style={{ fontSize: "0.75rem", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "0.6rem" }}>
+              Tired of Worrying About Scams?
+            </p>
+            <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
+              Source your bridal lehenga from India — safely, with verified vendors and live video approval
+            </h3>
+            <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
+              Every piece is shown to you on live video before payment, every vendor is family-vetted, and every shipment is family-inspected before it leaves India. No bait-and-switch, no stolen images, no surprises.
+            </p>
+            <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
+              <Link href="/buy-bridal-lehenga-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga Safely</Link>
+              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/how-it-works" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
+            </div>
+          </div>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>
