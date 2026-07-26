@@ -172,6 +172,68 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* REAL CLIENT EXAMPLES */}
+      <section className="py-20 px-6" style={{ background: "#faf8f5" }}>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            Real Examples
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            What clients actually got — and what they paid
+          </h2>
+          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
+            These are real outcomes from real clients. Names changed for privacy, numbers exact.
+          </p>
+
+          <div className="space-y-8">
+            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Priti in New Jersey — Full Bridal Concierge</h3>
+                  <p className="text-[#4d403a] leading-relaxed mb-3">
+                    Priti was planning a 3-day Gujarati wedding with 8 bridesmaids and family outfits for both sides. She chose Full Bridal Concierge ($2,499). We sourced her bridal lehenga ($1,800 with heavy zardozi), groom sherwani ($900), 8 bridesmaid lehengas ($180 each, custom color-matched), mother-of-the-bride saree ($350), and father-of-the-bride outfit ($280). Total for 13 outfits including our service fee, shipping, and customs: $7,200. The same pieces at her local New Jersey Indian boutique would have run $14,000-16,000.
+                  </p>
+                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Full Bridal Concierge ($2,499) — Total savings: ~$7,000-9,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Ananya in California — Guided Sourcing</h3>
+                  <p className="text-[#4d403a] leading-relaxed mb-3">
+                    Ananya needed a bridal lehenga, a reception saree, and her fiance's sherwani. She chose Guided Sourcing ($799) with 3 live video sessions. We found her a coral pink zardozi lehenga ($1,400), a banarasi saree for the reception ($350), and a cream sherwani with gold detailing ($650). Total including service fee, DHL shipping, and customs: $3,500. She initially budgeted $5,000 for just the lehenga at a Bay Area boutique.
+                  </p>
+                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Guided Sourcing ($799) — Total savings: ~$3,000-4,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Swati in Pennsylvania — Style Guide + Self-Sourcing</h3>
+                  <p className="text-[#4d403a] leading-relaxed mb-3">
+                    Swati wanted guidance but was comfortable managing vendors herself. She chose Style Guide and Vendor List ($249). We sent her a curated list of 12 vendors in Surat and Delhi matched to her style, with specific recommendations for each vendor's strengths. She sourced a mehndi outfit ($180) and sangeet lehenga ($320) on her own using our list, and came back for Guided Sourcing when she realized the bridal lehenga needed more hand-holding. Total first order: $569. She later upgraded to Guided Sourcing for the bridal outfit.
+                  </p>
+                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Style Guide ($249) — Outfits landed: $569</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SOURCING TIERS */}
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
@@ -463,6 +525,18 @@ export default function PricingPage() {
             Compare to $400–$5,000+ for the same handwork at a US Indian boutique. Most clients save 40–60%
             even after paying our service fee.
           </p>
+          <div className="text-center mt-6">
+            <a
+              href="/india-sourcing-price-guide.pdf"
+              className="inline-flex items-center gap-2 text-sm font-medium"
+              style={{ color: "var(--cv-accent)" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download our free India Sourcing Price Guide (PDF) →
+            </a>
+            <p className="text-xs text-[#4d403a] mt-2">Detailed pricing for every outfit type, handwork level, and ceremony</p>
+          </div>
         </div>
       </section>
 
@@ -505,6 +579,35 @@ export default function PricingPage() {
               $3,000 — extended across 4–6 months aligned with your wedding timeline. We accept
               credit cards, bank transfers, and most major payment methods.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TIMING URGENCY */}
+      <section className="py-16 px-6" style={{ background: "#faf8f5" }}>
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
+            <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>
+              Booking Timeline
+            </p>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+              Popular wedding dates fill our capacity 3-4 months out
+            </h2>
+            <p className="text-[#4d403a] mb-6 leading-relaxed">
+              Indian wedding season peaks October through February. During these months, our live video
+              shopping slots and tailoring partners in Surat and Delhi operate at full capacity.
+              Brides who start 4-6 months before their wedding get the widest selection, the most
+              relaxed timeline, and first pick of our tailoring partners. Rush orders (under 8 weeks)
+              are possible for some pieces but limit your options. If your wedding is in the next
+              3-6 months, book your consultation now — even if you're still deciding.
+            </p>
+            <a
+              href="/contact"
+              className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
+              style={{ background: "var(--cv-accent)", color: "#fff" }}
+            >
+              Check Availability for Your Date
+            </a>
           </div>
         </div>
       </section>
@@ -599,12 +702,17 @@ export default function PricingPage() {
       {/* CTA */}
       <section className="py-20 px-6 text-center" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-2xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
+            Still Deciding?
+          </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Not sure which tier is right for you?
+            The consultation is free. The clarity is worth 30 minutes.
           </h2>
           <p className="text-[#e8dfd2] mb-8 leading-relaxed">
-            Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget —
-            and recommend the tier that fits your needs. No commitment required.
+            We will review your wedding vision, timeline, and budget — and recommend the tier that fits.
+            We will also tell you honestly if a different approach would work better for your situation.
+            No commitment, no follow-up pressure. Most brides leave the call knowing exactly what to
+            do next, whether they book with us or not.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

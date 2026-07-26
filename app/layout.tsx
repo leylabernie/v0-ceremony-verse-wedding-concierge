@@ -1,8 +1,10 @@
 import "./globals.css";
+import type { Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
+import { GlobalFooter } from "@/components/global-footer";
 import { JsonLd, buildLocalBusinessSchema, buildGlobalFaqSchema } from "@/lib/seo";
 
 // Build-time font loading via next/font — eliminates the render-blocking
@@ -79,6 +81,13 @@ export const metadata = {
     site: "@ceremonyverse",
     images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
   },
+};
+
+// Explicit viewport export — best practice for Next.js App Router. Prevents
+// any default-injection ambiguity and ensures mobile rendering at device width.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -202,6 +211,7 @@ export default function RootLayout({
         <WhatsAppButton />
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
+        <GlobalFooter />
       </body>
     </html>
   );

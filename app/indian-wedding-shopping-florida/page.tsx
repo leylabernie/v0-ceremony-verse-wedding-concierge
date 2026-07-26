@@ -1,0 +1,261 @@
+import Link from "next/link";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/indian-wedding-shopping-florida/",
+  title: "Indian Wedding Shopping Florida — NRI Bridal Concierge",
+  description: "Florida-based Indian wedding concierge. Source bridal lehengas, sherwanis, and family outfits directly from India — live video shopping, custom stitching, delivered to your Florida door.",
+  keywords: "Indian wedding shopping Florida, Florida bridal lehenga, NRI wedding concierge Florida, Indian wedding outfits Miami, Indian wedding shopping Orlando, Indian wedding shopping Tampa, Jacksonville Indian wedding, South Florida Indian wedding, buy Indian wedding outfits Florida, Atlanta Indian wedding shopping",
+});
+
+const serviceSchema = buildServiceSchema({
+  name: "Florida Indian Wedding Sourcing Service",
+  description: "Indian wedding outfit sourcing for NRI families across Florida — with live video shopping from India, humidity-ready fabrics, and doorstep delivery.",
+  url: "/indian-wedding-shopping-florida/",
+  areaServed: "Florida — Miami, Orlando, Tampa, Jacksonville, South Florida",
+});
+
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Florida", url: "/indian-wedding-shopping-florida/" },
+]);
+
+export default function FloridaPage() {
+  return (
+    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+
+      {/* Hero */}
+      <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
+        <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
+          Serving Florida Families &middot; Nationwide Service
+        </p>
+        <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
+          Indian Wedding Shopping Florida &mdash; Source Directly from India
+        </h1>
+        <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
+          CeremonyVerse helps Florida NRI families source bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram &mdash; with live video shopping and delivery to your Florida door.
+        </p>
+        <Link
+          href="/contact"
+          style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
+        >
+          Book Free Consultation
+        </Link>
+      </section>
+
+      {/* Why Florida */}
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Why Florida NRI families choose CeremonyVerse
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            {[
+              {
+                title: "Florida&apos;s Indian community is booming",
+                desc: "Florida is now one of the fastest-growing states for Indian-American families &mdash; from the tech corridors of Tampa and Orlando to the cultural hub of South Florida. With that growth comes more Indian weddings, more demand for authentic outfits, and more families realizing that local boutique options are limited and overpriced.",
+              },
+              {
+                title: "Very few Indian wedding boutiques in Florida",
+                desc: "Unlike New Jersey or California, Florida doesn&apos;t have a dense corridor of Indian wedding boutiques. The handful of shops that exist carry limited inventory, and ordering custom pieces means either traveling out of state or ordering online from India &mdash; where scams, wrong sizing, and quality issues are common. CeremonyVerse eliminates all of that.",
+              },
+              {
+                title: "Humidity-ready fabric guidance",
+                desc: "Florida&apos;s tropical climate demands smart fabric choices. Heavy velvets and layered dupion silk that work in a Delhi winter can be unbearable at a June wedding in Miami. We advise on breathable fabrics &mdash; lighter georgette, chiffon, and cotton-silk blends &mdash; that look stunning in photos without melting the wedding party.",
+              },
+              {
+                title: "Florida is a destination wedding capital",
+                desc: "Families from across the US and India choose Florida for destination weddings &mdash; beachside mandaps in the Keys, luxury resorts in Orlando, garden venues in Coral Gables. Whether you&apos;re a Florida local or flying in for your own destination celebration, we coordinate outfits and delivery timelines so everything arrives on schedule.",
+              },
+            ].map((item) => (
+              <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How it works for Florida families */}
+      <section style={{ padding: "48px 24px" }}>
+        <div style={{ maxWidth: "680px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "24px" }}>
+            How CeremonyVerse works for Florida families
+          </h2>
+          <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
+            <p style={{ marginBottom: "16px" }}>
+              Everything starts with a free 30-minute consultation. You tell us about your wedding &mdash; ceremonies, party size, timeline, budget, and your Florida venue. We tell you honestly what&apos;s achievable and which service tier fits. No sales pressure, no inflated promises. Because we serve EST clients, you can schedule consultations around your schedule &mdash; evenings, weekends, whatever works.
+            </p>
+            <p style={{ marginBottom: "16px" }}>
+              From there, we set up live video shopping sessions with our team in India. You see actual outfits &mdash; fabric, embroidery, color in natural light &mdash; and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Florida address.
+            </p>
+            <p style={{ marginBottom: "16px" }}>
+              Whether you&apos;re planning a Gujarati wedding in Tampa, a South Indian ceremony at an Orlando resort, or a beachside Punjabi celebration in Miami &mdash; we understand the specific outfit traditions each community requires. Florida&apos;s Indian community is diverse, and we source with cultural precision and climate awareness.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Serving Florida */}
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "12px" }}>
+            Serving Families Across Florida
+          </h2>
+          <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
+            We deliver to your door anywhere in Florida.
+          </p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
+            {["Miami", "Orlando", "Tampa", "Jacksonville", "Fort Lauderdale", "West Palm Beach", "Boca Raton", "Coral Gables", "Sarasota", "Naples", "Gainesville", "Tallahassee", "St. Petersburg", "Melbourne", "Daytona Beach", "Fort Myers", "Pensacola", "Lakeland", "Hollywood", "Kissimmee"].map((loc) => (
+              <span
+                key={loc}
+                style={{
+                  fontSize: "14px",
+                  color: "#4d403a",
+                  background: "#f9f6f3",
+                  border: "1px solid #e6dfd5",
+                  borderRadius: "999px",
+                  padding: "6px 16px",
+                }}
+              >
+                {loc}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing */}
+      <section style={{ padding: "48px 24px" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Transparent Pricing
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
+            {[
+              { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help &mdash; no obligation." },
+              { tier: "Style Guide &amp; Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party &mdash; every ceremony, every outfit, every family member. Dedicated coordinator." },
+            ].map((item) => (
+              <div key={item.tier} style={{ background: "#fff", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
+                <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.6rem", fontWeight: 600, color: "#7a6841", marginBottom: "10px" }}>{item.price}</p>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <p style={{ textAlign: "center", marginTop: "16px", fontSize: "14px", color: "#4d403a" }}>
+            Outfit costs, shipping, and customs are itemized separately. <a href="/pricing" style={{ color: "#7a6841", textDecoration: "underline" }}>See full pricing breakdown</a>.
+          </p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            Frequently Asked Questions for Florida NRI Brides
+          </h2>
+          <div>
+            {[
+              {
+                q: "Do you ship to all of Florida, including the Panhandle and Keys?",
+                a: "Yes. We deliver via DHL or FedEx to any Florida address &mdash; from Pensacola to the Florida Keys. Delivery typically takes 3-5 business days once shipped from India. We coordinate with you on timing so outfits arrive well before your wedding events.",
+              },
+              {
+                q: "What fabrics work best for Florida&apos;s heat and humidity?",
+                a: "Great question &mdash; and one most out-of-state concierges won&apos;t think to ask. For outdoor or non-air-conditioned Florida venues, we recommend lighter fabrics like georgette, chiffon, net, and cotton-silk blends. For air-conditioned ballrooms, you can go heavier &mdash; raw silk, velvet, and brocade. We help you match fabric weight to your specific venue and season.",
+              },
+              {
+                q: "How much does a bridal lehenga from India cost delivered to Florida?",
+                a: "Most of our Florida clients save 40-60% compared to what they&apos;d pay at the few Indian boutiques in the state or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+              },
+              {
+                q: "We&apos;re planning a destination wedding in Florida &mdash; can you coordinate delivery to a hotel or resort?",
+                a: "Absolutely. We regularly ship to wedding venues and resort hotels across Florida &mdash; Orlando resorts, Miami beach hotels, Tampa convention venues. We track the shipment and confirm delivery with your venue coordinator so you don&apos;t have to worry about logistics during your wedding week.",
+              },
+              {
+                q: "I live in Atlanta but we&apos;re getting married in Florida. Can you help?",
+                a: "Yes. Many of our clients live in Atlanta, the Carolinas, or other Southeast states and choose Florida for their wedding venue. We can coordinate delivery to your Florida wedding venue and also ship items to your home address for pre-wedding events like the mehndi or sangeet. The consultation process is entirely virtual, so your location doesn&apos;t matter.",
+              },
+            ].map((faq, index) => (
+              <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 4 ? "1px solid #e6dfd5" : "none" }}>
+                <h3 style={{ fontWeight: 600, fontSize: "16px", color: "#1f1f1f", marginBottom: "8px" }}>{faq.q}</h3>
+                <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related outfit pages & regions */}
+      <section style={{ padding: "56px 24px", background: "#faf8f5" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "12px" }}>
+            Explore More
+          </p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "12px" }}>
+            Outfit sourcing for every Florida ceremony
+          </h2>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
+            From Miami beachfront bridal lehengas to Tampa Telugu muhuratam sarees &mdash; one concierge,
+            every ceremony, every outfit delivered to your Florida door.
+          </p>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
+            <Link href="/buy-bridal-lehenga-from-india-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
+            <Link href="/buy-sherwani-from-india-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Groom Sherwanis</Link>
+            <Link href="/kanchipuram-silk-sarees-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Sarees</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family</Link>
+            <Link href="/reception-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
+            <Link href="/mehndi-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Mehndi Outfits</Link>
+            <Link href="/how-it-works" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
+          </div>
+          <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "10px" }}>
+            Serving Indian-American brides across the US
+          </p>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+            <Link href="/indian-wedding-shopping-philadelphia" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Philadelphia</Link>
+            <Link href="/indian-wedding-shopping-new-york" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>New York</Link>
+            <Link href="/indian-wedding-shopping-new-jersey" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>New Jersey</Link>
+            <Link href="/indian-wedding-shopping-california" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>California</Link>
+            <Link href="/indian-wedding-shopping-texas" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Texas</Link>
+            <Link href="/indian-wedding-shopping-georgia" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Georgia</Link>
+            <Link href="/indian-wedding-shopping-washington-dc" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Washington DC</Link>
+            <Link href="/indian-wedding-shopping-massachusetts" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Massachusetts</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Dark CTA */}
+      <section style={{ padding: "64px 24px", textAlign: "center", background: "#1f1f1f" }}>
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "16px" }}>
+            Florida families deserve better than limited boutique options.
+          </h2>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
+            Book a free 30-minute consultation. We&apos;ll review your wedding vision, timeline, and budget &mdash; and recommend exactly what level of support you need. No commitment, no pressure.
+          </p>
+          <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link
+              href="/contact"
+              style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
+            >
+              Book Free Consultation
+            </Link>
+            <a
+              href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Florida%20and%20interested%20in%20CeremonyVerse."
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", background: "transparent", color: "#f8f6f2", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}
+            >
+              WhatsApp +1 (215) 341-9990
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

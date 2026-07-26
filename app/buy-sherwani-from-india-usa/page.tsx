@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
@@ -30,7 +31,7 @@ export default function SherwaniPage() {
       <section className="py-24 text-center px-6">
         <div className="max-w-4xl mx-auto">
 
-          <h1 className="text-5xl font-semibold mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
             Buy Sherwani from India (Delivered to USA)
           </h1>
 
@@ -114,6 +115,23 @@ export default function SherwaniPage() {
         </div>
       </section>
 
+      {/* Related outfit pages */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="text-sm uppercase tracking-[0.18em] text-[var(--cv-accent)] font-semibold mb-4">
+            Related outfit pages
+          </p>
+          <div className="flex flex-wrap gap-2.5 justify-center">
+            <Link href="/buy-bridal-lehenga-from-india-usa/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Bridal Lehengas</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Bridesmaid Outfits</Link>
+            <Link href="/baraat-outfits-usa/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Baraat Outfits</Link>
+            <Link href="/reception-outfits-usa/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Reception Outfits</Link>
+            <Link href="/kanchipuram-silk-sarees-usa/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Kanchipuram Sarees</Link>
+            <Link href="/banarasi-silk-sarees-usa/" className="bg-white border border-[var(--cv-border)] rounded-full px-4 py-2 text-sm text-[var(--cv-body)] no-underline hover:border-[var(--cv-accent)]">Banarasi Sarees</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 text-center px-6">
         <div className="max-w-2xl mx-auto">
@@ -126,9 +144,14 @@ export default function SherwaniPage() {
             Get expert guidance and direct access to the right designs without stress.
           </p>
 
-          <button className="btn-primary">
-            Book Consultation
-          </button>
+          <div className="flex flex-col items-center gap-3.5">
+            <Link href="/contact" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
+              Book Free Consultation
+            </Link>
+            <a href="https://wa.me/12153419990" className="text-[17px] text-[var(--cv-body)] no-underline">
+              WhatsApp: +1 (215) 341-9990
+            </a>
+          </div>
 
         </div>
       </section>

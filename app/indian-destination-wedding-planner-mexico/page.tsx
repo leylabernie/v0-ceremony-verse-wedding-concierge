@@ -285,6 +285,61 @@ export default function MexicoDestinationPage() {
         </div>
       </section>
 
+      {/* COMMON MISTAKES */}
+      <section className="py-20 px-6" style={{ background: "#faf8f5" }}>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            Mistakes That Cost Thousands
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            Common mistakes when planning an Indian destination wedding in Mexico
+          </h2>
+          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
+            I&apos;ve made some of these myself or seen them at other Indian destination weddings.
+            Here&apos;s what our coordination prevents.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Booking a resort that hasn&apos;t done Indian weddings</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                The resort doesn&apos;t understand mandap requirements, can&apos;t handle Indian catering, and
+                doesn&apos;t have experience with multi-day event schedules. You end up explaining basic
+                Indian wedding logistics to a resort coordinator who has never seen one. We only
+                recommend resorts that have hosted Indian weddings before — or we connect you with
+                our planner who has those venue relationships.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Using the resort&apos;s DJ instead of a professional</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                The resort DJ plays generic hotel music. Our DJ — the same one who performed at my
+                son&apos;s sangeet — knows garba from bhangra, mixes Bollywood with Western transitions,
+                and reads the room. At my son&apos;s wedding, he had 150 people dancing including relatives
+                who never dance. That&apos;s not a generic resort experience.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Paying resort vendor markup on everything</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Resort wedding packages bundle vendors and charge 30-50% more than independent vendors.
+                Our vetted network is independent — tested at my own son&apos;s wedding — and priced directly.
+                You choose what you want for each event without the resort&apos;s percentage on top.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Not starting early enough for outfit sourcing</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Custom bridal lehengas from India need 8-12 weeks for stitching. If you&apos;re also planning
+                a Mexico wedding, you need both timelines to converge — outfits arrive before your flight.
+                When we handle both coordination and sourcing, we manage one unified timeline so nothing
+                falls through the cracks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PLANNING TIMELINE */}
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
@@ -341,6 +396,107 @@ export default function MexicoDestinationPage() {
               </div>
               <p className="text-[#4d403a] leading-relaxed">
                 Final vendor confirmations, detailed day-of timelines for each event, and a full rehearsal. Ship outfits to your US address or directly to the Mexico resort. This is where day-of or full coordination kicks in — we handle the rest so you can enjoy your wedding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SAMPLE EVENT SCHEDULE */}
+      <section className="py-20 px-6" style={{ background: "#fff" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            A Realistic Day-by-Day
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            What Your Indian Destination Wedding in Mexico Actually Looks Like
+          </h2>
+          <p className="text-center text-[#4d403a] mb-12 max-w-3xl mx-auto">
+            Based on my own three family Mexico weddings, here is a realistic day-by-day breakdown.
+            Every wedding is different — this is a starting framework we customize for your traditions.
+          </p>
+
+          <div className="space-y-6">
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 1</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Guest Arrival, Mehndi &amp; Haldi</h3>
+                  <p className="text-sm text-[#4d403a]">Afternoon check-in + evening intimate ceremonies</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Guests fly in from across the US (and often India). We coordinate airport transfers to the
+                resort so no one gets lost. Welcome bags are in rooms — for my son's wedding, I sourced custom
+                canvas bags with Indian snacks, sunscreen, and a personalized itinerary. Evening mehndi for the
+                bride and close family, followed by haldi with bright yellow decor from our budget-friendly
+                decorator. The bride typically wears a simple yellow salwar set or lehenga — this is the relaxed
+                start before the big events. Budget: moderate — save your decor spend for the main ceremony.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 2</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Sangeet &amp; Garba Night</h3>
+                  <p className="text-sm text-[#4d403a]">The party everyone remembers — 6+ hours of dancing</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                This is where our vetted DJ makes the difference. At my son's sangeet, he opened with garba,
+                transitioned to Bollywood classics that both families knew, and closed with fusion and Western
+                hits. The dance floor was full from 8 PM to 2 AM — including relatives who never dance. The
+                bride wears a lighter lehenga or sharara set (the one she can actually dance in). The groom
+                wears an Indo-Western suit or silk kurta. We coordinate jhumka party favors on the tables and
+                make sure the resort has the right bar setup. For interfaith couples, this is often also the
+                rehearsal dinner with the Christian side of the family.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 3</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Wedding Ceremony &amp; Reception</h3>
+                  <p className="text-sm text-[#4d403a]">The main event — mandap, vows, first dance, celebration</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Morning starts with bridal makeup — our American HD makeup artist handles the main look, which
+                holds up in Mexico's heat and humidity and photographs beautifully. The Hindu ceremony takes place
+                under a professionally built mandap with tropical flowers by our wedding-seasoned decorator.
+                Our vetted priest travels to your resort and performs the full ceremony. For interfaith couples,
+                the Christian ceremony follows at the resort chapel or a nearby church. Evening reception with
+                full catering, first dance, toasts, and the DJ returns. This is the day the main photographer
+                delivers the images you will frame for the rest of your life. The bride wears her bridal lehenga
+                (sourced through our India service if you're combining both), and the groom wears his sherwani.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 4</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Farewell Brunch &amp; Departure</h3>
+                  <p className="text-sm text-[#4d403a]">Relaxed send-off, group photos, and vendor wrap-up</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                A relaxed farewell brunch for guests before flights home. Some families add a small puja or
+                vidai ceremony in the morning. Group photos from the entire wedding get shared — the photographer
+                delivers same-day sneak peeks so guests leave with memories already on their phones. For
+                interfaith families, this is often the most relaxed moment: both families eating breakfast together
+                after 4 days of coordinated events. We handle final vendor wrap-up, tip coordination, and any
+                last-minute logistics so you can enjoy the morning with your new spouse.
               </p>
             </div>
           </div>
@@ -405,6 +561,74 @@ export default function MexicoDestinationPage() {
                 <p className="mt-2 text-xs text-[#4d403a]">— Bhamini, Founder of CeremonyVerse</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* OVERALL COST CONTEXT */}
+      <section className="py-16 px-6">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
+            <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+              Budget Reality Check
+            </p>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+              What an Indian destination wedding in Mexico actually costs
+            </h2>
+            <p className="text-[#4d403a] mb-6 leading-relaxed">
+              Beyond our coordination fees, here are realistic ranges for the total wedding budget based
+              on what our clients and my own family weddings have actually spent. These are not resort
+              package prices — these are what real couples pay when they use independent vetted vendors
+              instead of resort bundles.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm border border-[#e6dfd5] rounded-xl overflow-hidden">
+                <thead style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
+                  <tr>
+                    <th className="p-4 text-left">Budget item</th>
+                    <th className="p-4 text-left">Typical range</th>
+                    <th className="p-4 text-left">Notes</th>
+                  </tr>
+                </thead>
+                <tbody className="bg-white">
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">Resort (room block + F&amp;B minimum)</td>
+                    <td className="p-4">5,000-40,000</td>
+                    <td className="p-4 text-[#4d403a]">Varies hugely by guest count and season</td>
+                  </tr>
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">Coordination (our fee)</td>
+                    <td className="p-4" style={{ color: "var(--cv-accent)" }}>99-4,500</td>
+                    <td className="p-4 text-[#4d403a]">Vendor access to full 4-day coordination</td>
+                  </tr>
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">All outfits from India (bride + groom + party)</td>
+                    <td className="p-4">,000-8,000</td>
+                    <td className="p-4 text-[#4d403a]">40-60% less than US boutiques</td>
+                  </tr>
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">Decorator (mandap + all event decor)</td>
+                    <td className="p-4">,000-8,000</td>
+                    <td className="p-4 text-[#4d403a]">Independent vendor, not resort markup</td>
+                  </tr>
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">DJ + Photography</td>
+                    <td className="p-4">,000-6,000</td>
+                    <td className="p-4 text-[#4d403a]">Professional, Indian wedding experienced</td>
+                  </tr>
+                  <tr className="border-t border-[#e6dfd5]">
+                    <td className="p-4 font-semibold">Beauty, mehndi, priest, misc</td>
+                    <td className="p-4">,500-3,000</td>
+                    <td className="p-4 text-[#4d403a]">Varies by services selected</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-[#4d403a] text-center mt-4">
+              Total realistic range for 100-200 guests: 0,000-70,000. Less than most resort packages
+              for the same scope — and with independent vendors you choose, not resort defaults.
+            </p>
           </div>
         </div>
       </section>
@@ -534,13 +758,19 @@ export default function MexicoDestinationPage() {
       {/* CTA */}
       <section className="py-20 px-6 text-center" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-3xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
+            Your Mexico Wedding Deserves Better Than a Resort Package
+          </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Ready to plan your Mexico wedding?
+            I&apos;ve coordinated three family Indian weddings in Mexico.
+            <br />
+            <span style={{ color: "#7a6841" }}>Let me coordinate yours.</span>
           </h2>
           <p className="text-[#e8dfd2] mb-8 leading-relaxed text-lg">
-            Book a free 30-minute consultation. Tell me your vision, your dates, and your budget. I&apos;ll tell you
-            honestly what I can do — vendor access, day-of coordination, full 4-day coordination, or all of the
-            above plus outfit sourcing from India.
+            Book a free 30-minute consultation. Tell me your wedding dates, guest count, and budget.
+            I&apos;ll tell you honestly what&apos;s achievable, which resorts work for Indian weddings, and
+            which coordination tier fits your needs. If you also need outfits, we can discuss
+            sourcing from India as part of the same conversation. One team, one timeline.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

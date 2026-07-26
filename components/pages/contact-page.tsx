@@ -171,7 +171,7 @@ export function ContactPage() {
             Begin Your Journey
           </p>
           <h1
-            className="font-['Cormorant_Garamond'] text-5xl md:text-6xl font-semibold leading-tight mb-6"
+            className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-6"
             style={{ color: "var(--cv-foreground)" }}
           >
             Book Your Free Consultation

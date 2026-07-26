@@ -141,7 +141,7 @@ export default function BanarasiSareesPage() {
         >
           Each saree is Silk Mark certified. We show it to you on live video before you pay.
         </p>
-        <a
+        <Link
           href="/contact"
           style={{
             display: "inline-flex",
@@ -156,7 +156,7 @@ export default function BanarasiSareesPage() {
           }}
         >
           Book Free Consultation
-        </a>
+        </Link>
       </section>
 
       {/* ─── BANARASI VARIETIES ──────────────────────────────────────────── */}
@@ -530,6 +530,32 @@ export default function BanarasiSareesPage() {
         </div>
       </section>
 
+      {/* ─── Related outfit & ceremony pages ──────────────────────────── */}
+      <section style={{ padding: "56px 24px", background: "#faf8f5" }}>
+        <div style={{ maxWidth: "760px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "12px" }}>
+            Complete Your Bridal Trousseau
+          </p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "12px" }}>
+            Pair your Banarasi with the rest of your wedding wardrobe
+          </h2>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "28px" }}>
+            From the bridal lehenga for the main ceremony to a Kanchipuram for the reception, source
+            every saree and outfit through one trusted concierge — coordinated styling, combined
+            shipping, and a single point of contact in India.
+          </p>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+            <Link href="/kanchipuram-silk-sarees-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Silk Sarees</Link>
+            <Link href="/buy-bridal-lehenga-from-india-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
+            <Link href="/reception-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
+            <Link href="/south-indian-christian-wedding-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>South Indian Christian Wedding</Link>
+            <Link href="/gujarati-wedding-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Gujarati Wedding Outfits</Link>
+            <Link href="/how-it-works" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ────────────────────────────────────────────────────────── */}
       <section style={{ padding: "48px 24px" }}>
         <div
@@ -567,12 +593,12 @@ export default function BanarasiSareesPage() {
             varieties, motif options, and pricing — and start sourcing your authentic saree
             from Varanasi within a week.
           </p>
-          <a
+          <Link
             href="/contact"
             style={{
               display: "inline-block",
               background: "#7a6841",
-              color: "#2f2f2f",
+              color: "#fff",
               padding: "13px 30px",
               borderRadius: "999px",
               fontSize: "17px",
@@ -581,7 +607,7 @@ export default function BanarasiSareesPage() {
             }}
           >
             Book Free Consultation
-          </a>
+          </Link>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}
             <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>

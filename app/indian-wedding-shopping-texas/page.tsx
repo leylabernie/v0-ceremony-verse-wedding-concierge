@@ -94,9 +94,9 @@ export default function IndianWeddingShoppingTexasPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide", price: "$149", desc: "A curated lookbook tailored to your ceremonies, body type, and budget — with specific recommendations from India's top outfit specialists." },
-              { tier: "Guided Sourcing", price: "$599", desc: "Live video shopping sessions, direct access to artisan partners in India, measurement guidance, and managed ordering for your key outfits." },
-              { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for the entire wedding party — bride, groom, bridesmaids, groomsmen, and family. Every ceremony covered." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party — every ceremony, every outfit, every family member. Dedicated coordinator, unlimited sessions, and priority shipping." }
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -114,7 +114,7 @@ export default function IndianWeddingShoppingTexasPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
             Frequently Asked Questions for Texas NRI Brides
           </h2>
-          <div style={{ spaceY: "24px" }}>
+          <div>
             {[
               { q: "How much can I save by sourcing from India vs. Texas boutiques?", a: "Most Texas NRI brides save between 30% and 50% by using CeremonyVerse. Even after shipping and our concierge fee, the total cost for a designer-quality lehenga is significantly lower than local Houston or Dallas prices." },
               { q: "Do you serve brides in smaller Texas cities like Austin or San Antonio?", a: "Absolutely. While we focus on major hubs like Houston and Dallas, we provide door-to-door delivery and virtual shopping sessions for NRI families in Austin, San Antonio, El Paso, and across the entire state of Texas." },

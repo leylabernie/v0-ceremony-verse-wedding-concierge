@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
 import Image from "next/image"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
@@ -51,9 +52,14 @@ export default function KanchipuramSareesPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#5e4a40", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
           This is not sourced from a catalog. We go there so you don't have to.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-          Book Free Consultation
-        </a>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
+          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            Book Free Consultation
+          </Link>
+          <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
+            WhatsApp: +1 (215) 341-9990
+          </a>
+        </div>
       </section>
 
       {/* SAREE GALLERY */}
@@ -106,6 +112,23 @@ export default function KanchipuramSareesPage() {
         </div>
       </section>
 
+      {/* Related outfits */}
+      <section style={{ padding: "32px 24px 8px", background: "#fff" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
+          <p style={{ fontSize: "14px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "16px" }}>
+            Related sarees &amp; outfits
+          </p>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
+            <Link href="/banarasi-silk-sarees-usa/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Banarasi Silk Sarees</Link>
+            <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid Outfits</Link>
+            <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>South Indian Christian</Link>
+            <Link href="/reception-outfits-usa/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
+            <Link href="/how-it-works/" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 16px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto" }}>
@@ -123,6 +146,25 @@ export default function KanchipuramSareesPage() {
               <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{item.a}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section style={{ padding: "48px 24px 80px", textAlign: "center", background: "#1f1f1f" }}>
+        <div style={{ maxWidth: "600px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.9rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "14px" }}>
+            Source your Kanchipuram saree from the source
+          </h2>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
+            Hand-woven pure silk, real zari, Silk Mark certified &mdash; sourced directly from Kanchipuram weavers and delivered to your US door.
+          </p>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
+            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+              Book Free Consultation
+            </Link>
+            <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
+              WhatsApp: +1 (215) 341-9990
+            </a>
+          </div>
         </div>
       </section>
     </div>

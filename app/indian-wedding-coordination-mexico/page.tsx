@@ -47,6 +47,14 @@ const faqSchema = buildFaqSchema([
     question: "Do you handle the venue and caterer too, or just the vendors?",
     answer: "For full 4-day coordination, we handle everything — venue sourcing, caterer, decorator, makeup, hair, mehndi, priest, church, welcome bags, and on-site coordination throughout. For vendor network access only, you get the contacts and take it from there. Day-of coordination is single-event on-site. See pricing for the full breakdown.",
   },
+  {
+    question: "What does a typical 4-day Indian wedding in Mexico actually look like?",
+    answer: "Day 1 is mehndi and haldi (afternoon arrival, evening ceremonies with bright decor). Day 2 is the sangeet and garba night — the big party with our professional DJ. Day 3 is the wedding ceremony under a mandap (Hindu) and/or a church ceremony (Christian), followed by the evening reception. Day 4 is a farewell brunch and departure. Each event has its own venue space, its own decorator style, and its own vibe. We coordinate all of it — the timeline, vendor logistics, and day-of management so you don't have to.",
+  },
+  {
+    question: "How far in advance should we book Mexico coordination?",
+    answer: "For Mexico coordination, 9-12 months before your wedding date. Top resorts in Cancun and Riviera Maya book 12-18 months out for weekend dates, especially November through April. If you're also sourcing outfits from India, factor in 8-12 weeks for custom stitching. The earlier you start, the more options you have. Contact us even if your timeline is shorter — we will tell you honestly what is achievable.",
+  },
 ]);
 
 const howToSchema = buildHowToSchema({
@@ -251,16 +259,129 @@ export default function MexicoCoordinationPage() {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
             More recent Mexico wedding experience
           </h2>
-          <p className="text-[#4d403a] leading-relaxed mb-4 max-w-3xl">
-            My nephew also got married in Mexico — a 3-day Hindu wedding. More recent experience means
-            I&apos;ve stayed current with Mexico venue logistics, vendor availability, and what works for Indian
-            ceremonies in Cancun and Riviera Maya. Every family wedding sharpens the process I now offer you.
+          <div className="text-[#4d403a] leading-relaxed space-y-4 max-w-3xl">
+            <p>
+              My nephew also got married in Mexico — a 3-day Hindu wedding with 120 guests. More recent
+              experience means I&apos;ve stayed current with Mexico venue logistics, vendor availability, and what
+              works for Indian ceremonies in Cancun and Riviera Maya. Every family wedding sharpens the
+              process I now offer you.
+            </p>
+            <p>
+              For his wedding, we coordinated a Thursday mehndi and haldi, a Friday sangeet with garba, and
+              a Saturday wedding ceremony followed by a reception. The decorator I recommended handled the
+              mehndi and haldi florals — bright marigolds and tissue pom-poms — while the main ceremony got
+              a full mandap with tropical white orchids and red roses. The DJ kept the sangeet going until
+              2 AM with a mix of garba, Bollywood classics, and chart toppers that had both families dancing.
+            </p>
+            <p>
+              Three family Mexico weddings — son #1&apos;s New Jersey COVID pivot, son #2&apos;s Hard Rock Cafe
+              wedding, and my nephew&apos;s 3-day Hindu celebration. Same vetted vendors, same tested process.
+              The difference between my first wedding and my third was night and day — and that&apos;s the
+              experience curve you benefit from. Your wedding could be next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SAMPLE 4-DAY TIMELINE */}
+      <section className="py-20 px-6" style={{ background: "#fff" }}>
+        <div className="max-w-5xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            What Your 4 Days Actually Look Like
           </p>
-          <p className="text-[#4d403a] leading-relaxed max-w-3xl">
-            Three family Mexico weddings — same vetted vendors, same tested process. Son #2&apos;s Hard Rock Cafe
-            wedding, my nephew&apos;s wedding, and the New Jersey COVID pivot that started it all. Your wedding
-            could be next.
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            Sample 4-Day Indian Wedding Timeline in Mexico
+          </h2>
+          <p className="text-center text-[#4d403a] mb-12 max-w-3xl mx-auto">
+            Based on my own three family Mexico weddings, here is what a typical 4-day Indian destination
+            wedding in Cancun or Riviera Maya looks like. Your actual schedule will be customized to your
+            traditions and guest count.
           </p>
+
+          <div className="space-y-6">
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 1</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Mehndi &amp; Haldi</h3>
+                  <p className="text-sm text-[#4d403a]">Afternoon arrival + evening ceremonies</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                Guests arrive at the resort. Afternoon welcome bags are distributed to rooms. Evening mehndi
+                for the bride and close family — our vetted mehndi artist handles intricate bridal designs
+                while a second artist covers the bridal party and guests. Haldi ceremony follows with bright
+                yellow and marigold decor. The budget-friendly decorator handles this event — bright, festive,
+                and affordable so you save the decor budget for the main ceremony. Light snacks and drinks.
+                Most couples wear simple outfits: the bride in a yellow salwar set, groom in a white kurta.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 2</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Sangeet &amp; Garba Night</h3>
+                  <p className="text-sm text-[#4d403a]">The party night — this is where the DJ earns his fee</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                This is the event everyone remembers. Our vetted DJ — the same one who killed it at my son&apos;s
+                sangeet — handles the music: garba to open, Bollywood classics in the middle, and fusion
+                or Western hits to close. The dance floor should be full from 8 PM to 2 AM. Bride wears a
+                lighter lehenga or sharara set — this is the outfit that photographs well in motion. Groom
+                wears an Indo-Western suit or silk kurta set. Jhumka party favors on the tables. If you&apos;re
+                combining Hindu and Christian traditions, this is also a good night for a rehearsal dinner
+                with the Christian side of the family.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 3</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Wedding Ceremony &amp; Reception</h3>
+                  <p className="text-sm text-[#4d403a]">The main event — mandap, vows, and celebration</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                The big day. Morning starts with bridal makeup — our American HD makeup artist handles the
+                main look (holds up in Mexico heat and photographs beautifully). The Hindu ceremony takes
+                place under a mandap built by our professional decorator with tropical flowers. The priest
+                we connect you with travels to your resort and performs the full ceremony. For interfaith
+                couples, the Christian ceremony follows — either at the resort chapel or a nearby church we
+                have a relationship with. Evening reception with full catering, first dance, speeches, and
+                the DJ again. Bride wears the bridal lehenga you sourced through our India service. Groom
+                wears the sherwani. This is the day your photographer delivers the images you&apos;ll frame.
+              </p>
+            </div>
+
+            <div className="bg-[#faf8f5] p-8 rounded-2xl border border-[#e6dfd5]">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
+                  <span className="text-base font-semibold" style={{ color: "var(--cv-accent)" }}>Day 4</span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold" style={{ color: "#1f1f1f" }}>Farewell Brunch &amp; Departure</h3>
+                  <p className="text-sm text-[#4d403a]">Relaxed send-off with both families</p>
+                </div>
+              </div>
+              <p className="text-[#4d403a] leading-relaxed">
+                A relaxed farewell brunch for guests before departures. Some families add a small puja or
+                vidai ceremony in the morning. This is also when group photos from the entire wedding get
+                shared and the photographer delivers same-day sneak peeks. For interfaith families, this
+                is often the most relaxed moment of the entire weekend — both families eating breakfast
+                together after 4 days of coordinated events. We handle the final vendor wrap-up, tip
+                coordination, and any last-minute logistics so you can just enjoy the morning.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -341,6 +462,60 @@ export default function MexicoCoordinationPage() {
         </div>
       </section>
 
+      {/* COMMON MISTAKES */}
+      <section className="py-20 px-6" style={{ background: "#faf8f5" }}>
+        <div className="max-w-4xl mx-auto">
+          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
+            Mistakes We Help You Avoid
+          </p>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
+            What goes wrong at Indian destination weddings in Mexico
+          </h2>
+          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
+            I&apos;ve made these mistakes myself or seen them happen at other weddings. Here&apos;s what our coordination
+            prevents — so you don&apos;t have to learn the hard way.
+          </p>
+
+          <div className="space-y-6">
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Booking a resort that hasn&apos;t hosted Indian weddings before</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                The #1 mistake. A resort that has never done a 4-day Indian wedding won&apos;t understand why you
+                need a mandap, why the sangeet needs its own space, or why Indian catering requires a
+                different kitchen setup. We help you pick resorts that have done it before — and can connect
+                you with the right planner who has those venue relationships.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Using the resort&apos;s DJ instead of a wedding-seasoned professional</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                The resort DJ doesn&apos;t know the difference between garba and bhangra, can&apos;t mix Bollywood with
+                Western transitions, and won&apos;t read the room the way a professional wedding DJ does. At my
+                son&apos;s sangeet, our DJ had 150 people on the dance floor — including relatives who &quot;don&apos;t
+                dance.&quot; That&apos;s the difference.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Paying resort markup on every vendor</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Resort wedding packages bundle vendors — and charge 30-50% more than independent vendors.
+                Our vendor network is independent, vetted at my own son&apos;s wedding, and priced directly.
+                You choose what you want for each event without the resort markup.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl border border-[#e6dfd5]">
+              <h3 className="font-semibold text-lg mb-3" style={{ color: "#1f1f1f" }}>Not coordinating outfit delivery timelines with the wedding date</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                We see brides who order outfits from India at the last minute and get stressed about delivery.
+                When you combine our Mexico coordination with outfit sourcing, we manage both timelines
+                together — your lehenga arrives weeks before your flight to Mexico, with time for pressing
+                and any final adjustments. One team, one timeline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING TEASER */}
       <section id="pricing" className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
@@ -387,6 +562,12 @@ export default function MexicoCoordinationPage() {
           <p className="text-center text-base text-[#4d403a] mt-2">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
             <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
+          </p>
+          <p className="text-center text-base text-[#4d403a] mt-4">
+            Planning to source your Indian wedding outfits too?{" "}
+            <Link href="/services" className="underline" style={{ color: "var(--cv-accent)" }}>
+              See our outfit sourcing services from Surat &amp; Delhi
+            </Link>.
           </p>
         </div>
       </section>
@@ -445,6 +626,27 @@ export default function MexicoCoordinationPage() {
                 hair, mehndi, priest, church, welcome bags, and on-site coordination throughout. For vendor network
                 access only, you get the contacts and take it from there. Day-of coordination is single-event
                 on-site. See pricing for the full breakdown.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>What does a typical 4-day Indian wedding in Mexico actually look like?</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                Day 1 is mehndi and haldi (afternoon arrival, evening ceremonies with bright decor). Day 2 is the
+                sangeet and garba night — the big party with our professional DJ. Day 3 is the wedding ceremony
+                under a mandap (Hindu) and/or a church ceremony (Christian), followed by the evening reception.
+                Day 4 is a farewell brunch and departure. Each event has its own venue space, its own decorator
+                style, and its own vibe. We coordinate all of it — the timeline, vendor logistics, and
+                day-of management so you don&apos;t have to.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How far in advance should we book?</h3>
+              <p className="text-[#4d403a] leading-relaxed">
+                For Mexico coordination, 9-12 months before your wedding date. Top resorts in Cancun and Riviera
+                Maya book 12-18 months out for weekend dates, especially November through April. If you&apos;re also
+                sourcing outfits from India, factor in 8-12 weeks for custom stitching. The earlier you start,
+                the more options you have. That said — contact us even if your timeline is shorter. We&apos;ll tell
+                you honestly what&apos;s achievable.
               </p>
             </div>
           </div>

@@ -32,7 +32,7 @@ export default function AvoidScamsPage() {
           <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "var(--cv-accent)" }}>
             Expert Guide for NRI Brides
           </p>
-          <h1 className="font-['Cormorant_Garamond'] text-5xl font-semibold mb-6">
+          <h1 className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
             How to Avoid Scams When Buying Indian Wedding Outfits from India
           </h1>
           <p className="text-lg text-[var(--cv-muted)] max-w-2xl mx-auto">

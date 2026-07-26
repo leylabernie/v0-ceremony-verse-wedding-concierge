@@ -56,37 +56,37 @@ const steps = [
     number: "01",
     title: "Free Consultation (Always Free)",
     description:
-      "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs. No sales pressure.",
+      "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs — no sales pressure, no inflated promises. For example, if you're planning a 3-day Gujarati wedding with 8 bridesmaids and need everything in 10 weeks, we'll tell you exactly what's realistic and what trade-offs to consider. Most consultations last 30 minutes, and many brides tell us this single call gives them more clarity than weeks of online research.",
   },
   {
     number: "02",
     title: "Style Discovery",
     description:
-      "Share your inspiration — Pinterest boards, Instagram saves, photos from weddings you loved. We work with our outfit specialists and designers in India to find pieces that match your vision, your culture, and your budget.",
+      "Share your inspiration — Pinterest boards, Instagram saves, photos from weddings you loved. We work with our outfit specialists and designers in India to find pieces that match your vision, your culture, and your budget. A Punjabi bride planning a sangeet in pastel gota patti gets a different curation than a South Indian Christian bride wanting a Kanchipuram silk for the church ceremony. We don't send you a generic catalog — we curate based on your specific traditions, your body type, and what photographs well in your venue's lighting.",
   },
   {
     number: "03",
     title: "Live Video Shopping in India",
     description:
-      "This is what makes CeremonyVerse different. You join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos. No surprises.",
+      "This is what makes CeremonyVerse different. You join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos, no surprises. One bride in New Jersey saw three lehengas on video, picked a deep maroon with zardozi work, and watched us drape it on a mannequin to check the fall. After stitching, we did a final video inspection with her before shipping — she approved the exact blouse fit and dupatta placement before anything left India.",
   },
   {
     number: "04",
     title: "Custom Stitching to Your Measurements",
     description:
-      "We guide you through a detailed measurement process on a video call. Your blouse, your silhouette, your exact fit — stitched by our local tailor partner specifically for you. Not Indian standard sizing. Your measurements.",
+      "We guide you through a detailed measurement process on a video call — not a generic sizing chart. Your blouse, your silhouette, your exact fit, stitched by our local tailor partner specifically for you. This matters because Indian standard sizing doesn't map to US bodies — a 'medium' blouse in India is cut for a different frame. We've had brides who were told they couldn't find fitted blouses at US boutiques get a perfect fit through our measurement process. For sherwanis, we measure shoulder width, chest, arm length — the details that make the difference between 'fits okay' and 'looks like it was made for you.'",
   },
   {
     number: "05",
     title: "Quality Inspection Before Shipping",
     description:
-      "Before anything leaves India, we do a final inspection. We check the embroidery, the fabric, the stitching, the color — against what you approved. If anything is off, we fix it before it ships.",
+      "Before anything leaves India, we do a final inspection. We check the embroidery, the fabric, the stitching, the color — against what you approved on video. If anything is off, we fix it before it ships. My family in Surat inspects every piece personally. They've caught color mismatches, loose threads, and wrong blouse lining before the client ever saw them. This is the layer of quality control that you don't get when you order directly from an Indian website — and it's the reason our clients don't have to deal with returns.",
   },
   {
     number: "06",
     title: "Delivered to Your US Door",
     description:
-      "Your outfits are carefully packaged and shipped directly to your address in the United States. We handle the customs documentation and keep you updated throughout.",
+      "Your outfits are carefully packaged and shipped via DHL or FedEx directly to your address in the United States. We handle the customs documentation and keep you updated with tracking throughout. From our experience, delivery takes 3-5 business days once shipped. We include care instructions and a garment bag with every order. One bride in Texas received her bridal lehenga 6 weeks before her wedding and had time for a local press — she said the piece was even more beautiful in person than on the video call.",
   },
 ]
 
@@ -139,6 +139,14 @@ const faqs = [
     q: "What if something is wrong when it arrives?",
     a: "We handle it. If an outfit doesn't match what you approved — in color, fit, or quality — we work with our team in India to fix or replace it. Our quality inspection before shipping is designed to catch issues early, but if anything slips through, we make it right.",
   },
+  {
+    q: "Do you also coordinate weddings in Mexico?",
+    a: "Yes. In addition to outfit sourcing from India, we coordinate Indian destination weddings in Cancun and Riviera Maya, Mexico. I coordinated my own son's 4-day Indian wedding there and now connect couples with the same vetted vendors — planner, DJ, photographers, decorator, and beauty. Many couples combine both services: outfits sourced from India plus on-site Mexico coordination. Learn more about our Mexico wedding coordination.",
+  },
+  {
+    q: "What if I only need one or two outfits, not a full wedding party?",
+    a: "That's what our Style Guide and Vendor List tier ($249) is designed for. If you just need a bridal lehenga and a sherwani, we'll curate options based on your style preferences and connect you with the right vendors in Surat and Delhi. No need to commit to full concierge service. We also have a free guide on how to buy a bridal lehenga from India to the USA that walks you through the process.",
+  },
 ]
 
 export default function HowItWorksPage() {
@@ -189,6 +197,52 @@ export default function HowItWorksPage() {
         >
           Six clear steps. No guesswork. You see and approve everything before it ships — because your wedding outfits are too important for surprises.
         </p>
+      </section>
+
+      {/* VIDEO PROOF — Live Video Shopping */}
+      <section style={{ padding: "32px 24px 64px", background: "#fff" }}>
+        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
+          <p
+            style={{
+              fontSize: "17px",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "#7a6841",
+              marginBottom: "14px",
+              fontWeight: 500,
+              textAlign: "center",
+            }}
+          >
+            See It In Action
+          </p>
+          <h2
+            style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "1.6rem",
+              fontWeight: 600,
+              color: "#1f1f1f",
+              textAlign: "center",
+              marginBottom: "24px",
+            }}
+          >
+            What a live video shopping session looks like
+          </h2>
+          <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%", borderRadius: "14px", overflow: "hidden", background: "#1f1f1f" }}>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover" }}
+            >
+              <source src="/hero-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <p style={{ textAlign: "center", fontSize: "14px", color: "#5e4a40", marginTop: "12px" }}>
+            During your live video session, you see the exact outfit — fabric, embroidery, color — and approve before any payment beyond the deposit.
+          </p>
+        </div>
       </section>
 
       {/* Steps */}
@@ -243,6 +297,89 @@ export default function HowItWorksPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Real Outcomes */}
+      <section style={{ padding: "64px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "780px", margin: "0 auto" }}>
+          <p
+            style={{
+              fontSize: "17px",
+              letterSpacing: "0.22em",
+              textTransform: "uppercase",
+              color: "#7a6841",
+              marginBottom: "14px",
+              fontWeight: 500,
+              textAlign: "center",
+            }}
+          >
+            Real Outcomes
+          </p>
+          <h2
+            style={{
+              fontFamily: "'Cormorant Garamond', Georgia, serif",
+              fontSize: "1.8rem",
+              fontWeight: 600,
+              color: "#1f1f1f",
+              textAlign: "center",
+              marginBottom: "36px",
+            }}
+          >
+            What this process actually looks like
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "24px" }}>
+            <div style={{ textAlign: "center", padding: "24px" }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
+                40-60%
+              </div>
+              <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
+                Typical savings vs. US Indian boutiques — even after our service fee, shipping, and customs
+              </p>
+            </div>
+            <div style={{ textAlign: "center", padding: "24px" }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
+                8-12 wk
+              </div>
+              <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
+                Consultation to your door — with rush orders possible in 6 weeks for simpler pieces
+              </p>
+            </div>
+            <div style={{ textAlign: "center", padding: "24px" }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
+                100%
+              </div>
+              <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
+                Of clients see and approve their outfit on live video before any payment beyond the deposit
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mid-page CTA */}
+      <section style={{ padding: "48px 24px", textAlign: "center" }}>
+        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
+            Not sure if this process is right for you? We've helped brides from New Jersey to California
+            source their entire wedding party's outfits from India. Book a free 30-minute call and
+            we'll walk you through what it would look like for your specific wedding.
+          </p>
+          <a
+            href="/contact"
+            style={{
+              display: "inline-block",
+              background: "#7a6841",
+              color: "#fff",
+              padding: "13px 30px",
+              borderRadius: "999px",
+              fontSize: "17px",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Book Your Free 30-Minute Call
+          </a>
         </div>
       </section>
 
@@ -447,28 +584,30 @@ export default function HowItWorksPage() {
       </section>
 
       {/* CTA */}
-      <section style={{ padding: "64px 24px", textAlign: "center" }}>
-        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
+      <section style={{ padding: "64px 24px", textAlign: "center", background: "#1f1f1f" }}>
+        <div style={{ maxWidth: "620px", margin: "0 auto" }}>
           <h2
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
               fontSize: "1.8rem",
               fontWeight: 600,
-              color: "#1f1f1f",
+              color: "#f8f6f2",
               marginBottom: "14px",
             }}
           >
-            Ready to get started?
+            Your wedding outfits are too important for online shopping roulette.
           </h2>
           <p
             style={{
-                            fontSize: "17px",
+              fontSize: "17px",
               lineHeight: 1.7,
-              color: "#4d403a",
+              color: "#e8dfd2",
               marginBottom: "28px",
             }}
           >
-            Book a free consultation — no commitment, no pressure. Or message us directly on WhatsApp.
+            Book a free 30-minute consultation. We'll review your wedding vision, tell you honestly
+            what's achievable in your timeline and budget, and recommend the right service tier.
+            No commitment, no pressure — just clarity. Or message us directly on WhatsApp.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
@@ -495,7 +634,7 @@ export default function HowItWorksPage() {
                 display: "inline-flex",
                 alignItems: "center",
                 background: "transparent",
-                color: "#1f1f1f",
+                color: "#f8f6f2",
                 padding: "13px 30px",
                 borderRadius: "999px",
                 fontSize: "17px",
