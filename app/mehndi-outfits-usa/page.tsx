@@ -37,7 +37,7 @@ export default function MehndiOutfitsPage() {
           The Mehndi and Haldi ceremonies set the tone for everything that follows. We source bright, festive outfits — yellows, oranges, greens — custom stitched to your measurements and coordinated across your entire bridal party and family.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Book Free Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -112,7 +112,7 @@ export default function MehndiOutfitsPage() {
             From the bride&rsquo;s yellow lehenga to coordinated bridesmaid sets and family kurtas &mdash; we source every piece from India, custom stitched and delivered to your US door.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>

@@ -140,14 +140,14 @@ export default function ServicesPage() {
               </ul>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/pricing#sourcing"
+                  href="/pricing/#sourcing"
                   className="inline-flex items-center px-6 py-3 rounded-full text-sm font-medium"
                   style={{ background: "var(--cv-accent)", color: "#fff" }}
                 >
                   See Sourcing Pricing
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center px-6 py-3 rounded-full text-sm font-medium border"
                   style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
                 >
@@ -176,14 +176,14 @@ export default function ServicesPage() {
               </ul>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="/pricing#mexico"
+                  href="/pricing/#mexico"
                   className="inline-flex items-center px-6 py-3 rounded-full text-sm font-medium"
                   style={{ background: "var(--cv-accent)", color: "#fff" }}
                 >
                   See Mexico Pricing
                 </Link>
                 <Link
-                  href="/indian-wedding-coordination-mexico"
+                  href="/indian-wedding-coordination-mexico/"
                   className="inline-flex items-center px-6 py-3 rounded-full text-sm font-medium border"
                   style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
                 >
@@ -281,7 +281,7 @@ export default function ServicesPage() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <ServiceCard
-              href="/services/bridal-lehengas"
+              href="/services/bridal-lehengas/"
               image="/images/services-bridal-gold.webp"
               imageAlt="Champagne gold bridal lehenga with handwork"
               title="Bridal Lehengas &amp; Wedding Outfits"
@@ -289,7 +289,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/buy-sherwani-from-india-usa"
+              href="/buy-sherwani-from-india-usa/"
               image="/images/services-groom.webp"
               imageAlt="Full length ivory and gold sherwani"
               title="Groom Sherwanis &amp; Attire"
@@ -297,7 +297,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/bridesmaid-and-family-outfits-from-india"
+              href="/bridesmaid-and-family-outfits-from-india/"
               image="/images/services-bridesmaids.webp"
               imageAlt="Pastel bridesmaid lehengas on rack"
               title="Bridesmaid Outfits"
@@ -305,7 +305,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/bridesmaid-and-family-outfits-from-india"
+              href="/bridesmaid-and-family-outfits-from-india/"
               image="/images/services-groomsmen.webp"
               imageAlt="Ivory kurta sets on rack"
               badge="Popular Add-On"
@@ -314,7 +314,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/bridesmaid-and-family-outfits-from-india"
+              href="/bridesmaid-and-family-outfits-from-india/"
               image="/images/services-bridesmaids.webp"
               imageAlt="Coordinated Indian family sarees"
               title="Family Wedding Outfits"
@@ -322,7 +322,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/kanchipuram-silk-sarees-usa"
+              href="/kanchipuram-silk-sarees-usa/"
               image="/images/kanchipuram-red-silk.jpg"
               imageAlt="Pure silk Kanchipuram bridal saree in deep red with gold zari border — hallmark certified, sourced direct from weavers"
               badge="I Go Myself"
@@ -331,7 +331,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/contact"
+              href="/contact/"
               image="/images/services-pets.webp"
               imageAlt="Two dogs dressed for a wedding — shih tzu in gold sherwani and maltese in teal lehenga"
               badge="Fan Favorite"
@@ -340,7 +340,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/wedding-accessories-and-ceremony-items-from-india"
+              href="/wedding-accessories-and-ceremony-items-from-india/"
               image="/images/services-jewelry-real.webp"
               imageAlt="Authentic kundan polki bridal jewelry set with emerald green stones"
               title="Jewelry &amp; Bridal Accessories"
@@ -348,7 +348,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/wedding-accessories-and-ceremony-items-from-india"
+              href="/wedding-accessories-and-ceremony-items-from-india/"
               image="/images/services-ceremonial2.webp"
               imageAlt="Mehndi ceremony with marigolds and brass diyas"
               title="Ceremonial Items &amp; Ritual Essentials"
@@ -356,7 +356,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/wedding-accessories-and-ceremony-items-from-india"
+              href="/wedding-accessories-and-ceremony-items-from-india/"
               image="/images/services-gifts.webp"
               imageAlt="Colourful silk potli bags in emerald, navy, burgundy and lavender in a gold ballroom"
               title="Wedding Gifts &amp; Return Gifts"
@@ -364,7 +364,7 @@ export default function ServicesPage() {
             />
 
             <ServiceCard
-              href="/wedding-accessories-and-ceremony-items-from-india"
+              href="/wedding-accessories-and-ceremony-items-from-india/"
               image="/images/services-welcomebags.webp"
               imageAlt="Personalized monogram jute welcome bags"
               title="Welcome Bags &amp; Event Details"
@@ -434,7 +434,7 @@ export default function ServicesPage() {
 
           <div className="mt-10 text-center">
             <Link
-              href="/indian-wedding-coordination-mexico"
+              href="/indian-wedding-coordination-mexico/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -455,7 +455,7 @@ export default function ServicesPage() {
             sourcing, Mexico coordination, or both.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             className="inline-block px-8 py-3 bg-[#7a6841] text-white font-medium rounded-full
               hover:opacity-90 transition-opacity duration-300"
           >

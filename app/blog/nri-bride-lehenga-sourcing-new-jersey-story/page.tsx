@@ -117,10 +117,10 @@ export default function BrideStoryPage() {
             <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.8rem" }}>Start Your Story</p>
             <p style={{ color: "#f8f6f2", fontSize: "1.1rem", fontWeight: 600, marginBottom: "1rem" }}>Book a Free Consultation</p>
             <p style={{ color: "#b0a898", fontSize: "0.9rem", marginBottom: "1.5rem" }}>Every NRI bride deserves to feel the way Priya did on her wedding day. Let us help you get there.</p>
-            <Link href="/contact" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation →</Link>
+            <Link href="/contact/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation →</Link>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India. <Link href="/how-it-works" style={{ color: "#7a6841" }}>See how we work</Link> or <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>read our lehenga price guide</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>See how we work</Link> or <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>read our lehenga price guide</Link>.</p>
         </div>
       </article>
     </main>

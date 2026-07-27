@@ -287,14 +287,14 @@ export default function BlogPost() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </a>
             <Link
-              href="/indian-wedding-coordination-mexico"
+              href="/indian-wedding-coordination-mexico/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >

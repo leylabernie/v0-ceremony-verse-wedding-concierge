@@ -6,14 +6,17 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
+// All internal links use trailing slashes to match next.config.mjs `trailingSlash: true`.
+// Without this, Next.js emits a 308 redirect on every click/crawl, wasting crawl
+// budget and slowing Google's ability to discover & refresh content.
 const navItems: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Blog", href: "/blog" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Free Guides", href: "/free-guides" },
+  { label: "Services", href: "/services/" },
+  { label: "Pricing", href: "/pricing/" },
+  { label: "How It Works", href: "/how-it-works/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "FAQ", href: "/faq/" },
+  { label: "Free Guides", href: "/free-guides/" },
 ]
 
 export function Navigation() {
@@ -24,11 +27,15 @@ export function Navigation() {
     setMobileMenuOpen(false)
   }
 
+  // Normalize both sides to trailing-slash form so "/services/" matches
+  // when Next.js reports pathname as "/services" (client-side transitions
+  // sometimes arrive without the slash).
   const isActive = (href: string) => {
     if (href === "/") {
-      return pathname === "/"
+      return pathname === "/" || pathname === ""
     }
-    return pathname === href
+    const norm = (p: string) => (p.endsWith("/") ? p : p + "/")
+    return norm(pathname) === norm(href)
   }
 
   return (
@@ -75,7 +82,7 @@ export function Navigation() {
           {/* CTA Button - Far Right */}
           <div className="hidden md:block flex-shrink-0">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-block px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
@@ -116,7 +123,7 @@ export function Navigation() {
                 </Link>
               ))}
               <Link
-                href="/contact"
+                href="/contact/"
                 onClick={handleLinkClick}
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"

@@ -132,7 +132,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -547,7 +547,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -574,28 +574,28 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
-                href="/buy-bridal-lehenga-from-india-usa"
+                href="/buy-bridal-lehenga-from-india-usa/"
                 className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 Buy a Bridal Lehenga from India — Delivered to USA
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
-                href="/blog/how-much-does-bridal-lehenga-cost-india-2026"
+                href="/blog/how-much-does-bridal-lehenga-cost-india-2026/"
                 className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 How Much Does a Bridal Lehenga Cost in 2026?
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
-                href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
+                href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
                 className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 US Customs Duties on Indian Wedding Outfits
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link
-                href="/avoid-indian-wedding-shopping-scams"
+                href="/avoid-indian-wedding-shopping-scams/"
                 className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
                 Avoid Indian Wedding Shopping Scams

@@ -204,7 +204,7 @@ export default function SouthIndianChristianWeddingGuide() {
               Book a free consultation. Tell us your ceremony schedule, family structure, and budget — we&apos;ll handle the rest.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -232,11 +232,11 @@ export default function SouthIndianChristianWeddingGuide() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ color: "#7a6841" }}>South Indian Christian Outfits</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link>
+            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ color: "#7a6841" }}>South Indian Christian Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>
         </div>
       </article>

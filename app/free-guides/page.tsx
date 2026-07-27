@@ -2,7 +2,7 @@ import { FreeGuidesPage } from "./free-guides-client";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/free-guides",
+  path: "/free-guides/",
   title: "Free NRI Bride Guides — Price Guide, Checklist, Timeline, Red Flags",
   description:
     "Free downloadable guides for NRI brides and families — India sourcing price guide, complete wedding outfit checklist, NRI planning timeline, and vendor red flags guide.",

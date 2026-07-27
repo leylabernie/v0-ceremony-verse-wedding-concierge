@@ -36,7 +36,7 @@ export default function PhiladelphiaPage() {
           CeremonyVerse is headquartered in Philadelphia. We source bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram — with live video shopping and delivery to your Philadelphia door.
         </p>
         <a
-          href="/contact"
+          href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
           Book Free Consultation
@@ -147,7 +147,7 @@ export default function PhiladelphiaPage() {
             ))}
           </div>
           <p style={{ textAlign: "center", marginTop: "16px", fontSize: "14px", color: "#4d403a" }}>
-            Outfit costs, shipping, and customs are itemized separately. <a href="/pricing" style={{ color: "#7a6841", textDecoration: "underline" }}>See full pricing breakdown</a>.
+            Outfit costs, shipping, and customs are itemized separately. <a href="/pricing/" style={{ color: "#7a6841", textDecoration: "underline" }}>See full pricing breakdown</a>.
           </p>
         </div>
       </section>
@@ -201,7 +201,7 @@ export default function PhiladelphiaPage() {
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="/contact"
+              href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
               Book Free Consultation

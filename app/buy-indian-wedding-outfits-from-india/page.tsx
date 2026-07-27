@@ -149,7 +149,7 @@ export default function BuyFromIndiaPage() {
           </p>
 
           <div className="flex flex-col items-center gap-3.5">
-            <Link href="/contact" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
+            <Link href="/contact/" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" className="text-[17px] text-[var(--cv-body)] no-underline">

@@ -7,45 +7,45 @@ import Link from "next/link";
  * client-side routing pattern and is no longer imported.
  */
 const serviceLinks = [
-  { label: "Bridal Lehengas", href: "/services/bridal-lehengas" },
-  { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa" },
-  { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india" },
-  { label: "Kanchipuram Silk Sarees", href: "/kanchipuram-silk-sarees-usa" },
-  { label: "Jewelry & Accessories", href: "/services" },
-  { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india" },
+  { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
+  { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
+  { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
+  { label: "Kanchipuram Silk Sarees", href: "/kanchipuram-silk-sarees-usa/" },
+  { label: "Jewelry & Accessories", href: "/services/" },
+  { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india/" },
 ];
 
 const ceremonyLinks = [
-  { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa" },
-  { label: "Sangeet Outfits", href: "/sangeet-outfits-usa" },
-  { label: "Baraat Outfits", href: "/baraat-outfits-usa" },
-  { label: "Reception Outfits", href: "/reception-outfits-usa" },
-  { label: "South Indian Christian", href: "/south-indian-christian-wedding-outfits-usa" },
-  { label: "Gujarati Wedding Outfits", href: "/gujarati-wedding-outfits-usa" },
+  { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa/" },
+  { label: "Sangeet Outfits", href: "/sangeet-outfits-usa/" },
+  { label: "Baraat Outfits", href: "/baraat-outfits-usa/" },
+  { label: "Reception Outfits", href: "/reception-outfits-usa/" },
+  { label: "South Indian Christian", href: "/south-indian-christian-wedding-outfits-usa/" },
+  { label: "Gujarati Wedding Outfits", href: "/gujarati-wedding-outfits-usa/" },
 ];
 
 const locationLinks = [
-  { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia" },
-  { label: "Washington DC", href: "/indian-wedding-shopping-washington-dc" },
-  { label: "New York", href: "/indian-wedding-shopping-new-york" },
-  { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey" },
-  { label: "NY & NJ", href: "/indian-bridal-wear-new-york-new-jersey" },
-  { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts" },
-  { label: "Georgia", href: "/indian-wedding-shopping-georgia" },
-  { label: "Florida", href: "/indian-wedding-shopping-florida" },
-  { label: "California", href: "/indian-wedding-shopping-california" },
-  { label: "Texas", href: "/indian-wedding-shopping-texas" },
-  { label: "Illinois", href: "/indian-wedding-shopping-illinois" },
+  { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
+  { label: "Washington DC", href: "/indian-wedding-shopping-washington-dc/" },
+  { label: "New York", href: "/indian-wedding-shopping-new-york/" },
+  { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey/" },
+  { label: "NY & NJ", href: "/indian-bridal-wear-new-york-new-jersey/" },
+  { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts/" },
+  { label: "Georgia", href: "/indian-wedding-shopping-georgia/" },
+  { label: "Florida", href: "/indian-wedding-shopping-florida/" },
+  { label: "California", href: "/indian-wedding-shopping-california/" },
+  { label: "Texas", href: "/indian-wedding-shopping-texas/" },
+  { label: "Illinois", href: "/indian-wedding-shopping-illinois/" },
 ];
 
 const companyLinks = [
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
-  { label: "Free Guides", href: "/free-guides" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "How It Works", href: "/how-it-works/" },
+  { label: "Pricing", href: "/pricing/" },
+  { label: "FAQ", href: "/faq/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Free Guides", href: "/free-guides/" },
+  { label: "About", href: "/about/" },
+  { label: "Contact", href: "/contact/" },
 ];
 
 export function GlobalFooter() {
@@ -169,9 +169,9 @@ export function GlobalFooter() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "16px 24px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>
           <p style={{ fontSize: "11px", color: "#5e4a40" }}>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
           <div style={{ display: "flex", gap: "16px" }}>
-            <Link href="/privacy" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Privacy Policy</Link>
+            <Link href="/privacy/" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Privacy Policy</Link>
             <span style={{ color: "#e6dfd5" }}>·</span>
-            <Link href="/terms" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Terms of Service</Link>
+            <Link href="/terms/" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Terms of Service</Link>
           </div>
         </div>
       </div>

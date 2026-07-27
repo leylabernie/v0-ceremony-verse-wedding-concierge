@@ -100,7 +100,7 @@ export default function TermsPage() {
           <p style={{ marginTop: "1rem" }}>
             For a detailed breakdown of how US customs handles Indian wedding outfits and jewelry,
             see our{" "}
-            <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#7a6841" }}>
+            <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>
               shipping and customs duties guide
             </Link>
             . For textiles, the current US Harmonized Tariff Schedule rate is typically 5.7% to
@@ -200,7 +200,7 @@ export default function TermsPage() {
               </a>
             </li>
             <li>
-              <Link href="/contact" style={{ color: "#7a6841" }}>
+              <Link href="/contact/" style={{ color: "#7a6841" }}>
                 Book a free 30-minute consultation →
               </Link>
             </li>

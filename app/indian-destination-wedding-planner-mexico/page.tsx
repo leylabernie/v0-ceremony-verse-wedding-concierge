@@ -97,10 +97,10 @@ export default function MexicoDestinationPage() {
             Outfit sourcing from Surat &amp; Delhi as an add-on. Cancun &amp; Riviera Maya. Interfaith ceremonies welcome.
           </p>
           <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
-            <a href="/contact" className="bg-[#7a6841] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg">
+            <a href="/contact/" className="bg-[#7a6841] text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg">
               Book Free Consultation
             </a>
-            <a href="/indian-wedding-coordination-mexico" className="bg-white border-2 border-[#7a6841] text-[#1f1f1f] px-8 py-4 rounded-lg font-bold text-lg">
+            <a href="/indian-wedding-coordination-mexico/" className="bg-white border-2 border-[#7a6841] text-[#1f1f1f] px-8 py-4 rounded-lg font-bold text-lg">
               Read My Son&apos;s Wedding Story
             </a>
           </div>
@@ -148,7 +148,7 @@ export default function MexicoDestinationPage() {
 
           <div className="mt-8 text-center">
             <Link
-              href="/indian-wedding-coordination-mexico"
+              href="/indian-wedding-coordination-mexico/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#1f1f1f", color: "#fff" }}
             >
@@ -537,7 +537,7 @@ export default function MexicoDestinationPage() {
                 </li>
               </ul>
               <a
-                href="/services"
+                href="/services/"
                 className="inline-block bg-[#7a6841] text-white px-8 py-4 rounded-lg font-bold transition-transform hover:scale-105"
               >
                 Explore Outfit Sourcing
@@ -649,14 +649,14 @@ export default function MexicoDestinationPage() {
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Vendor Network Access</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$499</div>
               <p className="text-base text-[#4d403a] mb-4">Vetted contacts for planner, DJ, photographers, decorator, and beauty. You take it from there.</p>
-              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
+              <a href="/contact/" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Get Vendor List →</a>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Single Event</p>
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Day-Of Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$1,500</div>
               <p className="text-base text-[#4d403a] mb-4">On-site coordination for one event. Vendor liaison, timeline, day-of issue resolution.</p>
-              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <a href="/contact/" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
             <div className="bg-white border-2 rounded-2xl p-8 relative" style={{ borderColor: "var(--cv-accent)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
@@ -666,13 +666,13 @@ export default function MexicoDestinationPage() {
               <h3 className="text-xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Day Full Coordination</h3>
               <div className="text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $4,500</div>
               <p className="text-base text-[#4d403a] mb-4">Full multi-day event like my son&apos;s wedding. Venue, caterer, decorator, makeup, hair, mehndi, priest, church, on-site coordination.</p>
-              <a href="/contact" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
+              <a href="/contact/" className="text-base font-medium" style={{ color: "var(--cv-accent)" }}>Book Consultation →</a>
             </div>
           </div>
 
           <p className="text-center text-base text-[#4d403a] mt-8">
             Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200.{" "}
-            <Link href="/pricing" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
+            <Link href="/pricing/" className="underline" style={{ color: "var(--cv-accent)" }}>See full pricing details</Link>.
           </p>
         </div>
       </section>
@@ -774,14 +774,14 @@ export default function MexicoDestinationPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-4 rounded-full text-base font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </a>
             <a
-              href="/indian-wedding-coordination-mexico"
+              href="/indian-wedding-coordination-mexico/"
               className="inline-flex items-center px-8 py-4 rounded-full text-base font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >

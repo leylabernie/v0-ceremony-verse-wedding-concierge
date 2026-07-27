@@ -3,7 +3,7 @@ import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/pricing",
+  path: "/pricing/",
   title: "CeremonyVerse Pricing — Sourcing & Coordination",
   description:
     "Transparent pricing: Indian wedding outfit sourcing from $249, Mexico wedding coordination from $499. No hidden markups. See full breakdown.",
@@ -263,7 +263,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Recommendation on the right tier for you</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
                 style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
               >
@@ -286,7 +286,7 @@ export default function PricingPage() {
                 <li className="flex gap-2 text-[#4d403a]">✗ Pre-shipping inspection</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
                 style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
               >
@@ -312,7 +312,7 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Custom stitching to your measurements</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
                 style={{ background: "var(--cv-accent)", color: "#fff" }}
               >
@@ -340,13 +340,13 @@ export default function PricingPage() {
                   <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Dedicated sourcing manager</li>
                 </ul>
                 <p className="text-base text-[#4d403a] mt-3">
-                  For parties larger than 8 or full wedding party (15+), custom pricing applies — typically $3,999+. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
+                  For parties larger than 8 or full wedding party (15+), custom pricing applies — typically $3,999+. <Link href="/contact/" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
                 </p>
               </div>
               <div className="md:text-right">
                 <div className="text-4xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $2,499</div>
                 <a
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
                   style={{ background: "#1f1f1f", color: "#fff" }}
                 >
@@ -388,7 +388,7 @@ export default function PricingPage() {
                 <li className="flex gap-2 text-[#4d403a]">✗ On-site coordination</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
                 style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
               >
@@ -411,7 +411,7 @@ export default function PricingPage() {
                 <li className="flex gap-2 text-[#4d403a]">✗ Multi-day coordination</li>
               </ul>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
                 style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
               >
@@ -438,10 +438,10 @@ export default function PricingPage() {
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Interfaith ceremony coordination</li>
               </ul>
               <p className="text-xs text-[#4d403a] mt-3">
-                Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200. <Link href="/contact" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
+                Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200. <Link href="/contact/" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
               </p>
               <a
-                href="/contact"
+                href="/contact/"
                 className="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
                 style={{ background: "var(--cv-accent)", color: "#fff" }}
               >
@@ -464,7 +464,7 @@ export default function PricingPage() {
             what we can do.
           </p>
           <a
-            href="/contact"
+            href="/contact/"
             className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
             style={{ background: "#1f1f1f", color: "#fff" }}
           >
@@ -602,7 +602,7 @@ export default function PricingPage() {
               3-6 months, book your consultation now — even if you're still deciding.
             </p>
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "var(--cv-accent)", color: "#fff" }}
             >
@@ -692,7 +692,7 @@ export default function PricingPage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/faq" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>
+            <Link href="/faq/" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>
               See all FAQ →
             </Link>
           </div>
@@ -716,14 +716,14 @@ export default function PricingPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </a>
             <a
-              href="/how-it-works"
+              href="/how-it-works/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >

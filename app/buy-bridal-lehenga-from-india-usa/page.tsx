@@ -76,14 +76,14 @@ export default function BridalLehengaPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
               Book a Free Consultation
             </Link>
             <Link
-              href="/how-it-works"
+              href="/how-it-works/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
@@ -453,7 +453,7 @@ export default function BridalLehengaPage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/faq" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>
+            <Link href="/faq/" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>
               See all FAQ →
             </Link>
           </div>
@@ -474,14 +474,14 @@ export default function BridalLehengaPage() {
             every look through a single India sourcing partner and save on combined shipping.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link href="/buy-sherwani-from-india-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Groom Sherwanis</Link>
-            <Link href="/bridesmaid-and-family-outfits-from-india" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
-            <Link href="/banarasi-silk-sarees-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Banarasi Silk Sarees</Link>
-            <Link href="/kanchipuram-silk-sarees-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Silk Sarees</Link>
-            <Link href="/mehndi-outfits-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Mehndi Outfits</Link>
-            <Link href="/sangeet-outfits-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Sangeet Outfits</Link>
-            <Link href="/reception-outfits-usa" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
-            <Link href="/how-it-works" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
+            <Link href="/buy-sherwani-from-india-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Groom Sherwanis</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
+            <Link href="/banarasi-silk-sarees-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Banarasi Silk Sarees</Link>
+            <Link href="/kanchipuram-silk-sarees-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Silk Sarees</Link>
+            <Link href="/mehndi-outfits-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Mehndi Outfits</Link>
+            <Link href="/sangeet-outfits-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Sangeet Outfits</Link>
+            <Link href="/reception-outfits-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
+            <Link href="/how-it-works/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
         </div>
       </section>
@@ -505,7 +505,7 @@ export default function BridalLehengaPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >

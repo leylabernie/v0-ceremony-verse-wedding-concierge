@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
-import { JsonLd, buildLocalBusinessSchema, buildGlobalFaqSchema } from "@/lib/seo";
+import { JsonLd, buildLocalBusinessSchema } from "@/lib/seo";
 
 // Build-time font loading via next/font — eliminates the render-blocking
 // Google Fonts @import that was in globals.css. Fonts are downloaded at
@@ -38,6 +38,19 @@ export const metadata = {
   },
   description:
     "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+  // Default robots: index + follow with generous snippet/image previews.
+  // Pages that need noindex (thank-you, not-found, internal-resources) override this.
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
   keywords: [
     "how to buy lehenga from India online without getting scammed",
     "Indian wedding outfit checklist for NRI families USA",
@@ -96,7 +109,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const localBusinessSchema = buildLocalBusinessSchema();
-  const globalFaqSchema = buildGlobalFaqSchema();
 
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
@@ -162,9 +174,13 @@ export default function RootLayout({
           }}
         />
 
-        {/* Global meta tags. Page-specific OG/Twitter tags are emitted via
-            Next.js metadata API from each page's `metadata` export. */}
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        {/* Global meta tags. Page-specific OG/Twitter/robots/canonical tags are
+            emitted via Next.js metadata API from each page's `metadata` export.
+            NOTE: We no longer hardcode <meta name="robots"> here. Next.js emits
+            robots from metadata defaults/overrides, and a hardcoded tag here
+            COMBINED with Next.js's emitted tag produces DUPLICATE robots meta
+            tags on pages that set noindex (404, thank-you) — which caused
+            conflicting "index,follow" + "noindex,nofollow" directives. */}
         <meta name="author" content="CeremonyVerse" />
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="United States" />
@@ -191,7 +207,18 @@ export default function RootLayout({
           which only injected them client-side after hydration.
         */}
         <JsonLd id="schema-localbusiness" data={localBusinessSchema} />
-        <JsonLd id="schema-faq-global" data={globalFaqSchema} />
+        {/*
+          NOTE: The global FAQPage schema was REMOVED (2026-07-27).
+          Google's structured-data policy requires FAQ schema to reference
+          FAQs that are VISIBLE on THAT specific page. The global FAQ list
+          was being injected into every page (including 404s, thank-you,
+          internal-resources, and all blog posts), but those FAQs are only
+          visibly present on /faq/ and a subset on the homepage. This is
+          the same class of spam violation that the review-schema removal
+          (commit 93c917b) addressed. Each page that wants FAQ schema must
+          now include it directly via buildFaqSchema() with content that
+          matches its own visible HTML.
+        */}
       </head>
       <body>
         {/* Urgency announcement bar — fixed at very top */}

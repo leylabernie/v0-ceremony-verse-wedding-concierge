@@ -4,7 +4,7 @@ import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/about",
+  path: "/about/",
   title: "About CeremonyVerse — Bhamini's Story",
   description: "Surat fabric family. Coordinated my sons' 4-day weddings — one interfaith in NJ, one at Hard Rock Mexico. Now I help your family.",
   keywords: "CeremonyVerse founder, Bhamini CeremonyVerse, Surat fabric trade family, Mexico wedding coordinator, interfaith wedding planner, NRI wedding concierge, Indian wedding outfit sourcing",
@@ -360,14 +360,14 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#1f1f1f", color: "#fff" }}
             >
               Book Free Consultation
             </Link>
             <Link
-              href="/faq"
+              href="/faq/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
             >

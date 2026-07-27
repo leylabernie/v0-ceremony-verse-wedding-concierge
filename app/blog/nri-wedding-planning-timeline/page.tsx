@@ -84,7 +84,7 @@ export default function NriWeddingPlanningTimeline() {
             At this stage, you don&apos;t need to have chosen anything. But you do need to start.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li>Book a free consultation with a <Link href="/contact" style={{ color: "#7a6841" }}>concierge or sourcing expert</Link> (like CeremonyVerse) to map out your ceremony schedule, number of outfits needed, and realistic budget</li>
+            <li>Book a free consultation with a <Link href="/contact/" style={{ color: "#7a6841" }}>concierge or sourcing expert</Link> (like CeremonyVerse) to map out your ceremony schedule, number of outfits needed, and realistic budget</li>
             <li>List every ceremony — sangeet, mehendi, church or mandap ceremony, reception, post-wedding events — and assign a rough outfit to each one</li>
             <li>Identify which family members need outfits sourced from India: both mothers, bridesmaids, groomsmen, flower girls, and any aunties who are part of the formal party</li>
             <li>Set a total outfit budget and rough allocation by category</li>
@@ -210,7 +210,7 @@ export default function NriWeddingPlanningTimeline() {
             It happens. Life is busy. Engagements run long. Planning got delayed.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            If you are within 6 months of your wedding and haven&apos;t started sourcing, here is the honest truth: you can still do this, but you need to move quickly, prioritize ruthlessly, and rely on <Link href="/services" style={{ color: "#7a6841" }}>experts who have done this before</Link>.
+            If you are within 6 months of your wedding and haven&apos;t started sourcing, here is the honest truth: you can still do this, but you need to move quickly, prioritize ruthlessly, and rely on <Link href="/services/" style={{ color: "#7a6841" }}>experts who have done this before</Link>.
           </p>
           <ol style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Bridal lehenga first</strong> — call your concierge today, not next week</li>
@@ -219,7 +219,7 @@ export default function NriWeddingPlanningTimeline() {
             <li><strong>Build in extra budget</strong> for expedited shipping and potential duty fees</li>
           </ol>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>For US tariffs and customs:</strong> As of 2025–2026, imported Indian garments may be subject to import duties depending on the tariff category and declared value. Factor in customs clearance time of at least 5–10 business days for each shipment. Working with a <Link href="/how-it-works" style={{ color: "#7a6841" }}>concierge who has established relationships</Link> with Indian outfit specialists and reliable international shipping partners significantly reduces this risk.
+            <strong>For US tariffs and customs:</strong> As of 2025–2026, imported Indian garments may be subject to import duties depending on the tariff category and declared value. Factor in customs clearance time of at least 5–10 business days for each shipment. Working with a <Link href="/how-it-works/" style={{ color: "#7a6841" }}>concierge who has established relationships</Link> with Indian outfit specialists and reliable international shipping partners significantly reduces this risk.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -241,7 +241,7 @@ export default function NriWeddingPlanningTimeline() {
               Book a free consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -270,7 +270,7 @@ export default function NriWeddingPlanningTimeline() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
 
@@ -286,14 +286,14 @@ export default function NriWeddingPlanningTimeline() {
               In 30 minutes, we&apos;ll review your wedding date, ceremony list, and budget — and tell you exactly when each outfit needs to be ordered to arrive on time. No commitment, no pressure.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/contact" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation</Link>
-              <Link href="/services" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>See Services</Link>
-              <Link href="/pricing" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation</Link>
+              <Link href="/services/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>See Services</Link>
+              <Link href="/pricing/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
             </div>
           </div>
 
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
+            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>
       </article>

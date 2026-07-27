@@ -15,8 +15,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Pages sorted by priority — highest value pages first
   const pages: SitemapEntry[] = [
     // ─── HIGHEST PRIORITY: Commercial pages ───
+    // Root URL: Next.js canonical is "/" which resolves to https://www.ceremonyverse.com/
+    // Use the trailing-slash form consistently to match the canonicals emitted
+    // by buildMetadata() and to avoid two equivalent sitemap URLs.
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 1,

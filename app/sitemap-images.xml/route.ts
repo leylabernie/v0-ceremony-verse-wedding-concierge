@@ -20,7 +20,6 @@ const entries: ImageEntry[] = [
     url: `${baseUrl}/`,
     images: [
       '/images/hero-lehenga.webp',
-      '/images/hero-lehenga.webp',
       '/images/live-video-shopping-india.webp',
       '/images/services-hero.webp',
       '/images/testimonial-karan-sonal.webp',
@@ -37,7 +36,7 @@ const entries: ImageEntry[] = [
   },
   {
     url: `${baseUrl}/buy-bridal-lehenga-from-india-usa/`,
-    images: ['/images/hero-lehenga.webp', '/images/hero-lehenga.webp'],
+    images: ['/images/hero-lehenga.webp'],
   },
   {
     url: `${baseUrl}/how-it-works/`,

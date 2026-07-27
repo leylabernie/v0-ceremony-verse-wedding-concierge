@@ -2,7 +2,7 @@ import { PartnerWithUsPage } from "./partner-with-us-client";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/partner-with-us",
+  path: "/partner-with-us/",
   title: "Partner with CeremonyVerse — For India Vendors & Wedding Planners",
   description:
     "Become a verified CeremonyVerse sourcing partner. We work with skilled artisan workshops, designers, tailors, and fabric specialists across India, plus US-based wedding planners.",

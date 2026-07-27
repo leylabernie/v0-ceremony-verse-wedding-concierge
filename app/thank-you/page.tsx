@@ -2,7 +2,7 @@ import { ThankYouPage } from "./thank-you-client";
 import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/thank-you",
+  path: "/thank-you/",
   title: "Thank You — CeremonyVerse Consultation Request Received",
   description:
     "Thank you for reaching out to CeremonyVerse. We will respond within 24 hours to schedule your free consultation.",

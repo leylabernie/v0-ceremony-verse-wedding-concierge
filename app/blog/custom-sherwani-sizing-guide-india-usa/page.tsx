@@ -144,7 +144,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             guarantee a perfect custom fit from abroad. For a broader look at
             the full groom outfit checklist, see our{" "}
             <Link
-              href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+              href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
               style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
@@ -528,7 +528,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/buy-sherwani-from-india-usa"
+                  href="/buy-sherwani-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   Buy a Sherwani from India — Delivered to Your US Door
@@ -536,7 +536,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-sherwani-from-india-usa"
+                  href="/blog/how-to-buy-sherwani-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to Buy a Sherwani from India — complete guide with prices
@@ -544,7 +544,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+                  href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
                   style={{ color: "#7a6841" }}
                 >
                   Groom outfit checklist for every ceremony
@@ -552,7 +552,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               </li>
               <li>
                 <Link
-                  href="/blog/indian-wedding-outfit-scams-nri-brides"
+                  href="/blog/indian-wedding-outfit-scams-nri-brides/"
                   style={{ color: "#7a6841" }}
                 >
                   Red flags to avoid when buying Indian wedding outfits online
@@ -597,7 +597,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               breakdown.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-block",
                 background: "#7a6841",
@@ -642,7 +642,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             India&apos;s premium menswear designers for NRI grooms in the USA.
             Every sherwani goes through a live Masterji measurement call and a
             pre-shipment fitting on a custom mannequin before it ships.{" "}
-            <Link href="/contact" style={{ color: "#7a6841" }}>
+            <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding outfit.

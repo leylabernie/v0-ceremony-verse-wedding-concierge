@@ -186,7 +186,7 @@ export default function BlogIndexPage() {
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link
-                href="/contact"
+                href="/contact/"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -236,7 +236,7 @@ export default function BlogIndexPage() {
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
@@ -252,7 +252,7 @@ export default function BlogIndexPage() {
               Get Started →
             </Link>
             <Link
-              href="/how-it-works"
+              href="/how-it-works/"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

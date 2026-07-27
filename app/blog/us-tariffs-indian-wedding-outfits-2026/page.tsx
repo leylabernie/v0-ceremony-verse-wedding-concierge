@@ -128,7 +128,7 @@ export default function TariffsBlogPost() {
             How CeremonyVerse Handles This For You
           </h2>
           <p>
-            This is exactly the kind of complexity that makes working with a dedicated <Link href="/services" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
+            This is exactly the kind of complexity that makes working with a dedicated <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Sourcing with documentation in mind.</strong> CeremonyVerse works directly with artisan partners who provide accurate invoicing, fabric composition breakdowns, and proper customs documentation. Correct HTS classification can make a meaningful difference in the duty rate assessed.</li>
@@ -154,7 +154,7 @@ export default function TariffsBlogPost() {
             The tariff landscape for buying Indian wedding outfits for US-based weddings has been genuinely stressful for NRI brides. The good news is that the worst of the 50% rates are behind us, and there is a clear path to getting your dream outfit to your doorstep without a panic-inducing customs bill.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            The key is working with people who have done this before — who know the documentation, the carriers, the HTS codes, and the customs expectations. See <Link href="/how-it-works" style={{ color: "#7a6841" }}>how our process works</Link> or read our <Link href="/faq" style={{ color: "#7a6841" }}>frequently asked questions</Link> about shipping, duties, and timelines.
+            The key is working with people who have done this before — who know the documentation, the carriers, the HTS codes, and the customs expectations. See <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how our process works</Link> or read our <Link href="/faq/" style={{ color: "#7a6841" }}>frequently asked questions</Link> about shipping, duties, and timelines.
           </p>
 
           {/* CTA Box */}
@@ -166,7 +166,7 @@ export default function TariffsBlogPost() {
               Book a free 30-minute consultation. Bring your budget, inspiration photos, and timeline — we will handle the rest.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -192,11 +192,11 @@ export default function TariffsBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides" style={{ color: "#7a6841" }}>Free Guides</Link>
+            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>
       </article>

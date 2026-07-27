@@ -37,7 +37,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           Attending an Indian wedding in the US and need the perfect outfit? We source lehengas, sarees, anarkalis, sharara sets, and sherwanis directly from India — live video shopping, custom stitched to your measurements, and delivered to your door.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Book Free Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -199,7 +199,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Get the same outfit you&rsquo;d want in India, custom stitched to your measurements and delivered to your US door &mdash; without the boutique markup.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>

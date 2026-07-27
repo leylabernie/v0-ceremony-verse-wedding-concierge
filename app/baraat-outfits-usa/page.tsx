@@ -37,7 +37,7 @@ export default function BaraatOutfitsPage() {
           The Baraat is the groom's moment. A full-length sherwani, coordinated groomsmen, family dressed to celebrate — we source every piece directly from India, custom stitched to every measurement, and delivered to your US door.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Book Free Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -112,7 +112,7 @@ export default function BaraatOutfitsPage() {
             Custom sherwanis, coordinated groomsmen, safas and sehra &mdash; sourced from India, custom stitched for every measurement, and delivered to your US door.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>

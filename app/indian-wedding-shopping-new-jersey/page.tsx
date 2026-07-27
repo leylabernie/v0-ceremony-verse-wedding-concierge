@@ -23,8 +23,8 @@ const localSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "CeremonyVerse - NJ Wedding Shopping",
-  "image": "https://www.ceremonyverse.com/og-image.jpg",
-  "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey",
+  "image": "https://www.ceremonyverse.com/images/hero-lehenga.webp",
+  "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-jersey/",
   "telephone": "+1 (215) 341-9990",
   "areaServed": {
     "@type": "State",
@@ -57,7 +57,7 @@ export default function NewJerseyPage() {
         <div className="relative bg-stone-900 text-white py-24">
           <div className="absolute inset-0 overflow-hidden">
             <Image
-              src="/hero-nj.jpg" 
+              src="/images/hero-lehenga.webp" 
               alt="Indian wedding shopping in New Jersey"
               fill
               className="object-cover opacity-40"
@@ -72,7 +72,7 @@ export default function NewJerseyPage() {
               Skip the high markups in Edison. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NJ.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
             >
               Book Your Consultation
@@ -109,7 +109,7 @@ export default function NewJerseyPage() {
             
             <div className="mt-12 text-center">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
               >
                 Start Your Shopping Journey

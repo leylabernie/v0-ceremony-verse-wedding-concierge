@@ -144,7 +144,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             Polki online, and how to safely source authentic bridal sets
             directly from India. For the broader trousseau picture, see our{" "}
             <Link
-              href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+              href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
               style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
@@ -264,7 +264,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             vanki) in 22K gold can cost $5,000–$25,000 depending on weight. If
             you are wearing a{" "}
             <Link
-              href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa"
+              href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"
               style={{ color: "#7a6841" }}
             >
               Kanchipuram silk saree
@@ -381,7 +381,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             entirely in favor of a sleeker, editorial look. This ceremony-by-
             ceremony approach is exactly what we walk through in our{" "}
             <Link
-              href="/blog/when-to-order-indian-wedding-outfits-nri-bride"
+              href="/blog/when-to-order-indian-wedding-outfits-nri-bride/"
               style={{ color: "#7a6841" }}
             >
               NRI wedding timeline guide
@@ -621,7 +621,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               video, the piece is not what they claim. For our deeper guide
               on Indian wedding shopping scams, see our{" "}
               <Link
-                href="/blog/indian-wedding-outfit-scams-nri-brides"
+                href="/blog/indian-wedding-outfit-scams-nri-brides/"
                 style={{ color: "#7a6841" }}
               >
                 10 red flags every NRI bride must avoid
@@ -741,7 +741,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             difference is almost always 2.5× to 3×. For more on how the
             logistics work end-to-end, see our{" "}
             <Link
-              href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
+              href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
               style={{ color: "#7a6841" }}
             >
               guide to shipping Indian wedding outfits and jewelry to the USA
@@ -861,7 +861,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               color, and necklace length to the specific zari work and
               neckline of your outfit. If your{" "}
               <Link
-                href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
+                href="/blog/how-to-buy-bridal-lehenga-from-india-usa/"
                 style={{ color: "#7a6841" }}
               >
                 bridal lehenga
@@ -938,7 +938,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
+                  href="/blog/how-to-buy-bridal-lehenga-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to buy a bridal lehenga from India when you live in the
@@ -947,7 +947,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/indian-wedding-outfit-scams-nri-brides"
+                  href="/blog/indian-wedding-outfit-scams-nri-brides/"
                   style={{ color: "#7a6841" }}
                 >
                   10 red flags every NRI bride must avoid when buying from
@@ -956,7 +956,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
+                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
                   style={{ color: "#7a6841" }}
                 >
                   Shipping Indian wedding outfits and jewelry to the USA —
@@ -965,7 +965,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa"
+                  href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to buy authentic Kanchipuram silk sarees online
@@ -1017,7 +1017,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               video, before you commit a dollar.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-block",
                 background: "#7a6841",
@@ -1064,7 +1064,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             India&apos;s heritage artisans for NRI brides in the USA. Every
             solid-gold piece is BIS Hallmark-verified and physically inspected
             before shipping.{" "}
-            <Link href="/contact" style={{ color: "#7a6841" }}>
+            <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding jewelry and full trousseau.

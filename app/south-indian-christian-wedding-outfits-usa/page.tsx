@@ -38,7 +38,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           South Indian Christian weddings carry a distinctive elegance — blending church traditions with the rich textile heritage of Kerala and Tamil Nadu. CeremonyVerse understands exactly what each ceremony calls for, from the church procession saree to the reception outfit, and sources everything directly from India.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Book Free Consultation
           </Link>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -141,7 +141,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
             Kerala kasavu, Tamil Kanchipuram, church ceremony sarees, and reception looks &mdash; sourced directly from India for your South Indian Christian wedding.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>

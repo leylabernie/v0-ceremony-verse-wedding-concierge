@@ -130,7 +130,7 @@ export default function ReceptionOutfitsPage() {
           Indian heritage. Custom stitched to your measurements and delivered to your US door.
         </p>
         <a
-          href="/contact"
+          href="/contact/"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -479,7 +479,7 @@ export default function ReceptionOutfitsPage() {
             week.
           </p>
           <a
-            href="/contact"
+            href="/contact/"
             style={{
               display: "inline-block",
               background: "#7a6841",

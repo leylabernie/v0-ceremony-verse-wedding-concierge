@@ -175,12 +175,12 @@ export function HomePage() {
             {/* CTAs */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
               <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
-        href="/contact"
+        href="/contact/"
       >
                 Book Free Consultation
               </Link>
               <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
-        href="/how-it-works"
+        href="/how-it-works/"
       >
                 How It Works
               </Link>
@@ -330,7 +330,7 @@ export function HomePage() {
         </div>
 
         <Link className="mt-8 inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
-        href="/how-it-works"
+        href="/how-it-works/"
       >
           See Full Process →
         </Link>
@@ -356,7 +356,7 @@ export function HomePage() {
             ))}
           </div>
           <Link className="btn-primary"
-        href="/services"
+        href="/services/"
       >
             See All Services
           </Link>
@@ -407,7 +407,7 @@ export function HomePage() {
               Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
             </p>
             <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-        href="/contact"
+        href="/contact/"
       >
               Book Free Consultation →
             </Link>
@@ -450,7 +450,7 @@ export function HomePage() {
                       ? "bg-[#7a6841] text-white hover:opacity-90"
                       : "border border-[#1f1f1f] text-[#1f1f1f] hover:bg-[#1f1f1f] hover:text-white"
                   }`}
-        href="/contact"
+        href="/contact/"
       >
                   {tier.cta}
                 </Link>
@@ -696,7 +696,7 @@ export function HomePage() {
               </div>
               <Link className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
                 style={{ background: "#7a6841", color: "#fff" }}
-        href="/contact"
+        href="/contact/"
       >
                 Book a Free Consultation
               </Link>
@@ -793,7 +793,7 @@ export function HomePage() {
               Read all reviews on Trustpilot
             </a>
             <a
-              href="/about"
+              href="/about/"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition border"
               style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
             >
@@ -888,7 +888,7 @@ export function HomePage() {
           <div className="text-center mt-10">
             <Link className="text-sm font-medium transition hover:opacity-70"
               style={{ color: "var(--cv-accent)" }}
-        href="/faq"
+        href="/faq/"
       >
               See all FAQ →
             </Link>
@@ -911,7 +911,7 @@ export function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-        href="/contact"
+        href="/contact/"
       >
               Book Free Consultation
             </Link>

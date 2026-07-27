@@ -45,7 +45,7 @@ export default function OutfitChecklistPage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>Planning an Indian wedding in the US means coordinating outfits for 8-15+ people across 5-7 different events. Most NRI families we work with forget at least 3-4 outfits until the week before — leading to panic shopping at overpriced US boutiques. This checklist prevents that. Use it alongside our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link> to keep your group orders on track. For ceremony-specific outfit guidance, see our dedicated pages on <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link>, <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>, and <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>.</p>
+          <p>Planning an Indian wedding in the US means coordinating outfits for 8-15+ people across 5-7 different events. Most NRI families we work with forget at least 3-4 outfits until the week before — leading to panic shopping at overpriced US boutiques. This checklist prevents that. Use it alongside our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link> to keep your group orders on track. For ceremony-specific outfit guidance, see our dedicated pages on <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link>, <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>, and <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What the Bride Needs: 6 Outfits Across All Ceremonies</h2>
 
@@ -62,7 +62,7 @@ export default function OutfitChecklistPage() {
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Jewelry needed:</strong> Bridal set (necklace, earrings, maang tikka, bangles), matching jewelry for each secondary outfit, henna-appropriate rings and bracelets. Curious about costs? See <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>how much bridal lehengas cost from India</Link>.</p>
+          <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Jewelry needed:</strong> Bridal set (necklace, earrings, maang tikka, bangles), matching jewelry for each secondary outfit, henna-appropriate rings and bracelets. Curious about costs? See <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>how much bridal lehengas cost from India</Link>.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What the Groom Needs: 6 Outfits from Mehndi to Reception</h2>
 
@@ -100,7 +100,7 @@ export default function OutfitChecklistPage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Bridesmaids & Groomsmen</h2>
 
-          <p><strong>Bridesmaids (4-8 people):</strong> Matching lehengas or anarkalis in a coordinated palette. Budget ₹8,000-₹15,000 ($95-$175) per outfit from India vs. $300-$600+ in the US. Order all from the same workshop to guarantee color consistency. Read our full guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link>.</p>
+          <p><strong>Bridesmaids (4-8 people):</strong> Matching lehengas or anarkalis in a coordinated palette. Budget ₹8,000-₹15,000 ($95-$175) per outfit from India vs. $300-$600+ in the US. Order all from the same workshop to guarantee color consistency. Read our full guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link>.</p>
           <p style={{ marginTop: "1rem" }}><strong>Groomsmen (4-8 people):</strong> Matching kurtas with coordinating vests/jackets. Budget ₹3,500-₹7,000 ($40-$80) per outfit from India vs. $150-$300+ in the US. Ivory/cream kurtas with colored vests are the most popular combination.</p>
 
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
@@ -132,7 +132,7 @@ export default function OutfitChecklistPage() {
           <p><strong>At US boutique prices ($300-$600 per outfit):</strong> $12,600-$30,600<br/><strong>Sourcing from India ($80-$250 per outfit):</strong> $3,360-$12,750<br/><strong>Potential savings:</strong> $9,000-$17,000+</p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            The numbers speak for themselves. Most NRI families save $9,000-$17,000 by sourcing from India — even after paying for customs duties and shipping. The key is planning early so everything arrives with time to spare. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>NRI wedding timeline guide</Link> to stay on schedule.
+            The numbers speak for themselves. Most NRI families save $9,000-$17,000 by sourcing from India — even after paying for customs duties and shipping. The key is planning early so everything arrives with time to spare. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>NRI wedding timeline guide</Link> to stay on schedule.
           </p>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
@@ -142,17 +142,17 @@ export default function OutfitChecklistPage() {
             </p>
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>
+                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>
                   How much bridal lehengas cost from India with shipping
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa" style={{ color: "#7a6841" }}>
+                <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>
                   How to order bridesmaid lehengas from India for a US wedding
                 </Link>
               </li>
               <li>
-                <Link href="/services" style={{ color: "#7a6841" }}>
+                <Link href="/services/" style={{ color: "#7a6841" }}>
                   Wedding outfit sourcing for NRI families — how CeremonyVerse works
                 </Link>
               </li>
@@ -170,15 +170,15 @@ export default function OutfitChecklistPage() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
               <strong>Download the printable version of this checklist</strong> — formatted for sharing with your entire family, with a built-in budget tracker that tallies costs as you check items off. Enter your email and get the PDF instantly.
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+            <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Printable Checklist + Budget Tracker →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Overwhelmed by the outfit count? <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build a realistic budget and timeline for your full family&apos;s wedding wardrobe — most families save $9,000-$17,000 compared to buying everything in the US.
+              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build a realistic budget and timeline for your full family&apos;s wedding wardrobe — most families save $9,000-$17,000 compared to buying everything in the US.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
       </article>
     </main>

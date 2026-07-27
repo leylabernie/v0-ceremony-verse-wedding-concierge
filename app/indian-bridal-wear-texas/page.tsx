@@ -140,7 +140,7 @@ export default function IndianBridalWearTexasPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -366,7 +366,7 @@ export default function IndianBridalWearTexasPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -393,28 +393,28 @@ export default function IndianBridalWearTexasPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
-                href="/indian-wedding-shopping-texas"
+                href="/indian-wedding-shopping-texas/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Texas Indian Wedding Shopping
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/blog/indian-wedding-return-gifts-bulk-usa"
+                href="/blog/indian-wedding-return-gifts-bulk-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Bulk Wedding Return Gifts Guide
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa"
+                href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Coordinating Bridesmaid Lehengas
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/how-to-buy-bridal-lehenga-from-india-to-usa"
+                href="/how-to-buy-bridal-lehenga-from-india-to-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 How to Buy a Bridal Lehenga from India

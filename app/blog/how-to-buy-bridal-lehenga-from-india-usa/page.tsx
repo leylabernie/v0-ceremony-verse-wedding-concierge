@@ -105,7 +105,7 @@ export default function LehengaBuyingGuideBlogPost() {
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            A US-based <Link href="/services" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> like CeremonyVerse offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions. See our <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works" style={{ color: "#7a6841" }}>how the process works</Link>.
+            A US-based <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> like CeremonyVerse offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -216,7 +216,7 @@ export default function LehengaBuyingGuideBlogPost() {
               CeremonyVerse is a US-based Indian wedding shopping concierge that specializes in exactly this: sourcing bridal lehengas, family outfits, and trousseau pieces from India for NRI brides and families across the United States. We do live video shopping, handle the logistics, and stay with you through every step.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
               Book Free Consultation
@@ -240,7 +240,7 @@ export default function LehengaBuyingGuideBlogPost() {
 
         {/* Back to blog */}
         <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
+          <Link href="/blog/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
             ← Back to Blog
           </Link>
 
@@ -256,14 +256,14 @@ export default function LehengaBuyingGuideBlogPost() {
               Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-bridal-lehenga-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
-              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
-              <Link href="/pricing" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
+              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/pricing/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
             </div>
           </div>
 
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq" style={{ color: "#7a6841" }}>FAQ</Link>
+            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>
         </div>
       </article>

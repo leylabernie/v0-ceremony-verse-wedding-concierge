@@ -4,7 +4,7 @@ import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBreadcrumb, JsonLd, VISIBLE_TESTIMONIALS } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  path: "/real-weddings",
+  path: "/real-weddings/",
   title: "Real Weddings — NRI Brides & Grooms We've Dressed",
   description:
     "See real Indian weddings we've helped coordinate — from 4-day interfaith celebrations in New Jersey to destination weddings in Mexico. Outfits sourced direct from Surat and Delhi, coordinated by Bhamini.",
@@ -549,14 +549,14 @@ export default function RealWeddingsPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
               Book Free Consultation
             </Link>
             <Link
-              href="/services"
+              href="/services/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >

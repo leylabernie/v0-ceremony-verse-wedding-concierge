@@ -142,7 +142,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             from the weavers of India. For a deeper look at how the full bridal
             trousseau fits together, see our{" "}
             <Link
-              href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+              href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
               style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
@@ -537,7 +537,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/kanchipuram-silk-sarees-usa"
+                  href="/kanchipuram-silk-sarees-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   Kanchipuram Silk Sarees USA — our dedicated service page
@@ -545,7 +545,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-bridal-lehenga-from-india-usa"
+                  href="/blog/how-to-buy-bridal-lehenga-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to buy a bridal lehenga from India when you live in the
@@ -554,7 +554,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/indian-wedding-outfit-scams-nri-brides"
+                  href="/blog/indian-wedding-outfit-scams-nri-brides/"
                   style={{ color: "#7a6841" }}
                 >
                   10 red flags every NRI bride must avoid when buying from
@@ -563,7 +563,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               </li>
               <li>
                 <Link
-                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
+                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
                   style={{ color: "#7a6841" }}
                 >
                   US customs duties on Indian silk sarees — full breakdown
@@ -607,7 +607,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               silk — live, on video, before you commit a dollar.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-block",
                 background: "#7a6841",
@@ -652,7 +652,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             wedding attire directly from India&apos;s heritage weavers for NRI
             brides in the USA. Every saree is verified with the Silk Mark India
             holographic tag and physically inspected before shipping.{" "}
-            <Link href="/contact" style={{ color: "#7a6841" }}>
+            <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding trousseau.

@@ -73,7 +73,7 @@ export default function ShopFromIndiaPage() {
 
           <div className="mt-8">
             <a
-              href="/contact"
+              href="/contact/"
               className="bg-[var(--cv-accent)] text-white px-6 py-3 rounded-lg font-semibold"
             >
               Book a Video Consultation

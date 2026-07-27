@@ -141,7 +141,7 @@ export default function IndianBridalWearCaliforniaPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -367,7 +367,7 @@ export default function IndianBridalWearCaliforniaPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact/"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -394,28 +394,28 @@ export default function IndianBridalWearCaliforniaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
-                href="/indian-wedding-shopping-california"
+                href="/indian-wedding-shopping-california/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 California Indian Wedding Shopping
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa"
+                href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Kanchipuram Silk Sarees Guide
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/blog/custom-sherwani-sizing-guide-india-usa"
+                href="/blog/custom-sherwani-sizing-guide-india-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 Custom Sherwani Sizing Guide
               </Link>
               <span style={{ color: "#6a6a6a" }}>·</span>
               <Link
-                href="/how-to-buy-bridal-lehenga-from-india-to-usa"
+                href="/how-to-buy-bridal-lehenga-from-india-to-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
               >
                 How to Buy a Bridal Lehenga from India

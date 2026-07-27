@@ -52,7 +52,7 @@ export default function ScamsGuidePage() {
           <p>NRI brides face a unique set of challenges that make them prime targets for scammers. You are thousands of miles away, shopping primarily through Instagram and WhatsApp, often under time pressure, and dealing with vendors you have never met in person. You cannot walk into a store to verify quality, and if something goes wrong, pursuing legal action across international borders is nearly impossible. Add in the emotional weight of your wedding day, and scammers know you are more likely to overlook red flags in the hope that everything works out.</p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Understanding what <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>a bridal lehenga should actually cost from India</Link> is your first line of defense — if a price seems too good to be true, the outfit probably is too.
+            Understanding what <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>a bridal lehenga should actually cost from India</Link> is your first line of defense — if a price seems too good to be true, the outfit probably is too.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>1. The Catalog Photo Scam</h2>
@@ -81,11 +81,11 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>7. The Customs &quot;Surprise&quot;</h2>
           <p><strong>How it works:</strong> The seller ships without proper customs documentation or under-declares the value. Your package gets held at US Customs for weeks. When it is released, you owe unexpected duties — sometimes 20-28% of the actual value. The seller claims it is &quot;not their responsibility.&quot;</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Confirm who handles customs documentation before ordering. Reputable sellers prepare proper commercial invoices with accurate fabric descriptions and HS codes. Ask for the estimated duty amount upfront. Read our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026" style={{ color: "#7a6841" }}>2026 US tariffs guide</Link> for current rates.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Confirm who handles customs documentation before ordering. Reputable sellers prepare proper commercial invoices with accurate fabric descriptions and HS codes. Ask for the estimated duty amount upfront. Read our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>2026 US tariffs guide</Link> for current rates.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>8. The Shipping Delay Excuse</h2>
           <p><strong>How it works:</strong> The seller promises delivery in 4 weeks. At week 5, they blame &quot;workshop delays.&quot; At week 7, &quot;fabric shortage.&quot; At week 10, they stop responding. Your wedding is in 2 weeks and you have no outfit.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Build a 4-week buffer into your timeline. Get a written production schedule with specific dates. Ask for weekly photo updates. If a seller cannot commit to a schedule in writing, do not order from them. Start sourcing 5-6 months before your wedding — not 2 months. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>when to order your wedding outfits</Link> guide for a realistic timeline.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Build a 4-week buffer into your timeline. Get a written production schedule with specific dates. Ask for weekly photo updates. If a seller cannot commit to a schedule in writing, do not order from them. Start sourcing 5-6 months before your wedding — not 2 months. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>when to order your wedding outfits</Link> guide for a realistic timeline.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>9. The Return Policy Lie</h2>
           <p><strong>How it works:</strong> The seller promises &quot;easy returns&quot; or &quot;satisfaction guaranteed.&quot; When the wrong item arrives, they claim custom orders are non-returnable, or they offer store credit (useless when you are in the US), or they ghost you completely.</p>
@@ -114,7 +114,7 @@ export default function ScamsGuidePage() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Learn more about <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>safe bridal lehenga sourcing from India</Link> — with real prices, verified vendors, and delivery to all 50 states.
+            Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>safe bridal lehenga sourcing from India</Link> — with real prices, verified vendors, and delivery to all 50 states.
           </p>
 
           {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
@@ -129,9 +129,9 @@ export default function ScamsGuidePage() {
               Every piece is shown to you on live video before payment, every vendor is family-vetted, and every shipment is family-inspected before it leaves India. No bait-and-switch, no stolen images, no surprises.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-bridal-lehenga-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga Safely</Link>
-              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
-              <Link href="/how-it-works" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
+              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga Safely</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/how-it-works/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
             </div>
           </div>
 
@@ -142,17 +142,17 @@ export default function ScamsGuidePage() {
             </p>
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>
+                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>
                   How much a bridal lehenga costs from India with shipping
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>
+                <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>
                   When to order your wedding outfits so nothing arrives late
                 </Link>
               </li>
               <li>
-                <Link href="/services/bridal-lehengas" style={{ color: "#7a6841" }}>
+                <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>
                   How our bridal lehenga sourcing works with live video approval
                 </Link>
               </li>
@@ -170,15 +170,15 @@ export default function ScamsGuidePage() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
               <strong>Get our free Vendor Red Flags Checklist</strong> — a printable 1-page guide to evaluate any Indian wedding vendor before sending money. Covers 10 warning signs, 5 questions to ask on a video call, and a payment safety checklist. Enter your email below.
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+            <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Download the Red Flags Checklist →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Rather skip the risk entirely? <Link href="/services" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 15-minute call</Link> to see if we&apos;re the right fit.
+              Rather skip the risk entirely? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 15-minute call</Link> to see if we&apos;re the right fit.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works/" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
         </div>
       </article>
     </main>

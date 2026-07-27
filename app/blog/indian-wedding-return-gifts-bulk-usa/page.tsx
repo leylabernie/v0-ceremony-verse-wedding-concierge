@@ -145,7 +145,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             to your US doorstep. For how return gifts fit into your full
             wedding plan, see our{" "}
             <Link
-              href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+              href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
               style={{ color: "#7a6841" }}
             >
               Indian wedding outfit checklist for every ceremony
@@ -614,7 +614,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/indian-wedding-outfit-checklist-every-ceremony"
+                  href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
                   style={{ color: "#7a6841" }}
                 >
                   Full Indian wedding outfit &amp; favor checklist
@@ -622,7 +622,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties"
+                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
                   style={{ color: "#7a6841" }}
                 >
                   US customs duties on Indian wedding items — full breakdown
@@ -630,7 +630,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/when-to-order-indian-wedding-outfits-nri-bride"
+                  href="/blog/when-to-order-indian-wedding-outfits-nri-bride/"
                   style={{ color: "#7a6841" }}
                 >
                   When to order: full NRI wedding timeline
@@ -638,7 +638,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               </li>
               <li>
                 <Link
-                  href="/wedding-accessories-and-ceremony-items-from-india"
+                  href="/wedding-accessories-and-ceremony-items-from-india/"
                   style={{ color: "#7a6841" }}
                 >
                   Wedding accessories &amp; ceremonial items from India
@@ -683,7 +683,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               artisan cost, freight, and US duties.
             </p>
             <Link
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-block",
                 background: "#7a6841",
@@ -729,7 +729,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             families in the USA. Every bulk order is physically inspected,
             compacted for shipping, and customs-cleared under the correct HS
             codes.{" "}
-            <Link href="/contact" style={{ color: "#7a6841" }}>
+            <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}
             to discuss your wedding favor needs.

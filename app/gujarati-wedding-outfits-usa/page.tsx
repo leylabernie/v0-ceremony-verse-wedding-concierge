@@ -38,7 +38,7 @@ export default function GujaratiWeddingOutfitsPage() {
           A Gujarati wedding is a multi-day celebration with distinct outfit requirements for each ceremony — from Garba night to Saptapadi. CeremonyVerse has deep experience dressing Gujarati families across multiple ceremonies. We source authentic chaniya cholis, bridal lehengas, sherwanis, and coordinated family outfits directly from India.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Book Free Consultation
           </Link>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -143,7 +143,7 @@ export default function GujaratiWeddingOutfitsPage() {
             Garba chaniya choli, Mameru saree, Saptapadi lehenga, reception looks &mdash; sourced from India for your multi-day Gujarati wedding, all delivered to your US door.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Book Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>

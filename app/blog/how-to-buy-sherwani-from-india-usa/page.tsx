@@ -95,7 +95,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>What most NRI grooms spend:</strong> The sweet spot for most of our clients is the mid-to-premium range — roughly ₹35,000 to ₹75,000 ($410-$880). At this price point, you get a high-quality silk sherwani with genuine hand embroidery that looks significantly better than anything in the $1,500+ range at a US boutique. Planning your <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#7a6841" }}>complete Indian wedding outfit checklist</Link> early helps you coordinate the groom&apos;s sherwani with what the bride and family are wearing.
+            <strong>What most NRI grooms spend:</strong> The sweet spot for most of our clients is the mid-to-premium range — roughly ₹35,000 to ₹75,000 ($410-$880). At this price point, you get a high-quality silk sherwani with genuine hand embroidery that looks significantly better than anything in the $1,500+ range at a US boutique. Planning your <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>complete Indian wedding outfit checklist</Link> early helps you coordinate the groom&apos;s sherwani with what the bride and family are wearing.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -198,7 +198,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>Compare this to US boutiques:</strong> A sherwani of equivalent quality at an Indian boutique in New Jersey, Texas, or California typically costs $1,200-$2,500. Buying from India — even with all the extra costs — usually saves you $400-$1,000+. Read our full guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties" style={{ color: "#7a6841" }}>shipping wedding outfits from India to USA</Link> for customs and delivery timeline details.
+            <strong>Compare this to US boutiques:</strong> A sherwani of equivalent quality at an Indian boutique in New Jersey, Texas, or California typically costs $1,200-$2,500. Buying from India — even with all the extra costs — usually saves you $400-$1,000+. Read our full guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>shipping wedding outfits from India to USA</Link> for customs and delivery timeline details.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -257,7 +257,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Timing matters just as much for the groom as it does for the bride. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride" style={{ color: "#7a6841" }}>when to order your wedding outfits from India</Link> guide for a full month-by-month timeline that covers both bride and groom planning.
+            Timing matters just as much for the groom as it does for the bride. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>when to order your wedding outfits from India</Link> guide for a full month-by-month timeline that covers both bride and groom planning.
           </p>
 
           {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
@@ -272,9 +272,9 @@ export default function SherwaniGuidePage() {
               Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-sherwani-from-india-usa" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Sherwani from India</Link>
-              <Link href="/contact" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
-              <Link href="/how-it-works" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
+              <Link href="/buy-sherwani-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Sherwani from India</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
+              <Link href="/how-it-works/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
             </div>
           </div>
 
@@ -285,17 +285,17 @@ export default function SherwaniGuidePage() {
             </p>
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026" style={{ color: "#7a6841" }}>
+                <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>
                   How much a bridal lehenga costs from India with shipping
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
-                <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony" style={{ color: "#7a6841" }}>
+                <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>
                   Complete Indian wedding outfit checklist for the whole family
                 </Link>
               </li>
               <li>
-                <Link href="/blog/indian-wedding-outfit-scams-nri-brides" style={{ color: "#7a6841" }}>
+                <Link href="/blog/indian-wedding-outfit-scams-nri-brides/" style={{ color: "#7a6841" }}>
                   Common scams when buying wedding outfits from India
                 </Link>
               </li>
@@ -313,18 +313,18 @@ export default function SherwaniGuidePage() {
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
               <strong>Grab our free Groom&apos;s Outfit Planning Guide</strong> — sherwani measurement worksheet, price comparison table (India vs. US), and timeline for when to order so it arrives with time to spare. Enter your email and we&apos;ll send it over.
             </p>
-            <Link href="/free-guides" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+            <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Download the Groom&apos;s Guide →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want us to find your sherwani for you? <Link href="/services" style={{ color: "#7a6841", fontWeight: 600 }}>See how our groom sourcing works</Link> — live video shopping, custom measurements, delivery to your door.
+              Want us to find your sherwani for you? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See how our groom sourcing works</Link> — live video shopping, custom measurements, delivery to your door.
             </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
           <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
-            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/services" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq" style={{ color: "#7a6841" }}>read our FAQ</Link>.
+            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/services/" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 
         </div>

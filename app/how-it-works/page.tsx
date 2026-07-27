@@ -366,7 +366,7 @@ export default function HowItWorksPage() {
             we'll walk you through what it would look like for your specific wedding.
           </p>
           <a
-            href="/contact"
+            href="/contact/"
             style={{
               display: "inline-block",
               background: "#7a6841",
@@ -611,7 +611,7 @@ export default function HowItWorksPage() {
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="/contact"
+              href="/contact/"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

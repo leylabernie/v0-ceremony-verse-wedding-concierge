@@ -251,7 +251,7 @@ export default function PrivacyPage() {
               </a>
             </li>
             <li>
-              <Link href="/contact" style={{ color: "#7a6841" }}>
+              <Link href="/contact/" style={{ color: "#7a6841" }}>
                 Book a free 30-minute consultation →
               </Link>
             </li>

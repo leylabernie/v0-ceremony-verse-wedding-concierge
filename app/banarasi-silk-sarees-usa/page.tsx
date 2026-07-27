@@ -142,7 +142,7 @@ export default function BanarasiSareesPage() {
           Each saree is Silk Mark certified. We show it to you on live video before you pay.
         </p>
         <Link
-          href="/contact"
+          href="/contact/"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -545,13 +545,13 @@ export default function BanarasiSareesPage() {
             shipping, and a single point of contact in India.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
-            <Link href="/kanchipuram-silk-sarees-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Silk Sarees</Link>
-            <Link href="/buy-bridal-lehenga-from-india-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
-            <Link href="/bridesmaid-and-family-outfits-from-india" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
-            <Link href="/reception-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
-            <Link href="/south-indian-christian-wedding-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>South Indian Christian Wedding</Link>
-            <Link href="/gujarati-wedding-outfits-usa" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Gujarati Wedding Outfits</Link>
-            <Link href="/how-it-works" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
+            <Link href="/kanchipuram-silk-sarees-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Kanchipuram Silk Sarees</Link>
+            <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
+            <Link href="/bridesmaid-and-family-outfits-from-india/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
+            <Link href="/reception-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
+            <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>South Indian Christian Wedding</Link>
+            <Link href="/gujarati-wedding-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Gujarati Wedding Outfits</Link>
+            <Link href="/how-it-works/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
         </div>
       </section>
@@ -594,7 +594,7 @@ export default function BanarasiSareesPage() {
             from Varanasi within a week.
           </p>
           <Link
-            href="/contact"
+            href="/contact/"
             style={{
               display: "inline-block",
               background: "#7a6841",

@@ -130,7 +130,7 @@ export default function HaldiOutfitsPage() {
           entire bridal party and family.
         </p>
         <a
-          href="/contact"
+          href="/contact/"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -469,7 +469,7 @@ export default function HaldiOutfitsPage() {
             week.
           </p>
           <a
-            href="/contact"
+            href="/contact/"
             style={{
               display: "inline-block",
               background: "#7a6841",
