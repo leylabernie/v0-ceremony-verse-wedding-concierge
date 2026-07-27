@@ -196,7 +196,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Stop settling for what&rsquo;s in stock
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Get the same outfit you&rsquo;d want in India, custom stitched to your measurements and delivered to your US door &mdash; without the boutique markup.
+            Get the same outfit you&rsquo;d want in India, custom stitched to your measurements and delivered to your US door.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

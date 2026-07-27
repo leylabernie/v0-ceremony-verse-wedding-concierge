@@ -37,7 +37,7 @@ export const metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+    "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -76,7 +76,7 @@ export const metadata = {
     title:
       "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
     description:
-      "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+      "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",

@@ -25,7 +25,7 @@ export const metadata = buildMetadata({
   title:
     "Indian Bridal Wear & Lehenga Sourcing — NY & NJ",
   description:
-    "Skip Edison boutique markups. Source bridal lehengas, sherwanis, and return gifts from India to NY & NJ with live video shopping and Tri-State delivery.",
+    "Source bridal lehengas, sherwanis, and return gifts from India to NY & NJ with live video shopping and Tri-State delivery.",
   keywords:
     "indian bridal wear new jersey, indian wedding shops edison nj, lehenga shops in nyc, indian bridal boutique new jersey, custom bridal lehenga NY NJ, sherwani shops new york",
 });
@@ -140,7 +140,7 @@ export default function IndianBridalWearNYNJPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Skip the Edison boutique markups and the Jackson Heights crowds.
+            Skip the Jackson Heights crowds.
             Source custom bridal lehengas, sherwanis, and bulk return gifts
             directly from India&apos;s premier artisan hubs — with live video
             shopping and door-to-door delivery across the Tri-State.

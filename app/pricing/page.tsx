@@ -40,7 +40,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
-    answer: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the boutique markup or the designer-label price. If you specifically want a designer-label piece, we'll tell you to buy it direct from their store.",
+    answer: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the designer-label price. If you specifically want a designer-label piece, we'll tell you to buy it direct from their store.",
   },
   {
     question: "Are the outfits ready-made or custom?",
@@ -48,7 +48,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How much can I save by sourcing from India vs. US boutiques?",
-    answer: "Most clients save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
+    answer: "Most clients save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because the garment is made to your measurements from the mill onward.",
   },
   {
     question: "What's the payment schedule?",
@@ -245,8 +245,8 @@ export default function PricingPage() {
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
             My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places
-            US Indian boutiques source from. You shop via live video, my family inspects before shipping, and you skip
-            the boutique markup.
+            US Indian boutiques source from. You shop via live video, and my family inspects every piece before it
+            ships.
           </p>
 
           <div className="grid lg:grid-cols-3 gap-6">
@@ -647,7 +647,7 @@ export default function PricingPage() {
                 No. We don&apos;t source designer-label pieces, and we don&apos;t sell replicas or knockoffs. What we DO source
                 is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US
                 Indian boutiques source from, through my family&apos;s connections in Surat and Delhi. You get real handwork
-                at direct pricing, without the boutique markup or the designer-label price. If you specifically want a
+                at direct pricing, without the designer-label price. If you specifically want a
                 designer-label piece, we&apos;ll tell you to buy it direct from their store.
               </p>
             </div>
@@ -667,7 +667,7 @@ export default function PricingPage() {
                 Most clients save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques.
                 Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with
                 heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get
-                heavier handwork or better fabric at the same price point, because you skip the boutique markup.
+                heavier handwork or better fabric at the same price point, because it is made to your measurements.
               </p>
             </div>
             <div>

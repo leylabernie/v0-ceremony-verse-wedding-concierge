@@ -214,7 +214,7 @@ export default function BridalLehengaCostGuide() {
               Ready to Source Your Bridal Lehenga?
             </p>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
-              Skip the boutique markup — buy a custom bridal lehenga from India, delivered to your US door
+              Buy a custom bridal lehenga from India, made to measure and delivered to your US door
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
               Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.

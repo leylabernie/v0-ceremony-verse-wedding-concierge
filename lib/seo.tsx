@@ -320,7 +320,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, no boutique markup. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
+      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, and direct pricing. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -461,7 +461,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, and direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team.",
+          text: "CeremonyVerse offers two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, and clear itemised pricing. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team.",
         },
       },
       {

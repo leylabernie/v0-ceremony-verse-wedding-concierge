@@ -207,7 +207,7 @@ export default function AboutPage() {
               <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Surat &amp; Delhi — Outfit Sourcing</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
                 My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same
-                places US Indian boutiques source from — without the boutique markup. Live video shopping. Family
+                places US Indian boutiques source from. Live video shopping. Family
                 inspection before shipping. Semi-stitched ready pieces, or custom recreation through my local boutique
                 at about 85% similarity to your reference image, for less than half the designer&apos;s cost.
               </p>

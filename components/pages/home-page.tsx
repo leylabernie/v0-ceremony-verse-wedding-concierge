@@ -169,7 +169,7 @@ export function HomePage() {
               That lehenga you saw at the Edison boutique for $500? We can get you something similar — and often better — for $300 landed at your door.
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.92)", marginBottom: "36px", maxWidth: "520px" }}>
-              My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do — without the boutique markup. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
+              My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
             </p>
 
             {/* CTAs */}
@@ -203,7 +203,7 @@ export function HomePage() {
               {[
                 "Live video shopping — see and pick every piece",
                 "Family inspection before shipping",
-                "Direct from Surat & Delhi — no boutique markup",
+                "Direct from Surat & Delhi — every garment made to measure",
                 "Mexico wedding coordination in Cancun & Riviera Maya",
               ].map((tag) => (
                 <span key={tag} style={{ fontSize: "15px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
@@ -246,7 +246,7 @@ export function HomePage() {
               },
               {
                 problem: "Logistics anxiety: Customs duties, delays, damage risk",
-                solution: "We handle all shipping documentation, advise on customs duties upfront (typically 12-27%), and fully insure every shipment. We have never had an unresolved shipping issue.",
+                solution: "We handle all shipping documentation, advise on customs duties upfront (typically 12-27%), Every shipment is fully insured and tracked.",
                 icon: "📦",
               },
               {
@@ -515,7 +515,7 @@ export function HomePage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Shipping damage:</strong> Full insurance on all shipments. We've never had an unresolved shipping issue.</span>
+                  <span><strong>Shipping damage:</strong> Every shipment is fully insured and tracked.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#7a6841] font-bold">🚫</span>
@@ -823,7 +823,7 @@ export function HomePage() {
             {[
               {
                 q: "How do NRI brides buy a lehenga from India without getting scammed?",
-                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact piece — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. My family has been in Surat's fabric trade for generations, and I source from the same places US Indian boutiques source from — without the boutique markup. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact piece — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. My family has been in Surat's fabric trade for generations, and I source from the same places US Indian boutiques source from. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
               },
               {
                 q: "Can you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
@@ -831,11 +831,11 @@ export function HomePage() {
               },
               {
                 q: "What exactly does CeremonyVerse do?",
-                a: "Two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team."
+                a: "Two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, clear itemised pricing. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team."
               },
               {
                 q: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
-                a: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the boutique markup or the designer-label price. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost."
+                a: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the designer-label price. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost."
               },
               {
                 q: "How much does it cost?",

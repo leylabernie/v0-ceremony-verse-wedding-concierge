@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   title:
     "Indian Bridal Wear & Wedding Outfits — California",
   description:
-    "Bay Area & LA brides: skip boutique markups. Source bridal lehengas, sherwanis, and family outfits from India with live video shopping and California delivery.",
+    "Bay Area & LA brides: source bridal lehengas, sherwanis, and family outfits from India with live video shopping and California delivery.",
   keywords:
     "indian bridal boutique bay area, lehenga shop sunnyvale, indian wedding dress los angeles, indian bridal wear california, custom bridal lehenga bay area, sherwani los angeles",
 });

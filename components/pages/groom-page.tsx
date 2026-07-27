@@ -81,7 +81,7 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
               { title: "No guesswork on fit", desc: "We collect detailed measurements and build in allowance. Sherwanis are tailored to your exact size — no alterations needed in most cases." },
               { title: "Verified craftsmanship", desc: "Every artisan workshop we work with has been personally vetted. We inspect stitching, embroidery, and fabric quality before anything ships." },
               { title: "Coordinated with the bridal look", desc: "We ensure groom and groomsmen attire complements the bridal party colors, fabrics, and overall wedding aesthetic." },
-              { title: "Save 30–50% vs. US stores", desc: "Direct sourcing means no boutique markup. You get better quality at a fraction of what US stores charge for the same craftsmanship." },
+              { title: "Made to measure, not off the rack", desc: "Direct sourcing means every sherwani is cut to the wearer's measurements, with the handwork and fabric specified up front." },
             ].map((item, i) => (
               <div key={i} className="flex gap-4 p-6 bg-[#f9f6f3] rounded-2xl">
                 <span className="text-[#7a6841] font-semibold text-lg mt-0.5">—</span>

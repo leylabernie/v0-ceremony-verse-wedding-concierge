@@ -76,7 +76,7 @@ const faqSections = [
       },
       {
         question: "What if my outfit arrives damaged?",
-        answer: "Every shipment is fully insured. If an item arrives damaged, we file the insurance claim and coordinate a replacement or repair at no cost to you. We've never had an unresolved shipping issue."
+        answer: "Every shipment is fully insured. If an item arrives damaged, we file the insurance claim and coordinate a replacement or repair at no cost to you."
       }
     ]
   },

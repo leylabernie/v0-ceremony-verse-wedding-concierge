@@ -590,8 +590,8 @@ export default function CustomSherwaniSizingGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Get the elite look of premium Indian designers without the
-              expensive US boutique markups. Book a free 30-minute consultation
+              Get the elite look of premium Indian designers, made to your
+              measurements. Book a free 30-minute consultation
               — we&apos;ll walk you through the 5 critical measurements, the
               fabric choice for your wedding climate, and a transparent price
               breakdown.

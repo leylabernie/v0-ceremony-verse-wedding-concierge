@@ -94,7 +94,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             Understand the difference between Kundan, Polki, Temple, and
             Meenakari jewelry — and learn how NRI brides source authentic,
             heirloom-quality bridal sets from India without getting scammed by
-            fake stones or inflated US boutique markups.
+            fake stones or misrepresented gold weight.
           </p>
         </div>
       </div>
@@ -1011,7 +1011,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Skip the boutique markup and the Instagram scam risk. Book a
+              Skip the Instagram scam risk. Book a
               free 30-minute consultation and we&apos;ll walk you through how
               to verify authentic Kundan, Polki, and temple jewelry — live, on
               video, before you commit a dollar.

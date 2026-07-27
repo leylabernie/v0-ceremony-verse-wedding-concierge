@@ -69,7 +69,7 @@ export default function BridalLehengaPage() {
             Buy a Bridal Lehenga from India — Delivered to Your US Door
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
-            Skip the $3,000 India flight and the 200% US boutique markup. Source your dream bridal
+            Skip the $3,000 India flight. Source your dream bridal
             lehenga directly from skilled designers in India — with live video shopping, custom
             stitching to your exact measurements, quality checks, and insured delivery to all 50
             states. NRI brides save 30–50% on average.
@@ -373,8 +373,7 @@ export default function BridalLehengaPage() {
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Logistics: customs, delays, damage</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
                 We handle all shipping documentation, advise on customs duties upfront (typically
-                12–27%), and fully insure every shipment. We have never had an unresolved shipping
-                issue in 4+ years.
+                12–27%). Every shipment is fully insured and tracked.
               </p>
             </div>
           </div>

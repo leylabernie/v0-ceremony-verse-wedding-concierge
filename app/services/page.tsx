@@ -5,7 +5,7 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 export const metadata = buildMetadata({
   path: "/services/",
   title: "Outfit Sourcing from India & Mexico Wedding Coordination",
-  description: "Two services: outfit sourcing from Surat & Delhi (live video shopping, no boutique markup) and Mexico wedding coordination in Cancun & Riviera Maya with vetted vendors.",
+  description: "Two services: outfit sourcing from Surat & Delhi (live video shopping, made to measure) and Mexico wedding coordination in Cancun & Riviera Maya with vetted vendors.",
   keywords: "Indian wedding sourcing services, Surat lehenga sourcing, Delhi wedding outfits, Mexico Indian wedding coordination, Cancun Indian wedding, Riviera Maya Indian wedding, NRI bridal concierge",
 });
 
@@ -128,7 +128,7 @@ export default function ServicesPage() {
                 Outfit Sourcing from Surat &amp; Delhi
               </h2>
               <p className="text-[#4d403a] mb-4 leading-relaxed">
-                Live video shopping. Family inspection before shipping. Direct pricing — no boutique markup.
+                Live video shopping. Family inspection before shipping. Clear itemised pricing.
                 Source bridal lehengas, sherwanis, bridesmaid outfits, family outfits, and jewelry from the
                 same places US Indian boutiques source from, through my family&apos;s connections in Surat and Delhi.
               </p>

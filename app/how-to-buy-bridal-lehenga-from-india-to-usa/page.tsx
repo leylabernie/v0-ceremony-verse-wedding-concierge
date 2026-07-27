@@ -87,7 +87,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Why use a personal wedding concierge instead of buying directly online?",
     answer:
-      "A dedicated concierge service like CeremonyVerse bridges the gap between the cost savings of shopping directly in India and the stress of managing time zones, language barriers, and shipping logistics on your own. We act as your boots on the ground in India — hand-selecting outfits from trusted weavers and designers based on your budget, providing itemized breakdowns of fabric costs, tailoring fees, and actual shipping rates with no hidden boutique markups, and performing rigorous physical quality checks and sizing audits before secure boxing and shipping.",
+      "A dedicated concierge service like CeremonyVerse bridges the gap between the cost savings of shopping directly in India and the stress of managing time zones, language barriers, and shipping logistics on your own. We act as your boots on the ground in India — hand-selecting outfits from trusted weavers and designers based on your budget, providing itemized breakdowns of fabric costs, tailoring fees, and actual shipping rates with no hidden fees, and performing rigorous physical quality checks and sizing audits before secure boxing and shipping.",
   },
 ]);
 
@@ -125,7 +125,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Skip the 200% boutique markups. Source a custom bridal lehenga,
+            Source a custom bridal lehenga,
             sherwani, and return gifts directly from India — with live video
             shopping, master-tailor verified measurements, HD quality checks,
             and customs-cleared delivery to your US door.
@@ -494,7 +494,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 style={{ color: "#e8dfd2" }}
               >
                 Itemized breakdowns of fabric costs, tailoring fees, and actual
-                shipping rates — no hidden boutique markups. You see exactly
+                shipping rates — no hidden fees. You see exactly
                 what the artisan charges, what shipping costs, and what US
                 customs duties will be — before you commit a single dollar.
               </p>
