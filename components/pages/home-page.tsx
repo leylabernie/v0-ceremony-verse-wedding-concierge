@@ -176,8 +176,13 @@ export function HomePage() {
             </p>
 
             {/* CTAs */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "12px" }}>
               <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
+        href="/swatch-box/"
+      >
+                Order a Swatch Box — $45
+              </Link>
+              <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
         href="/contact/"
       >
                 Book Free Consultation
@@ -200,6 +205,9 @@ export function HomePage() {
                 Free Checklist
               </a>
             </div>
+            <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.75)", marginBottom: "40px" }}>
+              The $45 is credited in full to your order.
+            </p>
 
             {/* Real differentiators */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
