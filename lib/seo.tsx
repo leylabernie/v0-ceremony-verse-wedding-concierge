@@ -320,7 +320,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, and direct pricing. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
+      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -340,7 +340,7 @@ export function buildLocalBusinessSchema(): object {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Wedding Sourcing & Coordination Services",
+      name: "Indian Wedding Outfit Sourcing Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -375,39 +375,9 @@ export function buildLocalBusinessSchema(): object {
           price: "2499",
           priceCurrency: "USD",
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico Vendor Network Access",
-            description:
-              "Vetted planner, DJ, photographers, decorator, and beauty contacts for Cancun and Riviera Maya",
-          },
-          price: "499",
-          priceCurrency: "USD",
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico Day-Of Coordination",
-            description:
-              "Single-event on-site coordination for Indian weddings in Mexico",
-          },
-          price: "1500",
-          priceCurrency: "USD",
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico 4-Day Full Coordination",
-            description:
-              "Full multi-day event coordination for Indian weddings in Cancun and Riviera Maya, like a 4-day event",
-          },
-          price: "4500",
-          priceCurrency: "USD",
-        },
+        // Mexico coordination offers removed from the GLOBAL LocalBusiness
+        // schema (Task 6). layout.tsx injects this on every page, so it is
+        // sitewide metadata. The dedicated Mexico pages keep their own copy.
       ],
     },
   };

@@ -37,7 +37,7 @@ export const metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+    "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -76,7 +76,7 @@ export const metadata = {
     title:
       "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
     description:
-      "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -92,6 +92,11 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@ceremonyverse",
+    title:
+      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
+    // Kept identical to the global description and og:description above.
+    description:
+      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
     images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
   },
 };

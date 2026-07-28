@@ -5,10 +5,11 @@ export const metadata = buildMetadata({
   path: '/',
   // SEO Title Tag (max 60 chars). Clear value prop + target keyword.
   title: 'Indian Wedding Outfits from India to USA | CeremonyVerse',
-  // Meta Description (max 160 chars). Combines the two service lines.
+  // Meta Description. Mirrors the global description — wedding-party
+  // outfitting, no Mexico coordination (Task 6).
   description:
-    "Source Indian wedding outfits direct from Surat & Delhi — live video shopping, delivered to your US door. Mexico wedding coordination in Cancun & Riviera Maya.",
-  keywords: 'Indian wedding outfit sourcing, buy bridal lehenga from India USA, Surat lehenga direct, Delhi wedding outfits USA, Mexico Indian wedding coordination, Cancun Indian wedding, NRI bridal concierge, live video shopping India',
+    "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
+  keywords: 'Indian wedding outfit sourcing, buy bridal lehenga from India USA, Surat lehenga direct, Delhi wedding outfits USA, wedding party outfitting, bridesmaid lehengas from India, NRI bridal concierge, live video shopping India',
 });
 
 export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog' | 'faq' | 'contact' | 'bridesmaids' | 'groom' | 'groomsmen' | 'family' | 'ceremonial' | 'jewelry' | 'pets' | 'gifts' | 'welcomebags' | 'journey';
