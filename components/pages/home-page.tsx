@@ -351,21 +351,31 @@ export function HomePage() {
       <section className="py-16 px-6 bg-[#f9f6f3]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#5e4a40" }}>Everything Covered</p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">We Source It All</h2>
-          <p className="text-[#4d403a] mb-10 max-w-xl mx-auto">
-            From ready-made outfits to fully custom pieces stitched to your measurements — bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry sourced directly from our supplier, ceremonial items, gifts, welcome bags, and even pet outfits.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-10">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10">We Source It All</h2>
+          <div className="grid md:grid-cols-3 gap-6 mb-8 text-left">
             {[
-              "Bridal Lehengas", "Groom Sherwanis", "Kanchipuram Silk Sarees", "Bridesmaid Outfits",
-              "Groomsmen Attire", "Family Outfits", "Jewelry & Accessories", "Ceremonial Items",
-              "Wedding Gifts", "Welcome Bags", "Custom Boutique Outfits", "Pet Outfits 🐾"
-            ].map((label) => (
-              <span key={label} className="px-4 py-2 bg-white border border-[#e6dfd5] rounded-full text-sm text-[#2f2f2f] font-medium">
-                {label}
-              </span>
+              {
+                title: "Wedding Party Outfitting",
+                desc: "Bridesmaids, groomsmen, mothers, siblings, children — one colour story, each garment cut to the person, shipped to each person's door.",
+              },
+              {
+                title: "Bridal & Groom Wardrobe",
+                desc: "Every event from mehndi to reception. Custom colour, custom silhouette, or recreated from a reference photograph you send us.",
+              },
+              {
+                title: "Family & Guest Outfits",
+                desc: "For the aunt flying in from Chennai and the college roommate who has never worn a saree. We dress both, and explain what each ceremony calls for.",
+              },
+            ].map((svc) => (
+              <div key={svc.title} className="bg-white border border-[#e6dfd5] rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-[#1f1f1f] mb-3">{svc.title}</h3>
+                <p className="text-sm text-[#4d403a] leading-relaxed">{svc.desc}</p>
+              </div>
             ))}
           </div>
+          <p className="text-sm text-[#5e4a40] mb-10 max-w-2xl mx-auto">
+            We also source jewellery, ceremonial items, welcome bags and return gifts — and yes, outfits for the dog.
+          </p>
           <Link className="btn-primary"
         href="/services/"
       >
