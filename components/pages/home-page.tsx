@@ -3,7 +3,16 @@ import Link from "next/link"
 import { FaqItem } from "./faq-item"
 
 
-const testimonials = [
+/**
+ * Testimonials rendered as visible HTML on the homepage.
+ *
+ * Exported because app/page.tsx builds the homepage Review schema from
+ * this exact array — Google requires review markup to reference reviews
+ * visible on the SAME page. Do not point that schema at
+ * VISIBLE_TESTIMONIALS in lib/seo.tsx; that list belongs to
+ * /real-weddings/ and holds different couples.
+ */
+export const HOMEPAGE_TESTIMONIALS = [
   {
     names: "Kaval & April",
     initials: "KA",
@@ -13,56 +22,6 @@ const testimonials = [
     quote:
       "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
     detail: "4-day Gujarati & South Indian Christian wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
-  },
-  {
-    names: "Karan & Sonal",
-    initials: "KS",
-    photo: "/images/testimonial-karan-sonal.webp",
-    color: "#b09872",
-    location: "Destination Wedding, Mexico",
-    quote:
-      "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-    detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
-  },
-  {
-    names: "Charly & Viola",
-    initials: "CV",
-    photo: "/images/testimonial-charlie-viola.webp",
-    color: "#8a7060",
-    location: "Philadelphia, PA",
-    quote:
-      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
-    detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
-  },
-  {
-    names: "Dhan & Christina",
-    initials: "DC",
-    photo: "/images/testimonial-dhan-christina.webp",
-    color: "#7a6841",
-    location: "USA",
-    quote:
-      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
-    detail: "South Indian Christian wedding · bride & groom outfits",
-  },
-  {
-    names: "Shincy",
-    initials: "SH",
-    photo: "/images/testimonial-shincy.webp",
-    color: "#b09872",
-    location: "USA",
-    quote:
-      "As a South Indian Christian bride, I was having my wedding in India but couldn't find the right outfit from abroad. CeremonyVerse sourced my bridal outfit from Delhi for me — handling everything remotely so I didn't have to stress while planning from the US.",
-    detail: "South Indian Christian bride · outfit sourced from Delhi · wedding in India",
-  },
-  {
-    names: "Swati",
-    initials: "SW",
-    photo: "/images/testimonial-swati.webp",
-    color: "#8a7060",
-    location: "USA",
-    quote:
-      "As a Gujarati girl I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked stunning at every event.",
-    detail: "Gujarati wedding guest · multiple outfits",
   },
   {
     names: "Shilpa",
@@ -75,14 +34,14 @@ const testimonials = [
     detail: "12 bridesmaid outfits sourced while bride shopped in India",
   },
   {
-    names: "Druma & Parin",
-    initials: "DP",
-    photo: "/images/testimonial-druma-parin.webp",
-    color: "#b09872",
+    names: "Dhan & Christina",
+    initials: "DC",
+    photo: "/images/testimonial-dhan-christina.webp",
+    color: "#7a6841",
     location: "USA",
     quote:
-      "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
-    detail: "Gujarati wedding · Pure Kanchipuram silk sarees + custom matching outfits",
+      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
+    detail: "South Indian Christian wedding · bride & groom outfits",
   },
 ]
 
@@ -698,7 +657,7 @@ export function HomePage() {
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
+            {HOMEPAGE_TESTIMONIALS.map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 flex flex-col shadow-sm">
                 <p className="text-[#7a6841] text-2xl mb-4 leading-none">"</p>
                 <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
@@ -731,17 +690,9 @@ export function HomePage() {
             ))}
           </div>
           <div className="text-center mt-10">
-            <a
-              href="https://www.trustpilot.com/review/ceremonyverse.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm transition hover:opacity-70"
-              style={{ color: "var(--cv-accent)" }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-              Read our reviews on Trustpilot →
+            {/* TODO(owner): replace with Google Business Profile reviews URL */}
+            <a href="#" className="inline-flex items-center gap-2 text-sm transition hover:opacity-70" style={{ color: "var(--cv-accent)" }}>
+              Read our reviews on Google
             </a>
           </div>
         </div>

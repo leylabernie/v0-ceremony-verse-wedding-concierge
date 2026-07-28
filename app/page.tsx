@@ -1,5 +1,5 @@
-import { HomePage } from '../components/pages/home-page';
-import { buildMetadata, JsonLd, VISIBLE_TESTIMONIALS } from '@/lib/seo';
+import { HomePage, HOMEPAGE_TESTIMONIALS } from '../components/pages/home-page';
+import { buildMetadata, JsonLd } from '@/lib/seo';
 
 export const metadata = buildMetadata({
   path: '/',
@@ -20,22 +20,28 @@ export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog'
  * review schema must point to visible reviews on the SAME page.
  * Do not add this to layout.tsx or any other page that does not
  * display these reviews verbatim.
+ *
+ * Sourced from HOMEPAGE_TESTIMONIALS — the array the homepage actually
+ * renders. It previously read VISIBLE_TESTIMONIALS (lib/seo.tsx), which
+ * holds four couples; after Task 12 trimmed the homepage to three, that
+ * would have marked up reviews no longer visible here. Binding the
+ * schema to the rendered array makes the two impossible to desync.
  */
 const reviewsSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   name: "CeremonyVerse Indian Wedding Sourcing & Coordination",
   url: "https://www.ceremonyverse.com/",
-  review: VISIBLE_TESTIMONIALS.map((t) => ({
+  review: HOMEPAGE_TESTIMONIALS.map((t) => ({
     "@type": "Review",
-    author: { "@type": "Person", name: t.couple },
-    reviewBody: t.body,
+    author: { "@type": "Person", name: t.names },
+    reviewBody: t.quote,
     reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
   })),
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5.0",
-    reviewCount: String(VISIBLE_TESTIMONIALS.length),
+    reviewCount: String(HOMEPAGE_TESTIMONIALS.length),
     bestRating: "5",
     worstRating: "1",
   },
