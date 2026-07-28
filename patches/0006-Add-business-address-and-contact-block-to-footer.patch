@@ -1,0 +1,109 @@
+From df9e1e6fccb8bdacffa6613af50bd3d84123ec8e Mon Sep 17 00:00:00 2001
+From: CeremonyVerse Agent <agent@ceremonyverse.local>
+Date: Tue, 28 Jul 2026 01:19:14 +0000
+Subject: [PATCH 6/7] Add business address and contact block to footer
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Task 11. The site claimed "a real Philadelphia address, phone number"
+without displaying either. Added an <address> block to the footer brand
+column, so it renders on every page via layout.tsx.
+
+Contents exactly as the brief specifies:
+  [STREET ADDRESS]
+  Philadelphia, PA [ZIP]
+  +1 215-341-9990   -> tel:+12153419990
+  WhatsApp          -> https://wa.me/12153419990
+  Google Business Profile -> href="#" with the specified
+                             {/* TODO(owner): replace once GBP is claimed */}
+
+[STREET ADDRESS] and [ZIP] are left as literal placeholders, as
+instructed — they render as that literal text on the live page.
+
+LocalBusiness JSON-LD in lib/seo.tsx now carries streetAddress and
+postalCode with the SAME placeholders, so the schema and the visible
+NAP stay in lockstep. Previously the schema had no street line at all.
+
+Verified: npx tsc --noEmit exit 0.
+---
+ components/global-footer.tsx | 38 ++++++++++++++++++++++++++++++++++++
+ lib/seo.tsx                  | 10 ++++++++--
+ 2 files changed, 46 insertions(+), 2 deletions(-)
+
+diff --git a/components/global-footer.tsx b/components/global-footer.tsx
+index af79ccb..b044784 100644
+--- a/components/global-footer.tsx
++++ b/components/global-footer.tsx
+@@ -60,6 +60,44 @@ export function GlobalFooter() {
+               Indian wedding shopping concierge for NRI families.
+               Based in Philadelphia. Serving all US states.
+             </p>
++
++            {/* TODO(owner): replace [STREET ADDRESS] and [ZIP] with the real
++                registered address. Must match the Google Business Profile
++                exactly — an inconsistent NAP suppresses local ranking. */}
++            <address
++              style={{
++                fontStyle: "normal",
++                fontSize: "13px",
++                color: "#4d403a",
++                lineHeight: 1.7,
++                marginTop: "14px",
++              }}
++            >
++              <span style={{ display: "block" }}>[STREET ADDRESS]</span>
++              <span style={{ display: "block" }}>Philadelphia, PA [ZIP]</span>
++
++              <a
++                href="tel:+12153419990"
++                style={{ display: "block", marginTop: "10px", color: "#4d403a", textDecoration: "none" }}
++              >
++                +1 215-341-9990
++              </a>
++              <a
++                href="https://wa.me/12153419990"
++                target="_blank"
++                rel="noopener noreferrer"
++                style={{ display: "block", color: "#4d403a", textDecoration: "none" }}
++              >
++                WhatsApp
++              </a>
++              {/* TODO(owner): replace once GBP is claimed */}
++              <a
++                href="#"
++                style={{ display: "block", color: "#4d403a", textDecoration: "none" }}
++              >
++                Google Business Profile
++              </a>
++            </address>
+             <a
+               href="https://www.trustpilot.com/review/ceremonyverse.com"
+               target="_blank"
+diff --git a/lib/seo.tsx b/lib/seo.tsx
+index 53eb36f..783d181 100644
+--- a/lib/seo.tsx
++++ b/lib/seo.tsx
+@@ -326,11 +326,17 @@ export function buildLocalBusinessSchema(): object {
+     logo: `${SITE_URL}/icon.svg`,
+     telephone: SITE_PHONE,
+     email: SITE_EMAIL,
++    // TODO(owner): replace [STREET ADDRESS] and [ZIP] with the real
++    // registered address. These are the SAME placeholders rendered in the
++    // footer <address> block (components/global-footer.tsx) — update both
++    // together, and keep them identical to the Google Business Profile.
+     address: {
+       "@type": "PostalAddress",
+-      addressCountry: "US",
+-      addressRegion: "PA",
++      streetAddress: "[STREET ADDRESS]",
+       addressLocality: "Philadelphia",
++      addressRegion: "PA",
++      postalCode: "[ZIP]",
++      addressCountry: "US",
+     },
+     areaServed: "US",
+     priceRange: "$$",
+-- 
+2.47.3
+

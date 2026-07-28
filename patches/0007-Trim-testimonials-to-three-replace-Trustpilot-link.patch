@@ -1,0 +1,220 @@
+From 8ab97faede3c8684b7db2a4d40e2dd0a87703100 Mon Sep 17 00:00:00 2001
+From: CeremonyVerse Agent <agent@ceremonyverse.local>
+Date: Tue, 28 Jul 2026 01:20:04 +0000
+Subject: [PATCH 7/7] Trim testimonials to three, replace Trustpilot link
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Task 12. Kept only Kaval & April, Shilpa, and Dhan & Christina —
+unedited, verbatim, per hard rule 2. Deleted the other five blocks
+(Karan & Sonal, Charly & Viola, Shincy, Swati, Druma & Parin).
+
+No image imports became unused: every removed testimonial's photo is
+still referenced by /real-weddings/ and/or sitemap-images.xml, so
+nothing was deleted there.
+
+Replaced the Trustpilot link under the testimonial grid with
+`<a href="#">Read our reviews on Google</a>` and the specified
+{/* TODO(owner): replace with Google Business Profile reviews URL */}.
+
+Also fixed a review-schema violation this trim would otherwise cause
+(hard rule 7 — did the safe part, flagging it here). app/page.tsx built
+the homepage Review + AggregateRating schema from VISIBLE_TESTIMONIALS,
+which holds four couples — three no longer visible on the homepage
+after this change, one deleted outright. That is the same "schema
+without matching visible reviews" problem commit 93c917b and the
+layout.tsx FAQ removal were cleaning up. The rendered array is now
+exported as HOMEPAGE_TESTIMONIALS and the schema maps over it, so
+reviewCount is 3 and matches what the page shows.
+
+OUT OF SCOPE, FLAGGING: a separate "Read all reviews on Trustpilot" CTA
+remains in the reviews strip lower on the homepage (~line 806), plus
+Trustpilot links in global-footer.tsx, real-weddings/page.tsx and a
+sameAs entry in lib/seo.tsx. The brief names only the testimonial-section
+link, so I left those. Owner should decide.
+
+Verified: npx tsc --noEmit exit 0.
+---
+ app/page.tsx                   | 18 ++++---
+ components/pages/home-page.tsx | 89 ++++++++--------------------------
+ 2 files changed, 32 insertions(+), 75 deletions(-)
+
+diff --git a/app/page.tsx b/app/page.tsx
+index 81c2b64..0bb2a4a 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -1,5 +1,5 @@
+-import { HomePage } from '../components/pages/home-page';
+-import { buildMetadata, JsonLd, VISIBLE_TESTIMONIALS } from '@/lib/seo';
++import { HomePage, HOMEPAGE_TESTIMONIALS } from '../components/pages/home-page';
++import { buildMetadata, JsonLd } from '@/lib/seo';
+ 
+ export const metadata = buildMetadata({
+   path: '/',
+@@ -20,22 +20,28 @@ export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog'
+  * review schema must point to visible reviews on the SAME page.
+  * Do not add this to layout.tsx or any other page that does not
+  * display these reviews verbatim.
++ *
++ * Sourced from HOMEPAGE_TESTIMONIALS — the array the homepage actually
++ * renders. It previously read VISIBLE_TESTIMONIALS (lib/seo.tsx), which
++ * holds four couples; after Task 12 trimmed the homepage to three, that
++ * would have marked up reviews no longer visible here. Binding the
++ * schema to the rendered array makes the two impossible to desync.
+  */
+ const reviewsSchema = {
+   "@context": "https://schema.org",
+   "@type": "Service",
+   name: "CeremonyVerse Indian Wedding Sourcing & Coordination",
+   url: "https://www.ceremonyverse.com/",
+-  review: VISIBLE_TESTIMONIALS.map((t) => ({
++  review: HOMEPAGE_TESTIMONIALS.map((t) => ({
+     "@type": "Review",
+-    author: { "@type": "Person", name: t.couple },
+-    reviewBody: t.body,
++    author: { "@type": "Person", name: t.names },
++    reviewBody: t.quote,
+     reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+   })),
+   aggregateRating: {
+     "@type": "AggregateRating",
+     ratingValue: "5.0",
+-    reviewCount: String(VISIBLE_TESTIMONIALS.length),
++    reviewCount: String(HOMEPAGE_TESTIMONIALS.length),
+     bestRating: "5",
+     worstRating: "1",
+   },
+diff --git a/components/pages/home-page.tsx b/components/pages/home-page.tsx
+index 402dc21..3c86a5f 100644
+--- a/components/pages/home-page.tsx
++++ b/components/pages/home-page.tsx
+@@ -3,7 +3,16 @@ import Link from "next/link"
+ import { FaqItem } from "./faq-item"
+ 
+ 
+-const testimonials = [
++/**
++ * Testimonials rendered as visible HTML on the homepage.
++ *
++ * Exported because app/page.tsx builds the homepage Review schema from
++ * this exact array — Google requires review markup to reference reviews
++ * visible on the SAME page. Do not point that schema at
++ * VISIBLE_TESTIMONIALS in lib/seo.tsx; that list belongs to
++ * /real-weddings/ and holds different couples.
++ */
++export const HOMEPAGE_TESTIMONIALS = [
+   {
+     names: "Kaval & April",
+     initials: "KA",
+@@ -14,56 +23,6 @@ const testimonials = [
+       "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
+     detail: "4-day Gujarati & South Indian Christian wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
+   },
+-  {
+-    names: "Karan & Sonal",
+-    initials: "KS",
+-    photo: "/images/testimonial-karan-sonal.webp",
+-    color: "#b09872",
+-    location: "Destination Wedding, Mexico",
+-    quote:
+-      "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
+-    detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
+-  },
+-  {
+-    names: "Charly & Viola",
+-    initials: "CV",
+-    photo: "/images/testimonial-charlie-viola.webp",
+-    color: "#8a7060",
+-    location: "Philadelphia, PA",
+-    quote:
+-      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
+-    detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
+-  },
+-  {
+-    names: "Dhan & Christina",
+-    initials: "DC",
+-    photo: "/images/testimonial-dhan-christina.webp",
+-    color: "#7a6841",
+-    location: "USA",
+-    quote:
+-      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
+-    detail: "South Indian Christian wedding · bride & groom outfits",
+-  },
+-  {
+-    names: "Shincy",
+-    initials: "SH",
+-    photo: "/images/testimonial-shincy.webp",
+-    color: "#b09872",
+-    location: "USA",
+-    quote:
+-      "As a South Indian Christian bride, I was having my wedding in India but couldn't find the right outfit from abroad. CeremonyVerse sourced my bridal outfit from Delhi for me — handling everything remotely so I didn't have to stress while planning from the US.",
+-    detail: "South Indian Christian bride · outfit sourced from Delhi · wedding in India",
+-  },
+-  {
+-    names: "Swati",
+-    initials: "SW",
+-    photo: "/images/testimonial-swati.webp",
+-    color: "#8a7060",
+-    location: "USA",
+-    quote:
+-      "As a Gujarati girl I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked stunning at every event.",
+-    detail: "Gujarati wedding guest · multiple outfits",
+-  },
+   {
+     names: "Shilpa",
+     initials: "SP",
+@@ -75,14 +34,14 @@ const testimonials = [
+     detail: "12 bridesmaid outfits sourced while bride shopped in India",
+   },
+   {
+-    names: "Druma & Parin",
+-    initials: "DP",
+-    photo: "/images/testimonial-druma-parin.webp",
+-    color: "#b09872",
++    names: "Dhan & Christina",
++    initials: "DC",
++    photo: "/images/testimonial-dhan-christina.webp",
++    color: "#7a6841",
+     location: "USA",
+     quote:
+-      "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
+-    detail: "Gujarati wedding · Pure Kanchipuram silk sarees + custom matching outfits",
++      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
++    detail: "South Indian Christian wedding · bride & groom outfits",
+   },
+ ]
+ 
+@@ -698,7 +657,7 @@ export function HomePage() {
+           </p>
+ 
+           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+-            {testimonials.map((t, i) => (
++            {HOMEPAGE_TESTIMONIALS.map((t, i) => (
+               <div key={i} className="bg-white rounded-2xl p-8 flex flex-col shadow-sm">
+                 <p className="text-[#7a6841] text-2xl mb-4 leading-none">"</p>
+                 <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
+@@ -731,17 +690,9 @@ export function HomePage() {
+             ))}
+           </div>
+           <div className="text-center mt-10">
+-            <a
+-              href="https://www.trustpilot.com/review/ceremonyverse.com"
+-              target="_blank"
+-              rel="noopener noreferrer"
+-              className="inline-flex items-center gap-2 text-sm transition hover:opacity-70"
+-              style={{ color: "var(--cv-accent)" }}
+-            >
+-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+-              </svg>
+-              Read our reviews on Trustpilot →
++            {/* TODO(owner): replace with Google Business Profile reviews URL */}
++            <a href="#" className="inline-flex items-center gap-2 text-sm transition hover:opacity-70" style={{ color: "var(--cv-accent)" }}>
++              Read our reviews on Google
+             </a>
+           </div>
+         </div>
+-- 
+2.47.3
+

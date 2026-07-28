@@ -1,0 +1,112 @@
+From c605bd56f15e22e2725637e3e081092bea6a8044 Mon Sep 17 00:00:00 2001
+From: CeremonyVerse Agent <agent@ceremonyverse.local>
+Date: Tue, 28 Jul 2026 01:17:22 +0000
+Subject: [PATCH 3/7] Add price range table to homepage (placeholder figures)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Task 8. New price section on the homepage, placed after the risk
+section (PAIN POINTS STRIP) and before HOW IT WORKS, exactly as the
+brief specifies.
+
+Heading, all eight table rows, the highlighted party-total row
+($8,000 – $16,000) and the footnote are copied verbatim from the brief.
+Figures were programmatically diffed against the brief — all eight match
+character for character. Not one was altered.
+
+The TODO(owner) comment is reproduced word for word directly above the
+table in the source, as instructed.
+
+Marked up as a real <table> with scope="col"/scope="row" rather than
+divs. Inline styles plus existing Tailwind utilities; no new classes,
+no dependencies.
+
+Verified: npx tsc --noEmit exit 0.
+---
+ components/pages/home-page.tsx | 62 ++++++++++++++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
+diff --git a/components/pages/home-page.tsx b/components/pages/home-page.tsx
+index ffda186..705b2ba 100644
+--- a/components/pages/home-page.tsx
++++ b/components/pages/home-page.tsx
+@@ -86,6 +86,20 @@ const testimonials = [
+   },
+ ]
+ 
++// Figures copied verbatim from the brief. See the TODO(owner) comment
++// rendered directly above the table in the JSX below — these are
++// placeholders and must not be deployed as-is.
++const priceRanges = [
++  { garment: "Bridal lehenga — main ceremony", range: "$1,200 – $4,500" },
++  { garment: "Bride — mehndi, sangeet, reception", range: "$450 – $1,400" },
++  { garment: "Bridesmaids — coordinated colour", range: "$180 – $450 each" },
++  { garment: "Groom — sherwani", range: "$350 – $1,200" },
++  { garment: "Groomsmen — coordinated", range: "$200 – $400 each" },
++  { garment: "Mothers of the bride and groom", range: "$300 – $900" },
++  { garment: "Family and guests", range: "$150 – $600" },
++  { garment: "Children", range: "$80 – $250" },
++]
++
+ const pricingTiers = [
+   {
+     name: "Style Guide & Vendor List",
+@@ -280,6 +294,54 @@ export function HomePage() {
+         </div>
+       </section>
+ 
++      {/* PRICE RANGES */}
++      <section className="py-16 px-6" style={{ background: "#f9f6f3" }}>
++        <div className="max-w-3xl mx-auto">
++          <h2 className="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: "#1f1f1f" }}>
++            Real numbers, before you talk to anyone.
++          </h2>
++
++          {/* TODO(owner): every figure below is a PLACEHOLDER. Replace using your
++              landed-cost x 2.5 formula, and only after your customs broker confirms
++              duty rates by HTS line. Do not deploy to production until replaced. */}
++          <table className="w-full border-collapse">
++            <thead>
++              <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
++                <th scope="col" className="text-left py-3 pr-4 text-sm font-semibold" style={{ color: "#1f1f1f" }}>
++                  Garment
++                </th>
++                <th scope="col" className="text-right py-3 pl-4 text-sm font-semibold" style={{ color: "#1f1f1f" }}>
++                  Typical range
++                </th>
++              </tr>
++            </thead>
++            <tbody>
++              {priceRanges.map((row) => (
++                <tr key={row.garment} style={{ borderBottom: "1px solid #e6dfd5" }}>
++                  <th scope="row" className="text-left py-3 pr-4 text-sm font-normal" style={{ color: "#4d403a" }}>
++                    {row.garment}
++                  </th>
++                  <td className="text-right py-3 pl-4 text-sm font-medium whitespace-nowrap" style={{ color: "#1f1f1f" }}>
++                    {row.range}
++                  </td>
++                </tr>
++              ))}
++            </tbody>
++          </table>
++
++          <div className="mt-6 rounded-lg p-5 text-center" style={{ background: "#fff", border: "1px solid #7a6841" }}>
++            <p className="text-sm leading-relaxed" style={{ color: "#4d403a" }}>
++              A typical wedding party of 30–40 garments, everyone dressed for every event:{" "}
++              <strong style={{ color: "#1f1f1f" }}>$8,000 – $16,000</strong>
++            </p>
++          </div>
++
++          <p className="mt-5 text-xs leading-relaxed text-center" style={{ color: "#5e4a40" }}>
++            Prices include stitching to measure, quality inspection in India and delivery to a US address. Duty is quoted separately and shown as its own line.
++          </p>
++        </div>
++      </section>
++
+       {/* HOW IT WORKS */}
+       <section className="py-16 px-6">
+         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-14">
+-- 
+2.47.3
+

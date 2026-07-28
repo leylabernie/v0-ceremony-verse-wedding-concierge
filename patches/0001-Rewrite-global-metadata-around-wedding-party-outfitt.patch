@@ -1,0 +1,155 @@
+From bd2183706fe0affc8f4d09b270547f7f60dd21e6 Mon Sep 17 00:00:00 2001
+From: CeremonyVerse Agent <agent@ceremonyverse.local>
+Date: Tue, 28 Jul 2026 01:15:27 +0000
+Subject: [PATCH 1/7] Rewrite global metadata around wedding party outfitting
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Task 6. Removed "Mexico wedding coordination in Cancun & Riviera Maya"
+from sitewide metadata and set the global description to the exact text
+specified in the brief.
+
+- app/layout.tsx: global description and og:description replaced. Added
+  twitter:description (and twitter:title), which did not exist — the
+  brief requires the matching twitter description, and without an
+  explicit one Twitter falls back to the page description.
+- app/page.tsx: homepage description aligned to the same copy; keywords
+  reworked off Mexico/Cancun onto wedding-party outfitting.
+- lib/seo.tsx buildLocalBusinessSchema(): description replaced and the
+  three Mexico offers dropped from hasOfferCatalog. layout.tsx injects
+  this schema on every page, so it is global metadata by any reasonable
+  reading of the task.
+
+Mexico remains as body content on the dedicated Mexico landing pages,
+/services/, /pricing/ and /about/ — the brief explicitly permits it
+outside global metadata.
+
+Verified: npx tsc --noEmit exit 0.
+---
+ app/layout.tsx |  9 +++++++--
+ app/page.tsx   |  7 ++++---
+ lib/seo.tsx    | 40 +++++-----------------------------------
+ 3 files changed, 16 insertions(+), 40 deletions(-)
+
+diff --git a/app/layout.tsx b/app/layout.tsx
+index 017fad4..33d9a09 100644
+--- a/app/layout.tsx
++++ b/app/layout.tsx
+@@ -37,7 +37,7 @@ export const metadata = {
+     template: "%s | CeremonyVerse",
+   },
+   description:
+-    "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
++    "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
+   // Default robots: index + follow with generous snippet/image previews.
+   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
+   robots: {
+@@ -76,7 +76,7 @@ export const metadata = {
+     title:
+       "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
+     description:
+-      "Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
++      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
+     type: "website",
+     siteName: "CeremonyVerse",
+     locale: "en_US",
+@@ -92,6 +92,11 @@ export const metadata = {
+   twitter: {
+     card: "summary_large_image",
+     site: "@ceremonyverse",
++    title:
++      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
++    // Kept identical to the global description and og:description above.
++    description:
++      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
+     images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
+   },
+ };
+diff --git a/app/page.tsx b/app/page.tsx
+index e862fc2..81c2b64 100644
+--- a/app/page.tsx
++++ b/app/page.tsx
+@@ -5,10 +5,11 @@ export const metadata = buildMetadata({
+   path: '/',
+   // SEO Title Tag (max 60 chars). Clear value prop + target keyword.
+   title: 'Indian Wedding Outfits from India to USA | CeremonyVerse',
+-  // Meta Description (max 160 chars). Combines the two service lines.
++  // Meta Description. Mirrors the global description — wedding-party
++  // outfitting, no Mexico coordination (Task 6).
+   description:
+-    "Source Indian wedding outfits direct from Surat & Delhi — live video shopping, delivered to your US door. Mexico wedding coordination in Cancun & Riviera Maya.",
+-  keywords: 'Indian wedding outfit sourcing, buy bridal lehenga from India USA, Surat lehenga direct, Delhi wedding outfits USA, Mexico Indian wedding coordination, Cancun Indian wedding, NRI bridal concierge, live video shopping India',
++    "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
++  keywords: 'Indian wedding outfit sourcing, buy bridal lehenga from India USA, Surat lehenga direct, Delhi wedding outfits USA, wedding party outfitting, bridesmaid lehengas from India, NRI bridal concierge, live video shopping India',
+ });
+ 
+ export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog' | 'faq' | 'contact' | 'bridesmaids' | 'groom' | 'groomsmen' | 'family' | 'ceremonial' | 'jewelry' | 'pets' | 'gifts' | 'welcomebags' | 'journey';
+diff --git a/lib/seo.tsx b/lib/seo.tsx
+index c025161..53eb36f 100644
+--- a/lib/seo.tsx
++++ b/lib/seo.tsx
+@@ -320,7 +320,7 @@ export function buildLocalBusinessSchema(): object {
+     "@id": `${SITE_URL}#business`,
+     name: SITE_NAME,
+     description:
+-      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, and direct pricing. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
++      "We outfit entire wedding parties from India — every garment made to measure, every colour cut from a single dye lot, delivered to every door. Serving NRI families in all 50 states.",
+     url: SITE_URL,
+     image: `${SITE_URL}/images/hero-lehenga.webp`,
+     logo: `${SITE_URL}/icon.svg`,
+@@ -340,7 +340,7 @@ export function buildLocalBusinessSchema(): object {
+     ],
+     hasOfferCatalog: {
+       "@type": "OfferCatalog",
+-      name: "Wedding Sourcing & Coordination Services",
++      name: "Indian Wedding Outfit Sourcing Services",
+       itemListElement: [
+         {
+           "@type": "Offer",
+@@ -375,39 +375,9 @@ export function buildLocalBusinessSchema(): object {
+           price: "2499",
+           priceCurrency: "USD",
+         },
+-        {
+-          "@type": "Offer",
+-          itemOffered: {
+-            "@type": "Service",
+-            name: "Mexico Vendor Network Access",
+-            description:
+-              "Vetted planner, DJ, photographers, decorator, and beauty contacts for Cancun and Riviera Maya",
+-          },
+-          price: "499",
+-          priceCurrency: "USD",
+-        },
+-        {
+-          "@type": "Offer",
+-          itemOffered: {
+-            "@type": "Service",
+-            name: "Mexico Day-Of Coordination",
+-            description:
+-              "Single-event on-site coordination for Indian weddings in Mexico",
+-          },
+-          price: "1500",
+-          priceCurrency: "USD",
+-        },
+-        {
+-          "@type": "Offer",
+-          itemOffered: {
+-            "@type": "Service",
+-            name: "Mexico 4-Day Full Coordination",
+-            description:
+-              "Full multi-day event coordination for Indian weddings in Cancun and Riviera Maya, like a 4-day event",
+-          },
+-          price: "4500",
+-          priceCurrency: "USD",
+-        },
++        // Mexico coordination offers removed from the GLOBAL LocalBusiness
++        // schema (Task 6). layout.tsx injects this on every page, so it is
++        // sitewide metadata. The dedicated Mexico pages keep their own copy.
+       ],
+     },
+   };
+-- 
+2.47.3
+
