@@ -166,10 +166,13 @@ export function HomePage() {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              That lehenga you saw at the Edison boutique for $500? We can get you something similar — and often better — for $300 landed at your door.
+              <span style={{ display: "block" }}>Eight bridesmaids.</span>
+              <span style={{ display: "block" }}>Four states.</span>
+              <span style={{ display: "block", color: "#c7b28a" }}>One shade of dusty rose.</span>
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.92)", marginBottom: "36px", maxWidth: "520px" }}>
-              My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
+              We outfit entire wedding parties from India — every garment made to measure,
+              every colour cut from a single dye lot, delivered to every door.
             </p>
 
             {/* CTAs */}
