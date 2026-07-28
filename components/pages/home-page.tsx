@@ -86,6 +86,20 @@ const testimonials = [
   },
 ]
 
+// Figures copied verbatim from the brief. See the TODO(owner) comment
+// rendered directly above the table in the JSX below — these are
+// placeholders and must not be deployed as-is.
+const priceRanges = [
+  { garment: "Bridal lehenga — main ceremony", range: "$1,200 – $4,500" },
+  { garment: "Bride — mehndi, sangeet, reception", range: "$450 – $1,400" },
+  { garment: "Bridesmaids — coordinated colour", range: "$180 – $450 each" },
+  { garment: "Groom — sherwani", range: "$350 – $1,200" },
+  { garment: "Groomsmen — coordinated", range: "$200 – $400 each" },
+  { garment: "Mothers of the bride and groom", range: "$300 – $900" },
+  { garment: "Family and guests", range: "$150 – $600" },
+  { garment: "Children", range: "$80 – $250" },
+]
+
 const pricingTiers = [
   {
     name: "Style Guide & Vendor List",
@@ -277,6 +291,54 @@ export function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* PRICE RANGES */}
+      <section className="py-16 px-6" style={{ background: "#f9f6f3" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: "#1f1f1f" }}>
+            Real numbers, before you talk to anyone.
+          </h2>
+
+          {/* TODO(owner): every figure below is a PLACEHOLDER. Replace using your
+              landed-cost x 2.5 formula, and only after your customs broker confirms
+              duty rates by HTS line. Do not deploy to production until replaced. */}
+          <table className="w-full border-collapse">
+            <thead>
+              <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
+                <th scope="col" className="text-left py-3 pr-4 text-sm font-semibold" style={{ color: "#1f1f1f" }}>
+                  Garment
+                </th>
+                <th scope="col" className="text-right py-3 pl-4 text-sm font-semibold" style={{ color: "#1f1f1f" }}>
+                  Typical range
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {priceRanges.map((row) => (
+                <tr key={row.garment} style={{ borderBottom: "1px solid #e6dfd5" }}>
+                  <th scope="row" className="text-left py-3 pr-4 text-sm font-normal" style={{ color: "#4d403a" }}>
+                    {row.garment}
+                  </th>
+                  <td className="text-right py-3 pl-4 text-sm font-medium whitespace-nowrap" style={{ color: "#1f1f1f" }}>
+                    {row.range}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+          <div className="mt-6 rounded-lg p-5 text-center" style={{ background: "#fff", border: "1px solid #7a6841" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#4d403a" }}>
+              A typical wedding party of 30–40 garments, everyone dressed for every event:{" "}
+              <strong style={{ color: "#1f1f1f" }}>$8,000 – $16,000</strong>
+            </p>
+          </div>
+
+          <p className="mt-5 text-xs leading-relaxed text-center" style={{ color: "#5e4a40" }}>
+            Prices include stitching to measure, quality inspection in India and delivery to a US address. Duty is quoted separately and shown as its own line.
+          </p>
         </div>
       </section>
 
