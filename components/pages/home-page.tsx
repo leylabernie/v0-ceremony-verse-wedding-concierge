@@ -979,6 +979,61 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* EMAIL CAPTURE */}
+      <section className="py-16 px-6" style={{ background: "#f9f6f3" }}>
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="font-['Cormorant_Garamond'] text-3xl md:text-4xl font-semibold mb-4" style={{ color: "#1f1f1f" }}>
+            Not ready yet?
+          </h2>
+          <p className="text-base leading-relaxed mb-7" style={{ color: "#4d403a" }}>
+            Get the wedding outfit checklist — what to order, in what order, and how far ahead. We&apos;ll follow up with what things really cost and how the timeline works.
+          </p>
+
+          {/* TODO(owner): connect to Klaviyo / ConvertKit / Mailchimp */}
+          <form
+            className="flex flex-wrap gap-3 justify-center"
+            style={{ maxWidth: "480px", margin: "0 auto" }}
+          >
+            <label htmlFor="checklist-email" className="sr-only">
+              Email address
+            </label>
+            <input
+              id="checklist-email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@email.com"
+              autoComplete="email"
+              style={{
+                flex: "1 1 240px",
+                minWidth: 0,
+                padding: "13px 18px",
+                borderRadius: "999px",
+                fontSize: "15px",
+                border: "1px solid #e6dfd5",
+                background: "#fff",
+                color: "#1f1f1f",
+              }}
+            />
+            <button
+              type="submit"
+              style={{
+                background: "#7a6841",
+                color: "#fff",
+                padding: "13px 28px",
+                borderRadius: "999px",
+                fontSize: "15px",
+                fontWeight: 600,
+                border: "none",
+                cursor: "pointer",
+              }}
+            >
+              Send me the checklist
+            </button>
+          </form>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-2xl mx-auto">
