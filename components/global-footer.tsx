@@ -60,6 +60,44 @@ export function GlobalFooter() {
               Indian wedding shopping concierge for NRI families.
               Based in Philadelphia. Serving all US states.
             </p>
+
+            {/* TODO(owner): replace [STREET ADDRESS] and [ZIP] with the real
+                registered address. Must match the Google Business Profile
+                exactly — an inconsistent NAP suppresses local ranking. */}
+            <address
+              style={{
+                fontStyle: "normal",
+                fontSize: "13px",
+                color: "#4d403a",
+                lineHeight: 1.7,
+                marginTop: "14px",
+              }}
+            >
+              <span style={{ display: "block" }}>[STREET ADDRESS]</span>
+              <span style={{ display: "block" }}>Philadelphia, PA [ZIP]</span>
+
+              <a
+                href="tel:+12153419990"
+                style={{ display: "block", marginTop: "10px", color: "#4d403a", textDecoration: "none" }}
+              >
+                +1 215-341-9990
+              </a>
+              <a
+                href="https://wa.me/12153419990"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ display: "block", color: "#4d403a", textDecoration: "none" }}
+              >
+                WhatsApp
+              </a>
+              {/* TODO(owner): replace once GBP is claimed */}
+              <a
+                href="#"
+                style={{ display: "block", color: "#4d403a", textDecoration: "none" }}
+              >
+                Google Business Profile
+              </a>
+            </address>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
               target="_blank"

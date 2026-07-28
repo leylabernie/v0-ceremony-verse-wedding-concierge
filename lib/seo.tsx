@@ -326,11 +326,17 @@ export function buildLocalBusinessSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
+    // TODO(owner): replace [STREET ADDRESS] and [ZIP] with the real
+    // registered address. These are the SAME placeholders rendered in the
+    // footer <address> block (components/global-footer.tsx) — update both
+    // together, and keep them identical to the Google Business Profile.
     address: {
       "@type": "PostalAddress",
-      addressCountry: "US",
-      addressRegion: "PA",
+      streetAddress: "[STREET ADDRESS]",
       addressLocality: "Philadelphia",
+      addressRegion: "PA",
+      postalCode: "[ZIP]",
+      addressCountry: "US",
     },
     areaServed: "US",
     priceRange: "$$",
