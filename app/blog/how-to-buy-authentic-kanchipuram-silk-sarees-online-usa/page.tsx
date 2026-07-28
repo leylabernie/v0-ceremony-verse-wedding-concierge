@@ -316,7 +316,7 @@ export default function KanchipuramSilkGuideBlogPost() {
 
           <p>
             Many NRI brides turn to brick-and-mortar boutiques in major US hubs
-            like New Jersey, <Link href="/indian-wedding-shopping-illinois/" style={{ color: "#7a6841" }}>Chicago</Link>, or the Bay Area out of convenience. The
+            like New Jersey, Chicago, or the Bay Area out of convenience. The
             idea of touching the fabric in person feels safer than buying
             online. However, these physical storefronts come with massive
             markups that often double or triple the actual artisan price.

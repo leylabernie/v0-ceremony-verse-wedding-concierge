@@ -392,13 +392,7 @@ export default function IndianBridalWearTexasPage() {
               More for Texas Couples
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-              <Link
-                href="/indian-wedding-shopping-texas/"
-                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
-              >
-                Texas Indian Wedding Shopping
-              </Link>
-              <span style={{ color: "#6a6a6a" }}>·</span>
+              {/* Related link to /indian-wedding-shopping-texas/ removed — page deleted in Task 7. */}
               <Link
                 href="/blog/indian-wedding-return-gifts-bulk-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"

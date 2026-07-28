@@ -91,12 +91,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/indian-bridal-wear-new-york-new-jersey/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/indian-bridal-wear-california/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -240,66 +234,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
     // ─── MEDIUM: State pages ───
-    {
-      url: `${baseUrl}/indian-wedding-shopping-texas/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-california/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-new-york/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-new-jersey/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-philadelphia/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-massachusetts/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-georgia/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-florida/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-washington-dc/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/indian-wedding-shopping-illinois/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // Removed in Task 7 — the eleven thin location pages were deleted and
+    // now 301 to '/'. Redirecting URLs must not stay in a submitted sitemap.
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
     {

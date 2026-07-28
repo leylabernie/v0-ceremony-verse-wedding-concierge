@@ -24,19 +24,9 @@ const ceremonyLinks = [
   { label: "Gujarati Wedding Outfits", href: "/gujarati-wedding-outfits-usa/" },
 ];
 
-const locationLinks = [
-  { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
-  { label: "Washington DC", href: "/indian-wedding-shopping-washington-dc/" },
-  { label: "New York", href: "/indian-wedding-shopping-new-york/" },
-  { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey/" },
-  { label: "NY & NJ", href: "/indian-bridal-wear-new-york-new-jersey/" },
-  { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts/" },
-  { label: "Georgia", href: "/indian-wedding-shopping-georgia/" },
-  { label: "Florida", href: "/indian-wedding-shopping-florida/" },
-  { label: "California", href: "/indian-wedding-shopping-california/" },
-  { label: "Texas", href: "/indian-wedding-shopping-texas/" },
-  { label: "Illinois", href: "/indian-wedding-shopping-illinois/" },
-];
+// NOTE: `locationLinks` and the "Locations" column were removed in Task 7 —
+// all eleven pages they pointed to were deleted and now 301 to '/'.
+
 
 const companyLinks = [
   { label: "How It Works", href: "/how-it-works/" },
@@ -109,20 +99,6 @@ export function GlobalFooter() {
             <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>By Ceremony</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
               {ceremonyLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Locations */}
-          <div>
-            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Locations</p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
-              {locationLinks.map((l) => (
                 <li key={l.href}>
                   <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
                     {l.label}

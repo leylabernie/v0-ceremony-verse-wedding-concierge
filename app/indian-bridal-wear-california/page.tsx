@@ -393,13 +393,7 @@ export default function IndianBridalWearCaliforniaPage() {
               More for California Couples
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-              <Link
-                href="/indian-wedding-shopping-california/"
-                className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"
-              >
-                California Indian Wedding Shopping
-              </Link>
-              <span style={{ color: "#6a6a6a" }}>·</span>
+              {/* Related link to /indian-wedding-shopping-california/ removed — page deleted in Task 7. */}
               <Link
                 href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"
                 className="text-[#f8f6f2] hover:text-[#7a6841] transition-colors"

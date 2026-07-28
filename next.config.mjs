@@ -134,6 +134,71 @@ const nextConfig = {
         destination: '/blog/',
         permanent: true,
       },
+      // ─── RETIRED THIN LOCATION PAGES (Task 7) ───
+      // The eleven routes below were deleted. Destinations are '/' exactly
+      // as the brief specifies. Merged into this existing array — the
+      // ~24 entries above are untouched.
+      //
+      // Note: `trailingSlash: true` is set above, so each of these resolves
+      // in two hops ('/x' -> '/' is already the slash form, but rules like
+      // /consultation -> /contact -> /contact/ show the same pattern). That
+      // behaviour predates this task and applies to every entry here.
+      {
+        source: '/indian-wedding-shopping-philadelphia',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-washington-dc',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-new-york',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-new-jersey',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-massachusetts',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-georgia',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-florida',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-california',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-texas',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-wedding-shopping-illinois',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/indian-bridal-wear-new-york-new-jersey',
+        destination: '/',
+        permanent: true,
+      },
+
       // ─── DEAD URLS GETTING GSC IMPRESSIONS — redirect to live pages ───
       // 100 impressions, position 7.9 — page 1 traffic going to 404!
       {
