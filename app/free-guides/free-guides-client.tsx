@@ -412,7 +412,7 @@ export function FreeGuidesPage() {
                     cursor: "pointer",
                                       }}
                 >
-                  See What's Next →
+                  See What&apos;s Next →
                 </button>
               </div>
             ) : (

@@ -209,7 +209,7 @@ export function HomePage() {
             The 5 Biggest Risks When Buying Indian Wedding Outfits from India
           </p>
           <p className="text-center mb-8 max-w-2xl mx-auto text-sm" style={{ color: "#e6dfd5" }}>
-            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's what can go wrong — and how we prevent it.
+            NRIs aren&apos;t afraid of spending money. They&apos;re afraid of making expensive, irreversible mistakes. Here&apos;s what can go wrong — and how we prevent it.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
                         {[
@@ -446,7 +446,7 @@ export function HomePage() {
             <span className="inline-block text-xs font-medium tracking-widest uppercase text-[#7a6841] mb-2">Always Free</span>
             <h3 className="text-xl font-semibold text-[#1f1f1f] mb-2">Free Consultation — No Commitment</h3>
             <p className="text-sm text-[#4d403a] mb-4">
-              Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
+              Not sure where to start? Book a free 30-minute call. We&apos;ll review your vision, timeline, and budget — and recommend exactly what level of support you need.
             </p>
             <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
         href="/contact/"
@@ -516,7 +516,7 @@ export function HomePage() {
             How We Prevent Failures
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's exactly how we prevent every risk.
+            NRIs aren&apos;t afraid of spending money. They&apos;re afraid of making expensive, irreversible mistakes. Here&apos;s exactly how we prevent every risk.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -595,10 +595,10 @@ export function HomePage() {
             Real Weddings, Real Results
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            See What We've Done
+            See What We&apos;ve Done
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            These are real NRI families who trusted us. From 14-bridesmaid coordination to destination weddings in Mexico, here's proof that we deliver.
+            These are real NRI families who trusted us. From 14-bridesmaid coordination to destination weddings in Mexico, here&apos;s proof that we deliver.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -659,7 +659,7 @@ export function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {HOMEPAGE_TESTIMONIALS.map((t, i) => (
               <div key={i} className="bg-white rounded-2xl p-8 flex flex-col shadow-sm">
-                <p className="text-[#7a6841] text-2xl mb-4 leading-none">"</p>
+                <p className="text-[#7a6841] text-2xl mb-4 leading-none">&quot;</p>
                 <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
                   {t.quote}
                 </p>
@@ -710,7 +710,7 @@ export function HomePage() {
                 South Indian, Gujarati, or any tradition — we know your wedding.
               </h2>
               <p className="text-base leading-relaxed mb-4" style={{ color: "#4d403a" }}>
-                Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Our clients include South Indian Christian families, Gujarati families, and couples from all backgrounds.
+                Whether you&apos;re a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Our clients include South Indian Christian families, Gujarati families, and couples from all backgrounds.
               </p>
               <p className="text-base leading-relaxed mb-6" style={{ color: "#4d403a" }}>
                 We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
@@ -736,7 +736,7 @@ export function HomePage() {
               </Link>
             </div>
             <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
-              <p className="text-[#7a6841] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
+              <p className="text-[#7a6841] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">&quot;</p>
               <p className="text-base leading-relaxed mb-6 font-['Cormorant_Garamond'] text-xl italic" style={{ color: "#2f2f2f" }}>
                 As a South Indian Christian couple, we wanted outfits that truly honored our heritage for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
               </p>
@@ -990,10 +990,10 @@ export function HomePage() {
         <div className="max-w-2xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>For NRI Families Planning Indian Weddings</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">
-            This is your wedding. You shouldn't have to settle.
+            This is your wedding. You shouldn&apos;t have to settle.
           </h2>
           <p className="text-[#4d403a] mb-2">
-            Book a free 30-minute consultation. We'll review your vision, timeline, and budget — and tell you exactly what's achievable. No commitment required.
+            Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget — and tell you exactly what&apos;s achievable. No commitment required.
           </p>
           <p className="text-sm text-[#5e4a40] mb-8">
             Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.

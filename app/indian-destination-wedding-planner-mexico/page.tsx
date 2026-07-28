@@ -429,7 +429,7 @@ export default function MexicoDestinationPage() {
               </div>
               <p className="text-[#4d403a] leading-relaxed">
                 Guests fly in from across the US (and often India). We coordinate airport transfers to the
-                resort so no one gets lost. Welcome bags are in rooms — for my son's wedding, I sourced custom
+                resort so no one gets lost. Welcome bags are in rooms — for my son&apos;s wedding, I sourced custom
                 canvas bags with Indian snacks, sunscreen, and a personalized itinerary. Evening mehndi for the
                 bride and close family, followed by haldi with bright yellow decor from our budget-friendly
                 decorator. The bride typically wears a simple yellow salwar set or lehenga — this is the relaxed
@@ -448,7 +448,7 @@ export default function MexicoDestinationPage() {
                 </div>
               </div>
               <p className="text-[#4d403a] leading-relaxed">
-                This is where our vetted DJ makes the difference. At my son's sangeet, he opened with garba,
+                This is where our vetted DJ makes the difference. At my son&apos;s sangeet, he opened with garba,
                 transitioned to Bollywood classics that both families knew, and closed with fusion and Western
                 hits. The dance floor was full from 8 PM to 2 AM — including relatives who never dance. The
                 bride wears a lighter lehenga or sharara set (the one she can actually dance in). The groom
@@ -470,13 +470,13 @@ export default function MexicoDestinationPage() {
               </div>
               <p className="text-[#4d403a] leading-relaxed">
                 Morning starts with bridal makeup — our American HD makeup artist handles the main look, which
-                holds up in Mexico's heat and humidity and photographs beautifully. The Hindu ceremony takes place
+                holds up in Mexico&apos;s heat and humidity and photographs beautifully. The Hindu ceremony takes place
                 under a professionally built mandap with tropical flowers by our wedding-seasoned decorator.
                 Our vetted priest travels to your resort and performs the full ceremony. For interfaith couples,
                 the Christian ceremony follows at the resort chapel or a nearby church. Evening reception with
                 full catering, first dance, toasts, and the DJ returns. This is the day the main photographer
                 delivers the images you will frame for the rest of your life. The bride wears her bridal lehenga
-                (sourced through our India service if you're combining both), and the groom wears his sherwani.
+                (sourced through our India service if you&apos;re combining both), and the groom wears his sherwani.
               </p>
             </div>
 

@@ -28,7 +28,7 @@ export function PartnerWithUsPage() {
                   <div className="flex-shrink-0 w-12 h-12 bg-[var(--cv-accent)] text-white rounded-full flex items-center justify-center font-bold">1</div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">High-Intent Traffic</h3>
-                    <p className="text-[var(--cv-muted)]">We rank for the most competitive "Indian destination wedding" keywords. When couples find us, they are ready to book.</p>
+                    <p className="text-[var(--cv-muted)]">We rank for the most competitive &quot;Indian destination wedding&quot; keywords. When couples find us, they are ready to book.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -42,7 +42,7 @@ export function PartnerWithUsPage() {
                   <div className="flex-shrink-0 w-12 h-12 bg-[var(--cv-accent)] text-white rounded-full flex items-center justify-center font-bold">3</div>
                   <div>
                     <h3 className="font-bold text-xl mb-2">Brand Authority</h3>
-                    <p className="text-[var(--cv-muted)]">Being a "CeremonyVerse Vetted Partner" signals quality and reliability to middle-class NRI families who value transparency.</p>
+                    <p className="text-[var(--cv-muted)]">Being a &quot;CeremonyVerse Vetted Partner&quot; signals quality and reliability to middle-class NRI families who value transparency.</p>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export function PartnerWithUsPage() {
       {/* FOOTER PITCH */}
       <section className="py-20 bg-[#f0e6dd] text-center px-6">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Let's build the future of destination weddings together.</h2>
+          <h2 className="text-3xl font-bold mb-6">Let&apos;s build the future of destination weddings together.</h2>
           <p className="text-lg text-[var(--cv-muted)] mb-8">
             Our goal is to create a seamless ecosystem for NRI couples. If you share our commitment to transparency and quality, we want to hear from you.
           </p>

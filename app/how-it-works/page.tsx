@@ -361,9 +361,9 @@ export default function HowItWorksPage() {
       <section style={{ padding: "48px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            Not sure if this process is right for you? We've helped brides from New Jersey to California
-            source their entire wedding party's outfits from India. Book a free 30-minute call and
-            we'll walk you through what it would look like for your specific wedding.
+            Not sure if this process is right for you? We&apos;ve helped brides from New Jersey to California
+            source their entire wedding party&apos;s outfits from India. Book a free 30-minute call and
+            we&apos;ll walk you through what it would look like for your specific wedding.
           </p>
           <a
             href="/contact/"
@@ -605,8 +605,8 @@ export default function HowItWorksPage() {
               marginBottom: "28px",
             }}
           >
-            Book a free 30-minute consultation. We'll review your wedding vision, tell you honestly
-            what's achievable in your timeline and budget, and recommend the right service tier.
+            Book a free 30-minute consultation. We&apos;ll review your wedding vision, tell you honestly
+            what&apos;s achievable in your timeline and budget, and recommend the right service tier.
             No commitment, no pressure — just clarity. Or message us directly on WhatsApp.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>

@@ -289,7 +289,7 @@ export function ContactPage() {
       {/* DIVIDER */}
       <div className="max-w-3xl mx-auto px-6 py-4 text-center">
         <p className="text-xs" style={{ color: "var(--cv-muted)" }}>
-          — or fill out the form below and we'll reach out within 24–48 hours —
+          — or fill out the form below and we&apos;ll reach out within 24–48 hours —
         </p>
       </div>
 

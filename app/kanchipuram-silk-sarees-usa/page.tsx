@@ -50,7 +50,7 @@ export default function KanchipuramSareesPage() {
           We travel to Kanchipuram — the silk weaving capital of India — to hand-select pure silk sarees for our clients. Every saree is hand-woven with pure mulberry silk and real gold or silver zari thread.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#5e4a40", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
-          This is not sourced from a catalog. We go there so you don't have to.
+          This is not sourced from a catalog. We go there so you don&apos;t have to.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

@@ -135,10 +135,10 @@ export function GroomPage({ onNavigate }: GroomPageProps) {
       <section className="py-20 px-6 bg-[#1f1f1f] text-white text-center">
         <p className="tracking-[0.15em] text-xs font-medium text-[#7a6841] mb-4 uppercase">Ready to Begin?</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          Let's find your perfect groom look.
+          Let&apos;s find your perfect groom look.
         </h2>
         <p className="text-white/90 mb-8 max-w-md mx-auto text-sm">
-          Book a free consultation. We'll match your style, coordinate with the bridal look, and source the right outfit — stress free.
+          Book a free consultation. We&apos;ll match your style, coordinate with the bridal look, and source the right outfit — stress free.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button

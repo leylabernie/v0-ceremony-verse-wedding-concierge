@@ -31,10 +31,10 @@ export default function BaraatOutfitsPage() {
           Baraat Ceremony
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          Baraat outfits sourced from India — the groom's grand entry, done right.
+          Baraat outfits sourced from India — the groom&apos;s grand entry, done right.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          The Baraat is the groom's moment. A full-length sherwani, coordinated groomsmen, family dressed to celebrate — we source every piece directly from India, custom stitched to every measurement, and delivered to your US door.
+          The Baraat is the groom&apos;s moment. A full-length sherwani, coordinated groomsmen, family dressed to celebrate — we source every piece directly from India, custom stitched to every measurement, and delivered to your US door.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

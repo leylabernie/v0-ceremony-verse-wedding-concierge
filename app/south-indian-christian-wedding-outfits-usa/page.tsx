@@ -79,13 +79,13 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse has dressed South Indian Christian families in Philadelphia — understanding exactly what each ceremony calls for, from the church procession to the reception. We know that a Kerala Christian wedding saree isn't the same as a Tamil Christian one, and that the outfit expectations for a Syro-Malabar ceremony differ from a Latin Catholic celebration.
+              CeremonyVerse has dressed South Indian Christian families in Philadelphia — understanding exactly what each ceremony calls for, from the church procession to the reception. We know that a Kerala Christian wedding saree isn&apos;t the same as a Tamil Christian one, and that the outfit expectations for a Syro-Malabar ceremony differ from a Latin Catholic celebration.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our artisan partners in Kanchipuram, Kochi, and Chennai specialize in the textiles that define South Indian Christian weddings — kasavu cotton and silk for Kerala families, Kanchipuram silk for Tamil families, and contemporary blended pieces for the reception. Every saree is handwoven, every blouse custom stitched to your measurements.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              We also handle the details that make coordination seamless: matching bridesmaids sarees or churidars, coordinated outfits for the groom's family, and Kanchipuram silk sarees for mothers and grandmothers. One point of contact, one managed process, delivered to your US door.
+              We also handle the details that make coordination seamless: matching bridesmaids sarees or churidars, coordinated outfits for the groom&apos;s family, and Kanchipuram silk sarees for mothers and grandmothers. One point of contact, one managed process, delivered to your US door.
             </p>
           </div>
         </div>

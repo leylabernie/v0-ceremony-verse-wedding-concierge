@@ -44,7 +44,7 @@ export function CeremonialPage({ onNavigate }: Props) {
 
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">Source everything your ceremonies need</h2>
-        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">Tell us your ceremony type — Hindu, Sikh, Jain, or fusion — and we'll source every item needed, correctly and on time.</p>
+        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">Tell us your ceremony type — Hindu, Sikh, Jain, or fusion — and we&apos;ll source every item needed, correctly and on time.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20ceremonial%20items%20sourced." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>

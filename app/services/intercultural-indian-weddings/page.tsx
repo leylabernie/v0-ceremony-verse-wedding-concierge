@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
@@ -30,17 +31,17 @@ export default function InterculturalWeddingPage() {
           South Indian, Gujarati, or intercultural — we know every tradition.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px" }}>
-          Whether you're a South Indian Christian family, a Gujarati couple, an intercultural family, or a non-South Asian partner — CeremonyVerse understands your specific traditions and ceremonies. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
+          Whether you&apos;re a South Indian Christian family, a Gujarati couple, an intercultural family, or a non-South Asian partner — CeremonyVerse understands your specific traditions and ceremonies. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
+        <Link href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
           Book Free Consultation — CeremonyVerse.com
-        </a>
+        </Link>
       </section>
 
       <section style={{ padding: "40px 24px", background: "#1f1f1f" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
           <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontStyle: "italic", color: "#f0ebe3", lineHeight: 1.6, marginBottom: "16px" }}>
-            "As a South Indian Christian couple, we wanted outfits that truly honored our heritage. CeremonyVerse walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away."
+            &quot;As a South Indian Christian couple, we wanted outfits that truly honored our heritage. CeremonyVerse walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.&quot;
           </p>
           <p style={{ fontSize: "17px", color: "#7a6841", fontWeight: 500 }}>— Charly &amp; Viola, Philadelphia PA · Intercultural wedding</p>
         </div>

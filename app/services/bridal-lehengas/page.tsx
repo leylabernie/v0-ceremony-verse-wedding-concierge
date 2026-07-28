@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
@@ -32,9 +33,9 @@ export default function BridalLehengaServicePage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
           The most beautiful bridal lehengas are made in India. CeremonyVerse brings them to you — with live video shopping so you see every detail before you buy, custom stitching to your exact measurements, quality inspection before shipping, and full delivery to your door.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
+        <Link href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
           Book Free Consultation — CeremonyVerse.com
-        </a>
+        </Link>
         <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Response within 24–48 hours</p>
       </section>
 

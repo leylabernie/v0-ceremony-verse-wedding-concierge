@@ -149,7 +149,7 @@ export default function BlogIndexPage() {
       {/* Posts */}
       <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 2rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {posts.map((post, i) => (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}

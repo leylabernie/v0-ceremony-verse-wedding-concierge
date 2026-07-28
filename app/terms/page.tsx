@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({

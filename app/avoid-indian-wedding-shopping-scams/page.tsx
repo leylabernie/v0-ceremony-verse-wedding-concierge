@@ -36,7 +36,7 @@ export default function AvoidScamsPage() {
             How to Avoid Scams When Buying Indian Wedding Outfits from India
           </h1>
           <p className="text-lg text-[var(--cv-muted)] max-w-2xl mx-auto">
-            Don't let your dream wedding turn into a nightmare. Learn the essential steps to source authentic Indian bridal wear safely from abroad.
+            Don&apos;t let your dream wedding turn into a nightmare. Learn the essential steps to source authentic Indian bridal wear safely from abroad.
           </p>
         </header>
 

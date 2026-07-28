@@ -347,7 +347,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
               Book your free consultation
             </h3>
             <p className="text-sm mb-6" style={{ color: "var(--cv-muted)" }}>
-              No commitment required. We'll review your vision, timeline, and budget.
+              No commitment required. We&apos;ll review your vision, timeline, and budget.
             </p>
             <button
               type="button"

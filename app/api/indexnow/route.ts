@@ -125,9 +125,12 @@ export async function POST(req: NextRequest) {
         ? 'URLs submitted to IndexNow. Bing should crawl within ~24 hours.'
         : `IndexNow returned status ${response.status}. Check that ${INDEXNOW_KEY_LOCATION} is accessible.`,
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
+    // `unknown` rather than `any`: anything can be thrown, so narrow before
+    // reading .message instead of assuming the shape.
+    const detail = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { ok: false, error: 'Failed to reach IndexNow API', detail: err?.message },
+      { ok: false, error: 'Failed to reach IndexNow API', detail },
       { status: 502 }
     );
   }

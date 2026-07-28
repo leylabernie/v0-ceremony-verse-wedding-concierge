@@ -134,7 +134,7 @@ export function FAQPage({ onNavigate }: FAQPageProps) {
           </h1>
           <p className="text-midnight-navy/60 text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
             For NRI families planning Indian weddings in the US — scams, sizing disasters, and broken
-            promises are real concerns. Here's exactly how CeremonyVerse addresses every one of them.
+            promises are real concerns. Here&apos;s exactly how CeremonyVerse addresses every one of them.
           </p>
         </div>
       </section>

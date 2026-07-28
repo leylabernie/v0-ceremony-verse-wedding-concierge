@@ -20,7 +20,7 @@ export function JewelryPage({ onNavigate }: Props) {
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
           <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>The Finishing Touch</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Jewelry & Bridal Accessories</h1>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Authentic bridal jewelry sourced directly from India's finest craftsmen — kundan, polki, temple, and meenakari — inspected and delivered to your door.</p>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Authentic bridal jewelry sourced directly from India&apos;s finest craftsmen — kundan, polki, temple, and meenakari — inspected and delivered to your door.</p>
         </div>
       </section>
 

@@ -50,7 +50,7 @@ export function FamilyPage({ onNavigate }: Props) {
 
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">Dress the whole family</h2>
-        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We've coordinated outfits for families of 20+, across multiple states and ceremonies. One point of contact. Zero stress.</p>
+        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We&apos;ve coordinated outfits for families of 20+, across multiple states and ceremonies. One point of contact. Zero stress.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20family%20wedding%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>

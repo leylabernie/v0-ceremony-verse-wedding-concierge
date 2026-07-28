@@ -209,7 +209,7 @@ export default function PricingPage() {
                 <div>
                   <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Ananya in California — Guided Sourcing</h3>
                   <p className="text-[#4d403a] leading-relaxed mb-3">
-                    Ananya needed a bridal lehenga, a reception saree, and her fiance's sherwani. She chose Guided Sourcing ($799) with 3 live video sessions. We found her a coral pink zardozi lehenga ($1,400), a banarasi saree for the reception ($350), and a cream sherwani with gold detailing ($650). Total including service fee, DHL shipping, and customs: $3,500. She initially budgeted $5,000 for just the lehenga at a Bay Area boutique.
+                    Ananya needed a bridal lehenga, a reception saree, and her fiance&apos;s sherwani. She chose Guided Sourcing ($799) with 3 live video sessions. We found her a coral pink zardozi lehenga ($1,400), a banarasi saree for the reception ($350), and a cream sherwani with gold detailing ($650). Total including service fee, DHL shipping, and customs: $3,500. She initially budgeted $5,000 for just the lehenga at a Bay Area boutique.
                   </p>
                   <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Guided Sourcing ($799) — Total savings: ~$3,000-4,000</p>
                 </div>
@@ -224,7 +224,7 @@ export default function PricingPage() {
                 <div>
                   <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Swati in Pennsylvania — Style Guide + Self-Sourcing</h3>
                   <p className="text-[#4d403a] leading-relaxed mb-3">
-                    Swati wanted guidance but was comfortable managing vendors herself. She chose Style Guide and Vendor List ($249). We sent her a curated list of 12 vendors in Surat and Delhi matched to her style, with specific recommendations for each vendor's strengths. She sourced a mehndi outfit ($180) and sangeet lehenga ($320) on her own using our list, and came back for Guided Sourcing when she realized the bridal lehenga needed more hand-holding. Total first order: $569. She later upgraded to Guided Sourcing for the bridal outfit.
+                    Swati wanted guidance but was comfortable managing vendors herself. She chose Style Guide and Vendor List ($249). We sent her a curated list of 12 vendors in Surat and Delhi matched to her style, with specific recommendations for each vendor&apos;s strengths. She sourced a mehndi outfit ($180) and sangeet lehenga ($320) on her own using our list, and came back for Guided Sourcing when she realized the bridal lehenga needed more hand-holding. Total first order: $569. She later upgraded to Guided Sourcing for the bridal outfit.
                   </p>
                   <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Style Guide ($249) — Outfits landed: $569</p>
                 </div>
@@ -599,7 +599,7 @@ export default function PricingPage() {
               Brides who start 4-6 months before their wedding get the widest selection, the most
               relaxed timeline, and first pick of our tailoring partners. Rush orders (under 8 weeks)
               are possible for some pieces but limit your options. If your wedding is in the next
-              3-6 months, book your consultation now — even if you're still deciding.
+              3-6 months, book your consultation now — even if you&apos;re still deciding.
             </p>
             <a
               href="/contact/"

@@ -44,7 +44,7 @@ export function WelcomeBagsPage({ onNavigate }: Props) {
 
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">Welcome your guests in style</h2>
-        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We curate, pack, and ship welcome bags for any guest count. Add them to your outfit order and we'll handle everything together.</p>
+        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We curate, pack, and ship welcome bags for any guest count. Add them to your outfit order and we&apos;ll handle everything together.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20welcome%20bags%20for%20my%20wedding%20guests." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>

@@ -156,10 +156,10 @@ export function BridalPage({ onNavigate }: BridalPageProps) {
       <section className="py-20 px-6 bg-[#1f1f1f] text-white text-center">
         <p className="tracking-[0.15em] text-xs font-medium text-[#7a6841] mb-4 uppercase">Ready to Begin?</p>
         <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-          Let's find your perfect bridal look.
+          Let&apos;s find your perfect bridal look.
         </h2>
         <p className="text-white/90 mb-8 max-w-md mx-auto text-sm">
-          Book a free 30-minute consultation. We'll review your vision, budget, and timeline — no commitment required.
+          Book a free 30-minute consultation. We&apos;ll review your vision, budget, and timeline — no commitment required.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <button

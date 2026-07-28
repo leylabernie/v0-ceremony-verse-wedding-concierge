@@ -122,7 +122,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Planning your timeline
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a" }}>
-            Wedding guests often start looking for outfits later than brides — but sourcing from India still takes time. Between live video sessions, fabric selection, custom stitching, and international shipping, plan for a <strong style={{ color: "#1f1f1f" }}>minimum of 8–10 weeks</strong> from your first consultation to delivery. The earlier you start, the more options you'll have.
+            Wedding guests often start looking for outfits later than brides — but sourcing from India still takes time. Between live video sessions, fabric selection, custom stitching, and international shipping, plan for a <strong style={{ color: "#1f1f1f" }}>minimum of 8–10 weeks</strong> from your first consultation to delivery. The earlier you start, the more options you&apos;ll have.
           </p>
         </div>
       </section>

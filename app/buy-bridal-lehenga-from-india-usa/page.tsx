@@ -115,9 +115,9 @@ export default function BridalLehengaPage() {
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
                 <li>• Limited in-stock selection — typically 15–40 bridal lehengas per store</li>
                 <li>• Prices start at $2,500 and run to $8,000+ for zardozi-heavy work</li>
-                <li>• You pay for the boutique's rent, inventory, and import duties</li>
+                <li>• You pay for the boutique&apos;s rent, inventory, and import duties</li>
                 <li>• Customization is rare and adds 50–100% to the price</li>
-                <li>• Heavy sales pressure to buy what's in stock today</li>
+                <li>• Heavy sales pressure to buy what&apos;s in stock today</li>
                 <li>• Few options for coordinating bridesmaids or family outfits</li>
               </ul>
             </div>
@@ -157,7 +157,7 @@ export default function BridalLehengaPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Gota Patti lehengas</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Rajasthan's signature appliqué of gold and silver ribbon. Lighter than zardozi, ideal
+                Rajasthan&apos;s signature appliqué of gold and silver ribbon. Lighter than zardozi, ideal
                 for daytime ceremonies. $900–$2,200 custom from Jaipur.
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function BridalLehengaPage() {
                 <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Insured delivery to your US door</h3>
                 <p className="text-[#4d403a] leading-relaxed">
                   We handle all shipping documentation, customs declarations, and full insurance.
-                  Standard shipping takes 2–3 weeks; expedited 7–10 days is available. We've never
+                  Standard shipping takes 2–3 weeks; expedited 7–10 days is available. We&apos;ve never
                   had an unresolved shipping issue.
                 </p>
               </div>

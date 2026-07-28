@@ -33,7 +33,7 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
               Customs Duty Rates (2026)
             </h2>
             <p className="text-midnight-navy/60 text-lg leading-[1.8] mb-8">
-              When importing Indian wedding outfits to the USA, you'll pay customs duties on the declared value. Here's what to expect:
+              When importing Indian wedding outfits to the USA, you&apos;ll pay customs duties on the declared value. Here&apos;s what to expect:
             </p>
             
             <div className="space-y-4">
@@ -68,7 +68,7 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
               Cost Calculation Example
             </h2>
             <p className="text-midnight-navy/60 mb-8">
-              Here's a realistic breakdown for a typical bridal lehenga order:
+              Here&apos;s a realistic breakdown for a typical bridal lehenga order:
             </p>
             
             <div className="space-y-3">

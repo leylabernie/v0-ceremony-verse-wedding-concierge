@@ -82,7 +82,7 @@ export default function GujaratiWeddingOutfitsPage() {
               CeremonyVerse has dressed Gujarati families for multi-day weddings — including a destination wedding in Mexico — sourcing everything from Garba chaniya cholis to bridal lehengas to coordinated family outfits. We have even made a special trip to Kanchipuram to source pure Kanchipuram silk sarees for a Gujarati family who wanted the finest silk for the mothers and aunties.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              We understand that a Gujarati wedding isn't one outfit — it's six or seven. Each ceremony has its own palette, its own formality level, and its own cultural significance. The Garba chaniya choli needs to move with you. The Mameru saree needs to honor tradition. The bridal lehenga needs to take everyone's breath away. We source each piece with that understanding.
+              We understand that a Gujarati wedding isn&apos;t one outfit — it&apos;s six or seven. Each ceremony has its own palette, its own formality level, and its own cultural significance. The Garba chaniya choli needs to move with you. The Mameru saree needs to honor tradition. The bridal lehenga needs to take everyone&apos;s breath away. We source each piece with that understanding.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our artisan partners in Surat, Jaipur, Delhi, and Kanchipuram specialize in exactly the kind of craftsmanship Gujarati celebrations demand — intricate mirror work, bandhani, gota patti, and heavy zardozi embroidery. Every outfit is custom stitched to your measurements and delivered to your US address.

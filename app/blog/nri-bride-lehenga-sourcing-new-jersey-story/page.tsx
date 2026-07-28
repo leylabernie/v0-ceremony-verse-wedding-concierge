@@ -111,7 +111,7 @@ export default function BrideStoryPage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Result</h2>
           <p>Priya wore her lehenga on June 14, 2025. The zardozi caught the light beautifully during the ceremony. The silk draped perfectly in photos. The color matched exactly what she had seen on the video calls. She received compliments from every guest — including her mother-in-law, who is notoriously hard to impress.</p>
-          <p style={{ marginTop: "1.2rem" }}>"I was terrified to order from India," Priya told us after the wedding. "But seeing the actual piece on video before it shipped made all the difference. I knew exactly what I was getting. And the savings? I put that toward our honeymoon."</p>
+          <p style={{ marginTop: "1.2rem" }}>&quot;I was terrified to order from India,&quot; Priya told us after the wedding. &quot;But seeing the actual piece on video before it shipped made all the difference. I knew exactly what I was getting. And the savings? I put that toward our honeymoon.&quot;</p>
 
           <div style={{ background: "#2f2f2f", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem", textAlign: "center" }}>
             <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "0.8rem" }}>Start Your Story</p>
