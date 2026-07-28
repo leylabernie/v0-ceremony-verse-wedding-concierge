@@ -3,6 +3,13 @@
 # dependencies
 /node_modules
 
+# This project uses pnpm — pnpm-lock.yaml is the ONLY committed lockfile.
+# Vercel detects pnpm-lock.yaml and installs with `pnpm --frozen-lockfile`,
+# so a stale or competing lockfile fails the deploy at the install step.
+# Ignored here so an accidental `npm install` cannot commit one back.
+package-lock.json
+yarn.lock
+
 # next.js
 /.next/
 /out/

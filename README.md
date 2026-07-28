@@ -10,14 +10,26 @@ This repository is linked to a [v0](https://v0.app) project. You can continue de
 
 ## Getting Started
 
-First, run the development server:
+> **This project uses pnpm.** `pnpm-lock.yaml` is the only committed
+> lockfile, and Vercel installs with `pnpm --frozen-lockfile`. Do not use
+> `npm install` or `yarn` — they generate a competing lockfile and any
+> dependency change made with them will fail the deploy at the install
+> step. The pinned version is in `packageManager` in `package.json`;
+> `corepack enable` will match it automatically.
+
+Install dependencies and run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+corepack enable      # once, to use the pinned pnpm version
+pnpm install
 pnpm dev
+```
+
+Other scripts:
+
+```bash
+pnpm build           # production build
+pnpm lint            # eslint
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
