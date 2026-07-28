@@ -1,7 +1,7 @@
 From b567c47a1dbe0c53e8516b682fd9a84c5d05f69d Mon Sep 17 00:00:00 2001
 From: CeremonyVerse Agent <agent@ceremonyverse.local>
 Date: Tue, 28 Jul 2026 01:18:36 +0000
-Subject: [PATCH 5/7] Add email capture for outfit checklist
+Subject: [PATCH 05/10] Add email capture for outfit checklist
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

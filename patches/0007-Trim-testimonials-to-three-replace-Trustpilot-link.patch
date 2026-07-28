@@ -1,7 +1,7 @@
 From 8ab97faede3c8684b7db2a4d40e2dd0a87703100 Mon Sep 17 00:00:00 2001
 From: CeremonyVerse Agent <agent@ceremonyverse.local>
 Date: Tue, 28 Jul 2026 01:20:04 +0000
-Subject: [PATCH 7/7] Trim testimonials to three, replace Trustpilot link
+Subject: [PATCH 07/10] Trim testimonials to three, replace Trustpilot link
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

@@ -1,7 +1,7 @@
 From c605bd56f15e22e2725637e3e081092bea6a8044 Mon Sep 17 00:00:00 2001
 From: CeremonyVerse Agent <agent@ceremonyverse.local>
 Date: Tue, 28 Jul 2026 01:17:22 +0000
-Subject: [PATCH 3/7] Add price range table to homepage (placeholder figures)
+Subject: [PATCH 03/10] Add price range table to homepage (placeholder figures)
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

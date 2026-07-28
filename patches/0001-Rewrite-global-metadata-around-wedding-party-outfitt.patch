@@ -1,7 +1,7 @@
 From bd2183706fe0affc8f4d09b270547f7f60dd21e6 Mon Sep 17 00:00:00 2001
 From: CeremonyVerse Agent <agent@ceremonyverse.local>
 Date: Tue, 28 Jul 2026 01:15:27 +0000
-Subject: [PATCH 1/7] Rewrite global metadata around wedding party outfitting
+Subject: [PATCH 01/10] Rewrite global metadata around wedding party outfitting
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

@@ -1,7 +1,7 @@
 From df9e1e6fccb8bdacffa6613af50bd3d84123ec8e Mon Sep 17 00:00:00 2001
 From: CeremonyVerse Agent <agent@ceremonyverse.local>
 Date: Tue, 28 Jul 2026 01:19:14 +0000
-Subject: [PATCH 6/7] Add business address and contact block to footer
+Subject: [PATCH 06/10] Add business address and contact block to footer
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
