@@ -25,6 +25,7 @@ Work was done against the real brief at `origin/docs/agent-brief`
 | 10 — Email capture | ✅ intentionally unwired | `b567c47` |
 | 11 — Business address | ✅ placeholders as specified | `df9e1e6` |
 | 12 — Trim testimonials | ✅ | `8ab97fa` |
+| — Make `npm run lint` runnable + fix 112 lint problems | ✅ extra | `c520d2f` |
 
 ---
 
@@ -52,17 +53,28 @@ Work was done against the real brief at `origin/docs/agent-brief`
 **Task 12** — `components/pages/home-page.tsx` (5 testimonials removed, Trustpilot
 link replaced, array exported); `app/page.tsx` (review schema rebound).
 
+**Lint fix (`c520d2f`)** — new `eslint.config.mjs`; `package.json` devDependencies;
+74 unescaped entities across 29 files; `<a href="/">` → `<Link>` in two service
+pages; dead `SeoNav` imports in privacy/terms; unused map index in blog;
+`catch (err: any)` → `unknown` in `app/api/indexnow/route.ts`.
+
 ## 2. Build status
 
 **`npm run build` — PASS, exit 0, zero warnings.** 67 static pages.
 `/swatch-box` prerenders as static (`○`). All 11 deleted routes absent.
 
-**`npm run lint` — CANNOT RUN. Pre-existing repo bug, not caused by this work.**
-`package.json` defines `"lint": "eslint ."` but eslint is not in `dependencies`
-or `devDependencies`, so it fails `eslint: not found`. Verified the same on
-`origin/main` and `origin/docs/agent-brief`. Type safety was covered instead with
-`npx tsc --noEmit` (exit 0) after every single task. **Recommend adding
-`eslint` + `eslint-config-next` to devDependencies.**
+**`npm run lint` — PASS, exit 0, zero problems** (fixed in `c520d2f`).
+
+It could not run before: `package.json` defined `"lint": "eslint ."` but eslint
+was never a dependency and no config existed, so it failed `eslint: not found`
+on every branch including `main`. Added `eslint@9` + `eslint-config-next@16.2.0`
++ `@eslint/eslintrc` and a flat `eslint.config.mjs`, then fixed every error:
+**112 problems at baseline (`7b52d79`) → 0.**
+
+All 112 were pre-existing — a machine diff against the baseline confirmed my
+seven task commits introduced **zero** new lint problems.
+
+`npx tsc --noEmit` — exit 0 after every individual task.
 
 ## 3. Every `TODO(owner)` left
 
