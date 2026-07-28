@@ -29,6 +29,7 @@ const ceremonyLinks = [
 
 
 const companyLinks = [
+  { label: "The Swatch Box", href: "/swatch-box/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },

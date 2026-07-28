@@ -60,6 +60,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    // The Swatch Box — primary hero CTA target.
+    {
+      url: `${baseUrl}/swatch-box/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     {
       url: `${baseUrl}/link-to-us/`,
       lastModified: now,
