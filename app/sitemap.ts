@@ -303,6 +303,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
     {
+      url: `${baseUrl}/blog/how-to-take-lehenga-measurements-at-home/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/`,
       lastModified: now,
       changeFrequency: 'monthly',

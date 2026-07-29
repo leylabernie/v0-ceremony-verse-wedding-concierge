@@ -20,6 +20,12 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "how-to-take-lehenga-measurements-at-home",
+    title: "How to Take Lehenga Measurements at Home: A Step-by-Step Guide for NRI Brides",
+    description: "The #1 reason a custom lehenga from India fits wrong is bad measurements, not bad tailoring. A step-by-step guide to measuring blouse, skirt, and dupatta accurately at home so your outfit fits the first time.",
+    date: "July 2026",
+  },
+  {
     slug: "how-to-choose-indian-wedding-jewelry-usa",
     title: "How to Choose Indian Wedding Jewelry in the USA: An NRI Bride's Complete Guide",
     description: "Kundan vs Polki vs Temple vs Meenakari — how to choose authentic Indian bridal jewelry from the USA. BIS Hallmark verification, fake jewelry red flags, budget tiers, and how NRI brides source heirloom pieces directly from India.",
