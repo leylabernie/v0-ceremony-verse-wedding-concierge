@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-return-gifts-bulk-usa/",
@@ -735,6 +736,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
             to discuss your wedding favor needs.
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

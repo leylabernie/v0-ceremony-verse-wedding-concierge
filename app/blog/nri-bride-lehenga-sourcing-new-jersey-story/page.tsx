@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/nri-bride-lehenga-sourcing-new-jersey-story/",
@@ -122,6 +123,7 @@ export default function BrideStoryPage() {
 
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>See how we work</Link> or <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>read our lehenga price guide</Link>.</p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

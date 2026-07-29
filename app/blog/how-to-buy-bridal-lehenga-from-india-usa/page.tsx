@@ -1,6 +1,7 @@
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
@@ -266,6 +267,7 @@ export default function LehengaBuyingGuideBlogPost() {
             More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

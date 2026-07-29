@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/",
@@ -658,6 +659,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             to discuss your wedding trousseau.
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

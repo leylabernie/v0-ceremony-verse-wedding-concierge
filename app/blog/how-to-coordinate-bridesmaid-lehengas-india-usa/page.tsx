@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/",
@@ -172,6 +173,7 @@ export default function BridesmaidGuidePage() {
 
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire directly from India for NRI weddings. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

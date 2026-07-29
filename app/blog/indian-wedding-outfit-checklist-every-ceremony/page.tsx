@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-checklist-every-ceremony/",
@@ -180,6 +181,7 @@ export default function OutfitChecklistPage() {
 
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

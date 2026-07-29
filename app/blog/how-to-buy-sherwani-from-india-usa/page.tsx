@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-sherwani-from-india-usa/",
@@ -328,6 +329,7 @@ export default function SherwaniGuidePage() {
           </p>
 
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

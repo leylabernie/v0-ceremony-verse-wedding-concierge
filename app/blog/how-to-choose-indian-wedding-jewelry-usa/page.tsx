@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-choose-indian-wedding-jewelry-usa/",
@@ -1070,6 +1071,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             to discuss your wedding jewelry and full trousseau.
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

@@ -1,10 +1,11 @@
 import { SeoNav } from "@/components/seo-nav"
-import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo"
+import { buildMetadata, buildBlogPosting, buildBreadcrumb, buildHowToSchema, JsonLd } from "@/lib/seo"
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/nri-bridal-lehenga-sizing-guide/",
-  title: "NRI Bridal Lehenga Sizing Guide | CeremonyVerse",
-  description: "Take 15+ precise bridal lehenga measurements at home for perfect custom fits from India. Free master measurement sheet for NRI brides.",
+  title: "NRI Bridal Lehenga Sizing: Step-by-Step Measurement Guide",
+  description: "Avoid costly alteration mistakes when ordering bridal lehengas from India. Step-by-step sizing templates tailored specifically for NRI brides.",
   keywords: ["bridal lehenga sizing guide", "how to take lehenga measurements at home", "NRI bride measurements", "lehenga blouse measurement guide"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -24,11 +25,36 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at", url: "/blog/nri-bridal-lehenga-sizing-guide/" },
 ]);
 
+const howToSchema = buildHowToSchema({
+  name: "How to Take Bridal Lehenga Measurements at Home for NRI Brides",
+  description: "Step-by-step guide to taking accurate bridal lehenga measurements at home so custom outfits stitched in India fit perfectly the first time.",
+  url: "/blog/nri-bridal-lehenga-sizing-guide/",
+  steps: [
+    {
+      name: "Have a professional tailor measure you",
+      text: "Always have a professional tailor take your measurements. DIY measurements often lead to tight armholes or short lehenga lengths.",
+    },
+    {
+      name: "Measure blouse length",
+      text: "Measure from the high point of your shoulder down to your desired blouse length.",
+    },
+    {
+      name: "Measure bust",
+      text: "Measure around the fullest part of your bust while wearing the wedding bra you plan to wear on the day.",
+    },
+    {
+      name: "Measure lehenga length",
+      text: "Measure from where you wear your skirt down to the floor, and include the height of the heels you will wear.",
+    },
+  ],
+});
+
 export default function SizingGuidePage() {
   return (
     <main className="min-h-screen bg-[var(--cv-bg)]">
         <JsonLd id="schema-blogposting" data={blogPostingSchema} />
         <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+        <JsonLd id="schema-howto" data={howToSchema} />
       
       <SeoNav />
       <section className="py-20 px-6">
@@ -65,6 +91,7 @@ export default function SizingGuidePage() {
           </div>
         </div>
       </section>
+          <SourcingCallout />
     </main>
   )
 }

@@ -1,11 +1,12 @@
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/gujarati-wedding-outfit-guide/",
-  title: "Gujarati Wedding Outfit Guide: Every Ceremony",
-  description: "Complete Gujarati wedding outfit guide \u2014 Garba/chaniya choli, Mehndi, Pithi, Mameru, wedding ceremony, and reception. What each family member wears for each function.",
+  title: "Gujarati Wedding Outfit Guide 2026: Panetar, Gharchola & Sizing",
+  description: "Planning your Gujarati wedding wardrobe from abroad? Complete guide to Panetar, Gharchola, and custom sourcing direct from designer hubs in India.",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -250,6 +251,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/gujarati-wedding-outfits-usa/" style={{ color: "#7a6841" }}>Gujarati Wedding Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

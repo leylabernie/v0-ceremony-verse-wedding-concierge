@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo"
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
@@ -319,6 +320,7 @@ export default function BlogPost() {
             </Link>
           </div>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   )

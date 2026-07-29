@@ -1,6 +1,7 @@
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/south-indian-christian-wedding-outfit-guide/",
@@ -239,6 +240,7 @@ export default function SouthIndianChristianWeddingGuide() {
             More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ color: "#7a6841" }}>South Indian Christian Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

@@ -1,10 +1,11 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
-  title: "How Much Does a Bridal Lehenga Cost in India with Shipping to USA? (2026 Prices)",
-  description: "Real 2026 bridal lehenga prices in India with shipping to USA — Surat vs Delhi, zardozi vs resham work, customs duties (up to 32%), alterations, and full budget breakdown for NRI brides.",
+  title: "How Much Does a Bridal Lehenga Cost in India? (2026 Pricing)",
+  description: "Detailed 2026 breakdown of designer bridal lehenga prices in India, shipping duties, custom fitting costs, and how to order safely from abroad.",
   keywords: ["how much does a bridal lehenga cost in India with shipping to USA", "bridal lehenga price India 2026", "lehenga customs duty USA", "Surat lehenga cost", "NRI bride lehenga budget"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -276,6 +277,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

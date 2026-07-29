@@ -1,5 +1,6 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-scams-nri-brides/",
@@ -180,6 +181,7 @@ export default function ScamsGuidePage() {
 
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works/" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );

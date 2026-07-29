@@ -1,10 +1,11 @@
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
+import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
-  title: "Shipping Indian Wedding Outfits to USA: Customs & Duties",
-  description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA \u2014 customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
+  title: "Shipping Indian Outfits to USA: Customs, Taxes & Tariff Rules",
+  description: "Everything you need to know about US customs duties, import tariffs, and shipping delays for Indian wedding outfits and bridal couture.",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -167,6 +168,7 @@ export default function ShippingGuidePage() {
 
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source and ship Indian wedding outfits for NRI families — handling quality inspection, customs documentation, insured shipping, and delivery to your US door. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
         </div>
+              <SourcingCallout />
       </article>
     </main>
   );
