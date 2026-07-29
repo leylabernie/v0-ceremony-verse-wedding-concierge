@@ -523,3 +523,75 @@ export function buildGlobalFaqSchema(): object {
     ],
   };
 }
+
+/**
+ * Organization schema — site-wide entity for Google Knowledge Graph and AI
+ * engines. Complements the LocalBusiness schema (which describes the physical
+ * service) by declaring the brand entity, founder, and contact points.
+ *
+ * NOTE: `sameAs` is intentionally limited to profiles the business actually
+ * maintains. Do NOT list social URLs that don't resolve — Google treats a
+ * broken sameAs as a weak/incorrect entity signal.
+ */
+export function buildOrganizationSchema(): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}#organization`,
+    name: SITE_NAME,
+    legalName: "CeremonyVerse",
+    url: SITE_URL,
+    logo: `${SITE_URL}/icon.svg`,
+    image: `${SITE_URL}/images/hero-lehenga.webp`,
+    description:
+      "CeremonyVerse is a US-based Indian wedding shopping concierge. We source bridal lehengas, sherwanis, and ceremonial items directly from India to the USA with live video shopping and quality checks.",
+    founder: {
+      "@type": "Person",
+      name: "Bhamini",
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: SITE_PHONE,
+        email: SITE_EMAIL,
+        contactType: "customer service",
+        areaServed: "US",
+        availableLanguage: ["English", "Hindi", "Gujarati"],
+      },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "US",
+      addressRegion: "PA",
+      addressLocality: "Philadelphia",
+    },
+    sameAs: [
+      "https://wa.me/12153419990",
+      "https://www.trustpilot.com/review/ceremonyverse.com",
+    ],
+  };
+}
+
+/**
+ * WebSite schema — declares the site entity and its publisher.
+ *
+ * NOTE: We intentionally do NOT include a SearchAction / sitelinks-searchbox.
+ * Google deprecated the sitelinks searchbox rich result in late 2024, and the
+ * site has no working internal search endpoint to back the declaration.
+ * Declaring a non-functional SearchAction is a misrepresentation with no upside.
+ */
+export function buildWebSiteSchema(): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}#website`,
+    url: SITE_URL,
+    name: SITE_NAME,
+    description:
+      "Indian wedding shopping concierge — source bridal lehengas, sherwanis, and ceremonial items directly from India to the USA.",
+    publisher: {
+      "@id": `${SITE_URL}#organization`,
+    },
+    inLanguage: "en-US",
+  };
+}

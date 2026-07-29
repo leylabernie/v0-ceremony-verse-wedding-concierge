@@ -1,8 +1,26 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
+  // AI search / answer-engine crawlers. main's `userAgent: '*'` rule already
+  // permits these, but declaring them EXPLICITLY is a stronger, unambiguous
+  // opt-in signal — several AI operators only treat a named allow rule as
+  // consent to cite/surface content. Purely additive; no disallow tightening.
+  const aiCrawlers = [
+    'GPTBot',            // OpenAI / ChatGPT Search
+    'ChatGPT-User',      // ChatGPT user-initiated browsing
+    'OAI-SearchBot',     // OpenAI Search crawler
+    'PerplexityBot',     // Perplexity.ai
+    'Perplexity-User',   // Perplexity user-initiated browsing
+    'Google-Extended',   // Google Gemini / AI Overviews
+    'ClaudeBot',         // Anthropic Claude
+    'anthropic-ai',      // Anthropic
+    'Applebot-Extended', // Apple Intelligence
+    'CCBot',             // Common Crawl (feeds many AI datasets)
+  ].map((ua) => ({ userAgent: ua, allow: '/' }))
+
   return {
     rules: [
+      ...aiCrawlers,
       {
         userAgent: '*',
         allow: [

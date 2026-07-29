@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
-import { JsonLd, buildLocalBusinessSchema } from "@/lib/seo";
+import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
 
 // Build-time font loading via next/font — eliminates the render-blocking
 // Google Fonts @import that was in globals.css. Fonts are downloaded at
@@ -109,6 +109,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const localBusinessSchema = buildLocalBusinessSchema();
+  const organizationSchema = buildOrganizationSchema();
+  const webSiteSchema = buildWebSiteSchema();
 
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
@@ -207,6 +209,8 @@ export default function RootLayout({
           which only injected them client-side after hydration.
         */}
         <JsonLd id="schema-localbusiness" data={localBusinessSchema} />
+        <JsonLd id="schema-organization" data={organizationSchema} />
+        <JsonLd id="schema-website" data={webSiteSchema} />
         {/*
           NOTE: The global FAQPage schema was REMOVED (2026-07-27).
           Google's structured-data policy requires FAQ schema to reference
