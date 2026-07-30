@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { trackLead } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
   const phoneNumber = "12153419990";
@@ -16,6 +17,7 @@ export default function WhatsAppButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackLead("whatsapp", "floating-button")}
         className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all duration-300"
         aria-label="Chat on WhatsApp"
       >

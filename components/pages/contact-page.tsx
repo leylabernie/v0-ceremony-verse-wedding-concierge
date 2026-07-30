@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { trackLead } from "@/lib/analytics"
 
 interface FormData {
   name: string
@@ -65,12 +66,14 @@ export function ContactPage() {
 
       const result = await response.json()
       if (result.success) {
+        trackLead("form", "contact-page")
         setIsSubmitted(true)
       } else {
         // Fallback: open WhatsApp with the form data pre-filled
         const msg = encodeURIComponent(
           `Hi! I'd like to book a consultation.\nName: ${formData.name}\nEvent date: ${formData.eventDate}\nVision: ${formData.vision}`
         )
+        trackLead("whatsapp", "contact-page-fallback")
         window.open(`https://wa.me/12153419990?text=${msg}`, "_blank")
         setIsSubmitted(true)
       }
@@ -79,6 +82,7 @@ export function ContactPage() {
       const msg = encodeURIComponent(
         `Hi! I'd like to book a consultation.\nName: ${formData.name}\nEvent date: ${formData.eventDate}\nVision: ${formData.vision}`
       )
+      trackLead("whatsapp", "contact-page-error-fallback")
       window.open(`https://wa.me/12153419990?text=${msg}`, "_blank")
       setIsSubmitted(true)
     }

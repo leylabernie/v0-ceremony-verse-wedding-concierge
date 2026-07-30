@@ -1,5 +1,7 @@
 "use client"
 
+import { trackLead } from "@/lib/analytics"
+
 export default function MobileStickyCTA() {
   return (
     <div
@@ -26,6 +28,7 @@ export default function MobileStickyCTA() {
         href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackLead("whatsapp", "mobile-sticky-cta")}
         style={{
           background: "#fff",
           color: "var(--cv-accent)",
