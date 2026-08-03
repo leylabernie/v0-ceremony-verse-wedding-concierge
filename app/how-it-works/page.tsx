@@ -331,7 +331,7 @@ export default function HowItWorksPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "24px" }}>
             <div style={{ textAlign: "center", padding: "24px" }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
-                40-60%
+                30-50%
               </div>
               <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
                 Typical savings vs. US Indian boutiques — even after our service fee, shipping, and customs

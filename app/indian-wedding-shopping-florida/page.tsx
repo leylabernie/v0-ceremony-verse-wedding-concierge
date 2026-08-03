@@ -171,7 +171,7 @@ export default function FloridaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Florida?",
-                a: "Most of our Florida clients save 40-60% compared to what they&apos;d pay at the few Indian boutiques in the state or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Most of our Florida clients save 30-50% compared to what they&apos;d pay at the few Indian boutiques in the state or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
               },
               {
                 q: "We&apos;re planning a destination wedding in Florida &mdash; can you coordinate delivery to a hotel or resort?",

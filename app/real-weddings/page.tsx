@@ -189,10 +189,10 @@ export default function RealWeddingsPage() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
               }}
             >
-              27+
+              4
             </div>
             <p className="text-xs uppercase tracking-wider text-[#4d403a]">
-              5-Star Reviews
+              Featured Wedding Stories
             </p>
           </div>
           <div>
@@ -203,10 +203,10 @@ export default function RealWeddingsPage() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
               }}
             >
-              50
+              Nationwide
             </div>
             <p className="text-xs uppercase tracking-wider text-[#4d403a]">
-              US States Served
+              US Delivery Available
             </p>
           </div>
           <div>
@@ -217,7 +217,7 @@ export default function RealWeddingsPage() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
               }}
             >
-              40–60%
+              30–50%
             </div>
             <p className="text-xs uppercase tracking-wider text-[#4d403a]">
               Savings vs. US Boutiques

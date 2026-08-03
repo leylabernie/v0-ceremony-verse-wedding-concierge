@@ -167,11 +167,11 @@ export default function GeorgiaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Georgia?",
-                a: "Most of our Georgia clients save 40-60% compared to what they'd pay at the few Indian boutiques in the Atlanta area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Most of our Georgia clients save 30-50% compared to what they'd pay at the few Indian boutiques in the Atlanta area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
               },
               {
                 q: "I've heard about shops on Buford Highway — why shouldn't I just go there?",
-                a: "The Indian shops along Buford Highway and in the surrounding Atlanta area serve a purpose, but they carry limited inventory and often charge significant markups. For a bridal lehenga or a full wedding party's outfits, the selection is simply not there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 40-60% lower than what you'd pay locally.",
+                a: "The Indian shops along Buford Highway and in the surrounding Atlanta area serve a purpose, but they carry limited inventory and often charge significant markups. For a bridal lehenga or a full wedding party's outfits, the selection is simply not there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 30-50% lower than what you'd pay locally.",
               },
               {
                 q: "Can you help with outfits for a Telugu or South Indian wedding in Atlanta?",

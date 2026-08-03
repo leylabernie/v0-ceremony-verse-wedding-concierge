@@ -22,7 +22,7 @@ export default function MobileStickyCTA() {
       className="md:hidden"
     >
       <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
-        Top vendors book 6–12 months out
+        Get a free 30-minute outfit plan
       </p>
       <a
         href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
@@ -41,7 +41,7 @@ export default function MobileStickyCTA() {
           letterSpacing: "0.02em",
         }}
       >
-        Book Now
+        WhatsApp Us
       </a>
     </div>
   )

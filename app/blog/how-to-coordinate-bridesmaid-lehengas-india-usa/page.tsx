@@ -100,7 +100,7 @@ export default function BridesmaidGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Sourcing bridesmaid lehengas from India typically saves 40-60% compared to buying in the US — even after shipping and customs. The key is ordering from a single workshop to guarantee color consistency.
+            Sourcing bridesmaid lehengas from India typically saves 30-50% compared to buying in the US — even after shipping and customs. The key is ordering from a single workshop to guarantee color consistency.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 4: Order from the Same Workshop</h2>

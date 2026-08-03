@@ -227,7 +227,7 @@ export default function RootLayout({
       <body>
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c5a059", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
-          * Top India vendors are booking fast for 2026–2027 weddings &nbsp;·&nbsp; Start sourcing 6–12 months out &nbsp;·&nbsp;
+          * Planning a 2026–2027 wedding? Custom outfits need production, inspection, and shipping time &nbsp;·&nbsp;
           <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
 
@@ -247,4 +247,3 @@ export default function RootLayout({
     </html>
   );
 }
-

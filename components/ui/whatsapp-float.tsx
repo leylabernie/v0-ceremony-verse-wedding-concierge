@@ -6,6 +6,8 @@ export default function WhatsAppFloat() {
       href="https://wa.me/12153419990?text=Hi%20I%20am%20interested%20in%20Indian%20wedding%20outfit%20sourcing"
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Message CeremonyVerse on WhatsApp"
+      className="hidden md:flex"
       style={{
         position: "fixed",
         bottom: "24px",
@@ -15,7 +17,6 @@ export default function WhatsAppFloat() {
         width: "56px",
         height: "56px",
         borderRadius: "50%",
-        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         boxShadow: "0 10px 20px rgba(0,0,0,0.2)",

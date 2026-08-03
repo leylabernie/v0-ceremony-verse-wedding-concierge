@@ -121,7 +121,7 @@ export function GuideBuyLehengaSafely({ onNavigate }: GuidePageProps) {
                 points: [
                   "Verify that your shipment is fully insured.",
                   "Use tracked shipping (DHL, FedEx, UPS) with signature required.",
-                  "Get upfront information about expected customs duties (typically 12-27%).",
+                  "Get a written customs estimate based on garment classification, fiber content, and declared value.",
                   "Have a contingency plan if the shipment is delayed or damaged."
                 ]
               }

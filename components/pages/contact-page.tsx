@@ -11,7 +11,6 @@ interface FormData {
   bridesmaidsCount: string
   groomsmenCount: string
   vision: string
-  contractAcknowledged: boolean
 }
 
 const initialFormData: FormData = {
@@ -22,7 +21,6 @@ const initialFormData: FormData = {
   bridesmaidsCount: "",
   groomsmenCount: "",
   vision: "",
-  contractAcknowledged: false,
 }
 
 export function ContactPage() {
@@ -31,12 +29,12 @@ export function ContactPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
 
-  const updateFormData = (field: keyof FormData, value: string | boolean) => {
+  const updateFormData = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
   const canSubmit = () => {
-    return formData.name && formData.email && formData.eventDate && formData.contractAcknowledged
+    return Boolean(formData.name && formData.email && formData.eventDate)
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -109,7 +107,7 @@ export function ContactPage() {
             className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-4"
             style={{ color: "var(--cv-foreground)" }}
           >
-            Application Received
+            Consultation Request Received
           </h1>
           <p className="text-lg leading-relaxed mb-10" style={{ color: "#4d403a" }}>
             Thank you, {formData.name}. Our team will review your vision and reach out within 24–48 hours at{" "}
@@ -128,9 +126,9 @@ export function ContactPage() {
             <ul className="space-y-4">
               {[
                 "We review your wedding vision and timeline",
-                "A specialist reaches out via email within 24–48 hours",
-                "We schedule a 30-minute video consultation",
-                "You receive a customized sourcing proposal",
+                "Bhamini or a team member reaches out within 24–48 hours",
+                "We confirm your free 30-minute outfit call",
+                "You leave the call with a realistic plan and recommended next step",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <span
@@ -159,6 +157,14 @@ export function ContactPage() {
               </svg>
               Message on WhatsApp
             </a>
+            <a
+              href="/ceremonyverse-intake-questionnaire.pdf"
+              download
+              className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
+              style={{ border: "1px solid var(--cv-border)", color: "var(--cv-foreground)" }}
+            >
+              Download Optional Prep Sheet
+            </a>
           </div>
         </div>
       </div>
@@ -178,10 +184,10 @@ export function ContactPage() {
             className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-6"
             style={{ color: "var(--cv-foreground)" }}
           >
-            Book Your Free Consultation
+            Get Your Free 30-Minute Outfit Plan
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Save 30-50% on your dream wedding outfits by sourcing directly from India. Tell us about your vision, and we&apos;ll prepare a tailored sourcing proposal — no commitment required.
+            Bring your wedding date, party size, budget, and inspiration. We&apos;ll map a realistic sourcing timeline, flag avoidable risks, and recommend the right level of support — with no contract, payment, or pressure.
           </p>
 
           {/* Quick contact strip */}
@@ -219,46 +225,6 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* DOCUMENTS */}
-      <section className="px-6 pb-4">
-        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-3">
-          <a
-            href="/ceremonyverse-intake-questionnaire.pdf"
-            download
-            className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
-            style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a6841" strokeWidth="1.5">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <polyline points="10 9 9 9 8 9"/>
-            </svg>
-            <div>
-              <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Client Intake Questionnaire</p>
-              <p className="text-xs" style={{ color: "#5e4a40" }}>Download & complete before your consultation</p>
-            </div>
-          </a>
-          <a
-            href="/ceremonyverse-service-agreement.pdf"
-            download
-            className="flex-1 flex items-center gap-3 rounded-xl px-5 py-4 transition hover:opacity-90"
-            style={{ background: "#f0ebe3", border: "1px solid #e6dfd5", textDecoration: "none" }}
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7a6841" strokeWidth="1.5">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <path d="M9 15l2 2 4-4"/>
-            </svg>
-            <div>
-              <p className="text-sm font-semibold" style={{ color: "#1f1f1f" }}>Service Agreement</p>
-              <p className="text-xs" style={{ color: "#5e4a40" }}>Review our terms before signing</p>
-            </div>
-          </a>
-        </div>
-      </section>
-
       {/* CALENDLY BOOKING */}
       <section className="pb-8 px-6">
         <div className="max-w-3xl mx-auto">
@@ -273,7 +239,7 @@ export function ContactPage() {
               Pick a Time That Works for You
             </h2>
             <p className="text-sm" style={{ color: "var(--cv-muted)" }}>
-              Free 30-minute consultation — no commitment required
+              No contract or payment required. You&apos;ll leave with a practical next step.
             </p>
           </div>
           {/* Calendly inline widget */}
@@ -463,26 +429,6 @@ export function ContactPage() {
                   />
                 </div>
 
-                {/* Checkbox */}
-                <div style={{ borderTop: "1px solid var(--cv-border)", paddingTop: "1.5rem" }}>
-                  <label className="flex items-start gap-3 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={formData.contractAcknowledged}
-                      onChange={(e) => updateFormData("contractAcknowledged", e.target.checked)}
-                      className="mt-0.5 w-4 h-4 cursor-pointer rounded"
-                      style={{ accentColor: "#7a6841" }}
-                      required
-                    />
-                    <span className="text-sm leading-relaxed" style={{ color: "var(--cv-muted)" }}>
-                      <span style={{ color: "var(--cv-accent)" }}>*</span>{" "}
-                      I understand that CeremonyVerse operates on a{" "}
-                      <strong style={{ color: "var(--cv-foreground)" }}>Gate-Approval contract system</strong>.
-                      Once a design is approved, changes are permitted only within 24 hours.
-                    </span>
-                  </label>
-                </div>
-
                 {/* Submit */}
                 <button
                   type="submit"
@@ -494,7 +440,7 @@ export function ContactPage() {
                     cursor: canSubmit() && !isLoading ? "pointer" : "not-allowed",
                   }}
                 >
-                  {isLoading ? "Sending..." : "Submit Application"}
+                  {isLoading ? "Sending..." : "Request My Free Consultation"}
                 </button>
 
               </div>

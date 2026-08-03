@@ -363,17 +363,17 @@ export default function IndianWeddingShoppingIllinoisPage() {
               },
               {
                 tier: "Style Guide",
-                price: "$149",
+                price: "$249",
                 desc: "A curated lookbook tailored to your ceremonies, body type, and budget — with specific recommendations from India's top outfit specialists.",
               },
               {
                 tier: "Guided Sourcing",
-                price: "$599",
+                price: "$799",
                 desc: "Live video shopping sessions, direct access to artisan partners in India, measurement guidance, and managed ordering for your key outfits.",
               },
               {
                 tier: "Full Bridal Concierge",
-                price: "$1,499",
+                price: "$2,499",
                 desc: "End-to-end outfit management for the entire wedding party — bride, groom, bridesmaids, groomsmen, and family. Every ceremony covered.",
               },
             ].map((item) => (

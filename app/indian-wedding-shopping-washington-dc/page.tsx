@@ -167,7 +167,7 @@ export default function WashingtonDCPage() {
               },
               {
                 q: "How much does a bridal lehenga cost delivered to the DC area?",
-                a: "Most DMV clients save 40-60% compared to what they&apos;d pay at the few Indian boutiques in Northern Virginia or Maryland. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Most DMV clients save 30-50% compared to what they&apos;d pay at the few Indian boutiques in Northern Virginia or Maryland. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
               },
               {
                 q: "I'm a federal employee getting married in DC &mdash; can you work with my security clearance venue?",

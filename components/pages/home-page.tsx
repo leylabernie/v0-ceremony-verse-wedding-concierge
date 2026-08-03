@@ -102,15 +102,17 @@ const pricingTiers = [
   {
     name: "Guided Sourcing",
     price: "From $799",
-    desc: "Live video shopping so you see and pick every piece before it ships.",
+    desc: "The hands-on option for brides who want expert help with every high-risk decision.",
     features: [
       "Everything in Style Guide tier",
       "2–4 live video shopping sessions",
-      "Fabric & color matching to your shade",
-      "Color accuracy confirmation",
-      "Family inspection before shipping",
+      "Exact-item, fabric & color approval",
+      "Measurement and stitching guidance",
+      "Vendor and order coordination",
+      "Pre-shipping quality inspection",
+      "Fit Assurance on eligible garments",
     ],
-    cta: "Book Consultation",
+    cta: "Get My Free Outfit Plan",
     featured: true,
   },
   {
@@ -125,7 +127,7 @@ const pricingTiers = [
       "End-to-end shipping & delivery support",
       "Dedicated sourcing manager",
     ],
-    cta: "Apply Now",
+    cta: "Discuss My Wedding",
   },
 ]
 
@@ -157,8 +159,8 @@ export function HomePage() {
         {/* Content */}
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
           <div style={{ maxWidth: "640px" }}>
-            <p style={{ fontSize: "15px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#7a6841", marginBottom: "20px", fontWeight: 500 }}>
-              Indian Wedding Outfits from Surat &amp; Delhi · Mexico Wedding Coordination
+            <p style={{ fontSize: "15px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#e7d7b8", marginBottom: "20px", fontWeight: 500 }}>
+              US-Based Indian Wedding Outfit Concierge
             </p>
             <h1 style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
@@ -166,10 +168,10 @@ export function HomePage() {
               fontWeight: 600, lineHeight: 1.12,
               color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
             }}>
-              That lehenga you saw at the Edison boutique for $500? We can get you something similar — and often better — for $300 landed at your door.
+              See and approve your exact wedding outfits in India before they ship.
             </h1>
             <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.92)", marginBottom: "36px", maxWidth: "520px" }}>
-              My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places US Indian boutiques do — without the boutique markup. Live video shopping, family inspection, delivery to your US door. Or bring me a designer reference and my local boutique will recreate it for less than half.
+              CeremonyVerse helps NRI families source bridal, groom, family, and wedding-party outfits directly from trusted partners in Surat, Delhi, and Kanchipuram. We manage live video selection, measurements, quality inspection, insured delivery, and Fit Assurance — while clients typically save 30–50% versus US boutique pricing.
             </p>
 
             {/* CTAs */}
@@ -177,34 +179,26 @@ export function HomePage() {
               <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
         href="/contact/"
       >
-                Book Free Consultation
+                Get My Free Outfit Plan
               </Link>
               <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
         href="/how-it-works/"
       >
                 How It Works
               </Link>
-              <a
-                href="/wedding-outfit-checklist.pdf"
-                download="CeremonyVerse-Indian-Wedding-Outfit-Checklist.pdf"
-                style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "transparent", color: "rgba(255,255,255,0.85)", padding: "13px 20px", borderRadius: "999px", fontSize: "15px", border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none" }}
-              >
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-                  <polyline points="7,10 12,15 17,10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-                Free Checklist
-              </a>
             </div>
+
+            <p style={{ fontSize: "14px", lineHeight: 1.6, color: "rgba(255,255,255,0.82)", marginBottom: "22px", maxWidth: "560px" }}>
+              Bring your wedding date, party size, budget, and Pinterest inspiration. Leave with a realistic sourcing timeline and the right level of support.
+            </p>
 
             {/* Real differentiators */}
             <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
               {[
-                "Live video shopping — see and pick every piece",
-                "Family inspection before shipping",
-                "Direct from Surat & Delhi — no boutique markup",
-                "Mexico wedding coordination in Cancun & Riviera Maya",
+                "US-based accountability",
+                "Four-stage milestone payments",
+                "Live video approval",
+                "Fit Assurance up to $150",
               ].map((tag) => (
                 <span key={tag} style={{ fontSize: "15px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
                   {tag}
@@ -214,7 +208,7 @@ export function HomePage() {
           </div>
         </div>
         <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "15px", color: "rgba(255,255,255,0.92)", paddingBottom: "18px" }}>
-          Top vendors book 6–12 months in advance — start early
+          Wedding-party orders need production and shipping time — start early
         </p>
       </section>
 
@@ -241,12 +235,12 @@ export function HomePage() {
               },
               {
                 problem: "Sizing disasters: Blouses misfitted, family chaos",
-                solution: "We collect 15+ precise measurements and build in strategic ease allowances. Every piece is custom-stitched to your exact silhouette. We offer a 100% fit guarantee with alteration cost coverage up to $150 per garment.",
+                solution: "We collect 15+ precise measurements and build in strategic ease allowances. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations, subject to service terms.",
                 icon: "📏",
               },
               {
                 problem: "Logistics anxiety: Customs duties, delays, damage risk",
-                solution: "We handle all shipping documentation, advise on customs duties upfront (typically 12-27%), and fully insure every shipment. We have never had an unresolved shipping issue.",
+                solution: "We handle shipping documentation, estimate duties using each garment's classification, fiber content, and declared value, and insure shipments. Actual customs assessments are itemized and passed through transparently.",
                 icon: "📦",
               },
               {
@@ -374,7 +368,7 @@ export function HomePage() {
               { icon: "🎥", stat: "Live Video Approval", sub: "You see every item before it ships" },
               { icon: "✅", stat: "Quality Checked", sub: "Inspected in India before shipping" },
               { icon: "🛡️", stat: "Vetted Partners Only", sub: "No random Instagram sellers" },
-              { icon: "📦", stat: "US Delivery", sub: "All 50 states, door to door" },
+              { icon: "📦", stat: "Nationwide Delivery", sub: "Insured shipping to US addresses" },
             ].map((t, i) => (
               <div key={i}>
                 <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
@@ -425,7 +419,7 @@ export function HomePage() {
               >
                 {tier.featured && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#7a6841] text-white text-xs font-medium px-4 py-1 rounded-full tracking-wider">
-                    MOST POPULAR
+                    BEST VALUE
                   </div>
                 )}
                 <p className={`text-sm font-medium tracking-wide mb-1 ${tier.featured ? "text-[#c5a059]" : "text-[#5e4a40]"}`}>
@@ -511,11 +505,11 @@ export function HomePage() {
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Sizing disasters:</strong> 15+ precise measurements + custom stitching + 100% fit guarantee with alteration coverage up to $150/garment.</span>
+                  <span><strong>Sizing disasters:</strong> 15+ precise measurements, strategic ease, and Fit Assurance with up to $150 toward local alterations on eligible made-to-measure garments.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Shipping damage:</strong> Full insurance on all shipments. We've never had an unresolved shipping issue.</span>
+                  <span><strong>Shipping damage:</strong> Insured shipping, documented packing, and active delivery coordination through arrival.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-[#7a6841] font-bold">🚫</span>
@@ -725,30 +719,15 @@ export function HomePage() {
       <section className="py-20 px-6" style={{ background: "#fff" }}>
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: "var(--cv-accent)" }}>
-            Trusted by NRI Families Across the US
+            Client Stories From NRI Weddings
           </p>
           <h2 className="text-3xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            5.0 stars from real couples — not curated influencers
+            See the work, the families, and the outfits behind CeremonyVerse
           </h2>
           <p className="text-[#4d403a] mb-10 max-w-2xl mx-auto">
-            Every review below is from a verified CeremonyVerse client. We don&apos;t pay for
-            testimonials, filter negative feedback, or rely on Instagram metrics — we let the
-            weddings speak for themselves.
+            Explore the wedding stories and client feedback published on this site, then review our
+            public third-party profile before deciding whether CeremonyVerse is right for your family.
           </p>
-
-          {/* Star rating summary */}
-          <div className="flex flex-col items-center gap-3 mb-10">
-            <div className="flex items-center gap-2" role="img" aria-label="5 out of 5 stars">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <svg key={i} width="28" height="28" viewBox="0 0 24 24" fill="#C5A059" aria-hidden="true">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              ))}
-            </div>
-            <p className="text-sm" style={{ color: "#1f1f1f" }}>
-              <strong style={{ color: "#1f1f1f" }}>5.0 average</strong> from 27+ verified client reviews
-            </p>
-          </div>
 
           {/* Three stat cards */}
           <div className="grid sm:grid-cols-3 gap-4 mb-10">
@@ -770,7 +749,7 @@ export function HomePage() {
             </div>
             <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
               <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                50 states
+                Nationwide
               </div>
               <p className="text-xs text-[#4d403a] uppercase tracking-wider">
                 US delivery coverage
@@ -790,7 +769,7 @@ export function HomePage() {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2l2.95 6.36L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.05-1.91L12 2z" />
               </svg>
-              Read all reviews on Trustpilot
+              View our public Trustpilot profile
             </a>
             <a
               href="/about/"
@@ -859,7 +838,7 @@ export function HomePage() {
               },
               {
                 q: "Do I have to pay US customs duties on a lehenga I order from India?",
-                a: "It depends on how your outfit arrives. If you carry it home yourself after a trip to India, the $800 duty-free personal exemption applies and the current Section 122 surcharge explicitly excludes accompanied baggage. If your outfit is shipped from India to your US address, full commercial duties now apply — the de minimis exemption was eliminated in August 2025. CeremonyVerse helps you plan around this from the start."
+                a: "A commercial textile shipment may be assessed US duties. The amount depends on the garment's HTS classification, fiber content, construction, declared value, country of origin, and the tariff rules in effect when it enters the US. We provide a shipment-specific estimate, prepare the documentation, and itemize the amount actually assessed without adding a markup."
               },
               {
                 q: "How far in advance do I need to order my Indian wedding outfit from India?",
@@ -907,7 +886,7 @@ export function HomePage() {
             Book a free 30-minute consultation. We'll review your vision, timeline, and budget — and tell you exactly what's achievable. No commitment required.
           </p>
           <p className="text-sm text-[#5e4a40] mb-8">
-            Top India vendors book 6–12 months in advance. If your wedding is within the year, reach out now.
+            Custom bridal and wedding-party orders need production, inspection, and shipping time. If your wedding is within the year, start now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"

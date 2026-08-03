@@ -102,7 +102,7 @@ export default function BrideStoryPage() {
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Silk lehenga with hand zardozi (Surat workshop)</td><td style={{ textAlign: "right" }}>$1,650</td></tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Quality inspection &amp; packaging</td><td style={{ textAlign: "right" }}>Included</td></tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>DHL Express shipping with insurance</td><td style={{ textAlign: "right" }}>$185</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US customs duties (16% on silk)</td><td style={{ textAlign: "right" }}>$264</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US customs assessment for this shipment</td><td style={{ textAlign: "right" }}>$264</td></tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Minor alterations in Edison, NJ</td><td style={{ textAlign: "right" }}>$120</td></tr>
                 <tr><td style={{ padding: "0.5rem 0", fontWeight: 600 }}>Total</td><td style={{ textAlign: "right", fontWeight: 600 }}>$2,219</td></tr>
               </tbody>

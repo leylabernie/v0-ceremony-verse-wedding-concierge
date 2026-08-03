@@ -67,7 +67,7 @@ export function GlobalFooter() {
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
               Indian wedding shopping concierge for NRI families.
-              Based in Philadelphia. Serving all US states.
+              Based in Philadelphia. Nationwide US delivery available.
             </p>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
@@ -86,7 +86,7 @@ export function GlobalFooter() {
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M12 2l2.95 6.36L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.05-1.91L12 2z" />
               </svg>
-              5.0 stars on Trustpilot →
+              View our Trustpilot profile →
             </a>
           </div>
 

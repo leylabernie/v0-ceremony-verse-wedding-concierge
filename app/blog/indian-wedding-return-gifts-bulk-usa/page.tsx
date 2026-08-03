@@ -399,7 +399,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               heavy financial penalties. Brass items fall under HS code
               7418; block-printed cotton textiles under 6302; resin coasters
               under 3924. Get the classification wrong and you could be paying
-              27% duty instead of 5% — or worse, your shipment is flagged for
+              a much higher duty assessment — or worse, your shipment is flagged for
               inspection and held for weeks.
             </p>
           </div>

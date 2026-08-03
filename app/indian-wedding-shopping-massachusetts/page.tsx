@@ -228,11 +228,11 @@ export default function MassachusettsPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Massachusetts?",
-                a: "Most of our Massachusetts clients save 40-60% compared to what they'd pay at the few Indian boutiques in the Boston area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Most of our Massachusetts clients save 30-50% compared to what they'd pay at the few Indian boutiques in the Boston area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
               },
               {
                 q: "I've heard about Indian shops along Route 9 in Framingham — why shouldn't I just go there?",
-                a: "The Indian shops along Route 9 in Framingham and Waltham serve a purpose for last-minute purchases, but they carry limited inventory and often charge significant markups — sometimes 2-3x what you'd pay sourcing directly from India. For a bridal lehenga or coordinating outfits for 15+ family members across multiple ceremonies, the selection simply isn't there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 40-60% lower than what you'd pay locally in Massachusetts.",
+                a: "The Indian shops along Route 9 in Framingham and Waltham serve a purpose for last-minute purchases, but they carry limited inventory and often charge significant markups — sometimes 2-3x what you'd pay sourcing directly from India. For a bridal lehenga or coordinating outfits for 15+ family members across multiple ceremonies, the selection simply isn't there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 30-50% lower than what you'd pay locally in Massachusetts.",
               },
               {
                 q: "Can you help with outfits for a South Indian or Bengali wedding in the Boston area?",
