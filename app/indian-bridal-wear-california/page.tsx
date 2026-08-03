@@ -36,18 +36,18 @@ const serviceSchema = buildServiceSchema({
   offers: [
     {
       name: "Style Guide & Vendor List",
-      price: 149,
+      price: 249,
       description: "Curated bridal wear style guide for your California wedding.",
     },
     {
       name: "Guided Sourcing",
-      price: 599,
+      price: 799,
       description:
         "Live video shopping sessions with India vendors for your bridal lehenga or sherwani.",
     },
     {
       name: "Full Bridal Concierge",
-      price: 1499,
+      price: 2499,
       description:
         "End-to-end bridal wear sourcing for the entire California wedding party.",
     },
@@ -60,24 +60,6 @@ const breadcrumbSchema = buildBreadcrumb([
     url: "/indian-bridal-wear-california/",
   },
 ]);
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "CeremonyVerse — California Bridal Wear Concierge",
-  description:
-    "Indian bridal wear sourcing concierge serving California couples in the Bay Area, Silicon Valley, Los Angeles, and across the state. Custom bridal lehengas, sherwanis, and bulk return gifts shipped directly from India to your CA door.",
-  url: "https://www.ceremonyverse.com/indian-bridal-wear-california/",
-  telephone: "+1-215-341-9990",
-  email: "bhamini@ceremonyverse.com",
-  areaServed: { "@type": "State", name: "California" },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "US",
-    addressRegion: "CA",
-  },
-  priceRange: "$$",
-};
 
 const faqSchema = buildFaqSchema([
   {
@@ -96,7 +78,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How do I find an Indian bridal boutique in the Bay Area if I want to see options in person?",
     answer:
-      "Sunnyvale, Fremont, and Artesia have several Indian boutiques, but their in-stock selection is typically limited to 15-40 bridal lehengas per store at 200% markups. With CeremonyVerse, you skip the limited inventory and access 50+ artisan workshops across India via live video shopping — seeing 5-10x more options in a single session than you would driving across the Bay Area for a weekend.",
+      "Sunnyvale, Fremont, and Artesia have Indian boutiques where you can shop in person. CeremonyVerse is the remote alternative for couples who want broader India-direct sourcing: live video shopping, written approvals, milestone payments, fit assurance, and delivery to California without relying only on local in-stock inventory.",
   },
 ]);
 
@@ -105,7 +87,6 @@ export default function IndianBridalWearCaliforniaPage() {
     <div className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="schema-localbusiness" data={localBusinessSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
 
       {/* HERO */}
@@ -315,7 +296,7 @@ export default function IndianBridalWearCaliforniaPage() {
                 <li>• Sunnyvale/Fremont: $2,500–$8,000+ for a bridal lehenga</li>
                 <li>• Artesia: 1–2 day trip from LA traffic for limited stock</li>
                 <li>• Heavy sales pressure to buy what&apos;s on the rack</li>
-                <li>• 200%+ markups for Silicon Valley commercial rent</li>
+                <li>• Boutique overhead is built into the retail price</li>
                 <li>• Limited weekend hours; impossible for tech schedules</li>
               </ul>
             </div>
@@ -333,10 +314,10 @@ export default function IndianBridalWearCaliforniaPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
-                <li>• 50+ artisan workshops across Delhi, Mumbai, Jaipur, Surat</li>
+                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
+                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
                 <li>• Live video shopping — scheduled around Pacific Time</li>
-                <li>• Masterji 3-way measurement call eliminates sizing errors</li>
+                <li>• Live measurement review plus Fit Assurance reduces sizing risk</li>
                 <li>• Coordinate bride + bridesmaids + family + gifts in one order</li>
               </ul>
             </div>

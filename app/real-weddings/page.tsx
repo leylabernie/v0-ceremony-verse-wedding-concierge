@@ -24,31 +24,6 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Real Weddings", url: "/real-weddings/" },
 ]);
 
-/**
- * Page-specific Review schema — only on /real-weddings/ where these
- * testimonials appear as visible HTML below. Per Google's policy,
- * review schema must point to visible reviews on the SAME page.
- */
-const reviewsSchema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  name: "CeremonyVerse Indian Wedding Sourcing & Coordination",
-  url: "https://www.ceremonyverse.com/real-weddings/",
-  review: VISIBLE_TESTIMONIALS.map((t) => ({
-    "@type": "Review",
-    author: { "@type": "Person", name: t.couple },
-    reviewBody: t.body,
-    reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-  })),
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5.0",
-    reviewCount: String(VISIBLE_TESTIMONIALS.length),
-    bestRating: "5",
-    worstRating: "1",
-  },
-};
-
 const weddings = [
   {
     couple: "Kaval & April",
@@ -142,7 +117,6 @@ export default function RealWeddingsPage() {
   return (
     <div className="bg-[#faf8f5] min-h-screen">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="schema-reviews" data={reviewsSchema} />
       <SeoNav />
 
       {/* HERO */}

@@ -21,6 +21,19 @@
 
 type LeadMethod = "form" | "whatsapp" | "phone" | "email" | "calendly";
 
+export interface AcquisitionContext {
+  source: string;
+  medium: string;
+  campaign: string;
+  content: string;
+  term: string;
+  landing_page: string;
+  referrer: string;
+  gclid: string;
+}
+
+export const ATTRIBUTION_STORAGE_KEY = "cv_first_touch_attribution";
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -48,5 +61,44 @@ export function trackLead(method: LeadMethod, location = "site"): void {
     }
   } catch {
     // Never let analytics break a real user action.
+  }
+}
+
+export function trackEvent(
+  eventName: string,
+  parameters: Record<string, string | number | boolean> = {},
+): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.dataLayer = window.dataLayer || [];
+    if (typeof window.gtag === "function") {
+      window.gtag("event", eventName, parameters);
+    } else {
+      window.dataLayer.push({ event: eventName, ...parameters });
+    }
+  } catch {
+    // Analytics must never block a visitor's next step.
+  }
+}
+
+export function getAcquisitionContext(): AcquisitionContext {
+  const fallback: AcquisitionContext = {
+    source: "direct",
+    medium: "none",
+    campaign: "",
+    content: "",
+    term: "",
+    landing_page: "",
+    referrer: "",
+    gclid: "",
+  };
+
+  if (typeof window === "undefined") return fallback;
+
+  try {
+    const saved = window.sessionStorage.getItem(ATTRIBUTION_STORAGE_KEY);
+    return saved ? { ...fallback, ...JSON.parse(saved) } : fallback;
+  } catch {
+    return fallback;
   }
 }

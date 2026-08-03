@@ -40,18 +40,18 @@ const serviceSchema = buildServiceSchema({
   offers: [
     {
       name: "Style Guide & Vendor List",
-      price: 149,
+      price: 249,
       description: "Curated bridal wear style guide for your NY/NJ wedding.",
     },
     {
       name: "Guided Sourcing",
-      price: 599,
+      price: 799,
       description:
         "Live video shopping sessions with India vendors for your bridal lehenga or sherwani.",
     },
     {
       name: "Full Bridal Concierge",
-      price: 1499,
+      price: 2499,
       description:
         "End-to-end bridal wear sourcing for the entire NY/NJ wedding party.",
     },
@@ -64,27 +64,6 @@ const breadcrumbSchema = buildBreadcrumb([
     url: "/indian-bridal-wear-new-york-new-jersey/",
   },
 ]);
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "CeremonyVerse — NY & NJ Bridal Wear Concierge",
-  description:
-    "Indian bridal wear sourcing concierge serving New York and New Jersey metro couples. Custom bridal lehengas, sherwanis, and bulk return gifts shipped directly from India to your Tri-State door.",
-  url: "https://www.ceremonyverse.com/indian-bridal-wear-new-york-new-jersey/",
-  telephone: "+1-215-341-9990",
-  email: "bhamini@ceremonyverse.com",
-  areaServed: [
-    { "@type": "State", name: "New York" },
-    { "@type": "State", name: "New Jersey" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "US",
-    addressRegion: "NY-NJ Metro",
-  },
-  priceRange: "$$",
-};
 
 const faqSchema = buildFaqSchema([
   {
@@ -103,7 +82,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How do I find a lehenga shop in NYC if I want to see options in person?",
     answer:
-      "Jackson Heights in Queens and Oak Tree Road in Iselin, NJ have several Indian boutiques, but their in-stock selection is typically limited to 15-40 bridal lehengas per store at 200% markups. With CeremonyVerse, you skip the limited inventory and access 50+ artisan workshops across India via live video shopping — seeing 5-10x more options in a single session than you would walking into 5 NY boutiques in a day.",
+      "Jackson Heights in Queens and Oak Tree Road in Iselin, NJ have Indian boutiques where you can shop in person. CeremonyVerse is the remote alternative for couples who want broader India-direct sourcing: live video shopping, written approvals, milestone payments, fit assurance, and delivery to New York or New Jersey without relying only on local in-stock inventory.",
   },
 ]);
 
@@ -112,7 +91,6 @@ export default function IndianBridalWearNYNJPage() {
     <div className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="schema-localbusiness" data={localBusinessSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
 
       {/* HERO */}
@@ -255,10 +233,9 @@ export default function IndianBridalWearNYNJPage() {
                 style={{ color: "#4d403a" }}
               >
                 Don&apos;t limit yourself to what a local shop has on a rack.
-                Access fresh collections directly from designers in Delhi,
-                Mumbai, and Hyderabad via live video calls — seeing 50+ artisan
-                workshops in a single session instead of walking 5 NY
-                boutiques in a day.
+                Review curated options from sourcing relationships in Surat,
+                Delhi, and Kanchipuram by live video, with each finalist checked
+                against your budget, ceremony, color palette, and timeline.
               </p>
             </div>
             <div
@@ -319,7 +296,7 @@ export default function IndianBridalWearNYNJPage() {
                 <li>• Edison &amp; Iselin: $2,500–$8,000+ for a bridal lehenga</li>
                 <li>• Jackson Heights: limited in-stock selection (15–40 pieces)</li>
                 <li>• Heavy sales pressure to buy what&apos;s on the rack today</li>
-                <li>• 200%+ markups for commercial rent + importer margins</li>
+                <li>• Boutique overhead is built into the retail price</li>
                 <li>• Few options for coordinating bridesmaids or family</li>
               </ul>
             </div>
@@ -337,8 +314,8 @@ export default function IndianBridalWearNYNJPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
-                <li>• 50+ artisan workshops across Delhi, Mumbai, Jaipur, Surat</li>
+                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
+                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
                 <li>• Live video shopping — zero pressure, full transparency</li>
                 <li>• Pay artisan price + transparent 15–20% sourcing fee</li>
                 <li>• Coordinate bride + bridesmaids + family + gifts in one order</li>

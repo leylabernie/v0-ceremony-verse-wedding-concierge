@@ -58,7 +58,7 @@ export default function WashingtonDCPage() {
               },
               {
                 title: "Limited local selection with high markups",
-                desc: "DC and Northern Virginia have a handful of Indian boutiques, but the selection is narrow and prices are often 2-3x what you&apos;d pay sourcing directly from India. Maryland has even fewer options. Many DMV families end up driving to New Jersey or New York to shop &mdash; or worse, ordering online from India and dealing with sizing issues, quality problems, and customs headaches.",
+                desc: "DC, Northern Virginia, and Maryland have Indian boutiques, but local in-stock selection can be limiting for multi-event or full-family orders. Some DMV families drive to New Jersey or New York to shop, while others order online from India and face sizing, quality, and customs uncertainty without a verification process.",
               },
               {
                 title: "Federal workers, tech professionals, and diplomats need reliability",

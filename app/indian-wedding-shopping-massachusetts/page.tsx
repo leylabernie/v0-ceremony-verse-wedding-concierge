@@ -232,7 +232,7 @@ export default function MassachusettsPage() {
               },
               {
                 q: "I've heard about Indian shops along Route 9 in Framingham — why shouldn't I just go there?",
-                a: "The Indian shops along Route 9 in Framingham and Waltham serve a purpose for last-minute purchases, but they carry limited inventory and often charge significant markups — sometimes 2-3x what you'd pay sourcing directly from India. For a bridal lehenga or coordinating outfits for 15+ family members across multiple ceremonies, the selection simply isn't there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 30-50% lower than what you'd pay locally in Massachusetts.",
+                a: "The Indian shops along Route 9 in Framingham and Waltham can be useful for last-minute purchases, but local in-stock inventory may not cover a bridal lehenga or coordinated outfits for 15+ family members across multiple ceremonies. CeremonyVerse adds India-direct sourcing, custom stitching, quality inspection, and pricing that is typically 30–50% lower than comparable US boutique options.",
               },
               {
                 q: "Can you help with outfits for a South Indian or Bengali wedding in the Boston area?",

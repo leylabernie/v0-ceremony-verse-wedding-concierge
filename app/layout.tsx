@@ -5,6 +5,7 @@ import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
+import { AcquisitionAttribution } from "@/components/acquisition-attribution";
 import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
 
 // Build-time font loading via next/font — eliminates the render-blocking
@@ -91,7 +92,6 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ceremonyverse",
     images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
   },
 };
@@ -197,7 +197,6 @@ export default function RootLayout({
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@ceremonyverse" />
         <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.webp" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
 
@@ -225,6 +224,7 @@ export default function RootLayout({
         */}
       </head>
       <body>
+        <AcquisitionAttribution />
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c5a059", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
           * Planning a 2026–2027 wedding? Custom outfits need production, inspection, and shipping time &nbsp;·&nbsp;

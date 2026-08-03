@@ -88,7 +88,6 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      site: "@ceremonyverse",
       title: opts.title,
       description: opts.description,
       images: [image],
@@ -335,6 +334,8 @@ export function buildLocalBusinessSchema(): object {
     areaServed: "US",
     priceRange: "$$",
     sameAs: [
+      "https://www.instagram.com/ceremonyverse/",
+      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
       "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
@@ -566,6 +567,8 @@ export function buildOrganizationSchema(): object {
       addressLocality: "Philadelphia",
     },
     sameAs: [
+      "https://www.instagram.com/ceremonyverse/",
+      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
       "https://www.trustpilot.com/review/ceremonyverse.com",
     ],

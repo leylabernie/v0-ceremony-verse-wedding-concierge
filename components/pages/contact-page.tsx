@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { trackLead } from "@/lib/analytics"
+import { getAcquisitionContext, trackLead } from "@/lib/analytics"
 
 interface FormData {
   name: string
@@ -43,6 +43,7 @@ export function ContactPage() {
     setError("")
 
     try {
+      const attribution = getAcquisitionContext()
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -58,6 +59,14 @@ export function ContactPage() {
           bridesmaids: formData.bridesmaidsCount || "0",
           groomsmen: formData.groomsmenCount || "0",
           wedding_vision: formData.vision || "Not provided",
+          lead_source: attribution.source,
+          lead_medium: attribution.medium,
+          lead_campaign: attribution.campaign || "Not provided",
+          lead_content: attribution.content || "Not provided",
+          lead_term: attribution.term || "Not provided",
+          landing_page: attribution.landing_page || window.location.pathname,
+          referrer: attribution.referrer || "Direct / unavailable",
+          google_click_id: attribution.gclid || "Not provided",
           to_email: "bhamini@ceremonyverse.com",
         }),
       })
