@@ -1,0 +1,33 @@
+name: Apply conversion patch
+
+on:
+  push:
+    branches:
+      - agent/fix-conversion-trust
+    paths:
+      - ceremonyverse-conversion.patch
+      - .github/workflows/apply-conversion-patch.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor == 'leylabernie'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/fix-conversion-trust
+          fetch-depth: 0
+
+      - name: Apply the tested conversion patch
+        run: |
+          git apply --binary ceremonyverse-conversion.patch
+          rm ceremonyverse-conversion.patch .github/workflows/apply-conversion-patch.yml
+          git add -A
+          git config user.name "CeremonyVerse Agent"
+          git config user.email "actions@users.noreply.github.com"
+          git commit -m "Fix conversion trust and consultation flow"
+          git push origin HEAD:agent/fix-conversion-trust
