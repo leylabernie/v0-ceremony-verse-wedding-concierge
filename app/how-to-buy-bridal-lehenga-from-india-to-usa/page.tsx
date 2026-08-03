@@ -33,19 +33,19 @@ const serviceSchema = buildServiceSchema({
   offers: [
     {
       name: "Style Guide & Vendor List",
-      price: 149,
+      price: 249,
       description:
         "Curated vendor style guide for your bridal lehenga sourced from India.",
     },
     {
       name: "Guided Sourcing",
-      price: 599,
+      price: 799,
       description:
         "Live video shopping sessions with India vendors and master tailors for your bridal lehenga.",
     },
     {
       name: "Full Bridal Concierge",
-      price: 1499,
+      price: 2499,
       description:
         "End-to-end bridal lehenga sourcing, quality checks, customs clearance, and delivery to your US door.",
     },
@@ -125,7 +125,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Skip the 200% boutique markups. Source a custom bridal lehenga,
+            Save 30–50% versus comparable US boutique options. Source a custom bridal lehenga,
             sherwani, and return gifts directly from India — with live video
             shopping, master-tailor verified measurements, HD quality checks,
             and customs-cleared delivery to your US door.
@@ -157,7 +157,8 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             style={{ color: "#4d403a" }}
           >
             Planning a South Asian wedding in the United States often means
-            facing limited selections and 200% markups at local bridal
+            facing limited selections and retail prices that include importing,
+            inventory, and storefront overhead at local bridal
             boutiques. Sourcing your dream wedding outfits directly from India
             is the smartest way to save money and get authentic designs, but
             navigating remote sizing, customs duties, and shipping logistics
@@ -473,9 +474,9 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 style={{ color: "#e8dfd2" }}
               >
                 Hand-selecting outfits from trusted Indian weavers and
-                designers based on your budget. We maintain a vetted network of
-                50+ artisan workshops across Surat, Kolkata, Delhi, Jaipur, and
-                Kanchipuram — so you see only pieces worth your time.
+                designers based on your budget. We use direct sourcing
+                relationships in Surat, Delhi, and Kanchipuram, then narrow the
+                options to pieces that match your brief and timeline.
               </p>
             </div>
             <div

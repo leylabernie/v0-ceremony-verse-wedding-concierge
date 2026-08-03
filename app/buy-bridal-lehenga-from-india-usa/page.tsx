@@ -14,9 +14,9 @@ const serviceSchema = buildServiceSchema({
   description: "Custom bridal lehenga sourcing directly from India for NRI brides in the USA. Includes live video shopping, quality checks, custom stitching, and door-to-door delivery.",
   url: "/buy-bridal-lehenga-from-india-usa/",
   offers: [
-    { name: "Style Guide & Vendor List", price: 149, description: "Curated vendor style guide for your bridal lehenga." },
-    { name: "Guided Sourcing", price: 599, description: "Live video shopping sessions with India vendors for your bridal lehenga." },
-    { name: "Full Bridal Concierge", price: 1499, description: "End-to-end bridal lehenga sourcing and coordination." },
+    { name: "Style Guide & Vendor List", price: 249, description: "Curated vendor style guide for your bridal lehenga." },
+    { name: "Guided Sourcing", price: 799, description: "Live video shopping sessions with India vendors for your bridal lehenga." },
+    { name: "Full Bridal Concierge", price: 2499, description: "End-to-end bridal lehenga sourcing and coordination." },
   ],
 });
 
@@ -69,7 +69,7 @@ export default function BridalLehengaPage() {
             Buy a Bridal Lehenga from India — Delivered to Your US Door
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
-            Skip the $3,000 India flight and the 200% US boutique markup. Source your dream bridal
+            Skip the India trip and save 30–50% versus comparable US boutique options. Source your dream bridal
             lehenga directly from skilled designers in India — with live video shopping, custom
             stitching to your exact measurements, quality checks, and insured delivery to all 50
             states. NRI brides save 30–50% on average.
@@ -103,8 +103,8 @@ export default function BridalLehengaPage() {
             Why buying your bridal lehenga from India beats US boutiques
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto leading-relaxed">
-            US Indian boutiques carry limited collections at 2–3× India prices due to import markups,
-            rent, and inventory carrying costs. India direct gives you the full universe of
+            US Indian boutiques build importing, rent, and inventory costs into their prices.
+            India-direct sourcing gives you a broader range of
             designers, fabrics, and embroidery styles — at the actual artisan price — with the right
             partner to verify quality before you pay.
           </p>
@@ -124,7 +124,7 @@ export default function BridalLehengaPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <h3 className="font-semibold text-xl mb-3" style={{ color: "var(--cv-accent)" }}>India direct with CeremonyVerse</h3>
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
-                <li>• Access to 50+ artisan workshops across Surat, Kolkata, Delhi, Jaipur</li>
+                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
                 <li>• Real 2026 prices: $800–$3,500 for a custom bridal lehenga</li>
                 <li>• You pay the artisan price + transparent 15–20% sourcing fee</li>
                 <li>• Custom embroidery, color, dupatta drape, and silhouette included</li>

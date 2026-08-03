@@ -460,7 +460,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // are emitted separately via app/sitemap-images.xml/route.ts.
   return pages.map((p) => ({
     url: p.url,
-    lastModified: p.lastModified as Date | undefined,
+    // Do not emit a deployment-time lastmod for every URL. A false fresh date
+    // on unchanged pages wastes crawl attention and is not a content signal.
     changeFrequency: p.changeFrequency,
     priority: p.priority,
   }))

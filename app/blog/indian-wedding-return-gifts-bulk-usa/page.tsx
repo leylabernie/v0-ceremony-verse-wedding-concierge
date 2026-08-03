@@ -489,7 +489,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               We bypass online middlemen and visit wholesale manufacturing hubs
               in India directly. This gets you authentic, handcrafted items at
               true wholesale pricing — the same price a Jaipur boutique pays
-              before marking items up 200% for retail. We can show you 3–5
+              before adding retail overhead. We can show you 3–5
               different artisan workshops for the same favor category in a
               single live video session so you can compare quality and price
               side-by-side.

@@ -36,18 +36,18 @@ const serviceSchema = buildServiceSchema({
   offers: [
     {
       name: "Style Guide & Vendor List",
-      price: 149,
+      price: 249,
       description: "Curated bridal wear style guide for your Texas wedding.",
     },
     {
       name: "Guided Sourcing",
-      price: 599,
+      price: 799,
       description:
         "Live video shopping sessions with India vendors for your bridal lehenga or sherwani.",
     },
     {
       name: "Full Bridal Concierge",
-      price: 1499,
+      price: 2499,
       description:
         "End-to-end bridal wear sourcing for the entire Texas wedding party.",
     },
@@ -60,24 +60,6 @@ const breadcrumbSchema = buildBreadcrumb([
     url: "/indian-bridal-wear-texas/",
   },
 ]);
-
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "CeremonyVerse — Texas Bridal Wear Concierge",
-  description:
-    "Indian bridal wear sourcing concierge serving Texas couples in Houston, Dallas-Fort Worth, Austin, San Antonio, and across the state. Custom bridal lehengas, sherwanis, coordinated bridesmaid sarees, and bulk wedding favors shipped directly from India to your TX door.",
-  url: "https://www.ceremonyverse.com/indian-bridal-wear-texas/",
-  telephone: "+1-215-341-9990",
-  email: "bhamini@ceremonyverse.com",
-  areaServed: { "@type": "State", name: "Texas" },
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "US",
-    addressRegion: "TX",
-  },
-  priceRange: "$$",
-};
 
 const faqSchema = buildFaqSchema([
   {
@@ -105,7 +87,6 @@ export default function IndianBridalWearTexasPage() {
     <div className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="schema-localbusiness" data={localBusinessSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
 
       {/* HERO */}
@@ -314,7 +295,7 @@ export default function IndianBridalWearTexasPage() {
                 <li>• Houston Hillcroft: $2,500–$8,000+ for a bridal lehenga</li>
                 <li>• Dallas/Plano: limited selection, high overhead</li>
                 <li>• Heavy sales pressure to buy what&apos;s on the rack</li>
-                <li>• 200%+ markups for Texas commercial rent</li>
+                <li>• Boutique overhead is built into the retail price</li>
                 <li>• Few options for coordinating large bridal parties</li>
               </ul>
             </div>
@@ -332,10 +313,10 @@ export default function IndianBridalWearTexasPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• $800–$3,500 for a custom bridal lehenga — real 2026 prices</li>
-                <li>• 50+ artisan workshops across Delhi, Mumbai, Jaipur, Surat</li>
+                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
+                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
                 <li>• Live video shopping — no Texas-to-India flight required</li>
-                <li>• Masterji 3-way measurement call eliminates sizing errors</li>
+                <li>• Live measurement review plus Fit Assurance reduces sizing risk</li>
                 <li>• Coordinate bride + bridesmaids + groomsmen + family + gifts</li>
               </ul>
             </div>

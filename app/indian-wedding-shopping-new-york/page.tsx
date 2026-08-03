@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -19,29 +18,9 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "New York NRI Families", url: "/indian-wedding-shopping-new-york/" },
 ]);
 
-const localSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "CeremonyVerse - NY Wedding Shopping",
-  "image": "https://www.ceremonyverse.com/images/hero-lehenga.webp",
-  "url": "https://www.ceremonyverse.com/indian-wedding-shopping-new-york/",
-  "telephone": "+1-215-341-9990",
-  "areaServed": {
-    "@type": "State",
-    "name": "New York"
-  },
-  "description": "Expert Indian wedding outfit shopping concierge for brides in New York. We handle sourcing, coordination, and logistics.",
-  "priceRange": "$$$",
-  "serviceType": "Wedding Shopping Concierge"
-};
-
 export default function NewYorkPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }}
-      />
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
