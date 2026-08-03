@@ -82,7 +82,7 @@ const faqSchema = buildFaqSchema([
     question:
       "Will my bridal lehenga get stuck in US customs or face surprise import taxes?",
     answer:
-      "As of August 2025, the US de minimis exemption for shipped goods has been eliminated, so bridal lehengas shipped from India to your US address are subject to full commercial import duties of 12–27% of the declared value. The fix is to classify your shipments accurately under textile codes, factor in at least 14 days of buffer time for shipping, and ensure your logistics partner handles custom clearance tracking. CeremonyVerse itemizes these duties upfront so there are no surprises right before your wedding week.",
+      "Commercial textile shipments may be assessed US duties based on HTS classification, fiber content, construction, declared value, and current tariff rules. Classify the shipment accurately, allow at least 14 days of buffer time, and use a logistics partner that tracks customs clearance. CeremonyVerse estimates these costs in advance and itemizes the amount actually assessed.",
   },
   {
     question: "Why use a personal wedding concierge instead of buying directly online?",
@@ -403,10 +403,9 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 </span>
                 <span style={{ color: "#4d403a" }}>
                   Outfits getting stuck in US customs or facing surprise import
-                  taxes right before the wedding week. As of August 2025, the US
-                  de minimis exemption for shipped goods has been eliminated —
-                  every commercial textile shipment is now subject to full
-                  import duties of 12–27% of declared value.
+                  taxes right before the wedding week. Commercial textile duties
+                  vary by HTS classification, fiber content, construction,
+                  declared value, and current tariff rules.
                 </span>
               </p>
               <p>

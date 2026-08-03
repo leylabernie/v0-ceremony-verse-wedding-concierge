@@ -27,7 +27,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question: "How much does a bridal lehenga from India cost delivered to the USA?",
-    answer: "A custom bridal lehenga sourced from India and delivered to the USA typically costs $800–$3,500 including the outfit, live video shopping, custom stitching, shipping, and US customs duties (12–27%). The same lehenga at a US Indian boutique runs $2,500–$8,000. CeremonyVerse saves NRI brides 30–50% on average.",
+    answer: "A custom bridal lehenga sourced from India typically costs $800–$3,500 before any duties assessed at import. CeremonyVerse separately itemizes the outfit, service tier, shipping, and estimated customs costs so brides can compare the landed estimate with US boutique pricing. Clients typically save 30–50% for comparable quality.",
   },
   {
     question: "How do I know the bridal lehenga I see online is the one I'll actually receive?",
@@ -39,11 +39,11 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "Do I have to pay US customs duties on a bridal lehenga ordered from India?",
-    answer: "Yes. As of August 2025, the US de minimis exemption for shipped goods has been eliminated, so bridal lehengas shipped from India to your US address are subject to full commercial import duties of 12–27% of the declared value. CeremonyVerse itemizes these duties in your quote upfront so there are no surprises. If you carry the lehenga back personally from a trip to India, the $800 personal exemption applies.",
+    answer: "A commercial textile shipment may be assessed US duties. The amount depends on the garment's HTS classification, fiber content, construction, declared value, and current tariff rules. CeremonyVerse provides an estimate in the quote, prepares shipping documentation, and itemizes the amount actually assessed without adding a markup.",
   },
   {
     question: "How do you handle sizing when I can't do in-person fittings?",
-    answer: "We collect 15+ precise body measurements using a detailed guide that goes beyond basic bust-waist-hip — including high waist, blouse back length, shoulder width, armhole depth, and skirt length. Every piece is custom-stitched to your exact silhouette with strategic ease allowances for final alterations. Our 100% fit guarantee covers alteration costs up to $150 per garment if adjustments are needed after delivery.",
+    answer: "We collect 15+ precise body measurements using a detailed guide that goes beyond basic bust-waist-hip — including high waist, blouse back length, shoulder width, armhole depth, and skirt length. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations after delivery, subject to service terms.",
   },
   {
     question: "Can I coordinate my bridal lehenga with bridesmaid and family outfits from India?",
@@ -328,8 +328,8 @@ export default function BridalLehengaPage() {
             </table>
           </div>
           <p className="text-xs text-[#4d403a] text-center">
-            US customs duties (12–27%) and DHL/FedEx international shipping are itemized in your
-            quote upfront — no surprise fees at delivery. <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Read our full 2026 price breakdown →</Link>
+            Estimated customs costs and DHL/FedEx international shipping are itemized in your quote.
+            Actual assessed duties depend on classification, fiber content, value, and current tariff rules. <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Read our full 2026 price breakdown →</Link>
           </p>
         </div>
       </section>
@@ -365,16 +365,16 @@ export default function BridalLehengaPage() {
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Sizing disaster: blouse misfitted</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
                 We collect 15+ precise measurements and build in strategic ease allowances. Every
-                piece is custom-stitched. Our 100% fit guarantee covers alteration costs up to $150
-                per garment after delivery.
+                eligible made-to-measure pieces include Fit Assurance with up to $150 toward local
+                alterations after delivery, subject to service terms.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Logistics: customs, delays, damage</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                We handle all shipping documentation, advise on customs duties upfront (typically
-                12–27%), and fully insure every shipment. We have never had an unresolved shipping
-                issue in 4+ years.
+                We handle shipping documentation, estimate customs costs based on the garment&apos;s
+                classification, fiber content, and value, and insure shipments. Assessed duties are
+                itemized and passed through transparently.
               </p>
             </div>
           </div>
@@ -396,9 +396,9 @@ export default function BridalLehengaPage() {
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much does a bridal lehenga from India cost delivered to the USA?</h3>
               <p className="text-[#4d403a] leading-relaxed">
                 A custom bridal lehenga sourced from India and delivered to the USA typically costs
-                $800–$3,500 including the outfit, live video shopping, custom stitching, shipping,
-                and US customs duties (12–27%). The same lehenga at a US Indian boutique runs
-                $2,500–$8,000. CeremonyVerse saves NRI brides 30–50% on average.
+                $800–$3,500 before any duties assessed at import. We separately itemize the outfit,
+                service tier, shipping, and estimated customs costs. Clients typically save 30–50%
+                for comparable quality versus US boutique pricing.
               </p>
             </div>
             <div>
@@ -424,11 +424,9 @@ export default function BridalLehengaPage() {
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Do I have to pay US customs duties on a bridal lehenga ordered from India?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                Yes. As of August 2025, the US de minimis exemption for shipped goods has been
-                eliminated, so bridal lehengas shipped from India to your US address are subject to
-                full commercial import duties of 12–27% of the declared value. CeremonyVerse itemizes
-                these duties in your quote upfront so there are no surprises. If you carry the lehenga
-                back personally from a trip to India, the $800 personal exemption applies.
+                A commercial textile shipment may be assessed US duties. The amount depends on the
+                garment&apos;s HTS classification, fiber content, construction, declared value, and current
+                tariff rules. We provide an estimate in the quote and itemize the amount actually assessed.
               </p>
             </div>
             <div>
@@ -437,8 +435,8 @@ export default function BridalLehengaPage() {
                 We collect 15+ precise body measurements using a detailed guide that goes beyond basic
                 bust-waist-hip — including high waist, blouse back length, shoulder width, armhole
                 depth, and skirt length. Every piece is custom-stitched to your exact silhouette with
-                strategic ease allowances for final alterations. Our 100% fit guarantee covers
-                alteration costs up to $150 per garment.
+                strategic ease allowances for final alterations. Eligible made-to-measure garments
+                include Fit Assurance with up to $150 toward local alterations, subject to service terms.
               </p>
             </div>
             <div>
@@ -500,7 +498,7 @@ export default function BridalLehengaPage() {
             sourcing tier for you and show you real lehengas from our India partners.
           </p>
           <p className="text-sm mb-8" style={{ color: "#7a6841" }}>
-            Top India vendors book 6–12 months in advance — if your wedding is within the year, reach
+            Custom bridal orders need production, inspection, and shipping time — if your wedding is within the year, reach
             out now.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

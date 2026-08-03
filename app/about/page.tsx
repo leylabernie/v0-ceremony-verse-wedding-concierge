@@ -121,7 +121,7 @@ export default function AboutPage() {
               until you approve the previous one.
             </p>
             <p>
-              Four years later, we&apos;ve dressed hundreds of NRI brides, grooms, bridesmaids, groomsmen, and
+              Since founding CeremonyVerse, we&apos;ve dressed NRI brides, grooms, bridesmaids, groomsmen, and
               families across the United States. We&apos;ve coordinated Mexico weddings with full vendor management.
               We&apos;ve sourced Kanchipuram silk sarees directly from Tamil Nadu weavers. We&apos;ve recreated
               designer-inspired pieces through a local boutique at about 85% similarity for less than half the
@@ -129,8 +129,8 @@ export default function AboutPage() {
               multiple days.
             </p>
             <p>
-              We&apos;re not the cheapest option in India — and we don&apos;t want to be. We&apos;re the safest,
-              most transparent, and most accountable option for NRI families who want their dream Indian wedding
+              We&apos;re not the cheapest option in India — and we don&apos;t want to be. We&apos;re a safer,
+              more transparent, accountable option for NRI families who want their dream Indian wedding
               without scams, sizing disasters, or vendor chaos. Every order is documented. Every payment is
               milestone-based. Every shipment is insured. And every client has my personal phone number.
             </p>
@@ -333,16 +333,16 @@ export default function AboutPage() {
               <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>Years in business</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>27+</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>5-star client reviews</p>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Stage</div>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>Milestone payment process</p>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>3</div>
               <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>Family Mexico weddings coordinated</p>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>50</div>
-              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>US states served</p>
+              <div className="text-4xl md:text-5xl font-semibold mb-2" style={{ color: "#7a6841", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Nationwide</div>
+              <p className="text-xs uppercase tracking-wider" style={{ color: "#e8dfd2" }}>US delivery available</p>
             </div>
           </div>
         </div>

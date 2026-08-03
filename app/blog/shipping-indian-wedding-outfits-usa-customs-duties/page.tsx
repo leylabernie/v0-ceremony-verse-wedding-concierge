@@ -61,7 +61,7 @@ export default function ShippingGuidePage() {
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: "1rem" }}><strong>Our recommendation:</strong> DHL Express for bridal lehengas and sherwanis (3-5 days, full tracking, insurance included). Standard DHL is fine for bridesmaid outfits and accessories if you have a 3+ week buffer.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Our recommendation:</strong> Use a trackable courier service with insurance for the declared value and confirm the carrier quote and delivery estimate for your exact shipment.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How Much Are US Customs Duties on Indian Wedding Lehengas?</h2>
           <p>This is where most NRI families get surprised. The US charges import duties on clothing from India based on the Harmonized Tariff Schedule (HTS) classification:</p>
@@ -69,11 +69,11 @@ export default function ShippingGuidePage() {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Item Type</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Duty Rate</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Silk/silk blend garments</td><td style={{ textAlign: "right" }}>12-18%</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Cotton garments</td><td style={{ textAlign: "right" }}>8-12%</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Synthetic/embroidered garments</td><td style={{ textAlign: "right" }}>15-28%</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Jewelry (costume/fashion)</td><td style={{ textAlign: "right" }}>5-8%</td></tr>
-                <tr><td style={{ padding: "0.5rem 0" }}>Hand-loomed silk (with certificate)</td><td style={{ textAlign: "right" }}>0-5%</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Silk/silk blend garments</td><td style={{ textAlign: "right" }}>Classification-specific</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Cotton garments</td><td style={{ textAlign: "right" }}>Classification-specific</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Synthetic/embroidered garments</td><td style={{ textAlign: "right" }}>Classification-specific</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Jewelry (costume/fashion)</td><td style={{ textAlign: "right" }}>Material-specific</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Hand-loomed silk</td><td style={{ textAlign: "right" }}>Documentation-dependent</td></tr>
               </tbody>
             </table>
           </div>
@@ -84,7 +84,7 @@ export default function ShippingGuidePage() {
             <li style={{ marginBottom: "0.8rem" }}><strong>Accurate commercial invoice:</strong> Must list each item with description, fabric composition, quantity, and value. Vague descriptions like &quot;clothes&quot; or &quot;gifts&quot; trigger inspections.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>Correct HTS codes:</strong> Each fabric type has a specific code. Silk lehengas use different codes than cotton kurtas. Wrong codes = reclassification = higher duties.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>Reasonable declared value:</strong> Under-declaring to avoid duties is customs fraud. If customs suspects under-valuation, they will hold the package, reassess at market value, and possibly fine you.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>&quot;Hand-loomed&quot; certificate:</strong> If your items qualify as hand-loomed under the US-India trade agreement, duties drop to 0-5%. Requires a certificate from the weaver/workshop.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Supporting textile documentation:</strong> If a classification depends on weaving method or fiber content, obtain accurate supporting documentation from the weaver or workshop.</li>
             <li><strong>Use a known courier:</strong> DHL and FedEx have established customs clearance processes. Speed Post and unknown couriers often get stuck in manual processing.</li>
           </ul>
 

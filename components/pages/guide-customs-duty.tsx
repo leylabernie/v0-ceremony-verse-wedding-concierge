@@ -30,19 +30,19 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
           {/* Customs Duty Breakdown */}
           <div className="mb-16">
             <h2 className="font-serif text-4xl sm:text-5xl font-semibold text-midnight-navy mb-6 tracking-[0.04em]">
-              Customs Duty Rates (2026)
+              How Customs Costs Are Determined (2026)
             </h2>
             <p className="text-midnight-navy/60 text-lg leading-[1.8] mb-8">
-              When importing Indian wedding outfits to the USA, you'll pay customs duties on the declared value. Here's what to expect:
+              Commercial textile shipments may be assessed duties. The rate is shipment-specific and depends on the HTS classification, fiber content, garment construction, declared value, country of origin, and current tariff rules.
             </p>
             
             <div className="space-y-4">
               {[
-                { item: "Bridal Lehengas", rate: "12-27%", notes: "Depends on material (silk higher, cotton lower)" },
-                { item: "Sherwanis & Kurtas", rate: "12-27%", notes: "Embroidered pieces typically 20-27%" },
-                { item: "Sarees", rate: "12-27%", notes: "Silk sarees (Banarasi, Kanchipuram) 25-27%" },
-                { item: "Jewelry & Accessories", rate: "6-12%", notes: "Gold/silver jewelry has separate tariffs" },
-                { item: "Ceremonial Items", rate: "0-12%", notes: "Varies by specific item classification" }
+                { item: "Bridal Lehengas", rate: "Varies", notes: "Classified by fiber content, construction, and embellishment" },
+                { item: "Sherwanis & Kurtas", rate: "Varies", notes: "Woven/knit construction and fiber content affect classification" },
+                { item: "Sarees", rate: "Varies", notes: "Silk, cotton, and synthetic sarees can fall under different classifications" },
+                { item: "Jewelry & Accessories", rate: "Varies", notes: "Material and product type determine the applicable classification" },
+                { item: "Ceremonial Items", rate: "Varies", notes: "Each product type must be classified separately" }
               ].map((row, i) => (
                 <div key={i} className="bg-champagne rounded-xl p-6 border border-brushed-gold/30 grid md:grid-cols-3 gap-4">
                   <div>
@@ -65,21 +65,20 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
           {/* Cost Calculation Example */}
           <div className="mb-16 bg-champagne rounded-2xl p-10 border border-brushed-gold/30">
             <h2 className="font-serif text-3xl font-semibold text-midnight-navy mb-6">
-              Cost Calculation Example
+              Build Your Landed-Cost Estimate
             </h2>
             <p className="text-midnight-navy/60 mb-8">
-              Here's a realistic breakdown for a typical bridal lehenga order:
+              Ask for each cost as a separate line item before approving an order:
             </p>
             
             <div className="space-y-3">
               {[
-                { label: "Bridal Lehenga (India)", value: "$800" },
-                { label: "Sourcing Fee (15%)", value: "$120" },
-                { label: "Shipping (DHL/FedEx)", value: "$150-250" },
-                { label: "Subtotal", value: "$1,070-1,170", bold: true },
-                { label: "Customs Duty (20% on $800)", value: "$160" },
-                { label: "Customs Processing Fee", value: "$25-50" },
-                { label: "Total Landed Cost", value: "$1,255-1,380", bold: true, highlight: true }
+                { label: "Outfit Price", value: "Vendor quote" },
+                { label: "CeremonyVerse Service Tier", value: "$249 / $799 / $2,499" },
+                { label: "International Shipping", value: "Carrier quote" },
+                { label: "Estimated Customs", value: "Shipment-specific estimate" },
+                { label: "Actual Assessed Duties", value: "Passed through without markup" },
+                { label: "Estimated Landed Cost", value: "Itemized before approval", bold: true, highlight: true }
               ].map((row, i) => (
                 <div key={i} className={`flex justify-between py-2 ${row.bold ? 'border-t-2 border-brushed-gold pt-3' : ''} ${row.highlight ? 'bg-white rounded px-4 py-3 font-semibold text-brushed-gold' : ''}`}>
                   <span className={row.bold ? 'font-semibold text-midnight-navy' : 'text-midnight-navy/60'}>{row.label}</span>
@@ -165,10 +164,10 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
             </div>
           </div>
 
-          {/* How to Minimize Customs Duty */}
+          {/* How to Plan for Customs */}
           <div className="mb-16">
             <h2 className="font-serif text-3xl font-semibold text-midnight-navy mb-6">
-              How to Minimize Customs Duty
+              How to Plan for Customs Correctly
             </h2>
             
             <div className="space-y-4">
@@ -178,20 +177,20 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
                   desc: "Declare the true value of items. Undervaluing can trigger audits and penalties."
                 },
                 {
-                  tip: "Split Shipments Strategically",
-                  desc: "Multiple smaller shipments can sometimes result in lower overall duties (consult your shipper)."
+                  tip: "Use the Correct HTS Classification",
+                  desc: "Classify each garment using its fiber content, construction, and product type; do not rely on one rate for every outfit."
                 },
                 {
-                  tip: "Use Personal Exemptions",
-                  desc: "If you're traveling to India, you can bring back $800 duty-free (for US citizens). Anything above that is taxed."
+                  tip: "Verify Current Rules",
+                  desc: "Tariff and exemption rules can change. Confirm the rules in effect when the shipment will enter the United States."
                 },
                 {
-                  tip: "Know Your HS Codes",
-                  desc: "Different items have different tariff classifications. Embroidered garments may have higher rates than plain fabrics."
+                  tip: "Build in Clearance Time",
+                  desc: "Leave a buffer before the wedding so documentation questions or customs review do not create a last-minute crisis."
                 },
                 {
                   tip: "Work with Experienced Shippers",
-                  desc: "Professional shippers know how to properly classify and declare items to minimize duties."
+                  desc: "Use a carrier or broker experienced with commercial textile shipments and customs documentation."
                 }
               ].map((item, i) => (
                 <div key={i} className="bg-champagne rounded-xl p-6 border border-brushed-gold/30">
@@ -255,7 +254,7 @@ export function GuideCustomsDuty({ onNavigate }: GuidePageProps) {
               Let Us Handle the Logistics
             </h2>
             <p className="text-white/90 mb-8 max-w-xl mx-auto">
-              CeremonyVerse manages all shipping documentation, advises on customs duties upfront, and ensures full insurance on every shipment. No surprises at your door.
+              CeremonyVerse manages shipping documentation, provides a shipment-specific customs estimate, and itemizes assessed duties. Final charges remain subject to US Customs classification and assessment.
             </p>
             <button
               onClick={() => onNavigate?.("contact")}

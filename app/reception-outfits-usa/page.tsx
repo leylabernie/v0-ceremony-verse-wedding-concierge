@@ -67,7 +67,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How much does a reception lehenga cost when sourced from India?",
     answer:
-      "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 40-60% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
+      "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 30-50% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
   },
 ])
 
@@ -418,7 +418,7 @@ export default function ReceptionOutfitsPage() {
             },
             {
               q: "How much does a reception lehenga cost when sourced from India?",
-              a: "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 40-60% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
+              a: "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 30-50% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
             },
           ].map((item) => (
             <div

@@ -40,7 +40,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How much can I save sourcing from Surat vs. US boutiques?",
-    answer: "Most brides save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
+    answer: "Most brides save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
   },
 ]);
 

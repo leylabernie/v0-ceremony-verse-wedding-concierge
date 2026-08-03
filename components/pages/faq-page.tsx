@@ -34,7 +34,7 @@ const faqSections = [
     items: [
       {
         question: "What if the outfits don't fit?",
-        answer: "We collect 15+ precise body measurements and build in strategic ease allowances. Every piece is made 0.5-1 inch larger for professional alterations. Our 100% fit guarantee covers alteration costs if adjustments are needed."
+        answer: "We collect 15+ precise body measurements and build in strategic ease allowances. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations after delivery, subject to service terms."
       },
       {
         question: "How do you handle large parties?",
@@ -72,7 +72,7 @@ const faqSections = [
       },
       {
         question: "Do you handle customs and import duties?",
-        answer: "Yes. We prepare all shipping documentation and advise on expected customs duties. Import duties on clothing typically range from 12–27% of the declared value. These are itemized in your quote upfront — no surprises at the door."
+        answer: "We prepare shipping documentation and estimate customs costs using the garment classification, fiber content, declared value, and current tariff rules. Any duties actually assessed are itemized and passed through without a CeremonyVerse markup."
       },
       {
         question: "What if my outfit arrives damaged?",

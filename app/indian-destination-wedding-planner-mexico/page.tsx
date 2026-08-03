@@ -33,7 +33,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "What does an Indian destination wedding in Mexico cost?",
-    answer: "Coordination fees start at $499 for vendor network access (you get the contacts and take it from there), $1,500 for day-of coordination, and $4,500+ for full 4-day coordination like my son's wedding. Outfit sourcing from Surat and Delhi is separate — most brides save 40-60% vs. US boutiques. Custom pricing for interfaith weddings, non-standard duration, or large guest counts.",
+    answer: "Coordination fees start at $499 for vendor network access (you get the contacts and take it from there), $1,500 for day-of coordination, and $4,500+ for full 4-day coordination like my son's wedding. Outfit sourcing from Surat and Delhi is separate — most brides save 30-50% vs. US boutiques. Custom pricing for interfaith weddings, non-standard duration, or large guest counts.",
   },
   {
     question: "Can you coordinate an interfaith Hindu and Christian wedding in Mexico?",
@@ -605,7 +605,7 @@ export default function MexicoDestinationPage() {
                   <tr className="border-t border-[#e6dfd5]">
                     <td className="p-4 font-semibold">All outfits from India (bride + groom + party)</td>
                     <td className="p-4">,000-8,000</td>
-                    <td className="p-4 text-[#4d403a]">40-60% less than US boutiques</td>
+                    <td className="p-4 text-[#4d403a]">30-50% less than US boutiques</td>
                   </tr>
                   <tr className="border-t border-[#e6dfd5]">
                     <td className="p-4 font-semibold">Decorator (mandap + all event decor)</td>
@@ -702,7 +702,7 @@ export default function MexicoDestinationPage() {
               <p className="text-[#4d403a] leading-relaxed">
                 Coordination fees start at $499 for vendor network access (you get the contacts and take it from
                 there), $1,500 for day-of coordination, and $4,500+ for full 4-day coordination like my son&apos;s
-                wedding. Outfit sourcing from Surat and Delhi is separate — most brides save 40-60% vs. US boutiques.
+                wedding. Outfit sourcing from Surat and Delhi is separate — most brides save 30-50% vs. US boutiques.
                 Custom pricing for interfaith weddings, non-standard duration, or large guest counts.
               </p>
             </div>

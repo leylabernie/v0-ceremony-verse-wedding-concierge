@@ -82,7 +82,7 @@ export default function LehengaBuyingGuideBlogPost() {
             <li><strong>Outfit cost:</strong> The lehenga itself — ranging widely from $800 to $10,000+ depending on fabric, embroidery technique, and the craftspeople involved</li>
             <li><strong>Sourcing or concierge fee:</strong> If you use a shopping service (which you should — more on this in Step 3), there is typically a fee for their time and expertise</li>
             <li><strong>Shipping:</strong> International courier via DHL or FedEx typically runs $100–$300 for a bridal lehenga, depending on weight and declared value</li>
-            <li><strong>US customs duties:</strong> As of August 29, 2025, the US ended the de minimis exemption that previously allowed packages under $800 to enter duty-free. All shipments from India are now subject to import duties — currently at a 25% tariff rate on most textile goods. Budget accordingly</li>
+            <li><strong>US customs duties:</strong> Use a shipment-specific estimate based on HTS classification, fiber content, construction, declared value, country of origin, and the rules in effect when the outfit enters the US</li>
             <li><strong>Local alterations:</strong> Almost every lehenga that arrives from India will need some fitting adjustments from a local tailor. Budget $100–$400 for this</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
@@ -100,7 +100,7 @@ export default function LehengaBuyingGuideBlogPost() {
           </p>
           <ul style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Instagram sellers with no video call option.</strong> A business that will not show you the actual garment on a live video call before you pay is a business you should not send money to. Photos can be filtered, borrowed, or completely fabricated.</li>
-            <li><strong>Full payment required upfront before seeing the outfit.</strong> Reputable outfit specialists will work with a deposit structure — typically 50% upfront and 50% before shipping.</li>
+            <li><strong>Full payment required upfront before seeing the outfit.</strong> Ask for staged payments tied to written approvals. CeremonyVerse uses 25% to reserve, 35% after fabric or design approval, 30% after final inspection, and 10% upon delivery unless a signed proposal states otherwise.</li>
             <li><strong>No clear return or dispute policy.</strong> Ask specifically: what happens if what I receive does not match what was shown to me?</li>
             <li><strong>No physical location or verifiable presence.</strong> A real sourcing business should be able to tell you where they operate, which markets and artisan partners they work with, and provide references or client testimonials.</li>
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
@@ -168,14 +168,14 @@ export default function LehengaBuyingGuideBlogPost() {
             US import duties in 2026
           </h3>
           <p>
-            As of late 2025, the US eliminated the de minimis exemption for commercial shipments from India. There is currently a 25% tariff on Indian textile imports. If your lehenga is shipped with a declared commercial value of $2,000, expect to pay roughly $500 in duties — which is why factoring this into your budget upfront matters. For a full breakdown of current tariff rates, see our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>US tariffs guide for NRI brides</Link>.
+            Commercial textile duties are shipment-specific. The amount depends on HTS classification, fiber content, garment construction, declared value, country of origin, and any tariff measures in effect when the shipment enters the US. Ask for a written estimate, but keep a contingency because US Customs makes the final assessment. For a planning framework, see our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>US tariffs guide for NRI brides</Link>.
           </p>
 
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
             Personal baggage (bringing it back on a trip)
           </h3>
           <p>
-            Some brides choose to fly to India to purchase the lehenga and bring it back in their luggage. US Customs allows an $800 duty-free personal exemption per traveler on items purchased abroad. Anything over $800 is subject to standard duty rates (typically around 12–14% for garments). You are required to declare purchases on your customs form. Keep your receipts. This route works well if you are planning an India trip anyway — but it is not worth a separate trip for the lehenga alone given the costs involved.
+            Some brides choose to purchase the lehenga during an India trip and bring it back in their luggage. Accompanied baggage follows different rules from commercial courier shipments, but exemption amounts and applicable charges can change. Declare purchases, keep itemized receipts, and verify the current CBP traveler guidance before your return date.
           </p>
 
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>

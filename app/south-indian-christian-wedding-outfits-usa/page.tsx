@@ -32,14 +32,14 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           South Indian Christian Wedding Specialists
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          South Indian Christian Wedding Outfits Sourced from India — For NRI Families in the USA
+          South Indian Christian Wedding Outfits — Church, Reception, and Family Looks Managed from India to the USA
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           South Indian Christian weddings carry a distinctive elegance — blending church traditions with the rich textile heritage of Kerala and Tamil Nadu. CeremonyVerse understands exactly what each ceremony calls for, from the church procession saree to the reception outfit, and sources everything directly from India.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-            Book Free Consultation
+            Get My Free Outfit Plan
           </Link>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
             WhatsApp: +1 (215) 341-9990
@@ -100,9 +100,9 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your South Indian Christian wedding — the ceremonies, your outfit vision, and your family's specific traditions. No obligation." },
-              { tier: "Style Guide", price: "$149", desc: "A curated lookbook covering church ceremony, reception, and family outfits — with specific textile recommendations for Kerala or Tamil Christian traditions." },
-              { tier: "Guided Sourcing", price: "$599", desc: "Live video shopping sessions with artisan partners in Kanchipuram, Kochi, and Chennai. Measurement guidance and managed ordering for key outfits." },
-              { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management — bride, groom, bridesmaids, groomsmen, parents, and family. Church ceremony and reception outfits all coordinated and delivered." },
+              { tier: "Style Guide", price: "$249", desc: "A curated lookbook covering church ceremony, reception, and family outfits — with specific textile recommendations for Kerala or Tamil Christian traditions." },
+              { tier: "Guided Sourcing", price: "$799", desc: "The best-value hands-on tier for live video selection, measurement guidance, managed ordering, and pre-shipping inspection of key outfits." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management — bride, groom, bridesmaids, groomsmen, parents, and family. Church ceremony and reception outfits all coordinated and delivered." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -142,7 +142,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-              Book Free Consultation
+              Get My Free Outfit Plan
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990

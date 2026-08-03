@@ -166,7 +166,7 @@ export default function PhiladelphiaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Philadelphia?",
-                a: "Most of our Philadelphia clients save 40-60% compared to what they'd pay at Indian boutiques in New Jersey or New York. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Most of our Philadelphia clients save 30-50% compared to what they'd pay at Indian boutiques in New Jersey or New York. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
               },
               {
                 q: "Do you deliver to Cherry Hill, Bryn Mawr, and the suburbs?",

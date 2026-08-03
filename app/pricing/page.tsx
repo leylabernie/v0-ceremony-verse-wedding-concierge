@@ -36,7 +36,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "Is there a hidden markup on the outfits?",
-    answer: "No. Our service fee is flat and clearly itemized. You see the full breakdown: outfit cost, our service fee, international shipping, and US customs duties (12–27%). No surprises at delivery. We don't take a percentage of the outfit cost — the fee you pay is the fee we quoted.",
+    answer: "No. Our service fee is flat and clearly itemized. You see the full breakdown: outfit cost, our service fee, international shipping, and estimated US customs duties. Duties vary by garment classification, fiber content, declared value, and current tariff rules; any amount assessed is itemized and passed through. We don't take a percentage of the outfit cost.",
   },
   {
     question: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
@@ -48,7 +48,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How much can I save by sourcing from India vs. US boutiques?",
-    answer: "Most clients save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
+    answer: "Most clients save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
   },
   {
     question: "What's the payment schedule?",
@@ -297,26 +297,27 @@ export default function PricingPage() {
             {/* Tier 3 — Guided Sourcing (most popular) */}
             <div className="bg-white border-2 rounded-2xl p-8 flex flex-col relative" style={{ borderColor: "var(--cv-accent)" }}>
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
-                MOST POPULAR
+                BEST VALUE
               </div>
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Most Brides</p>
+              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Hands-On Support</p>
               <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Guided Sourcing</h3>
-              <p className="text-base text-[#4d403a] mb-6">Live video shopping so you see and pick every piece.</p>
+              <p className="text-base text-[#4d403a] mb-6">Best for bride, groom, or key family outfits when you want us beside you for every high-risk decision.</p>
               <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $799</div>
               <ul className="space-y-3 text-base text-[#4d403a] flex-1">
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Style Guide tier</li>
                 <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> 2–4 live video shopping sessions</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Fabric &amp; color matching to your shade</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Color accuracy confirmation</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Family inspection before shipping</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Custom stitching to your measurements</li>
+                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Exact-item, fabric &amp; color approval</li>
+                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Vendor and order coordination</li>
+                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Measurement &amp; stitching guidance</li>
+                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Pre-shipping quality inspection</li>
+                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Fit Assurance on eligible garments</li>
               </ul>
               <a
                 href="/contact/"
                 className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
                 style={{ background: "var(--cv-accent)", color: "#fff" }}
               >
-                Book Consultation
+                Get My Free Outfit Plan
               </a>
             </div>
           </div>
@@ -350,7 +351,7 @@ export default function PricingPage() {
                   className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
                   style={{ background: "#1f1f1f", color: "#fff" }}
                 >
-                  Apply Now
+                  Discuss My Wedding
                 </a>
               </div>
             </div>
@@ -510,7 +511,7 @@ export default function PricingPage() {
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
                   <td className="p-4 font-semibold">US customs duties</td>
-                  <td className="p-4 text-[#4d403a]">Import duties (12–27% of declared value) — paid to US Customs, not us</td>
+                  <td className="p-4 text-[#4d403a]">Estimated import duties based on garment classification, fiber content, value, and current tariff rules — assessed duties are passed through, not marked up</td>
                   <td className="p-4">$30–$600</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5] font-semibold">
@@ -522,7 +523,7 @@ export default function PricingPage() {
             </table>
           </div>
           <p className="text-xs text-[#4d403a] text-center mt-4">
-            Compare to $400–$5,000+ for the same handwork at a US Indian boutique. Most clients save 40–60%
+            Compare to $400–$5,000+ for the same handwork at a US Indian boutique. Most clients save 30–50%
             even after paying our service fee.
           </p>
           <div className="text-center mt-6">
@@ -637,8 +638,8 @@ export default function PricingPage() {
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Is there a hidden markup on the outfits?</h3>
               <p className="text-[#4d403a] leading-relaxed">
                 No. Our service fee is flat and clearly itemized. You see the full breakdown: outfit cost, our service
-                fee, international shipping, and US customs duties (12–27%). No surprises at delivery. We don&apos;t take
-                a percentage of the outfit cost — the fee you pay is the fee we quoted.
+                fee, international shipping, and estimated US customs duties. Duties vary by garment classification,
+                fiber content, declared value, and current tariff rules; assessed duties are itemized and passed through.
               </p>
             </div>
             <div>
@@ -664,7 +665,7 @@ export default function PricingPage() {
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much can I save by sourcing from India vs. US boutiques?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                Most clients save 40–60%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques.
+                Most clients save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques.
                 Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with
                 heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get
                 heavier handwork or better fabric at the same price point, because you skip the boutique markup.
@@ -711,8 +712,8 @@ export default function PricingPage() {
           <p className="text-[#e8dfd2] mb-8 leading-relaxed">
             We will review your wedding vision, timeline, and budget — and recommend the tier that fits.
             We will also tell you honestly if a different approach would work better for your situation.
-            No commitment, no follow-up pressure. Most brides leave the call knowing exactly what to
-            do next, whether they book with us or not.
+            No commitment and no follow-up pressure. You&apos;ll leave with a clear next step whether
+            you book with us or not.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

@@ -6,7 +6,7 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 export const metadata = buildMetadata({
   path: "/blog/us-tariffs-indian-wedding-outfits-2026/",
   title: "US Tariffs on Indian Wedding Outfits: NRI Guide 2026",
-  description: "How the August 2025 de minimis removal and current US tariffs affect Indian wedding outfit shipments \u2014 real duty calculations and legal ways to reduce costs.",
+  description: "How to estimate US customs costs for Indian wedding outfit shipments using garment classification, fiber content, declared value, and current tariff rules.",
   keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
-  description: "How the August 2025 de minimis removal and current US tariffs affect Indian wedding outfit shipments \u2014 real duty calculations and legal ways to reduce costs.",
+  description: "How to estimate US customs costs for Indian wedding outfit shipments using garment classification, fiber content, declared value, and current tariff rules.",
   url: "/blog/us-tariffs-indian-wedding-outfits-2026/",
   datePublished: "2026-03-01",
   keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
@@ -43,7 +43,7 @@ export default function TariffsBlogPost() {
             US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            The tariff landscape changed multiple times in 2025. Here is what actually applies to your lehenga — and how to plan around it.
+            Tariff rules can change quickly. Here is the durable framework for estimating your landed cost without relying on one universal percentage.
           </p>
         </div>
       </div>
@@ -53,27 +53,28 @@ export default function TariffsBlogPost() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
-            If you have been planning your Indian wedding in the US and scrolling through lehenga inspiration at midnight, you have probably hit a wall of headlines about tariffs on Indian imports. The confusion is completely understandable. In the past twelve months alone, tariff rates on Indian goods swung from 26% to 50%, then back down after a Supreme Court ruling, and now sit under a new temporary framework. It is a lot to track — and none of it was designed with NRI brides in mind.
+            If you have been planning your Indian wedding in the US and scrolling through lehenga inspiration at midnight, you have probably hit a wall of conflicting tariff headlines. The confusion is understandable: customs cost depends on the product classification and the rules in effect when the shipment enters the country, not a single permanent rate for every outfit.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Here is the truth: the tariff situation does affect how Indian wedding outfits reach you in the US, but probably not in the way the headlines make it sound. Whether it adds a few hundred dollars to your order or nothing at all depends entirely on how your outfit gets to you and who is handling the process. Let us break it down clearly.
+            Here is the useful truth: how your outfit is constructed, what fibers it contains, its declared value, where it was made, and how it reaches you can all affect the assessment. Let us break down the planning framework clearly.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            What the Tariffs Actually Are Right Now
+            What Determines the Duty on an Indian Wedding Outfit
           </h2>
           <p>
-            The current US tariff environment for Indian goods has been one of the most volatile in decades. Through most of 2025, the Trump administration imposed escalating reciprocal tariffs on Indian imports. By August 2025, Indian goods — including textiles and apparel — were subject to a combined rate of roughly <strong>50%</strong>.
+            US Customs classifies commercial garments under the Harmonized Tariff Schedule. A silk saree, synthetic lehenga, embroidered blouse, and sherwani can fall under different classifications because fiber content, construction, and product type matter.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Then, in February 2026, two significant things happened almost simultaneously:
+            Your shipment estimate should account for:
           </p>
           <ol style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li>The <strong>US–India interim trade agreement</strong> (announced February 2, 2026) outlined a reduction in the reciprocal tariff rate on Indian goods to <strong>18%</strong>, covering textiles, apparel, leather goods, and artisanal products.</li>
-            <li>The <strong>US Supreme Court struck down the IEEPA-based tariffs</strong> on February 20, 2026. The White House responded by invoking Section 122 of the Trade Act of 1974, imposing a <strong>flat 10–15% temporary surcharge</strong> on imports from all countries, effective February 24, 2026 and set to expire July 24, 2026.</li>
+            <li>The base HTS classification for the specific garment and its primary fiber content.</li>
+            <li>Any country-wide or product-specific tariff measures in effect on the entry date.</li>
+            <li>The declared value, shipping documentation, and whether the shipment is commercial cargo or accompanied baggage.</li>
           </ol>
           <p style={{ marginTop: "1.2rem" }}>
-            The practical result today: Indian wedding outfits shipped commercially into the US are not tariff-free, but they are no longer subject to the catastrophic 50% rates either. The situation is manageable — especially for those working with experienced partners.
+            The practical result: do not budget from a generic percentage copied from social media. Request a shipment-specific estimate and keep a contingency because US Customs makes the final classification and assessment.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -85,14 +86,14 @@ export default function TariffsBlogPost() {
             If you carry it home in your suitcase from India
           </h3>
           <p>
-            Good news here. When you travel to India, shop for your lehenga, and bring it back in your checked luggage, US Customs treats it under personal baggage rules — not commercial import rules. As a returning US resident, you have an <strong>$800 duty-free personal exemption</strong>. The Section 122 CBP bulletin explicitly carves out &ldquo;products for personal use included in accompanied baggage&rdquo; from the additional surcharge — so even the current temporary tariff does not apply to what you carry home yourself.
+            Accompanied baggage follows traveler rules rather than the commercial courier process. Declare purchases, keep itemized receipts, and verify the current CBP traveler guidance before your return date because exemption amounts and additional measures can change.
           </p>
 
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
             If your outfit is shipped directly from India to your US address
           </h3>
           <p>
-            This is where the tariff picture changes. Since August 29, 2025, the US <strong>eliminated the de minimis exemption</strong> for all countries. Previously, packages valued under $800 entered duty-free. That rule is gone. Now every commercial shipment from India — regardless of value — is subject to applicable duties based on the Harmonized Tariff Schedule code for the product.
+            Courier shipments enter through a commercial customs process. The carrier or broker uses the invoice and product details to classify the goods, and US Customs may assess duties or request more documentation. Build the estimate from the actual garments in the shipment.
           </p>
 
           {/* Table */}
@@ -108,18 +109,18 @@ export default function TariffsBlogPost() {
               <tbody>
                 <tr style={{ background: "#fff", borderBottom: "1px solid #e6dfd5" }}>
                   <td style={{ padding: "0.75rem 1rem" }}>Carried in your suitcase from India</td>
-                  <td style={{ padding: "0.75rem 1rem", color: "#2a7a2a", fontWeight: 500 }}>No (up to $800)</td>
-                  <td style={{ padding: "0.75rem 1rem" }}>Personal exemption applies; Section 122 excludes accompanied baggage</td>
+                  <td style={{ padding: "0.75rem 1rem", fontWeight: 500 }}>Traveler rules</td>
+                  <td style={{ padding: "0.75rem 1rem" }}>Declare purchases and verify current CBP traveler guidance</td>
                 </tr>
                 <tr style={{ background: "#f8f6f2", borderBottom: "1px solid #e6dfd5" }}>
                   <td style={{ padding: "0.75rem 1rem" }}>Shipped by courier from India</td>
-                  <td style={{ padding: "0.75rem 1rem", color: "#b84040", fontWeight: 500 }}>Yes</td>
-                  <td style={{ padding: "0.75rem 1rem" }}>Full HTS duties + Section 122 surcharge; de minimis eliminated Aug 2025</td>
+                  <td style={{ padding: "0.75rem 1rem", fontWeight: 500 }}>May be assessed</td>
+                  <td style={{ padding: "0.75rem 1rem" }}>HTS classification plus measures in effect on the entry date</td>
                 </tr>
                 <tr style={{ background: "#fff" }}>
                   <td style={{ padding: "0.75rem 1rem" }}>Custom-made vs. ready-made</td>
-                  <td style={{ padding: "0.75rem 1rem" }}>No difference</td>
-                  <td style={{ padding: "0.75rem 1rem" }}>Both assessed on declared value</td>
+                  <td style={{ padding: "0.75rem 1rem" }}>Classification-specific</td>
+                  <td style={{ padding: "0.75rem 1rem" }}>Construction and fiber content can change the classification</td>
                 </tr>
               </tbody>
             </table>
@@ -141,10 +142,10 @@ export default function TariffsBlogPost() {
             Tips for NRI Brides — Whoever You Work With
           </h2>
           <ul style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Plan around a trip to India if possible.</strong> Carrying outfits home in your suitcase is still the most straightforward path to avoid commercial tariffs on personal pieces.</li>
+            <li><strong>Decide the delivery route early.</strong> Commercial courier shipments and accompanied baggage follow different processes; verify the rules for the route you will actually use.</li>
             <li><strong>Get a proper invoice — always.</strong> Get an itemized invoice showing each outfit, fabric content, and individual price. This is your documentation if customs questions the declared value.</li>
             <li><strong>Know your HTS code.</strong> Different fabrics attract different duty rates. A silk lehenga and a polyester-blend lehenga are assessed differently. Ask your shipper to confirm the correct code before dispatch.</li>
-            <li><strong>Factor in timing.</strong> The current Section 122 surcharge is scheduled to expire July 24, 2026. Build extra time into your customs clearance timeline — especially for heavier multi-outfit packages.</li>
+            <li><strong>Factor in timing.</strong> Build extra time into your customs clearance timeline, especially for heavier multi-outfit packages or shipments with mixed product types.</li>
             <li><strong>Do not rely on social media for customs guidance.</strong> Tariff rules changed multiple times in 2025 alone. Information shared in Reddit or Facebook groups from even six months ago may be outdated.</li>
           </ul>
 
@@ -152,7 +153,7 @@ export default function TariffsBlogPost() {
             This Is Manageable — With the Right Help
           </h2>
           <p>
-            The tariff landscape for buying Indian wedding outfits for US-based weddings has been genuinely stressful for NRI brides. The good news is that the worst of the 50% rates are behind us, and there is a clear path to getting your dream outfit to your doorstep without a panic-inducing customs bill.
+            The tariff landscape for buying Indian wedding outfits for US-based weddings can be stressful. The manageable path is accurate classification, honest valuation, complete documentation, a shipment-specific estimate, and enough timing buffer for customs review.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             The key is working with people who have done this before — who know the documentation, the carriers, the HTS codes, and the customs expectations. See <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how our process works</Link> or read our <Link href="/faq/" style={{ color: "#7a6841" }}>frequently asked questions</Link> about shipping, duties, and timelines.

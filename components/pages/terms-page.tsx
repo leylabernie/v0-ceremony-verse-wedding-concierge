@@ -77,9 +77,10 @@ export function TermsPage({ onNavigate }: TermsPageProps) {
                 Payment Terms
               </h2>
               <p className="mb-4">
-                Our standard payment structure requires a 50% deposit to begin production, with the 
-                remaining 50% due before final shipment. Custom payment arrangements may be discussed 
-                during your consultation.
+                Unless your signed proposal states otherwise, project payments follow four approval
+                milestones: 25% to reserve and begin work, 35% after fabric or design approval, 30%
+                after final inspection and before shipping, and 10% upon delivery. You do not pay for
+                the next stage until the previous approval gate is complete.
               </p>
               <p>
                 All prices are quoted in USD and do not include applicable taxes, duties, or customs fees, 

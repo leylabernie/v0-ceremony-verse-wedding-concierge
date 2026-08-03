@@ -32,14 +32,14 @@ export default function GujaratiWeddingOutfitsPage() {
           Gujarati Wedding Specialists
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          Gujarati Wedding Outfits Sourced from India — For NRI Families in the USA
+          Gujarati Wedding Outfits for Every Event — Sourced in India, Coordinated Across the USA
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           A Gujarati wedding is a multi-day celebration with distinct outfit requirements for each ceremony — from Garba night to Saptapadi. CeremonyVerse has deep experience dressing Gujarati families across multiple ceremonies. We source authentic chaniya cholis, bridal lehengas, sherwanis, and coordinated family outfits directly from India.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-            Book Free Consultation
+            Get My Free Gujarati Outfit Plan
           </Link>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
             WhatsApp: +1 (215) 341-9990
@@ -100,9 +100,9 @@ export default function GujaratiWeddingOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your Gujarati wedding, the ceremonies planned, and your outfit vision. We'll share how we can help — no obligation." },
-              { tier: "Style Guide", price: "$149", desc: "A curated lookbook covering every ceremony — Garba, Mehndi, Pithi, Mameru, Saptapadi, and Reception — with specific outfit recommendations." },
-              { tier: "Guided Sourcing", price: "$599", desc: "Live video shopping sessions with artisan partners in India, measurement guidance, and managed ordering for your key outfits." },
-              { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for every ceremony and every family member. Bride, groom, bridesmaids, groomsmen, parents, and extended family — all coordinated." },
+              { tier: "Style Guide", price: "$249", desc: "A curated lookbook covering every ceremony — Garba, Mehndi, Pithi, Mameru, Saptapadi, and Reception — with specific outfit recommendations." },
+              { tier: "Guided Sourcing", price: "$799", desc: "The best-value hands-on tier for live video selection, measurement guidance, managed ordering, and pre-shipping inspection of key outfits." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management for every ceremony and the core wedding party. Bride, groom, bridesmaids, groomsmen, parents, and family — all coordinated." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -144,7 +144,7 @@ export default function GujaratiWeddingOutfitsPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-              Book Free Consultation
+              Get My Free Gujarati Outfit Plan
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990

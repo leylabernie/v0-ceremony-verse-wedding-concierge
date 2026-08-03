@@ -152,7 +152,7 @@ International shipping from India to the US typically runs $80–$200 depending 
 
 **Customs and import duties:**
 
-Indian textiles imported to the US are subject to customs duty, typically 10–27% depending on the fabric composition and declared value. We provide accurate documentation to ensure correct customs processing.
+Indian textiles imported to the US may be assessed customs duties based on HTS classification, fiber content, construction, declared value, and current tariff rules. We provide documentation and a shipment-specific estimate.
 
 **The complete picture:**
 

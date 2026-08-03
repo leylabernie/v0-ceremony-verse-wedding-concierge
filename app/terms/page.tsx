@@ -72,19 +72,19 @@ export default function TermsPage() {
             2. Service Tiers and Payment
           </h2>
           <p>
-            CeremonyVerse offers three service tiers: Style Guide &amp; Vendor List ($149), Guided
-            Sourcing ($599), and Full Bridal Concierge ($1,499). The 30-minute initial consultation
-            is always free. Service tier fees are due before work begins and are non-refundable once
-            a vendor introduction, sourcing call, or vendor list has been delivered, because that
-            work has already been performed by our team.
+            CeremonyVerse offers three service tiers: Style Guide &amp; Vendor List ($249), Guided
+            Sourcing ($799), and Full Bridal Concierge ($2,499). The 30-minute initial consultation
+            is always free. Service tier fees become non-refundable once work begins or a vendor
+            introduction, sourcing call, or vendor list has been delivered, because that work has
+            already been performed by our team.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is
-            separate from the service tier fee and is paid according to a milestone schedule
-            agreed in writing before each purchase. For custom-commissioned pieces, typical
-            milestones are 50% to begin production and 50% before international shipping. We accept
-            payment via credit card, ACH bank transfer, and wire transfer. We do not accept
-            cryptocurrency or cash.
+            separate from the service tier fee. Unless your signed proposal states otherwise,
+            project payments follow four approval milestones: 25% to reserve and begin work, 35%
+            after fabric or design approval, 30% after final inspection and before shipping, and
+            10% upon delivery. You do not pay for the next stage until the previous approval gate is
+            complete. We accept payment via credit card, ACH bank transfer, and wire transfer.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -103,8 +103,8 @@ export default function TermsPage() {
             <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>
               shipping and customs duties guide
             </Link>
-            . For textiles, the current US Harmonized Tariff Schedule rate is typically 5.7% to
-            12.5% depending on fabric composition, plus a small merchandise processing fee.
+            . Textile duties vary by HTS classification, fiber content, construction, declared value,
+            country of origin, and the tariff rules in effect when the shipment enters the US.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -138,9 +138,10 @@ export default function TermsPage() {
             tailor (Masterji) to map your measurements accurately. You are responsible for taking
             the measurements as directed during that call and for confirming the final measurement
             chart before production begins. Once production begins, measurement changes cannot be
-            guaranteed. If the finished item does not fit due to a tailor error, we will cover the
-            cost of alterations or remaking the piece. If the item does not fit due to incorrect
-            measurements you provided, alteration costs are your responsibility.
+            guaranteed. Eligible made-to-measure garments include Fit Assurance with up to $150
+            toward reasonable local alteration costs after delivery, subject to your signed proposal
+            and service terms. Fit Assurance does not cover issues caused by inaccurate, incomplete,
+            or changed measurements supplied by the client.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

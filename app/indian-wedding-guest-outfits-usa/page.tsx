@@ -136,9 +136,9 @@ export default function IndianWeddingGuestOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "A 20-minute call to understand your needs, timeline, and budget. No commitment." },
-              { tier: "Style Guide", price: "$149", desc: "A personalized lookbook with curated outfit recommendations based on your event, body type, and preferences." },
-              { tier: "Guided Sourcing", price: "$599", desc: "We manage the full sourcing process — live video sessions, measurements, stitching coordination, and delivery for one outfit." },
-              { tier: "Full Bridal Concierge", price: "$1,499", desc: "End-to-end outfit management for the bride or entire family across all wedding events. Multiple outfits, full coordination." },
+              { tier: "Style Guide", price: "$249", desc: "A personalized lookbook with curated outfit recommendations based on your event, body type, and preferences." },
+              { tier: "Guided Sourcing", price: "$799", desc: "We manage the sourcing process — live video sessions, measurements, stitching coordination, inspection, and delivery support." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management for the bride or core wedding party across wedding events. Multiple outfits, full coordination." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <p style={{ fontSize: "17px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
@@ -158,7 +158,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           {[
             { q: "I'm attending a wedding in 6 weeks — is that enough time?", a: "It's tight. We recommend a minimum of 8–10 weeks for sourcing from India. If you're under that timeline, reach out immediately and we'll let you know what's realistic based on your needs." },
-            { q: "Can you help me figure out what to wear?", a: "Yes — our Style Guide service ($149) includes a personalized lookbook based on the event type, dress code, your preferences, and body type. Or start with a free consultation to talk it through." },
+            { q: "Can you help me figure out what to wear?", a: "Yes — our Style Guide service ($249) includes a personalized lookbook based on the event type, dress code, your preferences, and body type. Or start with a free consultation to talk it through." },
             { q: "I need outfits for my whole family. Can you coordinate everything?", a: "Absolutely. Coordinated family sets are one of our most popular requests. We collect everyone's measurements, source complementary outfits, and ship everything together." },
             { q: "How do measurements work if I'm in the US?", a: "We send you a simple measurement guide. You can measure at home or visit a local tailor to get your numbers. We review everything before stitching begins." },
             { q: "What if I don't like what I see on the video call?", a: "No pressure to buy. The live video session lets you see multiple options in real time. If nothing feels right, we keep looking — or we adjust the brief and schedule another session." },

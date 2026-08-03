@@ -183,8 +183,8 @@ export default function SherwaniGuidePage() {
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$60 – $150</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>US customs duties (12-18% for silk garments)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$50 – $160</td>
+                  <td style={{ padding: "0.6rem 0" }}>Estimated US customs assessment</td>
+                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>Shipment-specific</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
                   <td style={{ padding: "0.6rem 0" }}>US alterations (if needed)</td>
