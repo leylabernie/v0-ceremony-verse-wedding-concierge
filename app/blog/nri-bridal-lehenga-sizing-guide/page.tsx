@@ -84,7 +84,7 @@ export default function SizingGuidePage() {
 
           <div className="mt-16 bg-[var(--cv-accent)] text-white p-10 rounded-3xl text-center">
             <h2 className="text-3xl font-bold mb-4">Want our Master Measurement Sheet?</h2>
-            <p className="mb-8">We provide our clients with a 15-point measurement guide used by top India workshops.</p>
+            <p className="mb-8">For eligible tiers, we provide a detailed measurement guide aligned to the selected vendor&apos;s requested format.</p>
             <a href="/contact/" className="inline-block bg-white text-[var(--cv-accent)] px-8 py-4 rounded-lg font-bold">
               Book a Sourcing Consultation
             </a>

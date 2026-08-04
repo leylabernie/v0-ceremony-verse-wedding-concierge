@@ -40,7 +40,7 @@ export default function NewYorkPage() {
               Indian Wedding Shopping in New York: <br/>Buy Directly from India
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Skip the high markups in Jackson Heights. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NY.
+              Compare India-sourced bridal lehengas, sherwanis, and family outfits with New York options using itemized costs, eligible live review, and delivery coordination.
             </p>
             <Link
               href="/contact/"

@@ -720,8 +720,8 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             <li style={{ marginBottom: "0.6rem" }}>
               <strong>Import middleman markup:</strong> Most US Indian
               boutiques do not buy directly from Indian artisans. They buy
-              from a US-based importer who already added a 30–50% margin on
-              top of the Indian wholesale price.
+              through an importer whose services and overhead become part of
+              the retail price.
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
               <strong>Inventory carrying cost:</strong> Fine jewelry sits in
@@ -1012,7 +1012,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Skip the boutique markup and the Instagram scam risk. Book a
+              Compare documented jewelry options and reduce remote-shopping risk. Book a
               free 30-minute consultation and we&apos;ll walk you through how
               to verify authentic Kundan, Polki, and temple jewelry — live, on
               video, before you commit a dollar.

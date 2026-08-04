@@ -264,7 +264,7 @@ export default function NriWeddingPlanningTimeline() {
 
           {/* Tagline */}
           <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
-            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. We help NRI families source Indian wedding outfits, sarees, lehengas, sherwanis, and more — coordinating directly with craftspeople and artisan partners across India so you don&apos;t have to.
+            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
           </p>
 
         </div>

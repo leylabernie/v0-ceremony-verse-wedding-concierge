@@ -41,7 +41,7 @@ export default function NewJerseyPage() {
               Indian Wedding Shopping in New Jersey: <br/>Buy Directly from India
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Skip the high markups in Edison. We source your dream bridal lehenga, sherwani, and family outfits directly from India with live video approval and door-to-door delivery in NJ.
+              Compare India-sourced bridal lehengas, sherwanis, and family outfits with New Jersey options using itemized costs, eligible live review, and delivery coordination.
             </p>
             <Link
               href="/contact/"
@@ -67,15 +67,15 @@ export default function NewJerseyPage() {
               <li>Logistics and shipping coordination</li>
             </ul>
             
-            <h3 className="text-2xl font-bold text-stone-900 mt-12 mb-6">What NJ Brides Say</h3>
+            <h3 className="text-2xl font-bold text-stone-900 mt-12 mb-6">What the process documents</h3>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
-                <p className="text-stone-700 mb-4 italic">"Bhamini made the entire process stress-free. I was so worried about getting scammed, but the live video shopping sessions gave me complete confidence. My lehenga arrived perfectly fitted."</p>
-                <p className="font-semibold text-stone-900">— Swati, Jersey City</p>
+                <p className="font-semibold text-stone-900 mb-2">Before purchase</p>
+                <p className="text-stone-700">Selected tier, product specifications, vendor price, shipping estimate, customs estimate, and written approval.</p>
               </div>
               <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
-                <p className="text-stone-700 mb-4 italic">"Coordinating outfits for 12 bridesmaids across different states seemed impossible. CeremonyVerse handled everything with such professionalism. Highly recommend!"</p>
-                <p className="font-semibold text-stone-900">— Karan & Sonal, Edison</p>
+                <p className="font-semibold text-stone-900 mb-2">Before shipment</p>
+                <p className="text-stone-700">Available pre-shipping review, carrier terms, declared value, tracking plan, and any contracted remedy or alteration allowance.</p>
               </div>
             </div>
             

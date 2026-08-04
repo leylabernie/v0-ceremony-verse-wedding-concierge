@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -67,35 +66,40 @@ export default function TermsPage() {
             independent third parties. We vet them carefully and stand behind the quality of what
             we ship, but we do not own or operate their workshops.
           </p>
+          <p style={{ marginTop: "1rem" }}>
+            CeremonyVerse also offers destination-wedding planning and coordination in Cancun and
+            Riviera Maya. The signed scope identifies the covered events and deliverables. Resorts,
+            venues, vendors, officiants, travel providers, and carriers remain independent third
+            parties with their own contracts, charges, availability, and policies.
+          </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             2. Service Tiers and Payment
           </h2>
           <p>
-            CeremonyVerse offers three service tiers: Style Guide &amp; Vendor List ($249), Guided
-            Sourcing ($799), and Full Bridal Concierge ($2,499). The 30-minute initial consultation
-            is always free. Service tier fees become non-refundable once work begins or a vendor
+            CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
+            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico planning
+            tiers are listed separately on the pricing page and may require a custom scope. The
+            30-minute initial consultation is free. Service tier fees become non-refundable once work begins or a vendor
             introduction, sourcing call, or vendor list has been delivered, because that work has
             already been performed by our team.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is
-            separate from the service tier fee. Unless your signed proposal states otherwise,
-            project payments follow four approval milestones: 25% to reserve and begin work, 35%
-            after fabric or design approval, 30% after final inspection and before shipping, and
-            10% upon delivery. You do not pay for the next stage until the previous approval gate is
-            complete. We accept payment via credit card, ACH bank transfer, and wire transfer.
+            separate from the service tier fee. Your signed proposal or service agreement states
+            the payment schedule, accepted payment methods, and any approval milestones that apply
+            to the contracted scope. Review that schedule before signing or paying.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             3. Shipping, Customs, and Duties
           </h2>
           <p>
-            All items are shipped from India to your US address via insured international courier
-            (DHL, FedEx, or UPS, at our discretion). Typical transit time is 5–10 business days
-            after production and quality inspection are complete. US customs duties, if applicable,
-            are itemized and disclosed to you before purchase — they are not included in the
-            item price and are the responsibility of the receiving client.
+            Approved items may be shipped from India to a US address using an available international
+            carrier. Carrier service, insurance availability, declared value, shipping estimate, and
+            customs estimate are itemized for the applicable shipment. Transit and customs-clearance
+            times are estimates, not guarantees. Duties or fees actually assessed are the receiving
+            client&apos;s responsibility unless the signed agreement expressly states otherwise.
           </p>
           <p style={{ marginTop: "1rem" }}>
             For a detailed breakdown of how US customs handles Indian wedding outfits and jewelry,
@@ -125,9 +129,9 @@ export default function TermsPage() {
           <p style={{ marginTop: "1rem" }}>
             If an item arrives damaged or does not match the approved specifications, contact us
             within 48 hours of delivery with photos. We will arrange a replacement, alteration, or
-            refund at no cost to you. This is our Quality Guarantee and is the cornerstone of our
-            service — every shipment is inspected in India before it leaves, but if something
-            slips through, we make it right.
+            remedy the documented issue according to the applicable signed proposal, vendor terms,
+            and service agreement. Eligible sourcing tiers include a pre-shipping review, but the
+            available remedy depends on the item and contracted terms.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

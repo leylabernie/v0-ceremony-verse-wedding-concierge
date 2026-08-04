@@ -34,7 +34,7 @@ export default function WashingtonDCPage() {
           Indian Wedding Shopping Washington DC &mdash; Serving the DMV Area
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse sources bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram &mdash; with live video shopping and DHL/FedEx delivery to your door across Washington DC, Maryland, and Northern Virginia.
+          CeremonyVerse helps DMV families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
         </p>
         <Link
           href="/contact/"
@@ -92,7 +92,7 @@ export default function WashingtonDCPage() {
               From there, we set up live video shopping sessions with our team in India. You see actual outfits &mdash; fabric, embroidery, color in natural light &mdash; and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your DMV address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether you&apos;re planning a grand Indian wedding near the Smithsonian, an intimate celebration in Georgetown, or a multi-day celebration at a venue in Tysons Corner &mdash; we understand the specific outfit traditions each community requires. The DMV&apos;s Indian community is incredibly diverse, and we source with cultural precision for Gujarati, Punjabi, South Indian, Bengali, and interfaith ceremonies alike.
+              DMV weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
           </div>
         </div>
@@ -167,11 +167,11 @@ export default function WashingtonDCPage() {
               },
               {
                 q: "How much does a bridal lehenga cost delivered to the DC area?",
-                a: "Most DMV clients save 30-50% compared to what they&apos;d pay at the few Indian boutiques in Northern Virginia or Maryland. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with DMV-area or out-of-state options.",
               },
               {
                 q: "I'm a federal employee getting married in DC &mdash; can you work with my security clearance venue?",
-                a: "Absolutely. We ship all outfits to your home address or personal residence &mdash; not to venues. There are no venue restrictions or security clearance complications because the delivery is entirely between our courier (DHL/FedEx) and your personal address. Many of our DMV clients are federal employees, and this process works smoothly for all of them.",
+                a: "We can discuss delivery to an eligible home address. Carrier service, customs timing, building or community access rules, and the need for an in-person recipient must be confirmed before shipment.",
               },
               {
                 q: "Can you help with outfits for a Northern Virginia Indian wedding?",

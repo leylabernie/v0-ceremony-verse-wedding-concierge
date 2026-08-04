@@ -33,7 +33,7 @@ export default function PhiladelphiaPage() {
           Indian Wedding Shopping Philadelphia — We&apos;re Based Here
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse is headquartered in Philadelphia. We source bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram — with live video shopping and delivery to your Philadelphia door.
+          CeremonyVerse is headquartered in Philadelphia. We help families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
         </p>
         <a
           href="/contact/"
@@ -91,7 +91,7 @@ export default function PhiladelphiaPage() {
               From there, we set up live video shopping sessions with our team in India. You see actual outfits — fabric, embroidery, color in natural light — and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Philadelphia address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether you&apos;re planning a Gujarati wedding in Center City, a South Indian Christian ceremony at a Penn campus venue, or a Punjabi celebration in the suburbs — we understand the specific outfit traditions each community requires. Philadelphia&apos;s Indian community is diverse, and we source with cultural precision.
+              Philadelphia weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function PhiladelphiaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Philadelphia?",
-                a: "Most of our Philadelphia clients save 30-50% compared to what they'd pay at Indian boutiques in New Jersey or New York. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Philadelphia or regional boutique options.",
               },
               {
                 q: "Do you deliver to Cherry Hill, Bryn Mawr, and the suburbs?",

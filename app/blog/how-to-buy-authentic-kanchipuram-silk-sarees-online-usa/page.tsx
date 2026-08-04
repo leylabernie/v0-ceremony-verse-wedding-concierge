@@ -335,8 +335,8 @@ export default function KanchipuramSilkGuideBlogPost() {
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
               <strong>International import middleman fees</strong> — most US
-              boutiques buy from a US-based importer who already added a
-              30–50% margin on top of the Indian wholesale price
+              boutiques may buy through an importer whose services and
+              overhead become part of the retail price
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
               <strong>Expensive inventory overhead</strong> — bridal silk
@@ -356,7 +356,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             work, a US boutique will charge $2,500–$5,000 for the exact same
             saree that costs $900–$1,800 in India. Sourcing directly from the
             weavers of Tamil Nadu or trusted heritage retailers in India allows
-            you to skip these retail markups entirely.
+            you to compare the seller&apos;s itemized price and terms with retail options.
           </p>
 
           {/* IMAGE PLACEHOLDER 2 */}
@@ -381,15 +381,15 @@ export default function KanchipuramSilkGuideBlogPost() {
           </h2>
 
           <p>
-            If you want the wholesale cost savings of shopping directly in
+            If you want help comparing direct India sourcing with retail options
             India without the logistical stress, CeremonyVerse bridges the gap.
             We act as your trusted, personal boots on the ground — verifying
             every saree before a single dollar leaves your account.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
-            Here is how our elite concierge service guarantees an authentic
-            shopping experience:
+            Here is how an eligible concierge scope can document the
+            shopping and verification process:
           </p>
 
           <div

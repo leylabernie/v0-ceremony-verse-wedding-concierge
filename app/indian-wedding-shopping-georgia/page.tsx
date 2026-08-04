@@ -28,13 +28,13 @@ export default function GeorgiaPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          Georgia-Based · Nationwide Service
+          Serving Georgia Families · Remote India Shopping
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Indian Wedding Shopping Georgia — NRI Bridal Concierge Atlanta
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse sources bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram — with live video shopping and delivery to your Georgia door. No more overpaying at the few local boutiques or risking online scams from India.
+          CeremonyVerse helps Georgia families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
         </p>
         <Link
           href="/contact/"
@@ -92,7 +92,7 @@ export default function GeorgiaPage() {
               From there, we set up live video shopping sessions with our team in India. You see actual outfits — fabric, embroidery, color in natural light — and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Georgia address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether you're planning a Telugu wedding at a Peachtree City venue, a Gujarati celebration in Johns Creek, or a South Indian ceremony at one of Atlanta's grand hotel ballrooms — we understand the specific outfit traditions each community requires. Atlanta's Indian community is incredibly diverse, and we source with cultural precision.
+              Georgia weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
           </div>
         </div>
@@ -167,15 +167,15 @@ export default function GeorgiaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Georgia?",
-                a: "Most of our Georgia clients save 30-50% compared to what they'd pay at the few Indian boutiques in the Atlanta area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Georgia or out-of-state options.",
               },
               {
                 q: "I've heard about shops on Buford Highway — why shouldn't I just go there?",
-                a: "The Indian shops along Buford Highway and in the surrounding Atlanta area serve a purpose, but they carry limited inventory and often charge significant markups. For a bridal lehenga or a full wedding party's outfits, the selection is simply not there. CeremonyVerse gives you access to thousands of artisans across India — with custom stitching, quality inspection, and pricing that's often 30-50% lower than what you'd pay locally.",
+                a: "Local stores can be useful when you want to try on or buy an in-stock piece. CeremonyVerse is an alternative when you want remote India sourcing, live review, documented approvals, or coordinated outfits across a group. Compare the actual quotes, timelines, and terms before choosing.",
               },
               {
                 q: "Can you help with outfits for a Telugu or South Indian wedding in Atlanta?",
-                a: "Absolutely. Atlanta has a large Telugu and South Indian community, and we're experienced with the specific outfit traditions — pattu sarees for the wedding ceremony, half-sarees for the pellikuthuru function, and the right silk fabrics for each ritual. We also work with Gujarati, Punjabi, North Indian, and interfaith wedding traditions. Whatever your community requires, we source with cultural precision.",
+                a: "We can translate your family&apos;s approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
               },
               {
                 q: "How far in advance should I start shopping for my Atlanta wedding?",

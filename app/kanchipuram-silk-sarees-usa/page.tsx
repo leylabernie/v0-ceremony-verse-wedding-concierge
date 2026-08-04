@@ -44,13 +44,13 @@ export default function KanchipuramSareesPage() {
           Kanchipuram Silk Sarees
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          Pure Kanchipuram silk, sourced from the source.
+          Kanchipuram silk sourcing with documented specifications.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "12px", maxWidth: "600px", margin: "0 auto 12px" }}>
-          We travel to Kanchipuram — the silk weaving capital of India — to hand-select pure silk sarees for our clients. Every saree is hand-woven with pure mulberry silk and real gold or silver zari thread.
+          CeremonyVerse helps research Kanchipuram sarees by requested silk composition, weave, border, zari type, color, and budget. Product claims and available certification must be checked for the specific saree.
         </p>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#5e4a40", marginBottom: "32px", maxWidth: "560px", margin: "0 auto 32px" }}>
-          This is not sourced from a catalog. We go there so you don't have to.
+          Eligible tiers can include live review and documentation before purchase.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -98,10 +98,10 @@ export default function KanchipuramSareesPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Pure mulberry silk", desc: "Made from 100% pure mulberry silk — stronger, shinier, and more durable than any other saree fabric." },
-              { title: "Real zari thread", desc: "Authentic Kanchipuram sarees use real gold or silver zari thread, not synthetic alternatives." },
+              { title: "Silk composition", desc: "Ask for the specific fiber composition and available Silk Mark documentation rather than relying on a product name alone." },
+              { title: "Zari composition", desc: "Traditional and modern sarees can use different metallic yarns. Confirm the represented zari type for the exact saree." },
               { title: "Handwoven heritage", desc: "Each saree takes days to weave by hand. The craftsmanship has been passed down for generations." },
-              { title: "Silk Mark certified", desc: "We source only Silk Mark certified sarees — the Government of India's guarantee of pure silk authenticity." },
+              { title: "Documented approval", desc: "Record the selected saree, seller representations, available certification, price, and return terms before purchase." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
@@ -136,8 +136,8 @@ export default function KanchipuramSareesPage() {
             Kanchipuram Saree FAQ
           </h2>
           {[
-            { q: "How much does a Kanchipuram silk saree cost?", a: "Authentic Kanchipuram pure silk sarees range from approximately $150–$800 depending on the weight of silk, zari work, and design complexity. We source directly to ensure you get authentic quality at the best price." },
-            { q: "How do I know it's authentic?", a: "We source only Silk Mark certified sarees from verified weavers in Kanchipuram. We have personally visited the source and know exactly what we're sourcing. No synthetic silk, no fake zari." },
+            { q: "How much does a Kanchipuram silk saree cost?", a: "Price depends on the represented silk and zari composition, weave, weight, design, seller, shipping, and any assessed duty. Your quote itemizes the selected saree and outside costs." },
+            { q: "How do I evaluate authenticity?", a: "Ask for the exact fiber and zari composition plus any available Silk Mark documentation for the selected saree. Eligible tiers can include live review, but video alone does not authenticate material composition." },
             { q: "Can you source specific colors or designs?", a: "Yes — tell us your wedding color palette and we'll source sarees that coordinate with the bridal and groom outfits. We can also source matching blouse fabric or arrange custom blouse stitching." },
             { q: "How long does it take?", a: "We recommend allowing 6–8 weeks for Kanchipuram saree sourcing, including selection, shipping, and delivery. Start early if you need multiple sarees for family members." },
           ].map((item) => (

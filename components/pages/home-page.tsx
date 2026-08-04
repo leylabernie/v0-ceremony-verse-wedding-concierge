@@ -1,911 +1,421 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaqItem } from "./faq-item"
 
+const serviceGroups = [
+  {
+    title: "Bride & Groom",
+    description:
+      "Bridal lehengas, sarees, sherwanis, bandhgalas, reception looks, and accessories selected around your event, budget, and timeline.",
+  },
+  {
+    title: "Wedding Party & Family",
+    description:
+      "Coordinated bridesmaid, groomsmen, parent, sibling, and guest outfits with one shared palette and an organized measurement process.",
+  },
+  {
+    title: "Jewelry & Ceremony Essentials",
+    description:
+      "Bridal jewelry, jutties, gifts, welcome-bag items, and ceremony supplies sourced only when the requested item and vendor can be responsibly verified.",
+  },
+  {
+    title: "Mexico Wedding Planning",
+    description:
+      "Indian destination-wedding planning and coordination in Cancun and Riviera Maya, from vetted vendor introductions to multi-day on-site support.",
+  },
+]
 
-const testimonials = [
+const processSteps = [
   {
-    names: "Kaval & April",
-    initials: "KA",
-    photo: "",
-    color: "#7a6841",
-    location: "Philadelphia, PA",
-    quote:
-      "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
-    detail: "4-day Gujarati & South Indian Christian wedding · Kanchipuram silk sarees · 14 bridesmaids & groomsmen · bridal + reception lehenga · family · pet · gifts · welcome bags",
+    number: "01",
+    title: "Start with a free outfit-plan call",
+    description:
+      "Share your dates, ceremonies, party size, budget, and inspiration. We identify what is realistic and which level of help fits.",
   },
   {
-    names: "Karan & Sonal",
-    initials: "KS",
-    photo: "/images/testimonial-karan-sonal.webp",
-    color: "#b09872",
-    location: "Destination Wedding, Mexico",
-    quote:
-      "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-    detail: "4-day Gujarati destination wedding, Mexico · full bridal party + family outfits per day · 2 dogs · ceremonial items · gifts · welcome bags",
+    number: "02",
+    title: "Review options before committing",
+    description:
+      "Depending on your service tier, you receive curated options or join live video shopping sessions to review the actual piece, fabric, color, and work.",
   },
   {
-    names: "Charly & Viola",
-    initials: "CV",
-    photo: "/images/testimonial-charlie-viola.webp",
-    color: "#8a7060",
-    location: "Philadelphia, PA",
-    quote:
-      "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
-    detail: "South Indian Christian wedding · Philadelphia · bridesmaids outfits + groom outfit",
+    number: "03",
+    title: "Approve details in writing",
+    description:
+      "Selections, measurements, costs, and milestones are documented. Custom work begins only after the applicable approval and payment milestone.",
   },
   {
-    names: "Dhan & Christina",
-    initials: "DC",
-    photo: "/images/testimonial-dhan-christina.webp",
-    color: "#7a6841",
-    location: "USA",
-    quote:
-      "As South Indian Christians, we wanted outfits that honored our heritage beautifully. CeremonyVerse understood exactly what we needed — everything arrived on time, fit perfectly, and looked even better in person than on the video call.",
-    detail: "South Indian Christian wedding · bride & groom outfits",
-  },
-  {
-    names: "Shincy",
-    initials: "SH",
-    photo: "/images/testimonial-shincy.webp",
-    color: "#b09872",
-    location: "USA",
-    quote:
-      "As a South Indian Christian bride, I was having my wedding in India but couldn't find the right outfit from abroad. CeremonyVerse sourced my bridal outfit from Delhi for me — handling everything remotely so I didn't have to stress while planning from the US.",
-    detail: "South Indian Christian bride · outfit sourced from Delhi · wedding in India",
-  },
-  {
-    names: "Swati",
-    initials: "SW",
-    photo: "/images/testimonial-swati.webp",
-    color: "#8a7060",
-    location: "USA",
-    quote:
-      "As a Gujarati girl I had multiple weddings to attend and needed coordinated guest outfits for each one. CeremonyVerse made it easy — great suggestions, perfect fits, no stress. I looked stunning at every event.",
-    detail: "Gujarati wedding guest · multiple outfits",
-  },
-  {
-    names: "Shilpa",
-    initials: "SP",
-    photo: "",
-    color: "#7a6841",
-    location: "USA",
-    quote:
-      "I went to India for my own shopping but knew coordinating 12 bridesmaid outfits remotely would be a nightmare. CeremonyVerse handled all 12 — every measurement, every fitting, every delivery. I didn't have to worry about a single one.",
-    detail: "12 bridesmaid outfits sourced while bride shopped in India",
-  },
-  {
-    names: "Druma & Parin",
-    initials: "DP",
-    photo: "/images/testimonial-druma-parin.webp",
-    color: "#b09872",
-    location: "USA",
-    quote:
-      "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
-    detail: "Gujarati wedding · Pure Kanchipuram silk sarees + custom matching outfits",
+    number: "04",
+    title: "Inspect, ship, and track",
+    description:
+      "We coordinate the pre-shipping review, packing, documentation, carrier handoff, and tracking through delivery to your US address.",
   },
 ]
 
 const pricingTiers = [
   {
     name: "Style Guide & Vendor List",
-    price: "From $249",
-    desc: "For the self-directed bride who just needs a curated starting point.",
+    price: "$249",
+    description: "For families comfortable placing and managing their own orders.",
     features: [
-      "Personalized outfit style guide",
-      "Curated list of options from Surat & Delhi",
-      "Budget guidance and style notes",
-      "One 30-min consultation call",
+      "30-minute consultation",
+      "Personalized style and budget brief",
+      "Curated starting options and vendor guidance",
+      "One written follow-up",
     ],
-    cta: "Get Started",
   },
   {
     name: "Guided Sourcing",
-    price: "From $799",
-    desc: "The hands-on option for brides who want expert help with every high-risk decision.",
+    price: "$799",
+    description: "For help with the decisions that are hardest to make remotely.",
     features: [
-      "Everything in Style Guide tier",
-      "2–4 live video shopping sessions",
-      "Exact-item, fabric & color approval",
-      "Measurement and stitching guidance",
-      "Vendor and order coordination",
-      "Pre-shipping quality inspection",
-      "Fit Assurance on eligible garments",
+      "Everything in the Style Guide tier",
+      "Two to four live video shopping sessions",
+      "Selection, measurement, and order coordination",
+      "Pre-shipping quality review",
     ],
-    cta: "Get My Free Outfit Plan",
     featured: true,
   },
   {
     name: "Full Bridal Concierge",
-    price: "From $2,499",
-    desc: "We handle everything — from first inspiration to your door.",
+    price: "$2,499",
+    description: "For end-to-end sourcing across the couple and wedding party.",
     features: [
-      "Everything in Guided Sourcing tier",
-      "Full wedding party coordination (up to 8)",
-      "Custom recreation via local boutique",
-      "Measurement management for all members",
-      "End-to-end shipping & delivery support",
-      "Dedicated sourcing manager",
+      "Everything in Guided Sourcing",
+      "Bride, groom, and party coordination up to eight people",
+      "Centralized measurements and approvals",
+      "Shipping and delivery coordination",
     ],
-    cta: "Discuss My Wedding",
   },
 ]
 
+const mexicoPlanningTiers = [
+  {
+    name: "Vendor Network Access",
+    price: "$499",
+    description: "Introductions to CeremonyVerse's Mexico planner, DJ, photography, decor, and beauty network.",
+  },
+  {
+    name: "Day-Of Coordination",
+    price: "$1,500",
+    description: "On-site coordination for one wedding event in Cancun or Riviera Maya.",
+  },
+  {
+    name: "Multi-Day Coordination",
+    price: "From $4,500",
+    description: "Planning and on-site coordination for a multi-day Indian destination wedding.",
+  },
+]
+
+const faqs = [
+  {
+    question: "Does CeremonyVerse plan weddings?",
+    answer:
+      "Yes, for Indian destination weddings in Cancun and Riviera Maya. CeremonyVerse also offers a separate India shopping and sourcing service for outfits, jewelry, gifts, and ceremony items. We define which service you are hiring in writing.",
+  },
+  {
+    question: "Will I see an item before I buy it?",
+    answer:
+      "Guided Sourcing and Full Bridal Concierge include live video review when the vendor and item allow it. Custom orders also use written references and approval milestones. We explain any limitation before you commit.",
+  },
+  {
+    question: "Are outfit prices included in the service fee?",
+    answer:
+      "No. The service fee pays for the level of concierge support shown above. Outfit or item costs, international shipping, and any customs charges are itemized separately before purchase.",
+  },
+  {
+    question: "Can you guarantee an exact fit or identical color on every screen?",
+    answer:
+      "No remote service can honestly promise that. We reduce risk with detailed measurements, written approvals, video review, and alteration allowance where your signed service terms provide it. Screen settings and handmade production can create small variations.",
+  },
+]
 
 export function HomePage() {
   return (
-    <main className="">
-      {/* HERO — full width image + overlay text */}
-      <section style={{ position: "relative", overflow: "hidden", background: "#1a1008" }}>
-        {/* Background image */}
+    <main className="bg-[#faf8f5] text-[#1f1f1f]">
+      <section className="relative min-h-[680px] overflow-hidden">
         <Image
           src="/images/hero-lehenga.webp"
-          alt="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA"
+          alt="Red bridal lehenga illustrating Indian wedding outfit sourcing"
           fill
           priority
           fetchPriority="high"
           sizes="100vw"
-          style={{
-            objectFit: "cover", objectPosition: "center",
-            opacity: 0.72, display: "block",
-          }}
+          className="object-cover"
         />
-        {/* Gradient overlay — left side darker for text readability */}
-        <div style={{
-          position: "absolute", inset: 0,
-          background: "linear-gradient(105deg, rgba(26,16,8,0.78) 0%, rgba(26,16,8,0.55) 45%, rgba(26,16,8,0.15) 100%)",
-        }} />
-
-        {/* Content */}
-        <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "100px 32px 80px" }}>
-          <div style={{ maxWidth: "640px" }}>
-            <p style={{ fontSize: "15px", letterSpacing: "0.25em", textTransform: "uppercase", color: "#e7d7b8", marginBottom: "20px", fontWeight: 500 }}>
-              US-Based Indian Wedding Outfit Concierge
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/30" />
+        <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
+          <div className="max-w-3xl text-white">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
+              India shopping concierge · Mexico wedding planning
             </p>
-            <h1 style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "clamp(2.4rem, 5vw, 3.8rem)",
-              fontWeight: 600, lineHeight: 1.12,
-              color: "#fff", marginBottom: "24px", letterSpacing: "-0.01em",
-            }}>
-              See and approve your exact wedding outfits in India before they ship.
+            <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
+              Shop India. Plan Mexico. One trusted US-based partner.
             </h1>
-            <p style={{ fontSize: "clamp(15px, 1.8vw, 18px)", lineHeight: 1.7, color: "rgba(255,255,255,0.92)", marginBottom: "36px", maxWidth: "520px" }}>
-              CeremonyVerse helps NRI families source bridal, groom, family, and wedding-party outfits directly from trusted partners in Surat, Delhi, and Kanchipuram. We manage live video selection, measurements, quality inspection, insured delivery, and Fit Assurance — while clients typically save 30–50% versus US boutique pricing.
+            <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
+              CeremonyVerse helps US families source wedding outfits and essentials from India—and
+              plan Indian destination weddings in Cancun and Riviera Maya. Each service has a clear
+              scope, price, and process.
             </p>
-
-            {/* CTAs */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginBottom: "40px" }}>
-              <Link style={{ background: "#7a6841", color: "#fff", padding: "13px 28px", borderRadius: "999px", fontSize: "15px", fontWeight: 600, border: "none", textDecoration: "none", cursor: "pointer" }}
-        href="/contact/"
-      >
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/contact/"
+                className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
+              >
                 Get My Free Outfit Plan
               </Link>
-              <Link style={{ background: "transparent", color: "#fff", padding: "13px 24px", borderRadius: "999px", fontSize: "15px", fontWeight: 500, border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none", cursor: "pointer" }}
-        href="/how-it-works/"
-      >
-                How It Works
+              <Link
+                href="/how-it-works/"
+                className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                Compare Both Services
               </Link>
             </div>
-
-            <p style={{ fontSize: "14px", lineHeight: 1.6, color: "rgba(255,255,255,0.82)", marginBottom: "22px", maxWidth: "560px" }}>
-              Bring your wedding date, party size, budget, and Pinterest inspiration. Leave with a realistic sourcing timeline and the right level of support.
+            <p className="mt-6 text-sm leading-6 text-white/75">
+              Free 30-minute consultation · No payment or contract required for the call
             </p>
-
-            {/* Real differentiators */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {[
-                "US-based accountability",
-                "Four-stage milestone payments",
-                "Live video approval",
-                "Fit Assurance up to $150",
-              ].map((tag) => (
-                <span key={tag} style={{ fontSize: "15px", color: "rgba(255,255,255,0.92)", padding: "6px 14px", borderRadius: "999px", border: "1px solid rgba(199,178,138,0.4)", background: "rgba(199,178,138,0.08)" }}>
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
-        <p style={{ position: "relative", zIndex: 2, textAlign: "center", fontSize: "15px", color: "rgba(255,255,255,0.92)", paddingBottom: "18px" }}>
-          Wedding-party orders need production and shipping time — start early
-        </p>
-      </section>
-
-      {/* PAIN POINTS STRIP */}
-      <section className="py-14 px-6" style={{ background: "#1f1f1f" }}>
-        <div className="max-w-5xl mx-auto">
-          <p className="text-center text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#c5a059" }}>
-            The 5 Biggest Risks When Buying Indian Wedding Outfits from India
-          </p>
-          <p className="text-center mb-8 max-w-2xl mx-auto text-sm" style={{ color: "#e6dfd5" }}>
-            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's what can go wrong — and how we prevent it.
-          </p>
-          <div className="grid md:grid-cols-3 gap-6">
-                        {[
-              {
-                problem: "Instagram vs. Reality: Fabric looks completely different",
-                solution: "You approve the exact item on live video — actual fabric draped, embroidery up close, color in natural light. That specific piece is reserved with your order number. If anything changes before shipping, we halt it immediately.",
-                icon: "🎥",
-              },
-              {
-                problem: "Fake vendors, stolen images, no accountability",
-                solution: "We work only with vetted artisan partners we know personally — skilled craftspeople, designers, and fabric specialists. No random Instagram sellers. You see everything live before committing. We have US presence and accountability.",
-                icon: "🛡️",
-              },
-              {
-                problem: "Sizing disasters: Blouses misfitted, family chaos",
-                solution: "We collect 15+ precise measurements and build in strategic ease allowances. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations, subject to service terms.",
-                icon: "📏",
-              },
-              {
-                problem: "Logistics anxiety: Customs duties, delays, damage risk",
-                solution: "We handle shipping documentation, estimate duties using each garment's classification, fiber content, and declared value, and insure shipments. Actual customs assessments are itemized and passed through transparently.",
-                icon: "📦",
-              },
-              {
-                problem: "Time + cognitive overload: WhatsApp chaos, vendor chasing",
-                solution: "We manage all communication, timelines, and vendor coordination. You get milestone-based updates and payment protection (25% deposit, 35% after approval, 30% after inspection, 10% on delivery).",
-                icon: "⏱️",
-              },
-            ].map((item, i) => (
-              <div key={i} className="rounded-2xl p-7" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(199,178,138,0.2)" }}>
-                <div className="text-2xl mb-4">{item.icon}</div>
-                <p className="font-['Cormorant_Garamond'] text-lg font-semibold italic mb-3 leading-snug" style={{ color: "#d4b06b" }}>
-                  {item.problem}
-                </p>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.88)" }}>
-                  {item.solution}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-14">
-          <div>
-            <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>Live From India</p>
-            <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold text-[#1f1f1f] mb-5">
-              You see every item before you buy — live, from India.
+      <section className="border-b border-[#e6dfd5] bg-white px-6 py-6">
+        <div className="mx-auto grid max-w-6xl gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
+          <p>US phone, email & accountability</p>
+          <p>Live video review where available</p>
+          <p>Itemized written quotes</p>
+          <p>Mexico vendor & on-site support</p>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              What we help you source
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              One organized shopping process for the whole wedding wardrobe
             </h2>
-            <p className="text-base leading-relaxed" style={{ color: "#4d403a" }}>
-              This is a real video call with our team in India, showing you actual outfits spread out in front of you. You see the fabric, the embroidery, the weight, the color in natural light — and that exact piece gets reserved with your name. No surprises when it arrives.
+            <p className="text-lg leading-8 text-[#4d403a]">
+              The service is built for families who want India&apos;s selection but need a reliable US-based
+              point of contact to organize decisions, approvals, measurements, and shipping.
             </p>
           </div>
-          <div className="relative rounded-2xl overflow-hidden" style={{ border: "1px solid #e6dfd5", height: "320px" }}>
-            <Image
-              src="/images/live-video-shopping-india.webp"
-              alt="Live video shopping session in India showing real bridal lehengas to NRI brides in the USA before purchase"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: "cover" }}
-            />
-          </div>
-        </div>
-
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-10 text-center">
-          How It Works
-        </h2>
-
-        <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto text-left">
-          {[
-            {
-              title: "Message Us",
-              desc: "Reach out via WhatsApp or our booking form. Tell us about your events, party size, and budget range.",
-            },
-            {
-              title: "Share Inspiration",
-              desc: "Send us your Pinterest boards, Instagram saves, or references. We work with our designer and tailor in India to match or recreate your vision exactly.",
-            },
-            {
-              title: "Live Video Shopping",
-              desc: "Join a live video session to see outfits, fabrics, and embroidery in real time — before committing to anything.",
-            },
-            {
-              title: "Delivered to You",
-              desc: "Your outfits are quality-checked, carefully packaged, and shipped directly to your door in the US.",
-            },
-          ].map((step, i) => (
-            <div key={i} className="bg-white rounded-2xl p-6 shadow-sm">
-              <p className="text-xs tracking-widest text-[#7a6841] font-medium mb-3 uppercase">
-                Step {i + 1}
-              </p>
-              <p className="font-semibold text-[#1f1f1f] mb-2">
-                {step.title}
-              </p>
-              <p className="text-sm text-[#4d403a]">
-                {step.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <Link className="mt-8 inline-flex items-center justify-center border border-[#1f1f1f] text-[#1f1f1f] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1f1f1f] hover:text-white transition"
-        href="/how-it-works/"
-      >
-          See Full Process →
-        </Link>
-      </section>
-
-      {/* WHAT WE SOURCE — compact teaser, links to Services page */}
-      <section className="py-16 px-6 bg-[#f9f6f3]">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#5e4a40" }}>Everything Covered</p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">We Source It All</h2>
-          <p className="text-[#4d403a] mb-10 max-w-xl mx-auto">
-            From ready-made outfits to fully custom pieces stitched to your measurements — bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry sourced directly from our supplier, ceremonial items, gifts, welcome bags, and even pet outfits.
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {[
-              "Bridal Lehengas", "Groom Sherwanis", "Kanchipuram Silk Sarees", "Bridesmaid Outfits",
-              "Groomsmen Attire", "Family Outfits", "Jewelry & Accessories", "Ceremonial Items",
-              "Wedding Gifts", "Welcome Bags", "Custom Boutique Outfits", "Pet Outfits 🐾"
-            ].map((label) => (
-              <span key={label} className="px-4 py-2 bg-white border border-[#e6dfd5] rounded-full text-sm text-[#2f2f2f] font-medium">
-                {label}
-              </span>
-            ))}
-          </div>
-          <Link className="btn-primary"
-        href="/services/"
-      >
-            See All Services
-          </Link>
-        </div>
-      </section>
-
-      {/* TRUST SIGNALS STRIP */}
-      <section className="py-12 px-6" style={{ background: "#fff", borderTop: "1px solid #e6dfd5", borderBottom: "1px solid #e6dfd5" }}>
-        <div className="max-w-5xl mx-auto">
-          <p className="text-center text-xs font-medium tracking-widest uppercase mb-8" style={{ color: "#5e4a40" }}>
-            Why Families Trust CeremonyVerse
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            {[
-              { icon: "🎥", stat: "Live Video Approval", sub: "You see every item before it ships" },
-              { icon: "✅", stat: "Quality Checked", sub: "Inspected in India before shipping" },
-              { icon: "🛡️", stat: "Vetted Partners Only", sub: "No random Instagram sellers" },
-              { icon: "📦", stat: "Nationwide Delivery", sub: "Insured shipping to US addresses" },
-            ].map((t, i) => (
-              <div key={i}>
-                <div style={{ fontSize: "1.75rem", marginBottom: "6px" }}>{t.icon}</div>
-                <p style={{ fontWeight: 600, fontSize: "0.95rem", color: "#1f1f1f", marginBottom: "2px" }}>{t.stat}</p>
-                <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>{t.sub}</p>
-              </div>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {serviceGroups.map((service) => (
+              <article key={service.title} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
+                <h3 className="mb-4 font-serif text-2xl font-semibold">{service.title}</h3>
+                <p className="leading-7 text-[#4d403a]">{service.description}</p>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* PRICING TIERS */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
-            Transparent Pricing
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            Choose Your Level of Support
-          </h2>
-          <p className="text-center text-[#4d403a] mb-8 max-w-xl mx-auto">
-            Every tier includes direct access to our vetted sourcing network in India. No hidden markups — just our sourcing fee, clearly itemized.
-          </p>
-
-          {/* FREE TIER HIGHLIGHT */}
-          <div className="max-w-2xl mx-auto mb-10 rounded-2xl border border-[#7a6841] bg-[#faf8f4] p-6 text-center">
-            <span className="inline-block text-xs font-medium tracking-widest uppercase text-[#7a6841] mb-2">Always Free</span>
-            <h3 className="text-xl font-semibold text-[#1f1f1f] mb-2">Free Consultation — No Commitment</h3>
-            <p className="text-sm text-[#4d403a] mb-4">
-              Not sure where to start? Book a free 30-minute call. We'll review your vision, timeline, and budget — and recommend exactly what level of support you need.
+      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 max-w-3xl">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
+              How it works
             </p>
-            <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-        href="/contact/"
-      >
-              Book Free Consultation →
-            </Link>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              India shopping: fewer surprises because every decision is visible
+            </h2>
+            <p className="text-lg leading-8 text-white/75">
+              Remote shopping still has risks. Our job is to make those risks clear, document what you
+              approve, and keep the process moving.
+            </p>
           </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            {processSteps.map((step) => (
+              <article key={step.number} className="rounded-2xl border border-white/15 bg-white/5 p-8">
+                <p className="mb-5 font-serif text-3xl text-[#c5a059]">{step.number}</p>
+                <h3 className="mb-3 font-serif text-2xl font-semibold">{step.title}</h3>
+                <p className="leading-7 text-white/75">{step.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {pricingTiers.map((tier, i) => (
-              <div
-                key={i}
-                className={`rounded-2xl p-8 flex flex-col ${
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Mexico wedding planning
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Choose introductions, one-event help, or multi-day coordination
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              These planning tiers are for Indian weddings in Cancun and Riviera Maya. Venue and vendor
+              charges are separate from CeremonyVerse&apos;s planning fee.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {mexicoPlanningTiers.map((tier) => (
+              <article key={tier.name} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+                <h3 className="font-serif text-2xl font-semibold">{tier.name}</h3>
+                <p className="my-5 font-serif text-4xl font-semibold text-[#7a6841]">{tier.price}</p>
+                <p className="mb-7 leading-7 text-[#4d403a]">{tier.description}</p>
+                <Link
+                  href="/indian-wedding-coordination-mexico/"
+                  className="font-semibold text-[#7a6841] underline underline-offset-4"
+                >
+                  See Mexico planning details
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Clear service fees
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Choose how much help you need
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Item costs, shipping, and customs are separate. They are shown in writing before you
+              approve a purchase.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {pricingTiers.map((tier) => (
+              <article
+                key={tier.name}
+                className={`flex flex-col rounded-2xl border p-8 ${
                   tier.featured
-                    ? "bg-[#1f1f1f] text-white border-2 border-[#7a6841] relative"
-                    : "bg-white border border-[#e6dfd5]"
+                    ? "border-[#7a6841] bg-[#f4eee4] shadow-lg"
+                    : "border-[#e6dfd5] bg-white"
                 }`}
               >
                 {tier.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#7a6841] text-white text-xs font-medium px-4 py-1 rounded-full tracking-wider">
-                    BEST VALUE
-                  </div>
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
+                    Most hands-on starting point
+                  </p>
                 )}
-                <p className={`text-sm font-medium tracking-wide mb-1 ${tier.featured ? "text-[#c5a059]" : "text-[#5e4a40]"}`}>
-                  {tier.name}
-                </p>
-                <p className={`text-3xl font-semibold mb-3 ${tier.featured ? "text-white" : "text-[#1f1f1f]"}`}>
-                  {tier.price}
-                </p>
-                <p className={`text-sm mb-6 leading-relaxed ${tier.featured ? "text-white/90" : "text-[#4d403a]"}`}>
-                  {tier.desc}
-                </p>
-                <ul className="space-y-2 mb-8 flex-1">
-                  {tier.features.map((f, fi) => (
-                    <li key={fi} className={`text-sm flex items-start gap-2 ${tier.featured ? "text-white/90" : "text-[#4d403a]"}`}>
-                      <span className="text-[#7a6841] mt-0.5">—</span>
-                      {f}
+                <h3 className="font-serif text-2xl font-semibold">{tier.name}</h3>
+                <p className="my-5 font-serif text-4xl font-semibold">{tier.price}</p>
+                <p className="mb-6 leading-7 text-[#4d403a]">{tier.description}</p>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex gap-3">
+                      <span aria-hidden="true" className="text-[#7a6841]">✓</span>
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Link className={`w-full py-3 rounded-full text-sm font-medium transition ${
-                    tier.featured
-                      ? "bg-[#7a6841] text-white hover:opacity-90"
-                      : "border border-[#1f1f1f] text-[#1f1f1f] hover:bg-[#1f1f1f] hover:text-white"
-                  }`}
-        href="/contact/"
-      >
-                  {tier.cta}
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
+                >
+                  Discuss My Wedding
                 </Link>
-              </div>
+              </article>
             ))}
           </div>
-
-          <p className="text-center text-xs text-[#5e4a40] mt-6">
-            All tiers include itemized quotes showing outfit cost, sourcing fee, shipping, and customs — fully transparent, no surprises.
+          <p className="mt-7 text-center text-sm text-[#5e4a40]">
+            Large parties, unusual items, and compressed timelines may require a custom written quote.
           </p>
         </div>
       </section>
 
-      {/* TRUST ENGINE — How We Verify & Prevent Failures */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
-            Our Verification System
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            How We Prevent Failures
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            NRIs aren't afraid of spending money. They're afraid of making expensive, irreversible mistakes. Here's exactly how we prevent every risk.
-          </p>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Vendor Verification */}
-            <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
-              <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">How We Verify Vendors</h3>
-              <ul className="space-y-3 text-[#4d403a] text-sm">
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">✓</span>
-                  <span><strong>Personal Relationships:</strong> Direct relationships with skilled craftspeople, designers, and suppliers across India — not random Instagram sellers.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">✓</span>
-                  <span><strong>Live Video Verification:</strong> You see the exact item — actual fabric draped, embroidery up close, color in natural light — before committing to anything.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">✓</span>
-                  <span><strong>Order Documentation:</strong> Every order is documented with reference photos and your written approval before production begins.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">✓</span>
-                  <span><strong>Pre-Shipping Inspection:</strong> Final quality check in India before anything ships to the US.</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Risk Prevention */}
-            <div className="rounded-2xl p-8 bg-[#f9f6f3] border border-[#e6dfd5]">
-              <h3 className="text-xl font-semibold text-[#1f1f1f] mb-4">What Can Go Wrong (& How We Prevent It)</h3>
-              <ul className="space-y-3 text-[#4d403a] text-sm">
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Fabric mismatch:</strong> You approve the exact bolt on video. That specific piece is reserved with your order number.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Sizing disasters:</strong> 15+ precise measurements, strategic ease, and Fit Assurance with up to $150 toward local alterations on eligible made-to-measure garments.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Shipping damage:</strong> Insured shipping, documented packing, and active delivery coordination through arrival.</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-[#7a6841] font-bold">🚫</span>
-                  <span><strong>Payment risk:</strong> Milestone-based protection: 25% deposit, 35% after approval, 30% after inspection, 10% on delivery.</span>
-                </li>
-              </ul>
-            </div>
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Why Bhamini built CeremonyVerse
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Built from family wedding experience—not invented case studies
+            </h2>
+            <p className="mb-5 text-lg leading-8 text-[#4d403a]">
+              Bhamini organized Indian outfits and ceremony details for two multi-day weddings in her
+              own family, including an interfaith celebration in New Jersey and a destination wedding
+              in Mexico. Those were family experiences, not paid client engagements.
+            </p>
+            <p className="leading-7 text-[#4d403a]">
+              CeremonyVerse turns those lessons into two defined services: India shopping and sourcing
+              for US families, plus Indian destination-wedding planning in Cancun and Riviera Maya.
+              The contract and quote identify exactly which service and deliverables apply.
+            </p>
+            <Link href="/about/" className="mt-7 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">
+              Read Bhamini&apos;s story
+            </Link>
           </div>
-
-          {/* Real Client Results */}
-          <div className="mt-12 rounded-2xl p-10 bg-[#1f1f1f] text-white">
-            <h3 className="text-2xl font-semibold mb-6 text-white">Real Client Results</h3>
-            <div className="grid md:grid-cols-3 gap-6 text-sm">
+          <div className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
+            <h3 className="mb-6 font-serif text-2xl font-semibold">Two services with clear boundaries</h3>
+            <div className="grid gap-7 sm:grid-cols-2">
               <div>
-                <p className="text-[#c5a059] text-2xl font-bold mb-2">14+14</p>
-                <p className="text-white/90">Bridesmaids & Groomsmen coordinated across multiple states</p>
+                <p className="mb-3 font-semibold text-[#365c45]">We do</p>
+                <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
+                  <li>Curate and source requested wedding items</li>
+                  <li>Coordinate shopping calls and approvals</li>
+                  <li>Organize measurements and order details</li>
+                  <li>Support inspection, shipping, and tracking</li>
+                  <li>Plan and coordinate Mexico destination weddings</li>
+                </ul>
               </div>
               <div>
-                <p className="text-[#c5a059] text-2xl font-bold mb-2">4-Day Weddings</p>
-                <p className="text-white/90">Destination weddings (Mexico, India) with full party coordination</p>
-              </div>
-              <div>
-                <p className="text-[#c5a059] text-2xl font-bold mb-2">30-50%</p>
-                <p className="text-white/90">Typical savings vs. US Indian boutiques</p>
+                <p className="mb-3 font-semibold text-[#8b3f3f]">We do not</p>
+                <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
+                  <li>Offer local wedding planning outside our Mexico scope</li>
+                  <li>Sell unauthorized designer replicas</li>
+                  <li>Promise identical handmade results</li>
+                  <li>Guarantee customs timing or duty amounts</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* REAL WEDDINGS GALLERY */}
-      <section className="py-16 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
-            Real Weddings, Real Results
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            See What We've Done
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            These are real NRI families who trusted us. From 14-bridesmaid coordination to destination weddings in Mexico, here's proof that we deliver.
-          </p>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Case Study 1: 14+14 Coordination */}
-            <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#7a6841]/20 to-[#5e4a40]/10 h-48 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-[#7a6841] mb-2">14+14</p>
-                  <p className="text-[#4d403a] font-medium">Bridesmaids & Groomsmen</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">4-Day Gujarati & South Indian Wedding</h3>
-                <p className="text-[#4d403a] text-sm mb-4">Coordinated outfits for 14 bridesmaids and 14 groomsmen across multiple states, plus full family, ceremonial items, and gifts.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Kanchipuram Silk</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Full Coordination</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Philadelphia, PA</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Case Study 2: Destination Wedding */}
-            <div className="rounded-2xl overflow-hidden border border-[#e6dfd5] shadow-sm hover:shadow-lg transition">
-              <div className="bg-gradient-to-br from-[#7a6841]/20 to-[#5e4a40]/10 h-48 flex items-center justify-center">
-                <div className="text-center">
-                  <p className="text-4xl font-bold text-[#7a6841] mb-2">4 Days</p>
-                  <p className="text-[#4d403a] font-medium">Destination Wedding</p>
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-semibold text-[#1f1f1f] mb-3">Gujarati Destination Wedding in Mexico</h3>
-                <p className="text-[#4d403a] text-sm mb-4">Coordinated outfits for bride, groom, full bridal party, and entire family for each day. Plus ceremonial items, gifts, and welcome bags.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Multi-Day</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">International</span>
-                  <span className="px-3 py-1 bg-[#f9f6f3] rounded-full text-xs text-[#4d403a]">Mexico</span>
-                </div>
-              </div>
-            </div>
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Honest answers before you commit
+            </p>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Common questions</h2>
           </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="py-12 px-6 bg-[#f9f6f3]">
-        <div className="max-w-6xl mx-auto">
-          <p className="tracking-[0.15em] text-xs font-medium text-[#5e4a40] mb-4 uppercase text-center">
-            Client Stories
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4 text-center">
-            NRI Families Who Trusted Us
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-xl mx-auto">
-            Real stories from NRI families across the US — from Philadelphia to Houston to destination weddings in Mexico.
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div key={i} className="bg-white rounded-2xl p-8 flex flex-col shadow-sm">
-                <p className="text-[#7a6841] text-2xl mb-4 leading-none">"</p>
-                <p className="text-[#5a4a42] text-base leading-relaxed flex-1 mb-6">
-                  {t.quote}
-                </p>
-                <div className="border-t border-[#e6dfd5] pt-4 flex items-center gap-3">
-                  {t.photo ? (
-                    <Image
-                      src={t.photo}
-                      alt={t.names}
-                      width={48}
-                      height={48}
-                      className="w-12 h-12 rounded-full object-cover shrink-0"
-                      style={{ border: "2px solid var(--cv-border)" }}
-                    />
-                  ) : (
-                    <div
-                      className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xs font-semibold shrink-0"
-                      style={{ background: t.color }}
-                    >
-                      {t.initials}
-                    </div>
-                  )}
-                  <div>
-                    <p className="font-semibold text-[#1f1f1f] text-sm">{t.names}</p>
-                    <p className="text-xs text-[#5e4a40]">{t.location} &nbsp;·&nbsp; {t.detail}</p>
-                  </div>
-                </div>
-              </div>
+          <div className="grid gap-5 md:grid-cols-2">
+            {faqs.map((faq) => (
+              <article key={faq.question} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
+                <h3 className="mb-4 font-serif text-2xl font-semibold">{faq.question}</h3>
+                <p className="leading-7 text-[#4d403a]">{faq.answer}</p>
+              </article>
             ))}
           </div>
-          <div className="text-center mt-10">
-            <a
-              href="https://www.trustpilot.com/review/ceremonyverse.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm transition hover:opacity-70"
-              style={{ color: "var(--cv-accent)" }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-              </svg>
-              Read our reviews on Trustpilot →
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* INTERCULTURAL COUPLES SECTION */}
-      <section className="py-20 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "var(--cv-accent)" }}>
-                South Indian, Gujarati, or from any background — we know Indian weddings.
-              </p>
-              <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-5" style={{ color: "#1f1f1f" }}>
-                South Indian, Gujarati, or any tradition — we know your wedding.
-              </h2>
-              <p className="text-base leading-relaxed mb-4" style={{ color: "#4d403a" }}>
-                Whether you're a South Indian Christian family, a Gujarati family, or a non-South Asian partner navigating an Indian wedding for the first time — we understand your traditions, your ceremonies, and exactly what you need. Our clients include South Indian Christian families, Gujarati families, and couples from all backgrounds.
-              </p>
-              <p className="text-base leading-relaxed mb-6" style={{ color: "#4d403a" }}>
-                We explain everything — the ceremonies, the dress codes, what each family member typically wears, and how to coordinate looks that honor both cultures. No assumptions, no jargon, no judgment.
-              </p>
-              <div className="space-y-3">
-                {[
-                  "Ceremony-by-ceremony outfit guidance",
-                  "Both families coordinated together",
-                  "Cultural context explained clearly",
-                  "Non-South Asian sizing and fit support",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <span className="text-sm mt-0.5" style={{ color: "var(--cv-accent)" }}>—</span>
-                    <span className="text-sm" style={{ color: "#2f2f2f" }}>{item}</span>
-                  </div>
-                ))}
-              </div>
-              <Link className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium transition"
-                style={{ background: "#7a6841", color: "#fff" }}
-        href="/contact/"
-      >
-                Book a Free Consultation
-              </Link>
-            </div>
-            <div className="rounded-2xl p-8" style={{ background: "#f9f6f3", border: "1px solid #e6dfd5" }}>
-              <p className="text-[#7a6841] text-3xl mb-3 leading-none font-['Cormorant_Garamond']">"</p>
-              <p className="text-base leading-relaxed mb-6 font-['Cormorant_Garamond'] text-xl italic" style={{ color: "#2f2f2f" }}>
-                As a South Indian Christian couple, we wanted outfits that truly honored our heritage for any of this. The team walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away.
-              </p>
-              <div className="flex items-center gap-3 border-t pt-4" style={{ borderColor: "#e6dfd5" }}>
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-semibold" style={{ background: "#8a7060" }}>
-                  CV
-                </div>
-                <div>
-                  <p className="font-semibold text-sm" style={{ color: "#1f1f1f" }}>Charly & Viola</p>
-                  <p className="text-xs" style={{ color: "#5e4a40" }}>Philadelphia, PA &nbsp;·&nbsp; South Indian Christian wedding</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TRUST & REVIEWS STRIP — replaced the Instagram section with a reviews-led block
-          that builds E-E-A-T and gives Google/AI engines Review schema to cite. */}
-      <section className="py-20 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: "var(--cv-accent)" }}>
-            Client Stories From NRI Weddings
-          </p>
-          <h2 className="text-3xl font-semibold mb-3" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            See the work, the families, and the outfits behind CeremonyVerse
-          </h2>
-          <p className="text-[#4d403a] mb-10 max-w-2xl mx-auto">
-            Explore the wedding stories and client feedback published on this site, then review our
-            public third-party profile before deciding whether CeremonyVerse is right for your family.
-          </p>
-
-          {/* Three stat cards */}
-          <div className="grid sm:grid-cols-3 gap-4 mb-10">
-            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
-              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                30–50%
-              </div>
-              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
-                Savings vs. US Indian boutiques
-              </p>
-            </div>
-            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
-              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                14+14
-              </div>
-              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
-                Bridesmaids &amp; groomsmen coordinated
-              </p>
-            </div>
-            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6">
-              <div className="text-3xl font-semibold mb-1" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-                Nationwide
-              </div>
-              <p className="text-xs text-[#4d403a] uppercase tracking-wider">
-                US delivery coverage
-              </p>
-            </div>
-          </div>
-
-          {/* CTA to Trustpilot — trust signal without social dependency */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="https://www.trustpilot.com/review/ceremonyverse.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition"
-              style={{ background: "#1f1f1f", color: "#fff" }}
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2l2.95 6.36L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.05-1.91L12 2z" />
-              </svg>
-              View our public Trustpilot profile
-            </a>
-            <a
-              href="/about/"
-              className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-medium transition border"
-              style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
-            >
-              Meet the founder &amp; our sourcing team
-            </a>
-          </div>
-          <p className="text-xs text-[#5e4a40] mt-6 max-w-xl mx-auto">
-            We are a US-based business with a real Philadelphia address, phone number, and
-            milestone-based payment protection — not an Instagram seller.
-          </p>
-        </div>
-      </section>
-
-      {/* FAQ SECTION */}
-      <section className="py-20 px-6" style={{ background: "#f9f6f3" }}>
-        <div className="max-w-3xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4 text-center" style={{ color: "var(--cv-accent)" }}>
-            Common Questions
-          </p>
-          <h2 className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f" }}>
-            Everything you need to know
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-xl mx-auto">
-            Questions NRI families ask us most — from how to buy a lehenga from India safely, to sizing, shipping, and what to expect.
-          </p>
-          <div className="space-y-0">
-            {[
-              {
-                q: "How do NRI brides buy a lehenga from India without getting scammed?",
-                a: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact piece — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. My family has been in Surat's fabric trade for generations, and I source from the same places US Indian boutiques source from — without the boutique markup. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
-              },
-              {
-                q: "Can you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
-                a: "Yes — I go myself to Kanchipuram and Banaras. Not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas."
-              },
-              {
-                q: "What exactly does CeremonyVerse do?",
-                a: "Two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team."
-              },
-              {
-                q: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
-                a: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the boutique markup or the designer-label price. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost."
-              },
-              {
-                q: "How much does it cost?",
-                a: "No hidden markup. Our service fee is flat and clearly itemized — not a percentage of outfit cost. You see the full breakdown: outfit cost, our service fee, shipping, and customs. Sourcing services start at $249 for a Style Guide, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico coordination starts at $499 for Vendor Network Access. A free consultation is always available."
-              },
-              {
-                q: "How far in advance should I start?",
-                a: "6–12 months before your wedding date. Top artisan workshops book quickly and custom outfits need production time. The bridal lehenga alone takes 14–20 weeks for quality custom work. If your wedding is sooner, contact us — we'll tell you honestly what's achievable."
-              },
-              {
-                q: "Can you coordinate outfits for a large family across multiple states?",
-                a: "This is one of our specialties. We've coordinated 14 bridesmaids and 14 groomsmen across multiple states, full families for 4-day weddings, and destination weddings in Mexico. We collect all measurements, manage all communication, and ship everything together."
-              },
-              {
-                q: "Do you help with intercultural weddings where one partner isn't South Asian?",
-                a: "Yes — and we love this work. We explain every ceremony, dress code, and cultural context clearly. We've helped many couples where one partner had never worn Indian clothes before. No assumptions, no jargon, no judgment."
-              },
-              {
-                q: "Do you ship to all US states?",
-                a: "Yes. We serve families across the entire United States — New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and everywhere in between. All items are quality-checked in India before being shipped to your US address."
-              },
-              {
-                q: "Do I have to pay US customs duties on a lehenga I order from India?",
-                a: "A commercial textile shipment may be assessed US duties. The amount depends on the garment's HTS classification, fiber content, construction, declared value, country of origin, and the tariff rules in effect when it enters the US. We provide a shipment-specific estimate, prepare the documentation, and itemize the amount actually assessed without adding a markup."
-              },
-              {
-                q: "How far in advance do I need to order my Indian wedding outfit from India?",
-                a: "For custom bridal lehengas or heavily embroidered pieces, plan for at least 4–6 months from order to delivery — this accounts for production time (6–12 weeks for complex pieces), shipping, and customs clearance. During peak wedding season (November–February), add an extra buffer. For semi-custom or ready-to-wear pieces, 8–12 weeks is usually workable."
-              },
-              {
-                q: "How do you handle sizing when I can't do in-person fittings?",
-                a: "We use detailed measurement guides that go beyond basic measurements — capturing high waist, blouse back length, shoulder width, and other measurements specific to Indian silhouettes. These are shared directly with our artisan partners in India, and most pieces include seam allowance for final alterations. We always recommend budgeting for one round of alterations with a local tailor after delivery."
-              },
-              {
-                q: "What if my outfit arrives damaged or looks different from what I approved?",
-                a: "CeremonyVerse documents every order with reference photos, written specifications, and your written approval at the design stage before production begins. If a piece arrives with a quality issue, we work directly with the source to determine whether repair, partial credit, or a remake is appropriate. Our established vendor relationships give us far more leverage than an individual buyer would have."
-              },
-              {
-                q: "Can you help with Gujarati wedding traditions — Garba outfits, Pithi, Mameru?",
-                a: "Yes. Gujarati weddings have specific outfit conventions — chaniya choli for Garba, color expectations for Pithi, regional embroidery styles like Kutch and Bandhani. We understand these distinctions and source outfits that are culturally aligned across all functions, not just generically Indian. We have dressed multiple Gujarati families for multi-day weddings including destination weddings."
-              },
-              {
-                q: "Do you work with South Indian Christian weddings?",
-                a: "Yes. South Indian Christian weddings — Kerala Christian, Tamil Christian, Telugu Christian — have distinct outfit traditions blending church ceremony aesthetics with South Indian elements like Kanjivaram silk, kasavu sets, and gold temple jewelry. We can help you navigate what is traditional within your specific denomination and family background, and source pieces that feel authentic."
-              },
-            ].map((item, i) => (
-              <FaqItem key={i} question={item.q} answer={item.a} />
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <Link className="text-sm font-medium transition hover:opacity-70"
-              style={{ color: "var(--cv-accent)" }}
-        href="/faq/"
-      >
-              See all FAQ →
+          <div className="mt-8 text-center">
+            <Link href="/faq/" className="font-semibold text-[#7a6841] underline underline-offset-4">
+              Read all frequently asked questions
             </Link>
           </div>
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="py-20 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>For NRI Families Planning Indian Weddings</p>
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1f1f1f] mb-4">
-            This is your wedding. You shouldn't have to settle.
+      <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-3xl">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#f0dfbd]">
+            Start with clarity
+          </p>
+          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+            Tell us which path you need—or if you need both
           </h2>
-          <p className="text-[#4d403a] mb-2">
-            Book a free 30-minute consultation. We'll review your vision, timeline, and budget — and tell you exactly what's achievable. No commitment required.
+          <p className="mb-8 text-lg leading-8 text-white/85">
+            In 30 minutes, we&apos;ll identify the right India shopping tier, Mexico planning tier, or a
+            combined scope for your destination wedding.
           </p>
-          <p className="text-sm text-[#5e4a40] mb-8">
-            Custom bridal and wedding-party orders need production, inspection, and shipping time. If your wedding is within the year, start now.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link className="inline-flex items-center justify-center bg-[#7a6841] text-white px-8 py-3 rounded-full text-sm font-medium hover:opacity-90 transition"
-        href="/contact/"
-      >
-              Book Free Consultation
-            </Link>
-            <a
-              href="https://wa.me/12153419990?text=Hi%2C%20I'm%20interested%20in%20wedding%20sourcing%20services%20from%20CeremonyVerse."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-[#075e54] text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition gap-2"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              Message on WhatsApp
-            </a>
-          </div>
+          <Link
+            href="/contact/"
+            className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
+          >
+            Book My Free Consultation
+          </Link>
         </div>
       </section>
     </main>

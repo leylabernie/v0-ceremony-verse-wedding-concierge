@@ -25,7 +25,7 @@ export const metadata = buildMetadata({
   title:
     "Indian Bridal Wear & Lehenga Sourcing — NY & NJ",
   description:
-    "Skip Edison boutique markups. Source bridal lehengas, sherwanis, and return gifts from India to NY & NJ with live video shopping and Tri-State delivery.",
+    "Compare India-sourced bridal lehengas, sherwanis, and return gifts with NY and NJ options using eligible live review and itemized delivery costs.",
   keywords:
     "indian bridal wear new jersey, indian wedding shops edison nj, lehenga shops in nyc, indian bridal boutique new jersey, custom bridal lehenga NY NJ, sherwani shops new york",
 });
@@ -70,7 +70,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How much can I save on a bridal lehenga sourcing from India vs. buying at a boutique in Edison or Jackson Heights?",
     answer:
-      "Tri-State couples typically save 30% to 50% by sourcing directly from India instead of buying at NY or NJ Indian boutiques. A custom bridal lehenga that costs $2,500-$8,000 at a US boutique costs $800-$3,500 sourced directly from India — even after live video shopping, custom stitching, insured air freight, JFK or Newark customs clearance, and door-to-door delivery to your NY or NJ address.",
+      "Prices vary by garment, handwork, customization, vendor, shipping, and duty. CeremonyVerse provides an itemized landed estimate so Tri-State couples can compare an India-sourced option with local boutique quotes.",
   },
   {
     question:
@@ -118,7 +118,7 @@ export default function IndianBridalWearNYNJPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Skip the Edison boutique markups and the Jackson Heights crowds.
+            Compare remote India sourcing with Edison and Jackson Heights options.
             Source custom bridal lehengas, sherwanis, and bulk return gifts
             directly from India&apos;s premier artisan hubs — with live video
             shopping and door-to-door delivery across the Tri-State.
@@ -205,17 +205,15 @@ export default function IndianBridalWearNYNJPage() {
                 className="font-semibold text-xl mb-3"
                 style={{ color: "var(--cv-accent)" }}
               >
-                Direct-from-India Pricing
+                Itemized Landed Estimate
               </h3>
               <p
                 className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                Save up to 30% to 50% compared to local brick-and-mortar
-                storefronts in New Jersey and New York City. A $3,500 bridal
-                lehenga at an Edison boutique costs $1,400–$1,800 sourced
-                directly from the artisan — even with shipping and customs
-                included.
+                Review the actual product, flat CeremonyVerse tier, shipping,
+                customs estimate, alteration allowance, timeline, and terms.
+                Compare that complete scope with written local boutique quotes.
               </p>
             </div>
             <div
@@ -314,10 +312,10 @@ export default function IndianBridalWearNYNJPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
-                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
+                <li>• Itemized product, service, shipping, and customs estimates</li>
+                <li>• Strongest stated working relationships in Surat and Delhi</li>
                 <li>• Live video shopping — zero pressure, full transparency</li>
-                <li>• Pay artisan price + transparent 15–20% sourcing fee</li>
+                <li>• Choose from transparent flat-fee sourcing tiers</li>
                 <li>• Coordinate bride + bridesmaids + family + gifts in one order</li>
               </ul>
             </div>
@@ -343,8 +341,8 @@ export default function IndianBridalWearNYNJPage() {
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and
-            show you how Tri-State couples are saving 30–50% by sourcing
-            directly from India with live video shopping.
+            explain the available India-sourcing options, costs, and trade-offs
+            before you decide whether remote shopping is right for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

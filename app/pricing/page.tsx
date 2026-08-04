@@ -1,738 +1,365 @@
-import Link from "next/link";
-import { SeoNav } from "@/components/seo-nav";
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo";
+import Link from "next/link"
+import { SeoNav } from "@/components/seo-nav"
+import {
+  buildBreadcrumb,
+  buildFaqSchema,
+  buildMetadata,
+  buildServiceSchema,
+  JsonLd,
+} from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "CeremonyVerse Pricing — Sourcing & Coordination",
+  title: "CeremonyVerse Pricing | India Sourcing & Mexico Planning",
   description:
-    "Transparent pricing: Indian wedding outfit sourcing from $249, Mexico wedding coordination from $499. No hidden markups. See full breakdown.",
-  keywords: "CeremonyVerse pricing, Indian wedding sourcing cost, Mexico wedding coordination pricing, NRI bridal concierge fee, Surat lehenga sourcing cost",
-});
+    "Compare CeremonyVerse India sourcing fees and Mexico wedding-planning tiers, from vendor introductions to multi-day coordination.",
+  keywords:
+    "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Mexico wedding coordination pricing, NRI bridal concierge pricing",
+})
+
+const tiers = [
+  {
+    name: "Style Guide & Vendor List",
+    price: "$249",
+    numericPrice: 249,
+    bestFor: "Best for: self-directed families",
+    description: "You want a researched starting point but will contact vendors, order, and ship independently.",
+    includes: [
+      "One 30-minute consultation",
+      "Written style, ceremony, and budget brief",
+      "Curated starting options and vendor guidance",
+      "One written clarification round",
+    ],
+    excludes: ["Live shopping sessions", "Vendor/order management", "Inspection or shipping coordination"],
+  },
+  {
+    name: "Guided Sourcing",
+    price: "$799",
+    numericPrice: 799,
+    bestFor: "Best for: one to several important outfits",
+    description: "You want live help reviewing options and managing the high-risk steps of a remote order.",
+    includes: [
+      "Everything in Style Guide",
+      "Two to four live video shopping sessions",
+      "Selection and measurement coordination",
+      "Written approvals and order follow-up",
+      "Pre-shipping quality review",
+      "Shipping-document and tracking support",
+    ],
+    excludes: ["Whole-party management beyond the agreed scope", "Product, shipping, or duty costs"],
+    featured: true,
+  },
+  {
+    name: "Full Bridal Concierge",
+    price: "$2,499",
+    numericPrice: 2499,
+    bestFor: "Best for: couple plus wedding party",
+    description: "You want one organized shopping process for the bride, groom, and party of up to eight people.",
+    includes: [
+      "Everything in Guided Sourcing",
+      "Bride and groom wardrobe coordination",
+      "Wedding-party coordination up to eight people",
+      "Centralized measurements and approvals",
+      "Consolidated order and delivery support",
+      "One primary CeremonyVerse contact",
+    ],
+    excludes: ["Wedding planning or day-of coordination", "Product, shipping, or duty costs"],
+  },
+]
+
+const mexicoTiers = [
+  {
+    name: "Vendor Network Access",
+    price: "$499",
+    numericPrice: 499,
+    bestFor: "Best for: couples who will manage vendors themselves",
+    description: "Introductions to the Mexico vendor network used to build CeremonyVerse's planning service.",
+    includes: [
+      "Mexico planner introduction",
+      "DJ and entertainment contacts",
+      "Photography, decor, and beauty contacts",
+      "CeremonyVerse vendor-network orientation call",
+    ],
+    excludes: ["Vendor booking or contract management", "On-site coordination", "Vendor and venue charges"],
+  },
+  {
+    name: "Day-Of Coordination",
+    price: "$1,500",
+    numericPrice: 1500,
+    bestFor: "Best for: one contracted event",
+    description: "On-site coordination for one event in Cancun or Riviera Maya under an agreed timeline.",
+    includes: [
+      "Pre-event handoff meeting",
+      "Review of the agreed event timeline",
+      "On-site coordination for one event",
+      "Communication with the contracted event vendors",
+    ],
+    excludes: ["Multi-day planning", "Venue or vendor charges", "Uncontracted events"],
+  },
+  {
+    name: "Multi-Day Coordination",
+    price: "From $4,500",
+    numericPrice: 4500,
+    bestFor: "Best for: multi-day Indian destination weddings",
+    description: "A custom planning and on-site coordination scope based on event count, venue, guest count, and complexity.",
+    includes: [
+      "Multi-event planning support",
+      "Vendor and timeline coordination",
+      "On-site support for the contracted events",
+      "Option to combine India outfit sourcing",
+    ],
+    excludes: ["Venue, travel, or vendor charges", "Items outside the signed custom scope"],
+  },
+]
 
 const serviceSchema = buildServiceSchema({
-  name: "CeremonyVerse Pricing & Service Tiers",
+  name: "CeremonyVerse Indian Wedding Sourcing Services",
   description:
-    "Transparent service tiers for Indian wedding outfit sourcing from Surat and Delhi, and Mexico wedding coordination in Cancun and Riviera Maya. Sourcing from $249, Mexico coordination from $499.",
+    "Flat-fee India shopping concierge tiers and Mexico Indian destination-wedding planning tiers for US families.",
   url: "/pricing/",
-  offers: [
-    { name: "Style Guide & Vendor List", price: 249, description: "Curated starting point for self-directed brides." },
-    { name: "Guided Sourcing", price: 799, description: "Live video shopping sessions with families in Surat and Delhi." },
-    { name: "Full Bridal Concierge", price: 2499, description: "End-to-end outfit sourcing and coordination for bride, groom, and party up to 8." },
-    { name: "Mexico Vendor Network Access", price: 499, description: "Vetted planner, DJ, photographers, decorator, and beauty contacts for Cancun and Riviera Maya." },
-    { name: "Mexico Day-Of Coordination", price: 1500, description: "Single-event on-site coordination in Mexico." },
-    { name: "Mexico 4-Day Full Coordination", price: 4500, description: "Full multi-day event coordination, like a 4-day Indian wedding in Cancun or Riviera Maya." },
-  ],
-});
+  offers: [...tiers, ...mexicoTiers].map((tier) => ({
+    name: tier.name,
+    price: tier.numericPrice,
+    description: tier.description,
+  })),
+})
 
-const breadcrumbSchema = buildBreadcrumb([
-  { name: "Pricing", url: "/pricing/" },
-]);
+const breadcrumbSchema = buildBreadcrumb([{ name: "Pricing", url: "/pricing/" }])
 
-const faqSchema = buildFaqSchema([
+const faqItems = [
   {
-    question: "How much does CeremonyVerse cost?",
-    answer: "CeremonyVerse offers two service lines. For outfit sourcing from Surat and Delhi: Style Guide & Vendor List at $249, Guided Sourcing at $799, and Full Bridal Concierge at $2,499. For Mexico wedding coordination in Cancun and Riviera Maya: Vendor Network Access at $499, Day-Of Coordination at $1,500, and 4-Day Full Coordination starting at $4,500. These are our service fees — outfit costs, shipping, and customs are itemized separately in your quote.",
+    question: "Does CeremonyVerse charge a percentage of the outfit price?",
+    answer:
+      "No. The three standard sourcing tiers use the flat service fees shown on this page. Product costs, shipping, and any customs charges are separately itemized before you approve them.",
   },
   {
-    question: "Is there a hidden markup on the outfits?",
-    answer: "No. Our service fee is flat and clearly itemized. You see the full breakdown: outfit cost, our service fee, international shipping, and estimated US customs duties. Duties vary by garment classification, fiber content, declared value, and current tariff rules; any amount assessed is itemized and passed through. We don't take a percentage of the outfit cost.",
+    question: "What will my outfits cost?",
+    answer:
+      "The answer depends on fabric, handwork, customization, quantity, and vendor availability. Because every order differs, we do not promise a universal discount. Your written quote shows the actual options available for your project.",
   },
   {
-    question: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
-    answer: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. You get real handwork at direct pricing, without the boutique markup or the designer-label price. If you specifically want a designer-label piece, we'll tell you to buy it direct from their store.",
+    question: "Can I start with a free consultation?",
+    answer:
+      "Yes. The 30-minute consultation is free and does not require a contract or payment. Paid work begins only after you select a scope and approve its written terms.",
   },
   {
-    question: "Are the outfits ready-made or custom?",
-    answer: "Both options are available. For ready pieces, we offer live video shopping — you see items on video, pick what you want, and my family inspects before shipping. These are semi-stitched and your local tailor handles final fit. For custom pieces, I work with a local boutique who can recreate a reference image at about 85% similarity for less than half the designer's cost. The boutique has made bridesmaid lehengas in any color and style for many brides, within their budget.",
+    question: "What happens if my party is larger than eight people?",
+    answer:
+      "We prepare a custom written scope based on the number of people, ceremonies, items, and timeline. You can review it before deciding whether to proceed.",
   },
   {
-    question: "How much can I save by sourcing from India vs. US boutiques?",
-    answer: "Most clients save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
+    question: "Is wedding planning included?",
+    answer:
+      "Mexico wedding planning is available through the separate $499, $1,500, and $4,500+ tiers shown on this page. India shopping tiers do not include wedding planning unless a combined written scope says otherwise.",
   },
-  {
-    question: "What's the payment schedule?",
-    answer: "Milestone-based protection: 25% deposit to reserve, 35% after fabric approval on live video, 30% after final inspection before shipping, and 10% upon delivery. You never pay for the next stage until you've approved the previous one. For Mexico coordination, the schedule is similar with milestones tied to vendor booking, event timeline, and on-site completion.",
-  },
-  {
-    question: "Do you offer payment plans?",
-    answer: "Yes. For orders over $3,000, we offer extended payment plans across 4–6 months aligned with your wedding timeline. We accept credit cards, bank transfers, and most major payment methods.",
-  },
-  {
-    question: "What's the difference between the three sourcing tiers?",
-    answer: "Style Guide ($249) is for self-directed brides who just need a curated starting point. Guided Sourcing ($799) includes 2–4 live video shopping sessions so you can see and pick pieces before they ship. Full Bridal Concierge ($2,499) is end-to-end — we handle the entire wedding party coordination (bride + groom + party up to 8), measurements, and shipping logistics. For parties larger than 8, custom pricing applies.",
-  },
-  {
-    question: "What does Mexico coordination include?",
-    answer: "Three tiers. Vendor Network Access ($499) gives you our vetted contacts for a Mexico planner, DJ, two photographers, decorator, and beauty — you take it from there. Day-Of Coordination ($1,500) is single-event on-site coordination. 4-Day Full Coordination ($4,500+) is a full multi-day event like my son's wedding — venue, caterer, decorator, makeup, hair, mehndi, priest, church, and on-site coordination throughout. Custom pricing for interfaith or non-standard duration.",
-  },
-]);
+]
+
+const faqSchema = buildFaqSchema(faqItems)
 
 export default function PricingPage() {
   return (
-    <div className="bg-[#faf8f5] min-h-screen">
+    <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
       <SeoNav />
 
-      {/* HERO */}
-      <section className="py-20 px-6 text-center" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
-            Transparent Pricing
+      <section className="bg-[#1f1f1f] px-6 py-20 text-center text-white sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
+            Flat service fees
           </p>
-          <h1 className="text-4xl md:text-6xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Two services. Flat fees. No hidden markups.
+          <h1 className="mb-6 font-serif text-5xl font-semibold sm:text-6xl">
+            Pay for the level of help you need
           </h1>
-          <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
-            Outfit sourcing from Surat and Delhi — direct from the same places US boutiques source from.
-            Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son&apos;s wedding.
-            Every quote is itemized in writing before you commit.
+          <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
+            India sourcing uses flat service fees instead of a percentage of the outfit price. Mexico
+            planning uses separate tiers. Products, venues, vendors, travel, shipping, and customs are
+            itemized outside the applicable CeremonyVerse service fee.
           </p>
         </div>
       </section>
 
-      {/* SAVINGS CALLOUT */}
-      <section className="py-16 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            What You Actually Save
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Honest savings — real numbers, no inflation
-          </h2>
-          <p className="text-center text-[#4d403a] mb-10 max-w-2xl mx-auto">
-            We don&apos;t cite $8,000 designer prices to make savings look bigger. Here&apos;s what US Indian boutiques
-            actually charge, and what the same handwork costs when you source direct.
-          </p>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border border-[#e6dfd5] rounded-xl overflow-hidden">
-              <thead style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
-                <tr>
-                  <th className="p-4 text-left">Outfit type</th>
-                  <th className="p-4 text-left">Handwork level</th>
-                  <th className="p-4 text-left">US Indian boutique</th>
-                  <th className="p-4 text-left">Direct from us (landed)</th>
-                  <th className="p-4 text-left">Savings</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white">
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Sangeet / mehndi / haldi</td>
-                  <td className="p-4 text-[#4d403a]">Light resham or machine work</td>
-                  <td className="p-4">$400–$700</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$150–$300</td>
-                  <td className="p-4 font-semibold">~50–60%</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Engagement / lighter bridal</td>
-                  <td className="p-4 text-[#4d403a]">Light zardozi or aari, good fabric</td>
-                  <td className="p-4">$1,200–$2,500</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$700–$1,500</td>
-                  <td className="p-4 font-semibold">~40–50%</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Premium bridal lehenga</td>
-                  <td className="p-4 text-[#4d403a]">Heavy zardozi, real silk, full handwork</td>
-                  <td className="p-4">$2,500–$5,000</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$1,500–$3,000</td>
-                  <td className="p-4 font-semibold">~40%</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Groom sherwani with handwork</td>
-                  <td className="p-4 text-[#4d403a]">Zardozi or resham detailing</td>
-                  <td className="p-4">$1,000–$2,500</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$500–$1,200</td>
-                  <td className="p-4 font-semibold">~50%</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Pure silk Kanchipuram saree</td>
-                  <td className="p-4 text-[#4d403a]">Hallmark-certified, real zari — I go myself to the weavers</td>
-                  <td className="p-4">~56,000 rupees in Vadodara boutique</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>~20,000 rupees direct from weaver</td>
-                  <td className="p-4 font-semibold">~65%</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Custom recreation (designer-inspired)</td>
-                  <td className="p-4 text-[#4d403a]">Custom piece, ~85% similar to reference</td>
-                  <td className="p-4">$3,000–$8,000+ designer label</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$1,500–$3,500 custom</td>
-                  <td className="p-4 font-semibold">~50%+</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-base text-[#4d403a] text-center mt-4 max-w-2xl mx-auto">
-            &quot;Landed&quot; means delivered to your US door — outfit cost, our service fee, shipping, and customs all included.
-            Brides often tell us the piece they receive is even better than what they saw at a boutique, because at the same
-            price point, you can afford heavier handwork or better fabric when you skip the markup.
-          </p>
-        </div>
-      </section>
-
-      {/* REAL CLIENT EXAMPLES */}
-      <section className="py-20 px-6" style={{ background: "#faf8f5" }}>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Real Examples
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            What clients actually got — and what they paid
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            These are real outcomes from real clients. Names changed for privacy, numbers exact.
-          </p>
-
-          <div className="space-y-8">
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
-                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Priti in New Jersey — Full Bridal Concierge</h3>
-                  <p className="text-[#4d403a] leading-relaxed mb-3">
-                    Priti was planning a 3-day Gujarati wedding with 8 bridesmaids and family outfits for both sides. She chose Full Bridal Concierge ($2,499). We sourced her bridal lehenga ($1,800 with heavy zardozi), groom sherwani ($900), 8 bridesmaid lehengas ($180 each, custom color-matched), mother-of-the-bride saree ($350), and father-of-the-bride outfit ($280). Total for 13 outfits including our service fee, shipping, and customs: $7,200. The same pieces at her local New Jersey Indian boutique would have run $14,000-16,000.
-                  </p>
-                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Full Bridal Concierge ($2,499) — Total savings: ~$7,000-9,000</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
-                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Ananya in California — Guided Sourcing</h3>
-                  <p className="text-[#4d403a] leading-relaxed mb-3">
-                    Ananya needed a bridal lehenga, a reception saree, and her fiance's sherwani. She chose Guided Sourcing ($799) with 3 live video sessions. We found her a coral pink zardozi lehenga ($1,400), a banarasi saree for the reception ($350), and a cream sherwani with gold detailing ($650). Total including service fee, DHL shipping, and customs: $3,500. She initially budgeted $5,000 for just the lehenga at a Bay Area boutique.
-                  </p>
-                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Guided Sourcing ($799) — Total savings: ~$3,000-4,000</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0" style={{ background: "#f0e6dd" }}>
-                  <span className="text-lg" style={{ color: "var(--cv-accent)" }}>❤</span>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Swati in Pennsylvania — Style Guide + Self-Sourcing</h3>
-                  <p className="text-[#4d403a] leading-relaxed mb-3">
-                    Swati wanted guidance but was comfortable managing vendors herself. She chose Style Guide and Vendor List ($249). We sent her a curated list of 12 vendors in Surat and Delhi matched to her style, with specific recommendations for each vendor's strengths. She sourced a mehndi outfit ($180) and sangeet lehenga ($320) on her own using our list, and came back for Guided Sourcing when she realized the bridal lehenga needed more hand-holding. Total first order: $569. She later upgraded to Guided Sourcing for the bridal outfit.
-                  </p>
-                  <p className="text-sm" style={{ color: "var(--cv-accent)" }}>Service tier: Style Guide ($249) — Outfits landed: $569</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SOURCING TIERS */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Outfit Sourcing from Surat &amp; Delhi
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Three tiers — pick the level of support you need
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            My family has been in Surat&apos;s fabric trade for generations. Through them, I source from the same places
-            US Indian boutiques source from. You shop via live video, my family inspects before shipping, and you skip
-            the boutique markup.
-          </p>
-
-          <div className="grid lg:grid-cols-3 gap-6">
-            {/* Tier 1 — Always Free */}
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Always Free</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Free Consultation</h3>
-              <p className="text-base text-[#4d403a] mb-6">No commitment required.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$0</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> 30-minute video consultation</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Review your wedding vision, timeline, budget</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Honest assessment of what&apos;s achievable</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Recommendation on the right tier for you</li>
-              </ul>
-              <a
-                href="/contact/"
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
-                style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
-              >
-                Book Free Consultation
-              </a>
-            </div>
-
-            {/* Tier 2 — Style Guide */}
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Self-Directed Bride</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Style Guide &amp; Vendor List</h3>
-              <p className="text-base text-[#4d403a] mb-6">For brides who want a curated starting point.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $249</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Personalized outfit style guide</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Curated list of options from Surat &amp; Delhi</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Budget guidance and style notes</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> One 30-min consultation call</li>
-                <li className="flex gap-2 text-[#4d403a]">✗ Live video shopping sessions</li>
-                <li className="flex gap-2 text-[#4d403a]">✗ Pre-shipping inspection</li>
-              </ul>
-              <a
-                href="/contact/"
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
-                style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
-              >
-                Get Started
-              </a>
-            </div>
-
-            {/* Tier 3 — Guided Sourcing (most popular) */}
-            <div className="bg-white border-2 rounded-2xl p-8 flex flex-col relative" style={{ borderColor: "var(--cv-accent)" }}>
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
-                BEST VALUE
-              </div>
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Hands-On Support</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Guided Sourcing</h3>
-              <p className="text-base text-[#4d403a] mb-6">Best for bride, groom, or key family outfits when you want us beside you for every high-risk decision.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $799</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Style Guide tier</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> 2–4 live video shopping sessions</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Exact-item, fabric &amp; color approval</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Vendor and order coordination</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Measurement &amp; stitching guidance</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Pre-shipping quality inspection</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Fit Assurance on eligible garments</li>
-              </ul>
-              <a
-                href="/contact/"
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-                style={{ background: "var(--cv-accent)", color: "#fff" }}
-              >
-                Get My Free Outfit Plan
-              </a>
-            </div>
-          </div>
-
-          {/* Tier 4 — Full Bridal Concierge */}
-          <div className="mt-6 bg-white border border-[#e6dfd5] rounded-2xl p-8">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-              <div className="flex-1">
-                <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Full Wedding Party</p>
-                <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Full Bridal Concierge</h3>
-                <p className="text-base text-[#4d403a] mb-3">
-                  We handle everything — from first inspiration to your door. For brides coordinating the full
-                  wedding party (bride + groom + party up to 8 + family + jewelry + ceremonial items).
-                </p>
-                <ul className="grid md:grid-cols-2 gap-2 text-base text-[#4d403a]">
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Guided Sourcing tier</li>
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Full wedding party coordination (up to 8)</li>
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Custom recreation via local boutique</li>
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Measurement management for all members</li>
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> End-to-end shipping &amp; delivery support</li>
-                  <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Dedicated sourcing manager</li>
-                </ul>
-                <p className="text-base text-[#4d403a] mt-3">
-                  For parties larger than 8 or full wedding party (15+), custom pricing applies — typically $3,999+. <Link href="/contact/" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
-                </p>
-              </div>
-              <div className="md:text-right">
-                <div className="text-4xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $2,499</div>
-                <a
-                  href="/contact/"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-                  style={{ background: "#1f1f1f", color: "#fff" }}
-                >
-                  Discuss My Wedding
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MEXICO COORDINATION TIERS */}
-      <section className="py-20 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-6xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Mexico Wedding Coordination — Cancun &amp; Riviera Maya
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Vetted vendors from my own son&apos;s wedding
-          </h2>
-          <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            I coordinated my own son&apos;s 4-day Indian wedding in Mexico. The vendors I used — planner, DJ, photographers,
-            decorator, beauty — are the vendors I now connect you with. No guesswork, no resort-package markup.
-          </p>
-
-          <div className="grid lg:grid-cols-3 gap-6">
-            {/* Mexico Tier 1 — Vendor Network Access */}
-            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>DIY with My Vendors</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Vendor Network Access</h3>
-              <p className="text-base text-[#4d403a] mb-6">Vetted contacts — you take it from there.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$499</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Mexico planner contact (boots on ground)</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> DJ contact (professional, wedding-seasoned)</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Two photographer contacts (main + budget for mehndi/haldi)</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Decorator contact</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Beauty contacts (Indian parlor + American HD makeup in Mexico)</li>
-                <li className="flex gap-2 text-[#4d403a]">✗ On-site coordination</li>
-              </ul>
-              <a
-                href="/contact/"
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
-                style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
-              >
-                Get Vendor List
-              </a>
-            </div>
-
-            {/* Mexico Tier 2 — Day-Of Coordination */}
-            <div className="bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-8 flex flex-col">
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Single Event</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>Day-Of Coordination</h3>
-              <p className="text-base text-[#4d403a] mb-6">One event, on-site coordination.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>$1,500</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Vendor Network Access</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> On-site coordination for one event</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Vendor liaison day-of</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Timeline management</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Day-of issue resolution</li>
-                <li className="flex gap-2 text-[#4d403a]">✗ Multi-day coordination</li>
-              </ul>
-              <a
-                href="/contact/"
-                className="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium border"
-                style={{ borderColor: "var(--cv-accent)", color: "#1f1f1f" }}
-              >
-                Book Consultation
-              </a>
-            </div>
-
-            {/* Mexico Tier 3 — 4-Day Full Coordination */}
-            <div className="bg-[#faf8f5] border-2 rounded-2xl p-8 flex flex-col relative" style={{ borderColor: "var(--cv-accent)" }}>
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-semibold text-white" style={{ background: "var(--cv-accent)" }}>
-                FULL SERVICE
-              </div>
-              <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>Multi-Day Event</p>
-              <h3 className="text-2xl font-semibold mb-2" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>4-Day Full Coordination</h3>
-              <p className="text-base text-[#4d403a] mb-6">Full event, like my son&apos;s wedding.</p>
-              <div className="text-4xl font-semibold mb-6" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>From $4,500</div>
-              <ul className="space-y-3 text-base text-[#4d403a] flex-1">
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Everything in Day-Of Coordination</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Full multi-day on-site coordination</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Venue sourcing &amp; negotiation</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Caterer, priest, church coordination</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Makeup, hair, mehndi artist coordination</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Welcome bag &amp; favor sourcing</li>
-                <li className="flex gap-2"><span style={{ color: "var(--cv-accent)" }}>✓</span> Interfaith ceremony coordination</li>
-              </ul>
-              <p className="text-xs text-[#4d403a] mt-3">
-                Custom pricing for interfaith weddings, non-standard duration, or guest counts above 200. <Link href="/contact/" className="underline" style={{ color: "var(--cv-accent)" }}>Request a custom quote</Link>.
-              </p>
-              <a
-                href="/contact/"
-                className="mt-4 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium"
-                style={{ background: "var(--cv-accent)", color: "#fff" }}
-              >
-                Book Consultation
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CUSTOM QUOTE CTA */}
-      <section className="py-16 px-6" style={{ background: "#faf8f5" }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Need something outside these tiers?
-          </h2>
-          <p className="text-[#4d403a] mb-8 leading-relaxed">
-            Interfaith weddings, non-standard duration, parties larger than 15, multiple-event coordination,
-            or anything else — we custom-quote. Tell us your vision and budget, and we&apos;ll tell you honestly
-            what we can do.
-          </p>
-          <a
-            href="/contact/"
-            className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-            style={{ background: "#1f1f1f", color: "#fff" }}
-          >
-            Request a Custom Quote
-          </a>
-        </div>
-      </section>
-
-      {/* WHAT'S INCLUDED IN A QUOTE */}
-      <section className="py-20 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            What&apos;s in Your Sourcing Quote
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Every line item, in writing, before you commit
-          </h2>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border border-[#e6dfd5] rounded-xl overflow-hidden">
-              <thead style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
-                <tr>
-                  <th className="p-4 text-left">Line item</th>
-                  <th className="p-4 text-left">What it covers</th>
-                  <th className="p-4 text-left">Typical range</th>
-                </tr>
-              </thead>
-              <tbody className="bg-white">
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Outfit cost</td>
-                  <td className="p-4 text-[#4d403a]">The piece itself — paid to the source in India</td>
-                  <td className="p-4">$150–$3,500 depending on handwork &amp; fabric</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">Service fee</td>
-                  <td className="p-4 text-[#4d403a]">CeremonyVerse flat fee — tier-based, not a percentage</td>
-                  <td className="p-4">$249–$2,499 (tier-dependent)</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">International shipping</td>
-                  <td className="p-4 text-[#4d403a]">DHL or FedEx from India to your US address, fully insured</td>
-                  <td className="p-4">$80–$200</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4 font-semibold">US customs duties</td>
-                  <td className="p-4 text-[#4d403a]">Estimated import duties based on garment classification, fiber content, value, and current tariff rules — assessed duties are passed through, not marked up</td>
-                  <td className="p-4">$30–$600</td>
-                </tr>
-                <tr className="border-t border-[#e6dfd5] font-semibold">
-                  <td className="p-4">Total delivered</td>
-                  <td className="p-4 text-[#4d403a]">Everything above, no hidden fees</td>
-                  <td className="p-4" style={{ color: "var(--cv-accent)" }}>$300–$4,800</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="text-xs text-[#4d403a] text-center mt-4">
-            Compare to $400–$5,000+ for the same handwork at a US Indian boutique. Most clients save 30–50%
-            even after paying our service fee.
-          </p>
-          <div className="text-center mt-6">
-            <a
-              href="/india-sourcing-price-guide.pdf"
-              className="inline-flex items-center gap-2 text-sm font-medium"
-              style={{ color: "var(--cv-accent)" }}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download our free India Sourcing Price Guide (PDF) →
-            </a>
-            <p className="text-xs text-[#4d403a] mt-2">Detailed pricing for every outfit type, handwork level, and ceremony</p>
-          </div>
-        </div>
-      </section>
-
-      {/* PAYMENT SCHEDULE */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Payment Protection
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Milestone-based payments — never pay for the next stage until you approve the previous
-          </h2>
-
-          <div className="grid md:grid-cols-4 gap-4">
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6 text-center">
-              <div className="text-3xl font-semibold mb-2" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>25%</div>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{ color: "#1f1f1f" }}>Deposit</p>
-              <p className="text-xs text-[#4d403a]">To reserve your order and start production</p>
-            </div>
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6 text-center">
-              <div className="text-3xl font-semibold mb-2" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>35%</div>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{ color: "#1f1f1f" }}>After fabric approval</p>
-              <p className="text-xs text-[#4d403a]">After you approve fabric on live video</p>
-            </div>
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6 text-center">
-              <div className="text-3xl font-semibold mb-2" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>30%</div>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{ color: "#1f1f1f" }}>After final inspection</p>
-              <p className="text-xs text-[#4d403a]">After family inspection photos before shipping</p>
-            </div>
-            <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6 text-center">
-              <div className="text-3xl font-semibold mb-2" style={{ color: "var(--cv-accent)", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>10%</div>
-              <p className="text-xs uppercase tracking-wider font-semibold mb-2" style={{ color: "#1f1f1f" }}>On delivery</p>
-              <p className="text-xs text-[#4d403a]">When your outfits arrive at your US door</p>
-            </div>
-          </div>
-
-          <div className="mt-8 bg-[#faf8f5] border border-[#e6dfd5] rounded-2xl p-6 text-center">
-            <p className="text-base text-[#4d403a] leading-relaxed">
-              <strong style={{ color: "#1f1f1f" }}>Payment plans available</strong> for orders over
-              $3,000 — extended across 4–6 months aligned with your wedding timeline. We accept
-              credit cards, bank transfers, and most major payment methods.
+      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
+              Mexico wedding planning
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* TIMING URGENCY */}
-      <section className="py-16 px-6" style={{ background: "#faf8f5" }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-            <p className="text-xs tracking-widest uppercase font-medium mb-3" style={{ color: "var(--cv-accent)" }}>
-              Booking Timeline
-            </p>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-              Popular wedding dates fill our capacity 3-4 months out
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Cancun and Riviera Maya planning tiers
             </h2>
-            <p className="text-[#4d403a] mb-6 leading-relaxed">
-              Indian wedding season peaks October through February. During these months, our live video
-              shopping slots and tailoring partners in Surat and Delhi operate at full capacity.
-              Brides who start 4-6 months before their wedding get the widest selection, the most
-              relaxed timeline, and first pick of our tailoring partners. Rush orders (under 8 weeks)
-              are possible for some pieces but limit your options. If your wedding is in the next
-              3-6 months, book your consultation now — even if you're still deciding.
+            <p className="text-lg leading-8 text-white/75">
+              Choose vendor introductions, coordination for one event, or a custom multi-day scope.
+              Venue, vendor, and travel charges are separate.
             </p>
-            <a
-              href="/contact/"
-              className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "var(--cv-accent)", color: "#fff" }}
-            >
-              Check Availability for Your Date
-            </a>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {mexicoTiers.map((tier) => (
+              <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8">
+                <h3 className="font-serif text-3xl font-semibold">{tier.name}</h3>
+                <p className="my-5 font-serif text-5xl text-[#c5a059]">{tier.price}</p>
+                <p className="mb-2 text-sm font-semibold text-[#e8cf9d]">{tier.bestFor}</p>
+                <p className="mb-7 leading-7 text-white/75">{tier.description}</p>
+                <h4 className="mb-3 font-semibold">Included</h4>
+                <ul className="mb-7 space-y-3 text-sm leading-6 text-white/75">
+                  {tier.includes.map((item) => (
+                    <li key={item} className="flex gap-3"><span className="text-[#c5a059]">✓</span><span>{item}</span></li>
+                  ))}
+                </ul>
+                <h4 className="mb-3 font-semibold">Not included</h4>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-white/75">
+                  {tier.excludes.map((item) => (
+                    <li key={item} className="flex gap-3"><span className="text-[#e8cf9d]">—</span><span>{item}</span></li>
+                  ))}
+                </ul>
+                <Link href="/contact/" className="inline-flex justify-center rounded-full bg-[#c5a059] px-6 py-3.5 text-sm font-semibold text-[#1f1f1f]">
+                  Discuss Mexico Planning
+                </Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20 px-6" style={{ background: "#fff" }}>
-        <div className="max-w-3xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "var(--cv-accent)" }}>
-            Pricing FAQ
-          </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Questions about cost and payment
-          </h2>
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              India shopping concierge
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Flat-fee India sourcing tiers
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Select the level of research, live shopping, and order coordination your family needs.
+              Product, shipping, and customs costs remain separate.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {tiers.map((tier) => (
+              <article
+                key={tier.name}
+                className={`flex flex-col rounded-2xl border p-8 sm:p-9 ${
+                  tier.featured
+                    ? "border-[#7a6841] bg-[#f4eee4] shadow-xl"
+                    : "border-[#e6dfd5] bg-white"
+                }`}
+              >
+                {tier.featured && (
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
+                    Most hands-on starting point
+                  </p>
+                )}
+                <h2 className="font-serif text-3xl font-semibold">{tier.name}</h2>
+                <p className="my-5 font-serif text-5xl font-semibold">{tier.price}</p>
+                <p className="mb-2 text-sm font-semibold text-[#7a6841]">{tier.bestFor}</p>
+                <p className="mb-7 leading-7 text-[#4d403a]">{tier.description}</p>
 
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much does CeremonyVerse cost?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                CeremonyVerse offers two service lines. For outfit sourcing from Surat and Delhi: Style Guide &amp;
-                Vendor List at $249, Guided Sourcing at $799, and Full Bridal Concierge at $2,499. For Mexico wedding
-                coordination in Cancun and Riviera Maya: Vendor Network Access at $499, Day-Of Coordination at $1,500,
-                and 4-Day Full Coordination starting at $4,500. These are our service fees — outfit costs, shipping,
-                and customs are itemized separately in your quote.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Is there a hidden markup on the outfits?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                No. Our service fee is flat and clearly itemized. You see the full breakdown: outfit cost, our service
-                fee, international shipping, and estimated US customs duties. Duties vary by garment classification,
-                fiber content, declared value, and current tariff rules; assessed duties are itemized and passed through.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Do you source designer-label items like Manish Malhotra or Sabyasachi?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                No. We don&apos;t source designer-label pieces, and we don&apos;t sell replicas or knockoffs. What we DO source
-                is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US
-                Indian boutiques source from, through my family&apos;s connections in Surat and Delhi. You get real handwork
-                at direct pricing, without the boutique markup or the designer-label price. If you specifically want a
-                designer-label piece, we&apos;ll tell you to buy it direct from their store.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Are the outfits ready-made or custom?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                Both options are available. For ready pieces, we offer live video shopping — you see items on video,
-                pick what you want, and my family inspects before shipping. These are semi-stitched and your local
-                tailor handles final fit. For custom pieces, I work with a local boutique who can recreate a reference
-                image at about 85% similarity for less than half the designer&apos;s cost. The boutique has made bridesmaid
-                lehengas in any color and style for many brides, within their budget.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much can I save by sourcing from India vs. US boutiques?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                Most clients save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques.
-                Mid-bridal lehengas run $700–$1,500 landed vs. $1,200–$2,500 at boutiques. Premium bridal lehengas with
-                heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get
-                heavier handwork or better fabric at the same price point, because you skip the boutique markup.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>What&apos;s the payment schedule?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                Milestone-based protection: 25% deposit to reserve, 35% after fabric approval on live video, 30% after
-                final inspection before shipping, and 10% upon delivery. You never pay for the next stage until
-                you&apos;ve approved the previous one. For Mexico coordination, the schedule is similar with milestones
-                tied to vendor booking, event timeline, and on-site completion.
-              </p>
-            </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>What does Mexico coordination include?</h3>
-              <p className="text-[#4d403a] leading-relaxed">
-                Three tiers. Vendor Network Access ($499) gives you our vetted contacts for a Mexico planner, DJ, two
-                photographers, decorator, and beauty — you take it from there. Day-Of Coordination ($1,500) is
-                single-event on-site coordination. 4-Day Full Coordination ($4,500+) is a full multi-day event like my
-                son&apos;s wedding — venue, caterer, decorator, makeup, hair, mehndi, priest, church, and on-site
-                coordination throughout. Custom pricing for interfaith or non-standard duration.
-              </p>
+                <h3 className="mb-3 font-semibold">Included</h3>
+                <ul className="mb-7 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {tier.includes.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="text-[#365c45]" aria-hidden="true">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 className="mb-3 font-semibold">Not included</h3>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {tier.excludes.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="text-[#8b3f3f]" aria-hidden="true">—</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white"
+                >
+                  Discuss This Tier
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Every quote separates the costs
+            </p>
+            <h2 className="mb-6 font-serif text-4xl font-semibold sm:text-5xl">
+              What you pay outside the service fee
+            </h2>
+            <p className="mb-7 text-lg leading-8 text-[#4d403a]">
+              These amounts depend on the item and shipment. Your quote separates them so you can
+              review the service fee and outside costs before approving paid work.
+            </p>
+            <div className="space-y-4">
+              {[
+                ["Products", "The approved outfit, jewelry, gift, or ceremony-item price from the selected vendor."],
+                ["Shipping", "Carrier cost based on weight, dimensions, declared value, destination, and service level."],
+                ["Customs", "Any duty or fee actually assessed by US customs or the carrier; estimates are not guarantees."],
+                ["Local alterations", "If needed, unless your signed service terms specifically provide an alteration allowance."],
+              ].map(([title, description]) => (
+                <div key={title} className="rounded-xl border border-[#e6dfd5] bg-[#faf8f5] p-5">
+                  <h3 className="mb-2 font-semibold">{title}</h3>
+                  <p className="text-sm leading-6 text-[#4d403a]">{description}</p>
+                </div>
+              ))}
             </div>
           </div>
 
-          <div className="text-center mt-10">
-            <Link href="/faq/" className="text-sm font-medium" style={{ color: "var(--cv-accent)" }}>
-              See all FAQ →
+          <aside className="rounded-2xl bg-[#1f1f1f] p-8 text-white sm:p-10">
+            <h2 className="mb-5 font-serif text-3xl font-semibold">Before any paid work starts</h2>
+            <ul className="space-y-5 text-sm leading-6 text-white/80">
+              <li>You receive a written description of the selected tier or custom scope.</li>
+              <li>You see which costs are fixed, estimated, or dependent on later selection.</li>
+              <li>You review payment milestones, cancellation terms, and covered remedies.</li>
+              <li>You can ask questions before signing or paying.</li>
+            </ul>
+            <Link href="/terms/" className="mt-8 inline-flex font-semibold text-[#e8cf9d] underline underline-offset-4">
+              Review website terms
             </Link>
+          </aside>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Pricing FAQ</p>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Clear answers before you pay</h2>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2">
+            {faqItems.map((faq) => (
+              <article key={faq.question} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
+                <h3 className="mb-4 font-serif text-2xl font-semibold">{faq.question}</h3>
+                <p className="leading-7 text-[#4d403a]">{faq.answer}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-20 px-6 text-center" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
-        <div className="max-w-2xl mx-auto">
-          <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
-            Still Deciding?
+      <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Start with the free call</h2>
+          <p className="mb-8 text-lg leading-8 text-white/85">
+            We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
+            sourcing tier, Mexico planning tier, or combined scope fits. No payment is required for the consultation.
           </p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            The consultation is free. The clarity is worth 30 minutes.
-          </h2>
-          <p className="text-[#e8dfd2] mb-8 leading-relaxed">
-            We will review your wedding vision, timeline, and budget — and recommend the tier that fits.
-            We will also tell you honestly if a different approach would work better for your situation.
-            No commitment and no follow-up pressure. You&apos;ll leave with a clear next step whether
-            you book with us or not.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="/contact/"
-              className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
-              style={{ background: "#7a6841", color: "#fff" }}
-            >
-              Book Free Consultation
-            </a>
-            <a
-              href="/how-it-works/"
-              className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
-              style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
-            >
-              See How It Works
-            </a>
-          </div>
+          <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+            Book My Free Consultation
+          </Link>
         </div>
       </section>
-    </div>
-  );
+    </main>
+  )
 }

@@ -87,7 +87,7 @@ export default function SherwaniPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Custom Fit</h3>
             <p className="text-[var(--cv-muted)]">
-              Tailored measurements ensure a perfect fit without trial visits.
+              Guided measurements document the fit brief before production; local alteration may still be needed.
             </p>
           </div>
 

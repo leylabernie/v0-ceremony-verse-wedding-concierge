@@ -100,7 +100,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           <div style={{ display: "grid", gap: "24px" }}>
             {[
               { step: "01", title: "Live Video Shopping", desc: "We connect you with trusted partners in India via live video call. You see the fabric, embroidery, and drape in real time — no guessing from static photos." },
-              { step: "02", title: "Custom Stitching", desc: "Every outfit is custom stitched to your exact measurements. No alterations needed when it arrives — it's made for you from the start." },
+              { step: "02", title: "Measurement Coordination", desc: "For made-to-measure items, we document the selected vendor's requested measurements. Local alteration may still be needed." },
               { step: "03", title: "Delivered to Your US Door", desc: "We handle packaging, international shipping, and customs clearance. Your outfit arrives at your home in the US, ready to wear." },
             ].map((item) => (
               <div key={item.step} style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
@@ -159,7 +159,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           {[
             { q: "I'm attending a wedding in 6 weeks — is that enough time?", a: "It's tight. We recommend a minimum of 8–10 weeks for sourcing from India. If you're under that timeline, reach out immediately and we'll let you know what's realistic based on your needs." },
             { q: "Can you help me figure out what to wear?", a: "Yes — our Style Guide service ($249) includes a personalized lookbook based on the event type, dress code, your preferences, and body type. Or start with a free consultation to talk it through." },
-            { q: "I need outfits for my whole family. Can you coordinate everything?", a: "Absolutely. Coordinated family sets are one of our most popular requests. We collect everyone's measurements, source complementary outfits, and ship everything together." },
+            { q: "I need outfits for my whole family. Can you coordinate everything?", a: "Group coordination is available within the selected tier or a custom written scope. We organize participant measurements, selections, and approvals; vendor capacity and shipment structure are confirmed before ordering." },
             { q: "How do measurements work if I'm in the US?", a: "We send you a simple measurement guide. You can measure at home or visit a local tailor to get your numbers. We review everything before stitching begins." },
             { q: "What if I don't like what I see on the video call?", a: "No pressure to buy. The live video session lets you see multiple options in real time. If nothing feels right, we keep looking — or we adjust the brief and schedule another session." },
           ].map((item) => (

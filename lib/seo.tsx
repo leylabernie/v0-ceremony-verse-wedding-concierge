@@ -308,9 +308,9 @@ export function buildHowToSchema(opts: {
  * 2026-07-26. They were declaring a 5.0/27-review rating that did not
  * correspond to visible reviews on the page, which violates Google's
  * structured data spam policy and risks a manual action suppressing
- * the entire site's rankings. Reviews now live as visible HTML on the
- * homepage and /real-weddings/ page; we can re-add review schema ONLY
- * after those visible reviews are the same ones marked up here.
+ * the entire site's rankings. Review schema should only be added after
+ * a review is independently verifiable and the same review is visible
+ * on the page where the markup appears.
  */
 export function buildLocalBusinessSchema(): object {
   return {
@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse sources Indian wedding outfits direct from Surat and Delhi — live video shopping, family inspection, no boutique markup. We also coordinate Mexico weddings in Cancun and Riviera Maya with vetted vendors from the founder's own son's wedding.",
+      "CeremonyVerse offers Indian wedding shopping and sourcing for US families, plus Indian destination-wedding planning in Cancun and Riviera Maya.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -415,40 +415,6 @@ export function buildLocalBusinessSchema(): object {
 }
 
 /**
- * Visible testimonials data — used by both the homepage and the
- * /real-weddings/ page. These are the SAME reviews that previously
- * lived only in JSON-LD schema; making them visible HTML satisfies
- * Google's structured data policy that review schema must point to
- * visible reviews on the page.
- *
- * Returning an array (not schema) keeps presentation in the component
- * layer. Schema consumers should NOT consume this — the visible HTML
- * is what Google crawls for the review-content match.
- */
-export const VISIBLE_TESTIMONIALS = [
-  {
-    couple: "Kaval & April",
-    ceremony: "4-day Gujarati + South Indian Christian wedding",
-    body: "We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed everyone — including a special trip to Kanchipuram for pure silk sarees. Bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family, ceremonial items, return gifts, sweets, welcome bags, and even our dog. Extraordinary service.",
-  },
-  {
-    couple: "Karan & Sonal",
-    ceremony: "4-day Gujarati destination wedding, Mexico",
-    body: "Planning a 4-day Gujarati destination wedding in Mexico with coordinated outfits for the bride, groom, full bridal party, and entire family for each day felt impossible. CeremonyVerse handled every single detail — including our two dogs, ceremonial items, return gifts, sweets, and welcome bags. Flawless from start to finish.",
-  },
-  {
-    couple: "Charly & Viola",
-    ceremony: "South Indian Christian wedding",
-    body: "We are both South Indian Christians and wanted outfits that truly reflected our heritage. CeremonyVerse sourced the bridesmaids outfits and Charly's outfit beautifully — every decision made with care. Our families were blown away.",
-  },
-  {
-    couple: "Druma & Parin",
-    ceremony: "Gujarati wedding, Kanchipuram sourcing",
-    body: "For our Gujarati wedding, Bhamini travelled to Kanchipuram specifically to source pure silk sarees — the real thing, not a compromise. She also had our matching outfits custom made by a local boutique to our exact vision. The attention to detail was extraordinary.",
-  },
-] as const;
-
-/**
  * Global FAQ schema — used in layout.tsx so it appears on every page for AI citation.
  * Keep this short; the FAQ page has its own complete FAQ schema.
  */
@@ -462,7 +428,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers two services. First, Indian wedding outfit sourcing from Surat and Delhi — live video shopping, family inspection before shipping, and direct pricing without boutique markup. Second, Mexico wedding coordination in Cancun and Riviera Maya — vetted vendors from my own son's 4-day wedding, including planner, DJ, photographers, decorator, and beauty. Many brides want both: outfits sourced from India and a Mexico wedding coordinated by the same team.",
+          text: "CeremonyVerse offers two services: Indian wedding shopping and sourcing for US families, and Indian destination-wedding planning in Cancun and Riviera Maya. Couples can hire either service or combine them under one written scope.",
         },
       },
       {
@@ -470,7 +436,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How does CeremonyVerse source Indian wedding outfits from India to the USA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "My family has been in Surat's fabric trade for generations. Through those connections, I source from the same places US Indian boutiques source from. You shop via live video sessions, see and pick the actual pieces, my family inspects before shipping, and we handle all shipping and customs to deliver to your US door.",
+          text: "CeremonyVerse works with sourcing partners primarily in Surat and Delhi. Guided tiers can include live video review, written selection approval, measurement support, order follow-up, pre-shipping review, and US delivery coordination.",
         },
       },
       {
@@ -486,7 +452,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing with live video sessions, and $2,499 for Full Bridal Concierge. Mexico coordination starts at $499 for Vendor Network Access, $1,500 for Day-Of Coordination, and $4,500+ for 4-Day Full Coordination. A free 30-minute consultation is always available. Most clients save 40-60% compared to US Indian boutiques.",
+          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico planning starts at $499 for Vendor Network Access, $1,500 for one-event coordination, and $4,500+ for multi-day coordination. A free 30-minute consultation is available.",
         },
       },
       {
@@ -494,7 +460,7 @@ export function buildGlobalFaqSchema(): object {
         name: "Do you source designer-label items like Manish Malhotra or Sabyasachi?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No. We don't source designer-label pieces, and we don't sell replicas or knockoffs. What we DO source is authentic Indian handwork — zardozi, aari, gota patti, resham, mirror work — from the same places US Indian boutiques source from, through my family's connections in Surat and Delhi. If you want a designer-inspired look, my local boutique can recreate a reference image at about 85% similarity for less than half the designer's cost.",
+          text: "No. CeremonyVerse does not sell unauthorized replicas or counterfeit labels. Reference images can be used to understand a preferred silhouette, color, or overall aesthetic, then CeremonyVerse helps locate original options within the client's budget.",
         },
       },
       {
@@ -502,7 +468,7 @@ export function buildGlobalFaqSchema(): object {
         name: "Do you source pure silk Kanchipuram and Banaras sarees direct from weavers?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. I go myself to Kanchipuram and Banaras — not someone I send, me personally. Pure silk, hallmark-certified, real zari. I also source art silk and semi-silk gift sarees for return gifts and family. The weavers told me their sarees take a year to reach Gujarat through the distribution chain. I bought a pure silk Kanchipuram direct from the weaver for 20,000 rupees; the same saree (not even as nice) was 56,000 rupees in a posh Vadodara boutique. That's the markup I cut out — for sarees the same way I do for lehengas.",
+          text: "CeremonyVerse can seek Kanchipuram and Banarasi saree options when the requested textile, certification, vendor, and timeline can be responsibly verified. Available documentation and any limitations are explained before purchase.",
         },
       },
       {
@@ -518,7 +484,7 @@ export function buildGlobalFaqSchema(): object {
         name: "Do you ship Indian wedding items to all US states?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, CeremonyVerse serves families across all US states. We have worked with clients in New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and many more. All items are quality-checked in India before being shipped to your US address.",
+          text: "CeremonyVerse can coordinate delivery to supported US addresses using international carriers. Availability, cost, customs processing, and timing depend on the shipment and destination and are confirmed in the applicable quote.",
         },
       },
     ],

@@ -67,7 +67,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How much does a reception lehenga cost when sourced from India?",
     answer:
-      "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 30-50% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
+      "Reception-outfit cost depends on fabric, embellishment, customization, vendor, shipping, and any assessed duty. We provide an itemized quote and flat CeremonyVerse service tier so you can compare the landed estimate with US options.",
   },
 ])
 
@@ -373,7 +373,7 @@ export default function ReceptionOutfitsPage() {
               color: "#4d403a",
             }}
           >
-            Many of our clients source both from the same artisan workshop so the looks feel
+            Sourcing both from the same workshop can help the looks feel
             coordinated — same craftsmanship, different moods. We can also help you decide if a
             single outfit works for both, or if two distinct looks fit your budget better.
           </p>
@@ -418,7 +418,7 @@ export default function ReceptionOutfitsPage() {
             },
             {
               q: "How much does a reception lehenga cost when sourced from India?",
-              a: "Reception lehengas sourced from India typically range from $400 to $3,500, depending on embellishment, fabric, and designer tier. Designer-inspired pieces with sequin and mirror work start around $600. Couture-level reception lehengas with intricate handwork can reach $3,000 to $5,000 — still 30-50% less than comparable US boutique prices. We provide transparent tiered pricing in your free consultation.",
+              a: "Reception-outfit cost depends on fabric, embellishment, customization, vendor, shipping, and any assessed duty. We provide an itemized quote and flat CeremonyVerse service tier so you can compare the landed estimate with US options.",
             },
           ].map((item) => (
             <div

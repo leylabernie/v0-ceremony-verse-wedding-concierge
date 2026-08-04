@@ -11,13 +11,13 @@ import { trackLead } from "@/lib/analytics"
 // Without this, Next.js emits a 308 redirect on every click/crawl, wasting crawl
 // budget and slowing Google's ability to discover & refresh content.
 const navItems: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
   { label: "Services", href: "/services/" },
+  { label: "India Shopping", href: "/shop-from-india/" },
+  { label: "Mexico Planning", href: "/indian-wedding-coordination-mexico/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },
   { label: "FAQ", href: "/faq/" },
-  { label: "Free Guides", href: "/free-guides/" },
 ]
 
 export function Navigation() {
@@ -54,20 +54,20 @@ export function Navigation() {
                 CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
-                Authentic Indian Wedding Shopping for NRI Families
+                India Shopping · Mexico Planning
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation - Center, vertically aligned */}
-          <div className="hidden md:flex items-center justify-center flex-1 px-8">
-            <div className="flex items-center gap-6">
+          <div className="hidden xl:flex items-center justify-center flex-1 px-5">
+            <div className="flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
                   className={cn(
-                    "px-4 py-2 text-lg font-medium transition-all duration-200 whitespace-nowrap",
+                    "px-2.5 py-2 text-sm font-medium transition-all duration-200 whitespace-nowrap",
                     isActive(item.href)
                       ? "text-brushed-gold"
                       : "text-midnight-navy hover:text-brushed-gold"
@@ -81,7 +81,7 @@ export function Navigation() {
           </div>
 
           {/* CTA Buttons - Far Right */}
-          <div className="hidden md:flex flex-shrink-0 items-center gap-3">
+          <div className="hidden xl:flex flex-shrink-0 items-center gap-3">
             <a
               href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
               target="_blank"
@@ -109,7 +109,7 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-midnight-navy hover:text-brushed-gold transition-colors"
+            className="xl:hidden p-2 text-midnight-navy hover:text-brushed-gold transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -120,7 +120,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="md:hidden py-6 border-t border-brushed-gold/30 animate-fade-in">
+          <div className="xl:hidden py-6 border-t border-brushed-gold/30 animate-fade-in">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link

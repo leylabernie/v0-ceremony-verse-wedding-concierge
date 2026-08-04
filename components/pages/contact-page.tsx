@@ -1,26 +1,46 @@
 "use client"
 
-import { useState } from "react"
-import { getAcquisitionContext, trackLead } from "@/lib/analytics"
+import Script from "next/script"
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react"
+import { trackLead } from "@/lib/analytics"
 
 interface FormData {
+  serviceInterest: string
   name: string
   email: string
   phone: string
   eventDate: string
+  eventLocation: string
+  guestCount: string
   bridesmaidsCount: string
   groomsmenCount: string
   vision: string
 }
 
 const initialFormData: FormData = {
+  serviceInterest: "",
   name: "",
   email: "",
   phone: "",
   eventDate: "",
+  eventLocation: "",
+  guestCount: "",
   bridesmaidsCount: "",
   groomsmenCount: "",
   vision: "",
+}
+
+const subscribeToLocation = () => () => undefined
+const getServerServiceInterest = () => ""
+const getServiceInterestFromLocation = () => {
+  const requestedService = new URLSearchParams(window.location.search).get("service")
+  const serviceByQuery: Record<string, FormData["serviceInterest"]> = {
+    india: "India shopping",
+    mexico: "Mexico planning",
+    both: "India shopping + Mexico planning",
+  }
+
+  return requestedService ? serviceByQuery[requestedService] || "" : ""
 }
 
 export function ContactPage() {
@@ -28,70 +48,67 @@ export function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
+  const [botcheck, setBotcheck] = useState("")
+  const requestedServiceInterest = useSyncExternalStore(
+    subscribeToLocation,
+    getServiceInterestFromLocation,
+    getServerServiceInterest,
+  )
+  const serviceInterest = formData.serviceInterest || requestedServiceInterest
 
   const updateFormData = (field: keyof FormData, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
   }
 
   const canSubmit = () => {
-    return Boolean(formData.name && formData.email && formData.eventDate)
+    return Boolean(serviceInterest && formData.name && formData.email && formData.eventDate)
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const fallbackMessage = useMemo(
+    () =>
+      encodeURIComponent(
+        `Hi Bhamini, I'd like to book a CeremonyVerse consultation.\nService: ${serviceInterest || "Not provided"}\nName: ${formData.name || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nEvent date: ${formData.eventDate || "Not provided"}\nEvent location: ${formData.eventLocation || "Not provided"}\nGuest count: ${formData.guestCount || "Not provided"}\nVision: ${formData.vision || "Not provided"}`
+      ),
+    [formData, serviceInterest]
+  )
+
+  const whatsappFallbackUrl = `https://wa.me/12153419990?text=${fallbackMessage}`
+  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
+    "CeremonyVerse consultation request"
+  )}&body=${fallbackMessage}`
+
+  useEffect(() => {
+    const handleCalendlyEvent = (event: MessageEvent) => {
+      if (event.origin !== "https://calendly.com") return
+      const eventName = (event.data as { event?: string } | null)?.event
+      if (eventName === "calendly.event_scheduled") {
+        trackLead("calendly", "contact-page-inline-widget")
+      }
+    }
+
+    window.addEventListener("message", handleCalendlyEvent)
+    return () => window.removeEventListener("message", handleCalendlyEvent)
+  }, [])
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
     setError("")
 
-    try {
-      const attribution = getAcquisitionContext()
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: "b0d66e16-f374-4c58-91c8-fb6f47a4c5dc",
-          subject: `New CeremonyVerse Consultation Request — ${formData.name}`,
-          from_name: "CeremonyVerse Website",
-          replyto: formData.email,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone || "Not provided",
-          event_date: formData.eventDate,
-          bridesmaids: formData.bridesmaidsCount || "0",
-          groomsmen: formData.groomsmenCount || "0",
-          wedding_vision: formData.vision || "Not provided",
-          lead_source: attribution.source,
-          lead_medium: attribution.medium,
-          lead_campaign: attribution.campaign || "Not provided",
-          lead_content: attribution.content || "Not provided",
-          lead_term: attribution.term || "Not provided",
-          landing_page: attribution.landing_page || window.location.pathname,
-          referrer: attribution.referrer || "Direct / unavailable",
-          google_click_id: attribution.gclid || "Not provided",
-          to_email: "bhamini@ceremonyverse.com",
-        }),
-      })
+    if (botcheck) {
+      setIsLoading(false)
+      return
+    }
 
-      const result = await response.json()
-      if (result.success) {
-        trackLead("form", "contact-page")
-        setIsSubmitted(true)
-      } else {
-        // Fallback: open WhatsApp with the form data pre-filled
-        const msg = encodeURIComponent(
-          `Hi! I'd like to book a consultation.\nName: ${formData.name}\nEvent date: ${formData.eventDate}\nVision: ${formData.vision}`
-        )
-        trackLead("whatsapp", "contact-page-fallback")
-        window.open(`https://wa.me/12153419990?text=${msg}`, "_blank")
-        setIsSubmitted(true)
-      }
-    } catch {
-      // Network error fallback — open WhatsApp
-      const msg = encodeURIComponent(
-        `Hi! I'd like to book a consultation.\nName: ${formData.name}\nEvent date: ${formData.eventDate}\nVision: ${formData.vision}`
-      )
-      trackLead("whatsapp", "contact-page-error-fallback")
-      window.open(`https://wa.me/12153419990?text=${msg}`, "_blank")
+    const whatsappWindow = window.open(whatsappFallbackUrl, "_blank")
+    if (whatsappWindow) {
+      whatsappWindow.opener = null
+      trackLead("whatsapp", "contact-page-form-handoff")
       setIsSubmitted(true)
+    } else {
+      setError(
+        "WhatsApp did not open. Your information is still filled in below—please use the WhatsApp or email button so your request is not lost."
+      )
     }
 
     setIsLoading(false)
@@ -116,11 +133,11 @@ export function ContactPage() {
             className="font-['Cormorant_Garamond'] text-4xl font-semibold mb-4"
             style={{ color: "var(--cv-foreground)" }}
           >
-            Consultation Request Received
+            Complete Your Request in WhatsApp
           </h1>
           <p className="text-lg leading-relaxed mb-10" style={{ color: "#4d403a" }}>
-            Thank you, {formData.name}. Our team will review your vision and reach out within 24–48 hours at{" "}
-            <strong style={{ color: "var(--cv-foreground)" }}>{formData.email}</strong>.
+            Thank you, {formData.name}. Your message is ready in WhatsApp. Tap <strong>Send</strong>
+            there to deliver it; after that, our team will review your vision and respond within 24–48 hours.
           </p>
           <div
             className="rounded-2xl p-8 text-left"
@@ -136,7 +153,7 @@ export function ContactPage() {
               {[
                 "We review your wedding vision and timeline",
                 "Bhamini or a team member reaches out within 24–48 hours",
-                "We confirm your free 30-minute outfit call",
+                "We confirm your free 30-minute consultation",
                 "You leave the call with a realistic plan and recommended next step",
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
@@ -193,10 +210,12 @@ export function ContactPage() {
             className="font-['Cormorant_Garamond'] text-4xl sm:text-5xl md:text-6xl font-semibold leading-tight mb-6"
             style={{ color: "var(--cv-foreground)" }}
           >
-            Get Your Free 30-Minute Outfit Plan
+            Get Your Free 30-Minute Wedding Plan
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Bring your wedding date, party size, budget, and inspiration. We&apos;ll map a realistic sourcing timeline, flag avoidable risks, and recommend the right level of support — with no contract, payment, or pressure.
+            Tell us whether you need India shopping, Mexico planning, or both. We&apos;ll review the
+            date, location, scope, and budget, then recommend a practical next step—with no contract
+            or payment required for the consultation.
           </p>
 
           {/* Quick contact strip */}
@@ -257,10 +276,10 @@ export function ContactPage() {
             data-url="https://calendly.com/lab-bhamini/30min?hide_gdpr_banner=1&primary_color=c7b28a"
             style={{ minWidth: "320px", height: "700px", border: "1px solid var(--cv-border)" }}
           />
-          <script
-            type="text/javascript"
+          <Script
+            id="calendly-inline-widget-script"
             src="https://assets.calendly.com/assets/external/widget.js"
-            async
+            strategy="lazyOnload"
           />
         </div>
       </section>
@@ -276,8 +295,28 @@ export function ContactPage() {
       <section className="pb-28 px-6">
         <div className="max-w-xl mx-auto">
           {error && (
-            <div className="mb-6 p-4 rounded-xl text-sm text-red-700 bg-red-50 border border-red-200">
-              {error}
+            <div className="mb-6 p-5 rounded-xl text-sm text-red-800 bg-red-50 border border-red-200" role="alert">
+              <p className="font-medium mb-3">{error}</p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href={whatsappFallbackUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => trackLead("whatsapp", "contact-page-visible-fallback")}
+                  className="inline-flex items-center justify-center rounded-full px-5 py-2.5 text-white"
+                  style={{ background: "#128C7E" }}
+                >
+                  Send with WhatsApp
+                </a>
+                <a
+                  href={emailFallbackUrl}
+                  onClick={() => trackLead("email", "contact-page-visible-fallback")}
+                  className="inline-flex items-center justify-center rounded-full px-5 py-2.5"
+                  style={{ border: "1px solid #991b1b", color: "#991b1b" }}
+                >
+                  Send by email
+                </a>
+              </div>
             </div>
           )}
           <form onSubmit={handleSubmit}>
@@ -286,6 +325,41 @@ export function ContactPage() {
               style={{ background: "#fff", border: "1px solid var(--cv-border)" }}
             >
               <div className="space-y-7">
+                <div className="absolute -left-[9999px]" aria-hidden="true">
+                  <label htmlFor="botcheck">Leave this field empty</label>
+                  <input
+                    id="botcheck"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={botcheck}
+                    onChange={(event) => setBotcheck(event.target.value)}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="serviceInterest" className="block text-sm font-medium mb-2" style={{ color: "var(--cv-foreground)" }}>
+                    What do you need? <span style={{ color: "var(--cv-accent)" }}>*</span>
+                  </label>
+                  <select
+                    id="serviceInterest"
+                    value={serviceInterest}
+                    onChange={(event) => updateFormData("serviceInterest", event.target.value)}
+                    className="w-full px-4 py-3 rounded-xl text-sm outline-none transition"
+                    style={{
+                      border: "1px solid var(--cv-border)",
+                      background: "var(--cv-bg)",
+                      color: "var(--cv-foreground)",
+                    }}
+                    required
+                  >
+                    <option value="">Select a service</option>
+                    <option value="India shopping">India wedding shopping</option>
+                    <option value="Mexico planning">Mexico wedding planning</option>
+                    <option value="India shopping + Mexico planning">Both services</option>
+                    <option value="Not sure">Not sure yet</option>
+                  </select>
+                </div>
 
                 {/* Name */}
                 <div>
@@ -369,10 +443,50 @@ export function ContactPage() {
                   />
                 </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="eventLocation" className="block text-sm font-medium mb-2" style={{ color: "var(--cv-foreground)" }}>
+                      Event Location
+                    </label>
+                    <input
+                      type="text"
+                      id="eventLocation"
+                      value={formData.eventLocation}
+                      onChange={(event) => updateFormData("eventLocation", event.target.value)}
+                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition"
+                      style={{
+                        border: "1px solid var(--cv-border)",
+                        background: "var(--cv-bg)",
+                        color: "var(--cv-foreground)",
+                      }}
+                      placeholder="City, state, or Mexico venue"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="guestCount" className="block text-sm font-medium mb-2" style={{ color: "var(--cv-foreground)" }}>
+                      Estimated Guests
+                    </label>
+                    <input
+                      type="number"
+                      id="guestCount"
+                      min="0"
+                      value={formData.guestCount}
+                      onChange={(event) => updateFormData("guestCount", event.target.value)}
+                      className="w-full px-4 py-3 rounded-xl text-sm outline-none transition"
+                      style={{
+                        border: "1px solid var(--cv-border)",
+                        background: "var(--cv-bg)",
+                        color: "var(--cv-foreground)",
+                      }}
+                      placeholder="e.g. 150"
+                    />
+                  </div>
+                </div>
+
                 {/* Party size */}
                 <div>
                   <label className="block text-sm font-medium mb-2" style={{ color: "var(--cv-foreground)" }}>
-                    Wedding Party Size
+                    Outfit Party Size (if applicable)
                   </label>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
@@ -434,7 +548,7 @@ export function ContactPage() {
                       background: "var(--cv-bg)",
                       color: "var(--cv-foreground)",
                     }}
-                    placeholder="Tell us about your dream wedding — color themes, cultural elements, specific outfits you have in mind..."
+                    placeholder="Tell us about the events, outfits, Mexico venue, vendors already booked, cultural requirements, budget, and concerns..."
                   />
                 </div>
 
@@ -449,7 +563,7 @@ export function ContactPage() {
                     cursor: canSubmit() && !isLoading ? "pointer" : "not-allowed",
                   }}
                 >
-                  {isLoading ? "Sending..." : "Request My Free Consultation"}
+                  {isLoading ? "Opening WhatsApp..." : "Continue in WhatsApp"}
                 </button>
 
               </div>
@@ -457,7 +571,7 @@ export function ContactPage() {
           </form>
 
           <p className="text-center text-xs mt-6" style={{ color: "var(--cv-muted)" }}>
-            Your information is secure and will only be used to prepare your consultation.
+            Nothing is sent automatically. Your details stay in this browser until you choose WhatsApp or email.
           </p>
         </div>
       </section>

@@ -209,7 +209,9 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             <li><strong>Work with a <Link href="/services/" style={{ color: "#7a6841" }}>concierge who understands the full picture</Link>.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we have dressed multiple Gujarati families from end to end — including a 4-day destination wedding in Mexico where we coordinated outfits for an entire family across every ceremony, and a wedding where we made a dedicated sourcing trip to Kanchipuram to select pure silk sarees for the family — working directly with weavers there to find the right weight, weave, and color for each family member. This is the level of care and specificity that a Gujarati multi-ceremony wedding deserves.
+            CeremonyVerse can translate a family-approved Gujarati ceremony plan into a documented outfit
+            brief across multiple events. Your family remains the authority on traditions; vendors and products
+            are evaluated for the specific scope rather than assumed from a generic community checklist.
           </p>
 
           {/* CTA Box */}
