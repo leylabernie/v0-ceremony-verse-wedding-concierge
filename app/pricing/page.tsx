@@ -196,24 +196,24 @@ export default function PricingPage() {
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
             {mexicoTiers.map((tier) => (
-              <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8">
-                <h3 className="font-serif text-3xl font-semibold">{tier.name}</h3>
-                <p className="my-5 font-serif text-5xl text-[#c5a059]">{tier.price}</p>
-                <p className="mb-2 text-sm font-semibold text-[#e8cf9d]">{tier.bestFor}</p>
-                <p className="mb-7 leading-7 text-white/75">{tier.description}</p>
-                <h4 className="mb-3 font-semibold">Included</h4>
-                <ul className="mb-7 space-y-3 text-sm leading-6 text-white/75">
+              <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
+                <h3 className="font-serif text-3xl font-semibold !text-[#f8f6f2]">{tier.name}</h3>
+                <p className="my-5 font-serif text-5xl !text-[#c5a059]">{tier.price}</p>
+                <p className="mb-2 text-sm font-semibold !text-[#e8cf9d]">{tier.bestFor}</p>
+                <p className="mb-7 leading-7 !text-[#e7ded3]">{tier.description}</p>
+                <h4 className="mb-3 font-semibold !text-[#f8f6f2]">Included</h4>
+                <ul className="mb-7 space-y-3 text-sm leading-6 !text-[#e7ded3]">
                   {tier.includes.map((item) => (
-                    <li key={item} className="flex gap-3"><span className="text-[#c5a059]">✓</span><span>{item}</span></li>
+                    <li key={item} className="flex gap-3"><span className="!text-[#c5a059]">✓</span><span className="!text-[#e7ded3]">{item}</span></li>
                   ))}
                 </ul>
-                <h4 className="mb-3 font-semibold">Not included</h4>
-                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-white/75">
+                <h4 className="mb-3 font-semibold !text-[#f8f6f2]">Not included</h4>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 !text-[#e7ded3]">
                   {tier.excludes.map((item) => (
-                    <li key={item} className="flex gap-3"><span className="text-[#e8cf9d]">—</span><span>{item}</span></li>
+                    <li key={item} className="flex gap-3"><span className="!text-[#e8cf9d]">—</span><span className="!text-[#e7ded3]">{item}</span></li>
                   ))}
                 </ul>
-                <Link href="/contact/" className="inline-flex justify-center rounded-full bg-[#c5a059] px-6 py-3.5 text-sm font-semibold text-[#1f1f1f]">
+                <Link href="/contact/" className="inline-flex justify-center rounded-full bg-[#c5a059] px-6 py-3.5 text-sm font-semibold !text-[#1f1f1f]">
                   Discuss Mexico Planning
                 </Link>
               </article>
