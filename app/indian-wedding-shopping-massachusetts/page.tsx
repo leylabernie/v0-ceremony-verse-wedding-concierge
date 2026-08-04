@@ -28,13 +28,13 @@ export default function MassachusettsPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          Massachusetts-Based · Nationwide Service
+          Serving Massachusetts Families · Remote India Shopping
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Indian Wedding Shopping Massachusetts — NRI Bridal Concierge Boston
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse sources bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram — with live video shopping and delivery to your Massachusetts door. No more overpaying at the few local boutiques or risking online scams from India.
+          CeremonyVerse helps Massachusetts families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
         </p>
         <Link
           href="/contact/"
@@ -85,7 +85,7 @@ export default function MassachusettsPage() {
             Popular Indian Wedding Venues in Massachusetts
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            We've helped families outfit for weddings at these Massachusetts venues and more.
+            CeremonyVerse can coordinate delivery planning for weddings at Massachusetts venues, subject to the selected carrier, address, and timeline.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px" }}>
             {[
@@ -121,10 +121,11 @@ export default function MassachusettsPage() {
               From there, we set up live video shopping sessions with our team in India. You see actual outfits — fabric, embroidery, color in natural light — and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Massachusetts address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether you're planning a Gujarati wedding at a Burlington banquet hall, a South Indian ceremony in Shrewsbury, a Bengali celebration in Cambridge, or a fusion wedding at a Back Bay hotel — we understand the specific outfit traditions each community requires. Massachusetts is home to an incredibly diverse Indian community: Gujarati, Telugu, Tamil, Malayali, Bengali, Punjabi, Marathi, and more. We source with cultural precision for every one of them.
+              Massachusetts weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Many of our Massachusetts clients are busy professionals — doctors at Mass General or Brigham and Women's, tech workers along the Route 128 corridor, researchers at MIT and Harvard, or students planning weddings between graduate programs. We respect your time. Everything from initial consultation to final delivery is handled efficiently, with clear communication at every step. You don't need to take time off work or fly to New Jersey to shop. We bring the best of India's wedding fashion directly to you.
+              The remote process is designed for families who cannot travel for every shopping step. Scheduled
+              calls, written approvals, and shipment tracking reduce the need for an India or New Jersey shopping trip.
             </p>
           </div>
         </div>
@@ -228,15 +229,15 @@ export default function MassachusettsPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Massachusetts?",
-                a: "Most of our Massachusetts clients save 30-50% compared to what they'd pay at the few Indian boutiques in the Boston area or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Massachusetts or out-of-state options.",
               },
               {
                 q: "I've heard about Indian shops along Route 9 in Framingham — why shouldn't I just go there?",
-                a: "The Indian shops along Route 9 in Framingham and Waltham can be useful for last-minute purchases, but local in-stock inventory may not cover a bridal lehenga or coordinated outfits for 15+ family members across multiple ceremonies. CeremonyVerse adds India-direct sourcing, custom stitching, quality inspection, and pricing that is typically 30–50% lower than comparable US boutique options.",
+                a: "Local shops can be useful when you want to try on or buy an in-stock piece. CeremonyVerse is an alternative when you want remote India sourcing, live review, documented approvals, or coordinated outfits across a group. Compare the actual quotes, timelines, and terms before choosing.",
               },
               {
                 q: "Can you help with outfits for a South Indian or Bengali wedding in the Boston area?",
-                a: "Absolutely. Massachusetts has a large and diverse Indian community — significant South Indian, Bengali, Gujarati, and Punjabi populations. We're experienced with the specific outfit traditions for every community: Kanchipuram pattu sarees for Tamil and Telugu weddings, Kasavu sarees for Malayali ceremonies, Baluchari sarees for Bengali weddings, bandhani and patola for Gujarati celebrations, and more. Whatever your community requires, we source with cultural precision.",
+                a: "We can translate your family&apos;s approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
               },
               {
                 q: "How far in advance should I start shopping for my Massachusetts wedding?",
@@ -248,7 +249,7 @@ export default function MassachusettsPage() {
               },
               {
                 q: "I'm planning a fusion Indian-American wedding in Boston. Can you help?",
-                a: "Absolutely. Fusion weddings are increasingly popular in the Boston area — we regularly help couples who want to blend Indian and Western elements. This might mean a traditional red bridal lehenga for the ceremony with a Western-style reception gown, or coordinated outfits that incorporate both aesthetics. We've worked with fusion weddings at venues like the Westin Copley Place, the W Hotel Boston, and several of the waterfront venues along Boston Harbor. Tell us your vision, and we'll make it happen.",
+                a: "Yes. We can translate your approved ceremony plan and style preferences into a sourcing brief that includes Indian, Western, or blended outfit options. Venue names do not imply a CeremonyVerse relationship or prior engagement.",
               },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 6 ? "1px solid #e6dfd5" : "none" }}>

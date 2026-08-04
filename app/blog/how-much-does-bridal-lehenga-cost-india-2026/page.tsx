@@ -54,7 +54,7 @@ export default function BridalLehengaCostGuide() {
             If you are an NRI bride planning to source your bridal lehenga from India, the first question on your mind is almost certainly: <strong>how much is this going to cost?</strong> The honest answer — which most blogs and Instagram sellers won&apos;t give you — is that it depends dramatically on what you want, where you buy it, and whether you are seeing the actual piece before you pay.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we have helped dozens of NRI brides source lehengas from India. We have seen prices range from ₹45,000 (about $530 USD) for a simple, well-made piece to well over ₹5,00,000 (about $5,900 USD) for heavily embroidered, designer-label lehengas with custom detailing. In this guide, we break down exactly what drives those prices — so you can plan your budget realistically and avoid the two most common mistakes NRI brides make: overspending on a lehenga that looks different in person, or underspending and ending up with something that does not match the quality you expected.
+            Bridal lehenga prices vary widely by fabric, handwork, label, customization, and vendor. This guide explains the main cost drivers so you can request comparable quotes, plan the complete landed budget, and avoid judging quality from a headline price alone.
           </p>
 
           {/* TL;DR + Key Takeaways — optimized for AI Overviews / Perplexity / ChatGPT Search */}
@@ -63,7 +63,7 @@ export default function BridalLehengaCostGuide() {
               TL;DR — What a bridal lehenga from India costs delivered to the USA in 2026
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#2f2f2f", marginBottom: "1rem" }}>
-              A custom bridal lehenga sourced from India commonly starts around <strong>$800–$3,500 before any assessed import duties</strong>, depending on fabric and handwork. Add your selected service tier, international shipping, and a customs estimate based on the garment&apos;s classification, fiber content, construction, and declared value. The same lehenga at a US Indian boutique can run <strong>$2,500–$8,000</strong>. Clients typically save <strong>30–50%</strong> for comparable quality — but only if they budget for every itemized cost.
+              A custom bridal lehenga quote depends on fabric, handwork, customization, and vendor availability. Add the selected CeremonyVerse service tier, international shipping, and a customs estimate based on classification, fiber content, construction, and declared value. Compare the complete landed estimate—not a headline discount—with written US boutique quotes.
             </p>
             <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "#7a6841", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
             <ul style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#2f2f2f", paddingLeft: "1.25rem", margin: 0 }}>
@@ -135,10 +135,10 @@ export default function BridalLehengaCostGuide() {
             <strong>Embroidery type:</strong> Machine embroidery costs a fraction of hand embroidery. Zardozi (gold thread work), dabka (coiled wire work), and aari (fine chain stitch) are labor-intensive techniques that can add ₹1,00,000 or more to the base price. A fully zardozi-lehenga with real gold-plated thread can easily reach ₹4,00,000+. If you see a lehenga online for under ₹1,00,000 claiming &quot;heavy zardozi work,&quot; it is almost certainly machine-made imitation.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Designer markup:</strong> Established designers like Sabyasachi, Manish Malhotra, and Anita Dongre command 2-3x the price of equivalent-quality pieces from artisan workshops. You are paying for the label and the boutique experience — not necessarily better craftsmanship. Many NRI brides we work with are surprised to learn that the same artisans who embroider for top designers also work with smaller workshops at 30-50% lower prices.
+            <strong>Designer positioning:</strong> Established labels price for brand, design, retail experience, and production standards in addition to materials and handwork. Smaller workshops use different designs, processes, and terms, so compare original products on their own merits rather than assuming they are equivalent.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Customization:</strong> Fully custom measurements, custom color dyeing, personalized embroidery motifs (monograms, family crests), and matching dupatta/blouse sets all add to the cost. Expect to pay 20-40% more for a fully custom piece versus a ready-made lehenga.
+            <strong>Customization:</strong> Made-to-measure work, custom color, personalized motifs, and matching dupatta or blouse work can add cost and time. Obtain the selected vendor&apos;s written quote rather than applying a universal percentage.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -215,7 +215,7 @@ export default function BridalLehengaCostGuide() {
               Ready to Source Your Bridal Lehenga?
             </p>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
-              Skip the boutique markup — buy a custom bridal lehenga from India, delivered to your US door
+              Compare a custom bridal lehenga from India with US options
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
               Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
@@ -254,7 +254,7 @@ export default function BridalLehengaCostGuide() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Sourcing a lehenga from India can save you $3,000-$8,000 compared to US boutiques — but only if you budget correctly for every cost, including the ones most brides forget. One wrong estimate and that savings disappears into unexpected customs fees or a last-minute alteration rush.
+              India sourcing may or may not cost less than a US boutique once the complete scope is compared. Budget the product, service tier, shipping, customs estimate, and alteration allowance before deciding.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want to avoid budget surprises?

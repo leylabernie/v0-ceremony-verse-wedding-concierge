@@ -46,7 +46,7 @@ export default function TimelineGuidePage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>The #1 question we get from NRI brides is not &quot;how much will it cost?&quot; — it is &quot;am I too late?&quot; The answer depends on how far out your wedding is and what you still need. Here is the complete timeline we use with our clients, plus the absolute minimum time needed for each type of outfit.</p>
+          <p>A common planning question is whether there is still enough time to source from India. The answer depends on the item, vendor, customization, approvals, shipping, customs, and alteration buffer. Use this timeline as a planning framework—not a guaranteed minimum.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Ideal Timeline: 6-8 Months Before Wedding</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
@@ -94,7 +94,7 @@ export default function TimelineGuidePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Golden Rule</h2>
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Start 2 months earlier than you think you need to.</p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Every NRI bride we have worked with has said the same thing: &quot;I wish I started sooner.&quot; Workshops get busy. Fabric dye lots sell out. Embroidery artisans book up. The earlier you start, the more options you have, the less stress you feel, and the better the final result. Planning your budget alongside your timeline? Check out <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>what a bridal lehenga costs from India</Link> to budget realistically.</p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Workshops can get busy, fabric can sell out, and vendor capacity changes. Starting earlier generally creates more options and a better alteration buffer, but the actual timeline still depends on the selected item and vendor. Planning your budget alongside your timeline? Check out <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>what drives bridal lehenga cost</Link>.</p>
           </div>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}

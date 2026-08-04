@@ -54,7 +54,8 @@ export default function SherwaniGuidePage() {
             Most wedding advice online is written for brides. But if you are an NRI groom — or a parent, sibling, or friend helping one — you know that finding the right sherwani in the US is just as frustrating. US boutiques charge $800-$2,500 for sherwanis that cost a third of that in India. And buying from India online? That opens the door to scams, sizing disasters, and outfits that look nothing like the photo.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            At CeremonyVerse, we have sourced sherwanis for dozens of NRI grooms across the US — from California to New Jersey. This guide shares exactly what we have learned about buying a sherwani from India: what you should pay, how to get the right fit, the scams to watch for, and how to handle shipping and customs.
+            This guide explains how to compare a sherwani from India: the main cost components,
+            measurement risks, vendor warning signs, shipping documents, and customs planning.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -96,7 +97,7 @@ export default function SherwaniGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>What most NRI grooms spend:</strong> The sweet spot for most of our clients is the mid-to-premium range — roughly ₹35,000 to ₹75,000 ($410-$880). At this price point, you get a high-quality silk sherwani with genuine hand embroidery that looks significantly better than anything in the $1,500+ range at a US boutique. Planning your <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>complete Indian wedding outfit checklist</Link> early helps you coordinate the groom&apos;s sherwani with what the bride and family are wearing.
+            <strong>How to compare price:</strong> Ask for the fabric composition, handwork, lining, included accessories, customization, alteration allowance, shipping, and return terms. Compare equivalent written scopes rather than assuming an India quote is automatically better than a US option. Planning your <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>complete Indian wedding outfit checklist</Link> early helps coordinate the groom&apos;s sherwani with the rest of the family.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -217,7 +218,7 @@ export default function SherwaniGuidePage() {
           </ul>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Pro tip:</strong> Order all groomsmen outfits from the same workshop in India at the same time. This guarantees fabric dye lot consistency — crucial for photos. Ordering from different sellers often results in color mismatches that are obvious in group shots.
+            <strong>Pro tip:</strong> Ordering all groomsmen outfits from one workshop in one production run can reduce color variation, but handmade materials and dye lots still cannot be guaranteed identical.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -267,7 +268,7 @@ export default function SherwaniGuidePage() {
               Ready to Source Your Sherwani?
             </p>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
-              Skip the boutique markup — buy a custom sherwani from India, delivered to your US door
+              Compare a custom sherwani from India with US options
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
               Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.

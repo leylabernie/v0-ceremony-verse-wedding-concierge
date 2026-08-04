@@ -111,7 +111,7 @@ export default function ShippingGuidePage() {
           <p>A bridal lehenga + jewelry + sherwani for a wedding can easily be worth $3,000-$8,000. If the package is lost, damaged, or stolen in transit, standard courier insurance may not cover the full value.</p>
           <p style={{ marginTop: "1rem" }}><strong>DHL/FedEx included insurance:</strong> Covers up to $100 by default. You can declare a higher value for an additional fee (typically $1-2 per $100 of declared value).</p>
           <p style={{ marginTop: "1rem" }}><strong>Third-party shipping insurance:</strong> Companies like Shipsurance or U-PIC offer coverage up to $10,000+ for international shipments. Cost is typically 1-3% of declared value.</p>
-          <p style={{ marginTop: "1rem" }}><strong>What we do at CeremonyVerse:</strong> Every shipment is fully insured for the replacement value of the items. If a package is lost or damaged, we file the claim and source replacements at our cost — not yours.</p>
+          <p style={{ marginTop: "1rem" }}><strong>What CeremonyVerse documents:</strong> The approved shipment quote states the carrier service, declared value, and available insurance. Loss or damage claims and remedies follow the carrier coverage and signed service terms.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Packaging: How to Ship Wedding Outfits Safely</h2>
           <p>Poor packaging is the #1 cause of damage. Here is how wedding outfits should be packed:</p>

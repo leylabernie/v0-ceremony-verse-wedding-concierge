@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Blog \u2014 Indian Wedding Shopping Guides",
-  description: "In-depth guides for NRI families on buying Indian wedding outfits from India \u2014 avoiding scams, customs, sizing, timelines, and real bride stories.",
+  description: "In-depth guides for NRI families on buying Indian wedding outfits from India, including vendor checks, customs, sizing, timelines, and planning scenarios.",
   url: "/blog/",
 });
 
@@ -40,7 +40,7 @@ const posts = [
   {
     slug: "custom-sherwani-sizing-guide-india-usa",
     title: "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
-    description: "The 5 critical sherwani measurements every groom must get right, how to choose between Banarasi brocade, raw silk, and velvet, and how to guarantee a perfect custom fit from India to the USA.",
+    description: "Five important sherwani measurements, fabric-selection guidance, and practical steps to reduce remote custom-fit risk.",
     date: "June 2026",
   },
   {
@@ -93,8 +93,8 @@ const posts = [
   },
   {
     slug: "nri-bride-lehenga-sourcing-new-jersey-story",
-    title: "NRI Bride Story: Sourcing a Bridal Lehenga from India to New Jersey",
-    description: "Real story of an NRI bride in New Jersey who sourced her bridal lehenga from India — the process, the challenges, the cost, and how it turned out better than any US boutique option.",
+    title: "Bridal Lehenga Sourcing Scenario for New Jersey Brides",
+    description: "An explicitly illustrative planning scenario for comparing an India-sourced bridal lehenga with New Jersey boutique options.",
     date: "June 2026",
   },
   {
@@ -155,7 +155,7 @@ export default function BlogIndexPage() {
       {/* Posts */}
       <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 2rem" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {posts.map((post, i) => (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}

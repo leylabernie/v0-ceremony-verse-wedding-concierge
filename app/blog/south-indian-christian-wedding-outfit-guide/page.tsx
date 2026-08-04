@@ -177,13 +177,17 @@ export default function SouthIndianChristianWeddingGuide() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Real South Indian Christian Families We Have Dressed
+            Respect family-specific South Indian Christian traditions
           </h2>
           <p>
-            At CeremonyVerse, we have dressed South Indian Christian families in Philadelphia — including <strong>Charly &amp; Viola</strong> and <strong>Dhan &amp; Christina</strong> — and we understand exactly what each ceremony requires. We know the difference between what a Kerala Christian bride wears to the church and what she wears to the reception. We understand the Manthrakodi tradition, the kasavu saree for grandmothers, and the Kanchipuram silk expectations for the mothers on both sides.
+            South Indian Christian customs vary by denomination, region, parish, and family. CeremonyVerse
+            can help translate an approved ceremony plan into an outfit-shopping brief, but your family and
+            church leaders remain the authority on what is appropriate.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            We also helped <strong>Shincy</strong>, a South Indian Christian bride who was planning her wedding in India from the US. She needed a bridal outfit sourced from Delhi, and required precise coordination across time zones, measurements, fittings, and shipping — all while managing the rest of her wedding planning from abroad. That kind of end-to-end coordination, for a bride who is far from the market but needs to get it exactly right, is exactly what we do.
+            For remote sourcing, document which garments belong to each ceremony, who approves the cultural
+            details, the selected vendor&apos;s measurement requirements, the delivery buffer, and any local
+            alteration plan.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -226,7 +230,7 @@ export default function SouthIndianChristianWeddingGuide() {
 
           {/* Tagline */}
           <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
-            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. We help NRI families source Indian wedding outfits, sarees, lehengas, sherwanis, and more — coordinating directly with craftspeople and artisan partners across India so you don&apos;t have to.
+            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
           </p>
 
         </div>

@@ -73,13 +73,13 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse is your personal Indian wedding concierge. We work with artisan partners across Delhi, Jaipur, Lucknow, Surat, Kanchipuram, and Kolkata to source exactly what you need — bridal lehengas, groom sherwanis, bridesmaids outfits, family sarees, and complete ceremony wardrobes.
+              CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when the requested item, capacity, documentation, and terms can be responsibly reviewed.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our process fits California lifestyles: everything happens virtually. You share your wedding vision, ceremony schedule, and budget. We set up live video shopping sessions with our outfit specialists in India — scheduled around your time zone — where you see fabrics, embroidery, and stitching options in real time. You choose, we manage custom measurements, tailoring, quality inspections, and doorstep delivery to Fremont, Sunnyvale, San Jose, Los Angeles, or anywhere in California.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether it's a grand Sikh wedding in San Jose, a South Indian ceremony in Sunnyvale, or a Gujarati celebration in Fremont — we understand the specific outfit traditions each community and ceremony requires. Our team sources with cultural precision, not generic "Indian wedding" guesswork.
+              California weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
           </div>
         </div>
@@ -116,8 +116,8 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           </h2>
           <div>
             {[
-              { q: "How much does a bridal lehenga from India cost with shipping to California?", a: "On average, our clients save 30-50% compared to Bay Area boutiques. A high-quality designer-inspired lehenga from India typically ranges from $1,500 to $4,000, including shipping and our concierge fee." },
-              { q: "Can you handle shipping and customs to Los Angeles or San Francisco?", a: "Yes, we handle the entire logistics chain. We perform quality checks in India, manage international shipping, and handle US customs clearance to deliver directly to your door in any California city." },
+              { q: "How much does a bridal lehenga from India cost with shipping to California?", a: "Cost depends on the selected fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with California options." },
+              { q: "Can you coordinate shipping and customs to Los Angeles or San Francisco?", a: "Yes. We coordinate shipping documents and tracking for California delivery. The carrier and US customs control final clearance timing and any duty assessment." },
               { q: "How do I take measurements at home for my wedding outfit?", a: "We provide a detailed measurement guide and can even hop on a quick video call to guide you through the process, ensuring your custom-stitched outfit fits perfectly when it arrives in CA." },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: "1px solid #e6dfd5" }}>

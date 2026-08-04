@@ -19,7 +19,7 @@ export const metadata = buildMetadata({
   title:
     "How to Buy a Bridal Lehenga from India to USA: The Ultimate NRI Guide",
   description:
-    "The complete NRI guide to buying a bridal lehenga from India to the USA. Save 30–50% vs US boutiques, avoid sizing scams, and clear US customs without surprises.",
+    "A practical NRI guide to buying a bridal lehenga from India to the USA, reviewing vendors, documenting measurements, and planning for shipping and customs.",
   keywords:
     "how to buy bridal lehenga from India to USA, NRI bridal lehenga guide, source bridal lehenga India USA, Indian bridal wear customs duties, bridal lehenga shipping from India, NRI wedding concierge",
 });
@@ -64,7 +64,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How much can I save by buying a bridal lehenga from India instead of a US boutique?",
     answer:
-      "NRI brides typically save 30% to 50% by sourcing directly from artisans and designers in retail hubs like Delhi, Mumbai, or Hyderabad. US boutiques add physical rent, import markups, and inventory overhead on top of the artisan price. A custom bridal lehenga that runs $2,500–$8,000+ at a US Indian boutique costs $800–$3,500 sourced directly from India including live video shopping, custom stitching, shipping, and US customs duties.",
+      "There is no universal savings percentage. Compare the approved vendor price, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with a written US boutique quote.",
   },
   {
     question:
@@ -125,8 +125,8 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             className="text-lg leading-relaxed max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Save 30–50% versus comparable US boutique options. Source a custom bridal lehenga,
-            sherwani, and return gifts directly from India — with live video
+            Learn how to compare and source a custom bridal lehenga,
+            sherwani, and return gifts from India—with live video
             shopping, master-tailor verified measurements, HD quality checks,
             and customs-cleared delivery to your US door.
           </p>
@@ -199,8 +199,8 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             When you buy an Indian bridal outfit in cities like New York,
             Chicago, or San Francisco, you are paying for the store&apos;s
             physical rent, import markups, and inventory overhead. By sourcing
-            directly from artisans and designers in retail hubs like Delhi,
-            Mumbai, or Hyderabad, you can save 30% to 50% on premium ensembles,
+            from vendors in retail hubs such as Delhi,
+            Mumbai, or Hyderabad, compare every landed-cost component,
             including:
           </p>
 
@@ -208,15 +208,15 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             {[
               {
                 title: "Custom Bridal Lehengas & Sarees",
-                body: "Hand-stitched to your exact measurements by master artisans in Surat, Kolkata, Jaipur, and Delhi — including zardozi, gota patti, resham, and Banarasi silk work. Real 2026 prices: $800–$3,500 vs $2,500–$8,000+ at US boutiques.",
+                body: "Compare available fabric, handwork, customization, vendor lead time, shipping, and duty before approving a made-to-measure order.",
               },
               {
                 title: "Handcrafted Groom Sherwanis & Indo-Westerns",
-                body: "Custom sherwanis, bandhgalas, and Indo-Western suits from Delhi and Hyderabad tailors — coordinated fabric, embroidery, and color matching with the bride. Save 40–50% vs US Indian menswear retailers.",
+                body: "Review sherwanis, bandhgalas, and Indo-Western suits with documented fabric, embroidery, color, measurements, and vendor terms.",
               },
               {
                 title: "Coordinated Bridesmaid & Groomsmen Outfits",
-                body: "Bulk-order 4 to 20+ coordinated bridesmaid lehengas and groomsmen sherwanis in a single production run. Identical dye lot, unified shipping, and 30–50% savings per outfit vs US retail.",
+                body: "Coordinate bridesmaid lehengas and groomsmen sherwanis in one documented production brief. Handmade color and dye-lot variation should still be expected.",
               },
               {
                 title: "Bulk Wedding Return Gifts and Favors",
@@ -452,7 +452,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             className="text-center text-base md:text-lg leading-relaxed mb-14 max-w-3xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            If you want the cost savings of shopping directly in India without
+            If you want added support while shopping directly in India without
             the stress of managing time zones, language barriers, and shipping
             logistics, a dedicated concierge service like CeremonyVerse bridges
             the gap. We act as your boots on the ground in India, providing:
@@ -475,7 +475,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               >
                 Hand-selecting outfits from trusted Indian weavers and
                 designers based on your budget. We use direct sourcing
-                relationships in Surat, Delhi, and Kanchipuram, then narrow the
+                strongest working relationships in Surat and Delhi, then narrow the
                 options to pieces that match your brief and timeline.
               </p>
             </div>

@@ -53,7 +53,7 @@ export default function BaraatOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Groom's Baraat Sherwani", desc: "Full-length sherwani with safa, custom stitched to your exact measurements. Ivory, cream, gold, or any color — your vision, our execution." },
+              { title: "Groom's Baraat Sherwani", desc: "Full-length sherwani with optional safa, researched to match the approved color, style, measurements, and vendor capabilities." },
               { title: "Groomsmen Kurta Sets", desc: "Coordinated bandhgalas or kurta sets in complementary colors. All measurements collected from groomsmen across any state." },
               { title: "Sehra & Accessories", desc: "Groom's sehra, kaleere, and dupatta sourced to complete the look. Every detail coordinated." },
               { title: "Groom's Family Attire", desc: "Coordinated sherwanis and kurtas for the groom's father and brothers. Festive, traditional, and unified." },
@@ -93,7 +93,7 @@ export default function BaraatOutfitsPage() {
             { q: "Should the Baraat sherwani be different from the wedding sherwani?", a: "Many grooms wear the same sherwani for both the Baraat and the wedding ceremony, while others prefer a separate look. We can source one or both depending on your preference and budget." },
             { q: "How long does a custom sherwani take?", a: "Allow 12–16 weeks for a custom sherwani — measurements, production, and shipping. We recommend starting at least 10 months before your wedding date." },
             { q: "Can you coordinate groomsmen across multiple states?", a: "Yes — we send the measurement guide to each groomsman, follow up to collect all measurements, and ship to a single address or individually. Multi-state coordination is something we do regularly." },
-            { q: "What if the groom has never worn a sherwani before?", a: "No problem at all. We guide non-South Asian grooms through everything — what styles look best, how to wear it, and what accessories go with it. Many of our clients are first-time sherwani wearers." },
+            { q: "What if the groom has never worn a sherwani before?", a: "We can explain common silhouettes, layering, accessories, measurement requirements, and dressing steps in plain language. Final style and cultural choices remain with the couple and family." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>

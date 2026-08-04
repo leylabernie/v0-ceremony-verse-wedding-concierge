@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
@@ -27,29 +28,32 @@ export default function InterculturalWeddingPage() {
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Intercultural Indian Weddings</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.15, marginBottom: "24px" }}>
-          South Indian, Gujarati, or intercultural — we know every tradition.
+          Outfit guidance for families bringing different traditions together.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px" }}>
-          Whether you're a South Indian Christian family, a Gujarati couple, an intercultural family, or a non-South Asian partner — CeremonyVerse understands your specific traditions and ceremonies. CeremonyVerse has guided dozens of intercultural couples — explaining what to wear, when, and why — and sourcing every outfit from India to your US door.
+          Whether your wedding brings together South Indian Christian, Gujarati, other Indian, or non-South Asian family traditions, CeremonyVerse helps organize the outfit-shopping process. We translate your family’s ceremony plans into a practical brief, explain unfamiliar clothing terms, and source approved options from India for US delivery.
         </p>
-        <a href="/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
-          Book Free Consultation — CeremonyVerse.com
-        </a>
+        <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
+          Book a Free Consultation
+        </Link>
       </section>
 
       <section style={{ padding: "40px 24px", background: "#1f1f1f" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", textAlign: "center" }}>
-          <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontStyle: "italic", color: "#f0ebe3", lineHeight: 1.6, marginBottom: "16px" }}>
-            "As a South Indian Christian couple, we wanted outfits that truly honored our heritage. CeremonyVerse walked me through every decision patiently and the sherwani fit perfectly. Our families were blown away."
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", color: "#f0ebe3", lineHeight: 1.3, marginBottom: "16px" }}>
+            Your family defines what is culturally right.
+          </h2>
+          <p style={{ fontSize: "17px", color: "#d7cfc4", lineHeight: 1.7 }}>
+            We provide research, shopping coordination, and plain-language context—not religious or cultural authority. Your family and officiants make the final decisions about ceremony-specific customs.
           </p>
-          <p style={{ fontSize: "17px", color: "#7a6841", fontWeight: 500 }}>— Charly &amp; Viola, Philadelphia PA · Intercultural wedding</p>
         </div>
       </section>
 
       <section style={{ padding: "56px 24px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px" }}>
           <div style={{ background: "#fff", borderRadius: "16px", padding: "28px", border: "1px solid #e6dfd5" }}>
-            <h3 style={{ fontWeight: 600, color: "#1f1f1f", marginBottom: "12px" }}>Ceremony dress guide</h3>
+            <h3 style={{ fontWeight: 600, color: "#1f1f1f", marginBottom: "12px" }}>Common starting points</h3>
+            <p style={{ fontSize: "15px", lineHeight: 1.6, color: "#6b5b52", marginBottom: "16px" }}>Dress expectations vary by family, region, faith, venue, and formality. We confirm your preferences before sourcing.</p>
             {[
               ["Mehndi / Haldi", "Bright festive colors — yellows, oranges, greens"],
               ["Sangeet Night", "Elegant evening — jewel tones, statement pieces"],

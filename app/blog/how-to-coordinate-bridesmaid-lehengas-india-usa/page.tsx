@@ -47,7 +47,7 @@ export default function BridesmaidGuidePage() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>Coordinating bridesmaid outfits for an Indian wedding in the US is one of the most logistically challenging parts of wedding planning. You need 4-8 outfits that match in color and style but fit 4-8 completely different body types — all arriving on time, all looking consistent in photos, and all within a reasonable budget. Most NRI brides who try to buy bridesmaid lehengas from India on their own end up with color mismatches, sizing disasters, or bridesmaids wearing outfits that look like they came from different weddings.</p>
-          <p style={{ marginTop: "1.2rem" }}>At CeremonyVerse, we have coordinated bridesmaid outfits for over 30 NRI weddings. Here is exactly how to do it right — whether you work with us or manage the process yourself. Start with our <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>full wedding outfit checklist</Link> to see how bridesmaid outfits fit into your overall plan.</p>
+          <p style={{ marginTop: "1.2rem" }}>This guide explains a practical group-order process whether you work with CeremonyVerse or manage the vendors yourself. Start with our <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>full wedding outfit checklist</Link> to see how bridesmaid outfits fit into the overall plan.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Get Consistent Colors When Ordering Multiple Lehengas from India</h2>
 
@@ -100,7 +100,7 @@ export default function BridesmaidGuidePage() {
           </div>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Sourcing bridesmaid lehengas from India typically saves 30-50% compared to buying in the US — even after shipping and customs. The key is ordering from a single workshop to guarantee color consistency.
+            India sourcing may expand the available colors, handwork, and group-order options, but there is no universal savings percentage. Ordering one production run from a single workshop can reduce—though not eliminate—color variation.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 4: Order from the Same Workshop</h2>
@@ -111,7 +111,7 @@ export default function BridesmaidGuidePage() {
             <li style={{ marginBottom: "0.6rem" }}>Delivery timelines will be different — some arrive early, some late</li>
             <li>Quality standards will vary dramatically</li>
           </ul>
-          <p style={{ marginTop: "1rem" }}>A single workshop can cut all pieces from the same fabric bolt, use the same dye batch, and coordinate production so everything ships together. This is the only way to guarantee consistency.</p>
+          <p style={{ marginTop: "1rem" }}>A single workshop can use one production brief and, when available, the same fabric bolt or dye batch. This can reduce variation, but handmade color and material differences should still be expected.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 5: The Timeline</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>

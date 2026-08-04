@@ -41,7 +41,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How much can I save by sourcing from India vs. Chicago Indian boutiques?",
     answer:
-      "Most Illinois NRI brides save between 30% and 50% by using CeremonyVerse instead of local Chicago Indian boutiques. Devon Avenue in Chicago has Indian boutiques, but their selection is limited and prices are marked up significantly. By sourcing directly from artisan workshops in Delhi, Jaipur, Surat, and Kanchipuram, you get authentic designer-quality outfits at a fraction of the cost — even after shipping and our concierge fee.",
+      "There is no universal savings percentage. Compare the approved product, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written Illinois boutique quotes.",
   },
   {
     question: "Do you serve brides in cities outside Chicago, like Naperville, Schaumburg, or Aurora?",
@@ -232,11 +232,9 @@ export default function IndianWeddingShoppingIllinoisPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse is your personal Indian wedding concierge. We work with artisan
-              partners across Delhi, Jaipur, Lucknow, Surat, Kanchipuram, and Kolkata to source
-              exactly what you need — bridal lehengas, groom sherwanis, bridesmaids outfits,
-              family sarees, and ceremony-specific pieces for every event from Mehndi to
-              Reception.
+              CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated
+              working relationships are in Surat and Delhi; other vendors are considered when the
+              requested item, capacity, documentation, and terms can be responsibly reviewed.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our process is simple: share your wedding vision, ceremony schedule, and budget.
@@ -436,7 +434,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             {[
               {
                 q: "How much can I save by sourcing from India vs. Chicago Indian boutiques?",
-                a: "Most Illinois NRI brides save between 30% and 50% by using CeremonyVerse instead of local Chicago Indian boutiques. Devon Avenue in Chicago has Indian boutiques, but their selection is limited and prices are marked up significantly. By sourcing directly from artisan workshops in Delhi, Jaipur, Surat, and Kanchipuram, you get authentic designer-quality outfits at a fraction of the cost — even after shipping and our concierge fee.",
+                a: "There is no universal savings percentage. Compare the approved product, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written Illinois boutique quotes.",
               },
               {
                 q: "Do you serve brides in cities outside Chicago, like Naperville, Schaumburg, or Aurora?",

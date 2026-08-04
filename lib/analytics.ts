@@ -57,7 +57,11 @@ export function trackLead(method: LeadMethod, location = "site"): void {
     if (typeof window.gtag === "function") {
       window.gtag("event", "generate_lead", payload);
     } else {
-      window.dataLayer.push(payload);
+      // gtag.js expects queued commands in its `arguments`-like array form.
+      // Pushing a GTM-style object here can silently lose the visitor's first
+      // CTA click because this site intentionally defers loading gtag.js until
+      // the first interaction.
+      window.dataLayer.push(["event", "generate_lead", payload]);
     }
   } catch {
     // Never let analytics break a real user action.
@@ -74,7 +78,7 @@ export function trackEvent(
     if (typeof window.gtag === "function") {
       window.gtag("event", eventName, parameters);
     } else {
-      window.dataLayer.push({ event: eventName, ...parameters });
+      window.dataLayer.push(["event", eventName, parameters]);
     }
   } catch {
     // Analytics must never block a visitor's next step.

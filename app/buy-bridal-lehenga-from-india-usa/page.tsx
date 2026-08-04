@@ -5,7 +5,7 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 export const metadata = buildMetadata({
   path: "/buy-bridal-lehenga-from-india-usa/",
   title: "Buy Bridal Lehenga from India — Delivered to USA",
-  description: "Source your dream bridal lehenga directly from India. Live video shopping, custom measurements, quality checks, and delivery to your US door. Save 30–50% vs US boutiques.",
+  description: "Source a bridal lehenga from India with live video review, guided measurements, pre-shipping checks, and US delivery coordination.",
   keywords: "buy bridal lehenga from India USA, custom bridal lehenga NRI, bridal lehenga delivered to USA, Indian bridal lehenga online USA, NRI bride lehenga, affordable bridal lehenga India",
 });
 
@@ -27,7 +27,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question: "How much does a bridal lehenga from India cost delivered to the USA?",
-    answer: "A custom bridal lehenga sourced from India typically costs $800–$3,500 before any duties assessed at import. CeremonyVerse separately itemizes the outfit, service tier, shipping, and estimated customs costs so brides can compare the landed estimate with US boutique pricing. Clients typically save 30–50% for comparable quality.",
+    answer: "Cost depends on fabric, handwork, customization, vendor, shipping, and any assessed duty. CeremonyVerse separately itemizes the outfit, flat service tier, shipping, and customs estimate so you can compare the landed quote with US boutique options.",
   },
   {
     question: "How do I know the bridal lehenga I see online is the one I'll actually receive?",
@@ -69,10 +69,9 @@ export default function BridalLehengaPage() {
             Buy a Bridal Lehenga from India — Delivered to Your US Door
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
-            Skip the India trip and save 30–50% versus comparable US boutique options. Source your dream bridal
-            lehenga directly from skilled designers in India — with live video shopping, custom
-            stitching to your exact measurements, quality checks, and insured delivery to all 50
-            states. NRI brides save 30–50% on average.
+            Research and source a bridal lehenga from India without making the shopping trip yourself.
+            Eligible tiers include live video review, guided measurements, documented approvals,
+            pre-shipping checks, and US delivery coordination.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -124,9 +123,9 @@ export default function BridalLehengaPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <h3 className="font-semibold text-xl mb-3" style={{ color: "var(--cv-accent)" }}>India direct with CeremonyVerse</h3>
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
-                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
+                <li>• Strongest stated working relationships in Surat and Delhi</li>
                 <li>• Real 2026 prices: $800–$3,500 for a custom bridal lehenga</li>
-                <li>• You pay the artisan price + transparent 15–20% sourcing fee</li>
+                <li>• Choose a transparent flat-fee CeremonyVerse sourcing tier</li>
                 <li>• Custom embroidery, color, dupatta drape, and silhouette included</li>
                 <li>• Live video shopping — zero pressure, full transparency</li>
                 <li>• Coordinate bride + 14 bridesmaids + family + jewelry in one order</li>
@@ -288,41 +287,31 @@ export default function BridalLehengaPage() {
             <table className="w-full text-sm border border-[#e6dfd5] rounded-xl overflow-hidden">
               <thead style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
                 <tr>
-                  <th className="p-4 text-left">Tier</th>
-                  <th className="p-4 text-left">Outfit cost (India)</th>
-                  <th className="p-4 text-left">Sourcing fee</th>
-                  <th className="p-4 text-left">Shipping + customs</th>
-                  <th className="p-4 text-left">Total delivered</th>
+                  <th className="p-4 text-left">Cost component</th>
+                  <th className="p-4 text-left">What affects it</th>
+                  <th className="p-4 text-left">How it is quoted</th>
                 </tr>
               </thead>
               <tbody className="bg-white">
                 <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4">Light embroidery (resham, sequin)</td>
-                  <td className="p-4">$700–$1,200</td>
-                  <td className="p-4">15–20%</td>
-                  <td className="p-4">$180–$320</td>
-                  <td className="p-4 font-semibold">$1,000–$1,800</td>
+                  <td className="p-4 font-semibold">Outfit</td>
+                  <td className="p-4">Fabric, handwork, customization, quantity, and vendor</td>
+                  <td className="p-4">Actual approved vendor price</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4">Medium embroidery (gota patti, aari)</td>
-                  <td className="p-4">$1,200–$2,200</td>
-                  <td className="p-4">15–20%</td>
-                  <td className="p-4">$280–$480</td>
-                  <td className="p-4 font-semibold">$1,700–$3,200</td>
+                  <td className="p-4 font-semibold">CeremonyVerse service</td>
+                  <td className="p-4">Research, live shopping, order management, and party size</td>
+                  <td className="p-4">$249, $799, $2,499, or a written custom scope</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4">Heavy embroidery (zardozi, dabka)</td>
-                  <td className="p-4">$2,200–$3,500</td>
-                  <td className="p-4">15–20%</td>
-                  <td className="p-4">$380–$620</td>
-                  <td className="p-4 font-semibold">$3,000–$4,800</td>
+                  <td className="p-4 font-semibold">Shipping</td>
+                  <td className="p-4">Weight, dimensions, value, destination, and carrier service</td>
+                  <td className="p-4">Carrier estimate for the approved shipment</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
-                  <td className="p-4">Couture recreation (Sabyasachi-style)</td>
-                  <td className="p-4">$3,500–$6,000</td>
-                  <td className="p-4">15–20%</td>
-                  <td className="p-4">$550–$900</td>
-                  <td className="p-4 font-semibold">$4,700–$8,200</td>
+                  <td className="p-4 font-semibold">Customs</td>
+                  <td className="p-4">Classification, fiber, construction, origin, and declared value</td>
+                  <td className="p-4">Estimate only; US customs or the carrier makes the assessment</td>
                 </tr>
               </tbody>
             </table>
@@ -395,10 +384,9 @@ export default function BridalLehengaPage() {
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much does a bridal lehenga from India cost delivered to the USA?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                A custom bridal lehenga sourced from India and delivered to the USA typically costs
-                $800–$3,500 before any duties assessed at import. We separately itemize the outfit,
-                service tier, shipping, and estimated customs costs. Clients typically save 30–50%
-                for comparable quality versus US boutique pricing.
+                Cost depends on fabric, handwork, customization, vendor, shipping, and any assessed
+                duty. We separately itemize the outfit, flat service tier, shipping, and customs
+                estimate so you can compare the landed quote with US boutique pricing.
               </p>
             </div>
             <div>

@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Viewport } from "next";
+import Script from "next/script";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
@@ -34,11 +35,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
+      "Indian Wedding Shopping & Mexico Planning | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+    "Shop for Indian wedding outfits and essentials from India or plan an Indian destination wedding in Cancun and Riviera Maya.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -66,6 +67,9 @@ export const metadata = {
     "custom bridal lehenga India to USA",
     "return gifts from India to USA",
     "live video shopping India wedding",
+    "Indian destination wedding planner Mexico",
+    "Cancun Indian wedding planning",
+    "Riviera Maya Indian wedding coordinator",
     "CeremonyVerse",
   ],
   icons: {
@@ -75,9 +79,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Indian Wedding Shopping Concierge for NRI Brides | CeremonyVerse",
+      "Indian Wedding Shopping & Mexico Planning | CeremonyVerse",
     description:
-      "Skip the boutique markups. Source custom bridal lehengas, sherwanis, and return gifts directly from India to the USA. Live video shopping & quality checks.",
+      "Shop for Indian wedding outfits from India or plan an Indian destination wedding in Cancun and Riviera Maya.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -86,7 +90,7 @@ export const metadata = {
         url: "https://www.ceremonyverse.com/images/hero-lehenga.webp",
         width: 1200,
         height: 630,
-        alt: "Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse",
+        alt: "Red bridal lehenga illustrating CeremonyVerse Indian wedding outfit sourcing",
       },
     ],
   },
@@ -143,39 +147,6 @@ export default function RootLayout({
           turns out to be too lossy, add `setTimeout(loadGA, 10000)` here
           — that's well past TTI and outside Lighthouse's measurement.
         */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var GA_ID = 'G-8K8YLBERPM';
-                var loaded = false;
-                function loadGA() {
-                  if (loaded) return;
-                  loaded = true;
-                  window.dataLayer = window.dataLayer || [];
-                  window.gtag = function(){ dataLayer.push(arguments); };
-                  window.gtag('js', new Date());
-                  window.gtag('config', GA_ID);
-                  var s = document.createElement('script');
-                  s.async = true;
-                  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-                  document.head.appendChild(s);
-                }
-                var triggers = ['scroll', 'click', 'keydown', 'touchstart', 'pointerdown'];
-                function onTrigger() {
-                  loadGA();
-                  triggers.forEach(function(t) {
-                    window.removeEventListener(t, onTrigger, {passive: true});
-                  });
-                }
-                triggers.forEach(function(t) {
-                  window.addEventListener(t, onTrigger, {passive: true, once: true});
-                });
-              })();
-            `,
-          }}
-        />
-
         {/* Global meta tags. Page-specific OG/Twitter/robots/canonical tags are
             emitted via Next.js metadata API from each page's `metadata` export.
             NOTE: We no longer hardcode <meta name="robots"> here. Next.js emits
@@ -190,14 +161,6 @@ export default function RootLayout({
         <meta name="revisit-after" content="7 days" />
         <meta name="category" content="Indian Wedding Shopping, Bridal Concierge, Wedding Services" />
         <meta name="classification" content="Business" />
-        <meta property="og:site_name" content="CeremonyVerse" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="https://www.ceremonyverse.com/images/hero-lehenga.webp" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Real NRI bride wearing a custom red bridal lehenga sourced directly from India to the USA by CeremonyVerse" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://www.ceremonyverse.com/images/hero-lehenga.webp" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
 
         {/*
@@ -224,11 +187,41 @@ export default function RootLayout({
         */}
       </head>
       <body>
+        <Script id="deferred-google-analytics" strategy="afterInteractive">
+          {`
+            (function() {
+              var GA_ID = 'G-8K8YLBERPM';
+              var loaded = false;
+              function loadGA() {
+                if (loaded) return;
+                loaded = true;
+                window.dataLayer = window.dataLayer || [];
+                window.gtag = function(){ window.dataLayer.push(arguments); };
+                window.gtag('js', new Date());
+                window.gtag('config', GA_ID);
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+                document.head.appendChild(s);
+              }
+              var triggers = ['scroll', 'click', 'keydown', 'touchstart', 'pointerdown'];
+              function onTrigger() {
+                loadGA();
+                triggers.forEach(function(t) {
+                  window.removeEventListener(t, onTrigger);
+                });
+              }
+              triggers.forEach(function(t) {
+                window.addEventListener(t, onTrigger, {passive: true, once: true});
+              });
+            })();
+          `}
+        </Script>
         <AcquisitionAttribution />
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c5a059", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
-          * Planning a 2026–2027 wedding? Custom outfits need production, inspection, and shipping time &nbsp;·&nbsp;
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20start%20sourcing%20for%20my%20wedding." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
+          Planning a 2026–2027 wedding? Start India shopping or Mexico planning early &nbsp;·&nbsp;
+          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20discuss%20India%20shopping%20or%20Mexico%20wedding%20planning." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
 
         {/* Navigation — appears on ALL pages */}

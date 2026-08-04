@@ -57,7 +57,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How do I know my Banarasi saree is authentic?",
     answer:
-      "We source only Silk Mark certified Banarasi sarees from verified weavers in Varanasi. Silk Mark is the Government of India's certification guaranteeing pure silk content. Additionally, we provide live video shopping so you can see the actual saree — its weight, sheen, zari work, and weave — before purchasing. We never source synthetic 'Banarasi-style' sarees or fake zari.",
+      "Ask for the exact fiber and zari composition plus any available Silk Mark documentation for the selected saree. Eligible tiers can include live review, but video alone does not authenticate material composition.",
   },
   {
     question: "Can you source a specific Banarasi color or design?",
@@ -358,15 +358,15 @@ export default function BanarasiSareesPage() {
               },
               {
                 title: "Pure mulberry silk",
-                desc: "Authentic Banarasi sarees are woven from 100% pure mulberry silk — stronger, shinier, and more durable than any synthetic alternative.",
+                desc: "Banarasi sarees are sold in different silk and blended compositions. Confirm the exact fiber representation for the selected piece.",
               },
               {
                 title: "Real gold or silver zari",
-                desc: "Traditional Banarasi sarees use real gold or silver zari thread for the metallic motifs, not synthetic metallic yarn. This is what gives them their heirloom value.",
+                desc: "Zari composition varies. Confirm whether the exact piece is represented as metallic yarn, silver zari, or another construction.",
               },
               {
                 title: "Silk Mark certified",
-                desc: "We source only Silk Mark certified Banarasi sarees — the Government of India's guarantee of pure silk authenticity.",
+                desc: "When pure silk is requested, ask for available Silk Mark documentation and keep the seller's representation in the approval record.",
               },
             ].map((item) => (
               <div
@@ -445,7 +445,7 @@ export default function BanarasiSareesPage() {
               marginBottom: "1.2rem",
             }}
           >
-            Many of our clients source <strong>both</strong> for different ceremonies —
+            Families can source <strong>both</strong> for different ceremonies —
             Kanchipuram for the wedding day and Banarasi for the reception or engagement. We
             can coordinate both within the same sourcing trip to India.
           </p>
@@ -499,7 +499,7 @@ export default function BanarasiSareesPage() {
             },
             {
               q: "How do I know my Banarasi saree is authentic?",
-              a: "We source only Silk Mark certified Banarasi sarees from verified weavers in Varanasi. Silk Mark is the Government of India's certification guaranteeing pure silk content. Additionally, we provide live video shopping so you can see the actual saree — its weight, sheen, zari work, and weave — before purchasing. We never source synthetic 'Banarasi-style' sarees or fake zari.",
+              a: "Ask for the exact fiber and zari composition plus any available Silk Mark documentation for the selected saree. Eligible tiers can include live review, but video alone does not authenticate material composition.",
             },
             {
               q: "Can you source a specific Banarasi color or design?",

@@ -7,7 +7,7 @@ export const metadata = buildMetadata({
   title:
     "Custom Sherwani Sizing Guide: Source from India, Fit in the US",
   description:
-    "5 critical sherwani measurements every groom must get right. Choose fabric and guarantee a perfect custom fit from India to the USA.",
+    "Five important sherwani measurements, fabric-selection guidance, and practical steps to reduce remote custom-fit risk.",
   keywords: [
     "custom sherwani online USA",
     "Indian groom wear shopping from India",
@@ -25,7 +25,7 @@ const blogPostingSchema = buildBlogPosting({
   headline:
     "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
   description:
-    "5 critical sherwani measurements every groom must get right. Choose fabric and guarantee a perfect custom fit from India to the USA.",
+    "Five important sherwani measurements, fabric-selection guidance, and practical steps to reduce remote custom-fit risk.",
   url: "/blog/custom-sherwani-sizing-guide-india-usa/",
   datePublished: "2026-06-28",
   keywords: [
@@ -93,7 +93,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           >
             The 5 measurements every groom must get right, the fabric
             differences between Banarasi brocade and raw silk, and how to
-            guarantee a perfect custom fit when you cannot fly to India.
+            reduce custom-fit risk when you cannot fly to India.
           </p>
         </div>
       </div>
@@ -142,7 +142,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           <p style={{ marginTop: "1.2rem" }}>
             This guide breaks down the essential measurements every groom
             needs, how to evaluate premium Indian fabrics remotely, and how to
-            guarantee a perfect custom fit from abroad. For a broader look at
+            plan for a better custom fit from abroad. For a broader look at
             the full groom outfit checklist, see our{" "}
             <Link
               href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
@@ -432,10 +432,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               We do not just pass your numbers to a workshop. Our team hosts a
               live, 3-way video call with you and an expert Indian Master
               Tailor (Masterji). We visually verify how your measurements are
-              taken to ensure 100% accuracy. The Masterji watches you on
+              taken to reduce avoidable recording errors. The tailor watches you on
               camera, corrects your posture, tells you where exactly to place
               the tape, and confirms each measurement before it is recorded.
-              This single step eliminates 95% of remote sizing errors.
+              This step creates a clearer measurement record, but it cannot guarantee fit.
             </p>
           </div>
 
@@ -496,11 +496,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               Before your sherwani is packed and shipped to the US, our team
               physically places the garment on a custom-adjusted mannequin in
               India. We measure the finished piece against your profile to
-              guarantee it matches your exact specifications. We film this
-              final fitting in 4K so you can see the drape, the shoulder line,
-              and the sleeve length before approving shipment. If anything is
-              off, we send it back to the Masterji for correction — at our
-              cost, not yours.
+              compare visible dimensions with the approved measurement record. For eligible
+              tiers, we share available media before shipment so you can review the drape,
+              shoulder line, and sleeve length. Any correction or alteration remedy follows
+              the applicable signed terms.
             </p>
           </div>
 

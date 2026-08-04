@@ -127,13 +127,13 @@ export default function OutfitChecklistPage() {
           </div>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Total Cost: How Much All 42-51 Outfits Cost from India vs. US Stores
+            Total Cost: Compare Every Line Item
           </h2>
 
-          <p><strong>At US boutique prices ($300-$600 per outfit):</strong> $12,600-$30,600<br/><strong>Sourcing from India ($80-$250 per outfit):</strong> $3,360-$12,750<br/><strong>Potential savings:</strong> $9,000-$17,000+</p>
+          <p>Do not multiply generic per-outfit estimates into a promised savings figure. Obtain written quotes for each garment, customization, service fee, shipping plan, customs estimate, and alteration allowance, then compare equivalent scopes.</p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            The numbers speak for themselves. Most NRI families save $9,000-$17,000 by sourcing from India — even after paying for customs duties and shipping. The key is planning early so everything arrives with time to spare. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>NRI wedding timeline guide</Link> to stay on schedule.
+            Group orders can have substantial cost and timing differences by fabric, handwork, and vendor. Plan early and compare like-for-like written quotes. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>NRI wedding timeline guide</Link> to build a buffer.
           </p>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
@@ -175,7 +175,7 @@ export default function OutfitChecklistPage() {
               Get the Printable Checklist + Budget Tracker →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build a realistic budget and timeline for your full family&apos;s wedding wardrobe — most families save $9,000-$17,000 compared to buying everything in the US.
+              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build an itemized budget and timeline for the requested family wardrobe.
             </p>
           </div>
 

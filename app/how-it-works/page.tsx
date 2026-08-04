@@ -20,19 +20,19 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question: "How long does the whole process take?",
-    answer: "From consultation to delivery, the typical timeline is 8–12 weeks. Rush orders (6 weeks) are sometimes possible depending on the complexity. We recommend starting 4–6 months before your first ceremony to keep things relaxed.",
+    answer: "Timing depends on the selected item, vendor, customization, approvals, and shipping conditions. Your written scope includes the available vendor estimate. Starting 4–6 months before your first ceremony gives more room for production, delivery, and local alterations if needed.",
   },
   {
     question: "Can I see the outfit before paying?",
-    answer: "Yes. During your live video shopping session, you see the exact outfit — fabric, color, embroidery — in real time. You approve the specific piece before any payment is collected. After stitching, we do a final video inspection with you before shipping.",
+    answer: "Eligible sourcing tiers include live video shopping or a documented review before you approve an item purchase. CeremonyVerse service-fee payment milestones are separate and are shown in your written terms.",
   },
   {
     question: "What if something is wrong when it arrives?",
-    answer: "We handle it. If an outfit doesn't match what you approved — in color, fit, or quality — we work with our team in India to fix or replace it. Our quality inspection before shipping is designed to catch issues early, but if anything slips through, we make it right.",
+    answer: "Document the concern promptly with photos. We compare it with the written approval record and follow the remedy, return, or alteration provisions in your signed terms. Remote custom clothing does not carry a universal fit or color guarantee.",
   },
   {
     question: "Do you ship to all US states?",
-    answer: "Yes, CeremonyVerse delivers to all US states. We have worked with clients in New Jersey, New York, Pennsylvania, Illinois, Georgia, Texas, California, and many more. All items are quality-checked in India before being shipped to your US address.",
+    answer: "Nationwide US delivery coordination is available when the selected vendor and carrier can serve the address. Carrier availability, customs clearance, and delivery timing remain outside CeremonyVerse's control.",
   },
 ]);
 
@@ -45,9 +45,9 @@ const howToSchema = buildHowToSchema({
     { name: "Free Consultation", text: "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs. No sales pressure." },
     { name: "Style Discovery", text: "Share your inspiration — Pinterest boards, Instagram saves, photos from weddings you loved. We work with our outfit specialists and designers in India to find pieces that match your vision, your culture, and your budget." },
     { name: "Live Video Shopping in India", text: "Join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos. No surprises." },
-    { name: "Custom Stitching to Your Measurements", text: "We guide you through a detailed measurement process on a video call. Your blouse, your silhouette, your exact fit — stitched by our local tailor partner specifically for you. Not Indian standard sizing. Your measurements." },
-    { name: "Quality Inspection Before Shipping", text: "Before anything leaves India, we do a final inspection. We check the embroidery, the fabric, the stitching, the color — against what you approved. If anything is off, we fix it before it ships." },
-    { name: "Delivered to Your US Door", text: "Your outfits are carefully packaged and shipped directly to your address in the United States. We handle the customs documentation and keep you updated throughout." },
+    { name: "Measurement Coordination", text: "For made-to-measure items, we help document measurements in the vendor's requested format and obtain written approval before production." },
+    { name: "Pre-Shipping Review", text: "For eligible tiers, we compare visible details of the completed item with the approval record before shipment and share any concern with you." },
+    { name: "US Delivery Coordination", text: "We coordinate shipping documents and tracking for the approved shipment. The carrier and US customs control final clearance and delivery timing." },
   ],
 });
 
@@ -56,7 +56,7 @@ const steps = [
     number: "01",
     title: "Free Consultation (Always Free)",
     description:
-      "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs — no sales pressure, no inflated promises. For example, if you're planning a 3-day Gujarati wedding with 8 bridesmaids and need everything in 10 weeks, we'll tell you exactly what's realistic and what trade-offs to consider. Most consultations last 30 minutes, and many brides tell us this single call gives them more clarity than weeks of online research.",
+      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, Mexico planning, or a combined scope fits the request and explain the main timing and cost variables.",
   },
   {
     number: "02",
@@ -68,30 +68,30 @@ const steps = [
     number: "03",
     title: "Live Video Shopping in India",
     description:
-      "This is what makes CeremonyVerse different. You join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos, no surprises. One bride in New Jersey saw three lehengas on video, picked a deep maroon with zardozi work, and watched us drape it on a mannequin to check the fall. After stitching, we did a final video inspection with her before shipping — she approved the exact blouse fit and dupatta placement before anything left India.",
+      "For eligible tiers, you join a live video call where available outfits can be shown in detail—fabric drape, embroidery, and color in the vendor's environment. We document the selected item or custom brief and obtain written approval before purchase or production.",
   },
   {
     number: "04",
-    title: "Custom Stitching to Your Measurements",
+    title: "Measurement Coordination",
     description:
-      "We guide you through a detailed measurement process on a video call — not a generic sizing chart. Your blouse, your silhouette, your exact fit, stitched by our local tailor partner specifically for you. This matters because Indian standard sizing doesn't map to US bodies — a 'medium' blouse in India is cut for a different frame. We've had brides who were told they couldn't find fitted blouses at US boutiques get a perfect fit through our measurement process. For sherwanis, we measure shoulder width, chest, arm length — the details that make the difference between 'fits okay' and 'looks like it was made for you.'",
+      "For made-to-measure items, we help collect and document the measurements requested by the selected vendor. You review the final chart before production. Remote custom clothing may still require local alteration, so any Fit Assurance applies only when included in the signed terms.",
   },
   {
     number: "05",
-    title: "Quality Inspection Before Shipping",
+    title: "Pre-Shipping Review",
     description:
-      "Before anything leaves India, we do a final inspection. We check the embroidery, the fabric, the stitching, the color — against what you approved on video. If anything is off, we fix it before it ships. My family in Surat inspects every piece personally. They've caught color mismatches, loose threads, and wrong blouse lining before the client ever saw them. This is the layer of quality control that you don't get when you order directly from an Indian website — and it's the reason our clients don't have to deal with returns.",
+      "For eligible tiers, we review visible details of the completed item against the written approval record before shipment. If we identify a concern, we document it and discuss the available vendor response with you before proceeding.",
   },
   {
     number: "06",
-    title: "Delivered to Your US Door",
+    title: "US Delivery Coordination",
     description:
-      "Your outfits are carefully packaged and shipped via DHL or FedEx directly to your address in the United States. We handle the customs documentation and keep you updated with tracking throughout. From our experience, delivery takes 3-5 business days once shipped. We include care instructions and a garment bag with every order. One bride in Texas received her bridal lehenga 6 weeks before her wedding and had time for a local press — she said the piece was even more beautiful in person than on the video call.",
+      "We coordinate the approved shipment's documents and tracking for US delivery. Transit time, customs clearance, assessed duties, and final carrier delivery are outside CeremonyVerse's control and are not guaranteed.",
   },
 ]
 
 const sourceItems = [
-  { title: "Bridal Lehengas", desc: "Custom bridal lehengas sourced and stitched to your exact measurements — from classic reds to pastels and contemporary silhouettes." },
+  { title: "Bridal Lehengas", desc: "Bridal lehengas researched and sourced to match your approved color, silhouette, handwork, measurements, and budget brief." },
   { title: "Sherwanis & Groom Outfits", desc: "Sherwanis, Indo-Western suits, and coordinated groom looks for every ceremony." },
   { title: "Bridesmaid Outfits", desc: "Coordinated lehengas, sarees, or salwar sets for your entire bridal party — all measurements managed by us." },
   { title: "Groomsmen Outfits", desc: "Matching kurta sets, Nehru jackets, or sherwanis for the groom's party." },
@@ -300,7 +300,7 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Real Outcomes */}
+      {/* Process controls */}
       <section style={{ padding: "64px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "780px", margin: "0 auto" }}>
           <p
@@ -314,7 +314,7 @@ export default function HowItWorksPage() {
               textAlign: "center",
             }}
           >
-            Real Outcomes
+            Process controls
           </p>
           <h2
             style={{
@@ -326,31 +326,31 @@ export default function HowItWorksPage() {
               marginBottom: "36px",
             }}
           >
-            What this process actually looks like
+            What protects the decision process
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "24px" }}>
             <div style={{ textAlign: "center", padding: "24px" }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
-                30-50%
+                Written
               </div>
               <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
-                Typical savings vs. US Indian boutiques — even after our service fee, shipping, and customs
+                Scope, approvals, and outside costs are documented before paid work proceeds
               </p>
             </div>
             <div style={{ textAlign: "center", padding: "24px" }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
-                8-12 wk
+                Milestones
               </div>
               <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
-                Consultation to your door — with rush orders possible in 6 weeks for simpler pieces
+                Purchase, production, and shipping decisions follow the agreed project stages
               </p>
             </div>
             <div style={{ textAlign: "center", padding: "24px" }}>
               <div style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.8rem", fontWeight: 600, color: "#7a6841", lineHeight: 1 }}>
-                100%
+                Itemized
               </div>
               <p style={{ fontSize: "17px", color: "#4d403a", marginTop: "8px" }}>
-                Of clients see and approve their outfit on live video before any payment beyond the deposit
+                Product, service, shipping, customs, venue, and vendor costs stay separated
               </p>
             </div>
           </div>
@@ -361,9 +361,8 @@ export default function HowItWorksPage() {
       <section style={{ padding: "48px 24px", textAlign: "center" }}>
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            Not sure if this process is right for you? We've helped brides from New Jersey to California
-            source their entire wedding party's outfits from India. Book a free 30-minute call and
-            we'll walk you through what it would look like for your specific wedding.
+            Not sure which service fits? Book a free 30-minute call and we&apos;ll outline the available
+            India-shopping or Mexico-planning path for your dates, scope, and budget.
           </p>
           <a
             href="/contact/"

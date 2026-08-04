@@ -22,12 +22,6 @@ const entries: ImageEntry[] = [
       '/images/hero-lehenga.webp',
       '/images/live-video-shopping-india.webp',
       '/images/services-hero.webp',
-      '/images/testimonial-karan-sonal.webp',
-      '/images/testimonial-charlie-viola.webp',
-      '/images/testimonial-dhan-christina.webp',
-      '/images/testimonial-shincy.webp',
-      '/images/testimonial-swati.webp',
-      '/images/testimonial-druma-parin.webp',
     ],
   },
   {

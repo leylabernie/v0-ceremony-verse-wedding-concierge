@@ -34,7 +34,7 @@ export default function FloridaPage() {
           Indian Wedding Shopping Florida &mdash; Source Directly from India
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse helps Florida NRI families source bridal lehengas, sherwanis, bridesmaid outfits, and family ceremony wear directly from artisans in Surat, Delhi, and Kanchipuram &mdash; with live video shopping and delivery to your Florida door.
+          CeremonyVerse helps Florida families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
         </p>
         <Link
           href="/contact/"
@@ -92,7 +92,7 @@ export default function FloridaPage() {
               From there, we set up live video shopping sessions with our team in India. You see actual outfits &mdash; fabric, embroidery, color in natural light &mdash; and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Florida address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Whether you&apos;re planning a Gujarati wedding in Tampa, a South Indian ceremony at an Orlando resort, or a beachside Punjabi celebration in Miami &mdash; we understand the specific outfit traditions each community requires. Florida&apos;s Indian community is diverse, and we source with cultural precision and climate awareness.
+              Florida weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
             </p>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function FloridaPage() {
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Florida?",
-                a: "Most of our Florida clients save 30-50% compared to what they&apos;d pay at the few Indian boutiques in the state or by traveling to New Jersey. Sangeet and mehndi outfits run $150-300 landed. Mid-bridal lehengas run $700-1,500. Premium bridal lehengas with heavy zardozi run $1,500-3,000. These prices include our service fee, international shipping, and US customs duties.",
+                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Florida or out-of-state options.",
               },
               {
                 q: "We&apos;re planning a destination wedding in Florida &mdash; can you coordinate delivery to a hotel or resort?",
@@ -179,7 +179,7 @@ export default function FloridaPage() {
               },
               {
                 q: "I live in Atlanta but we&apos;re getting married in Florida. Can you help?",
-                a: "Yes. Many of our clients live in Atlanta, the Carolinas, or other Southeast states and choose Florida for their wedding venue. We can coordinate delivery to your Florida wedding venue and also ship items to your home address for pre-wedding events like the mehndi or sangeet. The consultation process is entirely virtual, so your location doesn&apos;t matter.",
+                a: "We can discuss delivery to an eligible home or venue address. Carrier service, customs timing, venue receiving policies, and the need for an in-person recipient must be confirmed before shipment.",
               },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 4 ? "1px solid #e6dfd5" : "none" }}>

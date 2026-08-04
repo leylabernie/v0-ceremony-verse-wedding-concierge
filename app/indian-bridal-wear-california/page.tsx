@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   title:
     "Indian Bridal Wear & Wedding Outfits — California",
   description:
-    "Bay Area & LA brides: skip boutique markups. Source bridal lehengas, sherwanis, and family outfits from India with live video shopping and California delivery.",
+    "Compare India-sourced bridal lehengas, sherwanis, and family outfits with California options using eligible live review and itemized delivery costs.",
   keywords:
     "indian bridal boutique bay area, lehenga shop sunnyvale, indian wedding dress los angeles, indian bridal wear california, custom bridal lehenga bay area, sherwani los angeles",
 });
@@ -66,7 +66,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How much can I save on a bridal lehenga sourcing from India vs. a Bay Area boutique in Sunnyvale or Fremont?",
     answer:
-      "California couples typically save 30% to 50% by sourcing directly from India instead of buying at Bay Area or Los Angeles Indian boutiques. A custom bridal lehenga that costs $2,500-$8,000 at a US boutique costs $800-$3,500 sourced directly from India — even after live video shopping, custom stitching, insured air freight, West Coast customs clearance, and door-to-door delivery to your California address.",
+      "Prices vary by garment, handwork, customization, vendor, shipping, and duty. CeremonyVerse provides an itemized landed estimate so California couples can compare an India-sourced option with local boutique quotes.",
   },
   {
     question:
@@ -314,8 +314,8 @@ export default function IndianBridalWearCaliforniaPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
-                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
+                <li>• Itemized product, service, shipping, and customs estimates</li>
+                <li>• Strongest stated working relationships in Surat and Delhi</li>
                 <li>• Live video shopping — scheduled around Pacific Time</li>
                 <li>• Live measurement review plus Fit Assurance reduces sizing risk</li>
                 <li>• Coordinate bride + bridesmaids + family + gifts in one order</li>
@@ -343,8 +343,8 @@ export default function IndianBridalWearCaliforniaPage() {
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and
-            show you how California couples are saving 30–50% by sourcing
-            directly from India with live video shopping.
+            explain the available India-sourcing options, costs, and trade-offs
+            before you decide whether remote shopping is right for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

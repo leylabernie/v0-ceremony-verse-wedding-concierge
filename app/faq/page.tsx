@@ -8,19 +8,19 @@ const faqSections = [
     items: [
       {
         question: "How do NRI brides buy a lehenga from India without getting scammed?",
-        answer: "The safest way is to never pay for something you haven't seen. CeremonyVerse does live video shopping sessions where you see the exact item — actual fabric draped, embroidery up close, color in natural light — before you commit to anything. We work only with vetted artisan partners we know personally, not random Instagram sellers. Every order is documented with reference photos and your written approval before production begins. This is how we eliminate the risk that NRI families face when ordering from India."
+        answer: "Eligible sourcing tiers include live video shopping or documented current media before you approve an item purchase. We record reference photos, specifications, and written approvals to reduce remote-shopping risk. No process can eliminate all vendor, handmade-item, shipping, customs, or fit risk."
       },
       {
         question: "How do I know this isn't a scam?",
-        answer: "Unlike Instagram sellers, we don't hide behind a screen. We work with trusted partners in India — skilled craftspeople, a custom designer and tailor, a fabric specialist, and a jewelry supplier — all relationships we've built personally. We do live video walkthroughs and never ask for full payment upfront."
+        answer: "CeremonyVerse is a US-based business contact that documents the selected scope, vendor option, approvals, and applicable payment schedule. Eligible tiers include live video or current-media review. Payment requirements follow the signed proposal rather than a universal rule."
       },
       {
         question: "What if quality doesn't match?",
-        answer: "You approve fabrics via detailed HD video showing thread count, weave quality, and color under natural light. That exact bolt is reserved with your order number. If anything doesn't match, we halt shipping and resolve it at our cost."
+        answer: "We compare the item with the written order references and available approval photos or video before shipping. If we identify a material mismatch, we pause shipment, document the issue, and work through the remedy described in your signed service terms."
       },
       {
         question: "How do you verify your sourcing partners?",
-        answer: "We work with a carefully chosen circle of partners built over time — an outfit specialist who sources both ready-made and semi-custom pieces, a local designer and tailor who custom-stitches to your exact measurements and references, a fabric expert who sources and dyes fabrics to your chosen color shade, and a dedicated bridal jewelry supplier. Every partner is someone we know personally."
+        answer: "Our strongest stated working relationships are in Surat and Delhi. Other vendors or locations are considered only when the requested product, documentation, capacity, and terms can be responsibly reviewed for the project."
       }
     ]
   },
@@ -33,11 +33,11 @@ const faqSections = [
       },
       {
         question: "How do you handle large parties?",
-        answer: "Coordinating 8-15 groomsmen is our specialty. We provide video tutorials for self-measurement, virtual sizing sessions, individual profiles, and extra allowances for weight fluctuations. custom-fitted to your measurements."
+        answer: "Group outfit coordination is available within the selected tier or custom written scope. We organize each participant's measurement record and approvals, but vendor capacity, handmade color variation, and local alteration needs still apply."
       },
       {
         question: "What's your alteration policy?",
-        answer: "We guarantee fit. If alterations are needed due to our measurement error, we cover the cost up to $150 per garment. For quality defects, we replace the item entirely at our expense."
+        answer: "Remote made-to-measure work can still require local adjustment. Eligible garments may include Fit Assurance with an alteration allowance of up to $150 when stated in the signed service agreement. Coverage, documentation, and exclusions are governed by that agreement."
       }
     ]
   },
@@ -46,15 +46,15 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "Radical transparency: outfit cost, our 15–20% sourcing fee, shipping, customs, and guarantee coverage. Itemized quotes show exactly what you pay for. Most clients save vs. US boutiques."
+        answer: "India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Mexico planning uses separate tiers beginning at $499."
       },
       {
         question: "What's the payment schedule?",
-        answer: "Milestone-based protection: 25% deposit to reserve, 35% after fabric approval, 30% after final inspection, 10% upon delivery. You never pay for the next stage until you've approved the previous one."
+        answer: "The payment schedule is stated in your signed proposal or service agreement before paid work begins. Larger sourcing or planning scopes may use approval milestones tied to the contracted deliverables."
       },
       {
         question: "Do you accept payment plans?",
-        answer: "Yes. For orders over $3,000, we offer extended plans across 4-6 months aligned with wedding timelines. We accept credit cards, bank transfers, and most payment methods."
+        answer: "Available payment methods and any installment schedule are stated in the written proposal. Do not assume an installment plan is available until it is confirmed for your project."
       }
     ]
   },
@@ -63,7 +63,7 @@ const faqSections = [
     items: [
       {
         question: "How long does shipping take from India to the US?",
-        answer: "Standard international shipping takes 2–3 weeks. For urgent timelines, expedited shipping (7–10 days) is available at an additional cost. We always recommend building in extra buffer time before your wedding date."
+        answer: "The carrier estimate depends on origin, destination, service level, shipment details, and customs clearance. We recommend building a meaningful buffer because carrier and customs timing cannot be guaranteed."
       },
       {
         question: "Do you handle customs and import duties?",
@@ -80,15 +80,15 @@ const faqSections = [
     items: [
       {
         question: "Do I need to travel to India?",
-        answer: "Not at all. Everything happens remotely via WhatsApp video calls, Zoom sessions, and live video shopping. Most of our clients are US-based and have never set foot in India for their wedding shopping."
+        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Mexico on-site planning applies only to the contracted Cancun or Riviera Maya scope."
       },
       {
         question: "Can I source just one item, or do I need a full package?",
-        answer: "You can source as little as one piece. Many clients start with just the bridal lehenga, then come back for bridesmaids, jewelry, and family outfits once they see how the process works."
+        answer: "You can request help with one item or a larger group. The recommended tier depends on the number of people, ceremonies, items, approvals, and vendor-management work involved."
       },
       {
         question: "What regions of India do you source from?",
-        answer: "We source from specialized craft clusters across India: Surat and Kolkata for embroidered lehengas, Varanasi for Banarasi silk, Jaipur for Rajasthani and block print styles, and Mumbai for contemporary designer looks."
+        answer: "Our strongest working relationships are in Surat and Delhi, with additional sourcing considered when the requested item and vendor can be responsibly verified. We do not promise access to every city, craft cluster, or designer."
       }
     ]
   }
@@ -237,11 +237,10 @@ export default function FAQPage() {
               <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
                 <p>Complete visibility throughout production:</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Weekly email updates with photos</li>
-                  <li>Client portal with real-time status</li>
-                  <li>Direct WhatsApp with your sourcing manager</li>
-                  <li>Video calls at key milestones</li>
-                  <li>Full shipping tracking once dispatched</li>
+                  <li>Email or WhatsApp updates at agreed milestones</li>
+                  <li>Photos or video when available for the applicable order stage</li>
+                  <li>Written approval records for key decisions</li>
+                  <li>Carrier tracking once the shipment is dispatched</li>
                 </ul>
               </div>
             </div>

@@ -73,7 +73,7 @@ export default function IndianWeddingShoppingTexasPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse is your personal Indian wedding concierge. We work with artisan partners across Delhi, Jaipur, Lucknow, Surat, Kanchipuram, and Kolkata to source exactly what you need — bridal lehengas, groom sherwanis, bridesmaids outfits, family sarees, and ceremony-specific pieces for every event from Mehndi to Reception.
+              CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when the requested item, capacity, documentation, and terms can be responsibly reviewed.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our process is simple: share your wedding vision, ceremony schedule, and budget. We connect you through live video shopping sessions with our outfit specialists in India, showing you fabrics, colors, and embroidery options in real time. You select what you love, and we handle custom measurements, tailoring, quality checks, and doorstep delivery to your home in Houston, Dallas, Plano, Sugar Land, Frisco, or anywhere in Texas.
@@ -116,7 +116,7 @@ export default function IndianWeddingShoppingTexasPage() {
           </h2>
           <div>
             {[
-              { q: "How much can I save by sourcing from India vs. Texas boutiques?", a: "Most Texas NRI brides save between 30% and 50% by using CeremonyVerse. Even after shipping and our concierge fee, the total cost for a designer-quality lehenga is significantly lower than local Houston or Dallas prices." },
+              { q: "How much can I save by sourcing from India vs. Texas boutiques?", a: "There is no universal savings percentage. Compare the approved product, flat CeremonyVerse tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written Texas boutique quotes." },
               { q: "Do you serve brides in smaller Texas cities like Austin or San Antonio?", a: "Absolutely. While we focus on major hubs like Houston and Dallas, we provide door-to-door delivery and virtual shopping sessions for NRI families in Austin, San Antonio, El Paso, and across the entire state of Texas." },
               { q: "How do you ensure the quality of the outfits before they ship to Texas?", a: "We have an in-person quality control team in India that inspects every outfit for fabric quality, embroidery detail, and measurement accuracy. We send you high-resolution photos and videos for final approval before the shipment leaves for Texas." },
             ].map((faq, index) => (

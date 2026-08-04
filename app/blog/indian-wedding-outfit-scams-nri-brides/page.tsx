@@ -38,7 +38,7 @@ export default function ScamsGuidePage() {
             How to Buy a Lehenga from India Safely: 10 Scams NRI Brides Must Avoid
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Real scams that real NRI brides have fallen for — and the exact steps to protect yourself. Written by a team that has sourced hundreds of outfits from India.
+            Common remote-shopping warning signs and practical steps for documenting vendors, approvals, payments, measurements, and shipping.
           </p>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>3. The 100% Upfront Payment Trap</h2>
           <p><strong>How it works:</strong> The seller demands full payment before production begins. Once they have your money, they disappear, delay indefinitely, or send something completely different from what you ordered. With no payment protection, your money is gone.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Never pay more than 30-40% upfront. Use a credit card or PayPal with buyer protection. At CeremonyVerse, we use milestone payments — 25% deposit, 35% after fabric approval, 30% after final inspection, 10% on delivery. You only pay for the next stage after approving the previous one.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce risk:</strong> Use a traceable payment method, obtain written terms, and tie any later payment milestones to documented approvals. CeremonyVerse states the applicable payment schedule in the signed proposal or service agreement.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>4. The Sizing Switch</h2>
           <p><strong>How it works:</strong> You send precise measurements. The workshop cuts to a standard template instead, saving time and fabric. When it arrives, it is &quot;close enough&quot; but does not fit properly — and alterations are limited because of the embroidery placement.</p>
@@ -111,11 +111,13 @@ export default function ScamsGuidePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Safest Way to Buy a Lehenga from India as an NRI Bride</h2>
 
           <p>
-            The single safest approach is to work with a sourcing service that provides vendor verification, live video approval, milestone payments, and delivery guarantees. At CeremonyVerse, we have built a network of verified artisan workshops across India, and we handle every step of the process — from initial selection to final delivery at your US door.
+            No method removes every risk. Useful controls include verifying the vendor, reviewing current media,
+            documenting specifications, using traceable payments, keeping approval records, and understanding
+            shipping and return terms. CeremonyVerse offers different levels of those controls by selected tier.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>safe bridal lehenga sourcing from India</Link> — with real prices, verified vendors, and delivery to all 50 states.
+            Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing from India</Link> — with itemized quotes, eligible live review, and US delivery coordination.
           </p>
 
           {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
@@ -127,7 +129,8 @@ export default function ScamsGuidePage() {
               Source your bridal lehenga from India — safely, with verified vendors and live video approval
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Every piece is shown to you on live video before payment, every vendor is family-vetted, and every shipment is family-inspected before it leaves India. No bait-and-switch, no stolen images, no surprises.
+              Eligible tiers include live video or documented review, written approvals, and pre-shipping checks.
+              Product purchases, vendor terms, shipping, customs, and remedies remain governed by the applicable scope.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga Safely</Link>

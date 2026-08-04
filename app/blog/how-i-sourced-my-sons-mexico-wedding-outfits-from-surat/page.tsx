@@ -7,7 +7,7 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 export const metadata = buildMetadata({
   path: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
   title: "How I Sourced My Son's Mexico Wedding Outfits from Surat",
-  description: "How Bhamini sourced outfits for her son's 4-day Mexico wedding from Surat and Delhi — live video shopping, family inspection, direct pricing.",
+  description: "How Bhamini sourced outfits for her son's 4-day Mexico wedding from Surat and Delhi, and the documentation lessons behind CeremonyVerse.",
   keywords: "Mexico Indian wedding outfits, Surat lehenga sourcing, NRI bride Mexico wedding, Indian wedding outfit sourcing story, Bhamini CeremonyVerse, son wedding Mexico outfits",
   publishedTime: "2026-07-14T10:00:00-05:00",
   authorName: "Bhamini, Founder of CeremonyVerse",
@@ -16,7 +16,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "How I Sourced My Son's Mexico Wedding Outfits from Surat",
-  description: "First-person story: how Bhamini sourced outfits for her son's 4-day Indian wedding in Mexico from Surat and Delhi — live video shopping, family inspection, direct pricing.",
+  description: "First-person family story about sourcing outfits for a 4-day Indian wedding in Mexico and the documentation lessons behind CeremonyVerse.",
   url: "/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/",
   image: "/images/sourcing/couple-portrait.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
@@ -32,7 +32,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question: "Can you source outfits for a Mexico destination wedding from India?",
-    answer: "Yes. I sourced outfits for my own son's 4-day wedding — originally planned for Mexico, later held in New Jersey after COVID — and for my other son's actual Mexico wedding at the Hard Rock Cafe. Both were 4-day events with full bridal party and family outfits. Live video shopping from Surat and Delhi, family inspection before shipping, and direct delivery to the bride's US address (or directly to Mexico if preferred).",
+    answer: "Yes. I sourced outfits for one son's multi-day wedding—originally planned for Mexico and later held in New Jersey after the pandemic disrupted the plan—and for my other son's multi-day wedding at a Hard Rock resort in Mexico. The work included bridal-party and family outfits, remote shopping in Surat and Delhi, inspection before shipping, and delivery planning for the United States.",
   },
   {
     question: "How does live video shopping work for Indian wedding outfits?",
@@ -40,7 +40,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How much can I save sourcing from Surat vs. US boutiques?",
-    answer: "Most brides save 30–50%. Sangeet and mehndi outfits run $150–$300 landed vs. $400–$700 at US boutiques. Premium bridal lehengas with heavy zardozi and real silk run $1,500–$3,000 landed vs. $2,500–$5,000 at boutiques. You often get heavier handwork or better fabric at the same price point, because you skip the boutique markup.",
+    answer: "There is no universal savings percentage. Compare the approved item price, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written US boutique quotes.",
   },
 ]);
 
@@ -62,8 +62,8 @@ export default function BlogPost() {
           How I Sourced My Son&apos;s Mexico Wedding Outfits from Surat
         </h1>
         <p className="text-lg text-[#4d403a] mb-6 leading-relaxed">
-          A first-person story about coordinating outfits for two 4-day weddings — one pivoted to New Jersey after
-          COVID, one at the Hard Rock Cafe in Mexico — and what I learned that I now use to help other NRI families.
+          A first-person story about coordinating outfits for two multi-day weddings—one moved to New Jersey after
+          the pandemic disrupted the original plan and one held at a Hard Rock resort in Mexico.
         </p>
         <p className="text-sm text-[#4d403a] mb-12">
           By <strong style={{ color: "#1f1f1f" }}>Bhamini, Founder of CeremonyVerse</strong> · Published July 14, 2026
@@ -86,9 +86,9 @@ export default function BlogPost() {
           <p>
             I&apos;m Bhamini. I run CeremonyVerse, and I help NRI families source Indian wedding outfits and
             coordinate Mexico weddings. But before I did this professionally, I did it for my own family —
-            twice. My two sons each had 4-day weddings. One was originally planned for Mexico, pivoted to New
+            twice. My two sons each had multi-day weddings. One was originally planned for Mexico, pivoted to New
             Jersey after COVID, and ended up being a Hindu and Christian interfaith celebration. The other
-            actually happened in Mexico at the Hard Rock Cafe. Both taught me everything I now use to help
+            took place at a Hard Rock resort in Mexico. Both informed the sourcing process I now use to help
             other families.
           </p>
 
@@ -96,8 +96,8 @@ export default function BlogPost() {
             People ask me all the time: <em>how do you actually source outfits from India for a Mexico wedding?</em>
             The answer is my family. My family has been in Surat&apos;s fabric trade for generations — raw fabrics
             and parts wholesale, the kind of business that connects you to every family who actually handworks
-            lehengas in that region. When I needed outfits for my son&apos;s wedding, I didn&apos;t go to a US
-            boutique and pay 2x markup. I went to my family.
+            lehengas in that region. When I needed outfits for my son&apos;s wedding, I used those family
+            connections rather than relying only on US retail inventory.
           </p>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -106,8 +106,8 @@ export default function BlogPost() {
 
           <p>
             My son was originally going to get married in Mexico. He used ShaadiDestination to arrange that — booked
-            the venue, made the deposits, sent the save-the-dates. Then COVID hit. Mexico closed. The wedding had
-            to be canceled.
+            the venue, made the deposits, and sent the save-the-dates. The pandemic disrupted the original plan,
+            and the Mexico wedding was canceled.
           </p>
 
           <p>
@@ -174,30 +174,26 @@ export default function BlogPost() {
           </div>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            What It Cost — And What It Would Have Cost at a US Boutique
+            How I Would Compare the Costs Today
           </h2>
 
           <p>
-            I want to be honest about the economics, because this is the part most people don&apos;t understand.
-            A sangeet or mehndi outfit — light resham or machine work — runs about $150–$300 landed at your US
-            door when sourced direct from Surat. The same outfit at a US Indian boutique runs $400–$700. That&apos;s
-            not a typo. The boutique marks it up 2x because they have a storefront, inventory, and importer costs
-            to cover.
+            The useful comparison is not an India price beside a boutique sticker price. It is the complete landed
+            scope: selected product, customization, service fee, shipping, customs estimate, alteration allowance,
+            timeline, payment schedule, and remedy terms.
           </p>
 
           <p>
-            A premium bridal lehenga with heavy zardozi and real silk — the kind I sourced for my son&apos;s
-            wedding — runs $1,500–$3,000 landed direct. The same quality at a US boutique runs $2,500–$5,000.
-            And honestly, brides often tell me the piece they receive from us is even better than what they saw
-            at a boutique, because at the same price point, you can afford heavier handwork or better fabric when
-            you skip the markup.
+            My family wedding experience showed me that India sourcing can provide different design, handwork,
+            and group-order options. It did not create a universal savings percentage that can honestly be promised
+            to every bride or family.
           </p>
 
           <p>
             I don&apos;t source designer-label pieces (no Manish Malhotra, no Sabyasachi — if you want those, buy
             them direct from the designer&apos;s store). What I source is authentic Indian handwork — zardozi, aari,
-            gota patti, resham — done by families who have been doing this for generations. The same handwork that
-            ends up in US boutiques, without the boutique markup.
+            gota patti, and resham. Reference images guide the brief, but CeremonyVerse does not sell unauthorized
+            replicas or claim that an unbranded item is equivalent to a designer product.
           </p>
 
           <p>
@@ -214,16 +210,16 @@ export default function BlogPost() {
           </h2>
 
           <p>
-            The New Jersey wedding was a scramble. The Mexico wedding at the Hard Rock Cafe was smoother, because
+            The New Jersey wedding was a scramble. The later wedding at a Hard Rock resort in Mexico was smoother, because
             I had learned. Here&apos;s what I do for every bride now, based on those two experiences:
           </p>
 
           <ul className="space-y-3 my-6">
-            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Start early.</strong> Top families who do this work book up. 6–12 months before your wedding is ideal. If you&apos;re closer than that, contact me and I&apos;ll tell you honestly what&apos;s achievable.</span></li>
-            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Approve everything on live video.</strong> Never buy from a photo. Always see the actual piece on video before you commit. This is non-negotiable.</span></li>
-            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Use milestone payments.</strong> 25% deposit, 35% after fabric approval, 30% after inspection, 10% on delivery. Never pay for the next stage until you approve the previous one.</span></li>
-            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Get family inspection before shipping.</strong> My family inspects every piece before it leaves India. Photos and video before it ships. If something isn&apos;t right, it doesn&apos;t ship.</span></li>
-            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Ship semi-stitched and tailor locally.</strong> Better fit than fully-stitched-and-shipped. Trust me on this one.</span></li>
+            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Start early.</strong> Custom work, approvals, tailoring, inspection, and shipping all need contingency time. If your timeline is short, ask what can be confirmed before committing.</span></li>
+            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Approve the actual item.</strong> Use live video, detailed photos, measurements, and written specifications to confirm the piece before payment milestones and shipping.</span></li>
+            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Use written payment milestones.</strong> Tie later payments to documented approvals and keep the applicable schedule in the signed proposal or service agreement.</span></li>
+            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Document the inspection.</strong> The applicable CeremonyVerse scope states which photos, video, measurements, and condition checks occur before shipping.</span></li>
+            <li className="flex gap-3"><span style={{ color: "var(--cv-accent)" }} className="font-bold">✓</span> <span><strong>Choose a fitting plan.</strong> Decide whether local alterations, semi-stitched work, or remote custom stitching best fits the garment, body, timeline, and available tailor.</span></li>
           </ul>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
@@ -233,7 +229,7 @@ export default function BlogPost() {
           <p>
             My first son&apos;s wedding (the COVID pivot to New Jersey) taught me how to coordinate an interfaith
             4-day event from scratch — venue, caterer, decorators, makeup, hair, mehndi, priest, church. My second
-            son&apos;s wedding (Mexico at the Hard Rock Cafe) taught me how to do it in a destination setting where
+            son&apos;s wedding at a Hard Rock resort in Mexico taught me how to do it in a destination setting where
             you can&apos;t just drive to the venue to check on things.
           </p>
 

@@ -66,7 +66,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How much can I save on a bridal lehenga sourcing from India vs. a Houston or Dallas boutique?",
     answer:
-      "Texas couples typically save 30% to 50% by sourcing directly from India instead of buying at Houston Hillcroft or Dallas/Plano Indian boutiques. A custom bridal lehenga that costs $2,500-$8,000 at a US boutique costs $800-$3,500 sourced directly from India — even after live video shopping, custom stitching, insured air freight, Texas customs clearance, and door-to-door delivery to your Houston or DFW address.",
+      "Prices vary by garment, handwork, customization, vendor, shipping, and duty. CeremonyVerse provides an itemized landed estimate so Texas couples can compare an India-sourced option with local boutique quotes.",
   },
   {
     question:
@@ -78,7 +78,7 @@ const faqSchema = buildFaqSchema([
     question:
       "Can you coordinate bulk bridesmaid and groomsmen outfits for a large Texas wedding?",
     answer:
-      "Absolutely. Texas weddings are famously grand — and bulk coordination is one of our specialties. We've coordinated 14+ bridesmaid lehengas, 14+ groomsmen sherwanis, full family outfits, jewelry, and ceremonial items — all color-matched, custom-stitched, and shipped together to your Texas address. See our 4-day Gujarati wedding case study for a real example.",
+      "Group coordination is available within Full Bridal Concierge or a custom written scope. We organize participant measurements, selections, approvals, and shipment planning; vendor capacity and handmade color variation are confirmed before ordering.",
   },
 ]);
 
@@ -313,8 +313,8 @@ export default function IndianBridalWearTexasPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• Clients typically save 30–50% versus comparable US boutique options</li>
-                <li>• Direct sourcing relationships in Surat, Delhi, and Kanchipuram</li>
+                <li>• Itemized product, service, shipping, and customs estimates</li>
+                <li>• Strongest stated working relationships in Surat and Delhi</li>
                 <li>• Live video shopping — no Texas-to-India flight required</li>
                 <li>• Live measurement review plus Fit Assurance reduces sizing risk</li>
                 <li>• Coordinate bride + bridesmaids + groomsmen + family + gifts</li>
@@ -342,8 +342,8 @@ export default function IndianBridalWearTexasPage() {
           >
             Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and
-            show you how Texas couples are saving 30–50% by sourcing directly
-            from India with live video shopping.
+            explain the available India-sourcing options, costs, and trade-offs
+            before you decide whether remote shopping is right for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
