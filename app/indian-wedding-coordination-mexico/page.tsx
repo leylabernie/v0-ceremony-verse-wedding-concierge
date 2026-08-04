@@ -11,55 +11,49 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
-  title: "Indian Wedding Planner Mexico | Cancun & Riviera Maya",
+  title: "Indian Wedding Concierge Mexico | Planner Introduction",
   description:
-    "Indian wedding planning and coordination for Cancun and Riviera Maya, informed by real family weddings in Mexico. Compare services and book a free consultation.",
+    "Family-side Mexico wedding concierge for Cancun and Riviera Maya: a clear brief, direct local-planner introduction, guest support, arrival details, and India sourcing.",
   keywords:
-    "Indian wedding planner Mexico, Cancun Indian wedding planner, Riviera Maya Indian wedding coordinator, South Asian wedding Mexico, Hindu wedding Cancun, Mexico destination wedding planning",
+    "Indian wedding planner Mexico, Cancun Indian wedding planner introduction, Riviera Maya Indian wedding concierge, South Asian wedding Mexico, Hindu wedding Cancun, Mexico destination wedding support",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Indian Wedding Planning in Cancun and Riviera Maya",
+  name: "Mexico Wedding Concierge and Planner Introduction",
   description:
-    "Planning support for South Asian and intercultural weddings in Cancun and Riviera Maya, with optional India wedding-shopping coordination.",
+    "Family-side support for South Asian and intercultural weddings in Cancun and Riviera Maya, with a direct independent-planner handoff and optional guest and India-shopping coordination.",
   url: "/indian-wedding-coordination-mexico/",
   areaServed: "Cancun and Riviera Maya, Mexico",
   offers: [
     {
-      name: "Mexico Planning Consult",
+      name: "Planner Introduction and Family Brief",
       price: 499,
       description:
-        "A planning review, written priorities, and introductions that are specifically listed in the agreement.",
+        "A budget and priorities review, written family brief, and direct introduction to an independent Mexico wedding planner.",
     },
     {
-      name: "Single-Event Coordination",
+      name: "Family Concierge Support",
       price: 1500,
       description:
-        "Coordination for one contracted event, with the covered planning and on-site work stated in writing.",
-    },
-    {
-      name: "Multi-Day Wedding Planning",
-      price: 4500,
-      description:
-        "Custom planning for a multi-event wedding weekend; final scope and price depend on dates, guest count, and event complexity.",
+        "Family-side decision, communication, guest-information, and arrival support under a separate CeremonyVerse agreement.",
     },
   ],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Mexico Wedding Planning", url: "/indian-wedding-coordination-mexico/" },
+  { name: "Mexico Wedding Concierge", url: "/indian-wedding-coordination-mexico/" },
 ]);
 
 const faqItems = [
   {
-    question: "Does CeremonyVerse plan Indian weddings in Mexico?",
+    question: "Who plans and runs the wedding in Mexico?",
     answer:
-      "CeremonyVerse offers planning support for weddings in Cancun and Riviera Maya. The exact events, vendor work, travel, and on-site coverage are listed in a written agreement before work begins.",
+      "The Mexico-based wedding planner works and contracts directly with the couple for resort negotiations, local vendors, timelines, and on-site execution. CeremonyVerse has a separate family-concierge agreement for the brief, handoff, guest organization, arrival support, and any India sourcing the family selects.",
   },
   {
-    question: "What does Mexico wedding planning cost?",
+    question: "What does CeremonyVerse Mexico support cost?",
     answer:
-      "CeremonyVerse fees start at $499 for a planning consult, $1,500 for one-event coordination, and $4,500 for a custom multi-day starting scope. Resort, venue, food and beverage, travel, decor, entertainment, photography, beauty, officiant, product, shipping, and customs costs are separate unless the agreement explicitly says otherwise.",
+      "The planner introduction and family brief is $499. Ongoing family-concierge support starts at $1,500, and guest travel and arrival support is quoted after the guest count and responsibilities are clear. The Mexico planner, resort, vendors, travel providers, transfers, products, shipping, and customs are separate and paid directly to the applicable provider.",
   },
   {
     question: "Can you help us choose between Cancun and Riviera Maya?",
@@ -79,7 +73,7 @@ const faqItems = [
   {
     question: "Can CeremonyVerse source our wedding outfits from India too?",
     answer:
-      "Yes. India shopping and Mexico planning are separate service paths that can be combined in one written scope. Purchases, tailoring, shipping, customs, and Mexico wedding costs remain itemized.",
+      "Yes. India shopping is a separate CeremonyVerse service that can be added to the Mexico family-concierge scope. Purchases, tailoring, shipping, customs, the Mexico planner, resort, and local wedding costs remain itemized separately.",
   },
   {
     question: "What are the legal requirements for marrying in Mexico?",
@@ -106,12 +100,12 @@ const howToSchema = buildHowToSchema({
       text: "Review Cancun and Riviera Maya options, then compare event spaces, room blocks, food and beverage terms, production rules, outside-vendor policies, weather plans, and cancellation terms.",
     },
     {
-      name: "Choose the CeremonyVerse planning scope",
-      text: "Select a planning consult, single-event coordination, or a custom multi-day scope. Covered work and exclusions are documented before payment.",
+      name: "Meet and contract the Mexico planner directly",
+      text: "CeremonyVerse prepares the family brief and makes the introduction. Review the planner's proposal, references, responsibilities, payment terms, and cancellation terms before signing or paying the planner directly.",
     },
     {
-      name: "Contract the venue and specialists",
-      text: "Confirm the venue and the vendors needed for each event only after written availability, pricing, policies, and responsibilities are clear.",
+      name: "Choose any additional CeremonyVerse support",
+      text: "Add only the family-concierge, guest-information, arrival, welcome-item, or India-sourcing responsibilities you want CeremonyVerse to handle under its own agreement.",
     },
     {
       name: "Build one operating plan",
@@ -148,11 +142,12 @@ export default function MexicoCoordinationPage() {
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Indian wedding planning in Mexico, with the important details put in writing.
+            A Mexico planner for the wedding. CeremonyVerse beside the family.
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            CeremonyVerse helps families compare locations, organize multi-event logistics, coordinate the
-            contracted vendor team, and optionally connect Mexico planning with India wedding shopping.
+            We help you define what is realistic, prepare the family brief, and introduce a Mexico-based
+            planner who contracts and works with you directly. CeremonyVerse can separately support guest
+            information, arrival details, welcome items, and India wedding shopping.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -162,10 +157,10 @@ export default function MexicoCoordinationPage() {
               Discuss Your Mexico Wedding
             </Link>
             <Link
-              href="/pricing/#mexico-planning"
+              href="/pricing/#mexico-concierge"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
-              Review Planning Fees
+              Review Concierge Fees
             </Link>
           </div>
           <p className="mt-5 text-sm text-[#cfc6bb]">
@@ -184,7 +179,7 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Family experience became a planning system.
+              Family experience became a clear handoff system.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-[#4d403a]">
@@ -194,13 +189,13 @@ export default function MexicoCoordinationPage() {
               Jersey during the pandemic—plus her nephew&apos;s Mexico wedding.
             </p>
             <p>
-              Those experiences are relevant, but they are not presented as decades of paid client work. They
-              shaped the questions CeremonyVerse asks about resort contracts, event flow, family coordination,
-              outside-vendor restrictions, guest logistics, and wedding shopping from India.
+              These family experiences shaped the questions CeremonyVerse asks before the handoff: what the
+              budget covers, how many guests are traveling, which events matter most, and which responsibilities
+              belong to the local planner, the resort, the travel provider, and the family.
             </p>
             <p>
-              The current service is defined by your signed scope. Family-wedding contacts may be introduced when
-              relevant and available; CeremonyVerse does not claim ownership of a universal Mexico vendor network.
+              The Mexico planner has a direct agreement with the couple. CeremonyVerse has its own agreement for
+              only the family-side work selected. Neither business can make promises or accept money for the other.
             </p>
           </div>
         </div>
@@ -216,30 +211,30 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Three Mexico planning starting points
+              Three Mexico concierge starting points
             </h2>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
             {[
               {
-                label: "Planning Consult",
+                label: "Planner Introduction & Family Brief",
                 price: "$499",
-                text: "A focused review of your brief, risks, priorities, and next decisions, plus only the introductions named in the agreement.",
+                text: "We separate wedding events from rooms and travel, organize your priorities, and introduce the independent Mexico planner.",
               },
               {
-                label: "Single-Event Coordination",
-                price: "$1,500",
-                text: "A starting scope for one event. The agreement identifies preparation, vendor communication, timeline, and on-site coverage.",
+                label: "Family Concierge Support",
+                price: "From $1,500",
+                text: "We track family decisions, questions, meeting follow-ups, and agreed guest details while the planner manages the local wedding.",
               },
               {
-                label: "Multi-Day Planning",
-                price: "From $4,500",
-                text: "A custom scope for a wedding weekend. Final pricing depends on event count, guest count, dates, travel, and operational complexity.",
+                label: "Guest Travel & Arrival Support",
+                price: "Custom quote",
+                text: "We organize flight and rooming lists, coordinate transfers through independent providers, and help with arrival guidance and welcome kits.",
               },
             ].map((tier) => (
               <article key={tier.label} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Mexico Planning</p>
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Mexico Concierge</p>
                 <h3 className="mt-3 text-2xl font-semibold text-[#1f1f1f]">{tier.label}</h3>
                 <p className="mt-4 text-3xl font-semibold text-[#7a6841]">{tier.price}</p>
                 <p className="mt-5 leading-relaxed text-[#4d403a]">{tier.text}</p>
@@ -247,9 +242,9 @@ export default function MexicoCoordinationPage() {
             ))}
           </div>
           <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-relaxed text-[#655a54]">
-            CeremonyVerse fees do not include resort, venue, food and beverage, travel, lodging, decor,
-            entertainment, photography, beauty, officiant, product, shipping, duty, or other third-party costs
-            unless the signed agreement expressly includes them.
+            The couple pays the Mexico planner and other providers directly. CeremonyVerse does not collect
+            money for flights, rooms, transfers, resorts, or local vendors. Nothing is booked or charged without
+            the couple&apos;s written approval.
           </p>
         </div>
       </section>
@@ -281,7 +276,7 @@ export default function MexicoCoordinationPage() {
               href="/indian-destination-wedding-planner-mexico/"
               className="inline-flex rounded-full bg-[#1f1f1f] px-7 py-3 font-medium text-white"
             >
-              Read the Mexico planning guide →
+              Read the Mexico decision guide →
             </Link>
           </div>
         </div>
@@ -321,15 +316,16 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Plan Mexico and shop India separately—or together.
+              Let the planner run Mexico; let CeremonyVerse support the family.
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
-              <h3 className="text-2xl font-semibold text-[#1f1f1f]">Mexico wedding planning</h3>
+              <h3 className="text-2xl font-semibold text-[#1f1f1f]">Mexico planner + family concierge</h3>
               <p className="mt-4 leading-relaxed text-[#4d403a]">
-                Location comparison, planning priorities, vendor coordination, timelines, guest logistics, and
-                the on-site coverage included in your agreement.
+                The planner handles resort negotiations, local vendors, timelines, and on-site execution.
+                CeremonyVerse can organize family questions, guest information, transfer details, arrival
+                support, and welcome kits.
               </p>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
@@ -352,7 +348,7 @@ export default function MexicoCoordinationPage() {
             className="text-center text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Mexico wedding planning FAQ
+            Mexico wedding concierge FAQ
           </h2>
           <div className="mt-10 space-y-4">
             {faqItems.map((item) => (
@@ -374,8 +370,8 @@ export default function MexicoCoordinationPage() {
             Start with your dates, guest count, location ideas, and budget.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            We will tell you what CeremonyVerse can cover, what still needs third-party confirmation, and which
-            planning level fits the wedding you are actually organizing.
+            We will tell you what may be realistic, what the Mexico planner must confirm, and which family-side
+            services—if any—would genuinely make the process easier.
           </p>
           <Link
             href="/contact/?service=mexico"

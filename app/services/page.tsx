@@ -10,11 +10,11 @@ import {
 
 export const metadata = buildMetadata({
   path: "/services/",
-  title: "Indian Wedding Shopping & Mexico Planning Services",
+  title: "Indian Wedding Shopping & Mexico Concierge Services",
   description:
-    "CeremonyVerse offers India wedding shopping and sourcing plus Indian destination-wedding planning in Cancun and Riviera Maya.",
+    "CeremonyVerse offers India wedding shopping plus a Mexico family concierge with direct local-planner introductions, guest support, and arrival coordination.",
   keywords:
-    "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planner, Riviera Maya Indian wedding, Mexico destination wedding coordination, NRI wedding shopping",
+    "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planner introduction, Riviera Maya Indian wedding concierge, Mexico destination wedding support, NRI wedding shopping",
 })
 
 const offers = [
@@ -34,26 +34,21 @@ const offers = [
     description: "End-to-end shopping coordination for the couple and wedding party up to eight people.",
   },
   {
-    name: "Mexico Vendor Network Access",
+    name: "Mexico Planner Introduction & Family Brief",
     price: 499,
-    description: "Introductions to vetted planning, entertainment, photography, decor, and beauty contacts in Mexico.",
+    description: "A written family brief and direct handoff to a Mexico planner who contracts with the couple.",
   },
   {
-    name: "Mexico Day-Of Coordination",
+    name: "Mexico Family Concierge Support",
     price: 1500,
-    description: "On-site coordination for one event in Cancun or Riviera Maya.",
-  },
-  {
-    name: "Mexico Multi-Day Coordination",
-    price: 4500,
-    description: "Planning and on-site coordination for a multi-day Indian destination wedding.",
+    description: "Family-side decision, communication, guest-information, and arrival support under a separate scope.",
   },
 ]
 
 const serviceSchema = buildServiceSchema({
-  name: "Indian Wedding Shopping and Mexico Planning",
+  name: "Indian Wedding Shopping and Mexico Family Concierge",
   description:
-    "US-based support for sourcing Indian wedding essentials from India and planning Indian destination weddings in Cancun and Riviera Maya.",
+    "US-based support for sourcing Indian wedding essentials from India and helping families work with an independent Mexico wedding planner.",
   url: "/services/",
   offers,
 })
@@ -69,7 +64,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan or coordinate weddings?",
     answer:
-      "Yes, within our Mexico destination-wedding service area in Cancun and Riviera Maya. India shopping and sourcing is a separate service line. Your written scope identifies whether you hired one service or both.",
+      "The Mexico-based planner contracts with and works directly with the couple for resort negotiation, local vendors, timelines, and on-site execution. CeremonyVerse has a separate family-concierge scope for the brief, handoff, guest organization, arrival support, and optional India sourcing.",
   },
   {
     question: "Are product and shipping costs included in the service fee?",
@@ -117,19 +112,19 @@ const categories = [
 
 const mexicoServices = [
   {
-    title: "Vendor Network Access",
+    title: "Planner Introduction & Family Brief",
     price: "$499",
-    description: "A vetted starting network for planning, DJ, photography, decor, and beauty vendors. You contact and manage the vendors after the introduction.",
+    description: "We organize the family priorities and introduce a Mexico planner. The couple reviews, signs, and pays the planner directly.",
   },
   {
-    title: "Day-Of Coordination",
-    price: "$1,500",
-    description: "On-site coordination for one contracted event in Cancun or Riviera Maya, based on an agreed timeline and vendor list.",
+    title: "Family Concierge Support",
+    price: "From $1,500",
+    description: "We stay beside the family for decision tracking, meeting follow-up, guest information, and the responsibilities listed in our separate agreement.",
   },
   {
-    title: "Multi-Day Coordination",
-    price: "From $4,500",
-    description: "Planning and on-site support for a multi-day Indian destination wedding. The final scope depends on event count, guest count, venues, and complexity.",
+    title: "Guest Travel & Arrival Support",
+    price: "Custom quote",
+    description: "Flight and rooming lists, transfer coordination through independent providers, arrival guidance, welcome kits, and optional hospitality-desk support.",
   },
 ]
 
@@ -156,12 +151,12 @@ export default function ServicesPage() {
             Two services · One US-based point of contact
           </p>
           <h1 className="mb-6 font-serif text-5xl font-semibold sm:text-6xl">
-            Shop India for your wedding—or plan it in Mexico
+            Shop India for your wedding—or get family-side help in Mexico
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
-            CeremonyVerse organizes India shopping and sourcing for US families, and separately plans
-            Indian destination weddings in Cancun and Riviera Maya. Couples can hire either service or
-            combine both under one written scope.
+            CeremonyVerse organizes India shopping for US families and helps Mexico couples prepare a
+            clear brief, meet a local planner, and manage family-side details. The planner and
+            CeremonyVerse each work under their own agreement.
           </p>
           <Link
             href="/contact/"
@@ -179,11 +174,12 @@ export default function ServicesPage() {
               Mexico destination weddings
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Indian wedding planning in Cancun and Riviera Maya
+              A direct Mexico planner, with CeremonyVerse beside the family
             </h2>
             <p className="text-lg leading-8 text-white/75">
-              The Mexico service grew from Bhamini&apos;s firsthand experience coordinating her son&apos;s
-              multi-day destination wedding and the vendor relationships built through that process.
+              The local planner handles negotiations and wedding execution directly with the couple.
+              CeremonyVerse can remain the family&apos;s US-based point of contact for organization,
+              guest details, arrival support, and India sourcing.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -200,7 +196,7 @@ export default function ServicesPage() {
               href="/indian-wedding-coordination-mexico/"
               className="inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold text-[#1f1f1f]"
             >
-              Explore Mexico Planning
+              Explore Mexico Concierge
             </Link>
           </div>
         </div>
@@ -261,9 +257,9 @@ export default function ServicesPage() {
               built to perform.
             </p>
             <ul className="space-y-4 text-sm leading-6 text-white/80">
-              <li>Local wedding planning outside the contracted Mexico service area</li>
-              <li>Vendor services or venue charges not listed in the CeremonyVerse planning fee</li>
-              <li>Uncontracted events or deliverables outside the written Mexico scope</li>
+              <li>Mexico planner, resort, venue, vendor, travel, or transfer services</li>
+              <li>Third-party charges or promises not listed in the CeremonyVerse agreement</li>
+              <li>Booking or deposits without the couple&apos;s written approval</li>
               <li>Unauthorized designer replicas or counterfeit labels</li>
               <li>Guaranteed customs dates, duty amounts, or identical handmade results</li>
             </ul>
@@ -298,7 +294,7 @@ export default function ServicesPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Not sure which tier fits?</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             Bring your ceremony list, location, deadline, party size, and budget. We&apos;ll tell you what is
-            realistic for India shopping, Mexico planning, or a combined scope.
+            realistic for India shopping, a Mexico planner handoff, or family-concierge support.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
             Book the Free Consultation

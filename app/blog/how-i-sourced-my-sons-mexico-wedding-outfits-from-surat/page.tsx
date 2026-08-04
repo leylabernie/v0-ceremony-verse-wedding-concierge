@@ -105,9 +105,8 @@ export default function BlogPost() {
           </h2>
 
           <p>
-            My son was originally going to get married in Mexico. He used ShaadiDestination to arrange that — booked
-            the venue, made the deposits, and sent the save-the-dates. The pandemic disrupted the original plan,
-            and the Mexico wedding was canceled.
+            My son was originally going to get married in Mexico. The venue was booked, deposits were made, and
+            save-the-dates were sent. The pandemic disrupted the original plan, and the Mexico wedding was canceled.
           </p>
 
           <p>
@@ -121,8 +120,8 @@ export default function BlogPost() {
           <p>
             It was the hardest thing I&apos;ve ever done. But it also taught me everything. When you&apos;re
             coordinating your own son&apos;s wedding, you don&apos;t get to make excuses. You find a way. And the
-            way I found — the vendors I used, the timeline I built, the workarounds I created — is exactly what I
-            now offer other families through CeremonyVerse.
+            sourcing and coordination lessons from that family experience shaped the more careful, documented
+            process I now offer through CeremonyVerse.
           </p>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>

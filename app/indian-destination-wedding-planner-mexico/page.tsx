@@ -48,9 +48,9 @@ const faqItems = [
       "Ask who prepares the food, whether outside catering is permitted, how dietary and allergy requirements are handled, whether separate preparation is available, what tasting process applies, and which fees, minimums, service charges, and taxes are additional. Put the agreed menu and operating conditions in writing.",
   },
   {
-    question: "Can CeremonyVerse plan the Mexico wedding and source outfits from India?",
+    question: "How does CeremonyVerse work with the Mexico planner?",
     answer:
-      "Yes. The services can be combined, but the planning agreement and shopping approvals identify responsibilities separately. Mexico venue and vendor costs are not mixed into India product, tailoring, shipping, and customs costs.",
+      "CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts with and works directly with the couple. CeremonyVerse can separately provide family-concierge, guest, arrival, and India-sourcing support. Each provider's responsibilities and costs stay separate.",
   },
 ];
 
@@ -152,13 +152,13 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
-              Get Planning Help
+              Get Family-Side Help
             </Link>
             <Link
               href="/indian-wedding-coordination-mexico/"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
-              View CeremonyVerse Services
+              View Concierge Services
             </Link>
           </div>
         </div>
@@ -315,7 +315,7 @@ export default function MexicoDestinationGuidePage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[#7a6841]">
-              CeremonyVerse planning lens
+              CeremonyVerse family lens
             </p>
             <h2
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
@@ -332,9 +332,9 @@ export default function MexicoDestinationGuidePage() {
               paid clients.
             </p>
             <p className="mt-5">
-              The planning service uses those lessons to structure resort comparisons, wedding-weekend logistics,
-              vendor responsibilities, guest communication, contingency planning, and optional India shopping.
-              The signed agreement defines what CeremonyVerse will perform for your wedding.
+              CeremonyVerse uses those lessons to help the family ask better questions, prepare a useful brief,
+              and understand the responsibilities of the planner, resort, travel provider, vendors, and family.
+              The Mexico planner signs with the couple directly; CeremonyVerse signs only for its separate support.
             </p>
           </div>
         </div>
@@ -368,8 +368,8 @@ export default function MexicoDestinationGuidePage() {
             Bring us the proposals before you sign them.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            CeremonyVerse can help organize the comparison, identify unanswered planning questions, and define a
-            realistic coordination scope for Cancun or Riviera Maya.
+            CeremonyVerse can help organize the comparison, identify unanswered questions, and prepare a clear
+            family brief before introducing the Mexico planner.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link

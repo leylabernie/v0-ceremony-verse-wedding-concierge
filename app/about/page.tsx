@@ -6,8 +6,8 @@ import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
 export const metadata = buildMetadata({
   path: "/about/",
   title: "About CeremonyVerse — Bhamini's Story",
-  description: "Surat fabric family. Coordinated my sons' 4-day weddings — one interfaith in NJ, one at Hard Rock Mexico. Now I help your family.",
-  keywords: "CeremonyVerse founder, Bhamini CeremonyVerse, Surat fabric trade family, Mexico wedding coordinator, interfaith wedding planner, NRI wedding concierge, Indian wedding outfit sourcing",
+  description: "From a Surat fabric family to two multi-day family weddings. Bhamini now helps US families source from India and work clearly with Mexico wedding partners.",
+  keywords: "CeremonyVerse founder, Bhamini CeremonyVerse, Surat fabric trade family, Mexico wedding concierge, interfaith wedding experience, NRI wedding concierge, Indian wedding outfit sourcing",
 });
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -20,7 +20,7 @@ const organizationSchema = {
   name: "About CeremonyVerse",
   url: "https://www.ceremonyverse.com/about/",
   description:
-    "CeremonyVerse was founded by Bhamini, whose family has been in Surat's fabric trade for generations. We source Indian wedding outfits direct from Surat and Delhi, and coordinate Mexico weddings in Cancun and Riviera Maya.",
+    "CeremonyVerse was founded by Bhamini, whose family has been in Surat's fabric trade for generations. We source Indian wedding outfits from Surat and Delhi and help families work with independent wedding partners in Mexico.",
   mainEntity: {
     "@type": "Organization",
     name: "CeremonyVerse",
@@ -50,7 +50,7 @@ export default function AboutPage() {
       <SeoNav />
 
       {/* HERO */}
-      <section className="py-20 px-6" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
+      <section className="py-20 px-6 text-white" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
             About CeremonyVerse
@@ -62,8 +62,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             CeremonyVerse is the service I wished existed when I was planning my own sons&apos; weddings.
-            Outfit sourcing direct from Surat and Delhi. Mexico wedding coordination in Cancun and Riviera Maya.
-            The service is grounded in family wedding experience and defined by a written client scope.
+            Outfit sourcing from Surat and Delhi. A clear handoff to a Mexico-based planner, with optional
+            family, guest, arrival, and India-sourcing support under a separate written scope.
           </p>
         </div>
       </section>
@@ -92,19 +92,20 @@ export default function AboutPage() {
               process I now use with clients.
             </p>
             <p>
-              <strong>Son #1:</strong> Originally planned for Mexico. He used ShaadiDestination to arrange it —
-              booked the venue, made the deposits, and sent the save-the-dates. The pandemic disrupted the original
-              plan, so the family held the wedding on the same dates in New Jersey instead. We are Hindu, and his
+              <strong>Son #1:</strong> Originally planned for Mexico. The venue was booked, deposits were made,
+              and save-the-dates were sent. The pandemic disrupted the original plan, so the family held the
+              wedding on the same dates in New Jersey instead. We are Hindu, and his
               wife is South Indian Christian, so it was a multi-day interfaith event. I found the venue. I found
               the caterer. I found the decorators. I found the makeup, hair, and mehndi artists. I found the priest
               for the Hindu ceremony and the church for the Christian ceremony. It was the hardest thing I&apos;ve
               ever done — and it taught me everything.
             </p>
             <p>
-              <strong>Son #2:</strong> Got married at a Hard Rock resort in Mexico—also a multi-day event. By then I
-              had learned from the New Jersey pivot, and the Mexico coordination was smoother for it. The vendors I
-              used — the planner, the DJ, the photographers, the decorator, the beauty team — are the vendors I now
-              connect you with.
+              <strong>Son #2:</strong> Got married at a Hard Rock resort in Mexico. About 150 guests attended.
+              Immediate-family mehendi was held the day before; vidhi and garba followed the next day, then the
+              wedding and reception on their own days. We worked with a Mexico planner, resort team, DJ,
+              photographers, decor, entertainment, catering, and beauty providers. That family experience helps me
+              prepare a stronger brief and hand couples to a Mexico planner with clearer questions and expectations.
             </p>
             <p>
               For both sons&apos; weddings, I sourced the outfits from India through my family&apos;s connections in
@@ -116,16 +117,16 @@ export default function AboutPage() {
             </p>
             <p>
               I built CeremonyVerse to be the partner I wished I had — a US-based business with US accountability,
-              family connections in Surat and Delhi, real experience coordinating Mexico weddings, and a process
+              family connections in Surat and Delhi, firsthand family experience with Mexico weddings, and a process
               that protects you at every step. Live video shopping so you see exactly what you&apos;re buying.
               Family inspection before anything ships. Milestone-based payments so you never pay for the next stage
               until you approve the previous one.
             </p>
             <p>
               CeremonyVerse packages the lessons from those family weddings into two clear services:
-              India shopping and sourcing for US-based families, and destination-wedding planning in Cancun
-              and Riviera Maya. Each paid project begins with a written scope, itemized outside costs, and
-              documented approval steps.
+              India shopping and sourcing for US-based families, and a Mexico family concierge that prepares the
+              brief, introduces an independent local planner, and can support guest and arrival details. Each paid
+              project begins with a written scope, itemized outside costs, and documented approval steps.
             </p>
             <p>
               We&apos;re not the cheapest option in India — and we don&apos;t want to be. We&apos;re a safer,
@@ -162,9 +163,9 @@ export default function AboutPage() {
             The full scope of what we handle
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            From outfits sourced direct from Surat and Delhi to full Mexico wedding coordination —
+            From outfits sourced through Surat and Delhi to a clear Mexico planner handoff —
             bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry, ceremonial items,
-            gifts, welcome bags, and on-site logistics.
+            gifts, welcome bags, guest information, transfers through independent providers, and arrival support.
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -198,7 +199,7 @@ export default function AboutPage() {
             How I Source &amp; Coordinate
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Family connections in Surat &amp; Delhi. Vetted vendors in Mexico.
+            Family connections in Surat &amp; Delhi. A direct planner handoff in Mexico.
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -212,12 +213,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Cancun &amp; Riviera Maya — Mexico Coordination</h3>
+              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Cancun &amp; Riviera Maya — Planner Handoff &amp; Family Support</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                The vendors I used for my own son&apos;s Mexico wedding — planner, DJ, photographers, decorator,
-                beauty — are the vendors I now connect you with. Tested at a real 4-day Indian destination wedding.
-                Optional full multi-day on-site coordination, including interfaith ceremonies. Outfit sourcing from
-                India as an add-on.
+                CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts and
+                works directly with the couple. We can separately track family decisions, organize guest and arrival
+                information, coordinate transfers through independent providers, and add India sourcing. No booking
+                or deposit is made without the couple&apos;s written approval.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
@@ -316,7 +317,7 @@ export default function AboutPage() {
       </section>
 
       {/* STATS */}
-      <section className="py-20 px-6" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
+      <section className="py-20 px-6 text-white" style={{ background: "#1f1f1f", color: "#f8f6f2" }}>
         <div className="max-w-5xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-3 text-center" style={{ color: "#7a6841" }}>
             Founder experience
@@ -354,7 +355,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-[#4d403a] mb-8 leading-relaxed">
             Book a free 30-minute consultation. Tell me your vision, timeline, and budget. I&apos;ll tell you
-            honestly what I can do — outfit sourcing, Mexico coordination, or both.
+            honestly what I can do—India sourcing, a Mexico planner introduction, family concierge support, or a
+            combination that keeps each provider&apos;s responsibility clear.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

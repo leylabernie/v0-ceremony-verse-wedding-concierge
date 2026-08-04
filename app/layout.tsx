@@ -35,11 +35,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Indian Wedding Shopping & Mexico Planning | CeremonyVerse",
+      "Indian Wedding Shopping & Mexico Concierge | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Shop for Indian wedding outfits and essentials from India or plan an Indian destination wedding in Cancun and Riviera Maya.",
+    "Shop for Indian wedding outfits from India or get a Mexico planner introduction with optional family, guest, arrival, and sourcing support.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -68,8 +68,8 @@ export const metadata = {
     "return gifts from India to USA",
     "live video shopping India wedding",
     "Indian destination wedding planner Mexico",
-    "Cancun Indian wedding planning",
-    "Riviera Maya Indian wedding coordinator",
+    "Cancun Indian wedding planner introduction",
+    "Riviera Maya Indian wedding concierge",
     "CeremonyVerse",
   ],
   icons: {
@@ -79,9 +79,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Indian Wedding Shopping & Mexico Planning | CeremonyVerse",
+      "Indian Wedding Shopping & Mexico Concierge | CeremonyVerse",
     description:
-      "Shop for Indian wedding outfits from India or plan an Indian destination wedding in Cancun and Riviera Maya.",
+      "Shop for Indian wedding outfits from India or get a Mexico planner introduction with family-side support.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -220,8 +220,8 @@ export default function RootLayout({
         <AcquisitionAttribution />
         {/* Urgency announcement bar — fixed at very top */}
         <div style={{ background: "#1f1f1f", color: "#c5a059", textAlign: "center", padding: "10px 16px", fontSize: "0.78rem", fontWeight: 500, letterSpacing: "0.04em", position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
-          Planning a 2026–2027 wedding? Start India shopping or Mexico planning early &nbsp;·&nbsp;
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20discuss%20India%20shopping%20or%20Mexico%20wedding%20planning." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
+          Planning a 2026–2027 wedding? Start India shopping or your Mexico planner search early &nbsp;·&nbsp;
+          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20discuss%20India%20shopping%20or%20Mexico%20wedding%20concierge%20support." target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "underline", textUnderlineOffset: "3px" }}>Book a free consult →</a>
         </div>
 
         {/* Navigation — appears on ALL pages */}

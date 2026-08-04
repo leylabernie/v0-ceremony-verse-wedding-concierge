@@ -206,19 +206,20 @@ export default function ShopFromIndiaPage() {
             Download our curated bridal style guide with the latest Champagne & Gold styles.
           </p>
 
-          <form className="mt-6 flex flex-col md:flex-row gap-3 justify-center">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-4 py-3 rounded-lg text-black w-full md:w-80"
-            />
-            <button
-              type="submit"
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/free-guides/"
               className="bg-white text-[var(--cv-accent)] px-6 py-3 rounded-lg font-semibold"
             >
-              Get the Style Guide
-            </button>
-          </form>
+              View Free Guides
+            </a>
+            <a
+              href="/contact/?service=india"
+              className="border border-white px-6 py-3 rounded-lg font-semibold text-white"
+            >
+              Ask for a Personal Recommendation
+            </a>
+          </div>
         </div>
       </section>
 

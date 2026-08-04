@@ -179,6 +179,14 @@
   }
 }
 
+/* Dark sections inherit a readable foreground by default. The :where() wrapper
+   keeps specificity low so an intentional Tailwind color (gold, muted white,
+   or dark button text) still wins. */
+:where(.text-white) :is(h1, h2, h3, h4, h5, h6, p, li, span, label, a, div),
+:where(.text-\[\#f8f6f2\]) :is(h1, h2, h3, h4, h5, h6, p, li, span, label, a, div) {
+  color: inherit;
+}
+
 /* =========================
    HEADER
    ========================= */
@@ -339,4 +347,3 @@ a.fixed.bottom-6.right-6::after {
   font-size: 14px;
   color: white;
 }
-

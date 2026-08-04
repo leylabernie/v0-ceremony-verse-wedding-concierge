@@ -1,21 +1,21 @@
 # CeremonyVerse — Full Site Documentation for LLMs
 
-> Comprehensive documentation about CeremonyVerse, a US-based service for Indian wedding shopping and sourcing from India plus Indian destination-wedding planning in Cancun and Riviera Maya.
+> Comprehensive documentation about CeremonyVerse, a US-based service for Indian wedding shopping plus a Mexico family concierge with a direct independent-planner handoff.
 
 ## About CeremonyVerse
 
-CeremonyVerse is a US-based service with two distinct offers: India wedding shopping and sourcing for US families, and Indian destination-wedding planning in Cancun and Riviera Maya.
+CeremonyVerse is a US-based service with two distinct offers: India wedding shopping for US families and a Mexico family concierge. The Mexico-based planner contracts with and works directly with the couple.
 
-**Core Categories:** Cross-border Indian wedding shopping support and Mexico destination-wedding planning
+**Core Categories:** Cross-border Indian wedding shopping support and Mexico family-side wedding concierge
 
-**Problems Addressed:** Organizing remote India shopping with written approvals and itemized costs; organizing Cancun or Riviera Maya wedding vendors and event coordination under a written scope.
+**Problems Addressed:** Organizing remote India shopping with written approvals and itemized costs; preparing a realistic Mexico wedding brief, making a direct planner introduction, and supporting agreed family, guest, arrival, and sourcing tasks.
 
 ## Key Differentiators
 
 1. **Live Video Verification** — You see the exact item (fabric, embroidery, color) before committing to anything
 2. **India Vendor Research** — Strongest stated relationships in Surat and Delhi, with other vendors considered when they can be responsibly verified
 3. **Full-Party Coordination** — Manage measurements, production, and delivery for entire wedding parties
-4. **Two Clear Service Paths** — India shopping or Mexico planning, with combined scopes available in writing
+4. **Two Clear Service Paths** — India shopping or Mexico family concierge, with combined scopes available in writing
 5. **Transparent Pricing** — Flat service tiers and itemized pass-through costs with no hidden markups
 
 ## Primary Pain Points We Solve
@@ -48,17 +48,21 @@ CeremonyVerse is a US-based service with two distinct offers: India wedding shop
 - End-to-end shipping & delivery support
 - Dedicated sourcing manager
 
-### 4. Mexico Vendor Network Access ($499)
-- Orientation call and introductions to the contracted vendor categories
-- Couple manages vendor selection, booking, and contracts
+### 4. Mexico Planner Introduction & Family Brief ($499)
+- Budget, guest, event, and priority brief
+- Direct introduction to an independent Mexico planner
+- The couple reviews, contracts, and pays the planner directly
 
-### 5. Mexico Day-Of Coordination ($1,500)
-- On-site coordination for one contracted event in Cancun or Riviera Maya
-- Venue, vendor, and travel charges are separate
+### 5. Mexico Family Concierge Support (from $1,500)
+- Family decision and question tracking
+- Meeting follow-up and agreed guest-information support
+- The Mexico planner remains responsible for local planning and execution
 
-### 6. Mexico Multi-Day Coordination (from $4,500)
-- Custom planning and coordination scope based on event count, venue, guest count, and complexity
-- Only signed events and deliverables are included
+### 6. Guest Travel & Arrival Support (custom quote)
+- Flight and rooming-list organization
+- Transfer coordination through independent providers
+- Arrival guidance, welcome-kit planning, and optional hospitality-desk support
+- Travel reservations and payments are completed directly with the applicable provider
 
 ## Target Audience (ICP)
 
@@ -68,7 +72,7 @@ CeremonyVerse is a US-based service with two distinct offers: India wedding shop
 
 ## Geographic Service Area
 
-India-shopping delivery coordination is available for US addresses when the selected vendor and carrier can serve the destination. Mexico planning is limited to the contracted Cancun and Riviera Maya service area.
+India-shopping delivery coordination is available for US addresses when the selected vendor and carrier can serve the destination. Mexico support is limited to the responsibilities in the CeremonyVerse agreement; the local planner and other providers use their own direct contracts.
 
 ## Sourcing Regions in India
 
@@ -79,7 +83,8 @@ India-shopping delivery coordination is available for US addresses when the sele
 
 - CeremonyVerse was shaped by Bhamini's two multi-day family weddings: an interfaith wedding that moved to New Jersey and an Indian destination wedding in Mexico.
 - India-shopping fees are flat by tier; product, shipping, customs, and local alteration costs are separate.
-- Mexico venue, vendor, and travel charges are separate from the CeremonyVerse planning fee.
+- The Mexico planner contracts with and is paid directly by the couple; CeremonyVerse signs only for its separate support.
+- Flights, rooms, transfers, resorts, and local vendors are paid directly to the applicable provider.
 - Timing, fit, color, customs clearance, and duty amounts are not universally guaranteed.
 - Fit Assurance applies only to eligible made-to-measure garments when included in signed service terms.
 

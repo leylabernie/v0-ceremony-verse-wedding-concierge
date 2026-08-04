@@ -1,15 +1,15 @@
 # CeremonyVerse
 
-> CeremonyVerse is a US-based service with two distinct offers: Indian wedding shopping and sourcing for US families, and Indian destination-wedding planning in Cancun and Riviera Maya. Founded by Bhamini from the experience of coordinating two multi-day family weddings. Paid services use a written scope and itemized outside costs.
+> CeremonyVerse is a US-based service with two distinct offers: Indian wedding shopping for US families and a Mexico family concierge. For Mexico, CeremonyVerse prepares the brief and introduces an independent local planner who contracts directly with the couple. Paid services use a written scope and itemized outside costs.
 
 ## About
 
-CeremonyVerse organizes remote India shopping and Mexico destination-wedding planning. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and US delivery support. Mexico planning focuses on Cancun and Riviera Maya, from vendor-network access to custom multi-day coordination.
+CeremonyVerse organizes remote India shopping and Mexico family-side support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and US delivery support. Mexico support includes a direct planner handoff plus optional guest information, arrival, welcome-item, and India-sourcing help.
 
 - [About CeremonyVerse](https://www.ceremonyverse.com/about/): Founder story, mission, and how the concierge model works
 - [How It Works](https://www.ceremonyverse.com/how-it-works/): Step-by-step process from consultation to delivery
-- [Services Overview](https://www.ceremonyverse.com/services/): India shopping and Mexico wedding planning
-- [Pricing](https://www.ceremonyverse.com/pricing/): India tiers ($249, $799, $2,499) and Mexico tiers ($499, $1,500, $4,500+)
+- [Services Overview](https://www.ceremonyverse.com/services/): India shopping and Mexico family concierge
+- [Pricing](https://www.ceremonyverse.com/pricing/): India tiers ($249, $799, $2,499), planner introduction ($499), and family-concierge support from $1,500
 - [FAQ](https://www.ceremonyverse.com/faq/): 15+ questions on trust, sizing, pricing, shipping, and cultural traditions
 
 ## Core Services
@@ -19,7 +19,7 @@ CeremonyVerse organizes remote India shopping and Mexico destination-wedding pla
 - [Bridesmaid and Family Outfits](https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india/): Coordinated group sourcing
 - [Wedding Accessories and Ceremony Items](https://www.ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india/): Jewelry, gifts, welcome bags, and ceremony items
 - [Intercultural Wedding Outfit Sourcing](https://www.ceremonyverse.com/services/intercultural-indian-weddings/): Plain-language outfit-shopping support
-- [Mexico Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Cancun and Riviera Maya vendor access and coordination
+- [Mexico Wedding Concierge](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Direct local-planner handoff with optional family, guest, arrival, and sourcing support
 
 ## Geographic Service Pages
 
@@ -73,7 +73,8 @@ CeremonyVerse organizes remote India shopping and Mexico destination-wedding pla
 
 - CeremonyVerse was shaped by Bhamini's two multi-day family weddings: an interfaith wedding that moved to New Jersey and an Indian destination wedding in Mexico.
 - India-shopping fees are flat by tier; product, shipping, customs, and local alteration costs are separate.
-- Mexico venue, vendor, and travel charges are separate from the CeremonyVerse planning fee.
+- The Mexico planner contracts with and is paid directly by the couple; CeremonyVerse signs only for its separate family-side scope.
+- Flights, rooms, transfers, resorts, and local vendors are paid directly to the applicable provider.
 - Timing, fit, color, customs clearance, and duty amounts are not universally guaranteed.
 - Fit Assurance applies only to eligible made-to-measure garments when included in signed service terms.
 - Strongest stated India sourcing relationships are in Surat and Delhi; other locations depend on responsible vendor verification.

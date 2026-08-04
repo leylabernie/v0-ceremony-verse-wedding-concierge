@@ -10,9 +10,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "CeremonyVerse Pricing | India Sourcing & Mexico Planning",
+  title: "CeremonyVerse Pricing | India Sourcing & Mexico Concierge",
   description:
-    "Compare CeremonyVerse India sourcing fees and Mexico wedding-planning tiers, from vendor introductions to multi-day coordination.",
+    "Compare CeremonyVerse India sourcing fees and Mexico family-concierge support, including a direct planner handoff, guest organization, and arrival support.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Mexico wedding coordination pricing, NRI bridal concierge pricing",
 })
@@ -63,61 +63,61 @@ const tiers = [
       "Consolidated order and delivery support",
       "One primary CeremonyVerse contact",
     ],
-    excludes: ["Wedding planning or day-of coordination", "Product, shipping, or duty costs"],
+    excludes: ["Local wedding planning or on-site execution", "Product, shipping, or duty costs"],
   },
 ]
 
 const mexicoTiers = [
   {
-    name: "Vendor Network Access",
+    name: "Planner Introduction & Family Brief",
     price: "$499",
     numericPrice: 499,
-    bestFor: "Best for: couples who will manage vendors themselves",
-    description: "Introductions to the Mexico vendor network used to build CeremonyVerse's planning service.",
+    bestFor: "Best for: understanding what is realistic before booking",
+    description: "A written family brief and direct introduction to a Mexico-based planner who works and contracts with you.",
     includes: [
-      "Mexico planner introduction",
-      "DJ and entertainment contacts",
-      "Photography, decor, and beauty contacts",
-      "CeremonyVerse vendor-network orientation call",
+      "Budget and priorities conversation",
+      "Written guest, event, and budget brief",
+      "Direct Mexico planner introduction",
+      "Handoff call and clear role summary",
     ],
-    excludes: ["Vendor booking or contract management", "On-site coordination", "Vendor and venue charges"],
+    excludes: ["Planner, resort, vendor, travel, or transfer charges", "On-site wedding execution", "Bookings without written approval"],
   },
   {
-    name: "Day-Of Coordination",
-    price: "$1,500",
+    name: "Family Concierge Support",
+    price: "From $1,500",
     numericPrice: 1500,
-    bestFor: "Best for: one contracted event",
-    description: "On-site coordination for one event in Cancun or Riviera Maya under an agreed timeline.",
+    bestFor: "Best for: families who want one organized US-based contact",
+    description: "CeremonyVerse stays beside the family while the Mexico planner manages the local wedding work.",
     includes: [
-      "Pre-event handoff meeting",
-      "Review of the agreed event timeline",
-      "On-site coordination for one event",
-      "Communication with the contracted event vendors",
+      "Decision and question tracker",
+      "Meeting notes and follow-up reminders",
+      "Family and guest-information coordination",
+      "Coordination with the planner on agreed family tasks",
     ],
-    excludes: ["Multi-day planning", "Venue or vendor charges", "Uncontracted events"],
+    excludes: ["Resort negotiation or local event execution", "Authority to bind another provider", "Third-party charges"],
   },
   {
-    name: "Multi-Day Coordination",
-    price: "From $4,500",
-    numericPrice: 4500,
-    bestFor: "Best for: multi-day Indian destination weddings",
-    description: "A custom planning and on-site coordination scope based on event count, venue, guest count, and complexity.",
+    name: "Guest Travel & Arrival Support",
+    price: "Custom quote",
+    numericPrice: 750,
+    bestFor: "Best for: destination guest logistics and arrival experience",
+    description: "A custom family-support scope based on guest count, travel days, transfers, welcome items, and on-site needs.",
     includes: [
-      "Multi-event planning support",
-      "Vendor and timeline coordination",
-      "On-site support for the contracted events",
-      "Option to combine India outfit sourcing",
+      "Guest flight and rooming-list organization",
+      "Transfer coordination through independent providers",
+      "Arrival guidance and welcome-kit planning",
+      "Optional hospitality-desk support",
     ],
-    excludes: ["Venue, travel, or vendor charges", "Items outside the signed custom scope"],
+    excludes: ["Selling flights, rooms, or transfers", "Holding guest travel funds", "Provider charges and items outside the signed scope"],
   },
 ]
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Indian Wedding Sourcing Services",
   description:
-    "Flat-fee India shopping concierge tiers and Mexico Indian destination-wedding planning tiers for US families.",
+    "Flat-fee India shopping concierge tiers and Mexico family-concierge support for US families.",
   url: "/pricing/",
-  offers: [...tiers, ...mexicoTiers].map((tier) => ({
+  offers: [...tiers, ...mexicoTiers].filter((tier) => tier.price !== "Custom quote").map((tier) => ({
     name: tier.name,
     price: tier.numericPrice,
     description: tier.description,
@@ -150,7 +150,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "Mexico wedding planning is available through the separate $499, $1,500, and $4,500+ tiers shown on this page. India shopping tiers do not include wedding planning unless a combined written scope says otherwise.",
+      "No. The independent Mexico planner contracts with and is paid directly by the couple for resort negotiation, local vendors, timelines, and on-site execution. CeremonyVerse fees cover only the family brief, concierge, guest, arrival, or India-sourcing work listed in our separate agreement.",
   },
 ]
 
@@ -174,24 +174,24 @@ export default function PricingPage() {
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
             India sourcing uses flat service fees instead of a percentage of the outfit price. Mexico
-            planning uses separate tiers. Products, venues, vendors, travel, shipping, and customs are
+            concierge work uses a separate scope. Products, planners, venues, vendors, travel, shipping, and customs are
             itemized outside the applicable CeremonyVerse service fee.
           </p>
         </div>
       </section>
 
-      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
+      <section id="mexico-concierge" className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-              Mexico wedding planning
+              Mexico family concierge
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold !text-[#f8f6f2] sm:text-5xl">
-              Cancun and Riviera Maya planning tiers
+              Work directly with the planner; add only the support you need
             </h2>
             <p className="text-lg leading-8 text-white/75">
-              Choose vendor introductions, coordination for one event, or a custom multi-day scope.
-              Venue, vendor, and travel charges are separate.
+              The Mexico planner signs with and works directly with the couple. CeremonyVerse separately
+              supports the family brief, communication, guest details, and arrival experience.
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -214,7 +214,7 @@ export default function PricingPage() {
                   ))}
                 </ul>
                 <Link href="/contact/" className="inline-flex justify-center rounded-full bg-[#c5a059] px-6 py-3.5 text-sm font-semibold !text-[#1f1f1f]">
-                  Discuss Mexico Planning
+                  Discuss Mexico Support
                 </Link>
               </article>
             ))}
@@ -353,7 +353,7 @@ export default function PricingPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the free call</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
-            sourcing tier, Mexico planning tier, or combined scope fits. No payment is required for the consultation.
+            sourcing tier, Mexico planner handoff, or family-support scope fits. No payment is required for the consultation.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
             Book My Free Consultation

@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping and sourcing for US families, plus Indian destination-wedding planning in Cancun and Riviera Maya.",
+      "CeremonyVerse offers Indian wedding shopping for US families plus a Mexico family concierge with a direct independent-planner handoff and optional guest and arrival support.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -341,7 +341,7 @@ export function buildLocalBusinessSchema(): object {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Wedding Sourcing & Coordination Services",
+      name: "Wedding Sourcing & Family Concierge Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -380,9 +380,9 @@ export function buildLocalBusinessSchema(): object {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Mexico Vendor Network Access",
+            name: "Mexico Planner Introduction & Family Brief",
             description:
-              "Vetted planner, DJ, photographers, decorator, and beauty contacts for Cancun and Riviera Maya",
+              "A written family brief and direct introduction to an independent Mexico wedding planner",
           },
           price: "499",
           priceCurrency: "USD",
@@ -391,22 +391,11 @@ export function buildLocalBusinessSchema(): object {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Mexico Day-Of Coordination",
+            name: "Mexico Family Concierge Support",
             description:
-              "Single-event on-site coordination for Indian weddings in Mexico",
+              "Family-side decision, communication, guest-information, and arrival support while the Mexico planner works directly with the couple",
           },
           price: "1500",
-          priceCurrency: "USD",
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico 4-Day Full Coordination",
-            description:
-              "Full multi-day event coordination for Indian weddings in Cancun and Riviera Maya, like a 4-day event",
-          },
-          price: "4500",
           priceCurrency: "USD",
         },
       ],
@@ -428,7 +417,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers two services: Indian wedding shopping and sourcing for US families, and Indian destination-wedding planning in Cancun and Riviera Maya. Couples can hire either service or combine them under one written scope.",
+          text: "CeremonyVerse offers India wedding shopping for US families and a Mexico family concierge. For Mexico, CeremonyVerse prepares the brief and introduces an independent local planner who contracts with the couple directly; guest, arrival, and India-sourcing support use a separate CeremonyVerse scope.",
         },
       },
       {
@@ -452,7 +441,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico planning starts at $499 for Vendor Network Access, $1,500 for one-event coordination, and $4,500+ for multi-day coordination. A free 30-minute consultation is available.",
+          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. The Mexico planner introduction and family brief is $499, and family-concierge support starts at $1,500. A free 30-minute consultation is available.",
         },
       },
       {

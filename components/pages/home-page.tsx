@@ -18,9 +18,9 @@ const serviceGroups = [
       "Bridal jewelry, jutties, gifts, welcome-bag items, and ceremony supplies sourced only when the requested item and vendor can be responsibly verified.",
   },
   {
-    title: "Mexico Wedding Planning",
+    title: "Mexico Wedding Concierge",
     description:
-      "Indian destination-wedding planning and coordination in Cancun and Riviera Maya, from vetted vendor introductions to multi-day on-site support.",
+      "A clear family brief, a direct introduction to a Mexico-based planner, and optional guest, arrival, and India-sourcing support.",
   },
 ]
 
@@ -90,19 +90,19 @@ const pricingTiers = [
 
 const mexicoPlanningTiers = [
   {
-    name: "Vendor Network Access",
+    name: "Planner Introduction & Family Brief",
     price: "$499",
-    description: "Introductions to CeremonyVerse's Mexico planner, DJ, photography, decor, and beauty network.",
+    description: "We organize your priorities and introduce a Mexico planner who works and contracts with you directly.",
   },
   {
-    name: "Day-Of Coordination",
-    price: "$1,500",
-    description: "On-site coordination for one wedding event in Cancun or Riviera Maya.",
+    name: "Family Concierge Support",
+    price: "From $1,500",
+    description: "CeremonyVerse stays beside the family to track decisions, communication, and agreed guest details.",
   },
   {
-    name: "Multi-Day Coordination",
-    price: "From $4,500",
-    description: "Planning and on-site coordination for a multi-day Indian destination wedding.",
+    name: "Guest Travel & Arrival Support",
+    price: "Custom quote",
+    description: "Flight lists, rooming details, transfer coordination through providers, arrival support, and welcome kits.",
   },
 ]
 
@@ -110,7 +110,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes, for Indian destination weddings in Cancun and Riviera Maya. CeremonyVerse also offers a separate India shopping and sourcing service for outfits, jewelry, gifts, and ceremony items. We define which service you are hiring in writing.",
+      "For Mexico weddings, CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts with and works directly with the couple. CeremonyVerse can remain the family-side concierge and separately support guest information, arrival details, welcome items, and India sourcing under a written scope.",
   },
   {
     question: "Will I see an item before I buy it?",
@@ -146,15 +146,15 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              India shopping concierge · Mexico wedding planning
+              India shopping concierge · Mexico wedding concierge
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Shop India. Plan Mexico. One trusted US-based partner.
+              Shop India. Navigate Mexico. One family-side partner.
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
               CeremonyVerse helps US families source wedding outfits and essentials from India—and
-              plan Indian destination weddings in Cancun and Riviera Maya. Each service has a clear
-              scope, price, and process.
+              connects Mexico couples with a local planner who works with them directly. We can stay
+              beside the family for guest organization, arrival support, and sourcing.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -182,7 +182,7 @@ export function HomePage() {
           <p>US phone, email & accountability</p>
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
-          <p>Mexico vendor & on-site support</p>
+          <p>Direct Mexico planner handoff</p>
         </div>
       </section>
 
@@ -241,14 +241,14 @@ export function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Mexico wedding planning
+              Mexico wedding concierge
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Choose introductions, one-event help, or multi-day coordination
+              Start with the planner, then add only the family support you need
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              These planning tiers are for Indian weddings in Cancun and Riviera Maya. Venue and vendor
-              charges are separate from CeremonyVerse&apos;s planning fee.
+              The Mexico planner contracts and works directly with you. CeremonyVerse has a separate
+              scope for the family brief, guest support, arrival details, and India sourcing.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -261,7 +261,7 @@ export function HomePage() {
                   href="/indian-wedding-coordination-mexico/"
                   className="font-semibold text-[#7a6841] underline underline-offset-4"
                 >
-                  See Mexico planning details
+                  See Mexico concierge details
                 </Link>
               </article>
             ))}
@@ -340,8 +340,8 @@ export function HomePage() {
             </p>
             <p className="leading-7 text-[#4d403a]">
               CeremonyVerse turns those lessons into two defined services: India shopping and sourcing
-              for US families, plus Indian destination-wedding planning in Cancun and Riviera Maya.
-              The contract and quote identify exactly which service and deliverables apply.
+              for US families, plus a family-side Mexico concierge that introduces the local planner and
+              can organize guest and arrival details. Each provider&apos;s role is confirmed in writing.
             </p>
             <Link href="/about/" className="mt-7 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">
               Read Bhamini&apos;s story
@@ -357,13 +357,14 @@ export function HomePage() {
                   <li>Coordinate shopping calls and approvals</li>
                   <li>Organize measurements and order details</li>
                   <li>Support inspection, shipping, and tracking</li>
-                  <li>Plan and coordinate Mexico destination weddings</li>
+                  <li>Prepare the Mexico brief and introduce the local planner</li>
+                  <li>Organize agreed guest, arrival, and family details</li>
                 </ul>
               </div>
               <div>
                 <p className="mb-3 font-semibold text-[#8b3f3f]">We do not</p>
                 <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
-                  <li>Offer local wedding planning outside our Mexico scope</li>
+                  <li>Act as the Mexico planner, resort, travel agency, or transfer company</li>
                   <li>Sell unauthorized designer replicas</li>
                   <li>Promise identical handmade results</li>
                   <li>Guarantee customs timing or duty amounts</li>
@@ -407,8 +408,8 @@ export function HomePage() {
             Tell us which path you need—or if you need both
           </h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
-            In 30 minutes, we&apos;ll identify the right India shopping tier, Mexico planning tier, or a
-            combined scope for your destination wedding.
+            In 30 minutes, we&apos;ll separate the event budget from rooms and travel, identify the right
+            Mexico planner handoff, and discuss only the extra support your family actually needs.
           </p>
           <Link
             href="/contact/"

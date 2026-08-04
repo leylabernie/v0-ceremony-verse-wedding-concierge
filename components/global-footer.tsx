@@ -7,7 +7,7 @@ import Link from "next/link";
  * client-side routing pattern and is no longer imported.
  */
 const serviceLinks = [
-  { label: "Mexico Wedding Planning", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Mexico Wedding Concierge", href: "/indian-wedding-coordination-mexico/" },
   { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
   { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
@@ -67,8 +67,8 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              India wedding shopping for US families and Mexico planning in
-              Cancun and Riviera Maya. Based in Philadelphia.
+              India wedding shopping for US families and a Mexico planner handoff
+              with optional family-side support. Based in Philadelphia.
             </p>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
@@ -153,8 +153,8 @@ export function GlobalFooter() {
       <div style={{ borderTop: "1px solid #e6dfd5" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
           <p style={{ fontSize: "10px", color: "#b0a898", lineHeight: 1.8, textAlign: "center" }}>
-            CeremonyVerse — India Wedding Shopping &amp; Mexico Planning&nbsp;·&nbsp;
-            Indian Destination Wedding Planner Cancun&nbsp;·&nbsp; Riviera Maya Indian Wedding Coordination&nbsp;·&nbsp;
+            CeremonyVerse — India Wedding Shopping &amp; Mexico Concierge&nbsp;·&nbsp;
+            Indian Destination Wedding Planner Introduction Cancun&nbsp;·&nbsp; Riviera Maya Family Wedding Support&nbsp;·&nbsp;
             Buy Bridal Lehenga from India USA&nbsp;·&nbsp; NRI Bridal Lehenga&nbsp;·&nbsp; Custom Sherwani from India USA&nbsp;·&nbsp;
             Bridesmaid Outfits from India&nbsp;·&nbsp; Indian Wedding Jewelry USA&nbsp;·&nbsp;
             Welcome Bags &amp; Gifts&nbsp;·&nbsp; Ceremonial Items&nbsp;·&nbsp;
