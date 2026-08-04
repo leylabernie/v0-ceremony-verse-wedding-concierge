@@ -169,7 +169,7 @@ export default function PricingPage() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
             Flat service fees
           </p>
-          <h1 className="mb-6 font-serif text-5xl font-semibold sm:text-6xl">
+          <h1 className="mb-6 font-serif text-5xl font-semibold !text-white sm:text-6xl">
             Pay for the level of help you need
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
@@ -186,7 +186,7 @@ export default function PricingPage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
               Mexico wedding planning
             </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+            <h2 className="mb-5 font-serif text-4xl font-semibold !text-[#f8f6f2] sm:text-5xl">
               Cancun and Riviera Maya planning tiers
             </h2>
             <p className="text-lg leading-8 text-white/75">
@@ -317,14 +317,14 @@ export default function PricingPage() {
           </div>
 
           <aside className="rounded-2xl bg-[#1f1f1f] p-8 text-white sm:p-10">
-            <h2 className="mb-5 font-serif text-3xl font-semibold">Before any paid work starts</h2>
+            <h2 className="mb-5 font-serif text-3xl font-semibold !text-[#f8f6f2]">Before any paid work starts</h2>
             <ul className="space-y-5 text-sm leading-6 text-white/80">
-              <li>You receive a written description of the selected tier or custom scope.</li>
-              <li>You see which costs are fixed, estimated, or dependent on later selection.</li>
-              <li>You review payment milestones, cancellation terms, and covered remedies.</li>
-              <li>You can ask questions before signing or paying.</li>
+              <li className="!text-white/80">You receive a written description of the selected tier or custom scope.</li>
+              <li className="!text-white/80">You see which costs are fixed, estimated, or dependent on later selection.</li>
+              <li className="!text-white/80">You review payment milestones, cancellation terms, and covered remedies.</li>
+              <li className="!text-white/80">You can ask questions before signing or paying.</li>
             </ul>
-            <Link href="/terms/" className="mt-8 inline-flex font-semibold text-[#e8cf9d] underline underline-offset-4">
+            <Link href="/terms/" className="mt-8 inline-flex font-semibold !text-[#e8cf9d] underline underline-offset-4">
               Review website terms
             </Link>
           </aside>
@@ -350,7 +350,7 @@ export default function PricingPage() {
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Start with the free call</h2>
+          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the free call</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
             sourcing tier, Mexico planning tier, or combined scope fits. No payment is required for the consultation.
