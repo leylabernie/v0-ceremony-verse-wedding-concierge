@@ -69,7 +69,7 @@ export default function WeddingExperiencePage() {
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
             These are Bhamini&apos;s family weddings—not anonymous paid-client testimonials. They explain
-            the firsthand experience behind CeremonyVerse&apos;s India shopping and Mexico planning services.
+            the firsthand experience behind CeremonyVerse&apos;s India shopping and Mexico family-concierge services.
           </p>
         </div>
       </section>
@@ -128,16 +128,16 @@ export default function WeddingExperiencePage() {
               </Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
-              <h3 className="mb-4 font-serif text-3xl font-semibold">Mexico Wedding Planning</h3>
+              <h3 className="mb-4 font-serif text-3xl font-semibold">Mexico Planner Handoff &amp; Family Concierge</h3>
               <p className="mb-7 leading-7 text-[#4d403a]">
-                Vendor network access, one-event coordination, or custom multi-day planning for Indian
-                destination weddings in Cancun and Riviera Maya.
+                A direct introduction to a Mexico-based planner, plus optional family, guest, arrival,
+                welcome-item, and India-sourcing support under a separate CeremonyVerse scope.
               </p>
               <Link
                 href="/indian-wedding-coordination-mexico/"
                 className="font-semibold text-[#7a6841] underline underline-offset-4"
               >
-                Review Mexico planning
+                Review Mexico concierge
               </Link>
             </article>
           </div>

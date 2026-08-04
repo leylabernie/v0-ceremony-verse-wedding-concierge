@@ -13,7 +13,7 @@ import { trackLead } from "@/lib/analytics"
 const navItems: { label: string; href: string }[] = [
   { label: "Services", href: "/services/" },
   { label: "India Shopping", href: "/shop-from-india/" },
-  { label: "Mexico Planning", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Mexico Concierge", href: "/indian-wedding-coordination-mexico/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },
@@ -54,7 +54,7 @@ export function Navigation() {
                 CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
-                India Shopping · Mexico Planning
+                India Shopping · Mexico Concierge
               </span>
             </Link>
           </div>

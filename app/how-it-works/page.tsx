@@ -56,7 +56,7 @@ const steps = [
     number: "01",
     title: "Free Consultation (Always Free)",
     description:
-      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, Mexico planning, or a combined scope fits the request and explain the main timing and cost variables.",
+      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, a Mexico planner introduction, family-concierge support, or a combined scope fits the request.",
   },
   {
     number: "02",
@@ -129,19 +129,19 @@ const pricingTiers = [
 const faqs = [
   {
     q: "How long does the whole process take?",
-    a: "From consultation to delivery, the typical timeline is 8–12 weeks. Rush orders (6 weeks) are sometimes possible depending on the complexity. We recommend starting 4–6 months before your first ceremony to keep things relaxed.",
+    a: "Timing depends on the selected item, vendor, customization, approvals, and shipping conditions. Your written scope includes the available vendor estimate. Starting 4–6 months before your first ceremony gives more room for production, delivery, and local alterations if needed.",
   },
   {
     q: "Can I see the outfit before paying?",
-    a: "Yes. During your live video shopping session, you see the exact outfit — fabric, color, embroidery — in real time. You approve the specific piece before any payment is collected. After stitching, we do a final video inspection with you before shipping.",
+    a: "Eligible sourcing tiers include live video shopping or a documented review before you approve an item purchase. CeremonyVerse service-fee payment milestones are separate and are shown in your written terms.",
   },
   {
     q: "What if something is wrong when it arrives?",
-    a: "We handle it. If an outfit doesn't match what you approved — in color, fit, or quality — we work with our team in India to fix or replace it. Our quality inspection before shipping is designed to catch issues early, but if anything slips through, we make it right.",
+    a: "Document the concern promptly with photos. We compare it with the written approval record and follow the remedy, return, or alteration provisions in your signed terms. Remote custom clothing does not carry a universal fit or color guarantee.",
   },
   {
-    q: "Do you also coordinate weddings in Mexico?",
-    a: "Yes. In addition to outfit sourcing from India, we coordinate Indian destination weddings in Cancun and Riviera Maya, Mexico. I coordinated my own son's 4-day Indian wedding there and now connect couples with the same vetted vendors — planner, DJ, photographers, decorator, and beauty. Many couples combine both services: outfits sourced from India plus on-site Mexico coordination. Learn more about our Mexico wedding coordination.",
+    q: "How does the Mexico service work?",
+    a: "CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts with and works directly with the couple. CeremonyVerse can separately support family communication, guest information, arrival details, welcome items, and India sourcing under its own agreement.",
   },
   {
     q: "What if I only need one or two outfits, not a full wedding party?",
@@ -362,7 +362,7 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             Not sure which service fits? Book a free 30-minute call and we&apos;ll outline the available
-            India-shopping or Mexico-planning path for your dates, scope, and budget.
+            India-shopping, Mexico-planner handoff, or family-concierge path for your dates, scope, and budget.
           </p>
           <a
             href="/contact/"

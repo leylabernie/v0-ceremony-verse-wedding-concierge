@@ -36,8 +36,8 @@ const getServiceInterestFromLocation = () => {
   const requestedService = new URLSearchParams(window.location.search).get("service")
   const serviceByQuery: Record<string, FormData["serviceInterest"]> = {
     india: "India shopping",
-    mexico: "Mexico planning",
-    both: "India shopping + Mexico planning",
+    mexico: "Mexico wedding concierge",
+    both: "India shopping + Mexico wedding concierge",
   }
 
   return requestedService ? serviceByQuery[requestedService] || "" : ""
@@ -213,9 +213,9 @@ export function ContactPage() {
             Get Your Free 30-Minute Wedding Plan
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Tell us whether you need India shopping, Mexico planning, or both. We&apos;ll review the
-            date, location, scope, and budget, then recommend a practical next step—with no contract
-            or payment required for the consultation.
+            Tell us whether you need India shopping, a Mexico planner introduction, family-side guest
+            support, or a combination. We&apos;ll review the date, guest count, and what your budget must
+            cover, then recommend a practical next step—with no payment required for the consultation.
           </p>
 
           {/* Quick contact strip */}
@@ -355,8 +355,8 @@ export function ContactPage() {
                   >
                     <option value="">Select a service</option>
                     <option value="India shopping">India wedding shopping</option>
-                    <option value="Mexico planning">Mexico wedding planning</option>
-                    <option value="India shopping + Mexico planning">Both services</option>
+                    <option value="Mexico wedding concierge">Mexico planner introduction / family concierge</option>
+                    <option value="India shopping + Mexico wedding concierge">India shopping + Mexico concierge</option>
                     <option value="Not sure">Not sure yet</option>
                   </select>
                 </div>

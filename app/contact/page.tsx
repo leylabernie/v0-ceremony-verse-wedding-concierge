@@ -3,15 +3,15 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/contact/",
-  title: "Book a Free Indian Wedding Sourcing Consultation",
+  title: "Book a Free CeremonyVerse Wedding Consultation",
   description:
-    "Book a free 30-minute consultation with CeremonyVerse. Tell us about your wedding, your vision, and your timeline — we'll recommend exactly what level of sourcing support you need.",
+    "Book a free 30-minute CeremonyVerse consultation for India wedding sourcing or a Mexico planner introduction and family-concierge support.",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Free Wedding Sourcing Consultation",
+  name: "Free Wedding Sourcing or Mexico Concierge Consultation",
   description:
-    "Free 30-minute consultation to review your wedding vision, timeline, and budget, and recommend the right level of sourcing support.",
+    "Free 30-minute consultation to review the wedding vision, guest count, timeline, and budget, then recommend India sourcing or a Mexico planner handoff and family-support scope.",
   url: "/contact/",
 });
 

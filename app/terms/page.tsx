@@ -67,10 +67,11 @@ export default function TermsPage() {
             we ship, but we do not own or operate their workshops.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            CeremonyVerse also offers destination-wedding planning and coordination in Cancun and
-            Riviera Maya. The signed scope identifies the covered events and deliverables. Resorts,
-            venues, vendors, officiants, travel providers, and carriers remain independent third
-            parties with their own contracts, charges, availability, and policies.
+            For Mexico destination weddings, CeremonyVerse can prepare a family brief, introduce an
+            independent Mexico-based wedding planner, and provide separately contracted family-concierge,
+            guest-information, arrival, welcome-item, or India-sourcing support. The Mexico planner
+            contracts with and is paid directly by the couple for resort negotiation, local vendors,
+            timelines, and on-site execution.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -78,8 +79,8 @@ export default function TermsPage() {
           </h2>
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico planning
-            tiers are listed separately on the pricing page and may require a custom scope. The
+            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico concierge
+            services are listed separately on the pricing page and may require a custom scope. The
             30-minute initial consultation is free. Service tier fees become non-refundable once work begins or a vendor
             introduction, sourcing call, or vendor list has been delivered, because that work has
             already been performed by our team.
@@ -92,7 +93,24 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            3. Shipping, Customs, and Duties
+            3. Independent Mexico, Travel, and Transfer Providers
+          </h2>
+          <p>
+            The Mexico planner, resort, venues, vendors, travel companies, airlines, hotels, transfer
+            companies, and carriers are independent providers. They control their own proposals,
+            contracts, availability, performance, cancellations, refunds, and charges. CeremonyVerse
+            does not bind another provider, and another provider cannot bind CeremonyVerse.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            Unless a later written agreement expressly changes the process, the couple or guest pays
+            each provider directly. CeremonyVerse does not collect money for flights, rooms, transfers,
+            resorts, or local Mexico vendors. Travel reservations and transfer bookings are completed
+            directly with the applicable provider, and no booking or deposit is authorized without the
+            client&apos;s written approval. Any referral compensation, if applicable, will be disclosed.
+          </p>
+
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
+            4. Shipping, Customs, and Duties
           </h2>
           <p>
             Approved items may be shipped from India to a US address using an available international
@@ -112,7 +130,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            4. Refunds and Returns
+            5. Refunds and Returns
           </h2>
           <p>
             Custom-tailored outfits (lehengas, sherwanis, blouses, suits made to your measurements)
@@ -135,7 +153,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            5. Sizing and Measurements
+            6. Sizing and Measurements
           </h2>
           <p>
             For custom-tailored items, we conduct a three-way video measurement call with an expert
@@ -149,7 +167,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            6. Intellectual Property
+            7. Intellectual Property
           </h2>
           <p>
             All content on this website — including text, images, design, logos, and the
@@ -161,7 +179,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            7. Limitation of Liability
+            8. Limitation of Liability
           </h2>
           <p>
             CeremonyVerse is not liable for indirect, incidental, or consequential damages arising
@@ -173,7 +191,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            8. Governing Law
+            9. Governing Law
           </h2>
           <p>
             These terms are governed by the laws of the Commonwealth of Pennsylvania and the
@@ -186,7 +204,7 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            9. Contact
+            10. Contact
           </h2>
           <p>
             Questions about these terms? Contact us anytime:
