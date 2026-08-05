@@ -60,6 +60,24 @@
   --input: var(--cv-border);
   --ring: rgba(199, 178, 138, 0.35);
   --radius: 1rem;
+
+  /* Fixed header geometry. These values change together at breakpoints so
+     the announcement, navigation, and page spacer can never overlap. */
+  --cv-announcement-height: 56px;
+  --cv-navigation-height: 80px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --cv-announcement-height: 44px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --cv-announcement-height: 40px;
+    --cv-navigation-height: 96px;
+  }
 }
 
 @theme inline {
@@ -184,7 +202,7 @@
    Mexico packages are rendered. */
 .cv-package-title {
   font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(1.875rem, 2.25vw, 2.125rem);
+  font-size: clamp(2rem, 2.5vw, 2.25rem);
   font-weight: 500;
   line-height: 1.08;
   letter-spacing: 0.025em;
@@ -203,6 +221,52 @@
 /* =========================
    HEADER
    ========================= */
+
+.cv-announcement-bar {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: var(--cv-announcement-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
+  padding: 6px 14px;
+  background: #1f1f1f;
+  color: #c5a059;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.035em;
+}
+
+.cv-announcement-bar :is(span, a) {
+  color: inherit;
+  font-size: inherit;
+}
+
+.cv-announcement-bar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+.cv-site-header {
+  top: var(--cv-announcement-height);
+}
+
+.cv-navigation-row {
+  height: var(--cv-navigation-height);
+}
+
+.cv-header-spacer {
+  height: calc(var(--cv-announcement-height) + var(--cv-navigation-height));
+}
 
 .glass-header {
   background: rgba(255, 255, 255, 0.88);
@@ -335,28 +399,4 @@
   width: 12px;
   height: 1px;
   background: var(--cv-accent);
-}
-
-/* FIX floating WhatsApp button */
-a.fixed.bottom-6.right-6 {
-  background-color: #1f1f1f !important;
-  padding: 12px 18px !important;
-  font-weight: 600 !important;
-}
-
-/* Optional: update text look */
-a.fixed.bottom-6.right-6 {
-  font-size: 14px !important;
-}
-
-/* Replace floating WhatsApp button text */
-a.fixed.bottom-6.right-6 {
-  font-size: 0 !important;
-  position: relative;
-}
-
-a.fixed.bottom-6.right-6::after {
-  content: "Message on WhatsApp";
-  font-size: 14px;
-  color: white;
 }

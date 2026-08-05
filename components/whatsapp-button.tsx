@@ -12,13 +12,13 @@ export default function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
-    <div className="fixed bottom-20 right-4 z-50 md:bottom-6 md:right-6">
+    <div className="fixed bottom-6 right-6 z-50 hidden md:block">
       <Link
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackLead("whatsapp", "floating-button")}
-        className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-all duration-300"
+        className="flex items-center justify-center rounded-full bg-green-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-700 focus-visible:ring-offset-2"
         aria-label="Chat on WhatsApp"
       >
         {/* Inline WhatsApp SVG */}

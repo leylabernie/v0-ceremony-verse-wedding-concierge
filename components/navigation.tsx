@@ -40,27 +40,27 @@ export function Navigation() {
   }
 
   return (
-    <header className="fixed left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold" style={{ top: "40px" }}>
-      <nav className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-24">
+    <header className="cv-site-header fixed left-0 right-0 z-50 border-b-2 border-brushed-gold bg-muted-rose/95 backdrop-blur-md">
+      <nav className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 2xl:px-10" aria-label="Main navigation">
+        <div className="cv-navigation-row flex items-center justify-between gap-3">
           {/* Logo - Far Left with Two-Tone Styling */}
-          <div className="flex-shrink-0">
+          <div className="min-w-0 flex-shrink-0">
             <Link
               href="/"
               className="flex flex-col items-start group"
               onClick={handleLinkClick}
             >
-              <span className="text-2xl sm:text-3xl uppercase tracking-[0.2em] font-semibold text-[#1f1f1f]">
+              <span className="whitespace-nowrap text-[1.15rem] font-semibold uppercase tracking-[0.14em] text-[#1f1f1f] sm:text-2xl sm:tracking-[0.18em] lg:text-3xl lg:tracking-[0.2em]">
                 CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
+              <span className="mt-0.5 whitespace-nowrap text-[8px] uppercase tracking-[0.12em] text-[#5e4a40] sm:text-[9px] sm:tracking-[0.16em] lg:text-[10px] lg:tracking-[0.2em]">
                 India Shopping · Mexico Concierge
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation - Center, vertically aligned */}
-          <div className="hidden xl:flex items-center justify-center flex-1 px-5">
+          <div className="hidden min-w-0 flex-1 items-center justify-center px-3 2xl:flex">
             <div className="flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
@@ -81,7 +81,7 @@ export function Navigation() {
           </div>
 
           {/* CTA Buttons - Far Right */}
-          <div className="hidden xl:flex flex-shrink-0 items-center gap-3">
+          <div className="hidden flex-shrink-0 items-center gap-3 2xl:flex">
             <a
               href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
               target="_blank"
@@ -99,7 +99,7 @@ export function Navigation() {
             </a>
             <Link
               href="/contact/"
-              className="inline-block px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
+              className="inline-block whitespace-nowrap rounded-full border border-midnight-navy bg-transparent px-7 py-3 text-base font-bold text-midnight-navy
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
@@ -109,7 +109,7 @@ export function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="xl:hidden p-2 text-midnight-navy hover:text-brushed-gold transition-colors"
+            className="flex-shrink-0 p-2 text-midnight-navy transition-colors hover:text-brushed-gold 2xl:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -120,7 +120,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="xl:hidden py-6 border-t border-brushed-gold/30 animate-fade-in">
+          <div className="max-h-[calc(100vh-var(--cv-announcement-height)-var(--cv-navigation-height))] overflow-y-auto border-t border-brushed-gold/30 py-5 animate-fade-in 2xl:hidden">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
