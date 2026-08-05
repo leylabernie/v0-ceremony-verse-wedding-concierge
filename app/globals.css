@@ -141,7 +141,7 @@
     background-color: var(--cv-bg);
     color: var(--cv-foreground);
     font-family: var(--font-cormorant), Georgia, serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.7;
   }
 
@@ -187,7 +187,7 @@
 
   /* Consistent paragraph sizing across ALL pages */
   p {
-    font-size: 1.125rem;
+    font-size: 1.1875rem;
     line-height: 1.8;
     color: var(--cv-muted);
   }
