@@ -18,10 +18,34 @@ const serviceGroups = [
     description:
       "Bridal jewelry, jutties, gifts, welcome-bag items, and ceremony supplies sourced only when the requested item and vendor can be responsibly verified.",
   },
+]
+
+const servicePillars = [
   {
-    title: "Mexico Wedding Concierge",
+    label: "India shopping & sourcing",
+    title: "Wedding wardrobes and essentials, organized remotely",
     description:
-      "Full, partial, and day-of Mexico wedding planning with optional family concierge, guest, arrival, and India-sourcing support.",
+      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process—without requiring your family to travel to India.",
+    features: [
+      "Bride, groom, wedding-party, and family outfits",
+      "Jewelry, gifts, welcome-bag items, and ceremony essentials",
+      "Measurements, written approvals, inspection, and shipping support",
+    ],
+    href: "/shop-from-india/",
+    cta: "Explore India Shopping",
+  },
+  {
+    label: "Mexico wedding planning",
+    title: "Planning, on-site execution, and family support",
+    description:
+      "Plan the destination celebration and coordinate the family experience through a private scope built around your resort, events, guest count, and priorities.",
+    features: [
+      "Full, partial, and day-of planning options",
+      "Multi-day timelines and on-site event management",
+      "Optional family concierge, guest, and arrival support",
+    ],
+    href: "/indian-wedding-coordination-mexico/",
+    cta: "Explore Mexico Planning",
   },
 ]
 
@@ -144,7 +168,7 @@ export function HomePage() {
                 href="/contact/"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Get My Free Outfit Plan
+                Book a Free Consultation
               </Link>
               <Link
                 href="/how-it-works/"
@@ -169,6 +193,73 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              One company · Two coordinated services
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Plan Mexico and shop India without managing two disconnected teams
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Choose either service independently, or combine them in one clearly defined proposal when your family needs both.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            {servicePillars.map((service) => (
+              <article key={service.label} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-8 sm:p-10">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">
+                  {service.label}
+                </p>
+                <h3 className="mb-4 font-serif text-3xl font-semibold">{service.title}</h3>
+                <p className="mb-6 leading-7 text-[#4d403a]">{service.description}</p>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex gap-3">
+                      <span aria-hidden="true" className="text-[#7a6841]">✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={service.href}
+                  className="inline-flex items-center justify-center self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white"
+                >
+                  {service.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+
+          <aside className="mt-8 rounded-2xl bg-[#1f1f1f] p-8 text-white sm:p-10">
+            <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
+              <div className="max-w-4xl">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">
+                  Why Bhamini built CeremonyVerse
+                </p>
+                <h3 className="mb-4 font-serif text-3xl font-semibold !text-white sm:text-4xl">
+                  Firsthand family wedding experience, explained honestly
+                </h3>
+                <p className="leading-7 !text-white/75">
+                  Bhamini organized outfits and ceremony details for two multi-day weddings in her own family,
+                  including an interfaith celebration in New Jersey and a destination wedding in Mexico. Those
+                  were family experiences—not invented client case studies—and every paid responsibility is defined
+                  in writing before work begins.
+                </p>
+              </div>
+              <Link
+                href="/about/"
+                className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
+              >
+                Read Bhamini&apos;s Story
+              </Link>
+            </div>
+          </aside>
+        </div>
+      </section>
+
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -183,7 +274,7 @@ export function HomePage() {
               point of contact to organize decisions, approvals, measurements, and shipping.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-3">
             {serviceGroups.map((service) => (
               <article key={service.title} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
                 <h3 className="mb-4 font-serif text-2xl font-semibold">{service.title}</h3>
@@ -310,33 +401,24 @@ export function HomePage() {
       </section>
 
       <section className="bg-white px-6 py-20 sm:py-28">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
-          <div>
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-10 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Why Bhamini built CeremonyVerse
+              Clear expectations
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Built from family wedding experience—not invented case studies
+              Boundaries that protect your family
             </h2>
-            <p className="mb-5 text-lg leading-8 text-[#4d403a]">
-              Bhamini organized Indian outfits and ceremony details for two multi-day weddings in her
-              own family, including an interfaith celebration in New Jersey and a destination wedding
-              in Mexico. Those were family experiences, not paid client engagements.
+            <p className="mx-auto max-w-3xl text-lg leading-8 text-[#4d403a]">
+              You will know what CeremonyVerse is responsible for, what remains with an independent provider,
+              and what no remote service can responsibly promise.
             </p>
-            <p className="leading-7 text-[#4d403a]">
-              CeremonyVerse turns those lessons into two defined services: India shopping and sourcing
-              for US families, plus Mexico wedding planning and family concierge delivered with qualified
-              local planning professionals. Every responsibility is confirmed in the private proposal.
-            </p>
-            <Link href="/about/" className="mt-7 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">
-              Read Bhamini&apos;s story
-            </Link>
           </div>
           <div className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
-            <h3 className="mb-6 font-serif text-2xl font-semibold">Two services with clear boundaries</h3>
+            <h3 className="mb-6 font-serif text-2xl font-semibold">Our scope, stated plainly</h3>
             <div className="grid gap-7 sm:grid-cols-2">
               <div>
-                <p className="mb-3 font-semibold text-[#365c45]">We do</p>
+                <p className="mb-3 font-semibold text-[#7a6841]">What we do</p>
                 <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
                   <li>Curate and source requested wedding items</li>
                   <li>Coordinate shopping calls and approvals</li>
@@ -347,7 +429,7 @@ export function HomePage() {
                 </ul>
               </div>
               <div>
-                <p className="mb-3 font-semibold text-[#8b3f3f]">We do not</p>
+                <p className="mb-3 font-semibold text-[#7a6841]">What remains outside our scope</p>
                 <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
                   <li>Act as the resort, airline, travel agency, or transfer company</li>
                   <li>Sell unauthorized designer replicas</li>
