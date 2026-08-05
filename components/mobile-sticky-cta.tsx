@@ -13,13 +13,12 @@ export default function MobileStickyCTA() {
         zIndex: 40,
         background: "var(--cv-accent)",
         padding: "12px 16px",
-        display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
         gap: "12px",
         boxShadow: "0 -2px 12px rgba(0,0,0,0.12)",
       }}
-      className="md:hidden"
+      className="flex md:hidden"
     >
       <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
         Get a free 30-minute outfit plan
