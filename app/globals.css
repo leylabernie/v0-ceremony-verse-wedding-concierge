@@ -197,6 +197,19 @@
   }
 }
 
+/* Mexico package names use the same Cormorant display family as the site's
+   luxury section headers, at a card-appropriate scale. Keeping this shared
+   class prevents the four package views from drifting apart again. */
+.cv-package-title {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.875rem, 2.1vw, 2.125rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0.025em;
+  text-wrap: balance;
+  text-rendering: optimizeLegibility;
+}
+
 /* Dark sections inherit a readable foreground by default. The :where() wrapper
    keeps specificity low so an intentional Tailwind color (gold, muted white,
    or dark button text) still wins. */
