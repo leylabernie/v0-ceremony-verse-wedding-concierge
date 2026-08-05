@@ -197,17 +197,14 @@
   }
 }
 
-/* Mexico package names use the same Cormorant display family as the site's
-   luxury section headers, at a card-appropriate scale. Keeping this shared
-   class prevents the four package views from drifting apart again. */
-.cv-package-title,
-article.flex.flex-col.rounded-2xl.border.border-\[\#e6dfd5\].bg-\[\#faf8f5\].p-8 > h3,
-article.flex.flex-col.rounded-2xl.border.border-white\/15.bg-white\/5.p-8 > h3 {
+/* Shared Mexico package heading. Apply this class directly in every package
+   view so typography does not depend on a card's Tailwind utility string. */
+.cv-package-title {
   font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
-  font-size: clamp(1.875rem, 2.1vw, 2.125rem);
+  font-size: clamp(2rem, 2.6vw, 2.25rem);
   font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: 0.025em;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
   text-wrap: balance;
   text-rendering: optimizeLegibility;
 }

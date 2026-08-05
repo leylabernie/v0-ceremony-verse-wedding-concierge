@@ -155,7 +155,7 @@ export default function PricingPage() {
             {mexicoPackages.map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{tier.category}</p>
-                <h3 className="font-serif text-3xl font-semibold !text-[#f8f6f2]">{tier.name}</h3>
+                <h3 className="cv-package-title !text-[#f8f6f2]">{tier.name}</h3>
                 <p className="my-5 text-sm font-semibold !text-[#e8cf9d]">{tier.timeline}</p>
                 <p className="mb-2 text-sm font-semibold !text-[#e8cf9d]">{tier.bestFor}</p>
                 <p className="mb-7 leading-7 !text-[#e7ded3]">{tier.description}</p>
