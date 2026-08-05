@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for US families plus a Mexico family concierge with a direct independent-planner handoff and optional guest and arrival support.",
+      "CeremonyVerse offers Indian wedding shopping for US families plus private-proposal Mexico wedding planning, family concierge, guest, and arrival support.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -376,28 +376,6 @@ export function buildLocalBusinessSchema(): object {
           price: "2499",
           priceCurrency: "USD",
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico Planner Introduction & Family Brief",
-            description:
-              "A written family brief and direct introduction to an independent Mexico wedding planner",
-          },
-          price: "499",
-          priceCurrency: "USD",
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Mexico Family Concierge Support",
-            description:
-              "Family-side decision, communication, guest-information, and arrival support while the Mexico planner works directly with the couple",
-          },
-          price: "1500",
-          priceCurrency: "USD",
-        },
       ],
     },
   };
@@ -417,7 +395,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for US families and a Mexico family concierge. For Mexico, CeremonyVerse prepares the brief and introduces an independent local planner who contracts with the couple directly; guest, arrival, and India-sourcing support use a separate CeremonyVerse scope.",
+          text: "CeremonyVerse offers India wedding shopping for US families plus full planning, partial planning, day-of coordination, family concierge, guest support, and arrival services for Mexico destination weddings. Mexico services use private proposals and qualified local planning professionals for the assigned on-site work.",
         },
       },
       {
@@ -441,7 +419,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. The Mexico planner introduction and family brief is $499, and family-concierge support starts at $1,500. A free 30-minute consultation is available.",
+          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico wedding planning and concierge pricing is shared only through a private proposal after consultation. A free 30-minute consultation is available.",
         },
       },
       {

@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: July 2026
+            Last updated: August 2026
           </p>
         </div>
       </div>
@@ -67,11 +67,11 @@ export default function TermsPage() {
             we ship, but we do not own or operate their workshops.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For Mexico destination weddings, CeremonyVerse can prepare a family brief, introduce an
-            independent Mexico-based wedding planner, and provide separately contracted family-concierge,
-            guest-information, arrival, welcome-item, or India-sourcing support. The Mexico planner
-            contracts with and is paid directly by the couple for resort negotiation, local vendors,
-            timelines, and on-site execution.
+            For Mexico destination weddings, CeremonyVerse can offer full planning, partial planning,
+            day-of coordination, family-concierge, guest-information, arrival, welcome-item, and
+            India-sourcing support. CeremonyVerse may engage qualified Mexico-based planning professionals
+            and other independent providers to perform the local responsibilities defined in the client&apos;s
+            private written proposal.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -79,8 +79,8 @@ export default function TermsPage() {
           </h2>
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico concierge
-            services are listed separately on the pricing page and may require a custom scope. The
+            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico wedding planning
+            and concierge services use private proposals based on the selected scope. The
             30-minute initial consultation is free. Service tier fees become non-refundable once work begins or a vendor
             introduction, sourcing call, or vendor list has been delivered, because that work has
             already been performed by our team.
@@ -96,17 +96,18 @@ export default function TermsPage() {
             3. Independent Mexico, Travel, and Transfer Providers
           </h2>
           <p>
-            The Mexico planner, resort, venues, vendors, travel companies, airlines, hotels, transfer
-            companies, and carriers are independent providers. They control their own proposals,
-            contracts, availability, performance, cancellations, refunds, and charges. CeremonyVerse
-            does not bind another provider, and another provider cannot bind CeremonyVerse.
+            Mexico-based planning professionals, resorts, venues, vendors, travel companies, airlines,
+            hotels, transfer companies, and carriers may be independent providers. Each provider remains
+            responsible for the services assigned to it. CeremonyVerse does not bind another provider
+            beyond the authority stated in a signed written agreement, and another provider cannot bind
+            CeremonyVerse.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            Unless a later written agreement expressly changes the process, the couple or guest pays
-            each provider directly. CeremonyVerse does not collect money for flights, rooms, transfers,
-            resorts, or local Mexico vendors. Travel reservations and transfer bookings are completed
-            directly with the applicable provider, and no booking or deposit is authorized without the
-            client&apos;s written approval. Any referral compensation, if applicable, will be disclosed.
+            The private CeremonyVerse proposal states what the client pays CeremonyVerse, which outside
+            costs are paid directly to another provider, the applicable milestones, and the cancellation
+            and refund terms. CeremonyVerse does not sell flights or hotel rooms. Travel reservations and
+            transfer bookings are completed with the applicable provider unless a signed agreement states
+            otherwise, and no booking or deposit is authorized without the client&apos;s written approval.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

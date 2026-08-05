@@ -213,8 +213,8 @@ export function ContactPage() {
             Get Your Free 30-Minute Wedding Plan
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Tell us whether you need India shopping, a Mexico planner introduction, family-side guest
-            support, or a combination. We&apos;ll review the date, guest count, and what your budget must
+            Tell us whether you need India shopping, full or partial Mexico planning, day-of coordination,
+            family-side guest support, or a combination. We&apos;ll review the date, guest count, and what your budget must
             cover, then recommend a practical next step—with no payment required for the consultation.
           </p>
 
@@ -355,7 +355,7 @@ export function ContactPage() {
                   >
                     <option value="">Select a service</option>
                     <option value="India shopping">India wedding shopping</option>
-                    <option value="Mexico wedding concierge">Mexico planner introduction / family concierge</option>
+                    <option value="Mexico wedding concierge">Mexico wedding planning / family concierge</option>
                     <option value="India shopping + Mexico wedding concierge">India shopping + Mexico concierge</option>
                     <option value="Not sure">Not sure yet</option>
                   </select>

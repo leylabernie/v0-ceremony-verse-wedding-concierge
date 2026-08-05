@@ -62,8 +62,8 @@ export default function AboutPage() {
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             CeremonyVerse is the service I wished existed when I was planning my own sons&apos; weddings.
-            Outfit sourcing from Surat and Delhi. A clear handoff to a Mexico-based planner, with optional
-            family, guest, arrival, and India-sourcing support under a separate written scope.
+            Outfit sourcing from Surat and Delhi. Mexico planning delivered with qualified local professionals,
+            with optional family, guest, arrival, and India-sourcing support in one private proposal.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function AboutPage() {
               Immediate-family mehendi was held the day before; vidhi and garba followed the next day, then the
               wedding and reception on their own days. We worked with a Mexico planner, resort team, DJ,
               photographers, decor, entertainment, catering, and beauty providers. That family experience helps me
-              prepare a stronger brief and hand couples to a Mexico planner with clearer questions and expectations.
+              understand the questions families must answer and the local details a qualified planning team must own.
             </p>
             <p>
               For both sons&apos; weddings, I sourced the outfits from India through my family&apos;s connections in
@@ -124,9 +124,9 @@ export default function AboutPage() {
             </p>
             <p>
               CeremonyVerse packages the lessons from those family weddings into two clear services:
-              India shopping and sourcing for US-based families, and a Mexico family concierge that prepares the
-              brief, introduces an independent local planner, and can support guest and arrival details. Each paid
-              project begins with a written scope, itemized outside costs, and documented approval steps.
+              India shopping and sourcing for US-based families, and Mexico wedding planning and concierge delivered
+              with qualified local professionals. Each paid project begins with a written scope, applicable outside
+              costs, payment milestones, and documented approval steps.
             </p>
             <p>
               We&apos;re not the cheapest option in India — and we don&apos;t want to be. We&apos;re a safer,
@@ -163,7 +163,7 @@ export default function AboutPage() {
             The full scope of what we handle
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto">
-            From outfits sourced through Surat and Delhi to a clear Mexico planner handoff —
+            From outfits sourced through Surat and Delhi to locally executed Mexico wedding planning —
             bridal lehengas, sherwanis, bridesmaid coordination, family outfits, jewelry, ceremonial items,
             gifts, welcome bags, guest information, transfers through independent providers, and arrival support.
           </p>
@@ -199,7 +199,7 @@ export default function AboutPage() {
             How I Source &amp; Coordinate
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Family connections in Surat &amp; Delhi. A direct planner handoff in Mexico.
+            Family connections in Surat &amp; Delhi. Local planning expertise in Mexico.
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -213,10 +213,10 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Cancun &amp; Riviera Maya — Planner Handoff &amp; Family Support</h3>
+              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>Cancun &amp; Riviera Maya — Planning &amp; Family Support</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts and
-                works directly with the couple. We can separately track family decisions, organize guest and arrival
+                CeremonyVerse offers full planning, partial planning, and day-of coordination delivered with
+                qualified Mexico-based professionals. We can also track family decisions, organize guest and arrival
                 information, coordinate transfers through independent providers, and add India sourcing. No booking
                 or deposit is made without the couple&apos;s written approval.
               </p>
@@ -355,8 +355,8 @@ export default function AboutPage() {
           </h2>
           <p className="text-[#4d403a] mb-8 leading-relaxed">
             Book a free 30-minute consultation. Tell me your vision, timeline, and budget. I&apos;ll tell you
-            honestly what I can do—India sourcing, a Mexico planner introduction, family concierge support, or a
-            combination that keeps each provider&apos;s responsibility clear.
+            honestly what I can do—India sourcing, full or partial Mexico planning, day-of coordination,
+            family concierge support, or a combination with each responsibility defined in writing.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link

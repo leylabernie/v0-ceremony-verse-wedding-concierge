@@ -56,7 +56,7 @@ const steps = [
     number: "01",
     title: "Free Consultation (Always Free)",
     description:
-      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, a Mexico planner introduction, family-concierge support, or a combined scope fits the request.",
+      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, full or partial Mexico planning, day-of coordination, family-concierge support, or a combined scope fits the request.",
   },
   {
     number: "02",
@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "How does the Mexico service work?",
-    a: "CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts with and works directly with the couple. CeremonyVerse can separately support family communication, guest information, arrival details, welcome items, and India sourcing under its own agreement.",
+    a: "CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through a private proposal. Qualified Mexico-based planning professionals handle the local work assigned in that proposal, and family, guest, arrival, welcome-item, and India-sourcing support can be added as needed.",
   },
   {
     q: "What if I only need one or two outfits, not a full wedding party?",
@@ -362,7 +362,7 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             Not sure which service fits? Book a free 30-minute call and we&apos;ll outline the available
-            India-shopping, Mexico-planner handoff, or family-concierge path for your dates, scope, and budget.
+            India-shopping, Mexico planning, or family-concierge path for your dates, scope, and budget.
           </p>
           <a
             href="/contact/"

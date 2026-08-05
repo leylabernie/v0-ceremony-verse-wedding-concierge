@@ -67,7 +67,7 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              India wedding shopping for US families and a Mexico planner handoff
+              India wedding shopping for US families and private-proposal Mexico wedding planning
               with optional family-side support. Based in Philadelphia.
             </p>
             <a
@@ -154,7 +154,7 @@ export function GlobalFooter() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
           <p style={{ fontSize: "10px", color: "#b0a898", lineHeight: 1.8, textAlign: "center" }}>
             CeremonyVerse — India Wedding Shopping &amp; Mexico Concierge&nbsp;·&nbsp;
-            Indian Destination Wedding Planner Introduction Cancun&nbsp;·&nbsp; Riviera Maya Family Wedding Support&nbsp;·&nbsp;
+            Indian Destination Wedding Planning Cancun&nbsp;·&nbsp; Riviera Maya Family Wedding Support&nbsp;·&nbsp;
             Buy Bridal Lehenga from India USA&nbsp;·&nbsp; NRI Bridal Lehenga&nbsp;·&nbsp; Custom Sherwani from India USA&nbsp;·&nbsp;
             Bridesmaid Outfits from India&nbsp;·&nbsp; Indian Wedding Jewelry USA&nbsp;·&nbsp;
             Welcome Bags &amp; Gifts&nbsp;·&nbsp; Ceremonial Items&nbsp;·&nbsp;
