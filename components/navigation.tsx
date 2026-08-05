@@ -41,8 +41,8 @@ export function Navigation() {
 
   return (
     <header className="cv-site-header fixed left-0 right-0 z-50 bg-muted-rose/95 backdrop-blur-md border-b-2 border-brushed-gold">
-      <nav className="w-full px-6 sm:px-8 lg:px-12" aria-label="Main navigation">
-        <div className="cv-navigation-row flex items-center justify-between">
+      <nav className="mx-auto w-full max-w-[1800px] px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+        <div className="cv-navigation-row flex items-center justify-between gap-3">
           {/* Logo - Far Left with Two-Tone Styling */}
           <div className="flex-shrink-0">
             <Link
@@ -60,14 +60,14 @@ export function Navigation() {
           </div>
 
           {/* Desktop Navigation - Center, vertically aligned */}
-          <div className="hidden min-[1440px]:flex items-center justify-center flex-1 px-5">
+          <div className="hidden min-w-0 flex-1 items-center justify-center px-3 min-[1280px]:flex">
             <div className="flex items-center gap-1">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
                   className={cn(
-                    "px-2.5 py-2 text-sm font-medium transition-all duration-200 whitespace-nowrap",
+                    "whitespace-nowrap px-2 py-2 text-sm font-medium transition-all duration-200",
                     isActive(item.href)
                       ? "text-brushed-gold"
                       : "text-midnight-navy hover:text-brushed-gold"
@@ -81,13 +81,13 @@ export function Navigation() {
           </div>
 
           {/* CTA Buttons - Far Right */}
-          <div className="hidden min-[1440px]:flex flex-shrink-0 items-center gap-3">
+          <div className="hidden flex-shrink-0 items-center gap-3 min-[1280px]:flex">
             <a
               href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackLead("whatsapp", "nav")}
-              className="hidden min-[1720px]:inline-flex items-center gap-2 px-5 py-3 font-bold text-base rounded-full text-white
+              className="hidden min-[1660px]:inline-flex items-center gap-2 px-5 py-3 font-bold text-base rounded-full text-white
                 transition-all duration-300 hover:opacity-90"
               style={{ background: "#25D366" }}
               aria-label="Chat with us on WhatsApp"
@@ -99,18 +99,18 @@ export function Navigation() {
             </a>
             <Link
               href="/contact/"
-              className="inline-block whitespace-nowrap px-8 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
+              className="inline-block whitespace-nowrap px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              <span className="min-[1720px]:hidden">Book Consultation</span>
-              <span className="hidden min-[1720px]:inline">Book Free Consultation</span>
+              <span className="min-[1660px]:hidden">Book Consultation</span>
+              <span className="hidden min-[1660px]:inline">Book Free Consultation</span>
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="min-[1440px]:hidden p-2 text-midnight-navy hover:text-brushed-gold transition-colors"
+            className="flex-shrink-0 p-2 text-midnight-navy transition-colors hover:text-brushed-gold min-[1280px]:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label="Toggle navigation menu"
@@ -121,7 +121,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="min-[1440px]:hidden max-h-[calc(100vh-var(--cv-announcement-height)-var(--cv-navigation-height))] overflow-y-auto py-6 border-t border-brushed-gold/30 animate-fade-in">
+          <div className="max-h-[calc(100vh-var(--cv-announcement-height)-var(--cv-navigation-height))] overflow-y-auto border-t border-brushed-gold/30 py-6 animate-fade-in min-[1280px]:hidden">
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <Link
