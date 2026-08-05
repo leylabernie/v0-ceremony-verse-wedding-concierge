@@ -159,7 +159,7 @@ export default function ServicesPage() {
             {mexicoPackages.map((service) => (
               <article key={service.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{service.category}</p>
-                <h3 className="cv-package-title !text-[#f8f6f2]">{service.name}</h3>
+                <h3 className="font-serif text-2xl font-semibold">{service.name}</h3>
                 <p className="mb-4 text-sm font-semibold !text-[#e8cf9d]">{service.timeline}</p>
                 <p className="mb-6 flex-1 leading-7 text-white/75">{service.description}</p>
                 <Link
