@@ -239,7 +239,7 @@ export function HomePage() {
             {mexicoPackages.map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
-                <h3 className="font-serif text-2xl font-semibold">{tier.name}</h3>
+                <h3 className="cv-package-title">{tier.name}</h3>
                 <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
                 <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
                 <Link

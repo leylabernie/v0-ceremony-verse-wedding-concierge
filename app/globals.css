@@ -179,6 +179,19 @@
   }
 }
 
+/* Package names are display headings, not body-card labels. Keep the
+   treatment explicit so it remains visibly luxurious anywhere the shared
+   Mexico packages are rendered. */
+.cv-package-title {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.875rem, 2.25vw, 2.125rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: 0.025em;
+  text-wrap: balance;
+  text-rendering: optimizeLegibility;
+}
+
 /* Dark sections inherit a readable foreground by default. The :where() wrapper
    keeps specificity low so an intentional Tailwind color (gold, muted white,
    or dark button text) still wins. */
