@@ -114,7 +114,7 @@ export default function WeddingExperiencePage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
               Choose the service you need
             </p>
-            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Two separate paths that can work together</h2>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Two service paths that can work together</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
@@ -128,10 +128,10 @@ export default function WeddingExperiencePage() {
               </Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
-              <h3 className="mb-4 font-serif text-3xl font-semibold">Mexico Planner Handoff &amp; Family Concierge</h3>
+              <h3 className="mb-4 font-serif text-3xl font-semibold">Mexico Planning &amp; Family Concierge</h3>
               <p className="mb-7 leading-7 text-[#4d403a]">
-                A direct introduction to a Mexico-based planner, plus optional family, guest, arrival,
-                welcome-item, and India-sourcing support under a separate CeremonyVerse scope.
+                Full planning, partial planning, or day-of coordination delivered with qualified Mexico-based
+                professionals, plus optional family, guest, arrival, welcome-item, and India-sourcing support.
               </p>
               <Link
                 href="/indian-wedding-coordination-mexico/"

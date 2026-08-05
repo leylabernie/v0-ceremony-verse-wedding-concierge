@@ -10,7 +10,7 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Mexico Guide | 2026 Planning",
+  title: "Indian Destination Wedding Mexico Guide",
   description:
     "Compare Cancun and Riviera Maya for an Indian destination wedding. Review resort contracts, budget categories, timelines, and planning questions before booking.",
   keywords:
@@ -50,7 +50,7 @@ const faqItems = [
   {
     question: "How does CeremonyVerse work with the Mexico planner?",
     answer:
-      "CeremonyVerse prepares the family brief and introduces a Mexico-based planner who contracts with and works directly with the couple. CeremonyVerse can separately provide family-concierge, guest, arrival, and India-sourcing support. Each provider's responsibilities and costs stay separate.",
+      "CeremonyVerse offers full planning, partial planning, and day-of coordination through private proposals, with qualified Mexico-based planning professionals responsible for the local work defined in the selected package. Family concierge, guest, arrival, and India-sourcing support can be added as needed.",
   },
 ];
 
@@ -135,7 +135,7 @@ export default function MexicoDestinationGuidePage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-white">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#c5a059]">
-            2026 decision guide
+            2027 planning guide
           </p>
           <h1
             className="text-4xl font-semibold leading-tight md:text-6xl"
@@ -368,8 +368,8 @@ export default function MexicoDestinationGuidePage() {
             Bring us the proposals before you sign them.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            CeremonyVerse can help organize the comparison, identify unanswered questions, and prepare a clear
-            family brief before introducing the Mexico planner.
+            CeremonyVerse can help organize the comparison, identify unanswered questions, and recommend the
+            planning package and family-support scope that fit what you have already completed.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link

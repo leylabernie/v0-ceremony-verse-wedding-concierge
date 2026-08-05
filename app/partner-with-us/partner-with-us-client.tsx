@@ -12,7 +12,7 @@ export function PartnerWithUsPage() {
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Grow Your Business with <br /><span className="text-[#7a6841]">CeremonyVerse</span></h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            CeremonyVerse is building a small, accountable network for NRI families who need India sourcing or a direct introduction to qualified wedding partners.
+            CeremonyVerse is building a small, accountable network for NRI families who need India sourcing or qualified destination-wedding partners.
           </p>
         </div>
       </section>

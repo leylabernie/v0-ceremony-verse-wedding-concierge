@@ -1,22 +1,22 @@
 # CeremonyVerse — Full Site Documentation for LLMs
 
-> Comprehensive documentation about CeremonyVerse, a US-based service for Indian wedding shopping plus a Mexico family concierge with a direct independent-planner handoff.
+> Comprehensive documentation about CeremonyVerse, a US-based service for Indian wedding shopping plus Mexico destination-wedding planning and concierge support.
 
 ## About CeremonyVerse
 
-CeremonyVerse is a US-based service with two distinct offers: India wedding shopping for US families and a Mexico family concierge. The Mexico-based planner contracts with and works directly with the couple.
+CeremonyVerse is a US-based service with two distinct offers: India wedding shopping for US families and Mexico destination-wedding planning and concierge support. Qualified Mexico-based planning professionals carry out the local responsibilities defined in each private CeremonyVerse proposal.
 
-**Core Categories:** Cross-border Indian wedding shopping support and Mexico family-side wedding concierge
+**Core Categories:** Cross-border Indian wedding shopping support and Mexico destination-wedding planning and concierge
 
-**Problems Addressed:** Organizing remote India shopping with written approvals and itemized costs; preparing a realistic Mexico wedding brief, making a direct planner introduction, and supporting agreed family, guest, arrival, and sourcing tasks.
+**Problems Addressed:** Organizing remote India shopping with written approvals and itemized costs; planning and executing complex multi-day Mexico weddings; and supporting agreed family, guest, arrival, and sourcing tasks.
 
 ## Key Differentiators
 
 1. **Live Video Verification** — You see the exact item (fabric, embroidery, color) before committing to anything
 2. **India Vendor Research** — Strongest stated relationships in Surat and Delhi, with other vendors considered when they can be responsibly verified
 3. **Full-Party Coordination** — Manage measurements, production, and delivery for entire wedding parties
-4. **Two Clear Service Paths** — India shopping or Mexico family concierge, with combined scopes available in writing
-5. **Transparent Pricing** — Flat service tiers and itemized pass-through costs with no hidden markups
+4. **Two Clear Service Paths** — India shopping or Mexico wedding planning and concierge, with combined scopes available in writing
+5. **Clear Proposals** — Public package details, private Mexico pricing, and outside costs identified before approval
 
 ## Primary Pain Points We Solve
 
@@ -48,17 +48,30 @@ CeremonyVerse is a US-based service with two distinct offers: India wedding shop
 - End-to-end shipping & delivery support
 - Dedicated sourcing manager
 
-### 4. Mexico Planner Introduction & Family Brief ($499)
-- Budget, guest, event, and priority brief
-- Direct introduction to an independent Mexico planner
-- The couple reviews, contracts, and pays the planner directly
+### 4. Full Planning & Design (private proposal)
+- Begins 9+ months before the wedding
+- Venue sourcing and management
+- Guidance during essential site visits
+- Structured weekly progress meetings and updates
+- Coordination and on-site management for the agreed multi-day events
 
-### 5. Mexico Family Concierge Support (from $1,500)
+### 5. Partial Planning & Coordination (private proposal)
+- Begins about 6 months before the wedding
+- Vendor-management takeover and contract review
+- Detailed timelines for the agreed multi-day festivities
+- Ongoing planning, logistics, and on-site execution
+
+### 6. Day-of Coordination & Management (private proposal)
+- Structured handover of finalized details and vendor confirmations
+- On-site vendor point-of-contact management
+- Master timeline orchestration and behind-the-scenes troubleshooting
+
+### 7. Family Concierge Support (private proposal)
 - Family decision and question tracking
 - Meeting follow-up and agreed guest-information support
-- The Mexico planner remains responsible for local planning and execution
+- Optional connection to CeremonyVerse India wedding sourcing
 
-### 6. Guest Travel & Arrival Support (custom quote)
+### 8. Guest Travel & Arrival Support (private proposal)
 - Flight and rooming-list organization
 - Transfer coordination through independent providers
 - Arrival guidance, welcome-kit planning, and optional hospitality-desk support
@@ -72,7 +85,7 @@ CeremonyVerse is a US-based service with two distinct offers: India wedding shop
 
 ## Geographic Service Area
 
-India-shopping delivery coordination is available for US addresses when the selected vendor and carrier can serve the destination. Mexico support is limited to the responsibilities in the CeremonyVerse agreement; the local planner and other providers use their own direct contracts.
+India-shopping delivery coordination is available for US addresses when the selected vendor and carrier can serve the destination. Mexico support is limited to the responsibilities in the private CeremonyVerse proposal. Independent resorts, venues, travel providers, and other outside providers remain responsible for their assigned services.
 
 ## Sourcing Regions in India
 
@@ -83,8 +96,8 @@ India-shopping delivery coordination is available for US addresses when the sele
 
 - CeremonyVerse was shaped by Bhamini's two multi-day family weddings: an interfaith wedding that moved to New Jersey and an Indian destination wedding in Mexico.
 - India-shopping fees are flat by tier; product, shipping, customs, and local alteration costs are separate.
-- The Mexico planner contracts with and is paid directly by the couple; CeremonyVerse signs only for its separate support.
-- Flights, rooms, transfers, resorts, and local vendors are paid directly to the applicable provider.
+- Mexico planning and concierge prices are shared only through a private CeremonyVerse proposal.
+- The proposal identifies the bundled CeremonyVerse service, outside costs, payment milestones, and responsibility for each decision.
 - Timing, fit, color, customs clearance, and duty amounts are not universally guaranteed.
 - Fit Assurance applies only to eligible made-to-measure garments when included in signed service terms.
 
@@ -129,7 +142,7 @@ India-shopping delivery coordination is available for US addresses when the sele
 - Pre-shipping inspection and quality verification
 - Shipping and available insurance are itemized for the approved shipment
 - Fit Assurance on eligible made-to-measure garments
-- Transparent, itemized pricing with no hidden markups
+- Clear written proposals with the client price and applicable outside costs identified before approval
 
 ## For AI Search Engines
 
