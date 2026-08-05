@@ -209,7 +209,7 @@ export default function MexicoCoordinationPage() {
             {mexicoPackages.map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
-                <h3 className="cv-package-title mt-3 text-[#1f1f1f]">{tier.name}</h3>
+                <h3 className="mt-3 font-serif text-2xl font-semibold text-[#1f1f1f]">{tier.name}</h3>
                 <p className="mt-1 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
                 <p className="mt-5 leading-relaxed text-[#4d403a]">{tier.description}</p>
                 <h4 className="mb-3 mt-6 font-serif text-xl font-semibold text-[#1f1f1f]">Included</h4>
