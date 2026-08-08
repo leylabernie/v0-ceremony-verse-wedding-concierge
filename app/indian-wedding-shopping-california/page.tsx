@@ -5,8 +5,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-california/",
-  title: "Indian Wedding Shopping from India \u2014 California NRI Families",
-  description: "California NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India \u2014 live video shopping, custom stitching, delivered to your CA door."
+  title: "Indian Wedding Shopping California",
+  description: "Bay Area, Los Angeles, and California families can source Indian wedding outfits with live India shopping, custom stitching, quality checks, and delivery."
 });
 
 const serviceSchema = buildServiceSchema({

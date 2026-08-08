@@ -18,10 +18,9 @@ import {
  */
 export const metadata = buildMetadata({
   path: "/indian-bridal-wear-texas/",
-  title:
-    "Indian Bridal Wear & Groom Outfits — Texas",
+  title: "Indian Bridal Wear Texas",
   description:
-    "Houston & DFW couples: source bridal lehengas, sherwanis, and bridesmaid sarees from India — Texas door delivery with full customs handling.",
+    "Texas couples can source bridal lehengas, sherwanis, and family wedding outfits from India with live video shopping, custom stitching, and delivery.",
   keywords:
     "indian bridal shops houston, lehenga boutique dallas, indian wedding dresses dfw, indian bridal wear texas, custom bridal lehenga houston, sherwani dallas texas",
 });

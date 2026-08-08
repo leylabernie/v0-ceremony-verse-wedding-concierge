@@ -92,7 +92,23 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
       description: opts.description,
       images: [image],
     },
-    ...(opts.noIndex ? { robots: { index: false, follow: false } } : {}),
+    // Emit an explicit robots directive for every page instead of relying only
+    // on the root layout's inherited default. This keeps public landing pages
+    // unambiguously indexable while preserving noindex for private utility
+    // routes such as the thank-you and internal-resources pages.
+    robots: opts.noIndex
+      ? { index: false, follow: false }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1,
+          },
+        },
   };
 }
 

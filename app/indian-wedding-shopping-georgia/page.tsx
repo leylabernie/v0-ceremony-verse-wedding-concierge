@@ -3,8 +3,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-georgia/",
-  title: "Indian Wedding Shopping Georgia — NRI Bridal Concierge Atlanta",
-  description: "Georgia-based Indian wedding concierge. Source bridal lehengas, sherwanis, and family outfits directly from India — live video shopping, custom stitching, delivered to your Georgia door.",
+  title: "Indian Wedding Shopping Georgia",
+  description: "Atlanta and Georgia families can source bridal lehengas, sherwanis, and wedding outfits from India with live video shopping, custom stitching, and delivery.",
   keywords: "Indian wedding shopping Georgia, Atlanta bridal lehenga, Indian wedding outfits Atlanta GA, NRI wedding concierge Georgia, buy Indian wedding outfits Georgia, Indian wedding shopping Atlanta",
 });
 

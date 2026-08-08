@@ -2,8 +2,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-philadelphia/",
-  title: "Indian Wedding Shopping Philadelphia — NRI Bridal Concierge",
-  description: "Philadelphia-based Indian wedding concierge. Source bridal lehengas, sherwanis, and family outfits directly from India — live video shopping, custom stitching, delivered to your Philadelphia door.",
+  title: "Indian Wedding Shopping Philadelphia",
+  description: "Philadelphia-area families can source Indian wedding outfits from India with live video shopping, custom stitching, quality checks, and coordinated delivery.",
   keywords: "Indian wedding shopping Philadelphia, Philadelphia bridal lehenga, NRI wedding concierge Philadelphia, Indian wedding outfits Philadelphia PA, buy Indian wedding outfits Philadelphia, South Indian wedding Philadelphia, Gujarati wedding Philadelphia",
 });
 

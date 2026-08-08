@@ -3,8 +3,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-massachusetts/",
-  title: "Indian Wedding Shopping Massachusetts — NRI Bridal Concierge Boston",
-  description: "Massachusetts-based Indian wedding concierge. Source bridal lehengas, sherwanis, and family outfits directly from India — live video shopping, custom stitching, delivered to your Massachusetts door.",
+  title: "Indian Wedding Shopping Massachusetts",
+  description: "Boston and Massachusetts families can source Indian wedding outfits from India with live shopping, custom stitching, quality checks, and coordinated delivery.",
   keywords: "Indian wedding shopping Massachusetts, Boston bridal lehenga, Indian wedding outfits Boston MA, NRI wedding concierge Massachusetts, buy Indian wedding outfits Massachusetts, Indian wedding shopping Boston, Indian bridal wear Boston",
 });
 

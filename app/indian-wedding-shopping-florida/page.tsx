@@ -3,9 +3,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-florida/",
-  title: "Indian Wedding Shopping Florida — NRI Bridal Concierge",
-  description: "Florida-based Indian wedding concierge. Source bridal lehengas, sherwanis, and family outfits directly from India — live video shopping, custom stitching, delivered to your Florida door.",
-  keywords: "Indian wedding shopping Florida, Florida bridal lehenga, NRI wedding concierge Florida, Indian wedding outfits Miami, Indian wedding shopping Orlando, Indian wedding shopping Tampa, Jacksonville Indian wedding, South Florida Indian wedding, buy Indian wedding outfits Florida, Atlanta Indian wedding shopping",
+  title: "Indian Wedding Shopping Florida",
+  description: "Florida families in Miami, Orlando, Tampa, and beyond can source Indian wedding outfits with live India shopping, custom stitching, and coordinated delivery.",
+  keywords: "Indian wedding shopping Florida, Florida bridal lehenga, NRI wedding concierge Florida, Indian wedding outfits Miami, Indian wedding shopping Orlando, Indian wedding shopping Tampa, Jacksonville Indian wedding, South Florida Indian wedding, buy Indian wedding outfits Florida",
 });
 
 const serviceSchema = buildServiceSchema({
