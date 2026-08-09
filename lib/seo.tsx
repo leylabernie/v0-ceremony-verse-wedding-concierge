@@ -15,7 +15,7 @@ import React from "react";
 
 export const SITE_URL = "https://www.ceremonyverse.com";
 export const SITE_NAME = "CeremonyVerse";
-export const SITE_EMAIL = "hello@ceremonyverse.com";
+export const SITE_EMAIL = "bhamini@ceremonyverse.com";
 export const SITE_PHONE = "+12153419990";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.webp`;
 

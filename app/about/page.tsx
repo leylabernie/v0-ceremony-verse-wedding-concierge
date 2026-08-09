@@ -32,7 +32,7 @@ const aboutSchema = {
       addressLocality: "Philadelphia",
     },
     telephone: "+12153419990",
-    email: "hello@ceremonyverse.com",
+    email: "bhamini@ceremonyverse.com",
     areaServed: ["United States", "Cancun", "Riviera Maya", "Punta Cana"],
   },
 };

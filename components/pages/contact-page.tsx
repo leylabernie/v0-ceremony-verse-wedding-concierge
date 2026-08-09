@@ -72,7 +72,7 @@ export function ContactPage() {
   )
 
   const whatsappFallbackUrl = `https://wa.me/12153419990?text=${fallbackMessage}`
-  const emailFallbackUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
     "CeremonyVerse consultation request"
   )}&body=${fallbackMessage}`
 
@@ -223,7 +223,7 @@ export function ContactPage() {
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <a
-              href="mailto:hello@ceremonyverse.com"
+              href="mailto:bhamini@ceremonyverse.com"
               className="flex items-center gap-2 transition hover:opacity-80"
               style={{ color: "var(--cv-muted)" }}
             >
@@ -231,7 +231,7 @@ export function ContactPage() {
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22,7-10,7L2,7"/>
               </svg>
-              hello@ceremonyverse.com
+              bhamini@ceremonyverse.com
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <span style={{ color: "var(--cv-muted)" }}>Response within 24–48 hrs</span>

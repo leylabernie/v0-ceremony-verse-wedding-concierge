@@ -184,7 +184,7 @@ export default function PrivacyPage() {
           </ul>
           <p style={{ marginTop: "1rem" }}>
             To exercise any of these rights, email{" "}
-            <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>hello@ceremonyverse.com</a>{" "}
+            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
             with the subject line &quot;Privacy Request.&quot; We will respond within 30 days.
           </p>
 
@@ -239,8 +239,8 @@ export default function PrivacyPage() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>
               Email:{" "}
-              <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>
-                hello@ceremonyverse.com
+              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
+                bhamini@ceremonyverse.com
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
