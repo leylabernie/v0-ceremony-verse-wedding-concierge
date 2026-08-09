@@ -11,7 +11,7 @@ import {
 /**
  * "Money" Landing Page — targets brides actively looking to spend thousands
  * of dollars on a bridal lehenga sourced from India but terrified of the
- * logistics. Content brief supplied by founder; do not paraphrase the
+ * logistics. Content brief supplied for this page; do not paraphrase the
  * structural copy (H1, section H2s, challenge titles, etc.).
  */
 export const metadata = buildMetadata({
@@ -554,13 +554,13 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               Book Your Free Consultation
             </Link>
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#1f1f1f" }}
             >
-              WhatsApp Bhamini Directly
+              WhatsApp CeremonyVerse
             </a>
           </div>
 

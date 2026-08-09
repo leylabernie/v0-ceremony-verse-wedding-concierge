@@ -138,6 +138,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat',
+        destination: '/blog/mexico-wedding-wardrobe-sourcing-from-india/',
+        permanent: true,
+      },
+      {
         source: '/blog/sherwani-vs-bandhgala-groom-guide',
         destination: '/blog',
         permanent: true,

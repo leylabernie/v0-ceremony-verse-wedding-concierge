@@ -631,12 +631,12 @@ export default function KanchipuramSilkGuideBlogPost() {
             >
               Prefer WhatsApp?{" "}
               <a
-                href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20source%20an%20authentic%20Kanchipuram%20silk%20saree."
+                href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20source%20an%20authentic%20Kanchipuram%20silk%20saree."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#7a6841", fontWeight: 600 }}
               >
-                Message Bhamini directly →
+                Message CeremonyVerse →
               </a>
             </p>
           </div>

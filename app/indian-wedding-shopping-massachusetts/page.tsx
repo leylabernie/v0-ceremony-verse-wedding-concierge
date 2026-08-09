@@ -54,7 +54,7 @@ export default function MassachusettsPage() {
             {[
               {
                 title: "Real people, not a faceless website",
-                desc: "CeremonyVerse is run by Bhamini — an NRI mother who has coordinated her own sons' weddings. When you book a consultation, you're talking to someone who understands the Indian wedding experience firsthand, not a call center agent reading a script. Your time zone, your schedule, your concerns.",
+                desc: "CeremonyVerse is a US-based service shaped by firsthand family wedding experience. When you book a consultation, you reach an organized family-side contact—not a call-center script—and receive clear next steps for the agreed sourcing scope.",
               },
               {
                 title: "Boston's Indian community is thriving",

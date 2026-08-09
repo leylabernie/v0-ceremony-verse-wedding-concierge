@@ -13,7 +13,7 @@ import { trackLead } from "@/lib/analytics"
 const navItems: { label: string; href: string }[] = [
   { label: "Services", href: "/services/" },
   { label: "India Shopping", href: "/shop-from-india/" },
-  { label: "Mexico Concierge", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Destination Planning", href: "/indian-wedding-coordination-mexico/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },
@@ -54,7 +54,7 @@ export function Navigation() {
                 CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
-                India Shopping · Mexico Concierge
+                India Shopping · Destination Planning
               </span>
             </Link>
           </div>
@@ -83,7 +83,7 @@ export function Navigation() {
           {/* CTA Buttons - Far Right */}
           <div className="hidden flex-shrink-0 items-center gap-3 min-[1280px]:flex">
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20found%20your%20website%20and%20want%20to%20learn%20more."
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackLead("whatsapp", "nav")}

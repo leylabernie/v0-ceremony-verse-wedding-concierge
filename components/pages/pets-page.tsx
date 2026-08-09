@@ -51,7 +51,7 @@ export function PetsPage({ onNavigate }: Props) {
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">Send us your pet's measurements and your wedding colors — we'll handle the rest. Lead time: 6–8 weeks.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20an%20outfit%20for%20my%20pet%20for%20the%20wedding!" target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20an%20outfit%20for%20my%20pet%20for%20the%20wedding!" target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

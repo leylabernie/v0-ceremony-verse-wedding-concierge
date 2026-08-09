@@ -18,7 +18,7 @@ export const mexicoPackages: MexicoPackage[] = [
     description:
       "A start-to-finish planning and design experience for a cohesive, multi-day destination wedding.",
     includes: [
-      "Access to a trusted Mexico vendor network",
+      "Access to the planning partner's local vendor network",
       "Venue sourcing and management",
       "Guidance during essential site visits",
       "Structured weekly progress meetings and updates",
@@ -74,7 +74,7 @@ export const mexicoPackages: MexicoPackage[] = [
   },
   {
     name: "Family Concierge Support",
-    timeline: "Available alongside a Mexico planning package",
+    timeline: "Available alongside a destination-planning package",
     bestFor: "Best for: families who want one organized US-based contact",
     description:
       "CeremonyVerse keeps family questions, decisions, meeting follow-ups, and agreed guest details organized across the planning journey.",
@@ -115,4 +115,4 @@ export const mexicoPackages: MexicoPackage[] = [
 ]
 
 export const mexicoAvailabilityMessage =
-  "A limited number of 2027 Mexico wedding planning dates are still available. Request a private consultation to check availability."
+  "A limited number of 2027 destination-wedding planning dates are still available. Request a private consultation to check availability."

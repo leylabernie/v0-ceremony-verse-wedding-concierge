@@ -48,17 +48,17 @@ const servicePillars = [
     cta: "Explore India Shopping",
   },
   {
-    label: "Mexico wedding planning",
+    label: "Destination wedding planning",
     title: "Planning, on-site execution, and family support",
     description:
-      "Plan the destination celebration and coordinate the family experience through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration in Cancun, Riviera Maya, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
-      "Full, partial, and day-of planning options",
+      "Planning partner involved from the beginning",
       "Multi-day timelines and on-site event management",
       "Optional family concierge, guest, and arrival support",
     ],
     href: "/indian-wedding-coordination-mexico/",
-    cta: "Explore Mexico Planning",
+    cta: "Explore Destination Planning",
   },
 ]
 
@@ -130,7 +130,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes. CeremonyVerse offers full planning, partial planning, and day-of coordination for Mexico destination weddings, delivered with qualified Mexico-based planning professionals. Family concierge, guest, arrival, and India-sourcing support can be included in the private written proposal.",
+      "Yes. CeremonyVerse works with an experienced destination-wedding planning partner serving Cancun, Riviera Maya, and Punta Cana. The planning partner leads the contracted local planning and on-site responsibilities, while CeremonyVerse supports the family and can add India sourcing through the private written proposal.",
   },
   {
     question: "Will I see an item before I buy it?",
@@ -166,22 +166,22 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              India shopping concierge · Mexico wedding concierge
+              India shopping · Destination-wedding planning partnership
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Shop India. Plan Mexico. One organized wedding partner.
+              Destination-wedding support for Gujarati and Hindu families
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              CeremonyVerse helps US families source wedding outfits and essentials from India and
-              offers Mexico wedding planning, on-site coordination, family concierge, guest support,
-              and arrival services through one private proposal.
+              Through our planning partnership, families receive experienced local planning and on-site support in
+              Cancun, Riviera Maya, and Punta Cana. CeremonyVerse supports family communication, important decisions,
+              guest details, and optional wedding sourcing from India.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact/"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Book a Free Consultation
+                Request a Private Proposal
               </Link>
               <Link
                 href="/how-it-works/"
@@ -202,7 +202,7 @@ export function HomePage() {
           <p>US phone, email & accountability</p>
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
-          <p>Mexico-based planning execution</p>
+          <p>Planning partner involved from day one</p>
         </div>
       </section>
 
@@ -213,7 +213,7 @@ export function HomePage() {
               One company · Two coordinated services
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Plan Mexico and shop India without managing two disconnected teams
+              Plan the destination and shop India without managing disconnected teams
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Choose either service independently, or combine them in one clearly defined proposal when your family needs both.
@@ -250,23 +250,22 @@ export function HomePage() {
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
               <div className="max-w-4xl">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">
-                  Why Bhamini built CeremonyVerse
+                  What shaped CeremonyVerse
                 </p>
                 <h3 className="mb-4 font-serif text-3xl font-semibold !text-white sm:text-4xl">
                   Firsthand family wedding experience, explained honestly
                 </h3>
                 <p className="leading-7 !text-white/75">
-                  Bhamini organized outfits and ceremony details for two multi-day weddings in her own family,
-                  including an interfaith celebration in New Jersey and a destination wedding in Mexico. Those
-                  were family experiences—not invented client case studies—and every paid responsibility is defined
-                  in writing before work begins.
+                  CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in
+                  Mexico: approximately 150 guests at Hard Rock Hotel Cancun, 130 guests at Generations Riviera Maya,
+                  and 80 guests at a Royalton resort in Mexico. These were family celebrations—not client case studies.
                 </p>
               </div>
               <Link
                 href="/about/"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Read Bhamini&apos;s Story
+                Read the CeremonyVerse Story
               </Link>
             </div>
           </aside>
@@ -365,10 +364,10 @@ export function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Mexico wedding concierge
+              Destination-wedding planning
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Choose the Mexico planning and family support you need
+              Choose the planning and family support you need
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Package details are public so you can compare the scope. Pricing stays private and is
@@ -474,7 +473,7 @@ export function HomePage() {
                   <li>Coordinate shopping calls and approvals</li>
                   <li>Organize measurements and order details</li>
                   <li>Support inspection, shipping, and tracking</li>
-                  <li>Offer full, partial, and day-of Mexico planning</li>
+                  <li>Coordinate destination planning through the planning partnership</li>
                   <li>Organize agreed guest, arrival, and family details</li>
                 </ul>
               </div>
@@ -526,7 +525,7 @@ export function HomePage() {
           </h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             In 30 minutes, we&apos;ll separate the event budget from rooms and travel, identify the right
-            Mexico planning package, and discuss only the extra support your family actually needs.
+            destination-planning scope, and discuss only the extra support your family actually needs.
           </p>
           <Link
             href="/contact/"

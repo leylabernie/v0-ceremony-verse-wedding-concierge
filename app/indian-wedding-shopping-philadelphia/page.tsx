@@ -53,7 +53,7 @@ export default function PhiladelphiaPage() {
             {[
               {
                 title: "We&apos;re local — not a faceless website",
-                desc: "CeremonyVerse is based in Philadelphia with a real local address, phone number, and business registration. When you book a consultation, you&apos;re talking to someone in your time zone who understands the NRI experience firsthand. Bhamini is a Philadelphia mother who has coordinated her own sons&apos; weddings — not a call center agent reading a script.",
+                desc: "CeremonyVerse is based in the Philadelphia area, with US contact information and East Coast availability. The service was shaped by firsthand family wedding experience and provides one organized point of contact rather than a call-center handoff.",
               },
               {
                 title: "Philadelphia&apos;s Indian community is growing",
@@ -162,7 +162,7 @@ export default function PhiladelphiaPage() {
             {[
               {
                 q: "Are you actually based in Philadelphia?",
-                a: "Yes. CeremonyVerse is a Philadelphia-based business with a real local address. Bhamini, the founder, lives in the Philadelphia area and has coordinated Indian weddings for her own sons — one in New Jersey and one in Mexico. You can reach us during East Coast business hours, and in-person consultations are available by appointment.",
+                a: "Yes. CeremonyVerse is based in the Philadelphia area and can be reached during East Coast business hours. Any in-person consultation must be confirmed by appointment.",
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Philadelphia?",
@@ -170,7 +170,7 @@ export default function PhiladelphiaPage() {
               },
               {
                 q: "Do you deliver to Cherry Hill, Bryn Mawr, and the suburbs?",
-                a: "Yes. We deliver via DHL or FedEx to any address in the greater Philadelphia area — including South Jersey suburbs like Cherry Hill and Princeton, the Main Line (Bryn Mawr, Wayne, King of Prussia), Wilmington, and Allentown. Delivery typically takes 3-5 business days once shipped from India.",
+                a: "Yes, when the selected vendor and carrier can serve the address. The written quote identifies the carrier, service area, estimated timing, shipping documents, insurance options, customs responsibilities, and the party responsible for a claim. Carrier and customs dates are not guaranteed.",
               },
               {
                 q: "Can I meet you in person?",

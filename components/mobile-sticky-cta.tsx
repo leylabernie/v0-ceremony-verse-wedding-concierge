@@ -24,7 +24,7 @@ export default function MobileStickyCTA() {
         Get a free 30-minute outfit plan
       </p>
       <a
-        href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20found%20CeremonyVerse%20and%20want%20to%20learn%20more."
+        href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20found%20your%20website%20and%20want%20to%20learn%20more."
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackLead("whatsapp", "mobile-sticky-cta")}

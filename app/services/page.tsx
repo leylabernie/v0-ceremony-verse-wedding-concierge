@@ -11,11 +11,11 @@ import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages
 
 export const metadata = buildMetadata({
   path: "/services/",
-  title: "Indian Wedding Shopping & Mexico Concierge Services",
+  title: "Indian Wedding Shopping & Destination Planning Services",
   description:
-    "CeremonyVerse offers India wedding shopping plus private-proposal Mexico wedding planning, family concierge, guest support, and arrival coordination.",
+    "CeremonyVerse offers India wedding shopping plus private-proposal destination planning, family support, and on-site coordination in Cancun, Riviera Maya, and Punta Cana.",
   keywords:
-    "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planning, Riviera Maya Indian wedding concierge, Mexico destination wedding support, NRI wedding shopping",
+    "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planning, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, NRI wedding shopping",
 })
 
 const offers = [
@@ -37,9 +37,9 @@ const offers = [
 ]
 
 const serviceSchema = buildServiceSchema({
-  name: "Indian Wedding Shopping and Mexico Family Concierge",
+  name: "Indian Wedding Shopping and Destination Planning",
   description:
-    "US-based support for sourcing Indian wedding essentials from India and coordinating Mexico destination weddings with qualified local planning professionals.",
+    "US-based India sourcing and family communication paired with local destination planning through a partner serving Cancun, Riviera Maya, and Punta Cana.",
   url: "/services/",
   offers,
 })
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan or coordinate weddings?",
     answer:
-      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management for Mexico destination weddings. Qualified Mexico-based planning professionals handle local planning and execution within the responsibilities defined in the private CeremonyVerse proposal.",
+      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through an experienced planning partner serving Cancun, Riviera Maya, and Punta Cana. The private proposal identifies the partner-led local work, CeremonyVerse family communication, and any optional India sourcing.",
   },
   {
     question: "Are product and shipping costs included in the service fee?",
@@ -124,12 +124,12 @@ export default function ServicesPage() {
             Two services · One US-based point of contact
           </p>
           <h1 className="mb-6 font-serif text-5xl font-semibold sm:text-6xl">
-            Shop India for your wedding—or plan your celebration in Mexico
+            Shop India for your wedding—or plan your destination celebration
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
-            CeremonyVerse organizes India shopping for US families and offers Mexico wedding planning,
-            on-site coordination, family concierge, guest support, and arrival services through one
-            private proposal tailored to the celebration.
+            CeremonyVerse organizes India shopping for US families and works with an experienced partner
+            on planning and on-site coordination in Cancun, Riviera Maya, and Punta Cana. One private
+            proposal defines the partner-led local work and CeremonyVerse family-side support.
           </p>
           <Link
             href="/contact/"
@@ -144,10 +144,10 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-              Mexico destination weddings
+              Destination weddings
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Mexico planning and family support in one organized offering
+              Local planning and family support in one organized offering
             </h2>
             <p className="text-lg leading-8 text-white/75">
               Compare the service details publicly, then request a private CeremonyVerse proposal based
@@ -176,7 +176,7 @@ export default function ServicesPage() {
               href="/indian-wedding-coordination-mexico/"
               className="inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold text-[#1f1f1f]"
             >
-              Explore Mexico Concierge
+              Explore Destination Planning
             </Link>
           </div>
         </div>
@@ -237,8 +237,8 @@ export default function ServicesPage() {
               built to perform.
             </p>
             <ul className="space-y-4 text-sm leading-6 text-white/80">
-              <li>Mexico planner, resort, venue, vendor, travel, or transfer services</li>
-              <li>Third-party charges or promises not listed in the CeremonyVerse agreement</li>
+              <li>Third-party charges not included in the signed CeremonyVerse proposal</li>
+              <li>Resort, venue, vendor, travel, or transfer promises outside the assigned scope</li>
               <li>Booking or deposits without the couple&apos;s written approval</li>
               <li>Unauthorized designer replicas or counterfeit labels</li>
               <li>Guaranteed customs dates, duty amounts, or identical handmade results</li>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Not sure which tier fits?</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             Bring your ceremony list, location, deadline, party size, and budget. We&apos;ll tell you what is
-            realistic for India shopping, a Mexico planning package, or family-concierge support.
+            realistic for India shopping, destination planning, or family-side support.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
             Book the Free Consultation

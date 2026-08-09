@@ -301,7 +301,7 @@ export function FreeGuidesPage() {
             India.
           </p>
           <a
-            href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20just%20downloaded%20a%20free%20guide%20and%20I%27m%20interested%20in%20learning%20more."
+            href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20just%20downloaded%20a%20free%20guide%20and%20I%27m%20interested%20in%20learning%20more."
             target="_blank"
             rel="noopener noreferrer"
             style={{

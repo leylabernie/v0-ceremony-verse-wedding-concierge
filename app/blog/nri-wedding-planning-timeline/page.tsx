@@ -224,13 +224,13 @@ export default function NriWeddingPlanningTimeline() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            A Real Example: Four-Day Destination Wedding in Mexico
+            Illustrative Four-Day Destination Wedding Schedule
           </h2>
           <p>
-            One of the most complex engagements we&apos;ve ever managed at CeremonyVerse was a 4-day Gujarati destination wedding in Mexico. Four full ceremonies — Garba, <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi</Link>, Vidhi, and <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception</Link> — for the full bridal party and both families, coordinated across multiple US cities and sourced from India. Starting the process 10 months in advance made it possible. Every piece arrived on time. Every family member was dressed appropriately for each ceremony. Not a single outfit was a last-minute scramble.
+            For an illustrative four-day Gujarati destination wedding with Garba, <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi</Link>, Vidhi, and <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception</Link>, begin by mapping every wearer and event 10–12 months before the wedding. Prioritize the couple&apos;s custom pieces first, then confirm the wedding party and immediate-family scope, and leave time for documented approvals, shipping, customs, and local alterations.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            That kind of outcome doesn&apos;t happen by accident. It happens because of planning.
+            This is a planning framework, not a CeremonyVerse client case study or a delivery guarantee. Actual lead times depend on the garments, vendors, customization, destination, carrier, customs, and the family&apos;s approval timing.
           </p>
 
           {/* CTA Box */}
@@ -264,7 +264,7 @@ export default function NriWeddingPlanningTimeline() {
 
           {/* Tagline */}
           <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
-            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
+            CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
           </p>
 
         </div>

@@ -62,7 +62,7 @@ export function BridesmaidsPage({ onNavigate }: Props) {
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We handle every measurement, follow-up, and delivery. Most bridesmaid orders take 8–12 weeks from design to your door.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20help%20with%20bridesmaid%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20need%20help%20with%20bridesmaid%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

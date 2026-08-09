@@ -37,7 +37,7 @@ We start with a call to understand your vision — colors, silhouette, embroider
 
 **Step 2: We shortlist from our verified network**
 
-Based on your brief, we identify 3–5 artisan workshops and designers across India who work in your style and budget range. We've personally visited every one of them. We know their quality, their turnaround times, and their communication styles.
+Based on your brief, eligible tiers can include research and shortlisting of vendors whose item, capacity, documentation, and terms can be reviewed for the request. The shortlist identifies what has and has not been independently verified.
 
 **Step 3: The live video shopping session**
 
@@ -51,11 +51,11 @@ We send you our measurement guide. You take 15 measurements at home (we walk you
 
 **Step 5: Quality inspection before shipping**
 
-Before your outfit ships, we do a final inspection: stitching quality, embroidery match, color accuracy, and fit based on your measurements. If anything doesn't match what you approved, we resolve it before it leaves India.
+When included in the selected scope, available pre-shipping review can compare visible stitching, embroidery, color against the approved reference, and recorded measurements. The review cannot guarantee perfect fit, identical screen color, or resolution of every issue.
 
 **Step 6: Delivery to your door**
 
-Your lehenga arrives carefully packaged, with all customs documentation handled. Most US clients receive their orders within 3–5 business days of shipping.
+The written quote identifies packaging, carrier, available insurance, shipping documents, customs responsibilities, estimated timing, and the party responsible for a claim. Carrier and customs dates remain estimates.
 
 **The timeline you need to know**
 
@@ -107,7 +107,7 @@ Here are the 15 measurements you need — and exactly how to take each one.
 
 **Getting it right the first time**
 
-At CeremonyVerse, we walk every client through their measurements on a video call before submitting to the tailor. We've caught errors that would have ruined the fit — and that 20-minute call has saved countless alterations.
+Eligible service tiers can include a guided measurement review before the measurements are submitted. The review helps identify visible inconsistencies, but it does not replace an in-person fitting or guarantee final fit.
 
 If you're unsure about any measurement, just ask. It's much cheaper to get it right the first time than to alter after shipping.`
   },
@@ -129,26 +129,24 @@ The honest answer is: it depends on the level of craftsmanship. But unlike most 
 — Premium (heavy hand embroidery, pure silk): $2,500–$6,000
 — Couture (designer name, full zardozi, pure silk): $6,000–$15,000+
 
-For most of our clients — US-based NRI brides who want authentic quality without overpaying — the $1,500–$4,000 range covers a genuinely beautiful, heavily embroidered bridal lehenga.
+The responsible way to compare options is to request written specifications and itemized quotes for the actual garments under consideration.
 
 **Compare that to US boutiques:**
 
-The same quality lehenga in a US South Asian boutique typically runs $4,000–$10,000. Boutiques have high overhead — retail space, staff, import costs, and significant markup. You're paying for the convenience of walking in, which is real, but the value gap is significant.
+Do not assume that an India quote is automatically less expensive or equivalent to a US boutique item. Compare fabric, handwork, customization, fittings, return or remedy terms, shipping, customs, alteration allowance, and delivery risk.
 
 **The CeremonyVerse fee:**
 
-Our sourcing fee is 15–20% of the outfit cost, depending on the service tier. This covers:
+CeremonyVerse uses the published flat service tiers rather than a percentage claim. Depending on the selected tier, the written scope may cover:
 — Vendor research and shortlisting
 — Live video shopping sessions
 — Quality inspection before shipping
 — Measurement coordination
 — Shipping support and customs documentation
 
-On a $2,000 lehenga, that's $300–$400 — typically still significantly less than what a US boutique charges for the same piece.
-
 **Shipping costs:**
 
-International shipping from India to the US typically runs $80–$200 depending on the size and weight of the shipment. A full wedding party order (10+ outfits) can be shipped together to reduce per-item cost.
+Shipping depends on packed weight and dimensions, carrier, service level, insurance, destination, and current rates. It is quoted for the actual order rather than promised as a universal range.
 
 **Customs and import duties:**
 
@@ -156,25 +154,18 @@ Indian textiles imported to the US may be assessed customs duties based on HTS c
 
 **The complete picture:**
 
-For a bridal lehenga that would cost $5,000 in a US boutique, a typical CeremonyVerse order might look like:
-— Outfit cost: $2,200
-— Sourcing fee (18%): $396
-— Shipping: $120
-— Estimated customs: $264
-— **Total: $2,980**
-
-That's a real saving of over $2,000 on a single outfit — and you saw every detail before it shipped.`
+Compare the approved item price, published CeremonyVerse service tier, tailoring, shipping, insurance, possible customs charges, local alteration allowance, timeline, and remedy terms. CeremonyVerse does not promise a universal savings amount or equivalence between two differently specified garments.`
   },
   {
     tag: "Family Planning",
-    title: "Coordinating Outfits for 20+ Family Members: A Step-by-Step Playbook",
-    excerpt: "Colors, fabrics, silhouettes, sizing across three states — here's how we manage large family outfit coordination without anyone wearing the wrong thing.",
+    title: "Coordinating Outfits for a Large Family: A Step-by-Step Framework",
+    excerpt: "A practical way to organize colors, silhouettes, measurements, approvals, and delivery when relatives live in different places.",
     date: "January 30, 2026",
     readTime: "7 min read",
     slug: "coordinate-family-wedding-outfits",
-    content: `When Dhan and Christina came to us, they had 22 family members who needed outfits for three ceremonies across two days. The family was spread across four states. Nobody had the same measurements. Half had never worn Indian clothes before.
+    content: `Large-family outfit coordination becomes difficult when several ceremonies, dress codes, measurements, budgets, and delivery addresses are managed in separate message threads. The framework below helps a family create one source of truth before any order is placed.
 
-Here's the exact system we use to make this work.
+This is an illustrative planning framework, not a CeremonyVerse client case study. CeremonyVerse package limits and any larger-group responsibilities must be confirmed in a private written scope.
 
 **Phase 1: The outfit map (week 1)**
 
@@ -182,7 +173,7 @@ Before we source a single outfit, we create a complete outfit map: who is attend
 
 **Phase 2: Measurement collection (weeks 2–3)**
 
-We send each family member a simple measurement guide with photos showing exactly how to take each measurement. We set a firm deadline. For anyone unsure, we offer a 15-minute video call to walk them through it. We follow up. We chase. We don't ship until every measurement is confirmed.
+Use one measurement guide and one deadline. Record who submitted each measurement, when it was reviewed, and which items still require clarification before an order is approved.
 
 **Phase 3: Fabric and color coordination**
 
@@ -190,15 +181,13 @@ Not everyone wears the same fabric or silhouette — and they shouldn't. Aunties
 
 **Phase 4: Single shipment where possible**
 
-Whenever the timeline allows, we consolidate to a single large shipment. This reduces shipping cost, simplifies customs, and means everything arrives at once rather than in a confusing trickle.
+When practical, compare consolidated and separate shipment options. The family should review cost, customs exposure, delivery timing, insurance, and the consequences of one delayed package before choosing.
 
 **Phase 5: Labeling and handoff**
 
-Every outfit is labeled with the family member's name and the ceremony it's for. We provide a one-page handoff document listing what's in the box and who it belongs to.
+Label each outfit with the wearer and ceremony, and prepare a one-page handoff inventory showing what arrived, what still needs alteration, and who owns the next step.
 
-The result: Dhan and Christina's family arrived at their wedding with every outfit accounted for, every fit correct, and zero last-minute panics.
-
-Large family coordination is what CeremonyVerse does best. Reach out to start planning yours.`,
+CeremonyVerse can help organize this process only to the extent stated in the selected package or private proposal.`,
   },
   {
     tag: "Trend Report",
@@ -236,39 +225,31 @@ Ivory and cream sherwanis remain the dominant choice for the wedding day. But sa
 The nehru collar sherwani with minimal embroidery is the clean, modern choice for grooms who want to look polished without feeling costumed.`
   },
   {
-    tag: "Real Wedding",
-    title: "Kaval & April's Wedding: 14 Outfits Sourced Across Three Ceremonies",
-    excerpt: "A 4-day Gujarati and South Indian Christian wedding in Philadelphia — 14 bridesmaids, 14 groomsmen, bridal and reception lehenga, full family, pet outfits, ceremonial items, return gifts, and welcome bags. All of it.",
+    tag: "Planning Guide",
+    title: "How to Plan a Multi-Event Gujarati and Christian Wedding Wardrobe",
+    excerpt: "Build one respectful wardrobe plan for multiple ceremonies, traditions, families, and dress-code needs without inventing a one-style-fits-all solution.",
     date: "January 5, 2026",
     readTime: "9 min read",
-    slug: "kaval-april-wedding-story",
-    content: `Kaval messaged us in March, ten months before his wedding. He and April were planning a 4-day Gujarati and South Indian Christian wedding in Philadelphia — and they needed everything: bridal lehenga, reception lehenga, 14 bridesmaids, 14 groomsmen, full family outfits, their dog's outfit, ceremonial items, return gifts, sweets, and welcome bags.
+    slug: "intercultural-wedding-wardrobe-planning-guide",
+    content: `A multi-event intercultural wedding may include Gujarati and Christian ceremonies with different religious settings, levels of formality, cultural expectations, and comfort needs. Start with the actual ceremony schedule and guidance from the couple and officiants rather than assuming every attendee needs traditional Indian clothing for every event.
 
-April had never worn Indian clothes. Kaval's family was split between New Jersey and California. April's family was from Ohio and had no reference point for Indian dress codes.
+**Build the ceremony map**
 
-14 people needed outfits. Here's how we did it.
+List every event, venue, dress code, and participant. Identify which outfits are required, which are optional, and where modesty, color, head-covering, footwear, or ceremonial requirements apply.
 
-**The brief**
+**Give each family equal clarity**
 
-Kaval wanted coordinated outfits across all four days — different color palettes for each ceremony. April needed a bridal lehenga and a separate reception lehenga. 14 bridesmaids and 14 groomsmen needed coordinated sets. Both families needed outfits. Their small dog needed a wedding outfit. And the non-outfit items — ceremonial pieces, return gifts, sweets, welcome bags — all needed to be sourced and shipped.
+Use plain-language notes and visual examples for relatives who have not worn Indian clothing before. Explain how each item is worn, what measurements are needed, and whether local alterations may be required.
 
-**The outfit map**
+**Coordinate without making everyone identical**
 
-We built a detailed outfit map: all 14 people, all 3 ceremonies, all dress codes. We shared it with both families via Google Sheet so everyone could see what they were wearing and when.
+A shared palette can connect the group while allowing sarees, lehengas, suits, sherwanis, bandhgalas, and Western formalwear appropriate to each person and event.
 
-**April's fittings**
+**Document approvals**
 
-April had never taken Indian measurements before. We did a 30-minute measurement call with her — she laughed her way through it and got every measurement right the first time. Her Anand Karaj lengha was a soft blush pink with ivory embroidery. Her Hindu ceremony lehenga was deep red, heavily embroidered. Both fit perfectly.
+Record the approved item, wearer, measurements, color reference, price, expected timing, shipping destination, and responsible party. Do not place a group order until unanswered questions and third-party costs are visible.
 
-**The groomsmen**
-
-Kaval's 5 groomsmen were across three states. We sent them all the measurement guide, set a three-week deadline, and did video calls with two of them who were uncertain. All five sherwanis arrived two weeks before the wedding.
-
-**What Kaval said afterward**
-
-"We had no idea where to start with a 4-day Gujarati and South Indian Christian wedding. CeremonyVerse dressed literally everyone — including our dog. The live video sessions made it feel like we were right there in the market."
-
-If you're planning an intercultural wedding and don't know where to begin, this is exactly what we're here for.`
+This is general planning guidance, not a client case study. CeremonyVerse supports Gujarati and Hindu destination-wedding planning through the responsibilities stated in a private proposal; other traditions require the appropriate qualified cultural and religious professionals.`
   },
 ]
 
@@ -306,7 +287,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
             <span style={{ color: "var(--cv-border)" }}>·</span>
             <span className="text-sm" style={{ color: "var(--cv-muted)" }}>{activePost.readTime}</span>
             <span style={{ color: "var(--cv-border)" }}>·</span>
-            <span className="text-sm" style={{ color: "var(--cv-muted)" }}>By Bhamini, CeremonyVerse</span>
+            <span className="text-sm" style={{ color: "var(--cv-muted)" }}>By the CeremonyVerse team</span>
           </div>
           <div className="prose-style">
             {activePost.content?.split('\n\n').map((para, i) => {
@@ -376,7 +357,7 @@ export function BlogPage({ onNavigate }: BlogPageProps) {
             Guides, Stories & Sourcing Advice
           </h1>
           <p className="text-[var(--cv-muted)] text-lg max-w-2xl mx-auto">
-            Everything you need to know about sourcing Indian wedding outfits from the US — written by Bhamini and the CeremonyVerse team.
+            Practical guidance for sourcing Indian wedding outfits from the US — written by the CeremonyVerse team.
           </p>
         </div>
       </section>

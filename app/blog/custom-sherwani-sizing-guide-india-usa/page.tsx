@@ -620,12 +620,12 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             >
               Prefer WhatsApp?{" "}
               <a
-                href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20talk%20about%20a%20custom%20sherwani%20from%20India."
+                href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20a%20custom%20sherwani%20from%20India."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#7a6841", fontWeight: 600 }}
               >
-                Message Bhamini directly →
+                Message CeremonyVerse →
               </a>
             </p>
           </div>

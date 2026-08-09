@@ -20,7 +20,7 @@ export function JewelryPage({ onNavigate }: Props) {
         <div className="relative py-24 px-6" style={{ zIndex: 2 }}>
           <p className="text-xs font-medium tracking-widest uppercase mb-4" style={{ color: "#7a6841" }}>The Finishing Touch</p>
           <h1 className="text-5xl font-semibold mb-6" style={{ color: "#fff" }}>Jewelry & Bridal Accessories</h1>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Authentic bridal jewelry sourced directly from India's finest craftsmen — kundan, polki, temple, and meenakari — inspected and delivered to your door.</p>
+          <p className="text-lg max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>Research bridal jewelry options from India—including kundan, polki-style, temple, and meenakari pieces—with documented approvals and delivery responsibilities.</p>
         </div>
       </section>
 
@@ -44,8 +44,8 @@ export function JewelryPage({ onNavigate }: Props) {
 
       <section className="py-12 px-6" style={{ background: "#f0ebe3" }}>
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-semibold mb-4">Every piece quality-checked before shipping</h2>
-          <p className="text-[var(--cv-muted)]">We photograph jewelry under HD lighting showing stone clarity, setting quality, and color accuracy. What you approve in video is exactly what ships.</p>
+          <h2 className="text-2xl font-semibold mb-4">Review available details before shipping</h2>
+          <p className="text-[var(--cv-muted)]">When the vendor and selected service allow it, CeremonyVerse coordinates photos or video of the available piece against the written order. Screen color, material claims, and inspection limits are documented before approval.</p>
         </div>
       </section>
 
@@ -54,7 +54,7 @@ export function JewelryPage({ onNavigate }: Props) {
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">From a single statement necklace to a full bridal jewelry trousseau — we source pieces that complement your lehenga and budget.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20bridal%20jewelry%20sourcing." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20need%20bridal%20jewelry%20sourcing." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

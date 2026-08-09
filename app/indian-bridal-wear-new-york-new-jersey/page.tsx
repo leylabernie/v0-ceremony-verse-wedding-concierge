@@ -131,13 +131,13 @@ export default function IndianBridalWearNYNJPage() {
               Book Your CeremonyVerse Consultation Now
             </Link>
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I'm%20a%20NY%20or%20NJ%20bride%20looking%20for%20a%20bridal%20lehenga%20from%20India."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I'm%20a%20NY%20or%20NJ%20bride%20looking%20for%20a%20bridal%20lehenga%20from%20India."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
-              WhatsApp Bhamini
+              WhatsApp CeremonyVerse
             </a>
           </div>
         </div>
@@ -353,13 +353,13 @@ export default function IndianBridalWearNYNJPage() {
               Book Your CeremonyVerse Consultation Now
             </Link>
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I'm%20a%20NY/NJ%20bride%20looking%20to%20source%20a%20bridal%20lehenga%20from%20India."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I'm%20a%20NY/NJ%20bride%20looking%20to%20source%20a%20bridal%20lehenga%20from%20India."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium border"
               style={{ borderColor: "#7a6841", color: "#f8f6f2" }}
             >
-              WhatsApp Bhamini Directly
+              WhatsApp CeremonyVerse
             </a>
           </div>
 

@@ -56,22 +56,24 @@ export default function TermsPage() {
             CeremonyVerse is a US-based concierge service that helps families source Indian wedding
             items — including bridal lehengas, sherwanis, bridesmaid and family outfits, jewelry,
             ceremonial items, return gifts, welcome bags, and related wedding essentials — directly
-            from India. Our services include style consultation, live video shopping sessions with
-            vetted Indian artisans and vendors, quality inspection, custom tailoring coordination,
-            international shipping, US customs handling, and delivery to your US address.
+            from India. Depending on the selected tier and vendor, services may include style consultation,
+            live video review, measurement and tailoring coordination, pre-shipping review, and
+            shipping-document and tracking support for delivery to a US address.
           </p>
           <p style={{ marginTop: "1rem" }}>
             We act as your sourcing agent and concierge — not as the manufacturer of the items we
             help you source. The artisan workshops, jewelers, weavers, and tailors in India remain
-            independent third parties. We vet them carefully and stand behind the quality of what
-            we ship, but we do not own or operate their workshops.
+            independent third parties. We review available vendor information and document approvals
+            within the contracted scope, but we do not own their workshops, manufacture their products,
+            or eliminate the risks inherent in handmade and remotely purchased items.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For Mexico destination weddings, CeremonyVerse can offer full planning, partial planning,
-            day-of coordination, family-concierge, guest-information, arrival, welcome-item, and
-            India-sourcing support. CeremonyVerse may engage qualified Mexico-based planning professionals
-            and other independent providers to perform the local responsibilities defined in the client&apos;s
-            private written proposal.
+            For destination weddings, CeremonyVerse can offer full planning, partial planning,
+            day-of coordination, family communication, guest-information, arrival, welcome-item, and
+            India-sourcing support. An experienced planning partner leads contracted local planning and
+            on-site work in Cancun, Riviera Maya, and Punta Cana. CeremonyVerse supports family
+            communication and leads India sourcing when those responsibilities are included in the
+            client&apos;s private written proposal.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -79,11 +81,10 @@ export default function TermsPage() {
           </h2>
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Mexico wedding planning
-            and concierge services use private proposals based on the selected scope. The
-            30-minute initial consultation is free. Service tier fees become non-refundable once work begins or a vendor
-            introduction, sourcing call, or vendor list has been delivered, because that work has
-            already been performed by our team.
+            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Destination-planning
+            services use private proposals based on the selected scope. The 30-minute initial consultation
+            is free. The signed proposal or service agreement identifies when paid work begins and the
+            cancellation, refund, and rescheduling rules that apply to that scope.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is
@@ -93,10 +94,10 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            3. Independent Mexico, Travel, and Transfer Providers
+            3. Planning Partner, Travel, and Other Providers
           </h2>
           <p>
-            Mexico-based planning professionals, resorts, venues, vendors, travel companies, airlines,
+            The destination-planning partner, resorts, venues, vendors, travel companies, airlines,
             hotels, transfer companies, and carriers may be independent providers. Each provider remains
             responsible for the services assigned to it. CeremonyVerse does not bind another provider
             beyond the authority stated in a signed written agreement, and another provider cannot bind
@@ -134,16 +135,16 @@ export default function TermsPage() {
             5. Refunds and Returns
           </h2>
           <p>
-            Custom-tailored outfits (lehengas, sherwanis, blouses, suits made to your measurements)
-            are non-returnable and non-refundable, because they cannot be resold to another client.
-            This is the standard practice for custom bridal wear worldwide and is the same policy
-            followed by Indian boutiques in the US and India alike.
+            Cancellation, return, replacement, alteration, and refund rights depend on the selected
+            service, item, vendor terms, production stage, and applicable law. Custom or altered items
+            are often final sale once materials are purchased or production begins. The applicable terms
+            are disclosed for approval before the related purchase or production milestone.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            Ready-to-wear items and jewelry may be returned within 7 days of delivery, provided
-            they are unused, unworn, with all original tags and packaging intact. Return shipping
-            to India is the responsibility of the client. Refunds are issued to the original payment
-            method within 14 business days of our team receiving and inspecting the returned item.
+            A ready-to-wear item or jewelry return is available only when the selected vendor or seller
+            accepts it and the item meets that provider&apos;s return conditions. The client receives the
+            available vendor terms, return-shipping responsibility, and expected refund method before an
+            eligible return is authorized.
           </p>
           <p style={{ marginTop: "1rem" }}>
             If an item arrives damaged or does not match the approved specifications, contact us
@@ -157,14 +158,13 @@ export default function TermsPage() {
             6. Sizing and Measurements
           </h2>
           <p>
-            For custom-tailored items, we conduct a three-way video measurement call with an expert
-            tailor (Masterji) to map your measurements accurately. You are responsible for taking
-            the measurements as directed during that call and for confirming the final measurement
-            chart before production begins. Once production begins, measurement changes cannot be
-            guaranteed. Eligible made-to-measure garments include Fit Assurance with up to $150
-            toward reasonable local alteration costs after delivery, subject to your signed proposal
-            and service terms. Fit Assurance does not cover issues caused by inaccurate, incomplete,
-            or changed measurements supplied by the client.
+            For custom-tailored items, CeremonyVerse helps document the measurements requested by the
+            selected vendor. You are responsible for providing accurate measurements and confirming the
+            final chart before production begins. Once production begins, measurement changes cannot be
+            guaranteed. Eligible made-to-measure garments may include Fit Assurance with up to $150
+            toward reasonable local alteration costs after delivery when stated in the signed proposal.
+            Fit Assurance does not cover issues caused by inaccurate, incomplete, or changed measurements
+            supplied by the client.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -199,7 +199,7 @@ export default function TermsPage() {
             United States. Any disputes will be resolved in the state or federal courts located in
             Philadelphia County, Pennsylvania. We will always attempt to resolve any concern
             informally first — please reach out to{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
+            <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>hello@ceremonyverse.com</a>{" "}
             or by WhatsApp at{" "}
             <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>.
           </p>
@@ -213,8 +213,8 @@ export default function TermsPage() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>
               Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
-                bhamini@ceremonyverse.com
+              <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>
+                hello@ceremonyverse.com
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>

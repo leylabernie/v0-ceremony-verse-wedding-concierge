@@ -30,7 +30,7 @@ export function FamilyPage({ onNavigate }: Props) {
             { title: "Mother of the Bride/Groom", desc: "Silk sarees, lehengas, and salwar suits in colors that complement the bridal palette." },
             { title: "Father Outfits", desc: "Sherwanis, kurta sets, and bandhgalas for fathers and father-in-laws." },
             { title: "Siblings", desc: "Coordinated outfits for brothers and sisters — matching or complementary to the main wedding colors." },
-            { title: "Extended Family", desc: "Outfits for uncles, aunts, and cousins across any family size, sourced together." },
+            { title: "Extended Family", desc: "Outfits for additional relatives when they are included in the selected package or a private written scope." },
             { title: "Multi-Ceremony Coordination", desc: "Separate looks for mehndi, sangeet, wedding, and reception — all coordinated." },
             { title: "Color Theme Planning", desc: "We help plan a cohesive family color story across all ceremonies and generations." },
           ].map((item, i) => (
@@ -44,16 +44,16 @@ export function FamilyPage({ onNavigate }: Props) {
 
       <section className="py-10 px-6" style={{ background: "#f0ebe3" }}>
         <p className="text-center font-medium" style={{ color: "var(--cv-foreground)" }}>
-          ✦ Top vendors book 6–12 months out. <span style={{ color: "var(--cv-muted)", fontWeight: 400 }}>The earlier you start, the better your selection.</span>
+          ✦ Custom work needs lead time. <span style={{ color: "var(--cv-muted)", fontWeight: 400 }}>Confirm vendor capacity, production timing, shipping, and alteration time before ordering.</span>
         </p>
       </section>
 
       <section className="py-16 px-6 text-center">
         <h2 className="text-3xl font-semibold mb-4">Dress the whole family</h2>
-        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We've coordinated outfits for families of 20+, across multiple states and ceremonies. One point of contact. Zero stress.</p>
+        <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">Full Bridal Concierge covers the couple and wedding party up to eight people. Larger family groups require a private written scope with responsibilities and costs confirmed before ordering.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20family%20wedding%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20need%20family%20wedding%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

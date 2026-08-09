@@ -47,7 +47,7 @@ export function GiftsPage({ onNavigate }: Props) {
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">From 10 gifts to 500 — we source, package, and ship everything together with your outfit order to save on logistics.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20help%20with%20wedding%20return%20gifts." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20need%20help%20with%20wedding%20return%20gifts." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

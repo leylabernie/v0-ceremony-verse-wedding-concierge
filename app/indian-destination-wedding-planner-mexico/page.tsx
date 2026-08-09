@@ -48,9 +48,9 @@ const faqItems = [
       "Ask who prepares the food, whether outside catering is permitted, how dietary and allergy requirements are handled, whether separate preparation is available, what tasting process applies, and which fees, minimums, service charges, and taxes are additional. Put the agreed menu and operating conditions in writing.",
   },
   {
-    question: "How does CeremonyVerse work with the Mexico planner?",
+    question: "How does CeremonyVerse work with the destination-planning partner?",
     answer:
-      "CeremonyVerse offers full planning, partial planning, and day-of coordination through private proposals, with qualified Mexico-based planning professionals responsible for the local work defined in the selected package. Family concierge, guest, arrival, and India-sourcing support can be added as needed.",
+      "An experienced destination-wedding planning partner becomes involved from the beginning and leads the contracted local planning and on-site work. CeremonyVerse supports family communication and can lead optional India sourcing. The partnership currently serves Cancun, Riviera Maya, and Punta Cana.",
   },
 ];
 
@@ -315,26 +315,25 @@ export default function MexicoDestinationGuidePage() {
         <div className="mx-auto max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-[#7a6841]">
-              CeremonyVerse family lens
+              Clear planning responsibilities
             </p>
             <h2
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Experience stated accurately
+              Know who owns each decision
             </h2>
           </div>
           <div className="mt-10 rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 text-lg leading-relaxed text-[#4d403a] md:p-10">
             <p>
-              CeremonyVerse founder Bhamini Bernie draws on three family wedding journeys: two multi-day weddings
-              for her sons—one in Mexico and one that pivoted from Mexico to New Jersey during the pandemic—and
-              her nephew&apos;s Mexico wedding. That is meaningful family experience, not a fabricated portfolio of
-              paid clients.
+              A destination wedding becomes difficult when resort, planner, travel, vendor, family, and sourcing
+              responsibilities are assumed instead of written down. CeremonyVerse helps the family prepare a useful
+              brief and understand which party owns each decision, approval, payment, deadline, and contingency.
             </p>
             <p className="mt-5">
-              CeremonyVerse uses those lessons to help the family ask better questions, prepare a useful brief,
-              and understand the responsibilities of the planner, resort, travel provider, vendors, and family.
-              The Mexico planner signs with the couple directly; CeremonyVerse signs only for its separate support.
+              The current planning partnership serves Cancun, Riviera Maya, and Punta Cana. The private proposal
+              identifies the contracted scope, fees, payment recipients, exclusions, and third-party costs before an
+              agreement is signed. Family-experience facts are documented separately on the About page.
             </p>
           </div>
         </div>

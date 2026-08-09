@@ -1,7 +1,6 @@
 "use client"
 
-import Script from "next/script"
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react"
+import { useMemo, useState, useSyncExternalStore } from "react"
 import { trackLead } from "@/lib/analytics"
 
 interface FormData {
@@ -36,8 +35,8 @@ const getServiceInterestFromLocation = () => {
   const requestedService = new URLSearchParams(window.location.search).get("service")
   const serviceByQuery: Record<string, FormData["serviceInterest"]> = {
     india: "India shopping",
-    mexico: "Mexico wedding concierge",
-    both: "India shopping + Mexico wedding concierge",
+    mexico: "Destination wedding planning",
+    both: "India shopping + destination wedding planning",
   }
 
   return requestedService ? serviceByQuery[requestedService] || "" : ""
@@ -67,28 +66,15 @@ export function ContactPage() {
   const fallbackMessage = useMemo(
     () =>
       encodeURIComponent(
-        `Hi Bhamini, I'd like to book a CeremonyVerse consultation.\nService: ${serviceInterest || "Not provided"}\nName: ${formData.name || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nEvent date: ${formData.eventDate || "Not provided"}\nEvent location: ${formData.eventLocation || "Not provided"}\nGuest count: ${formData.guestCount || "Not provided"}\nVision: ${formData.vision || "Not provided"}`
+        `Hello CeremonyVerse, I'd like to request a consultation.\nService: ${serviceInterest || "Not provided"}\nName: ${formData.name || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nEvent date: ${formData.eventDate || "Not provided"}\nEvent location: ${formData.eventLocation || "Not provided"}\nGuest count: ${formData.guestCount || "Not provided"}\nVision: ${formData.vision || "Not provided"}`
       ),
     [formData, serviceInterest]
   )
 
   const whatsappFallbackUrl = `https://wa.me/12153419990?text=${fallbackMessage}`
-  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
+  const emailFallbackUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
     "CeremonyVerse consultation request"
   )}&body=${fallbackMessage}`
-
-  useEffect(() => {
-    const handleCalendlyEvent = (event: MessageEvent) => {
-      if (event.origin !== "https://calendly.com") return
-      const eventName = (event.data as { event?: string } | null)?.event
-      if (eventName === "calendly.event_scheduled") {
-        trackLead("calendly", "contact-page-inline-widget")
-      }
-    }
-
-    window.addEventListener("message", handleCalendlyEvent)
-    return () => window.removeEventListener("message", handleCalendlyEvent)
-  }, [])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -152,7 +138,7 @@ export function ContactPage() {
             <ul className="space-y-4">
               {[
                 "We review your wedding vision and timeline",
-                "Bhamini or a team member reaches out within 24–48 hours",
+                "The CeremonyVerse team reaches out within 24–48 hours",
                 "We confirm your free 30-minute consultation",
                 "You leave the call with a realistic plan and recommended next step",
               ].map((item, index) => (
@@ -213,8 +199,8 @@ export function ContactPage() {
             Get Your Free 30-Minute Wedding Plan
           </h1>
           <p className="text-lg leading-relaxed max-w-xl mx-auto" style={{ color: "#4d403a" }}>
-            Tell us whether you need India shopping, full or partial Mexico planning, day-of coordination,
-            family-side guest support, or a combination. We&apos;ll review the date, guest count, and what your budget must
+            Tell us whether you need India shopping, destination-wedding planning in Cancun, Riviera Maya, or Punta
+            Cana, family-side support, or a combination. We&apos;ll review the date, guest count, and what your budget must
             cover, then recommend a practical next step—with no payment required for the consultation.
           </p>
 
@@ -237,7 +223,7 @@ export function ContactPage() {
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <a
-              href="mailto:bhamini@ceremonyverse.com"
+              href="mailto:hello@ceremonyverse.com"
               className="flex items-center gap-2 transition hover:opacity-80"
               style={{ color: "var(--cv-muted)" }}
             >
@@ -245,7 +231,7 @@ export function ContactPage() {
                 <rect x="2" y="4" width="20" height="16" rx="2"/>
                 <path d="m22,7-10,7L2,7"/>
               </svg>
-              bhamini@ceremonyverse.com
+              hello@ceremonyverse.com
             </a>
             <span style={{ color: "var(--cv-border)" }}>|</span>
             <span style={{ color: "var(--cv-muted)" }}>Response within 24–48 hrs</span>
@@ -253,41 +239,9 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* CALENDLY BOOKING */}
-      <section className="pb-8 px-6">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-6">
-            <p className="text-xs tracking-widest uppercase font-medium mb-2" style={{ color: "var(--cv-accent)" }}>
-              Fastest Way to Connect
-            </p>
-            <h2
-              className="font-['Cormorant_Garamond'] text-3xl font-semibold mb-2"
-              style={{ color: "var(--cv-foreground)" }}
-            >
-              Pick a Time That Works for You
-            </h2>
-            <p className="text-sm" style={{ color: "var(--cv-muted)" }}>
-              No contract or payment required. You&apos;ll leave with a practical next step.
-            </p>
-          </div>
-          {/* Calendly inline widget */}
-          <div
-            className="calendly-inline-widget rounded-2xl overflow-hidden"
-            data-url="https://calendly.com/lab-bhamini/30min?hide_gdpr_banner=1&primary_color=c7b28a"
-            style={{ minWidth: "320px", height: "700px", border: "1px solid var(--cv-border)" }}
-          />
-          <Script
-            id="calendly-inline-widget-script"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="lazyOnload"
-          />
-        </div>
-      </section>
-
-      {/* DIVIDER */}
-      <div className="max-w-3xl mx-auto px-6 py-4 text-center">
-        <p className="text-xs" style={{ color: "var(--cv-muted)" }}>
-          — or fill out the form below and we'll reach out within 24–48 hours —
+      <div className="mx-auto max-w-3xl px-6 py-4 text-center">
+        <p className="text-sm" style={{ color: "var(--cv-muted)" }}>
+          Complete the short request below. WhatsApp will open with your details ready to send.
         </p>
       </div>
 
@@ -355,8 +309,8 @@ export function ContactPage() {
                   >
                     <option value="">Select a service</option>
                     <option value="India shopping">India wedding shopping</option>
-                    <option value="Mexico wedding concierge">Mexico wedding planning / family concierge</option>
-                    <option value="India shopping + Mexico wedding concierge">India shopping + Mexico concierge</option>
+                    <option value="Destination wedding planning">Destination wedding planning / family support</option>
+                    <option value="India shopping + destination wedding planning">India shopping + destination planning</option>
                     <option value="Not sure">Not sure yet</option>
                   </select>
                 </div>
@@ -459,7 +413,7 @@ export function ContactPage() {
                         background: "var(--cv-bg)",
                         color: "var(--cv-foreground)",
                       }}
-                      placeholder="City, state, or Mexico venue"
+                      placeholder="City, state, resort, or destination"
                     />
                   </div>
                   <div>
@@ -548,7 +502,7 @@ export function ContactPage() {
                       background: "var(--cv-bg)",
                       color: "var(--cv-foreground)",
                     }}
-                    placeholder="Tell us about the events, outfits, Mexico venue, vendors already booked, cultural requirements, budget, and concerns..."
+                    placeholder="Tell us about the events, outfits, destination or resort, vendors already booked, Gujarati or Hindu requirements, budget, and concerns..."
                   />
                 </div>
 

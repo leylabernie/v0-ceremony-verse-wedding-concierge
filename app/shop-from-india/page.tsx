@@ -183,8 +183,8 @@ export default function ShopFromIndiaPage() {
 
             <p>
               📧 Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" className="underline">
-                bhamini@ceremonyverse.com
+              <a href="mailto:hello@ceremonyverse.com" className="underline">
+                hello@ceremonyverse.com
               </a>
             </p>
           </div>

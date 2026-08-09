@@ -52,7 +52,7 @@ export function GroomsmenPage({ onNavigate }: Props) {
         <p className="text-[var(--cv-muted)] mb-8 max-w-xl mx-auto">We collect measurements from each groomsman remotely and ship everything together. Average turnaround: 8–10 weeks.</p>
         <div className="flex flex-wrap justify-center gap-4">
           <button onClick={() => onNavigate("contact")} className="btn-primary">Book Free Consultation</button>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20need%20groomsmen%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp Bhamini</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20need%20groomsmen%20outfits." target="_blank" rel="noopener noreferrer" className="btn-ghost">WhatsApp CeremonyVerse</a>
         </div>
       </section>
     </div>

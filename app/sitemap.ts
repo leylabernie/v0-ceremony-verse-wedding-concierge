@@ -297,7 +297,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog/how-i-sourced-my-sons-mexico-wedding-outfits-from-surat/`,
+      url: `${baseUrl}/blog/mexico-wedding-wardrobe-sourcing-from-india/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,

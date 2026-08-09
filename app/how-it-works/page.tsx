@@ -4,12 +4,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, bui
 export const metadata = buildMetadata({
   path: "/how-it-works/",
   title: "How CeremonyVerse Works — India to USA",
-  description: "Free consultation, live video shopping in India, custom stitching, quality inspection, and delivery to your US door."
+  description: "See the CeremonyVerse process for India wedding sourcing: consultation, written approvals, measurement support, pre-shipping review, and US delivery coordination."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Sourcing Process",
-  description: "Five-step process for sourcing Indian wedding outfits from India to the USA: free consultation, style discovery, live video shopping in India, custom stitching, quality inspection, and door-to-door US delivery.",
+  description: "Six-step process for sourcing Indian wedding outfits from India to the USA: consultation, style discovery, eligible live video review, measurement coordination, pre-shipping review, and delivery coordination.",
   url: "/how-it-works/",
 });
 
@@ -38,13 +38,13 @@ const faqSchema = buildFaqSchema([
 
 const howToSchema = buildHowToSchema({
   name: "How to Source Indian Wedding Outfits from India to the USA",
-  description: "Six-step process for sourcing Indian wedding outfits from India to the USA through CeremonyVerse — from free consultation to door-to-door US delivery.",
+  description: "Six-step process for sourcing Indian wedding outfits from India to the USA through CeremonyVerse — from the free consultation to delivery coordination.",
   url: "/how-it-works/",
   totalTime: "PT2H",  // ISO 8601 duration
   steps: [
     { name: "Free Consultation", text: "Tell us about your wedding: ceremonies, party size, timeline, budget. We'll tell you honestly what's achievable and which service tier fits your needs. No sales pressure." },
     { name: "Style Discovery", text: "Share your inspiration — Pinterest boards, Instagram saves, photos from weddings you loved. We work with our outfit specialists and designers in India to find pieces that match your vision, your culture, and your budget." },
-    { name: "Live Video Shopping in India", text: "Join a live video call where our team in India shows you actual outfits — fabric draped, embroidery up close, color in natural light. The exact piece you approve gets reserved with your name and order number. No catalog photos. No surprises." },
+    { name: "Live Video Shopping in India", text: "For eligible tiers and available items, join a live video review to examine fabric, embroidery, and color in the vendor's environment. The selected item or custom brief is documented for written approval before purchase or production." },
     { name: "Measurement Coordination", text: "For made-to-measure items, we help document measurements in the vendor's requested format and obtain written approval before production." },
     { name: "Pre-Shipping Review", text: "For eligible tiers, we compare visible details of the completed item with the approval record before shipment and share any concern with you." },
     { name: "US Delivery Coordination", text: "We coordinate shipping documents and tracking for the approved shipment. The carrier and US customs control final clearance and delivery timing." },
@@ -56,7 +56,7 @@ const steps = [
     number: "01",
     title: "Free Consultation (Always Free)",
     description:
-      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, full or partial Mexico planning, day-of coordination, family-concierge support, or a combined scope fits the request.",
+      "Tell us about your wedding: ceremonies, party size, timeline, location, and budget. We identify whether India shopping, destination planning, day-of coordination, family-side support, or a combined scope fits the request.",
   },
   {
     number: "02",
@@ -96,7 +96,7 @@ const sourceItems = [
   { title: "Bridesmaid Outfits", desc: "Coordinated lehengas, sarees, or salwar sets for your entire bridal party — all measurements managed by us." },
   { title: "Groomsmen Outfits", desc: "Matching kurta sets, Nehru jackets, or sherwanis for the groom's party." },
   { title: "Family Outfits", desc: "Coordinated outfits for both families — parents, siblings, and extended family across every ceremony." },
-  { title: "Jewelry & Accessories", desc: "Bridal jewelry sets, bridesmaid accessories, and ceremonial pieces sourced from trusted artisans." },
+  { title: "Jewelry & Accessories", desc: "Bridal jewelry sets, bridesmaid accessories, and ceremonial pieces sourced when the vendor and requested details can be responsibly reviewed." },
   { title: "Ceremonial Items", desc: "Pooja thalis, kalire, coconut decorations, and ceremony-specific items sourced authentically from India." },
   { title: "Wedding Gifts", desc: "Curated gift boxes, return gifts, and trousseau items for guests and family." },
   { title: "Welcome Bags", desc: "Custom welcome bags with Indian snacks, personalized items, and cultural touches for your guests." },
@@ -117,12 +117,12 @@ const pricingTiers = [
   {
     name: "Guided Sourcing",
     price: "$799",
-    description: "For couples sourcing outfits across multiple ceremonies. Includes multiple live video sessions, bridesmaid/groomsmen coordination, and quality inspection.",
+    description: "For couples sourcing outfits across multiple ceremonies. Includes eligible live video sessions, selection and measurement coordination, order follow-up, and pre-shipping review.",
   },
   {
     name: "Full Bridal Concierge",
     price: "$2,499",
-    description: "End-to-end sourcing for your entire wedding party — every ceremony, every outfit, every family member. Dedicated coordinator, unlimited sessions, and priority shipping.",
+    description: "End-to-end shopping coordination for the couple and wedding party of up to eight people, with centralized measurements, approvals, and delivery support.",
   },
 ]
 
@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "How does the Mexico service work?",
-    a: "CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through a private proposal. Qualified Mexico-based planning professionals handle the local work assigned in that proposal, and family, guest, arrival, welcome-item, and India-sourcing support can be added as needed.",
+    a: "CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through a private proposal. An experienced partner leads the assigned local work in Cancun, Riviera Maya, or Punta Cana, while CeremonyVerse supports family communication and leads India sourcing when included.",
   },
   {
     q: "What if I only need one or two outfits, not a full wedding party?",
@@ -362,7 +362,7 @@ export default function HowItWorksPage() {
         <div style={{ maxWidth: "560px", margin: "0 auto" }}>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             Not sure which service fits? Book a free 30-minute call and we&apos;ll outline the available
-            India-shopping, Mexico planning, or family-concierge path for your dates, scope, and budget.
+            India-shopping, destination-planning, or family-support path for your dates, scope, and budget.
           </p>
           <a
             href="/contact/"

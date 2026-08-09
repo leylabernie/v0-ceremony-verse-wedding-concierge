@@ -214,7 +214,7 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            Book a free consultation with Bhamini — get direct access to designers and makers without retail markups.
+            Book a free consultation with CeremonyVerse to discuss available sourcing options and the documented process.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -225,12 +225,12 @@ export function JourneyPage({ onNavigate }: JourneyPageProps) {
               Book Free Consultation
             </button>
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20learn%20about%20the%20sourcing%20process."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20learn%20about%20the%20sourcing%20process."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-ghost"
             >
-              WhatsApp Bhamini
+              WhatsApp CeremonyVerse
             </a>
           </div>
         </div>
