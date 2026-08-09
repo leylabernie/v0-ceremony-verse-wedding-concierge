@@ -3,8 +3,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-washington-dc/",
-  title: "Indian Wedding Shopping Washington DC — NRI Bridal Concierge DMV",
-  description: "Source Indian wedding outfits to Washington DC, Maryland, and Virginia. CeremonyVerse delivers bridal lehengas, sherwanis, and family ceremony wear directly from India to the DMV area with live video shopping and custom stitching.",
+  title: "Indian Wedding Shopping from India — Washington DC",
+  description: "DMV families can source Indian wedding outfits from India with live review, custom stitching, and delivery coordination across DC, Maryland, and Virginia.",
   keywords: "Indian wedding shopping Washington DC, DC bridal lehenga, NRI wedding concierge DC, Indian wedding outfits Maryland Virginia, buy Indian wedding outfits DMV, Indian wedding shopping DC area",
 });
 

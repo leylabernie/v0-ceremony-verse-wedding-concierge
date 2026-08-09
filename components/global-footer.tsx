@@ -30,7 +30,7 @@ const locationLinks = [
   { label: "Washington DC", href: "/indian-wedding-shopping-washington-dc/" },
   { label: "New York", href: "/indian-wedding-shopping-new-york/" },
   { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey/" },
-  { label: "NY & NJ", href: "/indian-bridal-wear-new-york-new-jersey/" },
+  { label: "NY & NJ Bridal Wear", href: "/indian-bridal-wear-new-york-new-jersey/" },
   { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts/" },
   { label: "Georgia", href: "/indian-wedding-shopping-georgia/" },
   { label: "Florida", href: "/indian-wedding-shopping-florida/" },

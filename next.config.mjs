@@ -37,6 +37,19 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
+      // ─── CONSOLIDATED LOCAL LANDING PAGES ───
+      // These older pages duplicated the same state-level service intent as
+      // the more complete wedding-shopping pages.
+      {
+        source: '/indian-bridal-wear-california',
+        destination: '/indian-wedding-shopping-california/',
+        permanent: true,
+      },
+      {
+        source: '/indian-bridal-wear-texas',
+        destination: '/indian-wedding-shopping-texas/',
+        permanent: true,
+      },
       // ─── DOMAIN NORMALIZATION: non-www → www ───
       {
         source: '/:path*',

@@ -8,9 +8,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 // "buy lehenga from india chicago", "nri indian wedding shopping illinois"
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-illinois/",
-  title: "Indian Wedding Shopping from India — Illinois NRI Families",
+  title: "Indian Wedding Shopping from India — Illinois",
   description:
-    "Illinois NRI families: source bridal lehengas, sherwanis, and Indian wedding outfits directly from India — live video shopping, custom stitching, delivered to your IL door.",
+    "Chicago and Illinois families can source Indian wedding outfits from India with live review, custom stitching, pre-shipping review, and delivery coordination.",
   keywords: [
     "indian wedding shopping illinois",
     "indian wedding shopping chicago",
@@ -557,8 +557,6 @@ export default function IndianWeddingShoppingIllinoisPage() {
               { label: "California", url: "/indian-wedding-shopping-california/" },
               { label: "Texas", url: "/indian-wedding-shopping-texas/" },
               { label: "NY Bridal Wear", url: "/indian-bridal-wear-new-york-new-jersey/" },
-              { label: "CA Bridal Wear", url: "/indian-bridal-wear-california/" },
-              { label: "TX Bridal Wear", url: "/indian-bridal-wear-texas/" },
             ].map((item) => (
               <Link
                 key={item.url}
