@@ -22,9 +22,9 @@ import {
  */
 export const metadata = buildMetadata({
   path: "/indian-bridal-wear-new-york-new-jersey/",
-  title: "Indian Bridal Wear New York & New Jersey",
+  title: "Indian Bridal Wear & Lehenga Shopping — NY & NJ",
   description:
-    "New York and New Jersey couples can source bridal lehengas, sherwanis, and family outfits from India with live video shopping, custom stitching, and delivery.",
+    "Compare NY and NJ bridal shopping with India sourcing for custom lehengas, including live review, measurement coordination, and itemized delivery costs.",
   keywords:
     "indian bridal wear new jersey, indian wedding shops edison nj, lehenga shops in nyc, indian bridal boutique new jersey, custom bridal lehenga NY NJ, sherwani shops new york",
 });
@@ -32,7 +32,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Indian Bridal Wear Sourcing for NY & NJ Metro — Tri-State Concierge",
   description:
-    "CeremonyVerse sources custom bridal lehengas, sherwanis, bridesmaid outfits, and bulk return gifts directly from India for Tri-State couples in New York and New Jersey. Includes live video shopping with India artisans, Masterji measurement calls, JFK/Newark customs clearance, and door-to-door delivery across the NY & NJ metro area.",
+    "CeremonyVerse coordinates custom bridal lehenga sourcing from India for New York and New Jersey couples, with eligible live review, measurement support, written approvals, and delivery coordination.",
   url: "/indian-bridal-wear-new-york-new-jersey/",
   category: "Indian Bridal Wear Sourcing — New York & New Jersey Metro",
   areaServed: "NY-NJ-PA Metro Area, United States",
@@ -73,9 +73,9 @@ const faqSchema = buildFaqSchema([
   },
   {
     question:
-      "Can you deliver bridal wear to my home in NYC, Long Island, Westchester, Edison, Jersey City, or Parsippany?",
+      "Can you coordinate bridal-wear delivery to New York or New Jersey?",
     answer:
-      "Yes. CeremonyVerse handles customs clearance at JFK or Newark and delivers securely to your doorstep anywhere in the Tri-State area — including Manhattan, Queens, Brooklyn, Long Island, Westchester, Edison, Iselin, Jersey City, Parsippany, Princeton, and across all of New York and New Jersey.",
+      "Yes. CeremonyVerse coordinates shipment documents and tracking for delivery to New York or New Jersey. The carrier and U.S. Customs control final clearance timing and any duty assessment.",
   },
   {
     question:
@@ -118,9 +118,9 @@ export default function IndianBridalWearNYNJPage() {
             style={{ color: "#e8dfd2" }}
           >
             Compare remote India sourcing with Edison and Jackson Heights options.
-            Source custom bridal lehengas, sherwanis, and bulk return gifts
-            directly from India&apos;s premier artisan hubs — with live video
-            shopping and door-to-door delivery across the Tri-State.
+            Review local bridal-shopping options alongside remote India
+            sourcing for a custom lehenga, with eligible live video review,
+            documented approvals, and delivery coordination across the Tri-State.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -158,20 +158,21 @@ export default function IndianBridalWearNYNJPage() {
             style={{ color: "#4d403a" }}
           >
             Planning a South Asian wedding in the New York or New Jersey area
-            often leads families straight to the crowded boutiques of Edison,
-            Iselin, or Jackson Heights. While these physical shops offer
-            convenience, they also come with heavy price inflation to cover
-            expensive East Coast storefront rents and steep importer markups.
+            often leads families to boutiques in Edison, Iselin, or Jackson
+            Heights. Those local stores offer the advantage of seeing garments
+            in person, while remote India sourcing may provide additional custom
+            options. The right choice depends on the complete written cost,
+            timeline, alteration terms, and level of support.
           </p>
           <p
             className="text-base md:text-lg leading-relaxed"
             style={{ color: "#4d403a" }}
           >
-            CeremonyVerse offers a seamless, modern alternative for Tri-State
-            brides and grooms. Skip the limited store inventories and high
-            boutique retail markups by sourcing your custom bridal lehengas,
-            sherwanis, and bulk return gifts directly from India&apos;s
-            premier artisan hubs.
+            CeremonyVerse offers a remote alternative for Tri-State brides who
+            want to compare custom lehenga options from India. Our bridal-focused
+            process covers style references, live review when available,
+            measurements, written approvals, pre-shipping review, and delivery
+            coordination.
           </p>
         </div>
       </section>
@@ -223,16 +224,16 @@ export default function IndianBridalWearNYNJPage() {
                 className="font-semibold text-xl mb-3"
                 style={{ color: "var(--cv-accent)" }}
               >
-                Infinite Design Selection
+                Broader Remote Search
               </h3>
               <p
                 className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                Don&apos;t limit yourself to what a local shop has on a rack.
-                Review curated options from sourcing relationships in Surat,
-                Delhi, and Kanchipuram by live video, with each finalist checked
-                against your budget, ceremony, color palette, and timeline.
+                Review curated options from CeremonyVerse&apos;s strongest stated
+                working relationships in Surat and Delhi, with other vendors
+                considered when the item, capacity, documentation, and terms can
+                be responsibly reviewed.
               </p>
             </div>
             <div
@@ -243,16 +244,16 @@ export default function IndianBridalWearNYNJPage() {
                 className="font-semibold text-xl mb-3"
                 style={{ color: "var(--cv-accent)" }}
               >
-                Stress-Free Tri-State Delivery
+                Tri-State Delivery Coordination
               </h3>
               <p
                 className="text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                We handle all international air freight, US Customs clearance
-                at JFK or Newark, and deliver your perfectly fitted wedding
-                outfits directly to your doorstep — whether you&apos;re in
-                Manhattan, Edison, Jersey City, or anywhere across NY &amp; NJ.
+                We coordinate packing requirements, shipment documents, carrier
+                handoff, and tracking for delivery to New York or New Jersey.
+                Carrier and customs decisions remain outside CeremonyVerse&apos;s
+                control and are explained before purchase.
               </p>
             </div>
           </div>
@@ -290,11 +291,11 @@ export default function IndianBridalWearNYNJPage() {
                 className="space-y-2 text-base leading-relaxed"
                 style={{ color: "#4d403a" }}
               >
-                <li>• Edison &amp; Iselin: $2,500–$8,000+ for a bridal lehenga</li>
-                <li>• Jackson Heights: limited in-stock selection (15–40 pieces)</li>
-                <li>• Heavy sales pressure to buy what&apos;s on the rack today</li>
-                <li>• Boutique overhead is built into the retail price</li>
-                <li>• Few options for coordinating bridesmaids or family</li>
+                <li>• You can see and try available garments in person</li>
+                <li>• Selection, pricing, alterations, and delivery terms vary by store</li>
+                <li>• Custom-order timelines should be confirmed in writing</li>
+                <li>• Compare the complete quote, not only the garment price</li>
+                <li>• Ask how group measurements and approvals will be managed</li>
               </ul>
             </div>
             <div
@@ -313,7 +314,7 @@ export default function IndianBridalWearNYNJPage() {
               >
                 <li>• Itemized product, service, shipping, and customs estimates</li>
                 <li>• Strongest stated working relationships in Surat and Delhi</li>
-                <li>• Live video shopping — zero pressure, full transparency</li>
+                <li>• Eligible live review plus documented approvals</li>
                 <li>• Choose from transparent flat-fee sourcing tiers</li>
                 <li>• Coordinate bride + bridesmaids + family + gifts in one order</li>
               </ul>

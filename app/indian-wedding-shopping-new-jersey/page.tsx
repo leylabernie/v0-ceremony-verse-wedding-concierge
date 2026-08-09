@@ -4,14 +4,16 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-new-jersey/",
-  title: "Indian Wedding Shopping New Jersey",
-  description: "New Jersey families in Edison, Iselin, and beyond can source Indian wedding outfits with live India shopping, custom stitching, and coordinated delivery."
+  title: "Indian Wedding Shopping from India — New Jersey",
+  description: "New Jersey families in Edison, Iselin, and beyond can source bridal, groom, and family wedding outfits from India with live review and delivery coordination."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "New Jersey Indian Wedding Sourcing Service",
   description: "Indian wedding outfit sourcing for NRI families in New Jersey \u2014 Edison, Jersey City, Princeton, Iselin, Parsippany \u2014 with US delivery.",
   url: "/indian-wedding-shopping-new-jersey/",
+  category: "Indian Wedding Shopping — New Jersey",
+  areaServed: "New Jersey, United States",
 });
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -38,7 +40,7 @@ export default function NewJerseyPage() {
           </div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Indian Wedding Shopping in New Jersey: <br/>Buy Directly from India
+              Indian Wedding Shopping from India <br/>for New Jersey Families
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Compare India-sourced bridal lehengas, sherwanis, and family outfits with New Jersey options using itemized costs, eligible live review, and delivery coordination.
@@ -55,16 +57,16 @@ export default function NewJerseyPage() {
         {/* Content Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="prose prose-lg mx-auto text-stone-700">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">Why NJ Brides Choose CeremonyVerse</h2>
+            <h2 className="text-3xl font-bold text-stone-900 mb-6">Wedding Outfit Coordination for New Jersey Families</h2>
             <p className="mb-6">
-              New Jersey is home to some of the largest Indian communities in the USA, but local boutiques often have limited collections and high markups. Whether you are in <strong>Edison, Jersey City, Princeton, or Parsippany</strong>, CeremonyVerse gives you direct access to the latest 2026 bridal trends from India without the $3,000 flight.
+              Families in <strong>Edison, Iselin, Jersey City, Princeton, and Parsippany</strong> can shop locally or compare those options with remote India sourcing. CeremonyVerse organizes the second path for the full wedding wardrobe: bride, groom, wedding party, parents, siblings, and ceremony-specific looks.
             </p>
-            <h3 className="text-2xl font-bold text-stone-900 mt-8 mb-4">How We Help NJ Brides</h3>
+            <h3 className="text-2xl font-bold text-stone-900 mt-8 mb-4">How We Help New Jersey Families</h3>
             <ul className="list-disc pl-6 space-y-2 mb-8">
-              <li>Virtual and in-person shopping coordination</li>
-              <li>Vendor management across India and the US</li>
-              <li>Timeline management for all ceremonies</li>
-              <li>Logistics and shipping coordination</li>
+              <li>Remote shopping and eligible live item review</li>
+              <li>Shared style, color, measurement, and approval records</li>
+              <li>Order timelines organized across wedding ceremonies</li>
+              <li>Pre-shipping review and tracked-delivery coordination</li>
             </ul>
             
             <h3 className="text-2xl font-bold text-stone-900 mt-12 mb-6">What the process documents</h3>
@@ -77,6 +79,16 @@ export default function NewJerseyPage() {
                 <p className="font-semibold text-stone-900 mb-2">Before shipment</p>
                 <p className="text-stone-700">Available pre-shipping review, carrier terms, declared value, tracking plan, and any contracted remedy or alteration allowance.</p>
               </div>
+            </div>
+
+            <div className="rounded-lg border border-stone-200 bg-stone-50 p-6">
+              <h3 className="text-2xl font-bold text-stone-900 mb-3">Looking only for a bridal lehenga?</h3>
+              <p className="mb-3">
+                Our NY–NJ bridal-wear guide focuses specifically on comparing local bridal shopping with custom lehenga sourcing from India.
+              </p>
+              <Link className="font-semibold text-amber-700 underline underline-offset-4" href="/indian-bridal-wear-new-york-new-jersey/">
+                Read the NY &amp; NJ bridal-wear guide
+              </Link>
             </div>
             
             <div className="mt-12 text-center">

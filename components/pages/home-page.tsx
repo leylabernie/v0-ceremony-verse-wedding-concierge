@@ -20,6 +20,19 @@ const serviceGroups = [
   },
 ]
 
+const localServiceAreas = [
+  { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
+  { label: "Washington DC & DMV", href: "/indian-wedding-shopping-washington-dc/" },
+  { label: "New York", href: "/indian-wedding-shopping-new-york/" },
+  { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey/" },
+  { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts/" },
+  { label: "Georgia", href: "/indian-wedding-shopping-georgia/" },
+  { label: "Florida", href: "/indian-wedding-shopping-florida/" },
+  { label: "California", href: "/indian-wedding-shopping-california/" },
+  { label: "Texas", href: "/indian-wedding-shopping-texas/" },
+  { label: "Illinois", href: "/indian-wedding-shopping-illinois/" },
+]
+
 const servicePillars = [
   {
     label: "India shopping & sourcing",
@@ -282,6 +295,43 @@ export function HomePage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-10 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Local shopping guides
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Indian wedding shopping support for families across the U.S.
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              CeremonyVerse works remotely from its U.S. base. Choose your state or metro guide for
+              local context, service details, and the same documented India-shopping process.
+            </p>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {localServiceAreas.map((area) => (
+              <Link
+                key={area.href}
+                href={area.href}
+                className="rounded-xl border border-[#e6dfd5] bg-[#faf8f5] px-5 py-4 text-center font-semibold text-[#4d403a] transition hover:border-[#7a6841] hover:text-[#7a6841]"
+              >
+                {area.label}
+              </Link>
+            ))}
+          </div>
+          <p className="mt-7 text-center text-sm text-[#5e4a40]">
+            Comparing bridal-lehenga options in the Tri-State area?{" "}
+            <Link
+              href="/indian-bridal-wear-new-york-new-jersey/"
+              className="font-semibold text-[#7a6841] underline underline-offset-4"
+            >
+              Read the NY &amp; NJ bridal-wear guide
+            </Link>
+          </p>
         </div>
       </section>
 
