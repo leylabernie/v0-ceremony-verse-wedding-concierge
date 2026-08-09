@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
   title: "Gujarati & Hindu Destination Wedding Planning",
   description:
-    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings in Cancun, Riviera Maya, and Punta Cana.",
+    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico and in Punta Cana.",
   keywords:
     "Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, destination wedding family support, India wedding sourcing",
 });
@@ -22,9 +22,9 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Gujarati and Hindu Destination Wedding Planning",
   description:
-    "Coordinated destination planning and on-site execution through an experienced planning partner serving Cancun, Riviera Maya, and Punta Cana, with optional family support and India sourcing.",
+    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
-  areaServed: "Cancun, Riviera Maya, and Punta Cana",
+  areaServed: "Mexico and Punta Cana",
 });
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -33,24 +33,24 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const faqItems = [
   {
-    question: "Who plans and runs the destination wedding?",
+    question: "What can the destination-wedding service include?",
     answer:
-      "CeremonyVerse works with an experienced destination-wedding planner who becomes involved from the beginning and leads the contracted resort, vendor, timeline, production, and on-site responsibilities. CeremonyVerse supports the family and leads optional India sourcing when included.",
+      "Depending on the selected scope, CeremonyVerse can provide full planning, partial planning, final coordination, on-site management, family communication, guest logistics, welcome details, and optional India sourcing. The private proposal identifies exactly what is included.",
   },
   {
     question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "Destination-wedding pricing is private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the level of planning and family support required. The private proposal identifies responsibilities, fees, payment recipients, and third-party costs before an agreement is signed.",
+      "Destination-wedding pricing is private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the level of planning and family support required. The private proposal identifies the selected services, exclusions, fees, and applicable third-party costs before paid work begins.",
   },
   {
-    question: "Can you help us compare Cancun, Riviera Maya, and Punta Cana?",
+    question: "Can you help us compare resorts across Mexico and Punta Cana?",
     answer:
-      "Yes. The planning partner compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
+      "Yes. CeremonyVerse compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
   },
   {
     question: "Which wedding traditions are the current focus?",
     answer:
-      "CeremonyVerse is initially focused on Gujarati and Hindu families. Ceremony details are defined with the couple, family, chosen officiants, and planning partner; CeremonyVerse does not replace religious or legal authorities.",
+      "CeremonyVerse is initially focused on Gujarati and Hindu families. Ceremony details are defined with the couple, family, chosen officiants, and qualified professionals; CeremonyVerse does not replace religious or legal authorities.",
   },
   {
     question: "Do Mexico resorts allow mandaps, baraats, outside vendors, and Indian catering?",
@@ -74,7 +74,7 @@ const faqSchema = buildFaqSchema(faqItems);
 const howToSchema = buildHowToSchema({
   name: "How to Start Planning a Gujarati or Hindu Destination Wedding",
   description:
-    "A practical first-pass process for a Gujarati or Hindu wedding in Cancun, Riviera Maya, or Punta Cana.",
+    "A practical first-pass process for a Gujarati or Hindu wedding across Mexico or in Punta Cana.",
   url: "/indian-wedding-coordination-mexico/",
   totalTime: "PT30M",
   steps: [
@@ -84,7 +84,7 @@ const howToSchema = buildHowToSchema({
     },
     {
       name: "Compare locations and written resort terms",
-      text: "Review Cancun, Riviera Maya, and Punta Cana options, then compare event spaces, room blocks, food and beverage terms, production rules, outside-vendor policies, weather plans, and cancellation terms.",
+      text: "Review suitable regions and resorts across Mexico or in Punta Cana, then compare event spaces, room blocks, food and beverage terms, production rules, outside-vendor policies, weather plans, and cancellation terms.",
     },
     {
       name: "Choose the right planning package",
@@ -123,17 +123,17 @@ export default function MexicoCoordinationPage() {
       <section className="px-6 py-24 text-[#f8f6f2]" style={{ background: "#1f1f1f" }}>
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#c5a059]">
-            Cancun · Riviera Maya · Punta Cana
+            Mexico · Punta Cana
           </p>
           <h1
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            One coordinated destination-planning relationship
+            Destination-wedding planning built around your family
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            Our destination-wedding planning partner is involved from the beginning and leads the contracted local
-            planning and on-site responsibilities. CeremonyVerse supports the family and leads optional India sourcing.
+            CeremonyVerse offers planning, on-site coordination, family support, guest organization, and optional India
+            sourcing for Gujarati and Hindu destination weddings across Mexico and in Punta Cana.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -170,15 +170,14 @@ export default function MexicoCoordinationPage() {
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-[#4d403a]">
             <p>
-              Before planning begins, CeremonyVerse helps organize the questions that affect the private scope: what
-              the budget covers, how many guests are traveling, which events matter most, and which responsibilities
-              belong to the planning team, resort, travel provider, vendors, CeremonyVerse, and family.
+              Before planning begins, CeremonyVerse organizes the facts that affect the private scope: what the budget
+              covers, how many guests are traveling, which events matter most, which resort terms apply, and what still
+              needs a clear owner, approver, deadline, or written answer.
             </p>
             <p>
-              The destination-planning partner leads the contracted local work, while CeremonyVerse supports family
-              communication and can lead optional India sourcing. The private proposal identifies responsibilities,
-              exclusions, fees, payment recipients, and outside costs. Public family-experience facts are documented
-              separately on the About page and are not presented as CeremonyVerse client projects.
+              The private proposal identifies the selected planning, on-site, family-support, guest, and India-sourcing
+              services, along with exclusions, fees, payment terms, and outside costs. Public family-experience facts
+              remain documented separately on the About page and are not presented as CeremonyVerse client projects.
             </p>
           </div>
         </div>
@@ -258,9 +257,9 @@ export default function MexicoCoordinationPage() {
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Punta Cana</p>
               <h2 className="mt-3 text-3xl font-semibold text-[#1f1f1f]">Start with service coverage.</h2>
               <p className="mt-5 leading-relaxed text-[#4d403a]">
-                Punta Cana is served through the destination-planning partnership. Compare the actual resort,
-                travel requirements, room-block terms, event-space fit, outside-vendor rules, weather backup, and
-                on-site production plan before committing.
+                Punta Cana is included in CeremonyVerse&apos;s current destination-wedding service coverage. Compare the
+                actual resort, travel requirements, room-block terms, event-space fit, outside-vendor rules, weather
+                backup, and on-site production plan before committing.
               </p>
             </article>
           </div>
@@ -309,16 +308,16 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Local planning expertise, family-side organization, and India sourcing.
+              Planning, family organization, guest logistics, and India sourcing.
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
               <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Destination planning + family support</h3>
               <p className="mt-4 leading-relaxed text-[#4d403a]">
-                The destination-wedding planning partner leads the contracted resort, vendor, production, timeline,
-                and on-site responsibilities. CeremonyVerse works alongside the planner and family to organize agreed
-                cultural requirements, approvals, guest information, arrival details, and welcome items.
+                The selected private scope can include resort and vendor coordination, production and timeline work,
+                on-site management, cultural requirements, family approvals, guest information, arrival details, and
+                welcome items.
               </p>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] p-8">

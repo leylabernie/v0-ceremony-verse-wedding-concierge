@@ -51,9 +51,9 @@ const servicePillars = [
     label: "Destination wedding planning",
     title: "Planning, on-site execution, and family support",
     description:
-      "Plan a Gujarati or Hindu destination celebration in Cancun, Riviera Maya, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration anywhere in Mexico or in Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
-      "Planning partner involved from the beginning",
+      "Planning support defined from the beginning",
       "Multi-day timelines and on-site event management",
       "Optional family concierge, guest, and arrival support",
     ],
@@ -130,7 +130,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes. CeremonyVerse works with an experienced destination-wedding planning partner serving Cancun, Riviera Maya, and Punta Cana. The planning partner leads the contracted local planning and on-site responsibilities, while CeremonyVerse supports the family and can add India sourcing through the private written proposal.",
+      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico and in Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
   },
   {
     question: "Will I see an item before I buy it?",
@@ -166,15 +166,14 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              India shopping · Destination-wedding planning partnership
+              India shopping · Destination-wedding planning
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Destination-wedding support for Gujarati and Hindu families
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Through our planning partnership, families receive experienced local planning and on-site support in
-              Cancun, Riviera Maya, and Punta Cana. CeremonyVerse supports family communication, important decisions,
-              guest details, and optional wedding sourcing from India.
+              CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana, with
+              planning, on-site coordination, family organization, guest details, and optional wedding sourcing from India.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -202,7 +201,7 @@ export function HomePage() {
           <p>US phone, email & accountability</p>
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
-          <p>Planning partner involved from day one</p>
+          <p>Private scope defined before paid work</p>
         </div>
       </section>
 
@@ -473,7 +472,7 @@ export function HomePage() {
                   <li>Coordinate shopping calls and approvals</li>
                   <li>Organize measurements and order details</li>
                   <li>Support inspection, shipping, and tracking</li>
-                  <li>Coordinate destination planning through the planning partnership</li>
+                  <li>Coordinate destination planning through the selected written scope</li>
                   <li>Organize agreed guest, arrival, and family details</li>
                 </ul>
               </div>

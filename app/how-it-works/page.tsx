@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "How does the Mexico service work?",
-    a: "CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through a private proposal. An experienced partner leads the assigned local work in Cancun, Riviera Maya, or Punta Cana, while CeremonyVerse supports family communication and leads India sourcing when included.",
+    a: "CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through a private proposal for weddings across Mexico and in Punta Cana. Family communication, guest support, and India sourcing can be included when needed.",
   },
   {
     q: "What if I only need one or two outfits, not a full wedding party?",

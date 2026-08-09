@@ -5,11 +5,11 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/about/",
-  title: "About CeremonyVerse — Family Experience & Partnership",
+  title: "About CeremonyVerse — Family Experience & Service",
   description:
     "CeremonyVerse grew from three Indian family weddings in Mexico and now combines family-side support, destination planning, and optional India sourcing.",
   keywords:
-    "About CeremonyVerse, Indian destination wedding family experience, Gujarati wedding planning support, Hindu wedding planning support, Mexico wedding partnership, India wedding sourcing",
+    "About CeremonyVerse, Indian destination wedding family experience, Gujarati wedding planning support, Hindu wedding planning support, Mexico destination wedding service, India wedding sourcing",
 });
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "About", url: "/about/" }]);
@@ -20,7 +20,7 @@ const aboutSchema = {
   name: "About CeremonyVerse",
   url: "https://www.ceremonyverse.com/about/",
   description:
-    "CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in Mexico and now works with an experienced destination-wedding planner serving Cancun, Riviera Maya, and Punta Cana.",
+    "CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in Mexico and now serves Gujarati and Hindu destination weddings across Mexico and Punta Cana.",
   mainEntity: {
     "@type": "Organization",
     name: "CeremonyVerse",
@@ -33,7 +33,7 @@ const aboutSchema = {
     },
     telephone: "+12153419990",
     email: "bhamini@ceremonyverse.com",
-    areaServed: ["United States", "Cancun", "Riviera Maya", "Punta Cana"],
+    areaServed: ["United States", "Mexico", "Punta Cana"],
   },
 };
 
@@ -50,18 +50,6 @@ const familyWeddings = [
     venue: "Royalton resort in Mexico",
     detail: "Approximately 80 guests · 2024",
   },
-];
-
-const responsibilities = [
-  ["Local destination planning", "Planning partner"],
-  ["Resort and local-vendor coordination", "Planning partner"],
-  ["Production timeline and on-site execution", "Planning partner"],
-  ["Cultural and family requirements", "CeremonyVerse with the family"],
-  ["Family communication and approvals", "CeremonyVerse and planning partner"],
-  ["India outfits, jewelry, gifts and ceremony sourcing", "CeremonyVerse when included"],
-  ["Guest information and welcome details", "CeremonyVerse when included"],
-  ["Travel, rooms and transportation bookings", "Resort or licensed travel provider"],
-  ["Final decisions and timely approvals", "Client"],
 ];
 
 export default function AboutPage() {
@@ -125,26 +113,26 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              One coordinated planning relationship
+              Current service coverage
             </p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">
-              Destination expertise, family-side support, and optional India sourcing
+              Destination planning across Mexico and Punta Cana
             </h2>
             <div className="mt-6 space-y-5 text-lg leading-8 text-[#4d403a]">
               <p>
-                CeremonyVerse works in partnership with an experienced destination-wedding planner serving Cancun,
-                Riviera Maya, and Punta Cana. The planning partner becomes involved from the beginning and leads the
-                contracted local planning and on-site execution.
+                CeremonyVerse supports Gujarati and Hindu destination weddings throughout Mexico and in Punta Cana.
+                The specific planning, on-site, family-support, guest, and sourcing services are defined privately for
+                each wedding based on its location, resort, dates, events, guest count, and priorities.
               </p>
               <p>
-                CeremonyVerse works alongside the planner and family to keep cultural requirements, family priorities,
-                approvals, guest information, welcome details, and other agreed responsibilities organized. When India
-                sourcing is needed, CeremonyVerse leads the approved sourcing scope.
+                Families can request destination planning, on-site coordination, family communication, guest and arrival
+                organization, welcome details, and optional India sourcing. The written proposal identifies the selected
+                services, outside costs, exclusions, and approval steps before paid work begins.
               </p>
               <p>
-                Our initial destination-planning focus is Gujarati and Hindu families. Punta Cana is a current service
-                destination through the planning partnership; it is not part of the three-wedding family experience
-                described above.
+                Cancun and Riviera Maya appear in our story because that is where the family experience occurred. They
+                are not the limits of the service. Punta Cana is part of current service coverage, but it is not part of
+                the three-wedding family experience described above.
               </p>
             </div>
           </div>
@@ -155,24 +143,25 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Clear responsibility from the start
+              A more organized family experience
             </p>
-            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Who leads each part</h2>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Turn scattered decisions into one working plan</h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-[#4d403a]">
-              The private proposal identifies the final scope, fees, payment recipients, third-party costs, and
-              responsibilities before any agreement is signed.
+              CeremonyVerse helps families organize the facts that drive the wedding: total budget coverage, resort
+              terms, ceremonies, approvals, guest logistics, arrival details, and optional India sourcing.
             </p>
           </div>
 
-          <div className="mt-12 overflow-hidden rounded-2xl border border-[#e6dfd5] bg-white">
-            {responsibilities.map(([area, owner], index) => (
-              <div
-                key={area}
-                className={`grid gap-2 px-6 py-5 sm:grid-cols-[1.1fr_0.9fr] ${index % 2 === 0 ? "bg-[#faf8f5]" : "bg-white"}`}
-              >
-                <h3 className="font-semibold">{area}</h3>
-                <p className="text-[#4d403a]">{owner}</p>
-              </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              ["Planning facts", "Dates, guest origins, event count, cultural requirements, resort status, and what the budget must cover."],
+              ["Written decisions", "Approvals, deadlines, open questions, outside costs, and service boundaries recorded before commitments."],
+              ["Guest and sourcing details", "Rooms, arrivals, welcome needs, wedding wardrobes, gifts, and ceremony items organized when included."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-white p-7">
+                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
+                <p className="mt-3 leading-7 text-[#4d403a]">{description}</p>
+              </article>
             ))}
           </div>
         </div>
@@ -183,8 +172,7 @@ export default function AboutPage() {
           <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Tell us what your family needs</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/85">
             Share your destination, preferred dates, guest count, ceremonies, budget, and whether India sourcing is
-            needed. CeremonyVerse will recommend a clear next step without publishing the planning partner&apos;s private
-            identity or pricing.
+            needed. CeremonyVerse will review the information and recommend a practical next step.
           </p>
           <Link
             href="/contact/?service=mexico"

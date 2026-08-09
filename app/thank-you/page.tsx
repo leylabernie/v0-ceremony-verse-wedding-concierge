@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/thank-you/",
   title: "Thank You — CeremonyVerse Consultation Request Received",
   description:
-    "Thank you for reaching out to CeremonyVerse. We will respond within 24 hours to schedule your free consultation.",
+    "Thank you for reaching out to CeremonyVerse. Review the confirmation from the form you completed.",
   noIndex: true,
 });
 

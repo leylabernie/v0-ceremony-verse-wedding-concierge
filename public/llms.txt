@@ -1,12 +1,12 @@
 # CeremonyVerse
 
-> CeremonyVerse is a US-based service with two distinct offers: Indian wedding shopping for US families and destination-wedding planning support for Gujarati and Hindu families through an experienced partner serving Cancun, Riviera Maya, and Punta Cana.
+> CeremonyVerse is a US-based service with two distinct offers: Indian wedding shopping for US families and destination-wedding planning support for Gujarati and Hindu families across Mexico and in Punta Cana.
 
 ## About
 
-CeremonyVerse organizes remote India shopping and supports destination-wedding planning through an experienced planning partner. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and US delivery support. Destination services can include local planning, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a private proposal.
+CeremonyVerse organizes remote India shopping and destination-wedding planning support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and US delivery support. Destination services can include planning, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a private proposal.
 
-- [About CeremonyVerse](https://www.ceremonyverse.com/about/): Family experience, planning partnership, and responsibility model
+- [About CeremonyVerse](https://www.ceremonyverse.com/about/): Family experience, current service coverage, and planning approach
 - [How It Works](https://www.ceremonyverse.com/how-it-works/): Step-by-step process from consultation to delivery
 - [Services Overview](https://www.ceremonyverse.com/services/): India shopping and destination-wedding planning support
 - [Pricing](https://www.ceremonyverse.com/pricing/): India tiers ($249, $799, $2,499) and private-proposal destination-planning packages
@@ -19,7 +19,8 @@ CeremonyVerse organizes remote India shopping and supports destination-wedding p
 - [Bridesmaid and Family Outfits](https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india/): Coordinated group sourcing
 - [Wedding Accessories and Ceremony Items](https://www.ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india/): Jewelry, gifts, welcome bags, and ceremony items
 - [Intercultural Wedding Outfit Sourcing](https://www.ceremonyverse.com/services/intercultural-indian-weddings/): Plain-language outfit-shopping support
-- [Destination Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Planning-partner coverage in Cancun, Riviera Maya, and Punta Cana with optional family and India-sourcing support
+- [Destination Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Gujarati and Hindu wedding planning across Mexico and in Punta Cana with optional family, guest, and India-sourcing support
+- [Free Planning Tools](https://www.ceremonyverse.com/planning-tools/): Budget, resort comparison, family responsibility, and guest logistics resources
 
 ## Geographic Service Pages
 

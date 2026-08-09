@@ -18,7 +18,7 @@ export const mexicoPackages: MexicoPackage[] = [
     description:
       "A start-to-finish planning and design experience for a cohesive, multi-day destination wedding.",
     includes: [
-      "Access to the planning partner's local vendor network",
+      "Research and coordination of suitable local vendor options",
       "Venue sourcing and management",
       "Guidance during essential site visits",
       "Structured weekly progress meetings and updates",

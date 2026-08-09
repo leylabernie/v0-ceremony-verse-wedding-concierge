@@ -1,262 +1,164 @@
-import Link from "next/link";
-import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import Link from "next/link"
+import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/privacy/",
-  title: "Privacy Policy — CeremonyVerse",
+  title: "Privacy Notice — CeremonyVerse",
   description:
-    "How CeremonyVerse collects, uses, stores, and protects your personal information when you use our Indian wedding sourcing concierge service. GDPR and CCPA-aligned.",
-  keywords: [
-    "CeremonyVerse privacy policy",
-    "wedding concierge data privacy",
-    "CCPA privacy policy",
-    "GDPR privacy policy USA",
-  ],
-});
+    "How CeremonyVerse collects, uses, shares, and protects information submitted through its wedding consultation, sourcing, and destination-planning services.",
+  keywords: ["CeremonyVerse privacy notice", "wedding consultation privacy", "wedding concierge data privacy"],
+})
 
-const breadcrumbSchema = buildBreadcrumb([
-  { name: "Privacy Policy", url: "/privacy/" },
-]);
+const breadcrumbSchema = buildBreadcrumb([{ name: "Privacy Notice", url: "/privacy/" }])
+
+const sectionClass = "mt-10"
+const headingClass = "font-serif text-2xl font-semibold text-[#1f1f1f] sm:text-3xl"
+const paragraphClass = "mt-4 leading-8 text-[#4d403a]"
+const listClass = "mt-4 list-disc space-y-3 pl-6 leading-7 text-[#4d403a]"
 
 export default function PrivacyPage() {
   return (
-    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
 
-      {/* Hero */}
-      <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
-        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            CeremonyVerse · Legal
-          </p>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
-            Privacy Policy
-          </h1>
-          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: July 2026
-          </p>
+      <section className="bg-[#1f1f1f] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">CeremonyVerse · Privacy</p>
+          <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Privacy Notice</h1>
+          <p className="mt-5 text-sm text-white/70">Last updated: August 9, 2026</p>
         </div>
-      </div>
+      </section>
 
-      {/* Body */}
-      <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
-          <p>
-            At CeremonyVerse, we take your privacy seriously. This policy explains what information
-            we collect, how we use it, who we share it with, how long we keep it, and the choices
-            you have over your data. This policy is aligned with the California Consumer Privacy
-            Act (CCPA) and the EU General Data Protection Regulation (GDPR) to the extent they
-            apply to our US-based business.
-          </p>
+      <article className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+        <p className="text-lg leading-8 text-[#4d403a]">
+          This notice explains what CeremonyVerse collects through this website and during client work, why it is
+          used, when it may be shared, and how to contact us about your information. The consultation form is for
+          wedding-planning and sourcing inquiries; submitting it does not enroll you in marketing.
+        </p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            1. Information We Collect
-          </h2>
-          <p>
-            <strong>Information you provide directly:</strong> When you submit our consultation
-            form, book a call, or work with us as a client, we collect your name, email address,
-            phone number, wedding date, wedding location, party size, budget range, style
-            preferences, and any reference images or inspiration you share with us. For active
-            clients, we also collect measurements, shipping address, and payment information
-            (processed via Stripe; we never store full card numbers on our servers).
-          </p>
-          <p style={{ marginTop: "1rem" }}>
-            <strong>Information collected automatically:</strong> When you visit our website, we
-            collect your IP address, browser type, device type, pages visited, time on page, and
-            referral source via Google Analytics 4 and Google Tag Manager. We use this data
-            aggregated and anonymized to understand site performance and improve our content.
-          </p>
-          <p style={{ marginTop: "1rem" }}>
-            <strong>Communications:</strong> When you email, text, or WhatsApp us, we keep a record
-            of those communications to provide and improve our service. This includes the content
-            of messages you send us, photos you share of outfits and references, and notes from
-            consultation calls.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            2. How We Use Your Information
-          </h2>
-          <p>We use your information for the following purposes:</p>
-          <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>To provide our service:</strong> coordinating consultations, sourcing calls,
-              measurements, production, shipping, and delivery.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>To communicate with you:</strong> about your project, about new inventory
-              from our Indian vendors that matches your stated preferences, and about timing
-              reminders.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>To process payments:</strong> via Stripe, including invoicing, milestone
-              billing, and refunds.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>To improve our website and service:</strong> aggregated analytics on which
-              pages perform well, which blog posts are read, and where visitors drop off.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>For marketing:</strong> sending occasional emails about new services or
-              vendor additions. You can unsubscribe at any time using the link in every email.
-            </li>
-            <li>
-              <strong>For legal compliance:</strong> retaining records of transactions and
-              communications as required by US tax and business law.
-            </li>
+        <section className={sectionClass}>
+          <h2 className={headingClass}>1. Information you provide</h2>
+          <p className={paragraphClass}>Depending on how you use the service, you may provide:</p>
+          <ul className={listClass}>
+            <li>Name, email address, phone or WhatsApp number, and referral source.</li>
+            <li>Wedding timeframe, destination, guest and event estimates, travel origins, and budget range.</li>
+            <li>Priorities, cultural or dietary requirements, sourcing needs, and other details you choose to share.</li>
+            <li>Communications, approvals, measurements, addresses, and transaction records if you become a client.</li>
           </ul>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            3. Who We Share Your Information With
-          </h2>
-          <p>
-            We share your information only with the parties necessary to deliver our service, and
-            never sell your data. Specifically, we share:
+          <p className={paragraphClass}>
+            Do not submit passport numbers, payment-card details, medical records, or sensitive documents through the
+            consultation form. Payment-card information, if a payment service is offered, is handled by the applicable
+            payment provider rather than the consultation form.
           </p>
-          <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Vetted Indian vendors and artisans:</strong> your measurements, fabric
-              preferences, color references, and shipping address (for direct shipment when
-              appropriate). We do not share your payment information with vendors.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Stripe:</strong> for payment processing. Stripe is PCI-DSS compliant and
-              handles all card data on its secure infrastructure.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Shipping carriers (DHL, FedEx, UPS):</strong> your name, address, phone, and
-              shipment contents for customs declaration.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Google Analytics:</strong> aggregated, anonymized traffic data. We do not
-              share personally identifiable information with Google Analytics.
-            </li>
-            <li>
-              <strong>Legal authorities:</strong> only when required by US law or valid court
-              order.
-            </li>
+        </section>
+
+        <section className={sectionClass}>
+          <h2 className={headingClass}>2. Website and attribution information</h2>
+          <p className={paragraphClass}>
+            The website records the landing page, referring page, and campaign parameters associated with a
+            consultation request. Google Analytics is loaded after a visitor first interacts with the site and may
+            receive device, browser, referral, page, and interaction information under the site&apos;s analytics
+            configuration. Website hosting and security systems may also generate routine request and error logs.
+          </p>
+        </section>
+
+        <section className={sectionClass}>
+          <h2 className={headingClass}>3. How information is used</h2>
+          <ul className={listClass}>
+            <li>Respond to inquiries and decide whether the requested service and timing are a practical fit.</li>
+            <li>Prepare, provide, and administer selected wedding-planning or India-sourcing services.</li>
+            <li>Maintain approvals, logistics, communications, invoicing, and business records.</li>
+            <li>Measure website performance, lead sources, and service interest.</li>
+            <li>Prevent spam, misuse, security incidents, and unlawful activity.</li>
+            <li>Meet applicable accounting, tax, legal, or dispute-resolution obligations.</li>
           </ul>
+          <p className={paragraphClass}>
+            Marketing messages are sent only when there is a separate basis to do so. You may ask to stop receiving
+            marketing at any time.
+          </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            4. Data Retention
-          </h2>
-          <p>
-            We retain client records — including communications, measurements, and transaction
-            records — for 7 years after the completion of your project, which is the standard
-            retention period for US business and tax records. After that period, we delete or
-            anonymize the records. Website analytics data is retained for 26 months in Google
-            Analytics and then automatically deleted.
-          </p>
-          <p style={{ marginTop: "1rem" }}>
-            If you request deletion of your data before the 7-year retention window closes, we
-            will delete all personal information except what we are legally required to retain
-            (typically transaction records for tax audit purposes).
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            5. Your Rights (CCPA and GDPR)
-          </h2>
-          <p>
-            If you are a California resident (CCPA) or an EU/UK resident (GDPR), you have specific
-            rights regarding your personal data:
-          </p>
-          <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Right to know:</strong> what personal information we have collected about you.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Right to delete:</strong> request that we delete your personal information.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Right to correct:</strong> request that we correct inaccurate information.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Right to opt out of sale:</strong> we do not sell your data, so this right
-              is automatically honored.
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <strong>Right to opt out of marketing:</strong> unsubscribe at any time via the link
-              in any marketing email.
-            </li>
-            <li>
-              <strong>Right to non-discrimination:</strong> we will not treat you differently for
-              exercising any of these rights.
-            </li>
+        <section className={sectionClass}>
+          <h2 className={headingClass}>4. When information may be shared</h2>
+          <p className={paragraphClass}>CeremonyVerse may share the minimum information reasonably needed with:</p>
+          <ul className={listClass}>
+            <li>Website hosting, analytics, form-delivery, email, messaging, file-storage, accounting, and payment providers.</li>
+            <li>Resorts, venues, carriers, vendors, or other service providers involved in a client&apos;s selected work.</li>
+            <li>Professional advisers, insurers, or authorities when reasonably necessary or legally required.</li>
+            <li>A successor organization in a business reorganization, subject to applicable privacy obligations.</li>
           </ul>
-          <p style={{ marginTop: "1rem" }}>
-            To exercise any of these rights, email{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
-            with the subject line &quot;Privacy Request.&quot; We will respond within 30 days.
+          <p className={paragraphClass}>
+            A consultation request is not automatically distributed to wedding vendors. Information is shared for
+            active work only when it is relevant to the selected service or otherwise authorized.
           </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            6. Data Security
-          </h2>
-          <p>
-            We protect your data with industry-standard security measures: HTTPS encryption on all
-            website traffic, Stripe-hosted payment processing (no card data on our servers),
-            access controls limiting data access to authorized team members, regular password
-            rotation, and two-factor authentication on all administrative accounts. No method of
-            transmission over the internet is 100% secure, but we work hard to protect your
-            information and have never had a data breach.
+        <section className={sectionClass}>
+          <h2 className={headingClass}>5. Retention</h2>
+          <p className={paragraphClass}>
+            Inquiry information is kept only as long as reasonably needed to respond, follow up where appropriate,
+            protect the service, and maintain necessary business records. Client, transaction, tax, contract, and
+            dispute records may be kept longer when required for the applicable purpose or by law. Information that is
+            no longer needed is deleted, anonymized, or placed beyond routine use where practical.
           </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            7. Cookies
-          </h2>
-          <p>
-            Our website uses essential cookies (required for the site to function) and analytics
-            cookies (Google Analytics 4) to understand how visitors use the site. We do not use
-            advertising cookies or third-party tracking pixels for ad retargeting. You can control
-            cookies via your browser settings; disabling analytics cookies will not affect your
-            ability to use the site.
+        <section className={sectionClass}>
+          <h2 className={headingClass}>6. Your choices and requests</h2>
+          <p className={paragraphClass}>
+            Depending on where you live and which law applies, you may have rights to ask about, access, correct,
+            delete, restrict, or object to certain uses of your personal information. You may also withdraw a marketing
+            consent or ask not to receive marketing. CeremonyVerse may need to verify your identity and may retain
+            information where an exception or legal obligation applies.
           </p>
+          <p className={paragraphClass}>
+            Send a request to{" "}
+            <a href="mailto:bhamini@ceremonyverse.com?subject=Privacy%20request" className="font-semibold text-[#7a6841] underline">
+              bhamini@ceremonyverse.com
+            </a>
+            . Official explanations of privacy rights are available from the{" "}
+            <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+              California Attorney General
+            </a>{" "}
+            and the{" "}
+            <a href="https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+              European Data Protection Board
+            </a>
+            . Those resources do not mean every law applies to every request.
+          </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            8. Children&apos;s Privacy
-          </h2>
-          <p>
-            Our service is not directed at children under 16, and we do not knowingly collect
-            personal information from children under 16. If you believe we have inadvertently
-            collected such information, please contact us and we will delete it promptly.
+        <section className={sectionClass}>
+          <h2 className={headingClass}>7. Security and international processing</h2>
+          <p className={paragraphClass}>
+            CeremonyVerse uses reasonable administrative and technical safeguards appropriate to the information and
+            service. No internet transmission or storage method can be guaranteed completely secure. Service providers
+            and wedding vendors may process information in the United States, India, Mexico, the Dominican Republic,
+            or other places relevant to the selected service.
           </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            9. Changes to This Policy
-          </h2>
-          <p>
-            We may update this Privacy Policy from time to time. The most current version will
-            always be posted on this page with an updated revision date. If we make material
-            changes that affect how we use your data, we will notify you by email before the
-            change takes effect.
+        <section className={sectionClass}>
+          <h2 className={headingClass}>8. Children</h2>
+          <p className={paragraphClass}>
+            The website and consultation form are intended for adults arranging wedding services. Please do not submit
+            personal information about a child unless it is necessary for active wedding logistics and you are
+            authorized to provide it.
           </p>
+        </section>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            10. Contact
-          </h2>
-          <p>
-            Questions about this policy or your data? Contact us:
+        <section className={sectionClass}>
+          <h2 className={headingClass}>9. Changes and contact</h2>
+          <p className={paragraphClass}>
+            This notice may be updated when the website, service providers, or data practices change. The current date
+            will appear above. Questions can be sent to{" "}
+            <a href="mailto:bhamini@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
+              bhamini@ceremonyverse.com
+            </a>{" "}
+            or through the <Link href="/contact/" className="font-semibold text-[#7a6841] underline">consultation page</Link>.
           </p>
-          <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.5rem" }}>
-              Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
-                bhamini@ceremonyverse.com
-              </a>
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              WhatsApp:{" "}
-              <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>
-                +1 (215) 341-9990
-              </a>
-            </li>
-            <li>
-              <Link href="/contact/" style={{ color: "#7a6841" }}>
-                Book a free 30-minute consultation →
-              </Link>
-            </li>
-          </ul>
-        </div>
+        </section>
       </article>
     </main>
-  );
+  )
 }

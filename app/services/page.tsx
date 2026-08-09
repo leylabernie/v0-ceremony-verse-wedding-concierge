@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
   path: "/services/",
   title: "Indian Wedding Shopping & Destination Planning Services",
   description:
-    "CeremonyVerse offers India wedding shopping plus private-proposal destination planning, family support, and on-site coordination in Cancun, Riviera Maya, and Punta Cana.",
+    "CeremonyVerse offers India wedding shopping plus private-proposal destination planning, family support, and on-site coordination across Mexico and in Punta Cana.",
   keywords:
     "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planning, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, NRI wedding shopping",
 })
@@ -39,7 +39,7 @@ const offers = [
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Shopping and Destination Planning",
   description:
-    "US-based India sourcing and family communication paired with local destination planning through a partner serving Cancun, Riviera Maya, and Punta Cana.",
+    "US-based India sourcing plus destination-wedding planning, on-site coordination, and family support across Mexico and in Punta Cana.",
   url: "/services/",
   offers,
 })
@@ -55,7 +55,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan or coordinate weddings?",
     answer:
-      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through an experienced planning partner serving Cancun, Riviera Maya, and Punta Cana. The private proposal identifies the partner-led local work, CeremonyVerse family communication, and any optional India sourcing.",
+      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management across Mexico and in Punta Cana. The private proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
   },
   {
     question: "Are product and shipping costs included in the service fee?",
@@ -127,9 +127,9 @@ export default function ServicesPage() {
             Shop India for your wedding—or plan your destination celebration
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
-            CeremonyVerse organizes India shopping for US families and works with an experienced partner
-            on planning and on-site coordination in Cancun, Riviera Maya, and Punta Cana. One private
-            proposal defines the partner-led local work and CeremonyVerse family-side support.
+            CeremonyVerse organizes India shopping for US families and offers destination planning and
+            on-site coordination across Mexico and in Punta Cana. One private proposal defines the selected
+            planning, family-support, guest, and optional India-sourcing services.
           </p>
           <Link
             href="/contact/"

@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
   path: "/pricing/",
   title: "CeremonyVerse Pricing | India Sourcing & Destination Planning",
   description:
-    "Compare CeremonyVerse India sourcing fees and private-proposal destination planning and family support for Cancun, Riviera Maya, and Punta Cana.",
+    "Compare CeremonyVerse India sourcing fees and private-proposal destination planning and family support across Mexico and in Punta Cana.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
@@ -106,7 +106,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management through an experienced partner serving Cancun, Riviera Maya, and Punta Cana. Family communication and optional India-sourcing support can be included in the private written proposal.",
+      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management across Mexico and in Punta Cana. Family communication, guest support, and optional India sourcing can be included in the private written proposal.",
   },
 ]
 

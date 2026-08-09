@@ -61,6 +61,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/planning-tools/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/planning-tools/budget/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/planning-tools/resort-comparison/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/planning-tools/family-responsibility-map/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/planning-tools/guest-logistics/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/link-to-us/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -430,12 +460,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/privacy/`,
       lastModified: now,
       changeFrequency: 'yearly',
-      priority: 0.4,
-    },
-    {
-      url: `${baseUrl}/partner-with-us/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
       priority: 0.4,
     },
   ]

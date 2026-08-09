@@ -68,12 +68,10 @@ export default function TermsPage() {
             or eliminate the risks inherent in handmade and remotely purchased items.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For destination weddings, CeremonyVerse can offer full planning, partial planning,
-            day-of coordination, family communication, guest-information, arrival, welcome-item, and
-            India-sourcing support. An experienced planning partner leads contracted local planning and
-            on-site work in Cancun, Riviera Maya, and Punta Cana. CeremonyVerse supports family
-            communication and leads India sourcing when those responsibilities are included in the
-            client&apos;s private written proposal.
+            For destination weddings across Mexico and in Punta Cana, CeremonyVerse can offer full planning,
+            partial planning, day-of coordination, family communication, guest-information, arrival,
+            welcome-item, and India-sourcing support. The client&apos;s private written proposal identifies the
+            selected services, outside costs, exclusions, payment terms, and approval responsibilities.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -94,11 +92,11 @@ export default function TermsPage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            3. Planning Partner, Travel, and Other Providers
+            3. Destination Services, Travel, and Other Providers
           </h2>
           <p>
-            The destination-planning partner, resorts, venues, vendors, travel companies, airlines,
-            hotels, transfer companies, and carriers may be independent providers. Each provider remains
+            Resorts, venues, local professionals, vendors, travel companies, airlines, hotels, transfer
+            companies, and carriers may be independent providers. Each provider remains
             responsible for the services assigned to it. CeremonyVerse does not bind another provider
             beyond the authority stated in a signed written agreement, and another provider cannot bind
             CeremonyVerse.

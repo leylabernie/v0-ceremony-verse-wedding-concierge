@@ -18,7 +18,8 @@ function ThankYouMessage() {
           Thank You{name ? `, ${name}` : ''}!
         </h1>
         <p className="text-stone-600 text-lg mb-8 leading-relaxed">
-          Your message has been received. A member of the CeremonyVerse team will be in touch within 24 hours to schedule your free discovery call.
+          Follow the confirmation shown by the form you just completed. If you were asked to use WhatsApp or email,
+          your request is not delivered until you send it through that option.
         </p>
         <Link 
           href="/" 

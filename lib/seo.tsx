@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for US families plus destination-wedding planning support through an experienced partner serving Cancun, Riviera Maya, and Punta Cana.",
+      "CeremonyVerse offers Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning support across Mexico and in Punta Cana.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -331,7 +331,7 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: ["US", "Cancun", "Riviera Maya", "Punta Cana"],
+    areaServed: ["US", "Mexico", "Punta Cana"],
     priceRange: "$$",
     sameAs: [
       "https://www.instagram.com/ceremonyverse/",
@@ -395,7 +395,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for US families plus destination-wedding planning support for Gujarati and Hindu families through an experienced planning partner serving Cancun, Riviera Maya, and Punta Cana. Private proposals define the assigned planning, family-support, and optional India-sourcing responsibilities.",
+          text: "CeremonyVerse offers India wedding shopping for US families plus destination-wedding planning support for Gujarati and Hindu families across Mexico and in Punta Cana. Private proposals define the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
@@ -478,7 +478,7 @@ export function buildOrganizationSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     description:
-      "CeremonyVerse is a US-based Indian wedding shopping concierge and family-side destination-wedding support service working with an experienced planning partner in Cancun, Riviera Maya, and Punta Cana.",
+      "CeremonyVerse is a US-based Indian wedding shopping concierge and destination-wedding support service for Gujarati and Hindu families planning celebrations across Mexico and in Punta Cana.",
     contactPoint: [
       {
         "@type": "ContactPoint",

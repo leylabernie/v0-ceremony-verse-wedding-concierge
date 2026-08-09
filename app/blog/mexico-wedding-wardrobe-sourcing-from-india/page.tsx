@@ -142,10 +142,9 @@ export default function BlogPost() {
 
           <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">How this connects to destination planning</h2>
           <p>
-            CeremonyVerse now works with an experienced destination-wedding planner serving Cancun, Riviera Maya,
-            and Punta Cana. The planner becomes involved from the beginning and leads the contracted local planning
-            and on-site execution. CeremonyVerse supports the family and can lead approved India sourcing. Punta Cana
-            is a separate service destination through the partnership; this guide does not present a client portfolio.
+            CeremonyVerse offers destination planning, on-site coordination, family support, and optional India sourcing
+            across Mexico and in Punta Cana. Cancun and Riviera Maya appear in the family-experience story, while Punta
+            Cana is current service coverage; this guide does not present a client portfolio.
           </p>
         </div>
 

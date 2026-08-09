@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
   title: "Indian Destination Wedding Mexico Guide",
   description:
-    "Compare Cancun and Riviera Maya for an Indian destination wedding. Review resort contracts, budget categories, timelines, and planning questions before booking.",
+    "Compare Indian destination-wedding resorts across Mexico using room-block contracts, complete budget categories, timelines, cultural requirements, and guest logistics.",
   keywords:
     "Indian destination wedding Mexico, Indian wedding Cancun, Indian wedding Riviera Maya, South Asian wedding resort Mexico, Indian wedding Mexico cost, Cancun wedding planning guide",
 });
@@ -48,9 +48,9 @@ const faqItems = [
       "Ask who prepares the food, whether outside catering is permitted, how dietary and allergy requirements are handled, whether separate preparation is available, what tasting process applies, and which fees, minimums, service charges, and taxes are additional. Put the agreed menu and operating conditions in writing.",
   },
   {
-    question: "How does CeremonyVerse work with the destination-planning partner?",
+    question: "Where in Mexico does CeremonyVerse provide destination-wedding support?",
     answer:
-      "An experienced destination-wedding planning partner becomes involved from the beginning and leads the contracted local planning and on-site work. CeremonyVerse supports family communication and can lead optional India sourcing. The partnership currently serves Cancun, Riviera Maya, and Punta Cana.",
+      "CeremonyVerse provides destination-wedding planning and support across Mexico. Cancun and Riviera Maya appear often because they are part of the firsthand family experience, but they are not the service limits. Punta Cana is also included in current service coverage.",
   },
 ];
 
@@ -331,9 +331,9 @@ export default function MexicoDestinationGuidePage() {
               brief and understand which party owns each decision, approval, payment, deadline, and contingency.
             </p>
             <p className="mt-5">
-              The current planning partnership serves Cancun, Riviera Maya, and Punta Cana. The private proposal
-              identifies the contracted scope, fees, payment recipients, exclusions, and third-party costs before an
-              agreement is signed. Family-experience facts are documented separately on the About page.
+              CeremonyVerse serves destination weddings across Mexico and in Punta Cana. The private proposal identifies
+              the selected scope, fees, payment terms, exclusions, and third-party costs before paid work begins.
+              Family-experience facts are documented separately on the About page.
             </p>
           </div>
         </div>

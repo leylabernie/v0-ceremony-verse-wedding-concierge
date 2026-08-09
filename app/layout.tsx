@@ -39,7 +39,7 @@ export const metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Shop for Indian wedding outfits from India or request destination-wedding planning support for Cancun, Riviera Maya, or Punta Cana.",
+    "Shop for Indian wedding outfits from India or request Gujarati and Hindu destination-wedding planning support across Mexico or in Punta Cana.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {

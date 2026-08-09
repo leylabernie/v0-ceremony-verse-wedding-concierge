@@ -82,10 +82,10 @@ export default function WeddingExperiencePage() {
             Better questions, clearer responsibilities, and one organized family relationship
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
-            CeremonyVerse now works with an experienced destination-wedding planner serving Cancun, Riviera Maya,
-            and Punta Cana. The planning partner leads contracted local planning and on-site execution, while
-            CeremonyVerse supports the family and can lead optional India sourcing. Punta Cana is a service
-            destination through the partnership; it is not part of the three family weddings above.
+            CeremonyVerse now serves Gujarati and Hindu destination weddings across Mexico and in Punta Cana, with
+            planning, on-site coordination, family support, guest organization, and optional India sourcing defined
+            privately for each wedding. Punta Cana is part of current service coverage; it is not part of the three
+            family weddings above.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link

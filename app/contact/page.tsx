@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/contact/",
   title: "Book a Free CeremonyVerse Wedding Consultation",
   description:
-    "Book a free 30-minute CeremonyVerse consultation for India wedding sourcing or destination planning in Cancun, Riviera Maya, and Punta Cana.",
+    "Request a private CeremonyVerse consultation for India wedding sourcing or Gujarati and Hindu destination planning across Mexico and in Punta Cana.",
 });
 
 const serviceSchema = buildServiceSchema({

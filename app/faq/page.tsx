@@ -80,7 +80,7 @@ const faqSections = [
     items: [
       {
         question: "Do I need to travel to India?",
-        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. For destination weddings, an experienced planning partner leads assigned local and on-site work in Cancun, Riviera Maya, and Punta Cana."
+        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico and in Punta Cana through the scope selected for the wedding."
       },
       {
         question: "Can I source just one item, or do I need a full package?",

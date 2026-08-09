@@ -36,7 +36,7 @@ export default function BridalLehengaServicePage() {
         <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
           Book a Free Consultation
         </Link>
-        <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Response within 24–48 hours</p>
+        <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Share your timeline and priorities</p>
       </section>
 
       <section style={{ padding: "56px 24px", background: "#fff" }}>

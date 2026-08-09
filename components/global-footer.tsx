@@ -44,6 +44,7 @@ const companyLinks = [
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },
   { label: "Blog", href: "/blog/" },
+  { label: "Planning Tools", href: "/planning-tools/" },
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
@@ -68,7 +69,7 @@ export function GlobalFooter() {
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
               India wedding shopping for US families and destination-wedding planning for Gujarati
-              and Hindu families through a partner serving Cancun, Riviera Maya, and Punta Cana.
+              and Hindu families across Mexico and in Punta Cana.
             </p>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
