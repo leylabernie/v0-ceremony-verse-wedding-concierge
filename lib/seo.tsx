@@ -520,7 +520,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Indian wedding shopping concierge — source bridal lehengas, sherwanis, and ceremonial items directly from India to the USA.",
+      "Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

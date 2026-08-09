@@ -43,6 +43,10 @@ function numeric(value: string): number {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : 0
 }
 
+function boundedPercentage(value: string): number {
+  return Math.min(100, numeric(value))
+}
+
 export function BudgetPlannerClient() {
   const [costs, setCosts] = useState<CostValues>(buildInitialCosts)
   const [statuses, setStatuses] = useState<CostStatuses>(buildInitialStatuses)
@@ -65,7 +69,7 @@ export function BudgetPlannerClient() {
     }
 
     const subtotal = Object.values(groupTotals).reduce((total, value) => total + value, 0)
-    const contingency = subtotal * (numeric(contingencyRate) / 100)
+    const contingency = subtotal * (boundedPercentage(contingencyRate) / 100)
     const total = subtotal + contingency
     const target = numeric(targetBudget)
     const guests = numeric(guestCount)
@@ -114,6 +118,20 @@ export function BudgetPlannerClient() {
     started.current = false
   }
 
+  const updateContingency = (value: string) => {
+    markStarted()
+    if (value === "") {
+      setContingencyRate("")
+      return
+    }
+    const parsed = Number(value)
+    if (!Number.isFinite(parsed)) {
+      setContingencyRate("")
+      return
+    }
+    setContingencyRate(parsed > 100 ? "100" : parsed < 0 ? "0" : value)
+  }
+
   const printWorksheet = () => {
     trackEvent("calculator_export", {
       calculator_name: "destination_wedding_budget",
@@ -133,15 +151,16 @@ export function BudgetPlannerClient() {
             </label>
             <label className="text-sm font-semibold text-[#1f1f1f]">
               Estimated guests
-              <input type="number" min="0" inputMode="numeric" value={guestCount} onFocus={markStarted} onChange={(event) => setGuestCount(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" placeholder="150" />
+              <input type="number" min="0" step="1" inputMode="numeric" value={guestCount} onFocus={markStarted} onChange={(event) => setGuestCount(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" placeholder="150" />
             </label>
             <label className="text-sm font-semibold text-[#1f1f1f]">
               Number of events
-              <input type="number" min="0" inputMode="numeric" value={eventCount} onFocus={markStarted} onChange={(event) => setEventCount(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" placeholder="4" />
+              <input type="number" min="0" step="1" inputMode="numeric" value={eventCount} onFocus={markStarted} onChange={(event) => setEventCount(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" placeholder="4" />
             </label>
             <label className="text-sm font-semibold text-[#1f1f1f]">
               Contingency percentage
-              <input type="number" min="0" max="100" inputMode="decimal" value={contingencyRate} onFocus={markStarted} onChange={(event) => setContingencyRate(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" />
+              <input type="number" min="0" max="100" inputMode="decimal" value={contingencyRate} onFocus={markStarted} onChange={(event) => updateContingency(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" aria-describedby="contingency-help" />
+              <span id="contingency-help" className="mt-1 block text-xs font-normal text-[#6d625c]">Enter 0–100%.</span>
             </label>
           </div>
 
@@ -222,7 +241,10 @@ export function BudgetPlannerClient() {
           <p className="mt-6 text-xs leading-5 text-white/60">
             This is a planning calculation, not a CeremonyVerse or resort quote. A remaining amount is not automatically a saving; it may represent costs that have not yet been entered.
           </p>
-          <Link href="/contact/?service=mexico&from=budget-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "destination_wedding_budget", completion_percent: summary.completeness })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Review My Budget Privately</Link>
+          <p className="mt-3 text-xs leading-5 text-white/60 print:hidden">
+            Your entries stay in this browser and are not sent with the consultation form. Print or save the worksheet if you want to discuss it.
+          </p>
+          <Link href="/contact/?service=mexico&from=budget-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "destination_wedding_budget", completion_percent: summary.completeness })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Request a Budget Review</Link>
           <Link href="/planning-tools/guest-logistics/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Calculate Hosted Guest Costs</Link>
         </aside>
       </div>

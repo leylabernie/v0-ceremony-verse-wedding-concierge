@@ -217,10 +217,13 @@ export function ResortComparisonClient() {
           <p className="mt-3 leading-7 text-[#4d403a]">
             A lower entered total is not automatically the better resort. Compare what each total includes, the room-block liability, cultural requirements, backup spaces, and the strength of the written terms. “Not confirmed” is a question to resolve—not a negative score.
           </p>
+          <p className="mt-3 text-sm leading-6 text-[#5e4a40] print:hidden">
+            Your entries stay in this browser and are not sent with the consultation form. Print or save the comparison if you want to discuss it.
+          </p>
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row print:hidden">
-          <Link href="/contact/?service=mexico&from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Review These Proposals Privately</Link>
+          <Link href="/contact/?service=mexico&from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
           <button type="button" onClick={printComparison} className="rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">Print or Save as PDF</button>
           <button type="button" onClick={reset} className="rounded-full border border-[#c7bcae] px-7 py-3 text-sm font-semibold text-[#5e4a40]">Clear comparison</button>
         </div>
@@ -245,7 +248,7 @@ function NumberInput({ label, value, onChange }: { label: string; value: string;
   return (
     <label className={labelClass}>
       {label}
-      <input type="number" min="0" inputMode="numeric" value={value} onChange={(event) => onChange(event.target.value)} className={`${inputClass} text-right`} />
+      <input type="number" min="0" step="1" inputMode="numeric" value={value} onChange={(event) => onChange(event.target.value)} className={`${inputClass} text-right`} />
     </label>
   )
 }

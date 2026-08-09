@@ -149,7 +149,10 @@ export function GuestLogisticsClient() {
           <p className="mt-6 text-xs leading-5 text-white/60">
             The room-block retail value is not automatically the family&apos;s expense. Confirm who pays, what the contract guarantees, occupancy rules, attrition, cancellation, taxes, and any credits in writing.
           </p>
-          <Link href="/planning-tools/budget/" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "budget" })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Add This to the Wedding Budget</Link>
+          <p className="mt-3 text-xs leading-5 text-white/60 print:hidden">
+            Your entries stay in this browser and are not transferred to another calculator or the consultation form. Print or save the results if you want to discuss them.
+          </p>
+          <Link href="/planning-tools/budget/" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "budget" })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Open Wedding Budget Calculator</Link>
           <Link href="/contact/?service=mexico&from=guest-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "consultation" })} className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Discuss Guest Logistics</Link>
         </aside>
       </div>
@@ -161,7 +164,7 @@ function NumberField({ label, value, onChange }: { label: string; value: string;
   return (
     <label className="text-sm font-semibold text-[#1f1f1f]">
       {label}
-      <input type="number" min="0" inputMode="numeric" value={value} onChange={(event) => onChange(event.target.value)} className={inputClass} />
+      <input type="number" min="0" step="1" inputMode="numeric" value={value} onChange={(event) => onChange(event.target.value)} className={inputClass} />
     </label>
   )
 }

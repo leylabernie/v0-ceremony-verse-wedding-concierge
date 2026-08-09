@@ -271,6 +271,13 @@
   height: calc(var(--cv-announcement-height) + var(--cv-navigation-height));
 }
 
+/* Keep the end of every mobile page above the fixed consultation bar. */
+@media screen and (max-width: 1279px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
+
 .glass-header {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);

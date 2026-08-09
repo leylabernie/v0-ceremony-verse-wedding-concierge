@@ -13,6 +13,8 @@ const serviceSchema = buildServiceSchema({
   description:
     "Free 30-minute consultation to review the wedding vision, guest count, timeline, and budget, then recommend India sourcing or the right destination-planning and family-support scope.",
   url: "/contact/",
+  category: "Wedding Planning and India Wedding Sourcing Consultation",
+  areaServed: "United States, Mexico, and Punta Cana",
 });
 
 const breadcrumbSchema = buildBreadcrumb([

@@ -14,6 +14,7 @@ const navItems: { label: string; href: string }[] = [
   { label: "Services", href: "/services/" },
   { label: "India Shopping", href: "/shop-from-india/" },
   { label: "Destination Planning", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Calculators", href: "/planning-tools/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },
