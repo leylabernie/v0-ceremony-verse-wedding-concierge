@@ -18,7 +18,7 @@ export default function MobileStickyCTA() {
         gap: "12px",
         boxShadow: "0 -2px 12px rgba(0,0,0,0.12)",
       }}
-      className="flex min-[1280px]:hidden"
+      className="cv-mobile-sticky-cta flex min-[1280px]:hidden"
     >
       <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
         Get a free 30-minute outfit plan

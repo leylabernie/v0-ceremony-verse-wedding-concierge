@@ -3,9 +3,9 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/",
-  title: "Free Indian Destination Wedding Planning Tools",
+  title: "Free Indian Destination Wedding Calculators",
   description:
-    "Use CeremonyVerse planning tools for destination-wedding budgets, resort comparisons, family responsibilities, and guest logistics across Mexico and Punta Cana.",
+    "Use free CeremonyVerse calculators for destination-wedding budgets, resort proposals, and guest or VIP travel costs across Mexico and Punta Cana.",
   keywords:
     "Indian destination wedding budget planner, Mexico wedding resort comparison, destination wedding guest tracker, Gujarati wedding planning checklist, Punta Cana Indian wedding planning",
 })
@@ -14,18 +14,25 @@ const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/plann
 
 const tools = [
   {
-    title: "Wedding Budget Builder",
+    title: "Wedding Budget Calculator",
     description:
-      "Enter your own costs and see the total, contingency, cost per guest, and difference from your target budget.",
+      "Separate event, family-travel, and shopping costs; see the total, target gap, quote confidence, and missing cost areas.",
     href: "/planning-tools/budget/",
-    label: "Build the budget",
+    label: "Calculate the budget",
   },
   {
-    title: "Resort Comparison Worksheet",
+    title: "Resort Proposal Calculator",
     description:
-      "Compare room-block terms, event inclusions, outside-vendor fees, food requirements, weather plans, and guest logistics.",
+      "Compare two written proposals across known host costs, room-block exposure, cultural requirements, and contract clarity.",
     href: "/planning-tools/resort-comparison/",
-    label: "Compare resorts",
+    label: "Compare two resorts",
+  },
+  {
+    title: "Guest & VIP Cost Calculator",
+    description:
+      "Calculate room nights, family-paid rooms and flights, transfers, welcome items, and the host-paid guest-support total.",
+    href: "/planning-tools/guest-logistics/",
+    label: "Calculate guest costs",
   },
   {
     title: "Family Responsibility Map",
@@ -33,13 +40,6 @@ const tools = [
       "Assign one owner, approver, deadline, and status to the decisions that often become scattered across a large family.",
     href: "/planning-tools/family-responsibility-map/",
     label: "Organize decisions",
-  },
-  {
-    title: "Guest Logistics Checklist",
-    description:
-      "Track names, rooms, arrival details, transfers, dietary needs, welcome items, and missing information without collecting sensitive documents.",
-    href: "/planning-tools/guest-logistics/",
-    label: "Organize guests",
   },
 ]
 
@@ -53,10 +53,9 @@ export default function PlanningToolsPage() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
             Free CeremonyVerse resources
           </p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Make the wedding easier to evaluate</h1>
+          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Calculate before you commit</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            These tools help Gujarati and Hindu families organize a destination wedding across Mexico or Punta Cana.
-            They use your information rather than invented package promises, and they do not require an email address.
+            Use your own quotes and assumptions to test the complete budget, compare resorts, and separate guest support from wedding-production costs. No email address is required.
           </p>
         </div>
       </section>
@@ -79,10 +78,10 @@ export default function PlanningToolsPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-semibold sm:text-4xl">Need help interpreting the numbers?</h2>
           <p className="mt-4 leading-7 text-[#4d403a]">
-            Bring the completed information to a private consultation. CeremonyVerse can help identify missing costs,
-            unclear resort language, and the next decisions that matter most.
+            Bring the completed calculations to a private consultation. CeremonyVerse can help identify missing costs,
+            unclear resort language, and the next decisions that matter most—without asking you to start over.
           </p>
-          <Link href="/contact/?service=mexico" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
+          <Link href="/contact/?service=mexico&from=planning-calculators" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
             Request a Consultation
           </Link>
         </div>

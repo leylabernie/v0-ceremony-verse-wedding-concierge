@@ -20,6 +20,27 @@ const serviceGroups = [
   },
 ]
 
+const calculatorTools = [
+  {
+    title: "Budget Calculator",
+    description: "Separate event costs from family travel, test the target, and see which cost areas are still missing.",
+    href: "/planning-tools/budget/",
+    cta: "Calculate My Budget",
+  },
+  {
+    title: "Resort Proposal Calculator",
+    description: "Compare two written proposals across known costs, room-block exposure, cultural needs, and unclear terms.",
+    href: "/planning-tools/resort-comparison/",
+    cta: "Compare Two Resorts",
+  },
+  {
+    title: "Guest & VIP Cost Calculator",
+    description: "Estimate family-paid rooms, flights, transfers, welcome items, and the guest-support total.",
+    href: "/planning-tools/guest-logistics/",
+    cta: "Calculate Guest Costs",
+  },
+]
+
 const localServiceAreas = [
   { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
   { label: "Washington DC & DMV", href: "/indian-wedding-shopping-washington-dc/" },
@@ -183,10 +204,10 @@ export function HomePage() {
                 Request a Private Proposal
               </Link>
               <Link
-                href="/how-it-works/"
+                href="/planning-tools/"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Compare Both Services
+                Use Free Wedding Calculators
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
@@ -202,6 +223,29 @@ export function HomePage() {
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
           <p>Private scope defined before paid work</p>
+        </div>
+      </section>
+
+      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Free · private · no email gate</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the numbers families usually miss</h2>
+            <p className="text-lg leading-8 !text-white/75">
+              Enter your own quotes and assumptions. CeremonyVerse does not insert a universal package price or require contact information to show the result.
+            </p>
+          </div>
+          <div className="grid gap-6 lg:grid-cols-3">
+            {calculatorTools.map((tool) => (
+              <article key={tool.href} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-7 sm:p-8">
+                <h3 className="font-serif text-2xl font-semibold !text-white">{tool.title}</h3>
+                <p className="mt-3 flex-1 leading-7 !text-white/70">{tool.description}</p>
+                <Link href={tool.href} className="mt-7 inline-flex self-start rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]">
+                  {tool.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -1,19 +1,31 @@
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
+import { ResortComparisonClient } from "./resort-comparison-client"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/resort-comparison/",
-  title: "Mexico & Punta Cana Wedding Resort Comparison Worksheet",
+  title: "Mexico & Punta Cana Wedding Resort Comparison Calculator",
   description:
-    "Compare Indian destination-wedding resorts across Mexico and Punta Cana using room-block, event, catering, vendor-fee, weather, and guest-logistics questions.",
+    "Compare two Indian destination-wedding resort proposals across Mexico or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
   keywords:
     "Mexico Indian wedding resort comparison, Punta Cana wedding resort checklist, destination wedding room block questions, Indian wedding outside vendor fees",
 })
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Planning Tools", url: "/planning-tools/" },
-  { name: "Resort Comparison", url: "/planning-tools/resort-comparison/" },
+  { name: "Resort Proposal Calculator", url: "/planning-tools/resort-comparison/" },
 ])
+
+const calculatorSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Mexico and Punta Cana Wedding Resort Proposal Comparison Calculator",
+  url: "https://www.ceremonyverse.com/planning-tools/resort-comparison/",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Any",
+  isAccessibleForFree: true,
+  description: "A free client-entered comparison for two resort proposals, known host costs, room-block exposure, cultural requirements, and written terms.",
+}
 
 const sections = [
   {
@@ -62,19 +74,26 @@ export default function ResortComparisonPage() {
   return (
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-calculator" data={calculatorSchema} />
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Before a resort deposit</p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Comparison Worksheet</h1>
+          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Proposal Comparison Calculator</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Use the same questions for every resort across Mexico or Punta Cana. Record the written answer, the contract section,
-            and the person who confirmed it; a verbal promise is not a comparison point.
+            Enter the figures and terms from two written resort proposals. The calculator keeps host-paid costs separate from room-block exposure and shows which important answers are still missing.
           </p>
         </div>
       </section>
 
-      <section className="px-6 py-20">
+      <ResortComparisonClient />
+
+      <section className="bg-[#f0ebe3] px-6 py-20 print:hidden">
         <div className="mx-auto max-w-5xl space-y-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Before a deposit</p>
+            <h2 className="font-serif text-4xl font-semibold">Questions the numbers cannot answer</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">Ask both resorts the same questions and keep each answer with the proposal or contract section that supports it.</p>
+          </div>
           {sections.map((section) => (
             <article key={section.title} className="rounded-2xl border border-[#e6dfd5] bg-white p-7 sm:p-10">
               <h2 className="font-serif text-3xl font-semibold">{section.title}</h2>
@@ -92,7 +111,7 @@ export default function ResortComparisonPage() {
             </article>
           ))}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Resort Review</Link>
+            <Link href="/contact/?service=mexico&from=resort-calculator" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Private Resort Review</Link>
             <Link href="/planning-tools/budget/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Open Budget Builder</Link>
           </div>
         </div>

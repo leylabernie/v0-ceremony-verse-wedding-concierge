@@ -148,6 +148,12 @@ export default function MexicoCoordinationPage() {
             >
               Compare Package Details
             </Link>
+            <Link
+              href="/planning-tools/"
+              className="rounded-lg border-2 border-white/45 px-8 py-4 text-lg font-bold text-white"
+            >
+              Use Free Wedding Calculators
+            </Link>
           </div>
           <p className="mt-5 text-sm text-[#cfc6bb]">
             {mexicoAvailabilityMessage} No resort or vendor availability is promised before written confirmation.

@@ -155,10 +155,10 @@ export default function MexicoDestinationGuidePage() {
               Get Family-Side Help
             </Link>
             <Link
-              href="/indian-wedding-coordination-mexico/"
+              href="/planning-tools/"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
-              View Concierge Services
+              Use Free Wedding Calculators
             </Link>
           </div>
         </div>
@@ -225,6 +225,9 @@ export default function MexicoDestinationGuidePage() {
                 and they rarely represent the entire wedding spend. Normalize every proposal with the same guest
                 count, room nights, event hours, inclusions, taxes, and service charges.
               </p>
+              <Link href="/planning-tools/budget/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
+                Open the Budget Calculator
+              </Link>
             </div>
             <div className="overflow-hidden rounded-2xl border border-[#e6dfd5]">
               {budgetRows.map(([category, detail], index) => (

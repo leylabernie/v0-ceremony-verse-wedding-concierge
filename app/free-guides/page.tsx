@@ -13,10 +13,10 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
-  ["Budget Builder", "Add your own researched or quoted costs and compare the total with your target budget.", "/planning-tools/budget/"],
-  ["Resort Comparison", "Ask every resort the same room-block, event, catering, vendor, and weather questions.", "/planning-tools/resort-comparison/"],
+  ["Budget Calculator", "Separate wedding-event, guest-travel, and optional shopping costs and compare the total with your target.", "/planning-tools/budget/"],
+  ["Resort Proposal Calculator", "Compare two written resort proposals, room-block exposure, cultural requirements, and missing terms.", "/planning-tools/resort-comparison/"],
   ["Family Responsibility Map", "Assign an owner, approver, due date, and status to each important decision.", "/planning-tools/family-responsibility-map/"],
-  ["Guest Logistics Checklist", "Organize rooms, arrivals, transfers, dietary needs, and welcome details.", "/planning-tools/guest-logistics/"],
+  ["Guest & VIP Cost Calculator", "Calculate family-paid rooms, flights, transfers, welcome items, and guest-support costs.", "/planning-tools/guest-logistics/"],
 ] as const
 
 const shoppingGuides = [
