@@ -170,10 +170,17 @@ export function ConsultationQuestionnairePage() {
       `Biggest concern: ${compact(formData.biggestConcern)}`,
       `Questions for the call: ${compact(formData.questionsForCall)}`,
     ].join("\n\n")
-    return `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
+    return `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
       "CeremonyVerse pre-call questionnaire",
     )}&body=${encodeURIComponent(body)}`
   }, [formData])
+
+  const schedulingMessage = [
+    "Hello, I completed the CeremonyVerse consultation registration and pre-call questionnaire.",
+    `Request ID: ${formData.requestId}`,
+    "I would like to choose a time for my free consultation.",
+  ].join("\n")
+  const schedulingUrl = `https://wa.me/12153419990?text=${encodeURIComponent(schedulingMessage)}`
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
@@ -226,7 +233,8 @@ export function ConsultationQuestionnairePage() {
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
             This questionnaire is available only after the website consultation form has been submitted. Registering
-            first lets CeremonyVerse match your answers to the correct request before any call is scheduled.
+            first lets CeremonyVerse match your answers to the correct request and keeps call scheduling available to
+            registered clients.
           </p>
           <Link
             href="/contact/"
@@ -249,9 +257,17 @@ export function ConsultationQuestionnairePage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Questionnaire received</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">Thank you, {formData.name}.</h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your registration and pre-call details were sent to Bhamini. She will review them and contact you to
-            confirm the next step and provide scheduling details when a call is appropriate.
+            Your registration and pre-call questionnaire were received. You can continue to call scheduling now;
+            no prior review or approval is required.
           </p>
+          <a
+            href={schedulingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
+          >
+            Continue to Scheduling on WhatsApp
+          </a>
           <div className="mt-9 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Keep these items nearby</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
@@ -260,7 +276,7 @@ export function ConsultationQuestionnairePage() {
               <li>• Known estimates and a clear note of what the working budget must cover.</li>
             </ul>
           </div>
-          <Link href="/planning-tools/" className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
+          <Link href="/planning-tools/" className="mt-8 inline-flex rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">
             Review Planning Tools
           </Link>
         </div>
@@ -276,7 +292,7 @@ export function ConsultationQuestionnairePage() {
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Pre-Call Wedding Questionnaire</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
             Your consultation request is already registered. Share what is known today so CeremonyVerse can prepare
-            for the free 30-minute consultation before scheduling details are confirmed.
+            for the free 30-minute consultation. Call scheduling opens after you submit this questionnaire.
           </p>
         </div>
       </section>

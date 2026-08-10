@@ -115,8 +115,8 @@ export default function PrivacyPage() {
           </p>
           <p className={paragraphClass}>
             Send a request to{" "}
-            <a href="mailto:bhamini@ceremonyverse.com?subject=Privacy%20request" className="font-semibold text-[#7a6841] underline">
-              bhamini@ceremonyverse.com
+            <a href="mailto:hello@ceremonyverse.com?subject=Privacy%20request" className="font-semibold text-[#7a6841] underline">
+              hello@ceremonyverse.com
             </a>
             . Official explanations of privacy rights are available from the{" "}
             <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
@@ -163,8 +163,8 @@ export default function PrivacyPage() {
           <p className={paragraphClass}>
             This notice may be updated when the website, service providers, or data practices change. The current date
             will appear above. Questions can be sent to{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
-              bhamini@ceremonyverse.com
+            <a href="mailto:hello@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
+              hello@ceremonyverse.com
             </a>{" "}
             or through the <Link href="/contact/" className="font-semibold text-[#7a6841] underline">consultation page</Link>.
           </p>

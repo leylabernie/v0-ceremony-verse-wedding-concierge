@@ -114,7 +114,7 @@ export function ContactPage() {
   )
 
   const whatsappFallbackUrl = `https://wa.me/12153419990?text=${encodeURIComponent(fallbackText)}`
-  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
+  const emailFallbackUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
     "CeremonyVerse consultation request",
   )}&body=${encodeURIComponent(fallbackText)}`
 
@@ -176,8 +176,9 @@ export function ContactPage() {
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your consultation request is now registered. Complete the questionnaire below before any call is
-            scheduled so CeremonyVerse can review your wedding timeframe, destination, guest needs, and priorities.
+            Your consultation request is now registered. Complete the questionnaire below so CeremonyVerse has your
+            wedding timeframe, destination, guest needs, and priorities before the call. Scheduling opens immediately
+            after you submit it.
           </p>
           {questionnaireUrl ? (
             <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
@@ -185,7 +186,7 @@ export function ContactPage() {
               <p className="mt-4 leading-7 text-[#4d403a]">
                 {questionnaireSent
                   ? "We emailed the questionnaire to the address you provided. You can also complete it now using the button below."
-                  : "Your consultation request arrived, but delivery of the questionnaire email could not be confirmed. Please open it here so Bhamini has your details before the call."}
+                  : "Your consultation request arrived, but delivery of the questionnaire email could not be confirmed. Please open it here so we have the details needed for your call."}
               </p>
               <Link
                 href={questionnaireUrl}
@@ -241,8 +242,8 @@ export function ContactPage() {
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">Website registration is required before a call can be scheduled.</p>
             <p className="mt-2">
-              Submit this form first. We will send your pre-call questionnaire automatically. After Bhamini reviews
-              both, CeremonyVerse will confirm the appropriate next step and provide scheduling details when a call is appropriate.
+              Submit this form first. We will send your pre-call questionnaire automatically. Once you complete it,
+              the call-scheduling step opens immediately. No prior review or approval is required.
             </p>
           </div>
         </div>
