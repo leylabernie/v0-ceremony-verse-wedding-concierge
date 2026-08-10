@@ -4,7 +4,7 @@ import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonL
 
 const title = "Ordering Indian Wedding Outfits from India to the USA or Canada";
 const description =
-  "A practical guide to ordering Indian wedding outfits for U.S. or Canadian delivery, including vendor evidence, measurements, written approvals, shipping, duties, taxes, brokerage, and alterations.";
+  "Order Indian wedding outfits for U.S. or Canadian delivery with a plan for vendor evidence, measurements, shipping, duties, taxes, brokerage, and alterations.";
 const path = "/blog/ordering-indian-wedding-outfits-usa-canada/";
 
 export const metadata = buildMetadata({
@@ -229,7 +229,7 @@ export default function BlogPost() {
               <Link href="/contact/?service=india&from=outfit-ordering-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
                 Request a Free Consultation
               </Link>
-              <Link href="/pricing/#india-shopping" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
+              <Link href="/pricing/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
                 Review Sourcing Tiers
               </Link>
             </div>

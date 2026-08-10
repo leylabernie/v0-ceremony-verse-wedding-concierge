@@ -4,7 +4,7 @@ import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonL
 
 const title = "How to Plan a Gujarati or Hindu Destination Wedding in Mexico";
 const description =
-  "A practical guide for U.S. and Canadian families planning Gujarati or Hindu wedding events in Mexico, from guest documents and resort proposals to cultural details and on-site roles.";
+  "Plan a Gujarati or Hindu destination wedding in Mexico with clear guest-document, resort, budget, cultural, family, and on-site responsibilities.";
 const path = "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/";
 
 export const metadata = buildMetadata({

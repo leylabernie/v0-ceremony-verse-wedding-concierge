@@ -4,7 +4,7 @@ import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonL
 
 const title = "Mexico or Punta Cana for an Indian Destination Wedding?";
 const description =
-  "Compare Mexico and Punta Cana for a Gujarati or Hindu destination wedding using guest travel, resort fit, event spaces, food, vendor rules, written costs, and execution needs.";
+  "Compare Mexico and Punta Cana for an Indian destination wedding using guest travel, resorts, event spaces, food, vendor rules, total cost, and execution.";
 const path = "/blog/mexico-or-punta-cana-indian-destination-wedding/";
 
 export const metadata = buildMetadata({
