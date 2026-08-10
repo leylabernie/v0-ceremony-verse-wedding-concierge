@@ -210,7 +210,7 @@ export function HomePage() {
                 href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Start With a Free Consultation
+                Register for a Free Consultation
               </Link>
               <Link
                 href="/planning-tools/"
@@ -220,7 +220,7 @@ export function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
-              Free 30-minute consultation · Optional $300 written feasibility plan · No payment required for the call
+              Register first · Free 30-minute consultation · Optional $300 written feasibility plan
             </p>
           </div>
         </div>
@@ -604,7 +604,7 @@ export function HomePage() {
             href="/contact/"
             className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Book My Free Consultation
+            Register My Consultation Request
           </Link>
         </div>
       </section>

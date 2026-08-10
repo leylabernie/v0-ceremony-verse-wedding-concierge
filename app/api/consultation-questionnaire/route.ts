@@ -25,6 +25,20 @@ const dateFlexibilityOptions = [
   "Dates are not decided",
 ] as const
 
+const weekdayAvailabilityOptions = [
+  "Yes — weekdays are possible",
+  "Maybe — depends on pricing and travel",
+  "No — weekends only",
+  "Not sure yet",
+] as const
+
+const planningSupportOptions = [
+  "No planner yet; need a complete one-stop solution",
+  "Have a planner; need selected CeremonyVerse support",
+  "Comparing planners or service scopes",
+  "Not sure yet",
+] as const
+
 const eventOptions = [
   "Welcome event",
   "Mehndi",
@@ -39,7 +53,7 @@ const eventOptions = [
 const optionalText = (max: number) => z.string().trim().max(max).optional().default("")
 
 const questionnaireSchema = z.object({
-  requestId: z.union([z.string().trim().uuid(), z.literal("")]),
+  requestId: z.string().trim().uuid(),
   serviceFocus: z.enum(serviceFocusOptions),
   name: z.string().trim().min(2).max(100),
   email: z.string().trim().email().max(254),
@@ -47,7 +61,9 @@ const questionnaireSchema = z.object({
   decisionMakers: optionalText(500),
   weddingTimeframe: z.string().trim().min(2).max(120),
   dateFlexibility: z.enum(dateFlexibilityOptions),
+  weekdayAvailability: z.union([z.enum(weekdayAvailabilityOptions), z.literal("")]),
   planningStage: optionalText(160),
+  planningSupportStatus: z.union([z.enum(planningSupportOptions), z.literal("")]),
   destinationIdeas: optionalText(500),
   resortStatusDetails: optionalText(1200),
   likelyGuestCount: optionalText(8),
@@ -68,6 +84,22 @@ const questionnaireSchema = z.object({
   questionsForCall: optionalText(1600),
   privacyConsent: z.literal(true),
   website: optionalText(120),
+}).superRefine((questionnaire, context) => {
+  const destinationRelevant = questionnaire.serviceFocus !== "India wedding shopping and sourcing"
+  if (destinationRelevant && !questionnaire.weekdayAvailability) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["weekdayAvailability"],
+      message: "Please indicate whether weekday events are possible.",
+    })
+  }
+  if (destinationRelevant && !questionnaire.planningSupportStatus) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["planningSupportStatus"],
+      message: "Please indicate what planning support you have or need.",
+    })
+  }
 })
 
 type Questionnaire = z.infer<typeof questionnaireSchema>
@@ -110,7 +142,7 @@ function safeOrigin(request: NextRequest): boolean {
 
 function questionnaireRows(questionnaire: Questionnaire): Array<[string, string]> {
   return [
-    ["Request ID", questionnaire.requestId || "Direct questionnaire"],
+    ["Request ID", questionnaire.requestId],
     ["Consultation focus", questionnaire.serviceFocus],
     ["Name", questionnaire.name],
     ["Email", questionnaire.email],
@@ -118,7 +150,9 @@ function questionnaireRows(questionnaire: Questionnaire): Array<[string, string]
     ["Decision-makers", questionnaire.decisionMakers],
     ["Wedding timeframe", questionnaire.weddingTimeframe],
     ["Date flexibility", questionnaire.dateFlexibility],
+    ["Weekday wedding events possible", questionnaire.weekdayAvailability],
     ["Current planning stage", questionnaire.planningStage],
+    ["Planning support already in place or needed", questionnaire.planningSupportStatus],
     ["Destination ideas", questionnaire.destinationIdeas],
     ["Resorts, proposals, contracts, or deposits", questionnaire.resortStatusDetails],
     ["Likely guest count", questionnaire.likelyGuestCount],

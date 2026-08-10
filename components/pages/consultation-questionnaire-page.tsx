@@ -24,7 +24,9 @@ interface QuestionnaireData {
   decisionMakers: string
   weddingTimeframe: string
   dateFlexibility: string
+  weekdayAvailability: string
   planningStage: string
+  planningSupportStatus: string
   destinationIdeas: string
   resortStatusDetails: string
   likelyGuestCount: string
@@ -91,7 +93,9 @@ export function ConsultationQuestionnairePage() {
     decisionMakers: "",
     weddingTimeframe: "",
     dateFlexibility: "",
+    weekdayAvailability: "",
     planningStage: "",
+    planningSupportStatus: "",
     destinationIdeas: "",
     resortStatusDetails: "",
     likelyGuestCount: "",
@@ -145,6 +149,7 @@ export function ConsultationQuestionnairePage() {
       formData.relationship &&
       formData.weddingTimeframe.trim() &&
       formData.dateFlexibility &&
+      (!destinationRelevant || (formData.weekdayAvailability && formData.planningSupportStatus)) &&
       formData.topPriorities.trim() &&
       formData.privacyConsent,
   )
@@ -157,6 +162,8 @@ export function ConsultationQuestionnairePage() {
       `Email: ${compact(formData.email)}`,
       `Consultation focus: ${formData.serviceFocus || "Not provided"}`,
       `Wedding timeframe: ${compact(formData.weddingTimeframe)}`,
+      `Weekday dates possible: ${compact(formData.weekdayAvailability)}`,
+      `Planning support status: ${compact(formData.planningSupportStatus)}`,
       `Likely / maximum guests: ${compact(formData.likelyGuestCount)} / ${compact(formData.maximumGuestCount)}`,
       `Events: ${formData.events.join(", ") || "Not provided"}`,
       `Top priorities: ${compact(formData.topPriorities)}`,
@@ -207,6 +214,31 @@ export function ConsultationQuestionnairePage() {
     }
   }
 
+  if (!formData.requestId) {
+    return (
+      <main className="min-h-screen bg-[#faf8f5] px-6 py-28">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+            Registration required
+          </p>
+          <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">
+            Register your consultation request first
+          </h1>
+          <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
+            This questionnaire is available only after the website consultation form has been submitted. Registering
+            first lets CeremonyVerse match your answers to the correct request before any call is scheduled.
+          </p>
+          <Link
+            href="/contact/"
+            className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
+          >
+            Register for a Consultation
+          </Link>
+        </div>
+      </main>
+    )
+  }
+
   if (isSubmitted) {
     return (
       <main className="min-h-screen bg-[#faf8f5] px-6 py-28">
@@ -217,8 +249,8 @@ export function ConsultationQuestionnairePage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Questionnaire received</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">Thank you, {formData.name}.</h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your pre-call details were sent to Bhamini. She will review them and contact you to confirm the next step
-            and, when appropriate, schedule or confirm the free consultation.
+            Your registration and pre-call details were sent to Bhamini. She will review them and contact you to
+            confirm the next step and provide scheduling details when a call is appropriate.
           </p>
           <div className="mt-9 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Keep these items nearby</h2>
@@ -243,8 +275,8 @@ export function ConsultationQuestionnairePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Prepare for your conversation</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Pre-Call Wedding Questionnaire</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            Share what is known today. You do not need final resort pricing or every family decision before completing
-            this form. Your answers help CeremonyVerse use the free 30-minute consultation well.
+            Your consultation request is already registered. Share what is known today so CeremonyVerse can prepare
+            for the free 30-minute consultation before scheduling details are confirmed.
           </p>
         </div>
       </section>
@@ -316,6 +348,18 @@ export function ConsultationQuestionnairePage() {
                 <option value="Dates are not decided">Dates are not decided</option>
               </select>
             </div>
+            {destinationRelevant ? (
+              <div>
+                <label htmlFor="weekdayAvailability" className={labelClass}>Could your family consider weekday wedding events? <span className="text-[#7a6841]">*</span></label>
+                <select id="weekdayAvailability" className={inputClass} value={formData.weekdayAvailability} onChange={(event) => updateFormData("weekdayAvailability", event.target.value)} required>
+                  <option value="">Select</option>
+                  <option value="Yes — weekdays are possible">Yes — weekdays are possible</option>
+                  <option value="Maybe — depends on pricing and travel">Maybe — depends on pricing and travel</option>
+                  <option value="No — weekends only">No — weekends only</option>
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+            ) : null}
           </div>
           <fieldset className="mt-7">
             <legend className={labelClass}>Which events are currently planned?</legend>
@@ -355,6 +399,16 @@ export function ConsultationQuestionnairePage() {
                   <option value="Resort or room-block contract signed">Resort or room-block contract signed</option>
                   <option value="Deposit paid">Deposit paid</option>
                   <option value="Not decided">Not decided</option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="planningSupportStatus" className={labelClass}>What planning support do you have or need? <span className="text-[#7a6841]">*</span></label>
+                <select id="planningSupportStatus" className={inputClass} value={formData.planningSupportStatus} onChange={(event) => updateFormData("planningSupportStatus", event.target.value)} required>
+                  <option value="">Select</option>
+                  <option value="No planner yet; need a complete one-stop solution">No planner yet; need a complete one-stop solution</option>
+                  <option value="Have a planner; need selected CeremonyVerse support">Have a planner; need selected CeremonyVerse support</option>
+                  <option value="Comparing planners or service scopes">Comparing planners or service scopes</option>
+                  <option value="Not sure yet">Not sure yet</option>
                 </select>
               </div>
               <div>

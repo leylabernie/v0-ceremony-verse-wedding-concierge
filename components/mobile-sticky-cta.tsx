@@ -58,7 +58,7 @@ export default function MobileStickyCTA() {
             letterSpacing: "0.02em",
           }}
         >
-          Free Consultation
+          Register
         </Link>
       ) : (
         <a
