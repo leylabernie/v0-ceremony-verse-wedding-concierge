@@ -9,7 +9,7 @@ interface SendEmailOptions {
 }
 
 export function ceremonyVerseBusinessEmail(): string {
-  return process.env.CEREMONYVERSE_LEAD_TO_EMAIL?.trim() || DEFAULT_BUSINESS_EMAIL
+  return DEFAULT_BUSINESS_EMAIL
 }
 
 export function escapeHtml(value: string): string {
