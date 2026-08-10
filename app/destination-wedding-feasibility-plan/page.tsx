@@ -8,7 +8,7 @@ import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, Jso
 
 export const metadata = buildMetadata({
   path: destinationFeasibilityPlan.href,
-  title: "$300 Destination Wedding Feasibility Plan | CeremonyVerse",
+  title: "$300 Destination Wedding Feasibility Plan",
   description:
     "Turn your guest count, events, travel obligations, working budget, and current proposals into a written destination-wedding action plan for Mexico or Punta Cana.",
   keywords:
