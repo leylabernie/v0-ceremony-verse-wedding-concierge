@@ -170,13 +170,13 @@ export function ContactPage() {
             ✓
           </div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-            Registration received
+            Request received
           </p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your consultation request is now registered. Complete the questionnaire below so CeremonyVerse has your
+            Your consultation request has been received. Complete the questionnaire below so CeremonyVerse has your
             wedding timeframe, destination, guest needs, and priorities before the call. Scheduling opens immediately
             after you submit it.
           </p>
@@ -232,7 +232,7 @@ export function ContactPage() {
             Begin with the facts
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Register for a Free Wedding Consultation
+            Schedule Your Free Wedding Consultation
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
@@ -240,7 +240,7 @@ export function ContactPage() {
             shopping and sourcing from India for families throughout the United States and Canada.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
-            <p className="font-semibold text-[#1f1f1f]">Website registration is required before a call can be scheduled.</p>
+            <p className="font-semibold text-[#1f1f1f]">Complete the consultation request and questionnaire before choosing a call time.</p>
             <p className="mt-2">
               Submit this form first. We will send your pre-call questionnaire automatically. Once you complete it,
               the call-scheduling step opens immediately. No prior review or approval is required.
@@ -375,7 +375,7 @@ export function ContactPage() {
                 required
               />
               <span>
-                I agree that CeremonyVerse may use these details to register and respond to this consultation request.
+                I agree that CeremonyVerse may use these details to respond to my consultation request.
                 This does not subscribe me to marketing. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy policy</Link>.
               </span>
             </label>
@@ -402,7 +402,7 @@ export function ContactPage() {
               className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]"
               style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}
             >
-              {isLoading ? "Registering Securely…" : "Register My Consultation Request"}
+              {isLoading ? "Sending Securely…" : "Send My Consultation Request"}
             </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
               Submitting this form does not reserve a call time. Do not include passport numbers, payment-card details,
