@@ -9,6 +9,10 @@ import {
   buildServiceSchema,
 } from "@/lib/seo";
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages";
+import {
+  destinationFeasibilityCredit,
+  destinationFeasibilityPlan,
+} from "@/lib/destination-feasibility-plan";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
@@ -25,6 +29,13 @@ const serviceSchema = buildServiceSchema({
     "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
   areaServed: "Mexico and Punta Cana",
+  offers: [
+    {
+      name: destinationFeasibilityPlan.name,
+      price: destinationFeasibilityPlan.price,
+      description: destinationFeasibilityPlan.description,
+    },
+  ],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -40,7 +51,7 @@ const faqItems = [
   {
     question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "Destination-wedding pricing is private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the level of planning and family support required. The private proposal identifies the selected services, exclusions, fees, and applicable third-party costs before paid work begins.",
+      "The Destination Wedding Feasibility & Action Plan is $300. Full planning, partial planning, final coordination, and family-support pricing remains private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the help required. The private proposal identifies selected services, exclusions, fees, and third-party costs before paid work begins.",
   },
   {
     question: "Can you help us compare resorts across Mexico and Punta Cana?",
@@ -137,10 +148,10 @@ export default function MexicoCoordinationPage() {
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact/?service=mexico"
+              href={destinationFeasibilityPlan.contactHref}
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Discuss Your Destination Wedding
+              Start With a Free Fit Call
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
@@ -202,9 +213,29 @@ export default function MexicoCoordinationPage() {
               Five ways to support your destination wedding
             </h2>
             <p className="mt-5 leading-relaxed text-[#4d403a]">
-              Package details are public. Pricing is shared only in a private proposal after consultation.
+              Start with the published $300 feasibility plan, then compare the private-proposal planning and family-support scopes.
             </p>
           </div>
+
+          <article className="mb-10 rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{destinationFeasibilityPlan.name}</h3>
+                <p className="mt-4 font-serif text-5xl font-semibold text-[#1f1f1f]">{destinationFeasibilityPlan.priceLabel}</p>
+              </div>
+              <div>
+                <p className="leading-7 text-[#4d403a]">{destinationFeasibilityPlan.bestFor}</p>
+                <p className="mt-4 text-sm leading-6 text-[#5e4a40]">{destinationFeasibilityCredit}</p>
+                <Link
+                  href={destinationFeasibilityPlan.href}
+                  className="mt-6 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
+                >
+                  Review the $300 Deliverables
+                </Link>
+              </div>
+            </div>
+          </article>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {mexicoPackages.map((tier) => (
@@ -368,14 +399,14 @@ export default function MexicoCoordinationPage() {
             Start with your dates, guest count, location ideas, and budget.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            We will tell you what may be realistic, which package fits what you have already completed, and which
-            family-side services—if any—would genuinely make the process easier. Pricing stays private.
+            The free fit call confirms whether the $300 written feasibility plan or a private planning scope is the
+            right next step. Any feasibility conclusion depends on the couple&apos;s current figures and written information.
           </p>
           <Link
-            href="/contact/?service=mexico"
+            href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
           >
-            Book a Free Consultation
+            Book a Free Fit Call
           </Link>
         </div>
       </section>

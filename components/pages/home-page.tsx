@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
+import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
 const serviceGroups = [
   {
@@ -198,10 +199,10 @@ export function HomePage() {
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/contact/"
+                href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Request a Private Proposal
+                Start With a Free Fit Call
               </Link>
               <Link
                 href="/planning-tools/"
@@ -211,7 +212,7 @@ export function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
-              Free 30-minute consultation · No payment or contract required for the call
+              Free 30-minute fit call · Optional $300 written feasibility plan · No payment required for the call
             </p>
           </div>
         </div>
@@ -418,6 +419,27 @@ export function HomePage() {
             </p>
             <p className="mt-5 font-semibold text-[#7a6841]">{mexicoAvailabilityMessage}</p>
           </div>
+
+          <article className="mb-9 rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 shadow-sm sm:p-9">
+            <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
+                <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
+                  After the free fit call, turn your own guest count, event schedule, budget scope, travel obligations,
+                  and current written proposals into a practical action brief. The fee can be credited toward a
+                  CeremonyVerse destination-planning agreement under the published plan terms.
+                </p>
+              </div>
+              <Link
+                href={destinationFeasibilityPlan.href}
+                className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white"
+              >
+                See What $300 Includes
+              </Link>
+            </div>
+          </article>
+
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {mexicoPackages.map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">

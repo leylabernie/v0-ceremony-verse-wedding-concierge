@@ -46,7 +46,11 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Destination-planning prices are shared only in a private proposal after consultation."
+        answer: "The Destination Wedding Feasibility & Action Plan is $300. India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Full, partial, final-coordination, and family-support destination prices are shared in a private proposal after the free fit call."
+      },
+      {
+        question: "Is the $300 destination-wedding plan refundable or credited?",
+        answer: "The $300 fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within 30 days after the written plan is delivered, the full $300 is credited toward the CeremonyVerse planning service fee. It does not credit resort, vendor, venue, or travel charges."
       },
       {
         question: "What's the payment schedule?",

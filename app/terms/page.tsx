@@ -79,10 +79,17 @@ export default function TermsPage() {
           </h2>
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). Destination-planning
-            services use private proposals based on the selected scope. The 30-minute initial consultation
-            is free. The signed proposal or service agreement identifies when paid work begins and the
-            cancellation, refund, and rescheduling rules that apply to that scope.
+            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
+            Feasibility &amp; Action Plan is $300. Full, partial, final-coordination, and family-support
+            destination services use private proposals based on the selected scope. The 30-minute initial
+            fit call is free. The signed proposal or service agreement identifies when paid work begins and
+            the cancellation, refund, and rescheduling rules that apply to that scope.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            The $300 Destination Wedding Feasibility &amp; Action Plan fee is non-refundable once work begins.
+            If the client signs a CeremonyVerse destination-planning agreement within 30 days after the
+            written plan is delivered, the $300 is credited toward the CeremonyVerse planning service fee.
+            The credit does not apply to resort, venue, vendor, travel, or other independent-provider costs.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is

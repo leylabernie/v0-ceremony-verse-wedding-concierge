@@ -54,6 +54,7 @@ const getServiceInterestFromLocation = () => {
   const serviceByQuery: Record<string, string> = {
     india: "India shopping",
     mexico: "Destination wedding planning",
+    feasibility: "Destination Wedding Feasibility & Action Plan ($300)",
     both: "India shopping + destination wedding planning",
   }
   return requestedService ? serviceByQuery[requestedService] || "" : ""
@@ -88,7 +89,7 @@ export function ContactPage() {
   const fallbackText = useMemo(
     () =>
       [
-        "Hello CeremonyVerse, I would like to request a consultation.",
+        "Hello CeremonyVerse, I would like to request a free fit call.",
         `Service: ${serviceInterest || "Not provided"}`,
         `Name: ${formData.name || "Not provided"}`,
         `Email: ${formData.email || "Not provided"}`,
@@ -204,7 +205,7 @@ export function ContactPage() {
             Begin with the facts
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Request a Private Wedding Consultation
+            Request a Private Wedding Fit Call
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
@@ -220,7 +221,7 @@ export function ContactPage() {
               bhamini@ceremonyverse.com
             </a>
             <span aria-hidden="true">·</span>
-            <span>No payment required to submit</span>
+            <span>Free 30-minute fit call · No payment required to submit</span>
           </div>
         </div>
       </section>
@@ -252,6 +253,7 @@ export function ContactPage() {
                   required
                 >
                   <option value="">Select a service</option>
+                  <option value="Destination Wedding Feasibility & Action Plan ($300)">$300 Destination Wedding Feasibility &amp; Action Plan</option>
                   <option value="Destination wedding planning">Destination wedding planning and support</option>
                   <option value="India shopping">India wedding shopping and sourcing</option>
                   <option value="India shopping + destination wedding planning">Both destination planning and India sourcing</option>
