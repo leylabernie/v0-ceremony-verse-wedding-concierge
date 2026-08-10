@@ -11,6 +11,8 @@ const serviceOptions = [
   "Not sure",
 ] as const
 
+const clientCountryOptions = ["United States", "Canada", "Other"] as const
+
 const optionalText = (max: number) => z.string().trim().max(max).optional().default("")
 
 const leadSchema = z.object({
@@ -18,6 +20,7 @@ const leadSchema = z.object({
   name: z.string().trim().min(2).max(100),
   email: z.string().trim().email().max(254),
   phone: optionalText(40),
+  clientCountry: z.enum(clientCountryOptions),
   eventTimeframe: z.string().trim().min(2).max(80),
   eventLocation: optionalText(160),
   guestCount: optionalText(8),
@@ -102,6 +105,7 @@ function leadRows(lead: Lead): Array<[string, string]> {
     ["Name", lead.name],
     ["Email", lead.email],
     ["Phone / WhatsApp", lead.phone],
+    ["Home country", lead.clientCountry],
     ["Wedding timeframe", lead.eventTimeframe],
     ["Destination or location", lead.eventLocation],
     ["Estimated guests", lead.guestCount],

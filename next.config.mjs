@@ -59,14 +59,9 @@ const nextConfig = {
         destination: 'https://www.ceremonyverse.com/:path*',
         permanent: true,
       },
-      // ─── OFF-BRAND GEOGRAPHIC PAGES ───
+      // ─── UNSUPPORTED GEOGRAPHIC PAGES ───
       {
         source: '/indian-wedding-shopping-uk',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/indian-wedding-shopping-canada',
         destination: '/',
         permanent: true,
       },

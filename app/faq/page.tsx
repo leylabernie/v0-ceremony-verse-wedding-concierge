@@ -12,7 +12,7 @@ const faqSections = [
       },
       {
         question: "How do I know this isn't a scam?",
-        answer: "CeremonyVerse is a US-based business contact that documents the selected scope, vendor option, approvals, and applicable payment schedule. Eligible tiers include live video or current-media review. Payment requirements follow the signed proposal rather than a universal rule."
+        answer: "CeremonyVerse is a U.S.-based business serving families across the United States and Canada. We document the selected scope, vendor option, approvals, and applicable payment schedule. Eligible tiers include live video or current-media review. Payment requirements follow the signed proposal rather than a universal rule."
       },
       {
         question: "What if quality doesn't match?",
@@ -29,7 +29,7 @@ const faqSections = [
     items: [
       {
         question: "What if the outfits don't fit?",
-        answer: "We collect 15+ precise body measurements and build in strategic ease allowances. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations after delivery, subject to service terms."
+        answer: "We coordinate the selected vendor's measurement chart and written fit preferences. Remote work can still require local adjustment. Eligible made-to-measure garments may include Fit Assurance with up to $150 toward local alterations after delivery when stated in the signed service terms."
       },
       {
         question: "How do you handle large parties?",
@@ -66,16 +66,20 @@ const faqSections = [
     category: "Shipping & Delivery",
     items: [
       {
-        question: "How long does shipping take from India to the US?",
-        answer: "The carrier estimate depends on origin, destination, service level, shipment details, and customs clearance. We recommend building a meaningful buffer because carrier and customs timing cannot be guaranteed."
+        question: "How long does shipping take from India to the United States or Canada?",
+        answer: "The current carrier estimate depends on origin, destination, service level, shipment details, documentation, and customs clearance. Build a meaningful buffer because production, carrier, and customs timing cannot be guaranteed."
       },
       {
         question: "Do you handle customs and import duties?",
-        answer: "We prepare shipping documentation and estimate customs costs using the garment classification, fiber content, declared value, and current tariff rules. Any duties actually assessed are itemized and passed through without a CeremonyVerse markup."
+        answer: "Eligible sourcing tiers can include shipping-document coordination and a customs-cost estimate based on the selected goods, declared value, origin, and destination. Any U.S. duty or Canadian duty, GST/HST, applicable provincial tax, brokerage, disbursement, or related charge actually assessed remains separate and is governed by the current written terms."
+      },
+      {
+        question: "Do you serve families throughout Canada?",
+        answer: "Yes. CeremonyVerse consultations and remote India sourcing are available across every Canadian province and territory. The exact address, selected carrier, shipment, tracking, customs responsibilities, and outside costs are confirmed in writing before shipment."
       },
       {
         question: "What if my outfit arrives damaged?",
-        answer: "Eligible shipments are insured as described in your service agreement. If an item is delayed, damaged, or lost, we coordinate the carrier claim and the applicable repair, replacement, or other remedy with you."
+        answer: "When the signed service agreement includes shipment insurance, its declared-value limit, exclusions, evidence requirements, deadlines, and claim process apply. CeremonyVerse can coordinate the carrier claim and any contracted repair, replacement, or other remedy, but the carrier or insurer decides the claim."
       }
     ]
   },
@@ -155,8 +159,8 @@ export default function FAQPage() {
             Your Questions, Answered
           </h1>
           <p className="text-[#4d403a] text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
-            For NRI families planning Indian weddings in the US — scams, sizing disasters, and broken
-            promises are real concerns. Here's exactly how CeremonyVerse addresses every one of them.
+            For NRI families throughout the United States and Canada, remote shopping creates real questions about
+            vendors, sizing, payments, shipping, and customs. Here is how CeremonyVerse documents those risks and responsibilities.
           </p>
         </div>
       </section>
@@ -239,7 +243,7 @@ export default function FAQPage() {
                 How will I track my order?
               </h3>
               <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
-                <p>Complete visibility throughout production:</p>
+                <p>Available updates depend on the selected item, vendor, and service scope:</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Email or WhatsApp updates at agreed milestones</li>
                   <li>Photos or video when available for the applicable order stage</li>

@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/resort-comparison/",
   title: "Mexico & Punta Cana Wedding Resort Comparison Calculator",
   description:
-    "Compare two Indian destination-wedding resort proposals across Mexico or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
+    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
   keywords:
     "Mexico Indian wedding resort comparison, Punta Cana wedding resort checklist, destination wedding room block questions, Indian wedding outside vendor fees",
 })
@@ -77,7 +77,7 @@ export default function ResortComparisonPage() {
       <JsonLd id="schema-calculator" data={calculatorSchema} />
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Before a resort deposit</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">For families across the USA &amp; Canada</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Proposal Comparison Calculator</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
             Enter the figures and terms from two written resort proposals. The calculator keeps host-paid costs separate from room-block exposure and shows which important answers are still missing.

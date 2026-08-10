@@ -39,7 +39,7 @@ const offers = [
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Shopping and Destination Planning",
   description:
-    "US-based India sourcing plus destination-wedding planning, on-site coordination, and family support across Mexico and in Punta Cana.",
+    "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico and Punta Cana.",
   url: "/services/",
   offers,
 })
@@ -60,7 +60,7 @@ const faqItems = [
   {
     question: "Are product and shipping costs included in the service fee?",
     answer:
-      "No. The service fee covers the concierge work described in your tier. Product costs, international shipping, and any customs charges are quoted separately and require your approval.",
+      "No. The USD service fee covers the concierge work described in your tier. Product costs, international shipping, insurance, U.S. or Canadian customs charges, taxes, brokerage, and local alterations are quoted separately and require approval.",
   },
   {
     question: "Can you copy a designer outfit?",
@@ -121,14 +121,14 @@ export default function ServicesPage() {
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-            Two services · One US-based point of contact
+            Serving families across the United States &amp; Canada
           </p>
           <h1 className="mb-6 font-serif text-5xl font-semibold sm:text-6xl">
             Shop India for your wedding—or plan your destination celebration
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
-            CeremonyVerse organizes India shopping for US families and offers destination planning and
-            on-site coordination across Mexico and in Punta Cana. One private proposal defines the selected
+            CeremonyVerse organizes India shopping for families throughout the United States and Canada and offers
+            destination planning and on-site coordination across Mexico and in Punta Cana. One private proposal defines the selected
             planning, family-support, guest, and optional India-sourcing services.
           </p>
           <Link

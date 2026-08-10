@@ -9,6 +9,7 @@ interface LeadFormData {
   name: string
   email: string
   phone: string
+  clientCountry: string
   eventTimeframe: string
   eventLocation: string
   guestCount: string
@@ -28,6 +29,7 @@ const initialFormData: LeadFormData = {
   name: "",
   email: "",
   phone: "",
+  clientCountry: "",
   eventTimeframe: "",
   eventLocation: "",
   guestCount: "",
@@ -82,6 +84,7 @@ export function ContactPage() {
     serviceInterest &&
       formData.name.trim() &&
       formData.email.trim() &&
+      formData.clientCountry.trim() &&
       formData.eventTimeframe.trim() &&
       formData.privacyConsent,
   )
@@ -94,6 +97,7 @@ export function ContactPage() {
         `Name: ${formData.name || "Not provided"}`,
         `Email: ${formData.email || "Not provided"}`,
         `Phone / WhatsApp: ${formData.phone || "Not provided"}`,
+        `Home country: ${formData.clientCountry || "Not provided"}`,
         `Wedding timeframe: ${formData.eventTimeframe || "Not provided"}`,
         `Destination or location: ${formData.eventLocation || "Not provided"}`,
         `Estimated guests: ${formData.guestCount || "Not provided"}`,
@@ -210,7 +214,7 @@ export function ContactPage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
             CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana, plus wedding
-            shopping and sourcing from India.
+            shopping and sourcing from India for families throughout the United States and Canada.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-[#5e4a40]">
             <a className="font-semibold text-[#128c7e]" href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer">
@@ -276,6 +280,17 @@ export function ContactPage() {
               <div>
                 <label htmlFor="phone" className={labelClass}>Phone / WhatsApp</label>
                 <input id="phone" type="tel" className={inputClass} value={formData.phone} onChange={(event) => updateFormData("phone", event.target.value)} autoComplete="tel" />
+              </div>
+              <div>
+                <label htmlFor="clientCountry" className={labelClass}>
+                  Where do you live? <span className="text-[#7a6841]">*</span>
+                </label>
+                <select id="clientCountry" className={inputClass} value={formData.clientCountry} onChange={(event) => updateFormData("clientCountry", event.target.value)} required>
+                  <option value="">Select</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Other">Other</option>
+                </select>
               </div>
               <div>
                 <label htmlFor="eventTimeframe" className={labelClass}>

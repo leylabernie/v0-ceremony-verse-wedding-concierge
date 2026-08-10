@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/",
   title: "Free Indian Destination Wedding Calculators",
   description:
-    "Use free CeremonyVerse calculators for destination-wedding budgets, resort proposals, and guest or VIP travel costs across Mexico and Punta Cana.",
+    "Use free CeremonyVerse calculators for destination-wedding budgets, resort proposals, guest costs, and India-to-USA-or-Canada shipping and customs.",
   keywords:
     "Indian destination wedding budget planner, Mexico wedding resort comparison, destination wedding guest tracker, Gujarati wedding planning checklist, Punta Cana Indian wedding planning",
 })
@@ -35,6 +35,13 @@ const tools = [
     label: "Calculate guest costs",
   },
   {
+    title: "USA & Canada Shipping & Customs Calculator",
+    description:
+      "Estimate the USD landed cost of India-sourced products, shipping, insurance, import charges, brokerage, alterations, and contingency.",
+    href: "/planning-tools/shipping-customs/",
+    label: "Calculate landed cost",
+  },
+  {
     title: "Family Responsibility Map",
     description:
       "Assign one owner, approver, deadline, and status to the decisions that often become scattered across a large family.",
@@ -55,7 +62,8 @@ export default function PlanningToolsPage() {
           </p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Calculate before you commit</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Use your own quotes and assumptions to test the complete budget, compare resorts, and separate guest support from wedding-production costs. No email address is required.
+            Use your own quotes and assumptions to test the complete budget, compare resorts, separate guest support,
+            and estimate India-to-USA-or-Canada shipping and customs. No email address is required.
           </p>
         </div>
       </section>

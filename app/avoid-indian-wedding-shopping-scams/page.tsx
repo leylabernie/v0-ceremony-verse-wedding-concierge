@@ -60,7 +60,7 @@ export default function AvoidScamsPage() {
           </section>
 
           <section>
-            <h2 className="text-3xl font-semibold mb-6">7 Steps to a Scam-Free Experience</h2>
+            <h2 className="text-3xl font-semibold mb-6">7 Steps That Can Reduce Remote-Shopping Risk</h2>
             
             <div className="space-y-10">
               <div>
@@ -70,12 +70,12 @@ export default function AvoidScamsPage() {
 
               <div>
                 <h3 className="text-xl font-bold mb-3">2. Prioritize Transparent Communication</h3>
-                <p>A reputable vendor should be responsive, detail-oriented, and always open to <strong>live video calls</strong> to show fabrics and embroidery in real-time.</p>
+                <p>Ask for responsive, specific answers and current item evidence. <strong>Live video</strong> may help when the vendor and item allow it, but refusal alone does not prove fraud and video does not authenticate every product claim.</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold mb-3">3. Insist on Secure Payment Methods</h3>
-                <p>Always use credit cards or PayPal (Goods & Services) which offer buyer protection. <strong>Avoid</strong> Western Union or direct transfers to personal accounts.</p>
+                <p>Consider a traceable payment method with protections that apply to the transaction, and verify the payee before sending funds. Protection, dispute deadlines, and coverage vary by issuer, platform, country, and transaction type.</p>
               </div>
 
               <div>
@@ -90,7 +90,7 @@ export default function AvoidScamsPage() {
 
               <div>
                 <h3 className="text-xl font-bold mb-3">6. Understand Shipping and Customs</h3>
-                <p>A reliable vendor provides tracking numbers and clearly explains potential customs duties for your specific country.</p>
+                <p>Ask for the carrier, service level, declared value, available insurance, documentation, tracking plan, import responsibility, and a shipment-specific estimate. Carrier scans, delivery timing, and customs assessments are not guaranteed.</p>
               </div>
 
               <div>
@@ -101,9 +101,9 @@ export default function AvoidScamsPage() {
           </section>
 
           <section className="bg-[var(--cv-accent)] bg-opacity-10 p-10 rounded-3xl text-center border border-[var(--cv-accent)] border-opacity-20">
-            <h2 className="text-3xl font-semibold mb-6">Ready for a Stress-Free Shopping Experience?</h2>
+            <h2 className="text-3xl font-semibold mb-6">Want a More Documented Shopping Process?</h2>
             <p className="text-lg mb-8">
-              Let CeremonyVerse handle the vetting and quality control for you. Book a free consultation today.
+              CeremonyVerse can organize in-scope vendor evidence, item references, approvals, and shipping responsibilities. A concierge process reduces uncertainty; it does not eliminate vendor, product, fit, carrier, or customs risk.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact/" className="btn-primary">

@@ -1,6 +1,7 @@
 
 
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import {
   buildMetadata,
   buildServiceSchema,
@@ -13,7 +14,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-texas/",
   title: "Indian Wedding Shopping from India — Texas",
   description:
-    "Texas families in Houston and DFW can source bridal and family wedding outfits from India with live review, custom stitching, and U.S. delivery coordination.",
+    "Texas families in Houston and DFW can research bridal and family wedding outfits from India with eligible live review, written approvals, and delivery coordination.",
   keywords:
     "Indian wedding shopping Texas, bridal lehenga Houston, Indian wedding outfits Dallas, Indian bridal wear Texas, wedding shopping from India Texas",
 });
@@ -90,6 +91,8 @@ export default function IndianWeddingShoppingTexasPage() {
           Book Free Consultation
         </a>
       </section>
+
+      <NorthAmericaCoverage guideName="Texas" />
 
       {/* Pain Points */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>

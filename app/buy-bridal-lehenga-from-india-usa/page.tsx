@@ -4,14 +4,14 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/buy-bridal-lehenga-from-india-usa/",
-  title: "Buy Bridal Lehenga from India — Delivered to USA",
-  description: "Source a bridal lehenga from India with live video review, guided measurements, pre-shipping checks, and US delivery coordination.",
+  title: "Buy Bridal Lehenga from India — USA & Canada",
+  description: "Research a bridal lehenga from India with eligible live video review, guided measurements, written approvals, and delivery coordination across the USA and Canada.",
   keywords: "buy bridal lehenga from India USA, custom bridal lehenga NRI, bridal lehenga delivered to USA, Indian bridal lehenga online USA, NRI bride lehenga, affordable bridal lehenga India",
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Bridal Lehenga Sourcing & Concierge",
-  description: "Bridal lehenga research and sourcing from India with documented approvals, guided measurements, optional pre-shipping review, and US delivery coordination.",
+  description: "Bridal lehenga research and sourcing from India with documented approvals, guided measurements, optional pre-shipping review, and delivery coordination across the United States and Canada.",
   url: "/buy-bridal-lehenga-from-india-usa/",
   offers: [
     { name: "Style Guide & Vendor List", price: 249, description: "Curated vendor style guide for your bridal lehenga." },
@@ -26,24 +26,24 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const faqSchema = buildFaqSchema([
   {
-    question: "How much does a bridal lehenga from India cost delivered to the USA?",
-    answer: "Cost depends on fabric, handwork, customization, vendor, shipping, and any assessed duty. CeremonyVerse separately itemizes the outfit, flat service tier, shipping, and customs estimate so you can compare the landed quote with US boutique options.",
+    question: "How much does a bridal lehenga from India cost delivered to the USA or Canada?",
+    answer: "Cost depends on fabric, handwork, customization, vendor, shipping, destination, and assessed import charges. CeremonyVerse separately itemizes the outfit, flat USD service tier, shipping, and customs estimate so you can compare landed quotes.",
   },
   {
     question: "How do I know the bridal lehenga I see online is the one I'll actually receive?",
     answer: "When the vendor and item allow live review, CeremonyVerse coordinates a video view of the available piece and documents the selected item, measurements, price, and written approval. Custom work and pre-shipping review follow the limits stated in the selected service scope; screen color and handmade details can vary.",
   },
   {
-    question: "How long does it take to buy a bridal lehenga from India and have it delivered to the USA?",
+    question: "How long does it take to buy a bridal lehenga from India for delivery in the USA or Canada?",
     answer: "The planning range depends on the selected item, vendor workload, customization, approval timing, carrier, customs, and alteration buffer. The written quote records the current vendor estimate and shipping plan; begin early enough to allow for changes and a local fitting because no universal lead time is guaranteed.",
   },
   {
-    question: "Do I have to pay US customs duties on a bridal lehenga ordered from India?",
-    answer: "A commercial textile shipment may be assessed US duties. The amount depends on the garment's HTS classification, fiber content, construction, declared value, and current tariff rules. CeremonyVerse provides an estimate in the quote, prepares shipping documentation, and itemizes the amount actually assessed without adding a markup.",
+    question: "Could I owe import charges on a bridal lehenga ordered from India?",
+    answer: "Yes. A U.S. shipment may be assessed duty or government and carrier charges. A Canadian shipment may be assessed duty, GST/HST, applicable provincial tax, and carrier brokerage or disbursement fees. The responsible authority and carrier determine final charges; the written quote separates current estimates from CeremonyVerse service fees.",
   },
   {
     question: "How do you handle sizing when I can't do in-person fittings?",
-    answer: "We collect 15+ precise body measurements using a detailed guide that goes beyond basic bust-waist-hip — including high waist, blouse back length, shoulder width, armhole depth, and skirt length. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations after delivery, subject to service terms.",
+    answer: "We use the selected vendor's measurement chart and document the measurements, intended layers, heel height, and fit preferences that apply to the garment. Eligible made-to-measure garments include Fit Assurance with up to $150 toward local alterations after delivery, subject to the signed service terms.",
   },
   {
     question: "Can I coordinate my bridal lehenga with bridesmaid and family outfits from India?",
@@ -63,15 +63,15 @@ export default function BridalLehengaPage() {
       <section className="py-20 text-center px-6" style={{ background: "#2f2f2f", color: "#f8f6f2" }}>
         <div className="max-w-4xl mx-auto">
           <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "#7a6841" }}>
-            Bridal Lehenga Sourcing · India → USA
+            Bridal Lehenga Sourcing · India → USA &amp; Canada
           </p>
           <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Buy a Bridal Lehenga from India — With U.S. Delivery Coordination
+            Buy a Bridal Lehenga from India — With USA &amp; Canada Delivery Coordination
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             Research and source a bridal lehenga from India without making the shopping trip yourself.
             Eligible tiers include live video review, guided measurements, documented approvals,
-            pre-shipping checks, and US delivery coordination.
+            available pre-shipping checks, and tracked-delivery coordination across the United States and Canada.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -99,18 +99,16 @@ export default function BridalLehengaPage() {
             The Case for India
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Why buying your bridal lehenga from India beats US boutiques
+            Compare India sourcing with North American boutiques
           </h2>
           <p className="text-center text-[#4d403a] mb-12 max-w-2xl mx-auto leading-relaxed">
-            US Indian boutiques build importing, rent, and inventory costs into their prices.
-            India-direct sourcing gives you a broader range of
-            designers, fabrics, and embroidery styles — at the actual artisan price — with the right
-            partner to verify quality before you pay.
+            U.S. and Canadian boutiques and India-based sellers may offer different inventory, customization,
+            pricing, lead times, fitting access, and return terms. Compare equivalent written scopes and landed costs before choosing.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
-              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>US boutique reality</h3>
+              <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>North American boutique option</h3>
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
                 <li>• In-person access to the store&apos;s current inventory</li>
                 <li>• Local fitting, alteration, payment, and return terms may be easier to review</li>
@@ -258,7 +256,7 @@ export default function BridalLehengaPage() {
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-semibold text-white" style={{ background: "var(--cv-accent)" }}>6</div>
               <div>
-                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Insured delivery to your US door</h3>
+                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Tracked-delivery coordination across the USA and Canada</h3>
                 <p className="text-[#4d403a] leading-relaxed">
                   The written quote identifies the carrier, available insurance, shipping documents,
                   customs responsibilities, estimated timing, and the party responsible for claims.
@@ -308,14 +306,14 @@ export default function BridalLehengaPage() {
                 <tr className="border-t border-[#e6dfd5]">
                   <td className="p-4 font-semibold">Customs</td>
                   <td className="p-4">Classification, fiber, construction, origin, and declared value</td>
-                  <td className="p-4">Estimate only; US customs or the carrier makes the assessment</td>
+                  <td className="p-4">Estimate only; U.S. or Canadian authorities and the carrier make the final assessment</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <p className="text-xs text-[#4d403a] text-center">
-            Estimated customs costs and DHL/FedEx international shipping are itemized in your quote.
-            Actual assessed duties depend on classification, fiber content, value, and current tariff rules. <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Read our full 2026 price breakdown →</Link>
+            Estimated shipping and import costs are itemized in your quote. Canadian estimates may include duty,
+            GST/HST, applicable provincial tax, and carrier brokerage or disbursement fees. Final assessments depend on the destination, classification, fiber content, value, current rules, and carrier terms. <Link href="/planning-tools/shipping-customs/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Build a landed-cost estimate →</Link>
           </p>
         </div>
       </section>
@@ -379,11 +377,11 @@ export default function BridalLehengaPage() {
 
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much does a bridal lehenga from India cost delivered to the USA?</h3>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How much does a bridal lehenga from India cost delivered to the USA or Canada?</h3>
               <p className="text-[#4d403a] leading-relaxed">
                 Cost depends on fabric, handwork, customization, vendor, shipping, and any assessed
                 duty. We separately itemize the outfit, flat service tier, shipping, and customs
-                estimate so you can compare the landed quote with US boutique pricing.
+                estimate so you can compare landed quotes.
               </p>
             </div>
             <div>
@@ -396,7 +394,7 @@ export default function BridalLehengaPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How long does it take to buy a bridal lehenga from India and have it delivered to the USA?</h3>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How long does it take to buy a bridal lehenga from India for delivery in the USA or Canada?</h3>
               <p className="text-[#4d403a] leading-relaxed">
                 The planning range depends on the selected item, vendor workload, customization,
                 approval timing, carrier, customs, and alteration buffer. The written quote records
@@ -405,19 +403,18 @@ export default function BridalLehengaPage() {
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Do I have to pay US customs duties on a bridal lehenga ordered from India?</h3>
+              <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Could I owe import charges on a bridal lehenga ordered from India?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                A commercial textile shipment may be assessed US duties. The amount depends on the
-                garment&apos;s HTS classification, fiber content, construction, declared value, and current
-                tariff rules. We provide an estimate in the quote and itemize the amount actually assessed.
+                A U.S. shipment may be assessed duty or government and carrier charges. A Canadian shipment may be
+                assessed duty, GST/HST, applicable provincial tax, and carrier brokerage or disbursement fees.
+                The responsible authority and carrier determine final charges; the quote separates current estimates from our service fee.
               </p>
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How do you handle sizing when I can&apos;t do in-person fittings?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                We collect 15+ precise body measurements using a detailed guide that goes beyond basic
-                bust-waist-hip — including high waist, blouse back length, shoulder width, armhole
-                depth, and skirt length. The tailor uses the approved measurements and item specifications;
+                We use the selected vendor&apos;s measurement chart and document the measurements, intended layers,
+                heel height, and fit preferences that apply to the garment. The tailor uses the approved measurements and item specifications;
                 remote ordering cannot guarantee perfect fit. Eligible made-to-measure garments
                 include Fit Assurance with up to $150 toward local alterations, subject to service terms.
               </p>

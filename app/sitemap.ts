@@ -79,6 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/planning-tools/shipping-customs/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/planning-tools/resort-comparison/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -152,6 +158,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/shop-from-india/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-shopping-canada/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.9,

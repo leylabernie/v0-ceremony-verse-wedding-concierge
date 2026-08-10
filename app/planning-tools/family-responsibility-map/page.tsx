@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/family-responsibility-map/",
   title: "Indian Wedding Family Responsibility Map",
   description:
-    "Organize family decisions for a Gujarati or Hindu destination wedding by assigning one owner, approver, deadline, and status to each decision area.",
+    "U.S. and Canadian families can organize Gujarati or Hindu destination-wedding decisions by assigning one owner, approver, deadline, and status to each decision area.",
   keywords:
     "Indian wedding family responsibility checklist, Gujarati wedding planning roles, destination wedding decision tracker, Hindu wedding family planning",
 })
@@ -36,7 +36,7 @@ export default function FamilyResponsibilityMapPage() {
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <div className="mx-auto max-w-6xl">
         <header className="mx-auto max-w-4xl text-center">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Family decision tool</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">USA &amp; Canada family decision tool</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Family Responsibility Map</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
             The goal is not to give everyone a title. It is to make sure every important decision has one owner,

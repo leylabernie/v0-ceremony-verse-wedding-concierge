@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 2026
+            Last updated: August 10, 2026
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function TermsPage() {
             By accessing or using CeremonyVerse services, you agree to be bound by these Terms of
             Service. If you do not agree to these terms, please do not use our services. These terms
             apply to all visitors, clients, and others who access or use our website and services.
-            We may revise these terms from time to time, and the most current version will always
+            We may revise these terms from time to time, and the current version will
             be posted on this page with an updated revision date.
           </p>
 
@@ -53,12 +53,12 @@ export default function TermsPage() {
             1. Our Services
           </h2>
           <p>
-            CeremonyVerse is a US-based concierge service that helps families source Indian wedding
+            CeremonyVerse is a U.S.-based concierge service that helps families across the United States and Canada source Indian wedding
             items — including bridal lehengas, sherwanis, bridesmaid and family outfits, jewelry,
             ceremonial items, return gifts, welcome bags, and related wedding essentials — directly
             from India. Depending on the selected tier and vendor, services may include style consultation,
             live video review, measurement and tailoring coordination, pre-shipping review, and
-            shipping-document and tracking support for delivery to a US address.
+            shipping-document and tracking support for delivery across the United States or Canada.
           </p>
           <p style={{ marginTop: "1rem" }}>
             We act as your sourcing agent and concierge — not as the manufacturer of the items we
@@ -84,6 +84,12 @@ export default function TermsPage() {
             destination services use private proposals based on the selected scope. The initial 30-minute
             consultation is free. The signed proposal or service agreement identifies when paid work begins and
             the cancellation, refund, and rescheduling rules that apply to that scope.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            Public CeremonyVerse fees are stated in U.S. dollars. Published fees may change for future inquiries,
+            but the CeremonyVerse service fee in an accepted written agreement controls the contracted scope.
+            Exchange rates, payment-provider charges, and independent-provider prices are outside costs unless the
+            signed agreement expressly includes them.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The $300 Destination Wedding Feasibility &amp; Action Plan fee is non-refundable once work begins.
@@ -126,25 +132,58 @@ export default function TermsPage() {
             result, paying a deposit, signing an agreement, or booking travel. CeremonyVerse is not affiliated
             with and cannot bind a listed resort unless a signed written agreement expressly states otherwise.
           </p>
+          <p style={{ marginTop: "1rem" }}>
+            A special request, promotion, credit, room type, event space, menu, transfer, early check-in, late
+            check-out, upgrade, or other benefit is not confirmed until the responsible provider accepts it in
+            writing and any required payment has cleared. Separate provider terms and conditions apply to promotions,
+            credits, and insurance products. CeremonyVerse does not guarantee that a provider will honor an informal,
+            expired, or unconfirmed request.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            Each traveler is responsible for checking current passport validity, visa, entry, health, transit, and
+            return requirements with the relevant government and carrier before booking and travel. Requirements can
+            change and may differ by citizenship, residence, routing, and destination. Travel insurance is optional
+            unless a signed provider contract requires it. Any coverage, exclusions, purchase deadline, cancellation
+            benefit, and claim decision are governed by the insurer&apos;s policy; CeremonyVerse is not the insurer and
+            does not guarantee coverage or claim payment.
+          </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             4. Shipping, Customs, and Duties
           </h2>
           <p>
-            Approved items may be shipped from India to a US address using an available international
-            carrier. Carrier service, insurance availability, declared value, shipping estimate, and
-            customs estimate are itemized for the applicable shipment. Transit and customs-clearance
-            times are estimates, not guarantees. Duties or fees actually assessed are the receiving
-            client&apos;s responsibility unless the signed agreement expressly states otherwise.
+            Approved items may be shipped from India to an address in the United States or Canada using an available
+            international carrier. The applicable written shipment plan identifies the destination, carrier and
+            service level, available tracking, insurance availability, declared value, shipping estimate, customs
+            estimate, importer or recipient, and claim procedure. Carrier acceptance, scans, transit, customs release,
+            and final delivery times are estimates, not guarantees.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For a detailed breakdown of how US customs handles Indian wedding outfits and jewelry,
+            Duties, taxes, brokerage, disbursement or advancement fees, storage, address-correction, remote-area,
+            redelivery, and other charges actually assessed are the receiving client&apos;s responsibility unless the
+            signed agreement expressly states otherwise. For Canadian deliveries, this can include duty, GST or HST,
+            applicable provincial tax, and carrier or customs-broker charges. The U.S. Customs and Border Protection,
+            Canada Border Services Agency, other government authorities, and the selected carrier control
+            classification, admissibility, value, assessment, release, and inspection decisions.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            Customs and landed-cost figures on the website or in a preliminary quote are estimates only. The final
+            government or carrier assessment controls and may differ because of classification, fiber content,
+            construction, declared value, country of origin, exchange rate, destination, and rules in effect at entry.
+            The recipient must respond to reasonable carrier or customs requests and pay amounts assigned to the
+            recipient before release or delivery.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            For U.S.-specific planning information,
             see our{" "}
             <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>
-              shipping and customs duties guide
+              U.S. shipping and customs duties guide
             </Link>
-            . Textile duties vary by HTS classification, fiber content, construction, declared value,
-            country of origin, and the tariff rules in effect when the shipment enters the US.
+            . Canadian families can review the{" "}
+            <Link href="/indian-wedding-shopping-canada/" style={{ color: "#7a6841" }}>
+              Canada service and customs overview
+            </Link>
+            .
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -164,9 +203,10 @@ export default function TermsPage() {
           </p>
           <p style={{ marginTop: "1rem" }}>
             If an item arrives damaged or does not match the approved specifications, contact us
-            within 48 hours of delivery with photos. We will arrange a replacement, alteration, or
-            remedy the documented issue according to the applicable signed proposal, vendor terms,
-            and service agreement. Eligible sourcing tiers include a pre-shipping review, but the
+            within the notice period in the signed terms and preserve the packaging, photos, and carrier records.
+            CeremonyVerse will help document the issue and pursue any replacement, alteration, refund, insurance claim, or
+            other remedy available under the applicable signed proposal, vendor terms,
+            carrier terms, and service agreement. Eligible sourcing tiers may include a pre-shipping review, but the
             available remedy depends on the item and contracted terms.
           </p>
 
@@ -199,12 +239,11 @@ export default function TermsPage() {
             8. Limitation of Liability
           </h2>
           <p>
-            CeremonyVerse is not liable for indirect, incidental, or consequential damages arising
+            To the maximum extent permitted by applicable law, CeremonyVerse is not liable for indirect, incidental, or consequential damages arising
             from the use of our services. Our total liability for any claim arising from our
             services is limited to the amount you have paid us for the specific service tier or
             item at issue. We are not liable for delays caused by Indian production, customs
-            holds, weather, or other events outside our control, but we will always communicate
-            proactively and work to find solutions.
+            holds, weather, or other events outside our control. We communicate material updates available to us and work within the agreed scope to address issues. Nothing in these terms excludes or limits a right or remedy that applicable consumer law does not permit us to exclude or limit.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -213,7 +252,7 @@ export default function TermsPage() {
           <p>
             These terms are governed by the laws of the Commonwealth of Pennsylvania and the
             United States. Any disputes will be resolved in the state or federal courts located in
-            Philadelphia County, Pennsylvania. We will always attempt to resolve any concern
+            Philadelphia County, Pennsylvania, subject to any mandatory consumer-protection or jurisdictional rights that apply where a client resides. We encourage clients to contact us so the parties can try to resolve a concern
             informally first — please reach out to{" "}
             <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
             or by WhatsApp at{" "}

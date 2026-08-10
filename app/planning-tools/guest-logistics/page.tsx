@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/guest-logistics/",
   title: "Destination Wedding Guest & VIP Cost Calculator",
   description:
-    "Calculate guest room nights, family-paid VIP rooms and flights, transfers, and welcome costs for an Indian destination wedding in Mexico or Punta Cana.",
+    "U.S. and Canadian families can calculate guest room nights, family-paid VIP rooms and flights, transfers, and welcome costs for an Indian destination wedding in Mexico or Punta Cana.",
   keywords:
     "destination wedding guest cost calculator, Indian wedding room block calculator, VIP travel wedding budget, Mexico wedding guest costs",
 })
@@ -49,7 +49,7 @@ export default function GuestLogisticsPage() {
       <JsonLd id="schema-calculator" data={calculatorSchema} />
       <section className="px-6 py-20 text-center sm:py-24">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Guest cost calculator</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">USA &amp; Canada family planning tool</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Guest &amp; VIP Travel Cost Calculator</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
             Separate the room block from the rooms, flights, transfers, and welcome items your family plans to pay. This prevents guest support from disappearing inside the wedding-production budget.

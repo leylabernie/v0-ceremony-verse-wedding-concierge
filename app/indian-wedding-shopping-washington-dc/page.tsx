@@ -1,16 +1,17 @@
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-washington-dc/",
   title: "Indian Wedding Shopping from India — Washington DC",
-  description: "DMV families can source Indian wedding outfits from India with live review, custom stitching, and delivery coordination across DC, Maryland, and Virginia.",
+  description: "DMV families can research Indian wedding outfits from India with eligible live review, written approvals, and delivery coordination across DC, Maryland, and Virginia.",
   keywords: "Indian wedding shopping Washington DC, DC bridal lehenga, NRI wedding concierge DC, Indian wedding outfits Maryland Virginia, buy Indian wedding outfits DMV, Indian wedding shopping DC area",
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Washington DC Indian Wedding Sourcing Service",
-  description: "Indian wedding outfit sourcing for NRI families in Washington DC, Maryland, and Northern Virginia — with live video shopping from India and doorstep delivery to the DMV area.",
+  description: "Indian wedding outfit sourcing for families in Washington DC, Maryland, and Northern Virginia with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-washington-dc/",
   areaServed: "Washington DC, Maryland, Northern Virginia — DMV Area",
 });
@@ -28,7 +29,7 @@ export default function WashingtonDCPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          DMV Area &middot; Nationwide Service
+          DMV Area &middot; USA &amp; Canada-Wide Service
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Indian Wedding Shopping Washington DC &mdash; Serving the DMV Area
@@ -43,6 +44,8 @@ export default function WashingtonDCPage() {
           Book Free Consultation
         </Link>
       </section>
+
+      <NorthAmericaCoverage guideName="Washington, D.C. and the DMV" />
 
       {/* Why DMV */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
@@ -214,7 +217,7 @@ export default function WashingtonDCPage() {
             <Link href="/how-it-works/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
           <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "10px" }}>
-            Serving Indian-American brides across the US
+            Serving families across the USA and Canada
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/indian-wedding-shopping-philadelphia/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Philadelphia</Link>

@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
   path: "/pricing/",
   title: "CeremonyVerse Pricing | India Sourcing & Destination Planning",
   description:
-    "Compare the $300 destination-wedding feasibility plan, private-proposal planning across Mexico and Punta Cana, and flat-fee India sourcing services.",
+    "Compare the $300 destination-wedding feasibility plan, private planning across Mexico and Punta Cana, and USD flat-fee India sourcing across the USA and Canada.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
@@ -48,10 +48,10 @@ const tiers = [
       "Two to four live video shopping sessions",
       "Selection and measurement coordination",
       "Written approvals and order follow-up",
-      "Pre-shipping quality review",
-      "Shipping-document and tracking support",
+      "Available pre-shipping review against approved references",
+      "U.S. or Canada shipping-document and tracking support",
     ],
-    excludes: ["Whole-party management beyond the agreed scope", "Product, shipping, or duty costs"],
+    excludes: ["Whole-party management beyond the agreed scope", "Products, carrier charges, insurance, duties, taxes, brokerage, or alterations"],
     featured: true,
   },
   {
@@ -65,17 +65,17 @@ const tiers = [
       "Bride and groom wardrobe coordination",
       "Wedding-party coordination up to eight people",
       "Centralized measurements and approvals",
-      "Consolidated order and delivery support",
+      "Consolidated U.S. or Canada order and delivery support",
       "One primary CeremonyVerse contact",
     ],
-    excludes: ["Local wedding planning or on-site execution", "Product, shipping, or duty costs"],
+    excludes: ["Local wedding planning or on-site execution", "Products, carrier charges, insurance, duties, taxes, brokerage, or alterations"],
   },
 ]
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Wedding Services",
   description:
-    "A $300 destination-wedding feasibility plan, private-proposal planning, and flat-fee India shopping support for US families.",
+    "A $300 destination-wedding feasibility plan, private-proposal planning, and flat-fee India shopping support for families across the United States and Canada.",
   url: "/pricing/",
   offers: [
     {
@@ -97,7 +97,12 @@ const faqItems = [
   {
     question: "Does CeremonyVerse charge a percentage of the outfit price?",
     answer:
-      "No. The three standard sourcing tiers use the flat service fees shown on this page. Product costs, shipping, and any customs charges are separately itemized before you approve them.",
+      "No. The three standard sourcing tiers use the USD flat service fees shown on this page for U.S. and Canadian clients. Product costs, shipping, insurance, customs charges, taxes, brokerage, and alterations are separately itemized before approval.",
+  },
+  {
+    question: "Do the same sourcing plans apply in Canada?",
+    answer:
+      "Yes. The standard service-tier fees are the same USD amounts for U.S. and Canadian clients. The selected vendor, carrier, and destination determine outside costs. Canadian duty, GST or HST, applicable provincial tax, brokerage, and disbursement charges are not included unless a signed agreement expressly says otherwise.",
   },
   {
     question: "What will my outfits cost?",
@@ -143,6 +148,9 @@ export default function PricingPage() {
             India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
             planning uses a private scope. Products, resorts, venues, vendors, travel, shipping, and customs
             are itemized outside the applicable CeremonyVerse service fee unless the proposal says otherwise.
+          </p>
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-6 text-white/65">
+            CeremonyVerse serves families across the entire United States and Canada. Published service fees are in USD.
           </p>
         </div>
       </section>
@@ -233,7 +241,8 @@ export default function PricingPage() {
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Select the level of research, live shopping, and order coordination your family needs.
-              Product, shipping, and customs costs remain separate.
+              The same USD service tiers apply across the United States and Canada. Products, carrier charges,
+              insurance, import charges, brokerage, and alterations remain separate.
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -304,8 +313,9 @@ export default function PricingPage() {
             <div className="space-y-4">
               {[
                 ["Products", "The approved outfit, jewelry, gift, or ceremony-item price from the selected vendor."],
-                ["Shipping", "Carrier cost based on weight, dimensions, declared value, destination, and service level."],
-                ["Customs", "Any duty or fee actually assessed by US customs or the carrier; estimates are not guarantees."],
+                ["Tracked shipping", "Current carrier cost based on weight, dimensions, declared value, destination, service level, and available tracking."],
+                ["U.S. customs", "Any duty, government fee, or carrier clearance charge actually assessed; estimates are not guarantees."],
+                ["Canada customs and taxes", "Any duty, GST/HST, applicable provincial tax, brokerage, disbursement, or related import charge actually assessed."],
                 ["Local alterations", "If needed, unless your signed service terms specifically provide an alteration allowance."],
               ].map(([title, description]) => (
                 <div key={title} className="rounded-xl border border-[#e6dfd5] bg-[#faf8f5] p-5">
@@ -326,6 +336,9 @@ export default function PricingPage() {
             </ul>
             <Link href="/terms/" className="mt-8 inline-flex font-semibold !text-[#e8cf9d] underline underline-offset-4">
               Review website terms
+            </Link>
+            <Link href="/planning-tools/shipping-customs/" className="mt-4 block font-semibold !text-[#e8cf9d] underline underline-offset-4">
+              Calculate U.S. or Canada landed cost
             </Link>
           </aside>
         </div>

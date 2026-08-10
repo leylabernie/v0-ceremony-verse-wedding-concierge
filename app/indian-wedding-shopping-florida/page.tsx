@@ -1,16 +1,17 @@
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-florida/",
   title: "Indian Wedding Shopping from India — Florida",
-  description: "Florida families in Miami, Orlando, Tampa, and beyond can source Indian wedding outfits from India with live review, custom stitching, and delivery coordination.",
+  description: "Florida families in Miami, Orlando, Tampa, and beyond can research Indian wedding outfits from India with eligible live review, written approvals, and delivery coordination.",
   keywords: "Indian wedding shopping Florida, Florida bridal lehenga, NRI wedding concierge Florida, Indian wedding outfits Miami, Indian wedding shopping Orlando, Indian wedding shopping Tampa, Jacksonville Indian wedding, South Florida Indian wedding, buy Indian wedding outfits Florida",
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Florida Indian Wedding Sourcing Service",
-  description: "Indian wedding outfit sourcing for NRI families across Florida — with live video shopping from India, humidity-ready fabrics, and doorstep delivery.",
+  description: "Indian wedding outfit sourcing for families across Florida with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-florida/",
   areaServed: "Florida — Miami, Orlando, Tampa, Jacksonville, South Florida",
 });
@@ -28,7 +29,7 @@ export default function FloridaPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          Serving Florida Families &middot; Nationwide Service
+          Serving Florida Families &middot; USA &amp; Canada-Wide Service
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Indian Wedding Shopping Florida &mdash; Source Directly from India
@@ -43,6 +44,8 @@ export default function FloridaPage() {
           Book Free Consultation
         </Link>
       </section>
+
+      <NorthAmericaCoverage guideName="Florida" />
 
       {/* Why Florida */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
@@ -214,7 +217,7 @@ export default function FloridaPage() {
             <Link href="/how-it-works/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
           <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "10px" }}>
-            Serving Indian-American brides across the US
+            Serving families across the USA and Canada
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/indian-wedding-shopping-philadelphia/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Philadelphia</Link>
