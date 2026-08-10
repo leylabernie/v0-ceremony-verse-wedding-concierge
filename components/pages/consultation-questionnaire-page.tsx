@@ -184,7 +184,12 @@ export function ConsultationQuestionnairePage() {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
-    if (!canSubmit || isLoading) return
+    if (isLoading) return
+    if (!canSubmit) {
+      setError("Please complete the required questions marked with an asterisk before sending.")
+      setShowFallback(false)
+      return
+    }
 
     setIsLoading(true)
     setError("")
@@ -516,6 +521,10 @@ export function ConsultationQuestionnairePage() {
               records, or other sensitive documents. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy notice</Link>.
             </span>
           </label>
+          <p className="mt-4 text-sm leading-6 text-[#6d625c]">
+            Required questions are marked with an asterisk. After checking the box above, the send button becomes
+            available; if an answer is missing, the form will point it out before anything is sent.
+          </p>
 
           {error ? (
             <div className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-5 text-sm text-red-900" role="alert" aria-live="polite">
@@ -528,7 +537,7 @@ export function ConsultationQuestionnairePage() {
             </div>
           ) : null}
 
-          <button type="submit" disabled={!canSubmit || isLoading} className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}>
+          <button type="submit" disabled={!formData.privacyConsent || isLoading} className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={formData.privacyConsent && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}>
             {isLoading ? "Sending Securely…" : "Send My Pre-Call Questionnaire"}
           </button>
           <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
