@@ -177,8 +177,8 @@ export default function BlogPost() {
           </p>
           <p>
             Before signing, list who negotiates with the resort, who manages vendors, who owns guest-room questions,
-            who receives shipments, who supervises setup, and who has authority during each event. Private partner
-            arrangements and internal pricing do not need to be shared; the client does need a clear service scope.
+            who receives shipments, who supervises setup, and who has authority during each event. The client-facing
+            proposal should provide a clear service scope, responsibilities, outside costs, and approval process.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">7. Protect the timeline with written approval gates</h2>
