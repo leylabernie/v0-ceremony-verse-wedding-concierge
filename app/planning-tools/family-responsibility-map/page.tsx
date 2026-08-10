@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
+import { FamilyMapActions } from "./family-map-actions"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/family-responsibility-map/",
@@ -41,6 +42,7 @@ export default function FamilyResponsibilityMapPage() {
             The goal is not to give everyone a title. It is to make sure every important decision has one owner,
             one final approver, a deadline, and a visible status.
           </p>
+          <FamilyMapActions />
         </header>
 
         <div className="mt-12 overflow-x-auto rounded-2xl border border-[#d9cfbf] bg-white">
@@ -71,7 +73,11 @@ export default function FamilyResponsibilityMapPage() {
           <article className="rounded-2xl border border-[#e6dfd5] bg-white p-6"><h2 className="font-serif text-2xl font-semibold">One record</h2><p className="mt-3 leading-7 text-[#4d403a]">Keep the approved decision and related quote or contract in one shared location.</p></article>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <p className="mt-8 rounded-xl border border-[#d9cfbf] bg-white p-4 text-sm leading-6 text-[#5e4a40]">
+          This is an organizing worksheet. Signed resort and vendor contracts, current written proposals, and agreed scopes control the actual responsibilities, prices, deadlines, and approvals.
+        </p>
+
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row print:hidden">
           <Link href="/contact/?service=mexico" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Organize a Private Planning Call</Link>
           <Link href="/planning-tools/guest-logistics/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Next: Guest Logistics</Link>
         </div>

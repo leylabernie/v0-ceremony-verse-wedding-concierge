@@ -72,7 +72,7 @@ const faqItems = [
       "Bring the preferred dates or timeframe, estimated guest and event counts, travel origins, what the total budget must include, resorts already considered, and any important Gujarati, Hindu, Jain-food, accessibility, or family requirements.",
   },
   {
-    question: "What happens after the free fit call?",
+    question: "What happens after the free consultation?",
     answer:
       "If you need a written feasibility decision before full planning, CeremonyVerse may recommend the $300 Destination Wedding Feasibility & Action Plan. It includes a working session, review of your own worksheets and up to two current proposals, a written action brief, and a follow-up. You can also proceed to a different written scope when that is a better fit.",
   },

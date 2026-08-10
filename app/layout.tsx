@@ -224,7 +224,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">A limited number of 2027 destination-wedding planning dates are still available</span>
           <span className="lg:hidden">Limited 2027 planning dates remain</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20discuss%20India%20shopping%20or%20destination-wedding%20planning%20support." target="_blank" rel="noopener noreferrer">Book a free fit call →</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20discuss%20India%20shopping%20or%20destination-wedding%20planning%20support." target="_blank" rel="noopener noreferrer">Book a free consultation →</a>
         </div>
 
         {/* Navigation — appears on ALL pages */}

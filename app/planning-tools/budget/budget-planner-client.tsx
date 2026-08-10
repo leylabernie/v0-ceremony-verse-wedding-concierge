@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
+import { ResortRateSelector } from "./resort-rate-selector"
 
 const costCategories = [
   { key: "resortEvents", label: "Resort wedding package, venues, food and beverage", group: "Wedding events" },
@@ -54,6 +55,8 @@ export function BudgetPlannerClient() {
   const [guestCount, setGuestCount] = useState("")
   const [eventCount, setEventCount] = useState("")
   const [contingencyRate, setContingencyRate] = useState("10")
+  const [resortRateSource, setResortRateSource] = useState("")
+  const [resortSelectorKey, setResortSelectorKey] = useState(0)
   const started = useRef(false)
 
   const markStarted = () => {
@@ -97,9 +100,22 @@ export function BudgetPlannerClient() {
   const updateCost = (key: CategoryKey, value: string) => {
     markStarted()
     setCosts((previous) => ({ ...previous, [key]: value }))
+    if (key === "resortEvents") setResortRateSource("")
     if (numeric(value) > 0 && statuses[key] === "not-researched") {
       setStatuses((previous) => ({ ...previous, [key]: "estimate" }))
     }
+  }
+
+  const applyPublishedResortRate = (amount: number, sourceLabel: string, confidence: "estimate" | "written-quote") => {
+    markStarted()
+    setCosts((previous) => ({ ...previous, resortEvents: String(amount) }))
+    setStatuses((previous) => ({ ...previous, resortEvents: confidence }))
+    setResortRateSource(sourceLabel)
+    trackEvent("calculator_rate_apply", {
+      calculator_name: "destination_wedding_budget",
+      resort_rate_source: sourceLabel,
+      known_resort_amount: amount,
+    })
   }
 
   const updateStatus = (key: CategoryKey, status: CostStatus) => {
@@ -115,6 +131,8 @@ export function BudgetPlannerClient() {
     setGuestCount("")
     setEventCount("")
     setContingencyRate("10")
+    setResortRateSource("")
+    setResortSelectorKey((previous) => previous + 1)
     started.current = false
   }
 
@@ -164,13 +182,18 @@ export function BudgetPlannerClient() {
             </label>
           </div>
 
+          <ResortRateSelector key={resortSelectorKey} guestCount={guestCount} onApply={applyPublishedResortRate} />
+
           <div className="mt-9 space-y-8">
             {categoryGroups.map((group) => (
               <fieldset key={group} className="space-y-3">
                 <legend className="font-serif text-2xl font-semibold text-[#1f1f1f]">{group}</legend>
                 {costCategories.filter((category) => category.group === group).map(({ key, label }) => (
                   <div key={key} className="grid items-end gap-3 rounded-xl border border-[#eee7dd] p-4 md:grid-cols-[1fr_170px_170px]">
-                    <p className="leading-6 text-[#4d403a]">{label}</p>
+                    <div>
+                      <p className="leading-6 text-[#4d403a]">{label}</p>
+                      {key === "resortEvents" && resortRateSource ? <p className="mt-1 text-xs leading-5 text-[#7a6841]">Resort calculation source: {resortRateSource}</p> : null}
+                    </div>
                     <label className="text-xs font-semibold text-[#5e4a40]">
                       Cost entered
                       <span className="relative mt-1 block">

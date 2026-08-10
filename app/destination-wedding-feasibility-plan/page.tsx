@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: "Is the free call still available?",
     answer:
-      "Yes. Start with a free 30-minute fit call. The call confirms whether CeremonyVerse serves the destination, wedding type, timeframe, and help requested. The paid plan begins only after the written scope and payment terms are accepted.",
+      "Yes. Start with a free 30-minute introductory consultation. We use the call to understand the wedding, confirm whether CeremonyVerse serves the destination and wedding type, and explain the appropriate next step. The paid plan begins only after the written scope and payment terms are accepted.",
   },
   {
     question: "Is the $300 fee refundable?",
@@ -81,7 +81,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
             >
-              Start with the Free Fit Call
+              Start with a Free Consultation
             </Link>
             <span className="text-sm !text-white/70">No payment is collected through the inquiry form.</span>
           </div>
@@ -118,11 +118,11 @@ export default function DestinationWeddingFeasibilityPlanPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Simple path</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Free fit call → paid plan → informed decision</h2>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Free consultation → paid plan → informed decision</h2>
           </div>
           <ol className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              ["01", "Free 30-minute fit call", "We listen first, confirm fit, and identify which facts or documents are needed. The call is not the paid deliverable."],
+              ["01", "Free 30-minute consultation", "We listen first, understand what help you need, and identify which facts or documents are needed. The call is introductory and is not the paid written plan."],
               ["02", "$300 working plan", "After you approve the written scope, we review your numbers and current information, hold the working session, and prepare the action brief."],
               ["03", "Choose your next step", "Use the plan on its own, revise the wedding assumptions, or apply the $300 credit toward a CeremonyVerse planning agreement within 30 days."],
             ].map(([number, title, text]) => (
@@ -189,14 +189,13 @@ export default function DestinationWeddingFeasibilityPlanPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Start by telling us the facts</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 !text-white/85">
-            The free fit call determines whether CeremonyVerse and the {destinationFeasibilityPlan.shortName} match
-            what you need. There is no payment or contract required to submit the inquiry.
+            The free consultation determines whether CeremonyVerse can help with your needs and whether the {destinationFeasibilityPlan.shortName} is the appropriate next step. There is no payment or contract required to submit the inquiry.
           </p>
           <Link
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Request My Free Fit Call
+            Request My Free Consultation
           </Link>
         </div>
       </section>

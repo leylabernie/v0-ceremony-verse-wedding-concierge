@@ -151,7 +151,7 @@ export default function MexicoCoordinationPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Start With a Free Fit Call
+              Start With a Free Consultation
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
@@ -399,14 +399,14 @@ export default function MexicoCoordinationPage() {
             Start with your dates, guest count, location ideas, and budget.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            The free fit call confirms whether the $300 written feasibility plan or a private planning scope is the
+            The free consultation confirms whether the $300 written feasibility plan or a private planning scope is the
             right next step. Any feasibility conclusion depends on the couple&apos;s current figures and written information.
           </p>
           <Link
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
           >
-            Book a Free Fit Call
+            Book a Free Consultation
           </Link>
         </div>
       </section>

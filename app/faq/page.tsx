@@ -46,7 +46,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "The Destination Wedding Feasibility & Action Plan is $300. India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Full, partial, final-coordination, and family-support destination prices are shared in a private proposal after the free fit call."
+        answer: "The Destination Wedding Feasibility & Action Plan is $300. India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Full, partial, final-coordination, and family-support destination prices are shared in a private proposal after the free consultation."
       },
       {
         question: "Is the $300 destination-wedding plan refundable or credited?",

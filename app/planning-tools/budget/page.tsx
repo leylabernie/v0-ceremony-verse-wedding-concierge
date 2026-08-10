@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/budget/",
   title: "Indian Destination Wedding Budget Calculator",
   description:
-    "Build a realistic Indian destination-wedding budget using your own resort, event, decor, travel, planning, and sourcing costs for Mexico or Punta Cana.",
+    "Estimate an Indian destination-wedding budget with current official resort starting rates or your written quotes for Mexico and Punta Cana.",
   keywords:
     "Indian destination wedding budget calculator, Mexico wedding budget planner, Punta Cana Indian wedding cost, Gujarati destination wedding budget",
 })
@@ -23,7 +23,7 @@ const calculatorSchema = {
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
   isAccessibleForFree: true,
-  description: "A free client-entered calculator for destination-wedding event, guest-travel, shopping, contingency, and target-budget costs.",
+  description: "A free calculator with dated official resort starting rates, manual quote fields, destination-wedding event costs, guest travel, shopping, contingency, and target-budget comparisons.",
 }
 
 export default function BudgetPlannerPage() {
@@ -36,7 +36,7 @@ export default function BudgetPlannerPage() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Planning calculator</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Indian Destination Wedding Budget Calculator</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
-            Separate wedding events from family travel and optional India shopping, record whether each amount is an estimate or written quote, and see what is still missing before deciding whether the target is realistic.
+            Start with a current publicly posted resort package or use your own written proposal. The calculator separates package, venue, food and beverage, guest overages, family travel, and optional India shopping so you can see what is included and what is still unpriced.
           </p>
         </div>
       </section>
