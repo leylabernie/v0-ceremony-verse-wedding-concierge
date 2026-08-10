@@ -10,7 +10,7 @@ export const destinationFeasibilityPlan = {
   description:
     "CeremonyVerse organizes the couple's own dates, guest range, event count, budget scope, travel obligations, and current written information into a practical decision plan.",
   includes: [
-    "One private 60-minute working session after the free fit call",
+    "One private 60-minute working session after the free consultation",
     "Review of the completed CeremonyVerse budget and guest-cost worksheets",
     "Review of up to two current resort or planner proposals, if available",
     "Two guest-count or budget scenarios when they would clarify the decision",
@@ -28,4 +28,3 @@ export const destinationFeasibilityPlan = {
 
 export const destinationFeasibilityCredit =
   `The ${destinationFeasibilityPlan.priceLabel} fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within ${destinationFeasibilityPlan.creditWindowDays} days after the written plan is delivered, the full fee is credited toward the CeremonyVerse planning service fee.`
-

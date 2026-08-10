@@ -107,6 +107,16 @@ export function ResortRateSelector({ guestCount, onApply }: ResortRateSelectorPr
         <span className="w-fit rounded-full border border-[#bba978] bg-white px-3 py-1 text-xs font-semibold text-[#5e4a40]">USD · rates or written quotes</span>
       </div>
 
+      <aside className="mt-5 rounded-xl border-2 border-[#9b7b35] bg-white p-4 text-sm leading-6 text-[#4d403a]" aria-label="Important resort pricing disclaimer">
+        <p className="font-semibold text-[#1f1f1f]">Important: resort prices and terms can change.</p>
+        <p className="mt-1">
+          This calculator is a planning estimate, not a resort quote, offer, contract, or guarantee. Public information was reviewed on {RATE_REVIEWED_ON} and may later change, become unavailable, or be withdrawn without notice. Confirm current prices, package names, inclusions, eligible dates, guest limits, minimum stays or room-block requirements, venues, menus, taxes, service charges, surcharges, promotions, availability, cancellation terms, and other policies in a current written resort proposal before relying on the result, paying a deposit, or booking travel. The resort&apos;s written proposal and signed contract control.
+        </p>
+        <p className="mt-2 text-xs leading-5 text-[#6d625c]">
+          CeremonyVerse is not affiliated with and cannot bind any listed resort. Resort names and trademarks belong to their respective owners.
+        </p>
+      </aside>
+
       <div className="mt-6 grid gap-4 lg:grid-cols-2">
         <label className="text-sm font-semibold text-[#1f1f1f]">
           Resort

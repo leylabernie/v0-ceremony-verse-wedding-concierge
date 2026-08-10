@@ -202,7 +202,7 @@ export function HomePage() {
                 href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Start With a Free Fit Call
+                Start With a Free Consultation
               </Link>
               <Link
                 href="/planning-tools/"
@@ -212,7 +212,7 @@ export function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
-              Free 30-minute fit call · Optional $300 written feasibility plan · No payment required for the call
+              Free 30-minute consultation · Optional $300 written feasibility plan · No payment required for the call
             </p>
           </div>
         </div>
@@ -426,7 +426,7 @@ export function HomePage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
                 <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
                 <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
-                  After the free fit call, turn your own guest count, event schedule, budget scope, travel obligations,
+                  After the free consultation, turn your own guest count, event schedule, budget scope, travel obligations,
                   and current written proposals into a practical action brief. The fee can be credited toward a
                   CeremonyVerse destination-planning agreement under the published plan terms.
                 </p>

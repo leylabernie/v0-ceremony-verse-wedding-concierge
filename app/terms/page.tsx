@@ -81,8 +81,8 @@ export default function TermsPage() {
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
             ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
             Feasibility &amp; Action Plan is $300. Full, partial, final-coordination, and family-support
-            destination services use private proposals based on the selected scope. The 30-minute initial
-            fit call is free. The signed proposal or service agreement identifies when paid work begins and
+            destination services use private proposals based on the selected scope. The initial 30-minute
+            consultation is free. The signed proposal or service agreement identifies when paid work begins and
             the cancellation, refund, and rescheduling rules that apply to that scope.
           </p>
           <p style={{ marginTop: "1rem" }}>
@@ -114,6 +114,17 @@ export default function TermsPage() {
             and refund terms. CeremonyVerse does not sell flights or hotel rooms. Travel reservations and
             transfer bookings are completed with the applicable provider unless a signed agreement states
             otherwise, and no booking or deposit is authorized without the client&apos;s written approval.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            Website calculators and publicly available resort information are provided only as planning
+            estimates. They are not resort quotes, offers, contracts, availability promises, or guarantees.
+            Resorts and other providers may change or withdraw prices, packages, inclusions, eligible dates,
+            guest limits, minimum stays, room-block requirements, venues, menus, taxes, service charges,
+            surcharges, promotions, availability, cancellation terms, and other policies at any time,
+            including without notice. The provider&apos;s current written proposal and signed contract control.
+            Confirm all amounts and terms directly with the applicable provider before relying on a calculator
+            result, paying a deposit, signing an agreement, or booking travel. CeremonyVerse is not affiliated
+            with and cannot bind a listed resort unless a signed written agreement expressly states otherwise.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

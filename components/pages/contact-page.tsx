@@ -89,7 +89,7 @@ export function ContactPage() {
   const fallbackText = useMemo(
     () =>
       [
-        "Hello CeremonyVerse, I would like to request a free fit call.",
+        "Hello CeremonyVerse, I would like to request a free consultation.",
         `Service: ${serviceInterest || "Not provided"}`,
         `Name: ${formData.name || "Not provided"}`,
         `Email: ${formData.email || "Not provided"}`,
@@ -205,7 +205,7 @@ export function ContactPage() {
             Begin with the facts
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Request a Private Wedding Fit Call
+            Request a Free Wedding Consultation
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
@@ -221,7 +221,7 @@ export function ContactPage() {
               bhamini@ceremonyverse.com
             </a>
             <span aria-hidden="true">·</span>
-            <span>Free 30-minute fit call · No payment required to submit</span>
+            <span>Free 30-minute introductory consultation · No payment required to submit</span>
           </div>
         </div>
       </section>
