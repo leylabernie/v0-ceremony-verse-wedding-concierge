@@ -227,7 +227,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Serving families across the USA &amp; Canada · A limited number of 2027 planning dates remain</span>
           <span className="lg:hidden">USA &amp; Canada · Limited 2027 dates</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/">Register for a free consultation →</Link>
+          <Link href="/contact/">Schedule a free consultation →</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}
