@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from "next/server"
 import { z } from "zod"
+import {
+  ceremonyVerseBusinessEmail,
+  escapeHtml,
+  sendCeremonyVerseEmail,
+} from "@/lib/consultation-email"
 
 export const runtime = "nodejs"
 
@@ -86,21 +91,9 @@ function safeOrigin(request: NextRequest): boolean {
   }
 }
 
-function escapeHtml(value: string): string {
-  return value.replace(/[&<>'"]/g, (character) => {
-    const entities: Record<string, string> = {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      "'": "&#039;",
-      '"': "&quot;",
-    }
-    return entities[character]
-  })
-}
-
-function leadRows(lead: Lead): Array<[string, string]> {
+function leadRows(lead: Lead, requestId: string): Array<[string, string]> {
   return [
+    ["Request ID", requestId],
     ["Service", lead.serviceInterest],
     ["Name", lead.name],
     ["Email", lead.email],
@@ -125,7 +118,7 @@ function leadRows(lead: Lead): Array<[string, string]> {
   ]
 }
 
-async function deliverToWebhook(lead: Lead): Promise<boolean> {
+async function deliverToWebhook(lead: Lead, requestId: string): Promise<boolean> {
   const webhookUrl = process.env.CEREMONYVERSE_LEAD_WEBHOOK_URL?.trim()
   if (!webhookUrl) return false
 
@@ -152,6 +145,7 @@ async function deliverToWebhook(lead: Lead): Promise<boolean> {
       },
       body: JSON.stringify({
         event: "ceremonyverse.consultation.requested",
+        requestId,
         submittedAt: new Date().toISOString(),
         lead,
       }),
@@ -167,14 +161,8 @@ async function deliverToWebhook(lead: Lead): Promise<boolean> {
   }
 }
 
-async function deliverByEmail(lead: Lead): Promise<boolean> {
-  const apiKey = process.env.RESEND_API_KEY?.trim()
-  const from = process.env.CEREMONYVERSE_LEAD_FROM_EMAIL?.trim()
-  const to = process.env.CEREMONYVERSE_LEAD_TO_EMAIL?.trim() || "bhamini@ceremonyverse.com"
-
-  if (!apiKey || !from) return false
-
-  const rows = leadRows(lead)
+async function deliverByEmail(lead: Lead, requestId: string): Promise<boolean> {
+  const rows = leadRows(lead, requestId)
   const htmlRows = rows
     .filter(([, value]) => value)
     .map(
@@ -183,27 +171,79 @@ async function deliverByEmail(lead: Lead): Promise<boolean> {
     )
     .join("")
 
-  try {
-    const response = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: lead.email,
-        subject: `CeremonyVerse consultation request — ${lead.name}`,
-        html: `<h1 style="font-family:Georgia,serif">New CeremonyVerse consultation request</h1><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>`,
-      }),
-      cache: "no-store",
-    })
+  const textRows = rows
+    .filter(([, value]) => value)
+    .map(([label, value]) => `${label}: ${value}`)
+    .join("\n\n")
 
-    return response.ok
-  } catch {
-    return false
-  }
+  return sendCeremonyVerseEmail({
+    to: ceremonyVerseBusinessEmail(),
+    replyTo: lead.email,
+    subject: `CeremonyVerse consultation request — ${lead.name}`,
+    html: `<h1 style="font-family:Georgia,serif">New CeremonyVerse consultation request</h1><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>`,
+    text: `New CeremonyVerse consultation request\n\n${textRows}`,
+  })
+}
+
+function questionnaireType(serviceInterest: Lead["serviceInterest"]): string {
+  if (serviceInterest === "India shopping") return "india"
+  if (serviceInterest === "Destination Wedding Feasibility & Action Plan ($300)") return "feasibility"
+  if (serviceInterest === "India shopping + destination wedding planning") return "both"
+  if (serviceInterest === "Destination wedding planning") return "destination"
+  return "unsure"
+}
+
+function questionnaireUrl(request: NextRequest, lead: Lead, requestId: string): URL {
+  const origin = request.headers.get("origin") || request.nextUrl.origin
+  const url = new URL("/consultation-questionnaire/", origin)
+  url.searchParams.set("request", requestId)
+  url.searchParams.set("type", questionnaireType(lead.serviceInterest))
+  return url
+}
+
+async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolean> {
+  const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim()
+  const safeFirstName = escapeHtml(firstName)
+  const safeUrl = escapeHtml(url.toString())
+  const businessEmail = ceremonyVerseBusinessEmail()
+
+  const html = `
+    <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
+      <p>Hi ${safeFirstName},</p>
+      <p>Thank you for reaching out to CeremonyVerse. I received your consultation request.</p>
+      <p>Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.</p>
+      <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
+      <p>You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
+      <p>After I review your request and questionnaire, I will contact you to confirm the next step and, when appropriate, schedule the free consultation.</p>
+      <p>Warmly,<br><strong>Bhamini</strong><br>CeremonyVerse<br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
+    </div>
+  `
+
+  const text = `Hi ${firstName},
+
+Thank you for reaching out to CeremonyVerse. I received your consultation request.
+
+Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.
+
+Complete the pre-call questionnaire: ${url.toString()}
+
+You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.
+
+After I review your request and questionnaire, I will contact you to confirm the next step and, when appropriate, schedule the free consultation.
+
+Warmly,
+Bhamini
+CeremonyVerse
+${businessEmail}
+https://www.ceremonyverse.com`
+
+  return sendCeremonyVerseEmail({
+    to: lead.email,
+    replyTo: businessEmail,
+    subject: "Your CeremonyVerse consultation questionnaire",
+    html,
+    text,
+  })
 }
 
 export async function POST(request: NextRequest) {
@@ -246,7 +286,10 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true })
   }
 
-  const delivered = (await deliverToWebhook(parsed.data)) || (await deliverByEmail(parsed.data))
+  const requestId = crypto.randomUUID()
+  const formQuestionnaireUrl = questionnaireUrl(request, parsed.data, requestId)
+  const delivered =
+    (await deliverToWebhook(parsed.data, requestId)) || (await deliverByEmail(parsed.data, requestId))
 
   if (!delivered) {
     return NextResponse.json(
@@ -259,5 +302,11 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  return NextResponse.json({ success: true })
+  const questionnaireSent = await sendQuestionnaireInvitation(parsed.data, formQuestionnaireUrl)
+
+  return NextResponse.json({
+    success: true,
+    questionnaireSent,
+    questionnaireUrl: `${formQuestionnaireUrl.pathname}${formQuestionnaireUrl.search}`,
+  })
 }

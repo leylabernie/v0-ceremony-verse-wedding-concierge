@@ -32,8 +32,8 @@ export default function PrivacyPage() {
       <article className="mx-auto max-w-3xl px-6 py-16 sm:py-20">
         <p className="text-lg leading-8 text-[#4d403a]">
           This notice explains what CeremonyVerse collects through this website and during client work, why it is
-          used, when it may be shared, and how to contact us about your information. The consultation form is for
-          wedding-planning and sourcing inquiries; submitting it does not enroll you in marketing.
+          used, when it may be shared, and how to contact us about your information. The consultation form and pre-call
+          questionnaire are for wedding-planning and sourcing inquiries; submitting either does not enroll you in marketing.
         </p>
 
         <section className={sectionClass}>
@@ -43,13 +43,13 @@ export default function PrivacyPage() {
             <li>Name, email address, phone or WhatsApp number, and referral source.</li>
             <li>Home country or region and delivery destination when relevant to the requested service.</li>
             <li>Wedding timeframe, destination, guest and event estimates, travel origins, and budget range.</li>
-            <li>Priorities, cultural or dietary requirements, sourcing needs, and other details you choose to share.</li>
+            <li>Planning stage, decision-makers, priorities, cultural or dietary requirements, sourcing needs, and other details you choose to share.</li>
             <li>Communications, approvals, measurements, addresses, and transaction records if you become a client.</li>
           </ul>
           <p className={paragraphClass}>
             Do not submit passport numbers, payment-card details, medical records, or sensitive documents through the
-            consultation form. Payment-card information, if a payment service is offered, is handled by the applicable
-            payment provider rather than the consultation form.
+            consultation form or pre-call questionnaire. Payment-card information, if a payment service is offered, is
+            handled by the applicable payment provider rather than these forms.
           </p>
         </section>
 
@@ -67,6 +67,7 @@ export default function PrivacyPage() {
           <h2 className={headingClass}>3. How information is used</h2>
           <ul className={listClass}>
             <li>Respond to inquiries and decide whether the requested service and timing are a practical fit.</li>
+            <li>Send the requested pre-call questionnaire and prepare for the consultation.</li>
             <li>Prepare, provide, and administer selected wedding-planning or India-sourcing services.</li>
             <li>Maintain approvals, logistics, communications, invoicing, and business records.</li>
             <li>Measure website performance, lead sources, and service interest.</li>

@@ -68,6 +68,8 @@ export function ContactPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [showFallback, setShowFallback] = useState(false)
+  const [questionnaireUrl, setQuestionnaireUrl] = useState("")
+  const [questionnaireSent, setQuestionnaireSent] = useState(false)
   const requestedServiceInterest = useSyncExternalStore(
     subscribeToLocation,
     getServiceInterestFromLocation,
@@ -138,6 +140,8 @@ export function ContactPage() {
         success?: boolean
         fallbackRequired?: boolean
         error?: string
+        questionnaireSent?: boolean
+        questionnaireUrl?: string
       }
 
       if (!response.ok || !result.success) {
@@ -147,6 +151,8 @@ export function ContactPage() {
       }
 
       trackLead("form", "consultation-request")
+      setQuestionnaireUrl(result.questionnaireUrl || "")
+      setQuestionnaireSent(Boolean(result.questionnaireSent))
       setIsSubmitted(true)
     } catch {
       setError("We could not connect to the secure form. Please use WhatsApp or email below.")
@@ -173,6 +179,22 @@ export function ContactPage() {
             Your information was delivered securely. CeremonyVerse will review your wedding timeframe, destination,
             guest needs, and priorities before replying through the contact details you provided.
           </p>
+          {questionnaireUrl ? (
+            <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
+              <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Complete your pre-call questionnaire</h2>
+              <p className="mt-4 leading-7 text-[#4d403a]">
+                {questionnaireSent
+                  ? "We emailed the questionnaire to the address you provided. You can also complete it now using the button below."
+                  : "Your consultation request arrived, but delivery of the questionnaire email could not be confirmed. Please open it here so Bhamini has your details before the call."}
+              </p>
+              <Link
+                href={questionnaireUrl}
+                className="mt-6 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
+              >
+                Complete Pre-Call Questionnaire
+              </Link>
+            </div>
+          ) : null}
           <div className="mt-10 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Use the waiting time well</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
