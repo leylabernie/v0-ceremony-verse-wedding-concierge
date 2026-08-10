@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Viewport } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
@@ -226,7 +227,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Serving families across the USA &amp; Canada · A limited number of 2027 planning dates remain</span>
           <span className="lg:hidden">USA &amp; Canada · Limited 2027 dates</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20discuss%20India%20shopping%20or%20destination-wedding%20planning%20support." target="_blank" rel="noopener noreferrer">Book a free consultation →</a>
+          <Link href="/contact/">Schedule a free consultation →</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}

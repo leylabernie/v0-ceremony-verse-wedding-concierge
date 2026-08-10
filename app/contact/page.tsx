@@ -3,9 +3,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/contact/",
-  title: "Book a Free CeremonyVerse Wedding Consultation",
+  title: "Schedule a Free CeremonyVerse Wedding Consultation",
   description:
-    "Request a free consultation from anywhere in the USA or Canada for India wedding sourcing, the $300 feasibility plan, or Gujarati and Hindu planning in Mexico or Punta Cana.",
+    "Schedule a free consultation from anywhere in the USA or Canada about India wedding sourcing, the $300 feasibility plan, or Gujarati and Hindu planning in Mexico or Punta Cana.",
 });
 
 const serviceSchema = buildServiceSchema({
@@ -18,7 +18,7 @@ const serviceSchema = buildServiceSchema({
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Book Free Consultation", url: "/contact/" },
+  { name: "Schedule Free Consultation", url: "/contact/" },
 ]);
 
 export default function ContactRoute() {

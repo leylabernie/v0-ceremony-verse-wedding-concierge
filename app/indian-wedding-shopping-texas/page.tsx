@@ -87,9 +87,9 @@ export default function IndianWeddingShoppingTexasPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           Coordinate bridal, groom, wedding-party, and family outfits from India through one documented process, with live review when available, custom-order support, and delivery coordination across Texas.
         </p>
-        <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-          Book Free Consultation
-        </a>
+        <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          Schedule Free Consultation
+        </Link>
       </section>
 
       <NorthAmericaCoverage guideName="Texas" />

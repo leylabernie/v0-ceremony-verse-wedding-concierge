@@ -68,6 +68,8 @@ export function ContactPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const [showFallback, setShowFallback] = useState(false)
+  const [questionnaireUrl, setQuestionnaireUrl] = useState("")
+  const [questionnaireSent, setQuestionnaireSent] = useState(false)
   const requestedServiceInterest = useSyncExternalStore(
     subscribeToLocation,
     getServiceInterestFromLocation,
@@ -112,7 +114,7 @@ export function ContactPage() {
   )
 
   const whatsappFallbackUrl = `https://wa.me/12153419990?text=${encodeURIComponent(fallbackText)}`
-  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
+  const emailFallbackUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
     "CeremonyVerse consultation request",
   )}&body=${encodeURIComponent(fallbackText)}`
 
@@ -138,6 +140,8 @@ export function ContactPage() {
         success?: boolean
         fallbackRequired?: boolean
         error?: string
+        questionnaireSent?: boolean
+        questionnaireUrl?: string
       }
 
       if (!response.ok || !result.success) {
@@ -147,6 +151,8 @@ export function ContactPage() {
       }
 
       trackLead("form", "consultation-request")
+      setQuestionnaireUrl(result.questionnaireUrl || "")
+      setQuestionnaireSent(Boolean(result.questionnaireSent))
       setIsSubmitted(true)
     } catch {
       setError("We could not connect to the secure form. Please use WhatsApp or email below.")
@@ -170,9 +176,26 @@ export function ContactPage() {
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your information was delivered securely. CeremonyVerse will review your wedding timeframe, destination,
-            guest needs, and priorities before replying through the contact details you provided.
+            Your consultation request has been received. Complete the questionnaire below so CeremonyVerse has your
+            wedding timeframe, destination, guest needs, and priorities before the call. Scheduling opens immediately
+            after you submit it.
           </p>
+          {questionnaireUrl ? (
+            <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
+              <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Complete your pre-call questionnaire</h2>
+              <p className="mt-4 leading-7 text-[#4d403a]">
+                {questionnaireSent
+                  ? "We emailed the questionnaire to the address you provided. You can also complete it now using the button below."
+                  : "Your consultation request arrived, but delivery of the questionnaire email could not be confirmed. Please open it here so we have the details needed for your call."}
+              </p>
+              <Link
+                href={questionnaireUrl}
+                className="mt-6 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
+              >
+                Complete Pre-Call Questionnaire
+              </Link>
+            </div>
+          ) : null}
           <div className="mt-10 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Use the waiting time well</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
@@ -209,23 +232,19 @@ export function ContactPage() {
             Begin with the facts
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Request a Free Wedding Consultation
+            Schedule Your Free Wedding Consultation
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
             CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana, plus wedding
             shopping and sourcing from India for families throughout the United States and Canada.
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-[#5e4a40]">
-            <a className="font-semibold text-[#128c7e]" href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer">
-              WhatsApp
-            </a>
-            <span aria-hidden="true">·</span>
-            <a className="font-semibold text-[#7a6841]" href="mailto:bhamini@ceremonyverse.com">
-              bhamini@ceremonyverse.com
-            </a>
-            <span aria-hidden="true">·</span>
-            <span>Free 30-minute introductory consultation · No payment required to submit</span>
+          <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
+            <p className="font-semibold text-[#1f1f1f]">Complete the consultation request and questionnaire before choosing a call time.</p>
+            <p className="mt-2">
+              Submit this form first. We will send your pre-call questionnaire automatically. Once you complete it,
+              the call-scheduling step opens immediately. No prior review or approval is required.
+            </p>
           </div>
         </div>
       </section>
@@ -356,8 +375,8 @@ export function ContactPage() {
                 required
               />
               <span>
-                I agree that CeremonyVerse may use these details to respond to this request. This does not subscribe
-                me to marketing. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy policy</Link>.
+                I agree that CeremonyVerse may use these details to respond to my consultation request.
+                This does not subscribe me to marketing. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy policy</Link>.
               </span>
             </label>
 
@@ -383,10 +402,11 @@ export function ContactPage() {
               className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]"
               style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}
             >
-              {isLoading ? "Sending Securely…" : "Send Consultation Request"}
+              {isLoading ? "Sending Securely…" : "Send My Consultation Request"}
             </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
-              Do not include passport numbers, payment-card details, medical records, or other sensitive documents in this form.
+              Submitting this form does not reserve a call time. Do not include passport numbers, payment-card details,
+              medical records, or other sensitive documents.
             </p>
           </div>
         </form>

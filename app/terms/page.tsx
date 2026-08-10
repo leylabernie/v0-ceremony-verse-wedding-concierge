@@ -254,7 +254,7 @@ export default function TermsPage() {
             United States. Any disputes will be resolved in the state or federal courts located in
             Philadelphia County, Pennsylvania, subject to any mandatory consumer-protection or jurisdictional rights that apply where a client resides. We encourage clients to contact us so the parties can try to resolve a concern
             informally first — please reach out to{" "}
-            <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>bhamini@ceremonyverse.com</a>{" "}
+            <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>hello@ceremonyverse.com</a>{" "}
             or by WhatsApp at{" "}
             <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>.
           </p>
@@ -268,8 +268,8 @@ export default function TermsPage() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.5rem" }}>
               Email:{" "}
-              <a href="mailto:bhamini@ceremonyverse.com" style={{ color: "#7a6841" }}>
-                bhamini@ceremonyverse.com
+              <a href="mailto:hello@ceremonyverse.com" style={{ color: "#7a6841" }}>
+                hello@ceremonyverse.com
               </a>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
