@@ -24,7 +24,7 @@ const serviceSchema = buildServiceSchema({
     "A documented process for Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana, with optional guest support and India wedding sourcing.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning and India Wedding Sourcing",
-  areaServed: "United States, Mexico, and Punta Cana",
+  areaServed: "United States, Canada, Mexico, and Punta Cana",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "How It Works", url: "/how-it-works/" }])
@@ -103,7 +103,7 @@ const sourcingSteps = [
   "Review available options or a custom brief using the documentation and review method included in the selected service tier.",
   "Approve the item, measurements, price, limitations, and applicable purchase or production milestone in writing.",
   "Use the agreed pre-shipping review to compare visible details with the approval record when that review is available.",
-  "Coordinate shipping documents and tracking while the carrier and customs authorities control clearance and final delivery timing.",
+  "Coordinate U.S. or Canada shipping documents and available tracking while carriers and customs authorities control assessments, clearance, and final delivery timing.",
 ]
 
 const controls = [
@@ -207,7 +207,7 @@ export default function HowItWorksPage() {
             </article>
 
             <article className="rounded-3xl border border-[#d9cfbf] bg-[#faf8f5] p-7 sm:p-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">India · United States</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">India · United States &amp; Canada</p>
               <h2 className="mt-3 font-serif text-3xl font-semibold">Wedding shopping and sourcing</h2>
               <ol className="mt-7 space-y-5">
                 {sourcingSteps.map((step, index) => (

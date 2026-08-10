@@ -37,6 +37,7 @@ export default function BudgetPlannerPage() {
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Indian Destination Wedding Budget Calculator</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
             Start with a current publicly posted resort package or use your own written proposal. The calculator separates package, venue, food and beverage, guest overages, family travel, and optional India shopping so you can see what is included and what is still unpriced.
+            For optional sourcing, select the U.S. or Canada delivery destination and include the relevant shipping and import-cost estimate.
           </p>
         </div>
       </section>

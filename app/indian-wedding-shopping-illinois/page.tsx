@@ -1,4 +1,5 @@
 import { SeoNav } from "@/components/seo-nav"
+import { NorthAmericaCoverage } from "@/components/north-america-coverage"
 import Link from "next/link"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo"
 
@@ -10,7 +11,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-illinois/",
   title: "Indian Wedding Shopping from India — Illinois",
   description:
-    "Chicago and Illinois families can source Indian wedding outfits from India with live review, custom stitching, pre-shipping review, and delivery coordination.",
+    "Chicago and Illinois families can research Indian wedding outfits from India with eligible live review, written approvals, available pre-shipping review, and delivery coordination.",
   keywords: [
     "indian wedding shopping illinois",
     "indian wedding shopping chicago",
@@ -27,7 +28,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Illinois Indian Wedding Sourcing Service",
   description:
-    "Indian wedding outfit sourcing for NRI families in Illinois — Chicago, Naperville, Schaumburg, Aurora, Evanston, and across the state — with live video shopping, custom stitching, and US delivery to your door.",
+    "Indian wedding outfit sourcing for families in Illinois — Chicago, Naperville, Schaumburg, Aurora, Evanston, and across the state — with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-illinois/",
   category: "Indian Wedding Sourcing for Illinois",
   areaServed: "US-IL",
@@ -146,6 +147,8 @@ export default function IndianWeddingShoppingIllinoisPage() {
         </a>
       </section>
 
+      <NorthAmericaCoverage guideName="Illinois" />
+
       {/* ─── PAIN POINTS ─────────────────────────────────────────────────── */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
@@ -240,7 +243,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               CeremonyVerse can coordinate live video sessions with selected vendors
               in India, showing you fabrics, colors, and embroidery options in real time. You
               select what you love, and we handle custom measurements, tailoring, quality
-              checks, and doorstep delivery to your home in Chicago, Naperville, Schaumburg,
+              available checks, and tracked-delivery coordination to an eligible address in Chicago, Naperville, Schaumburg,
               Aurora, Evanston, or anywhere in Illinois.
             </p>
             <p style={{ marginBottom: "16px" }}>

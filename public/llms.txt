@@ -1,10 +1,10 @@
 # CeremonyVerse
 
-> CeremonyVerse is a US-based service with two distinct offers: Indian wedding shopping for US families and destination-wedding planning support for Gujarati and Hindu families across Mexico and in Punta Cana.
+> CeremonyVerse is a U.S.-based service with two distinct offers: Indian wedding shopping for families throughout the United States and Canada, and destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana.
 
 ## About
 
-CeremonyVerse organizes remote India shopping and destination-wedding planning support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and US delivery support. Destination services can include planning, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a private proposal.
+CeremonyVerse organizes remote India shopping and destination-wedding planning support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and U.S. or Canada shipping-document and tracking support. Destination services can include planning, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a private proposal.
 
 - [About CeremonyVerse](https://www.ceremonyverse.com/about/): Family experience, current service coverage, and planning approach
 - [How It Works](https://www.ceremonyverse.com/how-it-works/): Step-by-step process from consultation to delivery
@@ -20,10 +20,11 @@ CeremonyVerse organizes remote India shopping and destination-wedding planning s
 - [Wedding Accessories and Ceremony Items](https://www.ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india/): Jewelry, gifts, welcome bags, and ceremony items
 - [Intercultural Wedding Outfit Sourcing](https://www.ceremonyverse.com/services/intercultural-indian-weddings/): Plain-language outfit-shopping support
 - [Destination Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Gujarati and Hindu wedding planning across Mexico and in Punta Cana with optional family, guest, and India-sourcing support
-- [Free Wedding Calculators](https://www.ceremonyverse.com/planning-tools/): Client-entered budget, resort-proposal, guest/VIP cost, and family responsibility tools
+- [Free Wedding Calculators](https://www.ceremonyverse.com/planning-tools/): Client-entered budget, resort-proposal, guest/VIP cost, USA-or-Canada shipping/customs, and family responsibility tools
 
 ## Geographic Service Pages
 
+- [All Canada](https://www.ceremonyverse.com/indian-wedding-shopping-canada/)
 - [California](https://www.ceremonyverse.com/indian-wedding-shopping-california/)
 - [Texas](https://www.ceremonyverse.com/indian-wedding-shopping-texas/)
 - [New York](https://www.ceremonyverse.com/indian-wedding-shopping-new-york/)
@@ -71,7 +72,7 @@ CeremonyVerse organizes remote India shopping and destination-wedding planning s
 ## Family Experience & Service Boundaries
 
 - CeremonyVerse describes family involvement in three Indian destination weddings in Mexico as background, not as CeremonyVerse client work. The public facts are documented on the About and Family Wedding Experience pages.
-- India-shopping fees are flat by tier; product, shipping, customs, and local alteration costs are separate.
+- India-shopping service fees are in USD and flat by tier for U.S. and Canadian clients; products, shipping, insurance, duties, Canadian taxes, brokerage, and local alteration costs are separate unless a signed agreement says otherwise.
 - Destination-planning and family-support prices are shared only through a private CeremonyVerse proposal.
 - The proposal identifies the bundled CeremonyVerse service, outside costs, payment milestones, and responsibility for each decision.
 - Timing, fit, color, customs clearance, and duty amounts are not universally guaranteed.
@@ -84,7 +85,7 @@ CeremonyVerse organizes remote India shopping and destination-wedding planning s
 - Live video review when the vendor, item, and selected service allow it, with limitations documented before approval
 - Payment milestones are defined in each signed proposal or service agreement
 - Available pre-shipping review when included in the selected service scope
-- Shipping and available insurance are itemized for the approved shipment
+- U.S. or Canada shipping, tracking method, customs responsibilities, and available insurance are itemized for the approved shipment
 - Fit Assurance on eligible made-to-measure garments
 - Clear written proposals with the client price and applicable outside costs identified before approval
 

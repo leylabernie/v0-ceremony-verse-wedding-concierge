@@ -33,7 +33,7 @@ const aboutSchema = {
     },
     telephone: "+12153419990",
     email: "bhamini@ceremonyverse.com",
-    areaServed: ["United States", "Mexico", "Punta Cana"],
+    areaServed: ["United States", "Canada", "Mexico", "Punta Cana"],
   },
 };
 
@@ -113,7 +113,7 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Current service coverage
+              Current destination coverage
             </p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">
               Destination planning across Mexico and Punta Cana
@@ -123,6 +123,11 @@ export default function AboutPage() {
                 CeremonyVerse supports Gujarati and Hindu destination weddings throughout Mexico and in Punta Cana.
                 The specific planning, on-site, family-support, guest, and sourcing services are defined privately for
                 each wedding based on its location, resort, dates, events, guest count, and priorities.
+              </p>
+              <p>
+                Families can work with CeremonyVerse from anywhere in the United States or Canada. India-sourcing
+                shipment terms, tracking, customs responsibilities, and outside costs are confirmed for the exact
+                destination before an approved shipment proceeds.
               </p>
               <p>
                 Families can request destination planning, on-site coordination, family communication, guest and arrival

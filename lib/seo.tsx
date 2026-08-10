@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning support across Mexico and in Punta Cana.",
+      "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -331,7 +331,7 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: ["US", "Mexico", "Punta Cana"],
+    areaServed: ["United States", "Canada", "Mexico", "Dominican Republic"],
     priceRange: "$$",
     sameAs: [
       "https://www.instagram.com/ceremonyverse/",
@@ -395,23 +395,23 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for US families plus destination-wedding planning support for Gujarati and Hindu families across Mexico and in Punta Cana. Private proposals define the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana. Private proposals define the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
         "@type": "Question",
-        name: "How does CeremonyVerse source Indian wedding outfits from India to the USA?",
+        name: "How does CeremonyVerse source Indian wedding outfits for the USA and Canada?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse works with sourcing partners primarily in Surat and Delhi. Guided tiers can include live video review, written selection approval, measurement support, order follow-up, pre-shipping review, and US delivery coordination.",
+          text: "CeremonyVerse works with sourcing partners primarily in Surat and Delhi. Guided tiers can include live video review, written selection approval, measurement support, order follow-up, pre-shipping review, and U.S. or Canada shipping-document and tracking coordination.",
         },
       },
       {
         "@type": "Question",
-        name: "Can I buy a bridal lehenga from India and have it delivered to the USA?",
+        name: "Can I buy a bridal lehenga from India and have it delivered to the USA or Canada?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. CeremonyVerse helps US families source bridal lehengas through working relationships in Surat and Delhi. Eligible tiers can include live video review, written item approval, measurement coordination, pre-shipping review, and shipping-document and tracking support. Carrier service, customs clearance, duties, and final delivery remain subject to the applicable providers and signed terms.",
+          text: "Yes. CeremonyVerse helps U.S. and Canadian families source bridal lehengas through working relationships in Surat and Delhi. Eligible tiers can include live video review, written item approval, measurement coordination, pre-shipping review, and shipping-document and tracking support. Carrier service, customs clearance, duties, taxes, brokerage, and final delivery remain subject to the applicable providers and signed terms.",
         },
       },
       {
@@ -448,10 +448,10 @@ export function buildGlobalFaqSchema(): object {
       },
       {
         "@type": "Question",
-        name: "Do you ship Indian wedding items to all US states?",
+        name: "Do you coordinate Indian wedding item delivery throughout the USA and Canada?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse can coordinate delivery to supported US addresses using international carriers. Availability, cost, customs processing, and timing depend on the shipment and destination and are confirmed in the applicable quote.",
+          text: "CeremonyVerse can coordinate delivery across all 50 U.S. states, Washington, D.C., and every Canadian province and territory, subject to the selected carrier's current service for the exact address. Availability, cost, tracking, customs processing, taxes, duties, brokerage, and timing depend on the shipment and destination and are confirmed in the applicable quote.",
         },
       },
     ],
@@ -478,14 +478,14 @@ export function buildOrganizationSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     description:
-      "CeremonyVerse is a US-based Indian wedding shopping concierge and destination-wedding support service for Gujarati and Hindu families planning celebrations across Mexico and in Punta Cana.",
+      "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico and Punta Cana.",
     contactPoint: [
       {
         "@type": "ContactPoint",
         telephone: SITE_PHONE,
         email: SITE_EMAIL,
         contactType: "customer service",
-        areaServed: "US",
+        areaServed: ["United States", "Canada"],
         availableLanguage: ["English", "Hindi", "Gujarati"],
       },
     ],
@@ -520,7 +520,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana.",
+      "Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

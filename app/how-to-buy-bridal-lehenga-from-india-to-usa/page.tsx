@@ -295,8 +295,8 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 <span style={{ color: "#4d403a" }}>
                   Miscommunicating a single inch on a blouse or sherwani jacket
                   can ruin the outfit. Standard bust-waist-hip measurements are
-                  not enough — Indian bridal tailoring requires 15+ precise
-                  points including high waist, blouse back length, shoulder
+                  not enough — use the selected tailor&apos;s complete measurement chart and document every requested
+                  point, which may include high waist, blouse back length, shoulder
                   width, armhole depth, and skirt length.
                 </span>
               </p>

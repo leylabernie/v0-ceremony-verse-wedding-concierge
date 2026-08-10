@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "NRI Bridal Lehenga Sizing Guide: How to Take Measurements at Home",
-  description: "How to take 15+ precise bridal lehenga measurements at home for custom stitching in India \u2014 blouse, skirt, dupatta, and ease allowances for NRI brides.",
+  description: "How to document bridal lehenga measurements using the selected vendor's chart, including blouse, skirt, dupatta, fit preferences, and a local fitting plan.",
   url: "/blog/nri-bridal-lehenga-sizing-guide/",
   datePublished: "2026-03-01",
   keywords: ["bridal lehenga sizing guide", "how to take lehenga measurements at home", "NRI bride measurements", "lehenga blouse measurement guide"],

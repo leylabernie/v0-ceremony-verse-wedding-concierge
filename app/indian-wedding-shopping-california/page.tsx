@@ -1,6 +1,7 @@
 
 
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import {
   buildMetadata,
   buildServiceSchema,
@@ -13,7 +14,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-california/",
   title: "Indian Wedding Shopping from India — California",
   description:
-    "Bay Area and Los Angeles families can source bridal and family wedding outfits from India with live review, custom stitching, and U.S. delivery coordination.",
+    "Bay Area and Los Angeles families can research bridal and family wedding outfits from India with eligible live review, written approvals, and delivery coordination.",
   keywords:
     "Indian wedding shopping California, bridal lehenga Bay Area, Indian wedding outfits Los Angeles, Indian bridal wear California, wedding shopping from India California",
 });
@@ -90,6 +91,8 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           Book Free Consultation
         </a>
       </section>
+
+      <NorthAmericaCoverage guideName="California" />
 
       {/* Pain Points */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>

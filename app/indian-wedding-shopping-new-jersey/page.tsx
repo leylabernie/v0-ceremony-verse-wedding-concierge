@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
@@ -53,6 +54,8 @@ export default function NewJerseyPage() {
             </Link>
           </div>
         </div>
+
+        <NorthAmericaCoverage guideName="New Jersey" />
 
         {/* Content Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

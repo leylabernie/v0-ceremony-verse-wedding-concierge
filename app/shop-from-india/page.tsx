@@ -3,13 +3,13 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/shop-from-india/",
-  title: "Shop Indian Wedding Outfits from India \u2014 Live Video Sourcing to USA",
-  description: "Research and source Indian wedding outfits from India with documented options, eligible live video review, written approvals, and U.S. delivery coordination."
+  title: "Shop Indian Wedding Outfits from India — USA & Canada",
+  description: "Research and source Indian wedding outfits from India with documented options, eligible live video review, written approvals, and delivery coordination across the USA and Canada."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Live Video Shopping from India",
-  description: "Indian wedding outfit sourcing with documented vendor options, eligible live video review, written approvals, and U.S. delivery coordination.",
+  description: "Indian wedding outfit sourcing with documented vendor options, eligible live video review, written approvals, and delivery coordination across the United States and Canada.",
   url: "/shop-from-india/",
 });
 
@@ -33,7 +33,7 @@ export default function ShopFromIndiaPage() {
           </h1>
 
           <p className="mt-6 text-lg text-[var(--cv-muted)]">
-            Use a U.S.-based concierge process to research bridal lehengas, sherwanis, and wedding outfits from India without requiring an international shopping trip.
+            Families throughout the United States and Canada can use our U.S.-based concierge process to research bridal lehengas, sherwanis, and wedding outfits from India without requiring an international shopping trip.
           </p>
 
           <p className="mt-4 text-lg text-[var(--cv-muted)]">

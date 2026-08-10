@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "The NRI Wedding Planning Timeline: When to Order Everything from India",
-  description: "A 12-month NRI wedding planning timeline \u2014 when to start sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India for a stress-free US wedding.",
+  description: "A 12-month NRI wedding planning framework for U.S. and Canadian families sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India.",
   url: "/blog/nri-wedding-planning-timeline/",
   datePublished: "2026-03-01",
   keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],

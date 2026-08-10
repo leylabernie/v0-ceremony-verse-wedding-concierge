@@ -57,6 +57,7 @@ export function BudgetPlannerClient() {
   const [contingencyRate, setContingencyRate] = useState("10")
   const [resortRateSource, setResortRateSource] = useState("")
   const [resortSelectorKey, setResortSelectorKey] = useState(0)
+  const [shoppingDestination, setShoppingDestination] = useState<"United States" | "Canada">("United States")
   const started = useRef(false)
 
   const markStarted = () => {
@@ -133,6 +134,7 @@ export function BudgetPlannerClient() {
     setContingencyRate("10")
     setResortRateSource("")
     setResortSelectorKey((previous) => previous + 1)
+    setShoppingDestination("United States")
     started.current = false
   }
 
@@ -162,7 +164,7 @@ export function BudgetPlannerClient() {
     <section className="px-6 pb-24">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.4fr_0.6fr]">
         <div className="rounded-3xl border border-[#e6dfd5] bg-white p-6 sm:p-9">
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-5">
             <label className="text-sm font-semibold text-[#1f1f1f]">
               Target total budget
               <input type="number" min="0" inputMode="decimal" value={targetBudget} onFocus={markStarted} onChange={(event) => setTargetBudget(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" placeholder="90000" />
@@ -180,6 +182,20 @@ export function BudgetPlannerClient() {
               <input type="number" min="0" max="100" inputMode="decimal" value={contingencyRate} onFocus={markStarted} onChange={(event) => updateContingency(event.target.value)} className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal" aria-describedby="contingency-help" />
               <span id="contingency-help" className="mt-1 block text-xs font-normal text-[#6d625c]">Enter 0–100%.</span>
             </label>
+            <label className="text-sm font-semibold text-[#1f1f1f]">
+              India-shopping delivery
+              <select
+                value={shoppingDestination}
+                onChange={(event) => {
+                  markStarted()
+                  setShoppingDestination(event.target.value as "United States" | "Canada")
+                }}
+                className="mt-2 w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 font-normal"
+              >
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+              </select>
+            </label>
           </div>
 
           <ResortRateSelector key={resortSelectorKey} guestCount={guestCount} onApply={applyPublishedResortRate} />
@@ -193,6 +209,13 @@ export function BudgetPlannerClient() {
                     <div>
                       <p className="leading-6 text-[#4d403a]">{label}</p>
                       {key === "resortEvents" && resortRateSource ? <p className="mt-1 text-xs leading-5 text-[#7a6841]">Resort calculation source: {resortRateSource}</p> : null}
+                      {key === "shipping" ? (
+                        <p className="mt-1 text-xs leading-5 text-[#7a6841]">
+                          {shoppingDestination === "Canada"
+                            ? "Include the current shipping quote, insurance, estimated duty, GST/HST or provincial tax, brokerage or disbursement charges, and alterations."
+                            : "Include the current shipping quote, insurance, estimated duty or government fees, carrier clearance charges, and alterations."}
+                        </p>
+                      ) : null}
                     </div>
                     <label className="text-xs font-semibold text-[#5e4a40]">
                       Cost entered
@@ -267,6 +290,7 @@ export function BudgetPlannerClient() {
           <p className="mt-3 text-xs leading-5 text-white/60 print:hidden">
             Your entries stay in this browser and are not sent with the consultation form. Print or save the worksheet if you want to discuss it.
           </p>
+          <Link href="/planning-tools/shipping-customs/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Open Shipping &amp; Customs Calculator</Link>
           <Link href="/contact/?service=mexico&from=budget-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "destination_wedding_budget", completion_percent: summary.completeness })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Request a Budget Review</Link>
           <Link href="/planning-tools/guest-logistics/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Calculate Hosted Guest Costs</Link>
         </aside>

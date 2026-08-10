@@ -40,7 +40,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Can CeremonyVerse source outfits for a destination wedding from India?",
     answer:
-      "Yes. CeremonyVerse can coordinate approved wedding-outfit sourcing from India for US families. The written scope identifies which shopping, measurement, inspection, shipping, and delivery responsibilities are included and which third-party costs remain separate.",
+      "Yes. CeremonyVerse can coordinate approved wedding-outfit sourcing from India for families throughout the United States and Canada. The written scope identifies which shopping, measurement, inspection, shipping, and delivery responsibilities are included and which third-party costs remain separate.",
   },
   {
     question: "How does live video shopping work?",

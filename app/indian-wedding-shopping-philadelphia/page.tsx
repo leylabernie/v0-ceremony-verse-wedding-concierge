@@ -1,15 +1,16 @@
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-philadelphia/",
   title: "Indian Wedding Shopping from India — Philadelphia",
-  description: "Philadelphia-area families can source Indian wedding outfits from India with live review, custom stitching, pre-shipping review, and delivery coordination.",
+  description: "Philadelphia-area families can research Indian wedding outfits from India with eligible live review, written approvals, available pre-shipping review, and delivery coordination.",
   keywords: "Indian wedding shopping Philadelphia, Philadelphia bridal lehenga, NRI wedding concierge Philadelphia, Indian wedding outfits Philadelphia PA, buy Indian wedding outfits Philadelphia, South Indian wedding Philadelphia, Gujarati wedding Philadelphia",
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Philadelphia Indian Wedding Sourcing Service",
-  description: "Indian wedding outfit sourcing for NRI families in Philadelphia and the greater Philadelphia area — with live video shopping from India and doorstep delivery.",
+  description: "Indian wedding outfit sourcing for families in Philadelphia and the greater Philadelphia area with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-philadelphia/",
   areaServed: "Philadelphia, PA — Greater Philadelphia Area, South Jersey, Delaware",
 });
@@ -27,7 +28,7 @@ export default function PhiladelphiaPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          Philadelphia-Based · Nationwide Service
+          Philadelphia-Based · USA &amp; Canada-Wide Service
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Indian Wedding Shopping Philadelphia — We&apos;re Based Here
@@ -42,6 +43,8 @@ export default function PhiladelphiaPage() {
           Book Free Consultation
         </a>
       </section>
+
+      <NorthAmericaCoverage guideName="Philadelphia" />
 
       {/* Why Philadelphia */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>

@@ -26,6 +26,7 @@ const ceremonyLinks = [
 ];
 
 const locationLinks = [
+  { label: "All Canada", href: "/indian-wedding-shopping-canada/" },
   { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
   { label: "Washington DC", href: "/indian-wedding-shopping-washington-dc/" },
   { label: "New York", href: "/indian-wedding-shopping-new-york/" },
@@ -68,8 +69,8 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              India wedding shopping for US families and destination-wedding planning for Gujarati
-              and Hindu families across Mexico and in Punta Cana.
+              India wedding shopping for families across the entire USA and Canada, plus destination-wedding
+              planning for Gujarati and Hindu families across Mexico and Punta Cana.
             </p>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
@@ -160,10 +161,10 @@ export function GlobalFooter() {
             Buy Bridal Lehenga from India USA&nbsp;·&nbsp; NRI Bridal Lehenga&nbsp;·&nbsp; Custom Sherwani from India USA&nbsp;·&nbsp;
             Bridesmaid Outfits from India&nbsp;·&nbsp; Indian Wedding Jewelry USA&nbsp;·&nbsp;
             Welcome Bags &amp; Gifts&nbsp;·&nbsp; Ceremonial Items&nbsp;·&nbsp;
-            NRI Wedding Shopping&nbsp;·&nbsp; Indian Wedding Outfits US Delivery&nbsp;·&nbsp;
+            NRI Wedding Shopping&nbsp;·&nbsp; Indian Wedding Outfits USA &amp; Canada Delivery&nbsp;·&nbsp;
             Live Video Shopping India&nbsp;·&nbsp; South Asian Wedding Concierge&nbsp;·&nbsp;
             Philadelphia Indian Wedding Concierge&nbsp;·&nbsp;
-            Serving NRI families across all US states
+            Serving NRI families across all U.S. states, Washington D.C., and every Canadian province and territory
           </p>
         </div>
       </div>

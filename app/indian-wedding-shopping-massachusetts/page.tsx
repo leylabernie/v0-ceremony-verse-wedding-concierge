@@ -1,16 +1,17 @@
 import Link from "next/link";
+import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-massachusetts/",
   title: "Indian Wedding Shopping from India — Massachusetts",
-  description: "Boston and Massachusetts families can source Indian wedding outfits from India with live review, custom stitching, pre-shipping review, and delivery coordination.",
+  description: "Boston and Massachusetts families can research Indian wedding outfits from India with eligible live review, written approvals, available pre-shipping review, and delivery coordination.",
   keywords: "Indian wedding shopping Massachusetts, Boston bridal lehenga, Indian wedding outfits Boston MA, NRI wedding concierge Massachusetts, buy Indian wedding outfits Massachusetts, Indian wedding shopping Boston, Indian bridal wear Boston",
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Massachusetts Indian Wedding Sourcing Service",
-  description: "Indian wedding outfit sourcing for NRI families in Massachusetts and the greater Boston area — with live video shopping from India and doorstep delivery.",
+  description: "Indian wedding outfit sourcing for families in Massachusetts and the greater Boston area with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-massachusetts/",
   areaServed: "Boston, MA — Greater Boston Area, Cambridge, Somerville, Burlington, Waltham, Shrewsbury, Worcester, Framingham, Quincy, Newton, Brookline, Malden, Woburn, Marlborough, Lowell, Springfield",
 });
@@ -44,6 +45,8 @@ export default function MassachusettsPage() {
         </Link>
       </section>
 
+      <NorthAmericaCoverage guideName="Massachusetts" />
+
       {/* Why Massachusetts */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
@@ -54,7 +57,7 @@ export default function MassachusettsPage() {
             {[
               {
                 title: "Real people, not a faceless website",
-                desc: "CeremonyVerse is a US-based service shaped by firsthand family wedding experience. When you book a consultation, you reach an organized family-side contact—not a call-center script—and receive clear next steps for the agreed sourcing scope.",
+                desc: "CeremonyVerse is a U.S.-based service serving families across the United States and Canada. When you book a consultation, you reach an organized family-side contact—not a call-center script—and receive clear next steps for the agreed sourcing scope.",
               },
               {
                 title: "Boston's Indian community is thriving",
@@ -65,8 +68,8 @@ export default function MassachusettsPage() {
                 desc: "Massachusetts families can compare local boutique options with a documented India-sourcing path. CeremonyVerse organizes item references, approvals, measurements, outside costs, and available vendor terms so the family can evaluate both options on a comparable basis.",
               },
               {
-                title: "U.S.-based consultation times",
-                desc: "CeremonyVerse operates on Eastern Time and offers scheduled consultations for U.S. families. Response timing and any time-sensitive order steps are confirmed for the selected service rather than promised universally.",
+                title: "North America consultation times",
+                desc: "CeremonyVerse operates on Eastern Time and offers scheduled consultations for U.S. and Canadian families. Response timing and any time-sensitive order steps are confirmed for the selected service rather than promised universally.",
               },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -284,7 +287,7 @@ export default function MassachusettsPage() {
             <Link href="/how-it-works/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
           <p style={{ fontSize: "12px", letterSpacing: "0.18em", textTransform: "uppercase", fontWeight: 600, color: "#7a6841", marginBottom: "10px" }}>
-            Serving Indian-American brides across the US
+            Serving families across the USA and Canada
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
             <Link href="/indian-wedding-shopping-philadelphia/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Philadelphia</Link>

@@ -4,13 +4,13 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/buy-sherwani-from-india-usa/",
-  title: "Buy Sherwani from India \u2014 Groom Sherwani Delivered to USA",
-  description: "Source a custom groom sherwani directly from India \u2014 fabric options, fit guidance, live video shopping, and delivery to your US door. Coordinated groomsmen outfits available."
+  title: "Buy Sherwani from India — Delivery to USA & Canada",
+  description: "Research groom sherwanis from India with documented options, fit guidance, eligible live review, and delivery coordination across the USA and Canada."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Groom Sherwani Sourcing & Concierge",
-  description: "Custom groom sherwani sourcing directly from India \u2014 fabric selection, fit guidance, live video shopping, coordinated groomsmen outfits, and US delivery.",
+  description: "Groom sherwani sourcing from India with documented options, fit guidance, eligible live review, coordinated groomsmen outfits, and delivery support across the United States and Canada.",
   url: "/buy-sherwani-from-india-usa/",
 });
 
@@ -32,11 +32,11 @@ export default function SherwaniPage() {
         <div className="max-w-4xl mx-auto">
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
-            Buy Sherwani from India (Delivered to USA)
+            Buy Sherwani from India (USA &amp; Canada)
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Get groom outfits sourced directly from skilled designers in India — with guided video shopping, custom sizing, and secure delivery.
+            Research groom outfits from India with eligible live video review, vendor-specific sizing guidance, written approvals, and tracked-delivery coordination across the United States and Canada.
           </p>
 
         </div>

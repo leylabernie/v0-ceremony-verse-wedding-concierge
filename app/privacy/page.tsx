@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">CeremonyVerse · Privacy</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Privacy Notice</h1>
-          <p className="mt-5 text-sm text-white/70">Last updated: August 9, 2026</p>
+          <p className="mt-5 text-sm text-white/70">Last updated: August 10, 2026</p>
         </div>
       </section>
 
@@ -41,6 +41,7 @@ export default function PrivacyPage() {
           <p className={paragraphClass}>Depending on how you use the service, you may provide:</p>
           <ul className={listClass}>
             <li>Name, email address, phone or WhatsApp number, and referral source.</li>
+            <li>Home country or region and delivery destination when relevant to the requested service.</li>
             <li>Wedding timeframe, destination, guest and event estimates, travel origins, and budget range.</li>
             <li>Priorities, cultural or dietary requirements, sourcing needs, and other details you choose to share.</li>
             <li>Communications, approvals, measurements, addresses, and transaction records if you become a client.</li>
@@ -124,6 +125,10 @@ export default function PrivacyPage() {
             <a href="https://www.edpb.europa.eu/sme/be-compliant/respect-individuals-rights_en" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
               European Data Protection Board
             </a>
+            , and Canadian privacy information is available from the{" "}
+            <a href="https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+              Office of the Privacy Commissioner of Canada
+            </a>
             . Those resources do not mean every law applies to every request.
           </p>
         </section>
@@ -135,6 +140,11 @@ export default function PrivacyPage() {
             service. No internet transmission or storage method can be guaranteed completely secure. Service providers
             and wedding vendors may process information in the United States, India, Mexico, the Dominican Republic,
             or other places relevant to the selected service.
+          </p>
+          <p className={paragraphClass}>
+            Links to resorts, carriers, insurers, payment services, government resources, and other third-party sites
+            are provided for convenience or project administration. Those services have their own terms and privacy
+            practices; CeremonyVerse does not control their websites or promise their availability, security, or content.
           </p>
         </section>
 

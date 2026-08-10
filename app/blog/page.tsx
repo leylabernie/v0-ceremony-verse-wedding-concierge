@@ -46,7 +46,7 @@ const posts = [
   {
     slug: "indian-wedding-return-gifts-bulk-usa",
     title: "How to Source and Ship Unique Indian Wedding Return Gifts to the USA in Bulk",
-    description: "Source 100+ unique wedding favors directly from India — potli bags, brass diyas, block-print linen, and resin coasters — without massive shipping bills or US customs seizures.",
+    description: "Compare Indian wedding favor options, quantities, packaging, shipping, and import costs before approving a bulk order for the United States or Canada.",
     date: "June 2026",
   },
   {
@@ -238,7 +238,7 @@ export default function BlogIndexPage() {
             Not sure where to start?
           </p>
           <p style={{ fontSize: "0.9rem", color: "#4d403a", lineHeight: 1.7, marginBottom: "1.25rem" }}>
-            Every guide above comes from real experience dressing NRI families across the US. When you&apos;re ready to move from reading to doing, we&apos;re here.
+            These guides are planning resources for families across the United States and Canada. When you&apos;re ready to move from reading to a documented service scope, we&apos;re here.
           </p>
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

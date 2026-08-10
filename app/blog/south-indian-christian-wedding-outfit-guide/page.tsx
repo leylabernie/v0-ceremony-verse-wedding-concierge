@@ -173,7 +173,7 @@ export default function SouthIndianChristianWeddingGuide() {
             <strong>For the reception:</strong> Families differ here. Some grooms transition to a <strong>sherwani</strong> for the reception, particularly if there is a traditional South Indian element to the evening. Others remain in the suit. In families with strong Kerala Christian roots, a <strong>mundu with gold kasavu border</strong> (veshti and angavastram) is sometimes worn for the reception — a dignified nod to heritage.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Groomsmen typically mirror the groom&apos;s church look in coordinating suits, with shared ties or accessories. As with bridesmaids, coordinating a group of groomsmen from across the US requires collecting measurements and making decisions early.
+            Groomsmen typically mirror the groom&apos;s church look in coordinating suits, with shared ties or accessories. As with bridesmaids, coordinating a group across the United States or Canada requires collecting measurements and making decisions early.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

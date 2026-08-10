@@ -40,9 +40,16 @@ const calculatorTools = [
     href: "/planning-tools/guest-logistics/",
     cta: "Calculate Guest Costs",
   },
+  {
+    title: "Shipping & Customs Calculator",
+    description: "Estimate the USD landed cost of India-sourced items for delivery across the United States or Canada.",
+    href: "/planning-tools/shipping-customs/",
+    cta: "Calculate Landed Cost",
+  },
 ]
 
 const localServiceAreas = [
+  { label: "All Canada", href: "/indian-wedding-shopping-canada/" },
   { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
   { label: "Washington DC & DMV", href: "/indian-wedding-shopping-washington-dc/" },
   { label: "New York", href: "/indian-wedding-shopping-new-york/" },
@@ -60,7 +67,7 @@ const servicePillars = [
     label: "India shopping & sourcing",
     title: "Wedding wardrobes and essentials, organized remotely",
     description:
-      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process—without requiring your family to travel to India.",
+      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process, with remote service across the United States and Canada.",
     features: [
       "Bride, groom, wedding-party, and family outfits",
       "Jewelry, gifts, welcome-bag items, and ceremony essentials",
@@ -107,7 +114,7 @@ const processSteps = [
     number: "04",
     title: "Inspect, ship, and track",
     description:
-      "We coordinate the pre-shipping review, packing, documentation, carrier handoff, and tracking through delivery to your US address.",
+      "We coordinate the applicable pre-shipping review, packing, documents, carrier handoff, and available tracking for delivery across the United States or Canada.",
   },
 ]
 
@@ -188,14 +195,15 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              India shopping · Destination-wedding planning
+              Serving families across the United States &amp; Canada
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Destination-wedding support for Gujarati and Hindu families
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
               CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana, with
-              planning, on-site coordination, family organization, guest details, and optional wedding sourcing from India.
+              planning, on-site coordination, family organization, guest details, and optional India sourcing for
+              families anywhere in the United States or Canada.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -220,7 +228,7 @@ export function HomePage() {
 
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-6">
         <div className="mx-auto grid max-w-6xl gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
-          <p>US phone, email & accountability</p>
+          <p>USA &amp; Canada remote service</p>
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
           <p>Private scope defined before paid work</p>
@@ -236,7 +244,7 @@ export function HomePage() {
               Enter your own quotes and assumptions. CeremonyVerse does not insert a universal package price or require contact information to show the result.
             </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {calculatorTools.map((tool) => (
               <article key={tool.href} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-7 sm:p-8">
                 <h3 className="font-serif text-2xl font-semibold !text-white">{tool.title}</h3>
@@ -326,8 +334,8 @@ export function HomePage() {
               One organized shopping process for the whole wedding wardrobe
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              The service is built for families who want India&apos;s selection but need a reliable US-based
-              point of contact to organize decisions, approvals, measurements, and shipping.
+              The service is built for U.S. and Canadian families who want India&apos;s selection but need one
+              U.S.-based contact to organize decisions, approvals, measurements, and shipping responsibilities.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -345,17 +353,17 @@ export function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-10 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Local shopping guides
+              North America service coverage
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Indian wedding shopping support for families across the U.S.
+              Indian wedding shopping support across the U.S. and Canada
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              CeremonyVerse works remotely from its U.S. base. Choose your state or metro guide for
-              local context, service details, and the same documented India-shopping process.
+              CeremonyVerse works remotely with families in all 50 states, Washington, D.C., and every Canadian
+              province and territory. The links below provide local context; they do not limit service coverage.
             </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
             {localServiceAreas.map((area) => (
               <Link
                 key={area.href}
@@ -469,8 +477,8 @@ export function HomePage() {
               Choose how much help you need
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              Item costs, shipping, and customs are separate. They are shown in writing before you
-              approve a purchase.
+              Service fees are shown in USD. Products, shipping, insurance, U.S. or Canadian import charges,
+              brokerage, and local alterations are separate and shown in writing before purchase approval.
             </p>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
