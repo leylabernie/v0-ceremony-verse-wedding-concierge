@@ -391,20 +391,18 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            How CeremonyVerse Eliminates Remote Sizing Risks
+            How CeremonyVerse Helps Reduce Remote Sizing Risk
           </h2>
 
           <p>
-            You should never have to cross your fingers and hope your wedding
-            outfit fits when you unbox it. A sherwani is too expensive and too
-            important to leave to chance — and a poorly fitted sherwani is
-            visible from across the mandap. CeremonyVerse removes the
-            guesswork by providing an on-the-ground digital concierge service.
+            Remote made-to-measure clothing can still need adjustment.
+            CeremonyVerse helps document the selected vendor&apos;s measurement
+            requirements and approvals while preserving a local-fitting and
+            alteration plan.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
-            Here is how we protect grooms sourcing their attire directly from
-            India:
+            Here is how the available process can reduce recording and coordination risk:
           </p>
 
           <div
@@ -426,16 +424,14 @@ export default function CustomSherwaniSizingGuideBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Live Sizing Audits
+              Documented Measurement Review
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We do not just pass your numbers to a workshop. Our team hosts a
-              live, 3-way video call with you and an expert Indian Master
-              Tailor (Masterji). We visually verify how your measurements are
-              taken to reduce avoidable recording errors. The tailor watches you on
-              camera, corrects your posture, tells you where exactly to place
-              the tape, and confirms each measurement before it is recorded.
-              This step creates a clearer measurement record, but it cannot guarantee fit.
+              Use the measurement chart required by the selected vendor and
+              have a qualified local tailor help when appropriate. Eligible
+              tiers may include a scheduled review of the completed chart and
+              written approval before production. This can reduce recording
+              errors but cannot guarantee fit.
             </p>
           </div>
 
@@ -461,13 +457,11 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               Fabric and Embroidery Inspection
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We visit premium menswear designers and artisan hubs in India on
-              your behalf. Via high-definition video, we show you the fabric
-              weight, lining quality, and the precision of the hand-embroidery
-              (Zardozi or Chikankari). We drape the fabric over a mannequin so
-              you can see exactly how it falls — and we hold it up to natural
-              daylight so the true color comes through, not the
-              over-saturated studio color.
+              Ask for current media and written representations for the
+              selected fabric, lining, embroidery, color, and construction.
+              Eligible live review may add evidence when the vendor and item
+              allow it, but screen color and video do not prove every material
+              or handwork claim.
             </p>
           </div>
 
@@ -493,13 +487,11 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               The Pre-Shipment Fitting Check
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Before your sherwani is packed and shipped to the US, our team
-              physically places the garment on a custom-adjusted mannequin in
-              India. We measure the finished piece against your profile to
-              compare visible dimensions with the approved measurement record. For eligible
-              tiers, we share available media before shipment so you can review the drape,
-              shoulder line, and sleeve length. Any correction or alteration remedy follows
-              the applicable signed terms.
+              Eligible tiers may include available finished-item media or
+              another documented pre-shipping check when the vendor and item
+              allow it. Compare the evidence with the approved order record.
+              Any correction, alteration, replacement, or refund follows the
+              applicable signed terms.
             </p>
           </div>
 
@@ -591,7 +583,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               }}
             >
               Get the elite look of premium Indian designers without the
-              expensive US boutique markups. Book a free 30-minute consultation
+              complete written local and remote quotes. Request a consultation
               — we&apos;ll walk you through the 5 critical measurements, the
               fabric choice for your wedding climate, and a transparent price
               breakdown.

@@ -29,13 +29,13 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          South Indian Christian Wedding Specialists
+          Family-Led Outfit Sourcing
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           South Indian Christian Wedding Outfits — Church, Reception, and Family Looks Managed from India to the USA
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          South Indian Christian weddings carry a distinctive elegance — blending church traditions with the rich textile heritage of Kerala and Tamil Nadu. CeremonyVerse understands exactly what each ceremony calls for, from the church procession saree to the reception outfit, and sources everything directly from India.
+          Your family and officiants define the church, reception, regional, and clothing requirements. CeremonyVerse can organize the approved outfit brief, vendor options, measurements, written decisions, and U.S. delivery plan without claiming cultural or religious authority.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -55,12 +55,12 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Church Ceremony Bridal Saree", desc: "The church wedding calls for a bridal saree in white, cream, or soft pastels — a departure from the bold reds of Hindu ceremonies. Kerala Christian brides often wear a kasavu saree with gold border, while Tamil Christian brides may choose a Kanchipuram silk in ivory or blush." },
-              { title: "Set Mundu & Kasavu", desc: "For Kerala Christian families, the traditional set mundu (white with gold kasavu border) is central to the wedding aesthetic. Grooms often wear a matching mundu and shirt. We source authentic handwoven kasavu sets directly from Kerala weavers." },
-              { title: "Reception Outfits", desc: "The reception is where South Indian Christian families often embrace bolder colors — jewel-toned sarees, embroidered lehengas, or contemporary Indo-Western looks. We source both the formal church outfit and the celebratory reception look." },
-              { title: "Bridesmaids Coordination", desc: "Bridesmaids at South Indian Christian weddings are often coordinated in matching sarees or churidars — typically in pastels or complementary shades. We collect all measurements and source matching sets from a single artisan partner to ensure perfect color consistency." },
-              { title: "Mother & Aunty Sarees", desc: "Kanchipuram silk sarees are the go-to for mothers, aunties, and senior family members. We source directly from Kanchipuram — the only place where authentic Kanchipuram silk is woven — ensuring pure zari and genuine silk." },
-              { title: "Kerala & Tamil Traditions", desc: "Kerala Christian (Syro-Malabar, Latin Catholic, Marthoma) and Tamil Christian families each have nuanced traditions. We understand these differences and source outfits that honor your specific community's heritage." },
+              { title: "Church Ceremony Bridal Saree", desc: "Document the family's approved color, fabric, weave, blouse, veil, jewelry, modesty, and church requirements before reviewing options." },
+              { title: "Set Mundu & Kasavu", desc: "If your family requests a set mundu or kasavu look, record the required material, border, construction, quantity, and authenticity evidence in the sourcing brief." },
+              { title: "Reception Outfits", desc: "Build a separate approved brief for sarees, lehengas, suits, or Indo-Western reception looks rather than assuming the church and reception requirements are the same." },
+              { title: "Wedding-Party Coordination", desc: "Coordinate written color references, measurements, quantities, approvals, and alteration allowance. Handmade dye lots and screen colors cannot be guaranteed identical." },
+              { title: "Family Sarees", desc: "Research sarees for parents and relatives only after the family identifies the preferred region, weave, material, budget, and event." },
+              { title: "Community-Specific Requirements", desc: "CeremonyVerse translates your family's approved requirements into an item brief. Your family and officiants remain the authority on Syro-Malabar, Latin Catholic, Marthoma, Tamil Christian, or other customs." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
@@ -75,17 +75,17 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
       <section style={{ padding: "48px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "24px" }}>
-            Our experience with South Indian Christian weddings
+            Family authority comes first
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse has dressed South Indian Christian families in Philadelphia — understanding exactly what each ceremony calls for, from the church procession to the reception. We know that a Kerala Christian wedding saree isn't the same as a Tamil Christian one, and that the outfit expectations for a Syro-Malabar ceremony differ from a Latin Catholic celebration.
+              CeremonyVerse does not present one South Indian Christian community&apos;s clothing customs as universal and does not claim religious authority. The family and officiants approve the ceremony plan and clothing requirements.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Our artisan partners in Kanchipuram, Kochi, and Chennai specialize in the textiles that define South Indian Christian weddings — kasavu cotton and silk for Kerala families, Kanchipuram silk for Tamil families, and contemporary blended pieces for the reception. Every saree is handwoven, every blouse custom stitched to your measurements.
+              CeremonyVerse then organizes the requested item research, available vendor evidence, measurements, written approvals, shipment estimate, and applicable terms. No weave, material, handwork, customization, or origin claim is made without support for the selected item.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              We also handle the details that make coordination seamless: matching bridesmaids sarees or churidars, coordinated outfits for the groom's family, and Kanchipuram silk sarees for mothers and grandmothers. One point of contact, one managed process, delivered to your US door.
+              Group coordination is available within the selected tier or custom written scope. Vendor capacity, handmade variation, local alteration needs, carrier service, and customs timing still apply.
             </p>
           </div>
         </div>
@@ -100,9 +100,9 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your South Indian Christian wedding — the ceremonies, your outfit vision, and your family's specific traditions. No obligation." },
-              { tier: "Style Guide", price: "$249", desc: "A curated lookbook covering church ceremony, reception, and family outfits — with specific textile recommendations for Kerala or Tamil Christian traditions." },
-              { tier: "Guided Sourcing", price: "$799", desc: "The best-value hands-on tier for live video selection, measurement guidance, managed ordering, and pre-shipping inspection of key outfits." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management — bride, groom, bridesmaids, groomsmen, parents, and family. Church ceremony and reception outfits all coordinated and delivered." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -138,7 +138,7 @@ export default function SouthIndianChristianWeddingOutfitsPage() {
             Outfits that honor your traditions
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Kerala kasavu, Tamil Kanchipuram, church ceremony sarees, and reception looks &mdash; sourced directly from India for your South Indian Christian wedding.
+            Discuss family-approved kasavu, Kanchipuram, church-ceremony, reception, and wedding-party requirements in one documented consultation.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

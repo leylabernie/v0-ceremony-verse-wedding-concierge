@@ -29,13 +29,13 @@ export default function GujaratiWeddingOutfitsPage() {
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.22em", textTransform: "uppercase", color: "#7a6841", marginBottom: "14px", fontWeight: 500 }}>
-          Gujarati Wedding Specialists
+          Gujarati Wedding Outfit Planning
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
           Gujarati Wedding Outfits for Every Event — Sourced in India, Coordinated Across the USA
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          A Gujarati wedding is a multi-day celebration with distinct outfit requirements for each ceremony — from Garba night to Saptapadi. CeremonyVerse has deep experience dressing Gujarati families across multiple ceremonies. We source authentic chaniya cholis, bridal lehengas, sherwanis, and coordinated family outfits directly from India.
+          Organize chaniya cholis, bridal lehengas, sherwanis, sarees, and coordinated family outfits around the ceremonies and requirements your Gujarati family approves. The process documents each item, measurement, cost, and decision without treating one family&apos;s traditions as universal.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -55,12 +55,12 @@ export default function GujaratiWeddingOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Garba Night — Chaniya Choli", desc: "The Garba is the heart of a Gujarati wedding celebration. We source vibrant, mirror-work chaniya cholis from Kutch and Jaipur — designed for spinning and dancing, with the right flare and weight for movement." },
-              { title: "Mehndi Ceremony", desc: "Bright, festive outfits in yellows, greens, and oranges. Comfortable enough for sitting through mehndi application, yet photo-ready. Coordinated pieces for the bridal party sourced together." },
-              { title: "Haldi / Pithi Ceremony", desc: "Simple, cheerful outfits — often in yellow or light colors — designed to handle the turmeric paste. We source cotton and georgette pieces that are beautiful yet practical for this joyful ritual." },
-              { title: "Mameru Ceremony", desc: "The Mameru is a cherished Gujarati tradition where the maternal uncle gifts the bride her wedding outfit and trousseau. We help source the traditional saree or lehenga for this ceremony, ensuring it honors the significance of the occasion." },
-              { title: "Saptapadi — Bridal Lehenga", desc: "The main wedding ceremony demands a statement bridal lehenga — rich reds, maroons, or pinks with heavy embroidery and traditional Gujarati motifs. Custom stitched to perfection by our artisan partners." },
-              { title: "Reception & Family Outfits", desc: "Coordinated sarees, lehengas, and sherwanis for the reception and family photographs. We manage measurements across the entire family — both sides — and deliver everything together." },
+              { title: "Garba Night — Chaniya Choli", desc: "Document the family's preferred colors, mirror work, fabric weight, flare, and movement requirements before reviewing available options." },
+              { title: "Mehndi Ceremony", desc: "Use the family's approved color palette, comfort needs, and wedding-party plan to build a clear item brief." },
+              { title: "Haldi / Pithi Ceremony", desc: "Identify the preferred colors, fabrics, reuse expectations, quantities, and budget for the selected ceremony plan." },
+              { title: "Mameru Ceremony", desc: "Your family defines the tradition and gift requirements. CeremonyVerse can translate the approved saree, lehenga, or trousseau request into a sourcing brief." },
+              { title: "Wedding Ceremony — Bridal Look", desc: "Record the approved silhouette, colors, fabric, handwork, ceremony requirements, budget, and alteration buffer before purchase." },
+              { title: "Reception & Family Outfits", desc: "Coordinate written style references, measurements, approvals, and order records for reception and family looks within the selected scope." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
@@ -75,17 +75,17 @@ export default function GujaratiWeddingOutfitsPage() {
       <section style={{ padding: "48px 24px" }}>
         <div style={{ maxWidth: "680px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "24px" }}>
-            Our experience with Gujarati weddings
+            A family-led Gujarati outfit process
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              CeremonyVerse has dressed Gujarati families for multi-day weddings — including a destination wedding in Mexico — sourcing everything from Garba chaniya cholis to bridal lehengas to coordinated family outfits. We have even made a special trip to Kanchipuram to source pure Kanchipuram silk sarees for a Gujarati family who wanted the finest silk for the mothers and aunties.
+              CeremonyVerse is designed to organize multi-event outfit decisions without presenting family celebrations as professional client case studies. You provide the approved ceremony plan, clothing requirements, quantities, and priorities.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              We understand that a Gujarati wedding isn't one outfit — it's six or seven. Each ceremony has its own palette, its own formality level, and its own cultural significance. The Garba chaniya choli needs to move with you. The Mameru saree needs to honor tradition. The bridal lehenga needs to take everyone's breath away. We source each piece with that understanding.
+              We turn those decisions into one sourcing record covering item references, measurements, budget, vendor options, written approvals, shipping estimates, and alteration time. Your family and officiants remain the authority on traditions.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Our artisan partners in Surat, Jaipur, Delhi, and Kanchipuram specialize in exactly the kind of craftsmanship Gujarati celebrations demand — intricate mirror work, bandhani, gota patti, and heavy zardozi embroidery. Every outfit is custom stitched to your measurements and delivered to your US address.
+              Our strongest stated working relationships are in Surat and Delhi. Other locations or vendors are considered only when the requested product, documentation, capacity, and terms can be responsibly reviewed. Customization and delivery are confirmed for the selected item rather than promised universally.
             </p>
           </div>
         </div>
@@ -100,9 +100,9 @@ export default function GujaratiWeddingOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your Gujarati wedding, the ceremonies planned, and your outfit vision. We'll share how we can help — no obligation." },
-              { tier: "Style Guide", price: "$249", desc: "A curated lookbook covering every ceremony — Garba, Mehndi, Pithi, Mameru, Saptapadi, and Reception — with specific outfit recommendations." },
-              { tier: "Guided Sourcing", price: "$799", desc: "The best-value hands-on tier for live video selection, measurement guidance, managed ordering, and pre-shipping inspection of key outfits." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management for every ceremony and the core wedding party. Bride, groom, bridesmaids, groomsmen, parents, and family — all coordinated." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -140,7 +140,7 @@ export default function GujaratiWeddingOutfitsPage() {
             Every ceremony, every outfit
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Garba chaniya choli, Mameru saree, Saptapadi lehenga, reception looks &mdash; sourced from India for your multi-day Gujarati wedding, all delivered to your US door.
+            Discuss Garba, Mameru, wedding-ceremony, reception, and family outfit requirements in one documented consultation. Vendor, item, customization, shipping, and customs terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

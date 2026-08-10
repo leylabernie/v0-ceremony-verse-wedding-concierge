@@ -53,20 +53,20 @@ export default function FloridaPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
             {[
               {
-                title: "Florida&apos;s Indian community is booming",
-                desc: "Florida is now one of the fastest-growing states for Indian-American families &mdash; from the tech corridors of Tampa and Orlando to the cultural hub of South Florida. With that growth comes more Indian weddings, more demand for authentic outfits, and more families realizing that local boutique options are limited and overpriced.",
+                title: "Remote sourcing for Florida families",
+                desc: "Families across South Florida, Orlando, Tampa, Jacksonville, and other Florida communities can compare local shopping with a documented remote sourcing process. Availability, price, fit services, and return terms vary by seller.",
               },
               {
-                title: "Very few Indian wedding boutiques in Florida",
-                desc: "Unlike New Jersey or California, Florida doesn&apos;t have a dense corridor of Indian wedding boutiques. The handful of shops that exist carry limited inventory, and ordering custom pieces means either traveling out of state or ordering online from India &mdash; where scams, wrong sizing, and quality issues are common. CeremonyVerse eliminates all of that.",
+                title: "Compare local and remote options",
+                desc: "Florida families can compare local boutique options with a documented India-sourcing path. CeremonyVerse organizes item references, approvals, measurements, outside costs, and available vendor terms so the family can evaluate both options on a comparable basis.",
               },
               {
                 title: "Humidity-ready fabric guidance",
-                desc: "Florida&apos;s tropical climate demands smart fabric choices. Heavy velvets and layered dupion silk that work in a Delhi winter can be unbearable at a June wedding in Miami. We advise on breathable fabrics &mdash; lighter georgette, chiffon, and cotton-silk blends &mdash; that look stunning in photos without melting the wedding party.",
+                desc: "For outdoor or non-air-conditioned events, document the venue, season, ceremony activity, comfort needs, care instructions, and family preferences before comparing fabric options.",
               },
               {
                 title: "Florida is a destination wedding capital",
-                desc: "Families from across the US and India choose Florida for destination weddings &mdash; beachside mandaps in the Keys, luxury resorts in Orlando, garden venues in Coral Gables. Whether you&apos;re a Florida local or flying in for your own destination celebration, we coordinate outfits and delivery timelines so everything arrives on schedule.",
+                desc: "For a Florida destination wedding, record the final delivery address, receiving contact, storage plan, carrier estimate, customs responsibilities, fitting buffer, and backup option. Delivery timing is not guaranteed.",
               },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -86,10 +86,10 @@ export default function FloridaPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              Everything starts with a free 30-minute consultation. You tell us about your wedding &mdash; ceremonies, party size, timeline, budget, and your Florida venue. We tell you honestly what&apos;s achievable and which service tier fits. No sales pressure, no inflated promises. Because we serve EST clients, you can schedule consultations around your schedule &mdash; evenings, weekends, whatever works.
+              Everything starts with a free 30-minute consultation. You tell us about your wedding &mdash; ceremonies, party size, timeline, budget, and your Florida venue. We review the available service tiers, item requirements, and timing without requiring payment for the call.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              From there, we set up live video shopping sessions with our team in India. You see actual outfits &mdash; fabric, embroidery, color in natural light &mdash; and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Florida address.
+              Depending on the selected tier and item, the process may include live video review or current item media, measurement and custom-order coordination, written approvals, available pre-shipping review, and tracked-delivery support. The written quote identifies the vendor, item, service scope, shipment estimate, and terms before paid work begins.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Florida weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
@@ -105,7 +105,7 @@ export default function FloridaPage() {
             Serving Families Across Florida
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            We deliver to your door anywhere in Florida.
+            Florida service areas to discuss with the selected vendor and carrier.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {["Miami", "Orlando", "Tampa", "Jacksonville", "Fort Lauderdale", "West Palm Beach", "Boca Raton", "Coral Gables", "Sarasota", "Naples", "Gainesville", "Tallahassee", "St. Petersburg", "Melbourne", "Daytona Beach", "Fort Myers", "Pensacola", "Lakeland", "Hollywood", "Kissimmee"].map((loc) => (
@@ -136,9 +136,9 @@ export default function FloridaPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help &mdash; no obligation." },
-              { tier: "Style Guide &amp; Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
-              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party &mdash; every ceremony, every outfit, every family member. Dedicated coordinator." },
+              { tier: "Style Guide &amp; Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#fff", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -163,22 +163,22 @@ export default function FloridaPage() {
             {[
               {
                 q: "Do you ship to all of Florida, including the Panhandle and Keys?",
-                a: "Yes. We deliver via DHL or FedEx to any Florida address &mdash; from Pensacola to the Florida Keys. Delivery typically takes 3-5 business days once shipped from India. We coordinate with you on timing so outfits arrive well before your wedding events.",
+                a: "CeremonyVerse can coordinate delivery to an eligible Florida address when the selected vendor and carrier can serve it. The written quote identifies the carrier, service level, shipping estimate, customs responsibilities, and tracking plan. Carrier and customs dates are not guaranteed.",
               },
               {
-                q: "What fabrics work best for Florida&apos;s heat and humidity?",
-                a: "Great question &mdash; and one most out-of-state concierges won&apos;t think to ask. For outdoor or non-air-conditioned Florida venues, we recommend lighter fabrics like georgette, chiffon, net, and cotton-silk blends. For air-conditioned ballrooms, you can go heavier &mdash; raw silk, velvet, and brocade. We help you match fabric weight to your specific venue and season.",
+                q: "How should we choose fabrics for Florida heat and humidity?",
+                a: "Document whether the event is indoors or outdoors, the season, ceremony activity, comfort and mobility needs, care instructions, and the family's preferences. Compare the selected fabric's weight and construction rather than applying a universal rule.",
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Florida?",
                 a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Florida or out-of-state options.",
               },
               {
-                q: "We&apos;re planning a destination wedding in Florida &mdash; can you coordinate delivery to a hotel or resort?",
-                a: "Absolutely. We regularly ship to wedding venues and resort hotels across Florida &mdash; Orlando resorts, Miami beach hotels, Tampa convention venues. We track the shipment and confirm delivery with your venue coordinator so you don&apos;t have to worry about logistics during your wedding week.",
+                q: "Can you coordinate delivery to a Florida hotel or resort?",
+                a: "When the selected vendor, carrier, property, and written scope allow it, CeremonyVerse can document the receiving address, contact, hours, storage, tracking, customs responsibilities, and claim process. The property and carrier control acceptance and timing.",
               },
               {
-                q: "I live in Atlanta but we&apos;re getting married in Florida. Can you help?",
+                q: "I live in Atlanta but we're getting married in Florida. Can you help?",
                 a: "We can discuss delivery to an eligible home or venue address. Carrier service, customs timing, venue receiving policies, and the need for an in-person recipient must be confirmed before shipment.",
               },
             ].map((faq, index) => (
@@ -202,7 +202,7 @@ export default function FloridaPage() {
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             From Miami beachfront bridal lehengas to Tampa Telugu muhuratam sarees &mdash; one concierge,
-            every ceremony, every outfit delivered to your Florida door.
+            organize the in-scope outfits, approvals, and delivery responsibilities for your Florida address.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
@@ -236,7 +236,7 @@ export default function FloridaPage() {
             Florida families deserve better than limited boutique options.
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Book a free 30-minute consultation. We&apos;ll review your wedding vision, timeline, and budget &mdash; and recommend exactly what level of support you need. No commitment, no pressure.
+            Book a free 30-minute consultation. We&apos;ll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

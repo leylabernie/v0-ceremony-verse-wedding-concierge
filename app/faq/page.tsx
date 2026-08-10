@@ -219,13 +219,13 @@ export default function FAQPage() {
                 When should I start?
               </h3>
               <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
-                <p>Ideal timeline is 6-8 months before your event.</p>
+                <p>Start with the event date and work backward from a current written vendor estimate.</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Consultation and design: 2-3 weeks</li>
-                  <li>Fabric sourcing and approval: 3-4 weeks</li>
-                  <li>Production: 6-10 weeks</li>
-                  <li>Quality inspection: 1 week</li>
-                  <li>Shipping: 2-3 weeks</li>
+                  <li>Record item requirements and decision deadlines</li>
+                  <li>Confirm vendor availability and production estimate</li>
+                  <li>Allow time for documented approvals and any customization</li>
+                  <li>Include carrier, customs, first-fitting, and alteration buffers</li>
+                  <li>Treat every date as an estimate until the responsible provider confirms it</li>
                 </ul>
               </div>
             </div>

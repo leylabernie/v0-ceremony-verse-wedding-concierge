@@ -5,12 +5,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/services/bridal-lehengas/",
   title: "Bridal Lehenga Sourcing Service \u2014 Custom Bridal Lehengas from India",
-  description: "Bridal lehenga sourcing from India with live video review, guided measurements, pre-shipping quality checks, and US delivery support."
+  description: "Bridal lehenga sourcing from India with guided measurements, documented approvals, available pre-shipping review, and US delivery support."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Bridal Lehenga Sourcing Service",
-  description: "Bridal lehenga sourcing from India with live video review, guided measurements, pre-shipping quality checks, and US delivery support.",
+  description: "Bridal lehenga sourcing from India with guided measurements, documented approvals, available pre-shipping review, and US delivery support.",
   url: "/services/bridal-lehengas/",
 });
 
@@ -28,7 +28,7 @@ export default function BridalLehengaServicePage() {
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
         <p style={{ fontSize: "17px", letterSpacing: "0.2em", textTransform: "uppercase", color: "#7a6841", marginBottom: "16px" }}>Bridal Lehenga Sourcing</p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.5rem, 5vw, 3.5rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.15, marginBottom: "24px" }}>
-          Your dream bridal lehenga, sourced from India and delivered to your US door.
+          Research a bridal lehenga from India with documented options, approvals, and U.S. delivery coordination.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
           CeremonyVerse helps US-based brides research and source bridal lehengas from India. Depending on your selected tier and vendor, we coordinate live video reviews, measurements, written approvals, pre-shipping checks, and delivery tracking.

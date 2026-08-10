@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
 
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Guest Outfit Sourcing",
-  description: "Indian wedding guest outfits sourced from India \u2014 sarees, anarkalis, lehengas, and kurtas for men and women, with custom stitching and US delivery.",
+  description: "Indian wedding guest outfit research and sourcing for sarees, anarkalis, lehengas, and kurtas, with documented options and U.S. delivery coordination.",
   url: "/indian-wedding-guest-outfits-usa/",
 });
 
@@ -34,7 +34,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           Indian Wedding Guest Outfits from India — For NRI Families in the USA
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          Attending an Indian wedding in the US and need the perfect outfit? We source lehengas, sarees, anarkalis, sharara sets, and sherwanis directly from India — live video shopping, custom stitched to your measurements, and delivered to your door.
+          Research lehengas, sarees, anarkalis, sharara sets, and sherwanis through a documented India-sourcing process. Eligible live review, customization, and delivery depend on the selected item and vendor.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -54,9 +54,9 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Limited Selection at US Boutiques", desc: "Most Indian boutiques in the US carry a narrow range of styles, colors, and sizes. You end up choosing from whatever's available — not what actually suits you or the occasion." },
-              { title: "High Markups on Imported Pieces", desc: "Outfits sold through US-based stores carry significant markups — often 2–3x what you'd pay sourcing directly from India. You're paying for the middleman, not the quality." },
-              { title: "No Way to Coordinate with Family", desc: "When family members in India are shopping locally and you're in the US, it's nearly impossible to coordinate colors, styles, and formality levels across everyone." },
+              { title: "Compare Available Selection", desc: "Compare local and India-sourced options using the same item, material, customization, service, shipping, customs, alteration, and remedy criteria." },
+              { title: "Compare Complete Costs", desc: "Do not rely on a universal savings percentage. Use complete written quotes that include every outside cost and responsibility." },
+              { title: "Coordinate with Family", desc: "A shared style, color, measurement, and approval record can keep decisions organized when relatives are shopping from different locations." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.title}</h3>
@@ -99,9 +99,9 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gap: "24px" }}>
             {[
-              { step: "01", title: "Live Video Shopping", desc: "We connect you with trusted partners in India via live video call. You see the fabric, embroidery, and drape in real time — no guessing from static photos." },
+              { step: "01", title: "Review Current Options", desc: "Eligible tiers may include live video or current item media when the selected vendor and item allow it. Record the item references before approval." },
               { step: "02", title: "Measurement Coordination", desc: "For made-to-measure items, we document the selected vendor's requested measurements. Local alteration may still be needed." },
-              { step: "03", title: "Delivered to Your US Door", desc: "We handle packaging, international shipping, and customs clearance. Your outfit arrives at your home in the US, ready to wear." },
+              { step: "03", title: "Coordinate Delivery", desc: "The written quote identifies packaging, carrier service, declared value, insurance options, customs responsibilities, tracking, and alteration buffer." },
             ].map((item) => (
               <div key={item.step} style={{ display: "flex", gap: "18px", alignItems: "flex-start" }}>
                 <span style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2rem", fontWeight: 700, color: "#7a6841", lineHeight: 1 }}>{item.step}</span>
@@ -122,7 +122,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Planning your timeline
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a" }}>
-            Wedding guests often start looking for outfits later than brides — but sourcing from India still takes time. Between live video sessions, fabric selection, custom stitching, and international shipping, plan for a <strong style={{ color: "#1f1f1f" }}>minimum of 8–10 weeks</strong> from your first consultation to delivery. The earlier you start, the more options you'll have.
+            Sourcing from India takes time. The usable lead time depends on the item, vendor availability, customization, approvals, shipping, customs, and alteration buffer. Confirm the complete written timeline before approving a purchase.
           </p>
         </div>
       </section>
@@ -196,7 +196,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Stop settling for what&rsquo;s in stock
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Get the same outfit you&rsquo;d want in India, custom stitched to your measurements and delivered to your US door &mdash; without the boutique markup.
+            Compare available India-sourced options using the same item, material, customization, service, shipping, customs, alteration, and remedy criteria.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

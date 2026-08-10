@@ -51,7 +51,7 @@ export default function SherwaniPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            Many US stores offer limited sherwani options, generic sizing, and high pricing due to retail markups.
+            Local boutiques and India-based vendors offer different inventory, sizing services, costs, return terms, and lead times. Compare equivalent written scopes.
           </p>
 
           <p className="text-[var(--cv-muted)]">
@@ -70,11 +70,11 @@ export default function SherwaniPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            CeremonyVerse connects you directly with experienced designers and skilled makers. You explore styles through live video, select fabrics and fits, and finalize your outfit with confidence.
+            CeremonyVerse helps organize available vendor options, item evidence, measurements, approvals, complete cost inputs, and delivery responsibilities. Live review may be available when the vendor and item allow it.
           </p>
 
           <p className="text-[var(--cv-muted)]">
-            From classic sherwanis to modern Indo-western looks, everything is guided and streamlined.
+            The selected service scope states which research and coordination steps are included.
           </p>
 
         </div>
@@ -99,16 +99,16 @@ export default function SherwaniPage() {
           </div>
 
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
-            <h3 className="font-semibold mb-2">No Retail Markups</h3>
+            <h3 className="font-semibold mb-2">Complete Cost Comparison</h3>
             <p className="text-[var(--cv-muted)]">
-              Access the same sources without paying store premiums.
+              Compare the exact garment, service fee, shipping, customs estimate, alteration allowance, timeline, and remedy terms.
             </p>
           </div>
 
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Delivered to USA</h3>
             <p className="text-[var(--cv-muted)]">
-              Reliable shipping with tracking and support.
+              The written quote identifies the carrier, service level, tracking, estimates, responsibilities, and claim process.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function SherwaniPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            Get expert guidance and direct access to the right designs without stress.
+            Organize vendor options, measurements, approvals, complete cost inputs, and delivery responsibilities in one documented process.
           </p>
 
           <div className="flex flex-col items-center gap-3.5">

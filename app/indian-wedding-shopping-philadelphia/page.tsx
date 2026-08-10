@@ -52,20 +52,20 @@ export default function PhiladelphiaPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
             {[
               {
-                title: "We&apos;re local — not a faceless website",
+                title: "Philadelphia-based service",
                 desc: "CeremonyVerse is based in the Philadelphia area, with US contact information and East Coast availability. The service was shaped by firsthand family wedding experience and provides one organized point of contact rather than a call-center handoff.",
               },
               {
-                title: "Philadelphia&apos;s Indian community is growing",
-                desc: "The Philadelphia metro area has a thriving Indian-American community — from Center City and University City to the suburbs of Wayne, Bryn Mawr, and Cherry Hill. With that growth comes more Indian weddings, more demand for authentic outfits, and more families who want to avoid the limited selection and high markups at the few local boutiques.",
+                title: "Compare complete written costs",
+                desc: "Philadelphia-area families can compare nearby boutique options with a documented India-sourcing path that separates the product, CeremonyVerse service tier, shipping estimate, customs estimate, and alteration allowance.",
               },
               {
-                title: "Limited local shopping options",
-                desc: "Unlike New York or New Jersey, Philadelphia doesn&apos;t have a dense corridor of Indian wedding boutiques. The few shops that exist carry limited inventory, and ordering custom pieces means either traveling to NJ/NY or ordering online from India — where scams, wrong sizing, and quality issues are common. CeremonyVerse eliminates all of that.",
+                title: "Document remote-shopping risks",
+                desc: "Remote sourcing still carries vendor, handmade-item, fit, shipping, and customs risk. Written references, approvals, outside costs, and available vendor terms make those risks easier to evaluate before purchase.",
               },
               {
-                title: "Same-day access for consultations",
-                desc: "Because we&apos;re Philadelphia-based, we can offer consultation times that work for your schedule — not 12-hour time zone differences. Need to discuss an urgent change to your order? WhatsApp us and get a response the same business day. Try that with a vendor in Surat.",
+                title: "U.S.-based consultation times",
+                desc: "CeremonyVerse is based in the Philadelphia area and operates on Eastern Time. Consultation windows, response timing, and any time-sensitive order steps are confirmed for the selected service rather than promised universally.",
               },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -85,10 +85,10 @@ export default function PhiladelphiaPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              Everything starts with a free 30-minute consultation. You tell us about your wedding — ceremonies, party size, timeline, budget. We tell you honestly what&apos;s achievable and which service tier fits. No sales pressure, no inflated promises. Because we&apos;re in Philadelphia, you can schedule consultations around EST — evenings, weekends, whatever works for you.
+              Everything starts with a free 30-minute consultation. You tell us about your wedding — ceremonies, party size, timeline, and budget. We review the available service tiers, item requirements, and timing without requiring payment for the call.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              From there, we set up live video shopping sessions with our team in India. You see actual outfits — fabric, embroidery, color in natural light — and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Philadelphia address.
+              Depending on the selected tier and item, the process may include live video review or current item media, measurement and custom-order coordination, written approvals, available pre-shipping review, and tracked-delivery support. The written quote identifies the vendor, item, service scope, shipment estimate, and terms before paid work begins.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Philadelphia weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
@@ -104,7 +104,7 @@ export default function PhiladelphiaPage() {
             Serving the Greater Philadelphia Area
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            We deliver to your door anywhere in the Philadelphia region.
+            Philadelphia-area service areas to discuss with the selected vendor and carrier.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {["Philadelphia", "Center City", "University City", "Cherry Hill", "Bryn Mawr", "Wayne", "King of Prussia", "Wilmington", "Princeton", "Allentown", "Doylestown", "West Chester", "Harrisburg", "South Jersey", "Delaware Valley"].map((loc) => (
@@ -135,9 +135,9 @@ export default function PhiladelphiaPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide & Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
-              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party — every ceremony, every outfit, every family member. Dedicated coordinator." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#fff", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -178,7 +178,7 @@ export default function PhiladelphiaPage() {
               },
               {
                 q: "I'm planning a wedding at a Philadelphia venue — can you help with outfits for multiple ceremonies?",
-                a: "Absolutely. Whether it's a 3-day Gujarati wedding, a South Indian Christian ceremony, or a multi-day Punjabi celebration — we source outfits for every ceremony and every family member. We understand the specific traditions each community follows and curate accordingly. Philadelphia venues like The Rittenhouse, The Logan, or Penn Museum each have their own aesthetic, and we can match your outfits to your venue.",
+                a: "We can translate your family's approved ceremony, clothing, color, and venue requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs, and any vendor or product recommendation is limited to the documented request.",
               },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 4 ? "1px solid #e6dfd5" : "none" }}>
@@ -197,7 +197,7 @@ export default function PhiladelphiaPage() {
             Philadelphia-based. Ready to help.
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget — and recommend exactly what level of support you need. No commitment, no pressure.
+            Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a

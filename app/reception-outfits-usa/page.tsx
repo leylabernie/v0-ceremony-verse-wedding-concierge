@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   path: "/reception-outfits-usa/",
   title: "Indian Wedding Reception Outfits USA — Sourced from India",
   description:
-    "Indian wedding reception outfits sourced from India and delivered to your US door. Reception lehengas, indo-western gowns, and sherwanis — custom stitched to your measurements.",
+    "Research and source Indian wedding reception outfits from India with documented options, measurements, written approvals, and U.S. delivery coordination.",
   keywords: [
     "reception outfits usa",
     "reception lehenga",
@@ -28,7 +28,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Reception Outfit Sourcing",
   description:
-    "Show-stopping Indian wedding reception outfits sourced from India — modern lehengas, indo-western gowns, designer sherwanis, and coordinated party outfits in statement colors and embellishments, custom stitched and delivered to your US door.",
+    "Indian wedding reception outfit research and sourcing for lehengas, Indo-Western gowns, sherwanis, and coordinated party looks, with documented options and U.S. delivery coordination.",
   url: "/reception-outfits-usa/",
   category: "Reception Outfit Sourcing",
   areaServed: "US",
@@ -62,7 +62,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How far in advance should I order my reception outfit from India?",
     answer:
-      "Order your reception outfit 5 to 7 months before the wedding date. Reception outfits are often heavily embellished (sequins, mirror work, custom embroidery) which takes 8 to 12 weeks of production time. Add 3 to 4 weeks for international shipping and 2 to 3 weeks for any local alterations. If you are coordinating bridesmaid or family reception outfits, start 6 months out.",
+      "Lead time depends on the selected item, vendor capacity, customization, quantity, approval timing, carrier, customs, and alteration buffer. Request current written estimates and begin early enough to preserve options and a local fitting window.",
   },
   {
     question: "How much does a reception lehenga cost when sourced from India?",
@@ -127,7 +127,7 @@ export default function ReceptionOutfitsPage() {
           The reception is your first appearance as a married couple — and the most photographed
           event of the week. We source show-stopping reception lehengas, indo-western gowns,
           designer sherwanis, and coordinated party outfits that blend modern glamour with
-          Indian heritage. Custom stitched to your measurements and delivered to your US door.
+          Indian heritage. Customization and delivery are confirmed for the selected item and vendor.
         </p>
         <a
           href="/contact/"
@@ -249,8 +249,8 @@ export default function ReceptionOutfitsPage() {
               margin: "0 auto 32px",
             }}
           >
-            These are the silhouettes, colors, and details our artisan workshops in India are
-            seeing the most demand for in 2026 weddings.
+            These are example directions families may consider. Availability, materials,
+            customization, price, and timing depend on the selected item and vendor.
           </p>
           <div
             style={{
@@ -266,7 +266,7 @@ export default function ReceptionOutfitsPage() {
               },
               {
                 title: "Ivory & Gold Heritage",
-                desc: "Pure silk or organza reception lehengas in ivory with gold zardozi. Timeless, elegant, photographs beautifully under any lighting.",
+                desc: "Ivory and gold reception lehengas in a selected fabric and documented handwork. Request current item evidence and review the look under relevant lighting.",
               },
               {
                 title: "Detachable Cape Dupattas",
@@ -414,7 +414,7 @@ export default function ReceptionOutfitsPage() {
             },
             {
               q: "How far in advance should I order my reception outfit from India?",
-              a: "Order your reception outfit 5 to 7 months before the wedding date. Reception outfits are often heavily embellished (sequins, mirror work, custom embroidery) which takes 8 to 12 weeks of production time. Add 3 to 4 weeks for international shipping and 2 to 3 weeks for any local alterations. If you are coordinating bridesmaid or family reception outfits, start 6 months out.",
+              a: "Lead time depends on the selected item, vendor capacity, customization, quantity, approval timing, carrier, customs, and alteration buffer. Request current written estimates and begin early enough to preserve options and a local fitting window.",
             },
             {
               q: "How much does a reception lehenga cost when sourced from India?",
@@ -474,7 +474,7 @@ export default function ReceptionOutfitsPage() {
               margin: "0 auto 24px",
             }}
           >
-            Book a free 30-minute consultation. We will walk you through 2026 trends, color
+            Request a consultation. We can organize available style directions, color
             options, and pricing — and start sourcing your reception outfit from India within a
             week.
           </p>

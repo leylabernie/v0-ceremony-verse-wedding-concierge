@@ -27,12 +27,12 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const howToSchema = buildHowToSchema({
   name: "How to Take Bridal Lehenga Measurements at Home for NRI Brides",
-  description: "Step-by-step guide to taking accurate bridal lehenga measurements at home so custom outfits stitched in India fit perfectly the first time.",
+  description: "Step-by-step guide to documenting bridal lehenga measurements for the selected vendor while preserving a local fitting and alteration plan.",
   url: "/blog/nri-bridal-lehenga-sizing-guide/",
   steps: [
     {
       name: "Have a professional tailor measure you",
-      text: "Always have a professional tailor take your measurements. DIY measurements often lead to tight armholes or short lehenga lengths.",
+      text: "Use the selected vendor's chart. A qualified local tailor can help record measurements, but remote made-to-measure clothing can still require alteration.",
     },
     {
       name: "Measure blouse length",
@@ -61,14 +61,14 @@ export default function SizingGuidePage() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-[var(--cv-foreground)] mb-8">NRI Bridal Lehenga Sizing Guide</h1>
           <p className="text-lg text-[var(--cv-muted)] mb-8">
-            The biggest fear for any NRI bride sourcing from India is the fit. This guide ensures your measurements are pinpoint accurate.
+            This guide helps document measurements consistently; it does not guarantee fit or replace the selected vendor&apos;s chart and a local fitting plan.
           </p>
 
           <div className="space-y-12">
             <div className="bg-white p-8 rounded-2xl shadow-sm">
               <h2 className="text-2xl font-bold mb-4">1. The Golden Rule of Measurements</h2>
               <p className="text-[var(--cv-muted)]">
-                Always have a professional tailor take your measurements. DIY measurements often lead to tight armholes or short lehenga lengths.
+                Use the selected vendor&apos;s chart. A qualified local tailor can help record measurements, layers, and fit preferences, but remote work can still require alteration.
               </p>
             </div>
 

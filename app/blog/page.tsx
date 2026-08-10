@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata = buildMetadata({
   path: "/blog/",
   title: "Indian Wedding Shopping Guides for NRI Families",
-  description: "Expert guides for NRI brides and families \u2014 how to buy lehengas from India without getting scammed, shipping to USA, customs duties, outfit checklists, and timelines."
+  description: "Practical guides for families researching wedding outfits from India: vendor evidence, measurements, written costs, shipping, customs variables, and timelines."
 });
 
 const serviceSchema = buildServiceSchema({
@@ -22,19 +22,19 @@ const posts = [
   {
     slug: "how-to-take-lehenga-measurements-at-home",
     title: "How to Take Lehenga Measurements at Home: A Step-by-Step Guide for NRI Brides",
-    description: "The #1 reason a custom lehenga from India fits wrong is bad measurements, not bad tailoring. A step-by-step guide to measuring blouse, skirt, and dupatta accurately at home so your outfit fits the first time.",
+    description: "A step-by-step guide to documenting blouse, skirt, and dupatta measurements while preserving room for a local fitting and alterations.",
     date: "July 2026",
   },
   {
     slug: "how-to-choose-indian-wedding-jewelry-usa",
     title: "How to Choose Indian Wedding Jewelry in the USA: An NRI Bride's Complete Guide",
-    description: "Kundan vs Polki vs Temple vs Meenakari — how to choose authentic Indian bridal jewelry from the USA. BIS Hallmark verification, fake jewelry red flags, budget tiers, and how NRI brides source heirloom pieces directly from India.",
+    description: "Kundan vs. Polki vs. Temple vs. Meenakari—how to compare material, construction, hallmark, seller, cost, shipping, and remedy information.",
     date: "July 2026",
   },
   {
     slug: "how-to-buy-authentic-kanchipuram-silk-sarees-online-usa",
     title: "How to Buy Authentic Kanchipuram Silk Sarees Online: An NRI Bride's Guide",
-    description: "Spot fake Kanjivaram silk online — the Zari Test, Silk Mark India certification, Korvai border inspection, and how to source real Kanchipuram wedding sarees from India to the USA without getting scammed.",
+    description: "How to request item-specific fiber, zari, origin, construction, certification, seller, cost, and remedy evidence for a Kanchipuram saree claim.",
     date: "June 2026",
   },
   {
@@ -106,7 +106,7 @@ const posts = [
   {
     slug: "nri-wedding-planning-timeline",
     title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
-    description: "Month-by-month timeline for NRI brides sourcing Indian wedding outfits and items from India. Know exactly when to order your lehenga, bridesmaid outfits, jewelry, and more.",
+    description: "A planning framework for recording item requirements, current vendor estimates, approvals, shipping responsibilities, and fitting buffers.",
     date: "March 2026",
   },
   {
@@ -147,7 +147,7 @@ export default function BlogIndexPage() {
             Indian Wedding Shopping Guides
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Expert advice for NRI brides and families sourcing Indian wedding outfits from the USA.
+            Practical planning guides for families researching Indian wedding outfits from the USA.
           </p>
         </div>
       </div>
@@ -188,7 +188,7 @@ export default function BlogIndexPage() {
               Ready to source your wedding outfits from India?
             </p>
             <p style={{ fontSize: "0.95rem", color: "#e8dfd2", lineHeight: 1.7, marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
-              Book a free 30-minute consultation. We&apos;ll review your vision, timeline, and budget — and tell you honestly what&apos;s achievable.
+              Request a consultation. We&apos;ll review your vision, timeline, known estimates, and budget, then identify the in-scope decisions and next actions.
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link

@@ -9,7 +9,7 @@ export const metadata = buildMetadata({
   path: "/haldi-outfits-usa/",
   title: "Haldi Ceremony Outfits USA — Sourced from India",
   description:
-    "Bright, cheerful Haldi ceremony outfits sourced from India and delivered to your US door. Yellow haldi dresses, lightweight lehengas, anarkalis, and coordinated family outfits — custom stitched to your measurements.",
+    "Research and source Haldi ceremony outfits from India with documented color references, measurements, written approvals, and U.S. delivery coordination.",
   keywords: [
     "haldi outfits usa",
     "yellow haldi dress",
@@ -27,7 +27,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Haldi Ceremony Outfit Sourcing",
   description:
-    "Bright, festive Haldi ceremony outfits sourced from India — yellow haldi dresses, lightweight lehengas, anarkalis, and kurta sets in traditional turmeric colors, custom stitched to your measurements and delivered to your US door.",
+    "Haldi ceremony outfit research and sourcing for lehengas, anarkalis, salwar sets, and kurtas, with documented options and U.S. delivery coordination.",
   url: "/haldi-outfits-usa/",
   category: "Haldi Ceremony Outfit Sourcing",
   areaServed: "US",
@@ -41,32 +41,32 @@ const faqSchema = buildFaqSchema([
   {
     question: "What color should I wear for my Haldi ceremony?",
     answer:
-      "Yellow is the most traditional and popular Haldi color because turmeric paste is the centerpiece of the ceremony. Brides typically choose bright yellow, marigold, mustard, or sunflower yellow. Modern alternatives include orange, coral, lime green, and even pastel yellow for a softer look. We source across all color preferences and can recommend shades that photograph beautifully.",
+      "Use the colors approved by your couple and family. CeremonyVerse can record the palette, fabric, comfort, reuse, quantity, and available item options without treating one family's choice as a universal rule.",
   },
   {
     question: "What fabric is best for a Haldi outfit?",
     answer:
-      "Lightweight, washable fabrics are best because the Haldi ceremony involves turmeric paste that can stain. Cotton, georgette, chiffon, and lighter silks are ideal. We recommend avoiding heavy velvet or pure silk for the Haldi function — those fabrics are better suited for the wedding day. We specifically source Haldi outfits in stain-friendly, comfortable fabrics.",
+      "Consider comfort, movement, care instructions, possible staining, climate, ceremony activities, and the family's preferences. Record the selected fabric and care needs rather than treating one material as universally best.",
   },
   {
     question: "Should the bride wear a lehenga or anarkali for Haldi?",
     answer:
-      "Both work beautifully. A lightweight lehenga allows for easy movement and looks stunning in photos, while an anarkali suit is more practical if you will be sitting for an extended Mehndi application afterward. Many brides choose a short lehenga or a cotton anarkali for Haldi. We help you decide based on your ceremony sequence and personal comfort.",
+      "Either can work when approved by the couple and family. Compare comfort, movement, coverage, ceremony sequence, care needs, and personal preference before choosing.",
   },
   {
     question: "How far in advance should I order my Haldi outfit from India?",
     answer:
-      "Order your Haldi outfit 4 to 6 months before the ceremony date. Haldi outfits are typically simpler than bridal lehengas, so production time is shorter — but international shipping, customs, and any alterations still require lead time. If you are coordinating Haldi outfits for bridesmaids and family, start 6 months out.",
+      "Lead time depends on the selected item, vendor capacity, customization, quantity, approval timing, carrier, customs, and alteration buffer. Request current written estimates and begin early enough to preserve options and a local fitting window.",
   },
   {
     question: "Can you coordinate Haldi outfits for the whole bridal party?",
     answer:
-      "Yes. Coordinated Haldi outfits for bridesmaids, family, and the couple are one of our specialties. We collect all measurements, source matching or complementary pieces in the same color palette, and manage the entire process so everything arrives together at your US address.",
+      "Group coordination is available within the selected tier or custom written scope. The order plan records each participant, measurement, color reference, approval, shipment plan, and acceptable handmade variation.",
   },
   {
     question: "How much does a Haldi outfit cost when sourced from India?",
     answer:
-      "Haldi outfits sourced from India typically range from $150 to $800, depending on fabric, embroidery, and customization. Bridesmaid Haldi outfits typically range from $80 to $250 each. This is significantly less than US boutique prices for comparable quality. We provide transparent pricing in your free consultation.",
+      "Cost depends on the selected garment, fabric, handwork, customization, quantity, vendor, service tier, shipping, customs estimate, and alteration allowance. Compare complete written quotes rather than a universal price or savings range.",
   },
 ])
 
@@ -111,7 +111,7 @@ export default function HaldiOutfitsPage() {
             marginBottom: "22px",
           }}
         >
-          Yellow Haldi outfits sourced from India, delivered to your US door.
+          Haldi outfits from India, organized through a documented U.S. sourcing process.
         </h1>
         <p
           style={{
@@ -126,7 +126,7 @@ export default function HaldiOutfitsPage() {
           The Haldi ceremony is joyful, messy, and one of the most photographed moments of
           your wedding week. We source bright, cheerful Haldi outfits — lightweight lehengas,
           anarkalis, and kurta sets in traditional turmeric yellows, marigold oranges, and
-          fresh greens — custom stitched to your measurements and coordinated across your
+          fresh greens — researched around your approved measurements and coordinated across your
           entire bridal party and family.
         </p>
         <a
@@ -388,27 +388,27 @@ export default function HaldiOutfitsPage() {
           {[
             {
               q: "What color should I wear for my Haldi ceremony?",
-              a: "Yellow is the most traditional and popular Haldi color because turmeric paste is the centerpiece of the ceremony. Brides typically choose bright yellow, marigold, mustard, or sunflower yellow. Modern alternatives include orange, coral, lime green, and even pastel yellow for a softer look. We source across all color preferences and can recommend shades that photograph beautifully.",
+              a: "Use the colors approved by your couple and family. CeremonyVerse can record the palette, fabric, comfort, reuse, quantity, and available item options without treating one family's choice as a universal rule.",
             },
             {
               q: "What fabric is best for a Haldi outfit?",
-              a: "Lightweight, washable fabrics are best because the Haldi ceremony involves turmeric paste that can stain. Cotton, georgette, chiffon, and lighter silks are ideal. We recommend avoiding heavy velvet or pure silk for the Haldi function — those fabrics are better suited for the wedding day. We specifically source Haldi outfits in stain-friendly, comfortable fabrics.",
+              a: "Consider comfort, movement, care instructions, possible staining, climate, ceremony activities, and the family's preferences. Record the selected fabric and care needs rather than treating one material as universally best.",
             },
             {
               q: "Should the bride wear a lehenga or anarkali for Haldi?",
-              a: "Both work beautifully. A lightweight lehenga allows for easy movement and looks stunning in photos, while an anarkali suit is more practical if you will be sitting for an extended Mehndi application afterward. Many brides choose a short lehenga or a cotton anarkali for Haldi. We help you decide based on your ceremony sequence and personal comfort.",
+              a: "Either can work when approved by the couple and family. Compare comfort, movement, coverage, ceremony sequence, care needs, and personal preference before choosing.",
             },
             {
               q: "How far in advance should I order my Haldi outfit from India?",
-              a: "Order your Haldi outfit 4 to 6 months before the ceremony date. Haldi outfits are typically simpler than bridal lehengas, so production time is shorter — but international shipping, customs, and any alterations still require lead time. If you are coordinating Haldi outfits for bridesmaids and family, start 6 months out.",
+              a: "Lead time depends on the selected item, vendor capacity, customization, quantity, approval timing, carrier, customs, and alteration buffer. Request current written estimates and begin early enough to preserve options and a local fitting window.",
             },
             {
               q: "Can you coordinate Haldi outfits for the whole bridal party?",
-              a: "Yes. Coordinated Haldi outfits for bridesmaids, family, and the couple are one of our specialties. We collect all measurements, source matching or complementary pieces in the same color palette, and manage the entire process so everything arrives together at your US address.",
+              a: "Group coordination is available within the selected tier or custom written scope. The order plan records each participant, measurement, color reference, approval, shipment plan, and acceptable handmade variation.",
             },
             {
               q: "How much does a Haldi outfit cost when sourced from India?",
-              a: "Haldi outfits sourced from India typically range from $150 to $800, depending on fabric, embroidery, and customization. Bridesmaid Haldi outfits typically range from $80 to $250 each. This is significantly less than US boutique prices for comparable quality. We provide transparent pricing in your free consultation.",
+              a: "Cost depends on the selected garment, fabric, handwork, customization, quantity, vendor, service tier, shipping, customs estimate, and alteration allowance. Compare complete written quotes rather than a universal price or savings range.",
             },
           ].map((item) => (
             <div
@@ -464,7 +464,7 @@ export default function HaldiOutfitsPage() {
               margin: "0 auto 24px",
             }}
           >
-            Book a free 30-minute consultation. We will walk you through fabric options, color
+            Request a consultation. We can organize available fabric options, color
             palettes, and pricing — and start sourcing your Haldi outfits from India within a
             week.
           </p>

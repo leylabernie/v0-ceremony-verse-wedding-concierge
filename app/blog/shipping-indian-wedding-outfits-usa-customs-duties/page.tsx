@@ -46,18 +46,18 @@ export default function ShippingGuidePage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>You found the perfect lehenga. The sherwani fits. The bridesmaid outfits match. Now comes the part that makes most NRI families nervous: getting everything from India to the USA without customs seizures, surprise duty bills, or shipping disasters.</p>
-          <p style={{ marginTop: "1.2rem" }}>At CeremonyVerse, we ship wedding outfits for NRI families every week. Here is exactly what you need to know about shipping Indian wedding outfits to the US in 2026 — the costs, the customs process, the timelines, and how to protect yourself. Timing your shipment right is critical — read our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>when to order so outfits arrive on time</Link> guide alongside this one.</p>
+          <p>International delivery adds carrier, documentation, customs, insurance, packaging, and claim decisions to the outfit plan. No guide can guarantee timing, charges, or condition on arrival.</p>
+          <p style={{ marginTop: "1.2rem" }}>Shipping Indian wedding outfits to the U.S. requires item-specific information about classification, fiber, construction, declared value, carrier service, insurance, and the tariff rules in effect when the shipment enters the country. Use this guide as general planning information, then confirm the actual shipment with the carrier or customs professional. Read our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>ordering-timeline guide</Link> alongside this one.</p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Shipping Costs: What You Will Actually Pay</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Request a Shipment-Specific Quote</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
-              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Service</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Time</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Cost</th></tr></thead>
+              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Input</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>What to Confirm</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>DHL/FedEx Express</td><td style={{ textAlign: "right" }}>3-5 days</td><td style={{ textAlign: "right" }}>$150-$250</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>DHL/FedEx Standard</td><td style={{ textAlign: "right" }}>7-12 days</td><td style={{ textAlign: "right" }}>$80-$150</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Speed Post (India Post)</td><td style={{ textAlign: "right" }}>10-20 days</td><td style={{ textAlign: "right" }}>$40-$80</td></tr>
-                <tr><td style={{ padding: "0.5rem 0" }}>Air Freight (bulk orders)</td><td style={{ textAlign: "right" }}>5-8 days</td><td style={{ textAlign: "right" }}>$200-$400</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Shipment</td><td>Origin, destination, item description, quantity, weight, dimensions, and declared value</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Service</td><td>Carrier, service level, pickup window, tracking, signature, and current estimate</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Coverage</td><td>Available insurance or declared-value option, exclusions, limit, evidence, and claim process</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Customs</td><td>Required documents, responsible party, broker or carrier process, and possible assessments</td></tr>
               </tbody>
             </table>
           </div>
@@ -77,51 +77,49 @@ export default function ShippingGuidePage() {
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: "1rem" }}>Duty is calculated on the <strong>declared value</strong> of the goods. A reputable shipper will prepare proper commercial invoices with accurate HTS codes and fabric descriptions. If the invoice is vague or incorrect, customs may reclassify your items at a higher rate — or hold the package for inspection, adding 1-3 weeks. For the latest rates, see our <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>2026 US tariffs guide</Link>.</p>
+          <p style={{ marginTop: "1rem" }}>The amount assessed can depend on classification, fiber, construction, country of origin, declared value, and the rules in effect on the entry date. Ask the carrier or qualified customs professional to review the actual shipment; the responsible government agency makes the final determination.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Avoid Customs Delays</h2>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Accurate commercial invoice:</strong> Must list each item with description, fabric composition, quantity, and value. Vague descriptions like &quot;clothes&quot; or &quot;gifts&quot; trigger inspections.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Correct HTS codes:</strong> Each fabric type has a specific code. Silk lehengas use different codes than cotton kurtas. Wrong codes = reclassification = higher duties.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Reasonable declared value:</strong> Under-declaring to avoid duties is customs fraud. If customs suspects under-valuation, they will hold the package, reassess at market value, and possibly fine you.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Supporting textile documentation:</strong> If a classification depends on weaving method or fiber content, obtain accurate supporting documentation from the weaver or workshop.</li>
-            <li><strong>Use a known courier:</strong> DHL and FedEx have established customs clearance processes. Speed Post and unknown couriers often get stuck in manual processing.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Accurate invoice:</strong> Ask the responsible provider which item descriptions, quantities, values, and other details are required.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Classification:</strong> Do not guess; use the information requested by the carrier, broker, or qualified customs professional.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Declared value:</strong> Use accurate information and do not ask a seller or shipper to under-declare the shipment.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Supporting documentation:</strong> Obtain accurate fiber, construction, and country-of-origin information when requested.</li>
+            <li><strong>Carrier process:</strong> Compare service area, tracking, estimates, documentation support, coverage options, and claim terms for the actual route.</li>
           </ul>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How Long Does Shipping Take from India to the USA for Wedding Outfits?</h2>
 
-          <p>Here is the realistic timeline from the moment your outfits leave the workshop in India to when they arrive at your US address:</p>
+          <p>Carrier timing depends on the origin, destination, service level, shipment details, handoff schedule, customs clearance, and final-mile conditions. Ask for a current estimate for the actual shipment.</p>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
-              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Stage</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Duration</th></tr></thead>
+              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Stage</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>What to Confirm</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Quality inspection &amp; packaging in India</td><td style={{ textAlign: "right" }}>1-2 days</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Courier pickup &amp; transit to airport</td><td style={{ textAlign: "right" }}>1-2 days</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Air transit (India → US)</td><td style={{ textAlign: "right" }}>2-3 days</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US customs clearance</td><td style={{ textAlign: "right" }}>1-3 days</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Final delivery to your address</td><td style={{ textAlign: "right" }}>1-2 days</td></tr>
-                <tr><td style={{ padding: "0.5rem 0", fontWeight: 600 }}>Total (Express)</td><td style={{ textAlign: "right", fontWeight: 600 }}>6-12 days</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Release and packaging</td><td>Vendor readiness, any included review, packing method, and handoff date</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Courier pickup</td><td>Carrier, service level, pickup window, tracking, and shipment details</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>International transit</td><td>Current route estimate, exceptions, insurance option, and claim process</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US customs clearance</td><td>Required documents, receiving party, broker or carrier process, and possible assessments</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Final delivery</td><td>Service area, signature requirements, tracking, and final-mile estimate</td></tr>
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: "1rem" }}><strong>Buffer time:</strong> Always add 1 week to the estimated delivery. Customs inspections, weather delays, and courier backlogs happen. If your wedding is March 15, plan for delivery by February 28. For a full month-by-month planning schedule, see our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>NRI wedding ordering timeline</Link>.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Buffer time:</strong> Build a meaningful contingency for carrier or customs delays and preserve a local fitting window. The right buffer depends on the event date, shipment, and backup plan.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Insurance: Protect Your Investment</h2>
-          <p>A bridal lehenga + jewelry + sherwani for a wedding can easily be worth $3,000-$8,000. If the package is lost, damaged, or stolen in transit, standard courier insurance may not cover the full value.</p>
-          <p style={{ marginTop: "1rem" }}><strong>DHL/FedEx included insurance:</strong> Covers up to $100 by default. You can declare a higher value for an additional fee (typically $1-2 per $100 of declared value).</p>
-          <p style={{ marginTop: "1rem" }}><strong>Third-party shipping insurance:</strong> Companies like Shipsurance or U-PIC offer coverage up to $10,000+ for international shipments. Cost is typically 1-3% of declared value.</p>
+          <p>Do not assume standard carrier liability equals the purchase price. Ask what coverage or declared-value options are available for the exact item and route.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Review in writing:</strong> Confirm the limit, exclusions, evidence requirements, claim deadline, deductible or fee, and the party responsible for filing a claim.</p>
           <p style={{ marginTop: "1rem" }}><strong>What CeremonyVerse documents:</strong> The approved shipment quote states the carrier service, declared value, and available insurance. Loss or damage claims and remedies follow the carrier coverage and signed service terms.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Packaging: How to Ship Wedding Outfits Safely</h2>
-          <p>Poor packaging is the #1 cause of damage. Here is how wedding outfits should be packed:</p>
+          <p>Packaging should be appropriate for the selected items, carrier rules, route, and coverage terms. Ask the vendor or packer to document the method and final carton details:</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.6rem" }}>Lehengas: Folded with tissue paper between layers, placed in a hard garment box, then inside a shipping box with bubble wrap</li>
             <li style={{ marginBottom: "0.6rem" }}>Sherwanis: Hung on a padded hanger inside a garment bag, then in a long shipping box</li>
             <li style={{ marginBottom: "0.6rem" }}>Jewelry: Each piece in individual soft pouch, then in a hard jewelry box with foam padding</li>
             <li>Fragile items: Double-boxed with 2-inch cushioning between inner and outer box</li>
           </ul>
-          <p style={{ marginTop: "1rem" }}><strong>Never ship in plastic bags alone.</strong> We have seen lehengas arrive crushed because the seller shipped them in thin poly mailers. A proper garment box costs $5-10 and saves a $2,000 outfit.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Before release:</strong> Confirm the packaging method, final weight and dimensions, shipment photos if available, and the carrier&apos;s restrictions or claim-evidence requirements.</p>
 
           {/* ─── RELATED GUIDES (Tier 2 Internal Linking) ─── */}
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2.5rem" }}>
@@ -166,7 +164,7 @@ export default function ShippingGuidePage() {
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source and ship Indian wedding outfits for NRI families — handling quality inspection, customs documentation, insured shipping, and delivery to your US door. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> Eligible sourcing tiers may include pre-shipping review, shipping-document coordination, and tracking support. The selected vendor, carrier, insurer, and customs authority remain responsible for their respective work. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
         </div>
               <SourcingCallout />
       </article>

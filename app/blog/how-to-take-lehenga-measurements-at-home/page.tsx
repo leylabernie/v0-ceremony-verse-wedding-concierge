@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "How to Take Lehenga Measurements at Home: A Step-by-Step Guide for NRI Brides",
-  description: "A complete step-by-step guide to taking accurate lehenga measurements at home — blouse, skirt, and dupatta — so custom outfits stitched in India fit perfectly the first time.",
+  description: "A step-by-step guide to documenting lehenga measurements at home while preserving room for vendor review, a local fitting, and alterations.",
   url: "/blog/how-to-take-lehenga-measurements-at-home/",
   datePublished: "2026-07-29",
   keywords: [
@@ -39,7 +39,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const howToSchema = buildHowToSchema({
   name: "How to Take Lehenga Measurements at Home",
-  description: "Step-by-step instructions for taking accurate lehenga measurements at home so a custom bridal or party lehenga stitched in India fits perfectly.",
+  description: "Step-by-step instructions for documenting lehenga measurements at home for the selected vendor's review.",
   url: "/blog/how-to-take-lehenga-measurements-at-home/",
   totalTime: "PT20M",
   steps: [
@@ -81,7 +81,7 @@ const howToSchema = buildHowToSchema({
 const faqs = [
   {
     q: "Should I measure myself or have someone help?",
-    a: "Always have someone else measure you. Self-measuring twists the tape and shortens numbers, especially for the back, shoulders, and blouse length. A helper and a soft cloth tape are the two things that matter most.",
+    a: "Use the selected vendor's instructions. A helper or qualified local tailor can make back, shoulder, and length measurements easier to record, but no method guarantees fit.",
   },
   {
     q: "In inches or centimeters?",
@@ -123,7 +123,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
             How to Take Lehenga Measurements at Home: A Step-by-Step Guide for NRI Brides
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            The single biggest reason a custom lehenga from India arrives fitting wrong is bad measurements — not bad tailoring. Here is exactly how to get them right from your own bedroom.
+            Use the selected vendor&apos;s measurement chart and document the numbers consistently. Remote made-to-measure clothing can still require a local fitting and alterations.
           </p>
         </div>
       </div>
@@ -133,19 +133,19 @@ export default function HowToTakeLehengaMeasurementsPage() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
-            When you order a custom lehenga from India while living in the USA, your tailor never sees you in person. Everything they build is based on the numbers you send. Get those numbers right and the outfit fits like it was made for you — because it was. Get them wrong and you are paying for alterations, or worse, discovering the problem the week of the wedding.
+            Remote production relies on the selected vendor&apos;s chart, the measurements and fit preferences you approve, and the vendor&apos;s construction process. Measurements can reduce recording errors but cannot guarantee fit.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             The good news: taking accurate measurements at home is completely doable with a soft measuring tape, fitted clothing, and one friend to help. This guide walks through every measurement your tailor needs, in the order you should take them.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Before You Start: Three Rules That Prevent 90% of Fit Problems
+            Before You Start: Three Documentation Checks
           </h2>
           <ul style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Never measure yourself.</strong> Have a friend do it. Self-measuring twists the tape and consistently produces short, inaccurate numbers.</li>
+            <li><strong>Use help when possible.</strong> A helper or qualified local tailor can make back, shoulder, and length measurements easier to record.</li>
             <li><strong>Use a soft cloth tape, not a hardware tape.</strong> And wear fitted clothing plus the bra you will actually wear on the day.</li>
-            <li><strong>Record your true body measurements — do not add ease.</strong> Your tailor adds the correct ease for the garment. If you pad the numbers yourself, the outfit ends up loose.</li>
+            <li><strong>Follow the selected vendor&apos;s chart.</strong> Confirm who adds ease, which layers or undergarments to wear, the unit, and the final approval process.</li>
           </ul>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

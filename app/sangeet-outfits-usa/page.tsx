@@ -34,7 +34,7 @@ export default function SangeetOutfitsPage() {
           Sangeet outfits sourced from India — statement looks for your biggest night.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          The Sangeet is your most photogenic night — deep emerald, sapphire blue, rich plum. We source show-stopping looks for the bride, coordinated outfits for the full bridal party, and statement jewelry — all from India, all delivered to your US door.
+          Organize the bride, wedding-party, family, and approved accessory requirements through one documented sourcing process. Colors, customization, and delivery depend on the selected items and vendors.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -53,7 +53,7 @@ export default function SangeetOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {[
-              { title: "Bride's Sangeet Lehenga", desc: "Jewel-toned statement piece — emerald, sapphire, plum, or royal blue. Heavy embroidery, custom stitched to your measurements." },
+              { title: "Bride's Sangeet Lehenga", desc: "Record the approved color, silhouette, fabric, handwork, measurements, budget, and alteration buffer before reviewing options." },
               { title: "Bridesmaid Coordination", desc: "Coordinated lehengas or embellished sarees in complementary shades. All measurements collected and managed." },
               { title: "Groomsmen Attire", desc: "Bandhgalas, silk kurtas, or indo-western sets in coordinating colors — polished without being overdressed." },
               { title: "Statement Jewelry", desc: "Kundan, polki, or gold statement sets sourced from our dedicated jewelry supplier for the Sangeet look." },
@@ -91,9 +91,9 @@ export default function SangeetOutfitsPage() {
           </h2>
           {[
             { q: "What colors work best for a Sangeet outfit?", a: "Jewel tones photograph beautifully under evening lighting — deep emerald, sapphire blue, rich plum, and burgundy are all popular. Many brides choose a bold color contrast to their bridal lehenga." },
-            { q: "Should the Sangeet outfit be different from the wedding lehenga?", a: "Yes — most brides wear a separate look for the Sangeet. It's typically lighter and more dance-friendly than the bridal lehenga, but equally show-stopping." },
-            { q: "Can you source matching outfits for the whole party?", a: "Absolutely. We coordinate the bride, bridesmaids, groomsmen, and family into a cohesive palette — managing all measurements and shipping together." },
-            { q: "How early should I order Sangeet outfits?", a: "Order at least 5–8 months before your Sangeet date, especially if you're coordinating multiple people. Custom stitching takes time and we need measurements from everyone." },
+            { q: "Should the Sangeet outfit be different from the wedding lehenga?", a: "That is a couple and family choice. Compare movement, comfort, reuse, ceremony activity, palette, and complete budget before deciding whether to use a separate look." },
+            { q: "Can you coordinate outfits for the wedding party?", a: "Group coordination is available within the selected tier or custom written scope. The order plan records each participant, measurement, color reference, approval, shipment plan, and acceptable handmade variation." },
+            { q: "How early should I order Sangeet outfits?", a: "The timeline depends on the selected items, quantity, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. Confirm a written timeline before purchase." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
@@ -109,7 +109,7 @@ export default function SangeetOutfitsPage() {
             Make your Sangeet night unforgettable
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Jewel-toned lehengas, coordinated bridesmaid sets, statement jewelry &mdash; sourced from India and delivered to your US door in time for the dance floor.
+            Discuss lehengas, coordinated wedding-party sets, family outfits, and approved accessories in one consultation. Item, vendor, shipping, customs, and remedy terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

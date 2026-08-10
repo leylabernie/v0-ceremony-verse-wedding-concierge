@@ -39,19 +39,19 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const faqSchema = buildFaqSchema([
   {
-    question: "How much can I save by sourcing from India vs. Chicago Indian boutiques?",
+    question: "How do I compare India sourcing with a Chicago boutique quote?",
     answer:
       "There is no universal savings percentage. Compare the approved product, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written Illinois boutique quotes.",
   },
   {
     question: "Do you serve brides in cities outside Chicago, like Naperville, Schaumburg, or Aurora?",
     answer:
-      "Absolutely. While Chicago has the largest Indian community in Illinois, we serve NRI families across the entire state — including Naperville, Schaumburg, Aurora, Evanston, Oak Brook, Downers Grove, Bolingbrook, and beyond. Our process is fully remote with live video shopping, so your physical location in Illinois does not matter. We deliver to your door anywhere in the state.",
+      "Families across Illinois can request the same remote sourcing services. Delivery remains subject to the selected vendor, carrier service area, shipment terms, and customs clearance stated in the written quote.",
   },
   {
     question: "How do you ensure the quality of outfits before they ship to Illinois?",
     answer:
-      "We have an in-person quality control team in India that inspects every outfit for fabric quality, embroidery detail, and measurement accuracy before it ships. We send you high-resolution photos and videos for final approval. Only after you approve does the shipment leave for Illinois via DHL or FedEx with full tracking and insurance.",
+      "Eligible sourcing tiers may include current item media, live review, or another documented pre-shipping check when the vendor and item allow it. The written scope identifies the review evidence, carrier terms, insurance options, tracking plan, and any remedy before shipment.",
   },
   {
     question: "Can you coordinate outfits for a multi-day Illinois Indian wedding?",
@@ -61,12 +61,12 @@ const faqSchema = buildFaqSchema([
   {
     question: "How long does shipping from India to Illinois take?",
     answer:
-      "Once your outfit is ready and approved, international shipping via DHL or FedEx typically takes 5 to 10 business days to reach your Illinois address. Customs clearance adds 2 to 4 days. Total door-to-door delivery time after quality approval is typically 1 to 2 weeks. We handle all customs documentation and duties — you do not have to deal with any of it.",
+      "Carrier timing depends on origin, destination, service level, shipment details, handoff, customs, and final-mile conditions. The written quote identifies the carrier, current estimate, required documents, customs responsibilities, tracking, and claim process; timing and assessments are not guaranteed.",
   },
   {
     question: "What is the best time to start sourcing my Indian wedding outfits?",
     answer:
-      "We recommend starting 6 to 12 months before your wedding date. Top artisan workshops in India book quickly, and custom outfits require production time. Illinois has a popular wedding season from May through October (avoiding the harsh winter), so we especially recommend starting early if your wedding is during this peak season.",
+      "Start as early as practical. The usable lead time depends on the selected item, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. CeremonyVerse confirms the available timeline before an order is approved and does not promise rush production or delivery.",
   },
 ])
 
@@ -123,11 +123,10 @@ export default function IndianWeddingShoppingIllinoisPage() {
             margin: "0 auto 32px",
           }}
         >
-          Illinois is home to one of the largest Indian communities in the US, with vibrant
-          communities in Chicago, Naperville, Schaumburg, Aurora, and Evanston. CeremonyVerse
-          connects NRI families across Illinois directly with India&apos;s finest craftspeople
-          for bridal lehengas, sherwanis, and coordinated wedding outfits — custom stitched
-          and delivered to your door.
+          Families in Chicago, Naperville, Schaumburg, Aurora, Evanston, and other Illinois
+          communities can use CeremonyVerse to organize a documented India-sourcing process for
+          bridal lehengas, sherwanis, and coordinated wedding outfits. Item availability,
+          customization, delivery, and remedies are confirmed in writing before purchase.
         </p>
         <a
           href="/contact/"
@@ -176,7 +175,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               },
               {
                 title: "Harsh Illinois Winters",
-                desc: "Illinois winters make travel to India difficult during peak planning season. Many families try to squeeze shopping trips between November and March, hitting weather delays and tight timelines. Our remote video shopping model eliminates the need to travel at all.",
+                desc: "Remote review can reduce the need for an international shopping trip. Availability depends on the selected vendor and item, and the family approves the documented references before purchase.",
               },
               {
                 title: "High Local Prices",
@@ -184,7 +183,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               },
               {
                 title: "Spread-Out Communities",
-                desc: "Illinois Indian families are spread across Chicago, the western suburbs (Naperville, Schaumburg, Aurora), and beyond. Coordinating in-person shopping trips across the bridal party is impractical — but our remote process handles measurements and ordering from anywhere.",
+                desc: "When family members are spread across Chicago, Naperville, Schaumburg, Aurora, and other cities, one shared measurement, item, and approval record can keep the order organized.",
               },
             ].map((item) => (
               <div
@@ -238,7 +237,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             </p>
             <p style={{ marginBottom: "16px" }}>
               Our process is simple: share your wedding vision, ceremony schedule, and budget.
-              We connect you through live video shopping sessions with our outfit specialists
+              CeremonyVerse can coordinate live video sessions with selected vendors
               in India, showing you fabrics, colors, and embroidery options in real time. You
               select what you love, and we handle custom measurements, tailoring, quality
               checks, and doorstep delivery to your home in Chicago, Naperville, Schaumburg,
@@ -268,7 +267,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               marginBottom: "16px",
             }}
           >
-            Illinois cities we serve
+            Illinois service areas
           </h2>
           <p
             style={{
@@ -281,7 +280,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               margin: "0 auto 32px",
             }}
           >
-            We deliver to your door anywhere in Illinois. Our most-served cities include:
+            Families in these Illinois cities can ask about vendor and carrier availability:
           </p>
           <div
             style={{
@@ -360,19 +359,19 @@ export default function IndianWeddingShoppingIllinoisPage() {
                 desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation.",
               },
               {
-                tier: "Style Guide",
+                tier: "Style Guide & Vendor List",
                 price: "$249",
-                desc: "A curated lookbook tailored to your ceremonies, body type, and budget — with specific recommendations from India's top outfit specialists.",
+                desc: "A researched starting point for families who will contact vendors, order, and ship independently.",
               },
               {
                 tier: "Guided Sourcing",
                 price: "$799",
-                desc: "Live video shopping sessions, direct access to artisan partners in India, measurement guidance, and managed ordering for your key outfits.",
+                desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability.",
               },
               {
                 tier: "Full Bridal Concierge",
                 price: "$2,499",
-                desc: "End-to-end outfit management for the entire wedding party — bride, groom, bridesmaids, groomsmen, and family. Every ceremony covered.",
+                desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people.",
               },
             ].map((item) => (
               <div
@@ -433,16 +432,16 @@ export default function IndianWeddingShoppingIllinoisPage() {
           <div>
             {[
               {
-                q: "How much can I save by sourcing from India vs. Chicago Indian boutiques?",
+                q: "How do I compare India sourcing with a Chicago boutique quote?",
                 a: "There is no universal savings percentage. Compare the approved product, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with written Illinois boutique quotes.",
               },
               {
                 q: "Do you serve brides in cities outside Chicago, like Naperville, Schaumburg, or Aurora?",
-                a: "Absolutely. While Chicago has the largest Indian community in Illinois, we serve NRI families across the entire state — including Naperville, Schaumburg, Aurora, Evanston, Oak Brook, Downers Grove, Bolingbrook, and beyond. Our process is fully remote with live video shopping, so your physical location in Illinois does not matter. We deliver to your door anywhere in the state.",
+                a: "Families across Illinois can request the same remote sourcing services. Delivery remains subject to the selected vendor, carrier service area, shipment terms, and customs clearance stated in the written quote.",
               },
               {
                 q: "How do you ensure the quality of outfits before they ship to Illinois?",
-                a: "We have an in-person quality control team in India that inspects every outfit for fabric quality, embroidery detail, and measurement accuracy before it ships. We send you high-resolution photos and videos for final approval. Only after you approve does the shipment leave for Illinois via DHL or FedEx with full tracking and insurance.",
+                a: "Eligible sourcing tiers may include current item media, live review, or another documented pre-shipping check when the vendor and item allow it. The written scope identifies the review evidence, carrier terms, insurance options, tracking plan, and any remedy before shipment.",
               },
               {
                 q: "Can you coordinate outfits for a multi-day Illinois Indian wedding?",
@@ -450,11 +449,11 @@ export default function IndianWeddingShoppingIllinoisPage() {
               },
               {
                 q: "How long does shipping from India to Illinois take?",
-                a: "Once your outfit is ready and approved, international shipping via DHL or FedEx typically takes 5 to 10 business days to reach your Illinois address. Customs clearance adds 2 to 4 days. Total door-to-door delivery time after quality approval is typically 1 to 2 weeks. We handle all customs documentation and duties — you do not have to deal with any of it.",
+                a: "Carrier timing depends on origin, destination, service level, shipment details, handoff, customs, and final-mile conditions. The written quote identifies the carrier, current estimate, required documents, customs responsibilities, tracking, and claim process; timing and assessments are not guaranteed.",
               },
               {
                 q: "What is the best time to start sourcing my Indian wedding outfits?",
-                a: "We recommend starting 6 to 12 months before your wedding date. Top artisan workshops in India book quickly, and custom outfits require production time. Illinois has a popular wedding season from May through October (avoiding the harsh winter), so we especially recommend starting early if your wedding is during this peak season.",
+                a: "Start as early as practical. The usable lead time depends on the selected item, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. CeremonyVerse confirms the available timeline before an order is approved and does not promise rush production or delivery.",
               },
             ].map((faq, index) => (
               <div
@@ -505,7 +504,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             }}
           >
             Book a free consultation or message us on WhatsApp at +1 (215) 341-9990. We&apos;ll
-            walk you through exactly how we can help your Illinois family shop from India with
+            explain how the available CeremonyVerse tiers may support your Illinois family with
             confidence.
           </p>
           <a
@@ -541,7 +540,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               marginBottom: "20px",
             }}
           >
-            Other states we serve
+            Other state guides
           </h2>
           <div
             style={{

@@ -162,16 +162,14 @@ export default function KanchipuramSilkGuideBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            3 Critical Tests to Identify Real Kanchipuram Silk
+            3 Evidence Checks for a Kanchipuram Silk Claim
           </h2>
 
           <p>
-            If you cannot physically touch the fabric before buying, you need
-            to verify that your seller performs rigorous quality checks.
-            Authentic Kanchipuram sarees are defined by pure mulberry silk
-            yarns twisted with solid silver wire and dipped in 24k gold thread
-            (Zari). Here is how experts separate real heirloom pieces from
-            cheap imitations.
+            Remote review has limits. Ask the selected seller to state the
+            fiber, zari, origin, weave, construction, and certification claims
+            for the specific saree in writing, then keep the available evidence
+            with the approval record. Video appearance alone is not authentication.
           </p>
 
           <h3
@@ -187,20 +185,15 @@ export default function KanchipuramSilkGuideBlogPost() {
             1. Look for the &quot;Silk Mark India&quot; Certification
           </h3>
           <p>
-            The government of India protects traditional weavers through the
-            Silk Mark Organization of India (SMOI). Every genuine pure silk
-            saree comes with a secure, non-reusable holographic tag containing
-            a unique identification number. This tag is your single most
-            reliable proof that the saree is woven from pure mulberry silk
-            rather than a synthetic blend.
+            Ask whether Silk Mark documentation is available for the selected
+            saree and request a clear view of the item-specific tag or record.
+            A product name, seller reputation, or generic certificate should
+            not be substituted for evidence tied to the actual item.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>The rule:</strong> If an online boutique cannot show you a
-            physical Silk Mark certificate for your specific piece — with the
-            holographic tag visible in HD video — do not buy it. Reputable
-            sellers will happily hold the tag up to the camera; scammers will
-            deflect with claims like &quot;we forgot to attach it&quot; or
-            &quot;it will arrive in the parcel.&quot;
+            <strong>The check:</strong> Record what documentation was requested,
+            what the seller supplied for the selected piece, and what the seller
+            is representing in the written order. Decide with those limits visible.
           </p>
 
           <h3
@@ -312,51 +305,42 @@ export default function KanchipuramSilkGuideBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            The Hidden Costs of Buying from US Indian Boutiques
+            Compare Local and Remote Options on Equivalent Terms
           </h2>
 
           <p>
-            Many NRI brides turn to brick-and-mortar boutiques in major US hubs
-            like New Jersey, <Link href="/indian-wedding-shopping-illinois/" style={{ color: "#7a6841" }}>Chicago</Link>, or the Bay Area out of convenience. The
-            idea of touching the fabric in person feels safer than buying
-            online. However, these physical storefronts come with massive
-            markups that often double or triple the actual artisan price.
+            A brick-and-mortar boutique may provide in-person viewing, fitting,
+            local payment, and local return options. A remote India-based order
+            may offer different inventory, customization, and costs while adding
+            seller, shipping, customs, and remedy risk.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
-            When you buy locally in the US, you are not just paying for the
-            saree. You are paying for:
+            For a useful comparison, record:
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>The store&apos;s high commercial rent</strong> in a South
-              Asian neighborhood (often $8,000–$20,000/month for a 1,200 sq ft
-              boutique in Jersey City or Hicksville)
+              <strong>The exact saree</strong> — fiber, zari, weave, origin representation,
+              construction, included blouse material, and item-specific evidence
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>International import middleman fees</strong> — most US
-              boutiques may buy through an importer whose services and
-              overhead become part of the retail price
+              <strong>The service scope</strong> — in-person or remote review, measurements,
+              blouse work, approvals, and excluded outside costs
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Expensive inventory overhead</strong> — bridal silk
-              sarees sit in inventory for 6–18 months, and the carrying cost is
-              baked into the price tag
+              <strong>The delivery plan</strong> — pickup or carrier, insurance option,
+              shipping quote, customs estimate, and claim responsibility
             </li>
             <li>
-              <strong>Limited selection</strong> — a typical US boutique
-              carries 30–80 bridal silk sarees. India&apos;s heritage retailers
-              carry thousands.
+              <strong>The remedy</strong> — cancellation, return, correction, alteration,
+              replacement, or refund terms for the selected item
             </li>
           </ul>
 
           <p style={{ marginTop: "1rem" }}>
-            This can inflate the price of a standard $500 artisan saree up to
-            $1,200 or more. For a true heirloom Kanjivaram with heavy zari
-            work, a US boutique will charge $2,500–$5,000 for the exact same
-            saree that costs $900–$1,800 in India. Sourcing directly from the
-            weavers of Tamil Nadu or trusted heritage retailers in India allows
-            you to compare the seller&apos;s itemized price and terms with retail options.
+            Compare complete written quotes for equivalent items and responsibilities.
+            There is no universal price range or savings percentage, and two products
+            that share a category name should not be assumed identical.
           </p>
 
           {/* IMAGE PLACEHOLDER 2 */}
@@ -377,14 +361,14 @@ export default function KanchipuramSilkGuideBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            How CeremonyVerse Protects NRI Brides Sourcing Online
+            How CeremonyVerse Documents a Sourcing Scope
           </h2>
 
           <p>
-            If you want help comparing direct India sourcing with retail options
-            India without the logistical stress, CeremonyVerse bridges the gap.
-            We act as your trusted, personal boots on the ground — verifying
-            every saree before a single dollar leaves your account.
+            CeremonyVerse can help compare direct India sourcing with retail
+            options using one record for the selected item, seller evidence,
+            approvals, service fee, shipping estimate, customs estimate,
+            alteration allowance, and remedy terms.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
@@ -414,11 +398,10 @@ export default function KanchipuramSilkGuideBlogPost() {
               Live Hand-Selection
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We do not rely on static catalog photos. Our team conducts live
-              video shopping sessions with vetted, heritage silk weavers and
-              premium boutiques across India. You see the exact weight, drape,
-              and color of the saree in real-time — and you can ask the weaver
-              questions directly through us.
+              Eligible tiers may include live video or current item media when
+              the vendor and saree allow it. Use that evidence alongside the
+              written fiber, zari, weave, origin, certification, blouse, and
+              vendor terms; video alone does not authenticate those claims.
             </p>
           </div>
 
@@ -444,11 +427,10 @@ export default function KanchipuramSilkGuideBlogPost() {
               Physical Quality Verification
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Once a saree is selected, our team physically inspects the piece
-              in India. We verify the Korvai borders, test the fabric weight,
-              and confirm the presence of the official Silk Mark India
-              holographic tag. We film the entire inspection in natural
-              daylight so you can see exactly what is being shipped.
+              Eligible tiers may include available pre-shipping media or
+              another documented check. Record the seller&apos;s representations
+              and any certification evidence for the selected saree. No remote
+              review independently proves every fiber, zari, weave, or origin claim.
             </p>
           </div>
 
@@ -474,12 +456,10 @@ export default function KanchipuramSilkGuideBlogPost() {
               Transparent Sizing &amp; Stitching
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We host a three-way video call with an expert tailor (Masterji)
-              to map out your blouse measurements perfectly, avoiding any
-              remote tailoring errors. The master tailor walks you through each
-              measurement point on a live call, and our team visually verifies
-              how you take the measurements so nothing is left to
-              interpretation.
+              Use the measurement chart required by the selected blouse vendor
+              and have a qualified local tailor help when appropriate. A
+              documented review can reduce recording errors, but remote
+              made-to-measure work can still require local alteration.
             </p>
           </div>
 
@@ -502,14 +482,13 @@ export default function KanchipuramSilkGuideBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Secure Logistics
+              Documented Logistics
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We manage the entire export process, handle US customs textile
-              declarations, and securely box your bridal wear for direct,
-              insured delivery to your doorstep in the United States. We also
-              itemize the customs duties upfront so there are no surprise
-              charges when the parcel clears the border.
+              The written scope identifies the vendor, packer, carrier, available
+              insurance, required documents, customs responsibilities, estimates,
+              and claim process. Carrier and government assessments may differ from
+              estimates, and no remote process eliminates shipment risk.
             </p>
           </div>
 
@@ -593,7 +572,7 @@ export default function KanchipuramSilkGuideBlogPost() {
                 marginBottom: "1rem",
               }}
             >
-              Ready to Source Your Authentic Wedding Trousseau?
+              Ready to Research Your Wedding Trousseau?
             </h3>
             <p
               style={{
@@ -602,10 +581,9 @@ export default function KanchipuramSilkGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Skip the boutique stress and get direct access to India&apos;s
-              finest bridal artisans. Book your free 30-minute consultation and
-              we&apos;ll walk you through how to verify authentic Kanchipuram
-              silk — live, on video, before you commit a dollar.
+              Request a consultation to organize item-specific vendor evidence,
+              written approvals, complete cost inputs, and delivery responsibilities.
+              No remote process can authenticate every claim or eliminate product risk.
             </p>
             <Link
               href="/contact/"
@@ -648,11 +626,10 @@ export default function KanchipuramSilkGuideBlogPost() {
               color: "#5e4a40",
             }}
           >
-            <strong>About CeremonyVerse:</strong> We source authentic
-            Kanchipuram silk sarees, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>, bridal lehengas, sherwanis, and family
-            wedding attire directly from India&apos;s heritage weavers for NRI
-            brides in the USA. Every saree is verified with the Silk Mark India
-            holographic tag and physically inspected before shipping.{" "}
+            <strong>About CeremonyVerse:</strong> We help families research
+            Kanchipuram and <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi saree</Link> options, bridal lehengas, sherwanis, and family
+            wedding attire. The selected vendor&apos;s item claims, available evidence,
+            approval record, and pre-shipping review limits are documented within the chosen scope.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}

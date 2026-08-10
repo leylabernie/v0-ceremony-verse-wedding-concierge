@@ -171,11 +171,9 @@ export default function BulkReturnGiftsGuideBlogPost() {
           <p>
             Shipping costs from India to the US are calculated by both physical
             weight and dimensional size (volume). Choosing items that pack
-            tightly together will save you hundreds of dollars in transit fees.
-            A favor that weighs 200 grams but takes up the volumetric space of
-            1 kilogram will be billed at the higher rate — and that difference
-            multiplied across 200 guests can add $800+ to your shipping bill
-            overnight.
+            tightly together may reduce per-item transit cost, but obtain the actual packed dimensions, weight, carrier quote, insurance, and customs estimate before relying on a saving.
+            Dimensional weight and physical weight may affect the carrier quote,
+            so confirm the billed weight for the actual packed order.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
@@ -204,12 +202,9 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Handcrafted Potli Bags &amp; Clutches
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Excellent for female guests. Sourced directly from artisans in
-              Jaipur or Delhi, these can be packed flat, taking up minimal
-              volume in shipping crates. Embroidered drawstring potlis in
-              velvet, silk, or brocade are timeless and culturally resonant.
-              Bulk wholesale price from India: $3–$8 per piece vs $15–$30 at US
-              Indian boutiques.
+              Potli bags and clutches may pack relatively flat. Request the exact
+              material, lining, decoration, dimensions, quantity, customization,
+              packaging, production estimate, and current vendor quote.
             </p>
           </div>
 
@@ -235,12 +230,10 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Premium Jaipur Block-Print Linen
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Luxury table runners, cushion covers, or cotton dhurries add a
-              gorgeous aesthetic touch, carry deep cultural value, and are
-              completely unbreakable during transport. Block-printed linens
-              from Sanganer (the printer&apos;s quarter of Jaipur) can be
-              customized with your wedding monogram or date. Bulk price:
-              $4–$12 per piece depending on size.
+              Table runners, cushion covers, or other linens may be considered
+              when the family approves the use and design. Request the exact fiber,
+              print method, dimensions, quantity, customization, care, packaging,
+              production estimate, and current vendor quote.
             </p>
           </div>
 
@@ -266,12 +259,10 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Customized Resin Coasters &amp; Agate Slices
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Beautiful, modern keepsakes embellished with gold foil or
-              personalized calligraphy. They pack tightly and offer a premium,
-              contemporary feel. Agate slice coasters from Rajasthan can be
-              gold-rimmed and engraved with your initials — they photograph
-              beautifully for guests&apos; Instagram posts. Bulk price: $5–$14
-              per set of 2.
+              Coasters can be compared by exact material, dimensions, finish,
+              personalization, quantity, packaging, breakage allowance, production
+              estimate, and current vendor quote. Natural materials and handmade
+              finishes may vary.
             </p>
           </div>
 
@@ -297,11 +288,9 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Handmade Brass Diyas &amp; Meenakari Artifacts
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Traditional, timeless choices. Opt for flat or modular designs
-              that can be stacked easily to avoid bulky packaging. Meenakari
-              (enamel-painted) brass items from Jaipur come in stunning color
-              combinations and work as both decorative items and functional
-              tealight holders. Bulk price: $4–$10 per piece.
+              If the family approves this category, compare exact material,
+              dimensions, finish, intended use, safety or care instructions,
+              quantity, packaging, production estimate, and current vendor quote.
             </p>
           </div>
 
@@ -431,7 +420,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
               days of buffer time for international shipping and customs
               clearance. A 200-piece hand-embroidered potli order cannot be
               rushed — embroidery is handwork, and asking artisans to skip
-              steps guarantees quality problems. Order 8 weeks before your
+              steps increases quality and timing risk. Build a written production, review, shipping, customs, and contingency schedule before your
               wedding week at the absolute latest.
             </p>
           </div>
@@ -483,16 +472,14 @@ export default function BulkReturnGiftsGuideBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Direct Bazaar Sourcing
+              Documented Vendor Options
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We bypass online middlemen and visit wholesale manufacturing hubs
-              in India directly. This gets you authentic, handcrafted items at
-              true wholesale pricing — the same price a Jaipur boutique pays
-              before adding retail overhead. We can show you 3–5
-              different artisan workshops for the same favor category in a
-              single live video session so you can compare quality and price
-              side-by-side.
+              CeremonyVerse can research available vendor options for the approved
+              favor category and request item, quantity, customization, packaging,
+              price, production, and remedy details. Live review may be available
+              when a selected vendor and item allow it, but no wholesale price,
+              authenticity, or quality outcome is universally promised.
             </p>
           </div>
 
@@ -518,13 +505,11 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Rigorous Quality Control
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              When ordering 100 or 200 items, product quality can fluctuate.
-              The first 20 potli bags might be perfectly stitched and the last
-              20 might have loose threads or uneven embroidery. Our team
-              physically inspects the bulk order in India, filtering out any
-              pieces with broken zippers, loose threads, or chipped paint
-              before they are boxed. Damaged pieces are returned to the artisan
-              for replacement at no extra cost to you.
+              Bulk orders can vary across a production run. Eligible tiers may
+              include sample approval and an available pre-shipping review, but
+              the inspection method, acceptable variation, sample size,
+              replacement rights, and related costs must be stated in the
+              written vendor and service terms.
             </p>
           </div>
 
@@ -550,12 +535,10 @@ export default function BulkReturnGiftsGuideBlogPost() {
               Compacted Packing &amp; Freight Management
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We carefully bundle your items to minimize volumetric space,
-              dramatically lowering your international shipping fees. A 200-piece
-              potli bag order can ship in 2 compact cartons instead of 8 bulky
-              boxes — cutting shipping cost by up to 60%. We negotiate freight
-              rates across 3–4 carriers and pass the actual cost straight to
-              you, no markup.
+              The selected vendor or packer provides actual carton dimensions,
+              weight, quantity, and packaging details. CeremonyVerse can organize
+              available carrier quotes within the chosen scope; cost and timing
+              depend on the final shipment and provider terms.
             </p>
           </div>
 
@@ -578,15 +561,13 @@ export default function BulkReturnGiftsGuideBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Full Customs Clearance Handling
+              Document Shipping and Customs Responsibilities
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We manage the formal export paperwork out of India and clear the
-              shipment through US Customs under correct textile or commodity
-              classifications, delivering the finished boxes directly to your
-              home. We itemize all duties and tariffs upfront so you know
-              exactly what the shipment will cost — no surprise customs
-              invoices when the delivery truck arrives.
+              The written scope identifies who provides export and import documents,
+              who selects or pays the carrier or broker, and who is responsible for
+              customs information and any amount assessed. Estimates are not final
+              government determinations, and additional charges may apply.
             </p>
           </div>
 
@@ -677,11 +658,9 @@ export default function BulkReturnGiftsGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Get direct access to India&apos;s finest wholesale artisan
-              markets without the shipping headache. Book a free 30-minute
-              consultation and we&apos;ll show you 3 favor options matched to
-              your guest count and budget — with a transparent breakdown of
-              artisan cost, freight, and US duties.
+              Request a consultation to organize your guest count, favor brief,
+              available vendor options, item evidence, written costs, shipping plan,
+              customs estimate, and remedy terms.
             </p>
             <Link
               href="/contact/"
@@ -724,12 +703,10 @@ export default function BulkReturnGiftsGuideBlogPost() {
               color: "#5e4a40",
             }}
           >
-            <strong>About CeremonyVerse:</strong> We source bulk wedding return
-            gifts, bridal lehengas, sherwanis, ceremonial items, and welcome
-            bags directly from India&apos;s wholesale artisan markets for NRI
-            families in the USA. Every bulk order is physically inspected,
-            compacted for shipping, and customs-cleared under the correct HS
-            codes.{" "}
+            <strong>About CeremonyVerse:</strong> We help families research bulk
+            wedding-return gifts, outfits, ceremonial items, and welcome-bag items.
+            Vendor evidence, order approvals, packaging, shipping, customs estimates,
+            and outside-provider responsibilities are documented within the selected scope.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}

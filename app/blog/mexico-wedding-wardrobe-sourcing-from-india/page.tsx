@@ -48,7 +48,7 @@ const faqSchema = buildFaqSchema([
       "When the vendor and item allow it, Guided Sourcing and Full Bridal Concierge can include a scheduled video review of available pieces. The selected item, measurements, price, and next approval step are documented before purchase or production.",
   },
   {
-    question: "How much can a family save by sourcing from India?",
+    question: "How should a family compare India sourcing with US options?",
     answer:
       "There is no universal savings percentage. Compare the approved item price, CeremonyVerse service fee, shipping, possible customs charges, alteration allowance, timeline, and remedy terms with complete written US boutique quotes.",
   },
