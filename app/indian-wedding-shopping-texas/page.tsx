@@ -88,7 +88,7 @@ export default function IndianWeddingShoppingTexasPage() {
           Coordinate bridal, groom, wedding-party, and family outfits from India through one documented process, with live review when available, custom-order support, and delivery coordination across Texas.
         </p>
         <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-          Register for Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
