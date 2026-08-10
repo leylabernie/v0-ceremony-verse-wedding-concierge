@@ -126,15 +126,10 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            The single biggest mistake we see NRI brides make is treating
-            jewelry as an afterthought to the outfit. They spend months
-            perfecting the lehenga, then buy a matching jewelry set online in
-            the final weeks — only to discover on the wedding morning that the
-            gold tone clashes with the zari work, the stones look plastic in
-            daylight, or the necklace will not sit flat against the neckline.
-            The wrong jewelry can make a $3,000 custom lehenga look like a
-            rental, while the right jewelry elevates even a modest outfit into
-            something cinematic.
+            Jewelry decisions can affect color coordination, neckline fit,
+            comfort, weight, movement, photography, and the complete budget.
+            Review the selected outfit and ceremony requirements first, then
+            record the jewelry specifications and approval evidence.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -168,14 +163,10 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           </h2>
 
           <p>
-            Indian bridal jewelry is not one category. It is four distinct
-            craft traditions, each with its own visual language, price
-            structure, and ceremonial purpose. Before you spend a single
-            dollar, you need to know which style fits your wedding — because
-            the wrong choice is not a matter of taste, it is a matter of
-            authenticity. A South Indian temple bride wearing Kundan looks
-            costumed; a Punjabi bride wearing temple jewelry looks
-            underdressed.
+            These are broad product categories, not universal cultural rules.
+            Materials, construction, terminology, and ceremony use vary by
+            seller and family. Let the couple, family, and any relevant ceremony
+            authority approve what is appropriate.
           </p>
 
           <h3
@@ -199,13 +190,9 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             and unmistakably bridal.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>Best paired with:</strong> heavily embroidered red, maroon,
-            or pink bridal lehengas; Mughal-inspired outfits; Rajput and
-            Gujarati bridal wear. Kundan is the default choice for the main
-            wedding ceremony for North Indian brides. Expect a full Kundan
-            bridal set (necklace, earrings, maang tikka, nose ring, choker,
-            and headpiece) to cost between $1,200 and $4,500 when sourced
-            from India — and 2.5× to 3× that price at a US boutique.
+            <strong>Compare:</strong> base metal, stone representation, setting,
+            plating, gram weight, included pieces, dimensions, comfort, care,
+            item-specific evidence, and the current complete quote.
           </p>
 
           <h3
@@ -229,13 +216,10 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             because the stones are not precision-cut.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>Best paired with:</strong> pastel or ivory bridal lehengas,
-            reception outfits, and second-day looks. Polki is what most modern
-            celebrity brides wear at their reception — think Anushka Sharma,
-            Deepika Padukone, and Priyanka Chopra. A genuine Polki set (with
-            real uncut diamonds) starts around $4,000 and easily crosses
-            $15,000. If a seller offers &quot;Polki&quot; for under $1,000,
-            you are looking at glass — not diamond.
+            <strong>Compare:</strong> the exact stone and treatment representation,
+            base and precious-metal information, gram weight, setting, included
+            pieces, any available certification or hallmark, seller terms, and
+            current complete quote. Price or video alone does not authenticate stones.
           </p>
 
           <h3
@@ -258,20 +242,17 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             The look is devotional, weighty, and unmistakably South Indian.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>Best paired with:</strong> Kanchipuram silk sarees, South
-            Indian bridal wear, and any ceremony where the bride wears a
-            saree rather than a lehenga. A genuine temple jewelry bridal set
-            (mango mala, lakshmi haram, jhumka earrings, maang tikka, and
-            vanki) in 22K gold can cost $5,000–$25,000 depending on weight. If
-            you are wearing a{" "}
+            <strong>Compare:</strong> the couple and family&apos;s approved motifs,
+            material and hallmark representation, gram weight, construction,
+            included pieces, dimensions, comfort, seller terms, and current quote.
+            If you are also researching a{" "}
             <Link
               href="/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"
               style={{ color: "#7a6841" }}
             >
               Kanchipuram silk saree
             </Link>
-            , temple jewelry is almost always the correct choice — Kundan will
-            read as costume.
+            , review the full look with the family rather than applying a universal pairing rule.
           </p>
 
           <h3
@@ -295,11 +276,9 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             accent pieces for mehndi, haldi, and sangeet ceremonies.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>Best paired with:</strong> colorful mehndi and sangeet
-            outfits; as the reverse of a Kundan necklace for reception. A
-            Meenakari choker typically costs $400–$1,200 from India and works
-            beautifully for the lighter ceremonies where the bride wants
-            color, not just gold.
+            <strong>Compare:</strong> base metal, enamel technique and finish,
+            dimensions, reverse-side construction, included pieces, comfort,
+            care, item-specific evidence, and the current complete quote.
           </p>
 
           {/* ─── 6 CRITICAL FACTORS ─── */}
@@ -477,47 +456,39 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               marginBottom: "0.75rem",
             }}
           >
-            5. Realistic Budget Tiers for NRI Brides
+            5. Build an Item-Specific Jewelry Budget
           </h3>
           <p>
-            Indian bridal jewelry pricing is opaque, especially for buyers
-            outside India. Here is a realistic tier breakdown for what NRI
-            brides should expect to pay when sourcing directly from India
-            through a concierge — versus what the same pieces cost at a US
-            boutique.
+            Price depends on the selected materials, stone and treatment
+            representations, metal and gram weight, construction, included pieces,
+            customization, seller, service scope, shipping, customs, insurance,
+            and remedy terms. Use written item-specific inputs:
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Entry tier ($800–$1,500):</strong> Gold-plated Kundan
-              set with glass stones. Beautiful for the camera, but not an
-              heirloom. Suitable for a single-ceremony look or for the
-              bride&apos;s friend group.
+              <strong>Item:</strong> exact photos or references, materials, stones,
+              treatments, base metal, plating, gram weight, dimensions, included pieces,
+              customization, and item-specific evidence.
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Mid tier ($1,800–$4,500):</strong> Silver-based Kundan
-              with semi-precious stones (rubies, emeralds, uncut zircon).
-              Suitable for the main wedding ceremony. Photographs as
-              indistinguishable from fine jewelry.
+              <strong>Seller:</strong> identity, invoice, payment schedule,
+              production estimate, cancellation policy, and available remedy.
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Heirloom tier ($5,000–$15,000):</strong> Genuine Polki
-              with uncut diamonds, or 22K gold temple jewelry with real
-              rubies and emeralds. The kind of piece your daughter will wear
-              to her own wedding.
+              <strong>Service and delivery:</strong> CeremonyVerse scope, shipping,
+              customs estimate, declared-value or insurance options, documents,
+              handoff, and claim responsibility.
             </li>
             <li>
-              <strong>Investment tier ($15,000+):</strong> Custom Polki
-              bridal set with VVS-clarity uncut diamonds, or 22K gold temple
-              set with Navaratna stones. These are commissioned pieces, often
-              matched stone-by-stone to the bride&apos;s saree.
+              <strong>Contingency:</strong> local inspection or fitting if desired,
+              schedule buffer, and the written remedy if the item differs from
+              the approved record.
             </li>
           </ul>
           <p style={{ marginTop: "1rem" }}>
-            At a US Indian boutique, multiply every tier by 2.2× to 3×. The
-            same $2,500 mid-tier Kundan set costs $6,000–$7,500 in Jersey City
-            or Hicksville. The markup is not malice — it is the cost of US
-            retail rent, import middlemen, and slow inventory turnover passed
-            on to the bride.
+            Compare equivalent complete written quotes. Local and remote options
+            may include different services, evidence, fitting, payment protection,
+            delivery risk, and remedies; no universal savings percentage applies.
           </p>
 
           <h3
@@ -533,18 +504,14 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             6. Skin Sensitivity and Nickel Allergies
           </h3>
           <p>
-            Many NRI brides discover too late that they are allergic to
-            nickel — a metal commonly used as a base under cheap gold plating.
-            After 30 minutes of wear, the skin behind the ears and along the
-            neck turns red, itchy, and blistered. By the wedding, the bride is
-            taking antihistamines just to keep the jewelry on.
+            If you have known or suspected metal sensitivity, ask the seller for
+            the exact material and plating representation and discuss suitable
+            precautions with a qualified health professional.
           </p>
           <p style={{ marginTop: "0.8rem" }}>
-            <strong>The fix:</strong> insist on silver-based or gold-based
-            settings, not brass or nickel alloy. Genuine Kundan from
-            reputable Indian artisans is set on a silver base, not brass.
-            This is a 10% price difference that prevents a 100% disaster on
-            your wedding day.
+            <strong>Before ordering:</strong> record the base metal, plating,
+            posts, clasps, adhesives, care instructions, and return or remedy terms.
+            Consider a wear test early enough to change plans if needed.
           </p>
 
           {/* ─── 4 RED FLAGS ─── */}
@@ -558,16 +525,13 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            4 Red Flags That Expose Fake Kundan and Polki Online
+            4 Evidence Gaps to Investigate Before Ordering
           </h2>
 
           <p>
-            The most common scam targeting NRI brides is selling glass-stone
-            Kundan as &quot;real Polki&quot; or selling brass-based gold-plate
-            as &quot;22K gold.&quot; The price gap between these is enormous,
-            and the visual difference on a website thumbnail is almost zero.
-            Here are four red flags that always expose a fake — and that
-            reputable Indian sellers will happily disprove on video.
+            A remote listing may use material or stone terms without
+            item-specific support. These checks can reduce risk, but video,
+            price, or a checklist alone does not authenticate a jewelry claim.
           </p>
 
           <div
@@ -586,14 +550,12 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 color: "#8a4a3a",
               }}
             >
-              Red Flag #1 — &quot;Polki&quot; Priced Under $1,000
+              Evidence Gap #1 — Unsupported Stone Representation
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Genuine Polki contains uncut natural diamonds. Even a small
-              Polki choker with real stones cannot be sold for under $1,000
-              without the seller losing money. If the listing says
-              &quot;Polki&quot; and the price is three digits, you are buying
-              glass. Always.
+              Ask the seller to state the exact stone, treatment, quantity or
+              weight information, setting, and any available item-specific
+              certification. Price alone does not establish the material.
             </p>
           </div>
 
@@ -703,43 +665,34 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
           </h2>
 
           <p>
-            The instinct for many NRI brides is to drive to a local Indian
-            boutique in New Jersey, the Bay Area, or Chicago to touch the
-            jewelry in person before buying. We understand the instinct — but
-            the math almost never works in the bride&apos;s favor. The same
-            $2,500 Kundan set sourced directly from a Jaipur artisan through a
-            concierge routinely sells for $6,500 at a US boutique, and the
-            reasons are structural.
+            A local boutique may offer in-person inspection, fitting, local payment,
+            and local return options. A remote India-based order may offer different
+            inventory, customization, and costs while adding seller, shipping,
+            customs, and remedy risk.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>US retail rent:</strong> A 1,200 sq ft boutique in
-              Jersey City or Hicksville pays $10,000–$20,000/month in rent.
-              That overhead is baked into every piece in the case.
+              <strong>Exact item:</strong> material, stone and treatment representations,
+              metal and gram weight, construction, dimensions, included pieces,
+              and item-specific evidence.
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Import middleman markup:</strong> Most US Indian
-              boutiques do not buy directly from Indian artisans. They buy
-              through an importer whose services and overhead become part of
-              the retail price.
+              <strong>Service:</strong> viewing, fitting, customization, approvals,
+              payment, delivery, and excluded outside costs.
             </li>
             <li style={{ marginBottom: "0.6rem" }}>
-              <strong>Inventory carrying cost:</strong> Fine jewelry sits in
-              the case for 12–24 months before selling. The financing cost of
-              that inventory is added to your price tag.
+              <strong>Delivery:</strong> pickup or carrier, declared-value or insurance
+              options, shipping quote, customs estimate, and claim responsibility.
             </li>
             <li>
-              <strong>Limited selection:</strong> A US boutique typically
-              carries 40–80 bridal sets. India&apos;s heritage jewelry houses
-              carry thousands, and custom-commissioned pieces are an option.
+              <strong>Remedy:</strong> cancellation, return, correction, replacement,
+              alteration, or refund terms for the selected item.
             </li>
           </ul>
 
           <p style={{ marginTop: "1rem" }}>
-            For an honest price comparison, source the same specifications —
-            style, stone type, gram weight, base metal — through a concierge
-            and ask your local US boutique to quote the identical piece. The
-            difference is almost always 2.5× to 3×. For more on how the
+            Compare complete written quotes for equivalent items and responsibilities.
+            There is no universal price range or savings percentage. For more on how the
             logistics work end-to-end, see our{" "}
             <Link
               href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
@@ -761,16 +714,15 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               marginBottom: "1rem",
             }}
           >
-            How CeremonyVerse Sources Authentic Indian Wedding Jewelry for USA Brides
+            How CeremonyVerse Documents Indian Wedding Jewelry Sourcing
           </h2>
 
           <p>
-            If you want the wholesale pricing of buying directly from Indian
-            artisans without the risk of being scammed online, that is
-            exactly the gap CeremonyVerse fills. We are a US-based concierge
-            with boots on the ground in India — we verify every piece before a
-            single dollar leaves your account, and we film every step so you
-            can see exactly what is being shipped to your US door.
+            CeremonyVerse can organize jewelry research using one record for
+            the selected piece, seller evidence, materials, plating, stones,
+            dimensions, weight, approvals, service fee, shipping estimate,
+            customs estimate, and remedy terms. No remote process eliminates
+            seller, material, shipping, or customs risk.
           </p>
 
           <div
@@ -792,15 +744,13 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Live Video Shopping with Vetted Artisans
+              Eligible Live Item Review
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              We do not send you a catalog. We host a live video call with
-              our vetted jewelry houses in Jaipur, Kolkata, Hyderabad, and
-              Chennai. You see each piece move under natural daylight, hear
-              the weight, and ask the artisan questions directly through us.
-              A Kundan set looks completely different on a static photo
-              versus in motion — live video eliminates that gap.
+              Eligible tiers may include live video or current item media when
+              the seller and piece allow it. Use that evidence alongside the
+              written material, plating, stone, size, weight, and vendor terms;
+              video alone does not authenticate those claims.
             </p>
           </div>
 
@@ -892,16 +842,14 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 letterSpacing: "0.08em",
               }}
             >
-              Insured International Shipping
+              Documented Shipping Options
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Fine jewelry ships separately from outfits — it requires
-              declared-value insured courier service, not standard textile
-              freight. We handle the export documentation, US customs
-              declaration, and insured delivery directly to your US address.
-              All duties and shipping costs are itemized before you commit,
-              so there is no surprise bill when the package clears US
-              customs.
+              Confirm whether the selected carrier will accept the item, what
+              declared-value or insurance options are available, which documents
+              are required, and who is responsible for customs information and claims.
+              Shipping and customs amounts are estimates until assessed by the
+              responsible provider or agency.
             </p>
           </div>
 
@@ -1003,7 +951,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "1rem",
               }}
             >
-              Ready to Source Your Authentic Bridal Jewelry?
+              Ready to Research Bridal Jewelry Options?
             </h3>
             <p
               style={{
@@ -1012,10 +960,9 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Compare documented jewelry options and reduce remote-shopping risk. Book a
-              free 30-minute consultation and we&apos;ll walk you through how
-              to verify authentic Kundan, Polki, and temple jewelry — live, on
-              video, before you commit a dollar.
+              Compare documented jewelry options and reduce remote-shopping risk.
+              Request a consultation to organize item-specific material, construction,
+              hallmark, seller, cost, shipping, and remedy information before ordering.
             </p>
             <Link
               href="/contact/"
@@ -1058,13 +1005,10 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
               color: "#5e4a40",
             }}
           >
-            <strong>About CeremonyVerse:</strong> We source authentic Indian
-            bridal jewelry — Kundan, Polki, temple jewelry, and Meenakari —
-            plus bridal lehengas, sherwanis, Kanchipuram silk sarees, family
-            outfits, ceremonial items, and return gifts directly from
-            India&apos;s heritage artisans for NRI brides in the USA. Every
-            solid-gold piece is BIS Hallmark-verified and physically inspected
-            before shipping.{" "}
+            <strong>About CeremonyVerse:</strong> We help families research Indian
+            bridal-jewelry categories, wedding outfits, ceremonial items, and return gifts.
+            Any material or hallmark claim must be supported by item-specific evidence from
+            the selected seller; live video and pre-shipping review have documented limits.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}

@@ -4,7 +4,7 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/indian-wedding-outfit-scams-nri-brides/",
-  title: "10 Indian Wedding Outfit Scams NRI Brides Must Avoid (2026 Verified Vendor Checklist)",
+  title: "10 Remote Indian Wedding Outfit Risks: Vendor Evidence Checklist",
   description: "Real scam patterns NRI brides face buying lehengas online from India — fake Instagram sellers, bait-and-switch fabrics, stolen images, customs fraud — plus a 7-point vendor verification checklist.",
   keywords: ["Indian wedding outfit scams NRI brides", "fake lehenga seller Instagram India", "how to verify Indian wedding vendor online", "lehenga bait and switch scam", "avoid lehenga scam India to USA"],
   publishedTime: "2026-03-01",
@@ -46,7 +46,7 @@ export default function ScamsGuidePage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>Every week, we hear from NRI brides who lost money, time, or their dream outfit to a scam. The Indian wedding outfit market online is largely unregulated, and Instagram/WhatsApp sellers know that NRI brides are desperate, time-constrained, and often buying without seeing the product in person. Here are the 10 scams we see most often — and exactly how to avoid each one.</p>
+          <p>Remote wedding-outfit shopping can expose buyers to stolen catalog images, seller-identity problems, payment risk, product substitutions, sizing disputes, shipping delays, and limited remedies. The checks below can reduce risk, but no checklist or concierge can guarantee a successful order.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Why NRI Brides Are Especially Vulnerable to Indian Wedding Vendor Scams</h2>
 
@@ -58,7 +58,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>1. The Catalog Photo Scam</h2>
           <p><strong>How it works:</strong> The seller shows you a stunning professional photo of a lehenga. You pay. What arrives is a cheap replica made with lower-quality fabric, machine embroidery instead of handwork, and colors that look nothing like the photo.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Never buy from a photo alone. Demand a live video call where the seller shows you the actual piece — the fabric, the embroidery up close, the color in natural light. Ask them to drape it and move it so you can see how the fabric behaves. At CeremonyVerse, we do this for every single piece we source.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Ask for current item media when available and compare it with the written order references. Live video can add evidence, but it does not prove every material claim or guarantee that the delivered item will be identical.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>2. The &quot;Pure Silk&quot; Lie</h2>
           <p><strong>How it works:</strong> A seller labels a synthetic blend as &quot;pure silk&quot; or &quot;100% Banarasi silk.&quot; You pay the premium price for silk. What arrives is polyester that looks acceptable in photos but feels cheap, does not drape well, and photographs poorly under wedding lighting.</p>
@@ -70,7 +70,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>4. The Sizing Switch</h2>
           <p><strong>How it works:</strong> You send precise measurements. The workshop cuts to a standard template instead, saving time and fabric. When it arrives, it is &quot;close enough&quot; but does not fit properly — and alterations are limited because of the embroidery placement.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Ask for photos of the cutting process with a measuring tape visible against the fabric. Verify that your name or order number is written on the fabric piece. At CeremonyVerse, we verify every cut against submitted measurements before sewing begins.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Use the measurement chart required by the selected vendor, keep the approved chart in writing, and ask which production evidence is available. Remote made-to-measure clothing can still require local alteration.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>5. The Color Bait-and-Switch</h2>
           <p><strong>How it works:</strong> The photo shows a deep maroon. What arrives is bright red. The seller blames &quot;monitor differences.&quot; Ivory in a studio photo looks different from ivory in daylight. Gold embroidery can look brassy or yellow depending on the thread quality.</p>
@@ -78,7 +78,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>6. The Designer Replica Scam</h2>
           <p><strong>How it works:</strong> Sellers advertise &quot;Sabyasachi-inspired&quot; or &quot;Manish Malhotra replica&quot; lehengas at 1/10th the price. What they deliver is a mass-produced piece with glued-on embellishments that fall off during the first wear. The embroidery is cardboard-stiff, the fabric is synthetic, and the fit is off.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Designer replicas are almost always scams. If you want a designer piece, buy from an authorized boutique or the designer directly. If your budget does not allow that, work with a sourcing concierge to find original artisan-made pieces with genuine hand embroidery — they often look better than replicas and cost less.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Buy a designer piece from the designer or an authorized seller. Otherwise, use inspiration only to communicate an original silhouette, palette, or detail direction and document the selected item on its own terms.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>7. The Customs &quot;Surprise&quot;</h2>
           <p><strong>How it works:</strong> The seller ships without proper customs documentation or under-declares the value. Your package gets held at US Customs, and the final assessment is substantially higher than expected. The seller claims it is &quot;not their responsibility.&quot;</p>
@@ -86,15 +86,15 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>8. The Shipping Delay Excuse</h2>
           <p><strong>How it works:</strong> The seller promises delivery in 4 weeks. At week 5, they blame &quot;workshop delays.&quot; At week 7, &quot;fabric shortage.&quot; At week 10, they stop responding. Your wedding is in 2 weeks and you have no outfit.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Build a 4-week buffer into your timeline. Get a written production schedule with specific dates. Ask for weekly photo updates. If a seller cannot commit to a schedule in writing, do not order from them. Start sourcing 5-6 months before your wedding — not 2 months. See our <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>when to order your wedding outfits</Link> guide for a realistic timeline.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Get the current vendor estimate, decision deadlines, available progress evidence, change process, shipping plan, and remedy terms in writing. Build a meaningful buffer based on the actual item and preserve a local backup.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>9. The Return Policy Lie</h2>
           <p><strong>How it works:</strong> The seller promises &quot;easy returns&quot; or &quot;satisfaction guaranteed.&quot; When the wrong item arrives, they claim custom orders are non-returnable, or they offer store credit (useless when you are in the US), or they ghost you completely.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Get the return policy in writing before paying. Use a payment method with buyer protection. For international orders, returns to India are impractical (shipping costs $80-150, customs paperwork is complex). The best protection is live video approval before shipping — so you never need a return.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Get the return, cancellation, correction, replacement, alteration, or refund terms in writing before paying. Live video can add evidence when available, but it cannot eliminate the need for a remedy.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>10. The Missing Accessories Trap</h2>
-          <p><strong>How it works:</strong> You order a lehenga. What arrives is just the skirt. The blouse (choli) and dupatta are &quot;extra.&quot; The seller charges you $200-400 more for pieces that should have been included. Or they include a cheap blouse that does not match the lehenga quality.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> Confirm exactly what is included before ordering: lehenga skirt, blouse/choli (stitched or unstitched), dupatta, and any can-cans or petticoats. Get photos of each piece. If the blouse is unstitched, confirm whether stitching is included or extra — and budget $30-80 for blouse stitching.</p>
+          <p><strong>How it works:</strong> A listing or conversation may not make clear whether the skirt, blouse, dupatta, lining, can-can, petticoat, stitching, or accessories are included.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Record every included piece, its stitched or unstitched status, customization, outside costs, and item references before ordering.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Verify an Indian Lehenga Seller Before Sending Money from the US</h2>
 
@@ -103,7 +103,7 @@ export default function ScamsGuidePage() {
             <li style={{ marginBottom: "0.6rem" }}><strong>Video call test:</strong> Insist on a live video call where they show you the actual piece — not photos. If they refuse or keep making excuses, walk away.</li>
             <li style={{ marginBottom: "0.6rem" }}><strong>Ask for references:</strong> A legitimate seller should be able to provide 2-3 recent NRI customer references. Contact them directly via WhatsApp or Instagram.</li>
             <li style={{ marginBottom: "0.6rem" }}><strong>Check social media history:</strong> How long have they been posting? Do they have consistent engagement? Are there real customer photos and reviews? New accounts with only professional photos are red flags.</li>
-            <li style={{ marginBottom: "0.6rem" }}><strong>Request a fabric sample:</strong> For high-value orders, ask them to mail a small fabric swatch to your US address. The $20-30 shipping cost is worth the peace of mind.</li>
+            <li style={{ marginBottom: "0.6rem" }}><strong>Request available evidence:</strong> Ask whether an item-specific fabric swatch, certification, current media, or other documentation can be supplied and what it can or cannot prove.</li>
             <li style={{ marginBottom: "0.6rem" }}><strong>Verify payment method:</strong> Only use payment methods with buyer protection (credit card, PayPal). Never wire transfer, never Venmo to strangers, never cryptocurrency.</li>
             <li><strong>Start small:</strong> For your first order with a new vendor, order something lower-value (like a dupatta or blouse) before committing to a full bridal lehenga.</li>
           </ul>
@@ -126,7 +126,7 @@ export default function ScamsGuidePage() {
               Tired of Worrying About Scams?
             </p>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
-              Source your bridal lehenga from India — safely, with verified vendors and live video approval
+              Compare bridal lehenga options with documented vendor and item evidence
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
               Eligible tiers include live video or documented review, written approvals, and pre-shipping checks.
@@ -157,7 +157,7 @@ export default function ScamsGuidePage() {
               </li>
               <li>
                 <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>
-                  How our bridal lehenga sourcing works with live video approval
+                  How our bridal lehenga sourcing documents item evidence and approvals
                 </Link>
               </li>
             </ul>
@@ -166,7 +166,7 @@ export default function ScamsGuidePage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Every single one of these scams has cost a real NRI bride money, time, or her dream wedding outfit. Most were completely avoidable with the right verification process. You don&apos;t need to become an expert in Indian textile fraud to shop safely — you just need a system.
+              These patterns illustrate common remote-shopping risks; they are not CeremonyVerse client stories. A documented process can reduce risk, but it cannot guarantee a successful order.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want the printable safety checklist?
@@ -178,11 +178,11 @@ export default function ScamsGuidePage() {
               Download the Red Flags Checklist →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Rather skip the risk entirely? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free consultation</Link> to see whether the service fits your needs.
+              Want help organizing the evidence? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to see whether the service fits your needs.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits directly from India — with live video approval, milestone payments, and quality inspection before shipping. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works/" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help families research Indian wedding outfits, document measurements and approvals, and coordinate the responsibilities included in the selected service scope. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works/" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
         </div>
               <SourcingCallout />
       </article>

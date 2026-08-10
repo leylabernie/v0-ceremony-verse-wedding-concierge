@@ -7,6 +7,7 @@ import {
   buildMetadata,
   buildServiceSchema,
 } from "@/lib/seo"
+import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
 export const metadata = buildMetadata({
   path: "/how-it-works/",
@@ -69,6 +70,11 @@ const faqItems = [
     question: "What should we prepare before the consultation?",
     answer:
       "Bring the preferred dates or timeframe, estimated guest and event counts, travel origins, what the total budget must include, resorts already considered, and any important Gujarati, Hindu, Jain-food, accessibility, or family requirements.",
+  },
+  {
+    question: "What happens after the free fit call?",
+    answer:
+      "If you need a written feasibility decision before full planning, CeremonyVerse may recommend the $300 Destination Wedding Feasibility & Action Plan. It includes a working session, review of your own worksheets and up to two current proposals, a written action brief, and a follow-up. You can also proceed to a different written scope when that is a better fit.",
   },
   {
     question: "Will calculator entries be sent to CeremonyVerse automatically?",
@@ -218,6 +224,29 @@ export default function HowItWorksPage() {
                 Explore India Shopping
               </Link>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 sm:p-10">
+          <div className="grid gap-7 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Optional paid starting plan</p>
+              <h2 className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">
+                {destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}
+              </h2>
+              <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
+                Use the free call to confirm fit. Choose the paid plan when you need CeremonyVerse to turn your
+                figures and current written information into a decision brief before you commit to full planning.
+              </p>
+            </div>
+            <Link
+              href={destinationFeasibilityPlan.href}
+              className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white"
+            >
+              Review the $300 Plan
+            </Link>
           </div>
         </div>
       </section>

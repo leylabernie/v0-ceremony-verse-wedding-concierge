@@ -35,7 +35,7 @@ export default function BuyFromIndiaPage() {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Get direct access to designers and skilled makers in India through guided video shopping — without retail markups or travel stress.
+            Research vendor options in India through a documented remote process, with live review when the selected vendor and item allow it.
           </p>
         </div>
       </section>
@@ -49,11 +49,11 @@ export default function BuyFromIndiaPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            Many stores outside India source their collections from the same makers — but with higher pricing due to retail overheads, limited options, and lack of customization.
+            Local boutiques and India-based vendors offer different inventory, services, costs, fitting options, return terms, and lead times. Compare equivalent written scopes.
           </p>
 
           <p className="text-[var(--cv-muted)]">
-            CeremonyVerse gives you direct access to those same sources while guiding you through the process remotely.
+            CeremonyVerse helps organize available vendor options, item evidence, measurements, approvals, complete cost inputs, and delivery responsibilities.
           </p>
 
         </div>
@@ -109,7 +109,7 @@ export default function BuyFromIndiaPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            You connect with us, share your preferences, and then review options live via video. We guide you through selection, coordinate everything, and ensure quality before delivery.
+            Share your requirements, then review available options. Eligible tiers may include live video or current item media, written approvals, pre-shipping review, and delivery coordination when the selected vendor and item allow it.
           </p>
 
           <p className="text-[var(--cv-muted)]">
@@ -145,7 +145,7 @@ export default function BuyFromIndiaPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            Get guided access to trusted sources in India — without travel, confusion, or guesswork.
+            Use a documented India-sourcing process without requiring an international shopping trip.
           </p>
 
           <div className="flex flex-col items-center gap-3.5">

@@ -27,7 +27,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Bridal Lehenga Sourcing Concierge — India to USA",
   description:
-    "End-to-end concierge service for NRI brides sourcing custom bridal lehengas, sherwanis, bridesmaid outfits, and wedding return gifts directly from India to the USA. Includes live video shopping, master tailor measurement verification, HD quality inspection, and customs-cleared door-to-door delivery.",
+    "Bridal lehenga sourcing guidance for NRI families, with documented vendor options, measurements, written approvals, eligible live review, and U.S. delivery coordination.",
   url: "/how-to-buy-bridal-lehenga-from-india-to-usa/",
   category: "Indian Wedding Sourcing — Bridal Lehenga India to USA",
   offers: [
@@ -41,13 +41,13 @@ const serviceSchema = buildServiceSchema({
       name: "Guided Sourcing",
       price: 799,
       description:
-        "Live video shopping sessions with India vendors and master tailors for your bridal lehenga.",
+        "Live shopping and order coordination for selected bridal outfits, subject to item and vendor availability.",
     },
     {
       name: "Full Bridal Concierge",
       price: 2499,
       description:
-        "End-to-end bridal lehenga sourcing, quality checks, customs clearance, and delivery to your US door.",
+        "One organized sourcing process for the bride, groom, and wedding party of up to eight people.",
     },
   ],
 });
@@ -62,7 +62,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question:
-      "How much can I save by buying a bridal lehenga from India instead of a US boutique?",
+      "How do I compare an India-sourced bridal lehenga with a US boutique quote?",
     answer:
       "There is no universal savings percentage. Compare the approved vendor price, CeremonyVerse service tier, shipping, customs estimate, alteration allowance, timeline, and return terms with a written US boutique quote.",
   },
@@ -70,13 +70,13 @@ const faqSchema = buildFaqSchema([
     question:
       "How do I avoid sizing errors when buying a bridal lehenga from India remotely?",
     answer:
-      "Always use a professional measurement chart with 15+ points — not just bust-waist-hip. If you work with a concierge service like CeremonyVerse, we hop on a live video call with a master tailor present to visually verify how you take each measurement. This single step eliminates the miscommunication of even a single inch that can ruin a blouse or sherwani jacket.",
+      "Use the measurement chart required by the selected vendor and have a qualified local tailor help when appropriate. CeremonyVerse can coordinate a documented measurement review within eligible tiers, but remote made-to-measure clothing can still require local alteration.",
   },
   {
     question:
       "How do I verify the quality of a bridal lehenga before it leaves India?",
     answer:
-      "Require high-definition video inspection before the outfit leaves India. Do not release final payments until you have seen the fabric weight, stitching borders, and color accuracy in natural lighting. What looks like heavy zari embroidery on an Instagram photo can arrive as cheap plastic sequins. CeremonyVerse performs a rigorous physical quality check and sizing audit on every garment before it is securely boxed and shipped.",
+      "Ask for current item evidence and record the approved fabric, color, handwork, measurements, and finish in writing. Eligible tiers may include live review or another pre-shipping check when the vendor and item allow it, but no remote process proves every material claim or eliminates handmade-item and fit risk.",
   },
   {
     question:
@@ -87,7 +87,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Why use a personal wedding concierge instead of buying directly online?",
     answer:
-      "A dedicated concierge service like CeremonyVerse bridges the gap between the cost savings of shopping directly in India and the stress of managing time zones, language barriers, and shipping logistics on your own. We act as your boots on the ground in India — hand-selecting outfits from trusted weavers and designers based on your budget, providing itemized breakdowns of fabric costs, tailoring fees, and actual shipping rates with no hidden boutique markups, and performing rigorous physical quality checks and sizing audits before secure boxing and shipping.",
+      "A concierge can organize vendor options, item references, measurements, approvals, outside costs, shipping terms, and next actions in one record. CeremonyVerse states its scope and the independent provider responsibilities in writing before paid work begins; no universal savings, quality, fit, or delivery outcome is promised.",
   },
 ]);
 
@@ -126,9 +126,8 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             style={{ color: "#e8dfd2" }}
           >
             Learn how to compare and source a custom bridal lehenga,
-            sherwani, and return gifts from India—with live video
-            shopping, master-tailor verified measurements, HD quality checks,
-            and customs-cleared delivery to your US door.
+            sherwani, and return gifts from India using documented vendor
+            options, measurements, written approvals, and delivery planning.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
@@ -159,18 +158,16 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             Planning a South Asian wedding in the United States often means
             facing limited selections and retail prices that include importing,
             inventory, and storefront overhead at local bridal
-            boutiques. Sourcing your dream wedding outfits directly from India
-            is the smartest way to save money and get authentic designs, but
-            navigating remote sizing, customs duties, and shipping logistics
-            can be overwhelming.
+            boutiques. India sourcing may expand the available options, but it
+            also introduces vendor, handmade-item, sizing, customs, and shipping
+            risks that must be reviewed before purchase.
           </p>
           <p
             className="text-base md:text-lg leading-relaxed"
             style={{ color: "#4d403a" }}
           >
-            This comprehensive guide breaks down exactly how to buy your bridal
-            wear, bridesmaid outfits, and wedding favors from India safely and
-            affordably.
+            This guide explains how to compare bridal wear, bridesmaid outfits,
+            and wedding favors from India using complete written information.
           </p>
         </div>
       </section>
@@ -220,7 +217,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               },
               {
                 title: "Bulk Wedding Return Gifts and Favors",
-                body: "Sourced directly from Indian artisans — brass diyas, hand-painted potli bags, handloom stoles, and packaged sweets. Skip the import middlemen and pay actual artisan prices for 50 to 500 guest favors.",
+                body: "Compare available gifts using exact materials, dimensions, quantity, food or labeling requirements, production terms, shipping, customs, and remedy information.",
               },
             ].map((item) => (
               <div
@@ -311,11 +308,10 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                   The Fix:{" "}
                 </span>
                 <span style={{ color: "#4d403a" }}>
-                  Always use a professional measurement chart. If you work with
-                  an Indian concierge service, ensure they hop on a live video
-                  call with a master tailor present to visually verify how you
-                  take your measurements. This eliminates the miscommunication
-                  that turns a dream lehenga into a fitting disaster.
+                  Use the measurement chart required by the selected vendor and
+                  have a qualified local tailor help when appropriate. A
+                  documented review can reduce communication errors, but remote
+                  made-to-measure clothing can still require local alteration.
                 </span>
               </p>
             </div>
@@ -455,7 +451,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             If you want added support while shopping directly in India without
             the stress of managing time zones, language barriers, and shipping
             logistics, a dedicated concierge service like CeremonyVerse bridges
-            the gap. We act as your boots on the ground in India, providing:
+            the gap. The selected CeremonyVerse tier may provide:
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -473,10 +469,10 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 className="text-sm leading-relaxed"
                 style={{ color: "#e8dfd2" }}
               >
-                Hand-selecting outfits from trusted Indian weavers and
-                designers based on your budget. We use direct sourcing
-                strongest working relationships in Surat and Delhi, then narrow the
-                options to pieces that match your brief and timeline.
+                Researching options around the approved budget and item brief.
+                Our strongest stated working relationships are in Surat and
+                Delhi; other vendors are considered when their selected items,
+                evidence, capacity, and terms can be responsibly reviewed.
               </p>
             </div>
             <div
@@ -493,10 +489,10 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 className="text-sm leading-relaxed"
                 style={{ color: "#e8dfd2" }}
               >
-                Itemized breakdowns of fabric costs, tailoring fees, and actual
-                shipping rates — no hidden boutique markups. You see exactly
-                what the artisan charges, what shipping costs, and what US
-                customs duties will be — before you commit a single dollar.
+                A written breakdown of the represented product price,
+                customization, CeremonyVerse service fee, shipping estimate,
+                customs estimate, alteration allowance, and vendor terms before
+                purchase.
               </p>
             </div>
             <div
@@ -513,10 +509,9 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                 className="text-sm leading-relaxed"
                 style={{ color: "#e8dfd2" }}
               >
-                Rigorous physical quality checks and sizing audits before your
-                items are securely boxed and shipped directly to your doorstep
-                in the US. If anything does not match the approved sample, we
-                send it back to the artisan — at our cost, not yours.
+                Available pre-shipping review, carrier and tracking support, and
+                the applicable alteration or remedy terms stated in the signed
+                scope. Coverage depends on the selected item, vendor, and tier.
               </p>
             </div>
           </div>

@@ -8,12 +8,16 @@ import {
   JsonLd,
 } from "@/lib/seo"
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
+import {
+  destinationFeasibilityCredit,
+  destinationFeasibilityPlan,
+} from "@/lib/destination-feasibility-plan"
 
 export const metadata = buildMetadata({
   path: "/pricing/",
   title: "CeremonyVerse Pricing | India Sourcing & Destination Planning",
   description:
-    "Compare CeremonyVerse India sourcing fees and private-proposal destination planning and family support across Mexico and in Punta Cana.",
+    "Compare the $300 destination-wedding feasibility plan, private-proposal planning across Mexico and Punta Cana, and flat-fee India sourcing services.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
@@ -69,15 +73,22 @@ const tiers = [
 ]
 
 const serviceSchema = buildServiceSchema({
-  name: "CeremonyVerse Indian Wedding Sourcing Services",
+  name: "CeremonyVerse Wedding Services",
   description:
-    "Flat-fee India shopping concierge tiers and private-proposal destination-planning support for US families.",
+    "A $300 destination-wedding feasibility plan, private-proposal planning, and flat-fee India shopping support for US families.",
   url: "/pricing/",
-  offers: tiers.map((tier) => ({
-    name: tier.name,
-    price: tier.numericPrice,
-    description: tier.description,
-  })),
+  offers: [
+    {
+      name: destinationFeasibilityPlan.name,
+      price: destinationFeasibilityPlan.price,
+      description: destinationFeasibilityPlan.description,
+    },
+    ...tiers.map((tier) => ({
+      name: tier.name,
+      price: tier.numericPrice,
+      description: tier.description,
+    })),
+  ],
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Pricing", url: "/pricing/" }])
@@ -96,7 +107,7 @@ const faqItems = [
   {
     question: "Can I start with a free consultation?",
     answer:
-      "Yes. The 30-minute consultation is free and does not require a contract or payment. Paid work begins only after you select a scope and approve its written terms.",
+      "Yes. The 30-minute fit call is free and does not require a contract or payment. If you need a written feasibility decision before full planning, the next step can be the $300 Destination Wedding Feasibility & Action Plan. Other paid work begins only after you select a scope and approve its written terms.",
   },
   {
     question: "What happens if my party is larger than eight people?",
@@ -106,7 +117,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management across Mexico and in Punta Cana. Family communication, guest support, and optional India sourcing can be included in the private written proposal.",
+      "CeremonyVerse offers a $300 Feasibility & Action Plan as a paid starting point, followed by private-proposal Full Planning & Design, Partial Planning & Coordination, or Day-of Coordination & Management across Mexico and Punta Cana. Family communication, guest support, and optional India sourcing can be included in the private written proposal.",
   },
 ]
 
@@ -151,6 +162,37 @@ export default function PricingPage() {
             </p>
             <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
+
+          <article className="mb-10 rounded-3xl border border-[#c5a059]/50 bg-[#c5a059]/10 p-7 sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#c5a059]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold !text-[#f8f6f2] sm:text-4xl">
+                  {destinationFeasibilityPlan.name}
+                </h3>
+                <p className="mt-4 font-serif text-5xl font-semibold !text-white">{destinationFeasibilityPlan.priceLabel}</p>
+              </div>
+              <div>
+                <p className="leading-7 !text-[#e7ded3]">{destinationFeasibilityPlan.bestFor}</p>
+                <ul className="mt-5 grid gap-3 text-sm leading-6 !text-[#e7ded3] sm:grid-cols-2">
+                  {destinationFeasibilityPlan.includes.slice(0, 4).map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span aria-hidden="true" className="!text-[#c5a059]">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-5 text-sm leading-6 !text-[#e8cf9d]">{destinationFeasibilityCredit}</p>
+                <Link
+                  href={destinationFeasibilityPlan.href}
+                  className="mt-6 inline-flex rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f]"
+                >
+                  See the $300 Plan
+                </Link>
+              </div>
+            </div>
+          </article>
+
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {mexicoPackages.map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
@@ -308,13 +350,13 @@ export default function PricingPage() {
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the free call</h2>
+          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the free fit call</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
-            sourcing tier, destination-planning package, or family-support scope fits. No payment is required for the consultation.
+            sourcing tier, $300 feasibility plan, destination-planning package, or family-support scope fits. No payment is required for the fit call.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Book My Free Consultation
+            Book My Free Fit Call
           </Link>
         </div>
       </section>

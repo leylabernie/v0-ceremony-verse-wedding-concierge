@@ -58,43 +58,42 @@ export default function BridesmaidGuidePage() {
             <li style={{ marginBottom: "0.8rem" }}><strong>Metallics (champagne, rose gold, copper):</strong> Sophisticated and versatile. Work year-round and pair well with both silver and gold accessories.</li>
             <li><strong>Monochrome with the bride:</strong> Some brides choose to have bridesmaids in lighter shades of the bride&apos;s lehenga color. This creates a stunning gradient effect in group photos.</li>
           </ul>
-          <p style={{ marginTop: "1rem" }}><strong>What to avoid:</strong> Bright orange, neon colors, and red (too close to the bride&apos;s lehenga in many traditions). Also avoid white/cream (associated with mourning in some Indian cultures).</p>
+          <p style={{ marginTop: "1rem" }}><strong>Family approval matters:</strong> Color meanings and ceremony expectations vary. Let the couple and family approve the palette rather than applying a universal avoid list.</p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>The #1 rule for color consistency:</strong> Order ALL bridesmaid lehengas from the same workshop, from the same fabric bolt, in the same dye batch. Even ordering the same &quot;color name&quot; from two different sellers will result in mismatched shades. This is the most common mistake NRI brides make.
+            <strong>To reduce color variation:</strong> A single production brief and, when available, one fabric bolt or dye batch can help. Handmade materials, screens, lighting, and dye lots can still vary.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 2: Pick the Right Style for Your Group</h2>
           <p>Not every bridesmaid wants (or looks good in) the same outfit. Here are the options:</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Matching lehengas (same style, same color):</strong> Most traditional, best for photos. Works when bridesmaids have similar body types. Budget: ₹8,000-₹18,000 ($95-$210) per piece from India.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Matching lehengas:</strong> One approved style and color with each participant&apos;s measurements and comfort needs documented.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>Same color, different styles:</strong> Each bridesmaid gets a lehenga in the same color family but with slight style variations — different necklines, sleeve lengths, or skirt fullness. Most flattering for mixed body types.</li>
             <li style={{ marginBottom: "0.8rem" }}><strong>Color gradient (ombre effect):</strong> Bridesmaids wear lehengas in graduated shades of the same color family. Incredibly photogenic but requires precise dye matching.</li>
             <li><strong>Lehengas for some, anarkalis for others:</strong> Bridesmaids who prefer more coverage or comfort can wear anarkali suits in the same color and fabric as the lehengas. Still looks coordinated.</li>
           </ul>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 3: Get Measurements Right (This Is Where Most Fail)</h2>
-          <p>Indian lehenga sizing does not map to US dress sizes. A US size 6 might be a Medium or Large in Indian sizing depending on the brand. Here is how we handle it:</p>
+          <p>Size labels and measurement charts vary by vendor and garment. Use the selected vendor&apos;s chart and preserve a local-fitting plan:</p>
           <p style={{ marginTop: "1rem" }}><strong>Option A: Self-measurement with video guide.</strong> Send each bridesmaid a 5-minute video tutorial showing exactly how to take bust, waist, hip, and length measurements. Have them send photos of the measuring tape against their body for verification.</p>
-          <p style={{ marginTop: "1rem" }}><strong>Option B: Virtual fitting session.</strong> Do a group Zoom call where each bridesmaid takes measurements live while you (or your sourcing partner) verify technique. Takes 30 minutes for 6 people.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Option B: Virtual measurement session.</strong> A scheduled group call can help participants follow the selected vendor&apos;s chart and record questions. It does not replace a qualified local fitting or guarantee fit.</p>
           <p style={{ marginTop: "1rem" }}><strong>Option C: Local tailor measurements.</strong> Have each bridesmaid visit a local Indian tailor in their city for professional measurements. Most accurate but logistically harder.</p>
 
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
-            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Critical Sizing Rule</p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Always build in 1-1.5 inches of ease for the blouse and 2 inches for the lehenga waist. Indian lehengas are easier to take in than let out. And remember: US alterations cost $50-150 per piece — factor this into your budget for every bridesmaid.</p>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Confirm Ease and Alteration Allowance</p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Do not apply a universal ease rule. Ask the selected vendor how ease, seam allowance, layers, and fit preferences are handled, then request a local alteration quote for each participant.</p>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Bridesmaid Lehenga Prices from India: What to Budget Per Person</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Build the Group Budget from Written Inputs</h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
-              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Item</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>India Cost</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>US Cost</th></tr></thead>
+              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Input</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>What to Record</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>6 bridesmaid lehengas</td><td style={{ textAlign: "right" }}>$570-$1,260</td><td style={{ textAlign: "right" }}>$1,800-$3,600</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Shipping to USA</td><td style={{ textAlign: "right" }}>$120-$200</td><td style={{ textAlign: "right" }}>N/A</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US customs duties</td><td style={{ textAlign: "right" }}>$100-$250</td><td style={{ textAlign: "right" }}>N/A</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>US alterations (6 people)</td><td style={{ textAlign: "right" }}>$300-$600</td><td style={{ textAlign: "right" }}>$300-$600</td></tr>
-                <tr><td style={{ padding: "0.5rem 0", fontWeight: 600 }}>Total</td><td style={{ textAlign: "right", fontWeight: 600 }}>$1,090-$2,310</td><td style={{ textAlign: "right", fontWeight: 600 }}>$2,100-$4,200</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Garments</td><td>Exact item, quantity, materials, customization, included pieces, and vendor terms</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Service</td><td>CeremonyVerse scope, included work, limits, and excluded outside costs</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Delivery</td><td>Carrier quote, customs estimate, insurance option, documents, and claim responsibility</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Fitting</td><td>Local tailor quote, alteration allowance, first-fitting date, and backup option</td></tr>
               </tbody>
             </table>
           </div>
@@ -104,7 +103,7 @@ export default function BridesmaidGuidePage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 4: Order from the Same Workshop</h2>
-          <p>This is non-negotiable for color consistency. When you order bridesmaid lehengas from different sellers:</p>
+          <p>A single vendor or production run may reduce coordination risk. If multiple sellers are used, document the likely differences:</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.6rem" }}>Fabric dye lots will differ — even for the same &quot;color name&quot;</li>
             <li style={{ marginBottom: "0.6rem" }}>Embroidery thread colors will not match</li>
@@ -118,11 +117,11 @@ export default function BridesmaidGuidePage() {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>When</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Action</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>5 months out</td><td style={{ padding: "0.5rem 0" }}>Finalize color palette and style</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>4.5 months out</td><td style={{ padding: "0.5rem 0" }}>Collect all measurements</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>4 months out</td><td style={{ padding: "0.5rem 0" }}>Place group order with workshop</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>3 months out</td><td style={{ padding: "0.5rem 0" }}>Video approval of fabric samples</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>2.5 months out</td><td style={{ padding: "0.5rem 0" }}>Production complete, final inspection</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Requirements</td><td style={{ padding: "0.5rem 0" }}>Approve palette, style options, quantity, comfort needs, and complete budget</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Measurements</td><td style={{ padding: "0.5rem 0" }}>Use the selected vendor&apos;s chart and record each participant&apos;s approval</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Order</td><td style={{ padding: "0.5rem 0" }}>Confirm item references, costs, estimate, payment, cancellation, and remedy terms</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Production</td><td style={{ padding: "0.5rem 0" }}>Record available evidence, change process, and current vendor estimate</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Delivery and fitting</td><td style={{ padding: "0.5rem 0" }}>Confirm shipment responsibilities, customs, tracking, first fitting, and backup plan</td></tr>
                 <tr><td style={{ padding: "0.5rem 0" }}>2 months out</td><td style={{ padding: "0.5rem 0" }}>Ship to USA, arrives 1.5 months before wedding</td></tr>
               </tbody>
             </table>
@@ -141,7 +140,7 @@ export default function BridesmaidGuidePage() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>
-                  When to order so bridesmaid outfits arrive on time
+                  How to build a bridesmaid-order timeline with buffers
                 </Link>
               </li>
               <li>

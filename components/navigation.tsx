@@ -104,8 +104,8 @@ export function Navigation() {
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              <span className="min-[1660px]:hidden">Book Consultation</span>
-              <span className="hidden min-[1660px]:inline">Book Free Consultation</span>
+              <span className="min-[1660px]:hidden">Book Fit Call</span>
+              <span className="hidden min-[1660px]:inline">Book Free Fit Call</span>
             </Link>
           </div>
 
@@ -146,7 +146,7 @@ export function Navigation() {
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
-                Book Free Consultation
+                Book Free Fit Call
               </Link>
             </div>
           </div>

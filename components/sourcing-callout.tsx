@@ -27,8 +27,8 @@ export function SourcingCallout() {
         Sourcing Your Indian Wedding Wardrobe from Abroad?
       </h4>
       <p style={{ color: "#555" }}>
-        CeremonyVerse manages custom measurements, quality checks, and direct
-        door delivery for NRI brides and grooms.
+        CeremonyVerse helps document measurements, approvals, vendor terms,
+        pre-shipping review options, and delivery responsibilities.
       </p>
       <a
         href="/how-it-works/"

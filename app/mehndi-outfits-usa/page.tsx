@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
 
 const serviceSchema = buildServiceSchema({
   name: "Mehndi Ceremony Outfit Sourcing",
-  description: "Vibrant Mehndi ceremony outfits sourced from India \u2014 choli, lehenga, anarkali, and kurta sets in traditional henna colors, with custom stitching and US delivery.",
+  description: "Mehndi ceremony outfit research and sourcing for choli, lehenga, anarkali, and kurta sets, with documented options and U.S. delivery coordination.",
   url: "/mehndi-outfits-usa/",
 });
 
@@ -31,10 +31,10 @@ export default function MehndiOutfitsPage() {
           Mehndi & Haldi Ceremony
         </p>
         <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2.2rem, 5vw, 3.4rem)", fontWeight: 600, color: "#1f1f1f", lineHeight: 1.12, marginBottom: "22px" }}>
-          Mehndi & Haldi outfits sourced from India, delivered to your US door.
+          Mehndi & Haldi outfits from India, organized through a documented U.S. sourcing process.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          The Mehndi and Haldi ceremonies set the tone for everything that follows. We source bright, festive outfits — yellows, oranges, greens — custom stitched to your measurements and coordinated across your entire bridal party and family.
+          Organize family-approved Mehndi and Haldi outfit colors, fabrics, quantities, measurements, and budgets in one documented sourcing process. Customization and delivery depend on the selected item and vendor.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -54,8 +54,8 @@ export default function MehndiOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {[
               { title: "Bride's Mehndi Lehenga", desc: "Bright yellow, green, or orange lehenga or anarkali — festive, comfortable for sitting, and beautiful for photos." },
-              { title: "Haldi Outfit", desc: "Simple, cheerful outfit specifically for the Haldi — often cotton or georgette so it can get messy. Custom stitched to your fit." },
-              { title: "Bridesmaid Outfits", desc: "Coordinated salwar sets, lehengas, or anarkalis in complementary colors. All measurements collected and managed by us." },
+              { title: "Haldi Outfit", desc: "Record the approved color, fabric, comfort, reuse, and customization requirements before reviewing options." },
+              { title: "Bridesmaid Outfits", desc: "Coordinate salwar sets, lehengas, or anarkalis with shared color references and individual measurement records." },
               { title: "Family Outfits", desc: "Coordinated kurtas and salwar sets for both sides of the family. Bright, festive palette to match the vibe." },
               { title: "Dupatta & Accessories", desc: "Contrasting or matching dupattas, floral jewelry, and mehndi-appropriate accessories sourced together." },
             ].map((item) => (
@@ -90,10 +90,10 @@ export default function MehndiOutfitsPage() {
             Mehndi outfit FAQ
           </h2>
           {[
-            { q: "What colors are traditional for Mehndi outfits?", a: "Yellow is the most traditional Mehndi color, followed by orange, green, and pink. Many brides choose a bright yellow for Haldi and a more elaborate look for the Mehndi function. We source across all color preferences." },
-            { q: "Should the Mehndi outfit be comfortable?", a: "Yes — you'll be sitting for extended periods during the Mehndi application. We recommend flats or low heels and a comfortable silhouette. We factor this into our sourcing recommendations." },
-            { q: "How far in advance should I order Mehndi outfits?", a: "6–8 months before your ceremony date is ideal. Mehndi outfits are often ordered after the bridal lehenga — but don't leave them too late, especially if bridesmaid coordination is involved." },
-            { q: "Can you coordinate bridesmaid outfits in matching colors?", a: "Yes — this is one of our specialties. We collect all measurements, source coordinating pieces, and manage the entire process so everything arrives together." },
+            { q: "What colors should we choose for Mehndi outfits?", a: "Use the colors approved by your couple and family. CeremonyVerse can record the palette, event requirements, quantities, and available item options without treating one family's choice as a universal rule." },
+            { q: "Should the Mehndi outfit be comfortable?", a: "Include sitting time, movement, footwear, weather, fabric weight, and sleeve or neckline preferences in the item brief before approving a silhouette." },
+            { q: "How far in advance should I order Mehndi outfits?", a: "The timeline depends on the selected item, quantity, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. Confirm a written timeline before purchase." },
+            { q: "Can you coordinate bridesmaid outfits in matching colors?", a: "Group coordination is available within the selected tier or custom written scope. Handmade dye lots and screen colors can vary, so the order records the approved references and acceptable variation." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>
@@ -109,7 +109,7 @@ export default function MehndiOutfitsPage() {
             Plan your Mehndi &amp; Haldi looks with us
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            From the bride&rsquo;s yellow lehenga to coordinated bridesmaid sets and family kurtas &mdash; we source every piece from India, custom stitched and delivered to your US door.
+            Discuss the bride, wedding-party, and family outfit requirements in one consultation. Item, customization, vendor, shipping, customs, and remedy terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

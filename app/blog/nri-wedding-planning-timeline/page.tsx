@@ -53,7 +53,7 @@ export default function NriWeddingPlanningTimeline() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
-            One of the most common stories we hear at CeremonyVerse goes something like this: a couple gets engaged, celebrates, enjoys the moment — and then looks up six months before the wedding and realizes they haven&apos;t ordered anything from India yet. The bridal lehenga hasn&apos;t been chosen. The mothers&apos; sarees haven&apos;t been sourced. The bridesmaid outfits are a vague idea in a group chat that nobody has followed up on.
+            A common planning risk is postponing wardrobe decisions until the wedding date, participant list, and ceremony schedule are already creating deadline pressure. The bridal look, family sarees, and wedding-party outfits may still be unresolved, while vendor production, approvals, shipping, customs, fitting, and alteration time remain.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Six months feels like a lot of time. For a domestic wedding in India, it might be. But for an NRI bride sourcing outfits from India while living in the United States, six months is tight. And for heavily embroidered, custom-made, or multi-ceremony bridal wardrobes? Six months is genuinely risky.
@@ -72,10 +72,10 @@ export default function NriWeddingPlanningTimeline() {
             When you live in Philadelphia, Houston, or Toronto, none of that is possible. Every step — initial consultation, fabric selection, measuring, sampling, production, quality review, shipping, customs clearance, and final alteration — has to be planned in advance and executed with a clear window of time. A delay at any stage creates a domino effect that&apos;s very hard to recover from.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Add to this the reality that US customs clearance for international shipments is not always predictable. Packages are held. Duties are assessed. Clearance can take days or, occasionally, weeks. According to <a href="https://g3fashion.com/blog/fashion/how-to-buy-lehenga-choli-in-the-usa-guide/" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>G3Fashion&apos;s shipping guide</a>, international shipping from India alone adds 5–8 business days on top of production time — and that&apos;s under normal conditions. The safest approach is to assume packages will take longer than expected and plan accordingly.
+            Carrier and customs timing can change by route, service level, shipment details, documentation, and inspection. Obtain current estimates for the actual shipment, preserve a meaningful buffer, and do not treat an outside estimate as a guarantee.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Here is your complete month-by-month timeline.
+            The stages below are an illustrative planning framework. Replace every range with current written estimates for the selected items and providers.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -85,7 +85,7 @@ export default function NriWeddingPlanningTimeline() {
             At this stage, you don&apos;t need to have chosen anything. But you do need to start.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li>Book a free consultation with a <Link href="/contact/" style={{ color: "#7a6841" }}>concierge or sourcing expert</Link> (like CeremonyVerse) to map out your ceremony schedule, number of outfits needed, and realistic budget</li>
+            <li>Request a <Link href="/contact/" style={{ color: "#7a6841" }}>consultation</Link> to organize the family-approved ceremony schedule, item count, priorities, known estimates, and budget</li>
             <li>List every ceremony — sangeet, mehendi, church or mandap ceremony, reception, post-wedding events — and assign a rough outfit to each one</li>
             <li>Identify which family members need outfits sourced from India: both mothers, bridesmaids, groomsmen, flower girls, and any aunties who are part of the formal party</li>
             <li>Set a total outfit budget and rough allocation by category</li>
@@ -98,16 +98,16 @@ export default function NriWeddingPlanningTimeline() {
             10–12 Months Out: Bridal Lehenga Sourcing Begins
           </h2>
           <p>
-            The bridal lehenga is the single item that requires the most lead time. It is heavily embroidered, often custom-made, and the one piece you absolutely cannot compromise on. This is where your timeline either holds or breaks down.
+            A custom bridal lehenga may be one of the more time-sensitive items, depending on the selected design, vendor capacity, customization, and approval process.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Why this early?</strong> Top designers and outfit specialists in Delhi, Mumbai, and Hyderabad book up months in advance. If you are set on a specific designer&apos;s work, or want a fully custom piece, the 10–12 month window is not just ideal — it is necessary. As the <a href="https://www.reddit.com/r/DesiWeddings/comments/1h0gqkp/timeline_to_buy_bridal_lehenga/" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>DesiWeddings community</a> notes, most brides secure their lehenga 8 to 12 months in advance precisely because they know how stressful last-minute changes can be.
+            <strong>Why review it early?</strong> Vendor capacity, materials, customization, and approval timing can change. Ask the selected seller for a current production estimate and decision deadlines, then add shipping, customs, first-fitting, alteration, and contingency buffers.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li>Begin virtual consultations with outfit specialists, reviewing options based on your ceremony type, color palette, and silhouette preferences</li>
+            <li>Review available vendor options based on the family-approved ceremony brief, palette, silhouette, and complete budget</li>
             <li>Narrow down to two or three options and request swatches or samples if possible</li>
             <li>Finalize your selection and confirm measurements — these will be used for stitching</li>
-            <li>Place the order and confirm a delivery date that gets the lehenga to you at least 6–8 weeks before the wedding</li>
+            <li>Place the order only after the vendor estimate, shipping plan, local-fitting window, and remedy terms are documented</li>
           </ul>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -117,10 +117,10 @@ export default function NriWeddingPlanningTimeline() {
             With the bridal lehenga confirmed, attention shifts to the groom and the bridal party.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Groom&apos;s sherwani:</strong> A custom sherwani from a reputable outfit specialist in India takes 4–6 weeks to produce, plus shipping time. Booking at 8–10 months gives you flexibility for revisions and re-stitching if the first fit isn&apos;t perfect.
+            <strong>Groom&apos;s sherwani:</strong> Production depends on the selected garment, vendor, materials, customization, and approvals. Record the current estimate and preserve a local-fitting and alteration plan.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Bridesmaid outfits:</strong> This is where NRI couples consistently underestimate complexity. If you have eight, ten, or twelve bridesmaids in different US cities, collecting accurate measurements from all of them takes time in itself. Then each blouse needs to be stitched to individual measurements. Then the sarees or suits need to be packed and shipped, potentially to multiple addresses. Plan for this to take at least 6 months from order to delivery.
+            <strong>Bridesmaid outfits:</strong> Group coordination may involve participants in different cities, vendor-specific measurements, individual approvals, quantity, packing, shipping, customs, and local alterations. Build the range from those actual inputs rather than a universal minimum.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li>Finalize bridesmaid style (sarees, churidars, or indo-western), fabric, and color</li>
@@ -136,16 +136,16 @@ export default function NriWeddingPlanningTimeline() {
             Mothers, mothers-in-law, aunties, cousins — this layer is both emotionally important and logistically large.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            For most South Indian families, the mothers on both sides need Kanchipuram silk sarees. For North Indian families, it might be a heavily embellished salwar suit or a designer saree. The key point is that these are not afterthoughts. They are significant purchases that require real sourcing effort.
+            Family wardrobe expectations vary by region, faith, ceremony, and household. Let the family approve each person&apos;s requirements, then document the selected item and vendor details.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li>Have the color coordination conversation with both families — ideally the two mothers should complement each other without clashing</li>
             <li>Finalize fabrics and styles with each family member who needs a sourced outfit</li>
             <li>Collect measurements and preferences</li>
-            <li>Place orders with artisan partners in India who specialize in the specific regional styles you need</li>
+            <li>Place orders only after the selected vendor, item details, approvals, costs, timeline, and remedy terms are documented</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            Note: If grandparents or elderly family members are involved, give extra lead time. Their measurements may need in-person collection when someone travels to India, and their preferences are usually very specific.
+            Note: Ask each participant what measurement help, comfort, mobility, care, and fitting support they need; do not assume those needs from age alone.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -184,7 +184,7 @@ export default function NriWeddingPlanningTimeline() {
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li>Schedule appointments with a local Indian tailor for final fittings — blouse alterations, fall and pico stitching on sarees, and hemming on lehengas</li>
-            <li>Allow at least 2–3 weeks for the tailor to complete all alterations</li>
+            <li>Ask the selected local tailor for a current estimate and preserve time for any approved follow-up fitting</li>
             <li>Do not skip this step. Even well-made outfits sourced in India often need minor adjustments once worn on a US body in a fitting room</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
@@ -198,7 +198,7 @@ export default function NriWeddingPlanningTimeline() {
             <strong>The rule is simple:</strong> if it hasn&apos;t arrived yet, you should be tracking it daily.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Nothing should be on backorder, in production, or &ldquo;expected any day now&rdquo; at this stage. Every outfit, every accessory, every ceremonial item should be physically present and accounted for.
+            Use an inventory record to identify anything still in production or transit and activate the documented backup plan when the remaining buffer is no longer acceptable.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Schedule a final outfit review with your planner or concierge: try everything on, confirm all alterations are complete, and do a full inventory against your ceremony-by-ceremony outfit list.
@@ -211,7 +211,7 @@ export default function NriWeddingPlanningTimeline() {
             It happens. Life is busy. Engagements run long. Planning got delayed.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            If you are within 6 months of your wedding and haven&apos;t started sourcing, here is the honest truth: you can still do this, but you need to move quickly, prioritize ruthlessly, and rely on <Link href="/services/" style={{ color: "#7a6841" }}>experts who have done this before</Link>.
+            If the schedule is compressed, request current ready-made and limited-customization options, prioritize the couple&apos;s most important items, and keep a local backup. Feasibility depends on actual vendor and carrier confirmation.
           </p>
           <ol style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Bridal lehenga first</strong> — call your concierge today, not next week</li>
@@ -220,7 +220,7 @@ export default function NriWeddingPlanningTimeline() {
             <li><strong>Build in extra budget</strong> for expedited shipping and potential duty fees</li>
           </ol>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>For US tariffs and customs:</strong> As of 2025–2026, imported Indian garments may be subject to import duties depending on the tariff category and declared value. Factor in customs clearance time of at least 5–10 business days for each shipment. Working with a <Link href="/how-it-works/" style={{ color: "#7a6841" }}>concierge who has established relationships</Link> with Indian outfit specialists and reliable international shipping partners significantly reduces this risk.
+            <strong>For US tariffs and customs:</strong> An assessment can depend on classification, fiber, construction, country of origin, declared value, and the rules in effect on the entry date. Obtain shipment-specific guidance from the carrier or qualified customs professional; a concierge cannot control clearance timing or the final assessment.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -284,7 +284,7 @@ export default function NriWeddingPlanningTimeline() {
               Book a free consultation and map out your full sourcing timeline
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
-              In 30 minutes, we&apos;ll review your wedding date, ceremony list, and budget — and tell you exactly when each outfit needs to be ordered to arrive on time. No commitment, no pressure.
+              We&apos;ll review your wedding date, family-approved ceremony list, item requirements, known estimates, and budget. The result is a documented planning range and next-action list—not an arrival guarantee.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/contact/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Book Free Consultation</Link>

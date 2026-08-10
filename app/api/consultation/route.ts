@@ -6,6 +6,7 @@ export const runtime = "nodejs"
 const serviceOptions = [
   "India shopping",
   "Destination wedding planning",
+  "Destination Wedding Feasibility & Action Plan ($300)",
   "India shopping + destination wedding planning",
   "Not sure",
 ] as const

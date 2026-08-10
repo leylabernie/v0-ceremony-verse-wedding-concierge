@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
 
 const serviceSchema = buildServiceSchema({
   name: "Bridal Lehenga Sourcing & Concierge",
-  description: "Custom bridal lehenga sourcing directly from India for NRI brides in the USA. Includes live video shopping, quality checks, custom stitching, and door-to-door delivery.",
+  description: "Bridal lehenga research and sourcing from India with documented approvals, guided measurements, optional pre-shipping review, and US delivery coordination.",
   url: "/buy-bridal-lehenga-from-india-usa/",
   offers: [
     { name: "Style Guide & Vendor List", price: 249, description: "Curated vendor style guide for your bridal lehenga." },
@@ -35,7 +35,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How long does it take to buy a bridal lehenga from India and have it delivered to the USA?",
-    answer: "From the day you place your order to delivery at your US door, plan for 14–20 weeks for a custom bridal lehenga: 2–3 weeks for design consultation and fabric sourcing, 6–12 weeks for production (longer for heavy zardozi or gota patti work), 1 week for quality inspection, and 2–3 weeks for international shipping and US customs clearance. We recommend starting 6–12 months before your wedding date.",
+    answer: "The planning range depends on the selected item, vendor workload, customization, approval timing, carrier, customs, and alteration buffer. The written quote records the current vendor estimate and shipping plan; begin early enough to allow for changes and a local fitting because no universal lead time is guaranteed.",
   },
   {
     question: "Do I have to pay US customs duties on a bridal lehenga ordered from India?",
@@ -66,7 +66,7 @@ export default function BridalLehengaPage() {
             Bridal Lehenga Sourcing · India → USA
           </p>
           <h1 className="text-4xl md:text-5xl font-semibold mb-6" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Buy a Bridal Lehenga from India — Delivered to Your US Door
+            Buy a Bridal Lehenga from India — With U.S. Delivery Coordination
           </h1>
           <p className="text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: "#e8dfd2" }}>
             Research and source a bridal lehenga from India without making the shopping trip yourself.
@@ -112,23 +112,21 @@ export default function BridalLehengaPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <h3 className="font-semibold text-xl mb-3" style={{ color: "#1f1f1f" }}>US boutique reality</h3>
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
-                <li>• Limited in-stock selection — typically 15–40 bridal lehengas per store</li>
-                <li>• Prices start at $2,500 and run to $8,000+ for zardozi-heavy work</li>
-                <li>• You pay for the boutique's rent, inventory, and import duties</li>
-                <li>• Customization is rare and adds 50–100% to the price</li>
-                <li>• Heavy sales pressure to buy what's in stock today</li>
-                <li>• Few options for coordinating bridesmaids or family outfits</li>
+                <li>• In-person access to the store&apos;s current inventory</li>
+                <li>• Local fitting, alteration, payment, and return terms may be easier to review</li>
+                <li>• Selection, customization, pricing, and lead time vary by boutique</li>
+                <li>• Request a complete written quote for an equivalent comparison</li>
               </ul>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-8">
               <h3 className="font-semibold text-xl mb-3" style={{ color: "var(--cv-accent)" }}>India direct with CeremonyVerse</h3>
               <ul className="space-y-2 text-[#4d403a] text-sm leading-relaxed">
                 <li>• Strongest stated working relationships in Surat and Delhi</li>
-                <li>• Real 2026 prices: $800–$3,500 for a custom bridal lehenga</li>
+                <li>• Item-specific vendor quotes rather than a universal price range</li>
                 <li>• Choose a transparent flat-fee CeremonyVerse sourcing tier</li>
-                <li>• Custom embroidery, color, dupatta drape, and silhouette included</li>
-                <li>• Live video shopping — zero pressure, full transparency</li>
-                <li>• Coordinate bride + 14 bridesmaids + family + jewelry in one order</li>
+                <li>• Customization depends on the selected vendor, item, and written scope</li>
+                <li>• Live review may be available when the vendor and item allow it</li>
+                <li>• Full Bridal Concierge covers the couple and wedding party up to eight people</li>
               </ul>
             </div>
           </div>
@@ -142,50 +140,50 @@ export default function BridalLehengaPage() {
             Bridal Lehenga Styles
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center" style={{ color: "#1f1f1f", fontFamily: "'Cormorant Garamond', Georgia, serif" }}>
-            Every bridal lehenga style, sourced from its region of expertise
+            Bridal lehenga options organized around your approved brief
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Zardozi bridal lehengas</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Hand-embroidered metallic bullion thread work — the heritage of Lucknow and Delhi.
-                Heavy, opulent, traditional. $1,500–$3,500 custom.
+                Ask the selected vendor to document the technique, materials, coverage, construction,
+                customization, and current quote for the exact option.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Gota Patti lehengas</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Rajasthan's signature appliqué of gold and silver ribbon. Lighter than zardozi, ideal
-                for daytime ceremonies. $900–$2,200 custom from Jaipur.
+                Compare available appliqué options by materials, construction, weight, care,
+                customization, vendor terms, and current written quote.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Sequin & mirror work</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Modern shimmer for Sangeet and reception lehengas. Surat and Mumbai specialists.
-                $700–$1,800 custom.
+                Compare available sequin and mirror-work options for the approved ceremony brief.
+                Record the materials, coverage, finish, care, and vendor terms.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Resham thread embroidery</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Fine silk thread work in floral and paisley motifs — elegant, lightweight, perfect for
-                summer weddings. $800–$1,800 from Kolkata.
+                Request the exact thread, fiber, motif, coverage, weight, care, customization,
+                and current vendor quote rather than relying on a category name.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Banarasi silk lehengas</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Woven gold and silver brocade from Varanasi weavers — heritage textile, heirloom
-                quality. $1,200–$2,800 custom.
+                Ask for the exact fiber, zari, weave, origin representation, construction,
+                customization, and available item-specific evidence.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
-              <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Designer recreation</h3>
+              <h3 className="font-semibold mb-2" style={{ color: "#1f1f1f" }}>Original design direction</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                Bring us Sabyasachi, Manish Malhotra, or Anita Dongre references and our designer and
-                tailor in India will recreate the silhouette to your budget.
+                Use inspiration references to identify a silhouette, palette, material, and detail level
+                for an original option without promising a copy of another designer&apos;s work.
               </p>
             </div>
           </div>
@@ -206,11 +204,11 @@ export default function BridalLehengaPage() {
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-semibold text-white" style={{ background: "var(--cv-accent)" }}>1</div>
               <div>
-                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Free consultation (30 min, no commitment)</h3>
+                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Initial consultation</h3>
                 <p className="text-[#4d403a] leading-relaxed">
                   We review your wedding date, ceremonies, color preferences, budget, and inspiration
-                  references. We recommend exactly which lehenga styles make sense for each event and
-                  what level of sourcing support fits your needs.
+                  references. We organize the requirements, decision points, and available service
+                  options without treating one style as universally correct.
                 </p>
               </div>
             </div>
@@ -219,9 +217,8 @@ export default function BridalLehengaPage() {
               <div>
                 <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Style discovery &amp; fabric shortlist</h3>
                 <p className="text-[#4d403a] leading-relaxed">
-                  Send us your Pinterest board, Instagram saves, or designer references. Our designer
-                  in India prepares a personalized style guide with 3–5 fabric and embroidery options
-                  matched to your vision and budget.
+                  Send inspiration references to communicate the silhouette, palette, material, and detail
+                  level you want. The selected service scope states what research and vendor options are included.
                 </p>
               </div>
             </div>
@@ -239,18 +236,18 @@ export default function BridalLehengaPage() {
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-semibold text-white" style={{ background: "var(--cv-accent)" }}>4</div>
               <div>
-                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Custom stitching to your measurements</h3>
+                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Document measurements and customization</h3>
                 <p className="text-[#4d403a] leading-relaxed">
-                  We collect 15+ precise body measurements using our detailed guide. Every lehenga is
-                  custom-stitched to your exact silhouette with strategic ease allowances for final
-                  alterations. Production takes 6–12 weeks depending on embroidery complexity.
+                  CeremonyVerse helps record the measurements and customization details requested by
+                  the selected vendor. The vendor&apos;s current production estimate, fitting assumptions,
+                  alteration allowance, and approval deadlines are included in the written scope.
                 </p>
               </div>
             </div>
             <div className="flex gap-6 items-start">
               <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center font-semibold text-white" style={{ background: "var(--cv-accent)" }}>5</div>
               <div>
-                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Quality inspection before shipping</h3>
+                <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Available pre-shipping review</h3>
                 <p className="text-[#4d403a] leading-relaxed">
                   When included in the selected scope, available pre-shipping review can cover visible
                   embroidery, stitching, color against the approved reference, and recorded measurements.
@@ -401,11 +398,10 @@ export default function BridalLehengaPage() {
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How long does it take to buy a bridal lehenga from India and have it delivered to the USA?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                From the day you place your order to delivery at your US door, plan for 14–20 weeks
-                for a custom bridal lehenga: 2–3 weeks for design consultation and fabric sourcing,
-                6–12 weeks for production, 1 week for quality inspection, and 2–3 weeks for
-                international shipping and US customs clearance. We recommend starting 6–12 months
-                before your wedding date.
+                The planning range depends on the selected item, vendor workload, customization,
+                approval timing, carrier, customs, and alteration buffer. The written quote records
+                the current vendor estimate and shipping plan; begin early enough to allow for changes
+                and a local fitting because no universal lead time is guaranteed.
               </p>
             </div>
             <div>
@@ -451,11 +447,11 @@ export default function BridalLehengaPage() {
             Complete Your Wedding Wardrobe
           </p>
           <h2 className="text-2xl md:text-3xl font-semibold mb-4" style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: "#1f1f1f" }}>
-            Source every outfit from one trusted concierge
+            Coordinate in-scope outfits through one documented process
           </h2>
           <p className="text-base mb-8" style={{ color: "#4d403a" }}>
-            From the bride&apos;s lehenga to the groom&apos;s sherwani to family outfits and sarees — coordinate
-            every look through a single India sourcing partner and save on combined shipping.
+            From the bride&apos;s lehenga to the groom&apos;s sherwani and in-scope family outfits, organize
+            requirements, measurements, approvals, complete costs, and shipment responsibilities together.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/buy-sherwani-from-india-usa/" className="inline-flex items-center px-5 py-2 rounded-full text-sm font-medium" style={{ background: "#fff", border: "1px solid #e6dfd5", color: "#4d403a", textDecoration: "none" }}>Groom Sherwanis</Link>

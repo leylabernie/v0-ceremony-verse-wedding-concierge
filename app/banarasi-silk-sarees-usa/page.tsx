@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   path: "/banarasi-silk-sarees-usa/",
   title: "Banarasi Silk Sarees from India — Delivered to USA",
   description:
-    "Authentic Banarasi silk sarees hand-woven in Varanasi, delivered to your US door. Pure katan, organza, and tissue with real zari — Silk Mark certified.",
+    "Research Banarasi silk sarees with documented fiber, zari, origin, certification, blouse, price, and U.S. delivery information for the selected piece.",
   keywords: [
     "banarasi silk saree usa",
     "buy banarasi saree from india",
@@ -28,7 +28,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Banarasi Silk Saree Sourcing",
   description:
-    "Authentic pure Banarasi silk sarees hand-woven in Varanasi and delivered to your US door. Pure katan silk, organza, tissue, and shattir varieties with real gold and silver zari — Silk Mark certified with live video approval and custom blouse stitching.",
+    "Banarasi silk saree research and sourcing with documented fiber, zari, origin, available certification, blouse, price, and U.S. delivery information.",
   url: "/banarasi-silk-sarees-usa/",
   category: "Banarasi Silk Saree Sourcing",
   areaServed: "US",
@@ -42,17 +42,17 @@ const faqSchema = buildFaqSchema([
   {
     question: "How much does an authentic Banarasi silk saree cost when sourced from India?",
     answer:
-      "Authentic pure Banarasi silk sarees sourced directly from Varanasi weavers range from approximately $200 to $1,500 depending on the silk variety (katan, organza, tissue), zari weight, and design complexity. Pure katan silk Banarasi sarees with real gold zari typically start around $400. Tissue and organza Banarasi sarees start around $250. This is significantly less than US boutique prices for comparable quality.",
+      "There is no universal price or savings percentage. Compare the exact fiber, zari, weave, origin evidence, certification, blouse work, vendor terms, CeremonyVerse service fee, shipping, customs estimate, and alteration allowance for the selected saree.",
   },
   {
     question: "How is Banarasi silk different from Kanchipuram silk?",
     answer:
-      "Banarasi silk comes from Varanasi (Banaras) in North India and is known for its fine, lightweight weave and intricate Mughal-inspired motifs (floral, jaal, paisley). Kanchipuram silk comes from Tamil Nadu in South India and is heavier with bold temple-inspired borders and pure gold zari. Both are pure mulberry silk, but Banarasi is more delicate and ornate, while Kanchipuram is heavier and more structured. Many brides source both for different ceremonies — Banarasi for the reception, Kanchipuram for the wedding.",
+      "Banarasi and Kanchipuram refer to different regional weaving traditions, but product labels alone do not prove fiber, zari, origin, or construction. Compare the exact seller representations and available documentation for each selected saree.",
   },
   {
     question: "What are the different types of Banarasi silk sarees?",
     answer:
-      "The four main types of pure Banarasi silk sarees are: (1) Pure Katan Silk — the most traditional, woven entirely from pure silk thread; (2) Organza — lightweight, sheer silk with printed or woven motifs, popular for daytime ceremonies; (3) Tissue Silk — shimmering silk with a metallic finish, often used for reception wear; (4) Shattir — a softer, lighter variant used for everyday and contemporary designs. We source all four varieties from verified weavers in Varanasi.",
+      "Banarasi sarees are sold in several silk, organza, tissue, and blended constructions. Ask for the exact fiber, zari, weave, origin, and available certification for the selected piece rather than relying on a category name alone.",
   },
   {
     question: "How do I know my Banarasi saree is authentic?",
@@ -67,7 +67,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "How long does it take to source a Banarasi saree from India to the USA?",
     answer:
-      "Allow 5 to 7 weeks for Banarasi saree sourcing — 1 to 2 weeks for selection and live video approval, 2 to 3 weeks for international shipping via DHL/FedEx, and 1 to 2 weeks for any customs clearance and local alterations. If you need multiple sarees for family members or want custom blouse stitching, start 8 weeks out. We handle all shipping, customs, and duties door-to-door.",
+      "Lead time depends on the selected saree, vendor availability, quantity, blouse work, approval timing, carrier, customs, and alteration buffer. The written quote records the current vendor and carrier estimates plus each party's delivery responsibilities.",
   },
 ])
 
@@ -100,7 +100,7 @@ export default function BanarasiSareesPage() {
             fontWeight: 500,
           }}
         >
-          Banarasi Silk Sarees · Sourced in Varanasi · Delivered to USA
+          Banarasi Silk Sarees · Documented Sourcing · U.S. Delivery Coordination
         </p>
         <h1
           style={{
@@ -112,7 +112,7 @@ export default function BanarasiSareesPage() {
             marginBottom: "22px",
           }}
         >
-          Pure Banarasi silk, woven in Varanasi.
+          Banarasi sarees researched by represented fiber, zari, weave, origin, and evidence.
         </h1>
         <p
           style={{
@@ -124,10 +124,9 @@ export default function BanarasiSareesPage() {
             margin: "0 auto 12px",
           }}
         >
-          Banarasi silk has been woven along the banks of the Ganges in Varanasi for over 800
-          years. We work directly with master weavers there to source authentic pure silk
-          Banarasi sarees — pure katan silk, organza, tissue, and shattir — with real gold or
-          silver zari and intricate Mughal-inspired motifs.
+          Banarasi sarees are sold in silk, organza, tissue, and blended constructions with
+          different zari and weaving claims. CeremonyVerse can research a selected saree and
+          document the represented fiber, zari, origin, certification, blouse work, and terms.
         </p>
         <p
           style={{
@@ -139,7 +138,8 @@ export default function BanarasiSareesPage() {
             margin: "0 auto 32px",
           }}
         >
-          Each saree is Silk Mark certified. We show it to you on live video before you pay.
+          Certification and live review are not universal. Ask for the evidence available for the
+          selected piece and approve the written references before purchase.
         </p>
         <Link
           href="/contact/"
@@ -172,7 +172,7 @@ export default function BanarasiSareesPage() {
               marginBottom: "16px",
             }}
           >
-            Four varieties of pure Banarasi silk
+            Compare Banarasi saree constructions
           </h2>
           <p
             style={{
@@ -185,8 +185,8 @@ export default function BanarasiSareesPage() {
               margin: "0 auto 32px",
             }}
           >
-            Different Banarasi weaves suit different ceremonies. We source all four from
-            verified weavers in Varanasi.
+            Review each available piece by its represented fiber, zari, weave, origin, certification,
+            blouse work, price, and vendor terms rather than relying on a category name alone.
           </p>
           <div
             style={{
@@ -198,22 +198,22 @@ export default function BanarasiSareesPage() {
             {[
               {
                 title: "Pure Katan Silk",
-                desc: "The most traditional Banarasi — woven entirely from pure silk thread with real gold or silver zari. Heavy, regal, and perfect for the wedding ceremony itself.",
+                desc: "Katan is a product category that may be represented with different fiber and zari compositions. Confirm the exact selected piece and evidence.",
                 color: "#9C2A2A",
               },
               {
                 title: "Organza Banarasi",
-                desc: "Lightweight, sheer pure silk with printed or woven motifs. Popular for daytime ceremonies, mehndi, and modern brides. Photogenic and easy to drape.",
+                desc: "Organza Banarasi sarees can vary by fiber, motif method, weight, and transparency. Review the exact piece and seller representations.",
                 color: "#E8B4B8",
               },
               {
                 title: "Tissue Banarasi",
-                desc: "Shimmering silk with a metallic finish. Elegant and modern — the 2026 favorite for receptions, sangeet, and engagement ceremonies.",
+                desc: "Tissue-labelled sarees can vary by fiber, metallic yarn, weight, transparency, and finish. Review the exact piece and seller representations.",
                 color: "#C9A84C",
               },
               {
                 title: "Shattir Banarasi",
-                desc: "A softer, lighter variant of pure silk used for contemporary designs. Affordable luxury for family members, bridesmaids, and daytime events.",
+                desc: "Shattir-labelled sarees can vary by fiber, weight, construction, and finish. Confirm those details for the selected piece.",
                 color: "#7B9E89",
               },
             ].map((item) => (
@@ -342,7 +342,7 @@ export default function BanarasiSareesPage() {
               marginBottom: "32px",
             }}
           >
-            Why authentic Banarasi is different
+            Why authenticity needs documentation
           </h2>
           <div
             style={{
@@ -354,18 +354,18 @@ export default function BanarasiSareesPage() {
             {[
               {
                 title: "800 years of heritage",
-                desc: "Banarasi weaving has been practiced in Varanasi since the Mughal era. Each saree carries 800 years of craftsmanship passed down through generations of weavers.",
+                desc: "An origin or heritage claim should be supported for the selected piece rather than inferred from a product title or catalog description.",
               },
               {
-                title: "Pure mulberry silk",
+                title: "Fiber composition",
                 desc: "Banarasi sarees are sold in different silk and blended compositions. Confirm the exact fiber representation for the selected piece.",
               },
               {
-                title: "Real gold or silver zari",
+                title: "Zari composition",
                 desc: "Zari composition varies. Confirm whether the exact piece is represented as metallic yarn, silver zari, or another construction.",
               },
               {
-                title: "Silk Mark certified",
+                title: "Available certification",
                 desc: "When pure silk is requested, ask for available Silk Mark documentation and keep the seller's representation in the approval record.",
               },
             ].map((item) => (
@@ -433,9 +433,9 @@ export default function BanarasiSareesPage() {
               marginBottom: "1.2rem",
             }}
           >
-            <strong>Kanchipuram silk</strong> comes from Tamil Nadu in South India and is
-            heavier with bold temple-inspired borders and pure gold zari. It is structured,
-            regal, and traditional — the go-to choice for South Indian wedding ceremonies.
+            <strong>Kanchipuram and Banarasi sarees</strong> refer to different regional weaving
+            traditions, but individual products vary in represented fiber, border, zari, construction,
+            and origin evidence. Compare the selected pieces rather than treating either label as proof.
           </p>
           <p
             style={{
@@ -487,15 +487,15 @@ export default function BanarasiSareesPage() {
           {[
             {
               q: "How much does an authentic Banarasi silk saree cost when sourced from India?",
-              a: "Authentic pure Banarasi silk sarees sourced directly from Varanasi weavers range from approximately $200 to $1,500 depending on the silk variety (katan, organza, tissue), zari weight, and design complexity. Pure katan silk Banarasi sarees with real gold zari typically start around $400. Tissue and organza Banarasi sarees start around $250. This is significantly less than US boutique prices for comparable quality.",
+              a: "There is no universal price or savings percentage. Compare the exact fiber, zari, weave, origin evidence, certification, blouse work, vendor terms, CeremonyVerse service fee, shipping, customs estimate, and alteration allowance for the selected saree.",
             },
             {
               q: "How is Banarasi silk different from Kanchipuram silk?",
-              a: "Banarasi silk comes from Varanasi (Banaras) in North India and is known for its fine, lightweight weave and intricate Mughal-inspired motifs (floral, jaal, paisley). Kanchipuram silk comes from Tamil Nadu in South India and is heavier with bold temple-inspired borders and pure gold zari. Both are pure mulberry silk, but Banarasi is more delicate and ornate, while Kanchipuram is heavier and more structured. Many brides source both for different ceremonies — Banarasi for the reception, Kanchipuram for the wedding.",
+              a: "Banarasi and Kanchipuram refer to different regional weaving traditions, but product labels alone do not prove fiber, zari, origin, or construction. Compare the exact seller representations and available documentation for each selected saree.",
             },
             {
               q: "What are the different types of Banarasi silk sarees?",
-              a: "The four main types of pure Banarasi silk sarees are: (1) Pure Katan Silk — the most traditional, woven entirely from pure silk thread; (2) Organza — lightweight, sheer silk with printed or woven motifs, popular for daytime ceremonies; (3) Tissue Silk — shimmering silk with a metallic finish, often used for reception wear; (4) Shattir — a softer, lighter variant used for everyday and contemporary designs. We source all four varieties from verified weavers in Varanasi.",
+              a: "Banarasi sarees are sold in several silk, organza, tissue, and blended constructions. Ask for the exact fiber, zari, weave, origin, and available certification for the selected piece rather than relying on a category name alone.",
             },
             {
               q: "How do I know my Banarasi saree is authentic?",
@@ -507,7 +507,7 @@ export default function BanarasiSareesPage() {
             },
             {
               q: "How long does it take to source a Banarasi saree from India to the USA?",
-              a: "Allow 5 to 7 weeks for Banarasi saree sourcing — 1 to 2 weeks for selection and live video approval, 2 to 3 weeks for international shipping via DHL/FedEx, and 1 to 2 weeks for any customs clearance and local alterations. If you need multiple sarees for family members or want custom blouse stitching, start 8 weeks out. We handle all shipping, customs, and duties door-to-door.",
+              a: "Lead time depends on the selected saree, vendor availability, quantity, blouse work, approval timing, carrier, customs, and alteration buffer. The written quote records the current vendor and carrier estimates plus each party's delivery responsibilities.",
             },
           ].map((item) => (
             <div
@@ -541,7 +541,7 @@ export default function BanarasiSareesPage() {
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "28px" }}>
             From the bridal lehenga for the main ceremony to a Kanchipuram for the reception, source
-            every saree and outfit through one trusted concierge — coordinated styling, combined
+            approved sarees and outfits through one documented concierge scope — coordinated styling, combined
             shipping, and a single point of contact in India.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
@@ -589,9 +589,9 @@ export default function BanarasiSareesPage() {
               margin: "0 auto 24px",
             }}
           >
-            Book a free 30-minute consultation. We will walk you through the four Banarasi
-            varieties, motif options, and pricing — and start sourcing your authentic saree
-            from Varanasi within a week.
+            Request a consultation. We can help compare Banarasi product categories,
+            varieties, motif options, evidence, and pricing. Paid sourcing begins only after you
+            approve the written scope and available timeline.
           </p>
           <Link
             href="/contact/"

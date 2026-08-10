@@ -34,7 +34,7 @@ export default function BaraatOutfitsPage() {
           Baraat outfits sourced from India — the groom's grand entry, done right.
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
-          The Baraat is the groom's moment. A full-length sherwani, coordinated groomsmen, family dressed to celebrate — we source every piece directly from India, custom stitched to every measurement, and delivered to your US door.
+          Organize the groom&apos;s sherwani, wedding-party outfits, family attire, and approved accessories in one documented sourcing process. Customization and delivery depend on the selected item and vendor.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
@@ -54,8 +54,8 @@ export default function BaraatOutfitsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {[
               { title: "Groom's Baraat Sherwani", desc: "Full-length sherwani with optional safa, researched to match the approved color, style, measurements, and vendor capabilities." },
-              { title: "Groomsmen Kurta Sets", desc: "Coordinated bandhgalas or kurta sets in complementary colors. All measurements collected from groomsmen across any state." },
-              { title: "Sehra & Accessories", desc: "Groom's sehra, kaleere, and dupatta sourced to complete the look. Every detail coordinated." },
+              { title: "Groomsmen Kurta Sets", desc: "Coordinate bandhgalas or kurta sets with shared color references and individual measurement records." },
+              { title: "Sehra & Accessories", desc: "Add family-approved accessories only when the requested item, vendor, and terms can be responsibly reviewed." },
               { title: "Groom's Family Attire", desc: "Coordinated sherwanis and kurtas for the groom's father and brothers. Festive, traditional, and unified." },
               { title: "Mojari & Footwear", desc: "Traditional mojari footwear sourced from India to complete the groom's look — in matching or complementary tones." },
             ].map((item) => (
@@ -91,8 +91,8 @@ export default function BaraatOutfitsPage() {
           </h2>
           {[
             { q: "Should the Baraat sherwani be different from the wedding sherwani?", a: "Many grooms wear the same sherwani for both the Baraat and the wedding ceremony, while others prefer a separate look. We can source one or both depending on your preference and budget." },
-            { q: "How long does a custom sherwani take?", a: "Allow 12–16 weeks for a custom sherwani — measurements, production, and shipping. We recommend starting at least 10 months before your wedding date." },
-            { q: "Can you coordinate groomsmen across multiple states?", a: "Yes — we send the measurement guide to each groomsman, follow up to collect all measurements, and ship to a single address or individually. Multi-state coordination is something we do regularly." },
+            { q: "How long does a custom sherwani take?", a: "The timeline depends on the selected item, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. Confirm a written timeline before purchase." },
+            { q: "Can you coordinate groomsmen across multiple states?", a: "Group coordination is available within the selected tier or custom written scope. The order plan identifies each participant, measurement record, approval, destination, and available shipping arrangement." },
             { q: "What if the groom has never worn a sherwani before?", a: "We can explain common silhouettes, layering, accessories, measurement requirements, and dressing steps in plain language. Final style and cultural choices remain with the couple and family." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
@@ -109,7 +109,7 @@ export default function BaraatOutfitsPage() {
             Your Baraat, your grand entry
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Custom sherwanis, coordinated groomsmen, safas and sehra &mdash; sourced from India, custom stitched for every measurement, and delivered to your US door.
+            Discuss the groom, groomsmen, family, and accessory requirements in one consultation. Item, customization, vendor, shipping, customs, and remedy terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

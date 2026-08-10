@@ -220,7 +220,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
               Ready to plan your Gujarati wedding outfits?
             </p>
             <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
-              Whether you are looking for a single bridal lehenga or coordinating outfits for an entire family across multiple ceremonies, CeremonyVerse is here to help. We are a US-based Indian wedding shopping concierge with live video shopping, full logistics support, and a deep knowledge of every ceremony and tradition.
+              Whether you are researching one bridal lehenga or coordinating outfits across several ceremonies, CeremonyVerse can organize the approved item brief, eligible live review, measurements, written decisions, and delivery plan. Your family and officiants remain the authority on every ceremony and tradition.
             </p>
             <Link
               href="/contact/"

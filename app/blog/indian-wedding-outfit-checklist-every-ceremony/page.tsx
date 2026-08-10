@@ -38,7 +38,7 @@ export default function OutfitChecklistPage() {
             The Complete Indian Wedding Outfit Checklist for NRI Families in the USA
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Every outfit, every ceremony, every family member — 42-51 outfits total. Plan once, shop smart, and never panic-buy at a US boutique again.
+            Build one item-by-item wardrobe list around your actual ceremonies, participants, dress requirements, reuse plans, and budget.
           </p>
         </div>
       </div>
@@ -46,9 +46,9 @@ export default function OutfitChecklistPage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>Planning an Indian wedding in the US means coordinating outfits for 8-15+ people across 5-7 different events. Most NRI families we work with forget at least 3-4 outfits until the week before — leading to panic shopping at overpriced US boutiques. This checklist prevents that. Use it alongside our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link> to keep your group orders on track. For ceremony-specific outfit guidance, see our dedicated pages on <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link>, <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>, and <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi silk sarees</Link>.</p>
+          <p>Use this as an illustrative planning worksheet, not a universal ceremony or wardrobe requirement and not a CeremonyVerse client case. Build the actual list with the couple and family, and use any relevant ceremony authority for cultural or religious decisions. For group-order logistics, see our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>coordinating bridesmaid lehengas from India</Link>.</p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What the Bride Needs: 6 Outfits Across All Ceremonies</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Example Bride Wardrobe Categories</h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
@@ -65,7 +65,7 @@ export default function OutfitChecklistPage() {
           </div>
           <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Jewelry needed:</strong> Bridal set (necklace, earrings, maang tikka, bangles), matching jewelry for each secondary outfit, henna-appropriate rings and bracelets. Curious about costs? See <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>how much bridal lehengas cost from India</Link>.</p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What the Groom Needs: 6 Outfits from Mehndi to Reception</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Example Groom Wardrobe Categories</h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
@@ -101,15 +101,15 @@ export default function OutfitChecklistPage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Bridesmaids & Groomsmen</h2>
 
-          <p><strong>Bridesmaids (4-8 people):</strong> Matching lehengas or anarkalis in a coordinated palette. Budget ₹8,000-₹15,000 ($95-$175) per outfit from India vs. $300-$600+ in the US. Order all from the same workshop to guarantee color consistency. Read our full guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>how to order bridesmaid lehengas from India</Link>.</p>
-          <p style={{ marginTop: "1rem" }}><strong>Groomsmen (4-8 people):</strong> Matching kurtas with coordinating vests/jackets. Budget ₹3,500-₹7,000 ($40-$80) per outfit from India vs. $150-$300+ in the US. Ivory/cream kurtas with colored vests are the most popular combination.</p>
+          <p><strong>Bridesmaids:</strong> Matching lehengas or anarkalis in a coordinated palette. Obtain an item-specific written quote covering fabric, work, customization, quantity, service fee, shipping, customs estimate, alteration allowance, and remedy terms. Ordering in one production run may reduce—but cannot eliminate—handmade color variation. Read our guide on <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" style={{ color: "#7a6841" }}>coordinating bridesmaid lehengas from India</Link>.</p>
+          <p style={{ marginTop: "1rem" }}><strong>Groomsmen:</strong> If the couple approves a coordinated look, record each participant, exact garment, measurements, color reference, quantity, item-specific quote, service scope, shipping, customs estimate, alteration allowance, and remedy terms.</p>
 
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
-            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Pro Tip: The 80/20 Rule for Group Outfits</p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Spend 80% of your group outfit budget on the wedding day outfits (when photos matter most) and 20% on mehndi/haldi outfits (where comfort matters more than perfection). For mehndi and haldi, cotton and lightweight fabrics from India cost almost nothing and work perfectly.</p>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Set Priorities Before Requesting Quotes</p>
+            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Let the couple and family rank ceremony importance, comfort, reuse, photography, customization, and budget. Do not apply a universal spending ratio or assume one fabric or supplier will be inexpensive.</p>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Total Outfit Count</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Illustrative Count—Replace with Your Family&apos;s List</h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
@@ -163,7 +163,7 @@ export default function OutfitChecklistPage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              With 42-51 outfits to coordinate, even one forgotten family member throws your whole plan into chaos — and last-minute US boutique shopping wipes out the savings that made sourcing from India worthwhile.
+              The total number of outfits depends on your actual ceremonies, participants, and reuse plan. One shared checklist can identify missing decisions before a last-minute purchase becomes necessary.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want the printable version?
@@ -179,7 +179,7 @@ export default function OutfitChecklistPage() {
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridal lehengas, sherwanis, bridesmaid outfits, and family wedding attire directly from India for NRI families — with live video approval before shipping. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse organizes India-sourcing research, eligible live review, measurements, written approvals, and delivery support within the selected tier. Availability depends on the selected item and vendor. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
       </article>

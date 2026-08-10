@@ -6,12 +6,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/avoid-indian-wedding-shopping-scams/",
   title: "Avoid Indian Wedding Shopping Scams \u2014 NRI Buyer Protection Guide",
-  description: "How to avoid getting scammed when buying Indian wedding outfits from India \u2014 fake vendors, stolen images, bait-and-switch tactics, and how CeremonyVerse verifies every partner."
+  description: "How to reduce risk when buying Indian wedding outfits from India by checking seller identity, current item evidence, written terms, payments, shipping, and remedies."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "NRI Wedding Shopping Scam Prevention",
-  description: "How CeremonyVerse prevents the most common Indian wedding shopping scams \u2014 vendor verification, live video approval, milestone payments, and order documentation.",
+  description: "How documented seller checks, item evidence, payment terms, approvals, shipping responsibilities, and remedies can reduce remote-shopping risk.",
   url: "/avoid-indian-wedding-shopping-scams/",
 });
 
@@ -30,13 +30,13 @@ export default function AvoidScamsPage() {
       <article className="max-w-4xl mx-auto py-20 px-6">
         <header className="text-center mb-16">
           <p className="text-xs tracking-widest uppercase font-medium mb-4" style={{ color: "var(--cv-accent)" }}>
-            Expert Guide for NRI Brides
+            Remote-Shopping Risk Guide
           </p>
           <h1 className="font-['Cormorant_Garamond'] text-3xl sm:text-4xl md:text-5xl font-semibold mb-6">
             How to Avoid Scams When Buying Indian Wedding Outfits from India
           </h1>
           <p className="text-lg text-[var(--cv-muted)] max-w-2xl mx-auto">
-            Don't let your dream wedding turn into a nightmare. Learn the essential steps to source authentic Indian bridal wear safely from abroad.
+            Use a documented review process to reduce seller, product, payment, fit, shipping, and customs risk when shopping remotely.
           </p>
         </header>
 
@@ -44,7 +44,7 @@ export default function AvoidScamsPage() {
           <section>
             <h2 className="text-3xl font-semibold mb-6">Introduction</h2>
             <p className="text-lg leading-relaxed">
-              Planning an Indian wedding from abroad is exciting, especially when sourcing authentic outfits directly from India. However, the dream can turn into a nightmare if you fall victim to scams. This guide equips you with the knowledge to ensure a safe, successful shopping experience.
+              Remote shopping can involve seller, catalog-image, payment, product, fit, shipping, and customs risk. No checklist can guarantee a successful order, but the steps below can help you request better evidence and written terms before paying.
             </p>
           </section>
 
@@ -95,7 +95,7 @@ export default function AvoidScamsPage() {
 
               <div>
                 <h3 className="text-xl font-bold mb-3">7. Consider a Concierge Service</h3>
-                <p>For ultimate peace of mind, CeremonyVerse acts as your trusted partner on the ground in India, handling vetting, quality control, and logistics.</p>
+                <p>CeremonyVerse can document the selected scope, available vendor evidence, item references, approvals, shipping plan, and remedy terms. The vendor, manufacturer, carrier, and customs authority remain responsible for their respective work.</p>
               </div>
             </div>
           </section>

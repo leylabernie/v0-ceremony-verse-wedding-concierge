@@ -133,9 +133,9 @@ export default function TariffsBlogPost() {
             This is exactly the kind of complexity that makes working with a dedicated <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Sourcing with documentation in mind.</strong> CeremonyVerse works directly with artisan partners who provide accurate invoicing, fabric composition breakdowns, and proper customs documentation. Correct HTS classification can make a meaningful difference in the duty rate assessed.</li>
+            <li><strong>Sourcing with documentation in mind.</strong> Require the selected vendor to provide accurate invoicing, item descriptions, fiber information, country-of-origin information, and other shipment documents requested by the carrier or customs professional.</li>
             <li><strong>Smart shipping strategy.</strong> Depending on your timeline and the nature of the outfit, CeremonyVerse advises on the most practical routing — whether timing a trip to India, using specific couriers that handle Indian textile customs professionally, or other approaches.</li>
-            <li><strong>Transparent cost planning.</strong> Before you fall in love with an outfit, CeremonyVerse builds the landed cost — including estimated duties and shipping — into your budget conversation. No surprises when the package arrives.</li>
+            <li><strong>Transparent cost planning.</strong> CeremonyVerse records shipping and customs estimates as separate inputs. The carrier or government agency may assess a different amount, so keep a contingency.</li>
           </ul>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -165,7 +165,7 @@ export default function TariffsBlogPost() {
               Ready to start sourcing?
             </p>
             <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
-              Book a free 30-minute consultation. Bring your budget, inspiration photos, and timeline — we will handle the rest.
+              Request a consultation. Bring your budget, inspiration references, and timeline so we can document the in-scope decisions and outside-provider responsibilities.
             </p>
             <Link
               href="/contact/"

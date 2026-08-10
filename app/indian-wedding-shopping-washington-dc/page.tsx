@@ -53,20 +53,20 @@ export default function WashingtonDCPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
             {[
               {
-                title: "One of the largest Indian-American populations in the US",
-                desc: "The DMV area is home to one of the biggest and most diverse Indian-American communities in the country. From Fairfax County and Loudoun County in Virginia to Montgomery County and Prince George&apos;s in Maryland, tens of thousands of Indian families call the Washington metro area home &mdash; and that means a lot of Indian weddings every year.",
+                title: "Coordinate across the DMV",
+                desc: "Families across Washington, Maryland, and Northern Virginia may need to coordinate wedding decisions across several households and schedules. One documented brief keeps item, measurement, approval, and delivery details together.",
               },
               {
-                title: "Limited local selection with high markups",
+                title: "Compare complete written costs",
                 desc: "DC, Northern Virginia, and Maryland have Indian boutiques, but local in-stock selection can be limiting for multi-event or full-family orders. Some DMV families drive to New Jersey or New York to shop, while others order online from India and face sizing, quality, and customs uncertainty without a verification process.",
               },
               {
                 title: "Federal workers, tech professionals, and diplomats need reliability",
-                desc: "The DMV is unique. Between federal employees, World Bank and IMF staff, tech workers in the Dulles corridor, and diplomatic families, NRI brides and grooms here often have demanding schedules and need a service that works with tight timelines and delivers exactly what was promised. CeremonyVerse was built for clients who value precision and accountability.",
+                desc: "Remote review can help families who cannot set aside an international shopping trip. The written scope identifies what CeremonyVerse coordinates, what the vendor provides, and which timing or product details remain estimates.",
               },
               {
-                title: "Close to Philadelphia &mdash; we understand the East Coast NRI community",
-                desc: "CeremonyVerse is headquartered in Philadelphia, just 2.5 hours from DC. We understand the East Coast NRI community intimately &mdash; the cultural expectations, the multi-ceremony timelines, the interfaith and intercultural weddings that are increasingly common in the DC metro area. We operate on EST, so you get same-business-day responses.",
+                title: "U.S.-based communication",
+                desc: "CeremonyVerse is based in the Philadelphia area and operates on Eastern Time. Consultation windows, response timing, and any time-sensitive order steps are confirmed for the selected service rather than promised universally.",
               },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -89,7 +89,7 @@ export default function WashingtonDCPage() {
               Everything starts with a free 30-minute consultation on EST. You tell us about your wedding &mdash; ceremonies, party size, timeline, budget. We tell you honestly what&apos;s achievable and which service tier fits. No sales pressure, no inflated promises. We schedule around your availability, whether you&apos;re a federal employee with a fixed lunch hour or a consultant with a packed calendar.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              From there, we set up live video shopping sessions with our team in India. You see actual outfits &mdash; fabric, embroidery, color in natural light &mdash; and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your DMV address.
+              Depending on the selected tier and item, the process may include live video review or current item media, measurement and custom-order coordination, written approvals, available pre-shipping review, and tracked-delivery support. The written quote identifies the vendor, item, service scope, shipment estimate, and terms before paid work begins.
             </p>
             <p style={{ marginBottom: "16px" }}>
               DMV weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
@@ -105,7 +105,7 @@ export default function WashingtonDCPage() {
             Serving the DMV Area
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            We deliver to your door anywhere in Washington DC, Maryland, and Northern Virginia.
+            DMV service areas to discuss with the selected vendor and carrier.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {["Washington DC", "Bethesda", "Rockville", "Gaithersburg", "Silver Spring", "Fairfax", "Tysons Corner", "Arlington", "Alexandria", "Reston", "Herndon", "Leesburg", "Ashburn", "McLean", "Falls Church", "Vienna VA", "Germantown", "Columbia MD", "Fredericksburg", "Potomac"].map((loc) => (
@@ -136,9 +136,9 @@ export default function WashingtonDCPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help &mdash; no obligation." },
-              { tier: "Style Guide &amp; Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
-              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party &mdash; every ceremony, every outfit, every family member. Dedicated coordinator." },
+              { tier: "Style Guide &amp; Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#fff", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -163,7 +163,7 @@ export default function WashingtonDCPage() {
             {[
               {
                 q: "Do you deliver to Maryland and Virginia?",
-                a: "Yes. We deliver via DHL or FedEx to any address in the DMV area &mdash; Washington DC, Montgomery County, Prince George&apos;s County, Fairfax County, Loudoun County, Arlington, Alexandria, and beyond. Delivery typically takes 3-5 business days once shipped from India. We serve the entire Washington metro region.",
+                a: "CeremonyVerse can coordinate delivery to an eligible address in Washington, Maryland, or Northern Virginia when the selected vendor and carrier can serve it. The written quote identifies the carrier, service level, shipping estimate, customs responsibilities, and tracking plan. Carrier and customs dates are not guaranteed.",
               },
               {
                 q: "How much does a bridal lehenga cost delivered to the DC area?",
@@ -175,11 +175,11 @@ export default function WashingtonDCPage() {
               },
               {
                 q: "Can you help with outfits for a Northern Virginia Indian wedding?",
-                a: "Yes. We serve Northern Virginia extensively &mdash; from Tysons Corner and Reston to Leesburg, Ashburn, and Loudoun County. We&apos;re familiar with the wedding venues in the area and can advise on outfit choices that complement your specific venue. Whether it&apos;s a grand celebration at a Tysons ballroom or an intimate gathering in Leesburg wine country, we source accordingly.",
+                a: "Yes. Northern Virginia families can request the same remote sourcing services. We use the family's approved ceremony, clothing, color, budget, and venue requirements rather than claiming authority over a venue or community-specific tradition.",
               },
               {
                 q: "How long before my DC wedding should I start sourcing?",
-                a: "We recommend starting 6-12 months before your wedding date. This gives enough time for the consultation, video shopping, custom stitching (8-12 weeks), quality inspection, and international shipping. For simpler outfits like sangeet or mehndi wear, 3-4 months can work. But for bridal lehengas with heavy customization, earlier is always better &mdash; especially during peak wedding season in the DMV.",
+                a: "Lead time depends on the selected item, vendor capacity, customization, approval timing, carrier, customs, and alteration buffer. Request current written estimates and start early enough to preserve options and a local fitting window; no universal minimum is guaranteed.",
               },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 4 ? "1px solid #e6dfd5" : "none" }}>
@@ -202,7 +202,7 @@ export default function WashingtonDCPage() {
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             From DC embassy-community bridal lehengas to Northern Virginia Telugu wedding sarees &mdash;
-            one concierge, every ceremony, every outfit delivered across the DMV.
+            one documented process for the in-scope outfits and DMV delivery responsibilities.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
@@ -236,7 +236,7 @@ export default function WashingtonDCPage() {
             Serving DC, Maryland &amp; Virginia
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Book a free 30-minute consultation. We&apos;ll review your wedding vision, timeline, and budget &mdash; and recommend exactly what level of support you need. No commitment, no pressure.
+            Book a free 30-minute consultation. We&apos;ll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

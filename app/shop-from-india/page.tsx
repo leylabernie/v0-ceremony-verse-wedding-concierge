@@ -4,12 +4,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/shop-from-india/",
   title: "Shop Indian Wedding Outfits from India \u2014 Live Video Sourcing to USA",
-  description: "Shop authentic Indian wedding outfits directly from India \u2014 bridal lehengas, sherwanis, sarees, jewelry, and more \u2014 with live video approval and US delivery."
+  description: "Research and source Indian wedding outfits from India with documented options, eligible live video review, written approvals, and U.S. delivery coordination."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Live Video Shopping from India",
-  description: "Live video shopping sessions with vetted India vendors for authentic Indian wedding outfits \u2014 bridal lehengas, sherwanis, sarees, jewelry, and ceremonial items.",
+  description: "Indian wedding outfit sourcing with documented vendor options, eligible live video review, written approvals, and U.S. delivery coordination.",
   url: "/shop-from-india/",
 });
 
@@ -25,37 +25,6 @@ export default function ShopFromIndiaPage() {
     
       <SeoNav />
 
-      {/* SCHEMA */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            name: "CeremonyVerse",
-            url: "https://ceremonyverse.com/shop-from-india",
-            description:
-              "Indian wedding outfit sourcing service with live video shopping from trusted artisan workshops in India.",
-            areaServed: {
-              "@type": "Country",
-              name: "United States",
-            },
-            serviceType: [
-              "Indian Wedding Outfit Sourcing",
-              "Personal Wedding Shopper India",
-              "Bridal Lehenga Sourcing",
-              "Sherwani Sourcing",
-            ],
-            offers: {
-              "@type": "Offer",
-              availabilityStarts: "2026-08-01",
-              description:
-                "Now booking clients for August 2026 weddings.",
-            },
-          }),
-        }}
-      />
-
       {/* HERO */}
       <section className="py-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
@@ -64,11 +33,11 @@ export default function ShopFromIndiaPage() {
           </h1>
 
           <p className="mt-6 text-lg text-[var(--cv-muted)]">
-            Work with a personal wedding shopper in India to find bridal lehengas, sherwanis, and wedding outfits from trusted craftspeople—without the stress of traveling or dealing with unknown vendors.
+            Use a U.S.-based concierge process to research bridal lehengas, sherwanis, and wedding outfits from India without requiring an international shopping trip.
           </p>
 
           <p className="mt-4 text-lg text-[var(--cv-muted)]">
-            Use live video shopping to see real fabrics, embroidery, and colors before you buy, with quality checks and shipping handled for you.
+            Eligible tiers may include live video or current item media, written references and approvals, pre-shipping review, and delivery coordination. Availability depends on the selected vendor and item.
           </p>
 
           <div className="mt-8">
@@ -90,32 +59,32 @@ export default function ShopFromIndiaPage() {
           </h2>
 
           <p className="mt-6 text-lg text-[var(--cv-muted)] max-w-3xl mx-auto">
-            No scams. No guesswork. No surprises.
+            Review more than a catalog image before approving an eligible item.
           </p>
 
           <p className="mt-4 text-lg text-[var(--cv-muted)] max-w-3xl mx-auto">
-            Join live video calls with trusted boutiques in India. You can see fabric weight, embroidery, stitching, and colors clearly before making any decision.
+            When a vendor and item allow it, live video can help you review fabric, embroidery, stitching, and color before making a purchase decision. It reduces uncertainty but cannot eliminate remote-shopping risk.
           </p>
 
           <div className="mt-10 grid md:grid-cols-3 gap-6 text-left">
             <div className="p-6 bg-white rounded-2xl shadow-sm">
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">See Everything Clearly</h3>
               <p className="mt-2 text-[var(--cv-muted)]">
-                What you see on video is what you receive—no edited images.
+                Compare the current item media with the written order references before approval.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-2xl shadow-sm">
-              <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Trusted Sellers Only</h3>
+              <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Document the Seller</h3>
               <p className="mt-2 text-[var(--cv-muted)]">
-                We work only with verified and reliable artisan workshops.
+                Review the seller, item, available terms, capacity, and evidence within the selected scope.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-2xl shadow-sm">
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Check Every Detail</h3>
               <p className="mt-2 text-[var(--cv-muted)]">
-                Review embroidery, stitching, and finishing before ordering.
+                Record the requested fabric, embroidery, stitching, measurements, and finish in writing.
               </p>
             </div>
           </div>
@@ -133,28 +102,28 @@ export default function ShopFromIndiaPage() {
             <div>
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Bridal Lehengas</h3>
               <p className="text-[var(--cv-muted)]">
-                We help you find bridal lehengas from trusted Indian designers with quality checks and shipping to the US.
+                Research bridal lehengas and compare the selected item, customization, vendor terms, and landed-cost estimate.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Sherwanis for Grooms</h3>
               <p className="text-[var(--cv-muted)]">
-                Find well-fitted sherwanis from skilled craftspeople with full quality review before delivery.
+                Research sherwanis with documented measurements, available pre-shipping review, and alteration planning.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Bridesmaid & Family Outfits</h3>
               <p className="text-[var(--cv-muted)]">
-                Coordinate outfits for family and bridal party with consistent quality and sizing support.
+                Coordinate style references, measurements, approvals, and order records for family and wedding-party outfits.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-lg text-[var(--cv-foreground)]">Dupattas & Accessories</h3>
               <p className="text-[var(--cv-muted)]">
-                Complete your look with matching accessories sourced and verified before shipping.
+                Add approved accessories when the item, vendor, shipment, and available terms can be responsibly reviewed.
               </p>
             </div>
           </div>
@@ -190,7 +159,7 @@ export default function ShopFromIndiaPage() {
           </div>
 
           <p className="mt-4 text-sm text-[var(--cv-muted)]">
-            Preferred first contact: WhatsApp or text message for faster response.
+            WhatsApp, text, email, and the consultation form are available contact options.
           </p>
         </div>
       </section>
@@ -199,11 +168,11 @@ export default function ShopFromIndiaPage() {
       <section className="bg-[var(--cv-accent)] text-white py-10">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h3 className="text-2xl font-semibold">
-            Planning for August 2026?
+            Planning a wedding wardrobe?
           </h3>
 
           <p className="mt-3 text-white/90">
-            Download our curated bridal style guide with the latest Champagne & Gold styles.
+            Review the free planning guides, then request a consultation if you need a documented sourcing scope.
           </p>
 
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">

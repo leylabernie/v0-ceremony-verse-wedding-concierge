@@ -4,8 +4,8 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
-  title: "How Much Does a Bridal Lehenga Cost in India? (2026 Pricing)",
-  description: "Detailed 2026 breakdown of designer bridal lehenga prices in India, shipping duties, custom fitting costs, and how to order safely from abroad.",
+  title: "How Much Does a Bridal Lehenga Cost from India? Quote Guide",
+  description: "A practical guide to comparing bridal lehenga quotes, service scope, shipping, customs estimates, alterations, and vendor terms.",
   keywords: ["how much does a bridal lehenga cost in India with shipping to USA", "bridal lehenga price India 2026", "lehenga customs duty USA", "Surat lehenga cost", "NRI bride lehenga budget"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -13,8 +13,8 @@ export const metadata = buildMetadata({
 });
 
 const blogPostingSchema = buildBlogPosting({
-  headline: "Bridal Lehenga Cost in India (Including Shipping to USA) \u2014 2026 Prices",
-  description: "Real 2026 bridal lehenga prices from India with shipping to USA. Budget breakdown including customs, alterations, and hidden costs for NRI brides.",
+  headline: "Bridal Lehenga Cost from India: Complete Quote Guide",
+  description: "How to compare bridal lehenga quotes from India using item details, service scope, shipping, customs estimates, alterations, and vendor terms.",
   url: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
   datePublished: "2026-03-01",
   keywords: ["how much does a bridal lehenga cost in india including shipping to usa", "bridal lehenga cost india 2026", "nri bride lehenga budget", "lehenga price with customs usa"],
@@ -38,10 +38,10 @@ export default function BridalLehengaCostGuide() {
             CeremonyVerse · June 2026
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
-            How Much Does a Bridal Lehenga Cost in India? Real 2026 Prices with Shipping to the USA
+            How Much Does a Bridal Lehenga from India Cost? A Complete Quote Guide
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Real prices NRI brides pay — from ₹45,000 budget finds to high-end designer pieces. Plus customs, shipping, and what most blogs won&apos;t tell you.
+            Compare the exact garment, service scope, shipping plan, customs estimate, alteration allowance, and vendor terms—not a headline price.
           </p>
         </div>
       </div>
@@ -60,65 +60,60 @@ export default function BridalLehengaCostGuide() {
           {/* TL;DR + Key Takeaways — optimized for AI Overviews / Perplexity / ChatGPT Search */}
           <div style={{ background: "#fff8ec", border: "1px solid #e6d8b8", borderRadius: "12px", padding: "1.5rem 1.75rem", marginTop: "2rem", marginBottom: "2rem" }}>
             <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.3rem", fontWeight: 600, color: "#2f2f2f", marginBottom: "0.75rem", marginTop: 0 }}>
-              TL;DR — What a bridal lehenga from India costs delivered to the USA in 2026
+              TL;DR — Build a complete landed estimate for the selected lehenga
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, color: "#2f2f2f", marginBottom: "1rem" }}>
               A custom bridal lehenga quote depends on fabric, handwork, customization, and vendor availability. Add the selected CeremonyVerse service tier, international shipping, and a customs estimate based on classification, fiber content, construction, and declared value. Compare the complete landed estimate—not a headline discount—with written US boutique quotes.
             </p>
             <p style={{ fontSize: "0.95rem", fontWeight: 600, color: "#7a6841", textTransform: "uppercase", letterSpacing: "0.05em", marginBottom: "0.5rem" }}>Key takeaways</p>
             <ul style={{ fontSize: "0.92rem", lineHeight: 1.7, color: "#2f2f2f", paddingLeft: "1.25rem", margin: 0 }}>
-              <li><strong>Budget tier:</strong> ₹45,000–₹80,000 ($530–$940) for machine embroidery on silk-blend fabric.</li>
-              <li><strong>Mid-range:</strong> ₹1,00,000–₹2,50,000 ($1,180–$2,940) for hand embroidery on pure silk — most NRI brides land here.</li>
-              <li><strong>High-end:</strong> ₹3,00,000–₹5,00,000+ ($3,530–$5,900+) for zardozi/dabka heavy work or designer-label recreation.</li>
+              <li><strong>Exact item:</strong> Record the selected fabric, fiber representation, handwork, construction, included pieces, and customization.</li>
+              <li><strong>Vendor terms:</strong> Confirm seller identity, payment schedule, production estimate, cancellation policy, and remedy in writing.</li>
+              <li><strong>Service scope:</strong> Add the selected CeremonyVerse tier and identify any work or outside costs that are excluded.</li>
               <li><strong>US customs duties:</strong> Vary by HTS classification, fiber content, construction, declared value, and current tariff rules; use a shipment-specific estimate.</li>
-              <li><strong>International shipping:</strong> $80–$200 via DHL or FedEx, fully insured. Plan 2–3 weeks for delivery.</li>
-              <li><strong>Total cost comparison:</strong> $1,000–$4,800 India-direct vs. $2,500–$8,000+ at US boutiques for the same lehenga.</li>
-              <li><strong>Hidden costs most brides forget:</strong> local alterations ($75–$200), insurance, and rush fees if you start late.</li>
+              <li><strong>International shipping:</strong> Use a current carrier quote for the route, service level, weight, dimensions, declared value, and available insurance.</li>
+              <li><strong>Complete comparison:</strong> Compare equivalent written scopes; no universal savings percentage applies.</li>
+              <li><strong>Contingencies:</strong> Include local alterations, insurance choices, possible customs charges, and schedule buffer.</li>
             </ul>
           </div>
 
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            What NRI Brides Actually Pay: Total Cost Breakdown (Lehenga + Customs + Shipping)
+            What Belongs in the Complete Cost Comparison?
           </h2>
 
           <p>
-            The price tag on the lehenga is only the starting point. Here is what you will actually pay to get your dream outfit from an Indian market to your US door — including every fee most brides forget to budget for.
+            The garment price is only one input. Request written amounts for the exact item, customization, CeremonyVerse service tier, shipping, customs estimate, insurance option, alteration allowance, and any excluded work.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Bridal Lehenga Price Ranges from India: Budget to High-End (with USD Conversion)
+            Compare Equivalent Quotes, Not Generic Price Tiers
           </h2>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead>
                 <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
-                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Category</th>
-                  <th style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>Price Range (INR)</th>
-                  <th style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>Approx. USD</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Quote Input</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>What to Record</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Budget (semi-stitched, machine embroidery)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹45,000 – ₹80,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$530 – $940</td>
+                  <td style={{ padding: "0.6rem 0" }}>Garment</td>
+                  <td style={{ padding: "0.6rem 0" }}>Exact item reference, included pieces, materials, handwork, construction, and customization</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Mid-range (hand embroidery, silk blend)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹1,00,000 – ₹2,50,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$1,180 – $2,940</td>
+                  <td style={{ padding: "0.6rem 0" }}>Service</td>
+                  <td style={{ padding: "0.6rem 0" }}>Selected CeremonyVerse tier, included work, limits, and excluded outside costs</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Premium (zardozi, real gold thread, pure silk)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹2,50,000 – ₹4,50,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$2,940 – $5,300</td>
+                  <td style={{ padding: "0.6rem 0" }}>Delivery</td>
+                  <td style={{ padding: "0.6rem 0" }}>Carrier, service level, insurance option, customs estimate, documents, and claim responsibility</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0" }}>High-end designer (fully custom)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹4,50,000+</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$5,300+</td>
+                  <td style={{ padding: "0.6rem 0" }}>After delivery</td>
+                  <td style={{ padding: "0.6rem 0" }}>Local fitting, alteration quote, return or correction terms, and schedule buffer</td>
                 </tr>
               </tbody>
             </table>
@@ -129,10 +124,10 @@ export default function BridalLehengaCostGuide() {
           </h2>
 
           <p>
-            <strong>Fabric:</strong> The base fabric is the single biggest cost driver. Pure silk, Banarasi silk, velvet, and georgette with heavy embroidery command premium prices. A lehenga in pure silk with handwoven Banarasi brocade can start at ₹2,00,000 even before embroidery is added. Synthetic blends and net fabrics are significantly cheaper but may lack the drape and richness that photographs well under wedding lighting.
+            <strong>Fabric:</strong> Fiber composition, weave, weight, finish, availability, and item-specific documentation can affect a quote. Ask the seller to record the exact representation rather than inferring material quality from photos or a product name.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Embroidery type:</strong> Machine embroidery costs a fraction of hand embroidery. Zardozi (gold thread work), dabka (coiled wire work), and aari (fine chain stitch) are labor-intensive techniques that can add ₹1,00,000 or more to the base price. A fully zardozi-lehenga with real gold-plated thread can easily reach ₹4,00,000+. If you see a lehenga online for under ₹1,00,000 claiming &quot;heavy zardozi work,&quot; it is almost certainly machine-made imitation.
+            <strong>Embroidery type:</strong> Technique, material, coverage, labor, and finish can affect price and production. Ask what is hand, machine, or mixed work and which evidence is available for the selected item; price alone does not authenticate a claim.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             <strong>Designer positioning:</strong> Established labels price for brand, design, retail experience, and production standards in addition to materials and handwork. Smaller workshops use different designs, processes, and terms, so compare original products on their own merits rather than assuming they are equivalent.
@@ -154,15 +149,15 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Shipping and insurance ($80-$250):</strong> International courier (DHL/FedEx) with full insurance for a bridal lehenga typically costs $80-$150 for standard shipping (7-12 days) or $180-$250 for express (3-5 days). We always recommend express shipping for bridal lehengas — the peace of mind is worth the extra cost.
+            <strong>Shipping and insurance:</strong> Obtain a current carrier quote based on route, service level, shipment details, declared value, and available coverage. Record the policy limit, exclusions, claim process, and the party responsible for a claim.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>US alterations ($150-$400):</strong> Even with precise measurements taken over video call, most NRI brides need minor adjustments once the lehenga arrives — typically taking in the blouse waist, adjusting the lehenga length, or fixing the dupatta drape. Budget $150-$400 for a skilled Indian tailor in your US city.
+            <strong>US alterations:</strong> Remote measurements do not guarantee fit. Request a local tailor&apos;s quote and include enough schedule buffer for a first fitting and any approved adjustments.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Return trip costs (if it goes wrong):</strong> This is the cost nobody talks about. If your lehenga arrives and the color, fit, or quality is not what you expected, your options are limited. You can ship it back to India ($80-$150) and wait 4-8 weeks for corrections. Or you buy a second lehenga in the US at 2-3x the price. This is why we strongly recommend <strong>live video approval before anything ships</strong> — it eliminates this risk entirely.
+            <strong>Remedy and alteration costs:</strong> If the delivered item does not match the approved references or needs fit adjustment, the available return, correction, replacement, alteration, or refund depends on the vendor terms, item, production stage, shipment, and signed service scope. Live video may add useful evidence but cannot eliminate product, fit, or shipping risk.
           </p>
 
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "2rem" }}>
@@ -179,15 +174,15 @@ export default function BridalLehengaCostGuide() {
           </h2>
 
           <p>
-            If you have been browsing Instagram or WhatsApp catalogs from Indian lehenga sellers, you have probably seen prices that seem too good to be true — ₹25,000 lehengas with &quot;heavy embroidery,&quot; or ₹60,000 &quot;Sabyasachi replicas.&quot; Here is what actually happens:
+            A catalog price may refer to a different item, material, level of handwork, customization, or scope than the image suggests. It may also omit shipping, customs, service, or alteration costs.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            The photo you see is often a professionally shot image of a ₹3,00,000+ original. The seller then produces a budget version using cheaper fabric, machine embroidery instead of handwork, and lower-quality thread. When it arrives, it does not look like the photo. The color is off. The embroidery is flatter. The drape is wrong. And because you already paid and the item is in India, your leverage to fix it is minimal.
+            Ask whether the image shows the exact available piece, a sample, or a reference for new production. Record the approved fabric, color reference, handwork, construction, measurements, included pieces, and remedy terms before payment.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            This is why at CeremonyVerse we do <strong>live video shopping sessions</strong> — you see the actual fabric, the actual embroidery, the actual color in natural light. The piece you approve is the piece that gets reserved with your order number. No catalog photos. No surprises. Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>our bridal lehenga sourcing service</Link>.
+            When the vendor and item allow it, <strong>live video review</strong> can add current visual evidence. CeremonyVerse records the selected item references and written approval within the chosen scope, but video alone does not authenticate materials, guarantee screen color, or eliminate handmade-item and delivery risk. Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>our bridal lehenga sourcing service</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -195,14 +190,14 @@ export default function BridalLehengaCostGuide() {
           </h2>
 
           <p>
-            Based on our experience working with NRI brides across the US, here are realistic total budgets (including lehenga, customs, shipping, and alterations):
+            Build the budget from item-specific written inputs rather than a universal range:
           </p>
 
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.8rem" }}><strong>$1,500 – $2,500 total:</strong> A beautiful, well-made lehenga with machine embroidery and good fabric. Perfect for brides who want something elegant without the premium price tag.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>$2,500 – $4,000 total:</strong> A high-quality lehenga with hand embroidery, silk or silk-blend fabric, and custom measurements. This is the sweet spot for most NRI brides.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>$4,000 – $7,000 total:</strong> A premium piece with zardozi or heavy handwork, pure silk, fully custom. Equivalent to what you would pay $8,000-$12,000 for in a US boutique.</li>
-            <li><strong>$7,000+ total:</strong> High-end designer-style pieces with real gold thread, fully custom design, and full handling and support.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Item:</strong> exact garment, included pieces, materials, handwork, construction, customization, and vendor terms.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Service:</strong> CeremonyVerse tier, included work, limits, and excluded outside costs.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Delivery:</strong> carrier quote, insurance option, shipment-specific customs estimate, documents, and claim responsibility.</li>
+            <li><strong>Contingency:</strong> local fitting, alteration quote, schedule buffer, and the written remedy if the order differs from the approved record.</li>
           </ul>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -218,7 +213,7 @@ export default function BridalLehengaCostGuide() {
               Compare a custom bridal lehenga from India with US options
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
+              Compare the selected item, service scope, shipping, customs estimate, alteration allowance, timeline, and remedy terms in writing.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
@@ -260,7 +255,7 @@ export default function BridalLehengaCostGuide() {
               Want to avoid budget surprises?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download our free India Sourcing Price Guide</strong> — real 2026 price ranges for lehengas, sherwanis, jewelry, and family outfits, plus a customs and shipping cost calculator built for NRI brides. Drop your email below and we&apos;ll send it instantly.
+              <strong>Download our free India Sourcing Price Guide</strong> — a worksheet for collecting comparable item, service, shipping, customs, alteration, timeline, and remedy inputs.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Free Price Guide →
@@ -273,7 +268,7 @@ export default function BridalLehengaCostGuide() {
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
           <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
-            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, sherwanis, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>Learn how we work</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
+            <strong>About CeremonyVerse:</strong> We help families research wedding outfits, document measurements and approvals, and coordinate the responsibilities included in the selected service scope. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>Learn how we work</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 
         </div>

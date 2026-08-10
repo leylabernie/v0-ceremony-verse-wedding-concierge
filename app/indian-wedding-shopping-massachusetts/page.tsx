@@ -61,12 +61,12 @@ export default function MassachusettsPage() {
                 desc: "Massachusetts is home to one of the most educated and fastest-growing Indian-American populations in the country — fueled by MIT, Harvard, Tufts, UMass, and the booming biotech and tech corridor along Route 128. From Cambridge and Burlington to Shrewsbury and Framingham, Indian weddings are a major celebration here — and the demand for authentic outfits far outpaces local supply.",
               },
               {
-                title: "Limited local shopping options in Massachusetts",
-                desc: "Unlike New Jersey or Silicon Valley, the Boston area has only a handful of Indian wedding boutiques — mostly concentrated in a few spots along Route 9 in Framingham and Waltham. The selection is limited, markups are steep, and custom work means long waits with no video preview. For bridal lehengas, groom sherwanis, or coordinating outfits for 15+ family members, the local options simply don't measure up. CeremonyVerse gives you access to thousands of artisans across India without leaving your home in Massachusetts.",
+                title: "Compare local and remote options",
+                desc: "Massachusetts families can compare local boutique options with a documented India-sourcing path. CeremonyVerse organizes item references, approvals, measurements, outside costs, and available vendor terms so the family can evaluate both options on a comparable basis.",
               },
               {
-                title: "Same-day access for consultations",
-                desc: "We offer consultation times that work for your schedule — not 12-hour time zone differences. Need to discuss an urgent change to your order? WhatsApp us and get a response the same business day. Try that with a vendor in Surat at midnight their time.",
+                title: "U.S.-based consultation times",
+                desc: "CeremonyVerse operates on Eastern Time and offers scheduled consultations for U.S. families. Response timing and any time-sensitive order steps are confirmed for the selected service rather than promised universally.",
               },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -92,7 +92,7 @@ export default function MassachusettsPage() {
               { name: "Boston Marriott Long Wharf", detail: "Waterfront Indian weddings in the heart of Boston" },
               { name: "The Westin Copley Place", detail: "Elegant ballroom receptions in Back Bay" },
               { name: "Royal Plaza Trade Center", detail: "Marlborough — large-capacity Indian wedding celebrations" },
-              { name: "Lantana's in Randolph", detail: "Classic New England venue popular with Indian families" },
+              { name: "Lantana's in Randolph", detail: "Randolph event venue" },
               { name: "The Tara Hotel & Event Center", detail: "Framingham — Indian-owned venue with authentic catering" },
               { name: "DCU Center", detail: "Worcester — grand Indian wedding receptions for 500+" },
               { name: "The Mansion at MountainView", detail: "Sturbridge — destination Indian weddings in Central MA" },
@@ -115,10 +115,10 @@ export default function MassachusettsPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              Everything starts with a free 30-minute consultation. You tell us about your wedding — ceremonies, party size, timeline, budget. We tell you honestly what's achievable and which service tier fits. No sales pressure, no inflated promises. You can schedule consultations around EST — evenings, weekends, whatever works for your Massachusetts schedule.
+              Everything starts with a free 30-minute consultation. You tell us about your wedding — ceremonies, party size, timeline, and budget. We review the available service tiers, item requirements, and timing without requiring payment for the call.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              From there, we set up live video shopping sessions with our team in India. You see actual outfits — fabric, embroidery, color in natural light — and pick exactly what you want. Your measurements are taken on a video call (not a generic sizing chart), and everything is custom stitched in India. Before it ships, our family in Surat does a quality inspection and sends you photos. You approve, then it ships via DHL or FedEx to your Massachusetts address.
+              Depending on the selected tier and item, the process may include live video review or current item media, measurement and custom-order coordination, written approvals, available pre-shipping review, and tracked-delivery support. The written quote identifies the vendor, item, service scope, shipment estimate, and terms before paid work begins.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Massachusetts weddings span many traditions and venues. We begin with your family&apos;s approved ceremony and clothing requirements rather than assuming one set of rules applies to every community.
@@ -138,7 +138,7 @@ export default function MassachusettsPage() {
             Serving Greater Boston &amp; All of Massachusetts
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            We deliver to your door anywhere in Massachusetts and across New England.
+            Massachusetts and New England service areas to discuss with the selected vendor and carrier.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {["Boston", "Cambridge", "Somerville", "Brookline", "Newton", "Waltham", "Burlington", "Framingham", "Shrewsbury", "Worcester", "Quincy", "Malden", "Woburn", "Marlborough", "Lowell", "Springfield", "Amherst", "Northampton", "Natick", "Needham", "Lexington", "Arlington", "Medford", "Revere", "Lynn", "Salem", "Plymouth", "Cape Cod", "Andover", "Chelmsford"].map((loc) => (
@@ -198,9 +198,9 @@ export default function MassachusettsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide & Vendor List", price: "$249", desc: "Curated starting point for self-directed brides. Style discovery, curated vendor contacts, and measurement guidance." },
-              { tier: "Guided Sourcing", price: "$799", desc: "Live video shopping sessions with our team in India, bridesmaid and groomsmen coordination, and quality inspection." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end sourcing for your entire wedding party — every ceremony, every outfit, every family member. Dedicated coordinator." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#fff", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "4px" }}>{item.tier}</h3>
@@ -225,7 +225,7 @@ export default function MassachusettsPage() {
             {[
               {
                 q: "Do you serve Boston and the surrounding Massachusetts suburbs?",
-                a: "Yes. We deliver via DHL or FedEx to any address in Massachusetts — from Boston and Cambridge to Burlington, Waltham, Framingham, Shrewsbury, Worcester, and beyond. We also serve Springfield, the Amherst/Northampton area, Cape Cod, and everywhere in between. Delivery typically takes 3-5 business days once shipped from India. We also serve all of New England — New Hampshire, Rhode Island, Connecticut, Vermont, and Maine.",
+                a: "CeremonyVerse can coordinate delivery to an eligible Massachusetts or New England address when the selected vendor and carrier can serve it. The written quote identifies the carrier, service level, shipping estimate, customs responsibilities, and tracking plan. Carrier and customs dates are not guaranteed.",
               },
               {
                 q: "How much does a bridal lehenga from India cost delivered to Massachusetts?",
@@ -237,15 +237,15 @@ export default function MassachusettsPage() {
               },
               {
                 q: "Can you help with outfits for a South Indian or Bengali wedding in the Boston area?",
-                a: "We can translate your family&apos;s approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
+                a: "We can translate your family's approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
               },
               {
                 q: "How far in advance should I start shopping for my Massachusetts wedding?",
-                a: "We recommend starting 4-6 months before your wedding date. Custom bridal lehengas with heavy embroidery take 8-12 weeks to craft in India, plus shipping time. Sangeet, mehndi, and reception outfits can usually be sourced in 4-6 weeks. If you're a busy professional at one of Boston's hospitals or tech companies, we make the process efficient — video calls on your schedule, clear timelines, and minimal back-and-forth. If you're under a tighter timeline, let us know — we can often expedite with our vendor relationships.",
+                a: "Start as early as practical. The usable lead time depends on the selected item, customization, vendor capacity, approvals, shipping, customs, and alteration buffer. CeremonyVerse confirms the available timeline before an order is approved and does not promise rush production or delivery.",
               },
               {
                 q: "Do you work with Indian student couples getting married in Massachusetts?",
-                a: "Yes, and we love working with student couples. Boston has thousands of Indian graduate students at MIT, Harvard, Tufts, BU, Northeastern, UMass, and other schools. We understand you're on a budget and working with student timelines. Our Style Guide & Vendor List tier ($249) is particularly popular with student couples — it gives you everything you need to source outfits confidently on your own, with our curated vendor contacts and measurement guidance. And our Guided Sourcing tier ($799) gives you hands-on help without the full concierge commitment.",
+                a: "Student couples can use the same service options as other families. The $249 Style Guide & Vendor List is a self-directed starting point, while the $799 Guided Sourcing tier adds live shopping and order coordination. Product, shipping, customs, and alteration costs remain separate.",
               },
               {
                 q: "I'm planning a fusion Indian-American wedding in Boston. Can you help?",
@@ -272,7 +272,7 @@ export default function MassachusettsPage() {
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
             From Boston Cambridge bridal lehengas to Marlborough Marathi muhuratam sarees &mdash;
-            one concierge, every ceremony, every outfit delivered to your Massachusetts door.
+            one documented process for the in-scope outfits and Massachusetts delivery responsibilities.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
@@ -306,7 +306,7 @@ export default function MassachusettsPage() {
             Ready to find your perfect wedding outfit in Massachusetts?
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget — and recommend exactly what level of support you need. No commitment, no pressure.
+            Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

@@ -58,7 +58,7 @@ export default function LinkToUsPage() {
               marginBottom: "1rem",
             }}
           >
-            For Our Clients, Partners & Friends
+            For Collaborators, Publications &amp; Friends
           </p>
           <h1
             style={{

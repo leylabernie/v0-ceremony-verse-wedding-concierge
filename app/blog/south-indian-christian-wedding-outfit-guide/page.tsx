@@ -122,7 +122,7 @@ export default function SouthIndianChristianWeddingGuide() {
             <strong>Reception:</strong> This is where a bride can choose freely. A colored lehenga in a rich jewel tone, an embroidered silk saree in deep red or emerald, or a gown are all common. Many South Indian Christian brides in the US choose a lehenga for reception photos and practical reasons (easier to move in, better for air-conditioned venues). Others love the saree and wouldn&apos;t consider anything else.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            If you are planning your outfits from the US, coordinating these two looks requires working with craftspeople who understand both the regional significance of the church look and the reception styling possibilities.
+            If you are planning from the US, ask family and church leaders to approve the ceremony requirements, then record those requirements for the selected vendors.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -144,7 +144,7 @@ export default function SouthIndianChristianWeddingGuide() {
             <strong>Pre-stitched or pre-draped options:</strong> For bridesmaids who are nervous about managing a saree through a long ceremony and reception, pre-stitched sarees or ready-to-wear indo-western pieces in a complementary palette are an increasingly popular solution.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            The biggest mistake NRI families make with bridesmaids is starting too late. Collecting measurements, finalizing colors, and placing orders for a group of this size requires at least 6 to 8 months of lead time.
+            Group orders require time to collect measurements, approve colors, confirm vendor capacity, ship, clear customs, and complete local alterations. Use current written estimates rather than a universal minimum.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -160,7 +160,7 @@ export default function SouthIndianChristianWeddingGuide() {
             Aunties and cousins have more flexibility — they may choose Kanchipuram silk as well, or opt for a soft silk, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi</Link>, or contemporary saree in complementary tones. The guiding principle is to not compete with the mother-of-the-bride or the bride herself in terms of weight or grandeur.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            For families sourcing from the US, Kanchipuram silk sarees typically need to be ordered directly from Chennai or Kanchipuram-based artisan partners, as the quality of genuine Kanchipuram — with its distinctive korvai borders and pure mulberry silk — is difficult to replicate or reliably source outside India.
+            For any saree represented as Kanchipuram silk, ask the selected seller for the exact fiber and zari composition, origin representation, construction details, and any available item-specific documentation. Product names and video alone do not authenticate those claims.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -194,10 +194,10 @@ export default function SouthIndianChristianWeddingGuide() {
             How CeremonyVerse Helps NRI South Indian Christian Families
           </h2>
           <p>
-            Sourcing South Indian Christian wedding outfits from the US involves navigating Indian artisan partners, understanding which fabrics are genuine, collecting measurements remotely, managing multiple shipments, and coordinating across family members in different cities.
+            Remote sourcing can involve family-approved ceremony requirements, item and vendor evidence, measurements, written costs, multiple shipments, and coordination across households.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            We do all of this as your concierge. You tell us the ceremonies, the family structure, the color preferences, and the budget. We handle the sourcing, coordination, and delivery.
+            CeremonyVerse can organize the approved brief, vendor options, measurements, order records, and delivery responsibilities included in the selected written scope. Families and church leaders remain the authority on cultural and religious requirements.
           </p>
 
           {/* CTA Box */}

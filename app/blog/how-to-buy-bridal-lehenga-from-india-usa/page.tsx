@@ -5,8 +5,8 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
-  title: "How to Buy a Bridal Lehenga from India to USA in 2026 — Complete Step-by-Step Guide",
-  description: "How NRI brides buy a bridal lehenga from India and ship to USA: live video shopping, taking measurements at home, customs duties, shipping costs, and how to avoid scams. With real 2026 prices.",
+  title: "How to Buy a Bridal Lehenga from India to USA — Step-by-Step Guide",
+  description: "How to research a bridal lehenga from India for US delivery: item evidence, measurements, written costs, customs variables, shipping, and remedies.",
   keywords: ["how to buy bridal lehenga from India to USA", "buy lehenga from India online USA", "NRI bridal lehenga shipping customs", "Indian bridal lehenga USA 2026 guide", "live video shopping lehenga India"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -56,20 +56,20 @@ export default function LehengaBuyingGuideBlogPost() {
             You have spent hours scrolling through Instagram reels of embroidered bridal lehengas. The zardozi is flawless. The ombre dupatta catches the light perfectly. The price seems almost too good. You are in love — and you have not even touched the fabric yet.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            This is the dream. Now here is the reality: every week, NRI brides in the US receive shipments from India that bear almost no resemblance to those photos. The embroidery is lighter, the fabric cheaper, the color slightly wrong. And because payment was already made, there is very little recourse.
+            Catalog and social-media images may not document the exact available piece, fabric, handwork, color, or production quality. If the item and remedy terms were not recorded before payment, a buyer may have limited recourse after an international shipment arrives.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            It does not have to go this way. Buying a bridal lehenga from India when you live in the USA is entirely possible — and it can be a beautiful, even enjoyable experience — if you follow the right process. Here is exactly how to do it.
+            A documented process can reduce these risks. The steps below are general planning guidance, not a delivery, fit, savings, or product guarantee.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Step 1: Start 6 to 12 Months Before the Wedding
+            Step 1: Build a Timeline from Current Written Estimates
           </h2>
           <p>
-            The single biggest mistake NRI brides make is starting too late. A bridal lehenga from India is not an off-the-rack purchase. Custom embroidery can take anywhere from 6 to 16 weeks, depending on the complexity and the artisan partners involved. Add 3 to 4 weeks for international shipping, another 2 to 4 weeks for customs clearance or delays, and then factor in alterations — and you are looking at a minimum of 4 to 5 months from first inquiry to final fitting.
+            Lead time depends on the selected garment, vendor capacity, customization, approval timing, carrier, customs, and local alterations. Ask the responsible vendor and carrier for current estimates, then add decision, fitting, and contingency buffers rather than relying on a universal minimum.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Start your search 6 to 12 months before the wedding date. This gives you time to explore multiple options without panic, negotiate properly, and handle anything unexpected. If you are working with a sourcing concierge, they can often move faster — but even they cannot compress handwork timelines.
+            Starting earlier generally creates more options, but a concierge cannot control vendor production, carrier service, or customs clearance. Record each responsibility and estimate in writing before ordering.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -79,11 +79,11 @@ export default function LehengaBuyingGuideBlogPost() {
             The number on the Instagram tag is just the beginning. When you buy a bridal lehenga from India and have it delivered to the USA, here is what the real budget looks like:
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Outfit cost:</strong> The lehenga itself — ranging widely from $800 to $10,000+ depending on fabric, embroidery technique, and the craftspeople involved</li>
-            <li><strong>Sourcing or concierge fee:</strong> If you use a shopping service (which you should — more on this in Step 3), there is typically a fee for their time and expertise</li>
-            <li><strong>Shipping:</strong> International courier via DHL or FedEx typically runs $100–$300 for a bridal lehenga, depending on weight and declared value</li>
+            <li><strong>Outfit cost:</strong> The written vendor quote for the exact fabric, handwork, construction, and customization requested</li>
+            <li><strong>Sourcing or concierge fee:</strong> The selected service scope and any excluded work</li>
+            <li><strong>Shipping:</strong> A shipment-specific carrier estimate based on origin, destination, service level, weight, dimensions, and declared value</li>
             <li><strong>US customs duties:</strong> Use a shipment-specific estimate based on HTS classification, fiber content, construction, declared value, country of origin, and the rules in effect when the outfit enters the US</li>
-            <li><strong>Local alterations:</strong> Almost every lehenga that arrives from India will need some fitting adjustments from a local tailor. Budget $100–$400 for this</li>
+            <li><strong>Local alterations:</strong> A local tailor&apos;s quote and enough schedule buffer for a first fitting and any approved changes</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
             Understanding the full cost picture before you fall in love with a specific lehenga protects you from surprises.
@@ -100,20 +100,20 @@ export default function LehengaBuyingGuideBlogPost() {
           </p>
           <ul style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Instagram sellers with no video call option.</strong> A business that will not show you the actual garment on a live video call before you pay is a business you should not send money to. Photos can be filtered, borrowed, or completely fabricated.</li>
-            <li><strong>Full payment required upfront before seeing the outfit.</strong> Ask for staged payments tied to written approvals. CeremonyVerse uses 25% to reserve, 35% after fabric or design approval, 30% after final inspection, and 10% upon delivery unless a signed proposal states otherwise.</li>
+            <li><strong>Payment terms that are not documented.</strong> Ask for the amount, due date, approval milestone, refund or cancellation terms, and available payment protection in writing before paying.</li>
             <li><strong>No clear return or dispute policy.</strong> Ask specifically: what happens if what I receive does not match what was shown to me?</li>
-            <li><strong>No physical location or verifiable presence.</strong> A real sourcing business should be able to tell you where they operate, which markets and artisan partners they work with, and provide references or client testimonials.</li>
+            <li><strong>No verifiable business details.</strong> Ask who is contracting with you, who receives payment, which independent seller is responsible for the item, and what remedy applies if the written order is not met.</li>
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            A US-based <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> like CeremonyVerse offers an important layer of accountability: they are operating under US consumer protection standards, you are communicating in the same time zone, and their reputation is built on happy clients — not one-time transactions. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
+            A <Link href="/services/" style={{ color: "#7a6841" }}>shopping concierge</Link> can organize options, measurements, approvals, written costs, and next actions. Confirm its exact scope and the independent seller&apos;s responsibilities before paid work begins. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Step 4: Live Video Shopping — Non-Negotiable
+            Step 4: Request Current Item Evidence
           </h2>
           <p>
-            Live video shopping is exactly what it sounds like: your sourcing partner takes you on a real-time video walkthrough of the actual outfit you are considering — not stock photos, not catalog images. The actual piece, in the actual light, held up, twisted, draped, and examined.
+            When the vendor and item allow it, live video can show a current piece or available materials in real time. Confirm exactly what is being shown and keep the approved item references in writing; video alone does not authenticate fiber, handwork, color, fit, or the final delivered result.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             A good live video session should show you:
@@ -161,7 +161,7 @@ export default function LehengaBuyingGuideBlogPost() {
             Shipping by courier (recommended)
           </h3>
           <p>
-            Most outfit specialists ship via DHL or FedEx, which provides tracking, insurance, and relatively predictable delivery timelines of 5–10 business days. The downside is that these shipments go through formal US customs entry, and duties apply.
+            Obtain a current carrier quote for the actual origin, destination, service level, shipment details, declared value, available insurance, and tracking. Customs timing and any assessment are controlled by the responsible providers and government agency.
           </p>
 
           <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
@@ -189,10 +189,10 @@ export default function LehengaBuyingGuideBlogPost() {
             Step 7: Always Budget for a Local Tailor
           </h2>
           <p>
-            Consider this step a given, not a backup plan. Almost every bridal lehenga that arrives from India will benefit from at least minor alterations — even when measurements were provided precisely. Fabric behaves differently after international travel. Bodies change in the months between order and delivery. And the fit of a bridal outfit deserves the perfection that only a hands-on local tailor can provide.
+            Plan a local fitting rather than treating remote measurements as a fit guarantee. Bodies and preferences can change between approval and delivery, and a qualified local tailor can assess the garment in person.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Budget between $100 and $400 for local alterations, and schedule your first fitting at least 6 to 8 weeks before the wedding. This gives time for multiple fittings if needed.
+            Request a local alteration quote and reserve enough time for the first fitting and any approved follow-up work.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             Find a tailor who has experience with Indian bridal garments — heavy embroidery requires different handling than Western formalwear, and not every tailor is comfortable working with embellished fabrics. Ask your Indian community network, local desi aunties, or your bridal concierge for recommendations.
@@ -214,7 +214,7 @@ export default function LehengaBuyingGuideBlogPost() {
               Ready to start your search?
             </p>
             <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
-              CeremonyVerse is a US-based Indian wedding shopping concierge that specializes in exactly this: sourcing bridal lehengas, family outfits, and trousseau pieces from India for NRI brides and families across the United States. We do live video shopping, handle the logistics, and stay with you through every step.
+              CeremonyVerse helps families research bridal lehengas and related outfits, document measurements and approvals, and coordinate the responsibilities included in the selected service scope.
             </p>
             <Link
               href="/contact/"
@@ -254,7 +254,7 @@ export default function LehengaBuyingGuideBlogPost() {
               Compare a custom bridal lehenga from India with US options
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
+              Compare item evidence, measurements, service scope, shipping, customs estimates, alteration allowance, and remedy terms in writing.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>

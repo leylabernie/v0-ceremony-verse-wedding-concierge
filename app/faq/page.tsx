@@ -46,7 +46,11 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Destination-planning prices are shared only in a private proposal after consultation."
+        answer: "The Destination Wedding Feasibility & Action Plan is $300. India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Full, partial, final-coordination, and family-support destination prices are shared in a private proposal after the free fit call."
+      },
+      {
+        question: "Is the $300 destination-wedding plan refundable or credited?",
+        answer: "The $300 fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within 30 days after the written plan is delivered, the full $300 is credited toward the CeremonyVerse planning service fee. It does not credit resort, vendor, venue, or travel charges."
       },
       {
         question: "What's the payment schedule?",
@@ -219,13 +223,13 @@ export default function FAQPage() {
                 When should I start?
               </h3>
               <div className="text-[#4d403a] leading-[1.8] font-sans space-y-4 flex-1">
-                <p>Ideal timeline is 6-8 months before your event.</p>
+                <p>Start with the event date and work backward from a current written vendor estimate.</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Consultation and design: 2-3 weeks</li>
-                  <li>Fabric sourcing and approval: 3-4 weeks</li>
-                  <li>Production: 6-10 weeks</li>
-                  <li>Quality inspection: 1 week</li>
-                  <li>Shipping: 2-3 weeks</li>
+                  <li>Record item requirements and decision deadlines</li>
+                  <li>Confirm vendor availability and production estimate</li>
+                  <li>Allow time for documented approvals and any customization</li>
+                  <li>Include carrier, customs, first-fitting, and alteration buffers</li>
+                  <li>Treat every date as an estimate until the responsible provider confirms it</li>
                 </ul>
               </div>
             </div>

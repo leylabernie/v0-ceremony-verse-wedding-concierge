@@ -6,12 +6,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/kanchipuram-silk-sarees-usa/",
   title: "Buy Kanchipuram Silk Sarees from India \u2014 Delivered to USA",
-  description: "Authentic pure Kanchipuram (Kanjivaram) silk sarees sourced directly from weavers in Tamil Nadu, with hallmark certification, live video approval, and US delivery."
+  description: "Research Kanchipuram (Kanjivaram) sarees by represented fiber, zari, weave, origin, certification, blouse work, price, and U.S. delivery terms."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Kanchipuram Silk Saree Sourcing",
-  description: "Authentic pure Kanchipuram silk sarees sourced directly from Tamil Nadu weavers \u2014 hallmark certification, live video approval, custom blouse stitching, and US delivery.",
+  description: "Kanchipuram saree research and sourcing with documented fiber, zari, weave, origin, available certification, blouse, price, and U.S. delivery information.",
   url: "/kanchipuram-silk-sarees-usa/",
 });
 
@@ -27,7 +27,7 @@ export default function KanchipuramSareesPage() {
     { src: "/images/kanchipuram-multicolour.jpg", name: "Kancheepuram Silk Multicolour", desc: "Rich multicolour weave with traditional motifs — standout piece for any ceremony." },
     { src: "/images/kanchipuram-gold-tissue.jpg", name: "Kancheepuram Tissue Gold", desc: "Lustrous gold tissue silk — elegant and regal, ideal for reception or sangeet." },
     { src: "/images/kanchipuram-dark-purple.jpg", name: "Kancheepuram Silk Dark Purple", desc: "Deep jewel-toned purple with gold zari — dramatic and beautiful for evening ceremonies." },
-    { src: "/images/kanchipuram-pink-silk.jpg", name: "Kancheepuram Silk Pink", desc: "Soft pink pure silk with gold border — a feminine choice for any wedding ceremony." },
+    { src: "/images/kanchipuram-pink-silk.jpg", name: "Kancheepuram Silk Pink", desc: "Pink saree with a contrasting border; confirm fiber, zari, weave, and origin for the selected piece." },
     { src: "/images/kanchipuram-maroon-silk.jpg", name: "Kancheepuram Silk Maroon", desc: "Rich maroon with heavy gold zari — a close second to red for bridal wear." },
   ]
 
@@ -100,7 +100,7 @@ export default function KanchipuramSareesPage() {
             {[
               { title: "Silk composition", desc: "Ask for the specific fiber composition and available Silk Mark documentation rather than relying on a product name alone." },
               { title: "Zari composition", desc: "Traditional and modern sarees can use different metallic yarns. Confirm the represented zari type for the exact saree." },
-              { title: "Handwoven heritage", desc: "Each saree takes days to weave by hand. The craftsmanship has been passed down for generations." },
+              { title: "Weave and origin evidence", desc: "Ask what evidence supports the represented weave, production method, and origin for the selected saree." },
               { title: "Documented approval", desc: "Record the selected saree, seller representations, available certification, price, and return terms before purchase." },
             ].map((item) => (
               <div key={item.title} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
@@ -155,7 +155,7 @@ export default function KanchipuramSareesPage() {
             Source your Kanchipuram saree from the source
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
-            Hand-woven pure silk, real zari, Silk Mark certified &mdash; sourced directly from Kanchipuram weavers and delivered to your US door.
+            Research selected Kanchipuram sarees by represented fiber, zari, weave, origin, certification, blouse work, price, and U.S. delivery terms.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>

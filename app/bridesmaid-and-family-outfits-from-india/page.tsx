@@ -5,12 +5,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/bridesmaid-and-family-outfits-from-india/",
   title: "Bridesmaid & Family Outfits from India \u2014 Coordinated for US Weddings",
-  description: "Coordinate 2\u201320+ bridesmaid and family outfits from India \u2014 color matching, fabric consistency, individual sizing, and group shipping to your US wedding."
+  description: "Coordinate bridesmaid and family outfits from India with shared color references, individual measurement records, written approvals, and group delivery planning."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Bridesmaid & Family Outfit Coordination",
-  description: "Coordinated sourcing of bridesmaid and family outfits from India \u2014 color matching, fabric consistency, individual sizing across multiple states, and group shipping.",
+  description: "Coordinated sourcing of bridesmaid and family outfits from India with shared references, individual measurement records, written approvals, and delivery planning.",
   url: "/bridesmaid-and-family-outfits-from-india/",
 });
 
@@ -36,7 +36,7 @@ export default function BridesmaidPage() {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Coordinate outfits for your entire wedding party — bridesmaids, groomsmen, and family — with guided sourcing, consistent colors, and proper sizing.
+            Coordinate bridesmaid, groomsmen, and family outfits with shared references, individual measurement records, and written approvals.
           </p>
 
         </div>
@@ -55,7 +55,7 @@ export default function BridesmaidPage() {
           </p>
 
           <p className="text-[var(--cv-muted)]">
-            Local stores often don’t offer consistent designs or coordinated collections, making it harder to achieve a cohesive look.
+            Comparing local and India-sourced options can be difficult when the item, customization, outside costs, and remedy terms are not documented the same way.
           </p>
 
         </div>
@@ -66,15 +66,15 @@ export default function BridesmaidPage() {
         <div className="max-w-5xl mx-auto space-y-6">
 
           <h2 className="text-3xl font-semibold">
-            Coordinated, Simplified, and Stress-Free
+            Coordinated and Documented
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            CeremonyVerse helps you source coordinated outfits directly from India — ensuring consistent colors, fabrics, and designs across your entire group.
+            CeremonyVerse helps organize approved colors, fabrics, styles, measurements, quantities, and vendor options across the group. Handmade dye lots and screen colors cannot be guaranteed identical.
           </p>
 
           <p className="text-[var(--cv-muted)]">
-            Whether you want identical outfits or complementary styles, everything is planned and managed for you.
+            The selected tier or custom scope states which research, live review, measurement, order, pre-shipping, and delivery steps CeremonyVerse coordinates.
           </p>
 
         </div>
@@ -87,14 +87,14 @@ export default function BridesmaidPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Color Coordination</h3>
             <p className="text-[var(--cv-muted)]">
-              Ensure all outfits match your wedding palette perfectly.
+              Record one approved palette and acceptable variation for the selected items.
             </p>
           </div>
 
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Group Sizing Support</h3>
             <p className="text-[var(--cv-muted)]">
-              Handle measurements across multiple people with proper guidance.
+              Maintain separate measurement records and approvals for each participant.
             </p>
           </div>
 
@@ -108,7 +108,7 @@ export default function BridesmaidPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Bulk Order Management</h3>
             <p className="text-[var(--cv-muted)]">
-              We manage timelines, production, and delivery for the entire group.
+              Define the approved timeline, vendor responsibilities, shipment plan, and alteration buffer for the group.
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export default function BridesmaidPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            Coordinate your wedding party outfits with clarity, consistency, and expert guidance.
+            Coordinate your wedding party outfits with a documented brief, measurements, approvals, and responsibilities.
           </p>
 
           <div className="flex flex-col items-center gap-3.5">

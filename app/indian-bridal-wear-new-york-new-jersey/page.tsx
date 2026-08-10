@@ -67,9 +67,9 @@ const breadcrumbSchema = buildBreadcrumb([
 const faqSchema = buildFaqSchema([
   {
     question:
-      "How much can I save on a bridal lehenga sourcing from India vs. buying at a boutique in Edison or Jackson Heights?",
+      "How do I compare an India-sourced bridal lehenga with a boutique quote in Edison or Jackson Heights?",
     answer:
-      "Prices vary by garment, handwork, customization, vendor, shipping, and duty. CeremonyVerse provides an itemized landed estimate so Tri-State couples can compare an India-sourced option with local boutique quotes.",
+      "Compare the exact garment, handwork, customization, service scope, shipping, customs estimate, alteration allowance, timeline, and remedy terms. CeremonyVerse provides an itemized landed estimate without promising a universal savings percentage.",
   },
   {
     question:
@@ -339,7 +339,7 @@ export default function IndianBridalWearNYNJPage() {
             className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Book a free 30-minute consultation with CeremonyVerse. We&apos;ll
+            Request a consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and
             explain the available India-sourcing options, costs, and trade-offs
             before you decide whether remote shopping is right for you.

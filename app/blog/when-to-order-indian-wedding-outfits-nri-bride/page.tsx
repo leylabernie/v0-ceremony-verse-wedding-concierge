@@ -48,52 +48,47 @@ export default function TimelineGuidePage() {
 
           <p>A common planning question is whether there is still enough time to source from India. The answer depends on the item, vendor, customization, approvals, shipping, customs, and alteration buffer. Use this timeline as a planning framework—not a guaranteed minimum.</p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Ideal Timeline: 6-8 Months Before Wedding</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Build the Timeline Backward from Your Event</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
-              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Month Before Wedding</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>What to Do</th></tr></thead>
+              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Stage</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>What to Confirm</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>8 months</td><td style={{ padding: "0.5rem 0" }}>Research styles, create Pinterest board, finalize wedding color palette</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>7 months</td><td style={{ padding: "0.5rem 0" }}>Book consultation, finalize your sourcing partner, set budget</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>6 months</td><td style={{ padding: "0.5rem 0" }}>Place bridal lehenga order, submit measurements, finalize design</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>5 months</td><td style={{ padding: "0.5rem 0" }}>Order groom&apos;s sherwani, bridesmaid outfits, parents&apos; outfits</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>4 months</td><td style={{ padding: "0.5rem 0" }}>Video approval of fabrics and cuts for all outfits</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>3 months</td><td style={{ padding: "0.5rem 0" }}>Production underway — weekly photo updates</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>2 months</td><td style={{ padding: "0.5rem 0" }}>Final quality inspection, packaging, shipping to USA</td></tr>
-                <tr><td style={{ padding: "0.5rem 0" }}>1 month</td><td style={{ padding: "0.5rem 0" }}>Arrives in US, alterations if needed, final fitting</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Requirements</td><td style={{ padding: "0.5rem 0" }}>Ceremonies, people, items, family approvals, priorities, and complete budget</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Vendor review</td><td style={{ padding: "0.5rem 0" }}>Seller identity, item evidence, capacity, written estimate, payment, cancellation, and remedy terms</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Order approval</td><td style={{ padding: "0.5rem 0" }}>Exact item references, measurements, customization, outside costs, and decision deadlines</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Production</td><td style={{ padding: "0.5rem 0" }}>Responsible provider, available progress evidence, change process, and current completion estimate</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Shipping</td><td style={{ padding: "0.5rem 0" }}>Carrier, service level, documents, insurance options, customs responsibility, and claim process</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Local fitting</td><td style={{ padding: "0.5rem 0" }}>First-fitting date, alteration provider, allowance, backup option, and event-day handoff</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How Late Is Too Late? Minimum Lead Times for Each Type of Outfit</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What Changes the Lead Time?</h2>
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
-              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Outfit</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Min. Order Time</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Production</th><th style={{ textAlign: "right", padding: "0.5rem 0", fontWeight: 600 }}>Shipping</th></tr></thead>
+              <thead><tr style={{ borderBottom: "2px solid #e6dfd5" }}><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Variable</th><th style={{ textAlign: "left", padding: "0.5rem 0", fontWeight: 600 }}>Question to Ask</th></tr></thead>
               <tbody>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Bridal lehenga (custom)</td><td style={{ textAlign: "right" }}>5 months</td><td style={{ textAlign: "right" }}>8-12 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Bridal lehenga (ready-made)</td><td style={{ textAlign: "right" }}>3 months</td><td style={{ textAlign: "right" }}>2-4 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Groom sherwani (custom)</td><td style={{ textAlign: "right" }}>4 months</td><td style={{ textAlign: "right" }}>6-8 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Bridesmaid lehengas (group)</td><td style={{ textAlign: "right" }}>4 months</td><td style={{ textAlign: "right" }}>6-8 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Parents&apos; sarees/sherwanis</td><td style={{ textAlign: "right" }}>3 months</td><td style={{ textAlign: "right" }}>4-6 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
-                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Jewelry &amp; accessories</td><td style={{ textAlign: "right" }}>2 months</td><td style={{ textAlign: "right" }}>2-4 weeks</td><td style={{ textAlign: "right" }}>1 week</td></tr>
-                <tr><td style={{ padding: "0.5rem 0" }}>Mehndi/haldi outfits</td><td style={{ textAlign: "right" }}>2 months</td><td style={{ textAlign: "right" }}>1-2 weeks</td><td style={{ textAlign: "right" }}>1-2 weeks</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Ready-made or custom</td><td>Is the selected item in stock, made to order, altered, or fully custom?</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Handwork and materials</td><td>Are the required materials available, and what work remains after approval?</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Group quantity</td><td>Can the vendor produce the approved quantity in one run, and how will variation be handled?</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Approvals</td><td>Who decides, what evidence is available, and when does a missed decision change the estimate?</td></tr>
+                <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Transport and customs</td><td>What does the carrier currently estimate, and which party handles documents, fees, and claims?</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Alterations</td><td>When can a local tailor perform the first fitting and any follow-up work?</td></tr>
               </tbody>
             </table>
           </div>
 
           <p style={{ marginTop: "1.2rem" }}>
-            These are the absolute minimums. If you are at the minimum lead time, you have no room for errors, delays, or rework. We strongly recommend adding 4-6 weeks of buffer to every order. For shipping time estimates, see our guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>how long shipping from India actually takes</Link>.
+            No table can provide an absolute minimum. Add a meaningful buffer for decisions, vendor changes, carrier or customs delays, and local alterations. For the variables behind a shipment estimate, see our <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>shipping guide</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>What Happens If Your Outfit Arrives Late: Backup Plans for NRI Brides</h2>
 
-          <p><strong>4 months out and nothing ordered:</strong> Still doable for most outfits. Skip custom designs and go with ready-made or semi-custom options. You will pay slightly more for expedited production (20-30% surcharge at most workshops). Bridal lehenga is still possible if you order this week.</p>
-          <p style={{ marginTop: "1rem" }}><strong>3 months out:</strong> You need to move fast. Focus on the bridal lehenga and groom sherwani first — those have the longest production times. Bridesmaid and parent outfits can still be sourced if you act immediately. Consider express shipping (3-5 days vs. 7-12 days).</p>
-          <p style={{ marginTop: "1rem" }}><strong>2 months or less:</strong> Custom outfits are likely not possible. Your options: (1) Buy ready-made from a boutique in India and ship express, (2) Find a US-based Indian boutique and pay the premium, (3) Work with a concierge who has ready stock. We keep a small selection of ready-made pieces for exactly this situation — <Link href="/contact/" style={{ color: "#7a6841" }}>contact us</Link> to check availability.</p>
+          <p><strong>If the schedule is compressed:</strong> Ask vendors for current ready-made and limited-customization options, confirm the carrier service actually available for the route, and reserve a local backup. Do not rely on an expedited estimate until the responsible provider confirms it in writing.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Golden Rule</h2>
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
-            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Start 2 months earlier than you think you need to.</p>
+            <p style={{ fontWeight: 600, marginBottom: "0.8rem" }}>Start early enough to preserve options and a fitting buffer.</p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>Workshops can get busy, fabric can sell out, and vendor capacity changes. Starting earlier generally creates more options and a better alteration buffer, but the actual timeline still depends on the selected item and vendor. Planning your budget alongside your timeline? Check out <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>what drives bridal lehenga cost</Link>.</p>
           </div>
 
@@ -124,23 +119,23 @@ export default function TimelineGuidePage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              The difference between a relaxed bride and a panicked bride often comes down to one thing: when she started. Brides who begin 8+ months out get better prices, better vendors, and actual time for alterations. Brides who wait until 3 months out pay more, stress more, and settle more.
+              Starting earlier can preserve more vendor, customization, and alteration options, but the useful start date depends on the actual items and providers.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want our free planning timeline?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download our free NRI Wedding Planning Timeline</strong> — month-by-month checklist telling you exactly when to order every outfit, when to schedule fittings, and when items should ship to hit your wedding date with room to spare. Enter your email and we&apos;ll send it.
+              <strong>Download our free NRI Wedding Planning Timeline</strong> — a checklist for recording item requirements, vendor estimates, approvals, shipping responsibilities, and fitting buffers. Enter your email and we&apos;ll send it.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Get the Free Timeline →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Not sure if you&apos;re on track? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free timeline review call</Link> — tell us your wedding date and we&apos;ll map out exactly what needs to happen when, plus whether you still have time to source from India.
+              Not sure if you&apos;re on track? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to review your date, items, known estimates, and remaining decisions.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help NRI families source authentic Indian wedding outfits from India with live video approval and insured delivery. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>Learn how we work</Link>, or browse our dedicated sourcing pages for <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link> and <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help families organize item research, measurements, written approvals, and the delivery responsibilities included in the selected service scope. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>Learn how we work</Link>, or browse our dedicated sourcing pages for <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link> and <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>.</p>
         </div>
               <SourcingCallout />
       </article>

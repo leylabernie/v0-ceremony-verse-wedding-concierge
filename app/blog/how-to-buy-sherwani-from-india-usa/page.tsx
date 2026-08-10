@@ -41,7 +41,7 @@ export default function SherwaniGuidePage() {
             How to Buy a Sherwani from India for Your US Wedding: Prices, Sizing & Shipping
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            The complete guide for NRI grooms — real prices, sizing secrets, scam warnings, and how to get your sherwani delivered to your door without surprises.
+            A practical guide for NRI grooms covering written quotes, measurements, seller evidence, shipping, customs, alteration planning, and remedies.
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function SherwaniGuidePage() {
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
           <p>
-            Most wedding advice online is written for brides. But if you are an NRI groom — or a parent, sibling, or friend helping one — you know that finding the right sherwani in the US is just as frustrating. US boutiques charge $800-$2,500 for sherwanis that cost a third of that in India. And buying from India online? That opens the door to scams, sizing disasters, and outfits that look nothing like the photo.
+            If you are an NRI groom—or a parent, sibling, or friend helping one—remote sherwani shopping can involve seller, item, sizing, payment, shipping, customs, and remedy risk. Local and India-based options have different services and costs, so compare equivalent written scopes.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
             This guide explains how to compare a sherwani from India: the main cost components,
@@ -66,31 +66,26 @@ export default function SherwaniGuidePage() {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead>
                 <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
-                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Category</th>
-                  <th style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>Price Range (INR)</th>
-                  <th style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>Approx. USD</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Quote Input</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>What to Record</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Budget (cotton-silk blend, light embroidery)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹8,000 – ₹18,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$95 – $210</td>
+                  <td style={{ padding: "0.6rem 0" }}>Garment</td>
+                  <td style={{ padding: "0.6rem 0" }}>Exact item, fiber representation, lining, handwork, included pieces, and customization</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Mid-range (silk, machine + hand embroidery)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹25,000 – ₹55,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$295 – $650</td>
+                  <td style={{ padding: "0.6rem 0" }}>Fit</td>
+                  <td style={{ padding: "0.6rem 0" }}>Vendor measurement chart, approved measurements, fitting assumptions, and alteration allowance</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Premium (heavy silk, zardozi, fully hand-embroidered)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹55,000 – ₹1,20,000</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$650 – $1,410</td>
+                  <td style={{ padding: "0.6rem 0" }}>Service</td>
+                  <td style={{ padding: "0.6rem 0" }}>Selected CeremonyVerse tier, included work, limits, and excluded outside costs</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0" }}>High-end designer (fully custom)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>₹1,20,000+</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$1,410+</td>
+                  <td style={{ padding: "0.6rem 0" }}>Delivery</td>
+                  <td style={{ padding: "0.6rem 0" }}>Carrier quote, customs estimate, insurance option, documents, claim process, and remedy terms</td>
                 </tr>
               </tbody>
             </table>
@@ -105,11 +100,11 @@ export default function SherwaniGuidePage() {
           </h2>
 
           <p>
-            Sherwani sizing is the #1 issue NRI grooms face when ordering from India. Indian sizing charts are different from US sizing. A &quot;Large&quot; in India is often closer to a US Medium. And sherwanis are designed to be worn over a kurta, so the fit is intentionally looser — which means measurements matter even more.
+            Size labels and measurement charts vary by vendor and garment. Use the selected vendor&apos;s chart, record the intended layers and fit preference, and preserve time for a local fitting because remote measurements do not guarantee fit.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>Get these 6 measurements right and your sherwani will fit perfectly:</strong>
+            <strong>Confirm these measurements using the selected vendor&apos;s chart:</strong>
           </p>
 
           <ol style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
@@ -123,10 +118,10 @@ export default function SherwaniGuidePage() {
 
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Pro Tip: Always Order 1 Size Larger
+              Use the Vendor&apos;s Size and Alteration Guidance
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              If you are between sizes, always order the larger one. A sherwani can be taken in by a tailor, but letting it out is much harder (and sometimes impossible, depending on the embroidery). Budget $50-$150 for minor alterations at an Indian tailor in your US city.
+              Do not apply a universal size-up rule. Ask how the vendor handles layers, ease, seam allowance, and between-size measurements, then request a local alteration quote.
             </p>
           </div>
 
@@ -135,19 +130,19 @@ export default function SherwaniGuidePage() {
           </h2>
 
           <p>
-            The sherwani market online is full of traps for NRI buyers. Here are the 5 most common scams we see grooms fall into:
+            Remote buying can expose shoppers to recurring seller, catalog-image, material, sizing, color, payment, shipping, and remedy risks. These examples are general scenarios, not CeremonyVerse client stories:
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>1. The catalog photo scam.</strong> The seller shows you a professional photo of a ₹1,50,000 designer sherwani. What they deliver is a ₹15,000 replica made with cheap fabric and machine embroidery that looks flat and lifeless. <em>How to avoid it:</em> Demand a live video call where the seller shows you the actual sherwani — not a photo. Ask them to hold it up, show the embroidery close-up, and drape the fabric so you can see how it moves.
+            <strong>1. Unsupported catalog images.</strong> A seller may show a designer or sample image without documenting whether the listing is the exact available piece or a reference for new production. <em>How to reduce the risk:</em> Ask for current item evidence when available and record the approved material, handwork, color reference, construction, included pieces, and remedy terms. Live video adds evidence but does not prove every claim.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>2. The &quot;pure silk&quot; lie.</strong> Many sellers label synthetic silk blends as &quot;pure silk.&quot; Real silk has a distinctive sheen and drape that synthetic fabrics cannot replicate. <em>How to avoid it:</em> On a video call, ask the seller to do the burn test on a small thread from an inner seam — real silk smells like burnt hair and leaves a crumbly ash. Synthetic smells like plastic and leaves a hard bead.
+            <strong>2. Unsupported material claims.</strong> A seller may label a blend as &quot;pure silk&quot; without item-specific evidence. <em>How to reduce the risk:</em> Ask for the exact fiber composition, any available certification, and the seller&apos;s written representation for the selected garment. Video appearance alone does not authenticate fiber content.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>3. The sizing switch.</strong> You send your measurements. The workshop cuts the sherwani to a standard template instead — saving them time and fabric. When it arrives, it is &quot;close enough&quot; but does not fit right. <em>How to avoid it:</em> Ask for photos of the cutting process with a measuring tape visible against the fabric. At CeremonyVerse, we verify every cut against the submitted measurements before sewing begins.
+            <strong>3. The sizing switch.</strong> You send measurements, but the finished garment may still use a standard template or need adjustment. <em>How to reduce the risk:</em> Use the selected vendor&apos;s measurement chart, keep the approved chart in writing, ask which production evidence is available, and reserve time and budget for local alteration.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -155,7 +150,7 @@ export default function SherwaniGuidePage() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            <strong>5. The payment-before-delivery trap.</strong> The seller asks for 100% payment upfront. Once they have your money, they disappear, delay indefinitely, or send a completely different product. <em>How to avoid it:</em> Never pay more than 30-40% upfront. Use a payment method with buyer protection (credit card or PayPal). At CeremonyVerse, we use milestone payments — you only pay for the next stage after approving the previous one.
+            <strong>5. Undocumented payment terms.</strong> A buyer may be asked for payment before the item, milestone, cancellation terms, or remedy is clear. <em>How to reduce the risk:</em> Record the payment schedule in the signed agreement and use an available payment method with appropriate protection.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -163,44 +158,44 @@ export default function SherwaniGuidePage() {
           </h2>
 
           <p>
-            The sherwani price is only the beginning. Here is what you will actually pay to get it to your US address:
+            The garment price is only one input. Build the complete written estimate from:
           </p>
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1.5rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead>
                 <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
-                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Cost Item</th>
-                  <th style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>Typical Amount</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Cost Input</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>How to Estimate It</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>Sherwani (mid-range silk, hand embroidery)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$410 – $880</td>
+                  <td style={{ padding: "0.6rem 0" }}>Sherwani</td>
+                  <td style={{ padding: "0.6rem 0" }}>Current quote for the exact approved garment and included pieces</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>International shipping (DHL/FedEx express)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$60 – $150</td>
+                  <td style={{ padding: "0.6rem 0" }}>International shipping</td>
+                  <td style={{ padding: "0.6rem 0" }}>Current carrier quote for the route, service level, shipment details, and declared value</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
                   <td style={{ padding: "0.6rem 0" }}>Estimated US customs assessment</td>
                   <td style={{ textAlign: "right", padding: "0.6rem 0" }}>Shipment-specific</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>US alterations (if needed)</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0" }}>$50 – $150</td>
+                  <td style={{ padding: "0.6rem 0" }}>US alterations</td>
+                  <td style={{ padding: "0.6rem 0" }}>Local tailor quote and fitting schedule</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0", fontWeight: 600 }}>Total realistic budget</td>
-                  <td style={{ textAlign: "right", padding: "0.6rem 0", fontWeight: 600 }}>$570 – $1,340</td>
+                  <td style={{ padding: "0.6rem 0", fontWeight: 600 }}>Complete estimate</td>
+                  <td style={{ padding: "0.6rem 0", fontWeight: 600 }}>Item + service + shipping + customs estimate + alteration allowance + contingency</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
           <p style={{ marginTop: "1.5rem" }}>
-            <strong>Compare this to US boutiques:</strong> A sherwani of equivalent quality at an Indian boutique in New Jersey, Texas, or California typically costs $1,200-$2,500. Buying from India — even with all the extra costs — usually saves you $400-$1,000+. Read our full guide on <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>shipping wedding outfits from India to USA</Link> for customs and delivery timeline details.
+            <strong>Compare complete written quotes:</strong> There is no universal savings amount. Compare the exact garment, material, handwork, customization, service fee, shipping, customs estimate, alteration allowance, timeline, and remedy terms with a U.S. boutique quote. Read our <Link href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/" style={{ color: "#7a6841" }}>shipping guide</Link> for the variables that affect a landed estimate.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -208,7 +203,7 @@ export default function SherwaniGuidePage() {
           </h2>
 
           <p>
-            One of the most common requests we get is coordinating the groom&apos;s sherwani with the groomsmen&apos;s outfits. Here is what works:
+            For a group order, let the couple and family approve the palette and hierarchy, then record the requirements for each person:
           </p>
 
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
@@ -229,30 +224,30 @@ export default function SherwaniGuidePage() {
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>
               <thead>
                 <tr style={{ borderBottom: "2px solid #e6dfd5" }}>
-                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Timeline Before Wedding</th>
-                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Action</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>Stage</th>
+                  <th style={{ textAlign: "left", padding: "0.6rem 0", fontWeight: 600 }}>What to Confirm</th>
                 </tr>
               </thead>
               <tbody>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>5 – 6 months out</td>
-                  <td style={{ padding: "0.6rem 0" }}>Start browsing styles, finalize color palette with bride</td>
+                  <td style={{ padding: "0.6rem 0" }}>Requirements</td>
+                  <td style={{ padding: "0.6rem 0" }}>Ceremony, palette, layers, fit preference, group quantity, and complete budget</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>4 – 5 months out</td>
-                  <td style={{ padding: "0.6rem 0" }}>Place order with workshop; submit measurements</td>
+                  <td style={{ padding: "0.6rem 0" }}>Vendor review</td>
+                  <td style={{ padding: "0.6rem 0" }}>Item evidence, capacity, measurement chart, current estimate, payment, and remedy terms</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>3 – 4 months out</td>
-                  <td style={{ padding: "0.6rem 0" }}>Video approval of fabric and cut; production begins</td>
+                  <td style={{ padding: "0.6rem 0" }}>Approval</td>
+                  <td style={{ padding: "0.6rem 0" }}>Exact item references, measurements, customization, costs, and decision deadlines</td>
                 </tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}>
-                  <td style={{ padding: "0.6rem 0" }}>2 – 3 months out</td>
-                  <td style={{ padding: "0.6rem 0" }}>Final inspection; shipping to USA</td>
+                  <td style={{ padding: "0.6rem 0" }}>Shipping</td>
+                  <td style={{ padding: "0.6rem 0" }}>Release condition, carrier, service level, documents, customs, insurance, and claims</td>
                 </tr>
                 <tr>
-                  <td style={{ padding: "0.6rem 0" }}>1 – 2 months out</td>
-                  <td style={{ padding: "0.6rem 0" }}>Arrives in US; alterations if needed; final fitting</td>
+                  <td style={{ padding: "0.6rem 0" }}>Local fitting</td>
+                  <td style={{ padding: "0.6rem 0" }}>First-fitting date, alteration provider, allowance, and backup option</td>
                 </tr>
               </tbody>
             </table>
@@ -271,7 +266,7 @@ export default function SherwaniGuidePage() {
               Compare a custom sherwani from India with US options
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
-              Live video shopping with India vendors, custom measurements, real fabric inspection before payment, and full customs + shipping handled. Starting at $249 for the Style Guide tier.
+              Compare the selected garment, measurements, service scope, shipping, customs estimate, alteration allowance, timeline, and remedy terms in writing.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-sherwani-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Sherwani from India</Link>
@@ -326,7 +321,7 @@ export default function SherwaniGuidePage() {
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
           <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
-            <strong>About CeremonyVerse:</strong> We are a US-based Indian wedding shopping concierge helping NRI families source authentic bridal lehengas, groom sherwanis, bridesmaid outfits, jewelry, and wedding essentials directly from India — with live video approval before anything ships. <Link href="/services/" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
+            <strong>About CeremonyVerse:</strong> CeremonyVerse is a U.S.-based Indian wedding shopping concierge. Eligible tiers may include live review, measurement coordination, written approvals, pre-shipping review, and delivery support when the selected item and vendor allow it. <Link href="/services/" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 
         </div>
