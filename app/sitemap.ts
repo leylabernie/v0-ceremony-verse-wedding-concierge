@@ -339,6 +339,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ─── MEDIUM-HIGH: Core blog posts (top traffic drivers) ───
     {
+      url: `${baseUrl}/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/mexico-or-punta-cana-indian-destination-wedding/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/ordering-indian-wedding-outfits-usa-canada/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/blog/how-to-take-lehenga-measurements-at-home/`,
       lastModified: now,
       changeFrequency: 'monthly',

@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   path: "/blog/",
-  title: "Indian Wedding Shopping Guides for NRI Families",
-  description: "Practical guides for families researching wedding outfits from India: vendor evidence, measurements, written costs, shipping, customs variables, and timelines."
+  title: "Indian Destination Wedding & Shopping Guides",
+  description: "Practical destination-wedding and India-sourcing guides for Gujarati and Hindu families across the United States and Canada."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Blog \u2014 Indian Wedding Shopping Guides",
-  description: "In-depth guides for NRI families on buying Indian wedding outfits from India, including vendor checks, customs, sizing, timelines, and planning scenarios.",
+  description: "Practical guides for Gujarati and Hindu destination weddings in Mexico and Punta Cana, plus India sourcing for families across the United States and Canada.",
   url: "/blog/",
 });
 
@@ -19,6 +19,24 @@ const breadcrumbSchema = buildBreadcrumb([
 ]);
 
 const posts = [
+  {
+    slug: "how-to-plan-gujarati-hindu-destination-wedding-mexico",
+    title: "How to Plan a Gujarati or Hindu Destination Wedding in Mexico",
+    description: "A practical guide to guest documents, resort proposals, cultural decisions, budgets, family responsibilities, and on-site execution for a wedding in Mexico.",
+    date: "August 2026",
+  },
+  {
+    slug: "mexico-or-punta-cana-indian-destination-wedding",
+    title: "Mexico or Punta Cana for an Indian Destination Wedding?",
+    description: "Compare guest travel, resort fit, event spaces, food, vendor rules, room blocks, complete host costs, and execution needs before choosing.",
+    date: "August 2026",
+  },
+  {
+    slug: "ordering-indian-wedding-outfits-usa-canada",
+    title: "Ordering Indian Wedding Outfits from India to the USA or Canada",
+    description: "Plan vendor evidence, measurements, written approvals, shipping, duties, taxes, brokerage, tracking, and local alterations for U.S. or Canadian delivery.",
+    date: "August 2026",
+  },
   {
     slug: "how-to-take-lehenga-measurements-at-home",
     title: "How to Take Lehenga Measurements at Home: A Step-by-Step Guide for NRI Brides",
@@ -144,10 +162,10 @@ export default function BlogIndexPage() {
             CeremonyVerse · Resources
           </p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.2, margin: "0 0 1rem" }}>
-            Indian Wedding Shopping Guides
+            Indian Destination Wedding &amp; Shopping Guides
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Practical planning guides for families researching Indian wedding outfits from the USA.
+            Destination-wedding and India-sourcing guidance for Gujarati and Hindu families across the USA and Canada.
           </p>
         </div>
       </div>
