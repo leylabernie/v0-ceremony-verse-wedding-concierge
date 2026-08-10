@@ -271,6 +271,13 @@
   height: calc(var(--cv-announcement-height) + var(--cv-navigation-height));
 }
 
+/* Keep the end of every mobile page above the fixed consultation bar. */
+@media screen and (max-width: 1279px) {
+  body {
+    padding-bottom: 72px;
+  }
+}
+
 .glass-header {
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(12px);
@@ -402,4 +409,49 @@
   width: 12px;
   height: 1px;
   background: var(--cv-accent);
+}
+
+/* =========================
+   CALCULATOR PRINT OUTPUT
+   ========================= */
+
+@media print {
+  @page {
+    margin: 0.55in;
+  }
+
+  .cv-announcement-bar,
+  .cv-site-header,
+  .cv-header-spacer,
+  .cv-mobile-sticky-cta,
+  .cv-whatsapp-float,
+  footer {
+    display: none !important;
+  }
+
+  html,
+  body,
+  main {
+    background: #ffffff !important;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  .cv-calculator-summary {
+    position: static !important;
+    background: #ffffff !important;
+    border: 1px solid #7a6841 !important;
+    break-inside: avoid;
+  }
+
+  .cv-calculator-summary :is(h1, h2, h3, h4, p, span, dt, dd, li, div) {
+    color: #1f1f1f !important;
+  }
+
+  input,
+  select {
+    background: #ffffff !important;
+  }
 }

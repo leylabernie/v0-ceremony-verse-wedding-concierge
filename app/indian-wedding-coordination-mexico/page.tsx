@@ -12,45 +12,45 @@ import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
-  title: "Indian Wedding Planning Mexico",
+  title: "Gujarati & Hindu Destination Wedding Planning",
   description:
-    "Full planning, partial planning, day-of coordination, family concierge, guest support, and India sourcing for Indian weddings in Cancun and Riviera Maya.",
+    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico and in Punta Cana.",
   keywords:
-    "Indian wedding planner Mexico, Cancun Indian wedding planning, Riviera Maya Indian wedding concierge, South Asian wedding Mexico, Hindu wedding Cancun, Mexico destination wedding support",
+    "Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, destination wedding family support, India wedding sourcing",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Mexico Indian Wedding Planning and Concierge",
+  name: "Gujarati and Hindu Destination Wedding Planning",
   description:
-    "Full, partial, and day-of wedding planning for South Asian and intercultural weddings in Cancun and Riviera Maya, with optional family, guest, arrival, and India-shopping support.",
+    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
-  areaServed: "Cancun and Riviera Maya, Mexico",
+  areaServed: "Mexico and Punta Cana",
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Mexico Wedding Concierge", url: "/indian-wedding-coordination-mexico/" },
+  { name: "Destination Wedding Planning", url: "/indian-wedding-coordination-mexico/" },
 ]);
 
 const faqItems = [
   {
-    question: "Who plans and runs the wedding in Mexico?",
+    question: "What can the destination-wedding service include?",
     answer:
-      "CeremonyVerse offers the planning package and coordinates the client experience. Qualified Mexico-based planning professionals handle the local resort, vendor, timeline, and on-site responsibilities defined in the private CeremonyVerse proposal.",
+      "Depending on the selected scope, CeremonyVerse can provide full planning, partial planning, final coordination, on-site management, family communication, guest logistics, welcome details, and optional India sourcing. The private proposal identifies exactly what is included.",
   },
   {
-    question: "What do CeremonyVerse Mexico wedding services cost?",
+    question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "Mexico wedding pricing is private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the level of planning and family support required. After the consultation, the client receives one bundled CeremonyVerse proposal. Resort, venue, vendor, travel, transfer, product, shipping, and customs costs are identified separately when applicable.",
+      "Destination-wedding pricing is private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the level of planning and family support required. The private proposal identifies the selected services, exclusions, fees, and applicable third-party costs before paid work begins.",
   },
   {
-    question: "Can you help us choose between Cancun and Riviera Maya?",
+    question: "Can you help us compare resorts across Mexico and Punta Cana?",
     answer:
-      "Yes. We compare options against your guest origins, guest count, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
+      "Yes. CeremonyVerse compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
   },
   {
-    question: "Can you plan Hindu, Sikh, Muslim, Christian, or intercultural events?",
+    question: "Which wedding traditions are the current focus?",
     answer:
-      "CeremonyVerse can coordinate logistics for traditions defined by the couple, families, and their chosen officiants. We do not replace religious or legal authorities, and we confirm venue and vendor feasibility before promising a specific setup.",
+      "CeremonyVerse is initially focused on Gujarati and Hindu families. Ceremony details are defined with the couple, family, chosen officiants, and qualified professionals; CeremonyVerse does not replace religious or legal authorities.",
   },
   {
     question: "Do Mexico resorts allow mandaps, baraats, outside vendors, and Indian catering?",
@@ -72,9 +72,9 @@ const faqItems = [
 const faqSchema = buildFaqSchema(faqItems);
 
 const howToSchema = buildHowToSchema({
-  name: "How to Start Planning an Indian Wedding in Mexico",
+  name: "How to Start Planning a Gujarati or Hindu Destination Wedding",
   description:
-    "A practical first-pass process for an Indian or South Asian wedding in Cancun or Riviera Maya.",
+    "A practical first-pass process for a Gujarati or Hindu wedding across Mexico or in Punta Cana.",
   url: "/indian-wedding-coordination-mexico/",
   totalTime: "PT30M",
   steps: [
@@ -84,7 +84,7 @@ const howToSchema = buildHowToSchema({
     },
     {
       name: "Compare locations and written resort terms",
-      text: "Review Cancun and Riviera Maya options, then compare event spaces, room blocks, food and beverage terms, production rules, outside-vendor policies, weather plans, and cancellation terms.",
+      text: "Review suitable regions and resorts across Mexico or in Punta Cana, then compare event spaces, room blocks, food and beverage terms, production rules, outside-vendor policies, weather plans, and cancellation terms.",
     },
     {
       name: "Choose the right planning package",
@@ -123,30 +123,36 @@ export default function MexicoCoordinationPage() {
       <section className="px-6 py-24 text-[#f8f6f2]" style={{ background: "#1f1f1f" }}>
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#c5a059]">
-            Cancun &amp; Riviera Maya
+            Mexico · Punta Cana
           </p>
           <h1
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Mexico wedding planning, with CeremonyVerse beside the family.
+            Destination-wedding planning built around your family
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            Choose full planning, partial planning, or day-of coordination, then add family concierge,
-            guest arrival, welcome-item, or India wedding-shopping support only where you need it.
+            CeremonyVerse offers planning, on-site coordination, family support, guest organization, and optional India
+            sourcing for Gujarati and Hindu destination weddings across Mexico and in Punta Cana.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Discuss Your Mexico Wedding
+              Discuss Your Destination Wedding
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
               Compare Package Details
+            </Link>
+            <Link
+              href="/planning-tools/"
+              className="rounded-lg border-2 border-white/45 px-8 py-4 text-lg font-bold text-white"
+            >
+              Use Free Wedding Calculators
             </Link>
           </div>
           <p className="mt-5 text-sm text-[#cfc6bb]">
@@ -165,24 +171,19 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Family experience became an organized planning system.
+              Clear responsibilities create a more organized planning system.
             </h2>
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-[#4d403a]">
             <p>
-              Founder Bhamini Bernie&apos;s experience comes from three family wedding journeys: two multi-day
-              weddings for her sons—one at a Hard Rock resort in Mexico and one that moved from Mexico to New
-              Jersey during the pandemic—plus her nephew&apos;s Mexico wedding.
+              Before planning begins, CeremonyVerse organizes the facts that affect the private scope: what the budget
+              covers, how many guests are traveling, which events matter most, which resort terms apply, and what still
+              needs a clear owner, approver, deadline, or written answer.
             </p>
             <p>
-              These family experiences shaped the questions CeremonyVerse asks before planning begins: what the
-              budget covers, how many guests are traveling, which events matter most, and which responsibilities
-              belong to the planning team, the resort, the travel provider, and the family.
-            </p>
-            <p>
-              CeremonyVerse presents the selected planning and concierge responsibilities in one private proposal.
-              Qualified Mexico-based professionals carry out the local work assigned to them, while outside resort,
-              venue, vendor, and travel costs remain clearly identified.
+              The private proposal identifies the selected planning, on-site, family-support, guest, and India-sourcing
+              services, along with exclusions, fees, payment terms, and outside costs. Public family-experience facts
+              remain documented separately on the About page and are not presented as CeremonyVerse client projects.
             </p>
           </div>
         </div>
@@ -198,7 +199,7 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Five ways to support your Mexico wedding
+              Five ways to support your destination wedding
             </h2>
             <p className="mt-5 leading-relaxed text-[#4d403a]">
               Package details are public. Pricing is shared only in a private proposal after consultation.
@@ -239,7 +240,7 @@ export default function MexicoCoordinationPage() {
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-3">
             <article className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Cancun</p>
               <h2 className="mt-3 text-3xl font-semibold text-[#1f1f1f]">Start with guest logistics.</h2>
@@ -256,6 +257,15 @@ export default function MexicoCoordinationPage() {
                 Riviera Maya offers a wide range of resort settings farther south of Cancun. Compare transfer
                 time, event-space privacy, weather backups, guest mobility, vendor access, and the total written
                 contract before choosing a property.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Punta Cana</p>
+              <h2 className="mt-3 text-3xl font-semibold text-[#1f1f1f]">Start with service coverage.</h2>
+              <p className="mt-5 leading-relaxed text-[#4d403a]">
+                Punta Cana is included in CeremonyVerse&apos;s current destination-wedding service coverage. Compare the
+                actual resort, travel requirements, room-block terms, event-space fit, outside-vendor rules, weather
+                backup, and on-site production plan before committing.
               </p>
             </article>
           </div>
@@ -304,16 +314,16 @@ export default function MexicoCoordinationPage() {
               className="text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
               style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
             >
-              Local planning expertise, family-side organization, and India sourcing.
+              Planning, family organization, guest logistics, and India sourcing.
             </h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
-              <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Mexico planning + family concierge</h3>
+              <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Destination planning + family support</h3>
               <p className="mt-4 leading-relaxed text-[#4d403a]">
-                Qualified Mexico-based planning professionals handle the local resort, vendor, timeline, and
-                on-site responsibilities in the selected package. CeremonyVerse can also organize family
-                questions, guest information, transfer details, arrival support, and welcome kits.
+                The selected private scope can include resort and vendor coordination, production and timeline work,
+                on-site management, cultural requirements, family approvals, guest information, arrival details, and
+                welcome items.
               </p>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
@@ -336,7 +346,7 @@ export default function MexicoCoordinationPage() {
             className="text-center text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Mexico wedding concierge FAQ
+            Destination-wedding planning FAQ
           </h2>
           <div className="mt-10 space-y-4">
             {faqItems.map((item) => (

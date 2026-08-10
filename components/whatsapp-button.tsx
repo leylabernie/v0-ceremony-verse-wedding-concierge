@@ -1,18 +1,27 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { trackLead } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
+  const pathname = usePathname();
   const phoneNumber = "12153419990";
+  const destinationPage =
+    pathname === "/" ||
+    pathname.startsWith("/planning-tools") ||
+    pathname.startsWith("/indian-wedding-coordination-mexico") ||
+    pathname.startsWith("/indian-destination-wedding-planner-mexico");
   const message = encodeURIComponent(
-    "Hi, I'm interested in wedding shopping services from CeremonyVerse."
+    destinationPage
+      ? "Hi, I'm planning a Gujarati or Hindu destination wedding in Mexico or Punta Cana and would like to discuss CeremonyVerse support."
+      : "Hi, I'm interested in CeremonyVerse wedding services and would like to learn more."
   );
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 hidden min-[1280px]:block min-[1660px]:hidden">
+    <div className="cv-whatsapp-float fixed bottom-6 right-6 z-50 hidden min-[1280px]:block min-[1660px]:hidden">
       <Link
         href={whatsappUrl}
         target="_blank"

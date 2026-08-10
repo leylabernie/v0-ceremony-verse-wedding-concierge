@@ -266,7 +266,7 @@ export default function BridalLehengaCostGuide() {
               Get the Free Price Guide →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Already have your budget planned? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 20-minute video consultation</Link> and we&apos;ll show you real lehengas from our partners in India — no commitment, just real options and real prices.
+              Already have your budget planned? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free consultation</Link> and we&apos;ll review the sourcing options that fit your timeline, needs, and budget.
             </p>
           </div>
 

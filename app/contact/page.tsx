@@ -5,14 +5,16 @@ export const metadata = buildMetadata({
   path: "/contact/",
   title: "Book a Free CeremonyVerse Wedding Consultation",
   description:
-    "Book a free 30-minute CeremonyVerse consultation for India wedding sourcing, Mexico wedding planning, day-of coordination, or family-concierge support.",
+    "Request a private CeremonyVerse consultation for India wedding sourcing or Gujarati and Hindu destination planning across Mexico and in Punta Cana.",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Free Wedding Sourcing or Mexico Concierge Consultation",
+  name: "Free Wedding Sourcing or Destination Planning Consultation",
   description:
-    "Free 30-minute consultation to review the wedding vision, guest count, timeline, and budget, then recommend India sourcing or the right Mexico planning and family-support scope.",
+    "Free 30-minute consultation to review the wedding vision, guest count, timeline, and budget, then recommend India sourcing or the right destination-planning and family-support scope.",
   url: "/contact/",
+  category: "Wedding Planning and India Wedding Sourcing Consultation",
+  areaServed: "United States, Mexico, and Punta Cana",
 });
 
 const breadcrumbSchema = buildBreadcrumb([

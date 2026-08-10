@@ -178,7 +178,7 @@ export default function ScamsGuidePage() {
               Download the Red Flags Checklist →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Rather skip the risk entirely? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 15-minute call</Link> to see if we&apos;re the right fit.
+              Rather skip the risk entirely? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>Here&apos;s how CeremonyVerse sources outfits safely</Link> — vendor verification, live video approval, milestone payments, delivery to your US door. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free consultation</Link> to see whether the service fits your needs.
             </p>
           </div>
 

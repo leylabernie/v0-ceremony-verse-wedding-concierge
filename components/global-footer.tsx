@@ -7,7 +7,7 @@ import Link from "next/link";
  * client-side routing pattern and is no longer imported.
  */
 const serviceLinks = [
-  { label: "Mexico Wedding Concierge", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Destination Wedding Planning", href: "/indian-wedding-coordination-mexico/" },
   { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
   { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
@@ -44,6 +44,7 @@ const companyLinks = [
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },
   { label: "Blog", href: "/blog/" },
+  { label: "Wedding Calculators", href: "/planning-tools/" },
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
@@ -67,8 +68,8 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              India wedding shopping for US families and private-proposal Mexico wedding planning
-              with optional family-side support. Based in Philadelphia.
+              India wedding shopping for US families and destination-wedding planning for Gujarati
+              and Hindu families across Mexico and in Punta Cana.
             </p>
             <a
               href="https://www.trustpilot.com/review/ceremonyverse.com"
@@ -153,8 +154,9 @@ export function GlobalFooter() {
       <div style={{ borderTop: "1px solid #e6dfd5" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "20px 24px" }}>
           <p style={{ fontSize: "10px", color: "#b0a898", lineHeight: 1.8, textAlign: "center" }}>
-            CeremonyVerse — India Wedding Shopping &amp; Mexico Concierge&nbsp;·&nbsp;
+            CeremonyVerse — India Wedding Shopping &amp; Destination Planning&nbsp;·&nbsp;
             Indian Destination Wedding Planning Cancun&nbsp;·&nbsp; Riviera Maya Family Wedding Support&nbsp;·&nbsp;
+            Punta Cana Indian Wedding Planning&nbsp;·&nbsp;
             Buy Bridal Lehenga from India USA&nbsp;·&nbsp; NRI Bridal Lehenga&nbsp;·&nbsp; Custom Sherwani from India USA&nbsp;·&nbsp;
             Bridesmaid Outfits from India&nbsp;·&nbsp; Indian Wedding Jewelry USA&nbsp;·&nbsp;
             Welcome Bags &amp; Gifts&nbsp;·&nbsp; Ceremonial Items&nbsp;·&nbsp;

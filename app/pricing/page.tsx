@@ -11,11 +11,11 @@ import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "CeremonyVerse Pricing | India Sourcing & Mexico Concierge",
+  title: "CeremonyVerse Pricing | India Sourcing & Destination Planning",
   description:
-    "Compare CeremonyVerse India sourcing fees and private-proposal Mexico wedding planning, family concierge, guest organization, and arrival support.",
+    "Compare CeremonyVerse India sourcing fees and private-proposal destination planning and family support across Mexico and in Punta Cana.",
   keywords:
-    "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Mexico wedding coordination pricing, NRI bridal concierge pricing",
+    "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
 
 const tiers = [
@@ -71,7 +71,7 @@ const tiers = [
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Indian Wedding Sourcing Services",
   description:
-    "Flat-fee India shopping concierge tiers and Mexico family-concierge support for US families.",
+    "Flat-fee India shopping concierge tiers and private-proposal destination-planning support for US families.",
   url: "/pricing/",
   offers: tiers.map((tier) => ({
     name: tier.name,
@@ -106,7 +106,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management for Mexico destination weddings, supported by qualified Mexico-based planning professionals. Family concierge, guest, arrival, and India-sourcing support can be included in the private written proposal.",
+      "Yes. CeremonyVerse offers Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management across Mexico and in Punta Cana. Family communication, guest support, and optional India sourcing can be included in the private written proposal.",
   },
 ]
 
@@ -129,9 +129,9 @@ export default function PricingPage() {
             Pay for the level of help you need
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
-            India sourcing uses flat service fees instead of a percentage of the outfit price. Mexico
-            concierge work uses a separate scope. Products, planners, venues, vendors, travel, shipping, and customs are
-            itemized outside the applicable CeremonyVerse service fee.
+            India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
+            planning uses a private scope. Products, resorts, venues, vendors, travel, shipping, and customs
+            are itemized outside the applicable CeremonyVerse service fee unless the proposal says otherwise.
           </p>
         </div>
       </section>
@@ -140,10 +140,10 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-              Mexico wedding planning &amp; concierge
+              Destination wedding planning
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold !text-[#f8f6f2] sm:text-5xl">
-              Choose the level of Mexico planning and family support you need
+              Choose the level of planning and family support you need
             </h2>
             <p className="text-lg leading-8 text-white/75">
               Package details are public so you can compare the scope. Pricing is shared only in a private
@@ -311,7 +311,7 @@ export default function PricingPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with the free call</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
-            sourcing tier, Mexico planning package, or family-support scope fits. No payment is required for the consultation.
+            sourcing tier, destination-planning package, or family-support scope fits. No payment is required for the consultation.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
             Book My Free Consultation

@@ -319,7 +319,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for US families plus private-proposal Mexico wedding planning, family concierge, guest, and arrival support.",
+      "CeremonyVerse offers Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning support across Mexico and in Punta Cana.",
     url: SITE_URL,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -331,7 +331,7 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: "US",
+    areaServed: ["US", "Mexico", "Punta Cana"],
     priceRange: "$$",
     sameAs: [
       "https://www.instagram.com/ceremonyverse/",
@@ -395,7 +395,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for US families plus full planning, partial planning, day-of coordination, family concierge, guest support, and arrival services for Mexico destination weddings. Mexico services use private proposals and qualified local planning professionals for the assigned on-site work.",
+          text: "CeremonyVerse offers India wedding shopping for US families plus destination-wedding planning support for Gujarati and Hindu families across Mexico and in Punta Cana. Private proposals define the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
@@ -411,7 +411,7 @@ export function buildGlobalFaqSchema(): object {
         name: "Can I buy a bridal lehenga from India and have it delivered to the USA?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes. CeremonyVerse specializes in sourcing bridal lehengas direct from Surat and Delhi for NRI brides in the USA. We offer live video shopping so you can see the actual fabric and embroidery before purchasing, and we handle all shipping and customs to deliver to your US door.",
+          text: "Yes. CeremonyVerse helps US families source bridal lehengas through working relationships in Surat and Delhi. Eligible tiers can include live video review, written item approval, measurement coordination, pre-shipping review, and shipping-document and tracking support. Carrier service, customs clearance, duties, and final delivery remain subject to the applicable providers and signed terms.",
         },
       },
       {
@@ -419,7 +419,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Mexico wedding planning and concierge pricing is shared only through a private proposal after consultation. A free 30-minute consultation is available.",
+          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Destination-planning pricing is shared only through a private proposal after consultation. A free 30-minute consultation is available.",
         },
       },
       {
@@ -461,7 +461,7 @@ export function buildGlobalFaqSchema(): object {
 /**
  * Organization schema — site-wide entity for Google Knowledge Graph and AI
  * engines. Complements the LocalBusiness schema (which describes the physical
- * service) by declaring the brand entity, founder, and contact points.
+ * service) by declaring the brand entity and contact points.
  *
  * NOTE: `sameAs` is intentionally limited to profiles the business actually
  * maintains. Do NOT list social URLs that don't resolve — Google treats a
@@ -478,11 +478,7 @@ export function buildOrganizationSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
     description:
-      "CeremonyVerse is a US-based Indian wedding shopping concierge. We source bridal lehengas, sherwanis, and ceremonial items directly from India to the USA with live video shopping and quality checks.",
-    founder: {
-      "@type": "Person",
-      name: "Bhamini",
-    },
+      "CeremonyVerse is a US-based Indian wedding shopping concierge and destination-wedding support service for Gujarati and Hindu families planning celebrations across Mexico and in Punta Cana.",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -524,7 +520,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Indian wedding shopping concierge — source bridal lehengas, sherwanis, and ceremonial items directly from India to the USA.",
+      "Indian wedding shopping for US families plus Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

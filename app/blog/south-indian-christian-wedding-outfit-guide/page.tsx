@@ -230,7 +230,7 @@ export default function SouthIndianChristianWeddingGuide() {
 
           {/* Tagline */}
           <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
-            CeremonyVerse is a US-based Indian wedding shopping concierge run by Bhamini. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
+            CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
           </p>
 
         </div>

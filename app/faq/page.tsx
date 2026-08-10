@@ -46,7 +46,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Mexico wedding planning and concierge prices are shared only in a private proposal after consultation."
+        answer: "India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Destination-planning prices are shared only in a private proposal after consultation."
       },
       {
         question: "What's the payment schedule?",
@@ -80,7 +80,7 @@ const faqSections = [
     items: [
       {
         question: "Do I need to travel to India?",
-        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. For Mexico, CeremonyVerse offers planning and concierge packages delivered with qualified local planning professionals for the assigned on-site work."
+        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico and in Punta Cana through the scope selected for the wedding."
       },
       {
         question: "Can I source just one item, or do I need a full package?",

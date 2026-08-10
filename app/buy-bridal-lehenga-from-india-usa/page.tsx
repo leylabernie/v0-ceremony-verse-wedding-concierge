@@ -31,7 +31,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "How do I know the bridal lehenga I see online is the one I'll actually receive?",
-    answer: "CeremonyVerse does live video shopping sessions where you see the exact lehenga in real time — fabric draped, embroidery up close, color in natural light. That specific piece is then reserved with your name and order number. We also do a final pre-shipping inspection and document the order with reference photos and your written approval before production begins.",
+    answer: "When the vendor and item allow live review, CeremonyVerse coordinates a video view of the available piece and documents the selected item, measurements, price, and written approval. Custom work and pre-shipping review follow the limits stated in the selected service scope; screen color and handmade details can vary.",
   },
   {
     question: "How long does it take to buy a bridal lehenga from India and have it delivered to the USA?",
@@ -47,7 +47,7 @@ const faqSchema = buildFaqSchema([
   },
   {
     question: "Can I coordinate my bridal lehenga with bridesmaid and family outfits from India?",
-    answer: "Yes. Coordinating the full wedding party is one of our specialties. We've sourced bridal lehengas alongside 14 bridesmaid lehengas, 14 groomsmen sherwanis, full family outfits, jewelry, and ceremonial items — all color-matched, custom-stitched, and shipped together to your US address. See our 4-day Gujarati and South Indian Christian wedding case study for a real example.",
+    answer: "Yes, when the selected service tier and written scope include those people and items. Full Bridal Concierge covers the couple and wedding party up to eight people; larger groups require a separate private scope. CeremonyVerse can organize the shared palette, measurements, approvals, order details, and delivery responsibilities identified in that scope.",
   },
 ]);
 
@@ -252,9 +252,9 @@ export default function BridalLehengaPage() {
               <div>
                 <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Quality inspection before shipping</h3>
                 <p className="text-[#4d403a] leading-relaxed">
-                  Every finished lehenga is inspected in India — embroidery integrity, color match to
-                  your approved sample, stitching quality, and measurements. We send you photos and
-                  video before anything ships.
+                  When included in the selected scope, available pre-shipping review can cover visible
+                  embroidery, stitching, color against the approved reference, and recorded measurements.
+                  The review method and its limits are documented before ordering.
                 </p>
               </div>
             </div>
@@ -263,9 +263,9 @@ export default function BridalLehengaPage() {
               <div>
                 <h3 className="font-semibold text-xl mb-2" style={{ color: "#1f1f1f" }}>Insured delivery to your US door</h3>
                 <p className="text-[#4d403a] leading-relaxed">
-                  We handle all shipping documentation, customs declarations, and full insurance.
-                  Standard shipping takes 2–3 weeks; expedited 7–10 days is available. We've never
-                  had an unresolved shipping issue.
+                  The written quote identifies the carrier, available insurance, shipping documents,
+                  customs responsibilities, estimated timing, and the party responsible for claims.
+                  Carrier and customs dates are estimates, not guarantees.
                 </p>
               </div>
             </div>
@@ -337,25 +337,25 @@ export default function BridalLehengaPage() {
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Instagram vs. reality: fabric looks different</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                You approve the exact item on live video — actual fabric draped, embroidery up close,
-                color in natural light. That specific piece is reserved with your order number. If
-                anything changes before shipping, we halt it immediately.
+                When live review is available, the item, fabric, embroidery, color reference, price,
+                and next approval step are documented. Custom work and screen color require separate
+                expectations because handmade details and displays can vary.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Fake vendors, stolen images, no accountability</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                We work only with vetted artisan partners we know personally — no random Instagram
-                sellers. We have US presence and accountability. You see everything live before
-                committing.
+                CeremonyVerse documents the seller, item, price, payment terms, and available review
+                before an approved order. Vendor selection and verification limits are explained in
+                the written scope instead of relying on a social-media profile alone.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
               <h3 className="font-semibold mb-3" style={{ color: "#1f1f1f" }}>Sizing disaster: blouse misfitted</h3>
               <p className="text-sm text-[#4d403a] leading-relaxed">
-                We collect 15+ precise measurements and build in strategic ease allowances. Every
-                eligible made-to-measure pieces include Fit Assurance with up to $150 toward local
-                alterations after delivery, subject to service terms.
+                We coordinate the measurement process specified for the selected item. Eligible
+                made-to-measure garments can include Fit Assurance with up to $150 toward local
+                alterations after delivery, subject to the written service terms.
               </p>
             </div>
             <div className="bg-white border border-[#e6dfd5] rounded-2xl p-6">
@@ -392,11 +392,10 @@ export default function BridalLehengaPage() {
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>How do I know the bridal lehenga I see online is the one I&apos;ll actually receive?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                CeremonyVerse does live video shopping sessions where you see the exact lehenga in
-                real time — fabric draped, embroidery up close, color in natural light. That specific
-                piece is then reserved with your name and order number. We also do a final pre-shipping
-                inspection and document the order with reference photos and your written approval
-                before production begins.
+                When the vendor and item allow live review, CeremonyVerse coordinates a video view of
+                the available piece and documents the selected item, measurements, price, and written
+                approval. Custom work and pre-shipping review follow the limits stated in the selected
+                service scope; screen color and handmade details can vary.
               </p>
             </div>
             <div>
@@ -422,18 +421,17 @@ export default function BridalLehengaPage() {
               <p className="text-[#4d403a] leading-relaxed">
                 We collect 15+ precise body measurements using a detailed guide that goes beyond basic
                 bust-waist-hip — including high waist, blouse back length, shoulder width, armhole
-                depth, and skirt length. Every piece is custom-stitched to your exact silhouette with
-                strategic ease allowances for final alterations. Eligible made-to-measure garments
+                depth, and skirt length. The tailor uses the approved measurements and item specifications;
+                remote ordering cannot guarantee perfect fit. Eligible made-to-measure garments
                 include Fit Assurance with up to $150 toward local alterations, subject to service terms.
               </p>
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-2" style={{ color: "#1f1f1f" }}>Can I coordinate my bridal lehenga with bridesmaid and family outfits from India?</h3>
               <p className="text-[#4d403a] leading-relaxed">
-                Yes. Coordinating the full wedding party is one of our specialties. We&apos;ve sourced
-                bridal lehengas alongside 14 bridesmaid lehengas, 14 groomsmen sherwanis, full family
-                outfits, jewelry, and ceremonial items — all color-matched, custom-stitched, and
-                shipped together to your US address.
+                Yes, when the selected service tier and written scope include those people and items.
+                Full Bridal Concierge covers the couple and wedding party up to eight people; larger
+                groups require a separate private scope with responsibilities and costs confirmed first.
               </p>
             </div>
           </div>
@@ -498,7 +496,7 @@ export default function BridalLehengaPage() {
               Book Free Consultation
             </Link>
             <a
-              href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."
+              href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium border"

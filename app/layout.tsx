@@ -35,11 +35,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Indian Wedding Shopping & Mexico Concierge | CeremonyVerse",
+      "Indian Wedding Shopping & Destination Planning | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Shop for Indian wedding outfits from India or request private-proposal Mexico wedding planning with family, guest, arrival, and sourcing support.",
+    "Shop for Indian wedding outfits from India or request Gujarati and Hindu destination-wedding planning support across Mexico or in Punta Cana.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -70,6 +70,7 @@ export const metadata = {
     "Indian destination wedding planner Mexico",
     "Cancun Indian wedding planning",
     "Riviera Maya Indian wedding concierge",
+    "Punta Cana Indian wedding planning",
     "CeremonyVerse",
   ],
   icons: {
@@ -79,9 +80,9 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Indian Wedding Shopping & Mexico Concierge | CeremonyVerse",
+      "Indian Wedding Shopping & Destination Planning | CeremonyVerse",
     description:
-      "Shop for Indian wedding outfits from India or request Mexico wedding planning with family-side support.",
+      "Shop for Indian wedding outfits from India or request destination-wedding planning with family-side support.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -220,10 +221,10 @@ export default function RootLayout({
         <AcquisitionAttribution />
         {/* Urgency announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">A limited number of 2027 Mexico wedding planning dates are still available</span>
-          <span className="lg:hidden">Limited 2027 Mexico wedding dates remain</span>
+          <span className="hidden lg:inline">A limited number of 2027 destination-wedding planning dates are still available</span>
+          <span className="lg:hidden">Limited 2027 planning dates remain</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <a href="https://wa.me/12153419990?text=Hi%20Bhamini!%20I%20want%20to%20discuss%20India%20shopping%20or%20Mexico%20wedding%20concierge%20support." target="_blank" rel="noopener noreferrer">Book a free consult →</a>
+          <a href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20discuss%20India%20shopping%20or%20destination-wedding%20planning%20support." target="_blank" rel="noopener noreferrer">Book a free consult →</a>
         </div>
 
         {/* Navigation — appears on ALL pages */}
