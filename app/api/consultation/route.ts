@@ -210,7 +210,7 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolea
   const html = `
     <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
       <p>Hi ${safeFirstName},</p>
-      <p>Thank you for reaching out to CeremonyVerse. Your consultation request is now registered on our website.</p>
+      <p>Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.</p>
       <p>Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.</p>
       <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
       <p>You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
@@ -221,7 +221,7 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolea
 
   const text = `Hi ${firstName},
 
-Thank you for reaching out to CeremonyVerse. Your consultation request is now registered on our website.
+Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.
 
 Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.
 
