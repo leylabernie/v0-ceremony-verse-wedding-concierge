@@ -182,6 +182,19 @@ export function ConsultationQuestionnairePage() {
   ].join("\n")
   const schedulingUrl = `https://wa.me/12153419990?text=${encodeURIComponent(schedulingMessage)}`
 
+  const handleSubmitAttempt = (event: React.MouseEvent<HTMLButtonElement>) => {
+    if (isLoading || !formData.privacyConsent) return
+
+    const firstInvalidAnswer = event.currentTarget.form?.querySelector<HTMLElement>(":invalid")
+    if (!firstInvalidAnswer) return
+
+    window.alert(
+      "Please complete all required questions marked with an asterisk (*) and correct any highlighted answer before sending your questionnaire.",
+    )
+    firstInvalidAnswer.focus()
+    firstInvalidAnswer.scrollIntoView({ behavior: "smooth", block: "center" })
+  }
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
     if (isLoading) return
@@ -537,7 +550,7 @@ export function ConsultationQuestionnairePage() {
             </div>
           ) : null}
 
-          <button type="submit" disabled={!formData.privacyConsent || isLoading} className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={formData.privacyConsent && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}>
+          <button type="submit" onClick={handleSubmitAttempt} disabled={!formData.privacyConsent || isLoading} className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={formData.privacyConsent && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}>
             {isLoading ? "Sending Securely…" : "Send My Pre-Call Questionnaire"}
           </button>
           <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
