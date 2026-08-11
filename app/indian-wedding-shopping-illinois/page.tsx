@@ -143,7 +143,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </a>
       </section>
 

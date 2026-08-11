@@ -95,7 +95,7 @@ export default function WeddingExperiencePage() {
               Review Destination Planning
             </Link>
             <Link
-              href="/shop-from-india/"
+              href="/buy-indian-wedding-outfits-from-india/"
               className="rounded-full border border-[#7a6841] px-7 py-3 font-semibold text-[#7a6841]"
             >
               Explore India Shopping

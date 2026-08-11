@@ -122,11 +122,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
         >
           <p>
             For an Indian groom planning a wedding in the United States,
-            finding the perfect sherwani is a major milestone. A wedding
+            selecting a sherwani is an important decision. A wedding
             sherwani is not just a suit — it is a structured, regal garment
-            that must drape flawlessly across the shoulders and torso. The
-            silhouette is what makes a sherwani look royal, and that silhouette
-            depends entirely on precise measurements and expert tailoring.
+            whose comfort and silhouette depend on the pattern, measurements,
+            intended layers, construction, and tailoring.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -134,9 +133,9 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             miles away can be incredibly stressful. A single inch of error in a
             digital form can result in a jacket that is too tight across the
             chest or arms that are too short to move comfortably during the
-            ceremony. And unlike a Western suit, a sherwani cannot be easily
-            altered at a US tailor — the embroidery, button placement, and
-            structured shoulder pads all need to be right the first time.
+            ceremony. Alteration difficulty depends on seam allowance,
+            embroidery, button placement, structure, and the local tailor&apos;s
+            experience, so preserve time for an in-person fitting after delivery.
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
@@ -168,11 +167,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           </h2>
 
           <p>
-            Never rely on standard US suit sizes (like 40R or 42L) when
-            ordering a custom sherwani. Indian tailoring relies on precise,
-            close-to-body measurements, and US suit sizes use a different
-            fitting philosophy (looser, drop-6 chest-to-waist ratio) that does
-            not translate to the structured silhouette of a sherwani.
+            Do not substitute a standard U.S. suit label such as 40R or 42L for
+            the selected sherwani vendor&apos;s required measurements. Size labels,
+            patterns, ease, garment layers, and measurement methods vary by
+            vendor and style.
           </p>
 
           <p style={{ marginTop: "1rem" }}>
@@ -249,8 +247,9 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               <strong>neck circumference</strong> (for the collar),{" "}
               <strong>waist circumference</strong> (for the internal drawstring
               of the churidar), and <strong>back length</strong> (from
-              shoulder blade to waist, for the back seam). These three turn a
-              good fit into a flawless one.
+              shoulder blade to waist, for the back seam). Use only the
+              selected vendor&apos;s requested points and method; additional
+              measurements do not guarantee fit.
             </p>
           </div>
 
@@ -306,13 +305,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               Banarasi Brocade
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Features raised, intricate patterns woven directly into silk
-              threads. It offers a structured, heavy look that is perfect for
-              traditional indoor or winter weddings. Banarasi brocade holds its
-              shape beautifully and photographs with a deep, luxurious
-              sheen — but it is heavier than other options and can be
-              uncomfortable above 80°F. Best for evening receptions and
-              formal daytime ceremonies.
+              Brocade can include raised woven patterns and may create a more
+              structured, formal look. Confirm the actual fiber content,
+              backing, garment weight, lining, breathability, and event
+              conditions; comfort varies by construction and wearer.
             </p>
           </div>
 
@@ -338,13 +334,11 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               Raw Silk
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Known for its distinct texture and subtle, masculine matte
-              finish. It is lightweight, holds structured embroidery
-              beautifully, and is highly breathable for outdoor spring or
-              summer celebrations. Raw silk is the most versatile fabric choice
-              — it works for day weddings, beach weddings, and destination
-              weddings in Mexico or the Caribbean. The matte finish also
-              photographs more naturally than high-shine fabrics.
+              Raw-silk fabrics can have visible texture and a lower-sheen
+              finish. Fiber content, weave, lining, embroidery, and garment
+              construction affect weight, breathability, drape, and how the
+              fabric photographs, so review the actual material rather than
+              relying on the label alone.
             </p>
           </div>
 
@@ -370,13 +364,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               Premium Velvet
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Gives an incredibly rich, deep color payout and a royal drape. It
-              is best reserved for formal, evening receptions or colder winter
-              climates. Velvet absorbs light, so deep emerald, navy, and
-              burgundy velvets photograph with a depth that no other fabric can
-              match. However, velvet is heavy and traps heat — never choose it
-              for a summer outdoor event, no matter how beautiful it looks in
-              the catalog.
+              Velvet can create deep color and a formal appearance, but weight,
+              pile, lining, and construction vary. Consider heat, humidity,
+              event length, movement, and the wearer&apos;s comfort before choosing
+              it for an outdoor or warm-weather event.
             </p>
           </div>
 

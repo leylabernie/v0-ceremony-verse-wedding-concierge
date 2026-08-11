@@ -218,7 +218,7 @@ export default function HowItWorksPage() {
                 ))}
               </ol>
               <Link
-                href="/shop-from-india/"
+                href="/buy-indian-wedding-outfits-from-india/"
                 className="mt-8 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
               >
                 Explore India Shopping
@@ -302,7 +302,7 @@ export default function HowItWorksPage() {
             href="/contact/?from=how-it-works"
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Request My Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

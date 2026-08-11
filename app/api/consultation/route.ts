@@ -287,8 +287,11 @@ export async function POST(request: NextRequest) {
 
   const requestId = crypto.randomUUID()
   const formQuestionnaireUrl = questionnaireUrl(request, parsed.data, requestId)
-  const delivered =
-    (await deliverToWebhook(parsed.data, requestId)) || (await deliverByEmail(parsed.data, requestId))
+  const [webhookDelivered, emailDelivered] = await Promise.all([
+    deliverToWebhook(parsed.data, requestId),
+    deliverByEmail(parsed.data, requestId),
+  ])
+  const delivered = webhookDelivered || emailDelivered
 
   if (!delivered) {
     return NextResponse.json(

@@ -150,12 +150,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/shop-from-india/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
-    {
       url: `${baseUrl}/indian-wedding-shopping-canada/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -436,6 +430,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/gujarati-wedding-outfit-guide/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/blog/south-indian-christian-wedding-outfit-guide/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.6,

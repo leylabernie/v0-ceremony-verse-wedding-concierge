@@ -1,719 +1,190 @@
-import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
+import {
+  JsonLd,
+  buildBlogPosting,
+  buildBreadcrumb,
+  buildFaqSchema,
+  buildMetadata,
+} from "@/lib/seo";
+
+const path = "/blog/indian-wedding-return-gifts-bulk-usa/";
 
 export const metadata = buildMetadata({
-  path: "/blog/indian-wedding-return-gifts-bulk-usa/",
-  title:
-    "How to Source and Ship Unique Indian Wedding Return Gifts to the USA in Bulk",
+  path,
+  title: "Indian Wedding Return Gifts from India: Bulk Order Guide",
   description:
-    "Source 100+ unique Indian wedding return gifts directly from India — potli bags, brass diyas, block-print linen, and resin coasters — without massive shipping bills or US customs seizures.",
-  keywords: [
-    "Indian wedding return gifts bulk USA",
-    "unique wedding favors from India",
-    "potli bags bulk wholesale",
-    "Indian wedding favors shipped to USA",
-    "bulk wedding return gifts from India",
-    "wedding favor customs clearance USA",
-  ],
+    "Plan Indian wedding favors and return gifts for USA or Canada with samples, personalization proofs, complete quotes, packing evidence, customs checks, and realistic timelines.",
   publishedTime: "2026-06-28",
+  modifiedTime: "2026-08-11",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
 
 const blogPostingSchema = buildBlogPosting({
-  headline:
-    "How to Source and Ship Unique Indian Wedding Return Gifts to the USA in Bulk",
+  headline: "Indian Wedding Return Gifts from India: Bulk Order Guide",
   description:
-    "Source 100+ unique Indian wedding return gifts directly from India — potli bags, brass diyas, block-print linen, and resin coasters — without massive shipping bills or US customs seizures.",
-  url: "/blog/indian-wedding-return-gifts-bulk-usa/",
+    "A documented process for comparing, approving, packing, and shipping bulk Indian wedding favors and return gifts to the United States or Canada.",
+  url: path,
   datePublished: "2026-06-28",
+  dateModified: "2026-08-11",
   keywords: [
-    "Indian wedding return gifts bulk USA",
-    "unique wedding favors from India",
-    "potli bags bulk wholesale",
-    "Indian wedding favors shipped to USA",
-    "bulk wedding return gifts from India",
+    "Indian wedding return gifts",
+    "bulk Indian wedding favors",
+    "Indian wedding welcome gifts",
+    "wedding favors from India",
   ],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Blog", url: "/blog/" },
-  {
-    name: "Bulk Indian Wedding Return Gifts to USA",
-    url: "/blog/indian-wedding-return-gifts-bulk-usa/",
-  },
+  { name: "Indian Wedding Return Gifts", url: path },
 ]);
+
+const faqItems = [
+  {
+    question: "How early should we order bulk Indian wedding return gifts?",
+    answer:
+      "There is no responsible universal lead time. Build a written schedule for sampling, proof approval, production, evidence review, packing, carrier handoff, customs, final delivery, and local assembly using the actual item, quantity, vendor, route, and event date.",
+  },
+  {
+    question: "Are wedding favors from India cheaper than buying in the USA or Canada?",
+    answer:
+      "Not automatically. Compare the same item, material, quantity, personalization, packing, service, shipping, insurance, duty or tax, brokerage, storage, assembly, and remedy terms. No universal savings percentage applies.",
+  },
+  {
+    question: "Can CeremonyVerse guarantee customs clearance or delivery timing?",
+    answer:
+      "No. CeremonyVerse can help document the item, shipment, carrier, import responsibilities, and estimates, but the carrier, border agency, and other third parties control their own decisions and timelines.",
+  },
+];
+
+const faqSchema = buildFaqSchema(faqItems);
+
+const checkpoints = [
+  ["Item brief", "Record the use, material, dimensions, color, quantity, personalization, packing, destination, budget range, and event deadline."],
+  ["Sample or proof", "Review a current item, sample, or personalization proof before approving the full quantity where feasible."],
+  ["Complete quote", "Separate unit price, setup charges, minimum quantity, packing, shipping, insurance, estimated duty or tax, brokerage, and local assembly."],
+  ["Written approval", "Confirm spelling, artwork, color reference, quantity, acceptable variation, payment recipient, change process, and remedy terms."],
+  ["Production evidence", "When available, review visible quantity, personalization, condition, and packing evidence before shipment."],
+  ["Delivery handoff", "Identify the importer or recipient, customs payer, claim owner, storage location, assembly team, and final venue-delivery responsibility."],
+];
 
 export default function BulkReturnGiftsGuideBlogPost() {
   return (
-    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main className="min-h-screen bg-[#f8f6f2]">
       <JsonLd id="schema-blogposting" data={blogPostingSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-faq" data={faqSchema} />
 
-      {/* Hero */}
-      <div
-        style={{
-          background: "#2f2f2f",
-          padding: "4rem 1.5rem 3rem",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p
-            style={{
-              color: "#7a6841",
-              fontSize: "0.9rem",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              marginBottom: "1rem",
-            }}
-          >
-            CeremonyVerse · June 2026
+      <header className="bg-[#1f1f1f] px-6 py-20 text-center text-white">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">
+            Reviewed August 11, 2026
           </p>
-          <h1
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "clamp(1.8rem, 4vw, 2.8rem)",
-              fontWeight: 600,
-              color: "#f8f6f2",
-              lineHeight: 1.25,
-              margin: "0 0 1.5rem",
-            }}
-          >
-            How to Source and Ship Unique Indian Wedding Return Gifts to the
-            USA in Bulk
+          <h1 className="mt-4 text-4xl font-semibold leading-tight md:text-6xl">
+            Indian wedding return gifts from India: a bulk-order guide
           </h1>
-          <p
-            style={{
-              color: "#7a6841",
-              fontSize: "0.95rem",
-              lineHeight: 1.7,
-            }}
-          >
-            Choose the right lightweight favors, navigate volumetric shipping,
-            clear US customs, and import 100+ handcrafted gifts directly to
-            your US doorstep.
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2]">
+            Choose and ship favors with documented samples, personalization, quantities, packing, outside costs,
+            import responsibilities, and contingency time—not promises that every bulk order is cheap or easy.
           </p>
         </div>
-      </div>
+      </header>
 
-      {/* IMAGE PLACEHOLDER 1 */}
-      {/*
-        TODO: Drop an image at /public/images/indian-wedding-return-gifts-bulk-usa.jpg
-        Alt text: "A display of colorful handcrafted Indian embroidery potli bags for wedding return gifts"
-        Recommended size: 1200x800
-      */}
-
-      {/* Article body */}
-      <article
-        style={{
-          maxWidth: "760px",
-          margin: "0 auto",
-          padding: "3rem 1.5rem 5rem",
-        }}
-      >
-        <div
-          style={{
-                        fontSize: "1.125rem",
-            lineHeight: 1.8,
-            color: "#2f2f2f",
-          }}
-        >
+      <article className="mx-auto max-w-5xl px-6 py-16 text-[#2f2f2f]">
+        <section className="mx-auto max-w-3xl space-y-5 text-lg leading-8">
           <p>
-            In South Asian wedding traditions, showing appreciation to your
-            guests through beautiful return gifts (Favors) is a core custom.
-            The favor is not just a thank-you — it is a tangible memory of your
-            wedding that lives in your guests&apos; homes for years afterward.
-            A thoughtfully sourced potli bag, brass diya, or block-printed
-            linen becomes a daily reminder of your celebration.
+            Return gifts, favors, and welcome-bag items can involve dozens or hundreds of repeated pieces. A small
+            sample error becomes a large order problem when the same misspelling, material change, or fragile packing
+            is repeated across every unit.
           </p>
-
-          <p style={{ marginTop: "1.2rem" }}>
-            However, for NRI families living in the United States, managing
-            this tradition from afar can quickly turn into a logistical
-            nightmare. Buying favors from US-based retailers usually means
-            settling for generic, low-quality items that have been sitting in
-            warehouses for months — all while paying heavily inflated prices.
-            On the other hand, trying to coordinate a bulk order independently
-            from a local marketplace in India often leads to massive shipping
-            bills and unexpected seizures at US Customs.
-          </p>
-
-          <p style={{ marginTop: "1.2rem" }}>
-            This guide details how to choose the right bulk favors, navigate
-            shipping weight, and seamlessly import high-quality gifts directly
-            to your US doorstep. For how return gifts fit into your full
-            wedding plan, see our{" "}
-            <Link
-              href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
-              style={{ color: "#7a6841" }}
-            >
-              Indian wedding outfit checklist for every ceremony
-            </Link>
-            .
-          </p>
-
-          {/* ─── LIGHTWEIGHT GIFT IDEAS ─── */}
-          <h2
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "1.7rem",
-              fontWeight: 600,
-              color: "#2f2f2f",
-              marginTop: "2.5rem",
-              marginBottom: "1rem",
-            }}
-          >
-            Smart, Lightweight Return Gift Ideas Your Guests Will Love
-          </h2>
-
           <p>
-            Shipping costs from India to the US are calculated by both physical
-            weight and dimensional size (volume). Choosing items that pack
-            tightly together may reduce per-item transit cost, but obtain the actual packed dimensions, weight, carrier quote, insurance, and customs estimate before relying on a saving.
-            Dimensional weight and physical weight may affect the carrier quote,
-            so confirm the billed weight for the actual packed order.
+            U.S.-based, Canadian, and India-based vendors can differ in inventory, minimum quantities, lead times,
+            costs, and remedies. Compare equivalent written scopes rather than assuming one source is always better.
           </p>
+        </section>
 
-          <p style={{ marginTop: "1rem" }}>
-            Consider these highly curated, lightweight options:
+        <section className="mt-16">
+          <h2 className="text-center text-3xl font-semibold md:text-4xl">Six checkpoints before approving a bulk order</h2>
+          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {checkpoints.map(([title, text], index) => (
+              <section key={title} className="rounded-2xl border border-[#e6dfd5] bg-white p-6">
+                <p className="text-sm font-semibold text-[#7a6841]">{String(index + 1).padStart(2, "0")}</p>
+                <h3 className="mt-2 text-xl font-semibold">{title}</h3>
+                <p className="mt-3 leading-7 text-[#4d403a]">{text}</p>
+              </section>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-16 rounded-2xl bg-white p-7 md:p-10">
+          <h2 className="text-3xl font-semibold">Build the timeline from the actual order</h2>
+          <p className="mt-5 leading-8 text-[#4d403a]">
+            Request current estimates for sample or proof preparation, family approval, production, evidence review,
+            packing, carrier collection, customs, final delivery, and local assembly. Add contingency based on the item,
+            quantity, personalization, vendor capacity, destination, and event deadline. A generic four-, six-, or
+            eight-week promise is not reliable enough for a wedding plan.
           </p>
+        </section>
 
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1.5rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Handcrafted Potli Bags &amp; Clutches
+        <section className="mt-16 grid gap-6 lg:grid-cols-2">
+          <section className="rounded-2xl border border-[#e6dfd5] bg-white p-7">
+            <h2 className="text-2xl font-semibold">United States import questions</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">
+              Ask the carrier or broker how the shipment will be entered, which description and value documents are
+              required, who acts as importer, and which charges may be collected. Current U.S. e-commerce procedures
+              can change; check the applicable CBP guidance for the actual shipment.
             </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Potli bags and clutches may pack relatively flat. Request the exact
-              material, lining, decoration, dimensions, quantity, customization,
-              packaging, production estimate, and current vendor quote.
+            <p className="mt-4 leading-7 text-[#4d403a]">
+              Favors containing plants, seeds, wood, dried plant material, food, or other agricultural components need
+              item-specific review. USDA APHIS says requirements vary by commodity and country of origin.
             </p>
+            <div className="mt-5 flex flex-col gap-2 text-sm">
+              <a className="font-semibold text-[#7a6841] underline" href="https://www.cbp.gov/trade/basic-import-export/e-commerce/faqs" target="_blank" rel="noopener noreferrer">U.S. Customs and Border Protection: e-commerce FAQs</a>
+              <a className="font-semibold text-[#7a6841] underline" href="https://www.aphis.usda.gov/plant-imports/how-to-import" target="_blank" rel="noopener noreferrer">USDA APHIS: plant and plant-product import requirements</a>
+            </div>
+          </section>
+          <section className="rounded-2xl border border-[#e6dfd5] bg-white p-7">
+            <h2 className="text-2xl font-semibold">Canada import questions</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">
+              Canada may assess duty, GST or HST, provincial tax, and separate courier or broker clearance fees.
+              Confirm whether the shipment is personal or commercial, who pays each amount, and which documents and
+              remedy process apply. A planning estimate is not the final border assessment.
+            </p>
+            <div className="mt-5 flex flex-col gap-2 text-sm">
+              <a className="font-semibold text-[#7a6841] underline" href="https://www.cbsa-asfc.gc.ca/import/courier/menu-eng.html" target="_blank" rel="noopener noreferrer">Canada Border Services Agency: importing by mail or courier</a>
+              <a className="font-semibold text-[#7a6841] underline" href="https://www.cbsa-asfc.gc.ca/import/courier/lvs-efv/prsn-eng.html" target="_blank" rel="noopener noreferrer">CBSA: casual goods imported by courier</a>
+            </div>
+          </section>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-center text-3xl font-semibold">Frequently asked questions</h2>
+          <div className="mx-auto mt-8 max-w-4xl space-y-4">
+            {faqItems.map((item) => (
+              <details key={item.question} className="rounded-xl border border-[#e6dfd5] bg-white p-6">
+                <summary className="cursor-pointer font-semibold">{item.question}</summary>
+                <p className="mt-4 leading-7 text-[#4d403a]">{item.answer}</p>
+              </details>
+            ))}
           </div>
+        </section>
 
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Premium Jaipur Block-Print Linen
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Table runners, cushion covers, or other linens may be considered
-              when the family approves the use and design. Request the exact fiber,
-              print method, dimensions, quantity, customization, care, packaging,
-              production estimate, and current vendor quote.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Customized Resin Coasters &amp; Agate Slices
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Coasters can be compared by exact material, dimensions, finish,
-              personalization, quantity, packaging, breakage allowance, production
-              estimate, and current vendor quote. Natural materials and handmade
-              finishes may vary.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Handmade Brass Diyas &amp; Meenakari Artifacts
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              If the family approves this category, compare exact material,
-              dimensions, finish, intended use, safety or care instructions,
-              quantity, packaging, production estimate, and current vendor quote.
-            </p>
-          </div>
-
-          {/* IMAGE PLACEHOLDER 2 */}
-          {/*
-            TODO: Drop an image at /public/images/unique-wedding-favors-from-india.jpg
-            Alt text: "Traditional handcrafted brass diyas laid out as premium South Asian wedding favors"
-            Recommended size: 1200x800
-          */}
-
-          {/* ─── CUSTOMS PITFALLS ─── */}
-          <h2
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "1.7rem",
-              fontWeight: 600,
-              color: "#2f2f2f",
-              marginTop: "2.5rem",
-              marginBottom: "1rem",
-            }}
-          >
-            Navigating the Pitfalls of US Customs Clearances
-          </h2>
-
-          <p>
-            Importing hundreds of identical items into the United States shifts
-            your shipment from a personal package to a commercial entry in the
-            eyes of border protection. A 200-piece favor order is no longer a
-            wedding gift to yourself — it is an import shipment subject to the
-            same rules as any wholesale textile or handicraft import. This is
-            where most independent NRI favor sourcing attempts fail.
+        <section className="mt-16 rounded-2xl bg-[#7a6841] p-8 text-center text-white md:p-12">
+          <h2 className="text-3xl font-semibold">Need one documented favor and welcome-gift plan?</h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-[#f4eee6]">
+            Bring the guest count, item ideas, destination, deadline, and any current quotes. CeremonyVerse can help
+            organize the brief, comparison, approvals, and shipping handoff within a written scope.
           </p>
+          <Link href="/contact/" className="mt-7 inline-flex rounded-full bg-white px-7 py-3 font-semibold text-[#1f1f1f]">
+            Schedule Free Consultation
+          </Link>
+        </section>
 
-          <p style={{ marginTop: "1rem" }}>
-            To avoid having your wedding gifts confiscated or delayed at the
-            port of entry, keep these rules in mind:
-          </p>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1.5rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#8a4a3a",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Avoid Perishables and Unprocessed Woods
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Sending food items, unsealed sweets, or untreated wooden
-              artifacts can trigger strict USDA agricultural inspections,
-              leading to immediate destruction of the goods. Even packaged
-              Indian sweets (mithai) require FDA prior-notice filings and
-              facility registration. Untreated mango wood, bamboo with bark
-              intact, and items containing seeds or leaves will be seized and
-              destroyed at the port of entry — no appeal, no refund.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#8a4a3a",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Accurate Harmonized Tariff (HS) Codes
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Every item category has a specific code used by customs officers
-              to assess duties. Misclassifying textiles or metals can lead to
-              heavy financial penalties. Brass items fall under HS code
-              7418; block-printed cotton textiles under 6302; resin coasters
-              under 3924. Get the classification wrong and you could be paying
-              a much higher duty assessment — or worse, your shipment is flagged for
-              inspection and held for weeks.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#8a4a3a",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Buffer Your Timeline
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Bulk manufacturing in local Indian bazaars takes time. Always
-              allow at least 4 to 6 weeks for production, and an additional 14
-              days of buffer time for international shipping and customs
-              clearance. A 200-piece hand-embroidered potli order cannot be
-              rushed — embroidery is handwork, and asking artisans to skip
-              steps increases quality and timing risk. Build a written production, review, shipping, customs, and contingency schedule before your
-              wedding week at the absolute latest.
-            </p>
-          </div>
-
-          {/* ─── CEREMONYVERSE SOLUTION ─── */}
-          <h2
-            style={{
-              fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: "1.7rem",
-              fontWeight: 600,
-              color: "#2f2f2f",
-              marginTop: "2.5rem",
-              marginBottom: "1rem",
-            }}
-          >
-            Streamline Your Bulk Favor Sourcing with CeremonyVerse
-          </h2>
-
-          <p>
-            You should not have to spend your weekends stressfully messaging
-            vendors on WhatsApp across global time zones, translating price
-            quotes from Hindi, or trying to figure out which artisan
-            workshop&apos;s potli bags will actually pass US customs.
-            CeremonyVerse acts as your corporate procurement team on the ground
-            in India.
-          </p>
-
-          <p style={{ marginTop: "1rem" }}>
-            We handle the entire sourcing and logistics pipeline for your
-            wedding favors:
-          </p>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1.5rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Documented Vendor Options
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              CeremonyVerse can research available vendor options for the approved
-              favor category and request item, quantity, customization, packaging,
-              price, production, and remedy details. Live review may be available
-              when a selected vendor and item allow it, but no wholesale price,
-              authenticity, or quality outcome is universally promised.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Rigorous Quality Control
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Bulk orders can vary across a production run. Eligible tiers may
-              include sample approval and an available pre-shipping review, but
-              the inspection method, acceptable variation, sample size,
-              replacement rights, and related costs must be stated in the
-              written vendor and service terms.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Compacted Packing &amp; Freight Management
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              The selected vendor or packer provides actual carton dimensions,
-              weight, quantity, and packaging details. CeremonyVerse can organize
-              available carrier quotes within the chosen scope; cost and timing
-              depend on the final shipment and provider terms.
-            </p>
-          </div>
-
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "1rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.5rem",
-                color: "#7a6841",
-                textTransform: "uppercase",
-                fontSize: "0.9rem",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Document Shipping and Customs Responsibilities
-            </p>
-            <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              The written scope identifies who provides export and import documents,
-              who selects or pays the carrier or broker, and who is responsible for
-              customs information and any amount assessed. Estimates are not final
-              government determinations, and additional charges may apply.
-            </p>
-          </div>
-
-          {/* ─── RELATED GUIDES ─── */}
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              marginTop: "2.5rem",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: 600,
-                marginBottom: "0.8rem",
-                color: "#2f2f2f",
-                fontSize: "0.9rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.05em",
-              }}
-            >
-              Related Guides for NRI Families:
-            </p>
-            <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
-              <li style={{ marginBottom: "0.4rem" }}>
-                <Link
-                  href="/blog/indian-wedding-outfit-checklist-every-ceremony/"
-                  style={{ color: "#7a6841" }}
-                >
-                  Full Indian wedding outfit &amp; favor checklist
-                </Link>
-              </li>
-              <li style={{ marginBottom: "0.4rem" }}>
-                <Link
-                  href="/blog/shipping-indian-wedding-outfits-usa-customs-duties/"
-                  style={{ color: "#7a6841" }}
-                >
-                  US customs duties on Indian wedding items — full breakdown
-                </Link>
-              </li>
-              <li style={{ marginBottom: "0.4rem" }}>
-                <Link
-                  href="/blog/when-to-order-indian-wedding-outfits-nri-bride/"
-                  style={{ color: "#7a6841" }}
-                >
-                  When to order: full NRI wedding timeline
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/wedding-accessories-and-ceremony-items-from-india/"
-                  style={{ color: "#7a6841" }}
-                >
-                  Wedding accessories &amp; ceremonial items from India
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* ─── LEAD CTA ─── */}
-          <div
-            style={{
-              background: "#faf8f4",
-              border: "1px solid #e6dfd5",
-              borderRadius: "12px",
-              padding: "2rem",
-              marginTop: "2.5rem",
-              textAlign: "center",
-            }}
-          >
-            <h3
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: "1.5rem",
-                fontWeight: 600,
-                color: "#2f2f2f",
-                marginBottom: "1rem",
-              }}
-            >
-              Want Unique, High-Quality Favors Your Guests Will Keep?
-            </h3>
-            <p
-              style={{
-                fontSize: "1rem",
-                lineHeight: 1.7,
-                marginBottom: "1.5rem",
-              }}
-            >
-              Request a consultation to organize your guest count, favor brief,
-              available vendor options, item evidence, written costs, shipping plan,
-              customs estimate, and remedy terms.
-            </p>
-            <Link
-              href="/contact/"
-              style={{
-                display: "inline-block",
-                background: "#7a6841",
-                color: "#fff",
-                padding: "13px 32px",
-                borderRadius: "999px",
-                fontSize: "0.95rem",
-                fontWeight: 600,
-                textDecoration: "none",
-              }}
-            >
-              Explore Wedding Favor Sourcing with CeremonyVerse
-            </Link>
-            <p
-              style={{
-                fontSize: "0.95rem",
-                color: "#4d403a",
-                marginTop: "1rem",
-              }}
-            >
-              Prefer WhatsApp?{" "}
-              <a
-                href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20bulk%20wedding%20return%20gifts%20from%20India."
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#7a6841", fontWeight: 600 }}
-              >
-                Message CeremonyVerse →
-              </a>
-            </p>
-          </div>
-
-          <p
-            style={{
-              marginTop: "2rem",
-              fontSize: "0.95rem",
-              color: "#5e4a40",
-            }}
-          >
-            <strong>About CeremonyVerse:</strong> We help families research bulk
-            wedding-return gifts, outfits, ceremonial items, and welcome-bag items.
-            Vendor evidence, order approvals, packaging, shipping, customs estimates,
-            and outside-provider responsibilities are documented within the selected scope.{" "}
-            <Link href="/contact/" style={{ color: "#7a6841" }}>
-              Book a consultation
-            </Link>{" "}
-            to discuss your wedding favor needs.
-          </p>
+        <div className="mt-12">
+          <SourcingCallout />
         </div>
-              <SourcingCallout />
       </article>
     </main>
   );

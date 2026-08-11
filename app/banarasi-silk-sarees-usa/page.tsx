@@ -155,7 +155,7 @@ export default function BanarasiSareesPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
@@ -605,7 +605,7 @@ export default function BanarasiSareesPage() {
               textDecoration: "none",
             }}
           >
-            Book Free Consultation
+            Schedule Free Consultation
           </Link>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

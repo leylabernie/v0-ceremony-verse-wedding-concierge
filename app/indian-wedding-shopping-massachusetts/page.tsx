@@ -41,7 +41,7 @@ export default function MassachusettsPage() {
           href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
@@ -316,7 +316,7 @@ export default function MassachusettsPage() {
               href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Massachusetts%20and%20interested%20in%20CeremonyVerse."

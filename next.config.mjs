@@ -56,8 +56,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/blog/south-indian-christian-wedding-outfit-guide',
-        destination: '/blog/',
+        source: '/shop-from-india',
+        destination: '/buy-indian-wedding-outfits-from-india/',
         permanent: true,
       },
       {

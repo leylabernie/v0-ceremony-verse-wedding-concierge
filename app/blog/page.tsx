@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata = buildMetadata({
   path: "/blog/",
   title: "Indian Destination Wedding & Shopping Guides",
-  description: "Practical destination-wedding and India-sourcing guides for Gujarati and Hindu families across the United States and Canada."
+  description: "Practical destination-wedding and India-sourcing guides for families across the United States and Canada, with clear service-scope boundaries."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Blog \u2014 Indian Wedding Shopping Guides",
-  description: "Practical guides for Gujarati and Hindu destination weddings in Mexico and Punta Cana, plus India sourcing for families across the United States and Canada.",
+  description: "Practical guides for Gujarati and Hindu destination weddings in Mexico and Punta Cana, plus documented India-sourcing guidance for families across the United States and Canada.",
   url: "/blog/",
 });
 
@@ -134,6 +134,12 @@ const posts = [
     date: "March 2026",
   },
   {
+    slug: "south-indian-christian-wedding-outfit-guide",
+    title: "South Indian Christian Wedding Outfit Planning Guide",
+    description: "A family- and church-approved framework for building ceremony outfits, measurements, vendor records, delivery buffers, and local alteration plans without assuming one universal dress code.",
+    date: "Updated August 2026",
+  },
+  {
     slug: "us-tariffs-indian-wedding-outfits-2026",
     title: "US Tariffs on Indian Wedding Outfits: What NRI Brides Need to Know in 2026",
     description: "The tariff landscape changed multiple times in 2025. Here is what actually applies to your lehenga — and how to plan around it.",
@@ -159,7 +165,7 @@ export default function BlogIndexPage() {
             Indian Destination Wedding &amp; Shopping Guides
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Destination-wedding and India-sourcing guidance for Gujarati and Hindu families across the USA and Canada.
+            Practical destination-wedding and India-sourcing guidance, with each page&apos;s service boundaries stated clearly.
           </p>
         </div>
       </div>
@@ -217,7 +223,7 @@ export default function BlogIndexPage() {
                   textDecoration: "none",
                 }}
               >
-                Book Free Consultation
+                Schedule Free Consultation
               </Link>
               <a
                 href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."

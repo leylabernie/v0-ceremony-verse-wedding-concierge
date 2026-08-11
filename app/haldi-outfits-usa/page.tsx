@@ -143,7 +143,7 @@ export default function HaldiOutfitsPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </a>
       </section>
 
@@ -481,7 +481,7 @@ export default function HaldiOutfitsPage() {
               textDecoration: "none",
             }}
           >
-            Book Free Consultation
+            Schedule Free Consultation
           </a>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

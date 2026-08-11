@@ -151,7 +151,7 @@ export default function MexicoCoordinationPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Start With a Free Consultation
+              Schedule Free Consultation
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
@@ -363,7 +363,7 @@ export default function MexicoCoordinationPage() {
                 Remote sourcing for outfits, accessories, gifts, and ceremonial items, with approvals and costs
                 itemized separately from resort, venue, vendor, and other outside wedding costs.
               </p>
-              <Link href="/shop-from-india/" className="mt-5 inline-flex font-medium text-[#7a6841]">
+              <Link href="/buy-indian-wedding-outfits-from-india/" className="mt-5 inline-flex font-medium text-[#7a6841]">
                 Explore India shopping →
               </Link>
             </article>
@@ -406,7 +406,7 @@ export default function MexicoCoordinationPage() {
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
           >
-            Book a Free Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

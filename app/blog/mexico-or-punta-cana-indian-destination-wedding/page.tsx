@@ -222,7 +222,7 @@ export default function BlogPost() {
               review your facts and up to two current proposals, then document the important gaps and next actions.
             </p>
             <Link href="/contact/?service=feasibility&from=mexico-punta-cana-guide" className="mt-7 inline-flex rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
-              Request a Free Consultation
+              Schedule Free Consultation
             </Link>
           </div>
 

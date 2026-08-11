@@ -135,7 +135,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Book a Free Consultation
+              Schedule Free Consultation
             </a>
             <a
               href="#challenges"
@@ -545,7 +545,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Book Your Free Consultation
+              Schedule Free Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."

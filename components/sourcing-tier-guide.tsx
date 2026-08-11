@@ -143,7 +143,7 @@ export function SourcingTierGuide() {
                   href="/contact/?service=india"
                   className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
                 >
-                  Schedule a Free Consultation
+                  Schedule Free Consultation
                 </Link>
                 <Link
                   href="/pricing/"

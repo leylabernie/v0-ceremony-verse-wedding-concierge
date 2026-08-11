@@ -4,8 +4,8 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/wedding-accessories-and-ceremony-items-from-india/",
-  title: "Indian Wedding Accessories & Ceremony Items \u2014 Sourced from India",
-  description: "Organize approved Indian wedding accessories, ceremonial items, favors, and welcome gifts with documented vendor, cost, shipping, and delivery responsibilities."
+  title: "Indian Wedding Ceremony Items, Favors & Welcome Gifts",
+  description: "Coordinate family-approved Indian wedding ceremony items, favors, and welcome gifts with quantities, samples, written approvals, packing, shipping, and delivery responsibilities."
 });
 
 const serviceSchema = buildServiceSchema({
@@ -35,7 +35,7 @@ export default function AccessoriesPage() {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Research jewelry, dupattas, pagdi, ceremony essentials, and wedding favors with written approvals, costs, shipping responsibilities, and realistic delivery estimates.
+            For families coordinating many small but important items across ceremonies, guest gifts, welcome bags, and outfit accessories—without relying on scattered screenshots and verbal promises.
           </p>
 
         </div>
@@ -49,7 +49,7 @@ export default function AccessoriesPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            Beyond outfits, wedding details play a major role in the celebration. Start with the family&apos;s approved item requirements, then compare vendor evidence, written costs, quantities, timing, shipping, and remedies.
+            Start with the family&apos;s approved item list rather than assuming every Hindu or Gujarati ceremony uses the same objects. For each item, document the purpose, quantity, size, material, wording or personalization, sample evidence, deadline, packing method, and responsible person.
           </p>
 
         </div>
@@ -61,14 +61,14 @@ export default function AccessoriesPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Jewelry</h3>
             <p className="text-[var(--cv-muted)]">
-              Bridal, bridesmaid, and family jewelry sourced to match your outfits.
+              Research costume or fashion jewelry for the bride, wedding party, and family when material descriptions, item evidence, and shipping terms can be documented.
             </p>
           </div>
 
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Dupattas & Accessories</h3>
             <p className="text-[var(--cv-muted)]">
-              Complete your look with coordinated dupattas and finishing pieces.
+              Coordinate approved dupattas, pagdi or safa, footwear, bags, and other finishing pieces with the outfit record.
             </p>
           </div>
 
@@ -82,10 +82,54 @@ export default function AccessoriesPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Wedding Favors & Welcome Bags</h3>
             <p className="text-[var(--cv-muted)]">
-              Curated gifts and welcome kits for your guests.
+              Compare favors, return gifts, packaging, tags, and bag components using the final quantity, personalization proof, assembly plan, and destination rules.
             </p>
           </div>
 
+        </div>
+      </section>
+
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-semibold text-center mb-10">From Item List to Delivery</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              ["1. Confirm requirements", "The family or officiant confirms the item name, use, material, quantity, dimensions, color, wording, and event deadline."],
+              ["2. Review a sample or proof", "Use current item media, a sample, a personalization proof, or an eligible live review before approving a larger quantity where feasible."],
+              ["3. Approve the complete quote", "Record unit price, setup or personalization charges, minimum quantity, packing, shipping, estimated duty or tax, and the vendor's remedy terms."],
+              ["4. Track production changes", "Return spelling, material, color, packaging, or quantity changes to the family for written approval when they affect the order."],
+              ["5. Check counts and evidence", "When available, review quantity, personalization, visible condition, and packing evidence before shipment. This does not replace the vendor's responsibility."],
+              ["6. Plan final assembly", "Identify who clears customs, receives cartons, handles damage claims, assembles welcome bags, and delivers items to the home, venue, resort, or planner."],
+            ].map(([title, text]) => (
+              <article key={title} className="border border-[var(--cv-border)] rounded-2xl p-6 bg-[var(--cv-bg)]">
+                <h3 className="font-semibold mb-2">{title}</h3>
+                <p className="text-[var(--cv-muted)]">{text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-6">
+          <article className="bg-white border border-[var(--cv-border)] rounded-2xl p-7">
+            <h2 className="text-2xl font-semibold mb-4">What CeremonyVerse Can Coordinate</h2>
+            <ul className="space-y-3 text-[var(--cv-muted)]">
+              <li>• The item brief, vendor comparison, sample or proof record, and approvals.</li>
+              <li>• Quantity, personalization, cost, milestone, and packing documentation.</li>
+              <li>• Eligible pre-shipping evidence and a written handoff for shipping and final assembly.</li>
+              <li>• Coordination with the family&apos;s planner or venue contact when included in the written scope.</li>
+            </ul>
+          </article>
+          <article className="bg-white border border-[var(--cv-border)] rounded-2xl p-7">
+            <h2 className="text-2xl font-semibold mb-4">Items and Outcomes That Need Separate Review</h2>
+            <ul className="space-y-3 text-[var(--cv-muted)]">
+              <li>• Food, liquids, plants, powders, batteries, flammable materials, high-value precious jewelry, fragile items, and oversized goods may be restricted or unsuitable for the proposed shipment.</li>
+              <li>• Product, personalization, packing, freight, insurance, customs, tax, assembly, storage, and venue-delivery costs are separate unless itemized.</li>
+              <li>• Customs clearance, carrier dates, breakage, handmade variation, and vendor workmanship cannot be guaranteed.</li>
+              <li>• Final eligibility depends on the item, material, origin, destination, carrier, resort, venue, and current third-party rules.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -119,7 +163,7 @@ export default function AccessoriesPage() {
 
           <div className="flex flex-col items-center gap-3.5">
             <Link href="/contact/" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" className="text-[17px] text-[var(--cv-body)] no-underline">
               WhatsApp: +1 (215) 341-9990

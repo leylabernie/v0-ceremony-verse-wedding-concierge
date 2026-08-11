@@ -90,7 +90,7 @@ export default function PlanningToolsPage() {
             unclear resort language, and the next decisions that matter most—without asking you to start over.
           </p>
           <Link href="/contact/?service=mexico&from=planning-calculators" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
-            Request a Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

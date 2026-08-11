@@ -74,7 +74,7 @@ const servicePillars = [
       "Jewelry, gifts, welcome-bag items, and ceremony essentials",
       "Measurements, written approvals, inspection, and shipping support",
     ],
-    href: "/shop-from-india/",
+    href: "/buy-indian-wedding-outfits-from-india/",
     cta: "Explore India Shopping",
   },
   {
@@ -211,7 +211,7 @@ export function HomePage() {
                 href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule a Free Consultation
+                Schedule Free Consultation
               </Link>
               <Link
                 href="/planning-tools/"
@@ -607,7 +607,7 @@ export function HomePage() {
             href="/contact/"
             className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Schedule My Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

@@ -34,7 +34,7 @@ export default function BridalLehengaServicePage() {
           CeremonyVerse helps US-based brides research and source bridal lehengas from India. Depending on your selected tier and vendor, we coordinate live video reviews, measurements, written approvals, pre-shipping checks, and delivery tracking.
         </p>
         <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
-          Book a Free Consultation
+          Schedule Free Consultation
         </Link>
         <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Share your timeline and priorities</p>
       </section>
