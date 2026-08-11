@@ -99,7 +99,7 @@ export default function MassachusettsPage() {
               { name: "The Tara Hotel & Event Center", detail: "Framingham — confirm current venue, catering, capacity, and outside-vendor terms directly" },
               { name: "DCU Center", detail: "Worcester — confirm current capacity, catering, production, and outside-vendor terms directly" },
               { name: "The Mansion at MountainView", detail: "Sturbridge — destination Indian weddings in Central MA" },
-              { name: "The W Hotel Boston", detail: "Modern luxury for fusion Indian weddings" },
+              { name: "The W Hotel Boston", detail: "Modern Boston setting — confirm current event, catering, capacity, and vendor terms directly" },
             ].map((venue) => (
               <div key={venue.name} style={{ background: "#fff", borderRadius: "12px", padding: "20px", border: "1px solid #e6dfd5" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "16px", color: "#1f1f1f", marginBottom: "4px" }}>{venue.name}</h3>
@@ -239,8 +239,8 @@ export default function MassachusettsPage() {
                 a: "Local shops can be useful when you want to try on or buy an in-stock piece. CeremonyVerse is an alternative when you want remote India sourcing, live review, documented approvals, or coordinated outfits across a group. Compare the actual quotes, timelines, and terms before choosing.",
               },
               {
-                q: "Can you help with outfits for a South Indian or Bengali wedding in the Boston area?",
-                a: "We can translate your family's approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
+                q: "Can you help coordinate outfits for a Gujarati or Hindu wedding in the Boston area?",
+                a: "Yes. We can organize the family's approved ceremony, clothing, color, measurement, and delivery requirements into one sourcing brief. Your family and officiants remain the authority on religious customs.",
               },
               {
                 q: "How far in advance should I start shopping for my Massachusetts wedding?",
@@ -251,8 +251,8 @@ export default function MassachusettsPage() {
                 a: "Student couples can use the same service options as other families. The $249 Style Guide & Vendor List is a self-directed starting point, while the $799 Guided Sourcing tier adds live shopping and order coordination. Product, shipping, customs, and alteration costs remain separate.",
               },
               {
-                q: "I'm planning a fusion Indian-American wedding in Boston. Can you help?",
-                a: "Yes. We can translate your approved ceremony plan and style preferences into a sourcing brief that includes Indian, Western, or blended outfit options. Venue names do not imply a CeremonyVerse relationship or prior engagement.",
+                q: "Can you coordinate both Indian and Western outfit needs for one Boston wedding?",
+                a: "Yes, when those needs are included in the written sourcing scope. We can organize approved Indian and Western style references, measurements, selections, and delivery responsibilities without claiming expertise in traditions outside the agreed Gujarati or Hindu focus. Venue names do not imply a CeremonyVerse relationship or prior engagement.",
               },
             ].map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 6 ? "1px solid #e6dfd5" : "none" }}>
@@ -274,8 +274,8 @@ export default function MassachusettsPage() {
             Outfit sourcing for every New England ceremony
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            From Boston Cambridge bridal lehengas to Marlborough Marathi muhuratam sarees &mdash;
-            one documented process for the in-scope outfits and Massachusetts delivery responsibilities.
+            From Boston and Cambridge bridal lehengas to coordinated family outfits for Marlborough celebrations
+            &mdash; one documented process for the in-scope selections and Massachusetts delivery responsibilities.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>

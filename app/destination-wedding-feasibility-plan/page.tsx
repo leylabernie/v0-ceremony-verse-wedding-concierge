@@ -20,7 +20,7 @@ const serviceSchema = buildServiceSchema({
   description: destinationFeasibilityPlan.description,
   url: destinationFeasibilityPlan.href,
   category: "Destination Wedding Feasibility and Planning",
-  areaServed: "Mexico and Punta Cana",
+  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,

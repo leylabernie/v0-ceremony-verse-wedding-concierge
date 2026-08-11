@@ -31,7 +31,7 @@ const serviceSchema = buildServiceSchema({
     "Indian wedding reception outfit research and sourcing for lehengas, Indo-Western gowns, sherwanis, and coordinated party looks, with documented options and U.S. delivery coordination.",
   url: "/reception-outfits-usa/",
   category: "Reception Outfit Sourcing",
-  areaServed: "US",
+  areaServed: "United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([

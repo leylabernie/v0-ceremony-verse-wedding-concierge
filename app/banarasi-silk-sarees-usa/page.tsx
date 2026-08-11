@@ -31,7 +31,7 @@ const serviceSchema = buildServiceSchema({
     "Banarasi silk saree research and sourcing with documented fiber, zari, origin, available certification, blouse, price, and U.S. delivery information.",
   url: "/banarasi-silk-sarees-usa/",
   category: "Banarasi Silk Saree Sourcing",
-  areaServed: "US",
+  areaServed: "United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([

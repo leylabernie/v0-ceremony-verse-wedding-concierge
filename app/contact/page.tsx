@@ -14,7 +14,7 @@ const serviceSchema = buildServiceSchema({
     "Free 30-minute introductory consultation to review the wedding vision, guest count, timeline, and budget, then identify whether India sourcing, the $300 feasibility plan, or a destination-planning scope is the right next step.",
   url: "/contact/",
   category: "Wedding Planning and India Wedding Sourcing Consultation",
-  areaServed: "United States, Canada, Mexico, and Punta Cana",
+  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([

@@ -177,8 +177,8 @@ export default function GeorgiaPage() {
                 a: "Local stores can be useful when you want to try on or buy an in-stock piece. CeremonyVerse is an alternative when you want remote India sourcing, live review, documented approvals, or coordinated outfits across a group. Compare the actual quotes, timelines, and terms before choosing.",
               },
               {
-                q: "Can you help with outfits for a Telugu or South Indian wedding in Atlanta?",
-                a: "We can translate your family's approved ceremony and clothing requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs.",
+                q: "Can you help coordinate outfits for a Gujarati or Hindu wedding in Atlanta?",
+                a: "Yes. We can organize the family's approved ceremony, clothing, color, measurement, and delivery requirements into one sourcing brief. Your family and officiants remain the authority on religious customs.",
               },
               {
                 q: "How far in advance should I start shopping for my Atlanta wedding?",
@@ -204,8 +204,8 @@ export default function GeorgiaPage() {
             Outfit sourcing for every Georgia ceremony
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            From Atlanta Telugu bridal lehengas to South Indian silk sarees for Decatur muhuratams —
-            one concierge, every ceremony.
+            From Atlanta bridal lehengas to coordinated family outfits for Decatur celebrations &mdash; one documented
+            process for the in-scope selections, approvals, and delivery responsibilities.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>

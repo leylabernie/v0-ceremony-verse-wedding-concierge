@@ -30,7 +30,7 @@ const serviceSchema = buildServiceSchema({
     "Haldi ceremony outfit research and sourcing for lehengas, anarkalis, salwar sets, and kurtas, with documented options and U.S. delivery coordination.",
   url: "/haldi-outfits-usa/",
   category: "Haldi Ceremony Outfit Sourcing",
-  areaServed: "US",
+  areaServed: "United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([

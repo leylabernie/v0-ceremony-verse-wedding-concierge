@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { SourcingTierGuide } from "@/components/sourcing-tier-guide"
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
@@ -234,6 +235,8 @@ export function HomePage() {
           <p>Private scope defined before paid work</p>
         </div>
       </section>
+
+      <SourcingTierGuide />
 
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
         <div className="mx-auto max-w-6xl">

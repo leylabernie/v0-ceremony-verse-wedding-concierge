@@ -31,7 +31,7 @@ const serviceSchema = buildServiceSchema({
     "Indian wedding outfit sourcing for families in Illinois — Chicago, Naperville, Schaumburg, Aurora, Evanston, and across the state — with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-illinois/",
   category: "Indian Wedding Sourcing for Illinois",
-  areaServed: "US-IL",
+  areaServed: "Illinois, United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([

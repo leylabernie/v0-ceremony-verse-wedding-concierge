@@ -5,7 +5,6 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-philadelphia/",
   title: "Indian Wedding Shopping from India — Philadelphia",
   description: "Philadelphia-area families can research Indian wedding outfits from India with eligible live review, written approvals, available pre-shipping review, and delivery coordination.",
-  keywords: "Indian wedding shopping Philadelphia, Philadelphia bridal lehenga, NRI wedding concierge Philadelphia, Indian wedding outfits Philadelphia PA, buy Indian wedding outfits Philadelphia, South Indian wedding Philadelphia, Gujarati wedding Philadelphia",
 });
 
 const serviceSchema = buildServiceSchema({

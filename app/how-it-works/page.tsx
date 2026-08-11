@@ -24,7 +24,7 @@ const serviceSchema = buildServiceSchema({
     "A documented process for Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana, with optional guest support and India wedding sourcing.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning and India Wedding Sourcing",
-  areaServed: "United States, Canada, Mexico, and Punta Cana",
+  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "How It Works", url: "/how-it-works/" }])

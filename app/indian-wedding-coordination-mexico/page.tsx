@@ -28,7 +28,7 @@ const serviceSchema = buildServiceSchema({
   description:
     "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
-  areaServed: "Mexico and Punta Cana",
+  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,
