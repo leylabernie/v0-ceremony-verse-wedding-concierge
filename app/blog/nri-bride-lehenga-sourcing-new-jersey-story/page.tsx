@@ -134,7 +134,7 @@ export default function BrideSourcingScenarioPage() {
               href="/contact/"
               className="inline-flex justify-center rounded-full border border-[#7a6841] px-6 py-3 font-semibold text-[#7a6841]"
             >
-              Book a Free Consultation
+              Schedule Free Consultation
             </Link>
           </div>
         </section>

@@ -1,251 +1,189 @@
-import { SeoNav } from "@/components/seo-nav";
-import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
-import Link from "next/link";
-import { SourcingCallout } from "@/components/sourcing-callout";
+import Link from "next/link"
+import { SeoNav } from "@/components/seo-nav"
+import {
+  JsonLd,
+  buildBlogPosting,
+  buildBreadcrumb,
+  buildFaqSchema,
+  buildMetadata,
+} from "@/lib/seo"
+
+const title = "South Indian Christian Wedding Outfit Planning Guide"
+const description =
+  "Plan South Indian Christian wedding outfits with family and church approvals, a ceremony-by-ceremony wardrobe brief, measurements, sourcing records, and alteration time."
+const path = "/blog/south-indian-christian-wedding-outfit-guide/"
 
 export const metadata = buildMetadata({
-  path: "/blog/south-indian-christian-wedding-outfit-guide/",
-  title: "South Indian Christian Wedding Outfit Guide",
-  description: "Outfit-by-outfit guide for South Indian Christian weddings \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions, fabrics, colors, and sourcing from India.",
-  keywords: ["south indian christian wedding outfits", "kerala christian wedding dress", "tamil christian wedding attire", "south indian christian bride lehenga"],
-  publishedTime: "2026-03-01",
+  path,
+  title,
+  description,
+  publishedTime: "2026-03-01T12:00:00-05:00",
+  modifiedTime: "2026-08-11T12:00:00-04:00",
   authorName: "CeremonyVerse",
   ogType: "article",
-});
+})
 
 const blogPostingSchema = buildBlogPosting({
-  headline: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
-  description: "Outfit-by-outfit guide for South Indian Christian weddings \u2014 Kerala Christian, Tamil Christian, Telugu Christian traditions, fabrics, colors, and sourcing from India.",
-  url: "/blog/south-indian-christian-wedding-outfit-guide/",
-  datePublished: "2026-03-01",
-  keywords: ["south indian christian wedding outfits", "kerala christian wedding dress", "tamil christian wedding attire", "south indian christian bride lehenga"],
-});
+  headline: title,
+  description,
+  url: path,
+  datePublished: "2026-03-01T12:00:00-05:00",
+  dateModified: "2026-08-11T12:00:00-04:00",
+  authorName: "CeremonyVerse",
+  keywords: [
+    "South Indian Christian wedding outfits",
+    "Christian wedding family dress code",
+    "South Indian Christian bride outfit",
+  ],
+})
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Blog", url: "/blog/" },
-  { name: "South Indian Christian Wedding Outfit Guide: What Every Fami", url: "/blog/south-indian-christian-wedding-outfit-guide/" },
-]);
+  { name: title, url: path },
+])
 
-export default function SouthIndianChristianWeddingGuide() {
+const faqSchema = buildFaqSchema([
+  {
+    question: "What should a South Indian Christian bride wear?",
+    answer:
+      "There is no single answer that applies to every denomination, parish, region, or family. Confirm each ceremony's requirements with the couple, family, and church authority before choosing a saree, gown, lehenga, veil, jewelry, or reception change.",
+  },
+  {
+    question: "Who decides the family dress code for a South Indian Christian wedding?",
+    answer:
+      "The couple and family should agree on the visual plan, while the applicable church or religious authority should confirm ceremony requirements. Record those decisions before vendors begin work.",
+  },
+  {
+    question: "Can CeremonyVerse define South Indian Christian customs?",
+    answer:
+      "No. CeremonyVerse does not replace the family, parish, clergy, or a qualified cultural adviser. Its role can be limited to documenting an approved outfit brief and coordinating sourcing, measurements, approvals, and delivery responsibilities within a written scope.",
+  },
+  {
+    question: "How early should a family order coordinated wedding outfits from India?",
+    answer:
+      "Build the schedule from the actual vendor's written estimate, approval rounds, production, shipping, customs, the first local fitting, alterations, and a contingency buffer. Avoid relying on one universal lead time.",
+  },
+])
+
+const planningRows = [
+  ["Church ceremony", "Confirm modesty, color, garment, veil or head-covering, jewelry, and changing-room requirements with the applicable church authority."],
+  ["Reception", "Record whether the couple or family wants a second look, how formal it should be, and how much changing time is available."],
+  ["Bride and groom", "List every approved garment, accessory, shoe, measurement, fitting, and backup responsibility by event."],
+  ["Wedding party", "Confirm whether outfits must match exactly or only coordinate, then document color references, fabric tolerance, sizing, and individual approvals."],
+  ["Parents and family", "Ask the family to identify any role-specific expectations instead of assuming that one regional rule applies to everyone."],
+]
+
+export default function SouthIndianChristianWeddingOutfitGuide() {
   return (
-    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
-        <JsonLd id="schema-blogposting" data={blogPostingSchema} />
-        <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      
+    <main className="min-h-screen bg-[#faf8f5]">
+      <JsonLd id="schema-blogposting" data={blogPostingSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-faq" data={faqSchema} />
       <SeoNav />
-      {/* Hero */}
-      <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
-        <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            CeremonyVerse · March 2026
-          </p>
-          <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
-            South Indian Christian Wedding Outfit Guide: What Every Family Member Wears
-          </h1>
-          <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Kerala Christian and Tamil Christian wedding attire — from the church ceremony to the reception — for NRI families sourcing from India.
-          </p>
-        </div>
-      </div>
 
-      {/* Article Body */}
-      <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
-        <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
+      <article className="mx-auto max-w-3xl px-6 py-16">
+        <p className="mb-4 text-xs font-medium uppercase tracking-widest text-[#7a6841]">
+          Outfit-planning framework · Updated August 2026
+        </p>
+        <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] md:text-5xl">
+          {title}
+        </h1>
+        <p className="mb-8 text-lg leading-8 text-[#4d403a]">
+          South Indian Christian weddings vary by denomination, parish, region, and family. This guide helps families
+          turn their own approved requirements into a clear outfit and sourcing plan; it does not declare one dress
+          code or set religious customs.
+        </p>
 
-          <p>
-            South Indian Christian weddings occupy a beautiful and specific space in the world of Indian weddings. They are not Hindu ceremonies adapted for church — they are their own tradition, shaped by centuries of faith, regional heritage, and family pride. And when it comes to dressing for them, the rules are distinct enough that what works for a North Indian Christian wedding, a Hindu South Indian wedding, or even a Western church ceremony will not always translate.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            If your family is planning a South Indian Christian wedding from the United States — whether you are Kerala Christian, Tamil Christian, or a mix of both — this guide is for you. We cover the bride, bridesmaids, groom, and every branch of the family, ceremony by ceremony.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            What Makes South Indian Christian Weddings Distinct
-          </h2>
-          <p>
-            The defining quality of a South Indian Christian wedding is the layering of church tradition over South Indian cultural identity. The church ceremony is formal and sacred — white and cream dominate, gold accents carry the weight of heritage, and there is an unmistakable sense of reverence in the attire. But once the reception begins, color and celebration take over.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            For Kerala Christian families, this contrast is especially pronounced. The white kasavu saree of the church service gives way to a richly colored reception lehenga or contemporary gown. Tamil Christian weddings tend to bring more color into even the ceremony itself, with Kanchipuram silk in deep jewel tones appearing throughout.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            Understanding which ceremony calls for which outfit is the foundation of getting this right.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Kerala Christian Wedding Attire
-          </h2>
-
-          <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
-            The Church Ceremony
-          </h3>
-          <p>
-            The church ceremony is the heart of a Kerala Christian wedding, and the attire reflects that gravity. The most traditional garment for women — including the bride — is the <strong>kasavu saree</strong>: a white or cream cotton-silk saree with a gold zari border. As noted in <a href="https://www.haradhi.com/post/kerala-kasavu-saree-and-set-mundu-two-symbols-of-grace-and-tradition" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>Kerala textile traditions</a>, the white represents purity and the kasavu (gold border) represents prosperity — a pairing that has defined Malayali ceremonial dress for generations.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            For the bride specifically, the <strong>Manthrakodi</strong> — the white or off-white saree gifted by the groom&apos;s family — is a central part of the ceremony itself. It is worn with minimal embellishment, allowing the sanctity of the occasion to speak.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            The <strong>set mundu</strong> (also called mundum neriyathum) is the other traditional option: a two-piece garment consisting of a white or cream lower drape and an upper cloth draped over the shoulder, typically with a kasavu border. Older family members and grandmothers often prefer the set mundu for its modesty and authenticity.
-          </p>
-
-          <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
-            The Reception
-          </h3>
-          <p>
-            The reception is where Kerala Christian brides come alive with color. A heavily embroidered lehenga in deep red, royal blue, or emerald green is increasingly common for the reception look. Some brides opt for a contemporary gown — either Western or Indo-Western — particularly when the reception is held in a banquet hall setting in the US. Either choice is accepted and beautiful. The key is a clear visual distinction from the church look.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Tamil Christian Wedding Attire
-          </h2>
-          <p>
-            Tamil Christian weddings share the reverence for the church ceremony but bring noticeably more color into the wider celebration. <strong>Kanchipuram silk sarees</strong> — handwoven in the temple town of Kanchipuram, Tamil Nadu — are the dominant fabric across nearly every role: mothers, aunties, family members, and often the bride herself for reception events.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            For the church ceremony, Tamil Christian brides may also wear white or cream, but the tradition is somewhat more flexible than in Kerala, and some families choose a rich colored Kanchipuram silk saree for the church itself. Coral, dusty pink, and champagne are popular compromises — festive without departing from the ceremony&apos;s dignity. The <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>Kanchipuram tradition for wedding sarees</a> runs deep in Tamil family culture and extends well beyond the bridal couple.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            A note on the half saree: in some Tamil Christian families — particularly those with roots in more traditional communities — the younger sisters of the bride or young female relatives wear a <strong>half saree</strong> (pavadai dhavani) for pre-wedding events or the reception. It is a three-piece outfit with a skirt, blouse, and dupatta that signals youth and marks a coming-of-age moment within the celebration.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            The Bride: Your Full Outfit Plan
-          </h2>
-          <p>
-            A typical South Indian Christian bride will dress for at least two distinct looks:
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>Church ceremony:</strong> White, cream, or ivory is the traditional choice. For Kerala Christian brides, a kasavu saree or a white Kanchipuram silk saree with gold zari border is the most respected option. Some brides are now choosing a white or ivory lehenga for the church — particularly those marrying in the US where the ceremony may blend Indian and Western elements. This is a personal and family decision, and both are beautiful.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>Reception:</strong> This is where a bride can choose freely. A colored lehenga in a rich jewel tone, an embroidered silk saree in deep red or emerald, or a gown are all common. Many South Indian Christian brides in the US choose a lehenga for reception photos and practical reasons (easier to move in, better for air-conditioned venues). Others love the saree and wouldn&apos;t consider anything else.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            If you are planning from the US, ask family and church leaders to approve the ceremony requirements, then record those requirements for the selected vendors.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Bridesmaids: Coordinating 8 to 14 People Across Time Zones
-          </h2>
-          <p>
-            South Indian Christian weddings often feature large bridal parties — eight to fourteen bridesmaids is not unusual. Coordinating their outfits when many of them are based in different US cities, and the outfits are being sourced from India, is one of the most logistically complex parts of the entire wedding.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            A few approaches that work well:
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>Coordinated sarees:</strong> A single color or color family (dusty rose, sage green, mauve) in a consistent fabric — soft silk, georgette, or a lightweight Kanchipuram — creates a polished look without requiring identical outfits. Measurements for each bridesmaid need to be collected well in advance, and blouses are typically stitched to fit individually.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>Churidars or salwar suits:</strong> A comfortable and practical choice for bridesmaids who are less experienced in saree draping. Pastels — blush, mint, powder blue — are commonly chosen to complement the bridal look without competing with it.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>Pre-stitched or pre-draped options:</strong> For bridesmaids who are nervous about managing a saree through a long ceremony and reception, pre-stitched sarees or ready-to-wear indo-western pieces in a complementary palette are an increasingly popular solution.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            Group orders require time to collect measurements, approve colors, confirm vendor capacity, ship, clear customs, and complete local alterations. Use current written estimates rather than a universal minimum.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Mothers and Family: Why Kanchipuram Silk Is Non-Negotiable
-          </h2>
-          <p>
-            For many South Indian families — both Kerala Christian and Tamil Christian — <strong><Link href="/kanchipuram-silk-sarees-usa/" style={{ color: "#7a6841" }}>Kanchipuram silk sarees</Link></strong> for the mothers, mothers-in-law, and senior aunties are not a question. This is simply what is worn. The only real decisions are color and design.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            Mothers of the bride and groom typically choose rich, classic shades: deep maroon, emerald green, navy, or royal blue, with temple borders or floral motifs in gold zari. As <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#7a6841" }}>Kumaran Silks notes</a>, these colors carry a sense of dignity and occasion that lighter or more casual fabrics cannot replicate.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            Aunties and cousins have more flexibility — they may choose Kanchipuram silk as well, or opt for a soft silk, <Link href="/banarasi-silk-sarees-usa/" style={{ color: "#7a6841" }}>Banarasi</Link>, or contemporary saree in complementary tones. The guiding principle is to not compete with the mother-of-the-bride or the bride herself in terms of weight or grandeur.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            For any saree represented as Kanchipuram silk, ask the selected seller for the exact fiber and zari composition, origin representation, construction details, and any available item-specific documentation. Product names and video alone do not authenticate those claims.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            The Groom and Groomsmen
-          </h2>
-          <p>
-            <strong>For the church ceremony:</strong> A well-fitted suit is the standard for South Indian Christian grooms, particularly in the US context. Navy, charcoal, and deep grey are most common. Some grooms coordinate with the bridal party by choosing a tie or pocket square in the wedding color palette.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            <strong>For the reception:</strong> Families differ here. Some grooms transition to a <strong>sherwani</strong> for the reception, particularly if there is a traditional South Indian element to the evening. Others remain in the suit. In families with strong Kerala Christian roots, a <strong>mundu with gold kasavu border</strong> (veshti and angavastram) is sometimes worn for the reception — a dignified nod to heritage.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            Groomsmen typically mirror the groom&apos;s church look in coordinating suits, with shared ties or accessories. As with bridesmaids, coordinating a group across the United States or Canada requires collecting measurements and making decisions early.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            Respect family-specific South Indian Christian traditions
-          </h2>
-          <p>
-            South Indian Christian customs vary by denomination, region, parish, and family. CeremonyVerse
-            can help translate an approved ceremony plan into an outfit-shopping brief, but your family and
-            church leaders remain the authority on what is appropriate.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            For remote sourcing, document which garments belong to each ceremony, who approves the cultural
-            details, the selected vendor&apos;s measurement requirements, the delivery buffer, and any local
-            alteration plan.
-          </p>
-
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
-            How CeremonyVerse Helps NRI South Indian Christian Families
-          </h2>
-          <p>
-            Remote sourcing can involve family-approved ceremony requirements, item and vendor evidence, measurements, written costs, multiple shipments, and coordination across households.
-          </p>
-          <p style={{ marginTop: "1.2rem" }}>
-            CeremonyVerse can organize the approved brief, vendor options, measurements, order records, and delivery responsibilities included in the selected written scope. Families and church leaders remain the authority on cultural and religious requirements.
-          </p>
-
-          {/* CTA Box */}
-          <div style={{ background: "#2f2f2f", borderRadius: "8px", padding: "2rem", marginTop: "2.5rem", textAlign: "center" }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", color: "#f8f6f2", marginBottom: "0.75rem" }}>
-              Ready to start sourcing?
+        <div className="space-y-8 text-[1.06rem] leading-8 text-[#4d403a]">
+          <section>
+            <h2 className="mb-4 font-serif text-3xl font-semibold text-[#1f1f1f]">
+              Start with the people who have authority
+            </h2>
+            <p>
+              Before selecting clothing, ask the couple, immediate family, and applicable church authority to confirm
+              the ceremony requirements. Record what is required, what is preferred, and what is flexible. If two
+              families have different regional or denominational practices, document the final decision instead of
+              asking a vendor to decide.
             </p>
-            <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
-              Book a free consultation. Tell us your ceremony schedule, family structure, and budget — we&apos;ll handle the rest.
+            <p className="mt-4">
+              Useful questions include whether the church has modesty or color requirements, whether the bride or
+              groom will change for the reception, whether any garment is presented or changed during the ceremony,
+              and which family members need coordinated outfits.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 font-serif text-3xl font-semibold text-[#1f1f1f]">
+              Build one ceremony-by-ceremony wardrobe brief
+            </h2>
+            <div className="overflow-x-auto rounded-2xl border border-[#dfd7cc] bg-white">
+              <table className="w-full border-collapse text-left text-base">
+                <thead className="bg-[#f1ece5] text-[#1f1f1f]">
+                  <tr>
+                    <th className="p-4 font-semibold">Decision area</th>
+                    <th className="p-4 font-semibold">What to confirm and record</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {planningRows.map(([area, action]) => (
+                    <tr key={area} className="border-t border-[#e7e0d7] align-top">
+                      <th className="p-4 font-semibold text-[#1f1f1f]">{area}</th>
+                      <td className="p-4">{action}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="mb-4 font-serif text-3xl font-semibold text-[#1f1f1f]">
+              Turn the approved plan into vendor-ready records
+            </h2>
+            <ul className="list-disc space-y-3 pl-6">
+              <li>Assign one item record to each person and event; do not reuse an old measurement sheet without checking it.</li>
+              <li>Save dated color and design references and state which details may vary because an item is handmade.</li>
+              <li>Record fabric, lining, sleeve, neckline, length, closure, embroidery, accessories, and customization in writing.</li>
+              <li>Identify who approves the item, who pays the vendor, and which written return, change, or remake terms apply.</li>
+              <li>Plan a local fitting and alteration option instead of treating remote measurements as a fit guarantee.</li>
+            </ul>
+            <p className="mt-4">
+              The free <Link href="/blog/how-to-take-lehenga-measurements-at-home/" className="font-semibold text-[#7a6841] underline">lehenga measurement guide</Link> and
+              the <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" className="font-semibold text-[#7a6841] underline">outfit-ordering timeline</Link> can help organize those records.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 font-serif text-3xl font-semibold text-[#1f1f1f]">
+              Plan group orders around decisions, not a universal deadline
+            </h2>
+            <p>
+              A coordinated order may involve several households, changing measurements, vendor capacity, item
+              approvals, production, multiple shipments, customs review, and local alterations. Obtain the selected
+              vendor&apos;s current written estimate, then work backward from the first local fitting rather than only the
+              wedding date. Include time for one missed approval or required correction.
+            </p>
+          </section>
+
+          <section className="rounded-2xl border border-[#d9c9ad] bg-[#f4efe7] p-7">
+            <h2 className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">
+              CeremonyVerse&apos;s limited role
+            </h2>
+            <p>
+              CeremonyVerse can help turn a family- and church-approved wardrobe plan into a sourcing brief, vendor
+              comparison, measurement record, approval trail, and delivery plan within the selected written scope.
+              The family and church remain responsible for cultural and religious decisions, while vendors, carriers,
+              customs authorities, and local tailors control their own work and decisions.
             </p>
             <Link
-              href="/contact/"
-              style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
+              href="/contact/?service=india"
+              className="mt-6 inline-flex rounded-full bg-[#7a6841] px-7 py-3 font-semibold text-white no-underline"
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
-            <p style={{ color: "#4d403a", fontSize: "0.95rem", marginTop: "1rem" }}>
-              Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
-            </p>
-          </div>
-
-          {/* Sources */}
-          <div style={{ marginTop: "3rem", paddingTop: "1.5rem", borderTop: "1px solid #e6dfd5" }}>
-            <p style={{ fontSize: "0.9rem", color: "#4d403a", lineHeight: 1.7 }}>
-              <strong>Sources:</strong>{" "}
-              <a href="https://www.haradhi.com/post/kerala-kasavu-saree-and-set-mundu-two-symbols-of-grace-and-tradition" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>Haradhi: Kerala Kasavu Saree and Set Mundu</a>{" · "}
-              <a href="https://kumaransilks.com/blogs/blog/kancheepuram-saree-for-wedding-occasion" target="_blank" rel="noopener noreferrer" style={{ color: "#4d403a" }}>Kumaran Silks: Kanchipuram Saree for Wedding Occasions</a>
-            </p>
-          </div>
-
-          {/* Tagline */}
-          <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4d403a", fontStyle: "italic", lineHeight: 1.7 }}>
-            CeremonyVerse is a US-based Indian wedding shopping concierge. Our strongest stated working relationships are in Surat and Delhi; other vendors are considered when they can be responsibly reviewed for the requested item.
-          </p>
-
+          </section>
         </div>
-
-        {/* Back to blog */}
-        <div style={{ marginTop: "3rem" }}>
-          <Link href="/blog/" style={{ color: "#7a6841", fontSize: "0.9rem", textDecoration: "none" }}>
-            ← Back to Blog
-          </Link>
-          <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ color: "#7a6841" }}>South Indian Christian Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
-          </p>
-        </div>
-              <SourcingCallout />
       </article>
     </main>
-  );
+  )
 }

@@ -30,7 +30,7 @@ const serviceSchema = buildServiceSchema({
     "Haldi ceremony outfit research and sourcing for lehengas, anarkalis, salwar sets, and kurtas, with documented options and U.S. delivery coordination.",
   url: "/haldi-outfits-usa/",
   category: "Haldi Ceremony Outfit Sourcing",
-  areaServed: "US",
+  areaServed: "United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -143,7 +143,7 @@ export default function HaldiOutfitsPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </a>
       </section>
 
@@ -330,7 +330,7 @@ export default function HaldiOutfitsPage() {
               {
                 color: "#FFD700",
                 name: "Sunflower Yellow",
-                desc: "A softer yellow that flatters all skin tones. Popular for 2026 brides.",
+                desc: "A softer yellow option. Review the actual fabric in the intended lighting and let each person approve the shade.",
               },
             ].map((item) => (
               <div
@@ -481,7 +481,7 @@ export default function HaldiOutfitsPage() {
               textDecoration: "none",
             }}
           >
-            Book Free Consultation
+            Schedule Free Consultation
           </a>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

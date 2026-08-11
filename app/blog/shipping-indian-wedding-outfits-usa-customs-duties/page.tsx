@@ -5,7 +5,7 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 export const metadata = buildMetadata({
   path: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
   title: "Shipping Indian Outfits to USA: Customs, Taxes & Tariff Rules",
-  description: "Everything you need to know about US customs duties, import tariffs, and shipping delays for Indian wedding outfits and bridal couture.",
+  description: "Plan classification, declared value, duties, carrier charges, customs review, tracking, and delivery estimates for an India-to-USA outfit shipment.",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "Shipping Indian Wedding Outfits to USA: Customs, Duties & Delivery Timeline",
-  description: "Everything NRI families need to know about shipping Indian wedding outfits to the USA \u2014 customs duties, shipping costs, delivery timelines, insurance, and avoiding delays.",
+  description: "Plan classification, declared value, duties, carrier charges, customs review, tracking, insurance options, and delivery estimates for an India-to-USA outfit shipment.",
   url: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
   datePublished: "2026-03-01",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
@@ -38,7 +38,7 @@ export default function ShippingGuidePage() {
             How to Ship Indian Wedding Outfits to the USA: Customs, Duties & Timeline 2026
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Everything NRI families need to know about getting their wedding outfits from India to their US door — costs, customs, timelines, and insurance.
+            Plan shipment-specific costs, customs questions, tracking, insurance options, delivery estimates, and a local alteration buffer.
           </p>
         </div>
       </div>
@@ -148,19 +148,19 @@ export default function ShippingGuidePage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Customs duties and shipping delays are the #1 reason NRI brides stress about outfits arriving on time — and most first-time buyers underestimate both cost and timeline by weeks. A package held at US Customs for inspection can derail your entire alteration schedule.
+              Shipping and customs uncertainty can affect both the budget and the time available for local alterations. Estimate each cost category separately and keep a meaningful schedule buffer.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want our shipping cost calculator?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Get our free Shipping Cost Calculator for NRI Brides</strong> — enter your outfit types for an instant estimate of duties, shipping fees, and total delivery time to your state. Plus: a pre-shipping checklist to clear customs smoothly. Enter your email below.
+              <strong>Use the free Shipping &amp; Customs Calculator</strong> to organize product cost, shipping, insurance, estimated import charges, brokerage, alterations, and contingency. It is a planning estimate, not a customs assessment, carrier quote, or delivery promise.
             </p>
-            <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Download the Shipping Calculator →
+            <Link href="/planning-tools/shipping-customs/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+              Open the Shipping &amp; Customs Calculator →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Don&apos;t want to deal with customs paperwork yourself? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See how we handle international delivery</Link> — we prepare all documentation, insure every package, track delivery to your door.
+              Need sourcing support? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>Review the available service scopes</Link>. Eligible tiers can include shipping-document coordination and tracking support; the selected vendor, carrier, insurer, and customs authority remain responsible for their work.
             </p>
           </div>
 

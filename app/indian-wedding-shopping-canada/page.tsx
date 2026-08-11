@@ -109,7 +109,7 @@ export default function IndianWeddingShoppingCanadaPage() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=india&from=canada" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
-              Request a Free Consultation
+              Schedule Free Consultation
             </Link>
             <Link href="/planning-tools/shipping-customs/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">
               Calculate Landed Cost

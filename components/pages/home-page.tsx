@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { SourcingTierGuide } from "@/components/sourcing-tier-guide"
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
@@ -73,7 +74,7 @@ const servicePillars = [
       "Jewelry, gifts, welcome-bag items, and ceremony essentials",
       "Measurements, written approvals, inspection, and shipping support",
     ],
-    href: "/shop-from-india/",
+    href: "/buy-indian-wedding-outfits-from-india/",
     cta: "Explore India Shopping",
   },
   {
@@ -210,7 +211,7 @@ export function HomePage() {
                 href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule a Free Consultation
+                Schedule Free Consultation
               </Link>
               <Link
                 href="/planning-tools/"
@@ -234,6 +235,8 @@ export function HomePage() {
           <p>Private scope defined before paid work</p>
         </div>
       </section>
+
+      <SourcingTierGuide />
 
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
         <div className="mx-auto max-w-6xl">
@@ -308,9 +311,9 @@ export function HomePage() {
                   Firsthand family wedding experience, explained honestly
                 </h3>
                 <p className="leading-7 !text-white/75">
-                  CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in
-                  Mexico: approximately 150 guests at Hard Rock Hotel Cancun, 130 guests at Generations Riviera Maya,
-                  and 80 guests at a Royalton resort in Mexico. These were family celebrations—not client case studies.
+                  CeremonyVerse was shaped by firsthand family-side involvement in multi-day Indian destination
+                  weddings in Mexico. Those private celebrations are not presented as CeremonyVerse client case
+                  studies; the experience informs the questions, safeguards, and family support used today.
                 </p>
               </div>
               <Link
@@ -604,7 +607,7 @@ export function HomePage() {
             href="/contact/"
             className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Schedule My Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

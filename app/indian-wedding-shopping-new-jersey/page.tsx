@@ -50,7 +50,7 @@ export default function NewJerseyPage() {
               href="/contact/"
               className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
             >
-              Book Your Consultation
+              Schedule Free Consultation
             </Link>
           </div>
         </div>

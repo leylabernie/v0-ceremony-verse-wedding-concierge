@@ -6,7 +6,7 @@ import Link from "next/link"
 export const metadata = buildMetadata({
   path: "/blog/how-to-take-lehenga-measurements-at-home/",
   title: "How to Take Lehenga Measurements at Home (NRI Step-by-Step)",
-  description: "Take accurate lehenga measurements at home with a soft tape and a helper. Step-by-step blouse, skirt, and dupatta measurements so custom outfits from India fit the first time.",
+  description: "Document blouse, skirt, and dupatta measurements with the selected vendor's chart, a helper or local tailor, and time for a fitting and alterations.",
   keywords: [
     "how to take lehenga measurements at home",
     "lehenga measurement guide",
@@ -49,11 +49,11 @@ const howToSchema = buildHowToSchema({
     },
     {
       name: "Measure your bust",
-      text: "Wrap the tape around the fullest part of your bust, keeping it level and snug but not tight. Wear the bra you plan to wear on the day.",
+      text: "Follow the selected vendor's chart while recording the fullest-bust measurement. Keep the tape level and note the event-day undergarment and fit preference.",
     },
     {
       name: "Measure your waist",
-      text: "Measure around your natural waistline — the narrowest part of your torso, roughly at belly-button level — keeping the tape parallel to the floor.",
+      text: "Use the selected vendor's stated waist reference point and keep the tape level. Record where the lehenga is intended to sit rather than assuming one waist position for every garment.",
     },
     {
       name: "Measure your hips",
@@ -69,11 +69,11 @@ const howToSchema = buildHowToSchema({
     },
     {
       name: "Measure the lehenga (skirt) length",
-      text: "Wear the exact heels you will wear on the day. Measure from your waist to the floor at the front, then subtract about half an inch so the hem clears the ground.",
+      text: "Record the vendor's requested start and end points, intended heel height, and hem preference. Do not subtract or add an allowance unless the selected vendor requests it.",
     },
     {
       name: "Record everything with photos and reference heights",
-      text: "Write each measurement in inches, note your height and heel height, and take clear front and side photos so your tailor in India can cross-check the fit.",
+      text: "Label the unit, note height and intended heel height, and provide only the reference photos requested by the selected vendor. Keep the final chart and approval in writing.",
     },
   ],
 })
@@ -136,7 +136,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
             Remote production relies on the selected vendor&apos;s chart, the measurements and fit preferences you approve, and the vendor&apos;s construction process. Measurements can reduce recording errors but cannot guarantee fit.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            The good news: taking accurate measurements at home is completely doable with a soft measuring tape, fitted clothing, and one friend to help. This guide walks through every measurement your tailor needs, in the order you should take them.
+            A helper or qualified local tailor can make the recording process easier. Use this guide to prepare, then follow the selected vendor&apos;s chart, terminology, layers, and approval process because requirements vary by garment and workshop.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -160,7 +160,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
               <strong>Bust.</strong> Wrap the tape around the fullest part of your bust, level all the way around, snug but not compressing. Wear your event-day bra.
             </li>
             <li>
-              <strong>Waist.</strong> Measure your natural waist — the narrowest part of your torso, roughly at belly-button level — keeping the tape parallel to the floor.
+              <strong>Waist and skirt position.</strong> Follow the vendor&apos;s stated reference point, keep the tape level, and record where the lehenga is intended to sit.
             </li>
             <li>
               <strong>Hips.</strong> Measure the fullest part of your hips and seat with your feet together, tape level all the way around.
@@ -172,7 +172,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
               <strong>Sleeve and armhole.</strong> Sleeve length from shoulder point to your desired end; upper-arm circumference around the widest part of your bicep; armhole around the shoulder-armpit joint.
             </li>
             <li>
-              <strong>Lehenga (skirt) length.</strong> Put on the exact heels you will wear on the day. Measure from your waist to the floor at the front, then subtract about half an inch so the hem clears the ground.
+              <strong>Lehenga (skirt) length.</strong> Record the vendor&apos;s requested start and end points, intended heel height, and hem preference. Do not add or subtract an allowance unless the vendor requests it.
             </li>
             <li>
               <strong>Record everything with photos.</strong> Write each number in inches, note your height and heel height, and take clear front and side photos so your tailor can sanity-check the fit.
@@ -207,10 +207,11 @@ export default function HowToTakeLehengaMeasurementsPage() {
             Keep Reading
           </h2>
           <p>
-            For bridal-specific detail — including ease allowances, dupatta sizing, and a 15-point master sheet — see our{" "}
-            <Link href="/blog/nri-bridal-lehenga-sizing-guide/" style={{ color: "#7a6841" }}>NRI Bridal Lehenga Sizing Guide</Link>. Wondering about budget?{" "}
-            <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>How much a bridal lehenga costs in India (2026)</Link>{" "}
-            breaks down every line item.
+            Measurements are only one part of the order record. Read{" "}
+            <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>how to build a complete bridal-lehenga quote</Link>{" "}
+            and the{" "}
+            <Link href="/blog/ordering-indian-wedding-outfits-usa-canada/" style={{ color: "#7a6841" }}>USA and Canada ordering guide</Link>{" "}
+            before approving production or shipping.
           </p>
 
         </div>

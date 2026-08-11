@@ -41,7 +41,7 @@ export default function FloridaPage() {
           href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
@@ -204,8 +204,8 @@ export default function FloridaPage() {
             Outfit sourcing for every Florida ceremony
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            From Miami beachfront bridal lehengas to Tampa Telugu muhuratam sarees &mdash; one concierge,
-            organize the in-scope outfits, approvals, and delivery responsibilities for your Florida address.
+            From Miami bridal lehengas to coordinated family outfits for Tampa celebrations &mdash; one concierge can
+            organize the in-scope selections, approvals, and delivery responsibilities for your Florida address.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
@@ -246,7 +246,7 @@ export default function FloridaPage() {
               href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Florida%20and%20interested%20in%20CeremonyVerse."

@@ -54,28 +54,6 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  keywords: [
-    "how to buy lehenga from India online without getting scammed",
-    "Indian wedding outfit checklist for NRI families USA",
-    "how much does a bridal lehenga cost in India including shipping to USA",
-    "how to take lehenga measurements at home for Indian wedding",
-    "NRI wedding shopping from India timeline when to order",
-    "buy sherwani from India USA",
-    "bridesmaid lehengas from India",
-    "ship Indian wedding outfits to USA customs duties",
-    "Indian wedding shopping USA",
-    "Indian wedding shopping Canada",
-    "Indian wedding outfits Canada shipping customs",
-    "NRI Indian wedding shopping",
-    "custom bridal lehenga India to USA",
-    "return gifts from India to USA",
-    "live video shopping India wedding",
-    "Indian destination wedding planner Mexico",
-    "Cancun Indian wedding planning",
-    "Riviera Maya Indian wedding concierge",
-    "Punta Cana Indian wedding planning",
-    "CeremonyVerse",
-  ],
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     shortcut: "/icon.svg",
@@ -227,7 +205,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Serving families across the USA &amp; Canada · A limited number of 2027 planning dates remain</span>
           <span className="lg:hidden">USA &amp; Canada · Limited 2027 dates</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/">Schedule a free consultation →</Link>
+          <Link href="/contact/">Schedule Free Consultation</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}

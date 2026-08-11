@@ -34,7 +34,7 @@ export default function BridalLehengaServicePage() {
           CeremonyVerse helps US-based brides research and source bridal lehengas from India. Depending on your selected tier and vendor, we coordinate live video reviews, measurements, written approvals, pre-shipping checks, and delivery tracking.
         </p>
         <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
-          Book a Free Consultation
+          Schedule Free Consultation
         </Link>
         <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Share your timeline and priorities</p>
       </section>
@@ -42,7 +42,7 @@ export default function BridalLehengaServicePage() {
       <section style={{ padding: "56px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px" }}>
           {[
-            { title: "Live Video Shopping", desc: "See the exact fabric, embroidery, and color in real time before purchasing. Your approved piece is reserved with your name." },
+            { title: "Live Video Review", desc: "When the vendor and item allow it, review current visible details on video and record the selected reference in writing. Video does not prove material composition or exact screen color." },
             { title: "Guided Measurements", desc: "We help document measurements in the format requested by the selected vendor and confirm the approved details in writing." },
             { title: "Pre-Shipping Review", desc: "For eligible tiers, we review the finished item before shipment and share any visible concern so you can decide how to proceed." },
             { title: "Transparent Costs", desc: "Your quote separates the CeremonyVerse service fee from product, shipping, customs, and any local alteration costs." },

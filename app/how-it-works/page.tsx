@@ -24,7 +24,7 @@ const serviceSchema = buildServiceSchema({
     "A documented process for Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana, with optional guest support and India wedding sourcing.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning and India Wedding Sourcing",
-  areaServed: "United States, Canada, Mexico, and Punta Cana",
+  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "How It Works", url: "/how-it-works/" }])
@@ -218,7 +218,7 @@ export default function HowItWorksPage() {
                 ))}
               </ol>
               <Link
-                href="/shop-from-india/"
+                href="/buy-indian-wedding-outfits-from-india/"
                 className="mt-8 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
               >
                 Explore India Shopping
@@ -302,7 +302,7 @@ export default function HowItWorksPage() {
             href="/contact/?from=how-it-works"
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Request My Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

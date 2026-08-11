@@ -213,7 +213,7 @@ export default function BlogPost() {
             </p>
             <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
               <Link href="/contact/?service=feasibility&from=mexico-planning-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
-                Request a Free Consultation
+                Schedule Free Consultation
               </Link>
               <Link href="/indian-wedding-coordination-mexico/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
                 Review Destination Planning

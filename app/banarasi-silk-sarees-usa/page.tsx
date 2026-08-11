@@ -31,7 +31,7 @@ const serviceSchema = buildServiceSchema({
     "Banarasi silk saree research and sourcing with documented fiber, zari, origin, available certification, blouse, price, and U.S. delivery information.",
   url: "/banarasi-silk-sarees-usa/",
   category: "Banarasi Silk Saree Sourcing",
-  areaServed: "US",
+  areaServed: "United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -155,7 +155,7 @@ export default function BanarasiSareesPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
@@ -549,7 +549,6 @@ export default function BanarasiSareesPage() {
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
             <Link href="/bridesmaid-and-family-outfits-from-india/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridesmaid &amp; Family Outfits</Link>
             <Link href="/reception-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Reception Outfits</Link>
-            <Link href="/south-indian-christian-wedding-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>South Indian Christian Wedding</Link>
             <Link href="/gujarati-wedding-outfits-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Gujarati Wedding Outfits</Link>
             <Link href="/how-it-works/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>How It Works</Link>
           </div>
@@ -606,7 +605,7 @@ export default function BanarasiSareesPage() {
               textDecoration: "none",
             }}
           >
-            Book Free Consultation
+            Schedule Free Consultation
           </Link>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

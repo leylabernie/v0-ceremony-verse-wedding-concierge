@@ -46,17 +46,17 @@ export default function BridesmaidGuidePage() {
       <article style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 5rem" }}>
         <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "1.125rem", lineHeight: 1.8, color: "#2f2f2f" }}>
 
-          <p>Coordinating bridesmaid outfits for an Indian wedding in the US is one of the most logistically challenging parts of wedding planning. You need 4-8 outfits that match in color and style but fit 4-8 completely different body types — all arriving on time, all looking consistent in photos, and all within a reasonable budget. Most NRI brides who try to buy bridesmaid lehengas from India on their own end up with color mismatches, sizing disasters, or bridesmaids wearing outfits that look like they came from different weddings.</p>
+          <p>Coordinating bridesmaid outfits for an Indian wedding can involve different measurements, locations, approval schedules, budgets, and alteration needs. A remote group order also has to account for dye-lot variation, handmade differences, shipping, customs, and a local fitting buffer rather than assuming every outfit will appear identical.</p>
           <p style={{ marginTop: "1.2rem" }}>This guide explains a practical group-order process whether you work with CeremonyVerse or manage the vendors yourself. Start with our <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" style={{ color: "#7a6841" }}>full wedding outfit checklist</Link> to see how bridesmaid outfits fit into the overall plan.</p>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Get Consistent Colors When Ordering Multiple Lehengas from India</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>How to Manage Color Variation Across Multiple Lehengas</h2>
 
-          <p>The color palette is the foundation of everything. Here is what works for Indian weddings in the US:</p>
+          <p>Start with a family-approved palette, then compare physical or current visual references where available. Fabric, dye lot, lighting, camera, and screen settings can change how a color appears.</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Pastels (blush pink, mint green, powder blue, lavender):</strong> Photograph beautifully, work for all skin tones, and look elegant in outdoor and indoor venues. Best for spring/summer weddings.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Jewel tones (emerald, sapphire, ruby, wine):</strong> Rich and vibrant. Best for fall/winter weddings or evening receptions. These colors pop in photos and complement gold jewelry.</li>
-            <li style={{ marginBottom: "0.8rem" }}><strong>Metallics (champagne, rose gold, copper):</strong> Sophisticated and versatile. Work year-round and pair well with both silver and gold accessories.</li>
-            <li><strong>Monochrome with the bride:</strong> Some brides choose to have bridesmaids in lighter shades of the bride&apos;s lehenga color. This creates a stunning gradient effect in group photos.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Pastels:</strong> Ask each person to approve the selected reference and review opacity, lining, and likely dye-lot variation.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Jewel tones:</strong> Compare the selected shade under natural and event-style lighting when current media or a swatch is available.</li>
+            <li style={{ marginBottom: "0.8rem" }}><strong>Metallics:</strong> Confirm the base fabric, metallic treatment, jewelry pairing, care instructions, and how the material appears on camera.</li>
+            <li><strong>Related shades:</strong> If the group uses lighter or darker versions of one color, record which shade belongs to each person rather than relying on names such as “rose” or “wine.”</li>
           </ul>
           <p style={{ marginTop: "1rem" }}><strong>Family approval matters:</strong> Color meanings and ceremony expectations vary. Let the couple and family approve the palette rather than applying a universal avoid list.</p>
 

@@ -5,8 +5,8 @@ import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
   path: "/blog/gujarati-wedding-outfit-guide/",
-  title: "Gujarati Wedding Outfit Guide 2026: Panetar, Gharchola & Sizing",
-  description: "Planning your Gujarati wedding wardrobe from abroad? Complete guide to Panetar, Gharchola, and custom sourcing direct from designer hubs in India.",
+  title: "Gujarati Wedding Outfit Guide: Panetar, Gharchola & Sizing",
+  description: "Plan a Gujarati wedding wardrobe from abroad with family-approved guidance for Panetar, Gharchola, Garba, Pithi, Mehndi, wedding, and reception looks.",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
   publishedTime: "2026-03-01",
   authorName: "CeremonyVerse",
@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
 
 const blogPostingSchema = buildBlogPosting({
   headline: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
-  description: "Complete Gujarati wedding outfit guide \u2014 Garba/chaniya choli, Mehndi, Pithi, Mameru, wedding ceremony, and reception. What each family member wears for each function.",
+  description: "A practical Gujarati wedding outfit guide for Garba, Mehndi, Pithi, Mameru, the wedding ceremony, and reception, with family-specific traditions confirmed before sourcing.",
   url: "/blog/gujarati-wedding-outfit-guide/",
   datePublished: "2026-03-01",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
@@ -43,7 +43,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            From Garba night to the Reception — a complete guide to dressing for every ceremony in a multi-day Gujarati wedding celebration.
+            Use this ceremony-by-ceremony framework, then confirm the clothing expectations and traditions with your own family before approving any item.
           </p>
         </div>
       </div>
@@ -226,7 +226,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
               href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <p style={{ color: "#4d403a", fontSize: "0.95rem", marginTop: "1rem" }}>
               Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>

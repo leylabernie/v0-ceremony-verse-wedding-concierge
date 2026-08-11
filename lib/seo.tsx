@@ -19,6 +19,31 @@ export const SITE_EMAIL = "hello@ceremonyverse.com";
 export const SITE_PHONE = "+12153419990";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.webp`;
 
+type SchemaArea = {
+  "@type": "Country" | "Place";
+  name: string;
+};
+
+const defaultSourcingAreas: SchemaArea[] = [
+  { "@type": "Country", name: "United States" },
+  { "@type": "Country", name: "Canada" },
+];
+
+function buildAreaServed(areaServed?: string | string[]): SchemaArea[] {
+  const areaNames = areaServed
+    ? Array.isArray(areaServed)
+      ? areaServed
+      : [areaServed]
+    : defaultSourcingAreas.map((area) => area.name);
+
+  return areaNames.map((name) => ({
+    "@type": ["United States", "Canada", "Mexico", "Dominican Republic"].includes(name)
+      ? "Country"
+      : "Place",
+    name,
+  }));
+}
+
 interface BuildMetadataOpts {
   /** Path beginning with `/` — e.g. `/blog/how-to-buy-bridal-lehenga-from-india-usa/`. Trailing slash optional. */
   path: string;
@@ -30,7 +55,10 @@ interface BuildMetadataOpts {
   publishedTime?: string;
   modifiedTime?: string;
   authorName?: string;
-  /** Optional keywords string or array. */
+  /**
+   * Legacy input retained while page modules are migrated. Search engines do
+   * not use the meta-keywords tag, so buildMetadata intentionally ignores it.
+   */
   keywords?: string | string[];
   /** Optional alternate language hrefs. */
   alternates?: { languages?: Record<string, string> };
@@ -58,7 +86,6 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
   return {
     title: opts.title,
     description: opts.description,
-    keywords: opts.keywords,
     alternates: {
       canonical,
       ...(opts.alternates?.languages ? { languages: opts.alternates.languages } : {}),
@@ -215,9 +242,10 @@ export function buildServiceSchema(opts: {
   url: string;
   category?: string;
   offers?: { name: string; price: number; description?: string }[];
-  areaServed?: string;
+  areaServed?: string | string[];
 }): object {
   const url = opts.url.startsWith("http") ? opts.url : `${SITE_URL}${opts.url}`;
+  const areaServed = buildAreaServed(opts.areaServed);
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -226,14 +254,11 @@ export function buildServiceSchema(opts: {
     url,
     provider: {
       "@type": "LocalBusiness",
+      "@id": `${SITE_URL}#business`,
       name: SITE_NAME,
       url: SITE_URL,
-      telephone: SITE_PHONE,
-      email: SITE_EMAIL,
-      priceRange: "$$",
-      areaServed: opts.areaServed ?? "US",
     },
-    areaServed: opts.areaServed ?? "US",
+    areaServed,
     serviceType: opts.category ?? "Indian Wedding Sourcing",
     ...(opts.offers && opts.offers.length
       ? {
@@ -331,7 +356,7 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: ["United States", "Canada", "Mexico", "Dominican Republic"],
+    areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Dominican Republic"]),
     priceRange: "$$",
     sameAs: [
       "https://www.instagram.com/ceremonyverse/",
@@ -443,7 +468,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How far in advance should I contact CeremonyVerse?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We recommend starting 6-12 months before your wedding date. Top families who do this work book quickly and custom outfits require production time. If your wedding is sooner, contact us and we will tell you honestly what is achievable.",
+          text: "Starting 6-12 months before the wedding usually leaves more time for vendor estimates, approvals, production, shipping, customs, local fittings, and backup options. The workable timeline still depends on the selected items, vendors, destination, and event date.",
         },
       },
       {

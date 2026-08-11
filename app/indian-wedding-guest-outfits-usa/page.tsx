@@ -38,7 +38,7 @@ export default function IndianWeddingGuestOutfitsPage() {
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-            Book Free Consultation
+            Schedule Free Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
             WhatsApp: +1 (215) 341-9990
@@ -135,10 +135,10 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
-              { tier: "Free Consultation", price: "Free", desc: "A 20-minute call to understand your needs, timeline, and budget. No commitment." },
-              { tier: "Style Guide", price: "$249", desc: "A personalized lookbook with curated outfit recommendations based on your event, body type, and preferences." },
-              { tier: "Guided Sourcing", price: "$799", desc: "We manage the sourcing process — live video sessions, measurements, stitching coordination, inspection, and delivery support." },
-              { tier: "Full Bridal Concierge", price: "$2,499", desc: "End-to-end outfit management for the bride or core wedding party across wedding events. Multiple outfits, full coordination." },
+              { tier: "Free Consultation", price: "Free", desc: "A 30-minute call to understand your needs, timing, and budget scope. No commitment." },
+              { tier: "Style Guide & Vendor List", price: "$249", desc: "A documented starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Guided Sourcing", price: "$799", desc: "Selected live or recorded item review and order coordination, subject to item and vendor availability." },
+              { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
               <div key={item.tier} style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5", textAlign: "center" }}>
                 <p style={{ fontSize: "17px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "8px" }}>{item.tier}</p>
@@ -157,7 +157,7 @@ export default function IndianWeddingGuestOutfitsPage() {
             Guest outfit FAQ
           </h2>
           {[
-            { q: "I'm attending a wedding in 6 weeks — is that enough time?", a: "It's tight. We recommend a minimum of 8–10 weeks for sourcing from India. If you're under that timeline, reach out immediately and we'll let you know what's realistic based on your needs." },
+            { q: "I'm attending a wedding in 6 weeks — is that enough time?", a: "It depends on current ready-made availability, alterations, vendor handling time, carrier service, customs, and your flexibility. A made-to-order item may not be responsible on that schedule. Request item-specific written estimates and preserve a local backup rather than relying on a universal minimum." },
             { q: "Can you help me figure out what to wear?", a: "Yes — our Style Guide service ($249) includes a personalized lookbook based on the event type, dress code, your preferences, and body type. Or start with a free consultation to talk it through." },
             { q: "I need outfits for my whole family. Can you coordinate everything?", a: "Group coordination is available within the selected tier or a custom written scope. We organize participant measurements, selections, and approvals; vendor capacity and shipment structure are confirmed before ordering." },
             { q: "How do measurements work if I'm in the US?", a: "We send you a simple measurement guide. You can measure at home or visit a local tailor to get your numbers. We review everything before stitching begins." },
@@ -200,7 +200,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990

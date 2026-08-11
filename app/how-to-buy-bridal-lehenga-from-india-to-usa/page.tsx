@@ -135,7 +135,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Book a Free Consultation
+              Schedule Free Consultation
             </a>
             <a
               href="#challenges"
@@ -345,11 +345,10 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                   The Risk:{" "}
                 </span>
                 <span style={{ color: "#4d403a" }}>
-                  What looks like heavy zari embroidery on an Instagram photo
-                  can arrive as cheap plastic sequins. Fabric weight, color
-                  accuracy, and stitching quality are nearly impossible to
-                  verify from a filtered photo alone — and once a garment
-                  leaves India, returns are effectively impossible.
+                  A catalog or social image may not show the delivered item&apos;s
+                  fiber, handwork, weight, construction, or screen-color
+                  variation. Cross-border returns and remedies can also be
+                  limited, costly, or subject to short deadlines.
                 </span>
               </p>
               <p>
@@ -546,7 +545,7 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Book Your Free Consultation
+              Schedule Free Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."

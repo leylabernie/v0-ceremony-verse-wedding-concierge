@@ -1,11 +1,10 @@
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo";
 import { NorthAmericaCoverage } from "@/components/north-america-coverage";
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-shopping-philadelphia/",
-  title: "Indian Wedding Shopping from India — Philadelphia",
-  description: "Philadelphia-area families can research Indian wedding outfits from India with eligible live review, written approvals, available pre-shipping review, and delivery coordination.",
-  keywords: "Indian wedding shopping Philadelphia, Philadelphia bridal lehenga, NRI wedding concierge Philadelphia, Indian wedding outfits Philadelphia PA, buy Indian wedding outfits Philadelphia, South Indian wedding Philadelphia, Gujarati wedding Philadelphia",
+  title: "Philadelphia Indian Wedding Shopping Concierge",
+  description: "Philadelphia-area families can coordinate Indian wedding outfits from India with vendor research, eligible live review, measurements, written approvals, inspection checkpoints, and delivery planning.",
 });
 
 const serviceSchema = buildServiceSchema({
@@ -19,11 +18,39 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Philadelphia", url: "/indian-wedding-shopping-philadelphia/" },
 ]);
 
+const faqItems = [
+  {
+    q: "Is CeremonyVerse actually based in Philadelphia?",
+    a: "Yes. CeremonyVerse is based in the Philadelphia area, operates on Eastern Time, and provides a U.S.-based family contact for the documented sourcing process.",
+  },
+  {
+    q: "Is CeremonyVerse a Philadelphia clothing store?",
+    a: "No. CeremonyVerse is a concierge and coordination service, not a walk-in boutique with local inventory. The process begins with a scheduled consultation and compares documented India-based options with any local alternatives the family is considering.",
+  },
+  {
+    q: "How much does a bridal lehenga from India cost delivered to Philadelphia?",
+    a: "There is no responsible universal price. Fabric, handwork, customization, vendor, shipping, insurance, assessed duty or tax, and local alterations can all change the landed amount. The written comparison separates the product, CeremonyVerse service tier, outside costs, and alteration allowance.",
+  },
+  {
+    q: "Can an order be delivered to Philadelphia, the Main Line, South Jersey, or Delaware?",
+    a: "Delivery can be coordinated when the selected vendor and carrier serve the address. The written quote identifies the carrier, estimated timing, shipment documents, insurance options, customs responsibilities, and claim owner. Carrier and customs dates are not guaranteed.",
+  },
+  {
+    q: "Can CeremonyVerse coordinate outfits for several Hindu or Gujarati wedding events?",
+    a: "Yes. CeremonyVerse can translate the family's approved event, clothing, color, and participant requirements into a sourcing brief. The family and officiants remain the authority on ceremony-specific customs, and the written scope identifies which people and items are included.",
+  },
+];
+
+const faqSchema = buildFaqSchema(
+  faqItems.map((item) => ({ question: item.q, answer: item.a })),
+);
+
 export default function PhiladelphiaPage() {
   return (
     <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <JsonLd id="schema-faq" data={faqSchema} />
 
       {/* Hero */}
       <section style={{ padding: "80px 24px 48px", textAlign: "center", maxWidth: "800px", margin: "0 auto" }}>
@@ -34,13 +61,13 @@ export default function PhiladelphiaPage() {
           Indian Wedding Shopping Philadelphia — We&apos;re Based Here
         </h1>
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
-          CeremonyVerse is headquartered in Philadelphia. We help families research and source Indian wedding outfits through our strongest working relationships in Surat and Delhi, with other vendors considered when they can be responsibly reviewed.
+          CeremonyVerse is based in the Philadelphia area. We help local families compare and coordinate Indian wedding outfits through a documented remote process, using India-based vendors that can be responsibly reviewed for the requested item and scope.
         </p>
         <a
           href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </a>
       </section>
 
@@ -50,7 +77,7 @@ export default function PhiladelphiaPage() {
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
-            Why Philadelphia NRI families choose CeremonyVerse
+            Why the Philadelphia connection is useful
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
             {[
@@ -100,17 +127,39 @@ export default function PhiladelphiaPage() {
         </div>
       </section>
 
+      <section style={{ padding: "48px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
+            What the Philadelphia service includes—and what remains separate
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            <div style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "12px" }}>CeremonyVerse coordinates</h3>
+              <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a" }}>
+                The brief, vendor option record, eligible live or recorded item review, measurement and approval tracking, available pre-shipping evidence, and delivery handoff included in the selected tier.
+              </p>
+            </div>
+            <div style={{ background: "#f9f6f3", borderRadius: "14px", padding: "24px", border: "1px solid #e6dfd5" }}>
+              <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "12px" }}>Separate and not guaranteed</h3>
+              <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a" }}>
+                Products, tailoring, shipping, insurance, customs, tax, and local alterations are separate unless itemized. Vendor workmanship, exact fit or color, carrier dates, customs decisions, and vendor remedies remain outside CeremonyVerse&apos;s control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Serving the Greater Philadelphia Area */}
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "12px" }}>
-            Serving the Greater Philadelphia Area
+            Philadelphia-area context, North America-wide service
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "32px", fontSize: "17px" }}>
-            Philadelphia-area service areas to discuss with the selected vendor and carrier.
+            The business is locally based, while the same remote sourcing process serves families across the United States and Canada. Carrier availability is confirmed for the actual delivery address.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
-            {["Philadelphia", "Center City", "University City", "Cherry Hill", "Bryn Mawr", "Wayne", "King of Prussia", "Wilmington", "Princeton", "Allentown", "Doylestown", "West Chester", "Harrisburg", "South Jersey", "Delaware Valley"].map((loc) => (
+            {["Philadelphia", "Main Line", "King of Prussia", "West Chester", "South Jersey", "Delaware"].map((loc) => (
               <span
                 key={loc}
                 style={{
@@ -159,31 +208,10 @@ export default function PhiladelphiaPage() {
       <section style={{ padding: "48px 24px", background: "#fff" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#1f1f1f", textAlign: "center", marginBottom: "32px" }}>
-            Frequently Asked Questions for Philadelphia NRI Brides
+            Philadelphia Indian wedding shopping questions
           </h2>
           <div>
-            {[
-              {
-                q: "Are you actually based in Philadelphia?",
-                a: "Yes. CeremonyVerse is based in the Philadelphia area and can be reached during East Coast business hours. Any in-person consultation must be confirmed by appointment.",
-              },
-              {
-                q: "How much does a bridal lehenga from India cost delivered to Philadelphia?",
-                a: "Cost depends on fabric, handwork, customization, vendor, shipment, and any assessed duty. We itemize the product, flat CeremonyVerse tier, shipping, and customs estimate so you can compare the landed quote with Philadelphia or regional boutique options.",
-              },
-              {
-                q: "Do you deliver to Cherry Hill, Bryn Mawr, and the suburbs?",
-                a: "Yes, when the selected vendor and carrier can serve the address. The written quote identifies the carrier, service area, estimated timing, shipping documents, insurance options, customs responsibilities, and the party responsible for a claim. Carrier and customs dates are not guaranteed.",
-              },
-              {
-                q: "Can I meet you in person?",
-                a: "Yes, by appointment. Many Philadelphia-area brides prefer to start with a video consultation and then meet in person for measurement sessions or to review fabric samples. We're flexible — whatever makes you most comfortable with the process.",
-              },
-              {
-                q: "I'm planning a wedding at a Philadelphia venue — can you help with outfits for multiple ceremonies?",
-                a: "We can translate your family's approved ceremony, clothing, color, and venue requirements into a sourcing brief. Your family and officiants remain the authority on community-specific customs, and any vendor or product recommendation is limited to the documented request.",
-              },
-            ].map((faq, index) => (
+            {faqItems.map((faq, index) => (
               <div key={index} style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: index < 4 ? "1px solid #e6dfd5" : "none" }}>
                 <h3 style={{ fontWeight: 600, fontSize: "16px", color: "#1f1f1f", marginBottom: "8px" }}>{faq.q}</h3>
                 <p style={{ fontSize: "17px", lineHeight: 1.6, color: "#4d403a" }}>{faq.a}</p>
@@ -207,7 +235,7 @@ export default function PhiladelphiaPage() {
               href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </a>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Philadelphia%20and%20interested%20in%20CeremonyVerse."

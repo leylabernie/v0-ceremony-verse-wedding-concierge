@@ -6,13 +6,14 @@ import {
   buildFaqSchema,
   buildHowToSchema,
   buildMetadata,
+  buildServiceSchema,
 } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Mexico Guide",
+  title: "Indian Destination Wedding Planner in Mexico",
   description:
-    "Compare Indian destination-wedding resorts across Mexico using room-block contracts, complete budget categories, timelines, cultural requirements, and guest logistics.",
+    "Family-side planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, room blocks, complete budgets, cultural needs, and guest logistics.",
   keywords:
     "Indian destination wedding Mexico, Indian wedding Cancun, Indian wedding Riviera Maya, South Asian wedding resort Mexico, Indian wedding Mexico cost, Cancun wedding planning guide",
 });
@@ -20,6 +21,15 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Mexico Destination Wedding Guide", url: "/indian-destination-wedding-planner-mexico/" },
 ]);
+
+const serviceSchema = buildServiceSchema({
+  name: "Indian Destination Wedding Planning Support in Mexico",
+  description:
+    "Family-facing destination-wedding planning support for Gujarati and Hindu weddings across Mexico, with a written division of responsibilities among CeremonyVerse, the local planning partner, authorized travel providers, resorts, vendors, and the family.",
+  url: "/indian-destination-wedding-planner-mexico/",
+  category: "Indian Destination Wedding Planning",
+  areaServed: ["Mexico", "Dominican Republic", "United States", "Canada"],
+});
 
 const faqItems = [
   {
@@ -41,6 +51,11 @@ const faqItems = [
     question: "Is a South Asian resort package the total wedding price?",
     answer:
       "Usually not. Packages may cover a defined guest count, specific event hours, food and beverage, basic decor, or selected services. Additional guests, extra hours, private spaces, outside vendors, upgraded menus, production, taxes, service charges, travel, and other items may be separate. Read the current proposal and contract rather than relying on a headline price.",
+  },
+  {
+    question: "Does CeremonyVerse sell a fixed Indian destination wedding package for Mexico?",
+    answer:
+      "No fixed CeremonyVerse package replaces the resort's current proposal or a wedding-specific written scope. CeremonyVerse helps families compare resort packages, room-block terms, event costs, planning responsibilities, and exclusions using the same assumptions before a decision is made.",
   },
   {
     question: "What should we ask about Indian catering?",
@@ -129,6 +144,7 @@ export default function MexicoDestinationGuidePage() {
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
       <JsonLd id="schema-howto" data={howToSchema} />
+      <JsonLd id="schema-service" data={serviceSchema} />
 
       <SeoNav />
 
@@ -141,7 +157,7 @@ export default function MexicoDestinationGuidePage() {
             className="text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Planning an Indian destination wedding in Mexico
+            Indian destination wedding planning in Mexico
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
             Compare Cancun and Riviera Maya using the contract, total budget, ceremony requirements, and guest
@@ -152,7 +168,7 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
-              Get Family-Side Help
+              Schedule Free Consultation
             </Link>
             <Link
               href="/planning-tools/"
@@ -327,18 +343,25 @@ export default function MexicoDestinationGuidePage() {
               Know who owns each decision
             </h2>
           </div>
-          <div className="mt-10 rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 text-lg leading-relaxed text-[#4d403a] md:p-10">
-            <p>
-              A destination wedding becomes difficult when resort, planner, travel, vendor, family, and sourcing
-              responsibilities are assumed instead of written down. CeremonyVerse helps the family prepare a useful
-              brief and understand which party owns each decision, approval, payment, deadline, and contingency.
-            </p>
-            <p className="mt-5">
-              CeremonyVerse serves destination weddings across Mexico and in Punta Cana. The private proposal identifies
-              the selected scope, fees, payment terms, exclusions, and third-party costs before paid work begins.
-              Family-experience facts are documented separately on the About page.
-            </p>
+          <div className="mt-10 overflow-hidden rounded-2xl border border-[#e6dfd5]">
+            {[
+              ["CeremonyVerse", "Family-facing brief, cultural and sourcing requirements, proposal comparison, approvals, guest-information organization, communication oversight, and one central family contact within the written scope."],
+              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution under the partner's client agreement."],
+              ["Authorized travel provider or resort", "Room blocks, reservations, guest payments, travel documents, transfers, travel changes, and any travel-related commissions or regulated services."],
+              ["Resort and contracted vendors", "Their stated spaces, products, staffing, food and beverage, production, delivery, pricing, policies, safety, and contract performance."],
+              ["Couple and family", "Final decisions, accurate guest and ceremony information, approvals, payments, travel documents, insurance choices, and compliance with contract deadlines."],
+            ].map(([owner, responsibility], index) => (
+              <div key={owner} className={`grid gap-2 p-6 md:grid-cols-[0.28fr_0.72fr] ${index % 2 === 0 ? "bg-[#faf8f5]" : "bg-white"}`}>
+                <h3 className="font-semibold text-[#1f1f1f]">{owner}</h3>
+                <p className="leading-relaxed text-[#4d403a]">{responsibility}</p>
+              </div>
+            ))}
           </div>
+          <p className="mt-6 text-sm leading-relaxed text-[#655a54]">
+            CeremonyVerse does not independently sell travel. Travel services must be handled by a properly authorized
+            provider, directly by the resort, or through another legally appropriate arrangement. The private proposal
+            identifies the selected scope, fees, payment terms, exclusions, and third-party costs before paid work begins.
+          </p>
         </div>
       </section>
 
@@ -378,10 +401,10 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
             >
-              Book a Free Consultation
+              Schedule Free Consultation
             </Link>
             <Link
-              href="/shop-from-india/"
+              href="/buy-indian-wedding-outfits-from-india/"
               className="rounded-lg border-2 border-white px-8 py-4 text-lg font-bold text-white"
             >
               Add India Shopping

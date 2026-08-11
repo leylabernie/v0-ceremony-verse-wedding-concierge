@@ -41,7 +41,7 @@ export default function WashingtonDCPage() {
           href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </Link>
       </section>
 
@@ -204,8 +204,8 @@ export default function WashingtonDCPage() {
             Outfit sourcing for every DMV ceremony
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "20px" }}>
-            From DC embassy-community bridal lehengas to Northern Virginia Telugu wedding sarees &mdash;
-            one documented process for the in-scope outfits and DMV delivery responsibilities.
+            From DC bridal lehengas to coordinated family outfits for Northern Virginia celebrations &mdash; one
+            documented process for the in-scope selections, approvals, and DMV delivery responsibilities.
           </p>
           <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center", marginBottom: "28px" }}>
             <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "999px", padding: "8px 18px", fontSize: "14px", color: "#4d403a", textDecoration: "none" }}>Bridal Lehengas</Link>
@@ -246,7 +246,7 @@ export default function WashingtonDCPage() {
               href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Book Free Consultation
+              Schedule Free Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20the%20DC%20area%20and%20interested%20in%20CeremonyVerse."

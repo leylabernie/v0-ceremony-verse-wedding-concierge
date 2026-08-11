@@ -369,7 +369,7 @@ export default function PricingPage() {
             sourcing tier, $300 feasibility plan, destination-planning package, or family-support scope is appropriate. No payment is required for the consultation.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Book My Free Consultation
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

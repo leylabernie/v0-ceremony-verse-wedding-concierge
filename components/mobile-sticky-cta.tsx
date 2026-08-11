@@ -7,21 +7,25 @@ import { trackLead } from "@/lib/analytics"
 export default function MobileStickyCTA() {
   const pathname = usePathname()
   const calculatorPage = pathname.startsWith("/planning-tools")
+  const homePage = pathname === "/"
   const destinationPage =
-    pathname === "/" ||
     pathname.startsWith("/indian-wedding-coordination-mexico") ||
     pathname.startsWith("/indian-destination-wedding-planner-mexico")
 
-  const consultationHref = calculatorPage
-    ? "/contact/?service=mexico&from=mobile-calculator"
-    : "/contact/?service=mexico&from=mobile-destination"
+  const consultationHref = homePage
+    ? "/contact/?service=both&from=mobile-home"
+    : calculatorPage
+      ? "/contact/?service=mexico&from=mobile-calculator"
+      : "/contact/?service=mexico&from=mobile-destination"
   const whatsappHref =
     "https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20would%20like%20to%20learn%20more%20about%20your%20wedding%20services."
   const prompt = calculatorPage
     ? "Need help with these numbers?"
-    : destinationPage
-      ? "Planning Mexico or Punta Cana?"
-      : "Questions about CeremonyVerse?"
+    : homePage
+      ? "Planning or sourcing your wedding?"
+      : destinationPage
+        ? "Planning Mexico or Punta Cana?"
+        : "Questions about CeremonyVerse?"
 
   return (
     <div
@@ -43,7 +47,7 @@ export default function MobileStickyCTA() {
       <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
         {prompt}
       </p>
-      {calculatorPage || destinationPage ? (
+      {homePage || calculatorPage || destinationPage ? (
         <Link
           href={consultationHref}
           style={{

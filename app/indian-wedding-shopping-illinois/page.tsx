@@ -31,7 +31,7 @@ const serviceSchema = buildServiceSchema({
     "Indian wedding outfit sourcing for families in Illinois — Chicago, Naperville, Schaumburg, Aurora, Evanston, and across the state — with eligible live review, written approvals, and delivery coordination.",
   url: "/indian-wedding-shopping-illinois/",
   category: "Indian Wedding Sourcing for Illinois",
-  areaServed: "US-IL",
+  areaServed: "Illinois, United States",
 })
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -143,7 +143,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             textDecoration: "none",
           }}
         >
-          Book Free Consultation
+          Schedule Free Consultation
         </a>
       </section>
 
@@ -174,7 +174,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             {[
               {
                 title: "Limited Devon Avenue Selection",
-                desc: "Chicago's Devon Avenue is the local hub for Indian shopping, but the boutique selection is small compared to what's available in India. Finding the exact lehenga style, color, and embroidery you envisioned often means settling for what's in stock.",
+                desc: "Devon Avenue gives Chicago-area families an in-person shopping option. Compare local inventory with documented India-sourcing quotes using the same item, customization, shipping, customs, alteration, timing, and remedy assumptions.",
               },
               {
                 title: "Harsh Illinois Winters",
@@ -239,19 +239,17 @@ export default function IndianWeddingShoppingIllinoisPage() {
               requested item, capacity, documentation, and terms can be responsibly reviewed.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Our process is simple: share your wedding vision, ceremony schedule, and budget.
-              CeremonyVerse can coordinate live video sessions with selected vendors
-              in India, showing you fabrics, colors, and embroidery options in real time. You
-              select what you love, and we handle custom measurements, tailoring, quality
-              available checks, and tracked-delivery coordination to an eligible address in Chicago, Naperville, Schaumburg,
-              Aurora, Evanston, or anywhere in Illinois.
+              Share your wedding vision, ceremony schedule, budget, item requirements, and timing.
+              When the selected vendor and item allow it, CeremonyVerse can coordinate live video review
+              of visible fabrics, colors, and embroidery options. The agreed scope can include measurement
+              documentation, written approvals, available pre-shipping review, and tracked-delivery coordination
+              to an eligible Illinois address.
             </p>
             <p style={{ marginBottom: "16px" }}>
-              Illinois families often plan grand, multi-day celebrations — particularly in
-              Chicago and the western suburbs where the largest Indian communities are
-              concentrated. We understand the scale involved — coordinating outfits for
-              Sangeet, Haldi, Mehndi, the main ceremony, and reception across the entire
-              family. Our concierge approach means one point of contact managing it all.
+              For a multi-day celebration, the working list may include outfits for Sangeet, Haldi,
+              Mehndi, the main ceremony, and reception across multiple family members. CeremonyVerse
+              provides one family-facing contact for the sourcing responsibilities included in the
+              written scope.
             </p>
           </div>
         </div>
