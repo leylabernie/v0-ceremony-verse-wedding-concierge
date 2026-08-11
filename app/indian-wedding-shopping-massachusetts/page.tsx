@@ -60,11 +60,11 @@ export default function MassachusettsPage() {
                 desc: "CeremonyVerse is a U.S.-based service serving families across the United States and Canada. When you book a consultation, you reach an organized family-side contact—not a call-center script—and receive clear next steps for the agreed sourcing scope.",
               },
               {
-                title: "Boston's Indian community is thriving",
-                desc: "Massachusetts is home to one of the most educated and fastest-growing Indian-American populations in the country — fueled by MIT, Harvard, Tufts, UMass, and the booming biotech and tech corridor along Route 128. From Cambridge and Burlington to Shrewsbury and Framingham, Indian weddings are a major celebration here — and the demand for authentic outfits far outpaces local supply.",
+                title: "Compare local and remote options",
+                desc: "Massachusetts families can compare local inventory with documented India-sourcing options. Use equivalent written quotes that include the item, customization, service scope, shipping, customs estimate, alteration allowance, timing, and remedies.",
               },
               {
-                title: "Compare local and remote options",
+                title: "Document the sourcing scope",
                 desc: "Massachusetts families can compare local boutique options with a documented India-sourcing path. CeremonyVerse organizes item references, approvals, measurements, outside costs, and available vendor terms so the family can evaluate both options on a comparable basis.",
               },
               {
@@ -96,8 +96,8 @@ export default function MassachusettsPage() {
               { name: "The Westin Copley Place", detail: "Elegant ballroom receptions in Back Bay" },
               { name: "Royal Plaza Trade Center", detail: "Marlborough — large-capacity Indian wedding celebrations" },
               { name: "Lantana's in Randolph", detail: "Randolph event venue" },
-              { name: "The Tara Hotel & Event Center", detail: "Framingham — Indian-owned venue with authentic catering" },
-              { name: "DCU Center", detail: "Worcester — grand Indian wedding receptions for 500+" },
+              { name: "The Tara Hotel & Event Center", detail: "Framingham — confirm current venue, catering, capacity, and outside-vendor terms directly" },
+              { name: "DCU Center", detail: "Worcester — confirm current capacity, catering, production, and outside-vendor terms directly" },
               { name: "The Mansion at MountainView", detail: "Sturbridge — destination Indian weddings in Central MA" },
               { name: "The W Hotel Boston", detail: "Modern luxury for fusion Indian weddings" },
             ].map((venue) => (
@@ -170,7 +170,7 @@ export default function MassachusettsPage() {
             Also Serving New England
           </h2>
           <p style={{ textAlign: "center", color: "#4d403a", marginBottom: "24px", fontSize: "17px" }}>
-            Many New England families book with us because the region has even fewer Indian wedding shopping options than Massachusetts.
+            CeremonyVerse remote consultations are available throughout New England. Item, vendor, carrier, and address eligibility must still be confirmed for each written scope.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {["New Hampshire (Nashua, Manchester)", "Rhode Island (Providence, Cranston)", "Connecticut (Hartford, Stamford, New Haven)", "Vermont (Burlington)", "Maine (Portland)", "Upstate New York (Albany)", "New York City metro area"].map((loc) => (
@@ -306,7 +306,7 @@ export default function MassachusettsPage() {
       <section style={{ padding: "64px 24px", textAlign: "center", background: "#1f1f1f" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "16px" }}>
-            Ready to find your perfect wedding outfit in Massachusetts?
+            Ready to discuss your wedding outfit needs in Massachusetts?
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
             Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.

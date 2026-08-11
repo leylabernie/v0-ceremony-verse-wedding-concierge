@@ -211,11 +211,11 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolea
     <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
       <p>Hi ${safeFirstName},</p>
       <p>Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.</p>
-      <p>Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.</p>
+      <p>Before the call, please complete this short questionnaire. It helps CeremonyVerse understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so the 30 minutes can be used well.</p>
       <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
       <p>You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
       <p>No call time is reserved yet. Complete the questionnaire, then use the scheduling step shown after submission to request your consultation time. No prior review or approval is required.</p>
-      <p>Warmly,<br><strong>Bhamini</strong><br>CeremonyVerse<br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
+      <p>Warmly,<br><strong>CeremonyVerse Client Services</strong><br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
     </div>
   `
 
@@ -223,7 +223,7 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolea
 
 Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.
 
-Before our call, please complete this short questionnaire. It helps me understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so we can use the 30 minutes well.
+Before the call, please complete this short questionnaire. It helps CeremonyVerse understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so the 30 minutes can be used well.
 
 Complete the pre-call questionnaire: ${url.toString()}
 
@@ -232,8 +232,7 @@ You do not need to have every answer finalized. If you already have a resort pro
 No call time is reserved yet. Complete the questionnaire, then use the scheduling step shown after submission to request your consultation time. No prior review or approval is required.
 
 Warmly,
-Bhamini
-CeremonyVerse
+CeremonyVerse Client Services
 ${businessEmail}
 https://www.ceremonyverse.com`
 

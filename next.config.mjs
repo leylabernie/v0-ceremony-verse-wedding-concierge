@@ -37,6 +37,34 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
+      // ─── SEARCH-QUALITY CONSOLIDATIONS ───
+      // Retire thin, duplicated, or off-focus pages while preserving any
+      // useful history and external links through a relevant permanent route.
+      {
+        source: '/link-to-us',
+        destination: '/about/',
+        permanent: true,
+      },
+      {
+        source: '/services/intercultural-indian-weddings',
+        destination: '/services/',
+        permanent: true,
+      },
+      {
+        source: '/south-indian-christian-wedding-outfits-usa',
+        destination: '/services/',
+        permanent: true,
+      },
+      {
+        source: '/blog/south-indian-christian-wedding-outfit-guide',
+        destination: '/blog/',
+        permanent: true,
+      },
+      {
+        source: '/blog/nri-bridal-lehenga-sizing-guide',
+        destination: '/blog/how-to-take-lehenga-measurements-at-home/',
+        permanent: true,
+      },
       // ─── CONSOLIDATED LOCAL LANDING PAGES ───
       // These older pages duplicated the same state-level service intent as
       // the more complete wedding-shopping pages.
@@ -151,12 +179,12 @@ const nextConfig = {
       // 100 impressions, position 7.9 — page 1 traffic going to 404!
       {
         source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire',
-        destination: '/blog/nri-bridal-lehenga-sizing-guide',
+        destination: '/blog/how-to-take-lehenga-measurements-at-home/',
         permanent: true,
       },
       {
         source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire/',
-        destination: '/blog/nri-bridal-lehenga-sizing-guide/',
+        destination: '/blog/how-to-take-lehenga-measurements-at-home/',
         permanent: true,
       },
       // 140 impressions, position 75.8 — funnel to money page

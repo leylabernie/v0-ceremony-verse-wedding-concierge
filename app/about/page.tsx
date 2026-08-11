@@ -5,9 +5,9 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/about/",
-  title: "About CeremonyVerse — Family Experience & Service",
+  title: "About CeremonyVerse — Family-Side Wedding Support",
   description:
-    "CeremonyVerse grew from three Indian family weddings in Mexico and now combines family-side support, destination planning, and optional India sourcing.",
+    "Learn how CeremonyVerse combines firsthand family-side experience, an experienced destination partner, and documented India sourcing for Gujarati and Hindu weddings.",
   keywords:
     "About CeremonyVerse, Indian destination wedding family experience, Gujarati wedding planning support, Hindu wedding planning support, Mexico destination wedding service, India wedding sourcing",
 });
@@ -20,11 +20,10 @@ const aboutSchema = {
   name: "About CeremonyVerse",
   url: "https://www.ceremonyverse.com/about/",
   description:
-    "CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in Mexico and now serves Gujarati and Hindu destination weddings across Mexico and Punta Cana.",
+    "CeremonyVerse combines firsthand family-side destination-wedding experience with an experienced Mexico-based planning and execution partner and optional India sourcing.",
   mainEntity: {
     "@type": "Organization",
     name: "CeremonyVerse",
-    foundingDate: "2021",
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",
@@ -37,18 +36,18 @@ const aboutSchema = {
   },
 };
 
-const familyWeddings = [
+const experienceLessons = [
   {
-    venue: "Hard Rock Hotel Cancun",
-    detail: "Approximately 150 guests · Mexico",
+    title: "Multi-day event flow",
+    detail: "Keep ceremonies, family decisions, vendor deadlines, approvals, and on-site responsibilities in one working plan.",
   },
   {
-    venue: "Generations Riviera Maya",
-    detail: "Approximately 130 guests · February 2023",
+    title: "Guest and family logistics",
+    detail: "Organize travel origins, arrivals, rooms, accessibility needs, welcome details, and the information families need before the wedding.",
   },
   {
-    venue: "Royalton resort in Mexico",
-    detail: "Approximately 80 guests · 2024",
+    title: "Clear provider roles",
+    detail: "Record what CeremonyVerse, the destination partner, the resort, each vendor, and the family are responsible for before paid work begins.",
   },
 ];
 
@@ -65,12 +64,12 @@ export default function AboutPage() {
             About CeremonyVerse
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">
-            Built from firsthand family experience
+            Family-side clarity, backed by destination experience
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2] md:text-xl">
-            CeremonyVerse was shaped by close family involvement in three Indian destination weddings in Mexico.
-            That experience revealed how easily resort decisions, cultural needs, guest logistics, wedding wardrobes,
-            vendor responsibilities, and family communication can become disconnected.
+            CeremonyVerse was shaped by firsthand family-side experience navigating multi-day Indian destination
+            weddings in Mexico. It showed how easily resort decisions, cultural needs, guest logistics, wedding
+            wardrobes, vendor responsibilities, and family communication can become disconnected.
           </p>
         </div>
       </section>
@@ -79,21 +78,21 @@ export default function AboutPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              The experience behind the service
+              What the experience taught us
             </p>
-            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Three family weddings in Mexico</h2>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Turn wedding complexity into visible decisions</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              These were family celebrations—not CeremonyVerse client projects. They are shared as the honest
-              background that shaped the questions, safeguards, and family-side support used today.
+              The family experience is background, not a CeremonyVerse client portfolio. It shaped the questions,
+              safeguards, and family-side support used today without presenting private celebrations as client work.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {familyWeddings.map((wedding) => (
-              <article key={wedding.venue} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family wedding</p>
-                <h3 className="mt-3 font-serif text-2xl font-semibold">{wedding.venue}</h3>
-                <p className="mt-3 leading-7 text-[#4d403a]">{wedding.detail}</p>
+            {experienceLessons.map((lesson) => (
+              <article key={lesson.title} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Working principle</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{lesson.title}</h3>
+                <p className="mt-3 leading-7 text-[#4d403a]">{lesson.detail}</p>
               </article>
             ))}
           </div>
@@ -121,8 +120,13 @@ export default function AboutPage() {
             <div className="mt-6 space-y-5 text-lg leading-8 text-[#4d403a]">
               <p>
                 CeremonyVerse supports Gujarati and Hindu destination weddings throughout Mexico and in Punta Cana.
-                The specific planning, on-site, family-support, guest, and sourcing services are defined privately for
-                each wedding based on its location, resort, dates, events, guest count, and priorities.
+                CeremonyVerse is the family-facing point of contact for cultural understanding, approvals, guest
+                organization, logistics oversight, transparency, and optional sourcing support.
+              </p>
+              <p>
+                An experienced Mexico-based planning and execution partner handles the selected local planning,
+                vendor coordination, negotiations, and on-site execution. The private proposal identifies each party&apos;s
+                responsibilities, fees, outside costs, approvals, payment handling, and exclusions before paid work.
               </p>
               <p>
                 Families can work with CeremonyVerse from anywhere in the United States or Canada. India-sourcing
@@ -130,14 +134,9 @@ export default function AboutPage() {
                 destination before an approved shipment proceeds.
               </p>
               <p>
-                Families can request destination planning, on-site coordination, family communication, guest and arrival
-                organization, welcome details, and optional India sourcing. The written proposal identifies the selected
-                services, outside costs, exclusions, and approval steps before paid work begins.
-              </p>
-              <p>
-                Cancun and Riviera Maya appear in our story because that is where the family experience occurred. They
-                are not the limits of the service. Punta Cana is part of current service coverage, but it is not part of
-                the three-wedding family experience described above.
+                CeremonyVerse does not independently sell rooms, flights, transfers, or travel insurance. Those services
+                must be booked through the resort or another properly authorized travel provider identified for the
+                engagement.
               </p>
             </div>
           </div>

@@ -102,13 +102,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: `${baseUrl}/link-to-us/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-
     // ─── HIGH PRIORITY: Blog listing ───
     {
       url: `${baseUrl}/blog/`,
@@ -195,12 +188,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/intercultural-indian-weddings/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
       url: `${baseUrl}/bridesmaid-and-family-outfits-from-india/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -252,12 +239,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/baraat-outfits-usa/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/south-indian-christian-wedding-outfits-usa/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -440,20 +421,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: `${baseUrl}/blog/nri-bridal-lehenga-sizing-guide/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-
     // ─── MEDIUM: Supporting blog posts ───
-    {
-      url: `${baseUrl}/blog/south-indian-christian-wedding-outfit-guide/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
     {
       url: `${baseUrl}/blog/nri-wedding-planning-timeline/`,
       lastModified: now,

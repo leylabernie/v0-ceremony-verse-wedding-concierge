@@ -308,9 +308,9 @@ export function HomePage() {
                   Firsthand family wedding experience, explained honestly
                 </h3>
                 <p className="leading-7 !text-white/75">
-                  CeremonyVerse was shaped by firsthand family involvement in three Indian destination weddings in
-                  Mexico: approximately 150 guests at Hard Rock Hotel Cancun, 130 guests at Generations Riviera Maya,
-                  and 80 guests at a Royalton resort in Mexico. These were family celebrations—not client case studies.
+                  CeremonyVerse was shaped by firsthand family-side involvement in multi-day Indian destination
+                  weddings in Mexico. Those private celebrations are not presented as CeremonyVerse client case
+                  studies; the experience informs the questions, safeguards, and family support used today.
                 </p>
               </div>
               <Link

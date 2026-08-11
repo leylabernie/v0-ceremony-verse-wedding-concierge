@@ -209,11 +209,10 @@ export default function KanchipuramSilkGuideBlogPost() {
             2. Request a Video Close-Up of the Zari Border
           </h3>
           <p>
-            Pure Kanchipuram sarees are woven using a technique called{" "}
-            <strong>Korvai</strong>, where the body and the border are woven
-            separately on different looms and then joined together by hand.
-            This interlocking join is the signature of authentic Kanjivaram
-            work and is nearly impossible to replicate on a powerloom.
+            Some handwoven Kanchipuram sarees use a <strong>Korvai</strong>{" "}
+            construction in which the body and border are woven separately and
+            joined. Ask the seller to identify the selected saree&apos;s actual
+            construction and provide any available item-specific documentation.
           </p>
 
           <div
@@ -226,15 +225,13 @@ export default function KanchipuramSilkGuideBlogPost() {
             }}
           >
             <p style={{ fontWeight: 600, marginBottom: "0.6rem" }}>
-              The Authentic Sign
+              A construction clue, not authentication
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7 }}>
-              Look closely at the seam where the body meets the border. You
-              should see a distinct, slightly zigzag joint line where the two
-              woven panels interlock. A small wavy line — almost like a tiny
-              ladder — runs along the entire length of the border. This is the
-              handwoven Korvai joint, and it is the single most reliable
-              visual proof of an authentic Kanchipuram saree.
+              A visible joint may be consistent with a particular construction
+              method, but a photo or video alone does not prove fiber, zari,
+              origin, handweaving, certification, or every seller claim. Compare
+              all available item-specific evidence and written representations.
             </p>
           </div>
 

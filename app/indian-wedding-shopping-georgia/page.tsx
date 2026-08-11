@@ -60,11 +60,11 @@ export default function GeorgiaPage() {
                 desc: "CeremonyVerse is a U.S.-based service serving families across the United States and Canada. When you book a consultation, you reach an organized family-side contact—not a call-center script—and receive clear next steps for the agreed sourcing scope.",
               },
               {
-                title: "Atlanta's Indian community is booming",
-                desc: "The Atlanta metro area has one of the fastest-growing Indian-American populations in the US — from Sandy Springs and Johns Creek to Alpharetta and Peachtree Corners. With that growth comes more Indian weddings, more demand for authentic outfits, and more families frustrated by the limited local shopping options.",
+                title: "Compare local and remote options",
+                desc: "Families in the Atlanta area can compare local inventory with documented India-sourcing options. Use equivalent written quotes that include the item, customization, service scope, shipping, customs estimate, alteration allowance, timing, and remedies.",
               },
               {
-                title: "Compare local and remote options",
+                title: "Document the sourcing scope",
                 desc: "Georgia families can compare local boutique options with a documented India-sourcing path. CeremonyVerse organizes item references, approvals, measurements, outside costs, and available vendor terms so the family can evaluate both options on a comparable basis.",
               },
               {
@@ -236,7 +236,7 @@ export default function GeorgiaPage() {
       <section style={{ padding: "64px 24px", textAlign: "center", background: "#1f1f1f" }}>
         <div style={{ maxWidth: "600px", margin: "0 auto" }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.8rem", fontWeight: 600, color: "#f8f6f2", marginBottom: "16px" }}>
-            Ready to find your perfect wedding outfit in Georgia?
+            Ready to discuss your wedding outfit needs in Georgia?
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#e8dfd2", marginBottom: "28px" }}>
             Book a free 30-minute consultation. We'll review your wedding vision, timeline, and budget and discuss which available service tier may fit. No commitment, no pressure.

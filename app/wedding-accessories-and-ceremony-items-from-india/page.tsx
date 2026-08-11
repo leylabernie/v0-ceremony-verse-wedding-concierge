@@ -5,12 +5,12 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 export const metadata = buildMetadata({
   path: "/wedding-accessories-and-ceremony-items-from-india/",
   title: "Indian Wedding Accessories & Ceremony Items \u2014 Sourced from India",
-  description: "Source all Indian wedding ceremony items from India \u2014 puja thalis, kalash, mangalsutra, kaleeras, return gifts, sweets, and welcome bags \u2014 with US delivery."
+  description: "Organize approved Indian wedding accessories, ceremonial items, favors, and welcome gifts with documented vendor, cost, shipping, and delivery responsibilities."
 });
 
 const serviceSchema = buildServiceSchema({
   name: "Wedding Accessories & Ceremony Item Sourcing",
-  description: "Complete sourcing of Indian wedding accessories and ceremony items \u2014 puja thalis, kalash, mangalsutra, kaleeras, return gifts, sweets, and welcome bags \u2014 delivered to the USA.",
+  description: "Documented sourcing support for approved Indian wedding accessories, ceremony items, favors, and welcome gifts, subject to item, vendor, carrier, and destination availability.",
   url: "/wedding-accessories-and-ceremony-items-from-india/",
 });
 
@@ -35,7 +35,7 @@ export default function AccessoriesPage() {
           </h1>
 
           <p className="text-[var(--cv-muted)] text-lg">
-            Source jewelry, dupattas, pagdi, ceremony essentials, and wedding favors directly from India with guided support and reliable delivery.
+            Research jewelry, dupattas, pagdi, ceremony essentials, and wedding favors with written approvals, costs, shipping responsibilities, and realistic delivery estimates.
           </p>
 
         </div>
@@ -49,7 +49,7 @@ export default function AccessoriesPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)]">
-            Beyond outfits, wedding details play a major role in your celebration. Finding authentic, coordinated items locally can be difficult and expensive.
+            Beyond outfits, wedding details play a major role in the celebration. Start with the family&apos;s approved item requirements, then compare vendor evidence, written costs, quantities, timing, shipping, and remedies.
           </p>
 
         </div>
@@ -75,7 +75,7 @@ export default function AccessoriesPage() {
           <div className="bg-white border border-[var(--cv-border)] rounded-2xl p-6">
             <h3 className="font-semibold mb-2">Ceremony Items</h3>
             <p className="text-[var(--cv-muted)]">
-              Pooja essentials and traditional items sourced with authenticity.
+              Family-approved pooja essentials and ceremonial items researched with item-specific evidence where available.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function AccessoriesPage() {
           </h2>
 
           <p className="text-[var(--cv-muted)] mb-8">
-            From outfits to details, everything sourced with consistency and guidance.
+            Discuss the requested items, quantities, deadlines, approval process, and what each written quote must include.
           </p>
 
           <div className="flex flex-col items-center gap-3.5">

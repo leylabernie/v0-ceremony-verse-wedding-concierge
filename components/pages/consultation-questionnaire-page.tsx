@@ -157,7 +157,7 @@ export function ConsultationQuestionnairePage() {
   const emailFallbackUrl = useMemo(() => {
     const compact = (value: string) => value.trim().slice(0, 700) || "Not provided"
     const body = [
-      "Hello Bhamini, the pre-call questionnaire could not be submitted through the website. Here are my answers:",
+      "Hello CeremonyVerse, the pre-call questionnaire could not be submitted through the website. Here are my answers:",
       `Name: ${compact(formData.name)}`,
       `Email: ${compact(formData.email)}`,
       `Consultation focus: ${formData.serviceFocus || "Not provided"}`,

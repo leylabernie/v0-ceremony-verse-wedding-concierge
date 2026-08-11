@@ -50,7 +50,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Why NRI Brides Are Especially Vulnerable to Indian Wedding Vendor Scams</h2>
 
-          <p>NRI brides face a unique set of challenges that make them prime targets for scammers. You are thousands of miles away, shopping primarily through Instagram and WhatsApp, often under time pressure, and dealing with vendors you have never met in person. You cannot walk into a store to verify quality, and if something goes wrong, pursuing legal action across international borders is nearly impossible. Add in the emotional weight of your wedding day, and scammers know you are more likely to overlook red flags in the hope that everything works out.</p>
+          <p>Cross-border buyers may be reviewing products through Instagram, WhatsApp, websites, or video while under event deadlines and without seeing the seller or item in person. If a dispute occurs, payment remedies, returns, and cross-border enforcement can be difficult or costly. That makes item-specific evidence and written terms important before paying.</p>
 
           <p style={{ marginTop: "1.2rem" }}>
             Understanding what <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>a bridal lehenga should actually cost from India</Link> is your first line of defense — if a price seems too good to be true, the outfit probably is too.
@@ -100,15 +100,15 @@ export default function ScamsGuidePage() {
 
           <p>Before you send a single dollar to any vendor, run through this checklist:</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
-            <li style={{ marginBottom: "0.6rem" }}><strong>Video call test:</strong> Insist on a live video call where they show you the actual piece — not photos. If they refuse or keep making excuses, walk away.</li>
-            <li style={{ marginBottom: "0.6rem" }}><strong>Ask for references:</strong> A legitimate seller should be able to provide 2-3 recent NRI customer references. Contact them directly via WhatsApp or Instagram.</li>
-            <li style={{ marginBottom: "0.6rem" }}><strong>Check social media history:</strong> How long have they been posting? Do they have consistent engagement? Are there real customer photos and reviews? New accounts with only professional photos are red flags.</li>
+            <li style={{ marginBottom: "0.6rem" }}><strong>Current item review:</strong> Ask whether the seller can show the current item or materials on live video and confirm in writing what is being shown. A refusal is one risk factor, not proof of fraud, and video alone does not authenticate a product claim.</li>
+            <li style={{ marginBottom: "0.6rem" }}><strong>Independent history:</strong> Look for verifiable business details, a consistent operating history, and independent reviews. Treat seller-supplied references and social posts as evidence to check, not proof by themselves.</li>
+            <li style={{ marginBottom: "0.6rem" }}><strong>Check account history:</strong> Review how long the account has operated, whether contact and business details are consistent, and whether images appear elsewhere under another seller&apos;s name.</li>
             <li style={{ marginBottom: "0.6rem" }}><strong>Request available evidence:</strong> Ask whether an item-specific fabric swatch, certification, current media, or other documentation can be supplied and what it can or cannot prove.</li>
-            <li style={{ marginBottom: "0.6rem" }}><strong>Verify payment method:</strong> Only use payment methods with buyer protection (credit card, PayPal). Never wire transfer, never Venmo to strangers, never cryptocurrency.</li>
-            <li><strong>Start small:</strong> For your first order with a new vendor, order something lower-value (like a dupatta or blouse) before committing to a full bridal lehenga.</li>
+            <li style={{ marginBottom: "0.6rem" }}><strong>Check payment terms:</strong> Review the chosen provider&apos;s current dispute, chargeback, timing, coverage, and exclusion rules before paying. A traceable payment method does not guarantee recovery.</li>
+            <li><strong>Limit exposure:</strong> Consider whether a lower-value test order is practical before approving a high-value custom item, while recognizing that one successful order does not guarantee the next result.</li>
           </ul>
 
-          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>The Safest Way to Buy a Lehenga from India as an NRI Bride</h2>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>A More Documented Way to Buy a Lehenga from India</h2>
 
           <p>
             No method removes every risk. Useful controls include verifying the vendor, reviewing current media,
@@ -133,7 +133,7 @@ export default function ScamsGuidePage() {
               Product purchases, vendor terms, shipping, customs, and remedies remain governed by the applicable scope.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga Safely</Link>
+              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Review Bridal Lehenga Sourcing</Link>
               <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Book Free Consultation</Link>
               <Link href="/how-it-works/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
             </div>

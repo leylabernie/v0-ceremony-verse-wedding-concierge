@@ -330,7 +330,7 @@ export default function HaldiOutfitsPage() {
               {
                 color: "#FFD700",
                 name: "Sunflower Yellow",
-                desc: "A softer yellow that flatters all skin tones. Popular for 2026 brides.",
+                desc: "A softer yellow option. Review the actual fabric in the intended lighting and let each person approve the shade.",
               },
             ].map((item) => (
               <div

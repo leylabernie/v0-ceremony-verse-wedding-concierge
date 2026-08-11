@@ -30,7 +30,10 @@ interface BuildMetadataOpts {
   publishedTime?: string;
   modifiedTime?: string;
   authorName?: string;
-  /** Optional keywords string or array. */
+  /**
+   * Legacy input retained while page modules are migrated. Search engines do
+   * not use the meta-keywords tag, so buildMetadata intentionally ignores it.
+   */
   keywords?: string | string[];
   /** Optional alternate language hrefs. */
   alternates?: { languages?: Record<string, string> };
@@ -58,7 +61,6 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
   return {
     title: opts.title,
     description: opts.description,
-    keywords: opts.keywords,
     alternates: {
       canonical,
       ...(opts.alternates?.languages ? { languages: opts.alternates.languages } : {}),
@@ -443,7 +445,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How far in advance should I contact CeremonyVerse?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "We recommend starting 6-12 months before your wedding date. Top families who do this work book quickly and custom outfits require production time. If your wedding is sooner, contact us and we will tell you honestly what is achievable.",
+          text: "Starting 6-12 months before the wedding usually leaves more time for vendor estimates, approvals, production, shipping, customs, local fittings, and backup options. The workable timeline still depends on the selected items, vendors, destination, and event date.",
         },
       },
       {

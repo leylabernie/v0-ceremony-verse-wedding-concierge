@@ -45,7 +45,7 @@ const posts = [
   },
   {
     slug: "how-to-choose-indian-wedding-jewelry-usa",
-    title: "How to Choose Indian Wedding Jewelry in the USA: An NRI Bride's Complete Guide",
+    title: "How to Choose Indian Wedding Jewelry in the USA: An NRI Bride's Comparison Guide",
     description: "Kundan vs. Polki vs. Temple vs. Meenakari—how to compare material, construction, hallmark, seller, cost, shipping, and remedy information.",
     date: "July 2026",
   },
@@ -69,44 +69,44 @@ const posts = [
   },
   {
     slug: "how-much-does-bridal-lehenga-cost-india-2026",
-    title: "How Much Does a Bridal Lehenga Cost in India (Including Shipping to USA)? 2026 Prices",
-    description: "Real 2026 bridal lehenga prices from India — budget to high-end with USD conversion. Total cost breakdown including customs, shipping, and hidden costs NRI brides forget.",
+    title: "How Much Does a Bridal Lehenga from India Cost? A Complete Quote Guide",
+    description: "Compare fabric, handwork, customization, service fees, shipping, customs estimates, and alteration allowances using current written quotes.",
     date: "June 2026",
   },
   {
     slug: "how-to-buy-sherwani-from-india-usa",
-    title: "How to Buy a Sherwani from India for a US Wedding: Complete Guide with Prices & Sizing",
-    description: "Step-by-step guide for NRI grooms — sherwani prices from India, how to take measurements at home, scam warnings, and shipping to USA.",
+    title: "How to Buy a Sherwani from India for a US Wedding: Quote & Sizing Guide",
+    description: "Document the item, measurements, vendor evidence, written quote, shipping responsibilities, customs estimate, and local fitting plan.",
     date: "June 2026",
   },
   {
     slug: "indian-wedding-outfit-checklist-every-ceremony",
-    title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What (42-51 Outfits)",
-    description: "The complete outfit-by-ceremony checklist for NRI families — from the bride and groom to parents, siblings, and guests. Total cost comparison: India vs. US stores.",
+    title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What",
+    description: "Build a ceremony-by-ceremony list for the couple, parents, wedding party, and family without assuming one outfit count or universal budget.",
     date: "June 2026",
   },
   {
     slug: "indian-wedding-outfit-scams-nri-brides",
     title: "How to Buy Lehengas from India Without Getting Scammed: 10 Red Flags for NRI Brides",
-    description: "How to buy a lehenga from India safely — 10 scams NRI brides must avoid, how to verify sellers before sending money, and the safest way to buy as an NRI bride.",
+    description: "Review ten common remote-order risks and the seller, item, payment, approval, shipping, and remedy evidence to request before purchasing.",
     date: "June 2026",
   },
   {
     slug: "how-to-coordinate-bridesmaid-lehengas-india-usa",
     title: "How to Order Matching Bridesmaid Lehengas from India for a US Wedding",
-    description: "How to get consistent colors when ordering multiple lehengas from India — sizing for different bodies, bridesmaid prices per person, and group order logistics.",
+    description: "Plan written color references, size-specific measurements, approvals, group-order logistics, and allowances for handmade variation.",
     date: "June 2026",
   },
   {
     slug: "shipping-indian-wedding-outfits-usa-customs-duties",
     title: "Shipping Wedding Outfits from India to USA: Customs, Duties & Delivery Timeline",
-    description: "How much are US customs duties on Indian wedding lehengas? How long does shipping take? Everything NRI families need to know about delivery from India.",
+    description: "Plan classification, declared value, duties, carrier charges, customs review, tracking, and delivery estimates for an India-to-USA shipment.",
     date: "June 2026",
   },
   {
     slug: "when-to-order-indian-wedding-outfits-nri-bride",
-    title: "When to Order Indian Wedding Outfits from India: NRI Timeline (So Nothing Arrives Late)",
-    description: "Month-by-month timeline for NRI brides — minimum lead times for each outfit type, what to do if you are behind schedule, and backup plans.",
+    title: "When to Order Indian Wedding Outfits from India: NRI Planning Timeline",
+    description: "Work backward from the first local fitting and event date while allowing for vendor estimates, approvals, production, shipping, customs, alterations, and backup options.",
     date: "June 2026",
   },
   {
@@ -114,12 +114,6 @@ const posts = [
     title: "Bridal Lehenga Sourcing Scenario for New Jersey Brides",
     description: "An explicitly illustrative planning scenario for comparing an India-sourced bridal lehenga with New Jersey boutique options.",
     date: "June 2026",
-  },
-  {
-    slug: "south-indian-christian-wedding-outfit-guide",
-    title: "South Indian Christian Wedding Outfit Guide: What Every Family Member Wears",
-    description: "Complete outfit guide for South Indian Christian weddings — Kerala Christian, Tamil Christian, bride, bridesmaids, and family. For NRI families in the USA sourcing from India.",
-    date: "March 2026",
   },
   {
     slug: "nri-wedding-planning-timeline",
@@ -130,13 +124,13 @@ const posts = [
   {
     slug: "how-to-buy-bridal-lehenga-from-india-usa",
     title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
-    description: "Step-by-step guide for NRI brides — from finding a trustworthy sourcing partner to getting your lehenga through customs and to your doorstep.",
+    description: "A documented process for vendor review, item approval, measurements, complete written costs, shipping, customs, and local alterations.",
     date: "March 2026",
   },
   {
     slug: "gujarati-wedding-outfit-guide",
     title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
-    description: "Complete outfit guide for Gujarati weddings — Garba, Pithi, Mehndi, Mameru, Saptapadi, and Reception. For NRI Gujarati brides and families in the USA.",
+    description: "A practical ceremony-by-ceremony wardrobe guide for Gujarati brides, grooms, and families, with family-specific traditions and preferences confirmed before sourcing.",
     date: "March 2026",
   },
   {
