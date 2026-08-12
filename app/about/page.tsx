@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   path: "/about/",
   title: "About CeremonyVerse — Indian Destination Wedding Planning",
   description: "Meet Mini, founder of CeremonyVerse, and learn how firsthand destination-wedding experience and a Mexico City planning team support Gujarati and Hindu celebrations.",
-  keywords: "About CeremonyVerse, Gujarati destination wedding planning, Hindu wedding planning Mexico Jamaica Punta Cana, India wedding sourcing",
+  keywords: "About CeremonyVerse, Mini CeremonyVerse founder, Gujarati destination wedding planning, Hindu wedding planning Mexico Jamaica Punta Cana, India wedding sourcing",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "About", url: "/about/" }])
