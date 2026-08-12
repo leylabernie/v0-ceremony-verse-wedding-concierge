@@ -8,7 +8,7 @@ import {
   buildMetadata,
   buildServiceSchema,
 } from "@/lib/seo";
-import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages";
+import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages";
 import {
   destinationFeasibilityCredit,
   destinationFeasibilityPlan,
@@ -16,7 +16,7 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
-  title: "Gujarati & Hindu Destination Wedding Planning",
+  title: "Indian Destination Wedding Planner Mexico",
   description:
     "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico and in Punta Cana.",
   keywords:
@@ -35,6 +35,13 @@ const serviceSchema = buildServiceSchema({
       price: destinationFeasibilityPlan.price,
       description: destinationFeasibilityPlan.description,
     },
+    ...mexicoPackages
+      .filter((tier) => typeof tier.numericPrice === "number")
+      .map((tier) => ({
+        name: tier.name,
+        price: tier.numericPrice as number,
+        description: tier.description,
+      })),
   ],
 });
 
@@ -46,12 +53,12 @@ const faqItems = [
   {
     question: "What can the destination-wedding service include?",
     answer:
-      "Depending on the selected scope, CeremonyVerse can provide full planning, partial planning, final coordination, on-site management, family communication, guest logistics, welcome details, and optional India sourcing. The private proposal identifies exactly what is included.",
+      "Depending on the selected scope, CeremonyVerse can provide full planning, partial planning, event coordination, on-site management, family communication, guest logistics, welcome details, and optional India sourcing. The final written proposal identifies exactly what is included.",
   },
   {
     question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "The Destination Wedding Feasibility & Action Plan is $300. Full planning, partial planning, final coordination, and family-support pricing remains private because the correct scope depends on dates, venue status, event count, guest count, logistics, and the help required. The private proposal identifies selected services, exclusions, fees, and third-party costs before paid work begins.",
+      "The Destination Wedding Feasibility & Action Plan is $300. Starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.",
   },
   {
     question: "Can you help us compare resorts across Mexico and Punta Cana?",
@@ -99,7 +106,7 @@ const howToSchema = buildHowToSchema({
     },
     {
       name: "Choose the right planning package",
-      text: "Compare Full Planning & Design, Partial Planning & Coordination, and Day-of Coordination & Management against what has already been booked and what still needs an owner.",
+      text: "Compare Full Planning & Design, Partial Planning & Coordination, and Event Coordination & Management against what has already been booked and what still needs an owner.",
     },
     {
       name: "Choose any additional family support",
@@ -140,7 +147,7 @@ export default function MexicoCoordinationPage() {
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Destination-wedding planning built around your family
+            Indian destination wedding planning for Mexico and Punta Cana
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
             CeremonyVerse offers planning, on-site coordination, family support, guest organization, and optional India
@@ -187,12 +194,12 @@ export default function MexicoCoordinationPage() {
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-[#4d403a]">
             <p>
-              Before planning begins, CeremonyVerse organizes the facts that affect the private scope: what the budget
+              Before planning begins, CeremonyVerse organizes the facts that affect the written scope: what the budget
               covers, how many guests are traveling, which events matter most, which resort terms apply, and what still
               needs a clear owner, approver, deadline, or written answer.
             </p>
             <p>
-              The private proposal identifies the selected planning, on-site, family-support, guest, and India-sourcing
+              The proposal identifies the selected planning, on-site, family-support, guest, and India-sourcing
               services, along with exclusions, fees, payment terms, and outside costs. Public family-experience facts
               remain documented separately on the About page and are not presented as CeremonyVerse client projects.
             </p>
@@ -213,7 +220,7 @@ export default function MexicoCoordinationPage() {
               Five ways to support your destination wedding
             </h2>
             <p className="mt-5 leading-relaxed text-[#4d403a]">
-              Start with the published $300 feasibility plan, then compare the private-proposal planning and family-support scopes.
+              Start with the published $300 feasibility plan, then compare the public starting fees and wedding-specific planning scopes.
             </p>
           </div>
 
@@ -242,6 +249,7 @@ export default function MexicoCoordinationPage() {
               <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
                 <h3 className="cv-package-title mt-3 text-[#1f1f1f]">{tier.name}</h3>
+                {tier.priceLabel && <p className="mt-4 font-serif text-4xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
                 <p className="mt-1 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
                 <p className="mt-5 leading-relaxed text-[#4d403a]">{tier.description}</p>
                 <h4 className="mb-3 mt-6 font-serif text-xl font-semibold text-[#1f1f1f]">Included</h4>
@@ -263,8 +271,7 @@ export default function MexicoCoordinationPage() {
             ))}
           </div>
           <p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-relaxed text-[#655a54]">
-            The private proposal identifies CeremonyVerse&apos;s bundled service, outside costs, payment milestones,
-            and who is responsible for each decision. Nothing is booked or charged without written approval.
+            {destinationPackagePricingNote}
           </p>
         </div>
       </section>
@@ -300,7 +307,13 @@ export default function MexicoCoordinationPage() {
               </p>
             </article>
           </div>
-          <div className="mt-8 text-center">
+          <div className="mt-8 flex flex-col justify-center gap-3 text-center sm:flex-row">
+            <Link
+              href="/destinations/"
+              className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3 font-medium text-white"
+            >
+              Compare Destination Guides →
+            </Link>
             <Link
               href="/indian-destination-wedding-planner-mexico/"
               className="inline-flex rounded-full bg-[#1f1f1f] px-7 py-3 font-medium text-white"
@@ -399,7 +412,7 @@ export default function MexicoCoordinationPage() {
             Start with your dates, guest count, location ideas, and budget.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            The free consultation confirms whether the $300 written feasibility plan or a private planning scope is the
+            The free consultation confirms whether the $300 written feasibility plan or a published starting package with a wedding-specific scope is the
             right next step. Any feasibility conclusion depends on the couple&apos;s current figures and written information.
           </p>
           <Link

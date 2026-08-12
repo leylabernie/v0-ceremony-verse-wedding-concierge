@@ -11,7 +11,7 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Planner in Mexico",
+  title: "Indian Destination Wedding Mexico: Cancún vs Riviera Maya",
   description:
     "Family-side planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, room blocks, complete budgets, cultural needs, and guest logistics.",
   keywords:
@@ -208,6 +208,7 @@ export default function MexicoDestinationGuidePage() {
                 <li>• Verify event-space capacity using your layouts, stage, dance floor, and production—not a cocktail maximum.</li>
                 <li>• Review urban noise, property density, guest movement, and weather backups.</li>
               </ul>
+              <Link href="/destinations/cancun-indian-wedding/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Open the complete Cancún Indian wedding guide</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Riviera Maya</p>
@@ -218,6 +219,7 @@ export default function MexicoDestinationGuidePage() {
                 <li>• Check rain, wind, heat, insects, beach access, sound limits, and indoor backups.</li>
                 <li>• Confirm whether the chosen property—not just its brand—supports the full event plan.</li>
               </ul>
+              <Link href="/destinations/riviera-maya-indian-wedding/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Open the complete Riviera Maya Indian wedding guide</Link>
             </article>
           </div>
         </div>
@@ -241,9 +243,10 @@ export default function MexicoDestinationGuidePage() {
                 and they rarely represent the entire wedding spend. Normalize every proposal with the same guest
                 count, room nights, event hours, inclusions, taxes, and service charges.
               </p>
-              <Link href="/planning-tools/budget/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
-                Open the Budget Calculator
-              </Link>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+                <Link href="/planning-tools/budget/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open the Budget Calculator</Link>
+                <Link href="/indian-destination-wedding-cost/" className="inline-flex justify-center rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]">Read the Complete-Cost Guide</Link>
+              </div>
             </div>
             <div className="overflow-hidden rounded-2xl border border-[#e6dfd5]">
               {budgetRows.map(([category, detail], index) => (

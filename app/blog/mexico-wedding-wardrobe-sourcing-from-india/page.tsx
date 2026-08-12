@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
   keywords:
     "Mexico Indian wedding outfits, India wedding wardrobe sourcing, destination wedding outfit planning, Indian wedding outfits Mexico",
   publishedTime: "2026-07-14T10:00:00-05:00",
-  modifiedTime: "2026-08-08T21:00:00-04:00",
+  modifiedTime: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -26,7 +26,7 @@ const blogPostingSchema = buildBlogPosting({
   url: "/blog/mexico-wedding-wardrobe-sourcing-from-india/",
   image: "/images/sourcing/couple-portrait.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
-  dateModified: "2026-08-08T21:00:00-04:00",
+  dateModified: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   keywords: ["Mexico Indian wedding", "India wedding wardrobe sourcing", "destination wedding outfits", "Indian wedding outfits"],
 });
@@ -71,7 +71,7 @@ export default function BlogPost() {
           A practical framework for coordinating a multi-event Indian wedding wardrobe across India, the United
           States, and a destination in Mexico.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 8, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
 
         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl">
           <Image
@@ -104,6 +104,9 @@ export default function BlogPost() {
             events. Before shopping, organize the event list, wearer list, preferred colors, modesty needs,
             measurements, working budget, and order-by dates. This keeps one purchase from quietly conflicting with
             another.
+          </p>
+          <p>
+            The dedicated <Link href="/lehenga-for-destination-wedding-mexico/" className="font-semibold text-[#7a6841] underline">lehenga for a Mexico destination wedding guide</Link> connects fabric, movement, measurements, delivery, fitting, and packing decisions to the actual event plan.
           </p>
 
           <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">Review what is actually available</h2>
@@ -159,10 +162,10 @@ export default function BlogPost() {
               Request a Private Proposal
             </Link>
             <Link
-              href="/indian-wedding-coordination-mexico/"
+              href="/destinations/"
               className="rounded-full border border-[#7a6841] px-7 py-3 font-semibold text-white"
             >
-              Review Destination Planning
+              Compare Destination Guides
             </Link>
           </div>
         </div>

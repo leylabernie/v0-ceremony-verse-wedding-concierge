@@ -519,7 +519,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-sherwani-from-india-usa/"
+                  href="/buy-sherwani-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to Buy a Sherwani from India — complete guide with prices

@@ -12,6 +12,7 @@
 
 import type { Metadata } from "next";
 import React from "react";
+import { mexicoPackages } from "@/lib/mexico-packages";
 
 export const SITE_URL = "https://www.ceremonyverse.com";
 export const SITE_NAME = "CeremonyVerse";
@@ -366,7 +367,7 @@ export function buildLocalBusinessSchema(): object {
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Wedding Sourcing & Family Concierge Services",
+      name: "Wedding Shopping and Destination Planning Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -401,6 +402,18 @@ export function buildLocalBusinessSchema(): object {
           price: "2499",
           priceCurrency: "USD",
         },
+        ...mexicoPackages
+          .filter((service) => service.numericPrice !== undefined)
+          .map((service) => ({
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: service.name,
+              description: service.description,
+            },
+            price: String(service.numericPrice),
+            priceCurrency: "USD",
+          })),
       ],
     },
   };
@@ -420,7 +433,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana. Private proposals define the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana. Starting fees are published for three planning packages; the final written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
@@ -444,7 +457,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Destination-planning pricing is shared only through a private proposal after consultation. A free 30-minute consultation is available.",
+          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Destination-planning packages start at $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. A free 30-minute consultation is available.",
         },
       },
       {

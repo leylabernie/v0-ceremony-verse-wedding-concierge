@@ -74,12 +74,6 @@ const posts = [
     date: "June 2026",
   },
   {
-    slug: "how-to-buy-sherwani-from-india-usa",
-    title: "How to Buy a Sherwani from India for a US Wedding: Quote & Sizing Guide",
-    description: "Document the item, measurements, vendor evidence, written quote, shipping responsibilities, customs estimate, and local fitting plan.",
-    date: "June 2026",
-  },
-  {
     slug: "indian-wedding-outfit-checklist-every-ceremony",
     title: "Indian Wedding Outfit Checklist for NRI Families: Who Needs What",
     description: "Build a ceremony-by-ceremony list for the couple, parents, wedding party, and family without assuming one outfit count or universal budget.",
@@ -122,12 +116,6 @@ const posts = [
     date: "March 2026",
   },
   {
-    slug: "how-to-buy-bridal-lehenga-from-india-usa",
-    title: "How to Buy a Bridal Lehenga from India When You Live in the USA",
-    description: "A documented process for vendor review, item approval, measurements, complete written costs, shipping, customs, and local alterations.",
-    date: "March 2026",
-  },
-  {
     slug: "gujarati-wedding-outfit-guide",
     title: "Gujarati Wedding Outfit Guide: What to Wear for Every Ceremony",
     description: "A practical ceremony-by-ceremony wardrobe guide for Gujarati brides, grooms, and families, with family-specific traditions and preferences confirmed before sourcing.",
@@ -146,6 +134,26 @@ const posts = [
     date: "March 2026",
   },
 ];
+
+const destinationPostSlugs = new Set([
+  "how-to-plan-gujarati-hindu-destination-wedding-mexico",
+  "mexico-or-punta-cana-indian-destination-wedding",
+])
+
+const postGroups = [
+  {
+    id: "destination-planning-guides",
+    label: "Destination planning",
+    description: "Mexico, Punta Cana, Gujarati and Hindu planning, room blocks, budgets, and family responsibilities.",
+    posts: posts.filter((post) => destinationPostSlugs.has(post.slug)),
+  },
+  {
+    id: "india-shopping-guides",
+    label: "India shopping",
+    description: "Outfits, measurements, vendor evidence, shipping, customs, fit, jewelry, gifts, and group coordination.",
+    posts: posts.filter((post) => !destinationPostSlugs.has(post.slug)),
+  },
+]
 
 export default function BlogIndexPage() {
   return (
@@ -170,10 +178,23 @@ export default function BlogIndexPage() {
         </div>
       </div>
 
+      <div style={{ maxWidth: "960px", margin: "0 auto", padding: "2rem 1.5rem 0" }}>
+        <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="#destination-planning-guides" style={{ border: "1px solid #7a6841", borderRadius: "999px", padding: "10px 18px", color: "#7a6841", fontWeight: 600, textDecoration: "none" }}>Destination planning guides</a>
+          <a href="#india-shopping-guides" style={{ border: "1px solid #7a6841", borderRadius: "999px", padding: "10px 18px", color: "#7a6841", fontWeight: 600, textDecoration: "none" }}>India shopping guides</a>
+          <Link href="/destinations/" style={{ background: "#7a6841", borderRadius: "999px", padding: "10px 18px", color: "#fff", fontWeight: 600, textDecoration: "none" }}>Compare destinations</Link>
+        </div>
+      </div>
+
       {/* Posts */}
       <div style={{ maxWidth: "760px", margin: "0 auto", padding: "3rem 1.5rem 2rem" }}>
-        <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-          {posts.map((post) => (
+        {postGroups.map((group) => (
+          <section key={group.id} id={group.id} style={{ marginBottom: "4rem", scrollMarginTop: "7rem" }}>
+            <p style={{ color: "#7a6841", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "0.5rem" }}>Guide cluster</p>
+            <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "2.2rem", fontWeight: 600, color: "#2f2f2f", marginBottom: "0.5rem" }}>{group.label}</h2>
+            <p style={{ color: "#4d403a", lineHeight: 1.7, marginBottom: "2rem" }}>{group.description}</p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
+          {group.posts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
@@ -183,9 +204,9 @@ export default function BlogIndexPage() {
                 <p style={{ fontSize: "0.95rem", color: "#7a6841", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "0.75rem" }}>
                   {post.date}
                 </p>
-                <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#2f2f2f", lineHeight: 1.3, marginBottom: "0.75rem" }}>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.5rem", fontWeight: 600, color: "#2f2f2f", lineHeight: 1.3, marginBottom: "0.75rem" }}>
                   {post.title}
-                </h2>
+                </h3>
                 <p style={{ fontSize: "0.95rem", color: "#4d403a", lineHeight: 1.7, marginBottom: "1rem" }}>
                   {post.description}
                 </p>
@@ -195,8 +216,10 @@ export default function BlogIndexPage() {
               </div>
             </Link>
           ))}
+            </div>
+          </section>
+        ))}
         </div>
-      </div>
 
       {/* CONVERSION CTA — after every 5 posts and at bottom */}
       {posts.length > 5 && (

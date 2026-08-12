@@ -18,11 +18,7 @@ interface ImageEntry {
 const entries: ImageEntry[] = [
   {
     url: `${baseUrl}/`,
-    images: [
-      '/images/hero-lehenga.webp',
-      '/images/live-video-shopping-india.webp',
-      '/images/services-hero.webp',
-    ],
+    images: ['/images/sourcing/couple-mandap.webp'],
   },
   {
     url: `${baseUrl}/services/`,
@@ -35,6 +31,17 @@ const entries: ImageEntry[] = [
   {
     url: `${baseUrl}/how-it-works/`,
     images: ['/images/live-video-shopping-india.webp'],
+  },
+  {
+    url: `${baseUrl}/lehenga-for-destination-wedding-mexico/`,
+    images: ['/images/sourcing/bride-traditional.webp'],
+  },
+  {
+    url: `${baseUrl}/blog/mexico-wedding-wardrobe-sourcing-from-india/`,
+    images: [
+      '/images/sourcing/couple-portrait.webp',
+      '/images/sourcing/bride-traditional.webp',
+    ],
   },
 ]
 

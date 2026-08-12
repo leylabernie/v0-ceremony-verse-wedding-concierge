@@ -522,7 +522,7 @@ export default function KanchipuramSilkGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-bridal-lehenga-from-india-usa/"
+                  href="/how-to-buy-bridal-lehenga-from-india-to-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to buy a bridal lehenga from India when you live in the

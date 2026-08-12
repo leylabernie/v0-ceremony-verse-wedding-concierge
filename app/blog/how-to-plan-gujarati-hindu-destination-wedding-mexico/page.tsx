@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
     "Mexico Indian wedding planner",
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
-  modifiedTime: "2026-08-10T12:00:00-04:00",
+  modifiedTime: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -28,7 +28,7 @@ const blogPostingSchema = buildBlogPosting({
   description,
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
-  dateModified: "2026-08-10T12:00:00-04:00",
+  dateModified: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   keywords: ["Gujarati destination wedding Mexico", "Hindu wedding Mexico", "Indian wedding planning Mexico"],
 });
@@ -78,7 +78,7 @@ export default function BlogPost() {
           A destination wedding becomes manageable when the family&apos;s cultural decisions, the resort&apos;s written
           terms, and each planner&apos;s responsibilities are organized in one working plan.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Published August 10, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
@@ -119,8 +119,7 @@ export default function BlogPost() {
           </p>
           <p>
             Use the free <Link href="/planning-tools/budget/" className="font-semibold text-[#7a6841] underline">destination-wedding budget calculator</Link> to
-            separate known quotes from estimates. Do not assume that a particular guest count or resort is possible
-            within a target budget until the important categories have current numbers.
+            separate known quotes from estimates, then review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline">complete-cost framework</Link>. Do not assume that a particular guest count or resort is possible within a target budget until the important categories have current numbers.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">3. Check guest travel documents before signing the room block</h2>
@@ -157,6 +156,9 @@ export default function BlogPost() {
             Treat published packages as a starting point. Inclusions, menus, venues, taxes, fees, promotions, and
             availability may change until confirmed in the current written proposal and paid under its terms.
           </p>
+          <p>
+            Use the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún Indian wedding guide</Link> and <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya Indian wedding guide</Link> to compare the location-specific questions. If the family is also considering the Dominican Republic, review the <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana Indian wedding guide</Link> using the same assumptions.
+          </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">5. Build one event-by-event operating plan</h2>
           <p>
@@ -165,7 +167,7 @@ export default function BlogPost() {
             final approval date. Add setup and breakdown time rather than planning only the guest-facing hours.
           </p>
           <p>
-            A <Link href="/planning-tools/family-responsibility-map/" className="font-semibold text-[#7a6841] underline">family responsibility map</Link> prevents well-meaning relatives from giving conflicting instructions. It also makes clear who can approve a change when the couple is unavailable.
+            A <Link href="/planning-tools/family-responsibility-map/" className="font-semibold text-[#7a6841] underline">family responsibility map</Link> prevents well-meaning relatives from giving conflicting instructions. The <Link href="/indian-wedding-room-block-mexico/" className="font-semibold text-[#7a6841] underline">Mexico room-block guide</Link> separately identifies booking, deposit, attrition, concession, and provider questions.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">6. Separate remote planning from Mexico execution</h2>

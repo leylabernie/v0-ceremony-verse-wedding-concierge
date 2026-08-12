@@ -43,6 +43,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/destinations/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/destinations/cancun-indian-wedding/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/destinations/riviera-maya-indian-wedding/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/destinations/punta-cana-indian-wedding/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/indian-destination-wedding-cost/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/indian-wedding-room-block-mexico/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/lehenga-for-destination-wedding-mexico/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/about/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -386,12 +428,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/how-to-buy-sherwani-from-india-usa/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
       url: `${baseUrl}/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/`,
       lastModified: now,
       changeFrequency: 'monthly',
@@ -418,12 +454,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ─── MEDIUM: Supporting blog posts ───
     {
       url: `${baseUrl}/blog/nri-wedding-planning-timeline/`,
-      lastModified: now,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/blog/how-to-buy-bridal-lehenga-from-india-usa/`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.6,

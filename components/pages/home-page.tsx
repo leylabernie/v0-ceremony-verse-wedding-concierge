@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { SourcingTierGuide } from "@/components/sourcing-tier-guide"
-import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
+import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
 const serviceGroups = [
@@ -49,18 +49,22 @@ const calculatorTools = [
   },
 ]
 
-const localServiceAreas = [
-  { label: "All Canada", href: "/indian-wedding-shopping-canada/" },
-  { label: "Philadelphia", href: "/indian-wedding-shopping-philadelphia/" },
-  { label: "Washington DC & DMV", href: "/indian-wedding-shopping-washington-dc/" },
-  { label: "New York", href: "/indian-wedding-shopping-new-york/" },
-  { label: "New Jersey", href: "/indian-wedding-shopping-new-jersey/" },
-  { label: "Massachusetts", href: "/indian-wedding-shopping-massachusetts/" },
-  { label: "Georgia", href: "/indian-wedding-shopping-georgia/" },
-  { label: "Florida", href: "/indian-wedding-shopping-florida/" },
-  { label: "California", href: "/indian-wedding-shopping-california/" },
-  { label: "Texas", href: "/indian-wedding-shopping-texas/" },
-  { label: "Illinois", href: "/indian-wedding-shopping-illinois/" },
+const destinationHighlights = [
+  {
+    name: "Cancún",
+    href: "/destinations/cancun-indian-wedding/",
+    description: "Compare airport access, resort areas, multi-event spaces, food, room blocks, vendor rules, and weather backup.",
+  },
+  {
+    name: "Riviera Maya",
+    href: "/destinations/riviera-maya-indian-wedding/",
+    description: "Compare airport choice, transfer distance, resort layout, guest mobility, venue variety, production, and complete cost.",
+  },
+  {
+    name: "Punta Cana",
+    href: "/destinations/punta-cana-indian-wedding/",
+    description: "Compare PUJ access, guest-entry steps, resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
+  },
 ]
 
 const servicePillars = [
@@ -184,8 +188,8 @@ export function HomePage() {
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
       <section className="relative min-h-[680px] overflow-hidden">
         <Image
-          src="/images/hero-lehenga.webp"
-          alt="Red bridal lehenga illustrating Indian wedding outfit sourcing"
+          src="/images/sourcing/couple-mandap.webp"
+          alt="Indian wedding couple beneath a Mandap illustrating destination wedding planning"
           fill
           priority
           fetchPriority="high"
@@ -199,12 +203,12 @@ export function HomePage() {
               Serving families across the United States &amp; Canada
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Destination-wedding support for Gujarati and Hindu families
+              Indian destination wedding planning for U.S. and Canadian families
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana, with
-              planning, on-site coordination, family organization, guest details, and optional India sourcing for
-              families anywhere in the United States or Canada.
+              Plan a Gujarati or Hindu celebration across Mexico or in Punta Cana with one family-facing coordinator,
+              contracted local planning and on-site execution, guest-information organization, practical calculators,
+              and optional India sourcing.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -233,6 +237,26 @@ export function HomePage() {
           <p>Live video review where available</p>
           <p>Itemized written quotes</p>
           <p>Private scope defined before paid work</p>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Start with the destination</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Compare the location through the complete wedding plan</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">Each destination guide covers guest access, room blocks, multi-event feasibility, cultural needs, food, production, weather backup, complete cost, and who handles each responsibility.</p>
+          </div>
+          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+            {destinationHighlights.map((destination) => (
+              <article key={destination.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8">
+                <h3 className="font-serif text-3xl font-semibold">Indian wedding in {destination.name}</h3>
+                <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{destination.description}</p>
+                <Link href={destination.href} className="mt-7 font-semibold text-[#7a6841] underline underline-offset-4">Plan an Indian destination wedding in {destination.name}</Link>
+              </article>
+            ))}
+          </div>
+          <div className="mt-8 text-center"><Link href="/destinations/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">Compare All Destinations</Link></div>
         </div>
       </section>
 
@@ -352,43 +376,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-10 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              North America service coverage
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Indian wedding shopping support across the U.S. and Canada
-            </h2>
-            <p className="text-lg leading-8 text-[#4d403a]">
-              CeremonyVerse works remotely with families in all 50 states, Washington, D.C., and every Canadian
-              province and territory. The links below provide local context; they do not limit service coverage.
-            </p>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
-            {localServiceAreas.map((area) => (
-              <Link
-                key={area.href}
-                href={area.href}
-                className="rounded-xl border border-[#e6dfd5] bg-[#faf8f5] px-5 py-4 text-center font-semibold text-[#4d403a] transition hover:border-[#7a6841] hover:text-[#7a6841]"
-              >
-                {area.label}
-              </Link>
-            ))}
-          </div>
-          <p className="mt-7 text-center text-sm text-[#5e4a40]">
-            Comparing bridal-lehenga options in the Tri-State area?{" "}
-            <Link
-              href="/indian-bridal-wear-new-york-new-jersey/"
-              className="font-semibold text-[#7a6841] underline underline-offset-4"
-            >
-              Read the NY &amp; NJ bridal-wear guide
-            </Link>
-          </p>
-        </div>
-      </section>
-
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 max-w-3xl">
@@ -425,8 +412,8 @@ export function HomePage() {
               Choose the planning and family support you need
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              Package details are public so you can compare the scope. Pricing stays private and is
-              shared only after we understand your dates, events, guest count, and priorities.
+              Package details and starting planning fees are public so you can compare the scope. Your final written
+              proposal reflects the destination, dates, events, guest count, staffing, travel, and requested additions.
             </p>
             <p className="mt-5 font-semibold text-[#7a6841]">{mexicoAvailabilityMessage}</p>
           </div>
@@ -456,6 +443,7 @@ export function HomePage() {
               <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
                 <h3 className="cv-package-title">{tier.name}</h3>
+                {tier.priceLabel && <p className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
                 <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
                 <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
                 <Link
@@ -467,6 +455,7 @@ export function HomePage() {
               </article>
             ))}
           </div>
+          <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
         </div>
       </section>
 

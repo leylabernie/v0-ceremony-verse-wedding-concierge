@@ -69,8 +69,8 @@ export default function TermsPage() {
           </p>
           <p style={{ marginTop: "1rem" }}>
             For destination weddings across Mexico and in Punta Cana, CeremonyVerse can offer full planning,
-            partial planning, day-of coordination, family communication, guest-information, arrival,
-            welcome-item, and India-sourcing support. The client&apos;s private written proposal identifies the
+            partial planning, event coordination, family communication, guest-information, arrival,
+            welcome-item, and India-sourcing support. The client&apos;s wedding-specific written proposal identifies the
             selected services, outside costs, exclusions, payment terms, and approval responsibilities.
           </p>
 
@@ -80,8 +80,10 @@ export default function TermsPage() {
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
             ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
-            Feasibility &amp; Action Plan is $300. Full, partial, final-coordination, and family-support
-            destination services use private proposals based on the selected scope. The initial 30-minute
+            Feasibility &amp; Action Plan is $300. Destination packages start at $8,000 for Full Planning &amp; Design,
+            $5,500 for Partial Planning &amp; Coordination, and $4,000 for Event Coordination &amp; Management.
+            The final written proposal reflects the selected destination, dates, events, guest count, travel,
+            staffing, complexity, additions, and family-support scope. The initial 30-minute
             consultation is free. The signed proposal or service agreement identifies when paid work begins and
             the cancellation, refund, and rescheduling rules that apply to that scope.
           </p>
@@ -115,7 +117,7 @@ export default function TermsPage() {
             CeremonyVerse.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            The private CeremonyVerse proposal states what the client pays CeremonyVerse, which outside
+            The final CeremonyVerse proposal states what the client pays CeremonyVerse, which outside
             costs are paid directly to another provider, the applicable milestones, and the cancellation
             and refund terms. CeremonyVerse does not sell flights or hotel rooms. Travel reservations and
             transfer bookings are completed with the applicable provider unless a signed agreement states
