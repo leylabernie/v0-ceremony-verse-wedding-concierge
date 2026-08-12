@@ -51,6 +51,21 @@ const experienceLessons = [
   },
 ];
 
+const originStoryPhotos = [
+  {
+    src: "/images/proof/prior-outfit-couple.webp",
+    alt: "Couple wearing coordinated custom wedding outfits from a project completed before CeremonyVerse launched",
+  },
+  {
+    src: "/images/proof/prior-outfit-wedding-party.webp",
+    alt: "Wedding party wearing coordinated Indian outfits from a pre-launch custom-outfit project",
+  },
+  {
+    src: "/images/proof/prior-outfit-groomsmen.webp",
+    alt: "Groom and groomsmen wearing coordinated Indian wedding outfits from a pre-launch project",
+  },
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
@@ -119,6 +134,23 @@ export default function AboutPage() {
               outfit sourcing—not destination-wedding planning.
             </p>
           </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {originStoryPhotos.map((photo) => (
+              <div key={photo.src} className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#f4eee4]">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-6 text-[#6a5b52]">
+            These photographs show prior custom-outfit sourcing and coordination completed before CeremonyVerse
+            launched. They do not represent a CeremonyVerse destination-planning engagement.
+          </p>
           <Link
             href="/buy-indian-wedding-outfits-from-india/"
             className="mt-8 inline-flex rounded-full border border-[#7a6841] px-7 py-3 font-semibold text-[#7a6841]"
@@ -130,14 +162,19 @@ export default function AboutPage() {
 
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image
-              src="/images/sourcing/couple-portrait.webp"
-              alt="Indian couple in coordinated wedding attire"
-              fill
-              sizes="(max-width: 1024px) 100vw, 45vw"
-              className="object-cover"
-            />
+          <div>
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/proof/family-wedding-mandap-couple.webp"
+                alt="Bride and groom beneath a floral mandap at a family wedding that helped shape CeremonyVerse"
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-3 text-xs leading-5 text-[#6a5b52]">
+              Family wedding experience that helped shape CeremonyVerse—not a CeremonyVerse client event.
+            </p>
           </div>
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">

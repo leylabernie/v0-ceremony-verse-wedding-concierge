@@ -193,13 +193,13 @@ export function HomePage() {
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
       <section className="relative min-h-[680px] overflow-hidden">
         <Image
-          src="/images/sourcing/couple-mandap.webp"
-          alt="Indian wedding couple beneath a Mandap illustrating destination wedding planning"
+          src="/images/proof/family-destination-baarat.webp"
+          alt="Baraat celebration at a family destination wedding in Mexico"
           fill
           priority
           fetchPriority="high"
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[62%_center]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-black/30" />
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
@@ -237,11 +237,17 @@ export function HomePage() {
       </section>
 
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-6">
-        <div className="mx-auto grid max-w-6xl gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
-          <p>USA &amp; Canada remote service</p>
-          <p>Live video review where available</p>
-          <p>Itemized written quotes</p>
-          <p>Private scope defined before paid work</p>
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-5 text-center text-xs leading-5 text-[#6a5b52]">
+            Featured: a family destination wedding in Mexico that helped shape CeremonyVerse—not a CeremonyVerse
+            client event.
+          </p>
+          <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
+            <p>USA &amp; Canada remote service</p>
+            <p>Live video review where available</p>
+            <p>Itemized written quotes</p>
+            <p>Private scope defined before paid work</p>
+          </div>
         </div>
       </section>
 
