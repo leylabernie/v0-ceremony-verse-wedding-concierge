@@ -66,11 +66,6 @@ const faqItems = [
       "Yes. CeremonyVerse compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
   },
   {
-    question: "Can the planner work with us virtually?",
-    answer:
-      "Yes. Remote meetings can cover proposal review, timelines, budgets, decisions, family coordination, and agreed guest information. The signed proposal separately identifies any site visits, local work, travel, staffing, and on-site execution. A separate virtual-only package is quoted only if the destination partner confirms that exact scope.",
-  },
-  {
     question: "Which wedding traditions are the current focus?",
     answer:
       "CeremonyVerse is initially focused on Gujarati and Hindu families. Ceremony details are defined with the couple, family, chosen officiants, and qualified professionals; CeremonyVerse does not replace religious or legal authorities.",

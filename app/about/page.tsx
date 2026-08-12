@@ -245,7 +245,7 @@ export default function AboutPage() {
                 responsibilities, fees, outside costs, approvals, payment handling, and exclusions before paid work.
               </p>
               <p>
-                Planning meetings, proposal reviews, decision tracking, and family coordination can happen remotely for families anywhere in the United States or Canada. The written proposal separately identifies any destination site visits, local work, and on-site execution. India-sourcing
+                Families can work with CeremonyVerse from anywhere in the United States or Canada. India-sourcing
                 shipment terms, tracking, customs responsibilities, and outside costs are confirmed for the exact
                 destination before an approved shipment proceeds.
               </p>

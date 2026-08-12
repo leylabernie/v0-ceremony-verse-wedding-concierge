@@ -536,7 +536,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
     weatherAndBackup:
       "Jamaica is in the Atlantic basin, whose official hurricane season runs June 1 through November 30. That season does not predict conditions for one wedding date. Contract the indoor backup, capacity, weather-decision deadline, authority, guest notice, production move, transport change, and any price effect for every important outdoor event.",
     familySupport:
-      "CeremonyVerse supports U.S. and Canadian families through remote planning meetings, the cultural brief, destination comparison, budget categories, decisions, guest-information organization, and optional India sourcing. The experienced Mexico City-based destination partner and any named Jamaica providers handle only the local planning and on-site work assigned in the written proposal. Resorts or appropriately licensed providers handle rooms, flights, transfers, and regulated travel services.",
+      "CeremonyVerse supports U.S. and Canadian families through the cultural brief, destination comparison, budget categories, decisions, guest-information organization, and optional India sourcing. The experienced Mexico City-based destination partner and any named Jamaica providers handle only the local planning and on-site work assigned in the written proposal. Resorts or appropriately licensed providers handle rooms, flights, transfers, and regulated travel services.",
     questions: [
       "Which airport and licensed-transfer instruction applies to this exact resort?",
       "Which events, hours, venues, menus, décor, flowers, sound, cake, beverages, seating, and coordinator services are included in the current package?",
@@ -557,11 +557,6 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
         question: "Which Jamaica resort publicly offers a South Asian wedding package?",
         answer:
           "Royalton Blue Waters publicly promotes Kohinoor South Asian wedding packages and a certified South Asian wedding planner. The current price, exact cultural permissions, menus, event spaces, vendor rules, and total scope must still be confirmed directly in writing.",
-      },
-      {
-        question: "Can CeremonyVerse plan a Jamaica wedding virtually?",
-        answer:
-          "Planning meetings, decision records, proposal review, family coordination, and guest-information work can be handled remotely for U.S. and Canadian families. Any Jamaica site work or on-site execution is included only when the signed proposal names the responsible partner, travel, staffing, dates, and scope.",
       },
       {
         question: "Does CeremonyVerse book Jamaica rooms or flights?",

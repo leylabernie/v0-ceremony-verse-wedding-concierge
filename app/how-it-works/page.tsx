@@ -171,11 +171,6 @@ const faqItems = [
       "No. Either service can be selected independently. A combined private proposal is used only when the family wants both destination-wedding support and India sourcing organized together.",
   },
   {
-    question: "Can the planning meetings be virtual?",
-    answer:
-      "Yes. CeremonyVerse can hold planning meetings, document reviews, decision tracking, family coordination, and agreed guest-information work remotely for U.S. and Canadian families. The signed proposal separately identifies who handles site visits, destination work, travel, staffing, and on-site execution.",
-  },
-  {
     question: "What should we prepare before the consultation?",
     answer:
       "Bring the preferred dates or timeframe, estimated guest and event counts, travel origins, what the total budget must include, resorts already considered, and any important Gujarati, Hindu, Jain-food, accessibility, or family requirements.",

@@ -112,10 +112,6 @@ const faqSections = [
         answer: "Current service coverage includes Mexico, Jamaica, and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
       },
       {
-        question: "Can destination planning happen virtually?",
-        answer: "Yes. CeremonyVerse can handle planning meetings, proposal review, decision tracking, timelines, family coordination, and agreed guest-information work remotely. The signed proposal separately defines any destination site work, travel, staffing, and on-site execution; a virtual-only package is not promised unless specifically quoted."
-      },
-      {
         question: "Who handles the wedding at the destination?",
         answer: "CeremonyVerse is the family-facing coordinator. The contracted local planning team handles the agreed destination planning and on-site execution. Resorts and appropriately licensed providers handle rooms, flights, transfers, or other regulated travel services. The signed scope identifies every responsibility."
       },

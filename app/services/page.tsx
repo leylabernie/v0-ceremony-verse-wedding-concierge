@@ -39,11 +39,6 @@ const faqItems = [
       "Yes. CeremonyVerse offers event coordination, partial planning, and full planning across Mexico, Jamaica, and Punta Cana. The Pricing page compares the published starting fees and scope, while the final written proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
   },
   {
-    question: "Can destination planning happen virtually?",
-    answer:
-      "Yes. Planning meetings, proposal review, decision tracking, timelines, family coordination, and agreed guest-information work can be handled remotely for U.S. and Canadian families. A separate virtual-only package is not promised; any site work or on-site execution is included only when the signed proposal names the responsible team, dates, travel, staffing, and scope.",
-  },
-  {
     question: "Are product and shipping costs included in the service fee?",
     answer:
       "No. The USD service fee covers the concierge work described in your tier. Product costs, international shipping, insurance, U.S. or Canadian customs charges, taxes, brokerage, and local alterations are quoted separately and require approval.",

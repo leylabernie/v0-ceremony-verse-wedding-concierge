@@ -83,7 +83,7 @@ const servicePillars = [
     description:
       "Plan a Gujarati or Hindu destination celebration anywhere in Mexico, Jamaica, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
-      "Remote planning meetings and decision records defined from the beginning",
+      "Planning support defined from the beginning",
       "Multi-day timelines and on-site event management",
       "Family and guest coordination included at the selected planning-package level",
     ],
