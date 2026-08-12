@@ -82,7 +82,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Full planning or vendor sourcing before handover",
       "Planner travel, lodging, added staffing, or services outside the signed proposal",
     ],
-    cta: "Check 2027 Availability",
+    cta: "Discuss Event Coordination",
     href: "/contact/?service=mexico",
     category: "Planning",
   },

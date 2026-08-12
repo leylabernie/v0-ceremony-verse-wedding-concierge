@@ -157,7 +157,7 @@ export default function BlogPost() {
             availability may change until confirmed in the current written proposal and paid under its terms.
           </p>
           <p>
-            Use the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún Indian wedding guide</Link> and <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya Indian wedding guide</Link> to compare the location-specific questions. If the family is also considering the Dominican Republic, review the <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana Indian wedding guide</Link> using the same assumptions.
+            Use the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún Indian wedding guide</Link>, <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya Indian wedding guide</Link>, and <Link href="/destinations/los-cabos-indian-wedding/" className="font-semibold text-[#7a6841] underline">Los Cabos Indian wedding guide</Link> to compare location-specific questions. If the family is also considering the Dominican Republic, review the <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana Indian wedding guide</Link> using the same assumptions.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">5. Build one event-by-event operating plan</h2>

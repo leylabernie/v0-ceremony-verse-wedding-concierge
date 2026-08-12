@@ -61,6 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/destinations/los-cabos-indian-wedding/`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/destinations/punta-cana-indian-wedding/`,
       lastModified: now,
       changeFrequency: 'monthly',

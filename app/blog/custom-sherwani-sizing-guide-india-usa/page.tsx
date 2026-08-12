@@ -573,10 +573,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Get the elite look of premium Indian designers without the
-              complete written local and remote quotes. Request a consultation
-              — we&apos;ll walk you through the 5 critical measurements, the
-              fabric choice for your wedding climate, and a transparent price
+              Compare a fully specified India-sourcing quote with written local
+              boutique options before choosing. Request a consultation — we&apos;ll
+              walk you through the 5 critical measurements, the fabric choice
+              for your wedding climate, and a transparent price
               breakdown.
             </p>
             <Link

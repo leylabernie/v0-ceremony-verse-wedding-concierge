@@ -23,6 +23,12 @@ const destinations = [
     bestWhen: "A specific resort setting and multi-event layout lead the decision.",
   },
   {
+    name: "Los Cabos",
+    href: "/destinations/los-cabos-indian-wedding/",
+    summary: "Compare SJD access, San José del Cabo, the Tourist Corridor and Cabo San Lucas, venue format, food, vendors, production, room blocks, and weather backups.",
+    bestWhen: "The guest map and a property-specific resort or private-venue plan lead the decision.",
+  },
+  {
     name: "Punta Cana",
     href: "/destinations/punta-cana-indian-wedding/",
     summary: "Compare PUJ access, entry steps, all-inclusive resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
@@ -34,7 +40,7 @@ const faqItems = [
   {
     question: "Which destinations does CeremonyVerse support?",
     answer:
-      "Current destination-wedding planning coverage includes Mexico and Punta Cana. Cancún and Riviera Maya have dedicated comparison pages because they are common family search paths, but CeremonyVerse is not limited to those two areas of Mexico. Availability and the selected local team are confirmed in writing.",
+      "Current destination-wedding planning coverage includes Mexico and Punta Cana. Cancún, Riviera Maya, and Los Cabos have dedicated comparison pages, but CeremonyVerse is not limited to those areas of Mexico. Availability and the selected local team are confirmed in writing.",
   },
   {
     question: "Is Mexico or Punta Cana cheaper for an Indian wedding?",
@@ -87,10 +93,10 @@ export default function DestinationsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Start with the destination shortlist</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Three high-intent planning paths</h2>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Four high-intent planning paths</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">Each guide asks different location-specific questions while using the same decision standard. No page claims an exclusive resort relationship or guaranteed price.</p>
           </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {destinations.map((destination) => (
               <article key={destination.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8 sm:p-9">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Destination guide</p>

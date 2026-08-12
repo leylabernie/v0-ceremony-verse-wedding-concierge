@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 10, 2026
+            Last updated: August 11, 2026
           </p>
         </div>
       </div>
@@ -230,11 +230,12 @@ export default function TermsPage() {
           </h2>
           <p>
             All content on this website — including text, images, design, logos, and the
-            CeremonyVerse brand — is the property of CeremonyVerse and protected by US and
-            international copyright law. You may not reproduce, republish, or redistribute any
-            content from this site without written permission. Client wedding photographs shared
-            with us remain the property of the client; we use them on our website and marketing
-            materials only with explicit written consent via our intake questionnaire.
+            CeremonyVerse brand — is owned by CeremonyVerse or used with permission and is protected by
+            applicable copyright law. You may not reproduce, republish, or redistribute that content
+            without permission from the applicable rights holder. Reviews and wedding photographs remain
+            subject to the rights of their authors, photographers, clients, and depicted individuals.
+            CeremonyVerse uses them publicly only with separate written permission covering the intended
+            brand, channel, and use; the consultation intake questionnaire does not grant marketing consent.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

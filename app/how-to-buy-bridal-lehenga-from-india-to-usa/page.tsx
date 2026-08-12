@@ -82,7 +82,7 @@ const faqSchema = buildFaqSchema([
     question:
       "Will my bridal lehenga get stuck in US customs or face surprise import taxes?",
     answer:
-      "Commercial textile shipments may be assessed US duties based on HTS classification, fiber content, construction, declared value, and current tariff rules. Classify the shipment accurately, allow at least 14 days of buffer time, and use a logistics partner that tracks customs clearance. CeremonyVerse estimates these costs in advance and itemizes the amount actually assessed.",
+      "Commercial textile shipments may be assessed US duties based on HTS classification, fiber content, construction, declared value, and current tariff rules. Use accurate shipment details, obtain a route- and service-specific carrier estimate, preserve a meaningful fitting and alteration buffer, and confirm who tracks customs requests. Any landed-cost figure is an estimate; the government and carrier assessments control.",
   },
   {
     question: "Why use a personal wedding concierge instead of buying directly online?",
@@ -359,12 +359,14 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                   The Fix:{" "}
                 </span>
                 <span style={{ color: "#4d403a" }}>
-                  Require high-definition video inspection before the outfit
-                  leaves India. Do not release final payments until you have
-                  seen the fabric weight, stitching borders, and color accuracy
-                  in natural lighting. A reputable concierge will hold payment
-                  in escrow until you approve the final pre-shipping inspection
-                  video.
+                  Ask which current photos, video, measurements, and packing
+                  evidence the vendor can provide before shipping. Compare the
+                  visible details with the written approval record, and confirm
+                  payment milestones, dispute options, and available remedies
+                  before paying. Video cannot prove fabric composition, exact
+                  weight, screen color, workmanship, or fit, and no escrow
+                  arrangement should be assumed unless the signed payment terms
+                  expressly provide one.
                 </span>
               </p>
             </div>
@@ -412,12 +414,12 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
                   The Fix:{" "}
                 </span>
                 <span style={{ color: "#4d403a" }}>
-                  Classify your shipments accurately under textile codes.
-                  Factor in at least 14 days of buffer time for shipping, and
-                  ensure your logistics partner handles custom clearance
-                  tracking. Demand an itemized duty estimate before production
-                  begins — never accept a flat &quot;shipping included&quot;
-                  quote that hides the real customs cost.
+                  Use accurate fiber, construction, origin, value, and shipment
+                  details. Obtain a shipment-specific carrier estimate and leave
+                  enough time for production, carrier movement, customs, a local
+                  fitting, alterations, and a backup. Ask for shipping, insurance,
+                  estimated import charges, and carrier fees to be separated in
+                  writing; the final government and carrier assessments control.
                 </span>
               </p>
             </div>

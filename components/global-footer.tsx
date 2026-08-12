@@ -18,6 +18,7 @@ const destinationLinks = [
   { label: "Destination Overview", href: "/destinations/" },
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
+  { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
   { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },

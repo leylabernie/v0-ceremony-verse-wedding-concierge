@@ -55,6 +55,7 @@ const getServiceInterestFromLocation = () => {
   const requestedService = new URLSearchParams(window.location.search).get("service")
   const serviceByQuery: Record<string, string> = {
     india: "India shopping",
+    sourcing: "India shopping",
     mexico: "Destination wedding planning",
     feasibility: "Destination Wedding Feasibility & Action Plan ($300)",
     both: "India shopping + destination wedding planning",

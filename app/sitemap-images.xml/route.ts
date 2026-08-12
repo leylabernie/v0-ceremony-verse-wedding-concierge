@@ -37,6 +37,10 @@ const entries: ImageEntry[] = [
     images: ['/images/sourcing/bride-traditional.webp'],
   },
   {
+    url: `${baseUrl}/destinations/los-cabos-indian-wedding/`,
+    images: ['/images/sourcing/couple-mandap.webp'],
+  },
+  {
     url: `${baseUrl}/blog/mexico-wedding-wardrobe-sourcing-from-india/`,
     images: [
       '/images/sourcing/couple-portrait.webp',

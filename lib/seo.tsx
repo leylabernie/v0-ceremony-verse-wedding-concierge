@@ -511,7 +511,6 @@ export function buildOrganizationSchema(): object {
     "@type": "Organization",
     "@id": `${SITE_URL}#organization`,
     name: SITE_NAME,
-    legalName: "CeremonyVerse",
     url: SITE_URL,
     logo: `${SITE_URL}/icon.svg`,
     image: `${SITE_URL}/images/hero-lehenga.webp`,
@@ -524,7 +523,6 @@ export function buildOrganizationSchema(): object {
         email: SITE_EMAIL,
         contactType: "customer service",
         areaServed: ["United States", "Canada"],
-        availableLanguage: ["English", "Hindi", "Gujarati"],
       },
     ],
     address: {

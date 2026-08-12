@@ -61,6 +61,11 @@ const destinationHighlights = [
     description: "Compare airport choice, transfer distance, resort layout, guest mobility, venue variety, production, and complete cost.",
   },
   {
+    name: "Los Cabos",
+    href: "/destinations/los-cabos-indian-wedding/",
+    description: "Compare SJD access, regional location, venue format, guest movement, food, vendors, production, room blocks, and weather backup.",
+  },
+  {
     name: "Punta Cana",
     href: "/destinations/punta-cana-indian-wedding/",
     description: "Compare PUJ access, guest-entry steps, resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
@@ -76,14 +81,14 @@ const servicePillars = [
     features: [
       "Bride, groom, wedding-party, and family outfits",
       "Jewelry, gifts, welcome-bag items, and ceremony essentials",
-      "Measurements, written approvals, inspection, and shipping support",
+      "Measurements, written approvals, available pre-shipping review, and delivery support",
     ],
     href: "/buy-indian-wedding-outfits-from-india/",
     cta: "Explore India Shopping",
   },
   {
     label: "Destination wedding planning",
-    title: "Planning, on-site execution, and family support",
+    title: "Family coordination with local planning and execution",
     description:
       "Plan a Gujarati or Hindu destination celebration anywhere in Mexico or in Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
@@ -143,7 +148,7 @@ const pricingTiers = [
       "Everything in the Style Guide tier",
       "Two to four live video shopping sessions",
       "Selection, measurement, and order coordination",
-      "Pre-shipping quality review",
+      "Available pre-shipping review against approved references",
     ],
     featured: true,
   },
@@ -247,7 +252,7 @@ export function HomePage() {
             <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Compare the location through the complete wedding plan</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">Each destination guide covers guest access, room blocks, multi-event feasibility, cultural needs, food, production, weather backup, complete cost, and who handles each responsibility.</p>
           </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {destinationHighlights.map((destination) => (
               <article key={destination.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8">
                 <h3 className="font-serif text-3xl font-semibold">Indian wedding in {destination.name}</h3>
@@ -537,7 +542,7 @@ export function HomePage() {
                   <li>Curate and source requested wedding items</li>
                   <li>Coordinate shopping calls and approvals</li>
                   <li>Organize measurements and order details</li>
-                  <li>Support inspection, shipping, and tracking</li>
+                  <li>Coordinate available pre-shipping review, delivery, and tracking</li>
                   <li>Coordinate destination planning through the selected written scope</li>
                   <li>Organize agreed guest, arrival, and family details</li>
                 </ul>

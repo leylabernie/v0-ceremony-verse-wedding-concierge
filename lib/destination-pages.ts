@@ -19,7 +19,7 @@ export type DestinationPageData = {
   sources: { label: string; href: string; note: string }[]
 }
 
-export const destinationPages: Record<"cancun" | "rivieraMaya" | "puntaCana", DestinationPageData> = {
+export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "puntaCana", DestinationPageData> = {
   cancun: {
     slug: "/destinations/cancun-indian-wedding/",
     shortName: "Cancún",
@@ -283,6 +283,144 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "puntaCana", De
         label: "National Hurricane Center climatology",
         href: "https://www.nhc.noaa.gov/climo/",
         note: "Official Atlantic hurricane-season dates",
+      },
+    ],
+  },
+  losCabos: {
+    slug: "/destinations/los-cabos-indian-wedding/",
+    shortName: "Los Cabos",
+    title: "Indian destination wedding in Los Cabos",
+    eyebrow: "Los Cabos planning guide",
+    description:
+      "Plan an Indian destination wedding in Los Cabos with current airport, resort-area, venue, cultural, catering, room-block, production, and weather checks.",
+    answer:
+      "Los Cabos can fit a multi-day Indian destination wedding when the exact resort or venue, guest travel plan, food operation, cultural permissions, vendor team, production access, room block, and weather backups support the celebration. San José del Cabo, the Tourist Corridor, and Cabo San Lucas have different logistics, so compare the property and written scope—not only the destination name.",
+    idealFor: [
+      "Families whose guest map has practical current flight options into Los Cabos International Airport",
+      "Couples comparing luxury resort, all-inclusive, and private-venue formats",
+      "Multi-event weddings that can confirm enough distinct spaces and indoor backups",
+      "Guest groups prepared for property-specific transfers and movement across the region",
+    ],
+    compareBeforeChoosing: [
+      "SJD flight access and the exact airport-to-property transfer plan",
+      "San José del Cabo, Tourist Corridor, or Cabo San Lucas location and guest movement",
+      "Indian and Jain food capability, cultural permissions, outside-vendor rules, and production access",
+      "Room-block exposure, venue commitments, weather backups, staffing, travel, and complete host cost",
+    ],
+    facts: [
+      {
+        label: "Primary gateway",
+        value: "SJD",
+        detail: "Los Cabos International Airport serves the region; the exact transfer still depends on the selected property and arrival window.",
+      },
+      {
+        label: "Regional layout",
+        value: "Two towns + corridor",
+        detail: "San José del Cabo and Cabo San Lucas are linked by a resort corridor; they should not be treated as one identical location.",
+      },
+      {
+        label: "Planning variable",
+        value: "Venue format",
+        detail: "Resort, villa, restaurant, farm, and other private-venue plans can carry different room, transport, vendor, catering, and permit responsibilities.",
+      },
+      {
+        label: "Pricing rule",
+        value: "One complete scope",
+        detail: "Normalize resort, venue, food, production, vendors, planning, travel, taxes, service charges, and contingency before comparing.",
+      },
+    ],
+    eventRows: [
+      {
+        event: "Welcome, Mehndi, or Haldi",
+        verify: "Shade, wind, privacy, guest access, food stations, wash areas, music, transport, setup, and an indoor weather backup.",
+        risk: "Choosing an exposed beach or terrace from photos without checking comfort, access, service paths, sound, and a move plan.",
+      },
+      {
+        event: "Sangeet or Garba",
+        verify: "Stage, dance floor, audio, lighting, power, rigging, rehearsal, curfew, vendor access, guest transport, and indoor capacity.",
+        risk: "Relying on a headline venue capacity before production, tables, performance space, and service circulation are drawn.",
+      },
+      {
+        event: "Hindu ceremony and Baraat",
+        verify: "Approved route, gathering point, sound, vehicle or animal rules, ceremony fire, Mandap installation, priest requirements, wind plan, and backup.",
+        risk: "Assuming prior Indian weddings prove approval for the family's exact ceremony, procession, fire, or production plan.",
+      },
+      {
+        event: "Reception",
+        verify: "Seated layout, stage, catering, bar, sound, overtime, transport, vendor breakdown, weather decision, and late-night options.",
+        risk: "Comparing the venue fee without the complete food, production, vendor, transport, tax, service-charge, and staffing scope.",
+      },
+    ],
+    resortExamples: [
+      "Grand Velas Los Cabos",
+      "Hard Rock Hotel Los Cabos",
+      "Hyatt Ziva Los Cabos",
+      "Hilton Los Cabos Beach & Golf Resort",
+      "Marquis Los Cabos",
+      "One&Only Palmilla",
+      "Pueblo Bonito Pacifica Golf & Spa Resort",
+      "Nobu Hotel Los Cabos",
+    ],
+    arrival:
+      "Los Cabos Tourism and the airport operator identify Los Cabos International Airport as SJD. The region includes San José del Cabo, the Tourist Corridor, and Cabo San Lucas, so transfer time and routing depend on the exact property, traffic, arrival terminal, group size, luggage, and mobility needs. Confirm one approved airport and licensed-transfer process before guests book.",
+    foodAndCulture:
+      "Request current Indian, Gujarati, Jain, vegan, and allergy procedures for the selected property or caterer. Confirm who cooks each menu, tasting and kitchen rules, outside-food fees, religious items, ceremony fire, Mandap installation, Baraat permissions, sound, power, and vendor access. A venue's wedding marketing or prior South Asian event does not approve the family's exact plan.",
+    weatherAndBackup:
+      "Los Cabos is in the eastern North Pacific basin, where the official hurricane season runs May 15 through November 30. That season does not predict conditions for one date, and outdoor plans also need to consider wind, heat, sun, and property exposure. Contract the backup venue, capacity, move deadline, authority, guest notice, transport, design changes, and any added cost.",
+    familySupport:
+      "CeremonyVerse can organize the cultural brief, destination comparison, decision owners, budget categories, guest information, meeting follow-ups, and optional India sourcing. The contracted Los Cabos team handles the agreed local planning and on-site execution. The resort, venue, or appropriately licensed provider handles rooms, transfers, flights, and regulated travel services.",
+    questions: [
+      "Which airport and transfer instruction should guests use for this exact property?",
+      "Which event venues and indoor backups are guaranteed for every event?",
+      "What capacity remains after the Mandap, stage, dance floor, production, tables, bars, and service paths are drawn?",
+      "What Indian, Gujarati, Jain, allergy, outside-catering, kitchen, tasting, and late-night-food rules apply?",
+      "What is permitted for the Baraat, ceremony fire, Mandap, sound, rigging, power, setup, and breakdown?",
+      "How do room rates, minimum stays, deposits, attrition, concessions, cut-off dates, and event-access rules work?",
+      "Which venue, production, vendor, planner-travel, staffing, tax, service-charge, and transport costs are outside the headline package?",
+      "Who is physically present and authorized to solve venue, vendor, guest, transport, and weather problems?",
+    ],
+    faqs: [
+      {
+        question: "Is Los Cabos good for an Indian destination wedding?",
+        answer:
+          "It can be when a specific property and local team meet the event, food, cultural, guest-access, room, vendor, production, weather-backup, and complete-cost requirements. The destination's general wedding reputation does not prove fit for one family's plan.",
+      },
+      {
+        question: "Which airport should Los Cabos wedding guests use?",
+        answer:
+          "Los Cabos International Airport uses the code SJD and is the principal commercial gateway. Confirm current routes, the selected property's transfer plan, terminal instructions, and the responsible licensed provider before guests book.",
+      },
+      {
+        question: "Is Los Cabos more expensive than Cancún or Riviera Maya?",
+        answer:
+          "There is no responsible universal answer. Compare the same rooms, events, hours, venues, food, production, vendors, planning, travel, taxes, service charges, and contingency. Property type and wedding scope can matter more than the destination label.",
+      },
+      {
+        question: "Does CeremonyVerse cover Los Cabos?",
+        answer:
+          "Yes. Current destination-wedding service coverage includes Los Cabos and other areas of Mexico, plus Punta Cana. Availability, the selected local team, responsibilities, travel, and wedding-specific costs are confirmed in the written proposal.",
+      },
+    ],
+    sources: [
+      {
+        label: "Los Cabos Tourism — airports",
+        href: "https://www.visitloscabos.travel/plan/los-cabos-airports/",
+        note: "Official SJD airport and regional access overview",
+      },
+      {
+        label: "Los Cabos Tourism — useful information",
+        href: "https://www.visitloscabos.travel/plan/useful-information/",
+        note: "Official destination layout and travel information",
+      },
+      {
+        label: "Los Cabos Tourism — weddings",
+        href: "https://www.visitloscabos.travel/weddings/",
+        note: "Official wedding-destination overview",
+      },
+      {
+        label: "National Hurricane Center climatology",
+        href: "https://www.nhc.noaa.gov/climo/",
+        note: "Official eastern Pacific hurricane-season dates",
       },
     ],
   },

@@ -53,7 +53,7 @@ const faqItems = [
   {
     question: "What can the destination-wedding service include?",
     answer:
-      "Depending on the selected scope, CeremonyVerse can provide full planning, partial planning, event coordination, on-site management, family communication, guest logistics, welcome details, and optional India sourcing. The final written proposal identifies exactly what is included.",
+      "Depending on the selected scope, CeremonyVerse offers full planning, partial planning, or event coordination through one client-facing scope that assigns local planning and on-site execution to the contracted destination team. Family communication, guest logistics, welcome details, and optional India sourcing may also be included. The final written proposal identifies exactly who handles each responsibility.",
   },
   {
     question: "What do CeremonyVerse destination-wedding services cost?",

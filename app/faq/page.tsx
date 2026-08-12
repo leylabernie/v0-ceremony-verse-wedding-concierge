@@ -105,7 +105,7 @@ const faqSections = [
     items: [
       {
         question: "Where does CeremonyVerse plan destination weddings?",
-        answer: "Current service coverage includes Mexico and Punta Cana for families throughout the United States and Canada. Cancún and Riviera Maya are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
+        answer: "Current service coverage includes Mexico and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
       },
       {
         question: "Who handles the wedding at the destination?",

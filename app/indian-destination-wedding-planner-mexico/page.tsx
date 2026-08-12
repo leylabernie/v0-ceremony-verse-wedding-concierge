@@ -53,9 +53,9 @@ const faqItems = [
       "Usually not. Packages may cover a defined guest count, specific event hours, food and beverage, basic decor, or selected services. Additional guests, extra hours, private spaces, outside vendors, upgraded menus, production, taxes, service charges, travel, and other items may be separate. Read the current proposal and contract rather than relying on a headline price.",
   },
   {
-    question: "Does CeremonyVerse sell a fixed Indian destination wedding package for Mexico?",
+    question: "Are the published planning fees the complete wedding cost?",
     answer:
-      "No fixed CeremonyVerse package replaces the resort's current proposal or a wedding-specific written scope. CeremonyVerse helps families compare resort packages, room-block terms, event costs, planning responsibilities, and exclusions using the same assumptions before a decision is made.",
+      "No. CeremonyVerse publishes starting planning fees, but the complete wedding cost also depends on the resort, rooms, venues, events, food and beverage, vendors, production, travel, taxes, service charges, and other third-party costs. The wedding-specific written proposal and current provider documents define the final scope and amounts.",
   },
   {
     question: "What should we ask about Indian catering?",
@@ -349,7 +349,7 @@ export default function MexicoDestinationGuidePage() {
           <div className="mt-10 overflow-hidden rounded-2xl border border-[#e6dfd5]">
             {[
               ["CeremonyVerse", "Family-facing brief, cultural and sourcing requirements, proposal comparison, approvals, guest-information organization, communication oversight, and one central family contact within the written scope."],
-              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution under the partner's client agreement."],
+              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution as assigned in the signed wedding-specific scope."],
               ["Authorized travel provider or resort", "Room blocks, reservations, guest payments, travel documents, transfers, travel changes, and any travel-related commissions or regulated services."],
               ["Resort and contracted vendors", "Their stated spaces, products, staffing, food and beverage, production, delivery, pricing, policies, safety, and contract performance."],
               ["Couple and family", "Final decisions, accurate guest and ceremony information, approvals, payments, travel documents, insurance choices, and compliance with contract deadlines."],
