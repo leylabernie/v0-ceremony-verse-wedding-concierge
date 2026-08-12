@@ -87,9 +87,9 @@ export function ContactPage() {
     <main className="min-h-screen bg-[#f8f5ef]">
       <section className="bg-[#211d19] px-6 py-20 text-center text-white sm:py-28">
         <div className="mx-auto max-w-4xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.26em] !text-[#caa867]">Begin without pressure</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.26em] !text-[#caa867]">Begin with Mini</p>
           <h1 className="mx-auto mt-5 max-w-3xl font-serif text-5xl font-medium !text-white sm:text-7xl">Your first 30 minutes are free.</h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 !text-white/72">Tell us where you are in the process. We’ll use the call to understand your wedding, answer the most important questions, and explain the right next step—if there is one.</p>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 !text-white/72">Tell Mini where you are in the process. Your call will focus on understanding your wedding, answering the most important questions, and explaining the right next step—if there is one.</p>
           <div className="mx-auto mt-9 grid max-w-3xl gap-3 text-sm sm:grid-cols-3"><p className="!text-white/68">1 · Register below</p><p className="!text-white/68">2 · Request a time</p><p className="!text-white/68">3 · Complete the questionnaire</p></div>
         </div>
       </section>
