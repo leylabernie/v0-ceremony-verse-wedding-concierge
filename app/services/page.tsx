@@ -7,48 +7,22 @@ import {
   buildServiceSchema,
   JsonLd,
 } from "@/lib/seo"
-import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
+import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 
 export const metadata = buildMetadata({
   path: "/services/",
   title: "Indian Wedding Shopping & Destination Planning Services",
   description:
-    "CeremonyVerse offers India wedding shopping plus destination planning, family support, and on-site coordination across Mexico and in Punta Cana.",
+    "CeremonyVerse offers India wedding shopping plus destination planning, family support, and on-site coordination across Mexico, Jamaica, and Punta Cana.",
   keywords:
     "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planning, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, NRI wedding shopping",
 })
 
-const offers = [
-  {
-    name: "Style Guide & Vendor List",
-    price: 249,
-    description: "A curated starting point for families managing their own purchases.",
-  },
-  {
-    name: "Guided Sourcing",
-    price: 799,
-    description: "Live shopping, selection, measurement, order, and pre-shipping review support.",
-  },
-  {
-    name: "Full Bridal Concierge",
-    price: 2499,
-    description: "End-to-end shopping coordination for the couple and wedding party up to eight people.",
-  },
-  ...mexicoPackages
-    .filter((service) => service.numericPrice !== undefined)
-    .map((service) => ({
-      name: service.name,
-      price: service.numericPrice as number,
-      description: service.description,
-    })),
-]
-
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Shopping and Destination Planning",
   description:
-    "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico and Punta Cana.",
+    "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico, Jamaica, and Punta Cana.",
   url: "/services/",
-  offers,
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Services", url: "/services/" }])
@@ -62,7 +36,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan or coordinate weddings?",
     answer:
-      "Yes. Starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management across Mexico and Punta Cana. The final written proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+      "Yes. CeremonyVerse offers event coordination, partial planning, and full planning across Mexico, Jamaica, and Punta Cana. The Pricing page compares the published starting fees and scope, while the final written proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
   },
   {
     question: "Are product and shipping costs included in the service fee?",
@@ -135,14 +109,17 @@ export default function ServicesPage() {
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
             CeremonyVerse organizes India shopping for families throughout the United States and Canada and offers
-            destination planning and on-site coordination across Mexico and in Punta Cana. One written proposal defines the selected
+            destination planning and on-site coordination across Mexico, Jamaica, and Punta Cana. One written proposal defines the selected
             planning, family-support, guest, and optional India-sourcing services.
+          </p>
+          <p className="mx-auto mb-7 max-w-3xl text-sm leading-6 text-[#e8cf9d]">
+            Your first 30-minute consultation is free. No payment or contract is required for the call.
           </p>
           <Link
             href="/contact/"
             className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>
@@ -157,8 +134,9 @@ export default function ServicesPage() {
               Local planning and family support in one organized offering
             </h2>
             <p className="text-lg leading-8 text-white/75">
-              Compare the service details and starting fees publicly, then request a written CeremonyVerse proposal based
-              on your dates, events, guest count, location, and the support your family needs.
+              Review the available levels of help here, then compare all published package details and prices on the
+              Pricing page. Your written CeremonyVerse proposal is based on your dates, events, guest count, location,
+              and the support your family needs.
             </p>
             <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
@@ -167,9 +145,6 @@ export default function ServicesPage() {
               <article key={service.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{service.category}</p>
                 <h3 className="cv-package-title !text-[#f8f6f2]">{service.name}</h3>
-                {service.priceLabel ? (
-                  <p className="mb-3 font-serif text-2xl font-semibold !text-[#f8f6f2]">{service.priceLabel}</p>
-                ) : null}
                 <p className="mb-4 text-sm font-semibold !text-[#e8cf9d]">{service.timeline}</p>
                 <p className="mb-6 flex-1 leading-7 text-white/75">{service.description}</p>
                 <Link
@@ -181,15 +156,49 @@ export default function ServicesPage() {
               </article>
             ))}
           </div>
-          <p className="mt-8 text-sm leading-6 text-white/65">{destinationPackagePricingNote}</p>
-          <div className="mt-9 text-center">
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/pricing/#mexico-concierge"
+              className="inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold text-[#1f1f1f]"
+            >
+              Compare Planning Pricing
+            </Link>
             <Link
               href="/indian-wedding-coordination-mexico/"
-              className="inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold text-[#1f1f1f]"
+              className="inline-flex rounded-full border border-[#c5a059] px-7 py-3.5 text-sm font-semibold !text-[#f8f6f2]"
             >
               Explore Destination Planning
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Optional local additions</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Guest experiences and event logistics, quoted separately</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              When requested, the destination team can seek written third-party options for permitted fire performances,
+              water-drum entertainment, and golf-cart mobility or event logistics. These are additions—not free package inclusions.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              ["Fire performances", "Subject to venue approval, performer insurance, fire and safety rules, permits where required, weather, location, and a written production quote."],
+              ["Water-drum entertainment", "Subject to resort approval, performer availability, sound and staging rules, setup requirements, access, and a written quote."],
+              ["Golf-cart logistics", "Subject to resort rules, authorized operators, passenger capacity, routes, accessibility needs, insurance, timing, and a written transport or rental quote."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-[#d9cfbf] bg-white p-8">
+                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
+                <p className="mt-4 leading-7 text-[#4d403a]">{description}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mx-auto mt-7 max-w-4xl text-center text-sm leading-6 text-[#5e4a40]">
+            Availability is never guaranteed. The resort or venue, provider, insurer, and applicable authorities control
+            approval; the signed proposal identifies the responsible party, price, payment terms, cancellation rules, and backup.
+          </p>
         </div>
       </section>
 
@@ -285,10 +294,11 @@ export default function ServicesPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Not sure which tier fits?</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             Bring your ceremony list, location, deadline, party size, and budget. We&apos;ll tell you what is
-            realistic for India shopping, destination planning, or family-side support.
+            realistic for India shopping, destination planning, or family-side support during your free first
+            30-minute consultation. Any paid next step is quoted separately in writing.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

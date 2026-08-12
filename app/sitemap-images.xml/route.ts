@@ -18,7 +18,16 @@ interface ImageEntry {
 const entries: ImageEntry[] = [
   {
     url: `${baseUrl}/`,
-    images: ['/images/sourcing/couple-mandap.webp'],
+    images: ['/images/proof/family-destination-baarat.webp'],
+  },
+  {
+    url: `${baseUrl}/about/`,
+    images: [
+      '/images/proof/family-wedding-mandap-couple.webp',
+      '/images/proof/prior-outfit-couple.webp',
+      '/images/proof/prior-outfit-wedding-party.webp',
+      '/images/proof/prior-outfit-groomsmen.webp',
+    ],
   },
   {
     url: `${baseUrl}/services/`,

@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
   title: "Indian Destination Wedding Planner Mexico",
   description:
-    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico and in Punta Cana.",
+    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico, Jamaica, and Punta Cana.",
   keywords:
     "Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, destination wedding family support, India wedding sourcing",
 });
@@ -26,9 +26,9 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Gujarati and Hindu Destination Wedding Planning",
   description:
-    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
+    "Coordinated destination planning and on-site execution across Mexico, Jamaica, and Punta Cana, with family support and guest logistics included by package level plus optional India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
-  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
+  areaServed: ["Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,
@@ -58,10 +58,10 @@ const faqItems = [
   {
     question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "The Destination Wedding Feasibility & Action Plan is $300. Starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.",
+      `The Destination Wedding Feasibility & Action Plan is $300. ${destinationFeasibilityCredit} Starting fees are $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.`,
   },
   {
-    question: "Can you help us compare resorts across Mexico and Punta Cana?",
+    question: "Can you help us compare resorts across Mexico, Jamaica, and Punta Cana?",
     answer:
       "Yes. CeremonyVerse compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
   },
@@ -109,8 +109,8 @@ const howToSchema = buildHowToSchema({
       text: "Compare Full Planning & Design, Partial Planning & Coordination, and Event Coordination & Management against what has already been booked and what still needs an owner.",
     },
     {
-      name: "Choose any additional family support",
-      text: "Add only the family-concierge, guest-information, arrival, welcome-item, or India-sourcing responsibilities that would genuinely make the process easier.",
+      name: "Confirm the included family and guest support",
+      text: "Review the family coordination, guest-information, arrival, and welcome-plan responsibilities included at the selected planning level, then add India sourcing only if needed.",
     },
     {
       name: "Build one operating plan",
@@ -147,18 +147,18 @@ export default function MexicoCoordinationPage() {
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Indian destination wedding planning for Mexico and Punta Cana
+            Indian destination wedding planning for Mexico, Jamaica, and Punta Cana
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
             CeremonyVerse offers planning, on-site coordination, family support, guest organization, and optional India
-            sourcing for Gujarati and Hindu destination weddings across Mexico and in Punta Cana.
+            sourcing for Gujarati and Hindu destination weddings across Mexico, Jamaica, and Punta Cana.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href={destinationFeasibilityPlan.contactHref}
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
@@ -365,9 +365,9 @@ export default function MexicoCoordinationPage() {
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
               <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Destination planning + family support</h3>
               <p className="mt-4 leading-relaxed text-[#4d403a]">
-                The selected private scope can include resort and vendor coordination, production and timeline work,
-                on-site management, cultural requirements, family approvals, guest information, arrival details, and
-                welcome items.
+                Each planning package includes the family and guest responsibilities listed for that level, alongside
+                its resort and vendor coordination, production, timeline, cultural, and on-site work. Independent
+                travel and other provider charges remain separate.
               </p>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
@@ -419,7 +419,7 @@ export default function MexicoCoordinationPage() {
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

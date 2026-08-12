@@ -143,7 +143,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
             textDecoration: "none",
           }}
         >
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </a>
       </section>
 
@@ -355,14 +355,9 @@ export default function IndianWeddingShoppingIllinoisPage() {
           >
             {[
               {
-                tier: "Free Consultation",
+                tier: "Free 30-Minute Consultation",
                 price: "Free",
                 desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation.",
-              },
-              {
-                tier: "Style Guide & Vendor List",
-                price: "$249",
-                desc: "A researched starting point for families who will contact vendors, order, and ship independently.",
               },
               {
                 tier: "Guided Sourcing",
@@ -504,7 +499,7 @@ export default function IndianWeddingShoppingIllinoisPage() {
               marginBottom: "24px",
             }}
           >
-            Book a free consultation or message us on WhatsApp at +1 (215) 341-9990. We&apos;ll
+            Book a free 30-minute consultation or message us on WhatsApp at +1 (215) 341-9990. We&apos;ll
             explain how the available CeremonyVerse tiers may support your Illinois family with
             confidence.
           </p>

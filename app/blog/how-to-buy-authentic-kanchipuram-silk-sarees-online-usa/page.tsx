@@ -575,7 +575,7 @@ export default function KanchipuramSilkGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Request a consultation to organize item-specific vendor evidence,
+              Request a free 30-minute consultation to organize item-specific vendor evidence,
               written approvals, complete cost inputs, and delivery responsibilities.
               No remote process can authenticate every claim or eliminate product risk.
             </p>
@@ -625,7 +625,7 @@ export default function KanchipuramSilkGuideBlogPost() {
             wedding attire. The selected vendor&apos;s item claims, available evidence,
             approval record, and pre-shipping review limits are documented within the chosen scope.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
-              Book a consultation
+              Book a free 30-minute consultation
             </Link>{" "}
             to discuss your wedding trousseau.
           </p>

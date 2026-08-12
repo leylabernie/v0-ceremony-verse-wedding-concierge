@@ -16,10 +16,16 @@ export type DestinationPageData = {
   familySupport: string
   questions: string[]
   faqs: { question: string; answer: string }[]
+  resortPackageBenchmarks?: {
+    resort: string
+    publicDetail: string
+    planningNote: string
+    sourceHref: string
+  }[]
   sources: { label: string; href: string; note: string }[]
 }
 
-export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "puntaCana", DestinationPageData> = {
+export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "jamaica" | "puntaCana", DestinationPageData> = {
   cancun: {
     slug: "/destinations/cancun-indian-wedding/",
     shortName: "Cancún",
@@ -421,6 +427,168 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "p
         label: "National Hurricane Center climatology",
         href: "https://www.nhc.noaa.gov/climo/",
         note: "Official eastern Pacific hurricane-season dates",
+      },
+    ],
+  },
+  jamaica: {
+    slug: "/destinations/jamaica-indian-wedding/",
+    shortName: "Jamaica",
+    title: "Indian destination wedding in Jamaica",
+    eyebrow: "Jamaica planning guide",
+    description:
+      "Plan an Indian destination wedding in Jamaica with current resort-package, South Asian capability, room-block, cultural, catering, guest-access, and weather checks.",
+    answer:
+      "Jamaica can support a multi-day Indian destination wedding when the selected resort, event spaces, cultural permissions, food operation, room block, guest travel plan, entertainment rules, and on-site team fit the celebration. Public package pages are useful for building a shortlist, but the current resort-written proposal—not a brochure headline—must control the decision.",
+    idealFor: [
+      "Families whose guest map has practical current flights to the airport serving the selected resort area",
+      "Couples comparing all-inclusive properties with multi-event venue options",
+      "South Asian weddings that can confirm food, ceremony, procession, production, and backup requirements in writing",
+      "Guest groups that can follow one clear room-block, arrival, transfer, and resort-access process",
+    ],
+    compareBeforeChoosing: [
+      "The exact airport, resort-area transfer, and licensed-provider plan for every arrival window",
+      "Current South Asian package scope, event spaces, realistic capacities, and weather backups",
+      "Indian and Jain food capability, outside-vendor rules, cultural permissions, sound, fire, and production access",
+      "Room-block exposure, guest passes, taxes, service charges, planner travel, staffing, and complete host cost",
+    ],
+    facts: [
+      {
+        label: "Common north-coast gateway",
+        value: "MBJ",
+        detail: "Sangster International Airport serves Montego Bay; the right airport and transfer time still depend on the selected resort area.",
+      },
+      {
+        label: "Public package pricing",
+        value: "Starting point only",
+        detail: "Published figures can be dated, chain-wide, or limited to a base ceremony. Require a current Jamaica-specific written quote.",
+      },
+      {
+        label: "South Asian option",
+        value: "Property-specific",
+        detail: "Royalton Blue Waters publicly offers Kohinoor South Asian wedding packages, while exact scope and price require direct confirmation.",
+      },
+      {
+        label: "Planning focus",
+        value: "Exact local owners",
+        detail: "Confirm who is physically present, who manages each provider, and who is authorized to solve changes during every event.",
+      },
+    ],
+    eventRows: [
+      {
+        event: "Welcome, Mehndi, or Haldi",
+        verify: "Shade, rain cover, guest arrival flow, privacy, food service, wash areas, décor, music, resort access, and any day-pass rules.",
+        risk: "Treating a tropical outdoor event as simple when weather, access, catering, sound, and setup rules still apply.",
+      },
+      {
+        event: "Sangeet or Garba",
+        verify: "Stage, dance floor, audio, lighting, power, rigging, rehearsal, curfew, entertainment approvals, vendor access, and indoor backup.",
+        risk: "Using a headline capacity before tables, performances, production, service paths, and rain backup are drawn.",
+      },
+      {
+        event: "Hindu ceremony and Baraat",
+        verify: "Approved route, gathering point, sound, vehicle rules, ceremony fire, Mandap installation, priest requirements, security, and backup.",
+        risk: "Assuming a South Asian package automatically permits the family's exact Gujarati or Hindu rituals and production plan.",
+      },
+      {
+        event: "Reception",
+        verify: "Seated layout, stage, catering, bar, sound, overtime, entertainment, transport, breakdown, and the weather-move process.",
+        risk: "Comparing the base wedding package without added guests, events, hours, production, vendors, taxes, service charges, and planning.",
+      },
+    ],
+    resortExamples: [
+      "Royalton Blue Waters",
+      "Grand Palladium Jamaica Resort & Spa",
+      "Bahia Principe Grand Jamaica",
+      "Hyatt Ziva Rose Hall",
+      "Moon Palace Jamaica",
+      "Jewel Grande Montego Bay",
+    ],
+    resortPackageBenchmarks: [
+      {
+        resort: "Grand Palladium Jamaica",
+        publicDetail:
+          "The resort's Tropical Bliss page publicly showed $8,400 USD for up to 50 people for 2025, including a ceremony, one-hour cocktail, and three-hour private reception with listed base food, beverage, cake, seating, flowers, music, and coordination elements.",
+        planningNote:
+          "The page specifically directs couples to request updated 2026 pricing. Pictured upgrades, added events, guests, décor, production, outside vendors, travel, tax, service charges, and other additions may be separate.",
+        sourceHref: "https://www.palladiumweddings.com/en/destinations/jamaica/mbj-tropical-bliss",
+      },
+      {
+        resort: "Royalton Blue Waters",
+        publicDetail:
+          "The resort publicly offers Kohinoor South Asian wedding packages and says couples work with a certified South Asian wedding planner. Its public venue information includes ceremony options and a beach setting listed for up to 200 guests.",
+        planningNote:
+          "No current package price is published on the resort page. Request the exact events, menus, spaces, cultural permissions, added-guest charges, vendor rules, rain backups, taxes, and total written quote.",
+        sourceHref: "https://www.royaltonresorts.com/resorts/blue-waters/special-occasions/weddings",
+      },
+      {
+        resort: "Bahia Principe Jamaica",
+        publicDetail:
+          "Bahia Principe's public weddings page advertises Blissful from $689 and Joyful from $989 for participating resorts in the Dominican Republic, Mexico, and Jamaica. Its general guide describes ceremony, dinner, photo, sound, toast, and stay-perk elements by package.",
+        planningNote:
+          "Those are chain-wide public starting points, not a guaranteed Jamaica quote or complete Indian-wedding total. Exact hotel, venue, guest count, legal-ceremony supplement, guest passes, additions, availability, and current written terms control.",
+        sourceHref: "https://www.bahia-principe.com/en/weddings/",
+      },
+    ],
+    arrival:
+      "The Jamaica Tourist Board lists international airports in Montego Bay and Kingston, plus an airport serving the Ocho Rios area. Do not assign one airport to the entire island. Confirm the selected resort's approved airport, current flights, licensed-transfer provider, travel time, luggage and mobility needs, child seats, arrival staffing, and missed-connection process before guests book.",
+    foodAndCulture:
+      "Request current Indian, Gujarati, Jain, vegan, children's, and allergy procedures for the exact property. Confirm who prepares each menu, tastings, kitchen and outside-catering rules, late-night food, religious items, ceremony fire, Mandap installation, Baraat route, sound, production, entertainment, and vendor access. A South Asian package name is useful evidence, not blanket approval.",
+    weatherAndBackup:
+      "Jamaica is in the Atlantic basin, whose official hurricane season runs June 1 through November 30. That season does not predict conditions for one wedding date. Contract the indoor backup, capacity, weather-decision deadline, authority, guest notice, production move, transport change, and any price effect for every important outdoor event.",
+    familySupport:
+      "CeremonyVerse supports U.S. and Canadian families through the cultural brief, destination comparison, budget categories, decisions, guest-information organization, and optional India sourcing. The experienced Mexico City-based destination partner and any named Jamaica providers handle only the local planning and on-site work assigned in the written proposal. Resorts or appropriately licensed providers handle rooms, flights, transfers, and regulated travel services.",
+    questions: [
+      "Which airport and licensed-transfer instruction applies to this exact resort?",
+      "Which events, hours, venues, menus, décor, flowers, sound, cake, beverages, seating, and coordinator services are included in the current package?",
+      "Which exact venues and indoor backups are guaranteed for every event?",
+      "What Indian, Gujarati, Jain, allergy, kitchen, outside-catering, tasting, and late-night-food rules apply?",
+      "What is permitted for the Baraat, ceremony fire, Mandap, sound, entertainment, golf-cart logistics, rigging, power, setup, and breakdown?",
+      "How do room rates, minimum stays, deposits, attrition, concessions, cut-off dates, guest passes, and event-access rules work?",
+      "Which added-event, guest, planner-travel, staffing, production, vendor, tax, service-charge, permit, insurance, and transport costs sit outside the package?",
+      "Who is physically present and authorized to solve resort, vendor, guest, transfer, entertainment, and weather problems?",
+    ],
+    faqs: [
+      {
+        question: "How much does a Jamaica resort wedding package cost?",
+        answer:
+          "Public starting points vary widely by resort and scope. For example, Grand Palladium's dated 2025 Tropical Bliss page showed $8,400 for up to 50, Royalton Blue Waters requires a quote for its Kohinoor South Asian option, and Bahia Principe advertises chain-wide starting packages from $689. None is a complete Indian destination-wedding budget or guaranteed current Jamaica price.",
+      },
+      {
+        question: "Which Jamaica resort publicly offers a South Asian wedding package?",
+        answer:
+          "Royalton Blue Waters publicly promotes Kohinoor South Asian wedding packages and a certified South Asian wedding planner. The current price, exact cultural permissions, menus, event spaces, vendor rules, and total scope must still be confirmed directly in writing.",
+      },
+      {
+        question: "Does CeremonyVerse book Jamaica rooms or flights?",
+        answer:
+          "CeremonyVerse does not independently sell rooms, flights, transfers, or travel insurance. Those services remain with the resort or another appropriately licensed provider named for the engagement.",
+      },
+    ],
+    sources: [
+      {
+        label: "Jamaica Tourist Board — getting here",
+        href: "https://www.visitjamaica.com/plan-your-adventure/getting-here/",
+        note: "Official airport and travel-planning overview",
+      },
+      {
+        label: "Grand Palladium Jamaica — Tropical Bliss",
+        href: "https://www.palladiumweddings.com/en/destinations/jamaica/mbj-tropical-bliss",
+        note: "Official dated package price, guest count, and listed inclusions",
+      },
+      {
+        label: "Royalton Blue Waters — weddings",
+        href: "https://www.royaltonresorts.com/resorts/blue-waters/special-occasions/weddings",
+        note: "Official Kohinoor South Asian wedding and venue information",
+      },
+      {
+        label: "Bahia Principe — weddings",
+        href: "https://www.bahia-principe.com/en/weddings/",
+        note: "Official chain-wide public package starting points and inclusions",
+      },
+      {
+        label: "National Hurricane Center climatology",
+        href: "https://www.nhc.noaa.gov/climo/",
+        note: "Official Atlantic hurricane-season dates",
       },
     ],
   },

@@ -217,7 +217,7 @@ export default function BridalLehengaCostGuide() {
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
-              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Schedule Free Consultation</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Schedule a Free 30-Minute Consultation</Link>
               <Link href="/pricing/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
             </div>
           </div>
@@ -261,7 +261,7 @@ export default function BridalLehengaCostGuide() {
               Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Already have your budget planned? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free consultation</Link> and we&apos;ll review the sourcing options that fit your timeline, needs, and budget.
+              Already have your budget planned? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free 30-minute consultation</Link> and we&apos;ll review the sourcing options that fit your timeline, needs, and budget.
             </p>
           </div>
 

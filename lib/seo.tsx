@@ -18,7 +18,7 @@ export const SITE_URL = "https://www.ceremonyverse.com";
 export const SITE_NAME = "CeremonyVerse";
 export const SITE_EMAIL = "hello@ceremonyverse.com";
 export const SITE_PHONE = "+12153419990";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.webp`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baarat.webp`;
 
 type SchemaArea = {
   "@type": "Country" | "Place";
@@ -38,7 +38,7 @@ function buildAreaServed(areaServed?: string | string[]): SchemaArea[] {
     : defaultSourcingAreas.map((area) => area.name);
 
   return areaNames.map((name) => ({
-    "@type": ["United States", "Canada", "Mexico", "Dominican Republic"].includes(name)
+    "@type": ["United States", "Canada", "Mexico", "Jamaica", "Dominican Republic"].includes(name)
       ? "Country"
       : "Place",
     name,
@@ -50,7 +50,7 @@ interface BuildMetadataOpts {
   path: string;
   title: string;
   description: string;
-  /** Optional OG image (absolute URL or path). Falls back to hero-lehenga.jpg. */
+  /** Optional OG image (absolute URL or path). Falls back to the destination-wedding brand image. */
   image?: string;
   /** Article/blog post metadata. When present, OG type becomes "article". */
   publishedTime?: string;
@@ -345,9 +345,9 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
+      "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana.",
     url: SITE_URL,
-    image: `${SITE_URL}/images/hero-lehenga.webp`,
+    image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     logo: `${SITE_URL}/icon.svg`,
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
@@ -357,29 +357,15 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Dominican Republic"]),
+    areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Jamaica", "Dominican Republic"]),
     priceRange: "$$",
     sameAs: [
-      "https://www.instagram.com/ceremonyverse/",
-      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
-      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Wedding Shopping and Destination Planning Services",
       itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Style Guide & Vendor List",
-            description:
-              "Curated starting point for self-directed brides sourcing Indian wedding outfits from Surat and Delhi",
-          },
-          price: "249",
-          priceCurrency: "USD",
-        },
         {
           "@type": "Offer",
           itemOffered: {
@@ -433,7 +419,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana. Starting fees are published for three planning packages; the final written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana. Starting fees are published for three planning packages; the final written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
@@ -457,7 +443,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Destination-planning packages start at $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. A free 30-minute consultation is available.",
+          text: "CeremonyVerse India sourcing services start at $799 for Guided Sourcing and $2,499 for Full Bridal Concierge. Destination-planning packages start at $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The first 30-minute consultation is free and requires no payment or contract.",
         },
       },
       {
@@ -513,9 +499,9 @@ export function buildOrganizationSchema(): object {
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/icon.svg`,
-    image: `${SITE_URL}/images/hero-lehenga.webp`,
+    image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     description:
-      "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico and Punta Cana.",
+      "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico, Jamaica, and Punta Cana.",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -532,10 +518,7 @@ export function buildOrganizationSchema(): object {
       addressLocality: "Philadelphia",
     },
     sameAs: [
-      "https://www.instagram.com/ceremonyverse/",
-      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
-      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
   };
 }
@@ -556,7 +539,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
+      "Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

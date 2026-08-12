@@ -82,41 +82,79 @@ function validRequestId(value: string | null): string {
     : ""
 }
 
+
+function focusFromStored(value: string | undefined): ServiceFocus | "" {
+  const focusByService: Record<string, ServiceFocus> = {
+    "Destination wedding planning": "Destination wedding planning",
+    "Destination Wedding Feasibility & Action Plan ($300)": "Destination Wedding Feasibility & Action Plan ($300)",
+    "India shopping": "India wedding shopping and sourcing",
+    "India shopping + destination wedding planning": "Both destination planning and India sourcing",
+    "Not sure": "Not sure yet",
+  }
+  return value ? focusByService[value] || "" : ""
+}
+
+function readConsultationPrefill(): {
+  name: string
+  email: string
+  serviceInterest: string
+  eventTimeframe: string
+} {
+  if (typeof window === "undefined") {
+    return { name: "", email: "", serviceInterest: "", eventTimeframe: "" }
+  }
+
+  try {
+    const value = JSON.parse(window.sessionStorage.getItem("ceremonyverseConsultationPrefill") || "{}") as Record<string, unknown>
+    return {
+      name: typeof value.name === "string" ? value.name : "",
+      email: typeof value.email === "string" ? value.email : "",
+      serviceInterest: typeof value.serviceInterest === "string" ? value.serviceInterest : "",
+      eventTimeframe: typeof value.eventTimeframe === "string" ? value.eventTimeframe : "",
+    }
+  } catch {
+    return { name: "", email: "", serviceInterest: "", eventTimeframe: "" }
+  }
+}
+
 export function ConsultationQuestionnairePage() {
   const searchParams = useSearchParams()
-  const [formData, setFormData] = useState<QuestionnaireData>(() => ({
-    requestId: validRequestId(searchParams.get("request")),
-    serviceFocus: focusFromType(searchParams.get("type")),
-    name: "",
-    email: "",
-    relationship: "",
-    decisionMakers: "",
-    weddingTimeframe: "",
-    dateFlexibility: "",
-    weekdayAvailability: "",
-    planningStage: "",
-    planningSupportStatus: "",
-    destinationIdeas: "",
-    resortStatusDetails: "",
-    likelyGuestCount: "",
-    maximumGuestCount: "",
-    guestsFromIndia: "",
-    events: [],
-    otherEvents: "",
-    essentialRequirements: "",
-    comfortableBudget: "",
-    budgetMustCover: "",
-    guestTravelPayment: "",
-    topPriorities: "",
-    possibleSimplifications: "",
-    biggestConcern: "",
-    indiaSourcingNeeds: "",
-    sourcingPartySize: "",
-    sourcingDeadline: "",
-    questionsForCall: "",
-    privacyConsent: false,
-    website: "",
-  }))
+  const [formData, setFormData] = useState<QuestionnaireData>(() => {
+    const prefill = readConsultationPrefill()
+    return {
+      requestId: validRequestId(searchParams.get("request")),
+      serviceFocus: focusFromType(searchParams.get("type")) || focusFromStored(prefill.serviceInterest),
+      name: prefill.name,
+      email: prefill.email,
+      relationship: "",
+      decisionMakers: "",
+      weddingTimeframe: prefill.eventTimeframe,
+      dateFlexibility: "",
+      weekdayAvailability: "",
+      planningStage: "",
+      planningSupportStatus: "",
+      destinationIdeas: "",
+      resortStatusDetails: "",
+      likelyGuestCount: "",
+      maximumGuestCount: "",
+      guestsFromIndia: "",
+      events: [],
+      otherEvents: "",
+      essentialRequirements: "",
+      comfortableBudget: "",
+      budgetMustCover: "",
+      guestTravelPayment: "",
+      topPriorities: "",
+      possibleSimplifications: "",
+      biggestConcern: "",
+      indiaSourcingNeeds: "",
+      sourcingPartySize: "",
+      sourcingDeadline: "",
+      questionsForCall: "",
+      privacyConsent: false,
+      website: "",
+    }
+  })
   const [isLoading, setIsLoading] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState("")
@@ -274,8 +312,8 @@ export function ConsultationQuestionnairePage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Questionnaire received</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">Thank you, {formData.name}.</h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your consultation request and pre-call questionnaire were received. You can continue to the WhatsApp
-            scheduling request now; no prior review or approval is required.
+            Your questionnaire was received. If you have not already requested a consultation time, you can do that
+            now; no prior review or approval is required.
           </p>
           <a
             href={schedulingUrl}
@@ -283,7 +321,7 @@ export function ConsultationQuestionnairePage() {
             rel="noopener noreferrer"
             className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
           >
-            Continue to Scheduling on WhatsApp
+            Request a Consultation Time on WhatsApp
           </a>
           <div className="mt-9 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Keep these items nearby</h2>
@@ -308,13 +346,17 @@ export function ConsultationQuestionnairePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Prepare for your conversation</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Pre-Call Wedding Questionnaire</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            Your consultation request is on file. Share what is known today so CeremonyVerse can prepare
-            for the free 30-minute consultation. A WhatsApp scheduling request opens after you submit this questionnaire.
+            Your registration is on file, and you can request a consultation time immediately. Complete this before
+            the call so CeremonyVerse can prepare. Most questions are optional; allow about 5–7 minutes.
           </p>
         </div>
       </section>
 
       <form onSubmit={handleSubmit} className="mx-auto max-w-4xl space-y-7 px-6 py-16 sm:py-20">
+        <div className="rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-sm leading-6 text-[#4d403a]">
+          <p className="font-semibold text-[#1f1f1f]">Most questions are optional.</p>
+          <p className="mt-1">Answer what you know today. Required questions are marked with an asterisk, and your registration details are filled in when available in this browser.</p>
+        </div>
         <div className="absolute -left-[9999px]" aria-hidden="true">
           <label htmlFor="website">Website</label>
           <input

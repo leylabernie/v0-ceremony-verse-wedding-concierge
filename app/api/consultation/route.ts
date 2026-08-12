@@ -201,20 +201,31 @@ function questionnaireUrl(request: NextRequest, lead: Lead, requestId: string): 
   return url
 }
 
-async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolean> {
+function schedulingUrl(lead: Lead, requestId: string): string {
+  const message = [
+    "Hello CeremonyVerse, I registered on the website and would like to request a time for my free 30-minute consultation.",
+    `Request ID: ${requestId}`,
+    `Name: ${lead.name}`,
+    `Service: ${lead.serviceInterest}`,
+  ].join("\n")
+  return `https://wa.me/12153419990?text=${encodeURIComponent(message)}`
+}
+
+async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: string): Promise<boolean> {
   const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim()
   const safeFirstName = escapeHtml(firstName)
   const safeUrl = escapeHtml(url.toString())
+  const safeSchedulingUrl = escapeHtml(schedulingUrl(lead, requestId))
   const businessEmail = ceremonyVerseBusinessEmail()
 
   const html = `
     <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
       <p>Hi ${safeFirstName},</p>
       <p>Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.</p>
-      <p>Before the call, please complete this short questionnaire. It helps CeremonyVerse understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so the 30 minutes can be used well.</p>
-      <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
-      <p>You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
-      <p>No call time is reserved yet. Complete the questionnaire, then use the scheduling step shown after submission to request your consultation time. No prior review or approval is required.</p>
+      <p>You can request a consultation time now—there is no prior review or approval wait. Please also complete the short questionnaire before the call so CeremonyVerse can prepare around your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs.</p>
+      <p style="margin:28px 0"><a href="${safeSchedulingUrl}" style="display:inline-block;background:#128c7e;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Request my consultation time</a></p>
+      <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
+      <p>Scheduling and questionnaire completion can happen in either order, but the questionnaire is due before the call. Most questions are optional and it usually takes 5–7 minutes. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
       <p>Warmly,<br><strong>CeremonyVerse Client Services</strong><br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
     </div>
   `
@@ -223,13 +234,13 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL): Promise<boolea
 
 Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.
 
-Before the call, please complete this short questionnaire. It helps CeremonyVerse understand your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs so the 30 minutes can be used well.
+You can request a consultation time now—there is no prior review or approval wait. Please also complete the short questionnaire before the call so CeremonyVerse can prepare.
+
+Request a consultation time: ${schedulingUrl(lead, requestId)}
 
 Complete the pre-call questionnaire: ${url.toString()}
 
-You do not need to have every answer finalized. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.
-
-No call time is reserved yet. Complete the questionnaire, then use the scheduling step shown after submission to request your consultation time. No prior review or approval is required.
+Scheduling and questionnaire completion can happen in either order, but the questionnaire is due before the call. Most questions are optional and it usually takes 5–7 minutes. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.
 
 Warmly,
 CeremonyVerse Client Services
@@ -304,11 +315,12 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  const questionnaireSent = await sendQuestionnaireInvitation(parsed.data, formQuestionnaireUrl)
+  const questionnaireSent = await sendQuestionnaireInvitation(parsed.data, formQuestionnaireUrl, requestId)
 
   return NextResponse.json({
     success: true,
     questionnaireSent,
     questionnaireUrl: `${formQuestionnaireUrl.pathname}${formQuestionnaireUrl.search}`,
+    requestId,
   })
 }

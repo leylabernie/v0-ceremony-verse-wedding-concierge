@@ -179,7 +179,7 @@ export default function SouthIndianChristianWeddingOutfitGuide() {
               href="/contact/?service=india"
               className="mt-6 inline-flex rounded-full bg-[#7a6841] px-7 py-3 font-semibold text-white no-underline"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
           </section>
         </div>

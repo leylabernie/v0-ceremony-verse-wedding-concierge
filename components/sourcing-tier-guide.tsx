@@ -5,20 +5,13 @@ import { useState } from "react"
 
 type PartySize = "1" | "2-4" | "5-8" | "9+"
 type OutfitCount = "1" | "2-3" | "4+"
-type SupportLevel = "research" | "guided" | "managed"
-type TierKey = "style-guide" | "guided-sourcing" | "full-concierge" | "custom"
+type SupportLevel = "guided" | "managed"
+type TierKey = "guided-sourcing" | "full-concierge" | "custom"
 
 const tierDetails: Record<
   TierKey,
   { name: string; price: string; explanation: string; note: string }
 > = {
-  "style-guide": {
-    name: "Style Guide & Vendor List",
-    price: "$249",
-    explanation:
-      "A researched starting point fits when your family wants curated direction but will contact vendors, place orders, and manage shipping independently.",
-    note: "Includes a 30-minute consultation, personalized style and budget brief, curated starting options, vendor guidance, and one written follow-up.",
-  },
   "guided-sourcing": {
     name: "Guided Sourcing",
     price: "$799",
@@ -48,7 +41,6 @@ function recommendTier(
   supportLevel: SupportLevel,
 ): TierKey {
   if (partySize === "9+") return "custom"
-  if (supportLevel === "research") return "style-guide"
   if (supportLevel === "managed") return "full-concierge"
   if (partySize === "5-8" || outfitCount === "4+") return "full-concierge"
   return "guided-sourcing"
@@ -121,7 +113,6 @@ export function SourcingTierGuide() {
                   value={supportLevel}
                   onChange={(event) => setSupportLevel(event.target.value as SupportLevel)}
                 >
-                  <option value="research">Guidance only; we manage orders</option>
                   <option value="guided">Live shopping + selected order help</option>
                   <option value="managed">Full measurement, approval + delivery support</option>
                 </select>
@@ -143,7 +134,7 @@ export function SourcingTierGuide() {
                   href="/contact/?service=india"
                   className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
                 >
-                  Schedule Free Consultation
+                  Schedule a Free 30-Minute Consultation
                 </Link>
                 <Link
                   href="/pricing/"

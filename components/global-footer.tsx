@@ -19,6 +19,7 @@ const destinationLinks = [
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
+  { label: "Jamaica Indian Weddings", href: "/destinations/jamaica-indian-wedding/" },
   { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
@@ -61,28 +62,20 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              India wedding shopping for families across the entire USA and Canada, plus destination-wedding
-              planning for Gujarati and Hindu families across Mexico and Punta Cana.
+              Indian destination-wedding planning for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana,
+              with optional India wedding sourcing for families across the USA and Canada.
             </p>
-            <a
-              href="https://www.trustpilot.com/review/ceremonyverse.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                fontSize: "12px",
-                color: "#7a6841",
-                marginTop: "12px",
-                textDecoration: "none",
-              }}
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2l2.95 6.36L22 9.27l-5 4.87L18.18 21 12 17.27 5.82 21 7 14.14l-5-4.87 7.05-1.91L12 2z" />
-              </svg>
-              View our Trustpilot profile →
-            </a>
+            <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>
+              <a href="mailto:hello@ceremonyverse.com" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
+                hello@ceremonyverse.com
+              </a>
+              <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
+                WhatsApp or call +1 (215) 341-9990
+              </a>
+              <Link href="/how-it-works/" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
+                Review the complete planning process →
+              </Link>
+            </div>
           </div>
 
           {/* Services */}

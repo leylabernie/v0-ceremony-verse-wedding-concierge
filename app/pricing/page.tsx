@@ -24,27 +24,13 @@ export const metadata = buildMetadata({
 
 const tiers = [
   {
-    name: "Style Guide & Vendor List",
-    price: "$249",
-    numericPrice: 249,
-    bestFor: "Best for: self-directed families",
-    description: "You want a researched starting point but will contact vendors, order, and ship independently.",
-    includes: [
-      "One 30-minute consultation",
-      "Written style, ceremony, and budget brief",
-      "Curated starting options and vendor guidance",
-      "One written clarification round",
-    ],
-    excludes: ["Live shopping sessions", "Vendor/order management", "Inspection or shipping coordination"],
-  },
-  {
     name: "Guided Sourcing",
     price: "$799",
     numericPrice: 799,
     bestFor: "Best for: one to several important outfits",
     description: "You want live help reviewing options and managing the high-risk steps of a remote order.",
     includes: [
-      "Everything in Style Guide",
+      "Written style, ceremony, and budget brief",
       "Two to four live video shopping sessions",
       "Selection and measurement coordination",
       "Written approvals and order follow-up",
@@ -104,7 +90,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse charge a percentage of the outfit price?",
     answer:
-      "No. The three standard sourcing tiers use the USD flat service fees shown on this page for U.S. and Canadian clients. Product costs, shipping, insurance, customs charges, taxes, brokerage, and alterations are separately itemized before approval.",
+      "No. The two standard sourcing tiers use the USD flat service fees shown on this page for U.S. and Canadian clients. Product costs, shipping, insurance, customs charges, taxes, brokerage, and alterations are separately itemized before approval.",
   },
   {
     question: "Do the same sourcing plans apply in Canada?",
@@ -119,7 +105,11 @@ const faqItems = [
   {
     question: "Can I start with a free consultation?",
     answer:
-      "Yes. The 30-minute introductory consultation is free and does not require a contract or payment. If you need a written feasibility decision before full planning, the next step can be the $300 Destination Wedding Feasibility & Action Plan. Other paid work begins only after you select a scope and approve its written terms.",
+      "Yes. Your first 30-minute introductory consultation is free and does not require a contract or payment. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services. Paid work begins only after you select a scope and approve its written terms.",
+  },
+  {
+    question: "Is the $300 plan fee credited if I continue with CeremonyVerse planning?",
+    answer: destinationFeasibilityCredit,
   },
   {
     question: "What happens if my party is larger than eight people?",
@@ -129,7 +119,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "Yes. Published starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The final written proposal reflects the destination, dates, events, guest count, travel, staffing, complexity, and selected CeremonyVerse family support. Third-party costs remain separate unless expressly included.",
+      "Yes. Published starting fees are $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. Each package includes the family and guest coordination listed for that level. The final written proposal reflects the destination, dates, events, guest count, travel, staffing, and complexity. Third-party costs remain separate unless expressly included.",
   },
 ]
 
@@ -235,18 +225,23 @@ export default function PricingPage() {
               </article>
             ))}
           </div>
+          <p className="mt-8 rounded-xl border border-[#c5a059]/40 bg-[#c5a059]/10 p-5 text-sm leading-6 !text-[#e8cf9d]">
+            Family and guest coordination are included within the responsibilities shown for each planning package.
+            Flights, rooms, transfers, and other independent provider charges remain separate unless expressly included
+            in the signed proposal.
+          </p>
           <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:py-28">
+      <section id="india-sourcing" className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
               India shopping concierge
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Flat-fee India sourcing tiers
+              India sourcing pricing
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Select the level of research, live shopping, and order coordination your family needs.
@@ -254,7 +249,7 @@ export default function PricingPage() {
               insurance, import charges, brokerage, and alterations remain separate.
             </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
             {tiers.map((tier) => (
               <article
                 key={tier.name}
@@ -266,7 +261,7 @@ export default function PricingPage() {
               >
                 {tier.featured && (
                   <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
-                    Most hands-on starting point
+                    Recommended starting point
                   </p>
                 )}
                 <h2 className="font-serif text-3xl font-semibold">{tier.name}</h2>
@@ -372,13 +367,14 @@ export default function PricingPage() {
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with a free consultation</h2>
+          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Your first 30-minute consultation is free</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
-            sourcing tier, $300 feasibility plan, destination-planning package, or family-support scope is appropriate. No payment is required for the consultation.
+            sourcing tier, $300 feasibility plan, or destination-planning package is appropriate. No payment or
+            contract is required for the call; any paid next step is presented separately in writing.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

@@ -45,12 +45,16 @@ const faqSections = [
     category: "Pricing & Payments",
     items: [
       {
+        question: "Is the first consultation free?",
+        answer: "Yes. Your first 30-minute introductory consultation is free. No payment or contract is required for the call. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services that begin only after you approve written terms."
+      },
+      {
         question: "How is pricing structured?",
-        answer: "Destination starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The Feasibility & Action Plan is $300. India shopping uses $249, $799, and $2,499 service tiers. Third-party costs and wedding-specific additions are itemized separately."
+        answer: "Destination starting fees are $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The Feasibility & Action Plan is $300. India shopping uses $799 and $2,499 service tiers. Third-party costs and wedding-specific additions are itemized separately."
       },
       {
         question: "Is the $300 destination-wedding plan refundable or credited?",
-        answer: "The $300 fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within 30 days after the written plan is delivered, the full $300 is credited toward the CeremonyVerse planning service fee. It does not credit resort, vendor, venue, or travel charges."
+        answer: "When you sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered, the full $300 is credited toward your CeremonyVerse planning service fee. The credit does not apply to resort, venue, vendor, travel, or other third-party charges. If no planning contract is signed within that period, the $300 plan remains a completed standalone service and is non-refundable once work begins."
       },
       {
         question: "What's the payment schedule?",
@@ -88,7 +92,7 @@ const faqSections = [
     items: [
       {
         question: "Do I need to travel to India?",
-        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico and in Punta Cana through the scope selected for the wedding."
+        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico, Jamaica, and Punta Cana through the scope selected for the wedding."
       },
       {
         question: "Can I source just one item, or do I need a full package?",
@@ -105,7 +109,7 @@ const faqSections = [
     items: [
       {
         question: "Where does CeremonyVerse plan destination weddings?",
-        answer: "Current service coverage includes Mexico and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
+        answer: "Current service coverage includes Mexico, Jamaica, and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
       },
       {
         question: "Who handles the wedding at the destination?",
@@ -146,7 +150,7 @@ function FloralSeparator() {
 export const metadata = buildMetadata({
   path: '/faq',
   title: 'FAQ: Destination Wedding Planning & India Shopping',
-  description: 'Answers about CeremonyVerse destination-wedding planning in Mexico and Punta Cana, pricing, responsibilities, India sourcing, shipping, customs, and fit.',
+  description: 'Answers about CeremonyVerse destination-wedding planning in Mexico, Jamaica, and Punta Cana, pricing, responsibilities, India sourcing, shipping, customs, and fit.',
   keywords: 'Indian wedding outfit sourcing FAQ, NRI bride questions, lehenga from India scams, customs duties Indian wedding outfits, bridal lehenga sizing',
 });
 

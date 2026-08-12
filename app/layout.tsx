@@ -36,11 +36,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Indian Wedding Shopping & Destination Planning | CeremonyVerse",
+      "Indian Destination Wedding Planning & India Sourcing | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "India wedding shopping for families across the USA and Canada, plus Gujarati and Hindu destination-wedding planning in Mexico and Punta Cana.",
+    "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India wedding sourcing for families across the USA and Canada.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -61,24 +61,24 @@ export const metadata = {
   },
   openGraph: {
     title:
-      "Indian Wedding Shopping & Destination Planning | CeremonyVerse",
+      "Indian Destination Wedding Planning & India Sourcing | CeremonyVerse",
     description:
-      "India wedding shopping for families across the USA and Canada, plus destination-wedding planning with family-side support.",
+      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family-side coordination and optional India sourcing.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
     images: [
       {
-        url: "https://www.ceremonyverse.com/images/hero-lehenga.webp",
+        url: "https://www.ceremonyverse.com/images/proof/family-destination-baarat.webp",
         width: 1200,
         height: 630,
-        alt: "Red bridal lehenga illustrating CeremonyVerse Indian wedding outfit sourcing",
+        alt: "Baraat celebration at a family destination wedding in Mexico",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://www.ceremonyverse.com/images/hero-lehenga.webp"],
+    images: ["https://www.ceremonyverse.com/images/proof/family-destination-baarat.webp"],
   },
 };
 
@@ -205,7 +205,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Mexico &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
           <span className="lg:hidden">Mexico &amp; Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/">Schedule Free Consultation</Link>
+          <Link href="/contact/">Free 30-Minute Consultation</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}

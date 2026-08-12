@@ -38,11 +38,6 @@ const serviceSchema = buildServiceSchema({
   areaServed: "NY-NJ-PA Metro Area, United States",
   offers: [
     {
-      name: "Style Guide & Vendor List",
-      price: 249,
-      description: "Curated bridal wear style guide for your NY/NJ wedding.",
-    },
-    {
       name: "Guided Sourcing",
       price: 799,
       description:
@@ -339,7 +334,7 @@ export default function IndianBridalWearNYNJPage() {
             className="text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
             style={{ color: "#e8dfd2" }}
           >
-            Request a consultation with CeremonyVerse. We&apos;ll
+            Request a free 30-minute consultation with CeremonyVerse. We&apos;ll
             review your wedding timeline, budget, and design references — and
             explain the available India-sourcing options, costs, and trade-offs
             before you decide whether remote shopping is right for you.

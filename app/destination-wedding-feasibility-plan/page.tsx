@@ -81,7 +81,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <span className="text-sm !text-white/70">No payment is collected through the inquiry form.</span>
           </div>
@@ -124,7 +124,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
             {[
               ["01", "Free 30-minute consultation", "We listen first, understand what help you need, and identify which facts or documents are needed. The call is introductory and is not the paid written plan."],
               ["02", "$300 working plan", "After you approve the written scope, we review your numbers and current information, hold the working session, and prepare the action brief."],
-              ["03", "Choose your next step", "Use the plan on its own, revise the wedding assumptions, or apply the $300 credit toward a CeremonyVerse planning agreement within 30 days."],
+              ["03", "Choose your next step", "Use the plan on its own, revise the wedding assumptions, or sign a CeremonyVerse destination-planning contract within 30 days after plan delivery and receive the full $300 credit toward your CeremonyVerse planning service fee."],
             ].map(([number, title, text]) => (
               <li key={number} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-7">
                 <span className="font-semibold text-[#7a6841]">{number}</span>
@@ -195,7 +195,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

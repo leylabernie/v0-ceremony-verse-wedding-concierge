@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   title: 'Indian Destination Wedding Planning | CeremonyVerse',
   description:
     "Plan an Indian destination wedding in Mexico or Punta Cana with family coordination, local execution, guest logistics, calculators, and optional India sourcing.",
-  image: '/images/sourcing/couple-mandap.webp',
+  image: '/images/proof/family-destination-baarat.webp',
   keywords: 'Indian wedding shopping concierge, Indian wedding outfit sourcing USA, bridal lehenga from India, Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding concierge, Punta Cana Indian wedding planning, NRI bridal concierge, live video shopping India',
 });
 

@@ -134,7 +134,7 @@ export default function ScamsGuidePage() {
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
               <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Review Bridal Lehenga Sourcing</Link>
-              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Schedule Free Consultation</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Schedule a Free 30-Minute Consultation</Link>
               <Link href="/how-it-works/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function ScamsGuidePage() {
               Open Free Vendor Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want help organizing the evidence? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to see whether the service fits your needs.
+              Want help organizing the evidence? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free 30-minute consultation</Link> to see whether the service fits your needs.
             </p>
           </div>
 

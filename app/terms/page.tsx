@@ -78,12 +78,13 @@ export default function TermsPage() {
             2. Service Tiers and Payment
           </h2>
           <p>
-            CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
-            Feasibility &amp; Action Plan is $300. Destination packages start at $8,000 for Full Planning &amp; Design,
-            $5,500 for Partial Planning &amp; Coordination, and $4,000 for Event Coordination &amp; Management.
+            CeremonyVerse offers two India-shopping service tiers: Guided Sourcing ($799) and Full Bridal
+            Concierge ($2,499). The Destination Wedding
+            Feasibility &amp; Action Plan is $300. Destination packages start at $4,000 for Event Coordination &amp;
+            Management, $5,500 for Partial Planning &amp; Coordination, and $8,000 for Full Planning &amp; Design.
             The final written proposal reflects the selected destination, dates, events, guest count, travel,
-            staffing, complexity, additions, and family-support scope. The initial 30-minute
+            staffing, complexity, additions, and the family and guest responsibilities included at that package
+            level. The initial 30-minute
             consultation is free. The signed proposal or service agreement identifies when paid work begins and
             the cancellation, refund, and rescheduling rules that apply to that scope.
           </p>
@@ -94,10 +95,12 @@ export default function TermsPage() {
             signed agreement expressly includes them.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            The $300 Destination Wedding Feasibility &amp; Action Plan fee is non-refundable once work begins.
-            If the client signs a CeremonyVerse destination-planning agreement within 30 days after the
-            written plan is delivered, the $300 is credited toward the CeremonyVerse planning service fee.
+            When the client signs a CeremonyVerse destination-planning contract within 30 days after the
+            written plan is delivered, the full $300 Destination Wedding Feasibility &amp; Action Plan fee is
+            credited toward the CeremonyVerse planning service fee.
             The credit does not apply to resort, venue, vendor, travel, or other independent-provider costs.
+            If no planning contract is signed within that period, the $300 plan remains a completed standalone
+            service and is non-refundable once work begins.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is

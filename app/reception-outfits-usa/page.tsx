@@ -143,7 +143,7 @@ export default function ReceptionOutfitsPage() {
             textDecoration: "none",
           }}
         >
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </a>
       </section>
 
@@ -474,7 +474,7 @@ export default function ReceptionOutfitsPage() {
               margin: "0 auto 24px",
             }}
           >
-            Request a consultation. We can organize available style directions, color
+            Request a free 30-minute consultation. We can organize available style directions, color
             options, and pricing — and start sourcing your reception outfit from India within a
             week.
           </p>
@@ -491,7 +491,7 @@ export default function ReceptionOutfitsPage() {
               textDecoration: "none",
             }}
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </a>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

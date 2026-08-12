@@ -73,7 +73,7 @@ export default function FreeGuidesPage() {
       </section>
 
       <section className="px-6 py-16 text-center">
-        <Link href="/contact/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">Request a Private Consultation</Link>
+        <Link href="/contact/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">Schedule a Free 30-Minute Consultation</Link>
       </section>
     </main>
   )

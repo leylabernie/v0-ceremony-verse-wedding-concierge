@@ -168,7 +168,7 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link
               href="/planning-tools/"
@@ -397,14 +397,14 @@ export default function MexicoDestinationGuidePage() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
             CeremonyVerse can help organize the comparison, identify unanswered questions, and recommend the
-            planning package and family-support scope that fit what you have already completed.
+            planning package whose included family and guest support fits what you have already completed.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact/?service=mexico"
               className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link
               href="/buy-indian-wedding-outfits-from-india/"

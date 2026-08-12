@@ -229,7 +229,7 @@ export default function BlogIndexPage() {
               Ready to source your wedding outfits from India?
             </p>
             <p style={{ fontSize: "0.95rem", color: "#e8dfd2", lineHeight: 1.7, marginBottom: "1.5rem", maxWidth: "500px", margin: "0 auto 1.5rem" }}>
-              Request a consultation. We&apos;ll review your vision, timeline, known estimates, and budget, then identify the in-scope decisions and next actions.
+              Request a free 30-minute consultation. We&apos;ll review your vision, timeline, known estimates, and budget, then identify the in-scope decisions and next actions.
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
               <Link
@@ -246,7 +246,7 @@ export default function BlogIndexPage() {
                   textDecoration: "none",
                 }}
               >
-                Schedule Free Consultation
+                Schedule a Free 30-Minute Consultation
               </Link>
               <a
                 href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."

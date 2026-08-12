@@ -14,7 +14,6 @@ const serviceSchema = buildServiceSchema({
   description: "Bridal lehenga research and sourcing from India with documented approvals, guided measurements, optional pre-shipping review, and delivery coordination across the United States and Canada.",
   url: "/buy-bridal-lehenga-from-india-usa/",
   offers: [
-    { name: "Style Guide & Vendor List", price: 249, description: "Curated vendor style guide for your bridal lehenga." },
     { name: "Guided Sourcing", price: 799, description: "Live video shopping sessions with India vendors for your bridal lehenga." },
     { name: "Full Bridal Concierge", price: 2499, description: "End-to-end bridal lehenga sourcing and coordination." },
   ],
@@ -79,7 +78,7 @@ export default function BridalLehengaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link
               href="/how-it-works/"
@@ -296,7 +295,7 @@ export default function BridalLehengaPage() {
                 <tr className="border-t border-[#e6dfd5]">
                   <td className="p-4 font-semibold">CeremonyVerse service</td>
                   <td className="p-4">Research, live shopping, order management, and party size</td>
-                  <td className="p-4">$249, $799, $2,499, or a written custom scope</td>
+                  <td className="p-4">$799, $2,499, or a written custom scope</td>
                 </tr>
                 <tr className="border-t border-[#e6dfd5]">
                   <td className="p-4 font-semibold">Shipping</td>
@@ -486,7 +485,7 @@ export default function BridalLehengaPage() {
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."

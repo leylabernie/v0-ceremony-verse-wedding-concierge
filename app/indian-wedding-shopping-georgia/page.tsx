@@ -41,7 +41,7 @@ export default function GeorgiaPage() {
           href="/contact/"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </Link>
       </section>
 
@@ -138,8 +138,7 @@ export default function GeorgiaPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
-              { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
+              { tier: "Free 30-Minute Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
               { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
               { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
@@ -246,7 +245,7 @@ export default function GeorgiaPage() {
               href="/contact/"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Georgia%20and%20interested%20in%20CeremonyVerse."

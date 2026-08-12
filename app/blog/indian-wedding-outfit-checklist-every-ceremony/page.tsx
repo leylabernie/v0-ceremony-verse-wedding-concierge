@@ -175,11 +175,11 @@ export default function OutfitChecklistPage() {
               Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free introductory consultation</Link> to discuss the wardrobe scope, timing, and which service tier may fit. A detailed private plan begins only under the applicable written scope.
+              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free 30-minute introductory consultation</Link> to discuss the wardrobe scope, timing, and which service tier may fit. A detailed private plan begins only under the applicable written scope.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse organizes India-sourcing research, eligible live review, measurements, written approvals, and delivery support within the selected tier. Availability depends on the selected item and vendor. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse organizes India-sourcing research, eligible live review, measurements, written approvals, and delivery support within the selected tier. Availability depends on the selected item and vendor. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free 30-minute consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
       </article>

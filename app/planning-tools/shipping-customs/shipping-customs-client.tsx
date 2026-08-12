@@ -6,7 +6,6 @@ import { trackEvent } from "@/lib/analytics"
 
 const servicePlans = [
   { value: "0", label: "No CeremonyVerse tier selected" },
-  { value: "249", label: "Style Guide & Vendor List — $249 USD" },
   { value: "799", label: "Guided Sourcing — $799 USD" },
   { value: "2499", label: "Full Bridal Concierge — $2,499 USD" },
 ]

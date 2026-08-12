@@ -221,11 +221,11 @@ export default function BlogPost() {
           <div className="mt-12 rounded-2xl bg-[#1f1f1f] p-8 text-center text-white">
             <h2 className="font-serif text-3xl font-semibold">Need a written Mexico-versus-Punta-Cana decision?</h2>
             <p className="mt-4 leading-7 text-[#e8dfd2]">
-              Start with a free consultation. The optional $300 Destination Wedding Feasibility &amp; Action Plan can
+              Start with your free first 30-minute consultation. The optional $300 Destination Wedding Feasibility &amp; Action Plan can
               review your facts and up to two current proposals, then document the important gaps and next actions.
             </p>
             <Link href="/contact/?service=feasibility&from=mexico-punta-cana-guide" className="mt-7 inline-flex rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
           </div>
 

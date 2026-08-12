@@ -26,11 +26,6 @@ const serviceSchema = buildServiceSchema({
   areaServed: "Canada",
   offers: [
     {
-      name: "Style Guide & Vendor List",
-      price: 249,
-      description: "A curated starting point for families managing their own orders and shipment.",
-    },
-    {
       name: "Guided Sourcing",
       price: 799,
       description: "Live shopping and order coordination with shipping-document and tracking support.",
@@ -62,7 +57,7 @@ const faqItems = [
   {
     question: "Can Canadian families use the CeremonyVerse pricing plans and calculator?",
     answer:
-      "Yes. The three standard sourcing service fees are in USD. The North America Shipping & Customs Calculator uses USD entries and separates the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
+      "Yes. The two standard sourcing service fees are in USD. The North America Shipping & Customs Calculator uses USD entries and separates the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
   },
 ]
 
@@ -109,7 +104,7 @@ export default function IndianWeddingShoppingCanadaPage() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=india&from=canada" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link href="/planning-tools/shipping-customs/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">
               Calculate Landed Cost

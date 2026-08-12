@@ -155,7 +155,7 @@ export default function BanarasiSareesPage() {
             textDecoration: "none",
           }}
         >
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </Link>
       </section>
 
@@ -588,7 +588,7 @@ export default function BanarasiSareesPage() {
               margin: "0 auto 24px",
             }}
           >
-            Request a consultation. We can help compare Banarasi product categories,
+            Request a free 30-minute consultation. We can help compare Banarasi product categories,
             varieties, motif options, evidence, and pricing. Paid sourcing begins only after you
             approve the written scope and available timeline.
           </p>
@@ -605,7 +605,7 @@ export default function BanarasiSareesPage() {
               textDecoration: "none",
             }}
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

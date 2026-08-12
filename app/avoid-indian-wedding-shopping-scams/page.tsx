@@ -107,7 +107,7 @@ export default function AvoidScamsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact/" className="btn-primary">
-                Schedule Free Consultation
+                Schedule a Free 30-Minute Consultation
               </Link>
               <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#25D366] text-white font-semibold transition hover:opacity-90">
                 WhatsApp Us Now
