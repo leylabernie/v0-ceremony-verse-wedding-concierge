@@ -27,4 +27,4 @@ export const destinationFeasibilityPlan = {
 } as const
 
 export const destinationFeasibilityCredit =
-  `The ${destinationFeasibilityPlan.priceLabel} fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within ${destinationFeasibilityPlan.creditWindowDays} days after the written plan is delivered, the full fee is credited toward the CeremonyVerse planning service fee.`
+  `When you sign a CeremonyVerse destination-planning contract within ${destinationFeasibilityPlan.creditWindowDays} days after the written plan is delivered, the full ${destinationFeasibilityPlan.priceLabel} is credited toward your CeremonyVerse planning service fee. The credit does not apply to resort, venue, vendor, travel, or other third-party charges. If no planning contract is signed within that period, the ${destinationFeasibilityPlan.priceLabel} plan remains a completed standalone service and is non-refundable once work begins.`

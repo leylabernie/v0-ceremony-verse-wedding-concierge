@@ -243,7 +243,9 @@ export function ContactPage() {
             <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
             <p className="mt-2">
               Your first 30-minute consultation is free. The $300 Destination Wedding Feasibility &amp; Action Plan and
-              all planning or sourcing packages are paid services offered only after you approve a written scope.
+              all planning or sourcing packages are paid services offered only after you approve a written scope. If
+              you purchase the $300 plan and sign a CeremonyVerse destination-planning contract within 30 days after
+              the written plan is delivered, the full $300 is credited toward your CeremonyVerse planning service fee.
               Submit this form first; the questionnaire and WhatsApp scheduling request follow.
             </p>
           </div>

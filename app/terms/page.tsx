@@ -95,10 +95,12 @@ export default function TermsPage() {
             signed agreement expressly includes them.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            The $300 Destination Wedding Feasibility &amp; Action Plan fee is non-refundable once work begins.
-            If the client signs a CeremonyVerse destination-planning agreement within 30 days after the
-            written plan is delivered, the $300 is credited toward the CeremonyVerse planning service fee.
+            When the client signs a CeremonyVerse destination-planning contract within 30 days after the
+            written plan is delivered, the full $300 Destination Wedding Feasibility &amp; Action Plan fee is
+            credited toward the CeremonyVerse planning service fee.
             The credit does not apply to resort, venue, vendor, travel, or other independent-provider costs.
+            If no planning contract is signed within that period, the $300 plan remains a completed standalone
+            service and is non-refundable once work begins.
           </p>
           <p style={{ marginTop: "1rem" }}>
             The cost of the actual wedding items — outfits, jewelry, gifts, ceremonial items — is

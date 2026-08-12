@@ -108,6 +108,10 @@ const faqItems = [
       "Yes. Your first 30-minute introductory consultation is free and does not require a contract or payment. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services. Paid work begins only after you select a scope and approve its written terms.",
   },
   {
+    question: "Is the $300 plan fee credited if I continue with CeremonyVerse planning?",
+    answer: destinationFeasibilityCredit,
+  },
+  {
     question: "What happens if my party is larger than eight people?",
     answer:
       "We prepare a custom written scope based on the number of people, ceremonies, items, and timeline. You can review it before deciding whether to proceed.",

@@ -426,8 +426,11 @@ export function HomePage() {
                 <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
                 <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
                   After the free consultation, turn your own guest count, event schedule, budget scope, travel obligations,
-                  and current written proposals into a practical action brief. The fee can be credited toward a
-                  CeremonyVerse destination-planning agreement under the published plan terms.
+                  and current written proposals into a practical action brief.
+                </p>
+                <p className="mt-4 max-w-4xl font-semibold leading-7 text-[#7a6841]">
+                  Sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered,
+                  and the full $300 is credited toward your CeremonyVerse planning service fee.
                 </p>
               </div>
               <Link

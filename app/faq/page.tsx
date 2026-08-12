@@ -54,7 +54,7 @@ const faqSections = [
       },
       {
         question: "Is the $300 destination-wedding plan refundable or credited?",
-        answer: "The $300 fee is non-refundable once work begins. If the couple signs a CeremonyVerse destination-planning agreement within 30 days after the written plan is delivered, the full $300 is credited toward the CeremonyVerse planning service fee. It does not credit resort, vendor, venue, or travel charges."
+        answer: "When you sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered, the full $300 is credited toward your CeremonyVerse planning service fee. The credit does not apply to resort, venue, vendor, travel, or other third-party charges. If no planning contract is signed within that period, the $300 plan remains a completed standalone service and is non-refundable once work begins."
       },
       {
         question: "What's the payment schedule?",

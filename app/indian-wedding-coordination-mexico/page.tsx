@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: "What do CeremonyVerse destination-wedding services cost?",
     answer:
-      "The Destination Wedding Feasibility & Action Plan is $300. Starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.",
+      `The Destination Wedding Feasibility & Action Plan is $300. ${destinationFeasibilityCredit} Starting fees are $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.`,
   },
   {
     question: "Can you help us compare resorts across Mexico and Punta Cana?",

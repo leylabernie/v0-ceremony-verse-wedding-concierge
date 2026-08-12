@@ -7,7 +7,10 @@ import {
   buildMetadata,
   buildServiceSchema,
 } from "@/lib/seo"
-import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
+import {
+  destinationFeasibilityCredit,
+  destinationFeasibilityPlan,
+} from "@/lib/destination-feasibility-plan"
 
 export const metadata = buildMetadata({
   path: "/how-it-works/",
@@ -74,7 +77,7 @@ const faqItems = [
   {
     question: "What happens after the free consultation?",
     answer:
-      "Your first 30-minute consultation is free. After the call, CeremonyVerse may recommend the separate $300 Destination Wedding Feasibility & Action Plan or another paid written scope. You decide whether to proceed after reviewing the terms.",
+      `Your first 30-minute consultation is free. After the call, CeremonyVerse may recommend the separate $300 Destination Wedding Feasibility & Action Plan or another paid written scope. You decide whether to proceed after reviewing the terms. ${destinationFeasibilityCredit}`,
   },
   {
     question: "Will calculator entries be sent to CeremonyVerse automatically?",
@@ -239,6 +242,9 @@ export default function HowItWorksPage() {
               <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
                 Use the free call to confirm fit. Choose the paid plan when you need CeremonyVerse to turn your
                 figures and current written information into a decision brief before you commit to full planning.
+              </p>
+              <p className="mt-4 max-w-4xl text-sm font-semibold leading-6 text-[#7a6841]">
+                {destinationFeasibilityCredit}
               </p>
             </div>
             <Link
