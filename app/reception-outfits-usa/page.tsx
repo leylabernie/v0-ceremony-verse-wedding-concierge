@@ -42,7 +42,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "What is the difference between a bridal lehenga and a reception lehenga?",
     answer:
-      "The bridal lehenga is for the main wedding ceremony and is typically traditional red or maroon with heavy zardozi or gold embroidery. A reception lehenga is for the post-wedding reception party and is your chance to be more experimental — pastels, ombre, jewel tones, sequins, mirror work, or indo-western silhouettes. Many brides choose a lighter, more glamorous look for the reception because they will be socializing, dancing, and taking photos with guests.",
+      "The main-ceremony and reception looks should follow the couple's, family's, and officiant's approved traditions, dress expectations, comfort, and event plan. Some people choose different colors, weight, construction, or silhouettes for the reception, while others reuse or adapt a ceremony look; there is no universal bridal color or required change.",
   },
   {
     question: "What colors are trending for reception lehengas in 2026?",
@@ -57,7 +57,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "What should the groom wear for the reception?",
     answer:
-      "For the reception, the groom typically wears a designer sherwani, indo-western suit, or a tailored bandhgala. Popular 2026 reception choices include velvet sherwanis in deep colors (navy, burgundy, emerald), ivory and gold sherwanis with subtle embroidery, or a tailored indo-western tuxedo with Indian detailing. We coordinate the groom's reception outfit with the bride's look for a cohesive photo aesthetic.",
+      "A groom may choose a sherwani, Indo-Western suit, bandhgala, tuxedo, or another family-approved reception look. Within the selected sourcing scope, CeremonyVerse can organize shared color and style references for the couple, but item availability, fit, materials, and matching depend on the selected vendors and written approvals.",
   },
   {
     question: "How far in advance should I order my reception outfit from India?",
@@ -398,7 +398,7 @@ export default function ReceptionOutfitsPage() {
           {[
             {
               q: "What is the difference between a bridal lehenga and a reception lehenga?",
-              a: "The bridal lehenga is for the main wedding ceremony and is typically traditional red or maroon with heavy zardozi or gold embroidery. A reception lehenga is for the post-wedding reception party and is your chance to be more experimental — pastels, ombre, jewel tones, sequins, mirror work, or indo-western silhouettes. Many brides choose a lighter, more glamorous look for the reception because they will be socializing, dancing, and taking photos with guests.",
+              a: "The main-ceremony and reception looks should follow the couple's, family's, and officiant's approved traditions, dress expectations, comfort, and event plan. Some people choose different colors, weight, construction, or silhouettes for the reception, while others reuse or adapt a ceremony look; there is no universal bridal color or required change.",
             },
             {
               q: "What colors are trending for reception lehengas in 2026?",
@@ -410,7 +410,7 @@ export default function ReceptionOutfitsPage() {
             },
             {
               q: "What should the groom wear for the reception?",
-              a: "For the reception, the groom typically wears a designer sherwani, indo-western suit, or a tailored bandhgala. Popular 2026 reception choices include velvet sherwanis in deep colors (navy, burgundy, emerald), ivory and gold sherwanis with subtle embroidery, or a tailored indo-western tuxedo with Indian detailing. We coordinate the groom's reception outfit with the bride's look for a cohesive photo aesthetic.",
+              a: "A groom may choose a sherwani, Indo-Western suit, bandhgala, tuxedo, or another family-approved reception look. Within the selected sourcing scope, CeremonyVerse can organize shared color and style references for the couple, but item availability, fit, materials, and matching depend on the selected vendors and written approvals.",
             },
             {
               q: "How far in advance should I order my reception outfit from India?",

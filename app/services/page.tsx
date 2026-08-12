@@ -113,8 +113,8 @@ const workflow = [
   "Choose a service tier and receive a written scope",
   "Review options or join live shopping sessions",
   "Approve selections, costs, measurements, and milestones",
-  "Complete pre-shipping review and carrier documentation",
-  "Track delivery and address any covered issue under the signed terms",
+  "Complete any in-scope pre-shipping review and carrier documentation",
+  "Coordinate available tracking and follow the signed remedy terms for any covered issue",
 ]
 
 export default function ServicesPage() {

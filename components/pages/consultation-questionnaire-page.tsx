@@ -274,8 +274,8 @@ export function ConsultationQuestionnairePage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Questionnaire received</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">Thank you, {formData.name}.</h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your consultation request and pre-call questionnaire were received. You can continue to call scheduling now;
-            no prior review or approval is required.
+            Your consultation request and pre-call questionnaire were received. You can continue to the WhatsApp
+            scheduling request now; no prior review or approval is required.
           </p>
           <a
             href={schedulingUrl}
@@ -309,7 +309,7 @@ export function ConsultationQuestionnairePage() {
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Pre-Call Wedding Questionnaire</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
             Your consultation request is on file. Share what is known today so CeremonyVerse can prepare
-            for the free 30-minute consultation. Call scheduling opens after you submit this questionnaire.
+            for the free 30-minute consultation. A WhatsApp scheduling request opens after you submit this questionnaire.
           </p>
         </div>
       </section>

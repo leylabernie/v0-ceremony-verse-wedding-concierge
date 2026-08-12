@@ -16,7 +16,7 @@ const faqSections = [
       },
       {
         question: "What if quality doesn't match?",
-        answer: "We compare the item with the written order references and available approval photos or video before shipping. If we identify a material mismatch, we pause shipment, document the issue, and work through the remedy described in your signed service terms."
+        answer: "When the selected scope includes a pre-shipping review, we compare visible item details with the written order references and available approval photos or video. If that review identifies a material mismatch, the next steps follow the hold, documentation, and remedy terms in the signed agreement; vendor and shipment outcomes remain subject to the responsible providers."
       },
       {
         question: "How do you verify your sourcing partners?",

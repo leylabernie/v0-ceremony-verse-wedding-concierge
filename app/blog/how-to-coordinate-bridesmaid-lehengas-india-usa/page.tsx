@@ -122,7 +122,7 @@ export default function BridesmaidGuidePage() {
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Order</td><td style={{ padding: "0.5rem 0" }}>Confirm item references, costs, estimate, payment, cancellation, and remedy terms</td></tr>
                 <tr style={{ borderBottom: "1px solid #f0ebe3" }}><td style={{ padding: "0.5rem 0" }}>Production</td><td style={{ padding: "0.5rem 0" }}>Record available evidence, change process, and current vendor estimate</td></tr>
                 <tr><td style={{ padding: "0.5rem 0" }}>Delivery and fitting</td><td style={{ padding: "0.5rem 0" }}>Confirm shipment responsibilities, customs, tracking, first fitting, and backup plan</td></tr>
-                <tr><td style={{ padding: "0.5rem 0" }}>2 months out</td><td style={{ padding: "0.5rem 0" }}>Ship to USA, arrives 1.5 months before wedding</td></tr>
+                <tr><td style={{ padding: "0.5rem 0" }}>Shipment window</td><td style={{ padding: "0.5rem 0" }}>Use the carrier&apos;s current estimate and preserve time for customs, a first fitting, alterations, and a backup</td></tr>
               </tbody>
             </table>
           </div>
@@ -154,23 +154,23 @@ export default function BridesmaidGuidePage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Getting 6 bridesmaids in matching lehengas that actually look matching is one of the hardest parts of NRI wedding planning — and the fastest way to blow your budget if colors don&apos;t match or sizes are wrong. One group order mistake and you&apos;re re-ordering from India (3+ months) or panic-buying at US prices.
+              Coordinating six bridesmaid lehengas can create costly rework when color expectations, measurements, approvals, dye-lot variation, or shipment responsibilities are unclear. Record those decisions before ordering and preserve a local backup; no universal remake or delivery timeline applies.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
               Want our bridesmaid ordering worksheet?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download our Bridesmaid Ordering Worksheet</strong> — color coordination template, measurement collection form for each bridesmaid, and group order checklist. Drop your email and it&apos;s yours.
+              Open CeremonyVerse&apos;s no-email-gate resource library for the wedding-outfit checklist, NRI shopping timeline, vendor red flags, and other web-based planning tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Get the Bridesmaid Worksheet →
+              Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want us to coordinate your whole bridesmaid order? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>See how group ordering works</Link> — consistent colors, accurate sizing for every body, one delivery to your door.
+              Want help coordinating a bridesmaid order? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>See how group ordering works</Link> — a shared brief, participant measurement records, written approvals, and shipment planning within the selected scope.
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We source bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire directly from India for NRI weddings. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse offers India-sourcing support for bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire within the selected written scope. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
       </article>

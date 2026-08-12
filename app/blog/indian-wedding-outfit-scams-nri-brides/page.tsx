@@ -62,7 +62,7 @@ export default function ScamsGuidePage() {
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>2. The &quot;Pure Silk&quot; Lie</h2>
           <p><strong>How it works:</strong> A seller labels a synthetic blend as &quot;pure silk&quot; or &quot;100% Banarasi silk.&quot; You pay the premium price for silk. What arrives is polyester that looks acceptable in photos but feels cheap, does not drape well, and photographs poorly under wedding lighting.</p>
-          <p style={{ marginTop: "0.8rem" }}><strong>How to avoid it:</strong> On a live video call, ask the seller to burn-test a small thread from an inner seam. Real silk smells like burnt hair and turns to crumbly ash. Synthetic smells like plastic and leaves a hard bead. A reputable seller will not hesitate to do this. If they refuse, walk away.</p>
+          <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Ask the seller to state the selected item&apos;s fiber, weave, origin, certification, and return terms in writing and request any item-specific Silk Mark or other relevant documentation. Do not rely on a remote burn test, video appearance, product name, or seller confidence as conclusive authentication; use a qualified textile or certification professional when independent verification matters.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>3. The 100% Upfront Payment Trap</h2>
           <p><strong>How it works:</strong> The seller demands full payment before production begins. Once they have your money, they disappear, delay indefinitely, or send something completely different from what you ordered. With no payment protection, your money is gone.</p>
@@ -169,13 +169,13 @@ export default function ScamsGuidePage() {
               These patterns illustrate common remote-shopping risks; they are not CeremonyVerse client stories. A documented process can reduce risk, but it cannot guarantee a successful order.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Want the printable safety checklist?
+              Want the free vendor-red-flags guide?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Get our free Vendor Red Flags Checklist</strong> — a printable 1-page guide to evaluate any Indian wedding vendor before sending money. Covers 10 warning signs, 5 questions to ask on a video call, and a payment safety checklist. Enter your email below.
+              Open the no-email-gate resource library and choose Vendor Red Flags for an evidence, payment, customization, and shipping-risk review you can use before ordering.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Download the Red Flags Checklist →
+              Open Free Vendor Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Want help organizing the evidence? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to see whether the service fits your needs.

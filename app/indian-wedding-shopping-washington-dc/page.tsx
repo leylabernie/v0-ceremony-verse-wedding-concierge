@@ -89,7 +89,7 @@ export default function WashingtonDCPage() {
           </h2>
           <div style={{ fontSize: "17px", lineHeight: 1.8, color: "#4d403a" }}>
             <p style={{ marginBottom: "16px" }}>
-              Everything starts with a free 30-minute consultation on EST. You tell us about your wedding &mdash; ceremonies, party size, timeline, budget. We tell you honestly what&apos;s achievable and which service tier fits. No sales pressure, no inflated promises. We schedule around your availability, whether you&apos;re a federal employee with a fixed lunch hour or a consultant with a packed calendar.
+              Everything starts with a free 30-minute introductory consultation. Share the ceremonies, party size, timeline, and budget so we can discuss which available service tier may fit. After the website questionnaire is submitted, a WhatsApp scheduling request opens and the available call time is confirmed there.
             </p>
             <p style={{ marginBottom: "16px" }}>
               Depending on the selected tier and item, the process may include live video review or current item media, measurement and custom-order coordination, written approvals, available pre-shipping review, and tracked-delivery support. The written quote identifies the vendor, item, service scope, shipment estimate, and terms before paid work begins.

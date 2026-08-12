@@ -97,7 +97,7 @@ export default function OutfitChecklistPage() {
               </tbody>
             </table>
           </div>
-          <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Important:</strong> Both mothers should coordinate their wedding day saree colors 3-4 months in advance. We recommend the bride&apos;s mother wears a color from the bride&apos;s lehenga palette, and the groom&apos;s mother wears a complementary shade.</p>
+          <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Planning prompt:</strong> If the families want coordinated wedding-day saree colors, record each person&apos;s preference and approval deadline early enough for the selected vendor&apos;s current estimate. Matching the bride&apos;s palette or choosing complementary shades is optional, not a cultural rule.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Bridesmaids & Groomsmen</h2>
 
@@ -166,16 +166,16 @@ export default function OutfitChecklistPage() {
               The total number of outfits depends on your actual ceremonies, participants, and reuse plan. One shared checklist can identify missing decisions before a last-minute purchase becomes necessary.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Want the printable version?
+              Want more free planning tools?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download the printable version of this checklist</strong> — formatted for sharing with your entire family, with a built-in budget tracker that tallies costs as you check items off. Enter your email and get the PDF instantly.
+              Open CeremonyVerse&apos;s no-email-gate resource library for the wedding-outfit checklist, shopping timeline, destination budget calculator, family responsibility map, and other web-based tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Get the Printable Checklist + Budget Tracker →
+              Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free planning call</Link> and we&apos;ll help you build an itemized budget and timeline for the requested family wardrobe.
+              Overwhelmed by the outfit count? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Book a free introductory consultation</Link> to discuss the wardrobe scope, timing, and which service tier may fit. A detailed private plan begins only under the applicable written scope.
             </p>
           </div>
 

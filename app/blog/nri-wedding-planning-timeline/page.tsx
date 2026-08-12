@@ -125,7 +125,7 @@ export default function NriWeddingPlanningTimeline() {
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li>Finalize bridesmaid style (sarees, churidars, or indo-western), fabric, and color</li>
             <li>Collect measurements from every bridesmaid — build in 2 weeks of buffer for the ones who take a while to respond</li>
-            <li>Place all bridesmaid orders at once so they arrive together</li>
+            <li>Compare whether one group order or separate orders create the clearest production, dye-lot, customs, and delivery plan; neither structure guarantees identical items or one arrival date</li>
             <li>Confirm the groom&apos;s sherwani measurements and place the order</li>
           </ul>
 
