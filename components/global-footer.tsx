@@ -1,151 +1,64 @@
-import Link from "next/link";
+import Link from "next/link"
 
-/**
- * Lightweight server-rendered footer — added to layout.tsx so it renders
- * on every page. It keeps the primary visitor paths accessible without
- * repeating the full location-page inventory or a hidden keyword block.
- */
-const serviceLinks = [
-  { label: "Destination Wedding Planning", href: "/indian-wedding-coordination-mexico/" },
-  { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
-  { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
-  { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
-  { label: "Jewelry & Accessories", href: "/services/" },
-  { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india/" },
-];
-
-const destinationLinks = [
-  { label: "Destination Overview", href: "/destinations/" },
-  { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
-  { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
-  { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
-  { label: "Jamaica Indian Weddings", href: "/destinations/jamaica-indian-wedding/" },
-  { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
-  { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
-  { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
-];
-
-const ceremonyLinks = [
-  { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa/" },
-  { label: "Sangeet Outfits", href: "/sangeet-outfits-usa/" },
-  { label: "Baraat Outfits", href: "/baraat-outfits-usa/" },
-  { label: "Reception Outfits", href: "/reception-outfits-usa/" },
-  { label: "Gujarati Wedding Outfits", href: "/gujarati-wedding-outfits-usa/" },
-];
-
-const companyLinks = [
-  { label: "How It Works", href: "/how-it-works/" },
-  { label: "Pricing", href: "/pricing/" },
-  { label: "FAQ", href: "/faq/" },
-  { label: "Blog", href: "/blog/" },
-  { label: "Wedding Calculators", href: "/planning-tools/" },
-  { label: "Free Guides", href: "/free-guides/" },
-  { label: "About", href: "/about/" },
-  { label: "Contact", href: "/contact/" },
-];
+const columns = [
+  {
+    title: "Planning",
+    links: [
+      ["Services", "/services/"],
+      ["Pricing", "/pricing/"],
+      ["Our Process", "/how-it-works/"],
+      ["Free Planning Tools", "/planning-tools/"],
+    ],
+  },
+  {
+    title: "Destinations",
+    links: [
+      ["Mexico", "/destinations/"],
+      ["Jamaica", "/destinations/jamaica-indian-wedding/"],
+      ["Punta Cana", "/destinations/punta-cana-indian-wedding/"],
+      ["Complete Wedding Cost", "/indian-destination-wedding-cost/"],
+    ],
+  },
+  {
+    title: "CeremonyVerse",
+    links: [
+      ["About", "/about/"],
+      ["India Sourcing", "/buy-indian-wedding-outfits-from-india/"],
+      ["Questions", "/faq/"],
+      ["Journal", "/blog/"],
+    ],
+  },
+]
 
 export function GlobalFooter() {
   return (
-    <footer style={{ background: "#f9f6f3", borderTop: "1px solid #e6dfd5" }}>
-      {/* Main footer grid */}
-      <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "48px 24px 32px" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-          gap: "32px",
-        }}>
-          {/* Brand column */}
-          <div>
-            <Link href="/" style={{ textDecoration: "none" }}>
-              <span style={{ fontSize: "1.25rem", fontWeight: 600, letterSpacing: "0.15em", textTransform: "uppercase", color: "#1f1f1f" }}>
-                CEREMONY<span style={{ fontWeight: 300, color: "#7a6841" }}>VERSE</span>
-              </span>
-            </Link>
-            <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              Indian destination-wedding planning for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana,
-              with optional India wedding sourcing for families across the USA and Canada.
-            </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>
-              <a href="mailto:hello@ceremonyverse.com" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
-                hello@ceremonyverse.com
-              </a>
-              <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
-                WhatsApp or call +1 (215) 341-9990
-              </a>
-              <Link href="/how-it-works/" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
-                Review the complete planning process →
-              </Link>
-            </div>
-          </div>
-
-          {/* Services */}
-          <div>
-            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Services</p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
-              {serviceLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Ceremonies */}
-          <div>
-            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Destinations</p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
-              {destinationLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>By Ceremony</p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
-              {ceremonyLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Company</p>
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
-              {companyLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <footer className="border-t border-[#39312b] bg-[#211d19] text-white">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 sm:px-10 lg:grid-cols-[1.35fr_2fr] lg:py-20">
+        <div className="max-w-md">
+          <Link href="/" className="font-serif text-2xl font-semibold uppercase tracking-[0.18em] !text-white">CEREMONY<span className="font-light !text-[#caa867]">VERSE</span></Link>
+          <p className="mt-5 text-sm leading-7 !text-white/65">Thoughtful Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India sourcing for families across the USA and Canada.</p>
+          <div className="mt-6 space-y-2 text-sm">
+            <a href="mailto:hello@ceremonyverse.com" className="block !text-[#e7c98e]">hello@ceremonyverse.com</a>
+            <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" className="block !text-[#e7c98e]">WhatsApp or call +1 (215) 341-9990</a>
           </div>
         </div>
+        <div className="grid gap-10 sm:grid-cols-3">
+          {columns.map((column) => (
+            <div key={column.title}>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#caa867]">{column.title}</p>
+              <ul className="mt-5 space-y-3">
+                {column.links.map(([label, href]) => <li key={href}><Link href={href} className="text-sm !text-white/68 hover:!text-white">{label}</Link></li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
-
-      {/* Bottom bar */}
-      <div style={{ borderTop: "1px solid #e6dfd5" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "16px 24px", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>
-          <p style={{ fontSize: "11px", color: "#5e4a40" }}>© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
-          <div style={{ display: "flex", gap: "16px" }}>
-            <Link href="/privacy/" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Privacy Policy</Link>
-            <span style={{ color: "#e6dfd5" }}>·</span>
-            <Link href="/terms/" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Terms of Service</Link>
-          </div>
+      <div className="border-t border-white/10 px-6 py-5">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 text-xs !text-white/45">
+          <p className="text-xs !text-white/45">© {new Date().getFullYear()} CeremonyVerse. All rights reserved.</p>
+          <div className="flex gap-5"><Link href="/privacy/" className="!text-white/45">Privacy</Link><Link href="/terms/" className="!text-white/45">Terms</Link><Link href="/contact/" className="!text-white/45">Contact</Link></div>
         </div>
       </div>
     </footer>
-  );
+  )
 }

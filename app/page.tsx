@@ -1,17 +1,14 @@
-import { HomePage } from '../components/pages/home-page';
-import { buildMetadata } from '@/lib/seo';
+import { HomePage } from "../components/pages/home-page"
+import { buildMetadata } from "@/lib/seo"
 
 export const metadata = buildMetadata({
-  path: '/',
-  title: 'Indian Destination Wedding Planning | CeremonyVerse',
-  description:
-    "Plan an Indian destination wedding in Mexico or Punta Cana with family coordination, local execution, guest logistics, calculators, and optional India sourcing.",
-  image: '/images/proof/family-destination-baarat.webp',
-  keywords: 'Indian wedding shopping concierge, Indian wedding outfit sourcing USA, bridal lehenga from India, Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding concierge, Punta Cana Indian wedding planning, NRI bridal concierge, live video shopping India',
-});
+  path: "/",
+  title: "Indian Destination Wedding Planning | CeremonyVerse",
+  description: "Plan a Gujarati or Hindu destination wedding across Mexico, Jamaica, or Punta Cana with a U.S.-based family contact, local execution, guest coordination, and optional India sourcing.",
+  image: "/images/proof/family-destination-baarat.webp",
+  keywords: "Indian destination wedding planning, Gujarati destination wedding planner, Hindu wedding Mexico, Indian wedding Jamaica, Punta Cana Indian wedding, India wedding sourcing USA Canada",
+})
 
-export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog' | 'faq' | 'contact' | 'bridesmaids' | 'groom' | 'groomsmen' | 'family' | 'ceremonial' | 'jewelry' | 'pets' | 'gifts' | 'welcomebags' | 'journey';
+export type PageType = "home" | "services" | "pricing" | "how-it-works" | "blog" | "faq" | "contact" | "bridesmaids" | "groom" | "groomsmen" | "family" | "ceremonial" | "jewelry" | "pets" | "gifts" | "welcomebags" | "journey"
 
-export default function Page() {
-  return <HomePage />;
-}
+export default function Page() { return <HomePage /> }

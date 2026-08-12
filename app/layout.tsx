@@ -63,7 +63,7 @@ export const metadata = {
     title:
       "Indian Destination Wedding Planning & India Sourcing | CeremonyVerse",
     description:
-      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family-side coordination and optional India sourcing.",
+      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with destination coordination and optional India sourcing.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -72,7 +72,7 @@ export const metadata = {
         url: "https://www.ceremonyverse.com/images/proof/family-destination-baarat.webp",
         width: 1200,
         height: 630,
-        alt: "Baraat celebration at a family destination wedding in Mexico",
+        alt: "Joyful baraat celebration at a destination wedding in Mexico",
       },
     ],
   },
@@ -202,8 +202,8 @@ export default function RootLayout({
         <AcquisitionAttribution />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Mexico &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
-          <span className="lg:hidden">Mexico &amp; Punta Cana planning</span>
+          <span className="hidden lg:inline">Mexico · Jamaica · Punta Cana planning · Serving couples across the USA &amp; Canada</span>
+          <span className="lg:hidden">Mexico · Jamaica · Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <Link href="/contact/">Free 30-Minute Consultation</Link>
         </div>
@@ -224,3 +224,4 @@ export default function RootLayout({
     </html>
   );
 }
+

@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 11, 2026
+            Last updated: August 12, 2026
           </p>
         </div>
       </div>
@@ -68,7 +68,7 @@ export default function TermsPage() {
             or eliminate the risks inherent in handmade and remotely purchased items.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For destination weddings across Mexico and in Punta Cana, CeremonyVerse can offer full planning,
+            For destination weddings across Mexico, Jamaica, and Punta Cana, CeremonyVerse can offer full planning,
             partial planning, event coordination, family communication, guest-information, arrival,
             welcome-item, and India-sourcing support. The client&apos;s wedding-specific written proposal identifies the
             selected services, outside costs, exclusions, payment terms, and approval responsibilities.
@@ -295,3 +295,4 @@ export default function TermsPage() {
     </main>
   );
 }
+
