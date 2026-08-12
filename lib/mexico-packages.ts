@@ -26,7 +26,8 @@ export const mexicoPackages: MexicoPackage[] = [
       "One on-site point of contact for the contracted vendors",
       "Master timeline orchestration from start to finish",
       "Behind-the-scenes troubleshooting during the agreed event scope",
-      "Final cultural, family-contact, and responsibility handover",
+      "Final cultural, family-contact, guest-arrival, and responsibility handover",
+      "On-site family and guest issue routing during the agreed event scope",
     ],
     excludes: [
       "Full planning or vendor sourcing before handover",
@@ -49,8 +50,9 @@ export const mexicoPackages: MexicoPackage[] = [
       "Detailed timelines for the agreed multi-day festivities",
       "Ongoing planning and logistics support",
       "On-site execution and management for the scheduled events",
-      "Cultural-requirements handover, family decision map, and approval tracking",
-      "Guest-information schedule and optional India-sourcing alignment",
+      "Cultural-requirements handover plus family questions, decisions, meeting follow-ups, and approval tracking",
+      "Guest rooming-list, transfer-information, arrival, and welcome-plan coordination through independent providers",
+      "Optional India-sourcing alignment",
     ],
     excludes: [
       "Work completed before the package begins",
@@ -74,8 +76,9 @@ export const mexicoPackages: MexicoPackage[] = [
       "Guidance during essential site visits",
       "Structured weekly progress meetings and updates",
       "Coordination and on-site management for the agreed multi-day events",
-      "Gujarati or Hindu cultural brief, family decision map, and approval tracking",
+      "Gujarati or Hindu cultural brief plus family questions, decisions, meeting follow-ups, and approval tracking",
       "Resort-proposal, complete-budget, and guest-information review",
+      "Guest rooming-list, transfer-information, arrival, and welcome-plan coordination through independent providers",
       "Alignment with optional CeremonyVerse India sourcing when requested",
     ],
     excludes: [
@@ -85,48 +88,6 @@ export const mexicoPackages: MexicoPackage[] = [
     cta: "Request a Private Proposal",
     href: "/contact/?service=mexico",
     category: "Planning",
-  },
-  {
-    name: "Family Concierge Support",
-    priceLabel: "Optional paid add-on — custom quote",
-    timeline: "Quoted separately alongside a destination-planning package",
-    bestFor: "Best for: families who want one organized US-based contact",
-    description:
-      "CeremonyVerse keeps family questions, decisions, meeting follow-ups, and agreed guest details organized across the planning journey.",
-    includes: [
-      "Family priorities and decision tracking",
-      "Meeting notes and follow-up reminders",
-      "Family and guest-information coordination",
-      "Connection to CeremonyVerse India wedding sourcing when requested",
-    ],
-    excludes: [
-      "Legal, immigration, or travel-agent advice",
-      "Responsibilities outside the signed concierge scope",
-    ],
-    cta: "Discuss Family Concierge Support",
-    href: "/contact/?service=mexico",
-    category: "Concierge",
-  },
-  {
-    name: "Guest Travel & Arrival Support",
-    priceLabel: "Optional paid add-on — custom quote",
-    timeline: "Quoted separately based on guest count and travel days",
-    bestFor: "Best for: destination guest logistics and the arrival experience",
-    description:
-      "A tailored support plan for guest information, rooming details, transfers, arrivals, and welcome touches.",
-    includes: [
-      "Guest flight and rooming-list organization",
-      "Transfer coordination through independent providers",
-      "Arrival guidance and welcome-kit planning",
-      "Optional hospitality-desk support",
-    ],
-    excludes: [
-      "Selling flights, rooms, or transfers",
-      "Provider charges and items outside the signed scope",
-    ],
-    cta: "Request a Custom Proposal",
-    href: "/contact/?service=mexico",
-    category: "Concierge",
   },
 ]
 

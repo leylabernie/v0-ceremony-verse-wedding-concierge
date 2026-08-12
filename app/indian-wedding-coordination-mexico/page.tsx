@@ -26,7 +26,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Gujarati and Hindu Destination Wedding Planning",
   description:
-    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with optional family support, guest logistics, and India sourcing.",
+    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with family support and guest logistics included by package level plus optional India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
   areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
   offers: [
@@ -109,8 +109,8 @@ const howToSchema = buildHowToSchema({
       text: "Compare Full Planning & Design, Partial Planning & Coordination, and Event Coordination & Management against what has already been booked and what still needs an owner.",
     },
     {
-      name: "Choose any additional family support",
-      text: "Add only the family-concierge, guest-information, arrival, welcome-item, or India-sourcing responsibilities that would genuinely make the process easier.",
+      name: "Confirm the included family and guest support",
+      text: "Review the family coordination, guest-information, arrival, and welcome-plan responsibilities included at the selected planning level, then add India sourcing only if needed.",
     },
     {
       name: "Build one operating plan",
@@ -365,9 +365,9 @@ export default function MexicoCoordinationPage() {
             <article className="rounded-2xl border border-[#e6dfd5] p-8">
               <h3 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Destination planning + family support</h3>
               <p className="mt-4 leading-relaxed text-[#4d403a]">
-                The selected private scope can include resort and vendor coordination, production and timeline work,
-                on-site management, cultural requirements, family approvals, guest information, arrival details, and
-                welcome items.
+                Each planning package includes the family and guest responsibilities listed for that level, alongside
+                its resort and vendor coordination, production, timeline, cultural, and on-site work. Independent
+                travel and other provider charges remain separate.
               </p>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] p-8">

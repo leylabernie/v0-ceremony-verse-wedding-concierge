@@ -397,7 +397,7 @@ export default function MexicoDestinationGuidePage() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
             CeremonyVerse can help organize the comparison, identify unanswered questions, and recommend the
-            planning package and family-support scope that fit what you have already completed.
+            planning package whose included family and guest support fits what you have already completed.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
