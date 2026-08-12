@@ -24,27 +24,13 @@ export const metadata = buildMetadata({
 
 const tiers = [
   {
-    name: "Style Guide & Vendor List",
-    price: "$249",
-    numericPrice: 249,
-    bestFor: "Best for: self-directed families",
-    description: "You want a researched starting point but will contact vendors, order, and ship independently.",
-    includes: [
-      "One 30-minute consultation",
-      "Written style, ceremony, and budget brief",
-      "Curated starting options and vendor guidance",
-      "One written clarification round",
-    ],
-    excludes: ["Live shopping sessions", "Vendor/order management", "Inspection or shipping coordination"],
-  },
-  {
     name: "Guided Sourcing",
     price: "$799",
     numericPrice: 799,
     bestFor: "Best for: one to several important outfits",
     description: "You want live help reviewing options and managing the high-risk steps of a remote order.",
     includes: [
-      "Everything in Style Guide",
+      "Written style, ceremony, and budget brief",
       "Two to four live video shopping sessions",
       "Selection and measurement coordination",
       "Written approvals and order follow-up",
@@ -104,7 +90,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse charge a percentage of the outfit price?",
     answer:
-      "No. The three standard sourcing tiers use the USD flat service fees shown on this page for U.S. and Canadian clients. Product costs, shipping, insurance, customs charges, taxes, brokerage, and alterations are separately itemized before approval.",
+      "No. The two standard sourcing tiers use the USD flat service fees shown on this page for U.S. and Canadian clients. Product costs, shipping, insurance, customs charges, taxes, brokerage, and alterations are separately itemized before approval.",
   },
   {
     question: "Do the same sourcing plans apply in Canada?",
@@ -254,7 +240,7 @@ export default function PricingPage() {
               insurance, import charges, brokerage, and alterations remain separate.
             </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
             {tiers.map((tier) => (
               <article
                 key={tier.name}
@@ -266,7 +252,7 @@ export default function PricingPage() {
               >
                 {tier.featured && (
                   <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
-                    Most hands-on starting point
+                    Recommended starting point
                   </p>
                 )}
                 <h2 className="font-serif text-3xl font-semibold">{tier.name}</h2>

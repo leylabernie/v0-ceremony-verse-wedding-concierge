@@ -32,12 +32,6 @@ const serviceSchema = buildServiceSchema({
   category: "Indian Wedding Sourcing — Bridal Lehenga India to USA",
   offers: [
     {
-      name: "Style Guide & Vendor List",
-      price: 249,
-      description:
-        "Curated vendor style guide for your bridal lehenga sourced from India.",
-    },
-    {
       name: "Guided Sourcing",
       price: 799,
       description:

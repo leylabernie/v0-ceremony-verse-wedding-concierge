@@ -201,7 +201,6 @@ export default function MassachusettsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
               { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
-              { tier: "Style Guide & Vendor List", price: "$249", desc: "A researched starting point for families who will contact vendors, order, and ship independently." },
               { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
               { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
@@ -248,7 +247,7 @@ export default function MassachusettsPage() {
               },
               {
                 q: "Do you work with Indian student couples getting married in Massachusetts?",
-                a: "Student couples can use the same service options as other families. The $249 Style Guide & Vendor List is a self-directed starting point, while the $799 Guided Sourcing tier adds live shopping and order coordination. Product, shipping, customs, and alteration costs remain separate.",
+                a: "Student couples can use the same service options as other families. The $799 Guided Sourcing tier includes live shopping and selected order coordination, while Full Bridal Concierge supports the couple and wedding party. Product, shipping, customs, and alteration costs remain separate.",
               },
               {
                 q: "Can you coordinate both Indian and Western outfit needs for one Boston wedding?",

@@ -20,11 +20,6 @@ export const metadata = buildMetadata({
 
 const offers = [
   {
-    name: "Style Guide & Vendor List",
-    price: 249,
-    description: "A curated starting point for families managing their own purchases.",
-  },
-  {
     name: "Guided Sourcing",
     price: 799,
     description: "Live shopping, selection, measurement, order, and pre-shipping review support.",

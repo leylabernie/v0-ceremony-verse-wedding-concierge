@@ -26,11 +26,6 @@ const serviceSchema = buildServiceSchema({
   areaServed: "Canada",
   offers: [
     {
-      name: "Style Guide & Vendor List",
-      price: 249,
-      description: "A curated starting point for families managing their own orders and shipment.",
-    },
-    {
       name: "Guided Sourcing",
       price: 799,
       description: "Live shopping and order coordination with shipping-document and tracking support.",
@@ -62,7 +57,7 @@ const faqItems = [
   {
     question: "Can Canadian families use the CeremonyVerse pricing plans and calculator?",
     answer:
-      "Yes. The three standard sourcing service fees are in USD. The North America Shipping & Customs Calculator uses USD entries and separates the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
+      "Yes. The two standard sourcing service fees are in USD. The North America Shipping & Customs Calculator uses USD entries and separates the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
   },
 ]
 

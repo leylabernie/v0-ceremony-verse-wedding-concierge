@@ -38,11 +38,6 @@ const serviceSchema = buildServiceSchema({
   areaServed: "NY-NJ-PA Metro Area, United States",
   offers: [
     {
-      name: "Style Guide & Vendor List",
-      price: 249,
-      description: "Curated bridal wear style guide for your NY/NJ wedding.",
-    },
-    {
       name: "Guided Sourcing",
       price: 799,
       description:

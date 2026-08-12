@@ -130,22 +130,11 @@ const processSteps = [
 
 const pricingTiers = [
   {
-    name: "Style Guide & Vendor List",
-    price: "$249",
-    description: "For families comfortable placing and managing their own orders.",
-    features: [
-      "30-minute consultation",
-      "Personalized style and budget brief",
-      "Curated starting options and vendor guidance",
-      "One written follow-up",
-    ],
-  },
-  {
     name: "Guided Sourcing",
     price: "$799",
     description: "For help with the decisions that are hardest to make remotely.",
     features: [
-      "Everything in the Style Guide tier",
+      "Personalized style and budget brief",
       "Two to four live video shopping sessions",
       "Selection, measurement, and order coordination",
       "Available pre-shipping review against approved references",
@@ -484,7 +473,7 @@ export function HomePage() {
               brokerage, and local alterations are separate and shown in writing before purchase approval.
             </p>
           </div>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
             {pricingTiers.map((tier) => (
               <article
                 key={tier.name}
@@ -496,7 +485,7 @@ export function HomePage() {
               >
                 {tier.featured && (
                   <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
-                    Most hands-on starting point
+                    Recommended starting point
                   </p>
                 )}
                 <h3 className="font-serif text-2xl font-semibold">{tier.name}</h3>

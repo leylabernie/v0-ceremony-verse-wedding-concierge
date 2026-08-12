@@ -373,17 +373,6 @@ export function buildLocalBusinessSchema(): object {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Style Guide & Vendor List",
-            description:
-              "Curated starting point for self-directed brides sourcing Indian wedding outfits from Surat and Delhi",
-          },
-          price: "249",
-          priceCurrency: "USD",
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
             name: "Guided Sourcing",
             description:
               "Live video shopping sessions with families in Surat and Delhi for bridal outfits",
@@ -457,7 +446,7 @@ export function buildGlobalFaqSchema(): object {
         name: "How much does it cost to source Indian wedding outfits from India?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse India sourcing services start at $249 for a Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Destination-planning packages start at $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. A free 30-minute consultation is available.",
+          text: "CeremonyVerse India sourcing services start at $799 for Guided Sourcing and $2,499 for Full Bridal Concierge. Destination-planning packages start at $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. A free 30-minute consultation is available.",
         },
       },
       {

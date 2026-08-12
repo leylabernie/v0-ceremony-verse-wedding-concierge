@@ -55,14 +55,20 @@ const originStoryPhotos = [
   {
     src: "/images/proof/prior-outfit-couple.webp",
     alt: "Couple wearing coordinated custom wedding outfits from a project completed before CeremonyVerse launched",
+    frameClass: "aspect-[3/4]",
+    imageClass: "object-contain",
   },
   {
     src: "/images/proof/prior-outfit-wedding-party.webp",
     alt: "Wedding party wearing coordinated Indian outfits from a pre-launch custom-outfit project",
+    frameClass: "aspect-[4/3]",
+    imageClass: "object-cover",
   },
   {
     src: "/images/proof/prior-outfit-groomsmen.webp",
     alt: "Groom and groomsmen wearing coordinated Indian wedding outfits from a pre-launch project",
+    frameClass: "aspect-[4/3]",
+    imageClass: "object-cover",
   },
 ];
 
@@ -134,15 +140,18 @@ export default function AboutPage() {
               outfit sourcing—not destination-wedding planning.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-[0.75fr_1fr_1fr] md:items-center">
             {originStoryPhotos.map((photo) => (
-              <div key={photo.src} className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#f4eee4]">
+              <div
+                key={photo.src}
+                className={`relative overflow-hidden rounded-2xl bg-[#f4eee4] ${photo.frameClass}`}
+              >
                 <Image
                   src={photo.src}
                   alt={photo.alt}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
+                  className={photo.imageClass}
                 />
               </div>
             ))}

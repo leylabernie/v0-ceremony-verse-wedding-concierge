@@ -46,7 +46,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "Destination starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The Feasibility & Action Plan is $300. India shopping uses $249, $799, and $2,499 service tiers. Third-party costs and wedding-specific additions are itemized separately."
+        answer: "Destination starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The Feasibility & Action Plan is $300. India shopping uses $799 and $2,499 service tiers. Third-party costs and wedding-specific additions are itemized separately."
       },
       {
         question: "Is the $300 destination-wedding plan refundable or credited?",

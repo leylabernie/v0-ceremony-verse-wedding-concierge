@@ -78,8 +78,8 @@ export default function TermsPage() {
             2. Service Tiers and Payment
           </h2>
           <p>
-            CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
-            ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
+            CeremonyVerse offers two India-shopping service tiers: Guided Sourcing ($799) and Full Bridal
+            Concierge ($2,499). The Destination Wedding
             Feasibility &amp; Action Plan is $300. Destination packages start at $8,000 for Full Planning &amp; Design,
             $5,500 for Partial Planning &amp; Coordination, and $4,000 for Event Coordination &amp; Management.
             The final written proposal reflects the selected destination, dates, events, guest count, travel,
