@@ -52,7 +52,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "On-site execution and management for the scheduled events",
       "Cultural-requirements handover plus family questions, decisions, meeting follow-ups, and approval tracking",
       "Guest rooming-list, transfer-information, arrival, and welcome-plan coordination through independent providers",
-      "Optional India-sourcing alignment",
+      "Coordination with separately contracted CeremonyVerse India sourcing, when selected",
     ],
     excludes: [
       "Work completed before the package begins",
@@ -79,7 +79,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Gujarati or Hindu cultural brief plus family questions, decisions, meeting follow-ups, and approval tracking",
       "Resort-proposal, complete-budget, and guest-information review",
       "Guest rooming-list, transfer-information, arrival, and welcome-plan coordination through independent providers",
-      "Alignment with optional CeremonyVerse India sourcing when requested",
+      "Coordination with separately contracted CeremonyVerse India sourcing, when selected",
     ],
     excludes: [
       "Resort, venue, vendor, travel, or production charges",

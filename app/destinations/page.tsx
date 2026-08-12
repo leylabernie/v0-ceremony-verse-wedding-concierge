@@ -4,154 +4,137 @@ import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, Jso
 export const metadata = buildMetadata({
   path: "/destinations/",
   title: "Indian Destination Weddings: Mexico, Jamaica & Punta Cana",
-  description:
-    "Compare Cancún, Riviera Maya, Jamaica, and Punta Cana for a multi-day Indian destination wedding, including guest access, resorts, room blocks, culture, costs, and execution.",
+  description: "Compare Mexico, Jamaica, and Punta Cana for a multi-day Gujarati or Hindu destination wedding, including guest access, room blocks, cultural fit, resort costs, and local execution.",
   image: "/images/sourcing/couple-mandap.webp",
 })
 
 const destinations = [
   {
-    name: "Cancún",
-    href: "/destinations/cancun-indian-wedding/",
-    summary: "Compare airport access, Hotel Zone and nearby resort areas, event venues, food, vendor rules, room blocks, and written weather backups.",
-    bestWhen: "Guest access and a broad resort shortlist lead the decision.",
-  },
-  {
-    name: "Riviera Maya",
-    href: "/destinations/riviera-maya-indian-wedding/",
-    summary: "Compare a long coastal region through airport choice, resort layout, guest mobility, venue variety, production access, and complete cost.",
-    bestWhen: "A specific resort setting and multi-event layout lead the decision.",
-  },
-  {
-    name: "Los Cabos",
-    href: "/destinations/los-cabos-indian-wedding/",
-    summary: "Compare SJD access, San José del Cabo, the Tourist Corridor and Cabo San Lucas, venue format, food, vendors, production, room blocks, and weather backups.",
-    bestWhen: "The guest map and a property-specific resort or private-venue plan lead the decision.",
+    name: "Mexico",
+    places: "Cancún · Riviera Maya · Los Cabos · Mexico City and beyond",
+    summary: "The broadest planning range, from all-inclusive beachfront resorts to city celebrations, supported by a Mexico City–based destination team.",
+    links: [
+      ["Cancún", "/destinations/cancun-indian-wedding/"],
+      ["Riviera Maya", "/destinations/riviera-maya-indian-wedding/"],
+      ["Los Cabos", "/destinations/los-cabos-indian-wedding/"],
+    ],
   },
   {
     name: "Jamaica",
-    href: "/destinations/jamaica-indian-wedding/",
-    summary: "Compare public resort-package details, South Asian capability, airports, room blocks, cultural permissions, local execution, entertainment rules, and complete cost.",
-    bestWhen: "A current Jamaica-specific resort proposal and named on-site team prove the multi-event plan.",
+    places: "Montego Bay · Trelawny · Ocho Rios",
+    summary: "A resort-specific comparison of guest access, room commitments, cultural permissions, food, event spaces, weather alternatives, and the local team.",
+    links: [["Explore Jamaica", "/destinations/jamaica-indian-wedding/"]],
   },
   {
     name: "Punta Cana",
-    href: "/destinations/punta-cana-indian-wedding/",
-    summary: "Compare PUJ access, entry steps, all-inclusive resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
-    bestWhen: "The guest travel map and a strong property-specific proposal win.",
+    places: "Dominican Republic",
+    summary: "All-inclusive resort planning evaluated through guest travel, room-block exposure, cultural execution, local vendors, event venues, and complete written cost.",
+    links: [["Explore Punta Cana", "/destinations/punta-cana-indian-wedding/"]],
   },
 ]
 
+const comparisonPoints = [
+  ["Guest access", "Airports, passport and visa responsibilities, transfers, mobility needs, children, elders, and arrival patterns."],
+  ["Resort commitment", "Room rates, minimum stays, deposits, attrition, concessions, cut-off dates, upgrades, and event-access rules."],
+  ["Celebration fit", "Event spaces, food, cultural permissions, Mandap and Baraat needs, production, sound, weather backup, and curfews."],
+  ["Complete host cost", "Resort package, private events, vendors, décor, production, planning, travel, tax, service charges, and contingency."],
+]
+
 const faqItems = [
-  {
-    question: "Which destinations does CeremonyVerse support?",
-    answer:
-      "Current destination-wedding planning coverage includes Mexico, Jamaica, and Punta Cana. Cancún, Riviera Maya, and Los Cabos have dedicated comparison pages, but CeremonyVerse is not limited to those areas of Mexico. Availability and the selected local team are confirmed in writing.",
-  },
-  {
-    question: "Which destination is cheaper for an Indian wedding?",
-    answer:
-      "No destination is universally cheaper. Compare the same guest count, room nights, events, hours, venues, catering, production, vendors, planning, travel, taxes, service charges, and contingency. A low resort-package headline may exclude several required categories.",
-  },
-  {
-    question: "Does CeremonyVerse work with U.S. and Canadian families?",
-    answer:
-      "Yes. CeremonyVerse is the family-facing coordinator for clients throughout the United States and Canada. The signed scope separates CeremonyVerse family support, local destination planning and on-site execution, and any services handled by resorts or licensed travel providers.",
-  },
-  {
-    question: "Can India sourcing be combined with destination planning?",
-    answer:
-      "Yes. Optional India sourcing can be added for outfits, jewelry, ceremony items, gifts, and welcome items. Products, shipping, customs, alterations, and any sourcing service fee are itemized separately unless the written proposal expressly includes them.",
-  },
+  { question: "Which destinations does CeremonyVerse support?", answer: "Current planning coverage includes Mexico, Jamaica, and Punta Cana. CeremonyVerse is not limited to Cancún, Riviera Maya, or Los Cabos within Mexico. Availability and the selected local team are confirmed in writing." },
+  { question: "Which destination is least expensive?", answer: "No destination is universally least expensive. A valid comparison uses the same guest count, room nights, events, hours, venues, catering, production, vendors, planning, travel, taxes, service charges, and contingency." },
+  { question: "Can we see public resort-package information first?", answer: "Yes. CeremonyVerse maintains a curated starting library of public resort information. It is comparison material—not a CeremonyVerse quote, negotiated rate, or guarantee." },
+  { question: "Can India sourcing be added?", answer: "Yes. Optional India sourcing can be aligned with the destination plan. Its service fee, products, shipping, customs, and alterations are separately itemized." },
 ]
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Destinations", url: "/destinations/" }])
 const faqSchema = buildFaqSchema(faqItems)
-const serviceSchema = buildServiceSchema({
-  name: "Indian Destination Wedding Planning in Mexico, Jamaica, and Punta Cana",
-  description:
-    "Family-facing planning, local execution coordination, cultural requirements, guest-information organization, and optional India sourcing for Gujarati and Hindu weddings.",
-  url: "/destinations/",
-  category: "Indian Destination Wedding Planning",
-  areaServed: ["Mexico", "Jamaica", "Dominican Republic", "United States", "Canada"],
-})
+const serviceSchema = buildServiceSchema({ name: "Indian Destination Wedding Planning in Mexico, Jamaica, and Punta Cana", description: "Family-facing planning, local execution coordination, cultural requirements, guest-information organization, and optional India sourcing for Gujarati and Hindu weddings.", url: "/destinations/", category: "Indian Destination Wedding Planning", areaServed: ["Mexico", "Jamaica", "Dominican Republic", "United States", "Canada"] })
 
 export default function DestinationsPage() {
   return (
-    <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
+    <main className="min-h-screen bg-[#f8f5ef] text-[#201d1a]">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
       <JsonLd id="schema-service" data={serviceSchema} />
 
-      <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white sm:py-28">
+      <section className="bg-[#211d19] px-6 py-24 text-center text-white sm:py-32">
         <div className="mx-auto max-w-5xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Mexico, Jamaica &amp; Punta Cana</p>
-          <h1 className="mt-4 font-serif text-5xl font-semibold !text-white sm:text-6xl">Indian destination wedding locations, compared clearly</h1>
-          <p className="mx-auto mt-7 max-w-4xl text-lg leading-8 !text-white/80">Choose the destination through your guest map, complete written cost, event spaces, cultural requirements, room-block risk, weather backup, and the team that will actually execute—not through a beach photo or package headline.</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.26em] !text-[#caa867]">Mexico · Jamaica · Punta Cana</p>
+          <h1 className="mx-auto mt-5 max-w-4xl font-serif text-5xl font-medium leading-tight !text-white sm:text-7xl">A beautiful destination must also work beautifully.</h1>
+          <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 !text-white/72">We compare each destination through your guests, ceremonies, room commitments, complete cost, and the people responsible for local execution.</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule a Free 30-Minute Consultation</Link>
-            <Link href="/planning-tools/budget/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Calculate the Complete Budget</Link>
+            <Link href="/contact/?service=mexico&from=destinations" className="rounded-full bg-[#caa867] px-7 py-4 text-sm font-semibold !text-[#211d19]">Schedule Your Free Consultation</Link>
+            <Link href="/resort-packages/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">Explore Resort Information</Link>
           </div>
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:py-24">
+      <section className="px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Start with the destination shortlist</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Five high-intent planning paths</h2>
-            <p className="mt-5 text-lg leading-8 text-[#4d403a]">Each guide asks different location-specific questions while using the same decision standard. No page claims an exclusive resort relationship or guaranteed price.</p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="grid gap-px overflow-hidden rounded-[2rem] border border-[#d8cdbc] bg-[#d8cdbc] lg:grid-cols-3">
             {destinations.map((destination) => (
-              <article key={destination.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8 sm:p-9">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Destination guide</p>
-                <h2 className="mt-3 font-serif text-4xl font-semibold">{destination.name}</h2>
-                <p className="mt-5 flex-1 leading-7 text-[#4d403a]">{destination.summary}</p>
-                <p className="mt-6 rounded-xl bg-[#f4eee4] p-4 text-sm leading-6 text-[#4d403a]"><strong>Stronger fit when:</strong> {destination.bestWhen}</p>
-                <Link href={destination.href} className="mt-7 inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Plan an Indian wedding in {destination.name}</Link>
+              <article key={destination.name} className="flex min-h-[430px] flex-col bg-[#fffdf9] p-9 sm:p-11">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#80683b]">{destination.places}</p>
+                <h2 className="mt-6 font-serif text-4xl font-medium">{destination.name}</h2>
+                <p className="mt-6 flex-1 leading-8 text-[#51483f]">{destination.summary}</p>
+                <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3">
+                  {destination.links.map(([label, href]) => <Link key={href} href={href} className="font-semibold text-[#80683b]">{label} <span aria-hidden="true">→</span></Link>)}
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-            <div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">One comparison standard</p><h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">What should every destination prove?</h2><p className="mt-5 leading-7 text-[#4d403a]">Use the same assumptions and evidence for every proposal. If one destination has a missing answer, do not silently give it the most favorable assumption.</p></div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                ["Guest access", "Flights, passport and visa responsibilities, airport, transfers, mobility, children, elders, and arrivals."],
-                ["Room block", "Rates, minimum stays, deposits, attrition, concessions, upgrades, cut-off dates, and event-access rules."],
-                ["Event feasibility", "Exact spaces, seated layouts, Mandap, Baraat, production, sound, fire, setup, breakdown, and backups."],
-                ["Complete host cost", "Rooms paid by family, events, catering, vendors, planning, production, décor, tax, service charges, travel, and contingency."],
-                ["Food and culture", "Current Indian and Jain menus, kitchen rules, tasting, allergies, officiant requirements, and approved ceremony details."],
-                ["Execution", "Named responsibility for resort, vendors, family decisions, guest information, travel services, on-site changes, and emergencies."],
-              ].map(([title, text]) => <article key={title} className="rounded-xl border border-[#e6dfd5] bg-[#faf8f5] p-6"><h3 className="font-serif text-2xl font-semibold">{title}</h3><p className="mt-3 text-sm leading-6 text-[#4d403a]">{text}</p></article>)}
-            </div>
+      <section className="bg-[#eee7dc] px-6 py-24 sm:py-32">
+        <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.26em] text-[#80683b]">One comparison standard</p>
+            <h2 className="mt-4 font-serif text-4xl font-medium leading-tight sm:text-6xl">What every destination should prove.</h2>
+            <p className="mt-6 text-lg leading-8 text-[#51483f]">A package headline is only a starting point. The unanswered terms often determine whether the wedding is truly feasible.</p>
+          </div>
+          <div className="border-t border-[#cfc2af]">
+            {comparisonPoints.map(([title, text]) => (
+              <article key={title} className="grid gap-3 border-b border-[#cfc2af] py-7 sm:grid-cols-[170px_1fr]">
+                <h3 className="font-serif text-2xl font-medium">{title}</h3>
+                <p className="text-base leading-7 text-[#51483f]">{text}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {[
-              ["Complete wedding cost", "/indian-destination-wedding-cost/", "Build one budget across resort, events, rooms, vendors, planning, travel, and contingency."],
-              ["Room-block terms", "/indian-wedding-room-block-mexico/", "Understand deposits, attrition, concessions, release dates, guest booking, and responsible providers."],
-              ["Gujarati & Hindu plan", "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", "Map family decisions, ceremonies, food, production, vendors, and multi-day timing."],
-              ["Destination wardrobe", "/lehenga-for-destination-wedding-mexico/", "Plan outfits, fabrics, measurements, shipping, customs, alterations, and handoff timing."],
-            ].map(([title, href, text]) => <article key={href} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-7"><h2 className="font-serif text-2xl font-semibold">{title}</h2><p className="mt-4 flex-1 text-sm leading-6 text-[#4d403a]">{text}</p><Link href={href} className="mt-6 font-semibold text-[#7a6841] underline underline-offset-4">Open this planning guide</Link></article>)}
-          </div>
+      <section className="bg-[#fffdf9] px-6 py-24 sm:py-32">
+        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
+          <article className="rounded-[2rem] border border-[#ded5c7] p-9 sm:p-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#80683b]">Published resort information</p>
+            <h2 className="mt-4 font-serif text-4xl font-medium">See the headline—and what it does not cover.</h2>
+            <p className="mt-6 leading-8 text-[#51483f]">Review current public package examples, guest limits, room-night conditions, event structure, and the questions still requiring written confirmation.</p>
+            <Link href="/resort-packages/" className="mt-8 inline-flex rounded-full bg-[#80683b] px-7 py-3.5 text-sm font-semibold !text-white">Explore Resort Information</Link>
+          </article>
+          <article className="rounded-[2rem] border border-[#ded5c7] p-9 sm:p-12">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#80683b]">Calculate before choosing</p>
+            <h2 className="mt-4 font-serif text-4xl font-medium">Build the complete wedding budget.</h2>
+            <p className="mt-6 leading-8 text-[#51483f]">Use one guest count and event plan across the resort package, rooms, venues, food, vendors, production, travel, taxes, service charges, and contingency.</p>
+            <Link href="/planning-tools/budget/" className="mt-8 inline-flex rounded-full border border-[#80683b] px-7 py-3.5 text-sm font-semibold text-[#80683b]">Open the Budget Calculator</Link>
+          </article>
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-5xl"><div className="text-center"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Destination FAQ</p><h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Questions families ask before choosing</h2></div><div className="mt-10 grid gap-5 md:grid-cols-2">{faqItems.map((faq) => <article key={faq.question} className="rounded-2xl border border-[#e6dfd5] bg-white p-8"><h3 className="font-serif text-2xl font-semibold">{faq.question}</h3><p className="mt-4 leading-7 text-[#4d403a]">{faq.answer}</p></article>)}</div></div>
+      <section className="px-6 py-24 sm:py-28">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.26em] text-[#80683b]">Destination questions</p>
+          <h2 className="mt-4 text-center font-serif text-4xl font-medium sm:text-6xl">Compare with the same facts.</h2>
+          <div className="mt-12 space-y-3">{faqItems.map((item) => <details key={item.question} className="rounded-2xl border border-[#d5c9b8] bg-[#fffdf9] p-6"><summary className="cursor-pointer font-semibold text-[#201d1a]">{item.question}</summary><p className="mt-4 leading-7 text-[#51483f]">{item.answer}</p></details>)}</div>
+        </div>
       </section>
 
-      <section className="bg-[#7a6841] px-6 py-20 text-center text-white"><div className="mx-auto max-w-3xl"><h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Bring us your actual wedding facts</h2><p className="mt-5 text-lg leading-8 !text-white/85">We will help you compare the destination, complete cost, room-block exposure, cultural requirements, family responsibilities, and next decision.</p><Link href="/contact/?service=mexico" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule a Free 30-Minute Consultation</Link></div></section>
+      <section className="bg-[#80683b] px-6 py-24 text-center text-white">
+        <h2 className="font-serif text-4xl font-medium !text-white sm:text-6xl">Bring us your actual wedding facts.</h2>
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 !text-white/80">We will help you identify the next useful comparison—not push a destination before the details are known.</p>
+        <Link href="/contact/?service=mexico&from=destinations-final" className="mt-9 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#2a241e]">Schedule Your Free Consultation</Link>
+      </section>
     </main>
   )
 }

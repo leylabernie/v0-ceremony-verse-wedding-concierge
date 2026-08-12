@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Viewport } from "next";
 import Script from "next/script";
-import Link from "next/link";
-import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
@@ -182,23 +180,13 @@ export default function RootLayout({
           `}
         </Script>
         <AcquisitionAttribution />
-        {/* Service-area announcement bar — fixed at very top */}
-        <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Mexico · Jamaica · Punta Cana planning · Serving couples across the USA &amp; Canada</span>
-          <span className="lg:hidden">Mexico · Jamaica · Punta Cana planning</span>
-          <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/">Free 30-Minute Consultation</Link>
-        </div>
-
         {/* Navigation — appears on ALL pages */}
         <Navigation />
 
-        {/* Keep page content below the responsive fixed announcement and navigation. */}
+        {/* Keep page content below the fixed navigation. */}
         <div className="cv-header-spacer" />
         {children}
 
-        {/* SINGLE WhatsApp Button (global) */}
-        <WhatsAppButton />
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
         <GlobalFooter />

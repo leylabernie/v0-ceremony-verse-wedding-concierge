@@ -62,19 +62,19 @@
 
   /* Fixed header geometry. These values change together at breakpoints so
      the announcement, navigation, and page spacer can never overlap. */
-  --cv-announcement-height: 56px;
+  --cv-announcement-height: 0px;
   --cv-navigation-height: 80px;
 }
 
 @media (min-width: 640px) {
   :root {
-    --cv-announcement-height: 44px;
+    --cv-announcement-height: 0px;
   }
 }
 
 @media (min-width: 1280px) {
   :root {
-    --cv-announcement-height: 40px;
+    --cv-announcement-height: 0px;
     --cv-navigation-height: 96px;
   }
 }

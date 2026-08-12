@@ -9,10 +9,9 @@ import { usePathname } from "next/navigation"
 const navItems = [
   { label: "Planning", href: "/services/" },
   { label: "Destinations", href: "/destinations/" },
-  { label: "Experience", href: "/about/" },
   { label: "Pricing", href: "/pricing/" },
-  { label: "Our Process", href: "/how-it-works/" },
   { label: "India Sourcing", href: "/buy-indian-wedding-outfits-from-india/" },
+  { label: "About", href: "/about/" },
 ]
 
 export function Navigation() {
@@ -25,9 +24,9 @@ export function Navigation() {
     <header className="cv-site-header fixed left-0 right-0 z-50 border-b border-[#ded5c7] bg-[#fffdf9]/95 backdrop-blur-md">
       <nav className="mx-auto max-w-[1500px] px-5 sm:px-8" aria-label="Main navigation">
         <div className="cv-navigation-row flex items-center justify-between gap-6">
-          <Link href="/" className="flex shrink-0 flex-col" onClick={close}>
+          <Link href="/" className="flex shrink-0 flex-col" onClick={close} aria-label="CeremonyVerse home">
             <span className="font-serif text-2xl font-semibold uppercase tracking-[0.18em] text-[#211d19] sm:text-3xl">CEREMONY<span className="font-light text-[#80683b]">VERSE</span></span>
-            <span className="mt-0.5 text-[9px] font-medium uppercase tracking-[0.24em] text-[#6b5b4d]">Destination weddings · India sourcing</span>
+            <span className="mt-0.5 hidden text-[9px] font-medium uppercase tracking-[0.24em] text-[#6b5b4d] sm:block">Destination wedding concierge</span>
           </Link>
 
           <div className="hidden items-center gap-1 min-[1280px]:flex">
@@ -36,7 +35,7 @@ export function Navigation() {
             ))}
           </div>
 
-          <Link href="/contact/" className="hidden shrink-0 rounded-full border border-[#80683b] px-6 py-3 text-sm font-semibold text-[#80683b] transition hover:bg-[#80683b] hover:!text-white min-[1280px]:inline-flex">Free Consultation</Link>
+          <Link href="/contact/" className="hidden shrink-0 rounded-full bg-[#80683b] px-6 py-3 text-sm font-semibold !text-white transition hover:bg-[#6f5a32] min-[1280px]:inline-flex">Free 30-Minute Call</Link>
 
           <button className="p-2 text-[#211d19] min-[1280px]:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-expanded={mobileMenuOpen} aria-label="Toggle navigation menu">{mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}</button>
         </div>

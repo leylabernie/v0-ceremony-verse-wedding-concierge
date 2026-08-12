@@ -4,10 +4,9 @@ const columns = [
   {
     title: "Planning",
     links: [
-      ["Services", "/services/"],
+      ["Planning Services", "/services/"],
       ["Pricing", "/pricing/"],
-      ["Our Process", "/how-it-works/"],
-      ["Free Planning Tools", "/planning-tools/"],
+      ["How It Works", "/how-it-works/"],
     ],
   },
   {
@@ -16,7 +15,7 @@ const columns = [
       ["Mexico", "/destinations/"],
       ["Jamaica", "/destinations/jamaica-indian-wedding/"],
       ["Punta Cana", "/destinations/punta-cana-indian-wedding/"],
-      ["Complete Wedding Cost", "/indian-destination-wedding-cost/"],
+      ["Published Resort Information", "/resort-packages/"],
     ],
   },
   {
@@ -24,8 +23,8 @@ const columns = [
     links: [
       ["About", "/about/"],
       ["India Sourcing", "/buy-indian-wedding-outfits-from-india/"],
-      ["Questions", "/faq/"],
-      ["Journal", "/blog/"],
+      ["Free Planning Tools", "/planning-tools/"],
+      ["Journal & Guides", "/blog/"],
     ],
   },
 ]
@@ -36,7 +35,7 @@ export function GlobalFooter() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 sm:px-10 lg:grid-cols-[1.35fr_2fr] lg:py-20">
         <div className="max-w-md">
           <Link href="/" className="font-serif text-2xl font-semibold uppercase tracking-[0.18em] !text-white">CEREMONY<span className="font-light !text-[#caa867]">VERSE</span></Link>
-          <p className="mt-5 text-sm leading-7 !text-white/65">Thoughtful Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India sourcing for families across the USA and Canada.</p>
+          <p className="mt-5 text-sm leading-7 !text-white/65">Thoughtful Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with Mini as your consistent U.S.-based contact.</p>
           <div className="mt-6 space-y-2 text-sm">
             <a href="mailto:hello@ceremonyverse.com" className="block !text-[#e7c98e]">hello@ceremonyverse.com</a>
             <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" className="block !text-[#e7c98e]">WhatsApp or call +1 (215) 341-9990</a>
