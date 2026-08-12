@@ -2,30 +2,12 @@ import "./globals.css";
 import type { Viewport } from "next";
 import Script from "next/script";
 import Link from "next/link";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
 import { AcquisitionAttribution } from "@/components/acquisition-attribution";
 import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
-
-// Build-time font loading via next/font — eliminates the render-blocking
-// Google Fonts @import that was in globals.css. Fonts are downloaded at
-// build time and self-hosted by Vercel; no runtime network roundtrip.
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
 
 // Root metadata: title/description are defaults; individual pages override.
 // NOTE: We intentionally do NOT set `alternates.canonical` here. Setting it
@@ -99,7 +81,7 @@ export default function RootLayout({
   const webSiteSchema = buildWebSiteSchema();
 
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="en">
       <head>
         {/*
           Google Analytics — loaded on FIRST USER INTERACTION (scroll, click,
@@ -224,4 +206,3 @@ export default function RootLayout({
     </html>
   );
 }
-
