@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
   path: "/indian-wedding-coordination-mexico/",
   title: "Indian Destination Wedding Planner Mexico",
   description:
-    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico and in Punta Cana.",
+    "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico, Jamaica, and Punta Cana.",
   keywords:
     "Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, destination wedding family support, India wedding sourcing",
 });
@@ -26,9 +26,9 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Gujarati and Hindu Destination Wedding Planning",
   description:
-    "Coordinated destination planning and on-site execution across Mexico and in Punta Cana, with family support and guest logistics included by package level plus optional India sourcing.",
+    "Coordinated destination planning and on-site execution across Mexico, Jamaica, and Punta Cana, with family support and guest logistics included by package level plus optional India sourcing.",
   url: "/indian-wedding-coordination-mexico/",
-  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
+  areaServed: ["Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,
@@ -61,9 +61,14 @@ const faqItems = [
       `The Destination Wedding Feasibility & Action Plan is $300. ${destinationFeasibilityCredit} Starting fees are $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The final proposal identifies the wedding-specific services, exclusions, fees, travel, staffing, and third-party costs before paid work begins.`,
   },
   {
-    question: "Can you help us compare resorts across Mexico and Punta Cana?",
+    question: "Can you help us compare resorts across Mexico, Jamaica, and Punta Cana?",
     answer:
       "Yes. CeremonyVerse compares destination and resort options against your guest origins, dates, event schedule, accessibility needs, ceremony requirements, room-block terms, and budget. A resort is not recommended until its current written policies are reviewed.",
+  },
+  {
+    question: "Can the planner work with us virtually?",
+    answer:
+      "Yes. Remote meetings can cover proposal review, timelines, budgets, decisions, family coordination, and agreed guest information. The signed proposal separately identifies any site visits, local work, travel, staffing, and on-site execution. A separate virtual-only package is quoted only if the destination partner confirms that exact scope.",
   },
   {
     question: "Which wedding traditions are the current focus?",
@@ -147,11 +152,11 @@ export default function MexicoCoordinationPage() {
             className="mb-6 text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Indian destination wedding planning for Mexico and Punta Cana
+            Indian destination wedding planning for Mexico, Jamaica, and Punta Cana
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
             CeremonyVerse offers planning, on-site coordination, family support, guest organization, and optional India
-            sourcing for Gujarati and Hindu destination weddings across Mexico and in Punta Cana.
+            sourcing for Gujarati and Hindu destination weddings across Mexico, Jamaica, and Punta Cana.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link

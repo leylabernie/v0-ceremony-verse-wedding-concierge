@@ -22,7 +22,7 @@ export const mexicoPackages: MexicoPackage[] = [
     description:
       "A complete handover and on-site management service so the couple can step back and enjoy the celebration.",
     includes: [
-      "Comprehensive handover of finalized details and vendor confirmations",
+      "Remote handover meetings plus finalized detail and vendor confirmations",
       "One on-site point of contact for the contracted vendors",
       "Master timeline orchestration from start to finish",
       "Behind-the-scenes troubleshooting during the agreed event scope",
@@ -48,7 +48,7 @@ export const mexicoPackages: MexicoPackage[] = [
     includes: [
       "Vendor-management takeover and contract review",
       "Detailed timelines for the agreed multi-day festivities",
-      "Ongoing planning and logistics support",
+      "Scheduled remote planning meetings, documented decisions, and ongoing logistics support",
       "On-site execution and management for the scheduled events",
       "Cultural-requirements handover plus family questions, decisions, meeting follow-ups, and approval tracking",
       "Guest rooming-list, transfer-information, arrival, and welcome-plan coordination through independent providers",
@@ -74,7 +74,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Research and coordination of suitable local vendor options",
       "Venue sourcing and management",
       "Guidance during essential site visits",
-      "Structured weekly progress meetings and updates",
+      "Structured remote weekly progress meetings, documented decisions, and updates",
       "Coordination and on-site management for the agreed multi-day events",
       "Gujarati or Hindu cultural brief plus family questions, decisions, meeting follow-ups, and approval tracking",
       "Resort-proposal, complete-budget, and guest-information review",

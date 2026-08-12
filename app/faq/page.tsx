@@ -92,7 +92,7 @@ const faqSections = [
     items: [
       {
         question: "Do I need to travel to India?",
-        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico and in Punta Cana through the scope selected for the wedding."
+        answer: "No. The India-shopping process can be handled remotely through scheduled calls, written approvals, and eligible live video sessions. Destination-wedding planning and on-site services are available across Mexico, Jamaica, and Punta Cana through the scope selected for the wedding."
       },
       {
         question: "Can I source just one item, or do I need a full package?",
@@ -109,7 +109,11 @@ const faqSections = [
     items: [
       {
         question: "Where does CeremonyVerse plan destination weddings?",
-        answer: "Current service coverage includes Mexico and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
+        answer: "Current service coverage includes Mexico, Jamaica, and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
+      },
+      {
+        question: "Can destination planning happen virtually?",
+        answer: "Yes. CeremonyVerse can handle planning meetings, proposal review, decision tracking, timelines, family coordination, and agreed guest-information work remotely. The signed proposal separately defines any destination site work, travel, staffing, and on-site execution; a virtual-only package is not promised unless specifically quoted."
       },
       {
         question: "Who handles the wedding at the destination?",
@@ -150,7 +154,7 @@ function FloralSeparator() {
 export const metadata = buildMetadata({
   path: '/faq',
   title: 'FAQ: Destination Wedding Planning & India Shopping',
-  description: 'Answers about CeremonyVerse destination-wedding planning in Mexico and Punta Cana, pricing, responsibilities, India sourcing, shipping, customs, and fit.',
+  description: 'Answers about CeremonyVerse destination-wedding planning in Mexico, Jamaica, and Punta Cana, pricing, responsibilities, India sourcing, shipping, customs, and fit.',
   keywords: 'Indian wedding outfit sourcing FAQ, NRI bride questions, lehenga from India scams, customs duties Indian wedding outfits, bridal lehenga sizing',
 });
 

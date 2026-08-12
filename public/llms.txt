@@ -1,10 +1,10 @@
 # CeremonyVerse
 
-> CeremonyVerse is a U.S.-based service with two distinct offers: Indian wedding shopping for families throughout the United States and Canada, and destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana.
+> CeremonyVerse is a U.S.-based service with two distinct offers: Indian wedding shopping for families throughout the United States and Canada, and destination-wedding planning support for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana.
 
 ## About
 
-CeremonyVerse organizes remote India shopping and destination-wedding planning support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and U.S. or Canada shipping-document and tracking support. Destination services can include planning, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a written proposal.
+CeremonyVerse organizes remote India shopping and destination-wedding planning support. India-shopping differentiators include eligible live video review, documented approvals, measurement coordination, pre-shipping review, and U.S. or Canada shipping-document and tracking support. Destination services can include remote planning meetings, on-site execution, family support, guest information, welcome-item coordination, and India sourcing as defined in a written proposal. The experienced destination partner is based in Mexico City; local and on-site responsibilities for each wedding are named privately in writing. Optional fire performances, water-drum entertainment, and golf-cart logistics are separately quoted third-party additions subject to venue approval, safety, insurance, availability, and written terms.
 
 - [About CeremonyVerse](https://www.ceremonyverse.com/about/): Family experience, current service coverage, and planning approach
 - [How It Works](https://www.ceremonyverse.com/how-it-works/): Step-by-step process from consultation to delivery
@@ -18,8 +18,8 @@ CeremonyVerse organizes remote India shopping and destination-wedding planning s
 - [Groom Sherwanis](https://www.ceremonyverse.com/buy-sherwani-from-india-usa/): Sherwanis and related groom outfits
 - [Bridesmaid and Family Outfits](https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india/): Coordinated group sourcing
 - [Wedding Accessories and Ceremony Items](https://www.ceremonyverse.com/wedding-accessories-and-ceremony-items-from-india/): Jewelry, gifts, welcome bags, and ceremony items
-- [Destination Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Gujarati and Hindu wedding planning across Mexico and in Punta Cana with optional family, guest, and India-sourcing support
-- [Destination Guide Hub](https://www.ceremonyverse.com/destinations/): Compare Cancún, Riviera Maya, and Punta Cana for a Gujarati or Hindu destination wedding
+- [Destination Wedding Planning](https://www.ceremonyverse.com/indian-wedding-coordination-mexico/): Gujarati and Hindu wedding planning across Mexico, Jamaica, and Punta Cana with optional family, guest, and India-sourcing support
+- [Destination Guide Hub](https://www.ceremonyverse.com/destinations/): Compare Cancún, Riviera Maya, Jamaica, and Punta Cana for a Gujarati or Hindu destination wedding
 - [Indian Destination Wedding Cost Guide](https://www.ceremonyverse.com/indian-destination-wedding-cost/): Build a complete host budget without confusing resort inclusions with total wedding cost
 - [Mexico Room Block Guide](https://www.ceremonyverse.com/indian-wedding-room-block-mexico/): Questions and decision records for room blocks while licensed providers handle booking
 - [Free Wedding Calculators](https://www.ceremonyverse.com/planning-tools/): Client-entered budget, resort-proposal, guest/VIP cost, USA-or-Canada shipping/customs, and family responsibility tools
@@ -50,6 +50,7 @@ CeremonyVerse organizes remote India shopping and destination-wedding planning s
 - [Indian Destination Wedding Planner Mexico](https://www.ceremonyverse.com/indian-destination-wedding-planner-mexico/)
 - [Cancún Indian Wedding Guide](https://www.ceremonyverse.com/destinations/cancun-indian-wedding/)
 - [Riviera Maya Indian Wedding Guide](https://www.ceremonyverse.com/destinations/riviera-maya-indian-wedding/)
+- [Jamaica Indian Wedding Guide](https://www.ceremonyverse.com/destinations/jamaica-indian-wedding/): Public resort-package research, South Asian capability, guest access, room blocks, cultural rules, and current-quote safeguards
 - [Punta Cana Indian Wedding Guide](https://www.ceremonyverse.com/destinations/punta-cana-indian-wedding/)
 - [Destination Wedding Lehenga Guide](https://www.ceremonyverse.com/lehenga-for-destination-wedding-mexico/)
 

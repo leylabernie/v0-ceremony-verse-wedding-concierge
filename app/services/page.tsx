@@ -13,7 +13,7 @@ export const metadata = buildMetadata({
   path: "/services/",
   title: "Indian Wedding Shopping & Destination Planning Services",
   description:
-    "CeremonyVerse offers India wedding shopping plus destination planning, family support, and on-site coordination across Mexico and in Punta Cana.",
+    "CeremonyVerse offers India wedding shopping plus destination planning, family support, and on-site coordination across Mexico, Jamaica, and Punta Cana.",
   keywords:
     "Indian wedding shopping concierge, bridal lehenga sourcing, Cancun Indian wedding planning, Riviera Maya Indian wedding planner, Punta Cana Indian wedding planning, NRI wedding shopping",
 })
@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
 const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Shopping and Destination Planning",
   description:
-    "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico and Punta Cana.",
+    "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico, Jamaica, and Punta Cana.",
   url: "/services/",
 })
 
@@ -36,7 +36,12 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan or coordinate weddings?",
     answer:
-      "Yes. CeremonyVerse offers event coordination, partial planning, and full planning across Mexico and Punta Cana. The Pricing page compares the published starting fees and scope, while the final written proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+      "Yes. CeremonyVerse offers event coordination, partial planning, and full planning across Mexico, Jamaica, and Punta Cana. The Pricing page compares the published starting fees and scope, while the final written proposal identifies the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+  },
+  {
+    question: "Can destination planning happen virtually?",
+    answer:
+      "Yes. Planning meetings, proposal review, decision tracking, timelines, family coordination, and agreed guest-information work can be handled remotely for U.S. and Canadian families. A separate virtual-only package is not promised; any site work or on-site execution is included only when the signed proposal names the responsible team, dates, travel, staffing, and scope.",
   },
   {
     question: "Are product and shipping costs included in the service fee?",
@@ -109,7 +114,7 @@ export default function ServicesPage() {
           </h1>
           <p className="mx-auto mb-9 max-w-3xl text-lg leading-8 text-white/80">
             CeremonyVerse organizes India shopping for families throughout the United States and Canada and offers
-            destination planning and on-site coordination across Mexico and in Punta Cana. One written proposal defines the selected
+            destination planning and on-site coordination across Mexico, Jamaica, and Punta Cana. One written proposal defines the selected
             planning, family-support, guest, and optional India-sourcing services.
           </p>
           <p className="mx-auto mb-7 max-w-3xl text-sm leading-6 text-[#e8cf9d]">
@@ -170,6 +175,35 @@ export default function ServicesPage() {
               Explore Destination Planning
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Optional local additions</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Guest experiences and event logistics, quoted separately</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              When requested, the destination team can seek written third-party options for permitted fire performances,
+              water-drum entertainment, and golf-cart mobility or event logistics. These are additions—not free package inclusions.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {[
+              ["Fire performances", "Subject to venue approval, performer insurance, fire and safety rules, permits where required, weather, location, and a written production quote."],
+              ["Water-drum entertainment", "Subject to resort approval, performer availability, sound and staging rules, setup requirements, access, and a written quote."],
+              ["Golf-cart logistics", "Subject to resort rules, authorized operators, passenger capacity, routes, accessibility needs, insurance, timing, and a written transport or rental quote."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-[#d9cfbf] bg-white p-8">
+                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
+                <p className="mt-4 leading-7 text-[#4d403a]">{description}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mx-auto mt-7 max-w-4xl text-center text-sm leading-6 text-[#5e4a40]">
+            Availability is never guaranteed. The resort or venue, provider, insurer, and applicable authorities control
+            approval; the signed proposal identifies the responsible party, price, payment terms, cancellation rules, and backup.
+          </p>
         </div>
       </section>
 

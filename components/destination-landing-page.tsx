@@ -35,7 +35,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
               Compare Resort Proposals
             </Link>
           </div>
-          <p className="mt-6 text-sm leading-6 !text-white/60">Serving families throughout the United States and Canada · Sources reviewed August 11, 2026</p>
+          <p className="mt-6 text-sm leading-6 !text-white/60">Serving families throughout the United States and Canada · Sources reviewed August 12, 2026</p>
         </div>
       </section>
 
@@ -92,6 +92,35 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           </div>
         </div>
       </section>
+
+      {data.resortPackageBenchmarks && (
+        <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Public resort-package research</p>
+              <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">What the public package pages actually say</h2>
+              <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+                These details help build a shortlist. They are not CeremonyVerse prices, affiliations, recommendations,
+                availability promises, or complete Indian-wedding totals. Request a current resort-written quote for your dates.
+              </p>
+            </div>
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
+              {data.resortPackageBenchmarks.map((benchmark) => (
+                <article key={benchmark.resort} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-8">
+                  <h3 className="font-serif text-3xl font-semibold">{benchmark.resort}</h3>
+                  <p className="mt-5 leading-7 text-[#4d403a]">{benchmark.publicDetail}</p>
+                  <p className="mt-5 flex-1 rounded-xl bg-[#faf8f5] p-4 text-sm leading-6 text-[#5e4a40]">
+                    <strong>Before relying on it:</strong> {benchmark.planningNote}
+                  </p>
+                  <a href={benchmark.sourceHref} target="_blank" rel="noopener noreferrer" className="mt-6 font-semibold text-[#7a6841] underline underline-offset-4">
+                    Read the official resort source
+                  </a>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
@@ -177,7 +206,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             {data.sources.map((source) => <a key={source.href} href={source.href} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-[#e6dfd5] p-5 text-[#4d403a] transition hover:border-[#7a6841]"><span className="font-semibold text-[#7a6841] underline">{source.label}</span><span className="mt-2 block text-sm leading-6">{source.note}</span></a>)}
           </div>
-          <p className="mt-6 text-sm leading-6 text-[#5e4a40]">Sources reviewed August 11, 2026. Destination, entry, resort, vendor, weather, price, tax, service-charge, and policy information can change. Verify all material terms for the actual dates and travelers. This page is planning information, not legal, immigration, insurance, financial, or travel-agent advice.</p>
+          <p className="mt-6 text-sm leading-6 text-[#5e4a40]">Sources reviewed August 12, 2026. Destination, entry, resort, vendor, weather, price, tax, service-charge, and policy information can change. Verify all material terms for the actual dates and travelers. This page is planning information, not legal, immigration, insurance, financial, or travel-agent advice.</p>
           <div className="mt-8 flex flex-wrap gap-4 text-sm font-semibold text-[#7a6841]">
             <Link href="/destinations/" className="underline underline-offset-4">Compare all destinations</Link>
             <Link href="/indian-destination-wedding-cost/" className="underline underline-offset-4">Build the complete wedding cost</Link>

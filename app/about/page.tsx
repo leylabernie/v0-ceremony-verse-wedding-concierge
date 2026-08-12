@@ -20,7 +20,7 @@ const aboutSchema = {
   name: "About CeremonyVerse",
   url: "https://www.ceremonyverse.com/about/",
   description:
-    "CeremonyVerse combines firsthand family-side destination-wedding experience with an experienced Mexico-based planning and execution partner and optional India sourcing.",
+    "CeremonyVerse combines firsthand family-side destination-wedding experience with an experienced Mexico City-based planning and execution partner and optional India sourcing.",
   mainEntity: {
     "@type": "Organization",
     name: "CeremonyVerse",
@@ -32,7 +32,7 @@ const aboutSchema = {
     },
     telephone: "+12153419990",
     email: "hello@ceremonyverse.com",
-    areaServed: ["United States", "Canada", "Mexico", "Punta Cana"],
+    areaServed: ["United States", "Canada", "Mexico", "Jamaica", "Punta Cana"],
   },
 };
 
@@ -231,21 +231,21 @@ export default function AboutPage() {
               Current destination coverage
             </p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">
-              Destination planning across Mexico and Punta Cana
+              Destination planning across Mexico, Jamaica, and Punta Cana
             </h2>
             <div className="mt-6 space-y-5 text-lg leading-8 text-[#4d403a]">
               <p>
-                CeremonyVerse supports Gujarati and Hindu destination weddings throughout Mexico and in Punta Cana.
+                CeremonyVerse supports Gujarati and Hindu destination weddings throughout Mexico, Jamaica, and Punta Cana.
                 CeremonyVerse is the family-facing point of contact for cultural understanding, approvals, guest
                 organization, logistics oversight, transparency, and optional sourcing support.
               </p>
               <p>
-                An experienced Mexico-based planning and execution partner handles the selected local planning,
+                An experienced Mexico City-based planning and execution partner handles the selected local planning,
                 vendor coordination, negotiations, and on-site execution. The private proposal identifies each party&apos;s
                 responsibilities, fees, outside costs, approvals, payment handling, and exclusions before paid work.
               </p>
               <p>
-                Families can work with CeremonyVerse from anywhere in the United States or Canada. India-sourcing
+                Planning meetings, proposal reviews, decision tracking, and family coordination can happen remotely for families anywhere in the United States or Canada. The written proposal separately identifies any destination site visits, local work, and on-site execution. India-sourcing
                 shipment terms, tracking, customs responsibilities, and outside costs are confirmed for the exact
                 destination before an approved shipment proceeds.
               </p>

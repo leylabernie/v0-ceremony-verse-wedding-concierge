@@ -319,7 +319,7 @@ export function ContactPage() {
               </div>
               <div>
                 <label htmlFor="eventLocation" className={labelClass}>Destination or event location</label>
-                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region, resort, or Punta Cana" : "City, state, or destination"} />
+                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region, Jamaica resort, or Punta Cana" : "City, state, or destination"} />
               </div>
               <div>
                 <label htmlFor="guestCount" className={labelClass}>Estimated guests</label>

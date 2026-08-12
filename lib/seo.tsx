@@ -38,7 +38,7 @@ function buildAreaServed(areaServed?: string | string[]): SchemaArea[] {
     : defaultSourcingAreas.map((area) => area.name);
 
   return areaNames.map((name) => ({
-    "@type": ["United States", "Canada", "Mexico", "Dominican Republic"].includes(name)
+    "@type": ["United States", "Canada", "Mexico", "Jamaica", "Dominican Republic"].includes(name)
       ? "Country"
       : "Place",
     name,
@@ -345,7 +345,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
+      "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana.",
     url: SITE_URL,
     image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     logo: `${SITE_URL}/icon.svg`,
@@ -357,7 +357,7 @@ export function buildLocalBusinessSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Dominican Republic"]),
+    areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Jamaica", "Dominican Republic"]),
     priceRange: "$$",
     sameAs: [
       "https://wa.me/12153419990",
@@ -419,7 +419,7 @@ export function buildGlobalFaqSchema(): object {
         name: "What does CeremonyVerse do?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico and Punta Cana. Starting fees are published for three planning packages; the final written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+          text: "CeremonyVerse offers India wedding shopping for families throughout the United States and Canada plus destination-wedding planning support for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana. Starting fees are published for three planning packages; the final written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
         },
       },
       {
@@ -501,7 +501,7 @@ export function buildOrganizationSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     description:
-      "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico and Punta Cana.",
+      "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico, Jamaica, and Punta Cana.",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -539,7 +539,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
+      "Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

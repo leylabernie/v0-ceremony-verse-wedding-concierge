@@ -40,7 +40,7 @@ export const metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding sourcing for families across the USA and Canada.",
+    "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India wedding sourcing for families across the USA and Canada.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -63,7 +63,7 @@ export const metadata = {
     title:
       "Indian Destination Wedding Planning & India Sourcing | CeremonyVerse",
     description:
-      "Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with family-side coordination and optional India sourcing.",
+      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family-side coordination and optional India sourcing.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",

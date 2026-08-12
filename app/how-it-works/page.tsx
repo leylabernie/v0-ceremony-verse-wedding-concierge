@@ -18,16 +18,16 @@ export const metadata = buildMetadata({
   description:
     "Follow the CeremonyVerse client process from the free consultation and signed planning contract through resort decisions, guest coordination, wedding-week execution, and closeout.",
   keywords:
-    "Indian destination wedding planning process, Gujarati wedding planning Mexico, Punta Cana Indian wedding planning, India wedding sourcing process",
+    "Indian destination wedding planning process, Gujarati wedding planning Mexico, Jamaica and Punta Cana Indian wedding planning, India wedding sourcing process",
 })
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Destination Planning and India Wedding Sourcing",
   description:
-    "A documented client process for Gujarati and Hindu destination-wedding planning across Mexico and in Punta Cana, from the first consultation through wedding closeout, with optional India wedding sourcing.",
+    "A documented client process for Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, from the first consultation through wedding closeout, with optional India wedding sourcing.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning and India Wedding Sourcing",
-  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
+  areaServed: ["United States", "Canada", "Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "How It Works", url: "/how-it-works/" }])
@@ -169,6 +169,11 @@ const faqItems = [
     question: "Do we have to use both destination planning and India sourcing?",
     answer:
       "No. Either service can be selected independently. A combined private proposal is used only when the family wants both destination-wedding support and India sourcing organized together.",
+  },
+  {
+    question: "Can the planning meetings be virtual?",
+    answer:
+      "Yes. CeremonyVerse can hold planning meetings, document reviews, decision tracking, family coordination, and agreed guest-information work remotely for U.S. and Canadian families. The signed proposal separately identifies who handles site visits, destination work, travel, staffing, and on-site execution.",
   },
   {
     question: "What should we prepare before the consultation?",

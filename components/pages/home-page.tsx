@@ -65,6 +65,11 @@ const destinationHighlights = [
     description: "Compare SJD access, regional location, venue format, guest movement, food, vendors, production, room blocks, and weather backup.",
   },
   {
+    name: "Jamaica",
+    href: "/destinations/jamaica-indian-wedding/",
+    description: "Compare public resort packages, South Asian capability, airports, room blocks, cultural rules, on-site execution, entertainment permissions, and complete cost.",
+  },
+  {
     name: "Punta Cana",
     href: "/destinations/punta-cana-indian-wedding/",
     description: "Compare PUJ access, guest-entry steps, resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
@@ -76,9 +81,9 @@ const servicePillars = [
     label: "Destination wedding planning",
     title: "Family coordination with local planning and execution",
     description:
-      "Plan a Gujarati or Hindu destination celebration anywhere in Mexico or in Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration anywhere in Mexico, Jamaica, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
-      "Planning support defined from the beginning",
+      "Remote planning meetings and decision records defined from the beginning",
       "Multi-day timelines and on-site event management",
       "Family and guest coordination included at the selected planning-package level",
     ],
@@ -157,7 +162,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico and in Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
+      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico, Jamaica, and Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
   },
   {
     question: "Will I see an item before I buy it?",
@@ -199,7 +204,7 @@ export function HomePage() {
               Indian destination wedding planning for U.S. and Canadian families
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Plan a Gujarati or Hindu celebration across Mexico or in Punta Cana with one family-facing coordinator,
+              Plan a Gujarati or Hindu celebration across Mexico, Jamaica, or Punta Cana with one family-facing coordinator,
               contracted local planning and on-site execution, guest-information organization, practical calculators,
               and optional India sourcing.
             </p>
@@ -561,7 +566,7 @@ export function HomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               ["CeremonyVerse", "Your family-facing coordinator for priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
-              ["Contracted destination team", "The experienced Mexico-based planning and on-site team responsible for the local work specifically listed in your private proposal."],
+              ["Contracted destination team", "The experienced Mexico City–based planning and on-site team responsible for the local work specifically listed in your private proposal."],
               ["Resorts and licensed providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
             ].map(([title, description]) => (
               <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
