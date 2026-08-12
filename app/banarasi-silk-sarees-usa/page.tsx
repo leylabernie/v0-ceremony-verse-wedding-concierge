@@ -62,7 +62,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Can you source a specific Banarasi color or design?",
     answer:
-      "Yes. Tell us your wedding color palette and we will source Banarasi sarees that coordinate with your bridal or bridesmaid outfits. Popular 2026 Banarasi colors include traditional red and maroon for the bride, ivory and gold for heritage looks, deep jewel tones (emerald, sapphire, burgundy) for evening events, and pastel shades for mehndi and haldi. We can also arrange custom blouse stitching to match.",
+      "CeremonyVerse can research currently available Banarasi sarees against your written color, design, fiber, zari, weave, budget, and event brief. Blouse fabric or custom stitching may be included when the selected vendor, item, and written scope allow it; availability and matching are not guaranteed.",
   },
   {
     question: "How long does it take to source a Banarasi saree from India to the USA?",
@@ -503,7 +503,7 @@ export default function BanarasiSareesPage() {
             },
             {
               q: "Can you source a specific Banarasi color or design?",
-              a: "Yes. Tell us your wedding color palette and we will source Banarasi sarees that coordinate with your bridal or bridesmaid outfits. Popular 2026 Banarasi colors include traditional red and maroon for the bride, ivory and gold for heritage looks, deep jewel tones (emerald, sapphire, burgundy) for evening events, and pastel shades for mehndi and haldi. We can also arrange custom blouse stitching to match.",
+              a: "CeremonyVerse can research currently available Banarasi sarees against your written color, design, fiber, zari, weave, budget, and event brief. Blouse fabric or custom stitching may be included when the selected vendor, item, and written scope allow it; availability and matching are not guaranteed.",
             },
             {
               q: "How long does it take to source a Banarasi saree from India to the USA?",

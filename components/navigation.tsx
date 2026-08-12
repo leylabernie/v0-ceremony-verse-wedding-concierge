@@ -12,8 +12,8 @@ import { trackLead } from "@/lib/analytics"
 // budget and slowing Google's ability to discover & refresh content.
 const navItems: { label: string; href: string }[] = [
   { label: "Services", href: "/services/" },
+  { label: "Destinations", href: "/destinations/" },
   { label: "India Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
-  { label: "Destination Planning", href: "/indian-wedding-coordination-mexico/" },
   { label: "Calculators", href: "/planning-tools/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },

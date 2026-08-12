@@ -100,6 +100,35 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-white px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+            How the outfit-sourcing service started
+          </p>
+          <h2 className="font-serif text-4xl font-semibold sm:text-5xl">
+            One family wedding led to the first custom-outfit request
+          </h2>
+          <div className="mx-auto mt-6 max-w-3xl space-y-5 text-lg leading-8 text-[#4d403a]">
+            <p>
+              Before CeremonyVerse launched, its founder coordinated custom outfits for her son&apos;s wedding. After
+              seeing those finished wedding looks, another couple asked her to help source and coordinate their own
+              custom outfits.
+            </p>
+            <p>
+              That experience became the beginning of the personalized outfit-sourcing service now offered through
+              CeremonyVerse. The work was completed before CeremonyVerse existed and relates specifically to custom
+              outfit sourcing—not destination-wedding planning.
+            </p>
+          </div>
+          <Link
+            href="/buy-indian-wedding-outfits-from-india/"
+            className="mt-8 inline-flex rounded-full border border-[#7a6841] px-7 py-3 font-semibold text-[#7a6841]"
+          >
+            Explore the Outfit-Sourcing Service
+          </Link>
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
             <Image

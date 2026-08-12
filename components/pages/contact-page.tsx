@@ -55,6 +55,7 @@ const getServiceInterestFromLocation = () => {
   const requestedService = new URLSearchParams(window.location.search).get("service")
   const serviceByQuery: Record<string, string> = {
     india: "India shopping",
+    sourcing: "India shopping",
     mexico: "Destination wedding planning",
     feasibility: "Destination Wedding Feasibility & Action Plan ($300)",
     both: "India shopping + destination wedding planning",
@@ -177,8 +178,8 @@ export function ContactPage() {
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
             Your consultation request has been received. Complete the questionnaire below so CeremonyVerse has your
-            wedding timeframe, destination, guest needs, and priorities before the call. Scheduling opens immediately
-            after you submit it.
+            wedding timeframe, destination, guest needs, and priorities before the call. A WhatsApp scheduling request
+            opens immediately after you submit it.
           </p>
           {questionnaireUrl ? (
             <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
@@ -242,8 +243,9 @@ export function ContactPage() {
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">Complete the consultation request and questionnaire before choosing a call time.</p>
             <p className="mt-2">
-              Submit this form first. We will send your pre-call questionnaire automatically. Once you complete it,
-              the call-scheduling step opens immediately. No prior review or approval is required.
+              Submit this form first. The pre-call questionnaire opens immediately after a successful request, and
+              we also attempt to email the same link. Once you complete it, a WhatsApp scheduling request opens. No
+              prior review or approval is required.
             </p>
           </div>
         </div>

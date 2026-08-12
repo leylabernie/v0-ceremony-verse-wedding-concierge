@@ -81,7 +81,7 @@ const faqSchema = buildFaqSchema([
     question:
       "How do I find a lehenga shop in NYC if I want to see options in person?",
     answer:
-      "Jackson Heights in Queens and Oak Tree Road in Iselin, NJ have Indian boutiques where you can shop in person. CeremonyVerse is the remote alternative for couples who want broader India-direct sourcing: live video shopping, written approvals, milestone payments, fit assurance, and delivery to New York or New Jersey without relying only on local in-stock inventory.",
+      "Jackson Heights in Queens and Oak Tree Road in Iselin, NJ have Indian boutiques where you can shop in person. CeremonyVerse is a remote India-sourcing option with eligible live review, written approvals, the payment schedule stated in the signed proposal, applicable fit support, and delivery coordination subject to the selected tier, vendor, carrier, and address.",
   },
 ]);
 
@@ -171,8 +171,8 @@ export default function IndianBridalWearNYNJPage() {
             CeremonyVerse offers a remote alternative for Tri-State brides who
             want to compare custom lehenga options from India. Our bridal-focused
             process covers style references, live review when available,
-            measurements, written approvals, pre-shipping review, and delivery
-            coordination.
+            measurements, written approvals, any pre-shipping review included in
+            the selected scope, and delivery coordination.
           </p>
         </div>
       </section>

@@ -137,8 +137,8 @@ export default function KanchipuramSareesPage() {
           {[
             { q: "How much does a Kanchipuram silk saree cost?", a: "Price depends on the represented silk and zari composition, weave, weight, design, seller, shipping, and any assessed duty. Your quote itemizes the selected saree and outside costs." },
             { q: "How do I evaluate authenticity?", a: "Ask for the exact fiber and zari composition plus any available Silk Mark documentation for the selected saree. Eligible tiers can include live review, but video alone does not authenticate material composition." },
-            { q: "Can you source specific colors or designs?", a: "Yes — tell us your wedding color palette and we'll source sarees that coordinate with the bridal and groom outfits. We can also source matching blouse fabric or arrange custom blouse stitching." },
-            { q: "How long does it take?", a: "We recommend allowing 6–8 weeks for Kanchipuram saree sourcing, including selection, shipping, and delivery. Start early if you need multiple sarees for family members." },
+            { q: "Can you source specific colors or designs?", a: "We can research currently available sarees against your written color, design, material, and budget brief. Matching blouse fabric or custom blouse stitching may be included when the selected vendor, item, and written scope allow it." },
+            { q: "How long does it take?", a: "There is no universal lead time. It depends on current inventory, vendor capacity, blouse work or other customization, approval timing, carrier service, customs, and the destination. We document the available estimates before approval and recommend preserving time for a local fitting and backup option." },
           ].map((item) => (
             <div key={item.q} style={{ borderBottom: "1px solid #e6dfd5", padding: "18px 0" }}>
               <h3 style={{ fontWeight: 600, fontSize: "17px", color: "#1f1f1f", marginBottom: "8px" }}>{item.q}</h3>

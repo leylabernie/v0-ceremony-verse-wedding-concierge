@@ -255,10 +255,10 @@ export default function BridalLehengaCostGuide() {
               Want to avoid budget surprises?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download our free India Sourcing Price Guide</strong> — a worksheet for collecting comparable item, service, shipping, customs, alteration, timeline, and remedy inputs.
+              Open CeremonyVerse&apos;s no-email-gate resources for bridal-lehenga cost guidance, shipping inputs, outfit checklists, and planning calculators.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Get the Free Price Guide →
+              Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Already have your budget planned? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free consultation</Link> and we&apos;ll review the sourcing options that fit your timeline, needs, and budget.

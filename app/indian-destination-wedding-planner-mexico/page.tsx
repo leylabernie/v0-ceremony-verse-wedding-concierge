@@ -11,7 +11,7 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Planner in Mexico",
+  title: "Indian Destination Wedding Mexico: Cancún vs Riviera Maya",
   description:
     "Family-side planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, room blocks, complete budgets, cultural needs, and guest logistics.",
   keywords:
@@ -53,9 +53,9 @@ const faqItems = [
       "Usually not. Packages may cover a defined guest count, specific event hours, food and beverage, basic decor, or selected services. Additional guests, extra hours, private spaces, outside vendors, upgraded menus, production, taxes, service charges, travel, and other items may be separate. Read the current proposal and contract rather than relying on a headline price.",
   },
   {
-    question: "Does CeremonyVerse sell a fixed Indian destination wedding package for Mexico?",
+    question: "Are the published planning fees the complete wedding cost?",
     answer:
-      "No fixed CeremonyVerse package replaces the resort's current proposal or a wedding-specific written scope. CeremonyVerse helps families compare resort packages, room-block terms, event costs, planning responsibilities, and exclusions using the same assumptions before a decision is made.",
+      "No. CeremonyVerse publishes starting planning fees, but the complete wedding cost also depends on the resort, rooms, venues, events, food and beverage, vendors, production, travel, taxes, service charges, and other third-party costs. The wedding-specific written proposal and current provider documents define the final scope and amounts.",
   },
   {
     question: "What should we ask about Indian catering?",
@@ -208,6 +208,7 @@ export default function MexicoDestinationGuidePage() {
                 <li>• Verify event-space capacity using your layouts, stage, dance floor, and production—not a cocktail maximum.</li>
                 <li>• Review urban noise, property density, guest movement, and weather backups.</li>
               </ul>
+              <Link href="/destinations/cancun-indian-wedding/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Open the complete Cancún Indian wedding guide</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
               <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#7a6841]">Riviera Maya</p>
@@ -218,6 +219,7 @@ export default function MexicoDestinationGuidePage() {
                 <li>• Check rain, wind, heat, insects, beach access, sound limits, and indoor backups.</li>
                 <li>• Confirm whether the chosen property—not just its brand—supports the full event plan.</li>
               </ul>
+              <Link href="/destinations/riviera-maya-indian-wedding/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Open the complete Riviera Maya Indian wedding guide</Link>
             </article>
           </div>
         </div>
@@ -241,9 +243,10 @@ export default function MexicoDestinationGuidePage() {
                 and they rarely represent the entire wedding spend. Normalize every proposal with the same guest
                 count, room nights, event hours, inclusions, taxes, and service charges.
               </p>
-              <Link href="/planning-tools/budget/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
-                Open the Budget Calculator
-              </Link>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+                <Link href="/planning-tools/budget/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open the Budget Calculator</Link>
+                <Link href="/indian-destination-wedding-cost/" className="inline-flex justify-center rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]">Read the Complete-Cost Guide</Link>
+              </div>
             </div>
             <div className="overflow-hidden rounded-2xl border border-[#e6dfd5]">
               {budgetRows.map(([category, detail], index) => (
@@ -346,7 +349,7 @@ export default function MexicoDestinationGuidePage() {
           <div className="mt-10 overflow-hidden rounded-2xl border border-[#e6dfd5]">
             {[
               ["CeremonyVerse", "Family-facing brief, cultural and sourcing requirements, proposal comparison, approvals, guest-information organization, communication oversight, and one central family contact within the written scope."],
-              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution under the partner's client agreement."],
+              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution as assigned in the signed wedding-specific scope."],
               ["Authorized travel provider or resort", "Room blocks, reservations, guest payments, travel documents, transfers, travel changes, and any travel-related commissions or regulated services."],
               ["Resort and contracted vendors", "Their stated spaces, products, staffing, food and beverage, production, delivery, pricing, policies, safety, and contract performance."],
               ["Couple and family", "Final decisions, accurate guest and ceremony information, approvals, payments, travel documents, insurance choices, and compliance with contract deadlines."],

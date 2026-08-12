@@ -200,10 +200,10 @@ export default function RootLayout({
           `}
         </Script>
         <AcquisitionAttribution />
-        {/* Urgency announcement bar — fixed at very top */}
+        {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Serving families across the USA &amp; Canada · A limited number of 2027 planning dates remain</span>
-          <span className="lg:hidden">USA &amp; Canada · Limited 2027 dates</span>
+          <span className="hidden lg:inline">Mexico &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
+          <span className="lg:hidden">Mexico &amp; Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <Link href="/contact/">Schedule Free Consultation</Link>
         </div>

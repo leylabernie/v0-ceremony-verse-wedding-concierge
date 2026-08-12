@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 10, 2026
+            Last updated: August 11, 2026
           </p>
         </div>
       </div>
@@ -69,8 +69,8 @@ export default function TermsPage() {
           </p>
           <p style={{ marginTop: "1rem" }}>
             For destination weddings across Mexico and in Punta Cana, CeremonyVerse can offer full planning,
-            partial planning, day-of coordination, family communication, guest-information, arrival,
-            welcome-item, and India-sourcing support. The client&apos;s private written proposal identifies the
+            partial planning, event coordination, family communication, guest-information, arrival,
+            welcome-item, and India-sourcing support. The client&apos;s wedding-specific written proposal identifies the
             selected services, outside costs, exclusions, payment terms, and approval responsibilities.
           </p>
 
@@ -80,8 +80,10 @@ export default function TermsPage() {
           <p>
             CeremonyVerse offers three India-shopping service tiers: Style Guide &amp; Vendor List
             ($249), Guided Sourcing ($799), and Full Bridal Concierge ($2,499). The Destination Wedding
-            Feasibility &amp; Action Plan is $300. Full, partial, final-coordination, and family-support
-            destination services use private proposals based on the selected scope. The initial 30-minute
+            Feasibility &amp; Action Plan is $300. Destination packages start at $8,000 for Full Planning &amp; Design,
+            $5,500 for Partial Planning &amp; Coordination, and $4,000 for Event Coordination &amp; Management.
+            The final written proposal reflects the selected destination, dates, events, guest count, travel,
+            staffing, complexity, additions, and family-support scope. The initial 30-minute
             consultation is free. The signed proposal or service agreement identifies when paid work begins and
             the cancellation, refund, and rescheduling rules that apply to that scope.
           </p>
@@ -115,7 +117,7 @@ export default function TermsPage() {
             CeremonyVerse.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            The private CeremonyVerse proposal states what the client pays CeremonyVerse, which outside
+            The final CeremonyVerse proposal states what the client pays CeremonyVerse, which outside
             costs are paid directly to another provider, the applicable milestones, and the cancellation
             and refund terms. CeremonyVerse does not sell flights or hotel rooms. Travel reservations and
             transfer bookings are completed with the applicable provider unless a signed agreement states
@@ -228,11 +230,12 @@ export default function TermsPage() {
           </h2>
           <p>
             All content on this website — including text, images, design, logos, and the
-            CeremonyVerse brand — is the property of CeremonyVerse and protected by US and
-            international copyright law. You may not reproduce, republish, or redistribute any
-            content from this site without written permission. Client wedding photographs shared
-            with us remain the property of the client; we use them on our website and marketing
-            materials only with explicit written consent via our intake questionnaire.
+            CeremonyVerse brand — is owned by CeremonyVerse or used with permission and is protected by
+            applicable copyright law. You may not reproduce, republish, or redistribute that content
+            without permission from the applicable rights holder. Reviews and wedding photographs remain
+            subject to the rights of their authors, photographers, clients, and depicted individuals.
+            CeremonyVerse uses them publicly only with separate written permission covering the intended
+            brand, channel, and use; the consultation intake questionnaire does not grant marketing consent.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>

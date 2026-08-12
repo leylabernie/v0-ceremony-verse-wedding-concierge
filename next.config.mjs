@@ -65,6 +65,26 @@ const nextConfig = {
         destination: '/blog/how-to-take-lehenga-measurements-at-home/',
         permanent: true,
       },
+      {
+        source: '/blog/how-to-buy-bridal-lehenga-from-india-usa',
+        destination: '/how-to-buy-bridal-lehenga-from-india-to-usa/',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-buy-bridal-lehenga-from-india-usa/',
+        destination: '/how-to-buy-bridal-lehenga-from-india-to-usa/',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-buy-sherwani-from-india-usa',
+        destination: '/buy-sherwani-from-india-usa/',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-buy-sherwani-from-india-usa/',
+        destination: '/buy-sherwani-from-india-usa/',
+        permanent: true,
+      },
       // ─── CONSOLIDATED LOCAL LANDING PAGES ───
       // These older pages duplicated the same state-level service intent as
       // the more complete wedding-shopping pages.

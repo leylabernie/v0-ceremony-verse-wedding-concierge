@@ -14,6 +14,16 @@ const serviceLinks = [
   { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india/" },
 ];
 
+const destinationLinks = [
+  { label: "Destination Overview", href: "/destinations/" },
+  { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
+  { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
+  { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
+  { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
+  { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
+  { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
+];
+
 const ceremonyLinks = [
   { label: "Mehndi & Haldi Outfits", href: "/mehndi-outfits-usa/" },
   { label: "Sangeet Outfits", href: "/sangeet-outfits-usa/" },
@@ -90,6 +100,19 @@ export function GlobalFooter() {
           </div>
 
           {/* Ceremonies */}
+          <div>
+            <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Destinations</p>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
+              {destinationLinks.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div>
             <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>By Ceremony</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>

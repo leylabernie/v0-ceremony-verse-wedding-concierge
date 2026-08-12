@@ -133,8 +133,8 @@ export default function TariffsBlogPost() {
             This is exactly the kind of complexity that makes working with a dedicated <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Sourcing with documentation in mind.</strong> Require the selected vendor to provide accurate invoicing, item descriptions, fiber information, country-of-origin information, and other shipment documents requested by the carrier or customs professional.</li>
-            <li><strong>Smart shipping strategy.</strong> Depending on your timeline and the nature of the outfit, CeremonyVerse advises on the most practical routing — whether timing a trip to India, using specific couriers that handle Indian textile customs professionally, or other approaches.</li>
+            <li><strong>Sourcing with documentation in mind.</strong> Ask the selected vendor for accurate invoicing, item descriptions, fiber information, country-of-origin information, and the shipment documents requested by the carrier or customs professional.</li>
+            <li><strong>Documented shipping options.</strong> CeremonyVerse can organize the available route, carrier quote, service level, insurance option, required documents, and estimated charges for comparison. The selected carrier and qualified customs professional control classification, routing requirements, clearance, and final delivery.</li>
             <li><strong>Transparent cost planning.</strong> CeremonyVerse records shipping and customs estimates as separate inputs. The carrier or government agency may assess a different amount, so keep a contingency.</li>
           </ul>
 
@@ -156,7 +156,7 @@ export default function TariffsBlogPost() {
             The tariff landscape for buying Indian wedding outfits for US-based weddings can be stressful. The manageable path is accurate classification, honest valuation, complete documentation, a shipment-specific estimate, and enough timing buffer for customs review.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            The key is working with people who have done this before — who know the documentation, the carriers, the HTS codes, and the customs expectations. See <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how our process works</Link> or read our <Link href="/faq/" style={{ color: "#7a6841" }}>frequently asked questions</Link> about shipping, duties, and timelines.
+            The key is using current written information from the providers who control each step: the vendor for item details, the carrier for service and documents, and a qualified customs professional or U.S. authority for classification and assessment. See <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how our process works</Link> or read our <Link href="/faq/" style={{ color: "#7a6841" }}>frequently asked questions</Link> about shipping, duties, and timelines.
           </p>
 
           {/* CTA Box */}

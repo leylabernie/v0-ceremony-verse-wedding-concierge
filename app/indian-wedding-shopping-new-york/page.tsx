@@ -67,7 +67,7 @@ export default function NewYorkPage() {
               <li>Remote shopping and eligible live item review</li>
               <li>Shared style, color, measurement, and approval records</li>
               <li>Order timelines organized across wedding ceremonies</li>
-              <li>Pre-shipping review and tracked-delivery coordination</li>
+              <li>Available in-scope pre-shipping review and tracked-delivery coordination</li>
             </ul>
 
             <div className="rounded-lg border border-stone-200 bg-stone-50 p-6">

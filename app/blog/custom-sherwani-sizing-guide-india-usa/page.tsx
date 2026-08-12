@@ -519,7 +519,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               </li>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link
-                  href="/blog/how-to-buy-sherwani-from-india-usa/"
+                  href="/buy-sherwani-from-india-usa/"
                   style={{ color: "#7a6841" }}
                 >
                   How to Buy a Sherwani from India — complete guide with prices
@@ -573,10 +573,10 @@ export default function CustomSherwaniSizingGuideBlogPost() {
                 marginBottom: "1.5rem",
               }}
             >
-              Get the elite look of premium Indian designers without the
-              complete written local and remote quotes. Request a consultation
-              — we&apos;ll walk you through the 5 critical measurements, the
-              fabric choice for your wedding climate, and a transparent price
+              Compare a fully specified India-sourcing quote with written local
+              boutique options before choosing. Request a consultation — we&apos;ll
+              walk you through the 5 critical measurements, the fabric choice
+              for your wedding climate, and a transparent price
               breakdown.
             </p>
             <Link
@@ -620,11 +620,12 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               color: "#5e4a40",
             }}
           >
-            <strong>About CeremonyVerse:</strong> We source custom sherwanis,
-            Indo-Western suits, and full groom wedding attire directly from
-            India&apos;s premium menswear designers for NRI grooms in the USA.
-            Every sherwani goes through a live Masterji measurement call and a
-            pre-shipment fitting on a custom mannequin before it ships.{" "}
+            <strong>About CeremonyVerse:</strong> CeremonyVerse helps U.S. and
+            Canadian families research groom outfits from India. Eligible
+            written scopes may include live item review, vendor-specific
+            measurement coordination, documented approvals, and an available
+            pre-shipping review. The selected vendor remains responsible for
+            construction and fit, and local alterations may still be needed.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
               Book a consultation
             </Link>{" "}

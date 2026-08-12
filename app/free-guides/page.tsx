@@ -13,6 +13,8 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
+  ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
+  ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],
   ["Budget Calculator", "Separate wedding-event, guest-travel, and optional shopping costs and compare the total with your target.", "/planning-tools/budget/"],
   ["Resort Proposal Calculator", "Compare two written resort proposals, room-block exposure, cultural requirements, and missing terms.", "/planning-tools/resort-comparison/"],
   ["Family Responsibility Map", "Assign an owner, approver, due date, and status to each important decision.", "/planning-tools/family-responsibility-map/"],

@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
     "Hindu destination wedding comparison",
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
-  modifiedTime: "2026-08-10T12:00:00-04:00",
+  modifiedTime: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -28,7 +28,7 @@ const blogPostingSchema = buildBlogPosting({
   description,
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
-  dateModified: "2026-08-10T12:00:00-04:00",
+  dateModified: "2026-08-11T16:00:00-04:00",
   authorName: "CeremonyVerse",
   keywords: ["Mexico vs Punta Cana Indian wedding", "Indian destination wedding", "Gujarati Hindu wedding"],
 });
@@ -52,7 +52,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Does CeremonyVerse plan weddings in both destinations?",
     answer:
-      "Yes. CeremonyVerse currently supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana. The private proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+      "Yes. CeremonyVerse currently supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana. The written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
   },
   {
     question: "How should a family make the final choice?",
@@ -78,7 +78,7 @@ export default function BlogPost() {
           The better destination is the one that fits your real guests, ceremonies, written resort terms, and total
           host budget—not the one with the most attractive starting package.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Published August 10, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
@@ -91,6 +91,9 @@ export default function BlogPost() {
             CeremonyVerse&apos;s current destination focus is Gujarati and Hindu weddings across Mexico and in Punta
             Cana. Families can work with CeremonyVerse from anywhere in the United States or Canada. This comparison
             does not claim that one destination is universally easier, cheaper, or better.
+          </p>
+          <p>
+            For property-level planning, open the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún</Link>, <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya</Link>, and <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana</Link> guides. Each applies the same decision standard without treating destination photos as proof of fit.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">The short comparison</h2>

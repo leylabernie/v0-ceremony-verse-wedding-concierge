@@ -129,7 +129,7 @@ export default function ShippingGuidePage() {
             <ul style={{ paddingLeft: "1.2rem", fontSize: "0.95rem" }}>
               <li style={{ marginBottom: "0.4rem" }}>
                 <Link href="/blog/when-to-order-indian-wedding-outfits-nri-bride/" style={{ color: "#7a6841" }}>
-                  When to order so outfits arrive on time
+                  How to plan an outfit-ordering timeline
                 </Link>
               </li>
               <li style={{ marginBottom: "0.4rem" }}>

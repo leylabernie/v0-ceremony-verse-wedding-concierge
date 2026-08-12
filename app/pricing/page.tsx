@@ -7,7 +7,7 @@ import {
   buildServiceSchema,
   JsonLd,
 } from "@/lib/seo"
-import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
+import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import {
   destinationFeasibilityCredit,
   destinationFeasibilityPlan,
@@ -15,9 +15,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "CeremonyVerse Pricing | India Sourcing & Destination Planning",
+  title: "Pricing: India Sourcing & Destination Planning",
   description:
-    "Compare the $300 destination-wedding feasibility plan, private planning across Mexico and Punta Cana, and USD flat-fee India sourcing across the USA and Canada.",
+    "Compare $8,000 full planning, $5,500 partial planning, $4,000 event coordination, the $300 feasibility plan, and flat-fee India sourcing.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
@@ -75,7 +75,7 @@ const tiers = [
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Wedding Services",
   description:
-    "A $300 destination-wedding feasibility plan, private-proposal planning, and flat-fee India shopping support for families across the United States and Canada.",
+    "Published destination-wedding planning packages, a $300 feasibility plan, and flat-fee India shopping support for families across the United States and Canada.",
   url: "/pricing/",
   offers: [
     {
@@ -83,6 +83,13 @@ const serviceSchema = buildServiceSchema({
       price: destinationFeasibilityPlan.price,
       description: destinationFeasibilityPlan.description,
     },
+    ...mexicoPackages
+      .filter((tier): tier is typeof tier & { numericPrice: number } => typeof tier.numericPrice === "number")
+      .map((tier) => ({
+        name: tier.name,
+        price: tier.numericPrice,
+        description: tier.description,
+      })),
     ...tiers.map((tier) => ({
       name: tier.name,
       price: tier.numericPrice,
@@ -122,7 +129,7 @@ const faqItems = [
   {
     question: "Is wedding planning included?",
     answer:
-      "CeremonyVerse offers a $300 Feasibility & Action Plan as a paid starting point, followed by private-proposal Full Planning & Design, Partial Planning & Coordination, or Day-of Coordination & Management across Mexico and Punta Cana. Family communication, guest support, and optional India sourcing can be included in the private written proposal.",
+      "Yes. Published starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The final written proposal reflects the destination, dates, events, guest count, travel, staffing, complexity, and selected CeremonyVerse family support. Third-party costs remain separate unless expressly included.",
   },
 ]
 
@@ -146,7 +153,7 @@ export default function PricingPage() {
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
             India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
-            planning uses a private scope. Products, resorts, venues, vendors, travel, shipping, and customs
+            planning uses published starting fees and a wedding-specific written scope. Products, resorts, venues, vendors, travel, shipping, and customs
             are itemized outside the applicable CeremonyVerse service fee unless the proposal says otherwise.
           </p>
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-6 text-white/65">
@@ -165,8 +172,8 @@ export default function PricingPage() {
               Choose the level of planning and family support you need
             </h2>
             <p className="text-lg leading-8 text-white/75">
-              Package details are public so you can compare the scope. Pricing is shared only in a private
-              CeremonyVerse proposal after we understand your dates, events, guest count, and priorities.
+              Package details and starting fees are public so you can compare the scope. Your final CeremonyVerse
+              proposal reflects the dates, destination, events, guest count, staffing, travel, complexity, and additions.
             </p>
             <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
@@ -206,6 +213,7 @@ export default function PricingPage() {
               <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{tier.category}</p>
                 <h3 className="cv-package-title !text-[#f8f6f2]">{tier.name}</h3>
+                {tier.priceLabel ? <p className="mt-4 font-serif text-4xl font-semibold !text-white">{tier.priceLabel}</p> : null}
                 <p className="my-5 text-sm font-semibold !text-[#e8cf9d]">{tier.timeline}</p>
                 <p className="mb-2 text-sm font-semibold !text-[#e8cf9d]">{tier.bestFor}</p>
                 <p className="mb-7 leading-7 !text-[#e7ded3]">{tier.description}</p>
@@ -227,6 +235,7 @@ export default function PricingPage() {
               </article>
             ))}
           </div>
+          <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
         </div>
       </section>
 

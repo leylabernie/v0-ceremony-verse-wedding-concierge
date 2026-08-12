@@ -122,13 +122,13 @@ export default function TimelineGuidePage() {
               Starting earlier can preserve more vendor, customization, and alteration options, but the useful start date depends on the actual items and providers.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Want our free planning timeline?
+              Want more free planning tools?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Download our free NRI Wedding Planning Timeline</strong> — a checklist for recording item requirements, vendor estimates, approvals, shipping responsibilities, and fitting buffers. Enter your email and we&apos;ll send it.
+              Open the no-email-gate resource library for the NRI shopping timeline, outfit checklist, vendor red flags, calculators, and other web-based planning tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Get the Free Timeline →
+              Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Not sure if you&apos;re on track? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to review your date, items, known estimates, and remaining decisions.

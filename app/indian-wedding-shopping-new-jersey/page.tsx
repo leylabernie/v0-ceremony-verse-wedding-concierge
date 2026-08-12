@@ -69,7 +69,7 @@ export default function NewJerseyPage() {
               <li>Remote shopping and eligible live item review</li>
               <li>Shared style, color, measurement, and approval records</li>
               <li>Order timelines organized across wedding ceremonies</li>
-              <li>Pre-shipping review and tracked-delivery coordination</li>
+              <li>Available in-scope pre-shipping review and tracked-delivery coordination</li>
             </ul>
             
             <h3 className="text-2xl font-bold text-stone-900 mt-12 mb-6">What the process documents</h3>

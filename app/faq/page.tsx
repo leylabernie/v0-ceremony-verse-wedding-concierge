@@ -16,7 +16,7 @@ const faqSections = [
       },
       {
         question: "What if quality doesn't match?",
-        answer: "We compare the item with the written order references and available approval photos or video before shipping. If we identify a material mismatch, we pause shipment, document the issue, and work through the remedy described in your signed service terms."
+        answer: "When the selected scope includes a pre-shipping review, we compare visible item details with the written order references and available approval photos or video. If that review identifies a material mismatch, the next steps follow the hold, documentation, and remedy terms in the signed agreement; vendor and shipment outcomes remain subject to the responsible providers."
       },
       {
         question: "How do you verify your sourcing partners?",
@@ -46,7 +46,7 @@ const faqSections = [
     items: [
       {
         question: "How is pricing structured?",
-        answer: "The Destination Wedding Feasibility & Action Plan is $300. India shopping uses flat service tiers: $249 for Style Guide & Vendor List, $799 for Guided Sourcing, and $2,499 for Full Bridal Concierge. Product costs, shipping, and customs are itemized separately. Full, partial, final-coordination, and family-support destination prices are shared in a private proposal after the free consultation."
+        answer: "Destination starting fees are $8,000 for Full Planning & Design, $5,500 for Partial Planning & Coordination, and $4,000 for Event Coordination & Management. The Feasibility & Action Plan is $300. India shopping uses $249, $799, and $2,499 service tiers. Third-party costs and wedding-specific additions are itemized separately."
       },
       {
         question: "Is the $300 destination-wedding plan refundable or credited?",
@@ -99,6 +99,27 @@ const faqSections = [
         answer: "Our strongest working relationships are in Surat and Delhi, with additional sourcing considered when the requested item and vendor can be responsibly verified. We do not promise access to every city, craft cluster, or designer."
       }
     ]
+  },
+  {
+    category: "Destination Planning",
+    items: [
+      {
+        question: "Where does CeremonyVerse plan destination weddings?",
+        answer: "Current service coverage includes Mexico and Punta Cana for families throughout the United States and Canada. Cancún, Riviera Maya, and Los Cabos are important planning areas, but they are not the limits of Mexico coverage. Availability and the selected local execution team are confirmed in the written proposal."
+      },
+      {
+        question: "Who handles the wedding at the destination?",
+        answer: "CeremonyVerse is the family-facing coordinator. The contracted local planning team handles the agreed destination planning and on-site execution. Resorts and appropriately licensed providers handle rooms, flights, transfers, or other regulated travel services. The signed scope identifies every responsibility."
+      },
+      {
+        question: "Is a resort wedding package the complete wedding cost?",
+        answer: "Usually not. Extra guests, event hours, venues, food, production, décor, vendors, planning, rooms, travel, taxes, service charges, cultural requirements, and contingency may be separate. Use current written proposals and the complete-cost calculator rather than a package headline."
+      },
+      {
+        question: "Can destination planning and India sourcing be combined?",
+        answer: "Yes. CeremonyVerse can align destination planning with outfits, jewelry, ceremony items, gifts, welcome items, approvals, shipping, customs, alterations, and packing. Product and third-party costs remain separate unless the signed proposal expressly includes them."
+      }
+    ]
   }
 ]
 
@@ -124,8 +145,8 @@ function FloralSeparator() {
 
 export const metadata = buildMetadata({
   path: '/faq',
-  title: 'FAQ — Indian Wedding Outfit Sourcing for NRI Families',
-  description: 'Frequently asked questions about Indian wedding outfit sourcing for NRI families. Trust, sizing, pricing, shipping, customs, and process answered in detail.',
+  title: 'FAQ: Destination Wedding Planning & India Shopping',
+  description: 'Answers about CeremonyVerse destination-wedding planning in Mexico and Punta Cana, pricing, responsibilities, India sourcing, shipping, customs, and fit.',
   keywords: 'Indian wedding outfit sourcing FAQ, NRI bride questions, lehenga from India scams, customs duties Indian wedding outfits, bridal lehenga sizing',
 });
 
@@ -159,8 +180,8 @@ export default function FAQPage() {
             Your Questions, Answered
           </h1>
           <p className="text-[#4d403a] text-lg max-w-2xl mx-auto font-sans leading-[1.8]">
-            For NRI families throughout the United States and Canada, remote shopping creates real questions about
-            vendors, sizing, payments, shipping, and customs. Here is how CeremonyVerse documents those risks and responsibilities.
+            Families throughout the United States and Canada ask practical questions about destination planning,
+            resorts, room blocks, pricing, responsibilities, India shopping, sizing, shipping, and customs. Here is how CeremonyVerse separates those risks and decisions.
           </p>
         </div>
       </section>

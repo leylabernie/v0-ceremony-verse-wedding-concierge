@@ -302,19 +302,19 @@ export default function SherwaniGuidePage() {
           {/* ─── LEAD-FIRST CTA ─── */}
           <div style={{ background: "#faf8f4", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "2rem", marginTop: "2.5rem" }}>
             <p style={{ fontSize: "1rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              A groom&apos;s sherwani is just as visible as the bride&apos;s lehenga in every wedding photo — but most NRI grooms leave it to the last minute and end up overpaying at a US rental shop or settling for something that doesn&apos;t fit right. Sourcing from India gives you better quality at half the price, if you plan ahead.
+              A groom&apos;s sherwani is highly visible throughout the wedding, so the item, fit plan, timing, and complete landed cost deserve the same written comparison as any other important outfit. India sourcing can expand the available options, but it does not guarantee better quality, a lower price, or exact fit.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Want us to help you find the perfect sherwani?
+              Want help comparing sherwani options?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Grab our free Groom&apos;s Outfit Planning Guide</strong> — sherwani measurement worksheet, price comparison table (India vs. US), and timeline for when to order so it arrives with time to spare. Enter your email and we&apos;ll send it over.
+              Open CeremonyVerse&apos;s no-email-gate resource library for outfit checklists, complete-cost guidance, shopping timelines, vendor red flags, and planning calculators.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Download the Groom&apos;s Guide →
+              Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want us to find your sherwani for you? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See how our groom sourcing works</Link> — live video shopping, custom measurements, delivery to your door.
+              Want help researching a sherwani? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See how groom sourcing works</Link> — eligible live review, vendor-specific measurement coordination, written approvals, and delivery support within the selected scope.
             </p>
           </div>
 
