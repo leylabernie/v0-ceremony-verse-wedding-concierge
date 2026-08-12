@@ -148,73 +148,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section id="india-sourcing" className="px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              India shopping concierge
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              India sourcing pricing
-            </h2>
-            <p className="text-lg leading-8 text-[#4d403a]">
-              Select the level of research, live shopping, and order coordination your family needs.
-              The same USD service tiers apply across the United States and Canada. Products, carrier charges,
-              insurance, import charges, brokerage, and alterations remain separate.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
-            {tiers.map((tier) => (
-              <article
-                key={tier.name}
-                className={`flex flex-col rounded-2xl border p-8 sm:p-9 ${
-                  tier.featured
-                    ? "border-[#7a6841] bg-[#f4eee4] shadow-xl"
-                    : "border-[#e6dfd5] bg-white"
-                }`}
-              >
-                {tier.featured && (
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
-                    Recommended starting point
-                  </p>
-                )}
-                <h2 className="font-serif text-3xl font-semibold">{tier.name}</h2>
-                <p className="my-5 font-serif text-5xl font-semibold">{tier.price}</p>
-                <p className="mb-2 text-sm font-semibold text-[#7a6841]">{tier.bestFor}</p>
-                <p className="mb-7 leading-7 text-[#4d403a]">{tier.description}</p>
-
-                <h3 className="mb-3 font-semibold">Included</h3>
-                <ul className="mb-7 space-y-3 text-sm leading-6 text-[#4d403a]">
-                  {tier.includes.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="text-[#365c45]" aria-hidden="true">✓</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <h3 className="mb-3 font-semibold">Not included</h3>
-                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
-                  {tier.excludes.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="text-[#8b3f3f]" aria-hidden="true">—</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white"
-                >
-                  Discuss This Tier
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section id="mexico-concierge" className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -289,6 +222,73 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
+        </div>
+      </section>
+
+      <section id="india-sourcing" className="px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto mb-14 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              India shopping concierge
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              India sourcing pricing
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Select the level of research, live shopping, and order coordination your family needs.
+              The same USD service tiers apply across the United States and Canada. Products, carrier charges,
+              insurance, import charges, brokerage, and alterations remain separate.
+            </p>
+          </div>
+          <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
+            {tiers.map((tier) => (
+              <article
+                key={tier.name}
+                className={`flex flex-col rounded-2xl border p-8 sm:p-9 ${
+                  tier.featured
+                    ? "border-[#7a6841] bg-[#f4eee4] shadow-xl"
+                    : "border-[#e6dfd5] bg-white"
+                }`}
+              >
+                {tier.featured && (
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
+                    Recommended starting point
+                  </p>
+                )}
+                <h2 className="font-serif text-3xl font-semibold">{tier.name}</h2>
+                <p className="my-5 font-serif text-5xl font-semibold">{tier.price}</p>
+                <p className="mb-2 text-sm font-semibold text-[#7a6841]">{tier.bestFor}</p>
+                <p className="mb-7 leading-7 text-[#4d403a]">{tier.description}</p>
+
+                <h3 className="mb-3 font-semibold">Included</h3>
+                <ul className="mb-7 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {tier.includes.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="text-[#365c45]" aria-hidden="true">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 className="mb-3 font-semibold">Not included</h3>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {tier.excludes.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="text-[#8b3f3f]" aria-hidden="true">—</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <Link
+                  href="/contact/"
+                  className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white"
+                >
+                  Discuss This Tier
+                </Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
