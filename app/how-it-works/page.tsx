@@ -50,7 +50,7 @@ const faqSchema = buildFaqSchema(faqItems)
 
 export default function HowItWorksPage() {
   return (
-    <main className="bg-[#f8f5ef] text-[#201d1a]">
+    <main className="cv-restored-type bg-[#f8f5ef] text-[#201d1a]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-howto" data={howToSchema} />

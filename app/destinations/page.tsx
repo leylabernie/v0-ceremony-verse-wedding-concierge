@@ -40,6 +40,13 @@ const comparisonPoints = [
   ["Complete host cost", "Resort package, private events, vendors, décor, production, planning, travel, tax, service charges, and contingency."],
 ]
 
+const planningGuides = [
+  ["Complete wedding cost", "/indian-destination-wedding-cost/", "Build one budget across resort, events, rooms, vendors, planning, travel, and contingency."],
+  ["Room-block terms", "/indian-wedding-room-block-mexico/", "Understand deposits, attrition, concessions, release dates, guest booking, and responsible providers."],
+  ["Gujarati & Hindu plan", "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", "Map family decisions, ceremonies, food, production, vendors, and multi-day timing."],
+  ["Destination wardrobe", "/lehenga-for-destination-wedding-mexico/", "Plan outfits, fabrics, measurements, shipping, customs, alterations, and handoff timing."],
+]
+
 const faqItems = [
   { question: "Which destinations does CeremonyVerse support?", answer: "Current planning coverage includes Mexico, Jamaica, and Punta Cana. CeremonyVerse is not limited to Cancún, Riviera Maya, or Los Cabos within Mexico. Availability and the selected local team are confirmed in writing." },
   { question: "Which destination is least expensive?", answer: "No destination is universally least expensive. A valid comparison uses the same guest count, room nights, events, hours, venues, catering, production, vendors, planning, travel, taxes, service charges, and contingency." },
@@ -53,7 +60,7 @@ const serviceSchema = buildServiceSchema({ name: "Indian Destination Wedding Pla
 
 export default function DestinationsPage() {
   return (
-    <main className="min-h-screen bg-[#f8f5ef] text-[#201d1a]">
+    <main className="cv-restored-type min-h-screen bg-[#f8f5ef] text-[#201d1a]">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
       <JsonLd id="schema-service" data={serviceSchema} />
@@ -119,6 +126,24 @@ export default function DestinationsPage() {
             <p className="mt-6 leading-8 text-[#51483f]">Use one guest count and event plan across the resort package, rooms, venues, food, vendors, production, travel, taxes, service charges, and contingency.</p>
             <Link href="/planning-tools/budget/" className="mt-8 inline-flex rounded-full border border-[#80683b] px-7 py-3.5 text-sm font-semibold text-[#80683b]">Open the Budget Calculator</Link>
           </article>
+        </div>
+      </section>
+
+      <section className="bg-[#f8f5ef] px-6 py-24 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#80683b]">Planning guides</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold sm:text-5xl">Detailed research is still here when you need it.</h2>
+          </div>
+          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {planningGuides.map(([title, href, text]) => (
+              <article key={href} className="flex flex-col rounded-2xl border border-[#ded5c7] bg-[#fffdf9] p-7">
+                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
+                <p className="mt-4 flex-1 text-sm leading-6 text-[#51483f]">{text}</p>
+                <Link href={href} className="mt-6 font-semibold text-[#80683b]">Open guide <span aria-hidden="true">→</span></Link>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

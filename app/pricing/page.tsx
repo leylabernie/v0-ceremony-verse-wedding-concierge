@@ -127,7 +127,7 @@ const faqSchema = buildFaqSchema(faqItems)
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
+    <main className="cv-restored-type min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />

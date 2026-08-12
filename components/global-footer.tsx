@@ -16,6 +16,7 @@ const columns = [
       ["Jamaica", "/destinations/jamaica-indian-wedding/"],
       ["Punta Cana", "/destinations/punta-cana-indian-wedding/"],
       ["Published Resort Information", "/resort-packages/"],
+      ["Complete Wedding Cost", "/indian-destination-wedding-cost/"],
     ],
   },
   {
@@ -24,6 +25,7 @@ const columns = [
       ["About", "/about/"],
       ["India Sourcing", "/buy-indian-wedding-outfits-from-india/"],
       ["Free Planning Tools", "/planning-tools/"],
+      ["Questions", "/faq/"],
       ["Journal & Guides", "/blog/"],
     ],
   },

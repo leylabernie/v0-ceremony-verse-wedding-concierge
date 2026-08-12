@@ -44,7 +44,7 @@ const destinations = [
 
 export function HomePage() {
   return (
-    <main className="bg-[#f8f5ef] text-[#201d1a]">
+    <main className="cv-restored-type bg-[#f8f5ef] text-[#201d1a]">
       <section className="relative min-h-[720px] overflow-hidden">
         <Image
           src="/images/proof/family-destination-baarat.webp"
@@ -73,6 +73,15 @@ export function HomePage() {
             </div>
             <p className="mt-5 text-sm !text-white/65">Your first 30 minutes are free · No payment · No contract · No pressure</p>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#39312b] bg-[#211d19] px-6 py-7 text-white">
+        <div className="mx-auto grid max-w-6xl gap-4 text-center text-sm sm:grid-cols-2 lg:grid-cols-4">
+          <p className="text-sm !text-white/78">U.S.-based contact with Mini</p>
+          <p className="text-sm !text-white/78">Mexico City destination team</p>
+          <p className="text-sm !text-white/78">Wedding-week execution by signed scope</p>
+          <p className="text-sm !text-white/78">Published CeremonyVerse fees</p>
         </div>
       </section>
 
@@ -136,11 +145,6 @@ export function HomePage() {
                   <p className="mt-2 text-sm leading-6 text-[#6b5b4d]">{fit}</p>
                 </article>
               ))}
-              <div className="mt-8 rounded-2xl bg-[#eee7dc] p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#80683b]">Optional India sourcing</p>
-                <p className="mt-3 text-base leading-7 text-[#51483f]">Flat-fee wardrobe and wedding-item sourcing can be added when useful. It is never presented as a free planning inclusion.</p>
-                <Link href="/pricing/#india-sourcing" className="mt-4 inline-flex font-semibold text-[#80683b]">See sourcing fees <span aria-hidden="true" className="ml-2">→</span></Link>
-              </div>
             </div>
           </div>
         </div>
@@ -165,6 +169,23 @@ export function HomePage() {
             <p className="mt-5 text-sm leading-6 text-[#6b5b4d]">These celebrations occurred before CeremonyVerse began accepting planning clients and are not presented as CeremonyVerse client case studies.</p>
             <Link href="/about/" className="mt-8 inline-flex border-b border-[#80683b] pb-1 font-semibold text-[#80683b]">Meet Mini and the planning model</Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[#fffdf9] px-6 py-24 sm:py-28">
+        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
+          <article className="rounded-[1.75rem] border border-[#ded5c7] bg-[#f8f5ef] p-8 sm:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#80683b]">Optional India sourcing</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold">Keep wardrobes and wedding details connected.</h2>
+            <p className="mt-5 leading-8 text-[#51483f]">Live shopping, measurement records, approvals, order follow-up, available pre-shipping review, and shipping-document support can be added through a separately priced sourcing scope.</p>
+            <Link href="/buy-indian-wedding-outfits-from-india/" className="mt-7 inline-flex font-semibold text-[#80683b]">Explore India sourcing <span aria-hidden="true" className="ml-2">→</span></Link>
+          </article>
+          <article className="rounded-[1.75rem] border border-[#ded5c7] bg-[#f8f5ef] p-8 sm:p-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#80683b]">Free planning resources</p>
+            <h2 className="mt-4 font-serif text-4xl font-semibold">Use the calculators before you commit.</h2>
+            <p className="mt-5 leading-8 text-[#51483f]">Build a complete wedding budget, compare resort proposals, organize guest travel costs, and map responsibilities before signing a planning or resort agreement.</p>
+            <Link href="/planning-tools/" className="mt-7 inline-flex font-semibold text-[#80683b]">Open the planning tools <span aria-hidden="true" className="ml-2">→</span></Link>
+          </article>
         </div>
       </section>
 

@@ -210,6 +210,15 @@
   text-rendering: optimizeLegibility;
 }
 
+/* Preserve the established CeremonyVerse heading treatment on refreshed
+   pages. Lighter utility weights made the preview look like a different
+   font even though the underlying type family had not changed. */
+.cv-restored-type :is(h1, h2, h3) {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
 /* Dark sections inherit a readable foreground by default. The :where() wrapper
    keeps specificity low so an intentional Tailwind color (gold, muted white,
    or dark button text) still wins. */

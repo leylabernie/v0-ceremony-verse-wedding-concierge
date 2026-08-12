@@ -34,7 +34,7 @@ const faqSchema = buildFaqSchema(faqItems)
 
 export default function ResortPackagesPage() {
   return (
-    <main className="min-h-screen bg-[#f8f5ef] text-[#201d1a]">
+    <main className="cv-restored-type min-h-screen bg-[#f8f5ef] text-[#201d1a]">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
 

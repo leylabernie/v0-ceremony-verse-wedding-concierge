@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation"
 
 const navItems = [
   { label: "Planning", href: "/services/" },
+  { label: "How It Works", href: "/how-it-works/" },
   { label: "Destinations", href: "/destinations/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "India Sourcing", href: "/buy-indian-wedding-outfits-from-india/" },
