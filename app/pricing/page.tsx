@@ -195,7 +195,7 @@ export default function PricingPage() {
           </article>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {mexicoPackages.map((tier) => (
+            {mexicoPackages.filter((tier) => typeof tier.numericPrice === "number").map((tier) => (
               <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{tier.category}</p>
                 <h3 className="cv-package-title !text-[#f8f6f2]">{tier.name}</h3>
@@ -221,6 +221,10 @@ export default function PricingPage() {
               </article>
             ))}
           </div>
+          <p className="mt-8 rounded-xl border border-[#c5a059]/40 bg-[#c5a059]/10 p-5 text-sm leading-6 !text-[#e8cf9d]">
+            Family Concierge Support and Guest Travel &amp; Arrival Support are optional paid add-ons with custom
+            written quotes. They are not included in a planning package unless the signed proposal expressly lists them.
+          </p>
           <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
         </div>
       </section>

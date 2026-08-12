@@ -88,7 +88,8 @@ export const mexicoPackages: MexicoPackage[] = [
   },
   {
     name: "Family Concierge Support",
-    timeline: "Available alongside a destination-planning package",
+    priceLabel: "Optional paid add-on — custom quote",
+    timeline: "Quoted separately alongside a destination-planning package",
     bestFor: "Best for: families who want one organized US-based contact",
     description:
       "CeremonyVerse keeps family questions, decisions, meeting follow-ups, and agreed guest details organized across the planning journey.",
@@ -108,7 +109,8 @@ export const mexicoPackages: MexicoPackage[] = [
   },
   {
     name: "Guest Travel & Arrival Support",
-    timeline: "Custom scope based on guest count and travel days",
+    priceLabel: "Optional paid add-on — custom quote",
+    timeline: "Quoted separately based on guest count and travel days",
     bestFor: "Best for: destination guest logistics and the arrival experience",
     description:
       "A tailored support plan for guest information, rooming details, transfers, arrivals, and welcome touches.",
