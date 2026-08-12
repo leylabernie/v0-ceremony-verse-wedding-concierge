@@ -52,7 +52,7 @@ const nextConfig = {
       },
       {
         source: '/south-indian-christian-wedding-outfits-usa',
-        destination: '/services/',
+        destination: '/blog/south-indian-christian-wedding-outfit-guide/',
         permanent: true,
       },
       {
