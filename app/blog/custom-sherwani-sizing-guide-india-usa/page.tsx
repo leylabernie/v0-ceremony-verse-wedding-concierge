@@ -574,7 +574,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               }}
             >
               Compare a fully specified India-sourcing quote with written local
-              boutique options before choosing. Request a consultation — we&apos;ll
+              boutique options before choosing. Request a free 30-minute consultation — we&apos;ll
               walk you through the 5 critical measurements, the fabric choice
               for your wedding climate, and a transparent price
               breakdown.
@@ -627,7 +627,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
             pre-shipping review. The selected vendor remains responsible for
             construction and fit, and local alterations may still be needed.{" "}
             <Link href="/contact/" style={{ color: "#7a6841" }}>
-              Book a consultation
+              Book a free 30-minute consultation
             </Link>{" "}
             to discuss your wedding outfit.
           </p>

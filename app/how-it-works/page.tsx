@@ -74,7 +74,7 @@ const faqItems = [
   {
     question: "What happens after the free consultation?",
     answer:
-      "If you need a written feasibility decision before full planning, CeremonyVerse may recommend the $300 Destination Wedding Feasibility & Action Plan. It includes a working session, review of your own worksheets and up to two current proposals, a written action brief, and a follow-up. You can also proceed to a different written scope when that is a better fit.",
+      "Your first 30-minute consultation is free. After the call, CeremonyVerse may recommend the separate $300 Destination Wedding Feasibility & Action Plan or another paid written scope. You decide whether to proceed after reviewing the terms.",
   },
   {
     question: "Will calculator entries be sent to CeremonyVerse automatically?",
@@ -152,7 +152,7 @@ export default function HowItWorksPage() {
               href="/contact/?from=how-it-works"
               className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white"
             >
-              Request a Private Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
           </div>
         </div>
@@ -295,14 +295,14 @@ export default function HowItWorksPage() {
             Bring the facts you already have. You will not be asked to start over.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 !text-white/85">
-            In a free 30-minute consultation, CeremonyVerse reviews the timeframe, guest and event counts, destination
-            ideas, budget scope, and open questions before recommending a practical next step.
+            Your first 30-minute consultation is free. CeremonyVerse reviews the timeframe, guest and event counts,
+            destination ideas, budget scope, and open questions before explaining any separate paid next step.
           </p>
           <Link
             href="/contact/?from=how-it-works"
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

@@ -29,7 +29,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           <p className="mx-auto mt-7 max-w-4xl text-lg leading-8 !text-white/80">{data.answer}</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=mexico" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link href="/planning-tools/resort-comparison/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">
               Compare Resort Proposals
@@ -188,7 +188,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
       </section>
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
-        <div className="mx-auto max-w-3xl"><h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Is {data.shortName} right for your family?</h2><p className="mt-5 text-lg leading-8 !text-white/85">Bring your guest count, dates, event list, priorities, and any current proposals. We will separate confirmed facts from open questions and recommend the next step.</p><Link href="/contact/?service=mexico" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link></div>
+        <div className="mx-auto max-w-3xl"><h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Is {data.shortName} right for your family?</h2><p className="mt-5 text-lg leading-8 !text-white/85">Bring your guest count, dates, event list, priorities, and any current proposals. We will separate confirmed facts from open questions and recommend the next step.</p><Link href="/contact/?service=mexico" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule a Free 30-Minute Consultation</Link></div>
       </section>
     </main>
   )

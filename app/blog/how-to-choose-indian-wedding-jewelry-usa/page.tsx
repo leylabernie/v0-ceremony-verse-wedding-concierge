@@ -191,7 +191,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
             shipping responsibilities included in the selected sourcing scope.
           </p>
           <Link href="/contact/" className="mt-7 inline-flex rounded-full bg-white px-7 py-3 font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </section>
 

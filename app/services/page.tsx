@@ -112,11 +112,14 @@ export default function ServicesPage() {
             destination planning and on-site coordination across Mexico and in Punta Cana. One written proposal defines the selected
             planning, family-support, guest, and optional India-sourcing services.
           </p>
+          <p className="mx-auto mb-7 max-w-3xl text-sm leading-6 text-[#e8cf9d]">
+            Your first 30-minute consultation is free. No payment or contract is required for the call.
+          </p>
           <Link
             href="/contact/"
             className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>
@@ -262,10 +265,11 @@ export default function ServicesPage() {
           <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Not sure which tier fits?</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             Bring your ceremony list, location, deadline, party size, and budget. We&apos;ll tell you what is
-            realistic for India shopping, destination planning, or family-side support.
+            realistic for India shopping, destination planning, or family-side support during your free first
+            30-minute consultation. Any paid next step is quoted separately in writing.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

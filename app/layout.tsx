@@ -205,7 +205,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Mexico &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
           <span className="lg:hidden">Mexico &amp; Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/">Schedule Free Consultation</Link>
+          <Link href="/contact/">Free 30-Minute Consultation</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}

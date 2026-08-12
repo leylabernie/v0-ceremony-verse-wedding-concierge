@@ -83,7 +83,7 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           Coordinate bridal, groom, wedding-party, and family outfits from India through one documented process, with live review when available, custom-order support, and delivery coordination across California.
         </p>
         <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </Link>
       </section>
 
@@ -139,7 +139,7 @@ export default function IndianWeddingShoppingCaliforniaPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
-              { tier: "Free Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
+              { tier: "Free 30-Minute Consultation", price: "Free", desc: "Tell us about your wedding, your outfit needs, and your budget. We'll share how we can help — no obligation." },
               { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
               { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." }
             ].map((item) => (
@@ -177,7 +177,7 @@ export default function IndianWeddingShoppingCaliforniaPage() {
             Ready to start your wedding shopping?
           </h2>
           <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "24px" }}>
-            Book a free consultation or message us on WhatsApp at +1 (215) 341-9990. We&apos;ll explain the available service tiers, costs, timeline, and responsibilities before you decide.
+            Book a free 30-minute consultation or message us on WhatsApp at +1 (215) 341-9990. We&apos;ll explain the available service tiers, costs, timeline, and responsibilities before you decide.
           </p>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             WhatsApp Us Now

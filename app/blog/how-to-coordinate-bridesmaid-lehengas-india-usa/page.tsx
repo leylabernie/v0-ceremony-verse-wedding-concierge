@@ -170,7 +170,7 @@ export default function BridesmaidGuidePage() {
             </p>
           </div>
 
-          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse offers India-sourcing support for bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire within the selected written scope. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a consultation</Link> to discuss your wedding outfit needs.</p>
+          <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse offers India-sourcing support for bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire within the selected written scope. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free 30-minute consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
       </article>

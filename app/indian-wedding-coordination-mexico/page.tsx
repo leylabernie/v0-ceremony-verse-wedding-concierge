@@ -158,7 +158,7 @@ export default function MexicoCoordinationPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white shadow-lg"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <Link
               href="/pricing/#mexico-concierge"
@@ -419,7 +419,7 @@ export default function MexicoCoordinationPage() {
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

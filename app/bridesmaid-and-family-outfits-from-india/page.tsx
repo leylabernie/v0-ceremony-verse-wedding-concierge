@@ -193,7 +193,7 @@ export default function BridesmaidPage() {
 
           <div className="flex flex-col items-center gap-3.5">
             <Link href="/contact/" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <a href="https://wa.me/12153419990" className="text-[17px] text-[var(--cv-body)] no-underline">
               WhatsApp: +1 (215) 341-9990

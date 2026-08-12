@@ -239,13 +239,13 @@ export default function NriWeddingPlanningTimeline() {
               Ready to start planning?
             </p>
             <p style={{ color: "#7a6841", fontSize: "0.95rem", marginBottom: "1.5rem", lineHeight: 1.6 }}>
-              Book a free consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
+              Book a free 30-minute consultation. Tell us your wedding date, your ceremonies, and where you are in the planning process — we&apos;ll take it from there.
             </p>
             <Link
               href="/contact/"
               style={{ display: "inline-block", background: "#7a6841", color: "#2f2f2f", padding: "0.8rem 2rem", borderRadius: "4px", fontWeight: 600, fontSize: "0.95rem", textDecoration: "none", letterSpacing: "0.03em" }}
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <p style={{ color: "#4d403a", fontSize: "0.95rem", marginTop: "1rem" }}>
               Or WhatsApp: <a href="https://wa.me/12153419990" style={{ color: "#7a6841" }}>+1 (215) 341-9990</a>
@@ -281,13 +281,13 @@ export default function NriWeddingPlanningTimeline() {
               Ready to Start Sourcing?
             </p>
             <h3 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.4rem", fontWeight: 600, color: "#1f1f1f", marginBottom: "0.6rem" }}>
-              Book a free consultation and map out your full sourcing timeline
+              Book a free 30-minute consultation and map out your full sourcing timeline
             </h3>
             <p style={{ fontSize: "0.95rem", color: "#4d403a", marginBottom: "1rem", lineHeight: 1.6 }}>
               We&apos;ll review your wedding date, family-approved ceremony list, item requirements, known estimates, and budget. The result is a documented planning range and next-action list—not an arrival guarantee.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/contact/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Schedule Free Consultation</Link>
+              <Link href="/contact/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Schedule a Free 30-Minute Consultation</Link>
               <Link href="/services/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>See Services</Link>
               <Link href="/pricing/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
             </div>

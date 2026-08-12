@@ -143,7 +143,7 @@ export default function HaldiOutfitsPage() {
             textDecoration: "none",
           }}
         >
-          Schedule Free Consultation
+          Schedule a Free 30-Minute Consultation
         </a>
       </section>
 
@@ -464,7 +464,7 @@ export default function HaldiOutfitsPage() {
               margin: "0 auto 24px",
             }}
           >
-            Request a consultation. We can organize available fabric options, color
+            Request a free 30-minute consultation. We can organize available fabric options, color
             palettes, and pricing — and start sourcing your Haldi outfits from India within a
             week.
           </p>
@@ -481,7 +481,7 @@ export default function HaldiOutfitsPage() {
               textDecoration: "none",
             }}
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </a>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}

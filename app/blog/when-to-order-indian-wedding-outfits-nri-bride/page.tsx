@@ -131,7 +131,7 @@ export default function TimelineGuidePage() {
               Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Not sure if you&apos;re on track? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a consultation</Link> to review your date, items, known estimates, and remaining decisions.
+              Not sure if you&apos;re on track? <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free 30-minute consultation</Link> to review your date, items, known estimates, and remaining decisions.
             </p>
           </div>
 

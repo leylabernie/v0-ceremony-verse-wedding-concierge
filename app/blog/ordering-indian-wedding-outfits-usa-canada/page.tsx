@@ -227,7 +227,7 @@ export default function BlogPost() {
             </p>
             <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
               <Link href="/contact/?service=india&from=outfit-ordering-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
-                Schedule Free Consultation
+                Schedule a Free 30-Minute Consultation
               </Link>
               <Link href="/pricing/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
                 Review Sourcing Tiers

@@ -83,7 +83,7 @@ export default function DestinationsPage() {
           <h1 className="mt-4 font-serif text-5xl font-semibold !text-white sm:text-6xl">Indian destination wedding locations, compared clearly</h1>
           <p className="mx-auto mt-7 max-w-4xl text-lg leading-8 !text-white/80">Choose the destination through your guest map, complete written cost, event spaces, cultural requirements, room-block risk, weather backup, and the team that will actually execute—not through a beach photo or package headline.</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
+            <Link href="/contact/?service=mexico" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule a Free 30-Minute Consultation</Link>
             <Link href="/planning-tools/budget/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Calculate the Complete Budget</Link>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function DestinationsPage() {
         <div className="mx-auto max-w-5xl"><div className="text-center"><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Destination FAQ</p><h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Questions families ask before choosing</h2></div><div className="mt-10 grid gap-5 md:grid-cols-2">{faqItems.map((faq) => <article key={faq.question} className="rounded-2xl border border-[#e6dfd5] bg-white p-8"><h3 className="font-serif text-2xl font-semibold">{faq.question}</h3><p className="mt-4 leading-7 text-[#4d403a]">{faq.answer}</p></article>)}</div></div>
       </section>
 
-      <section className="bg-[#7a6841] px-6 py-20 text-center text-white"><div className="mx-auto max-w-3xl"><h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Bring us your actual wedding facts</h2><p className="mt-5 text-lg leading-8 !text-white/85">We will help you compare the destination, complete cost, room-block exposure, cultural requirements, family responsibilities, and next decision.</p><Link href="/contact/?service=mexico" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link></div></section>
+      <section className="bg-[#7a6841] px-6 py-20 text-center text-white"><div className="mx-auto max-w-3xl"><h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Bring us your actual wedding facts</h2><p className="mt-5 text-lg leading-8 !text-white/85">We will help you compare the destination, complete cost, room-block exposure, cultural requirements, family responsibilities, and next decision.</p><Link href="/contact/?service=mexico" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule a Free 30-Minute Consultation</Link></div></section>
     </main>
   )
 }

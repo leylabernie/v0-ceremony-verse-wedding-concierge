@@ -105,7 +105,7 @@ const faqItems = [
   {
     question: "Can I start with a free consultation?",
     answer:
-      "Yes. The 30-minute introductory consultation is free and does not require a contract or payment. If you need a written feasibility decision before full planning, the next step can be the $300 Destination Wedding Feasibility & Action Plan. Other paid work begins only after you select a scope and approve its written terms.",
+      "Yes. Your first 30-minute introductory consultation is free and does not require a contract or payment. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services. Paid work begins only after you select a scope and approve its written terms.",
   },
   {
     question: "What happens if my party is larger than eight people?",
@@ -363,14 +363,14 @@ export default function PricingPage() {
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Start with a free consultation</h2>
+          <h2 className="mb-5 font-serif text-4xl font-semibold !text-white sm:text-5xl">Your first 30-minute consultation is free</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             We&apos;ll review your dates, location, items, quantities, and budget, then tell you which India
-            sourcing tier, $300 feasibility plan, or destination-planning package is appropriate. No payment is required
-            for the consultation.
+            sourcing tier, $300 feasibility plan, or destination-planning package is appropriate. No payment or
+            contract is required for the call; any paid next step is presented separately in writing.
           </p>
           <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

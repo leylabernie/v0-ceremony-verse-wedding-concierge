@@ -38,7 +38,7 @@ export default function IndianWeddingGuestOutfitsPage() {
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
           <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
             WhatsApp: +1 (215) 341-9990
@@ -135,7 +135,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
-              { tier: "Free Consultation", price: "Free", desc: "A 30-minute call to understand your needs, timing, and budget scope. No commitment." },
+              { tier: "Free 30-Minute Consultation", price: "Free", desc: "A 30-minute call to understand your needs, timing, and budget scope. No commitment." },
               { tier: "Guided Sourcing", price: "$799", desc: "Selected live or recorded item review and order coordination, subject to item and vendor availability." },
               { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
@@ -157,7 +157,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           </h2>
           {[
             { q: "I'm attending a wedding in 6 weeks — is that enough time?", a: "It depends on current ready-made availability, alterations, vendor handling time, carrier service, customs, and your flexibility. A made-to-order item may not be responsible on that schedule. Request item-specific written estimates and preserve a local backup rather than relying on a universal minimum." },
-            { q: "Can you help me figure out what to wear?", a: "Yes. Guided Sourcing starts with your event type, dress code, preferences, body type, and budget, then keeps CeremonyVerse involved through the selected shopping and order-coordination scope. Start with a free consultation to talk it through." },
+            { q: "Can you help me figure out what to wear?", a: "Yes. Guided Sourcing starts with your event type, dress code, preferences, body type, and budget, then keeps CeremonyVerse involved through the selected shopping and order-coordination scope. Start with your free first 30-minute consultation to talk it through." },
             { q: "I need outfits for my whole family. Can you coordinate everything?", a: "Group coordination is available within the selected tier or a custom written scope. We organize participant measurements, selections, and approvals; vendor capacity and shipment structure are confirmed before ordering." },
             { q: "How do measurements work if I'm in the US?", a: "We use the selected vendor's measurement chart and document the measurements and fit preferences included in your tier. You may measure at home or use a qualified local tailor. A documented review can reduce recording errors, but it does not guarantee fit or replace an in-person fitting." },
             { q: "What if I don't like what I see on the video call?", a: "You do not have to approve an item that does not fit the written brief. Within the selected scope, we can document the concern and compare another available option or revise the brief; any additional session or expanded search is confirmed in writing first." },
@@ -199,7 +199,7 @@ export default function IndianWeddingGuestOutfitsPage() {
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
             <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990

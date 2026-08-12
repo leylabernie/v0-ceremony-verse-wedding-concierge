@@ -94,7 +94,7 @@ const servicePillars = [
     features: [
       "Planning support defined from the beginning",
       "Multi-day timelines and on-site event management",
-      "Optional family concierge, guest, and arrival support",
+      "Family and guest coordination included at the selected planning-package level",
     ],
     href: "/indian-wedding-coordination-mexico/",
     cta: "Explore Destination Planning",
@@ -209,7 +209,7 @@ export function HomePage() {
                 href={destinationFeasibilityPlan.contactHref}
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule Free Consultation
+                Schedule a Free 30-Minute Consultation
               </Link>
               <Link
                 href="/planning-tools/"
@@ -219,7 +219,8 @@ export function HomePage() {
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
-              Start here · Free 30-minute consultation · Optional $300 written feasibility plan
+              Your first 30-minute consultation is free · No payment or contract required · The optional $300 written
+              feasibility plan is a separate paid service
             </p>
           </div>
         </div>
@@ -589,14 +590,14 @@ export function HomePage() {
             Tell us which path you need—or if you need both
           </h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
-            In 30 minutes, we&apos;ll separate the event budget from rooms and travel, identify the right
-            destination-planning scope, and discuss only the extra support your family actually needs.
+            Your first 30-minute consultation is free. We&apos;ll separate the event budget from rooms and travel,
+            identify the right destination-planning scope, and explain any paid next step before you decide.
           </p>
           <Link
             href="/contact/"
             className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

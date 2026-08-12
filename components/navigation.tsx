@@ -104,7 +104,7 @@ export function Navigation() {
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              <span>Schedule Free Consultation</span>
+              <span>Free 30-Minute Consultation</span>
             </Link>
           </div>
 
@@ -145,7 +145,7 @@ export function Navigation() {
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
-                Schedule Free Consultation
+                Free 30-Minute Consultation
               </Link>
             </div>
           </div>

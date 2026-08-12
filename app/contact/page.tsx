@@ -3,22 +3,22 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/contact/",
-  title: "Schedule a Free CeremonyVerse Wedding Consultation",
+  title: "Schedule a Free 30-Minute CeremonyVerse Consultation",
   description:
-    "Schedule a free consultation from anywhere in the USA or Canada about India wedding sourcing, the $300 feasibility plan, or Gujarati and Hindu planning in Mexico or Punta Cana.",
+    "Your first 30-minute CeremonyVerse consultation is free. Discuss India wedding sourcing or Gujarati and Hindu destination planning with no payment or contract required for the call.",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Free Wedding Sourcing or Destination Planning Consultation",
+  name: "Free 30-Minute Wedding Sourcing or Destination Planning Consultation",
   description:
-    "Free 30-minute introductory consultation to review the wedding vision, guest count, timeline, and budget, then identify whether India sourcing, the $300 feasibility plan, or a destination-planning scope is the right next step.",
+    "The first 30-minute introductory consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, guest count, timeline, and budget before explaining any separate paid next step.",
   url: "/contact/",
   category: "Wedding Planning and India Wedding Sourcing Consultation",
   areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Schedule Free Consultation", url: "/contact/" },
+  { name: "Schedule a Free 30-Minute Consultation", url: "/contact/" },
 ]);
 
 export default function ContactRoute() {

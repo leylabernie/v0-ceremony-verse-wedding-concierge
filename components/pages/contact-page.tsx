@@ -95,7 +95,7 @@ export function ContactPage() {
   const fallbackText = useMemo(
     () =>
       [
-        "Hello CeremonyVerse, I would like to request a free consultation.",
+        "Hello CeremonyVerse, I would like to request my free 30-minute consultation.",
         `Service: ${serviceInterest || "Not provided"}`,
         `Name: ${formData.name || "Not provided"}`,
         `Email: ${formData.email || "Not provided"}`,
@@ -177,9 +177,9 @@ export function ContactPage() {
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your consultation request has been received. Complete the questionnaire below so CeremonyVerse has your
-            wedding timeframe, destination, guest needs, and priorities before the call. A WhatsApp scheduling request
-            opens immediately after you submit it.
+            Your request for a free 30-minute consultation has been received. Complete the questionnaire below so
+            CeremonyVerse has your wedding timeframe, destination, guest needs, and priorities before the call. A
+            WhatsApp scheduling request opens immediately after you submit it.
           </p>
           {questionnaireUrl ? (
             <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
@@ -233,19 +233,18 @@ export function ContactPage() {
             Begin with the facts
           </p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Schedule Your Free Wedding Consultation
+            Your First 30-Minute Consultation Is Free
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Tell us what you are planning, what the budget must cover, and where your guests are traveling from.
-            CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana, plus wedding
-            shopping and sourcing from India for families throughout the United States and Canada.
+            The introductory call requires no payment or contract.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
-            <p className="font-semibold text-[#1f1f1f]">Complete the consultation request and questionnaire before choosing a call time.</p>
+            <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
             <p className="mt-2">
-              Submit this form first. The pre-call questionnaire opens immediately after a successful request, and
-              we also attempt to email the same link. Once you complete it, a WhatsApp scheduling request opens. No
-              prior review or approval is required.
+              Your first 30-minute consultation is free. The $300 Destination Wedding Feasibility &amp; Action Plan and
+              all planning or sourcing packages are paid services offered only after you approve a written scope.
+              Submit this form first; the questionnaire and WhatsApp scheduling request follow.
             </p>
           </div>
         </div>
@@ -404,11 +403,11 @@ export function ContactPage() {
               className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]"
               style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}
             >
-              {isLoading ? "Sending Securely…" : "Send My Consultation Request"}
+              {isLoading ? "Sending Securely…" : "Request My Free 30-Minute Consultation"}
             </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
-              Submitting this form does not reserve a call time. Do not include passport numbers, payment-card details,
-              medical records, or other sensitive documents.
+              No payment is required to submit this request or attend the first 30-minute consultation. Submitting the
+              form does not reserve a call time. Do not include sensitive documents.
             </p>
           </div>
         </form>

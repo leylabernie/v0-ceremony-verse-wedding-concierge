@@ -81,7 +81,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
               href={destinationFeasibilityPlan.contactHref}
               className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
             >
-              Schedule Free Consultation
+              Schedule a Free 30-Minute Consultation
             </Link>
             <span className="text-sm !text-white/70">No payment is collected through the inquiry form.</span>
           </div>
@@ -195,7 +195,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
             href={destinationFeasibilityPlan.contactHref}
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
           >
-            Schedule Free Consultation
+            Schedule a Free 30-Minute Consultation
           </Link>
         </div>
       </section>

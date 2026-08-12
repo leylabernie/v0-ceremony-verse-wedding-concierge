@@ -99,7 +99,7 @@ export default function GujaratiWeddingOutfitsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px" }}>
             {[
-              { tier: "Free Consultation", price: "Free", desc: "Tell us about your Gujarati wedding, the ceremonies planned, and your outfit vision. We'll share how we can help — no obligation." },
+              { tier: "Free 30-Minute Consultation", price: "Free", desc: "Tell us about your Gujarati wedding, the ceremonies planned, and your outfit vision. We'll share how we can help — no obligation." },
               { tier: "Guided Sourcing", price: "$799", desc: "Live shopping and order coordination for selected wedding outfits, subject to item and vendor availability." },
               { tier: "Full Bridal Concierge", price: "$2,499", desc: "One organized sourcing process for the bride, groom, and wedding party of up to eight people." },
             ].map((item) => (
