@@ -18,7 +18,7 @@ export const SITE_URL = "https://www.ceremonyverse.com";
 export const SITE_NAME = "CeremonyVerse";
 export const SITE_EMAIL = "hello@ceremonyverse.com";
 export const SITE_PHONE = "+12153419990";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/hero-lehenga.webp`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baarat.webp`;
 
 type SchemaArea = {
   "@type": "Country" | "Place";
@@ -50,7 +50,7 @@ interface BuildMetadataOpts {
   path: string;
   title: string;
   description: string;
-  /** Optional OG image (absolute URL or path). Falls back to hero-lehenga.jpg. */
+  /** Optional OG image (absolute URL or path). Falls back to the destination-wedding brand image. */
   image?: string;
   /** Article/blog post metadata. When present, OG type becomes "article". */
   publishedTime?: string;
@@ -347,7 +347,7 @@ export function buildLocalBusinessSchema(): object {
     description:
       "CeremonyVerse offers Indian wedding shopping for families across the United States and Canada plus Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana.",
     url: SITE_URL,
-    image: `${SITE_URL}/images/hero-lehenga.webp`,
+    image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     logo: `${SITE_URL}/icon.svg`,
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
@@ -360,10 +360,7 @@ export function buildLocalBusinessSchema(): object {
     areaServed: buildAreaServed(["United States", "Canada", "Mexico", "Dominican Republic"]),
     priceRange: "$$",
     sameAs: [
-      "https://www.instagram.com/ceremonyverse/",
-      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
-      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -502,7 +499,7 @@ export function buildOrganizationSchema(): object {
     name: SITE_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/icon.svg`,
-    image: `${SITE_URL}/images/hero-lehenga.webp`,
+    image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
     description:
       "CeremonyVerse is a U.S.-based Indian wedding shopping concierge serving families across the United States and Canada, with destination-wedding support for Gujarati and Hindu celebrations across Mexico and Punta Cana.",
     contactPoint: [
@@ -521,10 +518,7 @@ export function buildOrganizationSchema(): object {
       addressLocality: "Philadelphia",
     },
     sameAs: [
-      "https://www.instagram.com/ceremonyverse/",
-      "https://www.facebook.com/p/CeremonyVerse-61584354540903/",
       "https://wa.me/12153419990",
-      "https://www.trustpilot.com/review/ceremonyverse.com",
     ],
   };
 }

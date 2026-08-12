@@ -50,6 +50,18 @@ const journeyPhases: JourneyPhase[] = [
     steps: [
       {
         timing: "Start here",
+        name: "Short website registration",
+        text: "Submit the essential contact, timing, destination, and guest-count details on the CeremonyVerse website. Scheduling access and the pre-call questionnaire are provided automatically; there is no prior approval gate.",
+        outcome: "Your request receives a reference ID and is connected to the next steps.",
+      },
+      {
+        timing: "Immediately after registration",
+        name: "Request a time and complete the questionnaire",
+        text: "Request your consultation time on WhatsApp, then complete the pre-call questionnaire before the call. Scheduling and questionnaire completion can happen in either order. Most questionnaire items are optional and your same-browser registration details are prefilled.",
+        outcome: "CeremonyVerse can prepare without making you repeat the same facts.",
+      },
+      {
+        timing: "First conversation",
         name: "Free 30-minute consultation",
         text: "We discuss possible dates and destinations, guest origins and estimated count, the event list, Gujarati or Hindu traditions, accessibility and food needs, what the budget must cover, and whether India sourcing is needed. No payment or contract is required for this call.",
         outcome: "You receive a clear recommendation for the next appropriate step.",
@@ -66,7 +78,7 @@ const journeyPhases: JourneyPhase[] = [
         text: "We review the agreed figures and current documents, hold the working session, and deliver the written action brief. When you sign a CeremonyVerse destination-planning contract within 30 days after plan delivery, the full $300 is credited toward your CeremonyVerse planning service fee.",
         outcome: "You may use the plan on its own or continue into full planning.",
       },
-    ],
+    ]
   },
   {
     name: "Contract and active planning",
@@ -118,7 +130,7 @@ const journeyPhases: JourneyPhase[] = [
   },
   {
     name: "Finalization, wedding week and closeout",
-    description: "Reconcile the details, execute the contracted events, and finish with a written handoff instead of an unclear ending.",
+    description: "Reconcile the details, execute the contracted events, and finish with a documented closeout instead of an unclear ending.",
     steps: [
       {
         timing: "As the wedding approaches",
@@ -134,8 +146,8 @@ const journeyPhases: JourneyPhase[] = [
       },
       {
         timing: "After the final event",
-        name: "Closeout and final handoff",
-        text: "We track the agreed rental returns, outstanding provider balances or disputes, lost-and-found items, remaining vendor deliverables, and any post-event records named in the contract. CeremonyVerse completes the final handoff, data-retention or deletion steps, and a debrief before closing the engagement.",
+        name: "Closeout and debrief",
+        text: "We track the agreed rental returns, outstanding provider balances or disputes, lost-and-found items, remaining vendor deliverables, and any post-event records named in the contract. CeremonyVerse completes the agreed data-retention or deletion steps and a debrief before closing the engagement.",
         outcome: "The project ends only after the contracted closeout responsibilities are accounted for.",
       },
     ],
@@ -223,7 +235,7 @@ export default function HowItWorksPage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-            From the first call to the final handoff
+            From first registration to final closeout
           </p>
           <h1 className="font-serif text-4xl font-semibold !text-white sm:text-6xl">
             See exactly how CeremonyVerse works with you
@@ -298,6 +310,29 @@ export default function HowItWorksPage() {
                 </section>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">Proof before payment</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold !text-white sm:text-5xl">What you can verify before signing</h2>
+            <p className="mt-5 text-lg leading-8 !text-white/75">Use the public information to evaluate the process, then require the private proposal to define the exact people, scope, fees, and outside costs for your wedding.</p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Public starting fees", "Compare planning packages and India-sourcing fees before the consultation."],
+              ["Written responsibilities", "Require included work, exclusions, approvals, payment milestones, and change rules in the contract."],
+              ["Direct provider terms", "Review the resort or licensed provider’s own booking, payment, cancellation, and transfer terms."],
+              ["Visible planning system", "Use the calculators and this complete client journey to test how decisions will be organized."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-white/15 bg-white/5 p-7">
+                <h3 className="font-serif text-2xl font-semibold !text-white">{title}</h3>
+                <p className="mt-4 leading-7 !text-white/70">{description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>

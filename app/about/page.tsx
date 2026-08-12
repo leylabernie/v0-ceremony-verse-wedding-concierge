@@ -51,6 +51,24 @@ const experienceLessons = [
   },
 ];
 
+const familyWeddings = [
+  {
+    venue: "Hard Rock Hotel Cancun",
+    detail: "Approximately 150 guests",
+    context: "Firsthand family wedding experience in Mexico",
+  },
+  {
+    venue: "Generations Riviera Maya",
+    detail: "Approximately 130 guests · February 2023",
+    context: "Firsthand family wedding experience in Mexico",
+  },
+  {
+    venue: "Royalton resort in Mexico",
+    detail: "Approximately 80 guests · 2024",
+    context: "Firsthand family wedding experience in Mexico",
+  },
+];
+
 const originStoryPhotos = [
   {
     src: "/images/proof/prior-outfit-couple.webp",
@@ -120,6 +138,29 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Firsthand family experience</p>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Three destination weddings that shaped the questions we ask</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              These were family weddings—not CeremonyVerse client engagements. They are shared as truthful background
+              for the service model, not as testimonials, reviews, or a destination-planning portfolio.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {familyWeddings.map((wedding) => (
+              <article key={wedding.venue} className="rounded-2xl border border-[#d9cfbf] bg-white p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family wedding · not a client project</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{wedding.venue}</h3>
+                <p className="mt-4 font-semibold text-[#5e4a40]">{wedding.detail}</p>
+                <p className="mt-3 leading-7 text-[#4d403a]">{wedding.context}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
@@ -172,13 +213,13 @@ export default function AboutPage() {
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+            <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-[#f4eee4]">
               <Image
                 src="/images/proof/family-wedding-mandap-couple.webp"
                 alt="Bride and groom beneath a floral mandap at a family wedding that helped shape CeremonyVerse"
                 fill
                 sizes="(max-width: 1024px) 100vw, 45vw"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <p className="mt-3 text-xs leading-5 text-[#6a5b52]">
@@ -218,6 +259,34 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Before you sign</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold !text-white sm:text-5xl">What you can verify now</h2>
+            <p className="mt-5 text-lg leading-8 !text-white/75">
+              A new company should make its operating model easier to inspect, not ask you to rely on claims alone.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              ["Starting fees", "Planning-package starting fees and India-sourcing service fees are published in USD."],
+              ["Complete process", "The consultation-to-closeout journey shows decisions, approvals, owners, and client checkpoints."],
+              ["Provider contracts", "Resorts and licensed providers issue and control their own bookings, contracts, and payments."],
+              ["Private written scope", "The proposal names local responsibilities, fees, exclusions, outside costs, and payment milestones before paid work."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-white/15 bg-white/5 p-7">
+                <h3 className="font-serif text-2xl font-semibold !text-white">{title}</h3>
+                <p className="mt-4 leading-7 !text-white/70">{description}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-9 text-center">
+            <Link href="/how-it-works/" className="inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold !text-[#1f1f1f]">Review the Complete Process</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
@@ -251,7 +320,7 @@ export default function AboutPage() {
           <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Tell us what your family needs</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/85">
             Share your destination, preferred dates, guest count, ceremonies, budget, and whether India sourcing is
-            needed. CeremonyVerse will review the information and recommend a practical next step.
+            needed. CeremonyVerse will use those facts during the free consultation and explain the practical next step.
           </p>
           <Link
             href="/contact/?service=mexico"

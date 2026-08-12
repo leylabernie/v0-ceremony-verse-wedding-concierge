@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { SourcingTierGuide } from "@/components/sourcing-tier-guide"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
@@ -74,19 +73,6 @@ const destinationHighlights = [
 
 const servicePillars = [
   {
-    label: "India shopping & sourcing",
-    title: "Wedding wardrobes and essentials, organized remotely",
-    description:
-      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process, with remote service across the United States and Canada.",
-    features: [
-      "Bride, groom, wedding-party, and family outfits",
-      "Jewelry, gifts, welcome-bag items, and ceremony essentials",
-      "Measurements, written approvals, available pre-shipping review, and delivery support",
-    ],
-    href: "/buy-indian-wedding-outfits-from-india/",
-    cta: "Explore India Shopping",
-  },
-  {
     label: "Destination wedding planning",
     title: "Family coordination with local planning and execution",
     description:
@@ -98,6 +84,19 @@ const servicePillars = [
     ],
     href: "/indian-wedding-coordination-mexico/",
     cta: "Explore Destination Planning",
+  },
+  {
+    label: "Optional India shopping & sourcing",
+    title: "Add wedding wardrobes and essentials when you need them",
+    description:
+      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process, with remote service across the United States and Canada.",
+    features: [
+      "Bride, groom, wedding-party, and family outfits",
+      "Jewelry, gifts, welcome-bag items, and ceremony essentials",
+      "Measurements, written approvals, available pre-shipping review, and delivery support",
+    ],
+    href: "/buy-indian-wedding-outfits-from-india/",
+    cta: "Explore India Shopping",
   },
 ]
 
@@ -261,7 +260,38 @@ export function HomePage() {
         </div>
       </section>
 
-      <SourcingTierGuide />
+      <section className="border-y border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Evidence before commitment</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Review the experience, roles, process and fees before you sign</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              CeremonyVerse is new, so the website does not present family weddings as client projects or rely on
+              unverified review claims. Instead, you can inspect the planning system and written responsibilities first.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family experience</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">Three Mexico wedding journeys</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">See the firsthand family wedding experiences that shaped the service, clearly labeled as family events rather than CeremonyVerse client work.</p>
+              <Link href="/about/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Review the family experience</Link>
+            </article>
+            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Named responsibilities</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">One family contact, clear local owners</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse coordinates the family-facing plan; the contracted destination team handles the local scope; resorts and licensed providers control their own bookings and payments.</p>
+              <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See every planning step</Link>
+            </article>
+            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Visible system</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">Public fees and practical tools</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">Compare published starting fees, use calculators without an email gate, and review what the contract must define before paid planning begins.</p>
+              <Link href="/pricing/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Compare planning fees</Link>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-24">
         <div className="mx-auto max-w-6xl">
@@ -286,17 +316,78 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
+              Destination-wedding planning
+            </p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
+              Choose the planning and family support you need
+            </h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Package details and starting planning fees are public so you can compare the scope. Your final written
+              proposal reflects the destination, dates, events, guest count, staffing, travel, and requested additions.
+            </p>
+            <p className="mt-5 font-semibold text-[#7a6841]">{mexicoAvailabilityMessage}</p>
+          </div>
+
+          <article className="mb-9 rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 shadow-sm sm:p-9">
+            <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
+                <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
+                  After the free consultation, turn your own guest count, event schedule, budget scope, travel obligations,
+                  and current written proposals into a practical action brief.
+                </p>
+                <p className="mt-4 max-w-4xl font-semibold leading-7 text-[#7a6841]">
+                  Sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered,
+                  and the full $300 is credited toward your CeremonyVerse planning service fee.
+                </p>
+              </div>
+              <Link
+                href={destinationFeasibilityPlan.href}
+                className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white"
+              >
+                See What $300 Includes
+              </Link>
+            </div>
+          </article>
+
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {mexicoPackages.map((tier) => (
+              <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
+                <h3 className="cv-package-title">{tier.name}</h3>
+                {tier.priceLabel && <p className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
+                <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
+                <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
+                <Link
+                  href={tier.href}
+                  className="inline-flex justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]"
+                >
+                  {tier.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
+        </div>
+      </section>
+
+
       <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              One company · Two coordinated services
+              Destination planning first · India sourcing when needed
             </p>
             <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Plan the destination and shop India without managing disconnected teams
+              Keep the destination plan central, then add India sourcing only if it helps
             </h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              Choose either service independently, or combine them in one clearly defined proposal when your family needs both.
+              Destination planning stands on its own. India sourcing is a separate service that can be added only when it is useful and explicitly included in your proposal.
             </p>
           </div>
 
@@ -403,66 +494,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-12 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Destination-wedding planning
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Choose the planning and family support you need
-            </h2>
-            <p className="text-lg leading-8 text-[#4d403a]">
-              Package details and starting planning fees are public so you can compare the scope. Your final written
-              proposal reflects the destination, dates, events, guest count, staffing, travel, and requested additions.
-            </p>
-            <p className="mt-5 font-semibold text-[#7a6841]">{mexicoAvailabilityMessage}</p>
-          </div>
-
-          <article className="mb-9 rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 shadow-sm sm:p-9">
-            <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
-                <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
-                <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
-                  After the free consultation, turn your own guest count, event schedule, budget scope, travel obligations,
-                  and current written proposals into a practical action brief.
-                </p>
-                <p className="mt-4 max-w-4xl font-semibold leading-7 text-[#7a6841]">
-                  Sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered,
-                  and the full $300 is credited toward your CeremonyVerse planning service fee.
-                </p>
-              </div>
-              <Link
-                href={destinationFeasibilityPlan.href}
-                className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white"
-              >
-                See What $300 Includes
-              </Link>
-            </div>
-          </article>
-
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {mexicoPackages.map((tier) => (
-              <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
-                <h3 className="cv-package-title">{tier.name}</h3>
-                {tier.priceLabel && <p className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
-                <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
-                <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
-                <Link
-                  href={tier.href}
-                  className="inline-flex justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]"
-                >
-                  {tier.cta}
-                </Link>
-              </article>
-            ))}
-          </div>
-          <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
-        </div>
-      </section>
-
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -519,44 +550,30 @@ export function HomePage() {
       </section>
 
       <section className="bg-white px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-5xl">
-          <div className="mb-10 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Clear expectations
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Boundaries that protect your family
-            </h2>
-            <p className="mx-auto max-w-3xl text-lg leading-8 text-[#4d403a]">
-              You will know what CeremonyVerse is responsible for, what remains with an independent provider,
-              and what no remote service can responsibly promise.
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">One plan, clear owners</p>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Know who handles each part of the wedding</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.
             </p>
           </div>
-          <div className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8 sm:p-10">
-            <h3 className="mb-6 font-serif text-2xl font-semibold">Our scope, stated plainly</h3>
-            <div className="grid gap-7 sm:grid-cols-2">
-              <div>
-                <p className="mb-3 font-semibold text-[#7a6841]">What we do</p>
-                <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
-                  <li>Curate and source requested wedding items</li>
-                  <li>Coordinate shopping calls and approvals</li>
-                  <li>Organize measurements and order details</li>
-                  <li>Coordinate available pre-shipping review, delivery, and tracking</li>
-                  <li>Coordinate destination planning through the selected written scope</li>
-                  <li>Organize agreed guest, arrival, and family details</li>
-                </ul>
-              </div>
-              <div>
-                <p className="mb-3 font-semibold text-[#7a6841]">What remains outside our scope</p>
-                <ul className="space-y-3 text-sm leading-6 text-[#4d403a]">
-                  <li>Act as the resort, airline, travel agency, or transfer company</li>
-                  <li>Sell unauthorized designer replicas</li>
-                  <li>Promise identical handmade results</li>
-                  <li>Guarantee customs timing or duty amounts</li>
-                </ul>
-              </div>
-            </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              ["CeremonyVerse", "Your family-facing coordinator for priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
+              ["Contracted destination team", "The experienced Mexico-based planning and on-site team responsible for the local work specifically listed in your private proposal."],
+              ["Resorts and licensed providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
+            ].map(([title, description]) => (
+              <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
+                <p className="mt-4 leading-7 text-[#4d403a]">{description}</p>
+              </article>
+            ))}
           </div>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-6 text-[#5e4a40]">
+            The final contract identifies included work, exclusions, fees, payment milestones, approvals, change rules,
+            and outside costs before paid planning starts.
+          </p>
         </div>
       </section>
 
