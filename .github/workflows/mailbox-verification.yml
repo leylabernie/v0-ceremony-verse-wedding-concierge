@@ -1,4 +1,4 @@
-name: CeremonyVerse mailbox verification
+name: CeremonyVerse canonical internal-link cleanup
 
 on:
   push:
@@ -6,23 +6,105 @@ on:
       - agent/mailbox-verification-20260813
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  verify:
+  cleanup-and-validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
-      - name: Submit one synthetic consultation request
+      - name: Check out focused cleanup branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/internal-link-cleanup-20260813
+          fetch-depth: 0
+
+      - name: Replace residual redirecting internal links
         shell: bash
         run: |
-          set -euo pipefail
-          response=$(curl -fsS --max-time 30 \
-            -X POST \
-            -H 'Origin: https://www.ceremonyverse.com' \
-            -H 'Content-Type: application/json' \
-            --data '{"serviceInterest":"Destination wedding planning","name":"CeremonyVerse Mailbox Verification","email":"hello@ceremonyverse.com","phone":"","clientCountry":"United States","eventTimeframe":"Technical verification only — August 13, 2026","eventLocation":"Not a client inquiry","guestCount":"","eventCount":"","budgetRange":"","budgetIncludes":"","travelOrigins":"","outfitPartySize":"","vision":"Synthetic mailbox-routing test. No reply or client follow-up is required.","referralSource":"Technical verification","privacyConsent":true,"website":"","attribution":{"source":"technical-verification","medium":"github-actions","campaign":"mailbox-routing-20260813","content":"single-controlled-test","term":"","landing_page":"https://www.ceremonyverse.com/contact/","referrer":"","gclid":""}}' \
-            https://www.ceremonyverse.com/api/consultation/)
-          echo "$response"
-          python -c 'import json,sys; d=json.loads(sys.argv[1]); assert d.get("success") is True; assert d.get("questionnaireSent") is True' "$response"
-          echo 'MAILBOX_TEST_SUBMISSION=PASS'
+          python - <<'PY'
+          from pathlib import Path
+
+          canonical = "/indian-destination-wedding-planner-mexico/"
+          replacements = {
+              'href="/indian-wedding-coordination-mexico/"': f'href="{canonical}"',
+              "href='/indian-wedding-coordination-mexico/'": f"href='{canonical}'",
+              'href: "/indian-wedding-coordination-mexico/"': f'href: "{canonical}"',
+              "href: '/indian-wedding-coordination-mexico/'": f"href: '{canonical}'",
+              'href={"/indian-wedding-coordination-mexico/"}': f'href={{"{canonical}"}}',
+              "href={'/indian-wedding-coordination-mexico/'}": f"href={{'{canonical}'}}",
+              'href="/services/"': f'href="{canonical}"',
+              "href='/services/'": f"href='{canonical}'",
+              'href: "/services/"': f'href: "{canonical}"',
+              "href: '/services/'": f"href: '{canonical}'",
+              'href={"/services/"}': f'href={{"{canonical}"}}',
+              "href={'/services/'}": f"href={{'{canonical}'}}",
+          }
+
+          changed = []
+          extensions = {".ts", ".tsx", ".js", ".jsx", ".mjs", ".md", ".mdx"}
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file() or path.suffix not in extensions:
+                  continue
+              if any(part in {"node_modules", ".next", ".git"} for part in path.parts):
+                  continue
+              original = path.read_text(encoding="utf-8")
+              updated = original
+              for old, new in replacements.items():
+                  updated = updated.replace(old, new)
+              if updated != original:
+                  path.write_text(updated, encoding="utf-8")
+                  changed.append(str(path))
+
+          if not changed:
+              raise SystemExit("No residual redirecting internal links were changed.")
+
+          remaining = []
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file() or path.suffix not in extensions:
+                  continue
+              if any(part in {"node_modules", ".next", ".git"} for part in path.parts):
+                  continue
+              text = path.read_text(encoding="utf-8")
+              for marker in (
+                  'href="/indian-wedding-coordination-mexico/"',
+                  "href='/indian-wedding-coordination-mexico/'",
+                  'href: "/indian-wedding-coordination-mexico/"',
+                  "href: '/indian-wedding-coordination-mexico/'",
+                  'href="/services/"',
+                  "href='/services/'",
+                  'href: "/services/"',
+                  "href: '/services/'",
+              ):
+                  if marker in text:
+                      remaining.append(f"{path}: {marker}")
+
+          if remaining:
+              raise SystemExit("Residual redirecting links remain:\n" + "\n".join(remaining))
+
+          print("CHANGED_FILES")
+          for path in changed:
+              print(path)
+          PY
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install and build
+        shell: bash
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - name: Publish tested cleanup commit
+        shell: bash
+        run: |
+          git config user.name "leylabernie"
+          git config user.email "bhamini@verizon.net"
+          git add -A
+          git commit -m "Point residual internal links to canonical planning page"
+          git push origin HEAD:agent/internal-link-cleanup-20260813
