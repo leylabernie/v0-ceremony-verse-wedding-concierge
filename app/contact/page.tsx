@@ -14,7 +14,7 @@ const serviceSchema = buildServiceSchema({
     "The first 30-minute introductory consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, guest count, timeline, and budget before explaining any separate paid next step.",
   url: "/contact/",
   category: "Wedding Planning and India Wedding Sourcing Consultation",
-  areaServed: ["United States", "Canada", "Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
+  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([

@@ -7,11 +7,11 @@ import Link from "next/link";
  */
 const serviceLinks = [
   { label: "Destination Wedding Planning", href: "/indian-wedding-coordination-mexico/" },
+  { label: "India Wedding Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
   { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
-  { label: "Bridesmaid Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
+  { label: "Bridesmaid & Family Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
   { label: "Jewelry & Accessories", href: "/services/" },
-  { label: "Ceremonial Items", href: "/wedding-accessories-and-ceremony-items-from-india/" },
 ];
 
 const destinationLinks = [
@@ -19,7 +19,6 @@ const destinationLinks = [
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
-  { label: "Jamaica Indian Weddings", href: "/destinations/jamaica-indian-wedding/" },
   { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
@@ -62,8 +61,8 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              Indian destination-wedding planning for Gujarati and Hindu families across Mexico, Jamaica, and Punta Cana,
-              with optional India wedding sourcing for families across the USA and Canada.
+              Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana,
+              with optional India wedding-outfit sourcing for families across the USA and Canada.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>
               <a href="mailto:hello@ceremonyverse.com" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
@@ -92,7 +91,7 @@ export function GlobalFooter() {
             </ul>
           </div>
 
-          {/* Ceremonies */}
+          {/* Destinations */}
           <div>
             <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Destinations</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>

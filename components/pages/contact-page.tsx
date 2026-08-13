@@ -227,7 +227,7 @@ export function ContactPage() {
               <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Complete the pre-call questionnaire</h2>
               <p className="mt-4 leading-7 text-[#4d403a]">
                 {questionnaireSent
-                  ? "We emailed your questionnaire automatically. Most questions are optional, and it usually takes 5–7 minutes."
+                  ? "We emailed your questionnaire automatically. Most questions are optional, and it usually takes 3–5 minutes."
                   : "Your registration arrived, but the questionnaire email could not be confirmed. You can complete it securely here."}
               </p>
               <Link
@@ -343,7 +343,7 @@ export function ContactPage() {
               </div>
               <div>
                 <label htmlFor="eventLocation" className={labelClass}>Destination or event location</label>
-                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region, Jamaica resort, or Punta Cana" : "City, state, or destination"} />
+                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region or Punta Cana" : "City, state, or destination"} />
               </div>
               <div>
                 <label htmlFor="guestCount" className={labelClass}>Estimated guests</label>

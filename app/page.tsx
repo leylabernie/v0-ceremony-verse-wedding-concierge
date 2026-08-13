@@ -3,11 +3,10 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata = buildMetadata({
   path: '/',
-  title: 'Indian Destination Wedding Planning | CeremonyVerse',
+  title: 'Gujarati & Hindu Destination Wedding Planning',
   description:
-    "Plan an Indian destination wedding in Mexico or Punta Cana with family coordination, local execution, guest logistics, calculators, and optional India sourcing.",
+    "CeremonyVerse helps U.S. and Canadian families organize multi-day Gujarati and Hindu destination weddings in Mexico and Punta Cana, with optional paid India wedding-outfit sourcing.",
   image: '/images/proof/family-destination-baarat.webp',
-  keywords: 'Indian wedding shopping concierge, Indian wedding outfit sourcing USA, bridal lehenga from India, Gujarati destination wedding planning, Hindu wedding Cancun, Riviera Maya Indian wedding concierge, Punta Cana Indian wedding planning, NRI bridal concierge, live video shopping India',
 });
 
 export type PageType = 'home' | 'services' | 'pricing' | 'how-it-works' | 'blog' | 'faq' | 'contact' | 'bridesmaids' | 'groom' | 'groomsmen' | 'family' | 'ceremonial' | 'jewelry' | 'pets' | 'gifts' | 'welcomebags' | 'journey';
