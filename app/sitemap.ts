@@ -7,7 +7,6 @@ type Entry = { path: string; changeFrequency: Frequency; priority: number }
 
 const pages: Entry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
-  { path: "/services/", changeFrequency: "weekly", priority: 0.9 },
   { path: "/pricing/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/destination-wedding-feasibility-plan/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/destinations/", changeFrequency: "monthly", priority: 0.95 },
@@ -41,8 +40,7 @@ const pages: Entry[] = [
   { path: "/avoid-indian-wedding-shopping-scams/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/services/bridal-lehengas/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/bridesmaid-and-family-outfits-from-india/", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/indian-destination-wedding-planner-mexico/", changeFrequency: "monthly", priority: 0.9 },
-  { path: "/indian-wedding-coordination-mexico/", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/indian-destination-wedding-planner-mexico/", changeFrequency: "monthly", priority: 0.95 },
   { path: "/haldi-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/reception-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/mehndi-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },
@@ -80,7 +78,6 @@ const pages: Entry[] = [
   { path: "/blog/gujarati-wedding-outfit-guide/", changeFrequency: "monthly", priority: 0.6 },
   { path: "/blog/us-tariffs-indian-wedding-outfits-2026/", changeFrequency: "monthly", priority: 0.6 },
   { path: "/faq/", changeFrequency: "monthly", priority: 0.6 },
-  { path: "/terms/", changeFrequency: "yearly", priority: 0.4 },
   { path: "/privacy/", changeFrequency: "yearly", priority: 0.4 },
 ]
 
