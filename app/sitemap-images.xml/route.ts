@@ -30,7 +30,7 @@ const entries: ImageEntry[] = [
     ],
   },
   {
-    url: `${baseUrl}/services/`,
+    url: `${baseUrl}/indian-destination-wedding-planner-mexico/`,
     images: ['/images/services-hero.webp'],
   },
   {
