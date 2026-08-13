@@ -6,12 +6,12 @@ import Link from "next/link";
  * repeating the full location-page inventory or a hidden keyword block.
  */
 const serviceLinks = [
-  { label: "Destination Wedding Planning", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Destination Wedding Planning", href: "/indian-destination-wedding-planner-mexico/" },
   { label: "India Wedding Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
   { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
   { label: "Bridesmaid & Family Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
-  { label: "Jewelry & Accessories", href: "/services/" },
+  { label: "Jewelry & Accessories", href: "/buy-indian-wedding-outfits-from-india/" },
 ];
 
 const destinationLinks = [
@@ -82,7 +82,7 @@ export function GlobalFooter() {
             <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#5e4a40", fontWeight: 600, marginBottom: "12px" }}>Services</p>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
               {serviceLinks.map((l) => (
-                <li key={l.href}>
+                <li key={`${l.label}-${l.href}`}>
                   <Link href={l.href} style={{ fontSize: "13px", color: "#4d403a", textDecoration: "none" }}>
                     {l.label}
                   </Link>
