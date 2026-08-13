@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: false,
-  },
+  typescript: { ignoreBuildErrors: false },
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920, 2048],
@@ -11,13 +9,15 @@ const nextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      { source: '/services', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
+      { source: '/indian-wedding-coordination-mexico', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/consultation', destination: '/contact', permanent: true },
       { source: '/sourcing-disclaimer', destination: '/contact', permanent: true },
       { source: '/menu-planner', destination: '/planning-tools/budget/', permanent: true },
       { source: '/resources', destination: '/free-guides/', permanent: true },
       { source: '/resources/:path*', destination: '/free-guides/', permanent: true },
       { source: '/link-to-us', destination: '/about/', permanent: true },
-      { source: '/services/intercultural-indian-weddings', destination: '/services/', permanent: true },
+      { source: '/services/intercultural-indian-weddings', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/south-indian-christian-wedding-outfits-usa', destination: '/blog/south-indian-christian-wedding-outfit-guide/', permanent: true },
       { source: '/shop-from-india', destination: '/buy-indian-wedding-outfits-from-india/', permanent: true },
       { source: '/blog/nri-bridal-lehenga-sizing-guide', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
@@ -36,10 +36,10 @@ const nextConfig = {
       { source: '/indian-wedding-shopping-uk', destination: '/', permanent: true },
       { source: '/indian-wedding-shopping-australia', destination: '/', permanent: true },
       { source: '/indian-wedding-shopping-new-zealand', destination: '/', permanent: true },
-      { source: '/indian-wedding-planner-philadelphia', destination: '/services', permanent: true },
+      { source: '/indian-wedding-planner-philadelphia', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/home', destination: '/', permanent: true },
-      { source: '/shopping-from-india', destination: '/services', permanent: true },
-      { source: '/forms/virtual-shopping', destination: '/services', permanent: true },
+      { source: '/shopping-from-india', destination: '/buy-indian-wedding-outfits-from-india/', permanent: true },
+      { source: '/forms/virtual-shopping', destination: '/buy-indian-wedding-outfits-from-india/', permanent: true },
       { source: '/journey', destination: '/how-it-works', permanent: true },
       { source: '/our-story', destination: '/about', permanent: true },
       { source: '/wedding-glossary', destination: '/faq', permanent: true },
@@ -52,7 +52,7 @@ const nextConfig = {
       { source: '/blog/sherwani-vs-bandhgala-groom-guide/', destination: '/blog/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire/', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
-      { source: '/blog/indian-destination-wedding-mexico-complete-guide', destination: '/indian-destination-wedding-planner-mexico', permanent: true },
+      { source: '/blog/indian-destination-wedding-mexico-complete-guide', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/blog/indian-destination-wedding-mexico-complete-guide/', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
     ]
   },
@@ -60,22 +60,12 @@ const nextConfig = {
     return [
       {
         source: '/:path*',
-        headers: [
-          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
-        ],
+        headers: [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }],
       },
-      {
-        source: '/wedding-accessories-and-ceremony-items-from-india',
-        headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }],
-      },
-      {
-        source: '/destinations/jamaica-indian-wedding',
-        headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }],
-      },
-      {
-        source: '/blog/south-indian-christian-wedding-outfit-guide',
-        headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }],
-      },
+      { source: '/wedding-accessories-and-ceremony-items-from-india', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
+      { source: '/destinations/jamaica-indian-wedding', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
+      { source: '/blog/south-indian-christian-wedding-outfit-guide', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
+      { source: '/terms', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
     ]
   },
 }
