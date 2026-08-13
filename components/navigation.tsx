@@ -5,14 +5,13 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { trackLead } from "@/lib/analytics"
 
 // All internal links use trailing slashes to match next.config.mjs `trailingSlash: true`.
 // Without this, Next.js emits a 308 redirect on every click/crawl, wasting crawl
 // budget and slowing Google's ability to discover & refresh content.
 const navItems: { label: string; href: string }[] = [
-  { label: "Services", href: "/services/" },
   { label: "Destinations", href: "/destinations/" },
+  { label: "Planning Services", href: "/indian-destination-wedding-planner-mexico/" },
   { label: "India Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
   { label: "Calculators", href: "/planning-tools/" },
   { label: "Pricing", href: "/pricing/" },
@@ -55,7 +54,7 @@ export function Navigation() {
                 CEREMONY<span className="font-light text-[#7a6841]">VERSE</span>
               </span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#5e4a40] mt-0.5">
-                India Shopping · Destination Planning
+                Destination Planning · India Shopping
               </span>
             </Link>
           </div>
@@ -87,7 +86,6 @@ export function Navigation() {
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20found%20your%20website%20and%20want%20to%20learn%20more."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackLead("whatsapp", "nav")}
               className="hidden min-[1660px]:inline-flex items-center gap-2 px-5 py-3 font-bold text-base rounded-full text-white
                 transition-all duration-300 hover:opacity-90"
               style={{ background: "#25D366" }}
@@ -99,12 +97,12 @@ export function Navigation() {
               WhatsApp
             </a>
             <Link
-              href="/contact/"
+              href="/contact/?service=mexico&from=site-navigation"
               className="inline-block whitespace-nowrap px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              <span>Free 30-Minute Consultation</span>
+              <span>Schedule Free Consultation</span>
             </Link>
           </div>
 
@@ -140,12 +138,12 @@ export function Navigation() {
                 </Link>
               ))}
               <Link
-                href="/contact/"
+                href="/contact/?service=mexico&from=mobile-navigation"
                 onClick={handleLinkClick}
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
-                Free 30-Minute Consultation
+                Schedule Free Consultation
               </Link>
             </div>
           </div>

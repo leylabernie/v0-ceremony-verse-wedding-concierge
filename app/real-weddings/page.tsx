@@ -89,7 +89,7 @@ export default function WeddingExperiencePage() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
-              href="/indian-wedding-coordination-mexico/"
+              href="/indian-destination-wedding-planner-mexico/"
               className="rounded-full bg-[#7a6841] px-7 py-3 font-semibold text-white"
             >
               Review Destination Planning
@@ -114,10 +114,10 @@ export default function WeddingExperiencePage() {
             a clear service scope during the free consultation.
           </p>
           <Link
-            href="/contact/"
+            href="/contact/?service=mexico&from=family-experience"
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Request a Private Proposal
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

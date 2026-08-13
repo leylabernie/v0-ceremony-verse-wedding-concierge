@@ -60,7 +60,7 @@ const questionnaireSchema = z.object({
   relationship: z.enum(relationshipOptions),
   decisionMakers: optionalText(500),
   weddingTimeframe: z.string().trim().min(2).max(120),
-  dateFlexibility: z.enum(dateFlexibilityOptions),
+  dateFlexibility: z.union([z.enum(dateFlexibilityOptions), z.literal("")]),
   weekdayAvailability: z.union([z.enum(weekdayAvailabilityOptions), z.literal("")]),
   planningStage: optionalText(160),
   planningSupportStatus: z.union([z.enum(planningSupportOptions), z.literal("")]),
@@ -84,22 +84,6 @@ const questionnaireSchema = z.object({
   questionsForCall: optionalText(1600),
   privacyConsent: z.literal(true),
   website: optionalText(120),
-}).superRefine((questionnaire, context) => {
-  const destinationRelevant = questionnaire.serviceFocus !== "India wedding shopping and sourcing"
-  if (destinationRelevant && !questionnaire.weekdayAvailability) {
-    context.addIssue({
-      code: z.ZodIssueCode.custom,
-      path: ["weekdayAvailability"],
-      message: "Please indicate whether weekday events are possible.",
-    })
-  }
-  if (destinationRelevant && !questionnaire.planningSupportStatus) {
-    context.addIssue({
-      code: z.ZodIssueCode.custom,
-      path: ["planningSupportStatus"],
-      message: "Please indicate what planning support you have or need.",
-    })
-  }
 })
 
 type Questionnaire = z.infer<typeof questionnaireSchema>

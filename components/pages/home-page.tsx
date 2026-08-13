@@ -15,9 +15,9 @@ const serviceGroups = [
       "Coordinated bridesmaid, groomsmen, parent, sibling, and guest outfits with one shared palette and an organized measurement process.",
   },
   {
-    title: "Jewelry & Ceremony Essentials",
+    title: "Jewelry & Wedding Accessories",
     description:
-      "Bridal jewelry, jutties, gifts, welcome-bag items, and ceremony supplies sourced only when the requested item and vendor can be responsibly verified.",
+      "Bridal jewelry, jutties, approved gifts, welcome-bag pieces, and outfit accessories sourced only when the requested item and vendor can be responsibly verified.",
   },
 ]
 
@@ -65,11 +65,6 @@ const destinationHighlights = [
     description: "Compare SJD access, regional location, venue format, guest movement, food, vendors, production, room blocks, and weather backup.",
   },
   {
-    name: "Jamaica",
-    href: "/destinations/jamaica-indian-wedding/",
-    description: "Compare public resort packages, South Asian capability, airports, room blocks, cultural rules, on-site execution, entertainment permissions, and complete cost.",
-  },
-  {
     name: "Punta Cana",
     href: "/destinations/punta-cana-indian-wedding/",
     description: "Compare PUJ access, guest-entry steps, resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
@@ -81,7 +76,7 @@ const servicePillars = [
     label: "Destination wedding planning",
     title: "Family coordination with local planning and execution",
     description:
-      "Plan a Gujarati or Hindu destination celebration anywhere in Mexico, Jamaica, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration across Mexico or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
       "Planning support defined from the beginning",
       "Multi-day timelines and on-site event management",
@@ -91,13 +86,13 @@ const servicePillars = [
     cta: "Explore Destination Planning",
   },
   {
-    label: "Optional India shopping & sourcing",
-    title: "Add wedding wardrobes and essentials when you need them",
+    label: "Optional India wedding-outfit sourcing",
+    title: "Add wedding wardrobes when your family needs them",
     description:
-      "Source outfits, jewelry, ceremonial items, gifts, and welcome-bag pieces through one documented process, with remote service across the United States and Canada.",
+      "Source outfits, jewelry, approved gifts, welcome-bag pieces, and related accessories through one documented process, with remote service across the United States and Canada.",
     features: [
       "Bride, groom, wedding-party, and family outfits",
-      "Jewelry, gifts, welcome-bag items, and ceremony essentials",
+      "Jewelry, approved gifts, welcome-bag pieces, and outfit accessories",
       "Measurements, written approvals, available pre-shipping review, and delivery support",
     ],
     href: "/buy-indian-wedding-outfits-from-india/",
@@ -108,7 +103,7 @@ const servicePillars = [
 const processSteps = [
   {
     number: "01",
-    title: "Start with a free outfit-plan call",
+    title: "Start with a free sourcing consultation",
     description:
       "Share your dates, ceremonies, party size, budget, and inspiration. We identify what is realistic and which level of help fits.",
   },
@@ -162,7 +157,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico, Jamaica, and Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
+      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico and Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
   },
   {
     question: "Will I see an item before I buy it?",
@@ -201,25 +196,25 @@ export function HomePage() {
               Serving families across the United States &amp; Canada
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Indian destination wedding planning for U.S. and Canadian families
+              Gujarati &amp; Hindu destination weddings, made clear for the whole family
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Plan a Gujarati or Hindu celebration across Mexico, Jamaica, or Punta Cana with one family-facing coordinator,
+              Plan a multi-day celebration across Mexico or Punta Cana with one family-facing coordinator,
               contracted local planning and on-site execution, guest-information organization, practical calculators,
-              and optional India sourcing.
+              and optional India wedding-outfit sourcing.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                href={destinationFeasibilityPlan.contactHref}
+                href="/contact/?service=mexico&from=homepage-hero"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule a Free 30-Minute Consultation
+                Schedule Free Consultation
               </Link>
               <Link
-                href="/planning-tools/"
+                href="/buy-indian-wedding-outfits-from-india/"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Use Free Wedding Calculators
+                Explore India Outfit Sourcing
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
@@ -237,10 +232,10 @@ export function HomePage() {
             client event.
           </p>
           <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
-            <p>USA &amp; Canada remote service</p>
-            <p>Live video review where available</p>
-            <p>Itemized written quotes</p>
-            <p>Private scope defined before paid work</p>
+            <p>USA &amp; Canada family support</p>
+            <p>Mexico &amp; Punta Cana focus</p>
+            <p>Itemized written scopes</p>
+            <p>Roles defined before paid work</p>
           </div>
         </div>
       </section>
@@ -261,7 +256,7 @@ export function HomePage() {
               </article>
             ))}
           </div>
-          <div className="mt-8 text-center"><Link href="/destinations/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">Compare All Destinations</Link></div>
+          <div className="mt-8 text-center"><Link href="/destinations/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">Compare Current Destinations</Link></div>
         </div>
       </section>
 
@@ -285,7 +280,7 @@ export function HomePage() {
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Named responsibilities</p>
               <h3 className="mt-3 font-serif text-2xl font-semibold">One family contact, clear local owners</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse coordinates the family-facing plan; the contracted destination team handles the local scope; resorts and licensed providers control their own bookings and payments.</p>
+              <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse coordinates the family-facing plan; the contracted destination team handles the local scope; resorts and qualified providers control their own bookings and payments.</p>
               <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See every planning step</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
@@ -324,12 +319,8 @@ export function HomePage() {
       <section className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Destination-wedding planning
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Choose the planning and family support you need
-            </h2>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Destination-wedding planning</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Choose the planning and family support you need</h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Package details and starting planning fees are public so you can compare the scope. Your final written
               proposal reflects the destination, dates, events, guest count, staffing, travel, and requested additions.
@@ -351,10 +342,7 @@ export function HomePage() {
                   and the full $300 is credited toward your CeremonyVerse planning service fee.
                 </p>
               </div>
-              <Link
-                href={destinationFeasibilityPlan.href}
-                className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white"
-              >
+              <Link href={destinationFeasibilityPlan.href} className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">
                 See What $300 Includes
               </Link>
             </div>
@@ -368,10 +356,7 @@ export function HomePage() {
                 {tier.priceLabel && <p className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
                 <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
                 <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
-                <Link
-                  href={tier.href}
-                  className="inline-flex justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]"
-                >
+                <Link href={tier.href} className="inline-flex justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]">
                   {tier.cta}
                 </Link>
               </article>
@@ -381,30 +366,23 @@ export function HomePage() {
         </div>
       </section>
 
-
       <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Destination planning first · India sourcing when needed
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Keep the destination plan central, then add India sourcing only if it helps
-            </h2>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Destination planning first · India sourcing when needed</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Keep the destination plan central, then add India sourcing only if it helps</h2>
             <p className="text-lg leading-8 text-[#4d403a]">
-              Destination planning stands on its own. India sourcing is a separate service that can be added only when it is useful and explicitly included in your proposal.
+              Destination planning stands on its own. India sourcing is a separate paid service that can be added only when it is useful and explicitly included in your proposal.
             </p>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-2">
             {servicePillars.map((service) => (
               <article key={service.label} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-8 sm:p-10">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">
-                  {service.label}
-                </p>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">{service.label}</p>
                 <h3 className="mb-4 font-serif text-3xl font-semibold">{service.title}</h3>
                 <p className="mb-6 leading-7 text-[#4d403a]">{service.description}</p>
-                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                <ul className="mb-8 flet-1 space-y-3 text-sm leading-6 text-[#4d403a]">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex gap-3">
                       <span aria-hidden="true" className="text-[#7a6841]">✓</span>
@@ -412,10 +390,7 @@ export function HomePage() {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  href={service.href}
-                  className="inline-flex items-center justify-center self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white"
-                >
+                <Link href={service.href} className="inline-flex items-center justify-center self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white">
                   {service.cta}
                 </Link>
               </article>
@@ -425,22 +400,15 @@ export function HomePage() {
           <aside className="mt-8 rounded-2xl bg-[#1f1f1f] p-8 text-white sm:p-10">
             <div className="grid items-center gap-6 lg:grid-cols-[1fr_auto]">
               <div className="max-w-4xl">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">
-                  What shaped CeremonyVerse
-                </p>
-                <h3 className="mb-4 font-serif text-3xl font-semibold !text-white sm:text-4xl">
-                  Firsthand family wedding experience, explained honestly
-                </h3>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">What shaped CeremonyVerse</p>
+                <h3 className="mb-4 font-serif text-3xl font-semibold !text-white sm:text-4xl">Firsthand family wedding experience, explained honestly</h3>
                 <p className="leading-7 !text-white/75">
                   CeremonyVerse was shaped by firsthand family-side involvement in multi-day Indian destination
                   weddings in Mexico. Those private celebrations are not presented as CeremonyVerse client case
                   studies; the experience informs the questions, safeguards, and family support used today.
                 </p>
               </div>
-              <Link
-                href="/about/"
-                className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
-              >
+              <Link href="/about/" className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]">
                 Read the CeremonyVerse Story
               </Link>
             </div>
@@ -451,12 +419,8 @@ export function HomePage() {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              What we help you source
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              One organized shopping process for the whole wedding wardrobe
-            </h2>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">What we help you source</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">One organized shopping process for the whole wedding wardrobe</h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               The service is built for U.S. and Canadian families who want India&apos;s selection but need one
               U.S.-based contact to organize decisions, approvals, measurements, and shipping responsibilities.
@@ -476,12 +440,8 @@ export function HomePage() {
       <section className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 max-w-3xl">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-              How it works
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              India shopping: fewer surprises because every decision is visible
-            </h2>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">How it works</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">India shopping: fewer surprises because every decision is visible</h2>
             <p className="text-lg leading-8 text-white/75">
               Remote shopping still has risks. Our job is to make those risks clear, document what you
               approve, and keep the process moving.
@@ -502,12 +462,8 @@ export function HomePage() {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Clear service fees
-            </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Choose how much help you need
-            </h2>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Clear service fees</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Choose how much help you need</h2>
             <p className="text-lg leading-8 text-[#4d403a]">
               Service fees are shown in USD. Products, shipping, insurance, U.S. or Canadian import charges,
               brokerage, and local alterations are separate and shown in writing before purchase approval.
@@ -515,42 +471,23 @@ export function HomePage() {
           </div>
           <div className="mx-auto grid max-w-4xl gap-6 lg:grid-cols-2">
             {pricingTiers.map((tier) => (
-              <article
-                key={tier.name}
-                className={`flex flex-col rounded-2xl border p-8 ${
-                  tier.featured
-                    ? "border-[#7a6841] bg-[#f4eee4] shadow-lg"
-                    : "border-[#e6dfd5] bg-white"
-                }`}
-              >
-                {tier.featured && (
-                  <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">
-                    Recommended starting point
-                  </p>
-                )}
+              <article key={tier.name} className={`flex flex-col rounded-2xl border p-8 ${tier.featured ? "border-[#7a6841] bg-[#f4eee4] shadow-lg" : "border-[#e6dfd5] bg-white"}`}>
+                {tier.featured && <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Recommended starting point</p>}
                 <h3 className="font-serif text-2xl font-semibold">{tier.name}</h3>
                 <p className="my-5 font-serif text-4xl font-semibold">{tier.price}</p>
                 <p className="mb-6 leading-7 text-[#4d403a]">{tier.description}</p>
                 <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
                   {tier.features.map((feature) => (
-                    <li key={feature} className="flex gap-3">
-                      <span aria-hidden="true" className="text-[#7a6841]">✓</span>
-                      <span>{feature}</span>
-                    </li>
+                    <li key={feature} className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>{feature}</span></li>
                   ))}
                 </ul>
-                <Link
-                  href="/contact/"
-                  className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
-                >
-                  Discuss My Wedding
+                <Link href="/contact/?service=india&from=homepage-sourcing-tier" className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
+                  Discuss This Sourcing Tier
                 </Link>
               </article>
             ))}
           </div>
-          <p className="mt-7 text-center text-sm text-[#5e4a40]">
-            Large parties, unusual items, and compressed timelines may require a custom written quote.
-          </p>
+          <p className="mt-7 text-center text-sm text-[#5e4a40]">Large parties, unusual items, and compressed timelines may require a custom written quote.</p>
         </div>
       </section>
 
@@ -559,15 +496,13 @@ export function HomePage() {
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">One plan, clear owners</p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Know who handles each part of the wedding</h2>
-            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.
-            </p>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.</p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
               ["CeremonyVerse", "Your family-facing coordinator for priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
-              ["Contracted destination team", "The experienced Mexico City–based planning and on-site team responsible for the local work specifically listed in your private proposal."],
-              ["Resorts and licensed providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
+              ["Contracted destination team", "The destination planning and on-site team responsible for the local work specifically listed in your private proposal."],
+              ["Resorts and qualified providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
             ].map(([title, description]) => (
               <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <h3 className="font-serif text-2xl font-semibold">{title}</h3>
@@ -585,9 +520,7 @@ export function HomePage() {
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-              Honest answers before you commit
-            </p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Honest answers before you commit</p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Common questions</h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
@@ -599,30 +532,21 @@ export function HomePage() {
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link href="/faq/" className="font-semibold text-[#7a6841] underline underline-offset-4">
-              Read all frequently asked questions
-            </Link>
+            <Link href="/faq/" className="font-semibold text-[#7a6841] underline underline-offset-4">Read all frequently asked questions</Link>
           </div>
         </div>
       </section>
 
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#f0dfbd]">
-            Start with clarity
-          </p>
-          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-            Tell us which path you need—or if you need both
-          </h2>
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#f0dfbd]">Start with clarity</p>
+          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Tell us where your destination-wedding plan stands</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
             Your first 30-minute consultation is free. We&apos;ll separate the event budget from rooms and travel,
             identify the right destination-planning scope, and explain any paid next step before you decide.
           </p>
-          <Link
-            href="/contact/"
-            className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
-          >
-            Schedule a Free 30-Minute Consultation
+          <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+            Schedule Free Consultation
           </Link>
         </div>
       </section>

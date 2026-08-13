@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { useMemo, useState, useSyncExternalStore } from "react"
-import { getAcquisitionContext, trackLead } from "@/lib/analytics"
+import { useMemo, useRef, useState, useSyncExternalStore } from "react"
+import { getAcquisitionContext, trackEvent, trackLead } from "@/lib/analytics"
 
 interface LeadFormData {
   serviceInterest: string
@@ -72,6 +72,7 @@ export function ContactPage() {
   const [questionnaireUrl, setQuestionnaireUrl] = useState("")
   const [questionnaireSent, setQuestionnaireSent] = useState(false)
   const [requestId, setRequestId] = useState("")
+  const formStarted = useRef(false)
   const requestedServiceInterest = useSyncExternalStore(
     subscribeToLocation,
     getServiceInterestFromLocation,
@@ -81,6 +82,10 @@ export function ContactPage() {
   const destinationService = serviceInterest.toLowerCase().includes("destination")
 
   const updateFormData = <K extends keyof LeadFormData>(field: K, value: LeadFormData[K]) => {
+    if (!formStarted.current) {
+      formStarted.current = true
+      trackEvent("consultation_form_started", { page_path: "/contact/" })
+    }
     setFormData((previous) => ({ ...previous, [field]: value }))
   }
 
@@ -150,12 +155,19 @@ export function ContactPage() {
       }
 
       if (!response.ok || !result.success) {
+        trackEvent("consultation_registration_failed", {
+          failure_type: result.fallbackRequired ? "delivery_unavailable" : "request_rejected",
+        })
         setError(result.error || "We could not deliver the form. Please use WhatsApp or email below.")
         setShowFallback(Boolean(result.fallbackRequired))
         return
       }
 
       trackLead("form", "consultation-request")
+      trackEvent("consultation_registration_completed", {
+        service_interest: serviceInterest,
+        questionnaire_email_confirmed: Boolean(result.questionnaireSent),
+      })
       const submittedRequestId = result.requestId || ""
       setQuestionnaireUrl(result.questionnaireUrl || "")
       setQuestionnaireSent(Boolean(result.questionnaireSent))
@@ -171,6 +183,7 @@ export function ContactPage() {
       )
       setIsSubmitted(true)
     } catch {
+      trackEvent("consultation_registration_failed", { failure_type: "network_error" })
       setError("We could not connect to the secure form. Please use WhatsApp or email below.")
       setShowFallback(true)
     } finally {
@@ -199,7 +212,12 @@ export function ContactPage() {
             href={schedulingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackLead("whatsapp", "consultation-scheduling")}
+            onClick={() =>
+              trackEvent("consultation_scheduling_click", {
+                scheduling_method: "whatsapp",
+                service_interest: serviceInterest,
+              })
+            }
             className="mt-8 inline-flex rounded-full bg-[#128c7e] px-7 py-3.5 text-sm font-semibold text-white"
           >
             Request My Consultation Time
@@ -209,11 +227,17 @@ export function ContactPage() {
               <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Complete the pre-call questionnaire</h2>
               <p className="mt-4 leading-7 text-[#4d403a]">
                 {questionnaireSent
-                  ? "We emailed your questionnaire automatically. Most questions are optional, and it usually takes 5–7 minutes."
+                  ? "We emailed your questionnaire automatically. Most questions are optional, and it usually takes 3–5 minutes."
                   : "Your registration arrived, but the questionnaire email could not be confirmed. You can complete it securely here."}
               </p>
               <Link
                 href={questionnaireUrl}
+                onClick={() =>
+                  trackEvent("consultation_questionnaire_opened", {
+                    source: "registration_confirmation",
+                    service_interest: serviceInterest,
+                  })
+                }
                 className="mt-6 inline-flex rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]"
               >
                 Complete My Questionnaire
@@ -247,8 +271,8 @@ export function ContactPage() {
             Your First 30-Minute Consultation Is Free
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
-            Register with the essentials below, then request your consultation time immediately. The introductory
-            call requires no payment, contract, or prior approval.
+            Register with the essentials below, then request your consultation time immediately. Your introductory
+            call with Mini requires no payment, contract, or prior approval.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
@@ -319,7 +343,7 @@ export function ContactPage() {
               </div>
               <div>
                 <label htmlFor="eventLocation" className={labelClass}>Destination or event location</label>
-                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region, Jamaica resort, or Punta Cana" : "City, state, or destination"} />
+                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region or Punta Cana" : "City, state, or destination"} />
               </div>
               <div>
                 <label htmlFor="guestCount" className={labelClass}>Estimated guests</label>
@@ -346,10 +370,10 @@ export function ContactPage() {
                 <p>{error}</p>
                 {showFallback ? (
                   <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                    <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackLead("whatsapp", "consultation-fallback")} className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
+                    <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
                       Send with WhatsApp
                     </a>
-                    <a href={emailFallbackUrl} onClick={() => trackLead("email", "consultation-fallback")} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
+                    <a href={emailFallbackUrl} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
                       Send by Email
                     </a>
                   </div>

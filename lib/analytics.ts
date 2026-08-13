@@ -3,23 +3,21 @@
  *
  * WHY THIS EXISTS (plain English):
  * The site loads Google Analytics, but analytics only counts page views by
- * default. It does NOT know when a visitor actually becomes a *lead* — i.e.
- * submits the consultation form or taps WhatsApp. Those are the actions that
- * turn into real orders.
+ * default. It does NOT know when a visitor completes a consultation
+ * registration. CTA and WhatsApp clicks are tracked separately by the global
+ * attribution component because they show intent, not a completed lead.
  *
- * Calling `trackLead(...)` records a conversion event so that:
- *   1. You can see, in Google Analytics, how many leads the site produces and
- *      which pages/sources create them.
- *   2. Google Ads / Meta Ads can "optimize for conversions" — the platforms
- *      need these events to find more people like the ones who already contact
- *      you. Without them, paid ads are essentially flying blind.
+ * `trackLead(...)` is intentionally reserved for a successfully submitted
+ * consultation registration. Ordinary CTA, WhatsApp, email, and scheduling
+ * clicks are useful intent signals, but they are not verified leads and must
+ * not inflate the lead count.
  *
  * SAFETY: this is purely additive. It pushes to the analytics dataLayer if it
  * exists and never throws — if analytics is blocked or not yet loaded, nothing
  * breaks and the user's action proceeds normally.
  */
 
-type LeadMethod = "form" | "whatsapp" | "phone" | "email" | "calendly";
+type LeadMethod = "form";
 
 export interface AcquisitionContext {
   source: string;

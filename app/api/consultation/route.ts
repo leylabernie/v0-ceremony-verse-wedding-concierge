@@ -222,10 +222,10 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: stri
     <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
       <p>Hi ${safeFirstName},</p>
       <p>Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.</p>
-      <p>You can request a consultation time now—there is no prior review or approval wait. Please also complete the short questionnaire before the call so CeremonyVerse can prepare around your wedding timing, guest count, events, budget scope, family priorities, and any India-sourcing needs.</p>
+      <p>Choose a time for your free 30-minute consultation, then complete the short questionnaire before the call so Mini can prepare.</p>
       <p style="margin:28px 0"><a href="${safeSchedulingUrl}" style="display:inline-block;background:#128c7e;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Request my consultation time</a></p>
       <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
-      <p>Scheduling and questionnaire completion can happen in either order, but the questionnaire is due before the call. Most questions are optional and it usually takes 5–7 minutes. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.</p>
+      <p>You may complete these steps in either order. Only the essentials are required, and most couples finish the questionnaire in 3–5 minutes. Keep any resort proposal or estimate nearby for the call; please do not send sensitive personal or payment information.</p>
       <p>Warmly,<br><strong>CeremonyVerse Client Services</strong><br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
     </div>
   `
@@ -234,13 +234,13 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: stri
 
 Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.
 
-You can request a consultation time now—there is no prior review or approval wait. Please also complete the short questionnaire before the call so CeremonyVerse can prepare.
+Choose a time for your free 30-minute consultation, then complete the short questionnaire before the call so Mini can prepare.
 
 Request a consultation time: ${schedulingUrl(lead, requestId)}
 
 Complete the pre-call questionnaire: ${url.toString()}
 
-Scheduling and questionnaire completion can happen in either order, but the questionnaire is due before the call. Most questions are optional and it usually takes 5–7 minutes. If you already have a resort proposal, room-block information, or vendor estimate, keep it nearby for the call. Please do not upload or email passport numbers, payment-card details, medical records, or other sensitive documents.
+You may complete these steps in either order. Only the essentials are required, and most couples finish the questionnaire in 3–5 minutes. Keep any resort proposal or estimate nearby for the call; please do not send sensitive personal or payment information.
 
 Warmly,
 CeremonyVerse Client Services

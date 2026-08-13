@@ -5,15 +5,15 @@ export const metadata = buildMetadata({
   path: "/contact/",
   title: "Schedule a Free 30-Minute CeremonyVerse Consultation",
   description:
-    "Your first 30-minute CeremonyVerse consultation is free. Discuss India wedding sourcing or Gujarati and Hindu destination planning with no payment or contract required for the call.",
+    "Schedule a free first consultation for Gujarati or Hindu destination-wedding planning in Mexico or Punta Cana, or for optional paid India wedding-outfit sourcing.",
 });
 
 const serviceSchema = buildServiceSchema({
-  name: "Free 30-Minute Wedding Sourcing or Destination Planning Consultation",
+  name: "Free 30-Minute Destination Wedding or India Outfit Sourcing Consultation",
   description:
-    "The first 30-minute introductory consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, guest count, timeline, and budget before explaining any separate paid next step.",
+    "The first 30-minute consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, destination, guest count, timing, and budget scope before explaining any separate paid next step.",
   url: "/contact/",
-  category: "Wedding Planning and India Wedding Sourcing Consultation",
+  category: "Destination Wedding Planning and India Outfit Sourcing Consultation",
   areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 });
 

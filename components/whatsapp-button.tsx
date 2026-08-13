@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { trackLead } from "@/lib/analytics";
 
 export default function WhatsAppButton() {
   const pathname = usePathname();
@@ -26,7 +25,6 @@ export default function WhatsAppButton() {
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackLead("whatsapp", "floating-button")}
         className="flex items-center justify-center rounded-full bg-green-500 p-4 text-white shadow-lg transition-all duration-300 hover:bg-green-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-700 focus-visible:ring-offset-2"
         aria-label="Chat on WhatsApp"
       >
