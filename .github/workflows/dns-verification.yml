@@ -1,0 +1,26 @@
+name: CeremonyVerse DNS verification
+
+on:
+  push:
+    branches:
+      - agent/dns-verification-20260813
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect public DNS and apex redirect
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '=== MX records ==='
+          dig +short MX ceremonyverse.com
+          echo '=== TXT records ==='
+          dig +short TXT ceremonyverse.com
+          echo '=== Apex redirect ==='
+          curl -sS --max-redirs 0 -D - -o /dev/null https://ceremonyverse.com/ || true
+          echo 'DNS_REDIRECT_INSPECTION=COMPLETE'
