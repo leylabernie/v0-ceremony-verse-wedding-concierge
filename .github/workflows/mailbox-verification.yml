@@ -1,0 +1,28 @@
+name: CeremonyVerse mailbox verification
+
+on:
+  push:
+    branches:
+      - agent/mailbox-verification-20260813
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Submit one synthetic consultation request
+        shell: bash
+        run: |
+          set -euo pipefail
+          response=$(curl -fsS --max-time 30 \
+            -X POST \
+            -H 'Origin: https://www.ceremonyverse.com' \
+            -H 'Content-Type: application/json' \
+            --data '{"serviceInterest":"Destination wedding planning","name":"CeremonyVerse Mailbox Verification","email":"hello@ceremonyverse.com","phone":"","clientCountry":"United States","eventTimeframe":"Technical verification only — August 13, 2026","eventLocation":"Not a client inquiry","guestCount":"","eventCount":"","budgetRange":"","budgetIncludes":"","travelOrigins":"","outfitPartySize":"","vision":"Synthetic mailbox-routing test. No reply or client follow-up is required.","referralSource":"Technical verification","privacyConsent":true,"website":"","attribution":{"source":"technical-verification","medium":"github-actions","campaign":"mailbox-routing-20260813","content":"single-controlled-test","term":"","landing_page":"https://www.ceremonyverse.com/contact/","referrer":"","gclid":""}}' \
+            https://www.ceremonyverse.com/api/consultation/)
+          echo "$response"
+          python -c 'import json,sys; d=json.loads(sys.argv[1]); assert d.get("success") is True; assert d.get("questionnaireSent") is True' "$response"
+          echo 'MAILBOX_TEST_SUBMISSION=PASS'
