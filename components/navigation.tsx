@@ -5,7 +5,6 @@ import { Menu, X } from "lucide-react"
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { trackLead } from "@/lib/analytics"
 
 // All internal links use trailing slashes to match next.config.mjs `trailingSlash: true`.
 // Without this, Next.js emits a 308 redirect on every click/crawl, wasting crawl
@@ -87,7 +86,6 @@ export function Navigation() {
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20found%20your%20website%20and%20want%20to%20learn%20more."
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackLead("whatsapp", "nav")}
               className="hidden min-[1660px]:inline-flex items-center gap-2 px-5 py-3 font-bold text-base rounded-full text-white
                 transition-all duration-300 hover:opacity-90"
               style={{ background: "#25D366" }}

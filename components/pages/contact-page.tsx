@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { useMemo, useState, useSyncExternalStore } from "react"
-import { getAcquisitionContext, trackLead } from "@/lib/analytics"
+import { useMemo, useRef, useState, useSyncExternalStore } from "react"
+import { getAcquisitionContext, trackEvent, trackLead } from "@/lib/analytics"
 
 interface LeadFormData {
   serviceInterest: string
@@ -72,6 +72,7 @@ export function ContactPage() {
   const [questionnaireUrl, setQuestionnaireUrl] = useState("")
   const [questionnaireSent, setQuestionnaireSent] = useState(false)
   const [requestId, setRequestId] = useState("")
+  const formStarted = useRef(false)
   const requestedServiceInterest = useSyncExternalStore(
     subscribeToLocation,
     getServiceInterestFromLocation,
@@ -81,6 +82,10 @@ export function ContactPage() {
   const destinationService = serviceInterest.toLowerCase().includes("destination")
 
   const updateFormData = <K extends keyof LeadFormData>(field: K, value: LeadFormData[K]) => {
+    if (!formStarted.current) {
+      formStarted.current = true
+      trackEvent("consultation_form_started", { page_path: "/contact/" })
+    }
     setFormData((previous) => ({ ...previous, [field]: value }))
   }
 
@@ -150,12 +155,19 @@ export function ContactPage() {
       }
 
       if (!response.ok || !result.success) {
+        trackEvent("consultation_registration_failed", {
+          failure_type: result.fallbackRequired ? "delivery_unavailable" : "request_rejected",
+        })
         setError(result.error || "We could not deliver the form. Please use WhatsApp or email below.")
         setShowFallback(Boolean(result.fallbackRequired))
         return
       }
 
       trackLead("form", "consultation-request")
+      trackEvent("consultation_registration_completed", {
+        service_interest: serviceInterest,
+        questionnaire_email_confirmed: Boolean(result.questionnaireSent),
+      })
       const submittedRequestId = result.requestId || ""
       setQuestionnaireUrl(result.questionnaireUrl || "")
       setQuestionnaireSent(Boolean(result.questionnaireSent))
@@ -171,6 +183,7 @@ export function ContactPage() {
       )
       setIsSubmitted(true)
     } catch {
+      trackEvent("consultation_registration_failed", { failure_type: "network_error" })
       setError("We could not connect to the secure form. Please use WhatsApp or email below.")
       setShowFallback(true)
     } finally {
@@ -199,7 +212,12 @@ export function ContactPage() {
             href={schedulingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackLead("whatsapp", "consultation-scheduling")}
+            onClick={() =>
+              trackEvent("consultation_scheduling_click", {
+                scheduling_method: "whatsapp",
+                service_interest: serviceInterest,
+              })
+            }
             className="mt-8 inline-flex rounded-full bg-[#128c7e] px-7 py-3.5 text-sm font-semibold text-white"
           >
             Request My Consultation Time
@@ -214,6 +232,12 @@ export function ContactPage() {
               </p>
               <Link
                 href={questionnaireUrl}
+                onClick={() =>
+                  trackEvent("consultation_questionnaire_opened", {
+                    source: "registration_confirmation",
+                    service_interest: serviceInterest,
+                  })
+                }
                 className="mt-6 inline-flex rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]"
               >
                 Complete My Questionnaire
@@ -346,10 +370,10 @@ export function ContactPage() {
                 <p>{error}</p>
                 {showFallback ? (
                   <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                    <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" onClick={() => trackLead("whatsapp", "consultation-fallback")} className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
+                    <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
                       Send with WhatsApp
                     </a>
-                    <a href={emailFallbackUrl} onClick={() => trackLead("email", "consultation-fallback")} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
+                    <a href={emailFallbackUrl} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
                       Send by Email
                     </a>
                   </div>

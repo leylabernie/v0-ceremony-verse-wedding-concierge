@@ -2,7 +2,6 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { trackLead } from "@/lib/analytics"
 
 export default function MobileStickyCTA() {
   const pathname = usePathname()
@@ -69,7 +68,6 @@ export default function MobileStickyCTA() {
           href={whatsappHref}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => trackLead("whatsapp", "mobile-sticky-cta")}
           style={{
             background: "#fff",
             color: "var(--cv-accent)",
