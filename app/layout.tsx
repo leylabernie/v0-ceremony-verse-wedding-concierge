@@ -1,11 +1,31 @@
 import "./globals.css";
 import type { Viewport } from "next";
 import Script from "next/script";
+import Link from "next/link";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import WhatsAppButton from "@/components/whatsapp-button";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
 import { AcquisitionAttribution } from "@/components/acquisition-attribution";
 import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
+
+// Build-time font loading via next/font — eliminates the render-blocking
+// Google Fonts @import that was in globals.css. Fonts are downloaded at
+// build time and self-hosted by Vercel; no runtime network roundtrip.
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 // Root metadata: title/description are defaults; individual pages override.
 // NOTE: We intentionally do NOT set `alternates.canonical` here. Setting it
@@ -43,7 +63,7 @@ export const metadata = {
     title:
       "Indian Destination Wedding Planning & India Sourcing | CeremonyVerse",
     description:
-      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with destination coordination and optional India sourcing.",
+      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family-side coordination and optional India sourcing.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -52,7 +72,7 @@ export const metadata = {
         url: "https://www.ceremonyverse.com/images/proof/family-destination-baarat.webp",
         width: 1200,
         height: 630,
-        alt: "Joyful baraat celebration at a destination wedding in Mexico",
+        alt: "Baraat celebration at a family destination wedding in Mexico",
       },
     ],
   },
@@ -79,7 +99,7 @@ export default function RootLayout({
   const webSiteSchema = buildWebSiteSchema();
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <head>
         {/*
           Google Analytics — loaded on FIRST USER INTERACTION (scroll, click,
@@ -180,13 +200,23 @@ export default function RootLayout({
           `}
         </Script>
         <AcquisitionAttribution />
+        {/* Service-area announcement bar — fixed at very top */}
+        <div className="cv-announcement-bar">
+          <span className="hidden lg:inline">Mexico, Jamaica &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
+          <span className="lg:hidden">Mexico, Jamaica &amp; Punta Cana planning</span>
+          <span aria-hidden="true">&nbsp;·&nbsp;</span>
+          <Link href="/contact/">Free 30-Minute Consultation</Link>
+        </div>
+
         {/* Navigation — appears on ALL pages */}
         <Navigation />
 
-        {/* Keep page content below the fixed navigation. */}
+        {/* Keep page content below the responsive fixed announcement and navigation. */}
         <div className="cv-header-spacer" />
         {children}
 
+        {/* SINGLE WhatsApp Button (global) */}
+        <WhatsAppButton />
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
         <GlobalFooter />

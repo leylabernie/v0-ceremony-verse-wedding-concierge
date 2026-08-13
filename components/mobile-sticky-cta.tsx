@@ -2,28 +2,29 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { trackLead } from "@/lib/analytics"
 
 export default function MobileStickyCTA() {
   const pathname = usePathname()
   const calculatorPage = pathname.startsWith("/planning-tools")
   const homePage = pathname === "/"
   const destinationPage =
-    pathname.startsWith("/destinations") ||
-    pathname.startsWith("/resort-packages") ||
     pathname.startsWith("/indian-wedding-coordination-mexico") ||
     pathname.startsWith("/indian-destination-wedding-planner-mexico")
 
   const consultationHref = homePage
-    ? "/contact/?service=mexico&from=mobile-home"
+    ? "/contact/?service=both&from=mobile-home"
     : calculatorPage
       ? "/contact/?service=mexico&from=mobile-calculator"
       : "/contact/?service=mexico&from=mobile-destination"
+  const whatsappHref =
+    "https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20would%20like%20to%20learn%20more%20about%20your%20wedding%20services."
   const prompt = calculatorPage
     ? "Need help with these numbers?"
     : homePage
-      ? "Ready for a clearer first step?"
+      ? "Planning or sourcing your wedding?"
       : destinationPage
-        ? "Planning Mexico, Jamaica, or Punta Cana?"
+        ? "Planning Mexico or Punta Cana?"
         : "Questions about CeremonyVerse?"
 
   return (
@@ -46,22 +47,44 @@ export default function MobileStickyCTA() {
       <p style={{ color: "#fff", fontSize: "0.9rem", fontWeight: 500, margin: 0, lineHeight: 1.3 }}>
         {prompt}
       </p>
-      <Link
-        href={consultationHref}
-        style={{
-          background: "#fff",
-          color: "var(--cv-accent)",
-          fontWeight: 700,
-          fontSize: "0.9rem",
-          padding: "8px 16px",
-          borderRadius: "999px",
-          whiteSpace: "nowrap",
-          textDecoration: "none",
-          letterSpacing: "0.02em",
-        }}
-      >
-        Free Call
-      </Link>
+      {homePage || calculatorPage || destinationPage ? (
+        <Link
+          href={consultationHref}
+          style={{
+            background: "#fff",
+            color: "var(--cv-accent)",
+            fontWeight: 700,
+            fontSize: "0.9rem",
+            padding: "8px 16px",
+            borderRadius: "999px",
+            whiteSpace: "nowrap",
+            textDecoration: "none",
+            letterSpacing: "0.02em",
+          }}
+        >
+          Schedule
+        </Link>
+      ) : (
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackLead("whatsapp", "mobile-sticky-cta")}
+          style={{
+            background: "#fff",
+            color: "var(--cv-accent)",
+            fontWeight: 700,
+            fontSize: "0.9rem",
+            padding: "8px 16px",
+            borderRadius: "999px",
+            whiteSpace: "nowrap",
+            textDecoration: "none",
+            letterSpacing: "0.02em",
+          }}
+        >
+          WhatsApp Us
+        </a>
+      )}
     </div>
   )
 }

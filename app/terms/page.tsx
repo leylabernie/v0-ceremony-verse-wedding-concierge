@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 12, 2026
+            Last updated: August 11, 2026
           </p>
         </div>
       </div>
@@ -295,4 +295,3 @@ export default function TermsPage() {
     </main>
   );
 }
-

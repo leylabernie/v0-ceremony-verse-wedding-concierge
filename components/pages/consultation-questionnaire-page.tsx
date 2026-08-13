@@ -64,6 +64,7 @@ const inputClass =
   "w-full rounded-xl border border-[#d9cfbf] bg-[#faf8f5] px-4 py-3 text-sm text-[#1f1f1f] outline-none transition focus:border-[#7a6841] focus:ring-2 focus:ring-[#7a6841]/15"
 const labelClass = "mb-2 block text-sm font-semibold text-[#1f1f1f]"
 const sectionClass = "rounded-3xl border border-[#e6dfd5] bg-white p-6 shadow-sm sm:p-9"
+const optionalDetailsClass = "rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] px-5 py-4"
 
 function focusFromType(type: string | null): ServiceFocus | "" {
   const focusByType: Record<string, ServiceFocus> = {
@@ -186,8 +187,6 @@ export function ConsultationQuestionnairePage() {
       formData.email.trim() &&
       formData.relationship &&
       formData.weddingTimeframe.trim() &&
-      formData.dateFlexibility &&
-      (!destinationRelevant || (formData.weekdayAvailability && formData.planningSupportStatus)) &&
       formData.topPriorities.trim() &&
       formData.privacyConsent,
   )
@@ -288,8 +287,7 @@ export function ConsultationQuestionnairePage() {
             Start with a consultation request
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            This questionnaire is available only after the website consultation form has been submitted. Starting with
-            that form lets CeremonyVerse match your answers to your request before scheduling.
+            Submit the short consultation form first so we can connect your answers to your request.
           </p>
           <Link
             href="/contact/"
@@ -312,8 +310,7 @@ export function ConsultationQuestionnairePage() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Questionnaire received</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">Thank you, {formData.name}.</h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Your questionnaire was received. If you have not already requested a consultation time, you can do that
-            now; no prior review or approval is required.
+            Your answers are ready for Mini. If you have not chosen a consultation time, you can do that now.
           </p>
           <a
             href={schedulingUrl}
@@ -324,11 +321,11 @@ export function ConsultationQuestionnairePage() {
             Request a Consultation Time on WhatsApp
           </a>
           <div className="mt-9 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
-            <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Keep these items nearby</h2>
+            <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Helpful for the call</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
-              <li>• Any current resort proposal, room-block terms, or venue information.</li>
-              <li>• Your event list and the traditions your family considers essential.</li>
-              <li>• Known estimates and a clear note of what the working budget must cover.</li>
+              <li>• Any resort proposal, room-block terms, or venue information.</li>
+              <li>• Your event list and essential traditions.</li>
+              <li>• Your working budget and what it needs to cover.</li>
             </ul>
           </div>
           <Link href="/planning-tools/" className="mt-8 inline-flex rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">
@@ -346,16 +343,15 @@ export function ConsultationQuestionnairePage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Prepare for your conversation</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Pre-Call Wedding Questionnaire</h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/80">
-            Your registration is on file, and you can request a consultation time immediately. Complete this before
-            the call so CeremonyVerse can prepare. Most questions are optional; allow about 5–7 minutes.
+            Answer the required questions and anything else you know. Most couples finish in about 3–5 minutes.
           </p>
         </div>
       </section>
 
       <form onSubmit={handleSubmit} className="mx-auto max-w-4xl space-y-7 px-6 py-16 sm:py-20">
         <div className="rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-sm leading-6 text-[#4d403a]">
-          <p className="font-semibold text-[#1f1f1f]">Most questions are optional.</p>
-          <p className="mt-1">Answer what you know today. Required questions are marked with an asterisk, and your registration details are filled in when available in this browser.</p>
+          <p className="font-semibold text-[#1f1f1f]">Only the essentials are required.</p>
+          <p className="mt-1">Questions marked with an asterisk are required. Open the optional sections only if you have more to share.</p>
         </div>
         <div className="absolute -left-[9999px]" aria-hidden="true">
           <label htmlFor="website">Website</label>
@@ -398,71 +394,79 @@ export function ConsultationQuestionnairePage() {
                 <option value="Other">Other</option>
               </select>
             </div>
-            <div>
-              <label htmlFor="decisionMakers" className={labelClass}>Who will make the final planning and budget decisions?</label>
-              <input id="decisionMakers" className={inputClass} value={formData.decisionMakers} onChange={(event) => updateFormData("decisionMakers", event.target.value)} placeholder="Couple, parents, or shared family decision" />
-            </div>
+            <details className={`${optionalDetailsClass} sm:col-span-2`}>
+              <summary className="cursor-pointer text-sm font-semibold text-[#7a6841]">Add the decision-makers (optional)</summary>
+              <div className="mt-5">
+                <label htmlFor="decisionMakers" className={labelClass}>Who will make the final planning and budget decisions?</label>
+                <input id="decisionMakers" className={inputClass} value={formData.decisionMakers} onChange={(event) => updateFormData("decisionMakers", event.target.value)} placeholder="Couple, parents, or shared family decision" />
+              </div>
+            </details>
           </div>
         </section>
 
         <section className={sectionClass}>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">2 · Timing and events</p>
-          <h2 className="mt-3 font-serif text-3xl font-semibold">What are you planning?</h2>
-          <div className="mt-7 grid gap-6 sm:grid-cols-2">
-            <div>
-              <label htmlFor="weddingTimeframe" className={labelClass}>Wedding date or timeframe <span className="text-[#7a6841]">*</span></label>
-              <input id="weddingTimeframe" className={inputClass} value={formData.weddingTimeframe} onChange={(event) => updateFormData("weddingTimeframe", event.target.value)} placeholder="Exact date, month/year, or season" required />
-            </div>
-            <div>
-              <label htmlFor="dateFlexibility" className={labelClass}>How flexible are the dates? <span className="text-[#7a6841]">*</span></label>
-              <select id="dateFlexibility" className={inputClass} value={formData.dateFlexibility} onChange={(event) => updateFormData("dateFlexibility", event.target.value)} required>
-                <option value="">Select</option>
-                <option value="Exact dates are fixed">Exact dates are fixed</option>
-                <option value="Month is fixed; dates are flexible">Month is fixed; dates are flexible</option>
-                <option value="Season or year only">Season or year only</option>
-                <option value="Dates are not decided">Dates are not decided</option>
-              </select>
-            </div>
-            {destinationRelevant ? (
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">2 · Wedding essentials</p>
+          <h2 className="mt-3 font-serif text-3xl font-semibold">When are you planning?</h2>
+          <div className="mt-7">
+            <label htmlFor="weddingTimeframe" className={labelClass}>Wedding date or timeframe <span className="text-[#7a6841]">*</span></label>
+            <input id="weddingTimeframe" className={inputClass} value={formData.weddingTimeframe} onChange={(event) => updateFormData("weddingTimeframe", event.target.value)} placeholder="Exact date, month/year, or season" required />
+          </div>
+          <details className={`${optionalDetailsClass} mt-6`}>
+            <summary className="cursor-pointer text-sm font-semibold text-[#7a6841]">Add dates, events, and traditions (optional)</summary>
+            <div className="mt-5 grid gap-6 sm:grid-cols-2">
               <div>
-                <label htmlFor="weekdayAvailability" className={labelClass}>Could your family consider weekday wedding events? <span className="text-[#7a6841]">*</span></label>
-                <select id="weekdayAvailability" className={inputClass} value={formData.weekdayAvailability} onChange={(event) => updateFormData("weekdayAvailability", event.target.value)} required>
+                <label htmlFor="dateFlexibility" className={labelClass}>How flexible are the dates?</label>
+                <select id="dateFlexibility" className={inputClass} value={formData.dateFlexibility} onChange={(event) => updateFormData("dateFlexibility", event.target.value)}>
                   <option value="">Select</option>
-                  <option value="Yes — weekdays are possible">Yes — weekdays are possible</option>
-                  <option value="Maybe — depends on pricing and travel">Maybe — depends on pricing and travel</option>
-                  <option value="No — weekends only">No — weekends only</option>
-                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Exact dates are fixed">Exact dates are fixed</option>
+                  <option value="Month is fixed; dates are flexible">Month is fixed; dates are flexible</option>
+                  <option value="Season or year only">Season or year only</option>
+                  <option value="Dates are not decided">Dates are not decided</option>
                 </select>
               </div>
+              {destinationRelevant ? (
+                <div>
+                  <label htmlFor="weekdayAvailability" className={labelClass}>Could weekday events work?</label>
+                  <select id="weekdayAvailability" className={inputClass} value={formData.weekdayAvailability} onChange={(event) => updateFormData("weekdayAvailability", event.target.value)}>
+                    <option value="">Select</option>
+                    <option value="Yes — weekdays are possible">Yes — weekdays are possible</option>
+                    <option value="Maybe — depends on pricing and travel">Maybe — depends on pricing and travel</option>
+                    <option value="No — weekends only">No — weekends only</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </div>
+              ) : null}
+            </div>
+            <fieldset className="mt-7">
+              <legend className={labelClass}>Which events are currently planned?</legend>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                {eventOptions.map((eventName) => (
+                  <label key={eventName} className="flex items-start gap-3 rounded-xl border border-[#e6dfd5] bg-white px-4 py-3 text-sm leading-6 text-[#4d403a]">
+                    <input type="checkbox" checked={formData.events.includes(eventName)} onChange={() => toggleEvent(eventName)} className="mt-1 h-4 w-4 accent-[#7a6841]" />
+                    <span>{eventName}</span>
+                  </label>
+                ))}
+              </div>
+            </fieldset>
+            {formData.events.includes("Other") ? (
+              <div className="mt-6">
+                <label htmlFor="otherEvents" className={labelClass}>Other events</label>
+                <input id="otherEvents" className={inputClass} value={formData.otherEvents} onChange={(event) => updateFormData("otherEvents", event.target.value)} />
+              </div>
             ) : null}
-          </div>
-          <fieldset className="mt-7">
-            <legend className={labelClass}>Which events are currently planned?</legend>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {eventOptions.map((eventName) => (
-                <label key={eventName} className="flex items-start gap-3 rounded-xl border border-[#e6dfd5] bg-[#faf8f5] px-4 py-3 text-sm leading-6 text-[#4d403a]">
-                  <input type="checkbox" checked={formData.events.includes(eventName)} onChange={() => toggleEvent(eventName)} className="mt-1 h-4 w-4 accent-[#7a6841]" />
-                  <span>{eventName}</span>
-                </label>
-              ))}
-            </div>
-          </fieldset>
-          {formData.events.includes("Other") ? (
             <div className="mt-6">
-              <label htmlFor="otherEvents" className={labelClass}>Other events</label>
-              <input id="otherEvents" className={inputClass} value={formData.otherEvents} onChange={(event) => updateFormData("otherEvents", event.target.value)} />
+              <label htmlFor="essentialRequirements" className={labelClass}>Essential traditions, food, accessibility, or family needs</label>
+              <textarea id="essentialRequirements" rows={4} className={inputClass} value={formData.essentialRequirements} onChange={(event) => updateFormData("essentialRequirements", event.target.value)} placeholder="For example: Gujarati or Hindu ceremony requirements, Jain meals, elder mobility, children, or interfaith considerations" />
             </div>
-          ) : null}
-          <div className="mt-6">
-            <label htmlFor="essentialRequirements" className={labelClass}>Which traditions, food needs, accessibility needs, or family requirements are essential?</label>
-            <textarea id="essentialRequirements" rows={4} className={inputClass} value={formData.essentialRequirements} onChange={(event) => updateFormData("essentialRequirements", event.target.value)} placeholder="For example: Gujarati or Hindu ceremony requirements, Jain meals, elder mobility, children, or interfaith considerations" />
-          </div>
+          </details>
         </section>
 
         {destinationRelevant ? (
-          <section className={sectionClass}>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">3 · Destination status</p>
-            <h2 className="mt-3 font-serif text-3xl font-semibold">Where are you in the planning process?</h2>
+          <details className={sectionClass}>
+            <summary className="cursor-pointer list-none">
+              <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Optional details</span>
+              <span className="mt-3 block font-serif text-3xl font-semibold">Destination, guests, and budget</span>
+            </summary>
             <div className="mt-7 grid gap-6 sm:grid-cols-2">
               <div>
                 <label htmlFor="planningStage" className={labelClass}>Current stage</label>
@@ -477,8 +481,8 @@ export function ConsultationQuestionnairePage() {
                 </select>
               </div>
               <div>
-                <label htmlFor="planningSupportStatus" className={labelClass}>What planning support do you have or need? <span className="text-[#7a6841]">*</span></label>
-                <select id="planningSupportStatus" className={inputClass} value={formData.planningSupportStatus} onChange={(event) => updateFormData("planningSupportStatus", event.target.value)} required>
+                <label htmlFor="planningSupportStatus" className={labelClass}>What planning support do you have or need?</label>
+                <select id="planningSupportStatus" className={inputClass} value={formData.planningSupportStatus} onChange={(event) => updateFormData("planningSupportStatus", event.target.value)}>
                   <option value="">Select</option>
                   <option value="No planner yet; need a complete one-stop solution">No planner yet; need a complete one-stop solution</option>
                   <option value="Have a planner; need selected CeremonyVerse support">Have a planner; need selected CeremonyVerse support</option>
@@ -519,13 +523,15 @@ export function ConsultationQuestionnairePage() {
                 <textarea id="guestTravelPayment" rows={3} className={inputClass} value={formData.guestTravelPayment} onChange={(event) => updateFormData("guestTravelPayment", event.target.value)} placeholder="Most guests pay their own costs, family covers selected VIPs, family covers most guests, or not decided" />
               </div>
             </div>
-          </section>
+          </details>
         ) : null}
 
         {indiaRelevant ? (
-          <section className={sectionClass}>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">{destinationRelevant ? "4" : "3"} · India sourcing</p>
-            <h2 className="mt-3 font-serif text-3xl font-semibold">What may need to be sourced?</h2>
+          <details className={sectionClass}>
+            <summary className="cursor-pointer list-none">
+              <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Optional details</span>
+              <span className="mt-3 block font-serif text-3xl font-semibold">India sourcing needs</span>
+            </summary>
             <div className="mt-7 grid gap-6 sm:grid-cols-2">
               <div className="sm:col-span-2">
                 <label htmlFor="indiaSourcingNeeds" className={labelClass}>Outfits, jewelry, ceremony items, gifts, or welcome-bag needs</label>
@@ -540,29 +546,34 @@ export function ConsultationQuestionnairePage() {
                 <input id="sourcingDeadline" className={inputClass} value={formData.sourcingDeadline} onChange={(event) => updateFormData("sourcingDeadline", event.target.value)} placeholder="Date, month/year, or not decided" />
               </div>
             </div>
-          </section>
+          </details>
         ) : null}
 
         <section className={sectionClass}>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">{destinationRelevant ? (indiaRelevant ? "5" : "4") : "4"} · Priorities</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">3 · Priorities</p>
           <h2 className="mt-3 font-serif text-3xl font-semibold">What should the call help you decide?</h2>
           <div className="mt-7 grid gap-6">
             <div>
               <label htmlFor="topPriorities" className={labelClass}>Your three biggest priorities <span className="text-[#7a6841]">*</span></label>
               <textarea id="topPriorities" rows={4} className={inputClass} value={formData.topPriorities} onChange={(event) => updateFormData("topPriorities", event.target.value)} placeholder="For example: guest experience, food, cultural requirements, budget control, resort quality, or outfit coordination" required />
             </div>
-            <div>
-              <label htmlFor="possibleSimplifications" className={labelClass}>What, if anything, may be simplified?</label>
-              <textarea id="possibleSimplifications" rows={3} className={inputClass} value={formData.possibleSimplifications} onChange={(event) => updateFormData("possibleSimplifications", event.target.value)} />
-            </div>
-            <div>
-              <label htmlFor="biggestConcern" className={labelClass}>What worries you most right now?</label>
-              <textarea id="biggestConcern" rows={3} className={inputClass} value={formData.biggestConcern} onChange={(event) => updateFormData("biggestConcern", event.target.value)} />
-            </div>
-            <div>
-              <label htmlFor="questionsForCall" className={labelClass}>What questions do you want answered on the call?</label>
-              <textarea id="questionsForCall" rows={4} className={inputClass} value={formData.questionsForCall} onChange={(event) => updateFormData("questionsForCall", event.target.value)} />
-            </div>
+            <details className={optionalDetailsClass}>
+              <summary className="cursor-pointer text-sm font-semibold text-[#7a6841]">Add concerns or questions (optional)</summary>
+              <div className="mt-5 grid gap-6">
+                <div>
+                  <label htmlFor="possibleSimplifications" className={labelClass}>What, if anything, may be simplified?</label>
+                  <textarea id="possibleSimplifications" rows={3} className={inputClass} value={formData.possibleSimplifications} onChange={(event) => updateFormData("possibleSimplifications", event.target.value)} />
+                </div>
+                <div>
+                  <label htmlFor="biggestConcern" className={labelClass}>What worries you most right now?</label>
+                  <textarea id="biggestConcern" rows={3} className={inputClass} value={formData.biggestConcern} onChange={(event) => updateFormData("biggestConcern", event.target.value)} />
+                </div>
+                <div>
+                  <label htmlFor="questionsForCall" className={labelClass}>What questions do you want answered on the call?</label>
+                  <textarea id="questionsForCall" rows={4} className={inputClass} value={formData.questionsForCall} onChange={(event) => updateFormData("questionsForCall", event.target.value)} />
+                </div>
+              </div>
+            </details>
           </div>
         </section>
 
@@ -571,13 +582,11 @@ export function ConsultationQuestionnairePage() {
             <input type="checkbox" checked={formData.privacyConsent} onChange={(event) => updateFormData("privacyConsent", event.target.checked)} className="mt-1 h-4 w-4 accent-[#7a6841]" required />
             <span>
               I agree that CeremonyVerse may use these answers to prepare for and follow up on my consultation. This
-              does not subscribe me to marketing. I will not include passport numbers, payment-card details, medical
-              records, or other sensitive documents. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy notice</Link>.
+              does not subscribe me to marketing. I will not include sensitive personal or payment information. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy notice</Link>.
             </span>
           </label>
           <p className="mt-4 text-sm leading-6 text-[#6d625c]">
-            Required questions are marked with an asterisk. After checking the box above, the send button becomes
-            available; if an answer is missing, the form will point it out before anything is sent.
+            Only questions marked with an asterisk are required.
           </p>
 
           {error ? (
@@ -595,7 +604,7 @@ export function ConsultationQuestionnairePage() {
             {isLoading ? "Sending Securely…" : "Send My Pre-Call Questionnaire"}
           </button>
           <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
-            No file upload is requested. Keep proposals and contracts available for the conversation instead of sending sensitive records through this form.
+            Keep proposals and contracts nearby for the call; no upload is needed.
           </p>
         </section>
       </form>

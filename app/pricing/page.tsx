@@ -15,9 +15,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "Pricing: Destination Planning & India Sourcing",
+  title: "Pricing: India Sourcing & Destination Planning",
   description:
-    "Compare $4,000 event coordination, $5,500 partial planning, $8,000 full planning, the optional $300 written plan, and flat-fee India sourcing.",
+    "Compare $8,000 full planning, $5,500 partial planning, $4,000 event coordination, the $300 feasibility plan, and flat-fee India sourcing.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
@@ -127,22 +127,24 @@ const faqSchema = buildFaqSchema(faqItems)
 
 export default function PricingPage() {
   return (
-    <main className="cv-restored-type min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
+    <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
       <SeoNav />
 
-      <section className="bg-[#211d19] px-6 py-24 text-center text-white sm:py-32">
+      <section className="bg-[#1f1f1f] px-6 py-20 text-center text-white sm:py-28">
         <div className="mx-auto max-w-5xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-            Transparent service fees
+            Flat service fees
           </p>
           <h1 className="mb-6 font-serif text-5xl font-semibold !text-white sm:text-6xl">
-            Our fees are separate from the wedding itself.
+            Pay for the level of help you need
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
-            CeremonyVerse publishes its planning and sourcing fees so you can understand our cost before you inquire. Resort packages, rooms, travel, venues, vendors, décor, production, shipping, customs, taxes, and service charges are separate unless a signed proposal expressly includes them.
+            India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
+            planning uses published starting fees and a wedding-specific written scope. Products, resorts, venues, vendors, travel, shipping, and customs
+            are itemized outside the applicable CeremonyVerse service fee unless the proposal says otherwise.
           </p>
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-6 text-white/65">
             CeremonyVerse serves families across the entire United States and Canada. Published service fees are in USD.
@@ -150,70 +152,85 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section id="destination-planning" className="bg-[#f8f5ef] px-6 py-24 sm:py-32">
+      <section id="mexico-concierge" className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#80683b]">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
               Destination wedding planning
             </p>
-            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">
-              Destination wedding planning
+            <h2 className="mb-5 font-serif text-4xl font-semibold !text-[#f8f6f2] sm:text-5xl">
+              Choose the level of planning and family support you need
             </h2>
-            <p className="text-lg leading-8 text-[#51483f]">
+            <p className="text-lg leading-8 text-white/75">
               Package details and starting fees are public so you can compare the scope. Your final CeremonyVerse
               proposal reflects the dates, destination, events, guest count, staffing, travel, complexity, and additions.
             </p>
-            <p className="mt-5 font-semibold text-[#80683b]">{mexicoAvailabilityMessage}</p>
+            <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
+
+          <article className="mb-10 rounded-3xl border border-[#c5a059]/50 bg-[#c5a059]/10 p-7 sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#c5a059]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold !text-[#f8f6f2] sm:text-4xl">
+                  {destinationFeasibilityPlan.name}
+                </h3>
+                <p className="mt-4 font-serif text-5xl font-semibold !text-white">{destinationFeasibilityPlan.priceLabel}</p>
+              </div>
+              <div>
+                <p className="leading-7 !text-[#e7ded3]">{destinationFeasibilityPlan.bestFor}</p>
+                <ul className="mt-5 grid gap-3 text-sm leading-6 !text-[#e7ded3] sm:grid-cols-2">
+                  {destinationFeasibilityPlan.includes.slice(0, 4).map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span aria-hidden="true" className="!text-[#c5a059]">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-5 text-sm leading-6 !text-[#e8cf9d]">{destinationFeasibilityCredit}</p>
+                <Link
+                  href={destinationFeasibilityPlan.href}
+                  className="mt-6 inline-flex rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f]"
+                >
+                  See the $300 Plan
+                </Link>
+              </div>
+            </div>
+          </article>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {mexicoPackages.map((tier) => (
-              <article key={tier.name} className="flex flex-col rounded-[1.75rem] border border-[#ded5c7] bg-[#fffdf9] p-8">
-                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#80683b]">{tier.timeline}</p>
-                <h3 className="cv-package-title">{tier.name}</h3>
-                {tier.priceLabel ? <p className="mt-4 font-serif text-4xl font-semibold text-[#80683b]">{tier.priceLabel}</p> : null}
-                <p className="my-5 text-sm font-semibold text-[#80683b]">{tier.bestFor}</p>
-                <p className="mb-7 leading-7 text-[#51483f]">{tier.description}</p>
-                <h4 className="mb-3 font-semibold">Included</h4>
-                <ul className="mb-7 space-y-3 text-sm leading-6 text-[#51483f]">
+              <article key={tier.name} className="flex flex-col rounded-2xl border border-white/15 bg-white/5 p-8 text-white">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] !text-[#c5a059]">{tier.category}</p>
+                <h3 className="cv-package-title !text-[#f8f6f2]">{tier.name}</h3>
+                {tier.priceLabel ? <p className="mt-4 font-serif text-4xl font-semibold !text-white">{tier.priceLabel}</p> : null}
+                <p className="my-5 text-sm font-semibold !text-[#e8cf9d]">{tier.timeline}</p>
+                <p className="mb-2 text-sm font-semibold !text-[#e8cf9d]">{tier.bestFor}</p>
+                <p className="mb-7 leading-7 !text-[#e7ded3]">{tier.description}</p>
+                <h4 className="mb-3 font-semibold !text-[#f8f6f2]">Included</h4>
+                <ul className="mb-7 space-y-3 text-sm leading-6 !text-[#e7ded3]">
                   {tier.includes.map((item) => (
-                    <li key={item} className="flex gap-3"><span className="text-[#80683b]">✓</span><span>{item}</span></li>
+                    <li key={item} className="flex gap-3"><span className="!text-[#c5a059]">✓</span><span className="!text-[#e7ded3]">{item}</span></li>
                   ))}
                 </ul>
-                <details className="mb-8 rounded-xl bg-[#eee7dc] p-4">
-                  <summary className="cursor-pointer text-sm font-semibold text-[#51483f]">Important exclusions</summary>
-                  <ul className="mt-4 space-y-3 text-sm leading-6 text-[#51483f]">
+                <h4 className="mb-3 font-semibold !text-[#f8f6f2]">Not included</h4>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 !text-[#e7ded3]">
                   {tier.excludes.map((item) => (
-                    <li key={item} className="flex gap-3"><span>—</span><span>{item}</span></li>
+                    <li key={item} className="flex gap-3"><span className="!text-[#e8cf9d]">—</span><span className="!text-[#e7ded3]">{item}</span></li>
                   ))}
-                  </ul>
-                </details>
-                <Link href={tier.href} className="inline-flex justify-center rounded-full bg-[#80683b] px-6 py-3.5 text-center text-sm font-semibold !text-white">
+                </ul>
+                <Link href={tier.href} className="inline-flex justify-center rounded-full bg-[#c5a059] px-6 py-3.5 text-center text-sm font-semibold !text-[#1f1f1f]">
                   {tier.cta}
                 </Link>
               </article>
             ))}
           </div>
-          <article className="mt-10 rounded-[1.75rem] border border-[#cfc2af] bg-[#eee7dc] p-7 sm:p-9">
-            <div className="grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#80683b]">Optional decision support</p>
-                <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name}</h3>
-                <p className="mt-3 font-serif text-4xl font-semibold text-[#80683b]">{destinationFeasibilityPlan.priceLabel}</p>
-              </div>
-              <div>
-                <p className="leading-7 text-[#51483f]">{destinationFeasibilityPlan.bestFor}</p>
-                <p className="mt-4 text-sm leading-6 text-[#6b5b4d]">{destinationFeasibilityCredit}</p>
-                <Link href={destinationFeasibilityPlan.href} className="mt-5 inline-flex font-semibold text-[#80683b]">See the $300 plan <span aria-hidden="true" className="ml-2">→</span></Link>
-              </div>
-            </div>
-          </article>
-          <p className="mt-8 rounded-xl border border-[#d5c9b8] bg-[#fffdf9] p-5 text-sm leading-6 text-[#51483f]">
+          <p className="mt-8 rounded-xl border border-[#c5a059]/40 bg-[#c5a059]/10 p-5 text-sm leading-6 !text-[#e8cf9d]">
             Family and guest coordination are included within the responsibilities shown for each planning package.
             Flights, rooms, transfers, and other independent provider charges remain separate unless expressly included
             in the signed proposal.
           </p>
-          <p className="mt-8 text-sm leading-6 text-[#6b5b4d]">{destinationPackagePricingNote}</p>
+          <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
         </div>
       </section>
 

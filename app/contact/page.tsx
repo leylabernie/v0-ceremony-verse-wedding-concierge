@@ -1,22 +1,32 @@
-import { ContactPage } from "@/components/pages/contact-page"
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo"
+import { ContactPage } from "@/components/pages/contact-page";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/contact/",
   title: "Schedule a Free 30-Minute CeremonyVerse Consultation",
-  description: "Schedule a free 30-minute conversation about Gujarati or Hindu destination planning across Mexico, Jamaica, or Punta Cana, or India wedding sourcing for the USA and Canada.",
-})
+  description:
+    "Your first 30-minute CeremonyVerse consultation is free. Discuss India wedding sourcing or Gujarati and Hindu destination planning with no payment or contract required for the call.",
+});
 
 const serviceSchema = buildServiceSchema({
-  name: "Free 30-Minute CeremonyVerse Consultation",
-  description: "A free introductory conversation about the wedding timeframe, destination, guests, ceremonies, budget scope, and the appropriate next step. No payment or contract is required for the call.",
+  name: "Free 30-Minute Wedding Sourcing or Destination Planning Consultation",
+  description:
+    "The first 30-minute introductory consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, guest count, timeline, and budget before explaining any separate paid next step.",
   url: "/contact/",
-  category: "Destination Wedding Planning and India Wedding Sourcing Consultation",
+  category: "Wedding Planning and India Wedding Sourcing Consultation",
   areaServed: ["United States", "Canada", "Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
-})
+});
 
-const breadcrumbSchema = buildBreadcrumb([{ name: "Free Consultation", url: "/contact/" }])
+const breadcrumbSchema = buildBreadcrumb([
+  { name: "Schedule a Free 30-Minute Consultation", url: "/contact/" },
+]);
 
 export default function ContactRoute() {
-  return <><JsonLd id="schema-service" data={serviceSchema} /><JsonLd id="schema-breadcrumb" data={breadcrumbSchema} /><ContactPage /></>
+  return (
+    <>
+      <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
+      <ContactPage />
+    </>
+  );
 }
