@@ -11,7 +11,7 @@ import { usePathname } from "next/navigation"
 // budget and slowing Google's ability to discover & refresh content.
 const navItems: { label: string; href: string }[] = [
   { label: "Destinations", href: "/destinations/" },
-  { label: "Planning Services", href: "/indian-wedding-coordination-mexico/" },
+  { label: "Planning Services", href: "/indian-destination-wedding-planner-mexico/" },
   { label: "India Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
   { label: "Calculators", href: "/planning-tools/" },
   { label: "Pricing", href: "/pricing/" },
