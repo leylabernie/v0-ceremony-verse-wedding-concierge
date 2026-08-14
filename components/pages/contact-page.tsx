@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Preserve the existing form controls, data flow, layout, styles, and interactions.
 "use client"
 
 import Link from "next/link"
@@ -206,7 +207,7 @@ export function ContactPage() {
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
             You can request a consultation time now—there is no approval wait. Please complete the automatically
-            delivered questionnaire before the call so CeremonyVerse can prepare around your wedding.
+            delivered questionnaire before the call so CeremonyVerse can prepare around your family priorities, wedding, and local-planning questions.
           </p>
           <a
             href={schedulingUrl}
@@ -251,8 +252,9 @@ export function ContactPage() {
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Helpful items for the call</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
               <li>• Any current resort proposal, room-block terms, or venue information.</li>
-              <li>• Your event list and the traditions your family considers essential.</li>
+              <li>• Your event list, the traditions your family considers essential, and the people who need to make key decisions.</li>
               <li>• Known estimates and what the working budget must cover.</li>
+              <li>• The local-planning or on-site support you expect, if you already know it.</li>
             </ul>
           </div>
         </div>
@@ -272,7 +274,7 @@ export function ContactPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
             Register with the essentials below, then request your consultation time immediately. Your introductory
-            call with Mini requires no payment, contract, or prior approval.
+            call with Mini is a family-centered conversation about your priorities, destination questions, and local-planning needs; it requires no payment, contract, or prior approval.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>

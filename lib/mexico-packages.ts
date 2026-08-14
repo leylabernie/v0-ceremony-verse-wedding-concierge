@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Shared wording preserves the existing planning offers and visual components.
 export type MexicoPackage = {
   name: string
   priceLabel?: string
@@ -20,7 +21,7 @@ export const mexicoPackages: MexicoPackage[] = [
     timeline: "Begins with a structured final handover",
     bestFor: "Best for: couples with finalized plans, contracts, and vendors",
     description:
-      "A complete handover and on-site management service so the couple can step back and enjoy the celebration.",
+      "A complete handover and on-site management service that keeps the family-facing plan and the named local responsibilities clear so the couple can step back and enjoy the celebration.",
     includes: [
       "Comprehensive handover of finalized details and vendor confirmations",
       "One on-site point of contact for the contracted vendors",
@@ -44,7 +45,7 @@ export const mexicoPackages: MexicoPackage[] = [
     timeline: "Begins about 6 months before the wedding",
     bestFor: "Best for: couples who have secured a venue and initial vendors",
     description:
-      "Professional takeover of the remaining planning, logistics, and execution so every event works as one celebration.",
+      "Professional coordination of the remaining family-facing planning, local responsibilities, logistics, and execution so every event works as one celebration.",
     includes: [
       "Vendor-management takeover and contract review",
       "Detailed timelines for the agreed multi-day festivities",
@@ -69,7 +70,7 @@ export const mexicoPackages: MexicoPackage[] = [
     timeline: "Begins 9+ months before the wedding",
     bestFor: "Best for: couples who want comprehensive planning from the beginning",
     description:
-      "A start-to-finish planning and design experience for a cohesive, multi-day destination wedding.",
+      "A start-to-finish planning and design experience for a cohesive, multi-day destination wedding with Gujarati and Hindu family priorities and local responsibilities documented in one written scope.",
     includes: [
       "Research and coordination of suitable local vendor options",
       "Venue sourcing and management",

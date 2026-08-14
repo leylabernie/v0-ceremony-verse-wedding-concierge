@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Preserve the established Mexico guide layout while clarifying Gujarati family and local-provider roles.
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import {
@@ -11,9 +12,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Mexico: Cancún vs Riviera Maya",
+  title: "Gujarati & Hindu Destination Wedding Planning in Mexico",
   description:
-    "Family-side planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, room blocks, complete budgets, cultural needs, and guest logistics.",
+    "Family-centered planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, local-planning roles, room blocks, complete budgets, cultural needs, and guest logistics.",
   keywords:
     "Indian destination wedding Mexico, Indian wedding Cancun, Indian wedding Riviera Maya, South Asian wedding resort Mexico, Indian wedding Mexico cost, Cancun wedding planning guide",
 });
@@ -25,7 +26,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const serviceSchema = buildServiceSchema({
   name: "Indian Destination Wedding Planning Support in Mexico",
   description:
-    "Family-facing destination-wedding planning support for Gujarati and Hindu weddings across Mexico, with a written division of responsibilities among CeremonyVerse, the local planning partner, authorized travel providers, resorts, vendors, and the family.",
+    "Family-facing destination-wedding planning support for Gujarati and Hindu weddings across Mexico, with a written division of responsibilities among CeremonyVerse, an independent Mexico local planning provider, authorized travel providers, resorts, vendors, and the family.",
   url: "/indian-destination-wedding-planner-mexico/",
   category: "Indian Destination Wedding Planning",
   areaServed: ["Mexico", "Dominican Republic", "United States", "Canada"],
@@ -157,11 +158,11 @@ export default function MexicoDestinationGuidePage() {
             className="text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Indian destination wedding planning in Mexico
+            Gujarati &amp; Hindu destination wedding planning in Mexico
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            Compare Cancun and Riviera Maya using the contract, total budget, ceremony requirements, and guest
-            experience—not a resort brochure or a package headline.
+            Build a Mexico wedding plan around your family’s actual ceremonies, decision-makers, guest experience,
+            local execution roles, complete budget, and current written provider terms—not a resort brochure or package headline.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -348,8 +349,8 @@ export default function MexicoDestinationGuidePage() {
           </div>
           <div className="mt-10 overflow-hidden rounded-2xl border border-[#e6dfd5]">
             {[
-              ["CeremonyVerse", "Family-facing brief, cultural and sourcing requirements, proposal comparison, approvals, guest-information organization, communication oversight, and one central family contact within the written scope."],
-              ["Mexico-based planning partner", "Local venue and vendor planning, negotiations, production coordination, operational timelines, and on-site execution as assigned in the signed wedding-specific scope."],
+              ["CeremonyVerse", "Family-facing Gujarati and Hindu brief, proposal comparison, approvals, guest-information organization, communication oversight, and one central family contact within the written scope."],
+              ["Independent Mexico local planning provider", "Local venue and vendor planning, production coordination, operational timelines, and on-site execution only as assigned in the signed wedding-specific scope."],
               ["Authorized travel provider or resort", "Room blocks, reservations, guest payments, travel documents, transfers, travel changes, and any travel-related commissions or regulated services."],
               ["Resort and contracted vendors", "Their stated spaces, products, staffing, food and beverage, production, delivery, pricing, policies, safety, and contract performance."],
               ["Couple and family", "Final decisions, accurate guest and ceremony information, approvals, payments, travel documents, insurance choices, and compliance with contract deadlines."],

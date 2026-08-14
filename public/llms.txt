@@ -1,10 +1,10 @@
 # CeremonyVerse
 
-> CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service for families throughout the United States and Canada, focused on weddings in Mexico and Punta Cana. Optional India wedding-outfit sourcing is available as a separate paid service or as part of an approved planning scope.
+> CeremonyVerse is a U.S.-based Gujarati and Hindu family-centered destination-wedding planning service for families throughout the United States and Canada, focused on weddings in Mexico and Punta Cana. Optional India wedding-outfit sourcing is available as a separate paid service or as part of an approved planning scope.
 
 ## Primary Service
 
-CeremonyVerse helps Gujarati and Hindu families organize multi-day destination weddings through one documented family-facing process. Current destination positioning is Mexico and Punta Cana. Planning can include resort and proposal comparison, event schedules, cultural requirements, guest information, room-block decision support, family approvals, local-team coordination, wedding-week execution, and closeout as defined in a private written proposal.
+CeremonyVerse helps Gujarati and Hindu families organize multi-day destination weddings through one documented family-facing process. Current destination positioning is Mexico and Punta Cana. Planning can include resort and proposal comparison, event schedules, cultural requirements, guest information, room-block decision support, family approvals, local-team coordination, wedding-week execution, and closeout as defined in a private written proposal. For Mexico weddings, CeremonyVerse coordinates the agreed family-facing scope alongside an independent Mexico local planning provider for only the destination work listed in that proposal.
 
 - [Destination Wedding Planning](https://www.ceremonyverse.com/indian-destination-wedding-planner-mexico/)
 - [Destination Guides](https://www.ceremonyverse.com/destinations/)
@@ -57,7 +57,7 @@ Products, tailoring, carrier charges, insurance, customs duties, taxes, brokerag
 
 ## Service Area and Responsibilities
 
-CeremonyVerse serves families virtually throughout the United States and Canada. Current destination-planning positioning is Mexico and Punta Cana. Availability and the selected destination execution team are confirmed for each wedding in writing.
+CeremonyVerse serves families virtually throughout the United States and Canada. Current destination-planning positioning is Mexico and Punta Cana. Availability, the independent local planning provider’s destination scope, and the named local lead or backup where applicable are confirmed for each wedding in writing.
 
 CeremonyVerse does not independently sell rooms, flights, airport transfers, or travel insurance. Resorts and appropriately qualified travel, transfer, venue, and vendor providers issue and control their own contracts, bookings, payments, availability, and service terms.
 
@@ -71,6 +71,7 @@ The private CeremonyVerse proposal identifies:
 - Approval responsibilities
 - Change and cancellation rules
 - The responsible provider for each outside service
+- The respective CeremonyVerse and local-provider responsibilities, handoffs, and escalation path
 
 ## Trust and Experience
 

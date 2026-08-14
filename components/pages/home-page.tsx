@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Preserve the established CeremonyVerse layout, imagery, typography, colors, and interactions.
 import Image from "next/image"
 import Link from "next/link"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
@@ -74,13 +75,13 @@ const destinationHighlights = [
 const servicePillars = [
   {
     label: "Destination wedding planning",
-    title: "Family coordination with local planning and execution",
+    title: "Family-centered planning with clear local roles",
     description:
-      "Plan a Gujarati or Hindu destination celebration across Mexico or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration across Mexico or Punta Cana through a private scope that identifies your family priorities, decision owners, local planning responsibilities, and third-party boundaries.",
     features: [
-      "Planning support defined from the beginning",
+      "Gujarati and Hindu family priorities documented from the beginning",
       "Multi-day timelines and on-site event management",
-      "Family and guest coordination included at the selected planning-package level",
+      "Family and guest coordination with local responsibilities named in the selected planning scope",
     ],
     href: "/indian-destination-wedding-planner-mexico/",
     cta: "Explore Destination Planning",
@@ -193,15 +194,16 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              Serving families across the United States &amp; Canada
+              Gujarati and Hindu destination weddings in Mexico
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Gujarati &amp; Hindu destination weddings, made clear for the whole family
+              A Mexico wedding plan your family can understand, trust, and follow
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Plan a multi-day celebration across Mexico or Punta Cana with one family-facing coordinator,
-              contracted local planning and on-site execution, guest-information organization, practical calculators,
-              and optional India wedding-outfit sourcing.
+              Plan a multi-day celebration across Mexico or Punta Cana through one family-facing process that organizes
+              cultural priorities, decision-makers, guest information, and the local responsibilities named in your
+              written scope. For Mexico celebrations, CeremonyVerse coordinates alongside an independent local planning
+              provider for the contracted destination work.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -233,7 +235,7 @@ export function HomePage() {
           </p>
           <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
             <p>USA &amp; Canada family support</p>
-            <p>Mexico &amp; Punta Cana focus</p>
+              <p>Gujarati family-centered planning</p>
             <p>Itemized written scopes</p>
             <p>Roles defined before paid work</p>
           </div>
@@ -279,8 +281,8 @@ export function HomePage() {
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Named responsibilities</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">One family contact, clear local owners</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse coordinates the family-facing plan; the contracted destination team handles the local scope; resorts and qualified providers control their own bookings and payments.</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">One family process, clear local owners</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse coordinates the agreed family-facing plan; an independent local planning provider handles the destination work listed in your scope; resorts and qualified providers control their own bookings and payments.</p>
               <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See every planning step</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
@@ -403,9 +405,9 @@ export function HomePage() {
                 <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">What shaped CeremonyVerse</p>
                 <h3 className="mb-4 font-serif text-3xl font-semibold !text-white sm:text-4xl">Firsthand family wedding experience, explained honestly</h3>
                 <p className="leading-7 !text-white/75">
-                  CeremonyVerse was shaped by firsthand family-side involvement in multi-day Indian destination
+                  CeremonyVerse was shaped by firsthand Gujarati family-side involvement in multi-day Indian destination
                   weddings in Mexico. Those private celebrations are not presented as CeremonyVerse client case
-                  studies; the experience informs the questions, safeguards, and family support used today.
+                  studies; the experience informs the questions, safeguards, cultural clarity, and family support used today.
                 </p>
               </div>
               <Link href="/about/" className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-6 py-3 text-sm font-semibold !text-[#1f1f1f] transition hover:bg-[#d6bb7d]">
@@ -500,8 +502,8 @@ export function HomePage() {
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              ["CeremonyVerse", "Your family-facing coordinator for priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
-              ["Contracted destination team", "The destination planning and on-site team responsible for the local work specifically listed in your private proposal."],
+              ["CeremonyVerse", "Your family-facing coordinator for Gujarati and Hindu priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
+              ["Independent Mexico local planning provider", "The destination planning and on-site provider responsible only for the local work specifically listed in your private proposal."],
               ["Resorts and qualified providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
             ].map(([title, description]) => (
               <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
@@ -540,10 +542,10 @@ export function HomePage() {
       <section className="bg-[#7a6841] px-6 py-20 text-center text-white">
         <div className="mx-auto max-w-3xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#f0dfbd]">Start with clarity</p>
-          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Tell us where your destination-wedding plan stands</h2>
+          <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Bring your family priorities and current Mexico questions</h2>
           <p className="mb-8 text-lg leading-8 text-white/85">
-            Your first 30-minute consultation is free. We&apos;ll separate the event budget from rooms and travel,
-            identify the right destination-planning scope, and explain any paid next step before you decide.
+            Your first 30-minute consultation is free. We&apos;ll identify the ceremonies and decisions that matter,
+            separate the event budget from rooms and travel, explain the local-planning model, and recommend any paid next step before you decide.
           </p>
           <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
             Schedule Free Consultation

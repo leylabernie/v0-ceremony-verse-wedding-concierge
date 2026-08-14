@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Preserve destination guide structure while clarifying the independent local-provider model.
 export type DestinationPageData = {
   slug: string
   shortName: string
@@ -108,7 +109,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
     weatherAndBackup:
       "Cancún is in the Atlantic basin, where the official hurricane season runs June 1 through November 30. A season date does not predict conditions for one wedding, but it makes a written backup plan essential. Confirm the indoor venue, capacity, décor move, production move, decision authority, notification process, and any added cost before the contract is final.",
     familySupport:
-      "CeremonyVerse can organize the cultural brief, family decision owners, proposal comparison, complete-cost worksheet, meeting follow-ups, guest-information plan, and optional India sourcing. The selected destination planning team manages contracted local planning and on-site execution. Rooms, flights, transfers, and regulated travel services remain with the resort or an appropriately licensed provider.",
+      "CeremonyVerse can organize the Gujarati and Hindu cultural brief, family decision owners, proposal comparison, complete-cost worksheet, meeting follow-ups, guest-information plan, and optional India sourcing. For Mexico work included in the written scope, an independent local planning provider manages the contracted local planning and on-site execution. Rooms, flights, transfers, and regulated travel services remain with the resort or an appropriately licensed provider.",
     questions: [
       "Which exact venue and indoor backup are held for every event?",
       "What capacity applies after the Mandap, stage, dance floor, production, tables, bars, and service paths are drawn?",
@@ -241,7 +242,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
     weatherAndBackup:
       "Riviera Maya is also within the Atlantic basin. Outdoor plans must account for rain, wind, heat, humidity, insects, beach conditions, and seasonal storms without pretending to predict a specific date. Hold a real indoor backup for each critical event and document how décor, production, seating, catering, guest transport, and notifications move.",
     familySupport:
-      "CeremonyVerse adds the family-side system: cultural priorities, decision owners, proposal comparison, budget categories, guest information, meeting follow-ups, and optional India sourcing. The contracted local team leads destination planning and on-site execution. Resort contracts and licensed travel services remain with the named providers.",
+      "CeremonyVerse adds the family-side system: Gujarati and Hindu cultural priorities, decision owners, proposal comparison, budget categories, guest information, meeting follow-ups, and optional India sourcing. For Mexico work included in the written scope, an independent local planning provider leads the contracted destination planning and on-site execution. Resort contracts and licensed travel services remain with the named providers.",
     questions: [
       "Which airport should guests use for this exact property, and what transfer time should be planned by arrival window?",
       "How far are guest-room categories from each event venue, and what accessible transport is available?",
@@ -374,7 +375,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
     weatherAndBackup:
       "Los Cabos is in the eastern North Pacific basin, where the official hurricane season runs May 15 through November 30. That season does not predict conditions for one date, and outdoor plans also need to consider wind, heat, sun, and property exposure. Contract the backup venue, capacity, move deadline, authority, guest notice, transport, design changes, and any added cost.",
     familySupport:
-      "CeremonyVerse can organize the cultural brief, destination comparison, decision owners, budget categories, guest information, meeting follow-ups, and optional India sourcing. The contracted Los Cabos team handles the agreed local planning and on-site execution. The resort, venue, or appropriately licensed provider handles rooms, transfers, flights, and regulated travel services.",
+      "CeremonyVerse can organize the Gujarati and Hindu cultural brief, destination comparison, decision owners, budget categories, guest information, meeting follow-ups, and optional India sourcing. For Los Cabos work included in the written scope, an independent Mexico local planning provider handles the agreed local planning and on-site execution. The resort, venue, or appropriately licensed provider handles rooms, transfers, flights, and regulated travel services.",
     questions: [
       "Which airport and transfer instruction should guests use for this exact property?",
       "Which event venues and indoor backups are guaranteed for every event?",
@@ -536,7 +537,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
     weatherAndBackup:
       "Jamaica is in the Atlantic basin, whose official hurricane season runs June 1 through November 30. That season does not predict conditions for one wedding date. Contract the indoor backup, capacity, weather-decision deadline, authority, guest notice, production move, transport change, and any price effect for every important outdoor event.",
     familySupport:
-      "CeremonyVerse supports U.S. and Canadian families through the cultural brief, destination comparison, budget categories, decisions, guest-information organization, and optional India sourcing. The experienced Mexico City-based destination partner and any named Jamaica providers handle only the local planning and on-site work assigned in the written proposal. Resorts or appropriately licensed providers handle rooms, flights, transfers, and regulated travel services.",
+      "CeremonyVerse supports U.S. and Canadian families through the cultural brief, destination comparison, budget categories, decisions, guest-information organization, and optional India sourcing. Independent local providers named in the written proposal handle only the local planning and on-site work assigned to them. Resorts or appropriately licensed providers handle rooms, flights, transfers, and regulated travel services.",
     questions: [
       "Which airport and licensed-transfer instruction applies to this exact resort?",
       "Which events, hours, venues, menus, décor, flowers, sound, cake, beverages, seating, and coordinator services are included in the current package?",

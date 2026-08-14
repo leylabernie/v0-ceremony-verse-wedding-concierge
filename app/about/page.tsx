@@ -1,11 +1,12 @@
+// CONTENT-ONLY UPDATE: Preserve the established CeremonyVerse visual design and retain the nickname-only founder reference.
 import Link from "next/link"
 import { buildMetadata, buildBreadcrumb, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/about/",
-  title: "About CeremonyVerse — Gujarati & Hindu Wedding Support",
+  title: "About CeremonyVerse — Gujarati Family-Centered Wedding Planning",
   description:
-    "Learn how CeremonyVerse combines firsthand family-side destination-wedding experience, a documented planning process, and optional India wedding-outfit sourcing.",
+    "Learn how CeremonyVerse combines Gujarati family-side destination-wedding experience, a documented Mexico local-planning model, and optional India wedding-outfit sourcing.",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "About", url: "/about/" }])
@@ -24,12 +25,12 @@ export default function AboutPage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-[#f8f6f2]">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">About CeremonyVerse</p>
-          <h1 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">Family-side clarity, backed by destination experience</h1>
+          <h1 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">Gujarati family clarity, backed by Mexico destination experience</h1>
           <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#c5a059]">Mini · Founder &amp; Destination Wedding Concierge</p>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2] md:text-xl">
-            CeremonyVerse was shaped by firsthand family-side experience navigating multi-day Indian destination
+            CeremonyVerse was shaped by firsthand Gujarati family-side experience navigating multi-day Indian destination
             weddings in Mexico. It showed how easily resort decisions, cultural needs, guest logistics, wedding
-            wardrobes, vendor responsibilities, and family communication can become disconnected.
+            wardrobes, local execution roles, vendor responsibilities, and family communication can become disconnected.
           </p>
         </div>
       </section>
@@ -45,7 +46,7 @@ export default function AboutPage() {
             {[
               ["Multi-day event flow", "Keep ceremonies, family decisions, vendor deadlines, approvals, and on-site responsibilities in one working plan."],
               ["Guest and family logistics", "Organize travel origins, arrivals, rooms, accessibility needs, welcome details, and the information families need before the wedding."],
-              ["Clear provider roles", "Record what CeremonyVerse, the destination team, the resort, each vendor, and the family are responsible for before paid work begins."],
+              ["Clear provider roles", "Record what CeremonyVerse, the independent local planning provider, the resort, each vendor, and the family are responsible for before paid work begins."],
             ].map(([title, detail]) => (
               <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-white p-8">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Working principle</p>
@@ -89,8 +90,8 @@ export default function AboutPage() {
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Current destination focus</p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Destination planning across Mexico and Punta Cana</h2>
             <div className="mt-6 space-y-5 text-lg leading-8 text-[#4d403a]">
-              <p>CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana. CeremonyVerse is the family-facing point of contact for cultural requirements, approvals, guest organization, logistics oversight, transparency, and optional India outfit sourcing.</p>
-              <p>The contracted destination team handles the selected local planning, vendor coordination, negotiations, and on-site execution. The private proposal identifies each party&apos;s responsibilities, fees, outside costs, approvals, payment handling, and exclusions before paid work.</p>
+              <p>CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana. CeremonyVerse is the family-facing point of contact for cultural requirements, family decision-making, approvals, guest organization, logistics oversight, transparency, and optional India outfit sourcing.</p>
+              <p>For Mexico weddings, CeremonyVerse coordinates alongside an independent local planning provider for the destination and on-site responsibilities included in the written scope. The private proposal identifies each party&apos;s responsibilities, fees, outside costs, approvals, payment handling, escalation path, and exclusions before paid work.</p>
               <p>Families can work with CeremonyVerse from anywhere in the United States or Canada. CeremonyVerse does not independently sell rooms, flights, transfers, or travel insurance; those services remain with the applicable resort or qualified provider.</p>
             </div>
           </div>

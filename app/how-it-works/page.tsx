@@ -1,3 +1,4 @@
+// CONTENT-ONLY UPDATE: Preserve the established CeremonyVerse visual design and client journey layout.
 import Link from "next/link"
 import {
   JsonLd,
@@ -13,13 +14,13 @@ export const metadata = buildMetadata({
   path: "/how-it-works/",
   title: "How CeremonyVerse Works: Consultation to Wedding Closeout",
   description:
-    "Follow the CeremonyVerse process from a free consultation through a written scope, destination decisions, family coordination, wedding-week execution, and closeout.",
+    "Follow the CeremonyVerse process from a free consultation through a written scope, Gujarati and Hindu family decisions, Mexico local-provider coordination, wedding-week execution, and closeout.",
 })
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Destination Planning and India Outfit Sourcing",
   description:
-    "A documented client process for Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional paid India wedding-outfit sourcing.",
+    "A documented client process for Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with clear family-facing and local-provider responsibilities plus optional paid India wedding-outfit sourcing.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning and India Outfit Sourcing",
   areaServed: ["United States", "Canada", "Mexico", "Dominican Republic"],
@@ -31,7 +32,7 @@ const phases = [
     steps: [
       ["Start here", "Short website registration", "Submit essential contact, timing, destination, and guest-count details. Scheduling access and the pre-call questionnaire are provided automatically; there is no prior approval gate."],
       ["Immediately after registration", "Request a time and complete the questionnaire", "Request your free consultation time, then complete the short pre-call questionnaire before the call. Most questions are optional and the same-browser registration details are prefilled."],
-      ["First conversation", "Free 30-minute consultation", "Discuss dates, destination ideas, guest origins, event count, Gujarati or Hindu requirements, accessibility, food, what the budget must cover, and whether India outfit sourcing is needed."],
+      ["First conversation", "Free 30-minute consultation", "Discuss dates, destination ideas, guest origins, event count, Gujarati or Hindu requirements, family decision-makers, accessibility, food, what the budget must cover, and whether India outfit sourcing is needed."],
       ["After the call", "Written next-step recommendation", "CeremonyVerse explains whether a free resource, the separate $300 feasibility plan, a planning package, or an India-sourcing scope is the appropriate next step. No paid work begins automatically."],
       ["When feasibility needs proof", "$300 feasibility plan, if selected", "CeremonyVerse reviews the agreed figures and current written information, holds the working session, and delivers the written action brief under the published terms."],
     ],
@@ -40,7 +41,8 @@ const phases = [
     name: "Contract and active planning",
     steps: [
       ["Planning begins here", "Proposal, contract and first payment", "The proposal identifies deliverables, exclusions, staffing, CeremonyVerse fees, known third-party costs, payment milestones, change rules, and cancellation terms. Planning begins only after the contract and required first payment."],
-      ["Immediately after activation", "Kickoff and responsibility map", "Confirm decision-makers, approvals, communication cadence, shared checklist, document locations, and target calendar. Resort, planning, travel, transfer, vendor, sourcing, and family responsibilities receive named owners."],
+      ["Immediately after activation", "Kickoff and responsibility map", "Confirm decision-makers, approvals, communication cadence, shared checklist, document locations, and target calendar. CeremonyVerse, the independent local planning provider, resort, travel, transfer, vendor, sourcing, and family responsibilities receive named owners."],
+      ["Early planning", "Mexico local-planning coordination", "For Mexico weddings, reconcile the cultural brief and family decisions with the destination work included in the local provider’s scope. Confirm the named lead, local handoffs, venue or vendor questions, staffing assumptions, and escalation path before presenting a commitment as final."],
       ["Early planning", "Destination and resort comparison", "Compare event spaces, room-block terms, concessions, vendor rules, Indian and Jain food needs, fire rules, accessibility, transfers, weather backup, and complete written cost."],
       ["Before resort deposits", "Resort, venue and room-block decision", "Organize the open questions and decision record before approval. The resort or qualified provider issues its own contract, booking terms, deposit request, and guest booking process."],
       ["Throughout planning", "Event plan, design and vendor decisions", "Move timelines, cultural requirements, menus, design, décor, production, entertainment, beauty, photography, and vendor quotes through written review and approval."],
@@ -52,7 +54,7 @@ const phases = [
     name: "Finalization, wedding week and closeout",
     steps: [
       ["As the wedding approaches", "Final confirmations and master plan", "Reconcile final counts, menus, rooming information, arrivals, vendor schedules, balances, seating, ceremony needs, weather plans, emergency contacts, and the final run of show."],
-      ["On site", "Wedding-week execution", "The contracted destination team completes the final walkthrough and coordinates provider arrivals, setup, event transitions, timelines, guest-facing information, and issue escalation for the signed scope."],
+      ["On site", "Wedding-week execution", "The named independent local planning provider completes the final walkthrough and coordinates provider arrivals, setup, event transitions, timelines, guest-facing information, and issue escalation for the local work in the signed scope. CeremonyVerse provides only the family-facing coordination included in that scope."],
       ["After the final event", "Closeout and debrief", "Track agreed rental returns, outstanding provider items, lost-and-found, remaining deliverables, and post-event records before the engagement closes."],
     ],
   },
@@ -84,6 +86,10 @@ const faqItems = [
     question: "Who handles rooms, flights, guest payments, and airport transfers?",
     answer: "The applicable resort or qualified travel or transfer provider handles its own bookings, payments, travel changes, and transportation confirmations. CeremonyVerse organizes only the responsibilities included in its signed planning scope.",
   },
+  {
+    question: "How does the Mexico local planning provider work with CeremonyVerse?",
+    answer: "CeremonyVerse coordinates the agreed family-facing planning process. For Mexico weddings, an independent local planning provider performs only the destination and on-site responsibilities listed in the client’s written scope. The proposal identifies the local role, named lead, responsibilities, staffing assumptions, escalation path, and the responsibilities that remain with resorts, vendors, travel providers, and the family.",
+  },
 ]
 const faqSchema = buildFaqSchema(faqItems)
 
@@ -99,7 +105,7 @@ export default function HowItWorksPage() {
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">From first registration to final closeout</p>
           <h1 className="font-serif text-4xl font-semibold !text-white sm:text-6xl">See exactly how CeremonyVerse works with you</h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 !text-white/75">Begin with a free 30-minute consultation. Paid planning starts only after written terms, a signed contract, and the required first payment.</p>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 !text-white/75">Begin with a free 30-minute consultation. We clarify Gujarati and Hindu family priorities, the Mexico local-planning model, and the next decision before any paid planning begins.</p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=mexico&from=how-it-works" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
             <Link href="/planning-tools/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">Use Free Planning Calculators</Link>
