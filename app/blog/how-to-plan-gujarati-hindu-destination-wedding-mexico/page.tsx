@@ -217,7 +217,7 @@ export default function BlogPost() {
               <Link href="/contact/?service=feasibility&from=mexico-planning-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
                 Schedule a Free 30-Minute Consultation
               </Link>
-              <Link href="/indian-wedding-coordination-mexico/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
+              <Link href="/indian-destination-wedding-planner-mexico/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">
                 Review Destination Planning
               </Link>
             </div>
