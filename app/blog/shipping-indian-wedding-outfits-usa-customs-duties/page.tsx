@@ -160,7 +160,7 @@ export default function ShippingGuidePage() {
               Open the Shipping &amp; Customs Calculator →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Need sourcing support? <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841", fontWeight: 600 }}>Review the available service scopes</Link>. Eligible tiers can include shipping-document coordination and tracking support; the selected vendor, carrier, insurer, and customs authority remain responsible for their work.
+              Need sourcing support? <Link href="/buy-indian-wedding-outfits-from-india/" style={{ color: "#7a6841", fontWeight: 600 }}>Review the available service scopes</Link>. Eligible tiers can include shipping-document coordination and tracking support; the selected vendor, carrier, insurer, and customs authority remain responsible for their work.
             </p>
           </div>
 
