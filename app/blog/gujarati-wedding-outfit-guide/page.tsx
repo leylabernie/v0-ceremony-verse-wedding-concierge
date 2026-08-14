@@ -206,7 +206,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             <li><strong>Establish a color story per ceremony, not identical outfits.</strong> Bridesmaids in coordinating shades of the same color family look intentional without looking like a uniform.</li>
             <li><strong>Brief immediate family first.</strong> The two mothers and the mothers-in-law should coordinate with each other and with the bride before anyone else.</li>
             <li><strong>Start sourcing early.</strong> For a 4-day wedding with multiple ceremonies, the bride and immediate family may need 8 to 12 outfits total. That requires time.</li>
-            <li><strong>Work with a <Link href="/services/" style={{ color: "#7a6841" }}>concierge who understands the full picture</Link>.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
+            <li><strong>Work with a <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>concierge who understands the full picture</Link>.</strong> Piecemeal sourcing from five different Instagram sellers is a recipe for a color clash and a headache.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
             CeremonyVerse can translate a family-approved Gujarati ceremony plan into a documented outfit
@@ -250,7 +250,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
             ← Back to Blog
           </Link>
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/gujarati-wedding-outfits-usa/" style={{ color: "#7a6841" }}>Gujarati Wedding Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
+            More helpful resources: <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/gujarati-wedding-outfits-usa/" style={{ color: "#7a6841" }}>Gujarati Wedding Outfits</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>
               <SourcingCallout />

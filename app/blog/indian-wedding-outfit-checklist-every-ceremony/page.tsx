@@ -153,7 +153,7 @@ export default function OutfitChecklistPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/" style={{ color: "#7a6841" }}>
+                <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>
                   Wedding outfit sourcing for NRI families — how CeremonyVerse works
                 </Link>
               </li>

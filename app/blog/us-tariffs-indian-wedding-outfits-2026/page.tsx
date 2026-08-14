@@ -130,7 +130,7 @@ export default function TariffsBlogPost() {
             How CeremonyVerse Handles This For You
           </h2>
           <p>
-            This is exactly the kind of complexity that makes working with a dedicated <Link href="/services/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
+            This is exactly the kind of complexity that makes working with a dedicated <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>Indian wedding shopping concierge</Link> worth it — versus trying to coordinate everything yourself across twelve time zones.
           </p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
             <li><strong>Sourcing with documentation in mind.</strong> Ask the selected vendor for accurate invoicing, item descriptions, fiber information, country-of-origin information, and the shipment documents requested by the carrier or customs professional.</li>
@@ -198,7 +198,7 @@ export default function TariffsBlogPost() {
             ← Back to Blog
           </Link>
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
+            More helpful resources: <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link> · <Link href="/free-guides/" style={{ color: "#7a6841" }}>Free Guides</Link>
           </p>
         </div>
               <SourcingCallout />

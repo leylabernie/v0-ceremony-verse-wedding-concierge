@@ -82,7 +82,7 @@ const servicePillars = [
       "Multi-day timelines and on-site event management",
       "Family and guest coordination included at the selected planning-package level",
     ],
-    href: "/indian-wedding-coordination-mexico/",
+    href: "/indian-destination-wedding-planner-mexico/",
     cta: "Explore Destination Planning",
   },
   {

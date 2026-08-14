@@ -164,7 +164,7 @@ export default function ServicesPage() {
               Compare Planning Pricing
             </Link>
             <Link
-              href="/indian-wedding-coordination-mexico/"
+              href="/indian-destination-wedding-planner-mexico/"
               className="inline-flex rounded-full border border-[#c5a059] px-7 py-3.5 text-sm font-semibold !text-[#f8f6f2]"
             >
               Explore Destination Planning

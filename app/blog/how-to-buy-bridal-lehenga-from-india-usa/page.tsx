@@ -106,7 +106,7 @@ export default function LehengaBuyingGuideBlogPost() {
             <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
-            A <Link href="/services/" style={{ color: "#7a6841" }}>shopping concierge</Link> can organize options, measurements, approvals, written costs, and next actions. Confirm its exact scope and the independent seller&apos;s responsibilities before paid work begins. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
+            A <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>shopping concierge</Link> can organize options, measurements, approvals, written costs, and next actions. Confirm its exact scope and the independent seller&apos;s responsibilities before paid work begins. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -264,7 +264,7 @@ export default function LehengaBuyingGuideBlogPost() {
           </div>
 
           <p style={{ marginTop: "1rem", fontSize: "0.95rem", color: "#4d403a" }}>
-            More helpful resources: <Link href="/services/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
+            More helpful resources: <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>Our Services</Link> · <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>Bridal Lehengas</Link> · <Link href="/how-it-works/" style={{ color: "#7a6841" }}>How It Works</Link> · <Link href="/pricing/" style={{ color: "#7a6841" }}>Pricing</Link> · <Link href="/faq/" style={{ color: "#7a6841" }}>FAQ</Link>
           </p>
         </div>
               <SourcingCallout />

@@ -314,14 +314,14 @@ export default function SherwaniGuidePage() {
               Open Free Planning Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want help researching a sherwani? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See how groom sourcing works</Link> — eligible live review, vendor-specific measurement coordination, written approvals, and delivery support within the selected scope.
+              Want help researching a sherwani? <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841", fontWeight: 600 }}>See how groom sourcing works</Link> — eligible live review, vendor-specific measurement coordination, written approvals, and delivery support within the selected scope.
             </p>
           </div>
 
           <hr style={{ border: "none", borderTop: "1px solid #e6dfd5", margin: "2.5rem 0" }} />
 
           <p style={{ fontSize: "0.95rem", color: "#5e4a40" }}>
-            <strong>About CeremonyVerse:</strong> CeremonyVerse is a U.S.-based Indian wedding shopping concierge. Eligible tiers may include live review, measurement coordination, written approvals, pre-shipping review, and delivery support when the selected item and vendor allow it. <Link href="/services/" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
+            <strong>About CeremonyVerse:</strong> CeremonyVerse is a U.S.-based Indian wedding shopping concierge. Eligible tiers may include live review, measurement coordination, written approvals, pre-shipping review, and delivery support when the selected item and vendor allow it. <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841" }}>See what we source</Link> or <Link href="/faq/" style={{ color: "#7a6841" }}>read our FAQ</Link>.
           </p>
 
         </div>

@@ -178,7 +178,7 @@ export default function ScamsGuidePage() {
               Open Free Vendor Resources →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
-              Want help organizing the evidence? <Link href="/services/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free 30-minute consultation</Link> to see whether the service fits your needs.
+              Want help organizing the evidence? <Link href="/indian-destination-wedding-planner-mexico/" style={{ color: "#7a6841", fontWeight: 600 }}>See CeremonyVerse services</Link> for documented options, measurements, approvals, and delivery responsibilities. <Link href="/contact/" style={{ color: "#7a6841", fontWeight: 600 }}>Request a free 30-minute consultation</Link> to see whether the service fits your needs.
             </p>
           </div>
 

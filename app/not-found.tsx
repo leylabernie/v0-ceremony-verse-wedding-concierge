@@ -33,7 +33,7 @@ export default function NotFound() {
           <Link href="/" style={{ background: "#7a6841", color: "#fff", padding: "0.8rem 1.6rem", borderRadius: "999px", fontWeight: 600, textDecoration: "none" }}>
             Back to Home
           </Link>
-          <Link href="/services/" style={{ background: "transparent", color: "#4d403a", border: "1px solid #7a6841", padding: "0.8rem 1.6rem", borderRadius: "999px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/indian-destination-wedding-planner-mexico/" style={{ background: "transparent", color: "#4d403a", border: "1px solid #7a6841", padding: "0.8rem 1.6rem", borderRadius: "999px", fontWeight: 600, textDecoration: "none" }}>
             Our Services
           </Link>
           <Link href="/contact/" style={{ background: "transparent", color: "#4d403a", border: "1px solid #e6dfd5", padding: "0.8rem 1.6rem", borderRadius: "999px", fontWeight: 600, textDecoration: "none" }}>
