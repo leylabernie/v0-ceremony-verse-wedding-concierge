@@ -1,4 +1,4 @@
-// CONTENT-ONLY UPDATE: Preserve the existing form controls, data flow, layout, styles, and interactions.
+// CEREMONYVERSE EDITORIAL STYLE: Preserve the warm, restrained destination-wedding visual system; change only copy and conversion flow, never the established design language.
 "use client"
 
 import Link from "next/link"
@@ -66,6 +66,7 @@ const getServiceInterestFromLocation = () => {
 
 export function ContactPage() {
   const [formData, setFormData] = useState<LeadFormData>(initialFormData)
+  const [formStep, setFormStep] = useState<1 | 2>(1)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
@@ -80,7 +81,6 @@ export function ContactPage() {
     getServerServiceInterest,
   )
   const serviceInterest = formData.serviceInterest || requestedServiceInterest
-  const destinationService = serviceInterest.toLowerCase().includes("destination")
 
   const updateFormData = <K extends keyof LeadFormData>(field: K, value: LeadFormData[K]) => {
     if (!formStarted.current) {
@@ -96,8 +96,22 @@ export function ContactPage() {
       formData.email.trim() &&
       formData.clientCountry.trim() &&
       formData.eventTimeframe.trim() &&
+      formData.eventLocation.trim() &&
+      formData.guestCount.trim() &&
       formData.privacyConsent,
   )
+
+  const continueToPreparation = () => {
+    if (!canSubmit) return
+    trackEvent("consultation_step_completed", {
+      form_step: "essentials",
+      service_interest: serviceInterest,
+      event_timeframe: formData.eventTimeframe,
+      event_location_status: formData.eventLocation,
+      guest_count_band: formData.guestCount,
+    })
+    setFormStep(2)
+  }
 
   const fallbackText = useMemo(
     () =>
@@ -199,15 +213,12 @@ export function ContactPage() {
           <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border-2 border-[#7a6841] text-3xl text-[#7a6841]">
             ✓
           </div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-            Registration complete
-          </p>
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Your planning request is in</p>
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            You can request a consultation time now—there is no approval wait. Please complete the automatically
-            delivered questionnaire before the call so CeremonyVerse can prepare around your family priorities, wedding, and local-planning questions.
+            Your first 30-minute CeremonyVerse consultation is free. Choose a time now, then complete the short pre-call questionnaire so the conversation can begin with your family’s actual decisions—not a generic script.
           </p>
           <a
             href={schedulingUrl}
@@ -221,7 +232,7 @@ export function ContactPage() {
             }
             className="mt-8 inline-flex rounded-full bg-[#128c7e] px-7 py-3.5 text-sm font-semibold text-white"
           >
-            Request My Consultation Time
+            Choose My Consultation Time
           </a>
           {questionnaireUrl ? (
             <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
@@ -249,12 +260,12 @@ export function ContactPage() {
             </div>
           ) : null}
           <div className="mt-10 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
-            <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Helpful items for the call</h2>
+            <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Bring what you have—not a perfect brief</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">
-              <li>• Any current resort proposal, room-block terms, or venue information.</li>
-              <li>• Your event list, the traditions your family considers essential, and the people who need to make key decisions.</li>
-              <li>• Known estimates and what the working budget must cover.</li>
-              <li>• The local-planning or on-site support you expect, if you already know it.</li>
+              <li>• A date range, estimated guest count, and any events your family considers essential.</li>
+              <li>• Mexico ideas, current resort proposals, room-block terms, or venue information if you have them.</li>
+              <li>• The question your family needs answered next and the people who should be part of the decision.</li>
+              <li>• Please do not send payment details, travel documents, or other sensitive personal information.</li>
             </ul>
           </div>
         </div>
@@ -266,25 +277,17 @@ export function ContactPage() {
     <main className="min-h-screen bg-[#faf8f5]">
       <section className="px-6 py-20 text-center sm:py-24">
         <div className="mx-auto max-w-3xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">
-            Begin with the facts
-          </p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Gujarati &amp; Hindu destination wedding planning in Mexico</p>
           <h1 className="font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] sm:text-6xl">
-            Your First 30-Minute Consultation Is Free
+            Start with the Mexico wedding decision your family needs to make next.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
-            Register with the essentials below, then request your consultation time immediately. Your introductory
-            call with Mini is a family-centered conversation about your priorities, destination questions, and local-planning needs; it requires no payment, contract, or prior approval.
+            Share the essentials below. CeremonyVerse will use them to prepare a family-centered conversation about your ceremonies, resort questions, guest experience, and local-planning needs. You do not need a finished resort proposal or a complete guest list to begin.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
-            <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
+            <p className="font-semibold text-[#1f1f1f]">The free call and any paid service are separate.</p>
             <p className="mt-2">
-              Your first 30-minute consultation is free. The $300 Destination Wedding Feasibility &amp; Action Plan and
-              all planning or sourcing packages are paid services offered only after you approve a written scope. If
-              you purchase the $300 plan and sign a CeremonyVerse destination-planning contract within 30 days after
-              the written plan is delivered, the full $300 is credited toward your CeremonyVerse planning service fee.
-              Submit this short registration first. Scheduling opens immediately, and the pre-call questionnaire is
-              emailed automatically for completion before the call.
+              Your first 30-minute consultation is free. It does not reserve a resort, vendor, date, or planning package. CeremonyVerse will clarify the most important next decision before recommending a paid service or private proposal, if either is appropriate.
             </p>
           </div>
         </div>
@@ -304,68 +307,125 @@ export function ContactPage() {
               />
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div className="sm:col-span-2">
-                <label htmlFor="serviceInterest" className={labelClass}>
-                  What do you need? <span className="text-[#7a6841]">*</span>
-                </label>
-                <select id="serviceInterest" value={serviceInterest} onChange={(event) => updateFormData("serviceInterest", event.target.value)} className={inputClass} required>
-                  <option value="">Select a service</option>
-                  <option value="Destination Wedding Feasibility & Action Plan ($300)">$300 Destination Wedding Feasibility &amp; Action Plan</option>
-                  <option value="Destination wedding planning">Destination wedding planning and support</option>
-                  <option value="India shopping">India wedding shopping and sourcing</option>
-                  <option value="India shopping + destination wedding planning">Both destination planning and India sourcing</option>
-                  <option value="Not sure">Not sure yet</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="name" className={labelClass}>Full name <span className="text-[#7a6841]">*</span></label>
-                <input id="name" className={inputClass} value={formData.name} onChange={(event) => updateFormData("name", event.target.value)} autoComplete="name" required />
-              </div>
-              <div>
-                <label htmlFor="email" className={labelClass}>Email <span className="text-[#7a6841]">*</span></label>
-                <input id="email" type="email" className={inputClass} value={formData.email} onChange={(event) => updateFormData("email", event.target.value)} autoComplete="email" required />
-              </div>
-              <div>
-                <label htmlFor="phone" className={labelClass}>Phone / WhatsApp</label>
-                <input id="phone" type="tel" className={inputClass} value={formData.phone} onChange={(event) => updateFormData("phone", event.target.value)} autoComplete="tel" />
-              </div>
-              <div>
-                <label htmlFor="clientCountry" className={labelClass}>Where do you live? <span className="text-[#7a6841]">*</span></label>
-                <select id="clientCountry" className={inputClass} value={formData.clientCountry} onChange={(event) => updateFormData("clientCountry", event.target.value)} required>
-                  <option value="">Select</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div>
-                <label htmlFor="eventTimeframe" className={labelClass}>Wedding timeframe <span className="text-[#7a6841]">*</span></label>
-                <input id="eventTimeframe" className={inputClass} value={formData.eventTimeframe} onChange={(event) => updateFormData("eventTimeframe", event.target.value)} placeholder="Exact date, month/year, or not decided" required />
-              </div>
-              <div>
-                <label htmlFor="eventLocation" className={labelClass}>Destination or event location</label>
-                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region or Punta Cana" : "City, state, or destination"} />
-              </div>
-              <div>
-                <label htmlFor="guestCount" className={labelClass}>Estimated guests</label>
-                <input id="guestCount" type="number" min="0" max="5000" className={inputClass} value={formData.guestCount} onChange={(event) => updateFormData("guestCount", event.target.value)} placeholder="150" />
-              </div>
+            <div className="mb-8 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#7a6841]">
+              <span className={formStep === 1 ? "flex h-7 w-7 items-center justify-center rounded-full bg-[#7a6841] text-white" : "flex h-7 w-7 items-center justify-center rounded-full border border-[#7a6841]"}>1</span>
+              <span>Start your request</span>
+              <span className="h-px w-8 bg-[#d7c7a4]" />
+              <span className={formStep === 2 ? "flex h-7 w-7 items-center justify-center rounded-full bg-[#7a6841] text-white" : "flex h-7 w-7 items-center justify-center rounded-full border border-[#d7c7a4] text-[#8a7d73]"}>2</span>
+              <span className={formStep === 2 ? "text-[#7a6841]" : "text-[#8a7d73]"}>Help us prepare</span>
             </div>
 
-            <label className="mt-7 flex items-start gap-3 text-sm leading-6 text-[#4d403a]">
-              <input
-                type="checkbox"
-                checked={formData.privacyConsent}
-                onChange={(event) => updateFormData("privacyConsent", event.target.checked)}
-                className="mt-1 h-4 w-4 accent-[#7a6841]"
-                required
-              />
-              <span>
-                I agree that CeremonyVerse may use these details to respond to my consultation request.
-                This does not subscribe me to marketing. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy policy</Link>.
-              </span>
-            </label>
+            {formStep === 1 ? (
+              <>
+                <div className="mb-7">
+                  <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">Start your free Mexico wedding planning request</h2>
+                  <p className="mt-3 max-w-2xl leading-7 text-[#4d403a]">Tell us the essentials so we can prepare a useful call. We use these details only to respond to your request and prepare the conversation.</p>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div className="sm:col-span-2">
+                    <label htmlFor="serviceInterest" className={labelClass}>What would be most useful right now? <span className="text-[#7a6841]">*</span></label>
+                    <select id="serviceInterest" value={serviceInterest} onChange={(event) => updateFormData("serviceInterest", event.target.value)} className={inputClass} required>
+                      <option value="">Select a planning need</option>
+                      <option value="Destination wedding planning">I need Gujarati / Hindu multi-day planning support</option>
+                      <option value="Destination Wedding Feasibility & Action Plan ($300)">I have resort proposals or decisions to compare</option>
+                      <option value="India shopping">I am also interested in India wedding shopping and sourcing</option>
+                      <option value="India shopping + destination wedding planning">I need both destination planning and India sourcing</option>
+                      <option value="Not sure">I am not sure yet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="name" className={labelClass}>First name <span className="text-[#7a6841]">*</span></label>
+                    <input id="name" className={inputClass} value={formData.name} onChange={(event) => updateFormData("name", event.target.value)} autoComplete="name" required />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className={labelClass}>Email address <span className="text-[#7a6841]">*</span></label>
+                    <input id="email" type="email" className={inputClass} value={formData.email} onChange={(event) => updateFormData("email", event.target.value)} autoComplete="email" required />
+                  </div>
+                  <div>
+                    <label htmlFor="clientCountry" className={labelClass}>Where do you live? <span className="text-[#7a6841]">*</span></label>
+                    <select id="clientCountry" className={inputClass} value={formData.clientCountry} onChange={(event) => updateFormData("clientCountry", event.target.value)} required>
+                      <option value="">Select</option>
+                      <option value="United States">United States</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="eventTimeframe" className={labelClass}>When is the wedding? <span className="text-[#7a6841]">*</span></label>
+                    <select id="eventTimeframe" className={inputClass} value={formData.eventTimeframe} onChange={(event) => updateFormData("eventTimeframe", event.target.value)} required>
+                      <option value="">Select a timeframe</option>
+                      <option value="Less than 6 months">Less than 6 months</option>
+                      <option value="6–9 months">6–9 months</option>
+                      <option value="9–12 months">9–12 months</option>
+                      <option value="12–18 months">12–18 months</option>
+                      <option value="18+ months">18+ months</option>
+                      <option value="Not decided yet">Not decided yet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="eventLocation" className={labelClass}>Where are you in the Mexico decision? <span className="text-[#7a6841]">*</span></label>
+                    <select id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} required>
+                      <option value="">Select one</option>
+                      <option value="We have a resort">We have a resort</option>
+                      <option value="We are comparing resorts">We are comparing resorts</option>
+                      <option value="We have a region in mind">We have a region in mind</option>
+                      <option value="We are exploring Mexico">We are exploring Mexico</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label htmlFor="guestCount" className={labelClass}>Estimated guest count <span className="text-[#7a6841]">*</span></label>
+                    <select id="guestCount" className={inputClass} value={formData.guestCount} onChange={(event) => updateFormData("guestCount", event.target.value)} required>
+                      <option value="">Select a range</option>
+                      <option value="Under 75">Under 75</option>
+                      <option value="75–125">75–125</option>
+                      <option value="126–200">126–200</option>
+                      <option value="201–300">201–300</option>
+                      <option value="300+">300+</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                </div>
+                <label className="mt-7 flex items-start gap-3 text-sm leading-6 text-[#4d403a]">
+                  <input type="checkbox" checked={formData.privacyConsent} onChange={(event) => updateFormData("privacyConsent", event.target.checked)} className="mt-1 h-4 w-4 accent-[#7a6841]" required />
+                  <span>I agree that CeremonyVerse may use these details to respond to my consultation request. This does not subscribe me to marketing. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy policy</Link>.</span>
+                </label>
+                <button type="button" onClick={continueToPreparation} disabled={!canSubmit} className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={canSubmit ? { background: "#7a6841", color: "#fff" } : undefined}>Continue to the planning questions</button>
+              </>
+            ) : (
+              <>
+                <div className="mb-7">
+                  <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">What would make the first call most useful?</h2>
+                  <p className="mt-3 max-w-2xl leading-7 text-[#4d403a]">These answers are optional. They help us begin with the right question rather than asking your family to repeat the same context later.</p>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="phone" className={labelClass}>Phone / WhatsApp <span className="font-normal text-[#6d625c]">(optional)</span></label>
+                    <input id="phone" type="tel" className={inputClass} value={formData.phone} onChange={(event) => updateFormData("phone", event.target.value)} autoComplete="tel" placeholder="Useful if you prefer a faster reply" />
+                  </div>
+                  <div>
+                    <label htmlFor="eventCount" className={labelClass}>Which events are you considering? <span className="font-normal text-[#6d625c]">(optional)</span></label>
+                    <select id="eventCount" className={inputClass} value={formData.eventCount} onChange={(event) => updateFormData("eventCount", event.target.value)}>
+                      <option value="">Select the closest fit</option>
+                      <option value="Welcome / Mehndi / Haldi">Welcome event, Mehndi, or Haldi</option>
+                      <option value="Garba / Sangeet">Garba or Sangeet</option>
+                      <option value="Baraat / Pheras">Baraat or Pheras</option>
+                      <option value="Reception">Reception</option>
+                      <option value="Multiple events">Multiple events</option>
+                      <option value="Not sure yet">Not sure yet</option>
+                    </select>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label htmlFor="vision" className={labelClass}>Anything we should know before the call? <span className="font-normal text-[#6d625c]">(optional)</span></label>
+                    <textarea id="vision" className={`${inputClass} min-h-32 resize-y`} value={formData.vision} onChange={(event) => updateFormData("vision", event.target.value)} placeholder="For example: the decision that feels most unclear, a resort proposal you want to compare, or a family priority. Please do not include payment details, travel documents, or other sensitive personal information." />
+                  </div>
+                </div>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <button type="button" onClick={() => setFormStep(1)} className="rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]">Back to essentials</button>
+                  <button type="submit" disabled={!canSubmit || isLoading} className="flex-1 rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]" style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}>{isLoading ? "Sending Securely…" : "Request My Free 30-Minute Planning Call"}</button>
+                </div>
+              </>
+            )}
 
             {error ? (
               <div className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-5 text-sm text-red-900" role="alert" aria-live="polite">
@@ -383,17 +443,8 @@ export function ContactPage() {
               </div>
             ) : null}
 
-            <button
-              type="submit"
-              disabled={!canSubmit || isLoading}
-              className="mt-8 w-full rounded-full px-6 py-4 text-sm font-semibold transition disabled:cursor-not-allowed disabled:bg-[#e6dfd5] disabled:text-[#9a948d]"
-              style={canSubmit && !isLoading ? { background: "#7a6841", color: "#fff" } : undefined}
-            >
-              {isLoading ? "Sending Securely…" : "Request My Free 30-Minute Consultation"}
-            </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
-              No payment is required to register or attend the first 30-minute consultation. After registration,
-              request a time immediately and complete the emailed questionnaire before the call. Do not include sensitive documents.
+              No payment is required to register or attend the first 30-minute consultation. A consultation request does not reserve a resort, vendor, wedding date, or planning package.
             </p>
           </div>
         </form>

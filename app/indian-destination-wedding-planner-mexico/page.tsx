@@ -1,4 +1,4 @@
-// CONTENT-ONLY UPDATE: Preserve the established Mexico guide layout while clarifying Gujarati family and local-provider roles.
+// CEREMONYVERSE EDITORIAL STYLE: Preserve the established Mexico guide layout, visual hierarchy, and destination-wedding aesthetic; change only conversion copy and role clarity.
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import {
@@ -152,30 +152,29 @@ export default function MexicoDestinationGuidePage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-white">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#c5a059]">
-            2027 planning guide
+            Gujarati &amp; Hindu destination wedding planning in Mexico
           </p>
           <h1
             className="text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Gujarati &amp; Hindu destination wedding planning in Mexico
+            Plan the Mexico wedding your whole family can move forward with.
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            Build a Mexico wedding plan around your family’s actual ceremonies, decision-makers, guest experience,
-            local execution roles, complete budget, and current written provider terms—not a resort brochure or package headline.
+            Bring your ceremonies, family priorities, resort questions, guest experience, and local-planning needs into one documented process. Compare what matters, identify who owns each decision, and prepare for the next commitment using current written provider terms—not a package headline.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
-              Schedule a Free 30-Minute Consultation
+              Schedule Your Free 30-Minute Planning Call
             </Link>
             <Link
               href="/planning-tools/"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
-              Use Free Wedding Calculators
+              See the Mexico Planning Questions First
             </Link>
           </div>
         </div>
@@ -394,24 +393,23 @@ export default function MexicoDestinationGuidePage() {
             className="text-3xl font-semibold md:text-5xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Bring us the proposals before you sign them.
+            Leave the first call knowing what to decide next.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#f4eee6]">
-            CeremonyVerse can help organize the comparison, identify unanswered questions, and recommend the
-            planning package whose included family and guest support fits what you have already completed.
+            Start with a free 30-minute conversation about where your family is in the process, the question that needs a real answer next, and the appropriate path forward—without asking you to commit on the call.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
               href="/contact/?service=mexico"
               className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
             >
-              Schedule a Free 30-Minute Consultation
+              Start With a Free 30-Minute Planning Call
             </Link>
             <Link
               href="/buy-indian-wedding-outfits-from-india/"
               className="rounded-lg border-2 border-white px-8 py-4 text-lg font-bold text-white"
             >
-              Add India Shopping
+              Review the Mexico Planning Questions
             </Link>
           </div>
         </div>
