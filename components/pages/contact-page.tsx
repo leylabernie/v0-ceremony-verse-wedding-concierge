@@ -143,6 +143,16 @@ export function ContactPage() {
     `Service: ${serviceInterest}`,
   ].join("\n")
   const schedulingUrl = `https://wa.me/12153419990?text=${encodeURIComponent(schedulingMessage)}`
+  const schedulingEmailBody = [
+    "Hello CeremonyVerse, I registered on the website and would like to arrange my free 30-minute consultation.",
+    `Request ID: ${requestId}`,
+    `Name: ${formData.name}`,
+    `Service: ${serviceInterest}`,
+    "My preferred dates and times are:",
+  ].join("\n")
+  const schedulingEmailUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+    "Arrange my CeremonyVerse consultation",
+  )}&body=${encodeURIComponent(schedulingEmailBody)}`
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
@@ -235,23 +245,53 @@ export function ContactPage() {
             Thank you, {formData.name}.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            You can request a consultation time now—there is no approval wait. Please complete the automatically
-            delivered questionnaire before the call so CeremonyVerse can prepare around your wedding.
+            Choose the contact method that is easiest for you, then share your preferred dates and times. Please
+            complete the automatically delivered questionnaire before the call so Mini can prepare around your wedding.
           </p>
-          <a
-            href={schedulingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() =>
-              trackEvent("consultation_scheduling_click", {
-                scheduling_method: "whatsapp",
-                service_interest: serviceInterest,
-              })
-            }
-            className="mt-8 inline-flex rounded-full bg-[#128c7e] px-7 py-3.5 text-sm font-semibold text-white"
-          >
-            Request My Consultation Time
-          </a>
+          <div className="mt-8 rounded-3xl border border-[#e6dfd5] bg-white p-7 text-left sm:p-8">
+            <h2 className="text-center font-serif text-2xl font-semibold text-[#1f1f1f]">Choose how to arrange your call</h2>
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              <a
+                href={schedulingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "whatsapp",
+                    service_interest: serviceInterest,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full bg-[#128c7e] px-5 py-3 text-center text-sm font-semibold text-white"
+              >
+                WhatsApp Availability
+              </a>
+              <a
+                href="tel:+12153419990"
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "phone",
+                    service_interest: serviceInterest,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-white"
+              >
+                Call (215) 341-9990
+              </a>
+              <a
+                href={schedulingEmailUrl}
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "email",
+                    service_interest: serviceInterest,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]"
+              >
+                Email Preferred Times
+              </a>
+            </div>
+            <p className="mt-5 text-center text-sm leading-6 text-[#6a5b52]">Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.</p>
+          </div>
           {questionnaireUrl ? (
             <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
               <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Complete the pre-call questionnaire</h2>
@@ -301,9 +341,23 @@ export function ContactPage() {
             Your First 30-Minute Consultation Is Free
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
-            Share four essentials below, then request your consultation time immediately. The remaining planning
-            questions arrive automatically by email so registration stays short.
+            Share four essentials below, then choose WhatsApp, phone, or email to arrange your consultation. The
+            remaining planning questions arrive automatically by email so registration stays short.
           </p>
+          <ol className="mx-auto mt-8 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
+            <li className="rounded-2xl border border-[#e6dfd5] bg-white p-5">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">1 · Register</span>
+              <p className="mt-2 text-sm leading-6 text-[#4d403a]">Share service, name, email, and wedding timeframe.</p>
+            </li>
+            <li className="rounded-2xl border border-[#e6dfd5] bg-white p-5">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">2 · Arrange</span>
+              <p className="mt-2 text-sm leading-6 text-[#4d403a]">Choose WhatsApp, phone, or email to share availability.</p>
+            </li>
+            <li className="rounded-2xl border border-[#e6dfd5] bg-white p-5">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">3 · Prepare</span>
+              <p className="mt-2 text-sm leading-6 text-[#4d403a]">Complete the 3–5 minute questionnaire before the call.</p>
+            </li>
+          </ol>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
             <p className="mt-2">
@@ -401,7 +455,7 @@ export function ContactPage() {
             </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#6d625c]">
               No payment is required to register or attend the first 30-minute consultation. After registration,
-              request a time immediately and complete the emailed questionnaire before the call. Do not include sensitive documents.
+              choose how to share your availability and complete the emailed questionnaire before the call. Do not include sensitive documents.
             </p>
           </div>
         </form>

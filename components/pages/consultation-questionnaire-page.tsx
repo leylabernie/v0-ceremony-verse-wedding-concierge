@@ -218,6 +218,16 @@ export function ConsultationQuestionnairePage() {
     "I would like to choose a time for my free consultation.",
   ].join("\n")
   const schedulingUrl = `https://wa.me/12153419990?text=${encodeURIComponent(schedulingMessage)}`
+  const schedulingEmailMessage = [
+    "Hello CeremonyVerse, I completed my consultation request and pre-call questionnaire.",
+    `Request ID: ${formData.requestId}`,
+    `Name: ${formData.name}`,
+    `Service: ${formData.serviceFocus}`,
+    "My preferred dates and times are:",
+  ].join("\n")
+  const schedulingEmailUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+    "Arrange my CeremonyVerse consultation",
+  )}&body=${encodeURIComponent(schedulingEmailMessage)}`
 
   const handleSubmitAttempt = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (isLoading || !formData.privacyConsent) return
@@ -312,14 +322,50 @@ export function ConsultationQuestionnairePage() {
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
             Your answers are ready for Mini. If you have not chosen a consultation time, you can do that now.
           </p>
-          <a
-            href={schedulingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white"
-          >
-            Request a Consultation Time on WhatsApp
-          </a>
+          <div className="mt-8 rounded-3xl border border-[#e6dfd5] bg-white p-7 text-left sm:p-8">
+            <h2 className="text-center font-serif text-2xl font-semibold text-[#1f1f1f]">Choose how to arrange your call</h2>
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              <a
+                href={schedulingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "whatsapp",
+                    service_interest: formData.serviceFocus,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full bg-[#128c7e] px-5 py-3 text-center text-sm font-semibold text-white"
+              >
+                WhatsApp Availability
+              </a>
+              <a
+                href="tel:+12153419990"
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "phone",
+                    service_interest: formData.serviceFocus,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-white"
+              >
+                Call (215) 341-9990
+              </a>
+              <a
+                href={schedulingEmailUrl}
+                onClick={() =>
+                  trackEvent("consultation_scheduling_click", {
+                    scheduling_method: "email",
+                    service_interest: formData.serviceFocus,
+                  })
+                }
+                className="inline-flex items-center justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]"
+              >
+                Email Preferred Times
+              </a>
+            </div>
+            <p className="mt-5 text-center text-sm leading-6 text-[#6a5b52]">Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.</p>
+          </div>
           <div className="mt-9 rounded-2xl border border-[#e6dfd5] bg-white p-8 text-left">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Helpful for the call</h2>
             <ul className="mt-5 space-y-3 text-[#4d403a]">

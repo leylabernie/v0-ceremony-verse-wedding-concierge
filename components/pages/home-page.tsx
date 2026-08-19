@@ -155,8 +155,8 @@ export function HomePage() {
               Gujarati &amp; Hindu destination weddings in Mexico and Punta Cana
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Bring a multi-day celebration together through one family-facing coordinator, culturally informed
-              planning, an experienced destination team, and on-site execution defined for your wedding.
+              Work with Mini as your family-facing contact, with culturally informed planning and a Mexico City-based
+              destination team for the local and on-site scope defined in writing for your wedding.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -186,10 +186,10 @@ export function HomePage() {
             a CeremonyVerse client event.
           </p>
           <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
+            <p>Mini, one family-facing contact</p>
             <p>Gujarati &amp; Hindu focus</p>
-            <p>Mexico &amp; Punta Cana planning</p>
             <p>Mexico City-based local execution</p>
-            <p>Optional India outfit sourcing</p>
+            <p>United States &amp; Canada family support</p>
           </div>
         </div>
       </section>
@@ -223,23 +223,43 @@ export function HomePage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family experience</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Meet your family-side contact</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">Mini, founder and destination-wedding concierge</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">Based in Philadelphia, Mini keeps family priorities, approvals, guest information, and decision records connected through one named point of contact.</p>
+              <Link href="/about/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Meet Mini and read the background</Link>
+            </article>
+            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Firsthand family experience</p>
               <h3 className="mt-3 font-serif text-2xl font-semibold">Three Mexico wedding journeys</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">See the firsthand family wedding experiences that shaped the questions, safeguards, and family support used today.</p>
+              <p className="mt-4 leading-7 text-[#4d403a]">See the family wedding experiences that shaped the questions, safeguards, and family support used today. They are labeled as family events, not client projects.</p>
               <Link href="/real-weddings/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See the family experience</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Public customer feedback</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">Independent review profile</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">Read feedback published independently on Trustpilot. CeremonyVerse does not convert these reviews into self-awarded website ratings.</p>
-              <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Read CeremonyVerse reviews on Trustpilot</a>
-            </article>
-            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Clear planning relationship</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">One family contact, experienced local execution</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">See how CeremonyVerse, the destination team, resorts, and providers work together before you select a paid scope.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Local execution</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">Mexico City-based destination team</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">Local planning, vendor coordination, and on-site responsibilities are listed in your private proposal so you can see the working relationship before paying.</p>
               <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Review the complete process</Link>
             </article>
+          </div>
+          <div className="mt-8 rounded-3xl border border-[#d7c7a4] bg-[#f4eee4] p-7 sm:p-10">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Verified words, accurately labeled</p>
+              <h3 className="mt-3 font-serif text-3xl font-semibold">Genuine feedback from completed pre-launch sourcing work</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">These public reviews relate to earlier outfit and shopping support. They are not presented as destination-wedding planning reviews.</p>
+            </div>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              <figure className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
+                <blockquote className="font-serif text-2xl leading-9 text-[#1f1f1f]">“They really made the process so much easier for me.”</blockquote>
+                <figcaption className="mt-5 text-sm leading-6 text-[#5e4a40]"><span className="font-semibold">April Joseph</span><br />Public Trustpilot review · pre-launch sourcing customer feedback</figcaption>
+              </figure>
+              <figure className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
+                <blockquote className="font-serif text-2xl leading-9 text-[#1f1f1f]">“Customer care that was tailored to everything we envisioned.”</blockquote>
+                <figcaption className="mt-5 text-sm leading-6 text-[#5e4a40]"><span className="font-semibold">Kaval Patel</span><br />Public Trustpilot review · pre-launch sourcing customer feedback</figcaption>
+              </figure>
+            </div>
+            <div className="mt-7 text-center">
+              <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Read the original public reviews on Trustpilot</a>
+            </div>
           </div>
         </div>
       </section>
@@ -394,6 +414,21 @@ export function HomePage() {
             The final contract identifies included work, exclusions, fees, payment milestones, approvals, change rules,
             and outside costs before paid planning starts.
           </p>
+          <div className="mt-10 rounded-3xl bg-[#1f1f1f] p-8 text-white sm:p-10">
+            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">A better standard than a badge</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold !text-white">How to evaluate CeremonyVerse before paying</h3>
+                <p className="mt-4 leading-7 !text-white/75">You should not have to rely on a logo, rating graphic, or sales promise to understand the risk.</p>
+              </div>
+              <ul className="space-y-4 text-sm leading-6 !text-white/85 sm:text-base sm:leading-7">
+                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">01</span><span>Your first 30-minute call is free, with no payment or contract required.</span></li>
+                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">02</span><span>Public prices, planning tools, process details, and policies are available without an email gate.</span></li>
+                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">03</span><span>Your private proposal lists the exact scope, owners, fees, exclusions, milestones, and outside costs before paid work begins.</span></li>
+                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">04</span><span>Resorts and qualified travel, transfer, and vendor providers issue and control their own contracts, bookings, and payments.</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
