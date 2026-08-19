@@ -3,9 +3,9 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata = buildMetadata({
   path: '/',
-  title: 'Gujarati & Hindu Destination Wedding Planning',
+  title: 'Gujarati & Hindu Destination Wedding Planner — Mexico & Punta Cana',
   description:
-    "CeremonyVerse helps U.S. and Canadian families organize multi-day Gujarati and Hindu destination weddings in Mexico and Punta Cana, with optional paid India wedding-outfit sourcing.",
+    "Plan a multi-day Gujarati or Hindu destination wedding in Mexico or Punta Cana with one family-facing coordinator and experienced local execution.",
   image: '/images/proof/family-destination-baarat.webp',
 });
 

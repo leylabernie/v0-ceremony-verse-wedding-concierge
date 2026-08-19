@@ -15,9 +15,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "Pricing: India Sourcing & Destination Planning",
+  title: "Destination Wedding Planning & India Sourcing Pricing",
   description:
-    "Compare $8,000 full planning, $5,500 partial planning, $4,000 event coordination, the $300 feasibility plan, and flat-fee India sourcing.",
+    "CeremonyVerse pricing: $4,000 event coordination, $5,500 partial planning, $8,000 full planning, a $300 feasibility plan, and flat-fee India sourcing.",
   keywords:
     "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
 })
