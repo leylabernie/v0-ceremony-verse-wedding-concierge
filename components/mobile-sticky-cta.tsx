@@ -12,7 +12,7 @@ export default function MobileStickyCTA() {
     pathname.startsWith("/indian-destination-wedding-planner-mexico")
 
   const consultationHref = homePage
-    ? "/contact/?service=both&from=mobile-home"
+    ? "/contact/?service=mexico&from=mobile-home"
     : calculatorPage
       ? "/contact/?service=mexico&from=mobile-calculator"
       : "/contact/?service=mexico&from=mobile-destination"

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import {
   ATTRIBUTION_STORAGE_KEY,
   type AcquisitionContext,
+  getAcquisitionContext,
   trackEvent,
 } from "@/lib/analytics";
 
@@ -45,6 +46,7 @@ function ctaType(href: string): string | null {
   if (href.startsWith("tel:")) return "phone";
   if (href.includes("wa.me/") || href.includes("api.whatsapp.com/")) return "whatsapp";
   if (href.includes("calendly.com/")) return "calendly";
+  if (href.includes("trustpilot.com/review/ceremonyverse.com")) return "review_profile";
 
   try {
     const url = new URL(href, window.location.origin);
@@ -80,10 +82,22 @@ export function AcquisitionAttribution() {
       const type = ctaType(link.href);
       if (!type) return;
 
+      let ctaLocation = "";
+      let requestedService = "";
+      try {
+        const linkUrl = new URL(link.href, window.location.origin);
+        ctaLocation = linkUrl.searchParams.get("from") || "";
+        requestedService = linkUrl.searchParams.get("service") || "";
+      } catch {
+        // The click remains trackable even when an unusual link cannot be parsed.
+      }
+
       trackEvent("cv_cta_click", {
         cta_type: type,
         page_path: window.location.pathname,
         link_text: (link.textContent || "").trim().slice(0, 80),
+        cta_location: ctaLocation,
+        requested_service: requestedService,
       });
     };
 
@@ -93,7 +107,15 @@ export function AcquisitionAttribution() {
 
   useEffect(() => {
     if (pathname === "/contact/" || pathname === "/contact") {
-      trackEvent("consultation_page_view", { page_path: pathname });
+      const params = new URLSearchParams(window.location.search);
+      const acquisition = getAcquisitionContext();
+      trackEvent("consultation_page_view", {
+        page_path: pathname,
+        entry_point: params.get("from") || "direct",
+        requested_service: params.get("service") || "",
+        source: acquisition.source,
+        medium: acquisition.medium,
+      });
     }
   }, [pathname]);
 

@@ -11,7 +11,7 @@ const nextConfig = {
     return [
       { source: '/services', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/indian-wedding-coordination-mexico', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
-      { source: '/consultation', destination: '/contact', permanent: true },
+      { source: '/consultation', destination: '/contact/', permanent: true },
       { source: '/sourcing-disclaimer', destination: '/contact', permanent: true },
       { source: '/menu-planner', destination: '/planning-tools/budget/', permanent: true },
       { source: '/resources', destination: '/free-guides/', permanent: true },

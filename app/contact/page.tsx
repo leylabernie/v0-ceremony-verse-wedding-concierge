@@ -3,9 +3,9 @@ import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/li
 
 export const metadata = buildMetadata({
   path: "/contact/",
-  title: "Schedule a Free 30-Minute CeremonyVerse Consultation",
+  title: "Schedule a Free Destination Wedding Consultation",
   description:
-    "Schedule a free first consultation for Gujarati or Hindu destination-wedding planning in Mexico or Punta Cana, or for optional paid India wedding-outfit sourcing.",
+    "Register with four essentials, then request a free 30-minute consultation for Gujarati or Hindu destination-wedding planning in Mexico or Punta Cana.",
 });
 
 const serviceSchema = buildServiceSchema({

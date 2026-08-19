@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useMemo, useRef, useState, useSyncExternalStore } from "react"
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react"
 import { getAcquisitionContext, trackEvent, trackLead } from "@/lib/analytics"
 
 interface LeadFormData {
@@ -63,6 +63,15 @@ const getServiceInterestFromLocation = () => {
   return requestedService ? serviceByQuery[requestedService] || "" : ""
 }
 
+const getContactEntryContext = () => {
+  if (typeof window === "undefined") return { entry_point: "direct", requested_service: "" }
+  const params = new URLSearchParams(window.location.search)
+  return {
+    entry_point: params.get("from") || "direct",
+    requested_service: params.get("service") || "",
+  }
+}
+
 export function ContactPage() {
   const [formData, setFormData] = useState<LeadFormData>(initialFormData)
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -73,18 +82,22 @@ export function ContactPage() {
   const [questionnaireSent, setQuestionnaireSent] = useState(false)
   const [requestId, setRequestId] = useState("")
   const formStarted = useRef(false)
+  const formReadyTracked = useRef(false)
   const requestedServiceInterest = useSyncExternalStore(
     subscribeToLocation,
     getServiceInterestFromLocation,
     getServerServiceInterest,
   )
   const serviceInterest = formData.serviceInterest || requestedServiceInterest
-  const destinationService = serviceInterest.toLowerCase().includes("destination")
 
   const updateFormData = <K extends keyof LeadFormData>(field: K, value: LeadFormData[K]) => {
     if (!formStarted.current) {
       formStarted.current = true
-      trackEvent("consultation_form_started", { page_path: "/contact/" })
+      trackEvent("consultation_form_started", {
+        page_path: "/contact/",
+        service_interest: field === "serviceInterest" ? String(value) : serviceInterest,
+        ...getContactEntryContext(),
+      })
     }
     setFormData((previous) => ({ ...previous, [field]: value }))
   }
@@ -93,10 +106,18 @@ export function ContactPage() {
     serviceInterest &&
       formData.name.trim() &&
       formData.email.trim() &&
-      formData.clientCountry.trim() &&
       formData.eventTimeframe.trim() &&
       formData.privacyConsent,
   )
+
+  useEffect(() => {
+    if (!canSubmit || formReadyTracked.current) return
+    formReadyTracked.current = true
+    trackEvent("consultation_form_ready", {
+      service_interest: serviceInterest,
+      ...getContactEntryContext(),
+    })
+  }, [canSubmit, serviceInterest])
 
   const fallbackText = useMemo(
     () =>
@@ -105,11 +126,7 @@ export function ContactPage() {
         `Service: ${serviceInterest || "Not provided"}`,
         `Name: ${formData.name || "Not provided"}`,
         `Email: ${formData.email || "Not provided"}`,
-        `Phone / WhatsApp: ${formData.phone || "Not provided"}`,
-        `Home country: ${formData.clientCountry || "Not provided"}`,
         `Wedding timeframe: ${formData.eventTimeframe || "Not provided"}`,
-        `Destination or location: ${formData.eventLocation || "Not provided"}`,
-        `Estimated guests: ${formData.guestCount || "Not provided"}`,
       ].join("\n"),
     [formData, serviceInterest],
   )
@@ -135,14 +152,24 @@ export function ContactPage() {
     setError("")
     setShowFallback(false)
 
+    const acquisition = getAcquisitionContext()
+    const entryContext = getContactEntryContext()
+    trackEvent("consultation_registration_submitted", {
+      service_interest: serviceInterest,
+      source: acquisition.source,
+      medium: acquisition.medium,
+      ...entryContext,
+    })
+
     try {
       const response = await fetch("/api/consultation/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
+          clientCountry: formData.clientCountry || undefined,
           serviceInterest,
-          attribution: getAcquisitionContext(),
+          attribution: acquisition,
         }),
       })
       const result = (await response.json()) as {
@@ -167,6 +194,9 @@ export function ContactPage() {
       trackEvent("consultation_registration_completed", {
         service_interest: serviceInterest,
         questionnaire_email_confirmed: Boolean(result.questionnaireSent),
+        source: acquisition.source,
+        medium: acquisition.medium,
+        ...entryContext,
       })
       const submittedRequestId = result.requestId || ""
       setQuestionnaireUrl(result.questionnaireUrl || "")
@@ -271,18 +301,14 @@ export function ContactPage() {
             Your First 30-Minute Consultation Is Free
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
-            Register with the essentials below, then request your consultation time immediately. Your introductory
-            call with Mini requires no payment, contract, or prior approval.
+            Share four essentials below, then request your consultation time immediately. The remaining planning
+            questions arrive automatically by email so registration stays short.
           </p>
           <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] px-6 py-5 text-left text-sm leading-6 text-[#4d403a]">
             <p className="font-semibold text-[#1f1f1f]">The free call and paid services are separate.</p>
             <p className="mt-2">
-              Your first 30-minute consultation is free. The $300 Destination Wedding Feasibility &amp; Action Plan and
-              all planning or sourcing packages are paid services offered only after you approve a written scope. If
-              you purchase the $300 plan and sign a CeremonyVerse destination-planning contract within 30 days after
-              the written plan is delivered, the full $300 is credited toward your CeremonyVerse planning service fee.
-              Submit this short registration first. Scheduling opens immediately, and the pre-call questionnaire is
-              emailed automatically for completion before the call.
+              Your first 30-minute consultation requires no payment or contract. The $300 feasibility plan and all
+              planning or sourcing packages are separate paid services offered only after you review a written scope.
             </p>
           </div>
         </div>
@@ -324,32 +350,16 @@ export function ContactPage() {
                 <label htmlFor="email" className={labelClass}>Email <span className="text-[#7a6841]">*</span></label>
                 <input id="email" type="email" className={inputClass} value={formData.email} onChange={(event) => updateFormData("email", event.target.value)} autoComplete="email" required />
               </div>
-              <div>
-                <label htmlFor="phone" className={labelClass}>Phone / WhatsApp</label>
-                <input id="phone" type="tel" className={inputClass} value={formData.phone} onChange={(event) => updateFormData("phone", event.target.value)} autoComplete="tel" />
-              </div>
-              <div>
-                <label htmlFor="clientCountry" className={labelClass}>Where do you live? <span className="text-[#7a6841]">*</span></label>
-                <select id="clientCountry" className={inputClass} value={formData.clientCountry} onChange={(event) => updateFormData("clientCountry", event.target.value)} required>
-                  <option value="">Select</option>
-                  <option value="United States">United States</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              <div>
+              <div className="sm:col-span-2">
                 <label htmlFor="eventTimeframe" className={labelClass}>Wedding timeframe <span className="text-[#7a6841]">*</span></label>
                 <input id="eventTimeframe" className={inputClass} value={formData.eventTimeframe} onChange={(event) => updateFormData("eventTimeframe", event.target.value)} placeholder="Exact date, month/year, or not decided" required />
               </div>
-              <div>
-                <label htmlFor="eventLocation" className={labelClass}>Destination or event location</label>
-                <input id="eventLocation" className={inputClass} value={formData.eventLocation} onChange={(event) => updateFormData("eventLocation", event.target.value)} placeholder={destinationService ? "Mexico region or Punta Cana" : "City, state, or destination"} />
-              </div>
-              <div>
-                <label htmlFor="guestCount" className={labelClass}>Estimated guests</label>
-                <input id="guestCount" type="number" min="0" max="5000" className={inputClass} value={formData.guestCount} onChange={(event) => updateFormData("guestCount", event.target.value)} placeholder="150" />
-              </div>
             </div>
+
+            <p className="mt-6 rounded-xl bg-[#f4eee4] px-4 py-3 text-sm leading-6 text-[#4d403a]">
+              After registration, the short questionnaire asks about destination, guests, ceremonies, budget scope,
+              and optional sourcing so Mini can prepare for your call.
+            </p>
 
             <label className="mt-7 flex items-start gap-3 text-sm leading-6 text-[#4d403a]">
               <input
