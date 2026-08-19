@@ -25,7 +25,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">About CeremonyVerse</p>
           <h1 className="font-serif text-4xl font-semibold leading-tight md:text-6xl">Family-side clarity, backed by destination experience</h1>
-          <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#c5a059]">Mini · Founder &amp; Destination Wedding Concierge</p>
+          <p className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#c5a059]">Mini · Founder &amp; Destination Wedding Concierge · Philadelphia, USA</p>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2] md:text-xl">
             CeremonyVerse was shaped by firsthand family-side experience navigating multi-day Indian destination
             weddings in Mexico. It showed how easily resort decisions, cultural needs, guest logistics, wedding

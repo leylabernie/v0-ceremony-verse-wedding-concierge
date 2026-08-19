@@ -209,19 +209,36 @@ function schedulingUrl(lead: Lead, requestId: string): string {
   return `https://wa.me/12153419990?text=${encodeURIComponent(message)}`
 }
 
+function schedulingEmailUrl(lead: Lead, requestId: string, businessEmail: string): string {
+  const message = [
+    "Hello CeremonyVerse, I registered on the website and would like to arrange my free 30-minute consultation.",
+    `Request ID: ${requestId}`,
+    `Name: ${lead.name}`,
+    `Service: ${lead.serviceInterest}`,
+    "My preferred dates and times are:",
+  ].join("\n")
+  return `mailto:${businessEmail}?subject=${encodeURIComponent("Arrange my CeremonyVerse consultation")}&body=${encodeURIComponent(message)}`
+}
+
 async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: string): Promise<boolean> {
   const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim()
   const safeFirstName = escapeHtml(firstName)
   const safeUrl = escapeHtml(url.toString())
   const safeSchedulingUrl = escapeHtml(schedulingUrl(lead, requestId))
   const businessEmail = ceremonyVerseBusinessEmail()
+  const safeSchedulingEmailUrl = escapeHtml(schedulingEmailUrl(lead, requestId, businessEmail))
 
   const html = `
     <div style="font-family:Arial,sans-serif;color:#2f2925;line-height:1.65;max-width:680px;margin:0 auto">
       <p>Hi ${safeFirstName},</p>
       <p>Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.</p>
-      <p>Choose a time for your free 30-minute consultation, then complete the short questionnaire before the call so Mini can prepare.</p>
-      <p style="margin:28px 0"><a href="${safeSchedulingUrl}" style="display:inline-block;background:#128c7e;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Request my consultation time</a></p>
+      <p>Share your preferred dates and times by WhatsApp, phone, or email, then complete the short questionnaire before the call so Mini can prepare.</p>
+      <p style="margin:28px 0">
+        <a href="${safeSchedulingUrl}" style="display:inline-block;background:#128c7e;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700;margin:0 8px 8px 0">WhatsApp availability</a>
+        <a href="tel:+12153419990" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700;margin:0 8px 8px 0">Call (215) 341-9990</a>
+        <a href="${safeSchedulingEmailUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:12px 21px;border-radius:999px;font-weight:700;margin:0 0 8px">Email preferred times</a>
+      </p>
+      <p>Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.</p>
       <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
       <p>You may complete these steps in either order. Only the essentials are required, and most couples finish the questionnaire in 3–5 minutes. Keep any resort proposal or estimate nearby for the call; please do not send sensitive personal or payment information.</p>
       <p>Warmly,<br><strong>CeremonyVerse Client Services</strong><br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
@@ -232,9 +249,13 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: stri
 
 Thank you for reaching out to CeremonyVerse. Your consultation request was received through our website.
 
-Choose a time for your free 30-minute consultation, then complete the short questionnaire before the call so Mini can prepare.
+Share your preferred dates and times by WhatsApp, phone, or email, then complete the short questionnaire before the call so Mini can prepare.
 
-Request a consultation time: ${schedulingUrl(lead, requestId)}
+WhatsApp availability: ${schedulingUrl(lead, requestId)}
+Call: +1 (215) 341-9990
+Email preferred times: ${schedulingEmailUrl(lead, requestId, businessEmail)}
+
+Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.
 
 Complete the pre-call questionnaire: ${url.toString()}
 
