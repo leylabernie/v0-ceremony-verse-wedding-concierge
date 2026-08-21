@@ -14,4 +14,4 @@
 - [x] Align that source article’s visible and structured modified date with the real update.
 - [x] Add an accurate sitemap `lastModified` value for that materially updated source article only.
 - [x] Extend regression coverage and validate the production build.
-- [ ] Open a review-only pull request without merging.
+- [x] Open pull request #38 without merging.
