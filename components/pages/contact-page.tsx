@@ -124,9 +124,8 @@ export function ContactPage() {
       [
         "Hello CeremonyVerse, I would like to request my free 30-minute consultation.",
         `Service: ${serviceInterest || "Not provided"}`,
-        `Name: ${formData.name || "Not provided"}`,
-        `Email: ${formData.email || "Not provided"}`,
         `Wedding timeframe: ${formData.eventTimeframe || "Not provided"}`,
+        "Please reply with the easiest time to arrange the free consultation. I will keep private details and documents out of this message.",
       ].join("\n"),
     [formData, serviceInterest],
   )
@@ -455,14 +454,19 @@ export function ContactPage() {
               <div className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-5 text-sm text-red-900" role="alert" aria-live="polite">
                 <p>{error}</p>
                 {showFallback ? (
-                  <div className="mt-4 flex flex-col gap-3 sm:flex-row">
-                    <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
-                      Send with WhatsApp
-                    </a>
-                    <a href={emailFallbackUrl} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
-                      Send by Email
-                    </a>
-                  </div>
+                  <>
+                    <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+                      <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#128c7e] px-5 py-3 text-center font-semibold text-white">
+                        Send a Short WhatsApp Request
+                      </a>
+                      <a href={emailFallbackUrl} className="rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
+                        Email a Short Request
+                      </a>
+                    </div>
+                    <p className="mt-4 text-xs leading-5 text-red-900/80">
+                      For your privacy, these fallback messages include only a short consultation summary. Please do not add payment details, identity documents, or private files.
+                    </p>
+                  </>
                 ) : null}
               </div>
             ) : null}
