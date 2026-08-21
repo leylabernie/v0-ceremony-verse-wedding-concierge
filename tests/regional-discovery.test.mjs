@@ -1,0 +1,24 @@
+import assert from "node:assert/strict"
+import { readFileSync } from "node:fs"
+import test from "node:test"
+
+const read = (path) => readFileSync(new URL(path, import.meta.url), "utf8")
+const comparisonArticle = read("../app/blog/mexico-or-punta-cana-indian-destination-wedding/page.tsx")
+const sitemap = read("../app/sitemap.ts")
+
+test("the indexed Mexico comparison article gives Los Cabos a descriptive contextual discovery path", () => {
+  assert.match(comparisonArticle, /href="\/destinations\/los-cabos-indian-wedding\/"/)
+  assert.match(comparisonArticle, />Los Cabos<\/Link>/)
+  assert.match(comparisonArticle, /modifiedTime: lastModified/)
+  assert.match(comparisonArticle, /dateModified: lastModified/)
+  assert.match(comparisonArticle, /Updated August 21, 2026/)
+})
+
+test("the sitemap marks only the materially updated comparison article with its update timestamp", () => {
+  assert.match(
+    sitemap,
+    /path: "\/blog\/mexico-or-punta-cana-indian-destination-wedding\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-08-21T10:37:00-04:00"\)/,
+  )
+  assert.match(sitemap, /path: "\/destinations\/riviera-maya-indian-wedding\/", changeFrequency: "monthly", priority: 0\.9/)
+  assert.match(sitemap, /path: "\/destinations\/los-cabos-indian-wedding\/", changeFrequency: "monthly", priority: 0\.9/)
+})

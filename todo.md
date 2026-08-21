@@ -7,3 +7,11 @@
 - [x] Extend regression coverage for inbound links, modified metadata, and sitemap timestamps.
 - [x] Run targeted tests, lint, production build, sitemap checks, and browser validation.
 - [x] Open pull request #37 without merging.
+
+## Regional Discovery Extension
+
+- [x] Add a contextual Los Cabos link to the indexed Mexico-versus-Punta-Cana comparison article.
+- [x] Align that source article’s visible and structured modified date with the real update.
+- [x] Add an accurate sitemap `lastModified` value for that materially updated source article only.
+- [x] Extend regression coverage and validate the production build.
+- [ ] Open a review-only pull request without merging.

@@ -6,6 +6,7 @@ const title = "Mexico or Punta Cana for an Indian Destination Wedding?";
 const description =
   "Compare Mexico and Punta Cana for an Indian destination wedding using guest travel, resorts, event spaces, food, vendor rules, total cost, and execution.";
 const path = "/blog/mexico-or-punta-cana-indian-destination-wedding/";
+const lastModified = "2026-08-21T10:37:00-04:00";
 
 export const metadata = buildMetadata({
   path,
@@ -18,7 +19,7 @@ export const metadata = buildMetadata({
     "Hindu destination wedding comparison",
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
-  modifiedTime: "2026-08-11T16:00:00-04:00",
+  modifiedTime: lastModified,
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -28,7 +29,7 @@ const blogPostingSchema = buildBlogPosting({
   description,
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
-  dateModified: "2026-08-11T16:00:00-04:00",
+  dateModified: lastModified,
   authorName: "CeremonyVerse",
   keywords: ["Mexico vs Punta Cana Indian wedding", "Indian destination wedding", "Gujarati Hindu wedding"],
 });
@@ -78,7 +79,7 @@ export default function BlogPost() {
           The better destination is the one that fits your real guests, ceremonies, written resort terms, and total
           host budget—not the one with the most attractive starting package.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 21, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
@@ -93,7 +94,7 @@ export default function BlogPost() {
             does not claim that one destination is universally easier, cheaper, or better.
           </p>
           <p>
-            For property-level planning, open the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún</Link>, <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya</Link>, and <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana</Link> guides. Each applies the same decision standard without treating destination photos as proof of fit.
+            For property-level planning, open the dedicated <Link href="/destinations/cancun-indian-wedding/" className="font-semibold text-[#7a6841] underline">Cancún</Link>, <Link href="/destinations/riviera-maya-indian-wedding/" className="font-semibold text-[#7a6841] underline">Riviera Maya</Link>, <Link href="/destinations/los-cabos-indian-wedding/" className="font-semibold text-[#7a6841] underline">Los Cabos</Link>, and <Link href="/destinations/punta-cana-indian-wedding/" className="font-semibold text-[#7a6841] underline">Punta Cana</Link> guides. Each applies the same decision standard without treating destination photos as proof of fit.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">The short comparison</h2>
