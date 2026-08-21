@@ -6,6 +6,7 @@ interface SendEmailOptions {
   subject: string
   html: string
   text: string
+  idempotencyKey?: string
 }
 
 export function ceremonyVerseBusinessEmail(): string {
@@ -44,6 +45,7 @@ export async function sendCeremonyVerseEmail(options: SendEmailOptions): Promise
       headers: {
         Authorization: `Bearer ${apiKey}`,
         "Content-Type": "application/json",
+        ...(options.idempotencyKey ? { "Idempotency-Key": safeHeader(options.idempotencyKey) } : {}),
       },
       body: JSON.stringify({
         from,
