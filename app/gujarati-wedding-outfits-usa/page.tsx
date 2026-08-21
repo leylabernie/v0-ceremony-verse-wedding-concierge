@@ -113,6 +113,21 @@ export default function GujaratiWeddingOutfitsPage() {
         </div>
       </section>
 
+      {/* Mexico planning resource */}
+      <section style={{ padding: "32px 24px", background: "#fff" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", border: "1px solid #e6dfd5", borderRadius: "14px", padding: "24px", background: "#f9f6f3", textAlign: "center" }}>
+          <p style={{ fontSize: "14px", letterSpacing: "0.18em", textTransform: "uppercase", color: "#7a6841", fontWeight: 600, marginBottom: "12px" }}>
+            Planning a destination celebration in Mexico?
+          </p>
+          <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", margin: 0 }}>
+            For family-side ceremony decisions, resort questions, guest considerations, and provider handoffs, review the{" "}
+            <Link href="/gujarati-destination-wedding-mexico/" style={{ color: "#7a6841", fontWeight: 600, textDecoration: "underline" }}>
+              Gujarati wedding in Mexico planning guide
+            </Link>.
+          </p>
+        </div>
+      </section>
+
       {/* Related ceremonies */}
       <section style={{ padding: "32px 24px 8px", background: "#fff" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>

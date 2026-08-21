@@ -9,6 +9,8 @@ const sitemap = read("../app/sitemap.ts")
 const llms = read("../public/llms.txt")
 const seoHelpers = read("../lib/seo.tsx")
 const footer = read("../components/global-footer.tsx")
+const planningArticle = read("../app/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/page.tsx")
+const outfitsPage = read("../app/gujarati-wedding-outfits-usa/page.tsx")
 
 test("the Gujarati Mexico landing page retains its focused metadata and answer-engine markup", () => {
   assert.match(landingPage, /title: "Gujarati Weddings in Mexico"/)
@@ -43,4 +45,25 @@ test("the new page is discoverable from the sitemap and the AI-readable service 
 
   assert.match(sitemap, /path: "\/gujarati-destination-wedding-mexico\/"/)
   assert.match(llms, new RegExp(expectedUrl.replaceAll("/", "\\/")))
+})
+
+
+test("the materially updated source article has an accurate sitemap timestamp", () => {
+  assert.match(
+    sitemap,
+    /path: "\/blog\/how-to-plan-gujarati-hindu-destination-wedding-mexico\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-08-21T10:16:00-04:00"\)/,
+  )
+  assert.match(sitemap, /path: "\/gujarati-destination-wedding-mexico\/", changeFrequency: "monthly", priority: 0\.95/)
+})
+
+test("indexed Gujarati resources provide contextual inbound paths to the landing page", () => {
+  const target = /href="\/gujarati-destination-wedding-mexico\/"/
+
+  assert.match(planningArticle, target)
+  assert.match(planningArticle, /Gujarati wedding in Mexico planning guide/)
+  assert.match(planningArticle, /modifiedTime: lastModified/)
+  assert.match(planningArticle, /dateModified: lastModified/)
+  assert.match(planningArticle, /Updated August 21, 2026/)
+  assert.match(outfitsPage, target)
+  assert.match(outfitsPage, /Planning a destination celebration in Mexico\?/)
 })

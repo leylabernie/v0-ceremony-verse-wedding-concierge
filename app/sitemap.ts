@@ -3,7 +3,7 @@ import { MetadataRoute } from "next"
 const baseUrl = "https://www.ceremonyverse.com"
 
 type Frequency = "weekly" | "monthly" | "yearly"
-type Entry = { path: string; changeFrequency: Frequency; priority: number }
+type Entry = { path: string; changeFrequency: Frequency; priority: number; lastModified?: Date }
 
 const pages: Entry[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
@@ -59,7 +59,7 @@ const pages: Entry[] = [
   { path: "/indian-wedding-shopping-florida/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/indian-wedding-shopping-washington-dc/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/indian-wedding-shopping-illinois/", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-08-21T10:16:00-04:00") },
   { path: "/blog/mexico-or-punta-cana-indian-destination-wedding/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/blog/ordering-indian-wedding-outfits-usa-canada/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/blog/how-to-take-lehenga-measurements-at-home/", changeFrequency: "monthly", priority: 0.8 },

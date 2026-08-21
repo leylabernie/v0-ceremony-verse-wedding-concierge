@@ -6,6 +6,7 @@ const title = "How to Plan a Gujarati or Hindu Destination Wedding in Mexico";
 const description =
   "Plan a Gujarati or Hindu destination wedding in Mexico with clear guest-document, resort, budget, cultural, family, and on-site responsibilities.";
 const path = "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/";
+const lastModified = "2026-08-21T10:16:00-04:00";
 
 export const metadata = buildMetadata({
   path,
@@ -18,7 +19,7 @@ export const metadata = buildMetadata({
     "Mexico Indian wedding planner",
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
-  modifiedTime: "2026-08-11T16:00:00-04:00",
+  modifiedTime: lastModified,
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -28,7 +29,7 @@ const blogPostingSchema = buildBlogPosting({
   description,
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
-  dateModified: "2026-08-11T16:00:00-04:00",
+  dateModified: lastModified,
   authorName: "CeremonyVerse",
   keywords: ["Gujarati destination wedding Mexico", "Hindu wedding Mexico", "Indian wedding planning Mexico"],
 });
@@ -78,7 +79,7 @@ export default function BlogPost() {
           A destination wedding becomes manageable when the family&apos;s cultural decisions, the resort&apos;s written
           terms, and each planner&apos;s responsibilities are organized in one working plan.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 21, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
@@ -107,6 +108,13 @@ export default function BlogPost() {
             This protects the wedding from a common mistake: choosing event spaces and times first, then discovering
             that the approved ceremony plan cannot fit them. CeremonyVerse organizes the family-approved plan; it does
             not replace the family or officiant as the authority on tradition.
+          </p>
+          <p>
+            Families who want a concise family-facing overview can also use the{" "}
+            <Link href="/gujarati-destination-wedding-mexico/" className="font-semibold text-[#7a6841] underline">
+              Gujarati wedding in Mexico planning guide
+            </Link>{" "}
+            to organize the selected event sequence, decision records, and provider handoffs before a larger commitment.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">2. Define what the total budget must cover</h2>
@@ -173,9 +181,9 @@ export default function BlogPost() {
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">6. Separate remote planning from Mexico execution</h2>
           <p>
             The family needs one communication path, but not every role should be blended together. CeremonyVerse can
-            coordinate the family-side plan, guest information, sourcing, approvals, and overall responsibilities.
-            Mexico execution requires local knowledge and on-site control. CeremonyVerse works with a Mexico-based
-            local planner for the in-country details defined in the private proposal.
+            coordinate the family-side plan, guest information, sourcing, approvals, and overall responsibilities
+            included in its written scope. An independent Mexico local provider completes only the local planning and
+            on-site responsibilities identified in that provider&apos;s written scope.
           </p>
           <p>
             Before signing, list who negotiates with the resort, who manages vendors, who owns guest-room questions,
