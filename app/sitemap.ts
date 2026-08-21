@@ -41,6 +41,7 @@ const pages: Entry[] = [
   { path: "/services/bridal-lehengas/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/bridesmaid-and-family-outfits-from-india/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/indian-destination-wedding-planner-mexico/", changeFrequency: "monthly", priority: 0.95 },
+  { path: "/gujarati-destination-wedding-mexico/", changeFrequency: "monthly", priority: 0.95 },
   { path: "/haldi-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/reception-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },
   { path: "/mehndi-outfits-usa/", changeFrequency: "monthly", priority: 0.7 },

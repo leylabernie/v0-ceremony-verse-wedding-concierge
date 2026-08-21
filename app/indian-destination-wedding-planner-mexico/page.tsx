@@ -180,6 +180,28 @@ export default function MexicoDestinationGuidePage() {
         </div>
       </section>
 
+      <section className="bg-white px-6 py-16 sm:py-20">
+        <div className="mx-auto grid max-w-6xl gap-8 rounded-3xl border border-[#d9cfbf] bg-[#faf8f5] p-8 sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7a6841]">Gujarati family planning in Mexico</p>
+            <h2
+              className="mt-3 text-3xl font-semibold text-[#1f1f1f] md:text-4xl"
+              style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
+            >
+              Start with the celebrations your family wants to protect.
+            </h2>
+            <p className="mt-5 max-w-3xl leading-relaxed text-[#4d403a]">
+              If your family is planning Vidhi, Garba/Sangeet with Mehendi, Baraat, Pheras with Vidai, and a final reception, use the Gujarati planning guide to organize family approvals, resort questions, guest realities, and clear provider handoffs before a larger commitment.
+            </p>
+          </div>
+          <div className="flex lg:justify-end">
+            <Link href="/gujarati-destination-wedding-mexico/" className="inline-flex rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">
+              Open the Gujarati Wedding in Mexico Guide
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
