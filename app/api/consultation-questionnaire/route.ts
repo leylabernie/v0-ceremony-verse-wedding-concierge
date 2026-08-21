@@ -5,6 +5,8 @@ import {
   escapeHtml,
   sendCeremonyVerseEmail,
 } from "@/lib/consultation-email"
+import { finalizeConsultationQuestionnaire } from "@/lib/consultation-questionnaire-lifecycle.mjs"
+import { createConsultationRequestStateStore } from "@/lib/consultation-request-state.mjs"
 
 export const runtime = "nodejs"
 
@@ -92,6 +94,7 @@ type RateLimitRecord = { count: number; resetAt: number }
 const rateLimitStore = new Map<string, RateLimitRecord>()
 const rateLimitWindowMs = 10 * 60 * 1000
 const rateLimitMax = 8
+const consultationRequestStateStore = createConsultationRequestStateStore()
 
 function requestIp(request: NextRequest): string {
   return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown"
@@ -178,6 +181,7 @@ async function deliverQuestionnaireByEmail(questionnaire: Questionnaire): Promis
     subject: `Completed consultation questionnaire — ${questionnaire.name}`,
     html: `<h1 style="font-family:Georgia,serif">Completed CeremonyVerse pre-call questionnaire</h1><p>Reply to this email to contact the prospective client.</p><table style="border-collapse:collapse;width:100%;max-width:820px">${htmlRows}</table>`,
     text: `Completed CeremonyVerse pre-call questionnaire\n\n${textRows}`,
+    idempotencyKey: `consultation-questionnaire-completed-${questionnaire.requestId}`,
   })
 }
 
@@ -264,12 +268,35 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true })
   }
 
-  const [emailDelivered] = await Promise.all([
-    deliverQuestionnaireByEmail(parsed.data),
-    deliverQuestionnaireToWebhook(parsed.data),
-  ])
+  let completion
+  try {
+    completion = await finalizeConsultationQuestionnaire({
+      requestId: parsed.data.requestId,
+      stateStore: consultationRequestStateStore,
+      deliver: async () => {
+        const [emailDelivered] = await Promise.all([
+          deliverQuestionnaireByEmail(parsed.data),
+          deliverQuestionnaireToWebhook(parsed.data),
+        ])
+        return emailDelivered
+      },
+    })
+  } catch {
+    return NextResponse.json(
+      {
+        success: false,
+        fallbackRequired: true,
+        error: "Secure questionnaire tracking is temporarily unavailable. Please save your answers and email Mini for help.",
+      },
+      { status: 503 },
+    )
+  }
 
-  if (!emailDelivered) {
+  if (completion.alreadyCompleted) {
+    return NextResponse.json({ success: true, alreadyCompleted: true })
+  }
+
+  if (!completion.delivered) {
     return NextResponse.json(
       {
         success: false,
@@ -280,5 +307,5 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  return NextResponse.json({ success: true })
+  return NextResponse.json({ success: true, questionnaireCompleted: completion.tracked })
 }
