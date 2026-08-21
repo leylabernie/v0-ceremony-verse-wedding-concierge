@@ -6,7 +6,12 @@ import {
   escapeHtml,
   sendCeremonyVerseEmail,
 } from "@/lib/consultation-email"
-import { consultationDedupeKey, createConsultationDeliveryStore } from "@/lib/consultation-dedup.mjs"
+import { consultationDedupeKey } from "@/lib/consultation-dedup.mjs"
+import {
+  consultationRequestDedupeHash,
+  createConsultationRequestStateStore,
+} from "@/lib/consultation-request-state.mjs"
+import { finalizeConsultationRegistration } from "@/lib/consultation-registration-lifecycle.mjs"
 
 export const runtime = "nodejs"
 
@@ -58,7 +63,7 @@ type Lead = z.infer<typeof leadSchema>
 type RateLimitRecord = { count: number; resetAt: number }
 
 const rateLimitStore = new Map<string, RateLimitRecord>()
-const consultationDeliveryStore = createConsultationDeliveryStore()
+const consultationRequestStateStore = createConsultationRequestStateStore()
 const rateLimitWindowMs = 10 * 60 * 1000
 const rateLimitMax = 8
 
@@ -337,26 +342,44 @@ export async function POST(request: NextRequest) {
     parsed.data.serviceInterest,
     parsed.data.eventTimeframe,
   ])
-  const existingDelivery = consultationDeliveryStore.get(dedupeKey)
-  if (existingDelivery) {
-    return NextResponse.json({
-      success: true,
-      questionnaireSent: existingDelivery.questionnaireSent,
-      questionnaireUrl: existingDelivery.questionnaireUrl,
-      requestId: existingDelivery.requestId,
-      deduplicated: true,
+  const dedupeHash = consultationRequestDedupeHash(dedupeKey)
+  const initialRequestId = crypto.randomUUID()
+  const initialQuestionnaireUrl = questionnaireUrl(request, parsed.data, initialRequestId)
+  const initialQuestionnairePath = `${initialQuestionnaireUrl.pathname}${initialQuestionnaireUrl.search}`
+
+  let result
+  try {
+    result = await finalizeConsultationRegistration({
+      stateStore: consultationRequestStateStore,
+      dedupeHash,
+      initialState: {
+        requestId: initialRequestId,
+        questionnaireUrl: initialQuestionnairePath,
+      },
+      deliverLead: async (requestId: string) => {
+        const [webhookDelivered, emailDelivered] = await Promise.all([
+          deliverToWebhook(parsed.data, requestId),
+          deliverByEmail(parsed.data, requestId),
+        ])
+        return webhookDelivered || emailDelivered
+      },
+      sendQuestionnaire: async (state: { requestId: string; questionnaireUrl: string }) => {
+        const url = new URL(state.questionnaireUrl, request.nextUrl.origin)
+        return sendQuestionnaireInvitation(parsed.data, url, state.requestId)
+      },
     })
+  } catch {
+    return NextResponse.json(
+      {
+        success: false,
+        fallbackRequired: true,
+        error: "Secure request tracking is temporarily unavailable. Please use WhatsApp or email below so your request is not lost.",
+      },
+      { status: 503 },
+    )
   }
 
-  const requestId = crypto.randomUUID()
-  const formQuestionnaireUrl = questionnaireUrl(request, parsed.data, requestId)
-  const [webhookDelivered, emailDelivered] = await Promise.all([
-    deliverToWebhook(parsed.data, requestId),
-    deliverByEmail(parsed.data, requestId),
-  ])
-  const delivered = webhookDelivered || emailDelivered
-
-  if (!delivered) {
+  if (!result.success) {
     return NextResponse.json(
       {
         success: false,
@@ -367,18 +390,5 @@ export async function POST(request: NextRequest) {
     )
   }
 
-  const questionnaireSent = await sendQuestionnaireInvitation(parsed.data, formQuestionnaireUrl, requestId)
-  const questionnairePath = `${formQuestionnaireUrl.pathname}${formQuestionnaireUrl.search}`
-  consultationDeliveryStore.set(dedupeKey, {
-    requestId,
-    questionnaireUrl: questionnairePath,
-    questionnaireSent,
-  })
-
-  return NextResponse.json({
-    success: true,
-    questionnaireSent,
-    questionnaireUrl: questionnairePath,
-    requestId,
-  })
+  return NextResponse.json(result)
 }
