@@ -18,7 +18,7 @@ const pages: Entry[] = [
   { path: "/indian-wedding-room-block-mexico/", changeFrequency: "monthly", priority: 0.85 },
   { path: "/lehenga-for-destination-wedding-mexico/", changeFrequency: "monthly", priority: 0.85 },
   { path: "/about/", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/how-it-works/", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/how-it-works/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-08-21T17:00:00-04:00") },
   { path: "/contact/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/free-guides/", changeFrequency: "weekly", priority: 0.8 },
   { path: "/planning-tools/", changeFrequency: "monthly", priority: 0.8 },
