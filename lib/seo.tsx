@@ -292,7 +292,10 @@ export function buildLocalBusinessSchema(): object {
       "Dominican Republic",
     ]),
     priceRange: "$$",
-    sameAs: ["https://wa.me/12153419990"],
+    sameAs: [
+      "https://wa.me/12153419990",
+      "https://www.instagram.com/ceremonyverse/",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Destination Planning and India Outfit Sourcing Services",
@@ -388,7 +391,10 @@ export function buildOrganizationSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    sameAs: ["https://wa.me/12153419990"],
+    sameAs: [
+      "https://wa.me/12153419990",
+      "https://www.instagram.com/ceremonyverse/",
+    ],
   }
 }
 

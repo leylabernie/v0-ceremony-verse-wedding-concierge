@@ -15,7 +15,7 @@ export const metadata = buildMetadata({
   path,
   title: "Gujarati Weddings in Mexico",
   description:
-    "Plan a Gujarati wedding in Mexico with Mini. Organize ceremonies, family approvals, resort questions, guest logistics, and clear provider handoffs.",
+    "Plan a Gujarati wedding in Mexico with Mini. Clarify family decisions, resort questions, guest needs, and provider handoffs.",
   keywords: [
     "Gujarati wedding in Mexico",
     "Gujarati destination wedding Mexico",
