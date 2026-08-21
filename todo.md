@@ -25,7 +25,7 @@
 - [x] Retain intentional conversion links without exposing Planning.Wedding publicly.
 - [x] Add direct regression coverage for the process page’s canonical route, fictional-scenario disclosure, ceremony sequence, role boundaries, and sitemap update.
 - [x] Validate page metadata, route behavior, linting, regression tests, local browser rendering, and whitespace-safe diff output; the repository-wide production build remains blocked by unrelated baseline prerender failures documented below.
-- [ ] Open a review-only pull request without merging or publishing.
+- [x] Open review-only pull request #39 without merging or publishing.
 
 ## Visual Asset Confirmation
 
