@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from "next/server"
+import { createHash } from "node:crypto"
 import { z } from "zod"
 import {
   ceremonyVerseBusinessEmail,
   escapeHtml,
   sendCeremonyVerseEmail,
 } from "@/lib/consultation-email"
+import { consultationDedupeKey, createConsultationDeliveryStore } from "@/lib/consultation-dedup.mjs"
 
 export const runtime = "nodejs"
 
@@ -36,6 +38,7 @@ const leadSchema = z.object({
   referralSource: optionalText(120),
   privacyConsent: z.literal(true),
   website: optionalText(120),
+  submissionId: z.string().trim().uuid().optional(),
   attribution: z
     .object({
       source: optionalText(120),
@@ -55,8 +58,16 @@ type Lead = z.infer<typeof leadSchema>
 type RateLimitRecord = { count: number; resetAt: number }
 
 const rateLimitStore = new Map<string, RateLimitRecord>()
+const consultationDeliveryStore = createConsultationDeliveryStore()
 const rateLimitWindowMs = 10 * 60 * 1000
 const rateLimitMax = 8
+
+function emailIdempotencyKey(prefix: string, lead: Lead): string {
+  const digest = createHash("sha256")
+    .update(consultationDedupeKey([lead.email, lead.name, lead.serviceInterest, lead.eventTimeframe]))
+    .digest("hex")
+  return `${prefix}-${digest}`
+}
 
 function requestIp(request: NextRequest): string {
   return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown"
@@ -180,6 +191,7 @@ async function deliverByEmail(lead: Lead, requestId: string): Promise<boolean> {
     subject: `CeremonyVerse consultation request — ${lead.name}`,
     html: `<h1 style="font-family:Georgia,serif">New CeremonyVerse consultation request</h1><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>`,
     text: `New CeremonyVerse consultation request\n\n${textRows}`,
+    idempotencyKey: emailIdempotencyKey("consultation-owner", lead),
   })
 }
 
@@ -239,6 +251,7 @@ async function sendQuestionnaireInvitation(lead: Lead, url: URL, requestId: stri
         <a href="${safeSchedulingEmailUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:12px 21px;border-radius:999px;font-weight:700;margin:0 0 8px">Email preferred times</a>
       </p>
       <p>Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.</p>
+      <p>If you have already completed a questionnaire for this request, you do not need to complete it again. Please use the same request link or reply to this email if you need help.</p>
       <p style="margin:28px 0"><a href="${safeUrl}" style="display:inline-block;border:1px solid #7a6841;color:#7a6841;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Complete the pre-call questionnaire</a></p>
       <p>You may complete these steps in either order. Only the essentials are required, and most couples finish the questionnaire in 3–5 minutes. Keep any resort proposal or estimate nearby for the call; please do not send sensitive personal or payment information.</p>
       <p>Warmly,<br><strong>CeremonyVerse Client Services</strong><br><a href="mailto:${escapeHtml(businessEmail)}" style="color:#7a6841">${escapeHtml(businessEmail)}</a><br><a href="https://www.ceremonyverse.com" style="color:#7a6841">ceremonyverse.com</a></p>
@@ -257,6 +270,8 @@ Email preferred times: ${schedulingEmailUrl(lead, requestId, businessEmail)}
 
 Mini confirms the agreed time directly after you share availability. No payment or calendar account is required.
 
+If you have already completed a questionnaire for this request, you do not need to complete it again. Please use the same request link or reply to this email if you need help.
+
 Complete the pre-call questionnaire: ${url.toString()}
 
 You may complete these steps in either order. Only the essentials are required, and most couples finish the questionnaire in 3–5 minutes. Keep any resort proposal or estimate nearby for the call; please do not send sensitive personal or payment information.
@@ -272,6 +287,7 @@ https://www.ceremonyverse.com`
     subject: "Your CeremonyVerse consultation questionnaire",
     html,
     text,
+    idempotencyKey: emailIdempotencyKey("consultation-questionnaire", lead),
   })
 }
 
@@ -315,6 +331,23 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true })
   }
 
+  const dedupeKey = parsed.data.submissionId || consultationDedupeKey([
+    parsed.data.email,
+    parsed.data.name,
+    parsed.data.serviceInterest,
+    parsed.data.eventTimeframe,
+  ])
+  const existingDelivery = consultationDeliveryStore.get(dedupeKey)
+  if (existingDelivery) {
+    return NextResponse.json({
+      success: true,
+      questionnaireSent: existingDelivery.questionnaireSent,
+      questionnaireUrl: existingDelivery.questionnaireUrl,
+      requestId: existingDelivery.requestId,
+      deduplicated: true,
+    })
+  }
+
   const requestId = crypto.randomUUID()
   const formQuestionnaireUrl = questionnaireUrl(request, parsed.data, requestId)
   const [webhookDelivered, emailDelivered] = await Promise.all([
@@ -335,11 +368,17 @@ export async function POST(request: NextRequest) {
   }
 
   const questionnaireSent = await sendQuestionnaireInvitation(parsed.data, formQuestionnaireUrl, requestId)
+  const questionnairePath = `${formQuestionnaireUrl.pathname}${formQuestionnaireUrl.search}`
+  consultationDeliveryStore.set(dedupeKey, {
+    requestId,
+    questionnaireUrl: questionnairePath,
+    questionnaireSent,
+  })
 
   return NextResponse.json({
     success: true,
     questionnaireSent,
-    questionnaireUrl: `${formQuestionnaireUrl.pathname}${formQuestionnaireUrl.search}`,
+    questionnaireUrl: questionnairePath,
     requestId,
   })
 }

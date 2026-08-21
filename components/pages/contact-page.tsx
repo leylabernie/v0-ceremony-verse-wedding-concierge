@@ -164,6 +164,14 @@ export function ContactPage() {
 
     const acquisition = getAcquisitionContext()
     const entryContext = getContactEntryContext()
+    const submissionId = (() => {
+      const key = "ceremonyverseConsultationSubmissionId"
+      const existing = window.sessionStorage.getItem(key)
+      if (existing) return existing
+      const created = crypto.randomUUID()
+      window.sessionStorage.setItem(key, created)
+      return created
+    })()
     trackEvent("consultation_registration_submitted", {
       service_interest: serviceInterest,
       source: acquisition.source,
@@ -179,6 +187,7 @@ export function ContactPage() {
           ...formData,
           clientCountry: formData.clientCountry || undefined,
           serviceInterest,
+          submissionId,
           attribution: acquisition,
         }),
       })
@@ -244,10 +253,11 @@ export function ContactPage() {
           <h1 className="font-serif text-4xl font-semibold text-[#1f1f1f] sm:text-5xl">
             Thank you, {formData.name}.
           </h1>
-          <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
-            Choose the contact method that is easiest for you, then share your preferred dates and times. Please
-            complete the automatically delivered questionnaire before the call so Mini can prepare around your wedding.
-          </p>
+              <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-[#4d403a]">
+                Choose the contact method that is easiest for you, then share your preferred dates and times. Complete the
+                questionnaire before the call so Mini can prepare around your wedding. If you already completed this request’s
+                questionnaire, use the same request link and ignore any duplicate reminder.
+              </p>
           <div className="mt-8 rounded-3xl border border-[#e6dfd5] bg-white p-7 text-left sm:p-8">
             <h2 className="text-center font-serif text-2xl font-semibold text-[#1f1f1f]">Choose how to arrange your call</h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
