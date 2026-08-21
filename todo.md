@@ -6,4 +6,4 @@
 - [x] Align the source article’s visible and structured modified date with the actual content update.
 - [x] Extend regression coverage for inbound links, modified metadata, and sitemap timestamps.
 - [x] Run targeted tests, lint, production build, sitemap checks, and browser validation.
-- [ ] Open a pull request without merging.
+- [x] Open pull request #37 without merging.
