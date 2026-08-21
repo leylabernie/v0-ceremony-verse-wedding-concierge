@@ -116,6 +116,7 @@ export default function RootLayout({
         <meta name="category" content="Gujarati and Hindu Destination Wedding Planning, India Wedding Sourcing" />
         <meta name="classification" content="Business" />
         <meta name="p:domain_verify" content="639b7c7ea9066797d34d3d8042e36bc0" />
+        <link rel="llms" href="/llms.txt" />
 
         {/*
           Structured data — rendered as plain <script type="application/ld+json">
