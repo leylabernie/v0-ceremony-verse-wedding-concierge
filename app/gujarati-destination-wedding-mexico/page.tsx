@@ -13,9 +13,9 @@ const path = "/gujarati-destination-wedding-mexico/"
 
 export const metadata = buildMetadata({
   path,
-  title: "Gujarati Weddings in Mexico",
+  title: "Gujarati Destination Wedding Planning in Mexico",
   description:
-    "Plan a Gujarati wedding in Mexico with Mini. Clarify family decisions, resort questions, guest needs, and provider handoffs.",
+    "Plan a Gujarati destination wedding in Mexico with Mini: clarify family decisions, resort questions, guest needs, and written provider handoffs.",
   keywords: [
     "Gujarati wedding in Mexico",
     "Gujarati destination wedding Mexico",
@@ -141,6 +141,28 @@ export default function GujaratiDestinationWeddingMexicoPage() {
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=mexico&from=gujarati-mexico-landing" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule a Gujarati Wedding Planning Call</Link>
             <Link href="/planning-tools/family-responsibility-map/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold text-white">Start With the Family Responsibility Map</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-12 sm:py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Mexico planning paths</p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Start with the region, then confirm the property in writing</h2>
+          </div>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {[
+              ["Cancún", "/destinations/cancun-indian-wedding/", "Compare airport access, guest movement, multi-event spaces, and written weather backup."],
+              ["Riviera Maya", "/destinations/riviera-maya-indian-wedding/", "Compare resort layout, transfer distance, venue flow, and guest mobility."],
+              ["Los Cabos", "/destinations/los-cabos-indian-wedding/", "Compare SJD access, property format, production requirements, and complete cost."],
+            ].map(([name, href, detail]) => (
+              <article key={href} className="rounded-2xl border border-[#d9cfbf] bg-white p-6">
+                <h3 className="font-serif text-2xl font-semibold">Gujarati wedding in {name}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#4d403a]">{detail}</p>
+                <Link href={href} className="mt-5 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Open the {name} comparison guide</Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>
