@@ -335,6 +335,18 @@ export function ContactPage() {
               <li>• Known estimates and what the working budget must cover.</li>
             </ul>
           </div>
+          <div className="mt-8 rounded-2xl border border-[#d7c7a4] bg-[#f4eee4] p-8 text-left">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">A short planning preview</p>
+            <h2 className="mt-3 font-serif text-2xl font-semibold text-[#1f1f1f]">See how a clear planning picture can begin.</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">Explore an original CeremonyVerse illustration of the ritual, family, and destination questions Mini helps bring into focus. It is fictional and does not replace your questionnaire or consultation.</p>
+            <Link
+              href="/planning-preview/"
+              onClick={() => trackEvent("consultation_planning_preview_opened", { source: "registration_confirmation", service_interest: serviceInterest })}
+              className="mt-6 inline-flex rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]"
+            >
+              Open My Planning Preview
+            </Link>
+          </div>
         </div>
       </main>
     )
