@@ -125,6 +125,33 @@ const faqItems = [
 
 const faqSchema = buildFaqSchema(faqItems)
 
+const planningDecisionRoutes = [
+  {
+    title: "You are still choosing a destination or resort",
+    next: "Start with the free consultation",
+    description: "Bring your date range, guest count, ceremony outline, and destination ideas. The first call identifies the next decision without payment or a contract.",
+    href: "/contact/?service=mexico&from=pricing-decision-guide",
+  },
+  {
+    title: "You have proposals but need written answers",
+    next: "Use the $300 feasibility plan",
+    description: "Compare up to two current proposals, normalize guest and budget assumptions, and turn unanswered questions into a practical written action plan.",
+    href: destinationFeasibilityPlan.href,
+  },
+  {
+    title: "Your venue and vendors are largely in place",
+    next: "Discuss Event Coordination",
+    description: "Use a final handover and on-site management scope when your core decisions and contracts are already complete.",
+    href: "/contact/?service=mexico&from=pricing-decision-guide-coordination",
+  },
+  {
+    title: "You need ongoing planning from the beginning",
+    next: "Discuss Partial or Full Planning",
+    description: "Choose a written planning scope based on the dates, event count, guest complexity, local requirements, staffing, and responsibility lines still to be confirmed.",
+    href: "/contact/?service=mexico&from=pricing-decision-guide-planning",
+  },
+]
+
 export default function PricingPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
@@ -167,6 +194,24 @@ export default function PricingPage() {
             </p>
             <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
+
+          <section className="mb-10 rounded-3xl border border-white/15 bg-white/5 p-7 sm:p-9">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#c5a059]">Choose your next conversation</p>
+              <h3 className="mt-3 font-serif text-3xl font-semibold !text-[#f8f6f2]">Start with the decision you have in front of you</h3>
+              <p className="mt-4 leading-7 !text-[#e7ded3]">These routes help you select the right conversation. They do not replace a wedding-specific written scope, proposal, or third-party quote.</p>
+            </div>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              {planningDecisionRoutes.map((route) => (
+                <article key={route.title} className="flex flex-col rounded-2xl border border-white/15 bg-[#1f1f1f] p-6">
+                  <h4 className="font-serif text-2xl font-semibold !text-[#f8f6f2]">{route.title}</h4>
+                  <p className="mt-3 text-sm font-semibold !text-[#e8cf9d]">{route.next}</p>
+                  <p className="mt-4 flex-1 text-sm leading-6 !text-[#e7ded3]">{route.description}</p>
+                  <Link href={route.href} className="mt-6 inline-flex self-start font-semibold !text-[#e8cf9d] underline underline-offset-4">Choose this next step</Link>
+                </article>
+              ))}
+            </div>
+          </section>
 
           <article className="mb-10 rounded-3xl border border-[#c5a059]/50 bg-[#c5a059]/10 p-7 sm:p-10">
             <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">

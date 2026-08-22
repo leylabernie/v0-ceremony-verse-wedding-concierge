@@ -132,6 +132,40 @@ const faqs = [
   },
 ]
 
+const roleBoundaries = [
+  {
+    title: "Your family & officiant",
+    description: "Keep ceremony authority, cultural choices, and final family decisions.",
+  },
+  {
+    title: "Mini & CeremonyVerse",
+    description: "Organize the agreed family-facing planning scope: priorities, approvals, shared information, and handoffs.",
+  },
+  {
+    title: "Independent local providers",
+    description: "Carry only the local planning and on-site tasks identified in their own written scope.",
+  },
+  {
+    title: "Resorts & qualified providers",
+    description: "Issue their own contracts and control their bookings, fees, and delivery responsibilities.",
+  },
+]
+
+const proofPrinciples = [
+  {
+    title: "Family experience is labelled",
+    description: "Family wedding images are never presented as CeremonyVerse client projects.",
+  },
+  {
+    title: "Client stories require permission",
+    description: "A future testimonial or case study appears only with the real client’s documented approval.",
+  },
+  {
+    title: "Independent reviews stay independent",
+    description: "Public reviews remain on their original platform instead of being recreated as marketing copy.",
+  },
+]
+
 export function HomePage() {
   return (
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
@@ -188,21 +222,43 @@ export function HomePage() {
           <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
             <p>Mini, one family-facing contact</p>
             <p>Gujarati &amp; Hindu focus</p>
-            <p>Mexico City-based local execution</p>
+            <p>Local scope defined in writing</p>
             <p>United States &amp; Canada family support</p>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Before you commit</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Who does what, in one clear view</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              Your private proposal connects the work without blurring ceremony authority, booking control, or on-site delivery responsibilities.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {roleBoundaries.map((role, index) => (
+              <article key={role.title} className="rounded-2xl border border-[#d9cfbf] bg-white p-6">
+                <p className="text-xs font-semibold tracking-[0.18em] text-[#7a6841]">0{index + 1}</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{role.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-[#4d403a]">{role.description}</p>
+              </article>
+            ))}
+          </div>
+          <p className="mx-auto mt-7 max-w-4xl text-center text-sm leading-6 text-[#5e4a40]">
+            The final written scope identifies the included work, exclusions, fees, payment milestones, approvals, and outside costs before paid planning begins.
+          </p>
         </div>
       </section>
 
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Experience you can see</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Real family experience and completed sourcing work</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Client proof, shared carefully</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">A truthful place for future client stories</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              CeremonyVerse was shaped by firsthand involvement in three multi-day Indian family weddings in Mexico.
-              The photographs below are labeled clearly so family experience and pre-launch outfit-sourcing work are
-              never presented as CeremonyVerse destination-planning client projects.
+              CeremonyVerse is building its public proof with care. Family experience, earlier sourcing work, client testimonials, and case studies are always labelled by what they are—not used interchangeably.
             </p>
           </div>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -223,42 +279,40 @@ export function HomePage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Meet your family-side contact</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family experience</p>
               <h3 className="mt-3 font-serif text-2xl font-semibold">Mini, founder and destination-wedding concierge</h3>
               <p className="mt-4 leading-7 text-[#4d403a]">Based in Philadelphia, Mini keeps family priorities, approvals, guest information, and decision records connected through one named point of contact.</p>
               <Link href="/about/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Meet Mini and read the background</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Firsthand family experience</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">How the process was shaped</p>
               <h3 className="mt-3 font-serif text-2xl font-semibold">Three Mexico wedding journeys</h3>
               <p className="mt-4 leading-7 text-[#4d403a]">See the family wedding experiences that shaped the questions, safeguards, and family support used today. They are labeled as family events, not client projects.</p>
               <Link href="/real-weddings/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See the family experience</Link>
             </article>
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Local execution</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">Mexico City-based destination team</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">Local planning, vendor coordination, and on-site responsibilities are listed in your private proposal so you can see the working relationship before paying.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Clear role boundaries</p>
+              <h3 className="mt-3 font-serif text-2xl font-semibold">Local scope is visible before payment</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">Local planning and on-site responsibilities are listed in your private proposal so you can see the working relationship before paying.</p>
               <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Review the complete process</Link>
             </article>
           </div>
           <div className="mt-8 rounded-3xl border border-[#d7c7a4] bg-[#f4eee4] p-7 sm:p-10">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Verified words, accurately labeled</p>
-              <h3 className="mt-3 font-serif text-3xl font-semibold">Genuine feedback from completed pre-launch sourcing work</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">These public reviews relate to earlier outfit and shopping support. They are not presented as destination-wedding planning reviews.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Proof standards</p>
+              <h3 className="mt-3 font-serif text-3xl font-semibold">Testimonials and case studies will be earned, not invented</h3>
+              <p className="mt-4 leading-7 text-[#4d403a]">Client quotes, event stories, names, images, and outcomes appear only after real work is complete and public permission is documented.</p>
             </div>
-            <div className="mt-8 grid gap-5 md:grid-cols-2">
-              <figure className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
-                <blockquote className="font-serif text-2xl leading-9 text-[#1f1f1f]">“They really made the process so much easier for me.”</blockquote>
-                <figcaption className="mt-5 text-sm leading-6 text-[#5e4a40]"><span className="font-semibold">April Joseph</span><br />Public Trustpilot review · pre-launch sourcing customer feedback</figcaption>
-              </figure>
-              <figure className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
-                <blockquote className="font-serif text-2xl leading-9 text-[#1f1f1f]">“Customer care that was tailored to everything we envisioned.”</blockquote>
-                <figcaption className="mt-5 text-sm leading-6 text-[#5e4a40]"><span className="font-semibold">Kaval Patel</span><br />Public Trustpilot review · pre-launch sourcing customer feedback</figcaption>
-              </figure>
+            <div className="mt-8 grid gap-5 md:grid-cols-3">
+              {proofPrinciples.map((principle) => (
+                <article key={principle.title} className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
+                  <h4 className="font-serif text-2xl font-semibold">{principle.title}</h4>
+                  <p className="mt-4 text-sm leading-6 text-[#4d403a]">{principle.description}</p>
+                </article>
+              ))}
             </div>
             <div className="mt-7 text-center">
-              <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Read the original public reviews on Trustpilot</a>
+              <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Read independent public reviews on Trustpilot</a>
             </div>
           </div>
         </div>
@@ -398,12 +452,8 @@ export function HomePage() {
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Know who handles each part of the wedding</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.</p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              ["CeremonyVerse", "Your family-facing coordinator for priorities, approvals, decision records, agreed guest information, and the selected planning or sourcing scope."],
-              ["Contracted destination team", "The destination planning and on-site team responsible for the local work specifically listed in your private proposal."],
-              ["Resorts and qualified providers", "The organizations that issue their own contracts and control room, travel, transfer, venue, vendor, and other third-party bookings and payments."],
-            ].map(([title, description]) => (
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {roleBoundaries.map(({ title, description }) => (
               <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
                 <h3 className="font-serif text-2xl font-semibold">{title}</h3>
                 <p className="mt-4 leading-7 text-[#4d403a]">{description}</p>

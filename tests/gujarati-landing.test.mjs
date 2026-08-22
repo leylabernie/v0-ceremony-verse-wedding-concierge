@@ -13,8 +13,8 @@ const planningArticle = read("../app/blog/how-to-plan-gujarati-hindu-destination
 const outfitsPage = read("../app/gujarati-wedding-outfits-usa/page.tsx")
 
 test("the Gujarati Mexico landing page retains its focused metadata and answer-engine markup", () => {
-  assert.match(landingPage, /title: "Gujarati Weddings in Mexico"/)
-  assert.match(landingPage, /Plan a Gujarati wedding in Mexico with Mini/)
+  assert.match(landingPage, /title: "Gujarati Destination Wedding Planning in Mexico"/)
+  assert.match(landingPage, /Plan a Gujarati destination wedding in Mexico with Mini/)
   assert.match(landingPage, /buildFaqSchema\(faqItems\)/)
   assert.match(landingPage, /buildHowToSchema\(/)
   assert.match(landingPage, /buildServiceSchema\(/)
@@ -23,7 +23,7 @@ test("the Gujarati Mexico landing page retains its focused metadata and answer-e
 test("the page keeps a concise snippet and a verified Instagram entity reference", () => {
   assert.match(
     landingPage,
-    /Plan a Gujarati wedding in Mexico with Mini\. Clarify family decisions, resort questions, guest needs, and provider handoffs\./,
+    /Plan a Gujarati destination wedding in Mexico with Mini: clarify family decisions, resort questions, guest needs, and written provider handoffs\./,
   )
   assert.match(seoHelpers, /https:\/\/www\.instagram\.com\/ceremonyverse\//)
   assert.match(footer, /Follow @ceremonyverse on Instagram/)

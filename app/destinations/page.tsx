@@ -148,6 +148,7 @@ export default function DestinationsPage() {
             {[
               ["Complete wedding cost", "/indian-destination-wedding-cost/", "Build one budget across resort, events, rooms, vendors, planning, travel, and contingency."],
               ["Room-block terms", "/indian-wedding-room-block-mexico/", "Understand deposits, attrition, concessions, release dates, guest booking, and responsible providers."],
+              ["Gujarati wedding in Mexico", "/gujarati-destination-wedding-mexico/", "Map Vidhi, Garba or Sangeet with Mehendi, Baraat, Pheras with Vidai, and Reception through family decisions and written provider handoffs."],
               ["Gujarati & Hindu plan", "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", "Map family decisions, ceremonies, food, production, vendors, and multi-day timing."],
               ["Destination wardrobe", "/lehenga-for-destination-wedding-mexico/", "Plan outfits, fabrics, measurements, shipping, customs, alterations, and handoff timing."],
             ].map(([title, href, text]) => (
