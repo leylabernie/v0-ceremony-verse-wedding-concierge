@@ -23,6 +23,11 @@ export type DestinationPageData = {
     sourceHref: string
   }[]
   sources: { label: string; href: string; note: string }[]
+  comparisonSection?: {
+    heading: string
+    intro: string
+  }
+  sourcesReviewedOn?: string
 }
 
 export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "jamaica" | "puntaCana", DestinationPageData> = {

@@ -35,7 +35,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
               Compare Resort Proposals
             </Link>
           </div>
-          <p className="mt-6 text-sm leading-6 !text-white/60">Serving families throughout the United States and Canada · Sources reviewed August 12, 2026</p>
+          <p className="mt-6 text-sm leading-6 !text-white/60">Serving families throughout the United States and Canada · Sources reviewed {data.sourcesReviewedOn ?? "August 12, 2026"}</p>
         </div>
       </section>
 
@@ -127,8 +127,8 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Evaluation list—not endorsements</p>
-              <h2 className="mt-3 font-serif text-4xl font-semibold">Which {data.shortName} resorts can families compare?</h2>
-              <p className="mt-5 leading-7 text-[#4d403a]">These are properties families may ask CeremonyVerse to evaluate. Inclusion does not mean affiliation, preferred status, guaranteed South Asian capability, availability, or a recommendation. Current resort proposals and contracts control.</p>
+              <h2 className="mt-3 font-serif text-4xl font-semibold">{data.comparisonSection?.heading ?? `Which ${data.shortName} resorts can families compare?`}</h2>
+              <p className="mt-5 leading-7 text-[#4d403a]">{data.comparisonSection?.intro ?? "These are properties families may ask CeremonyVerse to evaluate. Inclusion does not mean affiliation, preferred status, guaranteed South Asian capability, availability, or a recommendation. Current resort proposals and contracts control."}</p>
               <Link href="/planning-tools/resort-comparison/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open Resort Comparison Calculator</Link>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -206,7 +206,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             {data.sources.map((source) => <a key={source.href} href={source.href} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-[#e6dfd5] p-5 text-[#4d403a] transition hover:border-[#7a6841]"><span className="font-semibold text-[#7a6841] underline">{source.label}</span><span className="mt-2 block text-sm leading-6">{source.note}</span></a>)}
           </div>
-          <p className="mt-6 text-sm leading-6 text-[#5e4a40]">Sources reviewed August 12, 2026. Destination, entry, resort, vendor, weather, price, tax, service-charge, and policy information can change. Verify all material terms for the actual dates and travelers. This page is planning information, not legal, immigration, insurance, financial, or travel-agent advice.</p>
+          <p className="mt-6 text-sm leading-6 text-[#5e4a40]">Sources reviewed {data.sourcesReviewedOn ?? "August 12, 2026"}. Destination, entry, resort, vendor, weather, price, tax, service-charge, and policy information can change. Verify all material terms for the actual dates and travelers. This page is planning information, not legal, immigration, insurance, financial, or travel-agent advice.</p>
           <div className="mt-8 flex flex-wrap gap-4 text-sm font-semibold text-[#7a6841]">
             <Link href="/destinations/" className="underline underline-offset-4">Compare all destinations</Link>
             <Link href="/indian-destination-wedding-cost/" className="underline underline-offset-4">Build the complete wedding cost</Link>
