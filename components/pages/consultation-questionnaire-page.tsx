@@ -192,20 +192,13 @@ export function ConsultationQuestionnairePage() {
   )
 
   const emailFallbackUrl = useMemo(() => {
-    const compact = (value: string) => value.trim().slice(0, 700) || "Not provided"
+    const compact = (value: string) => value.trim().slice(0, 180) || "Not provided"
     const body = [
-      "Hello CeremonyVerse, the pre-call questionnaire could not be submitted through the website. Here are my answers:",
-      `Name: ${compact(formData.name)}`,
-      `Email: ${compact(formData.email)}`,
+      "Hello CeremonyVerse, the pre-call questionnaire could not be submitted through the website.",
+      `Request ID: ${formData.requestId || "Not provided"}`,
       `Consultation focus: ${formData.serviceFocus || "Not provided"}`,
       `Wedding timeframe: ${compact(formData.weddingTimeframe)}`,
-      `Weekday dates possible: ${compact(formData.weekdayAvailability)}`,
-      `Planning support status: ${compact(formData.planningSupportStatus)}`,
-      `Likely / maximum guests: ${compact(formData.likelyGuestCount)} / ${compact(formData.maximumGuestCount)}`,
-      `Events: ${formData.events.join(", ") || "Not provided"}`,
-      `Top priorities: ${compact(formData.topPriorities)}`,
-      `Biggest concern: ${compact(formData.biggestConcern)}`,
-      `Questions for the call: ${compact(formData.questionsForCall)}`,
+      "Please let me know the safest way to share any additional planning context. I will not include payment information, identity documents, or private files in this email.",
     ].join("\n\n")
     return `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
       "CeremonyVerse pre-call questionnaire",
@@ -639,9 +632,14 @@ export function ConsultationQuestionnairePage() {
             <div className="mt-7 rounded-2xl border border-red-200 bg-red-50 p-5 text-sm text-red-900" role="alert" aria-live="polite">
               <p>{error}</p>
               {showFallback ? (
-                <a href={emailFallbackUrl} className="mt-4 inline-flex rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
-                  Email My Answers
-                </a>
+                <>
+                  <a href={emailFallbackUrl} className="mt-4 inline-flex rounded-full border border-red-800 px-5 py-3 text-center font-semibold text-red-900">
+                    Email a Short Request
+                  </a>
+                  <p className="mt-4 text-xs leading-5 text-red-900/80">
+                    The fallback email contains only a short summary. Please do not add payment information, identity documents, or private files.
+                  </p>
+                </>
               ) : null}
             </div>
           ) : null}
