@@ -1,3 +1,4 @@
+// Design intent: retain CeremonyVerse's restrained editorial resource library while adding a practical decision-first entry point.
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
@@ -13,6 +14,7 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
+  ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
   ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],
   ["Budget Calculator", "Separate wedding-event, guest-travel, and optional shopping costs and compare the total with your target.", "/planning-tools/budget/"],
