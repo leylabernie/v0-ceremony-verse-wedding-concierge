@@ -3,6 +3,10 @@ import Link from "next/link"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
+// Design: Editorial Proof, Not Pageantry. Preserve the existing charcoal, parchment,
+// antique-gold, serif-led CeremonyVerse visual system while helping a prospective bride
+// picture the wedding weekend before she is asked to evaluate the planning scope.
+
 const calculatorTools = [
   {
     title: "Budget Calculator",
@@ -82,33 +86,6 @@ const servicePillars = [
   },
 ]
 
-const proofImages = [
-  {
-    src: "/images/proof/family-wedding-mandap-couple.webp",
-    alt: "Bride and groom beneath a floral mandap at a family destination wedding in Mexico",
-    label: "Family wedding in Mexico · not a client project",
-    position: "object-[center_35%]",
-  },
-  {
-    src: "/images/proof/prior-outfit-couple.webp",
-    alt: "Couple wearing coordinated custom Indian wedding outfits from a completed pre-launch sourcing project",
-    label: "Pre-launch outfit sourcing · completed work",
-    position: "object-[center_25%]",
-  },
-  {
-    src: "/images/proof/prior-outfit-wedding-party.webp",
-    alt: "Wedding party wearing coordinated Indian outfits from a completed pre-launch sourcing project",
-    label: "Pre-launch outfit coordination · completed work",
-    position: "object-center",
-  },
-  {
-    src: "/images/proof/prior-outfit-groomsmen.webp",
-    alt: "Groom and groomsmen wearing coordinated Indian wedding outfits from a completed pre-launch sourcing project",
-    label: "Pre-launch groom-party sourcing · completed work",
-    position: "object-center",
-  },
-]
-
 const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
@@ -166,6 +143,60 @@ const proofPrinciples = [
   },
 ]
 
+const startingRoutes = [
+  {
+    step: "01",
+    question: "We are still choosing a destination",
+    answer: "Compare guest travel, event flow, room-block risk, cultural requirements, and weather backup before a resort photo makes the decision for you.",
+    href: "/destinations/",
+    cta: "Compare destinations",
+  },
+  {
+    step: "02",
+    question: "We have dates or resort proposals in hand",
+    answer: "Bring the questions that feel unclear. The first conversation helps separate what needs a written answer from what can wait.",
+    href: "/contact/?service=mexico&from=homepage-decision-guide",
+    cta: "Bring your planning question",
+  },
+  {
+    step: "03",
+    question: "We want the plan to feel calmer now",
+    answer: "Turn guest count, event flow, budget assumptions, travel obligations, and existing quotes into a clear next-step action brief.",
+    href: destinationFeasibilityPlan.href,
+    cta: "See the $300 action plan",
+  },
+]
+
+const weddingWeekMoments = [
+  {
+    eyebrow: "Arrival & welcome",
+    title: "Guests should feel considered before the first event.",
+    description: "The early questions—arrivals, room timing, welcome details, family groupings, and the first shared evening—shape the ease of the entire weekend.",
+    src: "/images/proof/family-destination-baarat.webp",
+    alt: "Family members celebrating at a destination wedding in Mexico",
+    note: "Family wedding in Mexico · shared as inspiration, not a CeremonyVerse client event.",
+    position: "object-[58%_center]",
+  },
+  {
+    eyebrow: "Ceremony & tradition",
+    title: "Keep the ceremony yours; make the practical path visible.",
+    description: "Family and officiant authority stay where they belong while timing, venue needs, guest movement, and on-site responsibilities become clear around each moment.",
+    src: "/images/proof/family-wedding-mandap-couple.webp",
+    alt: "Couple beneath a floral mandap at a family destination wedding in Mexico",
+    note: "Family wedding in Mexico · shared as inspiration, not a CeremonyVerse client event.",
+    position: "object-[center_35%]",
+  },
+  {
+    eyebrow: "Celebration & family style",
+    title: "Let the joyful parts feel effortless when they arrive.",
+    description: "A multi-day celebration works best when the decisions, guest information, handoffs, and visual details are connected before wedding week begins.",
+    src: "/images/proof/prior-outfit-wedding-party.webp",
+    alt: "Wedding party wearing coordinated Indian outfits from a completed pre-launch sourcing project",
+    note: "Completed pre-launch outfit coordination · shown as inspiration, not destination-planning client work.",
+    position: "object-center",
+  },
+]
+
 export function HomePage() {
   return (
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
@@ -189,8 +220,9 @@ export function HomePage() {
               Gujarati &amp; Hindu destination weddings in Mexico and Punta Cana
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Work with Mini as your family-facing contact, with culturally informed planning and a Mexico City-based
-              destination team for the local and on-site scope defined in writing for your wedding.
+              Bring the celebration your family is picturing. Mini keeps the next decisions, family handoffs, and
+              wedding-week information clear, with a Mexico City-based destination team for the local and on-site scope
+              defined in writing for your wedding.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -231,6 +263,30 @@ export function HomePage() {
       <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Start with the question in front of you</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">The next decision can make the whole plan feel lighter</h2>
+            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
+              You do not need a perfect brief before asking for help. Start where the uncertainty is most present, then move through the rest of the celebration with a clearer view.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {startingRoutes.map((route) => (
+              <article key={route.step} className="flex min-h-full flex-col rounded-2xl border border-[#d9cfbf] bg-white p-7 sm:p-8">
+                <p className="text-xs font-semibold tracking-[0.18em] text-[#7a6841]">{route.step}</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{route.question}</h3>
+                <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{route.answer}</p>
+                <Link href={route.href} className="mt-7 inline-flex self-start font-semibold text-[#7a6841] underline underline-offset-4 transition hover:text-[#5e4a40]">
+                  {route.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Before you commit</p>
             <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Who does what, in one clear view</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
@@ -254,28 +310,53 @@ export function HomePage() {
 
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Picture the wedding week</p>
+              <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">The celebration should feel like yours. The plan should hold it together.</h2>
+            </div>
+            <p className="max-w-2xl text-lg leading-8 text-[#4d403a]">
+              Every destination wedding has its own rhythm. CeremonyVerse makes the decision path, guest information, and working handoffs visible so you can stay present for the moments that matter.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {weddingWeekMoments.map((moment) => (
+              <figure key={moment.eyebrow} className="group overflow-hidden rounded-2xl border border-[#e6dfd5] bg-[#faf8f5]">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#e6dfd5]">
+                  <Image
+                    src={moment.src}
+                    alt={moment.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className={`object-cover transition duration-500 motion-safe:group-hover:scale-[1.03] ${moment.position}`}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+                  <p className="absolute bottom-4 left-5 text-xs font-semibold uppercase tracking-[0.18em] text-white">{moment.eyebrow}</p>
+                </div>
+                <figcaption className="p-6">
+                  <h3 className="font-serif text-2xl font-semibold">{moment.title}</h3>
+                  <p className="mt-3 leading-7 text-[#4d403a]">{moment.description}</p>
+                  <p className="mt-5 text-xs leading-5 text-[#6a5b52]">{moment.note}</p>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <div className="mt-9 text-center">
+            <Link href="/how-it-works/" className="inline-flex rounded-full border border-[#7a6841] px-7 py-3.5 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white">
+              See how the planning path works
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Client proof, shared carefully</p>
             <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">A truthful place for future client stories</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
               CeremonyVerse is building its public proof with care. Family experience, earlier sourcing work, client testimonials, and case studies are always labelled by what they are—not used interchangeably.
             </p>
-          </div>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {proofImages.map((photo) => (
-              <figure key={photo.src} className="overflow-hidden rounded-2xl border border-[#e6dfd5] bg-[#faf8f5]">
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#e6dfd5]">
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className={`object-cover ${photo.position}`}
-                  />
-                </div>
-                <figcaption className="p-4 text-sm font-semibold leading-6 text-[#4d403a]">{photo.label}</figcaption>
-              </figure>
-            ))}
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">

@@ -13,6 +13,9 @@ import {
   destinationFeasibilityPlan,
 } from "@/lib/destination-feasibility-plan"
 
+// Design: Editorial Proof, Not Pageantry. Keep the established high-clarity pricing
+// system, while translating each scope choice into the calm and presence a bride values.
+
 export const metadata = buildMetadata({
   path: "/pricing/",
   title: "Destination Wedding Planning & India Sourcing Pricing",
@@ -135,19 +138,19 @@ const planningDecisionRoutes = [
   {
     title: "You have proposals but need written answers",
     next: "Use the $300 feasibility plan",
-    description: "Compare up to two current proposals, normalize guest and budget assumptions, and turn unanswered questions into a practical written action plan.",
+    description: "Compare up to two current proposals, normalize guest and budget assumptions, and turn unanswered questions into a practical written action plan that makes the next conversation feel calmer.",
     href: destinationFeasibilityPlan.href,
   },
   {
     title: "Your venue and vendors are largely in place",
     next: "Discuss Event Coordination",
-    description: "Use a final handover and on-site management scope when your core decisions and contracts are already complete.",
+    description: "Use a final handover and on-site management scope when your core decisions and contracts are already complete, so the couple and family can be more present during wedding week.",
     href: "/contact/?service=mexico&from=pricing-decision-guide-coordination",
   },
   {
     title: "You need ongoing planning from the beginning",
     next: "Discuss Partial or Full Planning",
-    description: "Choose a written planning scope based on the dates, event count, guest complexity, local requirements, staffing, and responsibility lines still to be confirmed.",
+    description: "Choose a written planning scope based on the dates, event count, guest complexity, local requirements, staffing, and responsibility lines still to be confirmed—without carrying every moving part alone.",
     href: "/contact/?service=mexico&from=pricing-decision-guide-planning",
   },
 ]

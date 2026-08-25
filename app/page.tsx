@@ -1,11 +1,14 @@
 import { HomePage } from '../components/pages/home-page';
 import { buildMetadata } from '@/lib/seo';
 
+// Design: Editorial Proof, Not Pageantry. Homepage metadata supports the same
+// refined, trustworthy conversion path expressed by the page-level experience.
+
 export const metadata = buildMetadata({
   path: '/',
   title: 'Gujarati & Hindu Destination Wedding Planner — Mexico & Punta Cana',
   description:
-    "Plan a multi-day Gujarati or Hindu destination wedding in Mexico or Punta Cana with one family-facing coordinator and experienced local execution.",
+    "Plan a multi-day Gujarati or Hindu destination wedding in Mexico or Punta Cana with a clear family-facing planning path, practical decision support, and local execution defined in writing.",
   image: '/images/proof/family-destination-baarat.webp',
 });
 
