@@ -14,6 +14,7 @@ const pages: Entry[] = [
   { path: "/destinations/riviera-maya-indian-wedding/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/destinations/los-cabos-indian-wedding/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/destinations/punta-cana-indian-wedding/", changeFrequency: "monthly", priority: 0.9 },
+  { path: "/resorts/moon-palace-cancun-indian-wedding/", changeFrequency: "monthly", priority: 0.85 },
   { path: "/indian-destination-wedding-cost/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/indian-wedding-room-block-mexico/", changeFrequency: "monthly", priority: 0.85 },
   { path: "/lehenga-for-destination-wedding-mexico/", changeFrequency: "monthly", priority: 0.85 },
