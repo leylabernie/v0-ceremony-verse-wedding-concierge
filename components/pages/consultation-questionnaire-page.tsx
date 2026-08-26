@@ -46,6 +46,7 @@ interface QuestionnaireData {
   sourcingDeadline: string
   questionsForCall: string
   privacyConsent: boolean
+  nurtureConsent: boolean
   website: string
 }
 
@@ -153,6 +154,7 @@ export function ConsultationQuestionnairePage() {
       sourcingDeadline: "",
       questionsForCall: "",
       privacyConsent: false,
+      nurtureConsent: false,
       website: "",
     }
   })
@@ -622,6 +624,13 @@ export function ConsultationQuestionnairePage() {
             <span>
               I agree that CeremonyVerse may use these answers to prepare for and follow up on my consultation. This
               does not subscribe me to marketing. I will not include sensitive personal or payment information. See the <Link href="/privacy/" className="font-semibold text-[#7a6841] underline">privacy notice</Link>.
+            </span>
+          </label>
+          <label className="mt-4 flex items-start gap-3 text-sm leading-6 text-[#4d403a]">
+            <input type="checkbox" checked={formData.nurtureConsent} onChange={(event) => updateFormData("nurtureConsent", event.target.checked)} className="mt-1 h-4 w-4 accent-[#7a6841]" />
+            <span>
+              Yes, after my free consultation I would like CeremonyVerse to send a short series of planning follow-ups
+              related to the questions I shared. This is optional, and I can ask to stop at any time.
             </span>
           </label>
           <p className="mt-4 text-sm leading-6 text-[#6d625c]">

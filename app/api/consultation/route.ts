@@ -11,6 +11,7 @@ import {
   consultationRequestDedupeHash,
   createConsultationRequestStateStore,
 } from "@/lib/consultation-request-state.mjs"
+import { buildConsultationCompletionUrl } from "@/lib/consultation-completion"
 import { finalizeConsultationRegistration } from "@/lib/consultation-registration-lifecycle.mjs"
 
 export const runtime = "nodejs"
@@ -175,7 +176,7 @@ async function deliverToWebhook(lead: Lead, requestId: string): Promise<boolean>
   }
 }
 
-async function deliverByEmail(lead: Lead, requestId: string): Promise<boolean> {
+async function deliverByEmail(lead: Lead, requestId: string, completionUrl?: string): Promise<boolean> {
   const rows = leadRows(lead, requestId)
   const htmlRows = rows
     .filter(([, value]) => value)
@@ -190,11 +191,15 @@ async function deliverByEmail(lead: Lead, requestId: string): Promise<boolean> {
     .map(([label, value]) => `${label}: ${value}`)
     .join("\n\n")
 
+  const completionAction = completionUrl
+    ? `<p style="margin:24px 0"><a href="${escapeHtml(completionUrl)}" style="display:inline-block;background:#7a6841;color:#ffffff;text-decoration:none;padding:13px 22px;border-radius:999px;font-weight:700">Mark the free consultation complete</a></p><p style="color:#6d625c">Use this internal action only after the call has taken place. If the couple selected planning follow-ups in the questionnaire, it starts the consented email sequence.</p>`
+    : ""
+
   return sendCeremonyVerseEmail({
     to: ceremonyVerseBusinessEmail(),
     replyTo: lead.email,
     subject: `CeremonyVerse consultation request — ${lead.name}`,
-    html: `<h1 style="font-family:Georgia,serif">New CeremonyVerse consultation request</h1><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>`,
+    html: `<h1 style="font-family:Georgia,serif">New CeremonyVerse consultation request</h1><table style="border-collapse:collapse;width:100%;max-width:760px">${htmlRows}</table>${completionAction}`,
     text: `New CeremonyVerse consultation request\n\n${textRows}`,
     idempotencyKey: emailIdempotencyKey("consultation-owner", lead),
   })
@@ -355,11 +360,13 @@ export async function POST(request: NextRequest) {
       initialState: {
         requestId: initialRequestId,
         questionnaireUrl: initialQuestionnairePath,
+        email: parsed.data.email,
+        firstName: parsed.data.name.trim().split(/\s+/)[0] || parsed.data.name.trim(),
       },
       deliverLead: async (requestId: string) => {
         const [webhookDelivered, emailDelivered] = await Promise.all([
           deliverToWebhook(parsed.data, requestId),
-          deliverByEmail(parsed.data, requestId),
+          deliverByEmail(parsed.data, requestId, buildConsultationCompletionUrl(request.nextUrl.origin, requestId)),
         ])
         return webhookDelivered || emailDelivered
       },
