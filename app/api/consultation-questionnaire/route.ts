@@ -85,6 +85,7 @@ const questionnaireSchema = z.object({
   sourcingDeadline: optionalText(160),
   questionsForCall: optionalText(1600),
   privacyConsent: z.literal(true),
+  nurtureConsent: z.boolean().optional().default(false),
   website: optionalText(120),
 })
 
@@ -158,6 +159,7 @@ function questionnaireRows(questionnaire: Questionnaire): Array<[string, string]
     ["People needing sourced outfits", questionnaire.sourcingPartySize],
     ["Outfit or item deadline", questionnaire.sourcingDeadline],
     ["Questions for the call", questionnaire.questionsForCall],
+    ["Planning follow-up consent", questionnaire.nurtureConsent ? "Yes" : "No"],
   ]
 }
 
@@ -273,6 +275,7 @@ export async function POST(request: NextRequest) {
     completion = await finalizeConsultationQuestionnaire({
       requestId: parsed.data.requestId,
       stateStore: consultationRequestStateStore,
+      completionData: { nurtureConsent: parsed.data.nurtureConsent },
       deliver: async () => {
         const [emailDelivered] = await Promise.all([
           deliverQuestionnaireByEmail(parsed.data),
