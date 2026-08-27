@@ -14,6 +14,7 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
+  ["27 Questions Before You Sign", "Use a practical checklist to compare complete costs, rooms, events, cultural requirements, vendor rules, and contract terms before signing a Mexico or Punta Cana resort proposal.", "/before-signing-indian-wedding-resort-proposal/"],
   ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
   ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],

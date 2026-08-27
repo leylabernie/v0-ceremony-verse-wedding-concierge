@@ -25,6 +25,7 @@ const pages: Entry[] = [
   { path: "/how-it-works/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-08-21T17:00:00-04:00") },
   { path: "/contact/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/free-guides/", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/before-signing-indian-wedding-resort-proposal/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/planning-tools/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/planning-tools/budget/", changeFrequency: "monthly", priority: 0.8 },
   { path: "/planning-tools/shipping-customs/", changeFrequency: "monthly", priority: 0.8 },
