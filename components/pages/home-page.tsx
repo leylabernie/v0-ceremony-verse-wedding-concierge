@@ -155,8 +155,8 @@ const startingRoutes = [
     step: "02",
     question: "We have dates or resort proposals in hand",
     answer: "Bring the questions that feel unclear. The first conversation helps separate what needs a written answer from what can wait.",
-    href: "/contact/?service=mexico&from=homepage-decision-guide",
-    cta: "Bring your planning question",
+    href: "/before-signing-indian-wedding-resort-proposal/",
+    cta: "Use the 27-question checklist",
   },
   {
     step: "03",
@@ -232,10 +232,10 @@ export function HomePage() {
                 Schedule Free Consultation
               </Link>
               <Link
-                href="/indian-destination-wedding-planner-mexico/"
+                href="/before-signing-indian-wedding-resort-proposal/"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Explore Destination Planning
+                Use the 27-Question Checklist
               </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
