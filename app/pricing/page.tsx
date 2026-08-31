@@ -22,7 +22,7 @@ export const metadata = buildMetadata({
   description:
     "CeremonyVerse pricing: $4,000 event coordination, $5,500 partial planning, $8,000 full planning, a $300 feasibility plan, and flat-fee India sourcing.",
   keywords:
-    "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Punta Cana Indian wedding planning",
+    "CeremonyVerse pricing, Indian wedding sourcing cost, Cancun Indian wedding planner cost, Riviera Maya wedding planning, Mexico Gujarati wedding planning",
 })
 
 const tiers = [

@@ -82,9 +82,9 @@ export default function WeddingExperiencePage() {
             Better questions, clearer responsibilities, and one organized family relationship
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
-            CeremonyVerse now serves Gujarati and Hindu destination weddings across Mexico and in Punta Cana, with
+            CeremonyVerse now serves Gujarati and Hindu destination weddings in Mexico, with
             planning, on-site coordination, family support, guest organization, and optional India sourcing defined
-            privately for each wedding. Punta Cana is part of current service coverage; it is not part of the three
+            privately for each wedding. Other destinations are not part of current service coverage and are not part of the three
             family weddings above.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">

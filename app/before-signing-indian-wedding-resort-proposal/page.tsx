@@ -5,9 +5,9 @@ export const metadata = buildMetadata({
   path: "/before-signing-indian-wedding-resort-proposal/",
   title: "5 Questions Before Choosing an Indian Wedding Resort",
   description:
-    "A concise decision guide for comparing Mexico and Punta Cana resort proposals for Gujarati, Hindu, and South Asian destination weddings.",
+    "A concise decision guide for comparing Mexico resort proposals for Gujarati and Hindu destination weddings.",
   keywords:
-    "Indian wedding resort proposal questions, Gujarati destination wedding Mexico, Punta Cana Indian wedding planning, South Asian destination wedding resort",
+    "Indian wedding resort proposal questions, Gujarati destination wedding Mexico, Hindu destination wedding resort, Mexico wedding planning",
 })
 
 const decisionQuestions = [
@@ -78,7 +78,7 @@ export default function BeforeSigningIndianWeddingResortProposalPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">A five-question decision guide · no email gate</p>
           <h1 className="mt-4 font-serif text-5xl font-semibold !text-white sm:text-6xl">Before you choose a resort, ask these five questions</h1>
           <p className="mx-auto mt-7 max-w-4xl text-lg leading-8 !text-white/80">
-            A short starting point for Gujarati, Hindu, Sikh, Punjabi, and South Asian families comparing Mexico or Punta Cana destination-wedding proposals. You do not need to complete a long worksheet before you ask for help.
+            A short starting point for Gujarati and Hindu families comparing Mexico destination-wedding proposals. You do not need to complete a long worksheet before you ask for help.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=feasibility&from=five-question-guide-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">

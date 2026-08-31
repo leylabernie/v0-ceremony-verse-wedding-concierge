@@ -4,11 +4,11 @@ import { buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/se
 export const metadata = buildMetadata({
   path: "/faq/",
   title: "Destination Wedding Planning & India Outfit Sourcing FAQ",
-  description: "Answers about Gujarati and Hindu destination-wedding planning in Mexico and Punta Cana, provider responsibilities, pricing, and optional India outfit sourcing.",
+  description: "Answers about Gujarati and Hindu destination-wedding planning in Mexico, provider responsibilities, pricing, and optional India outfit sourcing.",
 })
 
 const faqItems = [
-  { question: "Where does CeremonyVerse currently plan destination weddings?", answer: "Current destination-wedding positioning includes Mexico and Punta Cana for families throughout the United States and Canada. Availability and the selected destination team are confirmed in writing." },
+  { question: "Where does CeremonyVerse currently plan destination weddings?", answer: "Current destination-wedding planning is available in Mexico for families throughout the United States and Canada. Availability and the selected destination team are confirmed in writing." },
   { question: "Who handles the wedding at the destination?", answer: "CeremonyVerse is the family-facing coordinator. The contracted destination team handles agreed local planning and on-site execution. Resorts and qualified providers control their own contracts, bookings, payments, and services." },
   { question: "Is a resort package the complete wedding cost?", answer: "Usually not. Extra guests, event hours, private venues, food, production, décor, vendors, planning, rooms, travel, taxes, service charges, cultural requirements, and contingency may be separate." },
   { question: "Is the first consultation free?", answer: "Yes. The first 30-minute consultation is free. No payment or contract is required. Paid planning, the $300 feasibility plan, and India sourcing are separate services offered after written terms are reviewed." },
@@ -31,7 +31,7 @@ export default function FAQPage() {
         <div className="mx-auto max-w-4xl">
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-[#7a6841]">The Trust Center</p>
           <h1 className="mb-6 font-serif text-4xl font-semibold sm:text-5xl lg:text-6xl">Your Questions, Answered</h1>
-          <p className="mx-auto max-w-2xl text-lg leading-8 text-[#4d403a]">Clear answers about Mexico and Punta Cana planning, provider responsibilities, the free consultation, public starting fees, and optional paid India outfit sourcing.</p>
+          <p className="mx-auto max-w-2xl text-lg leading-8 text-[#4d403a]">Clear answers about Mexico planning, provider responsibilities, the free consultation, public starting fees, and optional paid India outfit sourcing.</p>
         </div>
       </section>
       <section className="px-6 py-16 sm:py-20">

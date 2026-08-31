@@ -27,6 +27,10 @@ const nextConfig = {
       { source: '/blog/how-to-buy-sherwani-from-india-usa/', destination: '/buy-sherwani-from-india-usa/', permanent: true },
       { source: '/indian-bridal-wear-california', destination: '/indian-wedding-shopping-california/', permanent: true },
       { source: '/indian-bridal-wear-texas', destination: '/indian-wedding-shopping-texas/', permanent: true },
+      { source: '/destinations/punta-cana-indian-wedding', destination: '/destinations/', permanent: true },
+      { source: '/destinations/jamaica-indian-wedding', destination: '/destinations/', permanent: true },
+      { source: '/resorts/lopesan-costa-bavaro-indian-wedding', destination: '/destinations/', permanent: true },
+      { source: '/blog/mexico-or-punta-cana-indian-destination-wedding', destination: '/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/', permanent: true },
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'ceremonyverse.com' }],
@@ -63,7 +67,6 @@ const nextConfig = {
         headers: [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }],
       },
       { source: '/wedding-accessories-and-ceremony-items-from-india', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
-      { source: '/destinations/jamaica-indian-wedding', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
       { source: '/blog/south-indian-christian-wedding-outfit-guide', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
       { source: '/terms', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
     ]

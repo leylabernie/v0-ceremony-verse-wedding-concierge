@@ -4,11 +4,11 @@ import { ResortComparisonClient } from "./resort-comparison-client"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/resort-comparison/",
-  title: "Mexico & Punta Cana Wedding Resort Comparison Calculator",
+  title: "Mexico Wedding Resort Comparison Calculator",
   description:
-    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
+    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals in Mexico, including known host costs, room-block exposure, cultural needs, and written terms.",
   keywords:
-    "Mexico Indian wedding resort comparison, Punta Cana wedding resort checklist, destination wedding room block questions, Indian wedding outside vendor fees",
+    "Mexico Indian wedding resort comparison, destination wedding room block questions, Indian wedding outside vendor fees, Gujarati wedding resort proposal",
 })
 
 const breadcrumbSchema = buildBreadcrumb([
@@ -19,7 +19,7 @@ const breadcrumbSchema = buildBreadcrumb([
 const calculatorSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "Mexico and Punta Cana Wedding Resort Proposal Comparison Calculator",
+  name: "Mexico Wedding Resort Proposal Comparison Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/resort-comparison/",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Any",

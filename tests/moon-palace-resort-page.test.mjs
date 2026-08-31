@@ -20,9 +20,9 @@ test("the Moon Palace page is indexed and recorded in the sitemap after the dest
     sitemap,
     /path: "\/resorts\/moon-palace-cancun-indian-wedding\/", changeFrequency: "monthly", priority: 0\.85/,
   )
-  const destinationsIdx = sitemap.indexOf('path: "/destinations/punta-cana-indian-wedding/"')
+  const destinationsIdx = sitemap.indexOf('path: "/destinations/los-cabos-indian-wedding/"')
   const resortIdx = sitemap.indexOf('path: "/resorts/moon-palace-cancun-indian-wedding/"')
-  assert.ok(destinationsIdx > 0, "punta cana destination entry exists")
+  assert.ok(destinationsIdx > 0, "last active Mexico destination entry exists")
   assert.ok(resortIdx > destinationsIdx, "resort entry follows the destination guides")
 })
 
