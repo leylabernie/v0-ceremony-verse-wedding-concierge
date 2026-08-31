@@ -19,6 +19,7 @@ const destinationLinks = [
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
+  { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
 ];
@@ -60,7 +61,7 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              Gujarati and Hindu destination-wedding planning in Mexico,
+              Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana,
               with optional India wedding-outfit sourcing for families across the USA and Canada.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>

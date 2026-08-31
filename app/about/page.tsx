@@ -87,9 +87,9 @@ export default function AboutPage() {
           </div>
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Current destination focus</p>
-            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Destination planning in Mexico</h2>
+            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Destination planning across Mexico and Punta Cana</h2>
             <div className="mt-6 space-y-5 text-lg leading-8 text-[#4d403a]">
-              <p>CeremonyVerse supports Gujarati and Hindu destination weddings in Mexico. CeremonyVerse is the family-facing point of contact for cultural requirements, approvals, guest organization, logistics oversight, transparency, and optional India outfit sourcing.</p>
+              <p>CeremonyVerse supports Gujarati and Hindu destination weddings across Mexico and Punta Cana. CeremonyVerse is the family-facing point of contact for cultural requirements, approvals, guest organization, logistics oversight, transparency, and optional India outfit sourcing.</p>
               <p>The contracted destination team handles the selected local planning, vendor coordination, negotiations, and on-site execution. The private proposal identifies each party&apos;s responsibilities, fees, outside costs, approvals, payment handling, and exclusions before paid work.</p>
               <p>Families can work with CeremonyVerse from anywhere in the United States or Canada. CeremonyVerse does not independently sell rooms, flights, transfers, or travel insurance; those services remain with the applicable resort or qualified provider.</p>
             </div>

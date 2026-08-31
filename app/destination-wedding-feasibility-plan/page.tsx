@@ -10,9 +10,9 @@ export const metadata = buildMetadata({
   path: destinationFeasibilityPlan.href,
   title: "$300 Destination Wedding Feasibility Plan",
   description:
-    "Turn your guest count, events, travel obligations, working budget, and current proposals into a written destination-wedding action plan for Mexico.",
+    "Turn your guest count, events, travel obligations, working budget, and current proposals into a written destination-wedding action plan for Mexico or Punta Cana.",
   keywords:
-    "destination wedding feasibility plan, Indian destination wedding consultation, Mexico wedding budget review, Gujarati destination wedding planning",
+    "destination wedding feasibility plan, Indian destination wedding consultation, Mexico wedding budget review, Punta Cana wedding planning consultation, Gujarati destination wedding planning",
 })
 
 const serviceSchema = buildServiceSchema({
@@ -20,7 +20,7 @@ const serviceSchema = buildServiceSchema({
   description: destinationFeasibilityPlan.description,
   url: destinationFeasibilityPlan.href,
   category: "Destination Wedding Feasibility and Planning",
-  areaServed: ["Mexico"],
+  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,
@@ -74,7 +74,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 !text-white/80">
             The {destinationFeasibilityPlan.name} turns the facts you already have into a written path forward
-            for a Gujarati or Hindu destination wedding in Mexico.
+            for a Gujarati or Hindu destination wedding across Mexico or in Punta Cana.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

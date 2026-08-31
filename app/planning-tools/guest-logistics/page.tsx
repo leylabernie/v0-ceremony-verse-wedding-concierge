@@ -6,7 +6,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/guest-logistics/",
   title: "Destination Wedding Guest & VIP Cost Calculator",
   description:
-    "U.S. and Canadian families can calculate guest room nights, family-paid VIP rooms and flights, transfers, and welcome costs for an Indian destination wedding in Mexico.",
+    "U.S. and Canadian families can calculate guest room nights, family-paid VIP rooms and flights, transfers, and welcome costs for an Indian destination wedding in Mexico or Punta Cana.",
   keywords:
     "destination wedding guest cost calculator, Indian wedding room block calculator, VIP travel wedding budget, Mexico wedding guest costs",
 })

@@ -6,9 +6,9 @@ export const metadata = buildMetadata({
   path: "/planning-tools/budget/",
   title: "Indian Destination Wedding Budget Calculator",
   description:
-    "Estimate an Indian destination-wedding budget with current official resort starting rates or your written quotes for Mexico.",
+    "Estimate an Indian destination-wedding budget with current official resort starting rates or your written quotes for Mexico and Punta Cana.",
   keywords:
-    "Indian destination wedding budget calculator, Mexico wedding budget planner, Mexico Indian wedding cost, Gujarati destination wedding budget",
+    "Indian destination wedding budget calculator, Mexico wedding budget planner, Punta Cana Indian wedding cost, Gujarati destination wedding budget",
 })
 
 const breadcrumbSchema = buildBreadcrumb([

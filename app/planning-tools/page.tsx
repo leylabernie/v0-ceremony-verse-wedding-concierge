@@ -7,7 +7,7 @@ export const metadata = buildMetadata({
   description:
     "Use free CeremonyVerse calculators for destination-wedding budgets, resort proposals, guest costs, and India-to-USA-or-Canada shipping and customs.",
   keywords:
-    "Indian destination wedding budget planner, Mexico wedding resort comparison, destination wedding guest tracker, Gujarati wedding planning checklist, Mexico Indian wedding planning",
+    "Indian destination wedding budget planner, Mexico wedding resort comparison, destination wedding guest tracker, Gujarati wedding planning checklist, Punta Cana Indian wedding planning",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/planning-tools/" }])

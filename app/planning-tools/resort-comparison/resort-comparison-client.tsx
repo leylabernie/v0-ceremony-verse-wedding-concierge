@@ -142,6 +142,7 @@ export function ResortComparisonClient() {
                     <select value={resort.destination} onChange={(event) => updateResort(index, "destination", event.target.value)} className={inputClass}>
                       <option value="">Select</option>
                       <option value="Mexico">Mexico</option>
+                      <option value="Punta Cana">Punta Cana</option>
                     </select>
                   </label>
                 </div>

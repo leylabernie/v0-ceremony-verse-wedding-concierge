@@ -65,7 +65,7 @@ const faqItems = [
   {
     question: "Where in Mexico does CeremonyVerse provide destination-wedding support?",
     answer:
-      "CeremonyVerse provides destination-wedding planning and support across Mexico. Cancún and Riviera Maya appear often because they are part of the firsthand family experience, but they are not the service limits within Mexico.",
+      "CeremonyVerse provides destination-wedding planning and support across Mexico. Cancun and Riviera Maya appear often because they are part of the firsthand family experience, but they are not the service limits. Punta Cana is also included in current service coverage.",
   },
 ];
 

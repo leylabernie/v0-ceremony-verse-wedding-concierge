@@ -122,7 +122,7 @@ export function ResortRateSelector({ guestCount, onApply }: ResortRateSelectorPr
           Resort
           <select value={resortId} onChange={(event) => changeResort(event.target.value)} className="mt-2 w-full rounded-xl border border-[#cdbf9e] bg-white px-4 py-3 font-normal">
             <option value="">Select a resort</option>
-            {(["Mexico"] as ResortDestination[]).map((destination) => (
+            {(["Mexico", "Punta Cana"] as ResortDestination[]).map((destination) => (
               <optgroup key={destination} label={destination}>
                 {resortRateEntries.filter((resort) => resort.destination === destination).map((resort) => {
                   const resortProgram = getRateProgram(resort.programId)
@@ -135,7 +135,7 @@ export function ResortRateSelector({ guestCount, onApply }: ResortRateSelectorPr
               </optgroup>
             ))}
           </select>
-          <span className="mt-1 block text-xs font-normal leading-5 text-[#6d625c]">The list includes resorts on reviewed public programs plus commonly compared Mexico properties.</span>
+          <span className="mt-1 block text-xs font-normal leading-5 text-[#6d625c]">The list includes the resorts on the reviewed public programs plus commonly compared Mexico and Punta Cana properties.</span>
         </label>
 
         <label className="text-sm font-semibold text-[#1f1f1f]">

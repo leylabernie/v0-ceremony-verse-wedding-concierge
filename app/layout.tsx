@@ -40,7 +40,7 @@ export const metadata = {
     template: "%s | CeremonyVerse",
   },
   description:
-    "Gujarati and Hindu destination-wedding planning in Mexico, with family coordination, guest logistics, and optional India wedding sourcing for families across the USA and Canada.",
+    "Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with family coordination, guest logistics, and optional India wedding sourcing for families across the USA and Canada.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -63,7 +63,7 @@ export const metadata = {
     title:
       "Gujarati & Hindu Destination Wedding Planning | CeremonyVerse",
     description:
-      "Destination-wedding planning in Mexico, with family-side coordination, guest logistics, and optional India sourcing.",
+      "Destination-wedding planning across Mexico and Punta Cana, with family-side coordination, guest logistics, and optional India sourcing.",
     type: "website",
     siteName: "CeremonyVerse",
     locale: "en_US",
@@ -168,8 +168,8 @@ export default function RootLayout({
         <AcquisitionAttribution />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Mexico destination-wedding planning · Serving families across the USA &amp; Canada</span>
-          <span className="lg:hidden">Mexico wedding planning</span>
+          <span className="hidden lg:inline">Mexico &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
+          <span className="lg:hidden">Mexico &amp; Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <Link href="/contact/?service=mexico&from=announcement-bar">Schedule Free Consultation</Link>
         </div>

@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/indian-destination-wedding-cost/",
   title: "Indian Destination Wedding Cost: Complete Budget Guide",
   description:
-    "Build the complete cost of an Indian destination wedding in Mexico across rooms, events, vendors, planning, travel, taxes, and contingency.",
+    "Build the complete cost of an Indian destination wedding in Mexico or Punta Cana across rooms, events, vendors, planning, travel, taxes, and contingency.",
 })
 
 const costGroups = [

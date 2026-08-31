@@ -533,7 +533,7 @@ export function ConsultationQuestionnairePage() {
               </div>
               <div>
                 <label htmlFor="destinationIdeas" className={labelClass}>Destinations or regions being considered</label>
-                <input id="destinationIdeas" className={inputClass} value={formData.destinationIdeas} onChange={(event) => updateFormData("destinationIdeas", event.target.value)} placeholder="Mexico region, resort ideas, or not decided" />
+                <input id="destinationIdeas" className={inputClass} value={formData.destinationIdeas} onChange={(event) => updateFormData("destinationIdeas", event.target.value)} placeholder="Mexico region, resort ideas, Punta Cana, or not decided" />
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="resortStatusDetails" className={labelClass}>Which resorts, proposals, contracts, or deposits already exist?</label>

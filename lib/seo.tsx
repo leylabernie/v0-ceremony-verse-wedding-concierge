@@ -273,7 +273,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse provides Gujarati and Hindu destination-wedding planning in Mexico, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     url: SITE_URL,
     image: DEFAULT_OG_IMAGE,
     logo: `${SITE_URL}/icon.svg`,
@@ -289,6 +289,7 @@ export function buildLocalBusinessSchema(): object {
       "United States",
       "Canada",
       "Mexico",
+      "Dominican Republic",
     ]),
     priceRange: "$$",
     sameAs: [
@@ -344,7 +345,7 @@ export function buildGlobalFaqSchema(): object {
     {
       question: "What does CeremonyVerse do?",
       answer:
-        "CeremonyVerse provides Gujarati and Hindu destination-wedding planning in Mexico for U.S. and Canadian families, with optional paid India wedding-outfit sourcing.",
+        "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana for U.S. and Canadian families, with optional paid India wedding-outfit sourcing.",
     },
     {
       question: "Is the first consultation free?",
@@ -374,7 +375,7 @@ export function buildOrganizationSchema(): object {
     logo: `${SITE_URL}/icon.svg`,
     image: DEFAULT_OG_IMAGE,
     description:
-      "CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service focused on Mexico, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service focused on Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -405,7 +406,7 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Gujarati and Hindu destination-wedding planning in Mexico, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },

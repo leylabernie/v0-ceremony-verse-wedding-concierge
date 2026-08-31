@@ -23,7 +23,7 @@ export default function MobileStickyCTA() {
     : homePage
       ? "Planning or sourcing your wedding?"
       : destinationPage
-        ? "Planning a wedding in Mexico?"
+        ? "Planning Mexico or Punta Cana?"
         : "Questions about CeremonyVerse?"
 
   return (

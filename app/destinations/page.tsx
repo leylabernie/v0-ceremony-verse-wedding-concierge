@@ -3,9 +3,9 @@ import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, Jso
 
 export const metadata = buildMetadata({
   path: "/destinations/",
-  title: "Indian Destination Weddings in Mexico",
+  title: "Indian Destination Weddings in Mexico & Punta Cana",
   description:
-    "Compare Cancún, Riviera Maya, and Los Cabos for a multi-day Gujarati or Hindu destination wedding in Mexico, including guest access, room blocks, culture, costs, and execution.",
+    "Compare Cancún, Riviera Maya, Los Cabos, and Punta Cana for a multi-day Gujarati or Hindu destination wedding, including guest access, room blocks, culture, costs, and execution.",
   image: "/images/sourcing/couple-mandap.webp",
 })
 
@@ -28,13 +28,19 @@ const destinations = [
     summary: "Compare SJD access, San José del Cabo, the Tourist Corridor and Cabo San Lucas, venue format, food, vendors, production, room blocks, and weather backups.",
     bestWhen: "The guest map and a property-specific resort or private-venue plan lead the decision.",
   },
+  {
+    name: "Punta Cana",
+    href: "/destinations/punta-cana-indian-wedding/",
+    summary: "Compare PUJ access, entry steps, all-inclusive resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
+    bestWhen: "The guest travel map and a strong property-specific proposal win.",
+  },
 ]
 
 const faqItems = [
   {
     question: "Which destinations does CeremonyVerse currently support?",
     answer:
-      "Current destination-wedding planning is available in Mexico. Cancún, Riviera Maya, and Los Cabos have dedicated comparison pages, but CeremonyVerse is not limited to those areas of Mexico. Availability and the selected local team are confirmed in writing for each wedding.",
+      "Current destination-wedding positioning includes Mexico and Punta Cana. Cancún, Riviera Maya, and Los Cabos have dedicated comparison pages, but CeremonyVerse is not limited to those areas of Mexico. Availability and the selected local team are confirmed in writing for each wedding.",
   },
   {
     question: "Which destination is cheaper for an Indian wedding?",
@@ -56,12 +62,12 @@ const faqItems = [
 const breadcrumbSchema = buildBreadcrumb([{ name: "Destinations", url: "/destinations/" }])
 const faqSchema = buildFaqSchema(faqItems)
 const serviceSchema = buildServiceSchema({
-  name: "Gujarati and Hindu Destination Wedding Planning in Mexico",
+  name: "Gujarati and Hindu Destination Wedding Planning in Mexico and Punta Cana",
   description:
     "Family-facing planning, local execution coordination, cultural requirements, guest-information organization, and optional paid India wedding-outfit sourcing.",
   url: "/destinations/",
   category: "Gujarati and Hindu Destination Wedding Planning",
-  areaServed: ["Mexico", "United States", "Canada"],
+  areaServed: ["Mexico", "Dominican Republic", "United States", "Canada"],
 })
 
 export default function DestinationsPage() {
@@ -73,7 +79,7 @@ export default function DestinationsPage() {
 
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Mexico destination planning</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Mexico &amp; Punta Cana</p>
           <h1 className="mt-4 font-serif text-5xl font-semibold !text-white sm:text-6xl">Indian destination wedding locations, compared clearly</h1>
           <p className="mx-auto mt-7 max-w-4xl text-lg leading-8 !text-white/80">
             Choose the destination through your guest map, complete written cost, event spaces, cultural requirements,
@@ -90,7 +96,7 @@ export default function DestinationsPage() {
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Start with the destination shortlist</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Three high-intent Mexico planning paths</h2>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Four high-intent planning paths</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
               Each guide asks different location-specific questions while using the same decision standard. No page claims an exclusive resort relationship or guaranteed price.
             </p>

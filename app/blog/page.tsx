@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
 
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Blog \u2014 Indian Wedding Shopping Guides",
-  description: "Practical guides for Gujarati and Hindu destination weddings in Mexico, plus documented India-sourcing guidance for families across the United States and Canada.",
+  description: "Practical guides for Gujarati and Hindu destination weddings in Mexico and Punta Cana, plus documented India-sourcing guidance for families across the United States and Canada.",
   url: "/blog/",
 });
 
@@ -23,6 +23,12 @@ const posts = [
     slug: "how-to-plan-gujarati-hindu-destination-wedding-mexico",
     title: "How to Plan a Gujarati or Hindu Destination Wedding in Mexico",
     description: "A practical guide to guest documents, resort proposals, cultural decisions, budgets, family responsibilities, and on-site execution for a wedding in Mexico.",
+    date: "August 2026",
+  },
+  {
+    slug: "mexico-or-punta-cana-indian-destination-wedding",
+    title: "Mexico or Punta Cana for an Indian Destination Wedding?",
+    description: "Compare guest travel, resort fit, event spaces, food, vendor rules, room blocks, complete host costs, and execution needs before choosing.",
     date: "August 2026",
   },
   {
@@ -131,13 +137,14 @@ const posts = [
 
 const destinationPostSlugs = new Set([
   "how-to-plan-gujarati-hindu-destination-wedding-mexico",
+  "mexico-or-punta-cana-indian-destination-wedding",
 ])
 
 const postGroups = [
   {
     id: "destination-planning-guides",
     label: "Destination planning",
-    description: "Mexico, Gujarati and Hindu planning, room blocks, budgets, and family responsibilities.",
+    description: "Mexico, Punta Cana, Gujarati and Hindu planning, room blocks, budgets, and family responsibilities.",
     posts: posts.filter((post) => destinationPostSlugs.has(post.slug)),
   },
   {

@@ -14,7 +14,7 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
-  ["5 Questions Before You Choose", "Start with five essential questions about cost, guests, cultural events, wedding-week ownership, and written commitments before choosing a Mexico resort.", "/before-signing-indian-wedding-resort-proposal/"],
+  ["5 Questions Before You Choose", "Start with five essential questions about cost, guests, cultural events, wedding-week ownership, and written commitments before choosing a Mexico or Punta Cana resort.", "/before-signing-indian-wedding-resort-proposal/"],
   ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
   ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],
@@ -61,7 +61,7 @@ export default function FreeGuidesPage() {
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Mexico planning</p>
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Mexico and Punta Cana</p>
           <h2 className="mb-9 font-serif text-4xl font-semibold">Destination-wedding planning tools</h2>
           <ResourceCards resources={destinationTools} />
         </div>

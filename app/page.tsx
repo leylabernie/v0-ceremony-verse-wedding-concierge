@@ -6,9 +6,9 @@ import { buildMetadata } from '@/lib/seo';
 
 export const metadata = buildMetadata({
   path: '/',
-  title: 'Gujarati & Hindu Destination Wedding Planner in Mexico',
+  title: 'Gujarati & Hindu Destination Wedding Planner — Mexico & Punta Cana',
   description:
-    "Plan a multi-day Gujarati or Hindu destination wedding in Mexico with a clear family-facing planning path, practical decision support, and local execution defined in writing.",
+    "Plan a multi-day Gujarati or Hindu destination wedding in Mexico or Punta Cana with a clear family-facing planning path, practical decision support, and local execution defined in writing.",
   image: '/images/proof/family-destination-baarat.webp',
 });
 

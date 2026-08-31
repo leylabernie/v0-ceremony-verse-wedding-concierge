@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/contact/",
   title: "Schedule a Free Destination Wedding Consultation",
   description:
-    "Register with four essentials, then request a free 30-minute consultation for Gujarati or Hindu destination-wedding planning in Mexico.",
+    "Register with four essentials, then request a free 30-minute consultation for Gujarati or Hindu destination-wedding planning in Mexico or Punta Cana.",
 });
 
 const serviceSchema = buildServiceSchema({
@@ -14,7 +14,7 @@ const serviceSchema = buildServiceSchema({
     "The first 30-minute consultation is free and requires no payment or contract. CeremonyVerse reviews the wedding vision, destination, guest count, timing, and budget scope before explaining any separate paid next step.",
   url: "/contact/",
   category: "Destination Wedding Planning and India Outfit Sourcing Consultation",
-  areaServed: ["United States", "Canada", "Mexico"],
+  areaServed: ["United States", "Canada", "Mexico", "Punta Cana, Dominican Republic"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([

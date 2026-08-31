@@ -146,8 +146,8 @@ export default function BlogPost() {
           <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">How this connects to destination planning</h2>
           <p>
             CeremonyVerse offers destination planning, on-site coordination, family support, and optional India sourcing
-            in Mexico. Cancún and Riviera Maya appear in the family-experience story; this guide does not present a
-            client portfolio.
+            across Mexico and in Punta Cana. Cancun and Riviera Maya appear in the family-experience story, while Punta
+            Cana is current service coverage; this guide does not present a client portfolio.
           </p>
         </div>
 

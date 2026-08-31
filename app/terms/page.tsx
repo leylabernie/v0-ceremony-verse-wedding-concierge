@@ -68,7 +68,7 @@ export default function TermsPage() {
             or eliminate the risks inherent in handmade and remotely purchased items.
           </p>
           <p style={{ marginTop: "1rem" }}>
-            For destination weddings in Mexico, CeremonyVerse can offer full planning,
+            For destination weddings across Mexico and in Punta Cana, CeremonyVerse can offer full planning,
             partial planning, event coordination, family communication, guest-information, arrival,
             welcome-item, and India-sourcing support. The client&apos;s wedding-specific written proposal identifies the
             selected services, outside costs, exclusions, payment terms, and approval responsibilities.

@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
     pathname.startsWith("/indian-destination-wedding-planner-mexico");
   const message = encodeURIComponent(
     destinationPage
-      ? "Hi, I'm planning a Gujarati or Hindu destination wedding in Mexico and would like to discuss CeremonyVerse support."
+      ? "Hi, I'm planning a Gujarati or Hindu destination wedding in Mexico or Punta Cana and would like to discuss CeremonyVerse support."
       : "Hi, I'm interested in CeremonyVerse wedding services and would like to learn more."
   );
 

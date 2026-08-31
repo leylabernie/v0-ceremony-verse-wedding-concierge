@@ -5,23 +5,15 @@ import test from "node:test"
 const read = (path) => readFileSync(new URL(path, import.meta.url), "utf8")
 const resortData = read("../lib/resort-pages.ts")
 const sitemap = read("../app/sitemap.ts")
-const nextConfig = read("../next.config.mjs")
 const lopesanPage = read("../app/resorts/lopesan-costa-bavaro-indian-wedding/page.tsx")
 const hardRockPage = read("../app/resorts/hard-rock-riviera-maya-indian-wedding/page.tsx")
 const hyattPage = read("../app/resorts/hyatt-inclusive-collection-indian-wedding/page.tsx")
 
 const resortPages = [
+  { name: "Lopesan Costa Bávaro", page: lopesanPage, importName: "lopesanCostaBavaro", slug: "lopesan-costa-bavaro-indian-wedding" },
   { name: "Hard Rock Riviera Maya", page: hardRockPage, importName: "hardRockRivieraMaya", slug: "hard-rock-riviera-maya-indian-wedding" },
   { name: "Hyatt Inclusive Collection", page: hyattPage, importName: "hyattInclusiveCollection", slug: "hyatt-inclusive-collection-indian-wedding" },
 ]
-
-test("the retired Lopesan Punta Cana URL redirects permanently and is not in the sitemap", () => {
-  assert.doesNotMatch(sitemap, /lopesan-costa-bavaro-indian-wedding/)
-  assert.match(
-    nextConfig,
-    /source: '\/resorts\/lopesan-costa-bavaro-indian-wedding', destination: '\/destinations\/', permanent: true/,
-  )
-})
 
 for (const { name, page, importName, slug } of resortPages) {
   test(`the ${name} resort page renders through the shared destination landing component`, () => {
@@ -81,8 +73,9 @@ test("every new resort page frames unpublished terms as written-proposal questio
 
 test("the resort pages appear in the sitemap as a contiguous group after the destination guides", () => {
   const order = [
-    "/destinations/los-cabos-indian-wedding/",
+    "/destinations/punta-cana-indian-wedding/",
     "/resorts/moon-palace-cancun-indian-wedding/",
+    "/resorts/lopesan-costa-bavaro-indian-wedding/",
     "/resorts/hard-rock-riviera-maya-indian-wedding/",
     "/resorts/hyatt-inclusive-collection-indian-wedding/",
     "/indian-destination-wedding-cost/",
