@@ -20,6 +20,24 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "indian-wedding-shopping-timeline-checklist",
+    title: "The Indian Wedding Outfit Shopping Timeline: What to Order When",
+    description: "A practical sequence for principal outfits, jewelry, family orders, shipping, customs, fittings, alterations, and backup options.",
+    date: "September 2026",
+  },
+  {
+    slug: "cost-of-sourcing-indian-wedding-outfits-from-india",
+    title: "How Much Does It Cost to Source Indian Wedding Outfits from India?",
+    description: "Compare shopping in India, buying through a US boutique, and coordinating a remote India order using the same complete cost and service scope.",
+    date: "September 2026",
+  },
+  {
+    slug: "indian-wedding-jewelry-customs-shipping-usa",
+    title: "Bringing Indian Wedding Jewelry to the US: Customs and Shipping",
+    description: "Understand the difference between traveler-carried jewelry and an international shipment, including documentation and current official sources.",
+    date: "Reviewed September 2026",
+  },
+  {
     slug: "how-to-plan-gujarati-hindu-destination-wedding-mexico",
     title: "How to Plan a Gujarati or Hindu Destination Wedding in Mexico",
     description: "A practical guide to guest documents, resort proposals, cultural decisions, budgets, family responsibilities, and on-site execution for a wedding in Mexico.",
@@ -56,10 +74,10 @@ const posts = [
     date: "June 2026",
   },
   {
-    slug: "custom-sherwani-sizing-guide-india-usa",
-    title: "Sizing and Sourcing a Custom Men's Sherwani from India Without Leaving the US",
-    description: "Five important sherwani measurements, fabric-selection guidance, and practical steps to reduce remote custom-fit risk.",
-    date: "June 2026",
+    slug: "how-to-buy-sherwani-from-india-usa",
+    title: "How to Buy a Sherwani from India for Your US Wedding",
+    description: "Compare silhouettes, materials, remote measurements, written approvals, shipping responsibilities, and alteration buffers.",
+    date: "Updated September 2026",
   },
   {
     slug: "indian-wedding-return-gifts-bulk-usa",

@@ -208,6 +208,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
           </h2>
           <p>
             Measurements are only one part of the order record. Read{" "}
+            <Link href="/blog/indian-wedding-shopping-timeline-checklist/" style={{ color: "#7a6841" }}>the complete outfit-shopping timeline</Link>,{" "}
             <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>how to build a complete bridal-lehenga quote</Link>{" "}
             and the{" "}
             <Link href="/blog/ordering-indian-wedding-outfits-usa-canada/" style={{ color: "#7a6841" }}>USA and Canada ordering guide</Link>{" "}
