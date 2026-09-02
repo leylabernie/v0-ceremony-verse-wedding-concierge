@@ -20,13 +20,16 @@ test("the Gujarati Mexico landing page retains its focused metadata and answer-e
   assert.match(landingPage, /buildServiceSchema\(/)
 })
 
-test("the page keeps a concise snippet and a verified Instagram entity reference", () => {
+test("the page keeps a concise snippet and drops the inactive Instagram entity reference", () => {
   assert.match(
     landingPage,
     /Plan a Gujarati destination wedding in Mexico with Mini: clarify family decisions, resort questions, guest needs, and written provider handoffs\./,
   )
-  assert.match(seoHelpers, /https:\/\/www\.instagram\.com\/ceremonyverse\//)
-  assert.match(footer, /Follow @ceremonyverse on Instagram/)
+  // GEO/AEO blueprint entity cleanup: the Instagram profile is not
+  // maintained, so it must NOT appear in schema sameAs or the footer.
+  // An inactive account in sameAs weakens entity trust with answer engines.
+  assert.doesNotMatch(seoHelpers, /https:\/\/www\.instagram\.com\/ceremonyverse\//)
+  assert.doesNotMatch(footer, /Follow @ceremonyverse on Instagram/)
 })
 
 test("the Gujarati event flow stays aligned with the founder-confirmed sequence", () => {

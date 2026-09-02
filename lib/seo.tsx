@@ -14,6 +14,49 @@ export const SITE_NAME = "CeremonyVerse"
 export const SITE_EMAIL = "hello@ceremonyverse.com"
 export const SITE_PHONE = "+12153419990"
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baarat.webp`
+// Raster logo for structured data. Google does not support SVG URLs for
+// Organization/LocalBusiness logo properties, so schema blocks reference
+// this 512x512 PNG (rendered from app/icon.svg - same brand mark). The
+// favicon/browser icons remain SVG and are unchanged.
+export const BRAND_LOGO_URL = `${SITE_URL}/assets/brand/ceremonyverse-logo-512.png`
+
+function buildLogoImageObject(): object {
+  return {
+    "@type": "ImageObject",
+    "@id": `${SITE_URL}#logo`,
+    url: BRAND_LOGO_URL,
+    contentUrl: BRAND_LOGO_URL,
+    width: 512,
+    height: 512,
+    caption: "CeremonyVerse logo",
+  }
+}
+
+// Founder entity, per the CeremonyVerse GEO/AEO blueprint: legal name
+// "Bhamini", publicly displayed as "Mini". The site copy (home + about
+// pages) already identifies "Mini" as founder; this makes the same fact
+// machine-readable. No surname is asserted because none is published.
+export const FOUNDER_ENTITY: Record<string, unknown> = {
+  "@type": "Person",
+  name: "Bhamini",
+  alternateName: "Mini",
+  jobTitle: "Founder and Destination Wedding Concierge",
+  worksFor: { "@id": `${SITE_URL}#organization` },
+}
+
+// Topics the organization can credibly speak about, drawn from the live
+// site's own service pages and guides. Used for the Organization knowsAbout
+// property so answer engines can map entity expertise to page clusters.
+export const ORGANIZATION_KNOWS_ABOUT: string[] = [
+  "Gujarati destination weddings",
+  "Hindu destination weddings",
+  "Indian destination weddings in Mexico",
+  "Indian destination weddings in Punta Cana",
+  "Wedding room blocks and resort proposal comparison",
+  "Multi-day wedding event logistics",
+  "India wedding-outfit sourcing",
+  "Landed-cost planning for shipments from India to the United States and Canada",
+]
 
 type SchemaArea = {
   "@type": "Country" | "Place"
@@ -170,10 +213,7 @@ export function buildBlogPosting(opts: {
       "@type": "Organization",
       name: SITE_NAME,
       url: SITE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${SITE_URL}/icon.svg`,
-      },
+      logo: buildLogoImageObject(),
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -276,7 +316,7 @@ export function buildLocalBusinessSchema(): object {
       "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     url: SITE_URL,
     image: DEFAULT_OG_IMAGE,
-    logo: `${SITE_URL}/icon.svg`,
+    logo: buildLogoImageObject(),
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
     address: {
@@ -292,10 +332,9 @@ export function buildLocalBusinessSchema(): object {
       "Dominican Republic",
     ]),
     priceRange: "$$",
-    sameAs: [
-      "https://wa.me/12153419990",
-      "https://www.instagram.com/ceremonyverse/",
-    ],
+    // Blueprint entity cleanup: the Instagram profile is not maintained,
+    // and an inactive account in sameAs weakens entity trust. Removed.
+    sameAs: ["https://wa.me/12153419990"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Destination Planning and India Outfit Sourcing Services",
@@ -372,10 +411,14 @@ export function buildOrganizationSchema(): object {
     "@id": `${SITE_URL}#organization`,
     name: SITE_NAME,
     url: SITE_URL,
-    logo: `${SITE_URL}/icon.svg`,
+    logo: buildLogoImageObject(),
     image: DEFAULT_OG_IMAGE,
     description:
       "CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service focused on Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+    telephone: SITE_PHONE,
+    email: SITE_EMAIL,
+    founder: FOUNDER_ENTITY,
+    knowsAbout: ORGANIZATION_KNOWS_ABOUT,
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -391,10 +434,8 @@ export function buildOrganizationSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    sameAs: [
-      "https://wa.me/12153419990",
-      "https://www.instagram.com/ceremonyverse/",
-    ],
+    // Blueprint entity cleanup: inactive Instagram profile removed.
+    sameAs: ["https://wa.me/12153419990"],
   }
 }
 
@@ -411,5 +452,53 @@ export function buildWebSiteSchema(): object {
       "@id": `${SITE_URL}#organization`,
     },
     inLanguage: "en-US",
+  }
+}
+
+/**
+ * Product + Offer + MerchantReturnPolicy for the $300 Destination Wedding
+ * Feasibility & Action Plan. Every field mirrors terms already published on
+ * the page itself: the fixed $300 fee, and the 30-day window in which the
+ * fee is credited toward a signed CeremonyVerse planning contract
+ * (non-refundable once work begins). The MerchantReturnPolicy models that
+ * visible 30-day credit window — it does not invent any new commercial term.
+ */
+export function buildFeasibilityPlanProductSchema(plan: {
+  name: string
+  alternateName: string
+  description: string
+  href: string
+  price: number
+  creditWindowDays: number
+}): object {
+  const url = `${SITE_URL}${plan.href}`
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: plan.name,
+    alternateName: plan.alternateName,
+    description: plan.description,
+    url,
+    brand: {
+      "@type": "Brand",
+      name: SITE_NAME,
+    },
+    offers: {
+      "@type": "Offer",
+      "@id": `${url}#offer`,
+      url,
+      price: plan.price.toFixed(2),
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      seller: { "@id": `${SITE_URL}#organization` },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: ["US", "CA"],
+        returnPolicyCategory:
+          "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: plan.creditWindowDays,
+      },
+    },
   }
 }

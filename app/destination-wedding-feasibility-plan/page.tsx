@@ -4,7 +4,7 @@ import {
   destinationFeasibilityCredit,
   destinationFeasibilityPlan,
 } from "@/lib/destination-feasibility-plan"
-import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
+import { buildBreadcrumb, buildFaqSchema, buildFeasibilityPlanProductSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: destinationFeasibilityPlan.href,
@@ -34,6 +34,17 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: destinationFeasibilityPlan.name, url: destinationFeasibilityPlan.href },
 ])
 
+// Product/Offer graph for the $300 plan (blueprint §JSON-LD): precise price
+// plus a MerchantReturnPolicy that mirrors the published 30-day credit terms.
+const productSchema = buildFeasibilityPlanProductSchema({
+  name: destinationFeasibilityPlan.name,
+  alternateName: "$300 Feasibility & Action Plan",
+  description: destinationFeasibilityPlan.description,
+  href: destinationFeasibilityPlan.href,
+  price: destinationFeasibilityPlan.price,
+  creditWindowDays: destinationFeasibilityPlan.creditWindowDays,
+})
+
 const faqItems = [
   {
     question: "Is the free call still available?",
@@ -60,6 +71,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
+      <JsonLd id="schema-product" data={productSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={buildFaqSchema(faqItems)} />
       <SeoNav />
