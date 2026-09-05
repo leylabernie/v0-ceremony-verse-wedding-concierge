@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { DestinationPageData } from "@/lib/destination-pages"
 import { JsonLd, buildBreadcrumb, buildFaqSchema, buildServiceSchema } from "@/lib/seo"
+import { resortProfileHrefByName, siblingResortProfiles } from "@/lib/resort-links"
 
 export function DestinationLandingPage({ data }: { data: DestinationPageData }) {
   const breadcrumbSchema = buildBreadcrumb([
@@ -132,7 +133,21 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
               <Link href="/planning-tools/resort-comparison/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open Resort Comparison Calculator</Link>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
-              {data.resortExamples.map((resort) => <div key={resort} className="rounded-xl border border-[#e6dfd5] bg-white p-5 font-semibold text-[#4d403a]">{resort}</div>)}
+              {data.resortExamples.map((resort) => {
+                const profileHref = resortProfileHrefByName[resort]
+                const className =
+                  "block rounded-xl border border-[#e6dfd5] bg-white p-5 font-semibold text-[#4d403a] transition hover:border-[#7a6841]"
+                return profileHref ? (
+                  <Link key={resort} href={profileHref} className={className}>
+                    {resort}
+                    <span className="mt-2 block text-xs font-normal leading-5 text-[#7a6841]">
+                      Read the written feasibility profile →
+                    </span>
+                  </Link>
+                ) : (
+                  <div key={resort} className="rounded-xl border border-[#e6dfd5] bg-white p-5 font-semibold text-[#4d403a]">{resort}</div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -199,6 +214,37 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
           </div>
         </div>
       </section>
+
+      {siblingResortProfiles(data.slug).length > 0 && (
+        <section className="border-t border-[#e6dfd5] bg-[#f4eee4] px-6 py-16">
+          <div className="mx-auto max-w-5xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">More written profiles</p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold">Compare other resort profiles</h2>
+            <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">
+              Independent evaluation profiles — not endorsements or affiliations. Each covers the package, venue,
+              catering, room-block, and weather-backup terms to confirm in a current written proposal.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {siblingResortProfiles(data.slug).map((profile) => (
+                <Link
+                  key={profile.href}
+                  href={profile.href}
+                  className="block rounded-xl border border-[#d9cfbf] bg-white p-6 transition hover:border-[#7a6841]"
+                >
+                  <span className="font-serif text-2xl font-semibold text-[#1f1f1f]">{profile.label}</span>
+                  <span className="mt-2 block text-sm leading-6 text-[#4d403a]">{profile.summary}</span>
+                  <span className="mt-3 inline-block text-sm font-semibold text-[#7a6841]">Read the profile →</span>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8 text-sm font-semibold text-[#7a6841]">
+              <Link href="/resorts/" className="underline underline-offset-4">Browse all resort profiles</Link>
+              {" · "}
+              <Link href="/planning-tools/resort-comparison/" className="underline underline-offset-4">Open the Resort Comparison Calculator</Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="border-t border-[#e6dfd5] bg-white px-6 py-14">
         <div className="mx-auto max-w-5xl">
