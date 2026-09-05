@@ -16,6 +16,7 @@ const serviceLinks = [
 
 const destinationLinks = [
   { label: "Destination Overview", href: "/destinations/" },
+  { label: "Resort Profiles", href: "/resorts/" },
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
