@@ -42,6 +42,7 @@ const companyLinks = [
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
   { label: "Contact", href: "/contact/" },
+  { label: "For Wedding Vendors", href: "/vendors/" },
 ];
 
 export function GlobalFooter() {
