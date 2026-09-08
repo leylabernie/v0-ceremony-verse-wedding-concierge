@@ -20,6 +20,18 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "hidden-resort-fees-4-day-indian-wedding-cancun",
+    title: "Hidden Resort Fees for a 4-Day Indian Wedding in Cancún",
+    description: "The private-event minimums, outside-vendor fees, production charges, day passes, and taxes that a multi-day Indian wedding in Cancún adds beyond the resort package.",
+    date: "September 2026",
+  },
+  {
+    slug: "indian-wedding-catering-mexico-all-inclusive-resorts",
+    title: "Indian Wedding Catering at Mexico All-Inclusive Resorts",
+    description: "How resort kitchens handle Gujarati and Hindu wedding menus, when outside chefs and caterers are permitted, and the Jain, satvik, and pure-vegetarian requirements to confirm in writing.",
+    date: "September 2026",
+  },
+  {
     slug: "how-to-plan-gujarati-hindu-destination-wedding-mexico",
     title: "How to Plan a Gujarati or Hindu Destination Wedding in Mexico",
     description: "A practical guide to guest documents, resort proposals, cultural decisions, budgets, family responsibilities, and on-site execution for a wedding in Mexico.",
