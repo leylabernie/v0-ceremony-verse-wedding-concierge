@@ -332,9 +332,10 @@ export function buildLocalBusinessSchema(): object {
       "Dominican Republic",
     ]),
     priceRange: "$$",
-    // Blueprint entity cleanup: the Instagram profile is not maintained,
-    // and an inactive account in sameAs weakens entity trust. Removed.
-    sameAs: ["https://wa.me/12153419990"],
+    sameAs: [
+      "https://wa.me/12153419990",
+      "https://www.instagram.com/glamourindianwear4u/",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Destination Planning and India Outfit Sourcing Services",
@@ -434,8 +435,10 @@ export function buildOrganizationSchema(): object {
       addressRegion: "PA",
       addressLocality: "Philadelphia",
     },
-    // Blueprint entity cleanup: inactive Instagram profile removed.
-    sameAs: ["https://wa.me/12153419990"],
+    sameAs: [
+      "https://wa.me/12153419990",
+      "https://www.instagram.com/glamourindianwear4u/",
+    ],
   }
 }
 
