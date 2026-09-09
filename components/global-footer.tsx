@@ -73,9 +73,14 @@ export function GlobalFooter() {
               <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
                 WhatsApp or call +1 (215) 341-9990
               </a>
-              {/* Instagram link removed per GEO/AEO blueprint entity cleanup:
-                  the profile is not actively maintained, and an inactive
-                  social link in the footer weakens entity trust signals. */}
+              <a
+                href="https://www.instagram.com/glamourindianwear4u/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}
+              >
+                Follow @glamourindianwear4u on Instagram
+              </a>
               <Link href="/how-it-works/" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
                 Review the complete planning process →
               </Link>
