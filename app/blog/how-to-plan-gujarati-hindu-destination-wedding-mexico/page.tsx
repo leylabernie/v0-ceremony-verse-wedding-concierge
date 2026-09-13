@@ -1,3 +1,4 @@
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/seo";
@@ -237,6 +238,7 @@ export default function BlogPost() {
             is planning information, not immigration, legal, insurance, tax, or travel-provider advice.
           </p>
         </div>
+      <VisibleFaqs schema={faqSchema} />
       </article>
     </main>
   );

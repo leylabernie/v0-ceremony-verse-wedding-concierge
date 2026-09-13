@@ -1,3 +1,4 @@
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import {
@@ -183,6 +184,7 @@ export default function SouthIndianChristianWeddingOutfitGuide() {
             </Link>
           </section>
         </div>
+      <VisibleFaqs schema={faqSchema} />
       </article>
     </main>
   )

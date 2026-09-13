@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -16,6 +17,7 @@ export const metadata = buildMetadata({
     "real vs fake Kanjivaram saree",
   ],
   publishedTime: "2026-06-28",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -27,6 +29,7 @@ const blogPostingSchema = buildBlogPosting({
     "Evaluate seller claims, item-specific Silk Mark documentation, fiber and zari representations, complete costs, and delivery terms when researching Kanchipuram sarees online.",
   url: "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/",
   datePublished: "2026-06-28",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "how to identify real Kanchipuram silk online",
     "authentic Kanjivaram sarees USA",
@@ -631,6 +634,7 @@ export default function KanchipuramSilkGuideBlogPost() {
           </p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Create a verification and draping record" paragraphs={["Before approving a saree, request clear images of the full body, border, pallu, reverse, and blouse piece in consistent lighting. Ask the seller to state fiber composition and any authenticity claim on the invoice. Keep the invoice and the actual seller’s return terms with the approval record.", "Plan the blouse fitting, fall and edging work if desired, draping assistance, and jewelry together. For a destination ceremony, identify who carries and prepares the saree and how much dressing time is needed. These practical choices belong in the wedding-week schedule."]} />
       </article>
     </main>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { WeddingBudgetExamples } from "@/components/wedding-budget-examples"
 import { SeoNav } from "@/components/seo-nav"
 import {
   buildBreadcrumb,
@@ -18,7 +19,7 @@ import {
 
 export const metadata = buildMetadata({
   path: "/pricing/",
-  title: "Destination Wedding Planning & India Sourcing Pricing",
+  title: "Indian Destination Wedding Packages & Pricing",
   description:
     "CeremonyVerse pricing: $4,000 event coordination, $5,500 partial planning, $8,000 full planning, a $300 feasibility plan, and flat-fee India sourcing.",
   keywords:
@@ -169,7 +170,7 @@ export default function PricingPage() {
             Flat service fees
           </p>
           <h1 className="mb-6 font-serif text-5xl font-semibold !text-white sm:text-6xl">
-            Pay for the level of help you need
+            Destination Wedding Packages &amp; Pricing
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
             India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
@@ -426,6 +427,7 @@ export default function PricingPage() {
           </Link>
         </div>
       </section>
+      <WeddingBudgetExamples />
     </main>
   )
 }

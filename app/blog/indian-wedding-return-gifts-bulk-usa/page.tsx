@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
 import {
@@ -16,7 +17,7 @@ export const metadata = buildMetadata({
   description:
     "Plan Indian wedding favors and return gifts for USA or Canada with samples, personalization proofs, complete quotes, packing evidence, customs checks, and realistic timelines.",
   publishedTime: "2026-06-28",
-  modifiedTime: "2026-08-11",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -27,7 +28,7 @@ const blogPostingSchema = buildBlogPosting({
     "A documented process for comparing, approving, packing, and shipping bulk Indian wedding favors and return gifts to the United States or Canada.",
   url: path,
   datePublished: "2026-06-28",
-  dateModified: "2026-08-11",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "Indian wedding return gifts",
     "bulk Indian wedding favors",
@@ -185,6 +186,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
         <div className="mt-12">
           <SourcingCallout />
         </div>
+      <ArticlePlanningUpdate title="Plan the gifting journey from supplier to guest" paragraphs={["Decide whether favors will be delivered to the home, shipped to the destination, or assembled locally. Count units, spare pieces, packaging volume, and who will carry or receive each carton. Ask about breakage replacement before approving fragile goods.", "Check carrier and official import rules for food, liquids, seeds, and other restricted materials before choosing the favor. At the resort, agree on storage, room delivery permissions, and any distribution charge. Guest gifts should have their own line in the complete wedding budget."]} />
       </article>
     </main>
   );

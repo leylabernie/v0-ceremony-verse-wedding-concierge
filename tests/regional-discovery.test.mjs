@@ -34,7 +34,13 @@ test("the Mexico discovery path links the destination hub and Gujarati landing t
   assert.match(gujaratiMexicoLanding, /\/destinations\/los-cabos-indian-wedding\//)
 })
 
-test("the Jamaica research page remains no-indexed until planning availability is verified", () => {
-  assert.match(jamaicaLayout, /robots: \{ index: false, follow: true \}/)
-  assert.match(jamaicaLayout, /availability is not currently verified/)
+test("the owner-confirmed Jamaica destination is linked, sitemap-listed, and not excluded from indexing", () => {
+  assert.doesNotMatch(jamaicaLayout, /index: false|noindex|availability is not currently verified/)
+  assert.match(jamaicaLayout, /offers destination-wedding planning in Mexico, Jamaica, and Punta Cana/)
+  assert.match(destinationsHub, /href: "\/destinations\/jamaica-indian-wedding\/"/)
+  assert.match(destinationsHub, /href: "\/destinations\/punta-cana-indian-wedding\/"/)
+  assert.match(sitemap, /path: "\/destinations\/jamaica-indian-wedding\/"/)
+  const config = read("../next.config.mjs")
+  assert.doesNotMatch(config, /source: '\/destinations\/jamaica-indian-wedding'/)
+  assert.match(config, /source: '\/terms', headers: \[\{ key: 'X-Robots-Tag', value: 'noindex, follow'/)
 })

@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -9,6 +10,7 @@ export const metadata = buildMetadata({
   description: "Plan a Gujarati wedding wardrobe from abroad with family-approved guidance for Panetar, Gharchola, Garba, Pithi, Mehndi, wedding, and reception looks.",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -18,6 +20,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "A practical Gujarati wedding outfit guide for Garba, Mehndi, Pithi, Mameru, the wedding ceremony, and reception, with family-specific traditions confirmed before sourcing.",
   url: "/blog/gujarati-wedding-outfit-guide/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["gujarati wedding outfit guide", "chaniya choli for garba", "gujarati wedding dress code", "mameru outfit gujarati wedding"],
 });
 
@@ -254,6 +257,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
           </p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Match each outfit to your family\u2019s actual events" paragraphs={["Create one wardrobe row for each confirmed celebration: Pithi, Mehndi, Garba or Sangeet, ceremony, and reception. Record who approves the look, which heirlooms are included, whether help with draping is needed, and where the outfit will be stored. Panetar and Gharchola decisions should follow your family’s practice.", "At a beach resort, allow a comfortable change window between events and check the walking surface before choosing footwear. Share the approved dress code with guests early. An outfit plan becomes much more useful when it is connected to the four-day wedding schedule."]} />
       </article>
     </main>
   );

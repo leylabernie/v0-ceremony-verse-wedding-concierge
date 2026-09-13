@@ -8,6 +8,7 @@
 import type { Metadata } from "next"
 import React from "react"
 import { mexicoPackages } from "@/lib/mexico-packages"
+import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
 export const SITE_URL = "https://www.ceremonyverse.com"
 export const SITE_NAME = "CeremonyVerse"
@@ -51,6 +52,7 @@ export const ORGANIZATION_KNOWS_ABOUT: string[] = [
   "Gujarati destination weddings",
   "Hindu destination weddings",
   "Indian destination weddings in Mexico",
+  "Indian destination weddings in Jamaica",
   "Indian destination weddings in Punta Cana",
   "Wedding room blocks and resort proposal comparison",
   "Multi-day wedding event logistics",
@@ -76,7 +78,7 @@ function buildAreaServed(areaServed?: string | string[]): SchemaArea[] {
     : defaultSourcingAreas.map((area) => area.name)
 
   return areaNames.map((name) => ({
-    "@type": ["United States", "Canada", "Mexico", "Dominican Republic"].includes(name)
+    "@type": ["United States", "Canada", "Mexico", "Jamaica", "Dominican Republic"].includes(name)
       ? "Country"
       : "Place",
     name,
@@ -152,7 +154,7 @@ export function JsonLd({ id, data }: { id: string; data: object | object[] }): R
     <script
       id={id}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
     />
   )
 }
@@ -313,7 +315,7 @@ export function buildLocalBusinessSchema(): object {
     "@id": `${SITE_URL}#business`,
     name: SITE_NAME,
     description:
-      "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     url: SITE_URL,
     image: DEFAULT_OG_IMAGE,
     logo: buildLogoImageObject(),
@@ -329,9 +331,10 @@ export function buildLocalBusinessSchema(): object {
       "United States",
       "Canada",
       "Mexico",
-      "Dominican Republic",
+      "Jamaica",
+      "Punta Cana, Dominican Republic",
     ]),
-    priceRange: "$$",
+    priceRange: "$300 feasibility plan; planning services from $4,000 USD",
     sameAs: [
       "https://wa.me/12153419990",
       "https://www.instagram.com/glamourindianwear4u/",
@@ -340,6 +343,17 @@ export function buildLocalBusinessSchema(): object {
       "@type": "OfferCatalog",
       name: "Destination Planning and India Outfit Sourcing Services",
       itemListElement: [
+        {
+          "@type": "Offer",
+          url: `${SITE_URL}${destinationFeasibilityPlan.href}`,
+          price: String(destinationFeasibilityPlan.price),
+          priceCurrency: "USD",
+          itemOffered: {
+            "@type": "Service",
+            name: destinationFeasibilityPlan.name,
+            description: destinationFeasibilityPlan.description,
+          },
+        },
         ...mexicoPackages
           .filter((service) => service.numericPrice !== undefined)
           .map((service) => ({
@@ -385,7 +399,7 @@ export function buildGlobalFaqSchema(): object {
     {
       question: "What does CeremonyVerse do?",
       answer:
-        "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana for U.S. and Canadian families, with optional paid India wedding-outfit sourcing.",
+        "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana for U.S. and Canadian families, with optional paid India wedding-outfit sourcing.",
     },
     {
       question: "Is the first consultation free?",
@@ -415,7 +429,7 @@ export function buildOrganizationSchema(): object {
     logo: buildLogoImageObject(),
     image: DEFAULT_OG_IMAGE,
     description:
-      "CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service focused on Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "CeremonyVerse is a U.S.-based Gujarati and Hindu destination-wedding planning service focused on Mexico, Jamaica, and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
     founder: FOUNDER_ENTITY,
@@ -450,58 +464,10 @@ export function buildWebSiteSchema(): object {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
     publisher: {
       "@id": `${SITE_URL}#organization`,
     },
     inLanguage: "en-US",
-  }
-}
-
-/**
- * Product + Offer + MerchantReturnPolicy for the $300 Destination Wedding
- * Feasibility & Action Plan. Every field mirrors terms already published on
- * the page itself: the fixed $300 fee, and the 30-day window in which the
- * fee is credited toward a signed CeremonyVerse planning contract
- * (non-refundable once work begins). The MerchantReturnPolicy models that
- * visible 30-day credit window — it does not invent any new commercial term.
- */
-export function buildFeasibilityPlanProductSchema(plan: {
-  name: string
-  alternateName: string
-  description: string
-  href: string
-  price: number
-  creditWindowDays: number
-}): object {
-  const url = `${SITE_URL}${plan.href}`
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${url}#product`,
-    name: plan.name,
-    alternateName: plan.alternateName,
-    description: plan.description,
-    url,
-    brand: {
-      "@type": "Brand",
-      name: SITE_NAME,
-    },
-    offers: {
-      "@type": "Offer",
-      "@id": `${url}#offer`,
-      url,
-      price: plan.price.toFixed(2),
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      seller: { "@id": `${SITE_URL}#organization` },
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        applicableCountry: ["US", "CA"],
-        returnPolicyCategory:
-          "https://schema.org/MerchantReturnFiniteReturnWindow",
-        merchantReturnDays: plan.creditWindowDays,
-      },
-    },
   }
 }

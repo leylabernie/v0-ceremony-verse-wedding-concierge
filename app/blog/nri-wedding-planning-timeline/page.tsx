@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -9,6 +10,7 @@ export const metadata = buildMetadata({
   description: "Month-by-month NRI wedding planning timeline for sourcing Indian wedding outfits, jewelry, ceremonial items, return gifts, and welcome bags from India. Includes when to book video shopping sessions and how to avoid rush-shipping fees.",
   keywords: ["NRI wedding planning timeline", "when to order Indian wedding outfits from India", "Indian wedding planning checklist USA", "NRI bride 12 month timeline", "Indian wedding outfit ordering schedule"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -18,6 +20,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "A 12-month NRI wedding planning framework for U.S. and Canadian families sourcing outfits, jewelry, ceremonial items, gifts, and welcome bags from India.",
   url: "/blog/nri-wedding-planning-timeline/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["NRI wedding planning timeline", "Indian wedding planning checklist USA", "when to order wedding outfits from India", "NRI bride planning guide"],
 });
 
@@ -298,6 +301,7 @@ export default function NriWeddingPlanningTimeline() {
           </p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Add decision gates before deposits and departure" paragraphs={["Use four checkpoints: an approved family brief, a comparable set of written proposals, finalized event and vendor responsibilities, and a wedding-week handover. At each checkpoint, name the person making the decision and list the missing information. Calendar reminders alone cannot resolve an unassigned decision.", "For a destination wedding, connect the room-block deadlines, guest travel, ritual permissions, menu approval, outfit fittings, and vendor access. Keep a low-attendance budget scenario alongside the expected guest count. Review what changes if the family chooses Mexico, Jamaica, or Punta Cana."]} />
       </article>
     </main>
   );

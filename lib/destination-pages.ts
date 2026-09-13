@@ -28,6 +28,7 @@ export type DestinationPageData = {
     intro: string
   }
   sourcesReviewedOn?: string
+  regionalSections?: { title: string; paragraphs: string[]; source?: { label: string; href: string } }[]
 }
 
 export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "jamaica" | "puntaCana", DestinationPageData> = {
@@ -409,7 +410,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
       {
         question: "Does CeremonyVerse cover Los Cabos?",
         answer:
-          "Yes. Current destination-wedding service coverage includes Los Cabos and other areas of Mexico, plus Punta Cana. Availability, the selected local team, responsibilities, travel, and wedding-specific costs are confirmed in the written proposal.",
+          "Yes. Current destination-wedding service coverage includes Los Cabos and other areas of Mexico, plus Jamaica and Punta Cana. Availability, the selected local team, responsibilities, travel, and wedding-specific costs are confirmed in the written proposal.",
       },
     ],
     sources: [
@@ -438,12 +439,32 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
   jamaica: {
     slug: "/destinations/jamaica-indian-wedding/",
     shortName: "Jamaica",
-    title: "Indian destination wedding in Jamaica",
+    title: "Indian destination wedding in Jamaica: Ocho Rios & Montego Bay",
     eyebrow: "Jamaica planning guide",
     description:
-      "Plan an Indian destination wedding in Jamaica with current resort-package, South Asian capability, room-block, cultural, catering, guest-access, and weather checks.",
+      "Compare Ocho Rios and Montego Bay for a Gujarati or Hindu wedding in Jamaica: resort options, Indian catering, pandit and mandap logistics, guest travel and planning fees.",
     answer:
       "Jamaica can support a multi-day Indian destination wedding when the selected resort, event spaces, cultural permissions, food operation, room block, guest travel plan, entertainment rules, and on-site team fit the celebration. Public package pages are useful for building a shortlist, but the current resort-written proposal—not a brochure headline—must control the decision.",
+    regionalSections: [
+      {title:"Indian destination weddings in Ocho Rios",paragraphs:[
+        "Ocho Rios deserves its own resort and arrival plan. Moon Palace Jamaica is an Ocho Rios option to evaluate for a multi-event wedding; its official wedding pages describe family-oriented facilities, wedding collections, and group benefits. Ask for a Jamaica-specific proposal covering your actual Mehndi, Haldi, Sangeet, Baraat, Hindu ceremony, and reception. A package used at Moon Palace Cancun does not automatically apply in Jamaica.",
+        "Confirm each venue's seated capacity after allowing for the mandap, dance floor, stage, buffet, and access aisles. Have the resort approve the havan, installation method, procession route, music, pandit, vegetarian or Jain preparation, and outside-vendor access in writing. Ask for an indoor alternative for every important outdoor celebration.",
+        "The tourist board lists Ian Fleming International Airport for the Ocho Rios area as well as other international gateways. Compare actual flight options with the ground journey to your selected resort. Do not assume that the nearest airport has the most practical service for every U.S. or Canadian guest. Group arrivals by flight window and confirm transfers, luggage capacity, mobility needs, and late-arrival instructions."
+      ],source:{label:"Official Moon Palace Jamaica wedding profile",href:"https://weddings.thepalacecompany.com/resorts/moon-palace-jamaica"}},
+      {title:"Indian destination weddings in Montego Bay and Trelawny",paragraphs:[
+        "Montego Bay is served by Sangster International Airport. Compare properties in the Montego Bay area separately from resorts farther along the north coast. Royalton Blue Waters is in Trelawny and publicly promotes Kohinoor South Asian wedding packages. Keep that precise location in your comparison so guests do not mistake a regional marketing label for the resort's actual transfer route.",
+        "Royalton's South Asian program is a useful shortlist signal, but request your event count, menus, Garba space, Hindu fire approval, mandap setup, guest allowance, room requirements, and all additions. For an adults-only property, clarify guest-age restrictions before including children on an event plan. Check each named hotel's current operating dates and facilities before collecting guest bookings.",
+        "Compare the complete wedding cost with an Ocho Rios proposal using identical assumptions. Include any travel and lodging for the pandit, DJ, beauty team, planners, or specialty caterer. A locally based supplier can still need resort approval, passes, meals, setup access, and equipment permissions. Ask who can resolve a vendor or production problem during each event."
+      ],source:{label:"Royalton Blue Waters: official South Asian weddings",href:"https://www.royaltonresorts.com/resorts/blue-waters/special-occasions/weddings"}},
+      {title:"Hindu ceremony and Indian catering in Jamaica",paragraphs:[
+        "Begin with the family's ceremony brief and food requirements. Document the pandit's timing, language explanations, puja materials, havan, seating, and shade. Agree on the Baraat gathering point, route, sound, groom arrival, and weather alternative. Do not assume a symbolic ceremony package includes a Hindu priest or religious materials.",
+        "For each meal, distinguish vegetarian, Jain, vegan, satvik, and allergy requests. Ask who prepares the food, whether separate cookware or prep areas can be provided, and how meals are labeled during service. An outside chef, live chaat station, sweets delivery, or prasad arrangement needs the property's approval, responsible food provider, and itemized costs."
+      ]},
+      {title:"Guest travel from the USA and Canada",paragraphs:[
+        "Map the departure cities of the largest guest groups before selecting dates. Compare connections and arrival windows, not only the lowest displayed fare. Keep a plan for older guests, children, accessible transfers, missed connections, and the wedding outfits travelling with the family. The resort or authorized travel provider confirms bookings, current entry requirements, and contract terms for each traveler.",
+        "Use the $300 Feasibility Plan when the destination, attendance, rituals, and budget are still uncertain. Bring up to two current resort proposals, a guest range, and a list of host-paid travel obligations. CeremonyVerse planning fees start at $4,000 for coordination, $5,500 for partial planning, and $8,000 for full planning; the wedding-specific written proposal defines the final Jamaica scope."
+      ],source:{label:"Jamaica Tourist Board: airports and arrival information",href:"https://www.visitjamaica.com/plan-your-adventure/getting-here/"}}
+    ],
     idealFor: [
       "Families whose guest map has practical current flights to the airport serving the selected resort area",
       "Couples comparing all-inclusive properties with multi-event venue options",
@@ -527,10 +548,8 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
       },
       {
         resort: "Bahia Principe Jamaica",
-        publicDetail:
-          "Bahia Principe's public weddings page advertises Blissful from $689 and Joyful from $989 for participating resorts in the Dominican Republic, Mexico, and Jamaica. Its general guide describes ceremony, dinner, photo, sound, toast, and stay-perk elements by package.",
-        planningNote:
-          "Those are chain-wide public starting points, not a guaranteed Jamaica quote or complete Indian-wedding total. Exact hotel, venue, guest count, legal-ceremony supplement, guest passes, additions, availability, and current written terms control.",
+        publicDetail: "Request a current proposal for the exact Jamaica property, event program, and guest count.",
+        planningNote: "Earlier chain-wide starting prices are not a current Jamaica quote. Confirm operating dates, package year, Hindu ceremony capability, menus, outside-vendor rules, and all additions.",
         sourceHref: "https://www.bahia-principe.com/en/weddings/",
       },
     ],
@@ -553,10 +572,17 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
       "Who is physically present and authorized to solve resort, vendor, guest, transfer, entertainment, and weather problems?",
     ],
     faqs: [
+      {question:"Is Ocho Rios or Montego Bay better for an Indian wedding?",answer:"Compare the exact properties, guest flights, transfers, event layouts, Hindu ceremony permissions, Indian catering, vendor travel, and rain backups. Ocho Rios and Montego Bay are distinct planning areas. Royalton Blue Waters is in Trelawny; Moon Palace Jamaica is in Ocho Rios. A region name alone does not establish the best fit."},
+      {question:"Can we have a Hindu ceremony and Garba in Jamaica?",answer:"Potentially, when the selected resort approves the ceremony fire, pandit, mandap, procession, sound, dance floor, food plan, and event hours. Request those exact arrangements in writing. A generic wedding package does not automatically include all Gujarati or Hindu requirements."},
       {
         question: "How much does a Jamaica resort wedding package cost?",
         answer:
-          "Public starting points vary widely by resort and scope. For example, Grand Palladium's dated 2025 Tropical Bliss page showed $8,400 for up to 50, Royalton Blue Waters requires a quote for its Kohinoor South Asian option, and Bahia Principe advertises chain-wide starting packages from $689. None is a complete Indian destination-wedding budget or guaranteed current Jamaica price.",
+          "Public starting points vary widely by resort and scope. For example, Grand Palladium's dated 2025 Tropical Bliss page showed $8,400 for up to 50, Royalton Blue Waters requires a quote for its Kohinoor South Asian option, and other resorts require current property-specific pricing. None is a complete Indian destination-wedding budget or guaranteed current Jamaica price.",
+      },
+      {
+        question: "Does CeremonyVerse plan destination weddings in Jamaica?",
+        answer:
+          "Yes. CeremonyVerse offers Gujarati and Hindu destination-wedding planning in Jamaica, alongside Mexico and Punta Cana, for families across the United States and Canada. The wedding-specific written proposal confirms the selected resort, dates, destination team, planning responsibilities, and any optional India sourcing.",
       },
       {
         question: "Which Jamaica resort publicly offers a South Asian wedding package?",
@@ -709,7 +735,7 @@ export const destinationPages: Record<"cancun" | "rivieraMaya" | "losCabos" | "j
       {
         question: "Can CeremonyVerse plan beyond Cancún and Riviera Maya?",
         answer:
-          "Yes. Current destination-wedding service coverage includes Mexico and Punta Cana. The written proposal confirms availability, the selected destination team, local execution, CeremonyVerse family support, and any optional India sourcing.",
+          "Yes. Current destination-wedding service coverage includes Mexico, Jamaica, and Punta Cana. The written proposal confirms availability, the selected destination team, local execution, CeremonyVerse family support, and any optional India sourcing.",
       },
     ],
     sources: [

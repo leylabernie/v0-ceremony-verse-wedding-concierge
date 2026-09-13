@@ -6,7 +6,7 @@ const data = destinationPages.jamaica
 
 export const metadata = buildMetadata({
   path: data.slug,
-  title: "Indian Destination Wedding Jamaica",
+  title: "Indian Wedding in Jamaica | Ocho Rios & Montego Bay",
   description: data.description,
   image: "/images/proof/family-destination-baarat.webp",
 })

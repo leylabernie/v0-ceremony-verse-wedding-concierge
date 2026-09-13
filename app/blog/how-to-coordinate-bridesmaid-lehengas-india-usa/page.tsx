@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "How to coordinate 2\u201314 bridesmaid lehengas from India \u2014 sizing across multiple states, color matching, fabric consistency, and shipping logistics for NRI brides.",
   keywords: ["matching bridesmaid lehengas from India", "coordinate bridesmaid outfits USA wedding", "bridesmaid lehenga sizing guide", "order multiple lehengas from India"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "How to coordinate 2\u201314 bridesmaid lehengas from India \u2014 sizing across multiple states, color matching, fabric consistency, and shipping logistics for NRI brides.",
   url: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["matching bridesmaid lehengas from India", "coordinate bridesmaid outfits USA wedding", "bridesmaid lehenga sizing guide", "order multiple lehengas from India"],
 });
 
@@ -173,6 +176,7 @@ export default function BridesmaidGuidePage() {
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse offers India-sourcing support for bridesmaid lehengas, bridal outfits, groom sherwanis, and family wedding attire within the selected written scope. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free 30-minute consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Use one approval sheet for the whole group" paragraphs={["Give every bridesmaid a separate row for size, blouse preference, lining, approved color, delivery address, and fitting deadline. Assign a single person to consolidate changes before they reach the seller. Get permission before sharing personal measurements or addresses with the group.", "Plan for different comfort needs rather than requiring an identical fit. At a destination wedding, coordinate footwear and the walking route as carefully as color. Add a delivery checkpoint before travel and a local alteration buffer instead of scheduling the first fitting after arrival."]} />
       </article>
     </main>
   );

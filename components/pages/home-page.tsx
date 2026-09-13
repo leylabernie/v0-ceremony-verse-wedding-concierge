@@ -51,6 +51,11 @@ const destinationHighlights = [
     description: "Compare SJD access, regional location, venue format, guest movement, food, vendors, production, room blocks, and weather backup.",
   },
   {
+    name: "Jamaica",
+    href: "/destinations/jamaica-indian-wedding/",
+    description: "Compare resort location, airport choice, cultural and food requirements, multi-event spaces, room blocks, and the destination team.",
+  },
+  {
     name: "Punta Cana",
     href: "/destinations/punta-cana-indian-wedding/",
     description: "Compare PUJ access, guest-entry steps, resorts, cultural and food execution, local vendors, room blocks, and weather planning.",
@@ -62,7 +67,7 @@ const servicePillars = [
     label: "Destination wedding planning",
     title: "Family coordination with local planning and execution",
     description:
-      "Plan a Gujarati or Hindu destination celebration across Mexico or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
+      "Plan a Gujarati or Hindu destination celebration across Mexico, Jamaica, or Punta Cana through a private scope built around your resort, events, guest count, and priorities.",
     features: [
       "Planning support defined from the beginning",
       "Multi-day timelines and on-site event management",
@@ -90,7 +95,7 @@ const faqs = [
   {
     question: "Does CeremonyVerse plan weddings?",
     answer:
-      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico and Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
+      "Yes. CeremonyVerse offers destination-wedding planning and support for Gujarati and Hindu celebrations across Mexico, Jamaica, and Punta Cana. The private written proposal defines the planning, on-site, family-support, guest, and optional India-sourcing services selected for the wedding.",
   },
   {
     question: "What happens during the free consultation?",
@@ -98,7 +103,7 @@ const faqs = [
       "We review your destination, dates or timeframe, estimated guest count, event plan, budget scope, and the decisions that are currently unclear. The first 30-minute consultation requires no payment or contract.",
   },
   {
-    question: "Who handles the work in Mexico or Punta Cana?",
+    question: "Who handles the work in Mexico, Jamaica, or Punta Cana?",
     answer:
       "CeremonyVerse is the family-facing coordinator. The contracted destination team handles the local planning and on-site scope listed in your private proposal, while resorts and qualified providers control their own bookings and payments.",
   },
@@ -214,10 +219,10 @@ export function HomePage() {
         <div className="relative z-10 mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-20 sm:px-8 lg:px-12">
           <div className="max-w-3xl text-white">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#e8cf9d]">
-              Mexico &amp; Punta Cana · Serving families across the United States &amp; Canada
+              Mexico, Jamaica &amp; Punta Cana · Serving families across the United States &amp; Canada
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Gujarati &amp; Hindu destination weddings in Mexico and Punta Cana
+              Gujarati &amp; Hindu destination weddings in Mexico, Jamaica, and Punta Cana
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
               Bring the celebration your family is picturing. Mini keeps the next decisions, family handoffs, and

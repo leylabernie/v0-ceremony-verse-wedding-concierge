@@ -1,3 +1,4 @@
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/seo";
@@ -6,7 +7,7 @@ const title = "Hidden Resort Fees for a 4-Day Indian Wedding in Cancún";
 const description =
   "The private-event minimums, outside-vendor fees, production charges, day passes, and taxes that a multi-day Indian wedding in Cancún adds beyond the resort package.";
 const path = "/blog/hidden-resort-fees-4-day-indian-wedding-cancun/";
-const lastModified = "2026-09-08T12:00:00-04:00";
+const lastModified = "2026-09-13T12:00:00Z";
 
 export const metadata = buildMetadata({
   path,
@@ -53,12 +54,12 @@ const faqSchema = buildFaqSchema([
   {
     question: "What is an outside-vendor fee at a Cancún or Riviera Maya resort?",
     answer:
-      "It is a charge resorts apply when a decorator, DJ, photographer, makeup artist, or other provider is not on the resort's approved list. Published regional cost guides commonly place these fees at roughly $500 to $1,000 or more per outside vendor, and fees can apply per event day. The resort's current written proposal controls the actual amount.",
+      "It is a charge some resorts apply when a decorator, DJ, photographer, makeup artist, or other provider is not on the resort's approved list. The fee may be assessed per vendor, per person, or per event day, depending on the property. The resort's current written proposal controls the actual amount and basis.",
   },
   {
     question: "Do guests staying at other resorts need day passes for wedding events?",
     answer:
-      "Usually yes at all-inclusive properties. Guests not staying at the host resort typically need a day or evening pass for each event they attend, and published regional guides commonly show these at roughly $100 to $200 or more per person per event. Multiply passes by events when comparing resorts.",
+      "Often, but the rule varies by property. Guests not staying at the host resort may need a day or evening pass for each event they attend, and some resorts limit how many outside guests may enter. Confirm the current price, access hours, event coverage, and guest limit in writing before comparing resorts.",
   },
   {
     question: "How do we confirm all fees before signing a resort contract?",
@@ -81,39 +82,38 @@ export default function BlogPost() {
         </p>
         <h1 className="mb-6 font-serif text-4xl font-semibold leading-tight text-[#1f1f1f] md:text-5xl">{title}</h1>
         <p className="mb-6 text-lg leading-8 text-[#4d403a]">
-          A traditional four-day celebration — Mendhi, Haldi, Sangeet, the wedding with Baraat, and a reception — is
+          A traditional four-day celebration — Mehndi, Haldi, Sangeet, the wedding with Baraat, and a reception — is
           not one resort event. It is four or five private events, each with its own minimums, rules, and surcharges.
           The fees that surprise families are rarely hidden on purpose; they simply live in a different section of the
           proposal than the package price.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated September 8, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated September 13, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
             The direct answer first: on top of the published wedding package, a multi-day Indian wedding in Cancún
             commonly adds private-event minimums for each event, outside-vendor fees, production and staging for the
             Sangeet, setup and overtime charges, day passes for guests staying elsewhere, and taxes and service
-            charges applied at the end. Together these can equal or exceed the package price itself. Every figure
-            below is a planning range — the resort&apos;s current written proposal controls the actual amounts.
+            charges applied at the end. Together these can materially change the total. The resort&apos;s current written
+            proposal controls the actual amounts and how each fee is assessed.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">1. Private-event minimums — one per event, not one per wedding</h2>
           <p>
-            All-inclusive resorts treat each celebration as a separate private event with its own food-and-beverage
-            minimum. A four-day program — Mendhi night, Haldi or Pithi morning, Sangeet, and the wedding followed by
-            the reception — can mean four or five minimums. At upscale Cancún properties, published planning guides
-            commonly show private-event minimums in the range of several thousand dollars per event, rising with
-            venue exclusivity and season. The correct comparison question is never &quot;what is the wedding
+            Resorts may price celebrations as separate private events with their own food-and-beverage
+            minimums. A four-day program — Mehndi night, Haldi or Pithi morning, Sangeet, and the wedding followed by
+            the reception — can mean four or five minimums, depending on the resort&apos;s event structure, venue
+            exclusivity, and season. The correct comparison question is never &quot;what is the wedding
             package?&quot; but &quot;what are the minimums for every event we are hosting?&quot;
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">2. Outside-vendor fees</h2>
           <p>
             If your decorator, DJ, photographer, makeup artist, or mehndi artist is not on the resort&apos;s approved
-            list, the resort typically charges an outside-vendor fee — commonly reported around $500 to $1,000 or
-            more per vendor, and often per event day. Five traveling or local vendors across four event days can add
-            a five-figure line before a single flower is installed. Ask for the approved-vendor list and the exact
-            outside-vendor fee schedule in writing before choosing providers.
+            list, the resort may charge an outside-vendor fee. It may be calculated per vendor, per person, or per
+            event day, so several traveling or local providers across a multi-day program can create a substantial
+            additional cost. Ask for the approved-vendor list and the exact outside-vendor fee schedule in writing
+            before choosing providers.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">3. Production: the Sangeet is a show, and shows need power</h2>
@@ -127,26 +127,26 @@ export default function BlogPost() {
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">4. Setup, teardown, and mandap installation</h2>
           <p>
-            Installation labor is billed separately from décor. Beach and lawn mandaps cannot be drilled into the
-            ground, so they require weighted bases; fresh flowers often need conditioning time on site; and each
+            Installation labor may be billed separately from décor. Beach and lawn mandaps need an approved anchoring
+            method; fresh flowers often need conditioning time on site; and each
             event&apos;s teardown window may be shorter than families expect. Confirm setup and teardown windows,
             labor rates, and any overnight-security requirement for installed décor in the written proposal.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">5. Overtime and late-night surcharges</h2>
           <p>
-            Private events at all-inclusive resorts usually have a curfew — commonly around 10 or 11 p.m. — after
-            which hourly overtime charges apply. Sangeets and receptions rarely end early, so the safest plan is to
-            price the overtime rate and the noise-curfew rules before signing, not during the wedding week. Some
-            venues require events to move indoors or end entirely at a fixed hour.
+            Private events at all-inclusive resorts have property- and venue-specific end times. After the contracted
+            end time, overtime may be unavailable or may trigger hourly charges. Price the overtime rate and confirm
+            the noise-curfew rules before signing, not during the wedding week. Some venues require events to move
+            indoors or end entirely at a fixed hour.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">6. Day passes for guests staying elsewhere</h2>
           <p>
-            Guests who book other hotels or vacation rentals typically need a day or evening pass to attend events at
-            an all-inclusive resort, commonly around $100 to $200 or more per person per event. Fifty outside guests
-            across two events can quietly become a five-figure line. If many guests will stay off property, compare
-            resorts by their day-pass policy as seriously as by their package price.
+            Guests who book other hotels or vacation rentals may need a day or evening pass to attend events at an
+            all-inclusive resort. Pricing, access hours, event coverage, and limits on outside guests vary by
+            property. If many guests will stay off property, compare resorts by their written day-pass policy as
+            seriously as by their package price.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">7. Room-block attrition</h2>
@@ -181,13 +181,23 @@ export default function BlogPost() {
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">10. Taxes and service charges — applied to everything above</h2>
           <p>
-            Most Cancún and Riviera Maya resorts add tax and service charges to event charges, and published regional
-            cost guides commonly place the combined addition in the range of 15 to 20 percent or more. The critical
-            planning detail is not the exact percentage — it is whether every quote you compare already includes it.
+            Resorts may add tax and service charges to event charges. The critical planning detail is the percentage
+            shown in the current proposal, which lines it applies to, and whether every quote you compare already
+            includes it.
             Always ask: &quot;Is this number the final billed amount, or the pre-tax, pre-service base?&quot;
           </p>
 
-          <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">How to protect the family budget</h2>
+          <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">A dollar sensitivity worksheet for a four-day wedding</h2>
+<p>The numbers below are deliberately hypothetical planning inputs, not verified fee ranges or quotes for Cancún resorts. They show how to test budget exposure while waiting for the property’s written schedule. Replace every number before signing; zero means waived only if the resort confirms that in writing.</p>
+<ul className="list-disc space-y-3 pl-6">
+<li>Outside vendors: test $500–$1,500 per vendor against three vendors: $1,500–$4,500, before any repeat-day charge.</li>
+<li>Additional venue or setup: test $1,000–$3,000 for each of two extra events: $2,000–$6,000.</li>
+<li>Off-property access: test $100–$200 per guest per event for 20 guests attending twice: $4,000–$8,000.</li>
+<li>Overtime: test $500–$1,500 per hour for two hours: $1,000–$3,000, only if extended hours are allowed.</li>
+<li>Transfers: test $40–$100 round trip for 100 guests if the hosts pay: $4,000–$10,000. Vehicle type, route, baggage, and arrival waves need an actual transport quote.</li>
+</ul>
+<p>These illustrative lines alone span $12,500–$31,500 before any applicable taxes or service charges. Do not add them again if your proposal already includes them. For room-block exposure, test the actual contract formula: ten unfilled room nights at an assumed $300 would be $3,000 before any permitted release or credit. A reserve is useful, but it does not replace a missing quote.</p>
+<h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">How to protect the family budget</h2>
           <ol className="list-decimal space-y-3 pl-6">
             <li>Request a written, itemized estimate for every event day — minimums, vendor fees, production, setup, overtime, security, power, permits, day passes, taxes, and service charges.</li>
             <li>Separate known quotes from estimates using the free <Link href="/planning-tools/budget/" className="font-semibold text-[#7a6841] underline">destination-wedding budget calculator</Link>, then review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline">complete-cost framework for Indian destination weddings</Link>.</li>
@@ -217,13 +227,13 @@ export default function BlogPost() {
           </div>
 
           <p className="border-t border-[#e6dfd5] pt-6 text-sm leading-6">
-            <strong>Source note:</strong> Fee ranges in this article reflect published Cancún and Riviera Maya
-            destination-wedding cost guides and family-reported figures reviewed on September 8, 2026. Amounts vary
-            by property, season, guest count, and event count, and they change over time. The resort&apos;s current
-            written proposal and event contract control all actual fees. This article is planning information, not
-            legal, tax, or travel-provider advice.
+            <strong>Source note:</strong> Resort fee structures vary by property and change over time. This article
+            identifies cost categories to request and compare; it does not quote a current fee for any named resort.
+            The resort&apos;s current written proposal and event contract control all actual fees. This article is
+            planning information, not legal, tax, or travel-provider advice.
           </p>
         </div>
+      <VisibleFaqs schema={faqSchema} />
       </article>
     </main>
   );

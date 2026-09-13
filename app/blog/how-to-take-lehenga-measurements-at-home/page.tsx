@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav"
 import { SourcingCallout } from "@/components/sourcing-callout"
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, buildHowToSchema, JsonLd } from "@/lib/seo"
@@ -15,6 +16,7 @@ export const metadata = buildMetadata({
     "custom lehenga sizing from India",
   ],
   publishedTime: "2026-07-29",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 })
@@ -24,6 +26,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "A step-by-step guide to documenting lehenga measurements at home while preserving room for vendor review, a local fitting, and alterations.",
   url: "/blog/how-to-take-lehenga-measurements-at-home/",
   datePublished: "2026-07-29",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "how to take lehenga measurements at home",
     "lehenga measurement guide",
@@ -217,6 +220,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
         </div>
 
         <SourcingCallout />
+      <ArticlePlanningUpdate title="Add a movement check and approval date" paragraphs={["Use the chosen maker’s chart and label inches or centimeters on every sheet. Repeat uncertain measurements with a helper and ask the maker to explain any unclear landmark. Body measurements and finished garment dimensions serve different purposes; do not substitute one for the other.", "When the outfit arrives, test sitting, bending, walking, and raising your arms while wearing the intended undergarments and shoes. Book a local fitter if the result needs adjustment. Keep the final fitting earlier than the departure date so the wedding timeline has room for a correction."]} />
       </article>
     </main>
   )

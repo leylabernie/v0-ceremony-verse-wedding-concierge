@@ -1,3 +1,4 @@
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/seo";
@@ -6,7 +7,7 @@ const title = "Indian Wedding Catering at Mexico All-Inclusive Resorts";
 const description =
   "How Mexican all-inclusive resort kitchens handle Gujarati and Hindu wedding menus, when outside chefs and caterers are permitted, and the Jain, satvik, and pure-vegetarian requirements to confirm in writing.";
 const path = "/blog/indian-wedding-catering-mexico-all-inclusive-resorts/";
-const lastModified = "2026-09-08T12:00:00-04:00";
+const lastModified = "2026-09-13T12:00:00Z";
 
 export const metadata = buildMetadata({
   path,
@@ -48,7 +49,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Can we bring an outside Indian caterer or chef to a Mexico all-inclusive resort?",
     answer:
-      "Only if the specific resort permits it, and only with the resort's written approval. Most all-inclusive properties require food served on site to be prepared in their own kitchens. Where outside caterers are allowed, they generally need current licenses and health certifications, and the family should expect the resort's outside-vendor or catering-supervision fees. Each property's current written event contract controls its own rules.",
+      "Only if the specific resort permits it, and only with the resort's written approval. A property may require food served on site to be prepared in its own kitchens. Where outside caterers are allowed, they generally need current licenses and health certifications, and the family should expect the resort's outside-vendor or catering-supervision fees. Each property's current written event contract controls its own rules.",
   },
   {
     question: "Can Cancún and Riviera Maya resorts cook authentic Gujarati or Hindu wedding food?",
@@ -85,7 +86,7 @@ export default function BlogPost() {
           because nobody translated the family&apos;s cultural requirements into the resort&apos;s kitchen
           documentation early enough.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated September 8, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated September 13, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
@@ -115,7 +116,7 @@ export default function BlogPost() {
           </p>
           <p>
             Many upscale properties in the region have prepared Indian menus before. What they need is a planner who
-            documents the requirement per event: a Jain-friendly Mendhi lunch without onion, garlic, or root
+            documents the requirement per event: a Jain-friendly Mehndi lunch without onion, garlic, or root
             vegetables; a satvik menu for ceremony day; prasad for the pooja; live chaat and dosa stations for the
             Sangeet; and late-night snacks after the reception.
           </p>
@@ -148,7 +149,7 @@ export default function BlogPost() {
             <li>Satvik meals for ceremony day, per the family and officiant&apos;s direction.</li>
             <li>Prasad for the pooja, including ingredients and handling.</li>
             <li>Eggless baking requirements for cakes and desserts.</li>
-            <li>Allergies and intolerables documented per event, not per wedding.</li>
+            <li>Allergies and intolerances documented per event, not per wedding.</li>
             <li>Live-station power and safety requirements for chaat and dosa counters.</li>
           </ul>
           <p>
@@ -171,7 +172,13 @@ export default function BlogPost() {
             explains it in full.
           </p>
 
-          <div className="mt-10 rounded-2xl border border-[#d7c7a4] bg-white p-7">
+          <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">Our written approval workflow for an outside chef</h2>
+<p>Within the agreed planning scope, CeremonyVerse first collects the family’s menu and preparation brief, then asks the resort’s wedding and culinary contacts which delivery model they will approve: their own kitchen, a collaborating specialty chef, or an external caterer. We request one response covering kitchen access, permitted ingredients, food storage, staffing, equipment, supervision, fees, insurance requirements, and who remains responsible for service.</p>
+<p>If the resort declines a request, we ask whether an approved local supplier, an adjusted menu, or supervised collaboration can meet the requirement. We document any exception with the specific event, provider, date, cost, and authorizing resort contact. An introduction or verbal assurance does not grant permission. When the essential requirement cannot be met, we flag that before the family commits to the venue.</p>
+<h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">A menu and live-station worksheet</h2>
+<ul className="list-disc space-y-3 pl-6"><li>For each event: meal time, expected guests, dishes, ingredients, preparation requirements, and family approver.</li><li>For Jain or vegetarian service: the household’s precise restrictions, cooking surfaces, cookware, utensils, oil, labels, and the culinary contact confirming the arrangement.</li><li>For live chaat, dosa, or sweets: serving window, queue space, station staff, power, equipment, handwashing and safe service arrangements confirmed by the food provider.</li><li>For outside items: a written permitted/prohibited list covering ingredients, sweets, cake, prasad, cooking equipment, and alcohol. Border entry rules and resort permission are separate checks.</li><li>Before the tasting: agreed dishes and criteria. Afterward: signed menu revisions, final pricing, guest counts, and the banquet-event documentation.</li></ul>
+<p>Compare the food decision with the <Link href="/blog/indian-destination-wedding-mexico-complete-guide/" className="underline">complete four-day wedding plan</Link> and <Link href="/pricing/" className="underline">planning package scope</Link>. No specific food exception or vendor waiver is promised before the property confirms it.</p>
+<div className="mt-10 rounded-2xl border border-[#d7c7a4] bg-white p-7">
             <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">Questions that protect the food plan</h2>
             <ol className="mt-5 list-decimal space-y-3 pl-6">
               <li>Which kitchen prepares each event&apos;s food, and who signs off on the menu?</li>
@@ -206,6 +213,7 @@ export default function BlogPost() {
             contract before relying on them.
           </p>
         </div>
+      <VisibleFaqs schema={faqSchema} />
       </article>
     </main>
   );

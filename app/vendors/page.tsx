@@ -5,7 +5,7 @@ export const metadata = buildMetadata({
   path: "/vendors/",
   title: "For Wedding Vendors — Preferred Vendor Roster",
   description:
-    "CeremonyVerse is expanding its preferred vendor roster for 2026 and 2027 Gujarati and Hindu destination weddings in Mexico and Punta Cana. Photographers, DJs, makeup artists, and decorators: here is how to be considered.",
+    "CeremonyVerse is expanding its preferred vendor roster for 2026 and 2027 Gujarati and Hindu destination weddings in Mexico, Jamaica, and Punta Cana. Photographers, DJs, makeup artists, and decorators: here is how to be considered.",
 });
 
 const faqItems = [
@@ -17,7 +17,7 @@ const faqItems = [
   {
     question: "What should interested vendors send?",
     answer:
-      "Two things: a South Asian wedding portfolio — ideally multi-day events such as Mendhi, Haldi, Sangeet, Baraat, and Reception, with any Mexico or Caribbean work highlighted — and a destination pricing sheet covering packages or day rates for multi-event weddings, including travel and accommodation requirements.",
+      "Two things: a South Asian wedding portfolio — ideally multi-day events such as Mehndi, Haldi, Sangeet, Baraat, and Reception, with any Mexico or Caribbean work highlighted — and a destination pricing sheet covering packages or day rates for multi-event weddings, including travel and accommodation requirements.",
   },
   {
     question: "Does being on the roster guarantee bookings or referrals?",
@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "Where do CeremonyVerse weddings take place?",
     answer:
-      "CeremonyVerse plans Gujarati and Hindu destination weddings in Mexico and Punta Cana for families across the United States and Canada. Local and on-site scope is carried by independent providers under their own written scopes.",
+      "CeremonyVerse plans Gujarati and Hindu destination weddings in Mexico, Jamaica, and Punta Cana for families across the United States and Canada. Local and on-site scope is carried by independent providers under their own written scopes.",
   },
 ];
 
@@ -37,7 +37,7 @@ const faqSchema = buildFaqSchema(faqItems);
 const whatToSend = [
   {
     title: "Your South Asian wedding portfolio",
-    body: "Multi-day celebrations tell us the most: Mendhi, Haldi, Sangeet, Baraat, and Reception work, with any Mexico or Caribbean destination events highlighted. Show us how you handle the moments that only these weddings contain.",
+    body: "Multi-day celebrations tell us the most: Mehndi, Haldi, Sangeet, Baraat, and Reception work, with any Mexico or Caribbean destination events highlighted. Show us how you handle the moments that only these weddings contain.",
   },
   {
     title: "Your destination pricing sheet",
@@ -71,7 +71,7 @@ export default function VendorsPage() {
           <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-[#7a6841]">Preferred Vendor Roster</p>
           <h1 className="mb-6 font-serif text-4xl font-semibold sm:text-5xl lg:text-6xl">For Wedding Vendors</h1>
           <p className="mx-auto max-w-2xl text-lg leading-8 text-[#4d403a]">
-            CeremonyVerse plans Gujarati and Hindu destination weddings in Mexico and Punta Cana for families across
+            CeremonyVerse plans Gujarati and Hindu destination weddings in Mexico, Jamaica, and Punta Cana for families across
             the United States and Canada — full multi-day celebrations. We are expanding our preferred vendor roster
             for the 2026 and 2027 wedding seasons, and we would be glad to consider your work.
           </p>
@@ -177,8 +177,8 @@ export default function VendorsPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Let&apos;s work the same weddings</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/85">
-            Send your South Asian portfolio and destination pricing sheet. If a family&apos;s celebration fits your
-            work, you will hear from us.
+            Send your South Asian portfolio and destination pricing sheet. We will contact you when a family&apos;s
+            destination, dates, budget, and cultural needs fit your work.
           </p>
           <a
             href="mailto:hello@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%20Portfolio%20and%20Destination%20Pricing"

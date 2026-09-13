@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "The complete outfit-by-ceremony checklist for NRI families \u2014 from the bride and groom to parents, siblings, and guests. 42\u201351 total outfits, nothing missed.",
   keywords: ["indian wedding outfit checklist for nri families usa", "what to wear indian wedding", "indian wedding family outfits", "indian wedding outfit count"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "The complete outfit-by-ceremony checklist for NRI families \u2014 from the bride and groom to parents, siblings, and guests. 42\u201351 total outfits, nothing missed.",
   url: "/blog/indian-wedding-outfit-checklist-every-ceremony/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["indian wedding outfit checklist for nri families usa", "what to wear indian wedding", "indian wedding family outfits", "indian wedding outfit count"],
 });
 
@@ -182,6 +185,7 @@ export default function OutfitChecklistPage() {
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> CeremonyVerse organizes India-sourcing research, eligible live review, measurements, written approvals, and delivery support within the selected tier. Availability depends on the selected item and vendor. <Link href="/contact/" style={{ color: "#7a6841" }}>Book a free 30-minute consultation</Link> to discuss your wedding outfit needs.</p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Give each outfit an event owner" paragraphs={["For every ceremony, list the outfit, footwear, jewelry, underlayers, draping help, pressing requirements, and the person responsible for moving the bag. Label by wearer and event. Keep heirlooms and borrowed pieces in a separate return checklist.", "Use the final event order to pack, not a generic list from another wedding. If Haldi and Sangeet share a day, allow cleanup and dressing time. For Mexico, Jamaica, or Punta Cana, connect the wardrobe checklist with transfers, hotel check-in, and the welcome-event start."]} />
       </article>
     </main>
   );

@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock vendors, and customs buffer.",
   keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "Month-by-month NRI timeline for ordering Indian wedding outfits from India \u2014 when to start, when to lock vendors, and customs buffer.",
   url: "/blog/when-to-order-indian-wedding-outfits-nri-bride/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
 });
 
@@ -138,6 +141,7 @@ export default function TimelineGuidePage() {
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help families organize item research, measurements, written approvals, and the delivery responsibilities included in the selected service scope. <Link href="/how-it-works/" style={{ color: "#7a6841" }}>Learn how we work</Link>, or browse our dedicated sourcing pages for <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi outfits</Link> and <Link href="/reception-outfits-usa/" style={{ color: "#7a6841" }}>Reception outfits</Link>.</p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Work backward from the final fitting" paragraphs={["Set the final local fitting first, then allow time for inspection, a correction if needed, shipping, production, and design approval. Ask the actual maker for its current lead time and record when the clock starts. An order is not ready for production while measurements or design choices remain open.", "For Mexico, Jamaica, or Punta Cana, use departure as the hard packing deadline. Schedule a complete outfit trial with shoes and accessories before that date. Connect this calendar to the wedding schedule so the couple does not spend the final week resolving garment and resort decisions simultaneously."]} />
       </article>
     </main>
   );

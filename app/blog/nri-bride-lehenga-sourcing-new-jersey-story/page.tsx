@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import Link from "next/link"
 import { SourcingCallout } from "@/components/sourcing-callout"
 import {
@@ -19,6 +20,7 @@ export const metadata = buildMetadata({
     "lehenga from India planning scenario",
   ],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 })
@@ -29,6 +31,7 @@ const blogPostingSchema = buildBlogPosting({
     "An illustrative planning scenario for comparing a bridal lehenga from India with New Jersey boutique options.",
   url: "/blog/nri-bride-lehenga-sourcing-new-jersey-story/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "NRI bride New Jersey lehenga",
     "bridal lehenga sourcing checklist",
@@ -140,6 +143,7 @@ export default function BrideSourcingScenarioPage() {
         </section>
 
         <SourcingCallout />
+      <ArticlePlanningUpdate title="Use this example as a decision worksheet" paragraphs={["Treat the scenario in this article as an illustration of the sourcing process, not proof of a completed client booking or a promised outcome. Before using the same approach, write your own event date, location, garment brief, budget, and fitting constraints.", "Keep the design approval, seller responsibilities, shipping plan, and local alteration appointment visible in one timeline. If the wedding is abroad, add the departure date and destination schedule. A useful sourcing plan should fit the wider celebration rather than compete with it."]} />
       </article>
     </main>
   )

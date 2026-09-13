@@ -19,6 +19,8 @@ const breadcrumbSchema = buildBreadcrumb([
 ]);
 
 const posts = [
+{"slug": "indian-destination-wedding-puerto-vallarta", "title": "Indian Destination Wedding in Puerto Vallarta: Resorts, Costs & Guest Planning", "description": "Compare Puerto Vallarta and nearby Riviera Nayarit for a Gujarati or Hindu destination wedding, with resort questions, catering approvals, guest travel, and transparent planning fees.", "date": "September 2026"},
+  {slug:"indian-destination-wedding-mexico-complete-guide",title:"Indian Destination Wedding in Mexico: Costs, Resorts & a Four-Day Plan",description:"A complete guide to planning fees, private-event budgets, resort comparisons, Hindu ceremony details, food, production, room blocks, and guest travel.",date:"September 2026"},
   {
     slug: "hidden-resort-fees-4-day-indian-wedding-cancun",
     title: "Hidden Resort Fees for a 4-Day Indian Wedding in Cancún",

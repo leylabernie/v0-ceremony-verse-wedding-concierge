@@ -22,7 +22,7 @@ test("the hidden-resort-fees article publishes the Cancún multi-day fee questio
   assert.match(hiddenFeesArticle, /day pass/i)
   assert.match(hiddenFeesArticle, /current written proposal controls/)
   assert.match(hiddenFeesArticle, /Source note:/)
-  assert.match(hiddenFeesArticle, /Updated September 8, 2026/)
+  assert.match(hiddenFeesArticle, /Updated September 13, 2026/)
 })
 
 test("the hidden-resort-fees article connects to existing cost, budget, and proposal resources", () => {
@@ -87,11 +87,11 @@ test("the sitemap registers the three new routes with accurate modification date
   )
   assert.match(
     sitemap,
-    /path: "\/blog\/hidden-resort-fees-4-day-indian-wedding-cancun\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-09-08T12:00:00-04:00"\)/,
+    /path: "\/blog\/hidden-resort-fees-4-day-indian-wedding-cancun\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-09-13T12:00:00Z"\)/,
   )
   assert.match(
     sitemap,
-    /path: "\/blog\/indian-wedding-catering-mexico-all-inclusive-resorts\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-09-08T12:00:00-04:00"\)/,
+    /path: "\/blog\/indian-wedding-catering-mexico-all-inclusive-resorts\/", changeFrequency: "monthly", priority: 0\.8, lastModified: new Date\("2026-09-13T12:00:00Z"\)/,
   )
 })
 

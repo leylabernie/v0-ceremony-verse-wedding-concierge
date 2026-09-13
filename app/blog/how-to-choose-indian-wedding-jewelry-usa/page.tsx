@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
 import {
@@ -16,7 +17,7 @@ export const metadata = buildMetadata({
   description:
     "Compare Indian wedding jewelry by material, stone representation, weight, comfort, measurements, hallmark evidence, seller terms, shipping, and complete landed cost.",
   publishedTime: "2026-07-03",
-  modifiedTime: "2026-08-11",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -27,7 +28,7 @@ const blogPostingSchema = buildBlogPosting({
     "A practical comparison and approval process for Indian wedding jewelry ordered from India for a U.S. or Canadian wedding.",
   url: path,
   datePublished: "2026-07-03",
-  dateModified: "2026-08-11",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "Indian wedding jewelry from India",
     "Indian bridal jewelry USA",
@@ -198,6 +199,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
         <div className="mt-12">
           <SourcingCallout />
         </div>
+      <ArticlePlanningUpdate title="Check jewelry with the complete outfit" paragraphs={["During a fitting, test necklace placement against the blouse neckline and check earring comfort over a realistic wearing period. Photograph the approved combination for the dresser. Record which pieces are owned, borrowed, rented, or still to be purchased so no item silently becomes another person’s responsibility.", "For travel, make an inventory, photograph valuable items privately, and check the relevant carrier, customs, and insurance requirements directly. Avoid putting personal valuables in a shared event packing list. Connect jewelry preparation with the dressing schedule and guest travel plan."]} />
       </article>
     </main>
   );

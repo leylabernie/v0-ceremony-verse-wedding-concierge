@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -9,6 +10,7 @@ export const metadata = buildMetadata({
   description: "How to estimate US customs costs for Indian wedding outfit shipments using garment classification, fiber content, declared value, and current tariff rules.",
   keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -18,6 +20,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "How to estimate US customs costs for Indian wedding outfit shipments using garment classification, fiber content, declared value, and current tariff rules.",
   url: "/blog/us-tariffs-indian-wedding-outfits-2026/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["US tariffs Indian wedding outfits 2026", "de minimis exemption ended", "customs duties lehenga USA", "Section 122 surcharge wedding clothes"],
 });
 
@@ -202,6 +205,7 @@ export default function TariffsBlogPost() {
           </p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Replace assumed rates with a shipment-specific estimate" paragraphs={["Tariff and import treatment must be checked for the shipment date, destination, item classification, material, origin, and value. Ask the carrier or a qualified broker for the basis of its estimate and which handling charges are additional. This update adds a decision worksheet; it does not certify a current tariff percentage.", "Compare the complete delivered cost with the local alternative and retain a reserve for uncertain charges. Keep the garment deadline separate from the wedding’s resort deposits. Use the shipping guide and calculator to organize estimates, then replace them when written information arrives."]} />
       </article>
     </main>
   );
