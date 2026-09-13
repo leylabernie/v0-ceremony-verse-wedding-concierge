@@ -1,12 +1,14 @@
+import { VisibleFaqs } from "@/components/visible-faqs"
+import { PlanningNextStep } from "@/components/planning-next-step"
 import { BudgetPlannerClient } from "./budget-planner-client"
-import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
+import { buildFaqSchema, buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import Link from "next/link"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/budget/",
   title: "Indian Destination Wedding Budget Calculator",
   description:
-    "Estimate an Indian destination-wedding budget with current official resort starting rates or your written quotes for Mexico and Punta Cana.",
+    "Estimate an Indian destination-wedding budget using reviewed resort starting rates for Mexico and Punta Cana, or your own written quotes for Mexico, Jamaica, and Punta Cana.",
   keywords:
     "Indian destination wedding budget calculator, Mexico wedding budget planner, Punta Cana Indian wedding cost, Gujarati destination wedding budget",
 })
@@ -26,6 +28,8 @@ const calculatorSchema = {
   isAccessibleForFree: true,
   description: "A free calculator with dated official resort starting rates, manual quote fields, destination-wedding event costs, guest travel, shopping, contingency, and target-budget comparisons.",
 }
+
+const faqSchema = buildFaqSchema([{"question": "Is this destination wedding cost calculator free?", "answer": "Yes. You can use the calculator without paying a planning fee. The optional $300 Feasibility Plan is a separate service for couples who want a working session and a written action brief."}, {"question": "Can I compare Mexico, Jamaica, and Punta Cana?", "answer": "Yes. Use the same guest count, event schedule, room assumptions, and currency for each destination. Enter current written proposals where available. Published resort starting packages are dated benchmarks, not complete wedding quotes."}, {"question": "What should I add beyond the resort wedding package?", "answer": "Include private-event overages, d\u00e9cor, production, outside-vendor charges, planning and staffing, host-paid travel, room-block exposure, taxes, service charges, and a reserve. Add outfits and shipping separately if they belong in the host budget. Do not duplicate costs already included in a quoted package."}, {"question": "What should I bring to the free consultation?", "answer": "Bring your preferred destinations and dates, likely guest range, event list, host budget, guest travel expectations, and up to two current resort proposals if available. Flag every calculator line that is still an estimate."}])
 
 export default function BudgetPlannerPage() {
   return (
@@ -48,6 +52,9 @@ export default function BudgetPlannerPage() {
         </div>
       </section>
       <BudgetPlannerClient />
+      <JsonLd id="schema-faq" data={faqSchema} />
+      <VisibleFaqs schema={faqSchema} />
+      <PlanningNextStep />
     </main>
   )
 }

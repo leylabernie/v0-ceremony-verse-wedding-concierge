@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "Plan classification, declared value, duties, carrier charges, customs review, tracking, and delivery estimates for an India-to-USA outfit shipment.",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "Plan classification, declared value, duties, carrier charges, customs review, tracking, insurance options, and delivery estimates for an India-to-USA outfit shipment.",
   url: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["shipping wedding outfits from india to usa", "us customs duties indian wedding lehengas", "DHL shipping india usa wedding outfits", "import lehenga usa"],
 });
 
@@ -167,6 +170,7 @@ export default function ShippingGuidePage() {
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> Eligible sourcing tiers may include pre-shipping review, shipping-document coordination, and tracking support. The selected vendor, carrier, insurer, and customs authority remain responsible for their respective work. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" style={{ color: "#7a6841" }}>see our 2026 tariff guide</Link>.</p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Keep a shipping decision record" paragraphs={["Before dispatch, confirm the delivery country, recipient details, itemized invoice, material description, declared value, carrier service, and responsibility for import charges. Obtain a current carrier or broker estimate for the actual shipment rather than applying a general article’s rate.", "Build the arrival deadline around inspection and local alterations before departure. Store tracking and delivery evidence with the garment approval. If outfits will continue to a destination wedding, treat that onward journey as a separate packing and customs question."]} />
       </article>
     </main>
   );

@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { PlanningPackageSummary } from "@/components/planning-package-summary";
+import { PlanningNextStep } from "@/components/planning-next-step";
+import { mexicoPackages } from "@/lib/mexico-packages";
 import { SeoNav } from "@/components/seo-nav";
 import {
   JsonLd,
@@ -11,9 +14,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Mexico: Cancún vs Riviera Maya",
+  title: "Indian Destination Wedding Planner in Mexico | Packages",
   description:
-    "Family-side planning for Gujarati and Hindu destination weddings across Mexico. Compare resort packages, room blocks, complete budgets, cultural needs, and guest logistics.",
+    "Gujarati and Hindu wedding planning in Mexico. Compare $4,000, $5,500 and $8,000+ planning packages, or start with an optional $300 Feasibility Plan. Free first call.",
   keywords:
     "Indian destination wedding Mexico, Indian wedding Cancun, Indian wedding Riviera Maya, South Asian wedding resort Mexico, Indian wedding Mexico cost, Cancun wedding planning guide",
 });
@@ -28,10 +31,13 @@ const serviceSchema = buildServiceSchema({
     "Family-facing destination-wedding planning support for Gujarati and Hindu weddings across Mexico, with a written division of responsibilities among CeremonyVerse, the local planning partner, authorized travel providers, resorts, vendors, and the family.",
   url: "/indian-destination-wedding-planner-mexico/",
   category: "Indian Destination Wedding Planning",
-  areaServed: ["Mexico", "Dominican Republic", "United States", "Canada"],
+  areaServed: ["Mexico", "United States", "Canada"],
+  offers: mexicoPackages.map(p => ({name:p.name, price:p.numericPrice!, description:`${p.priceLabel}. ${p.description}`})),
 });
 
 const faqItems = [
+  { question: "What does an Indian destination wedding planner in Mexico cost?", answer: "CeremonyVerse planning services start at $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The optional $300 Feasibility Plan is a separate written decision service. Resort, catering, décor, vendor and travel costs are additional. Your first 30-minute consultation is free." },
+  { question: "What is included in Indian destination wedding packages for Mexico?", answer: "A resort package and a planning package cover different work. A resort package may include named venues, event hours, setup, menus and a guest allowance. CeremonyVerse planning packages cover the coordination, decisions, timelines and on-site services listed for the selected tier. Compare both written scopes, including exclusions, before adding their costs." },
   {
     question: "How much does an Indian destination wedding in Mexico cost?",
     answer:
@@ -65,7 +71,7 @@ const faqItems = [
   {
     question: "Where in Mexico does CeremonyVerse provide destination-wedding support?",
     answer:
-      "CeremonyVerse provides destination-wedding planning and support across Mexico. Cancun and Riviera Maya appear often because they are part of the firsthand family experience, but they are not the service limits. Punta Cana is also included in current service coverage.",
+      "CeremonyVerse provides destination-wedding planning and support across Mexico. Cancun and Riviera Maya appear often because they are part of the firsthand family experience, but they are not the service limits. Jamaica and Punta Cana are also included in current service coverage.",
   },
 ];
 
@@ -151,17 +157,16 @@ export default function MexicoDestinationGuidePage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-white">
         <div className="mx-auto max-w-5xl text-center">
           <p className="mb-4 text-xs font-medium uppercase tracking-[0.2em] text-[#c5a059]">
-            2027 planning guide
+            Gujarati & Hindu weddings · 2026/2027 planning
           </p>
           <h1
             className="text-4xl font-semibold leading-tight md:text-6xl"
             style={{ fontFamily: "'Cormorant Garamond', Georgia, serif" }}
           >
-            Indian destination wedding planning in Mexico
+            Your Indian destination wedding planner in Mexico
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            Compare Cancun and Riviera Maya using the contract, total budget, ceremony requirements, and guest
-            experience—not a resort brochure or a package headline.
+            CeremonyVerse helps U.S. and Canadian Gujarati and Hindu families plan multi-day weddings in Mexico, from Mehndi and Haldi to Sangeet, Baraat, Pheras, and reception. Planning services start at $4,000; begin with a free 30-minute consultation or an optional $300 written Feasibility Plan.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -179,6 +184,8 @@ export default function MexicoDestinationGuidePage() {
           </div>
         </div>
       </section>
+
+      <PlanningPackageSummary />
 
       <section className="bg-white px-6 py-16 sm:py-20">
         <div className="mx-auto grid max-w-6xl gap-8 rounded-3xl border border-[#d9cfbf] bg-[#faf8f5] p-8 sm:p-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
@@ -201,6 +208,8 @@ export default function MexicoDestinationGuidePage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-white px-6 py-12"><div className="mx-auto max-w-5xl"><h2 className="font-serif text-3xl font-semibold">Plan every celebration as part of one wedding</h2><div className="mt-6 grid gap-5 md:grid-cols-2">{[["Mehndi and Haldi", "Reserve shade, washable surfaces, artist seating, guest lunch, outfit changes, and a comfortable place for elders. Confirm whether Haldi stains or cleanup carry an extra charge."],["Sangeet and Garba", "Agree on performance order, floor space, sound checks, microphones, a Garba playlist, stage access, dinner timing, and the music cutoff. The production layout determines usable capacity."],["Baraat and Hindu ceremony", "Confirm the procession route, groom arrival, priest timing, approved ceremony fire, mandap safety, seating, drinking water, and family roles. Put the rain location on the same event schedule."],["Reception", "Coordinate the couple entrance, speeches, plated or buffet service, dance floor, bar hours, dietary labels, and pack-down. Include a private cost decision for any overtime."]].map(([title,text])=><article key={title} className="rounded-xl border border-[#d9cfbf] p-6"><h3 className="font-serif text-2xl font-semibold">{title}</h3><p className="mt-3 leading-7 text-[#4d403a]">{text}</p></article>)}</div><p className="mt-6 leading-7">For a four-day schedule, detailed food questions, and a complete cost worksheet, read the <Link href="/blog/indian-destination-wedding-mexico-complete-guide/" className="font-semibold text-[#7a6841] underline">complete Indian wedding in Mexico guide</Link>.</p></div></section>
 
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
@@ -437,6 +446,8 @@ export default function MexicoDestinationGuidePage() {
           </div>
         </div>
       </section>
+      <section className="bg-white px-6 py-12"><div className="mx-auto max-w-5xl"><h2 className="font-serif text-3xl font-semibold">Compare the resort before choosing the package</h2><p className="mt-4 leading-7">Review <Link className="underline" href="/resorts/moon-palace-cancun-indian-wedding/">Moon Palace Cancun</Link>, <Link className="underline" href="/resorts/hard-rock-riviera-maya-indian-wedding/">Hard Rock Riviera Maya</Link>, and <Link className="underline" href="/resorts/hyatt-inclusive-collection-indian-wedding/">Hyatt Inclusive Collection</Link>. Considering another destination? Compare <Link className="underline" href="/destinations/punta-cana-indian-wedding/">Punta Cana</Link> and <Link className="underline" href="/destinations/jamaica-indian-wedding/">Jamaica</Link> with the same events and guest count.</p></div></section>
+      <PlanningNextStep />
     </main>
   );
 }

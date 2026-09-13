@@ -63,7 +63,7 @@ export function GlobalFooter() {
               </span>
             </Link>
             <p style={{ fontSize: "13px", color: "#4d403a", lineHeight: 1.6, marginTop: "8px" }}>
-              Gujarati and Hindu destination-wedding planning across Mexico and Punta Cana,
+              Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana,
               with optional India wedding-outfit sourcing for families across the USA and Canada.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>

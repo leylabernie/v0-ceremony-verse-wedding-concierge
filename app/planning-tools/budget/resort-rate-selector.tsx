@@ -135,7 +135,7 @@ export function ResortRateSelector({ guestCount, onApply }: ResortRateSelectorPr
               </optgroup>
             ))}
           </select>
-          <span className="mt-1 block text-xs font-normal leading-5 text-[#6d625c]">The list includes the resorts on the reviewed public programs plus commonly compared Mexico and Punta Cana properties.</span>
+          <span className="mt-1 block text-xs font-normal leading-5 text-[#6d625c]">The list includes reviewed public programs and commonly compared Mexico and Punta Cana properties. For Jamaica or an unlisted resort, use your written quote in the manual budget fields below.</span>
         </label>
 
         <label className="text-sm font-semibold text-[#1f1f1f]">

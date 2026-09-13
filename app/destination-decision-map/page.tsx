@@ -4,9 +4,9 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/destination-decision-map/",
-  title: "Destination Wedding Decision Map | Mexico & Punta Cana",
+  title: "Destination Wedding Decision Map | Mexico, Jamaica & Punta Cana",
   description:
-    "Use a free three-part planning map to clarify guest reality, celebration needs, and the next written destination-wedding decision for Mexico or Punta Cana.",
+    "Use a free three-part planning map to clarify guest reality, celebration needs, and the next written destination-wedding decision for Mexico, Jamaica, or Punta Cana.",
   keywords:
     "destination wedding decision map, Indian wedding Mexico planning, Punta Cana wedding planning, resort proposal questions, Gujarati Hindu destination wedding guide",
 })
@@ -58,7 +58,7 @@ const decisionLenses = [
 const nextPaths = [
   {
     label: "Compare destinations",
-    description: "See Mexico and Punta Cana through guest access, event feasibility, cultural needs, weather, and total planning context.",
+    description: "See Mexico, Jamaica, and Punta Cana through guest access, event feasibility, cultural needs, weather, and total planning context.",
     href: "/destinations/",
     cta: "Compare destinations →",
   },

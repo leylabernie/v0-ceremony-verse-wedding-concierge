@@ -130,10 +130,10 @@ const faqItems = [
 const serviceSchema = buildServiceSchema({
   name: "CeremonyVerse Family-Facing Destination Wedding Planning",
   description:
-    "Family-facing Gujarati and Hindu destination-wedding planning organization for Mexico and Punta Cana, with defined handoffs to independent resorts and local providers for their own contracted scopes.",
+    "Family-facing Gujarati and Hindu destination-wedding planning organization for Mexico, Jamaica, and Punta Cana, with defined handoffs to independent resorts and local providers for their own contracted scopes.",
   url: "/how-it-works/",
   category: "Destination Wedding Planning",
-  areaServed: ["United States", "Canada", "Mexico", "Dominican Republic"],
+  areaServed: ["United States", "Canada", "Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "How It Works", url: "/how-it-works/" }])

@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -17,6 +18,7 @@ export const metadata = buildMetadata({
     "Banarasi brocade vs raw silk sherwani",
   ],
   publishedTime: "2026-06-28",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -28,6 +30,7 @@ const blogPostingSchema = buildBlogPosting({
     "Five important sherwani measurements, fabric-selection guidance, and practical steps to reduce remote custom-fit risk.",
   url: "/blog/custom-sherwani-sizing-guide-india-usa/",
   datePublished: "2026-06-28",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: [
     "custom sherwani online USA",
     "Indian groom wear shopping from India",
@@ -633,6 +636,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           </p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Fit the sherwani around the ceremony schedule" paragraphs={["Ask the tailor to record both body measurements and intended garment ease. Photograph the measuring tape position with consent, label the units, and keep one approved measurement sheet. Test sitting, walking, raising the arms, and the weight of the stole during a local fitting.", "For a destination wedding, finish the fitting before the travel week and assign who carries the sherwani, shoes, safa, and accessories. Keep a backup fastening kit and a garment bag plan. The same event schedule should inform the groom’s dressing time and photographer access."]} />
       </article>
     </main>
   );

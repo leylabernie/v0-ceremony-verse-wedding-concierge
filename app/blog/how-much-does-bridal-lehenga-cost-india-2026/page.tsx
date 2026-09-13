@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "A practical guide to comparing bridal lehenga quotes, service scope, shipping, customs estimates, alterations, and vendor terms.",
   keywords: ["how much does a bridal lehenga cost in India with shipping to USA", "bridal lehenga price India 2026", "lehenga customs duty USA", "Surat lehenga cost", "NRI bride lehenga budget"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "How to compare bridal lehenga quotes from India using item details, service scope, shipping, customs estimates, alterations, and vendor terms.",
   url: "/blog/how-much-does-bridal-lehenga-cost-india-2026/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["how much does a bridal lehenga cost in india including shipping to usa", "bridal lehenga cost india 2026", "nri bride lehenga budget", "lehenga price with customs usa"],
 });
 
@@ -273,6 +276,7 @@ export default function BridalLehengaCostGuide() {
 
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Compare the complete outfit cost before paying a deposit" paragraphs={["Use the quoted garment price as the first line, then add customization, blouse work, alterations, accessories, domestic delivery, international shipping, and applicable import charges. Record the currency and quote date. A cheaper base garment can become the more expensive option when the omitted work is added.", "Keep outfit spending separate from resort and planning fees so the family can see both decisions clearly. Ask which costs remain estimates and leave a reserve for a final fitting. Do not treat historic examples in an article as a vendor’s current price."]} />
       </article>
     </main>
   );

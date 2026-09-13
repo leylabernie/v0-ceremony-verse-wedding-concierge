@@ -1,3 +1,5 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Image from "next/image";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -15,7 +17,7 @@ export const metadata = buildMetadata({
   keywords:
     "Mexico Indian wedding outfits, India wedding wardrobe sourcing, destination wedding outfit planning, Indian wedding outfits Mexico",
   publishedTime: "2026-07-14T10:00:00-05:00",
-  modifiedTime: "2026-08-11T16:00:00-04:00",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -26,7 +28,7 @@ const blogPostingSchema = buildBlogPosting({
   url: "/blog/mexico-wedding-wardrobe-sourcing-from-india/",
   image: "/images/sourcing/couple-portrait.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
-  dateModified: "2026-08-11T16:00:00-04:00",
+  dateModified: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   keywords: ["Mexico Indian wedding", "India wedding wardrobe sourcing", "destination wedding outfits", "Indian wedding outfits"],
 });
@@ -146,8 +148,8 @@ export default function BlogPost() {
           <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">How this connects to destination planning</h2>
           <p>
             CeremonyVerse offers destination planning, on-site coordination, family support, and optional India sourcing
-            across Mexico and in Punta Cana. Cancun and Riviera Maya appear in the family-experience story, while Punta
-            Cana is current service coverage; this guide does not present a client portfolio.
+            across Mexico, Jamaica, and Punta Cana. Cancun and Riviera Maya appear in the family-experience story;
+            Jamaica and Punta Cana are also current service coverage. This guide does not present a client portfolio.
           </p>
         </div>
 
@@ -171,6 +173,8 @@ export default function BlogPost() {
         </div>
 
         <SourcingCallout />
+      <VisibleFaqs schema={faqSchema} />
+      <ArticlePlanningUpdate title="Connect the wardrobe plan to the four-day Mexico brief" paragraphs={["Start with the family-approved Mehndi, Pithi or Haldi, Garba or Sangeet, ceremony, and reception schedule. Give each outfit a fitting deadline, travel bag, and dressing contact. Share only the details each vendor needs; personal measurements should not circulate with the public itinerary.", "Work backward from departure rather than the ceremony date. Leave room for inspection, alterations, and a full outfit trial at home. The resort’s dressing access and event timing affect this plan, so decide those details alongside the wedding package and guest rooms."]} />
       </article>
     </main>
   );

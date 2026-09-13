@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: "Does CeremonyVerse plan the wedding at these resorts?",
     answer:
-      "CeremonyVerse provides destination-wedding planning and family support, coordinating with resorts and independent local providers in Mexico and Punta Cana. Local execution scope is visible in writing before payment. Start with the free 30-minute consultation, or the $300 Destination Wedding Feasibility & Action Plan for a specific resort decision.",
+      "CeremonyVerse provides destination-wedding planning and family support, coordinating with resorts and independent local providers in Mexico, Jamaica, and Punta Cana. Local execution scope is visible in writing before payment. Start with the free 30-minute consultation, or the $300 Destination Wedding Feasibility & Action Plan for a specific resort decision.",
   },
 ]
 

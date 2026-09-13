@@ -1,3 +1,4 @@
+import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -8,6 +9,7 @@ export const metadata = buildMetadata({
   description: "Real scam patterns NRI brides face buying lehengas online from India — fake Instagram sellers, bait-and-switch fabrics, stolen images, customs fraud — plus a 7-point vendor verification checklist.",
   keywords: ["Indian wedding outfit scams NRI brides", "fake lehenga seller Instagram India", "how to verify Indian wedding vendor online", "lehenga bait and switch scam", "avoid lehenga scam India to USA"],
   publishedTime: "2026-03-01",
+  modifiedTime: "2026-09-13T12:00:00Z",
   authorName: "CeremonyVerse",
   ogType: "article",
 });
@@ -17,6 +19,7 @@ const blogPostingSchema = buildBlogPosting({
   description: "10 scam patterns NRI brides face buying lehengas from India \u2014 fake Instagram sellers, bait-and-switch fabrics, stolen images \u2014 and how to verify any vendor.",
   url: "/blog/indian-wedding-outfit-scams-nri-brides/",
   datePublished: "2026-03-01",
+  dateModified: "2026-09-13T12:00:00Z",
   keywords: ["indian wedding outfit scams NRI brides", "fake lehenga seller Instagram", "how to verify Indian wedding vendor", "lehenga bait and switch India"],
 });
 
@@ -185,6 +188,7 @@ export default function ScamsGuidePage() {
           <p style={{ marginTop: "2rem", fontSize: "0.95rem", color: "#5e4a40" }}><strong>About CeremonyVerse:</strong> We help families research Indian wedding outfits, document measurements and approvals, and coordinate the responsibilities included in the selected service scope. <Link href="/faq/" style={{ color: "#7a6841" }}>Read our FAQ</Link> or <Link href="/how-it-works/" style={{ color: "#7a6841" }}>learn how we work</Link>.</p>
         </div>
               <SourcingCallout />
+      <ArticlePlanningUpdate title="Make the approval record usable if something goes wrong" paragraphs={["Save the seller’s identity, invoice, specifications, promised dates, approved images, payment receipt, and change requests in one folder. Ask the seller to describe its correction and cancellation process before payment. A social-media following alone does not prove that the seller can deliver your exact order.", "Use written milestone decisions rather than scattered voice notes. If a promised detail changes, record the proposed remedy before approving further work. Leave time for a local fitting and a practical backup outfit; sourcing support does not replace the seller’s own contractual obligations."]} />
       </article>
     </main>
   );

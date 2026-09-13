@@ -4,13 +4,13 @@ import {
   destinationFeasibilityCredit,
   destinationFeasibilityPlan,
 } from "@/lib/destination-feasibility-plan"
-import { buildBreadcrumb, buildFaqSchema, buildFeasibilityPlanProductSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
+import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: destinationFeasibilityPlan.href,
   title: "$300 Destination Wedding Feasibility Plan",
   description:
-    "Turn your guest count, events, travel obligations, working budget, and current proposals into a written destination-wedding action plan for Mexico or Punta Cana.",
+    "Turn your guest count, events, travel obligations, working budget, and current proposals into a written destination-wedding action plan for Mexico, Jamaica, or Punta Cana.",
   keywords:
     "destination wedding feasibility plan, Indian destination wedding consultation, Mexico wedding budget review, Punta Cana wedding planning consultation, Gujarati destination wedding planning",
 })
@@ -20,7 +20,7 @@ const serviceSchema = buildServiceSchema({
   description: destinationFeasibilityPlan.description,
   url: destinationFeasibilityPlan.href,
   category: "Destination Wedding Feasibility and Planning",
-  areaServed: ["Mexico", "Punta Cana, Dominican Republic"],
+  areaServed: ["Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
   offers: [
     {
       name: destinationFeasibilityPlan.name,
@@ -33,17 +33,6 @@ const serviceSchema = buildServiceSchema({
 const breadcrumbSchema = buildBreadcrumb([
   { name: destinationFeasibilityPlan.name, url: destinationFeasibilityPlan.href },
 ])
-
-// Product/Offer graph for the $300 plan (blueprint §JSON-LD): precise price
-// plus a MerchantReturnPolicy that mirrors the published 30-day credit terms.
-const productSchema = buildFeasibilityPlanProductSchema({
-  name: destinationFeasibilityPlan.name,
-  alternateName: "$300 Feasibility & Action Plan",
-  description: destinationFeasibilityPlan.description,
-  href: destinationFeasibilityPlan.href,
-  price: destinationFeasibilityPlan.price,
-  creditWindowDays: destinationFeasibilityPlan.creditWindowDays,
-})
 
 const faqItems = [
   {
@@ -71,7 +60,6 @@ export default function DestinationWeddingFeasibilityPlanPage() {
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
-      <JsonLd id="schema-product" data={productSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={buildFaqSchema(faqItems)} />
       <SeoNav />
@@ -86,7 +74,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 !text-white/80">
             The {destinationFeasibilityPlan.name} turns the facts you already have into a written path forward
-            for a Gujarati or Hindu destination wedding across Mexico or in Punta Cana.
+            for a Gujarati or Hindu destination wedding across Mexico, Jamaica, or Punta Cana.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

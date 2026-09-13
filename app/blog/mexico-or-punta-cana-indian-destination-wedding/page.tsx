@@ -1,3 +1,4 @@
+import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/seo";
@@ -53,7 +54,7 @@ const faqSchema = buildFaqSchema([
   {
     question: "Does CeremonyVerse plan weddings in both destinations?",
     answer:
-      "Yes. CeremonyVerse currently supports Gujarati and Hindu destination weddings across Mexico and in Punta Cana. The written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
+      "Yes. CeremonyVerse currently supports Gujarati and Hindu destination weddings across Mexico, Jamaica, and Punta Cana. The written proposal defines the selected planning, on-site, family-support, guest, and optional India-sourcing services.",
   },
   {
     question: "How should a family make the final choice?",
@@ -89,8 +90,8 @@ export default function BlogPost() {
             and vendor environment. The choice should be made property by property and proposal by proposal.
           </p>
           <p>
-            CeremonyVerse&apos;s current destination focus is Gujarati and Hindu weddings across Mexico and in Punta
-            Cana. Families can work with CeremonyVerse from anywhere in the United States or Canada. This comparison
+            CeremonyVerse&apos;s current destination focus is Gujarati and Hindu weddings across Mexico, Jamaica, and
+            Punta Cana. Families can work with CeremonyVerse from anywhere in the United States or Canada. This comparison
             does not claim that one destination is universally easier, cheaper, or better.
           </p>
           <p>
@@ -236,6 +237,7 @@ export default function BlogPost() {
             article is planning information, not immigration, legal, insurance, or travel-provider advice.
           </p>
         </div>
+      <VisibleFaqs schema={faqSchema} />
       </article>
     </main>
   );

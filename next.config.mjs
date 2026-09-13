@@ -52,8 +52,6 @@ const nextConfig = {
       { source: '/blog/sherwani-vs-bandhgala-groom-guide/', destination: '/blog/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire/', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
-      { source: '/blog/indian-destination-wedding-mexico-complete-guide', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
-      { source: '/blog/indian-destination-wedding-mexico-complete-guide/', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
     ]
   },
   async headers() {
@@ -63,7 +61,6 @@ const nextConfig = {
         headers: [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }],
       },
       { source: '/wedding-accessories-and-ceremony-items-from-india', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
-      { source: '/destinations/jamaica-indian-wedding', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
       { source: '/blog/south-indian-christian-wedding-outfit-guide', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
       { source: '/terms', headers: [{ key: 'X-Robots-Tag', value: 'noindex, follow' }] },
     ]

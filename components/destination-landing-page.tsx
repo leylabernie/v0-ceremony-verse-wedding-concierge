@@ -94,6 +94,8 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
         </div>
       </section>
 
+      {data.regionalSections && <section className="bg-[#f4eee4] px-6 py-16"><div className="mx-auto max-w-6xl"><p className="text-sm font-semibold text-[#7a6841]">Regional planning details · Updated September 13, 2026</p><div className="mt-6 grid gap-7 lg:grid-cols-2">{data.regionalSections.map(region=><article key={region.title} className="rounded-2xl border border-[#d9cfbf] bg-white p-8"><h2 className="font-serif text-3xl font-semibold">{region.title}</h2>{region.paragraphs.map((p,i)=><p key={i} className="mt-4 leading-7 text-[#4d403a]">{p}</p>)}{region.source&&<a href={region.source.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-block font-semibold text-[#7a6841] underline">{region.source.label}</a>}</article>)}</div></div></section>}
+
       {data.resortPackageBenchmarks && (
         <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
           <div className="mx-auto max-w-6xl">
