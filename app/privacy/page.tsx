@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">CeremonyVerse · Privacy</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Privacy Notice</h1>
-          <p className="mt-5 text-sm text-white/70">Last updated: August 10, 2026</p>
+          <p className="mt-5 text-sm text-white/70">Last updated: September 14, 2026</p>
         </div>
       </section>
 
@@ -68,6 +68,8 @@ export default function PrivacyPage() {
           <ul className={listClass}>
             <li>Respond to inquiries and decide whether the requested service and timing are a practical fit.</li>
             <li>Send the requested pre-call questionnaire and prepare for the consultation.</li>
+            <li>Provide requested ceremony-toolkit downloads and record your names, email, wedding details and consent choices. Toolkit records are retained in our form storage for up to 90 days; related email correspondence follows our general retention practices.</li>
+            <li>Send wedding-planning follow-up for toolkit requests only when you separately opt in. That choice is optional and is not required for the download. Reply stop or contact hello@ceremonyverse.com to withdraw it.</li>
             <li>Prepare, provide, and administer selected wedding-planning or India-sourcing services.</li>
             <li>Maintain approvals, logistics, communications, invoicing, and business records.</li>
             <li>Measure website performance, lead sources, and service interest.</li>
