@@ -14,6 +14,12 @@ const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/plann
 
 const tools = [
   {
+    title: "Ceremony Timeline & Free Toolkit",
+    description: "Preview your ceremony handoffs, then download your personalised timeline, an original symbolic script and a friend officiant guide. Planning follow-up is optional.",
+    href: "/planning-tools/ceremony-timeline/",
+    label: "Build your ceremony timeline",
+  },
+  {
     title: "Wedding Budget Calculator",
     description:
       "Separate event, family-travel, and shopping costs; see the total, target gap, quote confidence, and missing cost areas.",
@@ -63,7 +69,7 @@ export default function PlanningToolsPage() {
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Calculate before you commit</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
             Use your own quotes and assumptions to test the complete budget, compare resorts, separate guest support,
-            and estimate India-to-USA-or-Canada shipping and customs. No email address is required.
+            and estimate India-to-USA-or-Canada shipping and customs. The calculators and ceremony preview are open; the ceremony toolkit download asks for your details, with optional planning follow-up.
           </p>
         </div>
       </section>

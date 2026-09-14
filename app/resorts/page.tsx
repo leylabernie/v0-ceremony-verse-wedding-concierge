@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { venuePlanningGuides } from "@/lib/venue-planning-guides"
 import { buildBreadcrumb, buildFaqSchema, buildServiceSchema, buildMetadata, JsonLd } from "@/lib/seo"
 import { resortProfiles } from "@/lib/resort-links"
 
@@ -84,6 +85,8 @@ export default function ResortsPage() {
           </p>
         </div>
       </section>
+
+      <section className="bg-[#f2ece2] px-6 py-14"><div className="mx-auto max-w-6xl"><h2 className="font-serif text-3xl font-semibold">Venue planning guides: layouts, timing and guest flow</h2><div className="mt-7 grid gap-5 md:grid-cols-3">{venuePlanningGuides.map(guide => <Link key={guide.slug} href={`/guides/${guide.slug}/`} className="rounded-xl border border-[#d9cfbf] bg-white p-6"><h3 className="font-serif text-2xl font-semibold">{guide.venue}</h3><p className="mt-3 text-sm leading-6 text-[#4d403a]">{guide.description}</p><span className="mt-4 block font-semibold text-[#7a6841]">Read the planning guide →</span></Link>)}</div></div></section>
 
       <section className="px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">

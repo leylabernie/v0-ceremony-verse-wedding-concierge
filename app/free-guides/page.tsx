@@ -14,6 +14,10 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
+  ["Ceremony Timeline & Downloadable Toolkit", "Build a live timeline, then request the free PDF with an original symbolic script and friend officiant guide. Planning emails are optional.", "/planning-tools/ceremony-timeline/"],
+  ["Moon Palace Cancún Planning Guide", "Work through Lake Terrace and Meditation Garden layouts, production questions and ceremony handoffs.", "/guides/moon-palace-cancun-wedding-planning/"],
+  ["Hard Rock Riviera Maya Planning Guide", "Review published vendor-access charges, outdoor timing and production questions before setting your schedule.", "/guides/hard-rock-riviera-maya-wedding-planning/"],
+  ["Lopesan Costa Bávaro Planning Guide", "Match beach, garden and rooftop options to your guest count, package inclusions and cultural requirements.", "/guides/lopesan-costa-bavaro-wedding-planning/"],
   ["5 Questions Before You Choose", "Start with five essential questions about cost, guests, cultural events, wedding-week ownership, and written commitments before choosing a Mexico, Jamaica, or Punta Cana resort.", "/before-signing-indian-wedding-resort-proposal/"],
   ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
@@ -51,10 +55,10 @@ export default function FreeGuidesPage() {
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">No email gate</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Free planning resources</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Free Indian Wedding Planning Resources</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Open the resource you need. CeremonyVerse does not require an email address or automatically subscribe you to marketing.
+            Explore the guides and calculator previews freely. The ceremony toolkit download asks for your details; planning follow-up has a separate, optional opt-in.
           </p>
         </div>
       </section>
