@@ -89,9 +89,16 @@ export async function OPTIONS(req: NextRequest) {
 }
 
 type AbacusMessage = { is_user?: boolean; text?: string; role?: string };
+type AbacusSegment = {
+  type?: string;
+  deploymentConversationId?: string;
+  segment?: string;
+};
 type AbacusResult = {
   deployment_conversation_id?: string;
+  deploymentConversationId?: string;
   messages?: AbacusMessage[];
+  segments?: AbacusSegment[];
   response?: string;
 };
 
@@ -189,7 +196,21 @@ export async function POST(req: NextRequest) {
     }
 
     const result = data.result;
-    const conversationId = result.deployment_conversation_id ?? sessionId ?? "";
+    // The conversation id can appear at the top level (SDK-style response) or
+    // inside a `conversation_info` segment (raw REST response). Check both.
+    let conversationId =
+      result.deployment_conversation_id ??
+      result.deploymentConversationId ??
+      "";
+    if (!conversationId && Array.isArray(result.segments)) {
+      const infoSegment = result.segments.find(
+        (s) => typeof s.deploymentConversationId === "string" && s.deploymentConversationId,
+      );
+      if (infoSegment?.deploymentConversationId) {
+        conversationId = infoSegment.deploymentConversationId;
+      }
+    }
+    if (!conversationId) conversationId = sessionId ?? "";
 
     // The reply is the last non-user message; fall back to result.response.
     let reply = "";
