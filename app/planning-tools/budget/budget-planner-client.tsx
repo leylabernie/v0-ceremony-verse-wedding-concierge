@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
 import { ResortRateSelector } from "./resort-rate-selector"
+import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 
 const costCategories = [
   { key: "resortEvents", label: "Resort wedding package, venues, food and beverage", group: "Wedding events" },
@@ -293,6 +294,12 @@ export function BudgetPlannerClient() {
           <Link href="/planning-tools/shipping-customs/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Open Shipping &amp; Customs Calculator</Link>
           <Link href="/contact/?service=mexico&from=budget-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "destination_wedding_budget", completion_percent: summary.completeness })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Request a Budget Review</Link>
           <Link href="/planning-tools/guest-logistics/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Calculate Hosted Guest Costs</Link>
+          {/* Lead-capture offer — appears with results; never gates the calculator. */}
+          <CalculatorLeadCapture
+            calculatorType="budget-planner"
+            results={summary}
+            className="mt-6 print:hidden"
+          />
         </aside>
       </div>
     </section>

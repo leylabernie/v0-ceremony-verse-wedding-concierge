@@ -5,6 +5,7 @@ import {
   destinationFeasibilityPlan,
 } from "@/lib/destination-feasibility-plan"
 import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
+import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
 
 export const metadata = buildMetadata({
   path: destinationFeasibilityPlan.href,
@@ -83,6 +84,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
             >
               Schedule a Free 30-Minute Consultation
             </Link>
+            <ChatWithMinisAssistantButton variant="light" source="feasibility-hero" className="px-8 py-4" />
             <span className="text-sm !text-white/70">No payment is collected through the inquiry form.</span>
           </div>
         </div>
@@ -191,12 +193,15 @@ export default function DestinationWeddingFeasibilityPlanPage() {
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 !text-white/85">
             The free consultation determines whether CeremonyVerse can help with your needs and whether the {destinationFeasibilityPlan.shortName} is the appropriate next step. There is no payment or contract required to submit the inquiry.
           </p>
-          <Link
-            href={destinationFeasibilityPlan.contactHref}
-            className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
-          >
-            Schedule a Free 30-Minute Consultation
-          </Link>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link
+              href={destinationFeasibilityPlan.contactHref}
+              className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]"
+            >
+              Schedule a Free 30-Minute Consultation
+            </Link>
+            <ChatWithMinisAssistantButton variant="light" source="feasibility-final" className="px-8 py-4" />
+          </div>
         </div>
       </section>
     </main>

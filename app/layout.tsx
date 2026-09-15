@@ -4,6 +4,7 @@ import Script from "next/script";
 import Link from "next/link";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import WhatsAppButton from "@/components/whatsapp-button";
+import MinisAssistantWidget from "@/components/MinisAssistantWidget";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
@@ -186,6 +187,10 @@ export default function RootLayout({
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
         <GlobalFooter />
+        {/* Mini's Assistant — AI concierge chat widget. Rendered last so it
+            layers above page content; self-excludes on /privacy and /terms and
+            loads its embed script lazily to protect Lighthouse/CLS. */}
+        <MinisAssistantWidget />
       </body>
     </html>
   );

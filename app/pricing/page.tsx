@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { WeddingBudgetExamples } from "@/components/wedding-budget-examples"
+import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
 import { SeoNav } from "@/components/seo-nav"
 import {
   buildBreadcrumb,
@@ -422,9 +423,12 @@ export default function PricingPage() {
             sourcing tier, $300 feasibility plan, or destination-planning package is appropriate. No payment or
             contract is required for the call; any paid next step is presented separately in writing.
           </p>
-          <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule a Free 30-Minute Consultation
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+              Schedule a Free 30-Minute Consultation
+            </Link>
+            <ChatWithMinisAssistantButton variant="light" source="pricing-final" className="px-8 py-4" />
+          </div>
         </div>
       </section>
       <WeddingBudgetExamples />

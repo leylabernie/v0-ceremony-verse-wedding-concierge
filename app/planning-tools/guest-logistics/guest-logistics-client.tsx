@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
+import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 
 interface GuestCosts {
   guestCount: string
@@ -154,6 +155,12 @@ export function GuestLogisticsClient() {
           </p>
           <Link href="/planning-tools/budget/" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "budget" })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Open Wedding Budget Calculator</Link>
           <Link href="/contact/?service=mexico&from=guest-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "consultation" })} className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Discuss Guest Logistics</Link>
+          {/* Lead-capture offer — appears with results; never gates the calculator. */}
+          <CalculatorLeadCapture
+            calculatorType="guest-logistics"
+            results={summary}
+            className="mt-6 print:hidden"
+          />
         </aside>
       </div>
     </section>
