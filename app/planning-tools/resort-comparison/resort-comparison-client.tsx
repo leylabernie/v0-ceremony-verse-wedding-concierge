@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
+import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 
 const termMetrics = [
   { key: "eventScope", label: "Event venues, hours and inclusions" },
@@ -228,6 +229,13 @@ export function ResortComparisonClient() {
           <button type="button" onClick={printComparison} className="rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">Print or Save as PDF</button>
           <button type="button" onClick={reset} className="rounded-full border border-[#c7bcae] px-7 py-3 text-sm font-semibold text-[#5e4a40]">Clear comparison</button>
         </div>
+
+        {/* Lead-capture offer — appears with results; never gates the calculator. */}
+        <CalculatorLeadCapture
+          calculatorType="resort-comparison"
+          results={summaries}
+          className="mt-8 print:hidden"
+        />
       </div>
     </section>
   )

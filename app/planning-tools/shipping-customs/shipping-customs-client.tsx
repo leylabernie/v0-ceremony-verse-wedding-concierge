@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
+import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 
 const servicePlans = [
   { value: "0", label: "No CeremonyVerse tier selected" },
@@ -217,6 +218,12 @@ export function ShippingCustomsClient() {
           <Link href="/contact/?service=india&from=shipping-customs-calculator" className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold !text-[#1f1f1f] print:hidden">
             Discuss a Sourcing Quote
           </Link>
+          {/* Lead-capture offer — appears with results; never gates the calculator. */}
+          <CalculatorLeadCapture
+            calculatorType="shipping-customs"
+            results={summary}
+            className="mt-6 print:hidden"
+          />
         </aside>
       </div>
     </section>
