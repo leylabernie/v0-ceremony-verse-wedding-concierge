@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
+import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
 
 // Design: Editorial Proof, Not Pageantry. Preserve the existing charcoal, parchment,
 // antique-gold, serif-led CeremonyVerse visual system while helping a prospective bride
@@ -236,6 +237,7 @@ export function HomePage() {
               >
                 Schedule Free Consultation
               </Link>
+              <ChatWithMinisAssistantButton variant="light" source="homepage-hero" className="px-7 py-4" />
               <Link
                 href="/before-signing-indian-wedding-resort-proposal/"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -596,9 +598,12 @@ export function HomePage() {
             Your first 30-minute consultation is free. We&apos;ll separate the event budget from rooms and travel,
             identify the right destination-planning scope, and explain any paid next step before you decide.
           </p>
-          <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-            Schedule Free Consultation
-          </Link>
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+              Schedule Free Consultation
+            </Link>
+            <ChatWithMinisAssistantButton variant="light" source="homepage-final" className="px-8 py-4" />
+          </div>
         </div>
       </section>
     </main>
