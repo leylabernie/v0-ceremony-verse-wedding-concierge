@@ -4,7 +4,8 @@ import {
   isWidgetExcludedPath,
   extractDestinationSlug,
   destinationNameFromSlug,
-  ceremonyVerseWidgetConfig,
+  widgetConfig,
+  botMeta,
 } from "../lib/widget-config.ts";
 
 // These cover the decision logic that drives MinisAssistantWidget:
@@ -51,8 +52,19 @@ test("destination name maps from slug", () => {
 });
 
 test("escalation thresholds match the system spec", () => {
-  assert.equal(ceremonyVerseWidgetConfig.escalation.guestMin, 75);
-  assert.equal(ceremonyVerseWidgetConfig.escalation.budgetMin, 60000);
-  assert.equal(ceremonyVerseWidgetConfig.escalation.monthsMax, 8);
-  assert.equal(ceremonyVerseWidgetConfig.whatsappNumber, "12153419990");
+  assert.equal(widgetConfig.escalationThresholds.guestCountMin, 75);
+  assert.equal(widgetConfig.escalationThresholds.budgetMin, 60000);
+  assert.equal(widgetConfig.escalationThresholds.monthsToWeddingMax, 8);
+  assert.equal(botMeta.whatsappNumber, "12153419990");
+});
+
+test("widget config exposes real Abacus bot identifiers (public only)", () => {
+  assert.equal(widgetConfig.appId, "c033a53c2");
+  assert.equal(widgetConfig.deploymentId, "d4e208a68");
+  assert.equal(
+    widgetConfig.iframeUrl,
+    "https://apps.abacus.ai/chatllm/?appId=c033a53c2&hideTopBar=2",
+  );
+  // No secret token should ever be present in client-importable config.
+  assert.equal("token" in widgetConfig, false);
 });

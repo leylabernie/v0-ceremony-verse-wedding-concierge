@@ -1,73 +1,75 @@
 /**
  * Mini's Assistant — CeremonyVerse chat widget configuration.
  *
- * All public values are read from NEXT_PUBLIC_* environment variables so that
- * bot IDs / site keys / calendar links can be rotated without a code change.
- * Populate them in `.env.local` (never commit real values) and in the Vercel
- * project's Environment Variables dashboard for production.
+ * The widget now talks to a real Abacus AI ChatLLM deployment via the
+ * server-side proxy at /api/chat. The deployment token is NEVER exposed to the
+ * browser — only the public appId / deploymentId and the shareable iframe URL
+ * live here. Server-only secrets (ABACUS_DEPLOYMENT_TOKEN) stay in env vars.
  *
- * See /home/ubuntu/minis_assistant/03_widget_and_whatsapp.md for the reference
- * widget config structure this mirrors.
+ * See /home/ubuntu/minis_assistant/03_widget_and_whatsapp.md for reference.
  */
 
 export type EscalationThresholds = {
   /** Guest count at or above which a lead is a "hot lead". */
-  guestMin: number;
+  guestCountMin: number;
   /** Total budget (USD) at or above which a lead is a "hot lead". */
   budgetMin: number;
   /** Months-to-wedding at or below which a lead is a "hot lead". */
-  monthsMax: number;
+  monthsToWeddingMax: number;
 };
 
 export type WidgetConfig = {
-  site: string;
-  botName: string;
-  botId: string;
-  siteKey: string;
-  /** Abacus AI ChatLLM embed script URL (falls back to the public embed). */
-  widgetScriptUrl: string;
-  calendarUrl: string;
-  whatsappNumber: string;
-  escalation: EscalationThresholds;
+  /** Abacus external application id (safe to be public). */
+  appId: string;
+  /** Abacus deployment id (safe to be public; token stays server-side). */
+  deploymentId: string;
+  /** Embeddable ChatLLM iframe URL (used by the standalone WordPress snippet). */
+  iframeUrl: string;
+  /** Shareable bot URL. */
+  botShareableUrl: string;
+  /** Hot-lead escalation thresholds. */
+  escalationThresholds: EscalationThresholds;
   /** Pathnames on which the widget must NOT load. */
   excludedPaths: string[];
 };
 
-/**
- * Fallback embed script URL. Overridden by NEXT_PUBLIC_WIDGET_SCRIPT_URL when
- * set. Kept as a placeholder so the component has a deterministic src during
- * local development before the real Abacus AI bot is provisioned.
- */
-const DEFAULT_WIDGET_SCRIPT_URL = "https://apps.abacus.ai/chatllm/embed.js";
-
-export const ceremonyVerseWidgetConfig: WidgetConfig = {
-  site: "ceremonyverse.com",
-  botName: "Mini's Assistant",
-  botId: process.env.NEXT_PUBLIC_BOT_ID ?? "",
-  siteKey: process.env.NEXT_PUBLIC_SITE_KEY ?? "",
-  widgetScriptUrl:
-    process.env.NEXT_PUBLIC_WIDGET_SCRIPT_URL ?? DEFAULT_WIDGET_SCRIPT_URL,
-  calendarUrl: process.env.NEXT_PUBLIC_CALENDLY_URL ?? "",
-  whatsappNumber: "12153419990",
-  escalation: {
-    guestMin: 75,
+export const widgetConfig: WidgetConfig = {
+  appId: "c033a53c2",
+  deploymentId: "d4e208a68",
+  iframeUrl: "https://apps.abacus.ai/chatllm/?appId=c033a53c2&hideTopBar=2",
+  botShareableUrl: "https://apps.abacus.ai/chatllm/?appId=c033a53c2",
+  escalationThresholds: {
+    guestCountMin: 75,
     budgetMin: 60000,
-    monthsMax: 8,
+    monthsToWeddingMax: 8,
   },
-  excludedPaths: ["/privacy-policy", "/terms-of-service"],
+  excludedPaths: ["/privacy-policy", "/terms-of-service", "/terms"],
 };
 
 /**
+ * Backwards-compatible alias. Existing imports use `ceremonyVerseWidgetConfig`;
+ * they keep working while new code can import `widgetConfig`.
+ */
+export const ceremonyVerseWidgetConfig = widgetConfig;
+
+/** Bot display metadata used by the in-app chat panel. */
+export const botMeta = {
+  name: "Mini's Assistant",
+  icon: "🌸",
+  whatsappNumber: "12153419990",
+} as const;
+
+/**
  * Returns true when the widget must NOT render on the given pathname.
- * Handles both exact matches and trailing-slash variants used across the site
- * (e.g. `/terms/`, `/privacy/`). We match the configured excluded paths plus
- * the site's actual legal routes (`/privacy`, `/terms`) defensively.
+ * Handles exact matches and trailing-slash variants (e.g. `/terms/`).
+ * Matches the configured excluded paths plus the site's short legal routes
+ * (`/privacy`, `/terms`) defensively.
  */
 export function isWidgetExcludedPath(pathname: string): boolean {
   const normalized = pathname.replace(/\/+$/, "") || "/";
   const excluded = new Set<string>([
-    ...ceremonyVerseWidgetConfig.excludedPaths,
-    // Actual legal routes on ceremonyverse.com.
+    ...widgetConfig.excludedPaths,
+    // Short legal-route aliases used across the site.
     "/privacy",
     "/terms",
   ]);
