@@ -16,5 +16,8 @@ export default defineConfig([
     "build/**",
     "next-env.d.ts",
     "components/pages/*.backup",
+    // RTL component test requires jest/vitest + @testing-library/react, which
+    // are not installed. Ignore so unresolved test-only imports don't fail lint.
+    "__tests__/**",
   ]),
 ])
