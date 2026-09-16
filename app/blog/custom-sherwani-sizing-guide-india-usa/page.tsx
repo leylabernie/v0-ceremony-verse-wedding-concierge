@@ -19,7 +19,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-06-28",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -71,9 +71,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
               textTransform: "uppercase",
               marginBottom: "1rem",
             }}
-          >
-            CeremonyVerse · June 2026
-          </p>
+          >By <a href="/about/mini/" style={{color:"#7a6841",textDecoration:"underline",textUnderlineOffset:"4px"}}>Mini</a> · June 2026</p>
           <h1
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",

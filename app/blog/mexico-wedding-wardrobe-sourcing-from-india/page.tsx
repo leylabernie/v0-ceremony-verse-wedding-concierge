@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
     "Mexico Indian wedding outfits, India wedding wardrobe sourcing, destination wedding outfit planning, Indian wedding outfits Mexico",
   publishedTime: "2026-07-14T10:00:00-05:00",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -29,7 +29,7 @@ const blogPostingSchema = buildBlogPosting({
   image: "/images/sourcing/couple-portrait.webp",
   datePublished: "2026-07-14T10:00:00-05:00",
   dateModified: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: ["Mexico Indian wedding", "India wedding wardrobe sourcing", "destination wedding outfits", "Indian wedding outfits"],
 });
 
@@ -73,7 +73,7 @@ export default function BlogPost() {
           A practical framework for coordinating a multi-event Indian wedding wardrobe across India, the United
           States, and a destination in Mexico.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 11, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By <a href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">Mini</a> · Updated August 11, 2026</p>
 
         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl">
           <Image

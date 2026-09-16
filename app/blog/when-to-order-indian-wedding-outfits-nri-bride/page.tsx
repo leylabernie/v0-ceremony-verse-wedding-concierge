@@ -10,7 +10,7 @@ export const metadata = buildMetadata({
   keywords: ["when to order indian wedding outfits from India", "NRI bride timeline", "indian wedding outfit lead time", "bridal lehenga production time"],
   publishedTime: "2026-03-01",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -36,7 +36,7 @@ export default function TimelineGuidePage() {
       
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>CeremonyVerse · June 2026</p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>By <a href="/about/mini/" style={{color:"#7a6841",textDecoration:"underline",textUnderlineOffset:"4px"}}>Mini</a> · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             When Should NRI Brides Order Wedding Outfits from India? Month-by-Month Timeline
           </h1>

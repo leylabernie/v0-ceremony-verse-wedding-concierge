@@ -34,6 +34,7 @@ const ceremonyLinks = [
 ];
 
 const companyLinks = [
+  { label: "NRI Gujarati Wedding Planning Guide", href: "/nri-gujarati-wedding-planning-guide/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },
@@ -41,6 +42,8 @@ const companyLinks = [
   { label: "Wedding Calculators", href: "/planning-tools/" },
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
+  { label: "Meet Mini — Founder", href: "/about/mini/" },
+  { label: "Family Wedding Experience", href: "/real-weddings/" },
   { label: "Contact", href: "/contact/" },
   { label: "For Wedding Vendors", href: "/vendors/" },
 ];

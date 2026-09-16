@@ -8,7 +8,7 @@ export const metadata = buildMetadata({
   description: "Step-by-step guide for grooms buying a sherwani from India and shipping to USA: fabric choices (silk vs velvet), how to take sherwani measurements, customs duties, shipping costs, and coordinating groomsmen outfits.",
   keywords: ["how to buy sherwani from India to USA", "buy sherwani online USA 2026", "groom sherwani India shipping customs", "sherwani measurements guide", "Indian groom outfit USA"],
   publishedTime: "2026-03-01",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -34,9 +34,7 @@ export default function SherwaniGuidePage() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            CeremonyVerse · June 2026
-          </p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>By <a href="/about/mini/" style={{color:"#7a6841",textDecoration:"underline",textUnderlineOffset:"4px"}}>Mini</a> · June 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How to Buy a Sherwani from India for Your US Wedding: Prices, Sizing & Shipping
           </h1>

@@ -6,6 +6,15 @@ type Frequency = "weekly" | "monthly" | "yearly"
 type Entry = { path: string; changeFrequency: Frequency; priority: number; lastModified?: Date }
 
 const pages: Entry[] = [
+  { path: "/nri-gujarati-wedding-planning-guide/", changeFrequency: "weekly", priority: 1, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-wedding-timeline-12-months/", changeFrequency: "monthly", priority: 0.95, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-wedding-rituals-explained/", changeFrequency: "monthly", priority: 0.95, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-wedding-vendor-questions/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-wedding-legal-requirements-mexico/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-parents-guide-destination-wedding/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/nri-gujarati-wedding-guest-etiquette/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/blog/author/mini/", changeFrequency: "weekly", priority: 0.75, lastModified: new Date("2026-09-16T12:00:00Z") },
+  { path: "/about/mini/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/planning-tools/ceremony-timeline/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
   { path: "/guides/moon-palace-cancun-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
   { path: "/guides/hard-rock-riviera-maya-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },

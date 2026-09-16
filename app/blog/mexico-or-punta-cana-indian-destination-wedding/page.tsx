@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
   modifiedTime: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -31,7 +31,7 @@ const blogPostingSchema = buildBlogPosting({
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
   dateModified: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: ["Mexico vs Punta Cana Indian wedding", "Indian destination wedding", "Gujarati Hindu wedding"],
 });
 
@@ -80,7 +80,7 @@ export default function BlogPost() {
           The better destination is the one that fits your real guests, ceremonies, written resort terms, and total
           host budget—not the one with the most attractive starting package.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 21, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By <a href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">Mini</a> · Updated August 21, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>

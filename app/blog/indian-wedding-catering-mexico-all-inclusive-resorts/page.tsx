@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-09-08T12:00:00-04:00",
   modifiedTime: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -31,7 +31,7 @@ const blogPostingSchema = buildBlogPosting({
   url: path,
   datePublished: "2026-09-08T12:00:00-04:00",
   dateModified: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: [
     "Indian wedding catering Mexico",
     "outside caterer all inclusive resort",
@@ -86,7 +86,7 @@ export default function BlogPost() {
           because nobody translated the family&apos;s cultural requirements into the resort&apos;s kitchen
           documentation early enough.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated September 13, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By <a href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">Mini</a> · Updated September 13, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>

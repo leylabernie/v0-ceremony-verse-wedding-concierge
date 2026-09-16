@@ -31,6 +31,14 @@ export default function AboutPage() {
             weddings in Mexico. It showed how easily resort decisions, cultural needs, guest logistics, wedding
             wardrobes, vendor responsibilities, and family communication can become disconnected.
           </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link href="/about/mini/" className="inline-flex rounded-full bg-[#c5a059] px-7 py-3 text-sm font-semibold text-[#1f1f1f]">
+              Read Mini&rsquo;s full story →
+            </Link>
+            <Link href="/real-weddings/" className="inline-flex rounded-full border border-[#c5a059] px-7 py-3 text-sm font-semibold text-[#c5a059]">
+              See the three family weddings that shaped the service
+            </Link>
+          </div>
         </div>
       </section>
 

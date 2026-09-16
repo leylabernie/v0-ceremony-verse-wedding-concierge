@@ -151,6 +151,13 @@ const proofPrinciples = [
 
 const startingRoutes = [
   {
+    step: "00",
+    question: "Start here — read the complete guide",
+    answer: "The full NRI Gujarati wedding planning guide: destinations, costs, ceremonies, India outfit sourcing, US customs, and the questions to ask before signing a resort proposal. Written by Mini from her firsthand family-wedding experience.",
+    href: "/nri-gujarati-wedding-planning-guide/",
+    cta: "Read the complete guide",
+  },
+  {
     step: "01",
     question: "We are still choosing a destination",
     answer: "Compare guest travel, event flow, room-block risk, cultural requirements, and weather backup before a resort photo makes the decision for you.",

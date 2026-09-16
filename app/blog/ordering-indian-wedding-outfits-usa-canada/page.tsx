@@ -20,7 +20,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
   modifiedTime: "2026-08-10T12:00:00-04:00",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -30,7 +30,7 @@ const blogPostingSchema = buildBlogPosting({
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
   dateModified: "2026-08-10T12:00:00-04:00",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: ["Indian wedding outfits USA", "Indian wedding outfits Canada", "India sourcing", "customs and shipping"],
 });
 
@@ -79,7 +79,7 @@ export default function BlogPost() {
           The reliable way to compare an India order is to document the item, fit plan, approvals, complete landed
           cost, shipping responsibilities, and local alteration buffer before payment.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Published August 10, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By <a href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">Mini</a> · Published August 10, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>
