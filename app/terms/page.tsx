@@ -33,7 +33,7 @@ export default function TermsPage() {
             Terms of Service
           </h1>
           <p style={{ color: "#7a6841", fontSize: "0.95rem", lineHeight: 1.7 }}>
-            Last updated: August 11, 2026
+            Last updated: September 17, 2026
           </p>
         </div>
       </div>
@@ -125,6 +125,12 @@ export default function TermsPage() {
             and refund terms. CeremonyVerse does not sell flights or hotel rooms. Travel reservations and
             transfer bookings are completed with the applicable provider unless a signed agreement states
             otherwise, and no booking or deposit is authorized without the client&apos;s written approval.
+          </p>
+          <p style={{ marginTop: "1rem" }}>
+            CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of
+            Travel No. FST ST15578 - California Seller of Travel No. 2090937-50 - Washington UBID No
+            603189022. All travel bookings made via ceremonyversetravel.com are subject to supplier terms
+            and availability.
           </p>
           <p style={{ marginTop: "1rem" }}>
             Website calculators and publicly available resort information are provided only as planning
