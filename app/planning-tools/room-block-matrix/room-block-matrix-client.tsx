@@ -96,7 +96,7 @@ export function RoomBlockMatrixClient() {
           email: email.trim(),
           source: "room-block-matrix-calculator",
           calculatorType: "room-block-matrix",
-          pageUrl: typeof window !== "undefined" ? window.location.href : "/tools/room-block-matrix/",
+          pageUrl: typeof window !== "undefined" ? window.location.href : "/planning-tools/room-block-matrix/",
           results: matrix,
           website,
         }),

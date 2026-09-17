@@ -3,8 +3,8 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { CateringDeadlineTrackerClient } from "./catering-deadline-tracker-client"
 
 export const metadata = buildMetadata({
-  path: "/tools/catering-deadline-tracker/",
-  title: "Indian Wedding Catering Deadline Tracker",
+  path: "/planning-tools/catering-deadline-tracker/",
+  title: "South Asian Catering Deadline Tracker",
   description:
     "Enter your wedding date and get the three food deadlines that make or break a South Asian destination wedding: off-site chef requests at 180 days, Jain/Satvik/Halal ingredients at 90 days, and the traveling vendor meal count at 30 days.",
   keywords:
@@ -13,14 +13,14 @@ export const metadata = buildMetadata({
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Planning Tools", url: "/planning-tools/" },
-  { name: "Catering Deadline Tracker", url: "/tools/catering-deadline-tracker/" },
+  { name: "Catering Deadline Tracker", url: "/planning-tools/catering-deadline-tracker/" },
 ])
 
 const calculatorSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "Indian Wedding Catering Deadline Tracker",
-  url: "https://www.ceremonyverse.com/tools/catering-deadline-tracker/",
+  name: "South Asian Catering Deadline Tracker",
+  url: "https://www.ceremonyverse.com/planning-tools/catering-deadline-tracker/",
   applicationCategory: "UtilitiesApplication",
   operatingSystem: "Any",
   isAccessibleForFree: true,
@@ -40,7 +40,7 @@ export default function CateringDeadlineTrackerPage() {
             USA &amp; Canada family planning tool
           </p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">
-            Indian Wedding Catering Deadline Tracker
+            South Asian Catering Deadline Tracker
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#4d403a]">
             Resort kitchens are not used to &ldquo;no onion, no garlic, dedicated cookware, no shared frying

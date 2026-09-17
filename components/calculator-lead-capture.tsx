@@ -21,12 +21,15 @@ import {
 export function CalculatorLeadCapture({
   calculatorType,
   results,
+  source = "calculator",
   className = "",
 }: {
   /** Short identifier, e.g. "budget-planner", "guest-logistics". */
   calculatorType: string;
   /** Optional snapshot of the current results to email/store. */
   results?: unknown;
+  /** Optional CRM source tag; defaults to "calculator" for the legacy surfaces. */
+  source?: string;
   className?: string;
 }) {
   const pathname = usePathname() || "";
@@ -62,7 +65,7 @@ export function CalculatorLeadCapture({
           name: name.trim(),
           email: email.trim(),
           whatsapp: whatsapp.trim(),
-          source: "calculator",
+          source,
           calculatorType,
           results,
           destination,

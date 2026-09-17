@@ -3,7 +3,7 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { BaraatEventPlannerClient } from "./baraat-event-planner-client"
 
 export const metadata = buildMetadata({
-  path: "/tools/baraat-event-planner/",
+  path: "/planning-tools/baraat-event-planner/",
   title: "Multi-Day Baraat & Event Logistics Planner",
   description:
     "Check the events you're hosting — Ganesh Puja, Mehndi, Sangeet, Baraat, Vidai, Reception — and get the resort venue checklist: procession pathways, sound permits, power, vendor fees, and elder-friendly logistics for Mexico, Jamaica, or Punta Cana.",
@@ -13,14 +13,14 @@ export const metadata = buildMetadata({
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Planning Tools", url: "/planning-tools/" },
-  { name: "Baraat & Event Logistics Planner", url: "/tools/baraat-event-planner/" },
+  { name: "Baraat & Event Logistics Planner", url: "/planning-tools/baraat-event-planner/" },
 ])
 
 const calculatorSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Multi-Day Baraat & Event Logistics Planner",
-  url: "https://www.ceremonyverse.com/tools/baraat-event-planner/",
+  url: "https://www.ceremonyverse.com/planning-tools/baraat-event-planner/",
   applicationCategory: "UtilitiesApplication",
   operatingSystem: "Any",
   isAccessibleForFree: true,

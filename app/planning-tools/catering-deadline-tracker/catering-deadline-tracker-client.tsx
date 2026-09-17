@@ -192,6 +192,7 @@ export function CateringDeadlineTrackerClient() {
             {/* Standard lead-capture card — emails the timeline to the visitor. */}
             <CalculatorLeadCapture
               calculatorType="catering-deadline-tracker"
+              source="catering-timeline-tracker"
               results={{
                 weddingDate: wedding ? formatDate(wedding) : "",
                 milestones: milestones.map(({ daysPrior, title, date, daysUntil }) => ({

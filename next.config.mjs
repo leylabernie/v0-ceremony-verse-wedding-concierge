@@ -52,6 +52,13 @@ const nextConfig = {
       { source: '/blog/sherwani-vs-bandhgala-groom-guide/', destination: '/blog/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
       { source: '/blog/nri-guide-perfect-fits-custom-indian-wedding-attire/', destination: '/blog/how-to-take-lehenga-measurements-at-home/', permanent: true },
+      // Tools directory unification: /tools/* routes moved under /planning-tools/
+      { source: '/tools/room-block-matrix', destination: '/planning-tools/room-block-matrix/', permanent: true },
+      { source: '/tools/room-block-matrix/', destination: '/planning-tools/room-block-matrix/', permanent: true },
+      { source: '/tools/baraat-event-planner', destination: '/planning-tools/baraat-event-planner/', permanent: true },
+      { source: '/tools/baraat-event-planner/', destination: '/planning-tools/baraat-event-planner/', permanent: true },
+      { source: '/tools/catering-deadline-tracker', destination: '/planning-tools/catering-deadline-tracker/', permanent: true },
+      { source: '/tools/catering-deadline-tracker/', destination: '/planning-tools/catering-deadline-tracker/', permanent: true },
     ]
   },
   async headers() {

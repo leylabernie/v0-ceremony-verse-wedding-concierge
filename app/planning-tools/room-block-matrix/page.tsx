@@ -3,7 +3,7 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { RoomBlockMatrixClient } from "./room-block-matrix-client"
 
 export const metadata = buildMetadata({
-  path: "/tools/room-block-matrix/",
+  path: "/planning-tools/room-block-matrix/",
   title: "South Asian Wedding Room-Block Matrix Calculator",
   description:
     "Turn your guest count, elderly-grandparent share, and single-vs-family mix into a total room count with accessible lobby-level rooms and a King vs Double-Queen split for Mexico, Jamaica, or Punta Cana resorts.",
@@ -13,14 +13,14 @@ export const metadata = buildMetadata({
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Planning Tools", url: "/planning-tools/" },
-  { name: "Room-Block Matrix Calculator", url: "/tools/room-block-matrix/" },
+  { name: "Room-Block Matrix Calculator", url: "/planning-tools/room-block-matrix/" },
 ])
 
 const calculatorSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "South Asian Wedding Room-Block Matrix Calculator",
-  url: "https://www.ceremonyverse.com/tools/room-block-matrix/",
+  url: "https://www.ceremonyverse.com/planning-tools/room-block-matrix/",
   applicationCategory: "UtilitiesApplication",
   operatingSystem: "Any",
   isAccessibleForFree: true,

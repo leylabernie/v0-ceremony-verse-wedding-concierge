@@ -44,21 +44,21 @@ const tools = [
     title: "Room-Block Matrix Calculator",
     description:
       "Turn your guest count, elderly-grandparent share, and single-vs-family mix into a total room count with accessible, lobby-level rooms and a King vs Double-Queen split.",
-    href: "/tools/room-block-matrix/",
+    href: "/planning-tools/room-block-matrix/",
     label: "Build your room-block matrix",
   },
   {
     title: "Baraat & Event Logistics Planner",
     description:
       "Tick the events you're hosting — Ganesh Puja through Reception — and get the resort venue checklist for procession pathways, sound permits, power, and vendor fees.",
-    href: "/tools/baraat-event-planner/",
+    href: "/planning-tools/baraat-event-planner/",
     label: "Plan your event logistics",
   },
   {
     title: "Catering Deadline Tracker",
     description:
       "Enter your wedding date and get the three food deadlines that make or break a South Asian destination wedding — chef requests at 180 days, strict Jain/Satvik/Halal ingredients at 90, vendor meal counts at 30.",
-    href: "/tools/catering-deadline-tracker/",
+    href: "/planning-tools/catering-deadline-tracker/",
     label: "Start your catering countdown",
   },
   {
