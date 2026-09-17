@@ -41,6 +41,13 @@ const tools = [
     label: "Calculate guest costs",
   },
   {
+    title: "Room-Block Matrix Calculator",
+    description:
+      "Turn your guest count, elderly-grandparent share, and single-vs-family mix into a total room count with accessible, lobby-level rooms and a King vs Double-Queen split.",
+    href: "/tools/room-block-matrix/",
+    label: "Build your room-block matrix",
+  },
+  {
     title: "USA & Canada Shipping & Customs Calculator",
     description:
       "Estimate the USD landed cost of India-sourced products, shipping, insurance, import charges, brokerage, alterations, and contingency.",

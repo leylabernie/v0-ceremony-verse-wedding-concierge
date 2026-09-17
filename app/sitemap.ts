@@ -15,6 +15,7 @@ const pages: Entry[] = [
   { path: "/nri-gujarati-wedding-guest-etiquette/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/blog/author/mini/", changeFrequency: "weekly", priority: 0.75, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/blog/south-asian-destination-wedding-guide/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-09-17T09:00:00-04:00") },
+  { path: "/tools/room-block-matrix/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-09-17T09:00:00-04:00") },
   { path: "/about/mini/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/planning-tools/ceremony-timeline/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
   { path: "/guides/moon-palace-cancun-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
