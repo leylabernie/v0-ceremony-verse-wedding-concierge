@@ -416,6 +416,9 @@ export function buildLocalBusinessSchema(): object {
     sameAs: [
       "https://wa.me/12153419990",
       "https://www.instagram.com/glamourindianwear4u/",
+      // Booking portal — apex-canonical. Declaring it in sameAs tells crawlers
+      // and AI scrapers that both domains are one business identity.
+      "https://ceremonyversetravel.com",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -530,6 +533,8 @@ export function buildOrganizationSchema(): object {
     sameAs: [
       "https://wa.me/12153419990",
       "https://www.instagram.com/glamourindianwear4u/",
+      // Booking portal — apex-canonical, same business identity as the main site.
+      "https://ceremonyversetravel.com",
     ],
   }
 }
