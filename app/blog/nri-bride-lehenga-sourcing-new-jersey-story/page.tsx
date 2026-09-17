@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-03-01",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 })
 

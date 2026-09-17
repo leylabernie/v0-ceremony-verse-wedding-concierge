@@ -9,7 +9,7 @@ export const metadata = buildMetadata({
   description: "How to research a bridal lehenga from India for US delivery: item evidence, measurements, written costs, customs variables, shipping, and remedies.",
   keywords: ["how to buy bridal lehenga from India to USA", "buy lehenga from India online USA", "NRI bridal lehenga shipping customs", "Indian bridal lehenga USA 2026 guide", "live video shopping lehenga India"],
   publishedTime: "2026-03-01",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -36,9 +36,7 @@ export default function LehengaBuyingGuideBlogPost() {
       {/* Hero */}
       <div style={{ background: "#2f2f2f", padding: "4rem 1.5rem 3rem", textAlign: "center" }}>
         <div style={{ maxWidth: "760px", margin: "0 auto" }}>
-          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>
-            CeremonyVerse · March 2026
-          </p>
+          <p style={{ color: "#7a6841", fontSize: "0.9rem", letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "1rem" }}>By <a href="/about/mini/" style={{color:"#7a6841",textDecoration:"underline",textUnderlineOffset:"4px"}}>Mini</a> · March 2026</p>
           <h1 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "clamp(1.8rem, 4vw, 2.8rem)", fontWeight: 600, color: "#f8f6f2", lineHeight: 1.25, margin: "0 0 1.5rem" }}>
             How to Buy a Bridal Lehenga from India When You Live in the USA
           </h1>
@@ -56,10 +54,10 @@ export default function LehengaBuyingGuideBlogPost() {
             You have spent hours scrolling through Instagram reels of embroidered bridal lehengas. The zardozi is flawless. The ombre dupatta catches the light perfectly. The price seems almost too good. You are in love — and you have not even touched the fabric yet.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            Catalog and social-media images may not document the exact available piece, fabric, handwork, color, or production quality. If the item and remedy terms were not recorded before payment, a buyer may have limited recourse after an international shipment arrives.
+            I know that feeling. I coordinated the custom outfits for my own son&rsquo;s wedding — his sherwani, the groomsmen&rsquo;s kurtas, a few pieces for immediate family — and even having shopped in India my whole life, coordinating made-to-measure outfits remotely across time zones was a different kind of project. Some moments went smoothly. Some did not. The finished looks were beautiful, and the process taught me exactly where the avoidable risks live. That experience is what eventually grew into <Link href="/buy-indian-wedding-outfits-from-india/" style={{ color: "#7a6841" }}>CeremonyVerse&rsquo;s sourcing service</Link>.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            A documented process can reduce these risks. The steps below are general planning guidance, not a delivery, fit, savings, or product guarantee.
+            The most important thing I learned is this: catalog and social-media images may not document the exact available piece, fabric, handwork, color, or production quality. If the item and remedy terms were not recorded before payment, a buyer may have limited recourse after an international shipment arrives. The steps below are general planning guidance based on what I do for every CeremonyVerse family — not a delivery, fit, savings, or product guarantee.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -93,17 +91,17 @@ export default function LehengaBuyingGuideBlogPost() {
             Step 3: Find a Trustworthy Sourcing Partner — and Know the Red Flags
           </h2>
           <p>
-            This step may be the most important one in this entire guide. The difference between a magical lehenga and a heartbreaking one usually comes down to who you are working with.
+            This step may be the most important one in this entire guide. The difference between a magical lehenga and a heartbreaking one usually comes down to who you are working with. I learned this the hard way during my son&rsquo;s wedding outfit coordination — there were moments where I trusted a vendor&rsquo;s word instead of asking for it in writing, and moments where I almost paid for an &ldquo;in-stock&rdquo; piece that turned out to be a sample. The red flags below are not theoretical. Each one is a moment I have personally encountered or watched a friend encounter.
           </p>
           <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.25rem", fontWeight: 600, color: "#2f2f2f", marginTop: "1.8rem", marginBottom: "0.6rem" }}>
             Red flags to watch for:
           </p>
           <ul style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
-            <li><strong>Instagram sellers with no video call option.</strong> A business that will not show you the actual garment on a live video call before you pay is a business you should not send money to. Photos can be filtered, borrowed, or completely fabricated.</li>
-            <li><strong>Payment terms that are not documented.</strong> Ask for the amount, due date, approval milestone, refund or cancellation terms, and available payment protection in writing before paying.</li>
-            <li><strong>No clear return or dispute policy.</strong> Ask specifically: what happens if what I receive does not match what was shown to me?</li>
-            <li><strong>No verifiable business details.</strong> Ask who is contracting with you, who receives payment, which independent seller is responsible for the item, and what remedy applies if the written order is not met.</li>
-            <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. Genuine sourcing partners give you space to decide.</li>
+            <li><strong>Instagram sellers with no video call option.</strong> A business that will not show you the actual garment on a live video call before you pay is a business you should not send money to. Photos can be filtered, borrowed, or completely fabricated. I now make live video review non-negotiable for any bridal piece — if a vendor will not get on a call, I move on.</li>
+            <li><strong>Payment terms that are not documented.</strong> Ask for the amount, due date, approval milestone, refund or cancellation terms, and available payment protection in writing before paying. &ldquo;Pay 50% now and the rest on delivery&rdquo; is not a payment term — it is a partial sentence. The full term includes what happens if what arrives does not match what was approved.</li>
+            <li><strong>No clear return or dispute policy.</strong> Ask specifically: what happens if what I receive does not match what was shown to me? If the answer is vague, that is the answer. A vendor who has thought through disputes will tell you their policy plainly.</li>
+            <li><strong>No verifiable business details.</strong> Ask who is contracting with you, who receives payment, which independent seller is responsible for the item, and what remedy applies if the written order is not met. A real business can answer this in one email. An Instagram handle that says &ldquo;DM for details&rdquo; cannot.</li>
+            <li><strong>Pressure to decide quickly.</strong> &ldquo;This is the last one at this price&rdquo; is a sales tactic. I have heard it on pieces that were still available three months later. Genuine sourcing partners give you space to decide — and they document the decision so neither side can rewrite it later.</li>
           </ul>
           <p style={{ marginTop: "1.2rem" }}>
             A <Link href="/buy-indian-wedding-outfits-from-india/" style={{ color: "#7a6841" }}>shopping concierge</Link> can organize options, measurements, approvals, written costs, and next actions. Confirm its exact scope and the independent seller&apos;s responsibilities before paid work begins. See our <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing service</Link> and <Link href="/how-it-works/" style={{ color: "#7a6841" }}>how the process works</Link>.
@@ -202,10 +200,13 @@ export default function LehengaBuyingGuideBlogPost() {
             The Bottom Line
           </h2>
           <p>
-            Buying a bridal lehenga from India when you are based in the USA is one of the most rewarding things you can do for your wedding — if you do it right. Start early, build the full budget, verify everything on live video, and work with people who are accountable to you.
+            Buying a bridal lehenga from India when you are based in the USA is one of the most rewarding things you can do for your wedding — if you do it right. I would do it again in a heartbeat for my son&rsquo;s wedding, even knowing what I know now. The joy on his face when he saw the finished sherwani is something I will not forget. But the reason I remember the joy instead of the stress is that I had documented every decision, every approval, and every cost in writing — and so did the vendors who delivered.
           </p>
           <p style={{ marginTop: "1.2rem" }}>
-            You deserve to open that package and cry happy tears — not the other kind.
+            Start early. Build the full budget, not just the outfit price. Verify everything on live video. Work with people who are accountable to you in writing. And always, always budget for a local tailor.
+          </p>
+          <p style={{ marginTop: "1.2rem" }}>
+            You deserve to open that package and cry happy tears — not the other kind. If there is anything in this guide that you want me to walk through with you, the first 30 minutes are free. Just <Link href="/contact/" style={{ color: "#7a6841" }}>reach out</Link>.
           </p>
 
           {/* CTA Box */}

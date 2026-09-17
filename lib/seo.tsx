@@ -21,6 +21,80 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baa
 // favicon/browser icons remain SVG and are unchanged.
 export const BRAND_LOGO_URL = `${SITE_URL}/assets/brand/ceremonyverse-logo-512.png`
 
+// ───────────────────────────────────────────────────────────────────────────
+// AUTHOR ENTITY — Mini (Bhamini)
+// ───────────────────────────────────────────────────────────────────────────
+// Google's Helpful Content System and E-E-A-T guidance explicitly weight
+// *demonstrable human authorship with transparent expertise*. Every blog
+// post on this site is authored by Mini in a first-person voice, and the
+// authorship is asserted in (a) JSON-LD as a Person, (b) OG article:author,
+// and (c) a visible byline linking to the founder page below.
+//
+// The same Person is referenced from Organization.founder so search engines
+// can connect Mini's article authorship to her role at CeremonyVerse.
+export const AUTHOR_NAME = "Mini"
+export const AUTHOR_FULL_NAME = "Bhamini \"Mini\" Shah"
+export const AUTHOR_PAGE_PATH = "/about/mini/"
+export const AUTHOR_PAGE_URL = `${SITE_URL}${AUTHOR_PAGE_PATH}`
+export const AUTHOR_BIO_URL = `${SITE_URL}/about/mini/`
+
+// Topics Mini personally writes about, grounded in the live site's own
+// service pages and the family-wedding background disclosed on /about/.
+// Keep aligned with the founder page's visible "knowsAbout" list.
+export const AUTHOR_KNOWS_ABOUT: string[] = [
+  "Gujarati destination weddings",
+  "Hindu destination weddings",
+  "Indian destination weddings in Mexico",
+  "Indian destination weddings in Jamaica",
+  "Indian destination weddings in Punta Cana",
+  "Indian wedding outfit sourcing from India",
+  "Bridal lehenga remote sourcing for NRI brides",
+  "US customs duties on Indian wedding textiles",
+  "Resort proposal comparison for Indian weddings",
+  "Multi-day Indian wedding ceremony logistics",
+]
+
+// Full schema.org Person object. Used as the default `author` on every
+// BlogPosting schema and referenced from Organization.founder. The sameAs
+// links are the founder's verifiable public profiles — Google uses these
+// to confirm identity across the web.
+export const AUTHOR_PERSON = {
+  "@type": "Person",
+  "@id": `${SITE_URL}/about/mini/#person`,
+  name: AUTHOR_FULL_NAME,
+  alternateName: AUTHOR_NAME,
+  givenName: "Bhamini",
+  familyName: "Shah",
+  jobTitle: "Founder and Destination Wedding Concierge",
+  description:
+    "Bhamini (Mini) is the founder of CeremonyVerse. She writes about Gujarati and Hindu destination weddings in Mexico, Jamaica, and Punta Cana, and about remote India wedding-outfit sourcing for NRI families across the United States and Canada.",
+  url: AUTHOR_PAGE_URL,
+  image: `${SITE_URL}/images/proof/family-destination-baarat.webp`,
+  email: SITE_EMAIL,
+  worksFor: { "@id": `${SITE_URL}#organization` },
+  knowsAbout: AUTHOR_KNOWS_ABOUT,
+  sameAs: [
+    "https://www.instagram.com/glamourindianwear4u/",
+    "https://wa.me/12153419990",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "US",
+    addressRegion: "PA",
+    addressLocality: "Philadelphia",
+  },
+}
+
+// Standalone Person schema for use on the founder page itself (so the page
+// is its own canonical AboutPage/ProfilePage entity).
+export function buildPersonSchema(): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    mainEntity: AUTHOR_PERSON,
+  }
+}
+
 function buildLogoImageObject(): object {
   return {
     "@type": "ImageObject",
@@ -36,14 +110,13 @@ function buildLogoImageObject(): object {
 // Founder entity, per the CeremonyVerse GEO/AEO blueprint: legal name
 // "Bhamini", publicly displayed as "Mini". The site copy (home + about
 // pages) already identifies "Mini" as founder; this makes the same fact
-// machine-readable. No surname is asserted because none is published.
-export const FOUNDER_ENTITY: Record<string, unknown> = {
-  "@type": "Person",
-  name: "Bhamini",
-  alternateName: "Mini",
-  jobTitle: "Founder and Destination Wedding Concierge",
-  worksFor: { "@id": `${SITE_URL}#organization` },
-}
+// machine-readable. Uses the same @id as AUTHOR_PERSON so article
+// authorship and organization founder resolve to one entity.
+//
+// NOTE: Kept as a separate export for backward compatibility — older call
+// sites import FOUNDER_ENTITY directly. AUTHOR_PERSON is the canonical
+// reference and the two must stay in sync.
+export const FOUNDER_ENTITY: Record<string, unknown> = AUTHOR_PERSON
 
 // Topics the organization can credibly speak about, drawn from the live
 // site's own service pages and guides. Used for the Organization knowsAbout
@@ -135,7 +208,7 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
         ? {
             publishedTime: opts.publishedTime,
             modifiedTime: opts.modifiedTime ?? opts.publishedTime,
-            authors: opts.authorName ? [opts.authorName] : [SITE_NAME],
+            authors: [AUTHOR_PAGE_URL],
           }
         : {}),
     },
@@ -206,11 +279,10 @@ export function buildBlogPosting(opts: {
     image,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
-    author: {
-      "@type": "Organization",
-      name: opts.authorName ?? SITE_NAME,
-      url: SITE_URL,
-    },
+    // E-E-A-T: authorship is asserted as a real Person (Mini), not as the
+    // organization. The Person entity is shared with Organization.founder
+    // so Google can connect article authorship to her role at CeremonyVerse.
+    author: AUTHOR_PERSON,
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,

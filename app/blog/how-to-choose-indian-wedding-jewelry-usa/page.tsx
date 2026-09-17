@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
     "Compare Indian wedding jewelry by material, stone representation, weight, comfort, measurements, hallmark evidence, seller terms, shipping, and complete landed cost.",
   publishedTime: "2026-07-03",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 

@@ -21,7 +21,7 @@ export const metadata = buildMetadata({
   ],
   publishedTime: "2026-08-10T12:00:00-04:00",
   modifiedTime: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
@@ -31,7 +31,7 @@ const blogPostingSchema = buildBlogPosting({
   url: path,
   datePublished: "2026-08-10T12:00:00-04:00",
   dateModified: lastModified,
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: ["Gujarati destination wedding Mexico", "Hindu wedding Mexico", "Indian wedding planning Mexico"],
 });
 
@@ -80,7 +80,7 @@ export default function BlogPost() {
           A destination wedding becomes manageable when the family&apos;s cultural decisions, the resort&apos;s written
           terms, and each planner&apos;s responsibilities are organized in one working plan.
         </p>
-        <p className="mb-12 text-sm text-[#4d403a]">By CeremonyVerse · Updated August 21, 2026</p>
+        <p className="mb-12 text-sm text-[#4d403a]">By <a href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">Mini</a> · Updated August 21, 2026</p>
 
         <div className="space-y-7 text-[1.06rem] leading-8 text-[#4d403a]">
           <p>

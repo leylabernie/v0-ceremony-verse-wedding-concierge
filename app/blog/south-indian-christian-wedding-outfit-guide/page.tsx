@@ -20,7 +20,7 @@ export const metadata = buildMetadata({
   description,
   publishedTime: "2026-03-01T12:00:00-05:00",
   modifiedTime: "2026-08-11T12:00:00-04:00",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 })
 
@@ -30,7 +30,7 @@ const blogPostingSchema = buildBlogPosting({
   url: path,
   datePublished: "2026-03-01T12:00:00-05:00",
   dateModified: "2026-08-11T12:00:00-04:00",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   keywords: [
     "South Indian Christian wedding outfits",
     "Christian wedding family dress code",

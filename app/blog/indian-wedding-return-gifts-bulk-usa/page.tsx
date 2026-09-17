@@ -18,7 +18,7 @@ export const metadata = buildMetadata({
     "Plan Indian wedding favors and return gifts for USA or Canada with samples, personalization proofs, complete quotes, packing evidence, customs checks, and realistic timelines.",
   publishedTime: "2026-06-28",
   modifiedTime: "2026-09-13T12:00:00Z",
-  authorName: "CeremonyVerse",
+  authorName: "Mini",
   ogType: "article",
 });
 
