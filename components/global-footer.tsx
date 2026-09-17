@@ -157,6 +157,20 @@ export function GlobalFooter() {
             <Link href="/terms/" style={{ fontSize: "11px", color: "#5e4a40", textDecoration: "none" }}>Terms of Service</Link>
           </div>
         </div>
+        {/* Booking portal + host-agency disclosure (see agents.md disclosure rule) */}
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px 16px", display: "flex", flexWrap: "wrap", alignItems: "baseline", gap: "6px 16px" }}>
+          <a
+            href="https://ceremonyversetravel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ fontSize: "11px", fontWeight: 600, color: "#7a6841", textDecoration: "none" }}
+          >
+            Book Resorts & Cruises
+          </a>
+          <p style={{ fontSize: "11px", color: "#5e4a40", margin: 0 }}>
+            CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of Travel No. FST ST15578.
+          </p>
+        </div>
       </div>
     </footer>
   );
