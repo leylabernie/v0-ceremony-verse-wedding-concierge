@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { buildWelcomeLeadEmail } from "@/lib/emails/welcome-lead";
 
 export const runtime = "nodejs";
 
@@ -157,11 +158,28 @@ async function sendConfirmationEmail(lead: LeadCapture): Promise<boolean> {
     });
 
     const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim();
+
+    // Room-block tracker leads receive the branded welcome sequence from Mini;
+    // other surfaces keep their short results-style confirmation.
+    const welcome =
+      lead.source === "room-block-tracker"
+        ? buildWelcomeLeadEmail({ name: lead.name, targetDates: lead.targetDates })
+        : null;
+
     await transport.sendMail({
       from: SMTP_FROM,
       to: lead.email,
-      subject: "Your CeremonyVerse results + the 5 Decision Questions",
-      text: `Hi ${firstName},\n\nThanks for using the CeremonyVerse planning tools. Your saved results and the 5 Decision Questions are on their way. Mini or her assistant will follow up with the next practical step.\n\nWarmly,\nCeremonyVerse\nhello@ceremonyverse.com`,
+      ...(welcome
+        ? {
+            replyTo: "hello@ceremonyverse.com",
+            subject: welcome.subject,
+            html: welcome.html,
+            text: welcome.text,
+          }
+        : {
+            subject: "Your CeremonyVerse results + the 5 Decision Questions",
+            text: `Hi ${firstName},\n\nThanks for using the CeremonyVerse planning tools. Your saved results and the 5 Decision Questions are on their way. Mini or her assistant will follow up with the next practical step.\n\nWarmly,\nCeremonyVerse\nhello@ceremonyverse.com`,
+          }),
     });
     return true;
   } catch (error) {
