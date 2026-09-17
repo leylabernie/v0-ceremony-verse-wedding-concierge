@@ -14,6 +14,13 @@ const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/plann
 
 const tools = [
   {
+    title: "Resort Strategy Matcher",
+    description:
+      "Five questions — celebration type, guest count, elder mobility, cultural events, dietary rules — compiled into a personalized resort strategy that Mini Patel reviews personally.",
+    href: "/planning-tools/strategy-matcher/",
+    label: "Start Your Personalized Resort Strategy Match",
+  },
+  {
     title: "Ceremony Timeline & Free Toolkit",
     description: "Preview your ceremony handoffs, then download your personalised timeline, an original symbolic script and a friend officiant guide. Planning follow-up is optional.",
     href: "/planning-tools/ceremony-timeline/",
