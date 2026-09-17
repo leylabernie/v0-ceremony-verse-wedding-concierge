@@ -55,6 +55,13 @@ const tools = [
     label: "Plan your event logistics",
   },
   {
+    title: "Catering Deadline Tracker",
+    description:
+      "Enter your wedding date and get the three food deadlines that make or break a South Asian destination wedding — chef requests at 180 days, strict Jain/Satvik/Halal ingredients at 90, vendor meal counts at 30.",
+    href: "/tools/catering-deadline-tracker/",
+    label: "Start your catering countdown",
+  },
+  {
     title: "USA & Canada Shipping & Customs Calculator",
     description:
       "Estimate the USD landed cost of India-sourced products, shipping, insurance, import charges, brokerage, alterations, and contingency.",
