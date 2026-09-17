@@ -48,6 +48,13 @@ const tools = [
     label: "Build your room-block matrix",
   },
   {
+    title: "Baraat & Event Logistics Planner",
+    description:
+      "Tick the events you're hosting — Ganesh Puja through Reception — and get the resort venue checklist for procession pathways, sound permits, power, and vendor fees.",
+    href: "/tools/baraat-event-planner/",
+    label: "Plan your event logistics",
+  },
+  {
     title: "USA & Canada Shipping & Customs Calculator",
     description:
       "Estimate the USD landed cost of India-sourced products, shipping, insurance, import charges, brokerage, alterations, and contingency.",
