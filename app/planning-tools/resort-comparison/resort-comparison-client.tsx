@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
+import { TravelPortalCta } from "@/components/travel-portal-cta"
 
 const termMetrics = [
   { key: "eventScope", label: "Event venues, hours and inclusions" },
@@ -236,6 +237,8 @@ export function ResortComparisonClient() {
           results={summaries}
           className="mt-8 print:hidden"
         />
+        {/* Booking-portal CTA — dual-site engine (agents.md). */}
+        <TravelPortalCta source="resort_quote_comparison" className="mt-8 print:hidden" />
       </div>
     </section>
   )

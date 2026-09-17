@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState, type FormEvent } from "react"
 import { BUDGETS, VENUES, TOOLKIT_PDF, PRIVACY_CONSENT_TEXT, PLANNING_CONSENT_TEXT, buildTimeline, timelineText, type CeremonyKind } from "@/lib/ceremony-toolkit"
 import { trackEvent } from "@/lib/analytics"
+import { TravelPortalCta } from "@/components/travel-portal-cta"
 
 const field = "mt-2 block min-h-12 w-full min-w-0 rounded-lg border border-[#b9ad9c] bg-white px-3 py-2 text-base text-[#1f1f1f] focus:outline-2 focus:outline-offset-2 focus:outline-[#7a6841]"
 const initial = { names: "", email: "", weddingDate: "", venue: VENUES[0] as string, budget: BUDGETS[0] as string, kind: "hindu" as CeremonyKind, startTime: "16:00", duration: 90, guests: 100, privacyConsent: false, planningConsent: false, website: "" }
@@ -76,6 +77,8 @@ export function CeremonyTimelineBuilder() {
         <button type="button" onClick={downloadTimeline} className="mt-3 w-full rounded-lg border border-[#344832] px-4 py-3 font-semibold text-[#344832]">Download my timeline (.txt)</button>
         <p className="mt-4 text-sm leading-6">{submitted.planningConsent ? "You opted in to planning follow-up. You can stop those emails by replying stop." : "You have not subscribed to planning emails."} No consultation is booked by downloading.</p>
         <Link href="/contact/?from=ceremony-toolkit" className="mt-4 inline-block font-semibold underline">Want help with the next decisions? Request a free consultation →</Link>
+        {/* Booking-portal CTA — dual-site engine (agents.md). */}
+        <TravelPortalCta source="ceremony_toolkit" className="mt-4" />
       </div>}
     </form>
     <section aria-labelledby="timeline-preview-title" className="min-w-0 rounded-2xl bg-[#f2ece2] p-5 sm:p-8">

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
+import { TravelPortalCta } from "@/components/travel-portal-cta"
 
 const servicePlans = [
   { value: "0", label: "No CeremonyVerse tier selected" },
@@ -224,6 +225,8 @@ export function ShippingCustomsClient() {
             results={summary}
             className="mt-6 print:hidden"
           />
+          {/* Booking-portal CTA — dual-site engine (agents.md). */}
+          <TravelPortalCta source="shipping_customs" className="mt-6 print:hidden" />
         </aside>
       </div>
     </section>

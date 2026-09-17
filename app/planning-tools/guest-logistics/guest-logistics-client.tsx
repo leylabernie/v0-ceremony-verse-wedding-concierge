@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
+import { TravelPortalCta } from "@/components/travel-portal-cta"
 
 interface GuestCosts {
   guestCount: string
@@ -161,6 +162,8 @@ export function GuestLogisticsClient() {
             results={summary}
             className="mt-6 print:hidden"
           />
+          {/* Booking-portal CTA — dual-site engine (agents.md). */}
+          <TravelPortalCta source="guest_vip_cost" className="mt-6 print:hidden" />
         </aside>
       </div>
     </section>

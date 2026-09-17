@@ -5,6 +5,7 @@ import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
 import { ResortRateSelector } from "./resort-rate-selector"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
+import { TravelPortalCta } from "@/components/travel-portal-cta"
 
 const costCategories = [
   { key: "resortEvents", label: "Resort wedding package, venues, food and beverage", group: "Wedding events" },
@@ -300,6 +301,8 @@ export function BudgetPlannerClient() {
             results={summary}
             className="mt-6 print:hidden"
           />
+          {/* Booking-portal CTA — dual-site engine (agents.md). */}
+          <TravelPortalCta source="destination_wedding_budget" className="mt-6 print:hidden" />
         </aside>
       </div>
     </section>
