@@ -41,7 +41,7 @@ export default function WeddingExperiencePage() {
             Three family weddings in Mexico, told honestly
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
-            These were family celebrations — not CeremonyVerse client projects. I share them because they are the reason this service exists, and because the questions I wish I had asked before signing are the questions I now organize for every family I work with. Nothing on this page is a testimonial. When CeremonyVerse has a real client who agrees in writing to be featured, that case study will be labelled as such.
+            These were family celebrations — not CeremonyVerse client projects. I share them because they are the reason this service exists, and because the questions I wish I had asked before signing are the questions I now organize for every family I work with. Nothing on this page is a testimonial. Jamaica and Punta Cana are part of current service coverage, but not part of the three family weddings told on this page. When CeremonyVerse has a real client who agrees in writing to be featured, that case study will be labelled as such.
           </p>
         </div>
       </section>
