@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { buildWelcomeLeadEmail } from "@/lib/emails/welcome-lead";
+import { buildStrategyMatchEmail } from "@/lib/emails/strategy-match-confirmation";
 
 export const runtime = "nodejs";
 
@@ -159,12 +160,18 @@ async function sendConfirmationEmail(lead: LeadCapture): Promise<boolean> {
 
     const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim();
 
-    // Room-block tracker leads receive the branded welcome sequence from Mini;
-    // other surfaces keep their short results-style confirmation.
-    const welcome =
-      lead.source === "room-block-tracker"
-        ? buildWelcomeLeadEmail({ name: lead.name, targetDates: lead.targetDates })
-        : null;
+    // Source-specific branded confirmations; other surfaces keep the short
+    // results-style template.
+    let welcome: { subject: string; html: string; text: string } | null = null;
+    if (lead.source === "room-block-tracker") {
+      welcome = buildWelcomeLeadEmail({ name: lead.name, targetDates: lead.targetDates });
+    } else if (lead.source === "strategy-matcher") {
+      welcome = buildStrategyMatchEmail({
+        name: lead.name,
+        email: lead.email,
+        results: lead.results,
+      });
+    }
 
     await transport.sendMail({
       from: SMTP_FROM,
