@@ -33,7 +33,7 @@ export const BRAND_LOGO_URL = `${SITE_URL}/assets/brand/ceremonyverse-logo-512.p
 // The same Person is referenced from Organization.founder so search engines
 // can connect Mini's article authorship to her role at CeremonyVerse.
 export const AUTHOR_NAME = "Mini"
-export const AUTHOR_FULL_NAME = "Bhamini \"Mini\" Shah"
+export const AUTHOR_FULL_NAME = "Bhamini \"Mini\" Patel"
 export const AUTHOR_PAGE_PATH = "/about/mini/"
 export const AUTHOR_PAGE_URL = `${SITE_URL}${AUTHOR_PAGE_PATH}`
 export const AUTHOR_BIO_URL = `${SITE_URL}/about/mini/`
@@ -62,9 +62,9 @@ export const AUTHOR_PERSON = {
   "@type": "Person",
   "@id": `${SITE_URL}/about/mini/#person`,
   name: AUTHOR_FULL_NAME,
-  alternateName: AUTHOR_NAME,
+  alternateName: [AUTHOR_NAME, "Mini Patel"],
   givenName: "Bhamini",
-  familyName: "Shah",
+  familyName: "Patel",
   jobTitle: "Founder and Destination Wedding Concierge",
   description:
     "Bhamini (Mini) is the founder of CeremonyVerse. She writes about Gujarati and Hindu destination weddings in Mexico, Jamaica, and Punta Cana, and about remote India wedding-outfit sourcing for NRI families across the United States and Canada.",
@@ -312,12 +312,10 @@ export function buildServiceSchema(opts: {
     name: opts.name,
     description: opts.description,
     url,
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": `${SITE_URL}#business`,
-      name: SITE_NAME,
-      url: SITE_URL,
-    },
+    // Pure @id reference to the global ProfessionalService node (#business)
+    // emitted by the root layout — avoids declaring a second, conflicting
+    // node with the same @id.
+    provider: { "@id": `${SITE_URL}#business` },
     areaServed: buildAreaServed(opts.areaServed),
     serviceType: opts.category ?? "Wedding Services",
     ...(opts.offers?.length
@@ -380,24 +378,31 @@ export function buildHowToSchema(opts: {
   }
 }
 
+// Global business entity, injected into the landing page <head> via the root
+// layout. @type is ProfessionalService — a schema.org subtype of LocalBusiness
+// — so it receives full LocalBusiness rich-result treatment while accurately
+// describing a planning consultancy. The @id (`#business`) is the canonical
+// node that buildServiceSchema() references as `provider`.
 export function buildLocalBusinessSchema(): object {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     "@id": `${SITE_URL}#business`,
-    name: SITE_NAME,
+    name: "CeremonyVerse Destination Wedding Planning",
+    alternateName: SITE_NAME,
     description:
-      "CeremonyVerse provides Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with optional India wedding-outfit sourcing for families across the United States and Canada.",
+      "CeremonyVerse is a destination-wedding planning concierge founded by Mini Patel, specializing in NRI Gujarati and Hindu destination weddings across Mexico, Jamaica, and Punta Cana for South Asian families across the United States and Canada, with optional India wedding-outfit sourcing.",
     url: SITE_URL,
     image: DEFAULT_OG_IMAGE,
     logo: buildLogoImageObject(),
     telephone: SITE_PHONE,
     email: SITE_EMAIL,
+    founder: FOUNDER_ENTITY,
     address: {
       "@type": "PostalAddress",
       addressCountry: "US",
       addressRegion: "PA",
-      addressLocality: "Philadelphia",
+      addressLocality: "Newtown Township",
     },
     areaServed: buildAreaServed([
       "United States",
@@ -406,6 +411,7 @@ export function buildLocalBusinessSchema(): object {
       "Jamaica",
       "Punta Cana, Dominican Republic",
     ]),
+    knowsAbout: ORGANIZATION_KNOWS_ABOUT,
     priceRange: "$300 feasibility plan; planning services from $4,000 USD",
     sameAs: [
       "https://wa.me/12153419990",
@@ -519,7 +525,7 @@ export function buildOrganizationSchema(): object {
       "@type": "PostalAddress",
       addressCountry: "US",
       addressRegion: "PA",
-      addressLocality: "Philadelphia",
+      addressLocality: "Newtown Township",
     },
     sameAs: [
       "https://wa.me/12153419990",
