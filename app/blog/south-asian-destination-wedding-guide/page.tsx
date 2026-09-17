@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { VisibleFaqs } from "@/components/visible-faqs";
+import { RoomBlockLeadCard } from "@/components/room-block-lead-card";
 import { buildBlogPosting, buildBreadcrumb, buildFaqSchema, buildMetadata, JsonLd } from "@/lib/seo";
 
 const title = "The South Asian Family Guide to Destination Wedding Room Blocks in Mexico & The Caribbean";
@@ -110,6 +111,8 @@ export default function BlogPost() {
             comes from my family&apos;s weddings in Mexico or the work I now do for NRI Gujarati and Hindu families
             across the USA and Canada, planning weddings in Mexico, Jamaica, and Punta Cana.
           </p>
+
+          <RoomBlockLeadCard />
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">Why room blocks break differently for our weddings</h2>
           <p>
