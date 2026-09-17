@@ -29,6 +29,13 @@ const breadcrumbSchema = buildBreadcrumb([
 // so the archive reads chronologically.
 const articles: { slug: string; path: string; title: string; description: string; date: string }[] = [
   {
+    slug: "south-asian-destination-wedding-guide",
+    path: "/blog/south-asian-destination-wedding-guide/",
+    title: "The South Asian Family Guide to Destination Wedding Room Blocks in Mexico & The Caribbean",
+    description: "Multi-day room blocks at all-inclusive resorts: event-space holds, Jain and satvik catering in writing, and elderly-guest logistics — written from three family weddings and current planning practice.",
+    date: "2026-09-17",
+  },
+  {
     slug: "nri-gujarati-wedding-timeline-12-months",
     path: "/nri-gujarati-wedding-timeline-12-months/",
     title: "NRI Gujarati Wedding Timeline — 12-Month Month-by-Month Checklist",

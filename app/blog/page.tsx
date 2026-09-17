@@ -19,6 +19,12 @@ const breadcrumbSchema = buildBreadcrumb([
 ]);
 
 const posts = [
+  {
+    slug: "south-asian-destination-wedding-guide",
+    title: "The South Asian Family Guide to Destination Wedding Room Blocks in Mexico & The Caribbean",
+    description: "Multi-day room blocks at all-inclusive resorts: event spaces for five ceremonies, Jain and satvik catering confirmed in writing, and room-block logistics that protect elderly guests.",
+    date: "September 2026",
+  },
 {"slug": "indian-destination-wedding-puerto-vallarta", "title": "Indian Destination Wedding in Puerto Vallarta: Resorts, Costs & Guest Planning", "description": "Compare Puerto Vallarta and nearby Riviera Nayarit for a Gujarati or Hindu destination wedding, with resort questions, catering approvals, guest travel, and transparent planning fees.", "date": "September 2026"},
   {slug:"indian-destination-wedding-mexico-complete-guide",title:"Indian Destination Wedding in Mexico: Costs, Resorts & a Four-Day Plan",description:"A complete guide to planning fees, private-event budgets, resort comparisons, Hindu ceremony details, food, production, room blocks, and guest travel.",date:"September 2026"},
   {
