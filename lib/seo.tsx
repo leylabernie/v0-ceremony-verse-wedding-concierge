@@ -10,7 +10,12 @@ import React from "react"
 import { mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 
-export const SITE_URL = "https://www.ceremonyverse.com"
+// Base URL is env-driven so preview/staging deployments can override it;
+// production falls back to the canonical www domain. Trailing slash stripped
+// so URL joins never double up.
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ceremonyverse.com"
+).replace(/\/$/, "")
 export const SITE_NAME = "CeremonyVerse"
 export const SITE_EMAIL = "hello@ceremonyverse.com"
 export const SITE_PHONE = "+12153419990"

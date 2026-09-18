@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { SITE_URL } from '@/lib/seo'
 
 export default function robots(): MetadataRoute.Robots {
   // AI search / answer-engine crawlers. main's `userAgent: '*'` rule already
@@ -51,9 +52,9 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: [
-      'https://www.ceremonyverse.com/sitemap.xml',
-      'https://www.ceremonyverse.com/sitemap-images.xml',
+      `${SITE_URL}/sitemap.xml`,
+      `${SITE_URL}/sitemap-images.xml`,
     ],
-    host: 'https://www.ceremonyverse.com',
+    host: SITE_URL,
   }
 }

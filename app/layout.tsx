@@ -60,6 +60,13 @@ export const metadata = {
     shortcut: "/icon.svg",
     apple: "/icon.svg",
   },
+  // Search Console / webmaster verification: set NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+  // in the environment (the google-site-verification content value). When unset,
+  // Next.js omits the tag entirely — the HTML-file verification token in /public
+  // remains active regardless.
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   openGraph: {
     title:
       "Gujarati & Hindu Destination Wedding Planning | CeremonyVerse",

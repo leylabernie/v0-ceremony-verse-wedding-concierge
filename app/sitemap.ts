@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next"
+import { SITE_URL } from "@/lib/seo"
+import { venuePlanningGuides } from "@/lib/venue-planning-guides"
 
-const baseUrl = "https://www.ceremonyverse.com"
+const baseUrl = SITE_URL
 
 type Frequency = "weekly" | "monthly" | "yearly"
 type Entry = { path: string; changeFrequency: Frequency; priority: number; lastModified?: Date }
@@ -22,9 +24,6 @@ const pages: Entry[] = [
   { path: "/costs/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-17T09:00:00-04:00") },
   { path: "/about/mini/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/planning-tools/ceremony-timeline/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
-  { path: "/guides/moon-palace-cancun-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
-  { path: "/guides/hard-rock-riviera-maya-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
-  { path: "/guides/lopesan-costa-bavaro-wedding-planning/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
   { path: "/blog/indian-destination-wedding-puerto-vallarta/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-09-13T12:00:00Z") },
   { path: "/", changeFrequency: "weekly", priority: 1 },
   { path: "/pricing/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-13T12:00:00Z") },
@@ -115,8 +114,21 @@ const pages: Entry[] = [
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return pages.map(({ path, ...entry }) => ({
+  const staticEntries: MetadataRoute.Sitemap = pages.map(({ path, ...entry }) => ({
     url: `${baseUrl}${path}`,
     ...entry,
   }))
+
+  // Dynamic routes: /guides/[venue]/ pages generated from the venue data
+  // source, so new venue guides are indexed the moment they're added to
+  // venuePlanningGuides — no sitemap edit required.
+  const guideLastModified = new Date("2026-09-14T15:30:00Z")
+  const dynamicEntries: MetadataRoute.Sitemap = venuePlanningGuides.map((guide) => ({
+    url: `${baseUrl}/guides/${guide.slug}/`,
+    changeFrequency: "monthly" as const,
+    priority: 0.85,
+    lastModified: guideLastModified,
+  }))
+
+  return [...staticEntries, ...dynamicEntries]
 }
