@@ -59,6 +59,12 @@ const nextConfig = {
       { source: '/tools/baraat-event-planner/', destination: '/planning-tools/baraat-event-planner/', permanent: true },
       { source: '/tools/catering-deadline-tracker', destination: '/planning-tools/catering-deadline-tracker/', permanent: true },
       { source: '/tools/catering-deadline-tracker/', destination: '/planning-tools/catering-deadline-tracker/', permanent: true },
+      // Review invitation link — sent individually to past clients who agreed
+      // (never bulk or incentivized; see outreach-drafts/11-review-link.md).
+      // Temporary on purpose so the destination can move (e.g. Google reviews
+      // once the Business Profile is live) without stale cached redirects.
+      { source: '/review', destination: 'https://www.trustpilot.com/evaluate/ceremonyverse.com', permanent: false },
+      { source: '/review/', destination: 'https://www.trustpilot.com/evaluate/ceremonyverse.com', permanent: false },
     ]
   },
   async headers() {
