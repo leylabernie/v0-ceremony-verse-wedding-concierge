@@ -301,7 +301,7 @@ export function BaraatEventPlannerClient() {
                 Download My Checklist (.txt)
               </button>
               <a
-                href="https://ceremonyversetravel.com"
+                href="https://ceremonyversetravel.com/group-travel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackEvent("calculator_cta_click", { calculator_name: "baraat_event_planner", next_step: "travel_portal" })}

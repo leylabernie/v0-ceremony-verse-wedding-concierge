@@ -243,7 +243,7 @@ export default function BlogPost() {
           </p>
           <p>
             That is why guests of the families I work with book their own stays and cruises through{" "}
-            <a href="https://ceremonyversetravel.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+            <a href="https://ceremonyversetravel.com/mexico-caribbean-wedding-room-blocks/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
               CeremonyVerse Travel
             </a>{" "}
             — the booking portal for the resorts and cruise lines we coordinate with — while the wedding planning
@@ -286,7 +286,7 @@ export default function BlogPost() {
                 Request a Custom Quote
               </Link>
               <a
-                href="https://ceremonyversetravel.com"
+                href="https://ceremonyversetravel.com/mexico-caribbean-wedding-room-blocks/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white"

@@ -281,6 +281,9 @@ export default function PricingPage() {
             in the signed proposal.
           </p>
           <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
+          <div className="mt-6 text-center">
+            <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold !text-[#c5a059] underline underline-offset-4">Read independent public reviews on Trustpilot</a>
+          </div>
         </div>
       </section>
 

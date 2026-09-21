@@ -27,3 +27,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 CEREMONYVERSE-PROJECT-HANDOFF.md
+
+# local outreach drafts & founder-approval docs (private — never push)
+outreach-drafts/

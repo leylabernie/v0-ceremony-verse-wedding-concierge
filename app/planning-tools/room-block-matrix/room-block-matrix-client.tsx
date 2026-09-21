@@ -276,7 +276,7 @@ export function RoomBlockMatrixClient() {
             )}
           </div>
 
-          <TravelPortalCta source="room-block-matrix" className="mt-6" />
+          <TravelPortalCta source="room-block-matrix" href="https://ceremonyversetravel.com/mexico-caribbean-wedding-room-blocks/" className="mt-6" />
         </div>
       </div>
     </section>

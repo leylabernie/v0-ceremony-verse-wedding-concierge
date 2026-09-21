@@ -84,6 +84,14 @@ export function GlobalFooter() {
               >
                 Follow @glamourindianwear4u on Instagram
               </a>
+              <a
+                href="https://www.trustpilot.com/review/ceremonyverse.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}
+              >
+                Read independent reviews on Trustpilot
+              </a>
               <Link href="/how-it-works/" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
                 Review the complete planning process →
               </Link>

@@ -14,7 +14,9 @@ import { escapeHtml } from "@/lib/consultation-email"
 const TRACKER_URL = "https://www.ceremonyverse.com/downloads/room-block-tracker.xlsx"
 const CONSULT_URL = "https://www.ceremonyverse.com/contact/?service=mexico&from=room-block-tracker-email"
 const MAIN_SITE = "https://www.ceremonyverse.com"
-const TRAVEL_PORTAL = "https://ceremonyversetravel.com"
+// Deep link: this email is about room blocks, so guests land on the portal's
+// room-blocks page rather than the portal homepage (agents.md dual-site engine).
+const TRAVEL_PORTAL = "https://ceremonyversetravel.com/mexico-caribbean-wedding-room-blocks/"
 const DISCLOSURE =
   "CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of Travel No. FST ST15578. Full seller-of-travel credentials: https://www.ceremonyverse.com/terms/"
 

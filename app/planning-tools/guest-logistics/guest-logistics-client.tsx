@@ -163,7 +163,7 @@ export function GuestLogisticsClient() {
             className="mt-6 print:hidden"
           />
           {/* Booking-portal CTA — dual-site engine (agents.md). */}
-          <TravelPortalCta source="guest_vip_cost" className="mt-6 print:hidden" />
+          <TravelPortalCta source="guest_vip_cost" href="https://ceremonyversetravel.com/group-travel/" className="mt-6 print:hidden" />
         </aside>
       </div>
     </section>

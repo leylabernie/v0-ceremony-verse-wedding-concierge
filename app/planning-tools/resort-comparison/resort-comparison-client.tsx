@@ -238,7 +238,7 @@ export function ResortComparisonClient() {
           className="mt-8 print:hidden"
         />
         {/* Booking-portal CTA — dual-site engine (agents.md). */}
-        <TravelPortalCta source="resort_quote_comparison" className="mt-8 print:hidden" />
+        <TravelPortalCta source="resort_quote_comparison" href="https://ceremonyversetravel.com/resorts/" className="mt-8 print:hidden" />
       </div>
     </section>
   )

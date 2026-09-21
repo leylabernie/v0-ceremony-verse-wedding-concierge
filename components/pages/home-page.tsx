@@ -503,6 +503,9 @@ export function HomePage() {
             ))}
           </div>
           <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
+          <div className="mt-6 text-center">
+            <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Deciding who to trust with the planning? Read independent public reviews on Trustpilot</a>
+          </div>
         </div>
       </section>
 
