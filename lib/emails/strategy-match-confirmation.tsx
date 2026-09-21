@@ -15,6 +15,7 @@ import { escapeHtml } from "@/lib/consultation-email"
  */
 
 const PORTAL_URL = "https://ceremonyversetravel.com"
+const TRACKER_URL = "https://www.ceremonyverse.com/downloads/strategy-match-tracker.xlsx"
 const STRATEGY_CALL_URL = "https://www.ceremonyverse.com/contact/?service=mexico&from=strategy-matcher-email"
 const LICENSING_STRING =
   "CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of Travel No. FST ST15578 - California Seller of Travel No. 2090937-50 - Washington UBID No 603189022."
@@ -88,13 +89,14 @@ export function buildStrategyMatchEmail(lead: StrategyMatchEmailInput): {
         <p style="margin:0 0 16px;">Thank you for completing our <strong>Resort Strategy Matcher</strong>. I am already
         reviewing your layout needs, dietary timelines, and celebration preferences.</p>
         ${reviewTable}
-        <div style="margin:0 0 20px;border:2px dashed #c5a059;border-radius:10px;background-color:#f8f6f2;padding:16px 20px;">
-          <p style="margin:0;font-size:13px;font-weight:bold;letter-spacing:0.08em;text-transform:uppercase;color:#7a6841;">📎 Your Custom Tracking Tracker</p>
-          <p style="margin:8px 0 0;font-size:14px;line-height:1.6;color:#4d403a;">
-            <strong>Attached to this email.</strong> Your personalized room-block matrix, dietary deadline dates, and
-            traveling-vendor meal count — pre-filled from the answers above and ready to take to your resort
-            negotiation.
+        <div style="margin:0 0 20px;border:2px dashed #c5a059;border-radius:10px;background-color:#f8f6f2;padding:16px 20px;text-align:center;">
+          <p style="margin:0;font-size:13px;font-weight:bold;letter-spacing:0.08em;text-transform:uppercase;color:#7a6841;">📎 Your Strategy Tracker (Excel)</p>
+          <p style="margin:8px 0 12px;font-size:14px;line-height:1.6;color:#4d403a;">
+            The room-block matrix, dietary deadline dates, and traveling-vendor meal count — laid out to
+            fill in from the answers above and ready to take to your resort negotiation. Your summary is
+            in the table above; the tracker is where those numbers get confirmed in writing.
           </p>
+          <a href="${TRACKER_URL}" style="display:inline-block;background-color:#7a6841;color:#ffffff;text-decoration:none;padding:12px 24px;border-radius:999px;font-weight:bold;font-size:14px;">Download the Tracker (Excel)</a>
         </div>
         <p style="margin:0 0 18px;">While I finish the review, you can see which resorts currently have the outdoor
         space, room inventory, and kitchen flexibility your celebration needs:</p>
@@ -137,7 +139,8 @@ export function buildStrategyMatchEmail(lead: StrategyMatchEmailInput): {
     textLines.push("")
   }
   textLines.push(
-    "Your Custom Tracking Tracker is attached to this email — your personalized room-block matrix, dietary deadline dates, and traveling-vendor meal count, pre-filled from your answers.",
+    "Your Strategy Tracker (Excel) is ready to download — the room-block matrix, dietary deadline dates, and traveling-vendor meal count, laid out to fill in from your answers above:",
+    TRACKER_URL,
     "",
     `See which resorts can host your celebration: ${PORTAL_URL}`,
     `Lock in your free 15-minute Strategy Call: ${STRATEGY_CALL_URL}`,
