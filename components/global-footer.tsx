@@ -35,6 +35,8 @@ const ceremonyLinks = [
 
 const companyLinks = [
   { label: "NRI Gujarati Wedding Planning Guide", href: "/nri-gujarati-wedding-planning-guide/" },
+  { label: "NRI Gujarati Parents Guide", href: "/nri-gujarati-parents-guide-destination-wedding/" },
+  { label: "12-Month Wedding Timeline", href: "/nri-gujarati-wedding-timeline-12-months/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },
