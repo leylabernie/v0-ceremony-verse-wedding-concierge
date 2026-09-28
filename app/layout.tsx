@@ -64,8 +64,13 @@ export const metadata = {
   // in the environment (the google-site-verification content value). When unset,
   // Next.js omits the tag entirely — the HTML-file verification token in /public
   // remains active regardless.
+  // Bing Webmaster Tools (msvalidate.01) powers Bing discovery — the index
+  // ChatGPT Search leans on — via NEXT_PUBLIC_BING_SITE_VERIFICATION.
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+      ? { other: { "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION } }
+      : {}),
   },
   openGraph: {
     title:
