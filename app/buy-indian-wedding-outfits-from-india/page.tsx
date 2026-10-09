@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SeoNav } from "@/components/seo-nav"
 import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
 
@@ -38,6 +39,22 @@ export default function BuyFromIndiaPage() {
             For couples and families who want access to India-based options without managing every vendor, measurement, approval, shipment, and deadline alone.
           </p>
         </div>
+      </section>
+
+      <section className="px-6 pb-12">
+        <figure className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-[var(--cv-border)] bg-white">
+          <Image
+            src="/images/proof/prior-outfit-wedding-party.webp"
+            width={640}
+            height={427}
+            sizes="(max-width: 768px) 100vw, 1024px"
+            className="h-auto w-full"
+            alt="Wedding party wearing coordinated Indian outfits from a completed pre-launch family sourcing project"
+          />
+          <figcaption className="p-5 text-sm text-[var(--cv-muted)]">
+            Completed pre-launch family outfit coordination, shown as a sourcing example rather than destination-planning client work.
+          </figcaption>
+        </figure>
       </section>
 
       <section className="py-16 px-6">
