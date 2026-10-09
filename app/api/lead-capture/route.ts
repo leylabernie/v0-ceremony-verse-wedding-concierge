@@ -1,28 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { createHash } from "node:crypto";
+import { sendCeremonyVerseEmail, ceremonyVerseBusinessEmail, escapeHtml } from "@/lib/consultation-email";
+import { buildCalculatorResultsEmail } from "@/lib/emails/calculator-results";
 import { buildWelcomeLeadEmail } from "@/lib/emails/welcome-lead";
 import { buildStrategyMatchEmail } from "@/lib/emails/strategy-match-confirmation";
 
 export const runtime = "nodejs";
 
-/**
- * Lead-capture endpoint for Mini's Assistant surfaces:
- *  - Calculator "email me these results" offers (source: "calculator")
- *  - Chat-widget lead handoffs (source: "chat")
- *
- * Behaviour:
- *  1. Validates required fields (name, email).
- *  2. Logs the lead to the server console (placeholder for CRM integration).
- *  3. Forwards the mapped CRM record to LEAD_SHEET_WEBHOOK_URL if set
- *     (Zapier/Make webhook -> Google Sheet row).
- *  4. If escalationFlag is true, also POSTs an alert to ESCALATION_WEBHOOK_URL.
- *  5. If FOLLOW_UP_WEBHOOK_URL is set, triggers the Day 1/3/7/14 sequence.
- *  6. Sends a confirmation email via SMTP if SMTP_* env vars are set.
- *  7. Returns { success: true }.
- *
- * All outbound integrations are best-effort and never block the success
- * response to the visitor — a missing webhook simply logs and continues.
- */
+// Customer-facing success requires the requested email and a confirmed business handoff.
 
 const optionalText = (max: number) =>
   z.string().trim().max(max).optional().default("");
@@ -115,87 +101,40 @@ async function postJson(
   }
 }
 
-/**
- * Sends a confirmation email via SMTP if SMTP_* env vars are configured.
- * Uses nodemailer only when present; if the dependency is not installed the
- * function logs and returns false so the route still succeeds.
- */
-async function sendConfirmationEmail(lead: LeadCapture): Promise<boolean> {
-  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, SMTP_FROM } = process.env;
-  if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !SMTP_FROM) {
-    return false;
-  }
+async function sendConfirmationEmail(lead: LeadCapture, key: string): Promise<boolean> {
+  if (lead.source === "chat") return false;
+  const message = lead.source === "room-block-tracker"
+    ? buildWelcomeLeadEmail({ name: lead.name, targetDates: lead.targetDates })
+    : lead.source === "strategy-matcher"
+      ? buildStrategyMatchEmail({ name: lead.name, email: lead.email, results: lead.results })
+      : buildCalculatorResultsEmail(lead);
+  return sendCeremonyVerseEmail({
+    to: lead.email,
+    replyTo: ceremonyVerseBusinessEmail(),
+    ...message,
+    idempotencyKey: `lead-customer-${key}`,
+  });
+}
 
-  // Minimal structural types so we do not need nodemailer's type declarations
-  // at build time. Install `nodemailer` to enable confirmation emails.
-  type MailTransport = {
-    sendMail: (options: Record<string, unknown>) => Promise<unknown>;
-  };
-  type NodemailerModule = {
-    createTransport: (options: Record<string, unknown>) => MailTransport;
-  };
-
-  try {
-    // Variable module specifier + webpackIgnore so the bundler/type-checker does
-    // not hard-require nodemailer when SMTP is not configured. Resolved lazily
-    // at runtime only when SMTP_* env vars are present.
-    const moduleName = "nodemailer";
-    const imported = await import(/* webpackIgnore: true */ moduleName).catch(
-      () => null,
-    );
-    const nodemailer = (imported?.default ?? imported) as NodemailerModule | null;
-    if (!nodemailer?.createTransport) {
-      console.warn(
-        "[lead-capture] SMTP configured but 'nodemailer' is not installed; skipping confirmation email.",
-      );
-      return false;
-    }
-
-    const transport = nodemailer.createTransport({
-      host: SMTP_HOST,
-      port: Number(SMTP_PORT),
-      secure: Number(SMTP_PORT) === 465,
-      auth: { user: SMTP_USER, pass: SMTP_PASS },
-    });
-
-    const firstName = lead.name.trim().split(/\s+/)[0] || lead.name.trim();
-
-    // Source-specific branded confirmations; other surfaces keep the short
-    // results-style template.
-    let welcome: { subject: string; html: string; text: string } | null = null;
-    if (lead.source === "room-block-tracker") {
-      welcome = buildWelcomeLeadEmail({ name: lead.name, targetDates: lead.targetDates });
-    } else if (lead.source === "strategy-matcher") {
-      welcome = buildStrategyMatchEmail({
-        name: lead.name,
-        email: lead.email,
-        results: lead.results,
-      });
-    }
-
-    await transport.sendMail({
-      from: SMTP_FROM,
-      to: lead.email,
-      ...(welcome
-        ? {
-            replyTo: "hello@ceremonyverse.com",
-            subject: welcome.subject,
-            html: welcome.html,
-            text: welcome.text,
-          }
-        : {
-            subject: "Your CeremonyVerse results + the 5 Decision Questions",
-            text: `Hi ${firstName},\n\nThanks for using the CeremonyVerse planning tools. Your saved results and the 5 Decision Questions are on their way. Mini or her assistant will follow up with the next practical step.\n\nWarmly,\nCeremonyVerse\nhello@ceremonyverse.com`,
-          }),
-    });
-    return true;
-  } catch (error) {
-    console.error("[lead-capture] confirmation email failed:", error);
-    return false;
-  }
+async function sendBusinessHandoff(lead: LeadCapture, requestId: string, key: string): Promise<boolean> {
+  const { timestamp: _timestamp, ...record } = buildCrmRecord(lead, requestId);
+  const details = JSON.stringify(record, null, 2);
+  return sendCeremonyVerseEmail({
+    to: ceremonyVerseBusinessEmail(),
+    replyTo: lead.email,
+    subject: `CeremonyVerse ${lead.source === "chat" ? "chat" : "calculator"} request — ${lead.name}`,
+    text: details,
+    html: `<h1>New CeremonyVerse request</h1><pre style="white-space:pre-wrap">${escapeHtml(details)}</pre>`,
+    idempotencyKey: `lead-business-${key}`,
+  });
 }
 
 export async function POST(request: NextRequest) {
+  const origin = request.headers.get("origin");
+  if (origin && origin !== request.nextUrl.origin) {
+    return NextResponse.json({ success: false, error: "Invalid request origin." }, { status: 403 });
+  }
+
   let body: unknown;
   try {
     body = await request.json();
@@ -206,6 +145,9 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  if (JSON.stringify(body).length > 100_000) {
+    return NextResponse.json({ success: false, error: "This worksheet is too large to email." }, { status: 413 });
+  }
   const parsed = leadCaptureSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
@@ -220,54 +162,49 @@ export async function POST(request: NextRequest) {
   }
 
   const lead = parsed.data;
-  const requestId = crypto.randomUUID();
+  // Retries of the same request reuse provider idempotency keys within the day.
+  const key = createHash("sha256").update(JSON.stringify({
+    ...lead, day: new Date().toISOString().slice(0, 10),
+  })).digest("hex");
+  const requestId = key.slice(0, 32);
   const crmRecord = buildCrmRecord(lead, requestId);
 
-  // 1. Console log — placeholder for direct CRM integration.
-  console.log("[lead-capture] new lead:", JSON.stringify(crmRecord));
-
   // 2-5. Fire best-effort integrations in parallel.
-  const [sheetDelivered, followUpTriggered, confirmationSent] = await Promise.all([
+  const [sheetDelivered, confirmationSent, businessDelivered] = await Promise.all([
     postJson(process.env.LEAD_SHEET_WEBHOOK_URL, {
       event: "ceremonyverse.lead.captured",
       ...crmRecord,
     }),
-    process.env.FOLLOW_UP_WEBHOOK_URL
-      ? postJson(process.env.FOLLOW_UP_WEBHOOK_URL, {
-          email: lead.email,
-          name: lead.name,
-          sequence: "seq1-no-consult",
-          leadData: crmRecord,
-        })
-      : Promise.resolve(false),
-    sendConfirmationEmail(lead),
+    sendConfirmationEmail(lead, key),
+    sendBusinessHandoff(lead, requestId, key),
   ]);
 
-  // If flagged as a hot lead, alert Mini via the escalation webhook.
-  let escalationSent = false;
+  const handoffConfirmed = sheetDelivered || businessDelivered;
+  const emailRequired = lead.source !== "chat";
+  const success = handoffConfirmed && (!emailRequired || confirmationSent);
+
+  // A requested worksheet email is not consent for an automated marketing sequence.
+  if (!success) {
+    return NextResponse.json({
+      success: false,
+      error: confirmationSent
+        ? "Your email was sent, but we could not confirm Mini received your request. Please contact hello@ceremonyverse.com."
+        : "We could not confirm delivery. Please try again or contact hello@ceremonyverse.com.",
+      delivery: { sheet: sheetDelivered, business: businessDelivered, confirmationEmail: confirmationSent },
+    }, { status: 503 });
+  }
+
   if (lead.escalationFlag) {
-    escalationSent = await postJson(process.env.ESCALATION_WEBHOOK_URL, {
-      event: "ceremonyverse.lead.escalation",
-      requestId,
-      name: lead.name,
-      whatsapp: lead.whatsapp,
-      destination: lead.destination,
-      guestCount: lead.guestCount,
-      budget: lead.budgetRange,
-      weddingDate: lead.targetDates,
-      trigger: lead.escalationReason || "hot-lead",
+    await postJson(process.env.ESCALATION_WEBHOOK_URL, {
+      event: "ceremonyverse.lead.escalation", requestId,
+      name: lead.name, whatsapp: lead.whatsapp, destination: lead.destination,
+      guestCount: lead.guestCount, budget: lead.budgetRange,
+      weddingDate: lead.targetDates, trigger: lead.escalationReason || "hot-lead",
       siteSource: "ceremonyverse.com",
     });
   }
-
   return NextResponse.json({
-    success: true,
-    requestId,
-    delivery: {
-      sheet: sheetDelivered,
-      followUp: followUpTriggered,
-      confirmationEmail: confirmationSent,
-      escalation: escalationSent,
-    },
+    success: true, requestId,
+    delivery: { sheet: sheetDelivered, business: businessDelivered, confirmationEmail: confirmationSent },
   });
 }

@@ -164,11 +164,15 @@ export function ContactPage() {
     const acquisition = getAcquisitionContext()
     const entryContext = getContactEntryContext()
     const submissionId = (() => {
-      const key = "ceremonyverseConsultationSubmissionId"
-      const existing = window.sessionStorage.getItem(key)
-      if (existing) return existing
       const created = crypto.randomUUID()
-      window.sessionStorage.setItem(key, created)
+      try {
+        const key = "ceremonyverseConsultationSubmissionId"
+        const existing = window.sessionStorage.getItem(key)
+        if (existing) return existing
+        window.sessionStorage.setItem(key, created)
+      } catch {
+        // Storage can be denied; the request still uses a valid in-memory ID.
+      }
       return created
     })()
     trackEvent("consultation_registration_submitted", {
@@ -220,7 +224,8 @@ export function ContactPage() {
       setQuestionnaireUrl(result.questionnaireUrl || "")
       setQuestionnaireSent(Boolean(result.questionnaireSent))
       setRequestId(submittedRequestId)
-      window.sessionStorage.setItem(
+      try {
+        window.sessionStorage.setItem(
         "ceremonyverseConsultationPrefill",
         JSON.stringify({
           name: formData.name,
@@ -229,6 +234,9 @@ export function ContactPage() {
           eventTimeframe: formData.eventTimeframe,
         }),
       )
+      } catch {
+        // Prefill is optional; successful delivery must remain successful.
+      }
       setIsSubmitted(true)
     } catch {
       trackEvent("consultation_registration_failed", { failure_type: "network_error" })

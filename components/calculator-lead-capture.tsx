@@ -58,7 +58,7 @@ export function CalculatorLeadCapture({
     const destination = destinationNameFromSlug(destinationSlug) ?? "";
 
     try {
-      const response = await fetch("/api/lead-capture", {
+      const response = await fetch("/api/lead-capture/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -75,15 +75,16 @@ export function CalculatorLeadCapture({
         }),
       });
 
-      if (!response.ok) throw new Error("Request failed");
+      const result = await response.json();
+      if (!response.ok || !result.success || !result.delivery?.confirmationEmail) {
+        throw new Error(result.error || "Email delivery could not be confirmed.");
+      }
 
       trackEvent("calculator_lead_capture", { calculatorType });
       setStatus("success");
-    } catch {
+    } catch (failure) {
       setStatus("error");
-      setError(
-        "Something went wrong. Please email hello@ceremonyverse.com and we'll send your results.",
-      );
+      setError(failure instanceof Error ? failure.message : "Please email hello@ceremonyverse.com for help.");
     }
   }
 
@@ -96,8 +97,8 @@ export function CalculatorLeadCapture({
           Check your inbox
         </p>
         <p className="mt-2 text-sm leading-6 text-[#4d453d]">
-          Your results and the 5 Decision Questions are on their way. Mini or her
-          assistant will follow up with the next practical step.
+          Your results and the five questions have been sent. Check your inbox and spam folder.
+          Your request has also been passed to Mini.
         </p>
       </div>
     );

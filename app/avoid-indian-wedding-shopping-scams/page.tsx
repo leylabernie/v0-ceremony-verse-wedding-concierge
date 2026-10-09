@@ -21,7 +21,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 export default function AvoidScamsPage() {
   return (
-    <div className="bg-[var(--cv-bg)] min-h-screen">
+    <main className="bg-[var(--cv-bg)] min-h-screen">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
@@ -106,8 +106,8 @@ export default function AvoidScamsPage() {
               CeremonyVerse can organize in-scope vendor evidence, item references, approvals, and shipping responsibilities. A concierge process reduces uncertainty; it does not eliminate vendor, product, fit, carrier, or customs risk.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact/" className="btn-primary">
-                Schedule a Free 30-Minute Consultation
+              <Link href="/contact/?service=india&from=sourcing-page" className="btn-primary">
+                Request a Free 30-Minute Consultation
               </Link>
               <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#25D366] text-white font-semibold transition hover:opacity-90">
                 WhatsApp Us Now
@@ -116,6 +116,6 @@ export default function AvoidScamsPage() {
           </section>
         </div>
       </article>
-    </div>
+    </main>
   )
 }

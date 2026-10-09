@@ -20,7 +20,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 export default function SangeetOutfitsPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
@@ -37,8 +37,8 @@ export default function SangeetOutfitsPage() {
           Organize the bride, wedding-party, family, and approved accessory requirements through one documented sourcing process. Colors, customization, and delivery depend on the selected items and vendors.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-            Schedule a Free 30-Minute Consultation
+          <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            Request a Free 30-Minute Consultation
           </Link>
           <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
             WhatsApp: +1 (215) 341-9990
@@ -112,8 +112,8 @@ export default function SangeetOutfitsPage() {
             Discuss lehengas, coordinated wedding-party sets, family outfits, and approved accessories in one consultation. Item, vendor, shipping, customs, and remedy terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-              Schedule a Free 30-Minute Consultation
+            <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+              Request a Free 30-Minute Consultation
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
               WhatsApp: +1 (215) 341-9990
@@ -121,6 +121,6 @@ export default function SangeetOutfitsPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

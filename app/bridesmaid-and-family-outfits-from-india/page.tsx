@@ -21,7 +21,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 export default function BridesmaidPage() {
   return (
-    <div className="bg-[var(--cv-bg)]">
+    <main className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
@@ -192,8 +192,8 @@ export default function BridesmaidPage() {
           </p>
 
           <div className="flex flex-col items-center gap-3.5">
-            <Link href="/contact/" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
-              Schedule a Free 30-Minute Consultation
+            <Link href="/contact/?service=india&from=sourcing-page" className="inline-flex items-center bg-[var(--cv-accent)] text-white px-8 py-3.5 rounded-full text-[17px] font-semibold no-underline">
+              Request a Free 30-Minute Consultation
             </Link>
             <a href="https://wa.me/12153419990" className="text-[17px] text-[var(--cv-body)] no-underline">
               WhatsApp: +1 (215) 341-9990
@@ -203,6 +203,6 @@ export default function BridesmaidPage() {
         </div>
       </section>
 
-    </div>
+    </main>
   )
 }

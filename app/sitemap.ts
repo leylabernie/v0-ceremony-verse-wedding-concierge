@@ -8,6 +8,7 @@ type Frequency = "weekly" | "monthly" | "yearly"
 type Entry = { path: string; changeFrequency: Frequency; priority: number; lastModified?: Date }
 
 const pages: Entry[] = [
+  { path: "/blog/south-indian-christian-wedding-outfit-guide/", changeFrequency: "monthly", priority: 0.75 },
   { path: "/nri-gujarati-wedding-planning-guide/", changeFrequency: "weekly", priority: 1, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/nri-gujarati-wedding-timeline-12-months/", changeFrequency: "monthly", priority: 0.95, lastModified: new Date("2026-09-16T12:00:00Z") },
   { path: "/nri-gujarati-wedding-rituals-explained/", changeFrequency: "monthly", priority: 0.95, lastModified: new Date("2026-09-16T12:00:00Z") },

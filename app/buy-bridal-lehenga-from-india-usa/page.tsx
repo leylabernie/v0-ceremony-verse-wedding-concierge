@@ -52,7 +52,7 @@ const faqSchema = buildFaqSchema([
 
 export default function BridalLehengaPage() {
   return (
-    <div className="bg-[var(--cv-bg)]">
+    <main className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
@@ -74,11 +74,11 @@ export default function BridalLehengaPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
             <Link
               href="/how-it-works/"
@@ -481,11 +481,11 @@ export default function BridalLehengaPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
             <a
               href="https://wa.me/12153419990?text=Hello%20CeremonyVerse!%20I%20want%20to%20talk%20about%20sourcing%20my%20bridal%20lehenga%20from%20India."
@@ -499,6 +499,6 @@ export default function BridalLehengaPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

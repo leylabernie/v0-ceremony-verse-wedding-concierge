@@ -60,7 +60,7 @@ export default function AboutMiniPage() {
                 href="/contact/?service=mexico&from=about-mini"
                 className="inline-flex rounded-full bg-[#c5a059] px-7 py-3 text-sm font-semibold text-[#1f1f1f]"
               >
-                Schedule a Free 30-Minute Consultation
+                Request a Free 30-Minute Consultation
               </Link>
               <a
                 href={`mailto:${SITE_EMAIL}`}
@@ -132,7 +132,7 @@ export default function AboutMiniPage() {
               After the wedding, another couple saw the outfits and asked if I could help them organize their own. That was the moment I realized there was a real need for a documented, accountable process — not Instagram DMs, not a relative&rsquo;s cousin&rsquo;s recommendation, but an actual written scope with measurements, approvals, shipping terms, and a real remedy if something arrived different from what was approved. That&rsquo;s what CeremonyVerse&rsquo;s <Link href="/buy-indian-wedding-outfits-from-india/" className="text-[#7a6841] underline underline-offset-4">India outfit sourcing service</Link> is today.
             </p>
             <p>
-              I write every blog post on this site myself. When I publish a guide on <Link href="/blog/how-to-buy-bridal-lehenga-from-india-usa/" className="text-[#7a6841] underline underline-offset-4">buying a bridal lehenga from India</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" className="text-[#7a6841] underline underline-offset-4">2026 US tariffs on Indian wedding outfits</Link>, the red flags I list are red flags I have personally encountered or watched friends encounter. When I write about <Link href="/blog/how-to-take-lehenga-measurements-at-home/" className="text-[#7a6841] underline underline-offset-4">taking lehenga measurements at home</Link>, the measurement list is the one I use on video calls with brides. This is not content produced from a prompt. It is the working documentation of a service I run.
+              I write every blog post on this site myself. When I publish a guide on <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" className="text-[#7a6841] underline underline-offset-4">buying a bridal lehenga from India</Link> or <Link href="/blog/us-tariffs-indian-wedding-outfits-2026/" className="text-[#7a6841] underline underline-offset-4">2026 US tariffs on Indian wedding outfits</Link>, the red flags I list are red flags I have personally encountered or watched friends encounter. When I write about <Link href="/blog/how-to-take-lehenga-measurements-at-home/" className="text-[#7a6841] underline underline-offset-4">taking lehenga measurements at home</Link>, the measurement list is the one I use on video calls with brides. This is not content produced from a prompt. It is the working documentation of a service I run.
             </p>
           </div>
         </article>

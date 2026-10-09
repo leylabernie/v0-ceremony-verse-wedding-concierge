@@ -47,7 +47,7 @@ const faqSchema = buildFaqSchema(
 
 export default function PhiladelphiaPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
@@ -64,10 +64,10 @@ export default function PhiladelphiaPage() {
           CeremonyVerse is based in the Philadelphia area. We help local families compare and coordinate Indian wedding outfits through a documented remote process, using India-based vendors that can be responsibly reviewed for the requested item and scope.
         </p>
         <a
-          href="/contact/"
+          href="/contact/?service=india&from=sourcing-page"
           style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
         >
-          Schedule a Free 30-Minute Consultation
+          Request a Free 30-Minute Consultation
         </a>
       </section>
 
@@ -231,10 +231,10 @@ export default function PhiladelphiaPage() {
           </p>
           <div style={{ display: "flex", gap: "14px", justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </a>
             <a
               href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20in%20Philadelphia%20and%20interested%20in%20CeremonyVerse."
@@ -247,6 +247,6 @@ export default function PhiladelphiaPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

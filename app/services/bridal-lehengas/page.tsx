@@ -20,7 +20,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 export default function BridalLehengaServicePage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
@@ -33,8 +33,8 @@ export default function BridalLehengaServicePage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "600px", margin: "0 auto 32px" }}>
           CeremonyVerse helps US-based brides research and source bridal lehengas from India. Depending on your selected tier and vendor, we coordinate live video reviews, measurements, written approvals, pre-shipping checks, and delivery tracking.
         </p>
-        <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
-          Schedule a Free 30-Minute Consultation
+        <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", background: "#7a6841", color: "#fff", padding: "12px 32px", borderRadius: "999px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>
+          Request a Free 30-Minute Consultation
         </Link>
         <p style={{ fontSize: "17px", color: "#5e4a40", marginTop: "12px" }}>No commitment required · Share your timeline and priorities</p>
       </section>
@@ -72,6 +72,6 @@ export default function BridalLehengaServicePage() {
           ))}
         </div>
       </section>
-    </div>
+    </main>
   )
 }

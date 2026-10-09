@@ -256,7 +256,7 @@ export function HomePage() {
                 href="/contact/?service=mexico&from=homepage-hero"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule Free Consultation
+                Request Free Consultation
               </Link>
               <ChatWithMinisAssistantButton variant="light" source="homepage-hero" className="px-7 py-4" />
               <Link
@@ -560,6 +560,93 @@ export function HomePage() {
       <section className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Destination-wedding planning</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Choose the planning and family support you need</h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Package details and starting planning fees are public so you can compare the scope. Your final written
+              proposal reflects the destination, dates, events, guest count, staffing, travel, and requested additions.
+            </p>
+            <p className="mt-5 font-semibold text-[#7a6841]">{mexicoAvailabilityMessage}</p>
+          </div>
+
+          <article className="mb-9 rounded-3xl border border-[#7a6841] bg-[#f4eee4] p-7 shadow-sm sm:p-9">
+            <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Paid starting plan</p>
+                <h3 className="mt-3 font-serif text-3xl font-semibold">{destinationFeasibilityPlan.name} — {destinationFeasibilityPlan.priceLabel}</h3>
+                <p className="mt-4 max-w-4xl leading-7 text-[#4d403a]">
+                  After the free consultation, turn your own guest count, event schedule, budget scope, travel obligations,
+                  and current written proposals into a practical action brief.
+                </p>
+                <p className="mt-4 max-w-4xl font-semibold leading-7 text-[#7a6841]">
+                  Sign a CeremonyVerse destination-planning contract within 30 days after the written plan is delivered,
+                  and the full $300 is credited toward your CeremonyVerse planning service fee.
+                </p>
+              </div>
+              <Link href={destinationFeasibilityPlan.href} className="inline-flex justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">
+                See What $300 Includes
+              </Link>
+            </div>
+          </article>
+
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {mexicoPackages.map((tier) => (
+              <article key={tier.name} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">{tier.category}</p>
+                <h3 className="cv-package-title">{tier.name}</h3>
+                {tier.priceLabel && <p className="mb-3 font-serif text-3xl font-semibold text-[#1f1f1f]">{tier.priceLabel}</p>}
+                <p className="mb-4 text-sm font-semibold text-[#7a6841]">{tier.timeline}</p>
+                <p className="mb-7 flex-1 leading-7 text-[#4d403a]">{tier.description}</p>
+                <Link href={tier.href} className="inline-flex justify-center rounded-full border border-[#7a6841] px-5 py-3 text-center text-sm font-semibold text-[#7a6841]">
+                  {tier.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+          <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
+          <div className="mt-6 text-center">
+            <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Deciding who to trust with the planning? Read independent public reviews on Trustpilot</a>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f4eee4] px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Destination planning first · India sourcing when needed</p>
+            <h2 className="mb-5 font-serif text-4xl font-semibold sm:text-5xl">Keep the destination plan central, then add India sourcing only if it helps</h2>
+            <p className="text-lg leading-8 text-[#4d403a]">
+              Destination planning stands on its own. India sourcing is a separate paid service that can be added only when it is useful and explicitly included in your proposal.
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.25fr_0.75fr]">
+            {servicePillars.map((service) => (
+              <article key={service.label} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-8 sm:p-10">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">{service.label}</p>
+                <h3 className="mb-4 font-serif text-3xl font-semibold">{service.title}</h3>
+                <p className="mb-6 leading-7 text-[#4d403a]">{service.description}</p>
+                <ul className="mb-8 flex-1 space-y-3 text-sm leading-6 text-[#4d403a]">
+                  {service.features.map((feature) => (
+                    <li key={feature} className="flex gap-3">
+                      <span aria-hidden="true" className="text-[#7a6841]">✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href={service.href} className="inline-flex items-center justify-center self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white">
+                  {service.cta}
+                </Link>
+              </article>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      <section className="bg-white px-6 py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">One plan, clear owners</p>
             <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Know who handles each part of the wedding</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.</p>
@@ -624,7 +711,7 @@ export function HomePage() {
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-              Schedule Free Consultation
+              Request Free Consultation
             </Link>
             <ChatWithMinisAssistantButton variant="light" source="homepage-final" className="px-8 py-4" />
           </div>

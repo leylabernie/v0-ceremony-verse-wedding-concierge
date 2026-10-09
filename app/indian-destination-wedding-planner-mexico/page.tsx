@@ -173,7 +173,7 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
             <Link
               href="/planning-tools/"
@@ -435,7 +435,7 @@ export default function MexicoDestinationGuidePage() {
               href="/contact/?service=mexico"
               className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
             <Link
               href="/buy-indian-wedding-outfits-from-india/"

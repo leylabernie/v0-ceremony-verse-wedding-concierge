@@ -165,7 +165,7 @@ export default function DestinationDecisionMapPage() {
           <h2 className="mt-3 font-serif text-4xl font-semibold leading-tight sm:text-5xl">Bring the open question. We will help you identify the next written answer.</h2>
           <p className="mt-6 text-lg leading-8 text-[#4d403a]">Your first 30-minute consultation is free. No payment, contract, or prior approval is required.</p>
           <Link href="/contact/?service=mexico&from=destination-decision-map-final" className="mt-8 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#665633] focus:outline-none focus:ring-2 focus:ring-[#7a6841] focus:ring-offset-2">
-            Schedule a Free 30-Minute Consultation
+            Request a Free 30-Minute Consultation
           </Link>
           {/* Booking-portal CTA — dual-site engine (agents.md). */}
           <TravelPortalCta source="destination_decision_map" className="mt-8" />

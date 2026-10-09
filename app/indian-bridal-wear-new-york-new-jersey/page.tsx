@@ -82,7 +82,7 @@ const faqSchema = buildFaqSchema([
 
 export default function IndianBridalWearNYNJPage() {
   return (
-    <div className="bg-[var(--cv-bg)]">
+    <main className="bg-[var(--cv-bg)]">
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
@@ -119,7 +119,7 @@ export default function IndianBridalWearNYNJPage() {
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -341,7 +341,7 @@ export default function IndianBridalWearNYNJPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               className="inline-flex items-center px-8 py-3 rounded-full text-sm font-medium"
               style={{ background: "#7a6841", color: "#fff" }}
             >
@@ -398,6 +398,6 @@ export default function IndianBridalWearNYNJPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

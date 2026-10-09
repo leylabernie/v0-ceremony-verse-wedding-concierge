@@ -142,15 +142,14 @@ export default function RootLayout({
         <JsonLd id="schema-website" data={webSiteSchema} />
       </head>
       <body>
+        <a href="#main-content" className="cv-skip-link">Skip to main content</a>
         <Script id="deferred-google-analytics" strategy="afterInteractive">
           {`
             (function() {
               var GA_ID = 'G-8K8YLBERPM';
               var loaded = false;
 
-              // Initialize the queue before the visitor's first interaction so
-              // the first CTA/form event is not lost while the external GA file
-              // is still deferred for performance.
+              // Load after hydration and queue events while the analytics script loads.
               window.dataLayer = window.dataLayer || [];
               window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
               window.gtag('js', new Date());
@@ -165,16 +164,7 @@ export default function RootLayout({
                 document.head.appendChild(s);
               }
 
-              var triggers = ['scroll', 'click', 'keydown', 'touchstart', 'pointerdown'];
-              function onTrigger() {
-                loadGA();
-                triggers.forEach(function(t) {
-                  window.removeEventListener(t, onTrigger);
-                });
-              }
-              triggers.forEach(function(t) {
-                window.addEventListener(t, onTrigger, {passive: true, once: true});
-              });
+              loadGA();
             })();
           `}
         </Script>
@@ -184,7 +174,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Mexico, Jamaica &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
           <span className="lg:hidden">Mexico, Jamaica &amp; Punta Cana planning</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/?service=mexico&from=announcement-bar">Schedule Free Consultation</Link>
+          <Link href="/contact/?from=announcement-bar">Request Free Consultation</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}
@@ -192,7 +182,7 @@ export default function RootLayout({
 
         {/* Keep page content below the responsive fixed announcement and navigation. */}
         <div className="cv-header-spacer" />
-        {children}
+        <div id="main-content" tabIndex={-1}>{children}</div>
 
         {/* SINGLE WhatsApp Button (global) */}
         <WhatsAppButton />

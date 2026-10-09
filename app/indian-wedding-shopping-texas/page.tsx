@@ -66,7 +66,7 @@ const faqSchema = buildFaqSchema(texasFaqs);
 
 export default function IndianWeddingShoppingTexasPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
@@ -82,8 +82,8 @@ export default function IndianWeddingShoppingTexasPage() {
         <p style={{ fontSize: "17px", lineHeight: 1.7, color: "#4d403a", marginBottom: "32px", maxWidth: "580px", margin: "0 auto 32px" }}>
           Coordinate bridal, groom, wedding-party, and family outfits from India through one documented process, with live review when available, custom-order support, and delivery coordination across Texas.
         </p>
-        <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
-          Schedule a Free 30-Minute Consultation
+        <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          Request a Free 30-Minute Consultation
         </Link>
       </section>
 
@@ -189,6 +189,6 @@ export default function IndianWeddingShoppingTexasPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }
