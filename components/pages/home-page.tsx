@@ -288,6 +288,21 @@ export function HomePage() {
         </div>
       </section>
 
+      <section aria-labelledby="travel-booking-heading" className="border-b border-[#e6dfd5] bg-white px-6 py-10">
+        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">CeremonyVerse Travel</p>
+            <h2 id="travel-booking-heading" className="mt-3 font-serif text-3xl font-semibold">Resort stays, honeymoons &amp; wedding guest travel</h2>
+            <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">You can book travel with Mini without purchasing wedding planning. Compare resort options in Mexico, Jamaica, and Punta Cana, or ask about current offers matched to your dates and budget.</p>
+            <p className="mt-3 text-xs leading-5 text-[#5e4a40]">CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc. / OutsideAgents.com. Rates, promotions, and bookings are subject to supplier availability and terms.</p>
+          </div>
+          <div className="flex flex-col gap-3">
+            <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20current%20resort%20offers.%20My%20dates%3A%20%20Departure%20airport%3A%20%20Travelers%3A%20%20Total%20budget%3A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">Ask Mini for Resort Offers</a>
+            <a href="https://ceremonyversetravel.com/?utm_source=ceremonyverse&amp;utm_medium=referral&amp;utm_campaign=homepage_travel" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-[#7a6841] px-7 py-3.5 text-sm font-semibold text-[#7a6841]">Browse CeremonyVerse Travel</a>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
