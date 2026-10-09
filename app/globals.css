@@ -476,3 +476,7 @@
     background: #ffffff !important;
   }
 }
+
+.cv-skip-link { position: fixed; top: 8px; left: 8px; transform: translateY(-160%); z-index: 100; background: #fff; color: #1f1f1f; padding: 12px 18px; border: 2px solid #7a6841; border-radius: 8px; }
+.cv-skip-link:focus { transform: translateY(0); }
+#main-content { scroll-margin-top: calc(var(--cv-announcement-height) + var(--cv-navigation-height)); }

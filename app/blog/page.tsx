@@ -266,7 +266,7 @@ export default function BlogIndexPage() {
                   textDecoration: "none",
                 }}
               >
-                Schedule a Free 30-Minute Consultation
+                Request a Free 30-Minute Consultation
               </Link>
               <a
                 href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services."

@@ -23,7 +23,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 // Authoritative list of articles written by Mini. Keep in sync with the
 // posts array on /blog/ — when a new post is published, add it here too.
-// `path` is the full URL path (e.g. "/blog/how-to-buy-bridal-lehenga-from-india-usa/"
+// `path` is the full URL path (e.g. "/how-to-buy-bridal-lehenga-from-india-to-usa/"
 // or "/nri-gujarati-wedding-timeline-12-months/"). `slug` is kept as a
 // unique key for the React list. `date` matches the article's publishedTime
 // so the archive reads chronologically.
@@ -219,14 +219,14 @@ const articles: { slug: string; path: string; title: string; description: string
   },
   {
     slug: "how-to-buy-bridal-lehenga-from-india-usa",
-    path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
+    path: "/how-to-buy-bridal-lehenga-from-india-to-usa/",
     title: "How to Buy a Bridal Lehenga from India to USA — Step-by-Step Guide",
     description: "Live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
     date: "2026-03-01",
   },
   {
     slug: "how-to-buy-sherwani-from-india-usa",
-    path: "/blog/how-to-buy-sherwani-from-india-usa/",
+    path: "/buy-sherwani-from-india-usa/",
     title: "How to Buy a Sherwani from India to the USA — Complete Sourcing Guide",
     description: "Fabric, fit, vendor verification, and customs for an NRI groom ordering from India.",
     date: "2026-03-01",

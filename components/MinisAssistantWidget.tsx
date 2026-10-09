@@ -44,7 +44,7 @@ type ChatRole = "user" | "assistant";
 type ChatMessage = { role: ChatRole; text: string };
 
 const OPENING_MESSAGE =
-  "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Are you just starting to explore destination wedding options, do you already have some resort proposals, or are you looking to book a resort stay or honeymoon?";
+  "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Are you exploring destination weddings, reviewing resort proposals, shopping for Indian wedding outfits, or planning a resort stay or honeymoon?";
 
 const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
 
@@ -91,6 +91,7 @@ export default function MinisAssistantWidget() {
 
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const launcherRef = useRef<HTMLButtonElement | null>(null);
   const initializedRef = useRef(false);
 
   const destinationName = useMemo(
@@ -215,7 +216,8 @@ export default function MinisAssistantWidget() {
               typeof window !== "undefined" ? window.location.href : "",
           }),
         });
-        if (!res.ok) {
+        const result = await res.json();
+        if (!res.ok || !result.success) {
           setLeadError("Couldn't save your details. Please try again.");
           return;
         }
@@ -273,6 +275,7 @@ export default function MinisAssistantWidget() {
           type="button"
           onClick={openPanel}
           aria-label="Chat with Mini's Assistant"
+          ref={launcherRef}
           className="minis-fab inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:opacity-90"
           style={{ backgroundColor: ACCENT }}
         >
@@ -286,6 +289,12 @@ export default function MinisAssistantWidget() {
         <div
           className="minis-panel flex flex-col overflow-hidden rounded-2xl border bg-white shadow-2xl"
           style={{ borderColor: "#e6dfd5" }}
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              setOpen(false);
+              setTimeout(() => launcherRef.current?.focus(), 0);
+            }
+          }}
           role="dialog"
           aria-label="Mini's Assistant chat"
         >
@@ -307,7 +316,7 @@ export default function MinisAssistantWidget() {
             </div>
             <button
               type="button"
-              onClick={() => setOpen(false)}
+              onClick={() => { setOpen(false); setTimeout(() => launcherRef.current?.focus(), 0); }}
               aria-label="Close chat"
               className="rounded-full p-1 text-white/90 transition hover:bg-white/20"
             >
@@ -328,6 +337,10 @@ export default function MinisAssistantWidget() {
 
           {/* Messages */}
           <div
+            role="log"
+            aria-live="polite"
+            aria-relevant="additions text"
+            aria-label="Chat messages"
             ref={scrollRef}
             className="flex-1 space-y-3 overflow-y-auto px-3 py-3"
             style={{ backgroundColor: "#f8f6f2" }}
@@ -384,6 +397,7 @@ export default function MinisAssistantWidget() {
                   type="text"
                   value={leadName}
                   onChange={(e) => setLeadName(e.target.value)}
+                  aria-label="Your name"
                   placeholder="Your name"
                   className="mb-2 w-full rounded-lg border px-3 py-2 text-sm outline-none focus:border-[#7a6841]"
                   style={{ borderColor: "#e6dfd5" }}
@@ -392,6 +406,7 @@ export default function MinisAssistantWidget() {
                   type="email"
                   value={leadEmail}
                   onChange={(e) => setLeadEmail(e.target.value)}
+                  aria-label="Your email"
                   placeholder="Your email"
                   className="mb-2 w-full rounded-lg border px-3 py-2 text-sm outline-none focus:border-[#7a6841]"
                   style={{ borderColor: "#e6dfd5" }}
@@ -435,7 +450,8 @@ export default function MinisAssistantWidget() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Type your message…"
+                aria-label="Type your message…"
+                  placeholder="Type your message…"
                 disabled={loading}
                 className="flex-1 rounded-full border px-4 py-2.5 text-sm outline-none focus:border-[#7a6841] disabled:opacity-60"
                 style={{ borderColor: "#e6dfd5" }}

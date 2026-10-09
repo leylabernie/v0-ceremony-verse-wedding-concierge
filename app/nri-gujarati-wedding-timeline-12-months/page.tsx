@@ -205,7 +205,7 @@ const aiSummary = `A 12-month NRI Gujarati wedding planning timeline starts with
 
 const relatedGuides = [
   { href: "/nri-gujarati-wedding-planning-guide/", label: "NRI Gujarati Wedding Planning Guide — the master guide" },
-  { href: "/blog/how-to-buy-bridal-lehenga-from-india-usa/", label: "How to buy a bridal lehenga from India to the USA" },
+  { href: "/how-to-buy-bridal-lehenga-from-india-to-usa/", label: "How to buy a bridal lehenga from India to the USA" },
   { href: "/before-signing-indian-wedding-resort-proposal/", label: "5 questions to ask before signing a resort proposal" },
   { href: "/indian-destination-wedding-cost/", label: "Complete Indian destination wedding cost guide" },
   { href: "/blog/when-to-order-indian-wedding-outfits-nri-bride/", label: "When to order Indian wedding outfits — NRI bride timeline" },

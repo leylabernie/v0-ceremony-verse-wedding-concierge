@@ -20,7 +20,7 @@ const breadcrumbSchema = buildBreadcrumb([
 
 export default function GujaratiWeddingOutfitsPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
@@ -38,7 +38,7 @@ export default function GujaratiWeddingOutfitsPage() {
           Organize chaniya cholis, bridal lehengas, sherwanis, sarees, and coordinated family outfits around the ceremonies and requirements your Gujarati family approves. The process documents each item, measurement, cost, and decision without treating one family&apos;s traditions as universal.
         </p>
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-          <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+          <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
             Get My Free Gujarati Outfit Plan
           </Link>
           <a href="https://wa.me/12153419990?text=Hi%2C%20I%27m%20interested%20in%20CeremonyVerse%20services." target="_blank" rel="noopener noreferrer" style={{ fontSize: "17px", color: "#4d403a", textDecoration: "none" }}>
@@ -157,7 +157,7 @@ export default function GujaratiWeddingOutfitsPage() {
             Discuss Garba, Mameru, wedding-ceremony, reception, and family outfit requirements in one documented consultation. Vendor, item, customization, shipping, and customs terms are confirmed before purchase.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "14px" }}>
-            <Link href="/contact/" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
+            <Link href="/contact/?service=india&from=sourcing-page" style={{ display: "inline-flex", alignItems: "center", background: "#7a6841", color: "#fff", padding: "13px 30px", borderRadius: "999px", fontSize: "17px", fontWeight: 600, textDecoration: "none" }}>
               Get My Free Gujarati Outfit Plan
             </Link>
             <a href="https://wa.me/12153419990" style={{ fontSize: "17px", color: "#e8dfd2", textDecoration: "none" }}>
@@ -166,6 +166,6 @@ export default function GujaratiWeddingOutfitsPage() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

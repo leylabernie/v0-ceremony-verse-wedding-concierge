@@ -428,7 +428,7 @@ export default function PricingPage() {
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
             <ChatWithMinisAssistantButton variant="light" source="pricing-final" className="px-8 py-4" />
           </div>

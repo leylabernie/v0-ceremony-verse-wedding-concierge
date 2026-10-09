@@ -18,7 +18,7 @@ const serviceSchema = buildServiceSchema({
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Schedule a Free 30-Minute Consultation", url: "/contact/" },
+  { name: "Request a Free 30-Minute Consultation", url: "/contact/" },
 ]);
 
 export default function ContactRoute() {

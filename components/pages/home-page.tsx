@@ -256,7 +256,7 @@ export function HomePage() {
                 href="/contact/?service=mexico&from=homepage-hero"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Schedule Free Consultation
+                Request Free Consultation
               </Link>
               <ChatWithMinisAssistantButton variant="light" source="homepage-hero" className="px-7 py-4" />
               <Link
@@ -624,7 +624,7 @@ export function HomePage() {
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-              Schedule Free Consultation
+              Request Free Consultation
             </Link>
             <ChatWithMinisAssistantButton variant="light" source="homepage-final" className="px-8 py-4" />
           </div>

@@ -144,7 +144,7 @@ const clusters = [
       { href: "/gujarati-wedding-outfits-usa/", label: "Gujarati wedding outfits USA" },
       { href: "/blog/gujarati-wedding-outfit-guide/", label: "Gujarati wedding outfit guide — ceremony by ceremony" },
       { href: "/services/bridal-lehengas/", label: "Bridal lehenga sourcing service" },
-      { href: "/blog/how-to-buy-bridal-lehenga-from-india-usa/", label: "How to buy a bridal lehenga from India to the USA — step by step" },
+      { href: "/how-to-buy-bridal-lehenga-from-india-to-usa/", label: "How to buy a bridal lehenga from India to the USA — step by step" },
       { href: "/buy-sherwani-from-india-usa/", label: "Buy a sherwani from India to the USA" },
       { href: "/bridesmaid-and-family-outfits-from-india/", label: "Bridesmaid and family outfits from India" },
       { href: "/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/", label: "How to coordinate bridesmaid lehengas from India" },
@@ -316,7 +316,7 @@ export default function NriGujaratiWeddingPlanningGuidePage() {
               The four avoidable risks in India outfit sourcing are: (1) ordering from an Instagram seller who will not get on a live video call, (2) paying without documented payment and remedy terms, (3) trusting catalog photos instead of current item evidence, and (4) skipping the local alteration budget. I learned each of these from coordinating my own son's wedding outfits — see <Link href="/about/mini/" className="text-[#7a6841] underline underline-offset-4">my founder story</Link> for the full background.
             </p>
             <p>
-              The step-by-step playbook: <Link href="/blog/how-to-buy-bridal-lehenga-from-india-usa/" className="text-[#7a6841] underline underline-offset-4">how to buy a bridal lehenga from India to the USA</Link>. For the groom: <Link href="/buy-sherwani-from-india-usa/" className="text-[#7a6841] underline underline-offset-4">buy a sherwani from India to the USA</Link>. For the wedding party: <Link href="/bridesmaid-and-family-outfits-from-india/" className="text-[#7a6841] underline underline-offset-4">bridesmaid and family outfits from India</Link> and <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" className="text-[#7a6841] underline underline-offset-4">how to coordinate bridesmaid lehengas</Link>. For the full ceremony-by-ceremony outfit list: <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" className="text-[#7a6841] underline underline-offset-4">Indian wedding outfit checklist for every ceremony</Link>.
+              The step-by-step playbook: <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" className="text-[#7a6841] underline underline-offset-4">how to buy a bridal lehenga from India to the USA</Link>. For the groom: <Link href="/buy-sherwani-from-india-usa/" className="text-[#7a6841] underline underline-offset-4">buy a sherwani from India to the USA</Link>. For the wedding party: <Link href="/bridesmaid-and-family-outfits-from-india/" className="text-[#7a6841] underline underline-offset-4">bridesmaid and family outfits from India</Link> and <Link href="/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/" className="text-[#7a6841] underline underline-offset-4">how to coordinate bridesmaid lehengas</Link>. For the full ceremony-by-ceremony outfit list: <Link href="/blog/indian-wedding-outfit-checklist-every-ceremony/" className="text-[#7a6841] underline underline-offset-4">Indian wedding outfit checklist for every ceremony</Link>.
             </p>
           </div>
         </article>

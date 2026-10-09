@@ -74,7 +74,7 @@ const faqSchema = buildFaqSchema([
 // ─── PAGE COMPONENT ─────────────────────────────────────────────────────────
 export default function BanarasiSareesPage() {
   return (
-    <div style={{ background: "#f8f6f2", minHeight: "100vh" }}>
+    <main style={{ background: "#f8f6f2", minHeight: "100vh" }}>
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-faq" data={faqSchema} />
@@ -142,7 +142,7 @@ export default function BanarasiSareesPage() {
           selected piece and approve the written references before purchase.
         </p>
         <Link
-          href="/contact/"
+          href="/contact/?service=india&from=sourcing-page"
           style={{
             display: "inline-flex",
             alignItems: "center",
@@ -155,7 +155,7 @@ export default function BanarasiSareesPage() {
             textDecoration: "none",
           }}
         >
-          Schedule a Free 30-Minute Consultation
+          Request a Free 30-Minute Consultation
         </Link>
       </section>
 
@@ -593,7 +593,7 @@ export default function BanarasiSareesPage() {
             approve the written scope and available timeline.
           </p>
           <Link
-            href="/contact/"
+            href="/contact/?service=india&from=sourcing-page"
             style={{
               display: "inline-block",
               background: "#7a6841",
@@ -605,7 +605,7 @@ export default function BanarasiSareesPage() {
               textDecoration: "none",
             }}
           >
-            Schedule a Free 30-Minute Consultation
+            Request a Free 30-Minute Consultation
           </Link>
           <p style={{ color: "#4d403a", fontSize: "17px", marginTop: "16px" }}>
             Or WhatsApp:{" "}
@@ -615,6 +615,6 @@ export default function BanarasiSareesPage() {
           </p>
         </div>
       </section>
-    </div>
+    </main>
   )
 }

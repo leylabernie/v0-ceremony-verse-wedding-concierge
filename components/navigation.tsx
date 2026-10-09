@@ -97,12 +97,12 @@ export function Navigation() {
               WhatsApp
             </a>
             <Link
-              href="/contact/?service=mexico&from=site-navigation"
+              href="/contact/?from=site-navigation"
               className="inline-block whitespace-nowrap px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                 transition-all duration-300
                 hover:bg-brushed-gold hover:border-brushed-gold hover:text-white hover:shadow-[0_4px_20px_rgba(197,160,89,0.3)]"
             >
-              <span>Book a Free Consultation</span>
+              <span>Request a Free Consultation</span>
             </Link>
           </div>
 
@@ -138,12 +138,12 @@ export function Navigation() {
                 </Link>
               ))}
               <Link
-                href="/contact/?service=mexico&from=mobile-navigation"
+                href="/contact/?from=mobile-navigation"
                 onClick={handleLinkClick}
                 className="mt-4 mx-4 px-6 py-3 bg-transparent text-midnight-navy border border-midnight-navy font-bold text-base rounded-full
                   hover:bg-brushed-gold hover:border-brushed-gold hover:text-white transition-all duration-300 text-center"
               >
-                Book a Free Consultation
+                Request a Free Consultation
               </Link>
             </div>
           </div>

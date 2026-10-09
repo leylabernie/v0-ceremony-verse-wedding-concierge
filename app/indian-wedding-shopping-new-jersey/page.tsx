@@ -27,7 +27,7 @@ export default function NewJerseyPage() {
       <JsonLd id="schema-service" data={serviceSchema} />
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
-      <div className="bg-white">
+      <main className="bg-white">
         {/* Hero Section */}
         <div className="relative bg-stone-900 text-white py-24">
           <div className="absolute inset-0 overflow-hidden">
@@ -47,10 +47,10 @@ export default function NewJerseyPage() {
               Compare India-sourced bridal lehengas, sherwanis, and family outfits with New Jersey options using itemized costs, eligible live review, and delivery coordination.
             </p>
             <Link
-              href="/contact/"
+              href="/contact/?service=india&from=sourcing-page"
               className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
             >
-              Schedule a Free 30-Minute Consultation
+              Request a Free 30-Minute Consultation
             </Link>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function NewJerseyPage() {
             
             <div className="mt-12 text-center">
               <Link
-                href="/contact/"
+                href="/contact/?service=india&from=sourcing-page"
                 className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition-colors"
               >
                 Start Your Shopping Journey
@@ -104,7 +104,7 @@ export default function NewJerseyPage() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }
