@@ -44,15 +44,16 @@ export default function BuyFromIndiaPage() {
       <section className="px-6 pb-12">
         <figure className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-[var(--cv-border)] bg-white">
           <Image
-            src="/images/proof/prior-outfit-wedding-party.webp"
-            width={640}
-            height={427}
-            sizes="(max-width: 768px) 100vw, 1024px"
+            src="/images/pastel-indian-wedding-party-ai-inspiration.webp"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 1072px) calc(100vw - 48px), 1024px"
+            unoptimized
             className="h-auto w-full"
-            alt="Wedding party wearing coordinated Indian outfits from a completed pre-launch family sourcing project"
+            alt="AI-generated Indian wedding party wearing coordinated blush, sage, lavender and powder blue outfits in a hotel lobby"
           />
           <figcaption className="p-5 text-sm text-[var(--cv-muted)]">
-            Completed pre-launch family outfit coordination, shown as a sourcing example rather than destination-planning client work.
+            AI-generated outfit inspiration — a coordinated pastel palette for a couple, wedding party and family.
           </figcaption>
         </figure>
       </section>
