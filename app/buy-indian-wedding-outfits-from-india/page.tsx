@@ -42,12 +42,12 @@ export default function BuyFromIndiaPage() {
       </section>
 
       <section className="px-6 pb-12">
-        <figure className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-[var(--cv-border)] bg-white">
+        <figure className="mx-auto max-w-[640px] overflow-hidden rounded-2xl border border-[var(--cv-border)] bg-white">
           <Image
             src="/images/proof/prior-outfit-wedding-party.webp"
             width={640}
             height={427}
-            sizes="(max-width: 768px) 100vw, 1024px"
+            unoptimized
             className="h-auto w-full"
             alt="Wedding party wearing coordinated Indian outfits from a completed pre-launch family sourcing project"
           />
