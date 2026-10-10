@@ -2,22 +2,21 @@ import { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/seo'
 
 export default function robots(): MetadataRoute.Robots {
-  // AI search / answer-engine crawlers. main's `userAgent: '*'` rule already
-  // permits these, but declaring them EXPLICITLY is a stronger, unambiguous
-  // opt-in signal — several AI operators only treat a named allow rule as
-  // consent to cite/surface content. Purely additive; no disallow tightening.
+  // Keep existing crawler permissions. Search crawling and model training
+  // are separate purposes; allowing a crawler does not guarantee inclusion.
+  const excludedPaths = ['/_next/data/', '/api/', '/404/', '/internal-resources/']
   const aiCrawlers = [
-    'GPTBot',            // OpenAI / ChatGPT Search
+    'GPTBot',            // OpenAI model-training crawler
     'ChatGPT-User',      // ChatGPT user-initiated browsing
     'OAI-SearchBot',     // OpenAI Search crawler
     'PerplexityBot',     // Perplexity.ai
     'Perplexity-User',   // Perplexity user-initiated browsing
-    'Google-Extended',   // Google Gemini / AI Overviews
+    'Google-Extended',   // Google generative-AI use control
     'ClaudeBot',         // Anthropic Claude
     'anthropic-ai',      // Anthropic
     'Applebot-Extended', // Apple Intelligence
     'CCBot',             // Common Crawl (feeds many AI datasets)
-  ].map((ua) => ({ userAgent: ua, allow: '/' }))
+  ].map((ua) => ({ userAgent: ua, allow: '/', disallow: excludedPaths }))
 
   return {
     rules: [
@@ -36,19 +35,7 @@ export default function robots(): MetadataRoute.Robots {
           '/_next/static/',
           '/_next/image/',
         ],
-        disallow: [
-          // Block server-side Next.js internals that should never be crawled
-          // (these aren't needed for rendering; accessing them as a user 404s).
-          '/_next/data/',
-          // Block API routes (server-side endpoints, no indexable content)
-          '/api/',
-          // Block the dedicated 404 page itself
-          '/404/',
-          // Block internal-only utility pages (outreach templates, staging tools).
-          // These pages are not meant for public indexing and should not burn
-          // crawl budget or dilute the site's keyword focus.
-          '/internal-resources/',
-        ],
+        disallow: excludedPaths,
       },
     ],
     sitemap: [
