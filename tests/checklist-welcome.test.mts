@@ -63,7 +63,8 @@ test('signup fulfils the resource, confirms the series once, and unsubscribe sup
   assert.equal(String(input),'https://redis.checklist.test')
   const c=JSON.parse(String(init?.body)), [op,key]=c
   let result:any=null
-  if(op==='HGETALL') result=Object.entries(hashes.get(key)||{}).flat()
+  if(op==='PING') result='PONG'
+  else if(op==='HGETALL') result=Object.entries(hashes.get(key)||{}).flat()
   else if(op==='HSET') {const state=hashes.get(key)!;for(let i=2;i<c.length;i+=2) state[c[i]]=String(c[i+1]);result=1}
   else if(op==='SET') {if(!locks.has(key)){locks.set(key,c[2]);result='OK'}}
   else if(op==='ZRANGEBYSCORE') result=[...due].filter(([,time])=>time<=Number(c[3])).map(([id])=>id)

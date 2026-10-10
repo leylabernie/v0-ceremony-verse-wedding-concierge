@@ -10,7 +10,7 @@ export const runtime='nodejs'
 const schema=z.object({email:z.string().trim().email().max(254),consent:z.boolean(),website:z.string().max(120).optional().default('')})
 const reply=(body:object,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'no-store'}})
 async function ready() {
- return Boolean(process.env.RESEND_API_KEY && process.env.CEREMONYVERSE_LEAD_FROM_EMAIL && process.env.CEREMONYVERSE_AUTOMATION_SECRET && (process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN) && await marketingAddress())
+ try { return Boolean(process.env.RESEND_API_KEY && process.env.CEREMONYVERSE_LEAD_FROM_EMAIL && process.env.CEREMONYVERSE_AUTOMATION_SECRET && (process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN) && await marketingAddress() && await redisCommand(['PING']) === 'PONG') } catch { return false }
 }
 export async function GET() {return reply({ready:await ready()})}
 export async function POST(request:NextRequest) {
