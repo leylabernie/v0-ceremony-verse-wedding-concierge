@@ -3,6 +3,7 @@ import Link from "next/link"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
 import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
+import { CurrentTravelOffers } from "@/components/current-travel-offers"
 
 // Design: Editorial Proof, Not Pageantry. Preserve the existing charcoal, parchment,
 // antique-gold, serif-led CeremonyVerse visual system while helping a prospective bride
@@ -287,6 +288,8 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      <CurrentTravelOffers />
 
       <section aria-labelledby="travel-booking-heading" className="border-b border-[#e6dfd5] bg-white px-6 py-10">
         <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
