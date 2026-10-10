@@ -188,8 +188,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: false,
       error: confirmationSent
-        ? "Your email was sent, but we could not confirm Mini received your request. Please contact hello@ceremonyverse.com."
-        : "We could not confirm delivery. Please try again or contact hello@ceremonyverse.com.",
+        ? "Your email was sent, but we could not confirm Mini received your request. Please contact bhamini@ceremonyverse.com."
+        : "We could not confirm delivery. Please try again or contact bhamini@ceremonyverse.com.",
       delivery: { sheet: sheetDelivered, business: businessDelivered, confirmationEmail: confirmationSent },
     }, { status: 503 });
   }

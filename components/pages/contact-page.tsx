@@ -131,7 +131,7 @@ export function ContactPage() {
   )
 
   const whatsappFallbackUrl = `https://wa.me/12153419990?text=${encodeURIComponent(fallbackText)}`
-  const emailFallbackUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+  const emailFallbackUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
     "CeremonyVerse consultation request",
   )}&body=${encodeURIComponent(fallbackText)}`
 
@@ -149,7 +149,7 @@ export function ContactPage() {
     `Service: ${serviceInterest}`,
     "My preferred dates and times are:",
   ].join("\n")
-  const schedulingEmailUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+  const schedulingEmailUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
     "Arrange my CeremonyVerse consultation",
   )}&body=${encodeURIComponent(schedulingEmailBody)}`
 

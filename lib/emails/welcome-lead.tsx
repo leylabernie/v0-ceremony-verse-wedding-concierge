@@ -83,7 +83,7 @@ export function buildWelcomeLeadEmail(lead: WelcomeLeadInput): {
         <p style="margin:0 0 8px;">Warmly,</p>
         <p style="margin:0 0 4px;"><strong>Mini Patel</strong></p>
         <p style="margin:0 0 20px;color:#5e4a40;">Founder, CeremonyVerse Destination Wedding Planning<br/>
-        <a href="mailto:hello@ceremonyverse.com" style="color:#7a6841;">hello@ceremonyverse.com</a> · +1 (215) 341-9990</p>
+        <a href="mailto:bhamini@ceremonyverse.com" style="color:#7a6841;">bhamini@ceremonyverse.com</a> · +1 (215) 341-9990</p>
       </td>
     </tr>
     <tr>
@@ -113,7 +113,7 @@ export function buildWelcomeLeadEmail(lead: WelcomeLeadInput): {
     "Warmly,",
     "Mini Patel",
     "Founder, CeremonyVerse Destination Wedding Planning",
-    "hello@ceremonyverse.com · +1 (215) 341-9990",
+    "bhamini@ceremonyverse.com · +1 (215) 341-9990",
     "",
     "All travel bookings made via ceremonyversetravel.com are subject to supplier terms and availability.",
     DISCLOSURE,

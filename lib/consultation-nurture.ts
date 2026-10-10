@@ -101,7 +101,7 @@ export async function sendNurtureMessage(state: NurtureState): Promise<{ sent: b
 
   const sent = await sendCeremonyVerseEmail({
     to: state.email,
-    replyTo: "hello@ceremonyverse.com",
+    replyTo: "bhamini@ceremonyverse.com",
     subject: message.subject,
     html: message.html,
     text: message.text,
