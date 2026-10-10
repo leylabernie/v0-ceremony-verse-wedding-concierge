@@ -1,4 +1,4 @@
-const DEFAULT_BUSINESS_EMAIL = "hello@ceremonyverse.com"
+const DEFAULT_BUSINESS_EMAIL = "bhamini@ceremonyverse.com"
 
 interface SendEmailOptions {
   to: string | string[]

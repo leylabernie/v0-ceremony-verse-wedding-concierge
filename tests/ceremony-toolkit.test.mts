@@ -67,7 +67,7 @@ test("successful resource capture stores consent and emails only the owner; repe
   const first = await POST(request())
   assert.equal(first.status, 200); assert.equal((await first.json()).repeated, false)
   assert.equal(context.emails.length, 1)
-  assert.deepEqual(context.emails[0].to, ["hello@ceremonyverse.com"])
+  assert.deepEqual(context.emails[0].to, ["bhamini@ceremonyverse.com"])
   assert.match(String(context.emails[0].text), /NO — fulfil the resource request only/)
   assert.match(String(context.emails[0].text), /not a consultation request/)
   const stored = [...context.store.entries()].find(([key]) => key.includes(":lead:"))

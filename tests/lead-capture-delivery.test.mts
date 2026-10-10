@@ -56,7 +56,7 @@ test("total delivery failure stays retryable and never reports success", async (
 })
 
 test("a business-only delivery does not promise a customer worksheet email", async () => {
-  await withMail(email => email.to.includes("hello@ceremonyverse.com"), async () => {
+  await withMail(email => email.to.includes("bhamini@ceremonyverse.com"), async () => {
     const response = await POST(request(lead))
     assert.equal(response.status, 503)
     const result = await response.json()
@@ -71,7 +71,7 @@ test("chat success requires a business handoff without pretending to email a wor
     const response = await POST(request({ ...lead, source: "chat" }))
     assert.equal(response.status, 200)
     assert.equal(emails.length, 1)
-    assert.deepEqual(emails[0].to, ["hello@ceremonyverse.com"])
+    assert.deepEqual(emails[0].to, ["bhamini@ceremonyverse.com"])
   })
 })
 

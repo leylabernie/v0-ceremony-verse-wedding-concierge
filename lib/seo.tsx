@@ -17,7 +17,7 @@ export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.ceremonyverse.com"
 ).replace(/\/$/, "")
 export const SITE_NAME = "CeremonyVerse"
-export const SITE_EMAIL = "hello@ceremonyverse.com"
+export const SITE_EMAIL = "bhamini@ceremonyverse.com"
 export const SITE_PHONE = "+12153419990"
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baarat.webp`
 // Raster logo for structured data. Google does not support SVG URLs for
