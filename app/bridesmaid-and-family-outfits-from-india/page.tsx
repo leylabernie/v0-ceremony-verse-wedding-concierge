@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav"
-import { buildMetadata, buildServiceSchema, buildBreadcrumb, JsonLd } from "@/lib/seo";
+import { buildMetadata, buildServiceSchema, buildBreadcrumb, buildFaqSchema, JsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   path: "/bridesmaid-and-family-outfits-from-india/",
@@ -19,6 +19,8 @@ const breadcrumbSchema = buildBreadcrumb([
 ]);
 
 
+const coordinationFaqs = [{ question: "How do I coordinate groomsmen outfits across the US and India without travelling?", answer: "Use one group brief, consistent measurement instructions and a separate approval record for each person. CeremonyVerse can organise live video shopping with shops in India, clarify readymade versus custom-made options with a local designer, and coordinate finished-piece checks and delivery planning. Confirm production, shipping and local alterations for each address; timelines and availability are not guaranteed." }]
+
 export default function BridesmaidPage() {
   return (
     <main className="bg-[var(--cv-bg)]">
@@ -26,6 +28,8 @@ export default function BridesmaidPage() {
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
     
       <SeoNav />
+      <JsonLd id="schema-coordination-faq" data={buildFaqSchema(coordinationFaqs)} />
+      <section className="mx-auto max-w-4xl px-6 py-10">{coordinationFaqs.map(faq => <div key={faq.question}><h2 className="text-2xl mb-4">{faq.question}</h2><p className="leading-7">{faq.answer}</p><Link className="inline-block mt-4 underline" href="/groomsmen-outfit-coordination-new-jersey/">Groomsmen coordination for New Jersey families</Link></div>)}</section>
 
       {/* HERO */}
       <section className="py-24 text-center px-6">

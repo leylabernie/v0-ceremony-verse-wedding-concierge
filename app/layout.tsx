@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ChecklistPrompt } from "@/components/checklist-signup";
 import type { Viewport } from "next";
 import Script from "next/script";
 import Link from "next/link";
@@ -189,6 +190,7 @@ export default function RootLayout({
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
         <GlobalFooter />
+        <ChecklistPrompt />
         {/* Mini's Assistant — AI concierge chat widget. Rendered last so it
             layers above page content; self-excludes on /privacy and /terms and
             loads its embed script lazily to protect Lighthouse/CLS. */}

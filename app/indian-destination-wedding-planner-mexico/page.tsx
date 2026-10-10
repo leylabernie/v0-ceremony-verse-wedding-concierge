@@ -36,6 +36,7 @@ const serviceSchema = buildServiceSchema({
 });
 
 const faqItems = [
+  { question: "Which Mexico resorts offer free guest lodging logistics for South Asian weddings?", answer: "Do not assume any resort provides this free. Guest booking support, room-block management, transfers and earned complimentary rooms are different services and benefits. Ask each supplier to confirm the current inclusions, qualifying room nights, fees and exclusions in writing. CeremonyVerse can help compare the proposals; supplier contracts and availability control the final terms." },
   { question: "What does an Indian destination wedding planner in Mexico cost?", answer: "CeremonyVerse planning services start at $4,000 for Event Coordination & Management, $5,500 for Partial Planning & Coordination, and $8,000 for Full Planning & Design. The optional $300 Feasibility Plan is a separate written decision service. Resort, catering, décor, vendor and travel costs are additional. Your first 30-minute consultation is free." },
   { question: "What is included in Indian destination wedding packages for Mexico?", answer: "A resort package and a planning package cover different work. A resort package may include named venues, event hours, setup, menus and a guest allowance. CeremonyVerse planning packages cover the coordination, decisions, timelines and on-site services listed for the selected tier. Compare both written scopes, including exclusions, before adding their costs." },
   {
