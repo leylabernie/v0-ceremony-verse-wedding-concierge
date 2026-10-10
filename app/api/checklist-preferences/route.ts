@@ -14,7 +14,7 @@ export async function POST(request:NextRequest) {
   const state=await store.read(id)
   if (!state || ['unsubscribed','resource-only'].includes(state.status)) return NextResponse.json({error:'This request cannot start a planning series.'},{status:400})
   const activated=await store.confirm(id)
-  if (activated) {try {await processChecklistWelcome()} catch {/* Durable queue retries through the daily cron. */}}
+  if (activated) {try {await processChecklistWelcome(id)} catch {/* Durable queue retries through the daily cron. */}}
   return NextResponse.json({success:true,message:'Your planning series is confirmed. The first email is on its way; the next two arrive about two and four days later.'})
  } catch {return NextResponse.json({error:'We could not save your preference. Please try again.'},{status:503})}
 }

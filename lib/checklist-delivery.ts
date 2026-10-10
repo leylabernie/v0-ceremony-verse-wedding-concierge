@@ -6,11 +6,11 @@ export function preferenceUrl(id: string, action: 'confirm' | 'unsubscribe') {
  if (!secret) throw new Error('Checklist signing is unavailable')
  return `https://www.ceremonyverse.com/checklist-preferences/?id=${id}&action=${action}&token=${actionToken(id,action,secret)}`
 }
-export async function processChecklistWelcome() {
+export async function processChecklistWelcome(onlyId?: string) {
  const store=createChecklistStore()
  const address=await marketingAddress()
  if (!address) return {processed:0,sent:0,available:false}
- const due=await store.due()
+ const due=onlyId ? [onlyId] : await store.due()
  let sent=0
  for (const id of Array.isArray(due) ? due : []) {
   const lease=await store.lock(id)
@@ -23,7 +23,7 @@ export async function processChecklistWelcome() {
    if (!message) {await store.removeDue(id);continue}
    const delivered=await sendCeremonyVerseEmail({to:state.email,replyTo:'bhamini@ceremonyverse.com',...message,idempotencyKey:`checklist-welcome-${id}-${step}`})
    if (delivered) {
-    await store.advance(id,step,step<2 ? Date.now()+2*86400000 : undefined)
+    await store.advance(id,step,step<2 ? Number(state.confirmedAt)+(step+1)*2*86400000 : undefined)
     sent++
    }
   } finally {await store.unlock(id,lease)}
