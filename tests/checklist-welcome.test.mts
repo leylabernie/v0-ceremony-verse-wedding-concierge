@@ -45,3 +45,71 @@ test('missing email configuration cannot report a successful signup',async()=>{
   assert.equal((await response.json()).success,undefined)
  } finally {if(previous===undefined) delete process.env.RESEND_API_KEY;else process.env.RESEND_API_KEY=previous}
 })
+
+test('signup fulfils the resource, confirms the series once, and unsubscribe suppresses later sends',async()=>{
+ const originalFetch=globalThis.fetch
+ const keys=['RESEND_API_KEY','CEREMONYVERSE_LEAD_FROM_EMAIL','CEREMONYVERSE_AUTOMATION_SECRET','CEREMONYVERSE_MARKETING_ADDRESS','UPSTASH_REDIS_REST_URL','UPSTASH_REDIS_REST_TOKEN']
+ const previous=keys.map(k=>process.env[k])
+ keys.forEach(k=>{process.env[k]='local-test'})
+ process.env.CEREMONYVERSE_AUTOMATION_SECRET=secret
+ process.env.UPSTASH_REDIS_REST_URL='https://redis.checklist.test'
+ const hashes=new Map<string,Record<string,string>>(),locks=new Map<string,string>(),due=new Map<string,number>(),emails:Record<string,any>[]=[]
+ let failEmail=false
+ globalThis.fetch=async(input,init)=>{
+  if(String(input)==='https://api.resend.com/emails') {
+   if(failEmail) return Response.json({}, {status:503})
+   emails.push(JSON.parse(String(init?.body)));return Response.json({id:'test-delivery'})
+  }
+  assert.equal(String(input),'https://redis.checklist.test')
+  const c=JSON.parse(String(init?.body)), [op,key]=c
+  let result:any=null
+  if(op==='HGETALL') result=Object.entries(hashes.get(key)||{}).flat()
+  else if(op==='HSET') {const state=hashes.get(key)!;for(let i=2;i<c.length;i+=2) state[c[i]]=String(c[i+1]);result=1}
+  else if(op==='SET') {if(!locks.has(key)){locks.set(key,c[2]);result='OK'}}
+  else if(op==='ZRANGEBYSCORE') result=[...due].filter(([,time])=>time<=Number(c[3])).map(([id])=>id)
+  else if(op==='ZREM') {due.delete(c[2]);result=1}
+  else if(op==='EVAL') {
+   const script=c[1],n=c[2],k1=c[3],args=c.slice(3+n)
+   if(script.includes('INCR')) result=1
+   else if(script.includes("'EXISTS'") && script.includes("'resourceSent'")) {
+    if(hashes.has(k1)) result=0
+    else {hashes.set(k1,{email:args[0],status:args[1],consent:args[2],version:args[3],createdAt:String(args[4]),step:'0',resourceSent:'0'});result=1}
+   } else if(script.includes("'GET',KEYS[1]")) {if(locks.get(k1)===args[0]) locks.delete(k1);result=1}
+   else if(script.includes("'confirmedAt'")) {const s=hashes.get(k1);result=0;if(s?.status==='pending'&&s.consent==='1'){s.status='active';s.confirmedAt=String(args[1]);due.set(args[0],Number(args[1]));result=1}}
+   else if(script.includes("'unsubscribed'")) {const s=hashes.get(k1);if(s)s.status='unsubscribed';due.delete(args[0]);result=1}
+   else if(script.includes('tonumber')) {const s=hashes.get(k1);result=0;if(s?.status==='active'&&s.step===String(args[1])){s.step=String(Number(s.step)+1);if(args[2]==='done'){s.status='completed';due.delete(args[0])}else due.set(args[0],Number(args[2]));result=1}}
+   else throw new Error('Unexpected Lua operation')
+  } else throw new Error('Unexpected Redis operation')
+  return Response.json({result})
+ }
+ const request=(path:string,body:object)=>new NextRequest(`https://www.ceremonyverse.com${path}`,{method:'POST',headers:{origin:'https://www.ceremonyverse.com','content-type':'application/json'},body:JSON.stringify(body)})
+ const email='subscriber@example.test', id=subscriberId(email,secret)
+ try {
+  failEmail=true
+  assert.equal((await POST(request('/api/guest-checklist/',{email,consent:true}))).status,503)
+  assert.equal(emails.length,0)
+  failEmail=false
+  assert.equal((await POST(request('/api/guest-checklist/',{email,consent:true}))).status,200)
+  assert.equal(emails.length,2) // resource to the subscriber and notification to the owner
+  assert.equal(due.size,0)
+  assert.equal((await POST(request('/api/guest-checklist/',{email,consent:true}))).status,200)
+  assert.equal(emails.length,2)
+  const confirm={id,action:'confirm',token:actionToken(id,'confirm',secret)}
+  assert.equal((await preference(request('/api/checklist-preferences/',confirm))).status,200)
+  assert.equal(emails.length,3)
+  assert.ok(due.get(id)! >= Date.now()+2*86400000-5000)
+  assert.equal((await preference(request('/api/checklist-preferences/',confirm))).status,200)
+  assert.equal(emails.length,3)
+  const unsubscribe={id,action:'unsubscribe',token:actionToken(id,'unsubscribe',secret)}
+  assert.equal((await preference(request('/api/checklist-preferences/',unsubscribe))).status,200)
+  assert.equal(due.size,0)
+  assert.equal((await preference(request('/api/checklist-preferences/',confirm))).status,400)
+  assert.equal(emails.length,3)
+  const resourceOnly='resource@example.test',resourceId=subscriberId(resourceOnly,secret)
+  assert.equal((await POST(request('/api/guest-checklist/',{email:resourceOnly,consent:false}))).status,200)
+  assert.equal((await preference(request('/api/checklist-preferences/',{id:resourceId,action:'confirm',token:actionToken(resourceId,'confirm',secret)}))).status,400)
+ } finally {
+  globalThis.fetch=originalFetch
+  keys.forEach((k,i)=>{if(previous[i]===undefined)delete process.env[k];else process.env[k]=previous[i]})
+ }
+})
