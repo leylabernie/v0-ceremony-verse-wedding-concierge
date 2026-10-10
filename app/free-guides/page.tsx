@@ -14,6 +14,9 @@ export const metadata = buildMetadata({
 const breadcrumbSchema = buildBreadcrumb([{ name: "Free Guides", url: "/free-guides/" }])
 
 const destinationTools = [
+  ["New York Destination-Wedding Families", "Compare guest travel cohorts, cultural-event requirements and who owns each task.", "/south-asian-destination-wedding-planning-new-york/"],
+  ["Toronto & GTA Gujarati Families", "Coordinate currencies, family contributions and Toronto and India guest cohorts.", "/gujarati-destination-wedding-planning-toronto/"],
+  ["Guest Logistics & Gift Coordination Checklist", "Coordinate households, room deadlines, arrivals, outfits, gift sarees and welcome bags. Email yourself a copy; the planning series is optional.", "/guest-logistics-gift-checklist/"],
   ["Ceremony Timeline & Downloadable Toolkit", "Build a live timeline, then request the free PDF with an original symbolic script and friend officiant guide. Planning emails are optional.", "/planning-tools/ceremony-timeline/"],
   ["Moon Palace Cancún Planning Guide", "Work through Lake Terrace and Meditation Garden layouts, production questions and ceremony handoffs.", "/guides/moon-palace-cancun-wedding-planning/"],
   ["Hard Rock Riviera Maya Planning Guide", "Review published vendor-access charges, outdoor timing and production questions before setting your schedule.", "/guides/hard-rock-riviera-maya-wedding-planning/"],
@@ -29,6 +32,7 @@ const destinationTools = [
 ] as const
 
 const shoppingGuides = [
+  ["New Jersey Groomsmen Across the US & India", "One outfit brief, individual measurements and a delivery plan per address.", "/groomsmen-outfit-coordination-new-jersey/"],
   ["Wedding Outfit Checklist", "Plan outfits across ceremonies, the couple, family, and wedding party.", "/blog/indian-wedding-outfit-checklist-every-ceremony/"],
   ["NRI Shopping Timeline", "Understand when to research, measure, approve, produce, inspect, and ship.", "/blog/nri-wedding-planning-timeline/"],
   ["Vendor Red Flags", "Review evidence, payment, product, customization, and shipping risks before ordering.", "/avoid-indian-wedding-shopping-scams/"],

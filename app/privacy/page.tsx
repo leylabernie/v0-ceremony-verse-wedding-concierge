@@ -109,6 +109,7 @@ export default function PrivacyPage() {
 
         <section className={sectionClass}>
           <h2 className={headingClass}>6. Your choices and requests</h2>
+          <p className={paragraphClass}>The guest logistics checklist signup stores your email address, request time and consent record for up to 90 days. The requested resource is emailed through Resend. The optional three-part planning series begins only after email confirmation; its signed unsubscribe link stops future messages in that series. A message already being delivered may still arrive. A resource request does not book a consultation or enrol you in other marketing lists.</p>
           <p className={paragraphClass}>
             Depending on where you live and which law applies, you may have rights to ask about, access, correct,
             delete, restrict, or object to certain uses of your personal information. You may also withdraw a marketing

@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server"
 import { createConsultationRequestStateStore } from "@/lib/consultation-request-state.mjs"
 import { sendNurtureMessage } from "@/lib/consultation-nurture"
 
+import { processChecklistWelcome } from "@/lib/checklist-delivery"
+
 export const runtime = "nodejs"
 export const maxDuration = 60
 
@@ -18,6 +20,7 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    const checklist = await processChecklistWelcome().catch(() => ({ processed: 0, sent: 0, available: false }))
     const dueStates = await consultationRequestStateStore.claimDueNurture({ limit: 6 })
     const results = await Promise.all(
       dueStates.map(async (state: { requestId: string; nurtureStep?: number }) => {
@@ -36,7 +39,7 @@ export async function GET(request: NextRequest) {
       }),
     )
 
-    return NextResponse.json({ success: true, processed: results.length, sent: results.filter((result) => result.sent).length })
+    return NextResponse.json({ success: true, checklist, processed: results.length, sent: results.filter((result) => result.sent).length })
   } catch {
     return NextResponse.json({ success: false, error: "Nurture processing is temporarily unavailable." }, { status: 503 })
   }
