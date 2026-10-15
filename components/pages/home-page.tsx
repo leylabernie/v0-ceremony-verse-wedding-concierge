@@ -248,9 +248,9 @@ export function HomePage() {
               Gujarati &amp; Hindu destination weddings in Mexico, Jamaica, and Punta Cana
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Bring the celebration your family is picturing. Mini keeps the next decisions, family handoffs, and
-              wedding-week information clear, with a Mexico City-based destination team for the local and on-site scope
-              defined in writing for your wedding.
+              Plan your multi-day celebration with Mini: compare resort proposals, organize Gujarati and Hindu
+              ceremonies, and keep guest travel and family decisions connected. Start with a free 30-minute call
+              about your dates, guest count, and biggest planning question.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -259,7 +259,14 @@ export function HomePage() {
               >
                 Request Free Consultation
               </Link>
-              <ChatWithMinisAssistantButton variant="light" source="homepage-hero" className="px-7 py-4" />
+              <a
+                href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20a%20free%20wedding%20consultation.%20Wedding%20timeframe%3A%20__.%20Destination%3A%20__.%20Estimated%20guests%3A%20__.%20My%20main%20question%3A%20__."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                WhatsApp Mini Directly
+              </a>
               <Link
                 href="/before-signing-indian-wedding-resort-proposal/"
                 className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -285,6 +292,23 @@ export function HomePage() {
             <p>Gujarati &amp; Hindu focus</p>
             <p>Local scope defined in writing</p>
             <p>United States &amp; Canada family support</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="first-call-heading" className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-12 sm:py-16">
+        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Your next step</p>
+            <h2 id="first-call-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Choosing a resort or unsure where to start?</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">Bring your destination ideas or a resort proposal to your free 30-minute consultation. We will discuss your ceremony needs, guest arrangements, and budget questions, then identify the next planning step for your family.</p>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Still deciding on dates? That is fine. You can message Mini directly without filling out a form.</p>
+          </div>
+          <div className="rounded-2xl border border-[#d9cfbf] bg-white p-6 sm:p-8">
+            <h3 className="font-serif text-2xl font-semibold">Talk to Mini about your wedding</h3>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Share your wedding timeframe, destination ideas, and approximate guest count. No payment or contract is required for the first call.</p>
+            <Link href="/contact/?service=mexico&from=homepage-first-call" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Request My Free Consultation</Link>
+            <a href="tel:+12153419990" className="mt-4 block text-center text-sm font-semibold text-[#7a6841] underline underline-offset-4">Or call Mini: +1 (215) 341-9990</a>
           </div>
         </div>
       </section>

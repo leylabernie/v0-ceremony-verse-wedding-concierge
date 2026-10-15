@@ -373,6 +373,15 @@ export function ContactPage() {
             Share four essentials below, then choose WhatsApp, phone, or email to arrange your consultation. The
             remaining planning questions arrive automatically by email so registration stays short.
           </p>
+          <div className="mx-auto mt-7 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-white p-6">
+            <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Prefer to speak with Mini directly?</h2>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">You can request your free consultation by WhatsApp or phone. No registration is needed for this option; share your timeframe and the question you want help with.</p>
+            <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
+              <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">WhatsApp Mini Directly</a>
+              <a href="tel:+12153419990" className="rounded-full border border-[#7a6841] px-6 py-3.5 text-sm font-semibold text-[#7a6841]">Call +1 (215) 341-9990</a>
+            </div>
+            <a href="#consultation-form" className="mt-4 inline-block text-sm font-semibold text-[#7a6841] underline underline-offset-4">Prefer email? Use the short request form below</a>
+          </div>
           <ol className="mx-auto mt-8 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
             <li className="rounded-2xl border border-[#e6dfd5] bg-white p-5">
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">1 · Register</span>
@@ -398,7 +407,7 @@ export function ContactPage() {
       </section>
 
       <section className="px-6 pb-28">
-        <form onSubmit={handleSubmit} className="mx-auto max-w-3xl">
+        <form id="consultation-form" onSubmit={handleSubmit} className="mx-auto max-w-3xl">
           <div className="rounded-3xl border border-[#e6dfd5] bg-white p-6 shadow-sm sm:p-10">
             <div className="absolute -left-[9999px]" aria-hidden="true">
               <label htmlFor="website">Website</label>
