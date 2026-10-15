@@ -79,12 +79,12 @@ export function GlobalFooter() {
                 WhatsApp or call +1 (215) 341-9990
               </a>
               <a
-                href="https://www.instagram.com/glamourindianwear4u/"
+                href="https://www.instagram.com/ceremonyverseweddings/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}
               >
-                Follow @glamourindianwear4u on Instagram
+                Follow @ceremonyverseweddings on Instagram
               </a>
               <a
                 href="https://www.trustpilot.com/review/ceremonyverse.com"

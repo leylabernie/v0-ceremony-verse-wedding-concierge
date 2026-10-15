@@ -79,7 +79,7 @@ export const AUTHOR_PERSON = {
   worksFor: { "@id": `${SITE_URL}#organization` },
   knowsAbout: AUTHOR_KNOWS_ABOUT,
   sameAs: [
-    "https://www.instagram.com/glamourindianwear4u/",
+    "https://www.instagram.com/ceremonyverseweddings/",
     "https://wa.me/12153419990",
   ],
   address: {
@@ -420,7 +420,7 @@ export function buildLocalBusinessSchema(): object {
     priceRange: "$300 feasibility plan; planning services from $4,000 USD",
     sameAs: [
       "https://wa.me/12153419990",
-      "https://www.instagram.com/glamourindianwear4u/",
+      "https://www.instagram.com/ceremonyverseweddings/",
       // Booking portal — apex-canonical. Declaring it in sameAs tells crawlers
       // and AI scrapers that both domains are one business identity.
       "https://ceremonyversetravel.com",
@@ -537,7 +537,7 @@ export function buildOrganizationSchema(): object {
     },
     sameAs: [
       "https://wa.me/12153419990",
-      "https://www.instagram.com/glamourindianwear4u/",
+      "https://www.instagram.com/ceremonyverseweddings/",
       // Booking portal — apex-canonical, same business identity as the main site.
       "https://ceremonyversetravel.com",
     ],
