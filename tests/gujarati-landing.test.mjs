@@ -25,8 +25,8 @@ test("the page keeps a concise snippet and identifies the maintained Instagram p
     landingPage,
     /Plan a Gujarati destination wedding in Mexico with Mini: clarify family decisions, resort questions, guest needs, and written provider handoffs\./,
   )
-  assert.match(seoHelpers, /https:\/\/www\.instagram\.com\/glamourindianwear4u\//)
-  assert.match(footer, /Follow @glamourindianwear4u on Instagram/)
+  assert.match(seoHelpers, /https:\/\/www\.instagram\.com\/ceremonyverseweddings\//)
+  assert.match(footer, /Follow @ceremonyverseweddings on Instagram/)
   assert.doesNotMatch(seoHelpers, /https:\/\/www\.instagram\.com\/ceremonyverse\//)
 })
 
