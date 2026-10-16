@@ -14,9 +14,9 @@ import {
 
 export const metadata = buildMetadata({
   path: "/indian-destination-wedding-planner-mexico/",
-  title: "Indian Destination Wedding Planner in Mexico | Packages",
+  title: "Indian Wedding Planner Mexico | Cancun & Riviera Maya",
   description:
-    "Gujarati and Hindu wedding planning in Mexico. Compare $4,000, $5,500 and $8,000+ planning packages, or start with an optional $300 Feasibility Plan. Free first call.",
+    "Plan your Gujarati or Hindu wedding in Cancun or Riviera Maya. Compare resorts, ceremonies and guest logistics. Planning from $4,000. Free 30-minute call.",
   keywords:
     "Indian destination wedding Mexico, Indian wedding Cancun, Indian wedding Riviera Maya, South Asian wedding resort Mexico, Indian wedding Mexico cost, Cancun wedding planning guide",
 });
@@ -167,7 +167,7 @@ export default function MexicoDestinationGuidePage() {
             Your Indian destination wedding planner in Mexico
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#e8dfd2] md:text-xl">
-            CeremonyVerse helps U.S. and Canadian Gujarati and Hindu families plan multi-day weddings in Mexico, from Mehndi and Haldi to Sangeet, Baraat, Pheras, and reception. Planning services start at $4,000; begin with a free 30-minute consultation or an optional $300 written Feasibility Plan.
+            Plan your Cancun or Riviera Maya wedding with one central contact for your family. CeremonyVerse helps U.S. and Canadian Gujarati and Hindu families coordinate resort comparisons, guest information and celebrations—from Mehndi and Haldi to Sangeet, Baraat, Pheras and reception. Planning services start at $4,000.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -176,13 +176,20 @@ export default function MexicoDestinationGuidePage() {
             >
               Request a Free 30-Minute Consultation
             </Link>
-            <Link
-              href="/planning-tools/"
+            <a
+              href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20am%20planning%20an%20Indian%20wedding%20in%20Mexico%20and%20would%20like%20a%20free%2030-minute%20consultation.%20Dates%3A%20__.%20Guests%3A%20__.%20Resorts%20considered%3A%20__."
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-lg border-2 border-[#c5a059] px-8 py-4 text-lg font-bold text-white"
             >
-              Use Free Wedding Calculators
-            </Link>
+              WhatsApp Mini Directly
+            </a>
           </div>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#e8dfd2]">
+            Your first 30-minute call is free. Bring your preferred dates, estimated guest count
+            and any resort proposal. We will discuss your celebrations, planning priorities
+            and the next step that fits your family. You can contact Mini on WhatsApp without registering.
+          </p>
         </div>
       </section>
 
