@@ -61,8 +61,29 @@ const SERP_TITLE_OVERRIDES: Record<string, string> = {
 
 const SERP_DESCRIPTION_OVERRIDES: Record<string, string> = {
   "/": "Plan a multi-day Gujarati or Hindu destination wedding in Mexico, Jamaica, or Punta Cana with clear proposal comparisons, budgets, and family coordination.",
+  "/about/": "Learn how CeremonyVerse combines firsthand family destination-wedding experience in Mexico with transparent fee-only planning and India wardrobe coordination.",
+  "/blog/author/mini/": "Destination-wedding and India-sourcing guides written by Mini Patel, founder of CeremonyVerse — grounded in three family weddings in Mexico.",
+  "/blog/hidden-resort-fees-4-day-indian-wedding-cancun/": "Private-event minimums, outside-vendor fees, production charges, day passes, and taxes that a 4-day Indian wedding in Cancún adds beyond the base room rate.",
+  "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/": "Evaluate seller claims, Silk Mark documentation, fiber and zari representations, landed costs, and delivery terms when sourcing Kanchipuram sarees from India.",
   "/blog/how-to-take-lehenga-measurements-at-home/": "Step-by-step at-home lehenga and blouse measurement guide for NRI brides ordering custom Indian wedding outfits remotely from India to the USA or Canada.",
+  "/blog/indian-wedding-catering-mexico-all-inclusive-resorts/": "How Mexico all-inclusive resort kitchens handle Gujarati, Jain, and Hindu wedding menus, outside-chef policies, tastings, and per-event catering fees.",
+  "/blog/south-asian-destination-wedding-guide/": "How to structure multi-day room blocks at all-inclusive resorts in Mexico and the Caribbean for Gujarati and Hindu weddings, concessions, and event venues.",
+  "/buy-bridal-lehenga-from-india-usa/": "Research a bridal lehenga from India with live video review, guided measurements, written approvals, and tracked delivery across the USA and Canada.",
+  "/buy-indian-wedding-outfits-from-india/": "Coordinate Indian wedding outfits from India with vendor research, live video review, guided measurements, written approvals, and US/Canada delivery.",
+  "/contact/": "Request a free 30-minute consultation for Gujarati or Hindu destination-wedding planning in Mexico, Jamaica, or Punta Cana — plus optional India sourcing.",
+  "/costs/": "Real cost breakdowns, resort room-block minimums, outside-vendor fees, and India outfit customs rules for South Asian destination weddings in Mexico.",
+  "/destination-decision-map/": "Use a free three-part planning map to clarify guest needs, multi-day celebration priorities, and your next destination decision across Mexico and Punta Cana.",
+  "/destination-wedding-feasibility-plan/": "Turn your guest count, events, working budget, and resort quotes into a written destination-wedding action plan for Mexico, Jamaica, or Punta Cana.",
+  "/destinations/": "Compare Cancún, Riviera Maya, Los Cabos, Jamaica, and Punta Cana for a multi-day Gujarati or Hindu destination wedding, room blocks, and Indian catering.",
+  "/nri-gujarati-wedding-legal-requirements-mexico/": "Civil vs. religious Hindu wedding rules in Mexico: paperwork, witnesses, apostilles, timelines, and why most NRI couples sign legally at home first.",
   "/planning-tools/baraat-event-planner/": "Free multi-day Baraat, Haldi, Mehndi, Garba/Sangeet, Mandap ceremony, and reception logistics planner for Gujarati and Hindu destination weddings.",
+  "/planning-tools/budget/": "Estimate your Indian destination-wedding budget using real published resort package rates and per-guest costs across Mexico, Jamaica, and Punta Cana.",
+  "/planning-tools/guest-logistics/": "Calculate guest room nights, family-paid VIP suites, airport transfers, and welcome-bag costs for an Indian destination wedding in Mexico or the Caribbean.",
+  "/planning-tools/room-block-matrix/": "Turn your guest count, elder-accessibility needs, and single-vs-family mix into a room-block breakdown with lobby-level suites and King vs. Double counts.",
+  "/real-weddings/": "First-person accounts and honest lessons from three multi-day family Indian destination weddings in Mexico across Cancún, Costa Mujeres, and Riviera Maya.",
+  "/resorts/": "Independent resort profiles for Gujarati and Hindu destination weddings in Cancún, Riviera Maya, Los Cabos, and Punta Cana — packages, kitchens, and venues.",
+  "/resorts/lopesan-costa-bavaro-indian-wedding/": "Plan an Indian wedding at Lopesan Costa Bávaro in Punta Cana with published package tiers, multi-event venues, outside-catering rules, and room-block tips.",
+  "/resorts/moon-palace-cancun-indian-wedding/": "Plan an Indian wedding at Moon Palace Cancún with published package rates, in-house Indian kitchen details, room-block concessions, and Mandap venues.",
 }
 
 export function resolveContextualImage(normalizedPath: string, explicitImage?: string): string {
@@ -147,7 +168,11 @@ export function formatSerpDescription(rawDesc: string, normalizedPath?: string):
   }
 
   const lastSpace = window.lastIndexOf(" ")
-  const base = (lastSpace >= 100 ? window.slice(0, lastSpace) : window)
+  let base = (lastSpace >= 100 ? window.slice(0, lastSpace) : window)
+    .replace(/[,;:\-—–|&]+$/, "")
+    .trim()
+  base = base
+    .replace(/\b(and|or|with|for|to|in|of|by|from|at|on|into|across|including|between|through|without|beyond|the|a|an|is|are|vs\.?|when|that|which)\s*$/i, "")
     .replace(/[,;:\-—–|&]+$/, "")
     .trim()
   return base.endsWith(".") ? base : `${base}.`
