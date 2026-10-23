@@ -26,6 +26,133 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/proof/family-destination-baa
 // favicon/browser icons remain SVG and are unchanged.
 export const BRAND_LOGO_URL = `${SITE_URL}/assets/brand/ceremonyverse-logo-512.png`
 
+const BRAND_SUFFIX = ` | ${SITE_NAME}`
+const MAX_SERP_TITLE_LENGTH = 60
+const MAX_SERP_DESCRIPTION_LENGTH = 158
+
+const SERP_TITLE_OVERRIDES: Record<string, string> = {
+  "/": "Gujarati & Hindu Destination Weddings — Mexico & Caribbean",
+  "/avoid-indian-wedding-shopping-scams/": "Avoid Indian Wedding Shopping Scams — NRI Buyer Guide",
+  "/blog/author/mini/": "Articles by Mini Patel — Founder",
+  "/blog/custom-sherwani-sizing-guide-india-usa/": "Custom Sherwani Sizing Guide — India to USA Fit Checklist",
+  "/blog/how-to-buy-bridal-lehenga-from-india-usa/": "How to Buy a Bridal Lehenga from India to USA (Guide)",
+  "/blog/indian-wedding-outfit-checklist-every-ceremony/": "Indian Wedding Outfit Checklist: Every Ceremony Guide",
+  "/blog/indian-wedding-outfit-scams-nri-brides/": "10 Remote Indian Wedding Outfit Risks & Buyer Checklist",
+  "/blog/nri-wedding-planning-timeline/": "NRI Wedding Outfit Timeline: 12-Month Ordering Checklist",
+  "/blog/shipping-indian-wedding-outfits-usa-customs-duties/": "Shipping Indian Wedding Outfits to USA: Customs & Duties",
+  "/blog/south-asian-destination-wedding-guide/": "South Asian Destination Wedding Room Blocks Guide",
+  "/destination-decision-map/": "Destination Wedding Decision Map — Mexico & Caribbean",
+  "/guest-logistics-gift-checklist/": "Indian Wedding Guest Logistics & Gift Checklist",
+  "/gujarati-destination-wedding-planning-toronto/": "Gujarati Destination Wedding Planning — Toronto & GTA",
+  "/groomsmen-outfit-coordination-new-jersey/": "Groomsmen Outfit Coordination from India — New Jersey",
+  "/how-to-buy-bridal-lehenga-from-india-to-usa/": "How to Buy a Bridal Lehenga from India to USA & Canada",
+  "/indian-wedding-guest-outfits-usa/": "Indian Wedding Guest Outfits — Sourced from India to USA",
+  "/kanchipuram-silk-sarees-usa/": "Buy Kanchipuram Silk Sarees from India — USA Delivery",
+  "/mehndi-outfits-usa/": "Mehndi Ceremony Outfits — Sourced from India to USA",
+  "/nri-gujarati-wedding-planning-guide/": "NRI Gujarati Wedding Planning Guide — Mexico & Caribbean",
+  "/nri-gujarati-wedding-timeline-12-months/": "NRI Gujarati Wedding Timeline — 12-Month Checklist",
+  "/planning-tools/resort-comparison/": "Destination Wedding Resort Proposal Comparison Tool",
+  "/real-weddings/": "Three Family Weddings in Mexico — Honest Lessons Learned",
+  "/resorts/": "Indian Destination Wedding Resort Profiles & Packages",
+  "/sangeet-outfits-usa/": "Sangeet Ceremony Outfits — Sourced from India to USA",
+  "/services/bridal-lehengas/": "Bridal Lehenga Sourcing Service — Custom from India",
+  "/south-asian-destination-wedding-planning-new-york/": "South Asian Destination Wedding Planning — New York",
+}
+
+const SERP_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  "/": "Plan a multi-day Gujarati or Hindu destination wedding in Mexico, Jamaica, or Punta Cana with clear proposal comparisons, budgets, and family coordination.",
+  "/blog/how-to-take-lehenga-measurements-at-home/": "Step-by-step at-home lehenga and blouse measurement guide for NRI brides ordering custom Indian wedding outfits remotely from India to the USA or Canada.",
+  "/planning-tools/baraat-event-planner/": "Free multi-day Baraat, Haldi, Mehndi, Garba/Sangeet, Mandap ceremony, and reception logistics planner for Gujarati and Hindu destination weddings.",
+}
+
+export function resolveContextualImage(normalizedPath: string, explicitImage?: string): string {
+  if (explicitImage) {
+    return explicitImage.startsWith("http")
+      ? explicitImage
+      : `${SITE_URL}${explicitImage.startsWith("/") ? "" : "/"}${explicitImage}`
+  }
+
+  const p = normalizedPath.toLowerCase()
+  if (p.includes("kanchipuram")) return `${SITE_URL}/images/sourcing/kanchipuram-saree.webp`
+  if (p.includes("banarasi")) return `${SITE_URL}/images/kanchipuram-gold-tissue.jpg`
+  if (p.includes("groomsmen")) return `${SITE_URL}/images/sourcing/groomsmen-lavender.webp`
+  if (p.includes("sherwani") || p.includes("baraat-outfits")) return `${SITE_URL}/images/groom-hero.webp`
+  if (p.includes("bridesmaid")) return `${SITE_URL}/images/services-bridesmaids.webp`
+  if (p.includes("jewelry")) return `${SITE_URL}/images/services-jewelry-real.webp`
+  if (p.includes("return-gifts") || p.includes("guest-logistics") || p.includes("welcome")) {
+    return `${SITE_URL}/images/services-welcomebags.webp`
+  }
+  if (p.includes("shipping") || p.includes("customs") || p.includes("tariff") || p.includes("scam") || p.includes("measurement") || p.includes("ordering")) {
+    return `${SITE_URL}/images/live-video-shopping-india.webp`
+  }
+  if (p.includes("lehenga") || p.includes("bridal") || p.includes("haldi") || p.includes("mehndi") || p.includes("sangeet") || p.includes("reception-outfits") || p.includes("outfits") || p.includes("shopping")) {
+    return `${SITE_URL}/images/hero-lehenga.webp`
+  }
+  if (p.includes("/resorts/") || p.includes("/destinations/") || p.includes("/guides/") || p.includes("room-block") || p.includes("feasibility") || p.includes("proposal")) {
+    return `${SITE_URL}/images/proof/family-wedding-mandap-couple.webp`
+  }
+  return DEFAULT_OG_IMAGE
+}
+
+export function formatSerpTitle(rawTitle: string, normalizedPath?: string): Metadata["title"] {
+  const override = normalizedPath ? SERP_TITLE_OVERRIDES[normalizedPath] : undefined
+  const cleaned = (override ?? rawTitle)
+    .replace(/\s*[|—–-]\s*CeremonyVerse\s*$/i, "")
+    .replace(/\s+/g, " ")
+    .trim()
+
+  if (!cleaned) return SITE_NAME
+
+  if (cleaned.length + BRAND_SUFFIX.length <= MAX_SERP_TITLE_LENGTH) {
+    return cleaned
+  }
+
+  if (cleaned.length <= MAX_SERP_TITLE_LENGTH) {
+    return { absolute: cleaned }
+  }
+
+  for (const sep of [" — ", " – ", " | ", ": "]) {
+    const idx = cleaned.indexOf(sep)
+    if (idx >= 28 && idx <= MAX_SERP_TITLE_LENGTH) {
+      return { absolute: cleaned.slice(0, idx).trim() }
+    }
+  }
+
+  const cut = cleaned.slice(0, MAX_SERP_TITLE_LENGTH + 1)
+  const lastSpace = cut.lastIndexOf(" ")
+  const trimmed = (lastSpace >= 30 ? cut.slice(0, lastSpace) : cleaned.slice(0, MAX_SERP_TITLE_LENGTH))
+    .replace(/[,;:\-—–|&]+$/, "")
+    .trim()
+  return { absolute: trimmed }
+}
+
+export function formatSerpDescription(rawDesc: string, normalizedPath?: string): string {
+  const source = (normalizedPath && SERP_DESCRIPTION_OVERRIDES[normalizedPath])
+    ? SERP_DESCRIPTION_OVERRIDES[normalizedPath]
+    : rawDesc
+  const cleaned = source.replace(/\s+/g, " ").trim()
+  if (cleaned.length <= MAX_SERP_DESCRIPTION_LENGTH) {
+    return cleaned
+  }
+
+  const window = cleaned.slice(0, MAX_SERP_DESCRIPTION_LENGTH - 1)
+  const sentenceEnd = Math.max(window.lastIndexOf(". "), window.lastIndexOf("; "))
+  if (sentenceEnd >= 105) {
+    return window.slice(0, sentenceEnd + 1).trim()
+  }
+
+  const clauseEnd = Math.max(window.lastIndexOf(", "), window.lastIndexOf(" — "), window.lastIndexOf(" – "))
+  if (clauseEnd >= 115) {
+    return `${window.slice(0, clauseEnd).trim()}.`
+  }
+
+  const lastSpace = window.lastIndexOf(" ")
+  const base = (lastSpace >= 100 ? window.slice(0, lastSpace) : window)
+    .replace(/[,;:\-—–|&]+$/, "")
+    .trim()
+  return base.endsWith(".") ? base : `${base}.`
+}
+
 // ───────────────────────────────────────────────────────────────────────────
 // AUTHOR ENTITY — Mini (Bhamini)
 // ───────────────────────────────────────────────────────────────────────────
@@ -180,23 +307,22 @@ interface BuildMetadataOpts {
 export function buildMetadata(opts: BuildMetadataOpts): Metadata {
   const normalizedPath = opts.path === "/" ? "/" : opts.path.replace(/\/$/, "") + "/"
   const canonical = `${SITE_URL}${normalizedPath}`
-  const image = opts.image
-    ? opts.image.startsWith("http")
-      ? opts.image
-      : `${SITE_URL}${opts.image.startsWith("/") ? "" : "/"}${opts.image}`
-    : DEFAULT_OG_IMAGE
+  const image = resolveContextualImage(normalizedPath, opts.image)
+  const serpTitle = formatSerpTitle(opts.title, normalizedPath)
+  const serpDescription = formatSerpDescription(opts.description, normalizedPath)
   const ogType = opts.ogType ?? (opts.publishedTime ? "article" : "website")
 
   return {
-    title: opts.title,
-    description: opts.description,
+    title: serpTitle,
+    description: serpDescription,
+    ...(opts.keywords ? { keywords: opts.keywords } : {}),
     alternates: {
       canonical,
       ...(opts.alternates?.languages ? { languages: opts.alternates.languages } : {}),
     },
     openGraph: {
       title: opts.title,
-      description: opts.description,
+      description: serpDescription,
       url: canonical,
       siteName: SITE_NAME,
       locale: "en_US",
@@ -220,7 +346,7 @@ export function buildMetadata(opts: BuildMetadataOpts): Metadata {
     twitter: {
       card: "summary_large_image",
       title: opts.title,
-      description: opts.description,
+      description: serpDescription,
       images: [image],
     },
     ...(opts.noIndex ? { robots: { index: false, follow: false } } : {}),
@@ -269,11 +395,8 @@ export function buildBlogPosting(opts: {
   keywords?: string[]
 }): object {
   const url = opts.url.startsWith("http") ? opts.url : `${SITE_URL}${opts.url}`
-  const image = opts.image
-    ? opts.image.startsWith("http")
-      ? opts.image
-      : `${SITE_URL}${opts.image}`
-    : DEFAULT_OG_IMAGE
+  const urlPath = url.replace(SITE_URL, "") || "/"
+  const image = resolveContextualImage(urlPath, opts.image)
 
   return {
     "@context": "https://schema.org",
@@ -306,17 +429,21 @@ export function buildServiceSchema(opts: {
   name: string
   description: string
   url: string
+  image?: string
   category?: string
   offers?: { name: string; price: number; description?: string }[]
   areaServed?: string | string[]
 }): object {
   const url = opts.url.startsWith("http") ? opts.url : `${SITE_URL}${opts.url}`
+  const urlPath = url.replace(SITE_URL, "") || "/"
+  const image = resolveContextualImage(urlPath, opts.image)
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     name: opts.name,
     description: opts.description,
     url,
+    image,
     // Pure @id reference to the global ProfessionalService node (#business)
     // emitted by the root layout — avoids declaring a second, conflicting
     // node with the same @id.

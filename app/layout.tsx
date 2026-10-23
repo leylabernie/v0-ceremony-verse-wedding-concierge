@@ -38,11 +38,11 @@ export const metadata = {
   metadataBase: new URL("https://www.ceremonyverse.com"),
   title: {
     default:
-      "Gujarati & Hindu Destination Wedding Planning | CeremonyVerse",
+      "Gujarati & Hindu Wedding Planning | CeremonyVerse",
     template: "%s | CeremonyVerse",
   },
   description:
-    "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family coordination, guest logistics, and optional India wedding sourcing for families across the USA and Canada.",
+    "Gujarati and Hindu destination-wedding planning across Mexico, Jamaica, and Punta Cana, with family coordination, guest logistics, and India sourcing.",
   // Default robots: index + follow with generous snippet/image previews.
   // Pages that need noindex (thank-you, not-found, internal-resources) override this.
   robots: {
@@ -154,7 +154,37 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
               window.gtag('js', new Date());
-              window.gtag('config', GA_ID);
+              window.gtag('config', GA_ID, {
+                linker: {
+                  domains: ['ceremonyverse.com', 'www.ceremonyverse.com', 'ceremonyversetravel.com'],
+                  accept_incoming: true
+                }
+              });
+
+              document.addEventListener('click', function(e) {
+                var el = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+                if (!el || !window.gtag) return;
+                var href = el.getAttribute('href') || '';
+                if (href.indexOf('ceremonyversetravel.com') !== -1) {
+                  window.gtag('event', 'travel_portal_click', {
+                    event_category: 'cross_domain_funnel',
+                    link_url: href,
+                    source_page: window.location.pathname
+                  });
+                } else if (href.indexOf('wa.me/') !== -1) {
+                  window.gtag('event', 'whatsapp_click', {
+                    event_category: 'lead_intent',
+                    link_url: href,
+                    source_page: window.location.pathname
+                  });
+                } else if (href.indexOf('tel:') === 0) {
+                  window.gtag('event', 'phone_click', {
+                    event_category: 'lead_intent',
+                    link_url: href,
+                    source_page: window.location.pathname
+                  });
+                }
+              }, { passive: true });
 
               function loadGA() {
                 if (loaded) return;
