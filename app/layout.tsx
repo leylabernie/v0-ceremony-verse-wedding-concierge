@@ -202,8 +202,8 @@ export default function RootLayout({
         <AcquisitionAttribution />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Mexico, Jamaica &amp; Punta Cana planning · Serving families across the USA &amp; Canada</span>
-          <span className="lg:hidden">Mexico, Jamaica &amp; Punta Cana planning</span>
+          <span className="hidden lg:inline">Founding Families: first five wedding families at founder rates — 3 of 5 spots remain · Mexico, Jamaica &amp; Punta Cana planning</span>
+          <span className="lg:hidden">Founding Families: 3 of 5 founder-rate spots remain</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <Link href="/contact/?from=announcement-bar">Request Free Consultation</Link>
         </div>

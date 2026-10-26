@@ -114,6 +114,16 @@ const faqs = [
     answer:
       "Yes. India sourcing is an optional separate service for couples and families who need it. Destination planning stands on its own, and any sourcing scope and outside product or shipping costs are shown separately in writing.",
   },
+  {
+    question: "Why should I book a new company for the most important party of my life?",
+    answer:
+      "You should only do it through the Founding Families structure — discounted fee, the founder personally planning, and written scope. If the discount is gone, the trade-off is gone too, and the honest answer is that an established planner may be the better buy. We would rather tell you that than pretend the trade-off doesn't exist.",
+  },
+  {
+    question: "Are the photos on this site from real CeremonyVerse weddings?",
+    answer:
+      "Today, the event photography on this site is from the family wedding Mini planned — labeled as such everywhere it appears, because that wedding is the company's origin, not its client list. Founding Family weddings will replace it over the coming year, with each family's written permission. We will never pass off a stock photo or someone else's wedding as client work.",
+  },
 ]
 
 const roleBoundaries = [
@@ -202,7 +212,7 @@ const weddingWeekMoments = [
     description: "The early questions—arrivals, room timing, welcome details, family groupings, and the first shared evening—shape the ease of the entire weekend.",
     src: "/images/proof/family-destination-baarat.webp",
     alt: "Family members celebrating at a destination wedding in Mexico",
-    note: "Family wedding in Mexico · shared as inspiration, not a CeremonyVerse client event.",
+    note: "Mini's family wedding in Mexico — the baraat that started CeremonyVerse.",
     position: "object-[58%_center]",
   },
   {
@@ -211,7 +221,7 @@ const weddingWeekMoments = [
     description: "Family and officiant authority stay where they belong while timing, venue needs, guest movement, and on-site responsibilities become clear around each moment.",
     src: "/images/proof/family-wedding-mandap-couple.webp",
     alt: "Couple beneath a floral mandap at a family destination wedding in Mexico",
-    note: "Family wedding in Mexico · shared as inspiration, not a CeremonyVerse client event.",
+    note: "Mini's family wedding in Mexico — the mandap moment that inspired the process used today.",
     position: "object-[center_35%]",
   },
   {
@@ -248,9 +258,10 @@ export function HomePage() {
               Gujarati &amp; Hindu destination weddings in Mexico, Jamaica, and Punta Cana
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
-              Plan your multi-day celebration with Mini: compare resort proposals, organize Gujarati and Hindu
-              ceremonies, and keep guest travel and family decisions connected. Start with a free 30-minute call
-              about your dates, guest count, and biggest planning question.
+              Plan your multi-day celebration with someone who has actually done it: Mini planned her
+              own family&apos;s four-day Gujarati wedding in Riviera Maya — every resort proposal, every
+              ceremony, every guest — and now does the same for families across the USA and Canada.
+              Start with a free 30-minute call about your dates, guest count, and biggest planning question.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
@@ -284,13 +295,12 @@ export function HomePage() {
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-6">
         <div className="mx-auto max-w-6xl">
           <p className="mb-5 text-center text-xs leading-5 text-[#6a5b52]">
-            The featured photograph shows a family destination wedding in Mexico that helped shape CeremonyVerse—not
-            a CeremonyVerse client event.
+            The Riviera Maya baraat that started CeremonyVerse — planned end to end by Mini for her own family.
           </p>
           <div className="grid gap-4 text-center text-sm text-[#4d403a] sm:grid-cols-4">
             <p>Mini, one family-facing contact</p>
-            <p>Gujarati &amp; Hindu focus</p>
-            <p>Local scope defined in writing</p>
+            <p>Gujarati &amp; Hindu focus · satvik &amp; Jain catering confirmed in writing</p>
+            <p>Registered Seller of Travel · FL, CA &amp; WA</p>
             <p>United States &amp; Canada family support</p>
           </div>
         </div>
@@ -309,6 +319,31 @@ export function HomePage() {
             <p className="mt-3 text-sm leading-6 text-[#4d403a]">Share your wedding timeframe, destination ideas, and approximate guest count. No payment or contract is required for the first call.</p>
             <Link href="/contact/?service=mexico&from=homepage-first-call" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Request My Free Consultation</Link>
             <a href="tel:+12153419990" className="mt-4 block text-center text-sm font-semibold text-[#7a6841] underline underline-offset-4">Or call Mini: +1 (215) 341-9990</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="founding-families" aria-labelledby="founding-families-heading" className="border-b border-[#e6dfd5] bg-white px-6 py-12 sm:py-16">
+        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">The Founding Families program</p>
+            <h2 id="founding-families-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Being new is why this offer exists. It will not exist next year.</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse is a new company, and that is exactly why this page has an offer on it that will not exist next year.</p>
+            <p className="mt-3 leading-7 text-[#4d403a]">The first five families to book full or partial planning are Founding Families. They receive 25% off the planning fee, and Mini personally handles every detail — no junior coordinators, no handoffs, because there is no one to hand off to. In exchange, each Founding Family agrees to three things: honest feedback in a private session after the wedding, a candid review on Trustpilot or Google (good or bad — we don&apos;t edit them), and permission to photograph their events for this website.</p>
+            <ul className="mt-5 space-y-3 text-sm leading-6 text-[#4d403a]">
+              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>25% off the published planning fee for Full or Partial Planning</span></li>
+              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Mini as your single point of contact from first call to last dance — no team handoffs</span></li>
+              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Private post-wedding feedback session (your complaints shape the company)</span></li>
+              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Event photography featured on this site with a written, revocable consent addendum</span></li>
+            </ul>
+            <p className="mt-4 leading-7 text-[#4d403a]">If you want a planner with fifty weddings behind her, book one — genuinely, they exist and some are excellent. If you want a planner who has lived this wedding once, personally, and will treat yours as the most important file she has — that planner is on this page, and she is discounting for exactly five families.</p>
+          </div>
+          <div className="rounded-2xl border border-[#d9cfbf] bg-[#f4eee4] p-6 sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">3 of 5 spots remaining</p>
+            <h3 className="mt-3 font-serif text-2xl font-semibold">Ask if a Founding Family spot is still open</h3>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">No deposit required to ask. The 25% applies at contract signing, never upfront. If the spots are gone, the published prices on this page are the honest alternative.</p>
+            <Link href="/contact/?service=mexico&from=homepage-founding-families" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Ask About a Founding Family Spot</Link>
+            <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20to%20ask%20about%20a%20Founding%20Family%20spot.%20Wedding%20timeframe%3A%20__.%20Destination%3A%20__.%20Estimated%20guests%3A%20__." target="_blank" rel="noopener noreferrer" className="mt-4 block text-center text-sm font-semibold text-[#7a6841] underline underline-offset-4">Or WhatsApp Mini directly</a>
           </div>
         </div>
       </section>
@@ -333,10 +368,10 @@ export function HomePage() {
       <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Start with the question in front of you</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">The next decision can make the whole plan feel lighter</h2>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Free resources, no email wall</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Steal our homework before you ever pay us</h2>
             <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              You do not need a perfect brief before asking for help. Start where the uncertainty is most present, then move through the rest of the celebration with a clearer view.
+              The complete planning guide, the 12-month timeline, the parents&apos; guide, and the calculators — free, no email wall. If you never hire us, use them anyway. If you do hire us, you&apos;ll already know we do our homework.
             </p>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-3">

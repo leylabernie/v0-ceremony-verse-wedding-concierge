@@ -178,7 +178,16 @@ export function GlobalFooter() {
             Book Resorts & Cruises
           </a>
           <p style={{ fontSize: "11px", color: "#5e4a40", margin: 0 }}>
-            CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of Travel No. FST ST15578.
+            CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc. / OutsideAgents.com. Florida Seller of Travel No. FST ST15578 · California Seller of Travel No. 2090937-50 · Washington UBID No. 603189022.
+          </p>
+        </div>
+        {/* Origin-story disclosure + Founding Families program terms */}
+        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px 16px" }}>
+          <p style={{ fontSize: "11px", color: "#5e4a40", margin: 0 }}>
+            Event photography on this site depicts the family destination wedding in Mexico planned by Mini that inspired CeremonyVerse. It is presented as the company&apos;s origin story and is not presented as a client event. Founding Family events will be featured with written consent as they complete.
+          </p>
+          <p style={{ fontSize: "11px", color: "#5e4a40", margin: "4px 0 0" }}>
+            Founding Families pricing is a limited program for the first five planning contracts; participation terms, including media and review consent, are part of the written planning agreement.
           </p>
         </div>
       </div>
