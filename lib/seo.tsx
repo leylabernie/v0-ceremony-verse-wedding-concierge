@@ -31,7 +31,7 @@ const MAX_SERP_TITLE_LENGTH = 60
 const MAX_SERP_DESCRIPTION_LENGTH = 158
 
 const SERP_TITLE_OVERRIDES: Record<string, string> = {
-  "/": "Gujarati & Hindu Destination Weddings — Mexico & Caribbean",
+  "/": "Indian Destination Wedding Planner — Mexico & Caribbean",
   "/avoid-indian-wedding-shopping-scams/": "Avoid Indian Wedding Shopping Scams — NRI Buyer Guide",
   "/blog/author/mini/": "Articles by Mini Patel — Founder",
   "/blog/custom-sherwani-sizing-guide-india-usa/": "Custom Sherwani Sizing Guide — India to USA Fit Checklist",
@@ -60,7 +60,7 @@ const SERP_TITLE_OVERRIDES: Record<string, string> = {
 }
 
 const SERP_DESCRIPTION_OVERRIDES: Record<string, string> = {
-  "/": "Plan a multi-day Gujarati or Hindu destination wedding in Mexico, Jamaica, or Punta Cana with clear proposal comparisons, budgets, and family coordination.",
+  "/": "Plan your Gujarati or Hindu wedding in Mexico, Jamaica or Punta Cana. Get help with resorts, ceremonies and guest logistics. Free 30-minute consultation.",
   "/about/": "Learn how CeremonyVerse combines firsthand family destination-wedding experience in Mexico with transparent fee-only planning and India wardrobe coordination.",
   "/blog/author/mini/": "Destination-wedding and India-sourcing guides written by Mini Patel, founder of CeremonyVerse — grounded in three family weddings in Mexico.",
   "/blog/hidden-resort-fees-4-day-indian-wedding-cancun/": "Private-event minimums, outside-vendor fees, production charges, day passes, and taxes that a 4-day Indian wedding in Cancún adds beyond the base room rate.",

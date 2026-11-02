@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">CeremonyVerse · Privacy</p>
           <h1 className="mt-4 font-serif text-4xl font-semibold sm:text-6xl">Privacy Notice</h1>
-          <p className="mt-5 text-sm text-white/70">Last updated: September 14, 2026</p>
+          <p className="mt-5 text-sm text-white/70">Last updated: November 1, 2026</p>
         </div>
       </section>
 
@@ -57,9 +57,10 @@ export default function PrivacyPage() {
           <h2 className={headingClass}>2. Website and attribution information</h2>
           <p className={paragraphClass}>
             The website records the landing page, referring page, and campaign parameters associated with a
-            consultation request. Google Analytics is loaded after a visitor first interacts with the site and may
+            consultation request. Google Analytics is loaded after the page becomes interactive and may
             receive device, browser, referral, page, and interaction information under the site&apos;s analytics
-            configuration. Website hosting and security systems may also generate routine request and error logs.
+            configuration. Vercel Web Analytics measures visits to public pages; we remove query strings and
+            fragments from the page URLs sent to it. Website hosting and security systems may also generate routine request and error logs.
           </p>
         </section>
 

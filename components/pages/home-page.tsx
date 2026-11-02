@@ -115,9 +115,9 @@ const faqs = [
       "Yes. India sourcing is an optional separate service for couples and families who need it. Destination planning stands on its own, and any sourcing scope and outside product or shipping costs are shown separately in writing.",
   },
   {
-    question: "Why should I book a new company for the most important party of my life?",
+    question: "What can I expect when planning with CeremonyVerse?",
     answer:
-      "You should only do it through the Founding Families structure — discounted fee, the founder personally planning, and written scope. If the discount is gone, the trade-off is gone too, and the honest answer is that an established planner may be the better buy. We would rather tell you that than pretend the trade-off doesn't exist.",
+      "You work directly with Mini to organize your resort questions, ceremony plans, guest arrangements, and budget decisions. CeremonyVerse is a new company shaped by firsthand family-wedding experience in Mexico. Your written proposal identifies the work included, planning fees, and destination-team responsibilities. Start with a free 30-minute consultation to discuss whether the service fits your wedding.",
   },
   {
     question: "Are the photos on this site from real CeremonyVerse weddings?",
@@ -327,8 +327,8 @@ export function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">The Founding Families program</p>
-            <h2 id="founding-families-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Being new is why this offer exists. It will not exist next year.</h2>
-            <p className="mt-4 leading-7 text-[#4d403a]">CeremonyVerse is a new company, and that is exactly why this page has an offer on it that will not exist next year.</p>
+            <h2 id="founding-families-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Plan your celebration with Mini, from the first questions onward.</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">The Founding Families program offers an introduction to CeremonyVerse with direct founder support and a reduced planning fee. Ask about availability for your destination and dates.</p>
             <p className="mt-3 leading-7 text-[#4d403a]">The first five families to book full or partial planning are Founding Families. They receive 25% off the planning fee, and Mini personally handles every detail — no junior coordinators, no handoffs, because there is no one to hand off to. In exchange, each Founding Family agrees to three things: honest feedback in a private session after the wedding, a candid review on Trustpilot or Google (good or bad — we don&apos;t edit them), and permission to photograph their events for this website.</p>
             <ul className="mt-5 space-y-3 text-sm leading-6 text-[#4d403a]">
               <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>25% off the published planning fee for Full or Partial Planning</span></li>
@@ -336,7 +336,7 @@ export function HomePage() {
               <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Private post-wedding feedback session (your complaints shape the company)</span></li>
               <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Event photography featured on this site with a written, revocable consent addendum</span></li>
             </ul>
-            <p className="mt-4 leading-7 text-[#4d403a]">If you want a planner with fifty weddings behind her, book one — genuinely, they exist and some are excellent. If you want a planner who has lived this wedding once, personally, and will treat yours as the most important file she has — that planner is on this page, and she is discounting for exactly five families.</p>
+            <p className="mt-4 leading-7 text-[#4d403a]">Bring your resort shortlist, guest estimate, and ceremony priorities to a free 30-minute consultation. Mini will help clarify your next planning questions and explain the available service scope before you commit.</p>
           </div>
           <div className="rounded-2xl border border-[#d9cfbf] bg-[#f4eee4] p-6 sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">3 of 5 spots remaining</p>
