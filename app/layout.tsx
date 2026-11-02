@@ -10,6 +10,7 @@ import MobileStickyCTA from "@/components/mobile-sticky-cta";
 import { Navigation } from "@/components/navigation";
 import { GlobalFooter } from "@/components/global-footer";
 import { AcquisitionAttribution } from "@/components/acquisition-attribution";
+import { VisitorAnalytics } from "@/components/visitor-analytics";
 import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
 
 // Build-time font loading via next/font — eliminates the render-blocking
@@ -200,6 +201,7 @@ export default function RootLayout({
           `}
         </Script>
         <AcquisitionAttribution />
+        <VisitorAnalytics />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
           <span className="hidden lg:inline">Founding Families: first five wedding families at founder rates — 3 of 5 spots remain · Mexico, Jamaica &amp; Punta Cana planning</span>
