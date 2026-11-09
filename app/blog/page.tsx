@@ -20,6 +20,12 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "room-to-mandap-wedding-guest-route",
+    title: "From the Guest Room to the Mandap: A Resort Walkthrough for Families",
+    description: "Plan the walk to your destination wedding ceremony with questions about room buildings, shade, seating, carts and a rain backup before you reserve the block.",
+    date: "November 2026",
+  },
+  {
     slug: "south-asian-destination-wedding-guide",
     title: "The South Asian Family Guide to Destination Wedding Room Blocks in Mexico & The Caribbean",
     description: "Multi-day room blocks at all-inclusive resorts: event spaces for five ceremonies, Jain and satvik catering confirmed in writing, and room-block logistics that protect elderly guests.",
