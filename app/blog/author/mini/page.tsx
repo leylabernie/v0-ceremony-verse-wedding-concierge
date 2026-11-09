@@ -29,6 +29,13 @@ const breadcrumbSchema = buildBreadcrumb([
 // so the archive reads chronologically.
 const articles: { slug: string; path: string; title: string; description: string; date: string }[] = [
   {
+    slug: "room-to-mandap-wedding-guest-route",
+    path: "/blog/room-to-mandap-wedding-guest-route/",
+    title: "From the Guest Room to the Mandap: A Resort Walkthrough for Families",
+    description: "Plan the walk to your destination wedding ceremony with questions about room buildings, shade, seating, carts and a rain backup before you reserve the block.",
+    date: "2026-11-09",
+  },
+  {
     slug: "south-asian-destination-wedding-guide",
     path: "/blog/south-asian-destination-wedding-guide/",
     title: "The South Asian Family Guide to Destination Wedding Room Blocks in Mexico & The Caribbean",
