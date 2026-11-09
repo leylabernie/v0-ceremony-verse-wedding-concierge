@@ -204,8 +204,8 @@ export default function RootLayout({
         <VisitorAnalytics />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
-          <span className="hidden lg:inline">Founding Families: first five wedding families at founder rates — 3 of 5 spots remain · Mexico, Jamaica &amp; Punta Cana planning</span>
-          <span className="lg:hidden">Founding Families: 3 of 5 founder-rate spots remain</span>
+          <span className="hidden lg:inline">Founding Families · Ask about planning rates for the first five wedding families</span>
+          <span className="lg:hidden">Ask about Founding Family planning rates</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
           <Link href="/contact/?from=announcement-bar">Request Free Consultation</Link>
         </div>
