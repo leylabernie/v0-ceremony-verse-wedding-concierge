@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
@@ -7,6 +8,27 @@ import {
   destinationNameFromSlug,
   extractDestinationSlug,
 } from "@/lib/widget-config";
+
+function FoundingFamilyInvitation({ calculatorType }: { calculatorType: string }) {
+  return (
+    <div className="mt-5 border-t border-[#e6dfd5] pt-4 print:hidden">
+      <p className="text-sm leading-6 text-[#4d453d]">
+        Planning a destination wedding? Bring your resort proposal to a free 30-minute review with Mini.
+        Eligible Founding Families receive 25% off the published fee for full or partial planning, subject to availability.
+      </p>
+      <Link
+        href={`/contact/?service=mexico&from=${encodeURIComponent(calculatorType)}-founding-family`}
+        onClick={() => trackEvent("calculator_cta_click", { calculator_name: calculatorType, next_step: "founding_family_review" })}
+        className="mt-2 inline-block font-semibold text-[#7a6841] underline underline-offset-4"
+      >
+        Request my free resort proposal review
+      </Link>
+      <Link href="/#founding-families" className="ml-4 inline-block text-sm text-[#7a6841] underline underline-offset-4">
+        Founding Family program details
+      </Link>
+    </div>
+  );
+}
 
 /**
  * Inline lead-capture offer shown AFTER a calculator's results are displayed.
@@ -100,6 +122,7 @@ export function CalculatorLeadCapture({
           Your results and the five questions have been sent. Check your inbox and spam folder.
           Your request has also been passed to Mini.
         </p>
+        <FoundingFamilyInvitation calculatorType={calculatorType} />
       </div>
     );
   }
@@ -174,6 +197,7 @@ export function CalculatorLeadCapture({
           ) : null}
         </div>
       </form>
+      <FoundingFamilyInvitation calculatorType={calculatorType} />
     </div>
   );
 }
