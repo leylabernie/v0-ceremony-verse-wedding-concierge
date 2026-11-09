@@ -310,9 +310,9 @@ export function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Your next step</p>
-            <h2 id="first-call-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Choosing a resort or unsure where to start?</h2>
-            <p className="mt-4 leading-7 text-[#4d403a]">Bring your destination ideas or a resort proposal to your free 30-minute consultation. We will discuss your ceremony needs, guest arrangements, and budget questions, then identify the next planning step for your family.</p>
-            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Still deciding on dates? That is fine. You can message Mini directly without filling out a form.</p>
+            <h2 id="first-call-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">What should you ask before signing a wedding resort proposal?</h2>
+            <p className="mt-4 leading-7 text-[#4d403a]">Bring your resort shortlist or a proposal to a free 30-minute call with Mini. Where can the baraat finish? Who will confirm Jain meals for each event? What happens if relatives book outside the room block? Together, choose the questions your family needs the resort to answer in writing.</p>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Still deciding on dates? <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20we%20are%20comparing%20wedding%20resorts.%20Our%20estimated%20guest%20count%20is%20__.%20Could%20we%20arrange%20a%20call%3F" className="font-semibold underline underline-offset-4">Message Mini on WhatsApp</a> with your approximate guest count.</p>
           </div>
           <div className="rounded-2xl border border-[#d9cfbf] bg-white p-6 sm:p-8">
             <h3 className="font-serif text-2xl font-semibold">Talk to Mini about your wedding</h3>
@@ -339,7 +339,7 @@ export function HomePage() {
             <p className="mt-4 leading-7 text-[#4d403a]">Bring your resort shortlist, guest estimate, and ceremony priorities to a free 30-minute consultation. Mini will help clarify your next planning questions and explain the available service scope before you commit.</p>
           </div>
           <div className="rounded-2xl border border-[#d9cfbf] bg-[#f4eee4] p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">3 of 5 spots remaining</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Founding Family availability</p>
             <h3 className="mt-3 font-serif text-2xl font-semibold">Ask if a Founding Family spot is still open</h3>
             <p className="mt-3 text-sm leading-6 text-[#4d403a]">No deposit required to ask. The 25% applies at contract signing, never upfront. If the spots are gone, the published prices on this page are the honest alternative.</p>
             <Link href="/contact/?service=mexico&from=homepage-founding-families" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Ask About a Founding Family Spot</Link>
