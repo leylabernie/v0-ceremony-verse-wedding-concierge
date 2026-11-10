@@ -143,7 +143,7 @@ const clusters = [
     links: [
       { href: "/gujarati-wedding-outfits-usa/", label: "Gujarati wedding outfits USA" },
       { href: "/blog/gujarati-wedding-outfit-guide/", label: "Gujarati wedding outfit guide — ceremony by ceremony" },
-      { href: "/services/bridal-lehengas/", label: "Bridal lehenga sourcing service" },
+      { href: "/how-to-buy-bridal-lehenga-from-india-to-usa/", label: "Bridal lehenga sourcing service" },
       { href: "/how-to-buy-bridal-lehenga-from-india-to-usa/", label: "How to buy a bridal lehenga from India to the USA — step by step" },
       { href: "/buy-sherwani-from-india-usa/", label: "Buy a sherwani from India to the USA" },
       { href: "/bridesmaid-and-family-outfits-from-india/", label: "Bridesmaid and family outfits from India" },

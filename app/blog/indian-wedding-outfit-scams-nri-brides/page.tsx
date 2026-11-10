@@ -120,7 +120,7 @@ export default function ScamsGuidePage() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>bridal lehenga sourcing from India</Link> — with itemized quotes, eligible live review, and US delivery coordination.
+            Learn more about <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ color: "#7a6841" }}>bridal lehenga sourcing from India</Link> — with itemized quotes, eligible live review, and US delivery coordination.
           </p>
 
           {/* ─── COMMERCIAL CTA — directly connects blog readers to the buying funnel ─── */}
@@ -136,7 +136,7 @@ export default function ScamsGuidePage() {
               Product purchases, vendor terms, shipping, customs, and remedies remain governed by the applicable scope.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Review Bridal Lehenga Sourcing</Link>
+              <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Review Bridal Lehenga Sourcing</Link>
               <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Request a Free 30-Minute Consultation</Link>
               <Link href="/how-it-works/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>How It Works</Link>
             </div>
@@ -159,7 +159,7 @@ export default function ScamsGuidePage() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>
+                <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ color: "#7a6841" }}>
                   How our bridal lehenga sourcing documents item evidence and approvals
                 </Link>
               </li>

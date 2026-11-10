@@ -168,6 +168,14 @@ const posts = [
 ];
 
 const destinationPostSlugs = new Set([
+  "room-to-mandap-wedding-guest-route",
+  "honeymoon-after-destination-wedding-stay-or-switch-resorts",
+  "south-asian-destination-wedding-guide",
+  "indian-destination-wedding-puerto-vallarta",
+  "indian-destination-wedding-mexico-complete-guide",
+  "hidden-resort-fees-4-day-indian-wedding-cancun",
+  "indian-wedding-catering-mexico-all-inclusive-resorts",
+  "nri-wedding-planning-timeline",
   "how-to-plan-gujarati-hindu-destination-wedding-mexico",
   "mexico-or-punta-cana-indian-destination-wedding",
 ])
@@ -176,7 +184,7 @@ const postGroups = [
   {
     id: "destination-planning-guides",
     label: "Destination planning",
-    description: "Mexico, Punta Cana, Gujarati and Hindu planning, room blocks, budgets, and family responsibilities.",
+    description: "Resort comparisons, room blocks, family logistics, ceremony planning and honeymoons.",
     posts: posts.filter((post) => destinationPostSlugs.has(post.slug)),
   },
   {

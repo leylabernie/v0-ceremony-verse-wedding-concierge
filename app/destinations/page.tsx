@@ -29,6 +29,12 @@ const destinations = [
     bestWhen: "The guest map and a property-specific resort or private-venue plan lead the decision.",
   },
   {
+    name: "Puerto Vallarta",
+    href: "/blog/indian-destination-wedding-puerto-vallarta/",
+    summary: "Compare Puerto Vallarta and Riviera Nayarit for your ceremony, guest rooms and airport transfers.",
+    bestWhen: "You are comparing Pacific coast venues for a multi-day celebration.",
+  },
+  {
     name: "Jamaica",
     href: "/destinations/jamaica-indian-wedding/",
     summary: "Compare resort location, airport choice, multi-event spaces, cultural and food requirements, room blocks, and written weather backups.",

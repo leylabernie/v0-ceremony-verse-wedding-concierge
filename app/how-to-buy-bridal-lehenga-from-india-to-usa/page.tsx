@@ -564,10 +564,10 @@ export default function HowToBuyBridalLehengaIndiaToUsaPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               <Link
-                href="/buy-bridal-lehenga-from-india-usa/"
+                href="/pricing/"
                 className="text-[#1f1f1f] hover:text-[#7a6841] transition-colors"
               >
-                Buy a Bridal Lehenga from India — Delivered to USA
+                Compare India sourcing fees
               </Link>
               <span style={{ color: "#c4b8a8" }}>·</span>
               <Link

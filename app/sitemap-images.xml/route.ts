@@ -116,21 +116,6 @@ const imageSitemapEntries: ImageEntry[] = [
     ],
   },
   {
-    url: `${baseUrl}/buy-bridal-lehenga-from-india-usa/`,
-    images: [
-      { src: '/images/hero-lehenga.webp', title: 'Custom Indian bridal lehenga sourced for USA brides' },
-      { src: '/images/bridal-hero.webp', title: 'Traditional bridal lehenga craftsmanship' },
-      { src: '/images/services-bridal-gold.webp', title: 'Gold embroidered bridal lehenga sourced from India' },
-    ],
-  },
-  {
-    url: `${baseUrl}/services/bridal-lehengas/`,
-    images: [
-      { src: '/images/hero-bridal.webp', title: 'Bridal lehenga sourcing concierge for USA and Canada' },
-      { src: '/images/sourcing/lehenga-shop.webp', title: 'Bridal lehenga selection and customization review' },
-    ],
-  },
-  {
     url: `${baseUrl}/lehenga-for-destination-wedding-mexico/`,
     images: [{ src: '/images/sourcing/bride-traditional.webp', title: 'Lightweight bridal lehenga styling for a beach destination wedding' }],
   },
