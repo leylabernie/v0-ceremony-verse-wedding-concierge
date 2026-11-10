@@ -106,7 +106,7 @@ export function CalculatorLeadCapture({
       setStatus("success");
     } catch (failure) {
       setStatus("error");
-      setError(failure instanceof Error ? failure.message : "Please email hello@ceremonyverse.com for help.");
+      setError(failure instanceof Error ? failure.message : "Please email bhamini@ceremonyverse.com for help.");
     }
   }
 

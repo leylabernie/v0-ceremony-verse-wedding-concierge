@@ -202,7 +202,7 @@ export function ConsultationQuestionnairePage() {
       `Wedding timeframe: ${compact(formData.weddingTimeframe)}`,
       "Please let me know the safest way to share any additional planning context. I will not include payment information, identity documents, or private files in this email.",
     ].join("\n\n")
-    return `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+    return `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
       "CeremonyVerse pre-call questionnaire",
     )}&body=${encodeURIComponent(body)}`
   }, [formData])
@@ -220,7 +220,7 @@ export function ConsultationQuestionnairePage() {
     `Service: ${formData.serviceFocus}`,
     "My preferred dates and times are:",
   ].join("\n")
-  const schedulingEmailUrl = `mailto:hello@ceremonyverse.com?subject=${encodeURIComponent(
+  const schedulingEmailUrl = `mailto:bhamini@ceremonyverse.com?subject=${encodeURIComponent(
     "Arrange my CeremonyVerse consultation",
   )}&body=${encodeURIComponent(schedulingEmailMessage)}`
 

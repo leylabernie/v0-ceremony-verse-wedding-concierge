@@ -20,6 +20,12 @@ const breadcrumbSchema = buildBreadcrumb([
 
 const posts = [
   {
+    slug: "honeymoon-after-destination-wedding-stay-or-switch-resorts",
+    title: "After the wedding, should you stay at the same resort for your honeymoon?",
+    description: "Compare two written quotes for the nights after your destination wedding, including the room move, transfer and time you get together before your flight.",
+    date: "November 2026",
+  },
+  {
     slug: "room-to-mandap-wedding-guest-route",
     title: "From the Guest Room to the Mandap: A Resort Walkthrough for Families",
     description: "Plan the walk to your destination wedding ceremony with questions about room buildings, shade, seating, carts and a rain backup before you reserve the block.",

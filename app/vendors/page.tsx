@@ -77,13 +77,13 @@ export default function VendorsPage() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="mailto:hello@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%20Portfolio%20and%20Destination%20Pricing"
+              href="mailto:bhamini@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%20Portfolio%20and%20Destination%20Pricing"
               className="inline-flex rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
             >
               Email Your Portfolio and Pricing
             </a>
             <a
-              href="mailto:hello@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%2015%20Minute%20Call"
+              href="mailto:bhamini@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%2015%20Minute%20Call"
               className="inline-flex rounded-full border border-[#c5a059] px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
             >
               Request a 15-Minute Intro Call
@@ -138,8 +138,8 @@ export default function VendorsPage() {
           </p>
           <p className="mt-6 leading-8 text-[#4d403a]">
             To be considered, email{" "}
-            <a href="mailto:hello@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
-              hello@ceremonyverse.com
+            <a href="mailto:bhamini@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
+              bhamini@ceremonyverse.com
             </a>{" "}
             with the subject line &quot;Preferred Vendor Roster&quot; and your portfolio and destination pricing
             sheet. We review every submission and reply as wedding-season volume allows. Families who want to learn
@@ -181,10 +181,10 @@ export default function VendorsPage() {
             destination, dates, budget, and cultural needs fit your work.
           </p>
           <a
-            href="mailto:hello@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%20Portfolio%20and%20Destination%20Pricing"
+            href="mailto:bhamini@ceremonyverse.com?subject=Preferred%20Vendor%20Roster%20%E2%80%94%20Portfolio%20and%20Destination%20Pricing"
             className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
           >
-            Email hello@ceremonyverse.com
+            Email bhamini@ceremonyverse.com
           </a>
         </div>
       </section>

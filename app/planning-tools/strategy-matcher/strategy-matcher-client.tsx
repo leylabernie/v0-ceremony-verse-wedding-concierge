@@ -149,7 +149,7 @@ export function StrategyMatcherClient() {
     } catch {
       setStatus("error")
       setError(
-        "Something went wrong. Please email hello@ceremonyverse.com and Mini will pick up your strategy match directly.",
+        "Something went wrong. Please email bhamini@ceremonyverse.com and Mini will pick up your strategy match directly.",
       )
     }
   }
