@@ -183,7 +183,7 @@ export default function BridalLehengaCostGuide() {
           </p>
 
           <p style={{ marginTop: "1.2rem" }}>
-            When the vendor and item allow it, <strong>live video review</strong> can add current visual evidence. CeremonyVerse records the selected item references and written approval within the chosen scope, but video alone does not authenticate materials, guarantee screen color, or eliminate handmade-item and delivery risk. Learn more about <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841" }}>our bridal lehenga sourcing service</Link>.
+            When the vendor and item allow it, <strong>live video review</strong> can add current visual evidence. CeremonyVerse records the selected item references and written approval within the chosen scope, but video alone does not authenticate materials, guarantee screen color, or eliminate handmade-item and delivery risk. Learn more about <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ color: "#7a6841" }}>our bridal lehenga sourcing service</Link>.
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
@@ -217,7 +217,7 @@ export default function BridalLehengaCostGuide() {
               Compare the selected item, service scope, shipping, customs estimate, alteration allowance, timeline, and remedy terms in writing.
             </p>
             <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", justifyContent: "center" }}>
-              <Link href="/buy-bridal-lehenga-from-india-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
+              <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ display: "inline-block", background: "#7a6841", color: "#fff", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none" }}>Buy a Bridal Lehenga from India</Link>
               <Link href="/contact/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #7a6841" }}>Request a Free 30-Minute Consultation</Link>
               <Link href="/pricing/" style={{ display: "inline-block", background: "transparent", color: "#4d403a", padding: "0.7rem 1.4rem", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", border: "1px solid #e6dfd5" }}>See Pricing</Link>
             </div>

@@ -255,7 +255,7 @@ export function HomePage() {
               Mexico, Jamaica &amp; Punta Cana · Serving families across the United States &amp; Canada
             </p>
             <h1 className="mb-7 font-serif text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-              Gujarati &amp; Hindu destination weddings in Mexico, Jamaica, and Punta Cana
+              Gujarati &amp; Hindu Wedding Planner in Mexico and the Caribbean
             </h1>
             <p className="mb-8 max-w-2xl text-lg leading-8 text-white/90 sm:text-xl">
               Plan your multi-day celebration with someone who has actually done it: Mini planned her

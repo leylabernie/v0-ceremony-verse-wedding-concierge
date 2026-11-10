@@ -31,7 +31,7 @@ const MAX_SERP_TITLE_LENGTH = 60
 const MAX_SERP_DESCRIPTION_LENGTH = 158
 
 const SERP_TITLE_OVERRIDES: Record<string, string> = {
-  "/": "Indian Destination Wedding Planner — Mexico & Caribbean",
+  "/": "Gujarati & Hindu Wedding Planner in Mexico and the Caribbean",
   "/avoid-indian-wedding-shopping-scams/": "Avoid Indian Wedding Shopping Scams — NRI Buyer Guide",
   "/blog/author/mini/": "Articles by Mini Patel — Founder",
   "/blog/custom-sherwani-sizing-guide-india-usa/": "Custom Sherwani Sizing Guide — India to USA Fit Checklist",

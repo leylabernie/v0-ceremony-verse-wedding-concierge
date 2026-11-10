@@ -184,7 +184,7 @@ export default function IndianWeddingShoppingTexasPage() {
           </a>
           <div style={{ marginTop: "24px", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "16px" }}>
             <Link href="/buy-indian-wedding-outfits-from-india/" style={{ color: "#7a6841", textDecoration: "underline" }}>Explore India shopping</Link>
-            <Link href="/services/bridal-lehengas/" style={{ color: "#7a6841", textDecoration: "underline" }}>Bridal lehenga sourcing</Link>
+            <Link href="/how-to-buy-bridal-lehenga-from-india-to-usa/" style={{ color: "#7a6841", textDecoration: "underline" }}>Bridal lehenga sourcing</Link>
             <Link href="/how-it-works/" style={{ color: "#7a6841", textDecoration: "underline" }}>See how it works</Link>
           </div>
         </div>

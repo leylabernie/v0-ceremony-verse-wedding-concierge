@@ -8,7 +8,7 @@ import Link from "next/link";
 const serviceLinks = [
   { label: "Destination Wedding Planning", href: "/indian-destination-wedding-planner-mexico/" },
   { label: "India Wedding Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
-  { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
+  { label: "Bridal Lehengas", href: "/how-to-buy-bridal-lehenga-from-india-to-usa/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
   { label: "Bridesmaid & Family Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
   { label: "Jewelry & Accessories", href: "/buy-indian-wedding-outfits-from-india/" },
@@ -20,6 +20,7 @@ const destinationLinks = [
   { label: "Cancún Indian Weddings", href: "/destinations/cancun-indian-wedding/" },
   { label: "Riviera Maya Indian Weddings", href: "/destinations/riviera-maya-indian-wedding/" },
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
+  { label: "Jamaica Indian Weddings", href: "/destinations/jamaica-indian-wedding/" },
   { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },

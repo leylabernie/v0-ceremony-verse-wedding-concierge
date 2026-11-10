@@ -9,12 +9,15 @@ const nextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
+      { source: '/indian-destination-wedding-mexico-guide/', destination: '/blog/indian-destination-wedding-mexico-complete-guide/', permanent: true },
+      { source: '/buy-bridal-lehenga-from-india-usa/', destination: '/how-to-buy-bridal-lehenga-from-india-to-usa/', permanent: true },
+      { source: '/services/bridal-lehengas/', destination: '/how-to-buy-bridal-lehenga-from-india-to-usa/', permanent: true },
       { source: '/services', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/services/', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/indian-wedding-coordination-mexico', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
       { source: '/indian-wedding-coordination-mexico/', destination: '/indian-destination-wedding-planner-mexico/', permanent: true },
-      { source: '/mexico-destination-wedding', destination: '/indian-destination-wedding-mexico-guide/', permanent: true },
-      { source: '/mexico-destination-wedding/', destination: '/indian-destination-wedding-mexico-guide/', permanent: true },
+      { source: '/mexico-destination-wedding', destination: '/blog/indian-destination-wedding-mexico-complete-guide/', permanent: true },
+      { source: '/mexico-destination-wedding/', destination: '/blog/indian-destination-wedding-mexico-complete-guide/', permanent: true },
       { source: '/consultation', destination: '/contact/', permanent: true },
       { source: '/consultation/', destination: '/contact/', permanent: true },
       { source: '/sourcing-disclaimer', destination: '/contact/', permanent: true },

@@ -518,7 +518,7 @@ export default function HaldiOutfitsPage() {
               { label: "Mehndi Outfits", url: "/mehndi-outfits-usa/" },
               { label: "Sangeet Outfits", url: "/sangeet-outfits-usa/" },
               { label: "Baraat Outfits", url: "/baraat-outfits-usa/" },
-              { label: "Bridal Lehengas", url: "/services/bridal-lehengas/" },
+              { label: "Bridal Lehengas", url: "/how-to-buy-bridal-lehenga-from-india-to-usa/" },
               { label: "Bridesmaid Outfits", url: "/bridesmaid-and-family-outfits-from-india/" },
               { label: "Groom Sherwanis", url: "/buy-sherwani-from-india-usa/" },
             ].map((item) => (
