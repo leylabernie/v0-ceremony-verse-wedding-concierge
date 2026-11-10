@@ -14,7 +14,7 @@ Detailed rationale lives in `EEAT_PLAYBOOK.md`, `IMAGE_SEO_GUIDE.md`, and
 - **Main Site (Inspiration & Booking Queries):** https://www.ceremonyverse.com
 - **Booking Portal (Resorts & Cruises):** https://ceremonyversetravel.com
 - **Host Agency Relationship:** Affiliate of A.S.A.P. Cruises Inc. / OutsideAgents.com
-- **Contact:** +1-215-341-9990 | hello@ceremonyverse.com
+- **Contact:** +1-215-341-9990 | bhamini@ceremonyverse.com
 - **Location Baseline:** Newtown Township, PA, US
 
 ### Canonical URL forms (do not deviate)

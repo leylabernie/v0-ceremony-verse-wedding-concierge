@@ -58,7 +58,7 @@ export function RoomBlockLeadCard() {
     } catch {
       setStatus("error");
       setError(
-        "Something went wrong. Please email hello@ceremonyverse.com and we'll send the tracker directly.",
+        "Something went wrong. Please email bhamini@ceremonyverse.com and we'll send the tracker directly.",
       );
     }
   }

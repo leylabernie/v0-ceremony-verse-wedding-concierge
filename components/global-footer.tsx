@@ -72,8 +72,8 @@ export function GlobalFooter() {
               with optional India wedding-outfit sourcing for families across the USA and Canada.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginTop: "12px" }}>
-              <a href="mailto:hello@ceremonyverse.com" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
-                hello@ceremonyverse.com
+              <a href="mailto:bhamini@ceremonyverse.com" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
+                bhamini@ceremonyverse.com
               </a>
               <a href="https://wa.me/12153419990" target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#7a6841", textDecoration: "none" }}>
                 WhatsApp or call +1 (215) 341-9990

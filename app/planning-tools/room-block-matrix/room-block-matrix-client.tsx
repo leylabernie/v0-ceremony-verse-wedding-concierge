@@ -109,7 +109,7 @@ export function RoomBlockMatrixClient() {
     } catch {
       setStatus("error")
       setError(
-        "Something went wrong. Please email hello@ceremonyverse.com and we'll lock in your matrix directly.",
+        "Something went wrong. Please email bhamini@ceremonyverse.com and we'll lock in your matrix directly.",
       )
     }
   }

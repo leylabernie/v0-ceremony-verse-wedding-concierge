@@ -29,6 +29,13 @@ const breadcrumbSchema = buildBreadcrumb([
 // so the archive reads chronologically.
 const articles: { slug: string; path: string; title: string; description: string; date: string }[] = [
   {
+    slug: "honeymoon-after-destination-wedding-stay-or-switch-resorts",
+    path: "/blog/honeymoon-after-destination-wedding-stay-or-switch-resorts/",
+    title: "After the wedding, should you stay at the same resort for your honeymoon?",
+    description: "Compare two written quotes for the nights after your destination wedding, including the room move, transfer and time you get together before your flight.",
+    date: "2026-11-10",
+  },
+  {
     slug: "room-to-mandap-wedding-guest-route",
     path: "/blog/room-to-mandap-wedding-guest-route/",
     title: "From the Guest Room to the Mandap: A Resort Walkthrough for Families",

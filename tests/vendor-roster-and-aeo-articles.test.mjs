@@ -64,7 +64,7 @@ test("the vendor roster page states the 2026/2027 expansion, requests portfolio 
   assert.match(vendorsPage, /no pay-to-play/i)
   assert.match(vendorsPage, /only when a family/i)
   assert.match(vendorsPage, /Cross-promotion and referrals/i)
-  assert.match(vendorsPage, /mailto:hello@ceremonyverse.com/)
+  assert.match(vendorsPage, /mailto:bhamini@ceremonyverse.com/)
   assert.match(vendorsPage, /buildFaqSchema/)
   assert.doesNotMatch(vendorsPage, /noIndex: true/)
 })

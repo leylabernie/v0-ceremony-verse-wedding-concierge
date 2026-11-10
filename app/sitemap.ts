@@ -8,6 +8,7 @@ type Frequency = "weekly" | "monthly" | "yearly"
 type Entry = { path: string; changeFrequency: Frequency; priority: number; lastModified?: Date }
 
 const pages: Entry[] = [
+  { path: "/blog/honeymoon-after-destination-wedding-stay-or-switch-resorts/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-11-10T09:00:00-05:00") },
   { path: "/blog/room-to-mandap-wedding-guest-route/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-11-09T12:00:00-05:00") },
   { path: "/south-asian-destination-wedding-planning-new-york/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-10-10T12:00:00-04:00") },
   { path: "/groomsmen-outfit-coordination-new-jersey/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-10-10T12:00:00-04:00") },
