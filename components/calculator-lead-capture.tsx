@@ -14,10 +14,10 @@ function FoundingFamilyInvitation({ calculatorType }: { calculatorType: string }
     <div className="mt-5 border-t border-[#e6dfd5] pt-4 print:hidden">
       <p className="text-sm leading-6 text-[#4d453d]">
         Planning a destination wedding? Bring your resort proposal to a free 30-minute review with Mini.
-        Eligible Founding Families receive 25% off the published fee for full or partial planning, subject to availability.
+        Ask Mini about Founding Family availability and written fees for full or partial planning.
       </p>
       <Link
-        href={`/contact/?service=mexico&from=${encodeURIComponent(calculatorType)}-founding-family`}
+        href={`/schedule/?from=${encodeURIComponent(calculatorType)}-founding-family`}
         onClick={() => trackEvent("calculator_cta_click", { calculator_name: calculatorType, next_step: "founding_family_review" })}
         className="mt-2 inline-block font-semibold text-[#7a6841] underline underline-offset-4"
       >

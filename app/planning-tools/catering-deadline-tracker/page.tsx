@@ -70,7 +70,7 @@ export default function CateringDeadlineTrackerPage() {
           </Link>
           <p className="mt-6 text-sm leading-6 text-[#4d403a]">
             Then bring your menu requirements to a{" "}
-            <Link href="/contact/?service=mexico&from=catering-deadline-tracker" className="font-semibold text-[#7a6841] underline">
+            <Link href="/schedule/?from=catering-deadline-tracker" className="font-semibold text-[#7a6841] underline">
               free 30-minute consultation
             </Link>{" "}
             and pressure-test them against your resort shortlist.

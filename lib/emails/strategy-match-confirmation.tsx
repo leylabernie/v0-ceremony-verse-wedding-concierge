@@ -16,7 +16,7 @@ import { escapeHtml } from "@/lib/consultation-email"
 
 const PORTAL_URL = "https://ceremonyversetravel.com"
 const TRACKER_URL = "https://www.ceremonyverse.com/downloads/strategy-match-tracker.xlsx"
-const STRATEGY_CALL_URL = "https://www.ceremonyverse.com/contact/?service=mexico&from=strategy-matcher-email"
+const STRATEGY_CALL_URL = "https://www.ceremonyverse.com/schedule/?from=strategy-matcher-email"
 const LICENSING_STRING =
   "CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc., Florida Seller of Travel No. FST ST15578 - California Seller of Travel No. 2090937-50 - Washington UBID No 603189022."
 

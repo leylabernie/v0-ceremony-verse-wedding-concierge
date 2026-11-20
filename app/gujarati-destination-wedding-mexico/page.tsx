@@ -139,7 +139,7 @@ export default function GujaratiDestinationWeddingMexicoPage() {
             Mini helps organize the Gujarati family-side planning process before small unknowns become expensive, stressful decisions. Bring the event sequence, family approvals, resort questions, guest realities, and local-provider handoffs into one clear conversation.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=gujarati-mexico-landing" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule a Gujarati Wedding Planning Call</Link>
+            <Link href="/schedule/?from=gujarati-mexico-landing" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule a Gujarati Wedding Planning Call</Link>
             <Link href="/planning-tools/family-responsibility-map/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold text-white">Start With the Family Responsibility Map</Link>
           </div>
         </div>
@@ -269,7 +269,7 @@ export default function GujaratiDestinationWeddingMexicoPage() {
           <p className="mt-5 text-lg leading-8 text-white/85">
             Share the date range, guest count, event sequence, destination ideas, and the question your family needs to resolve next. The free first call is for organizing that next decision—not for asking your family to commit on the call.
           </p>
-          <Link href="/contact/?service=mexico&from=gujarati-mexico-landing-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule a Free Gujarati Wedding Planning Call</Link>
+          <Link href="/schedule/?from=gujarati-mexico-landing-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule a Free Gujarati Wedding Planning Call</Link>
         </div>
       </section>
     </main>

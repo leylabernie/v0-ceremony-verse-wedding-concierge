@@ -92,7 +92,7 @@ export default function DestinationsPage() {
             room-block risk, weather backup, and the team that will actually execute—not through a beach photo or package headline.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=destinations-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
+            <Link href="/schedule/?from=destinations-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
             <Link href="/resorts/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Compare Resort Profiles</Link>
             <Link href="/planning-tools/budget/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Calculate the Complete Budget</Link>
           </div>
@@ -190,7 +190,7 @@ export default function DestinationsPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-4xl font-semibold !text-white sm:text-5xl">Bring us your actual wedding facts</h2>
           <p className="mt-5 text-lg leading-8 !text-white/85">We will help you compare the destination, complete cost, room-block exposure, cultural requirements, family responsibilities, and next decision.</p>
-          <Link href="/contact/?service=mexico&from=destinations-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
+          <Link href="/schedule/?from=destinations-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
         </div>
       </section>
     </main>

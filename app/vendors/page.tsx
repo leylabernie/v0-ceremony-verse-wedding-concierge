@@ -148,7 +148,7 @@ export default function VendorsPage() {
               review the complete planning process
             </Link>{" "}
             or{" "}
-            <Link href="/contact/?service=mexico&from=vendors-page" className="font-semibold text-[#7a6841] underline">
+            <Link href="/schedule/?from=vendors-page" className="font-semibold text-[#7a6841] underline">
               schedule a free consultation
             </Link>
             .

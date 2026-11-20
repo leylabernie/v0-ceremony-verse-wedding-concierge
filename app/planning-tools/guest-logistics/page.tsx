@@ -86,7 +86,7 @@ export default function GuestLogisticsPage() {
         </div>
 
         <div className="mx-auto mt-10 flex max-w-6xl flex-col gap-3 sm:flex-row">
-          <Link href="/contact/?service=mexico&from=guest-calculator" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Discuss Guest Support</Link>
+          <Link href="/schedule/?from=guest-calculator" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Discuss Guest Support</Link>
           <Link href="/planning-tools/family-responsibility-map/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Open Responsibility Map</Link>
         </div>
       </section>

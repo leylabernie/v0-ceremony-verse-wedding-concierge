@@ -238,7 +238,7 @@ export const AUTHOR_PERSON = {
     "@type": "PostalAddress",
     addressCountry: "US",
     addressRegion: "PA",
-    addressLocality: "Philadelphia",
+    addressLocality: "Newtown Township",
   },
 }
 

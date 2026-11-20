@@ -33,6 +33,7 @@ const pages: Entry[] = [
   { path: "/planning-tools/ceremony-timeline/", changeFrequency: "monthly", priority: 0.85, lastModified: new Date("2026-09-14T15:30:00Z") },
   { path: "/blog/indian-destination-wedding-puerto-vallarta/", changeFrequency: "monthly", priority: 0.8, lastModified: new Date("2026-09-13T12:00:00Z") },
   { path: "/", changeFrequency: "weekly", priority: 1 },
+  { path: "/schedule/", changeFrequency: "weekly", priority: 1 },
   { path: "/pricing/", changeFrequency: "monthly", priority: 0.9, lastModified: new Date("2026-09-13T12:00:00Z") },
   { path: "/destination-wedding-feasibility-plan/", changeFrequency: "monthly", priority: 0.9 },
   { path: "/destinations/", changeFrequency: "monthly", priority: 0.95 },

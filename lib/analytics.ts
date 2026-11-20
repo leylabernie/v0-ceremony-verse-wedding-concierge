@@ -17,7 +17,7 @@
  * breaks and the user's action proceeds normally.
  */
 
-type LeadMethod = "form";
+type LeadMethod = "form" | "schedule";
 
 export interface AcquisitionContext {
   source: string;

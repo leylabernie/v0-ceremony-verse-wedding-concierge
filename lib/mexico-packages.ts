@@ -34,7 +34,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Planner travel, lodging, added staffing, or services outside the signed proposal",
     ],
     cta: "Discuss Event Coordination",
-    href: "/contact/?service=mexico",
+    href: "/schedule/",
     category: "Planning",
   },
   {
@@ -59,7 +59,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Resort, venue, vendor, travel, production, tax, or added-staffing charges",
     ],
     cta: "Request a Private Proposal",
-    href: "/contact/?service=mexico",
+    href: "/schedule/",
     category: "Planning",
   },
   {
@@ -86,7 +86,7 @@ export const mexicoPackages: MexicoPackage[] = [
       "Taxes, planner travel or lodging, added staffing, and services outside the signed proposal",
     ],
     cta: "Request a Private Proposal",
-    href: "/contact/?service=mexico",
+    href: "/schedule/",
     category: "Planning",
   },
 ]

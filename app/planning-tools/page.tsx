@@ -123,7 +123,7 @@ export default function PlanningToolsPage() {
             Bring the completed calculations to a private consultation. CeremonyVerse can help identify missing costs,
             unclear resort language, and the next decisions that matter most—without asking you to start over.
           </p>
-          <Link href="/contact/?service=mexico&from=planning-calculators" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
+          <Link href="/schedule/?from=planning-calculators" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
             Request a Free 30-Minute Consultation
           </Link>
         </div>

@@ -70,7 +70,7 @@ export default function PrivacyPage() {
             <li>Respond to inquiries and decide whether the requested service and timing are a practical fit.</li>
             <li>Send the requested pre-call questionnaire and prepare for the consultation.</li>
             <li>Provide requested ceremony-toolkit downloads and record your names, email, wedding details and consent choices. Toolkit records are retained in our form storage for up to 90 days; related email correspondence follows our general retention practices.</li>
-            <li>Send wedding-planning follow-up for toolkit requests only when you separately opt in. That choice is optional and is not required for the download. Reply stop or contact hello@ceremonyverse.com to withdraw it.</li>
+            <li>Send wedding-planning follow-up for toolkit requests only when you separately opt in. That choice is optional and is not required for the download. Reply stop or contact bhamini@ceremonyverse.com to withdraw it.</li>
             <li>Prepare, provide, and administer selected wedding-planning or India-sourcing services.</li>
             <li>Maintain approvals, logistics, communications, invoicing, and business records.</li>
             <li>Measure website performance, lead sources, and service interest.</li>
@@ -119,8 +119,8 @@ export default function PrivacyPage() {
           </p>
           <p className={paragraphClass}>
             Send a request to{" "}
-            <a href="mailto:hello@ceremonyverse.com?subject=Privacy%20request" className="font-semibold text-[#7a6841] underline">
-              hello@ceremonyverse.com
+            <a href="mailto:bhamini@ceremonyverse.com?subject=Privacy%20request" className="font-semibold text-[#7a6841] underline">
+              bhamini@ceremonyverse.com
             </a>
             . Official explanations of privacy rights are available from the{" "}
             <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
@@ -167,8 +167,8 @@ export default function PrivacyPage() {
           <p className={paragraphClass}>
             This notice may be updated when the website, service providers, or data practices change. The current date
             will appear above. Questions can be sent to{" "}
-            <a href="mailto:hello@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
-              hello@ceremonyverse.com
+            <a href="mailto:bhamini@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">
+              bhamini@ceremonyverse.com
             </a>{" "}
             or through the <Link href="/contact/" className="font-semibold text-[#7a6841] underline">consultation page</Link>.
           </p>

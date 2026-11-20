@@ -282,7 +282,7 @@ export default function BlogPost() {
               line — buildings, event spaces, catering requirements, day passes — before your family signs.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
-              <Link href="/contact/?service=mexico&from=room-block-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
+              <Link href="/schedule/?from=room-block-guide" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
                 Request a Custom Quote
               </Link>
               <a
