@@ -370,6 +370,7 @@ export function ContactPage() {
             Your First 30-Minute Consultation Is Free
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
+            <Link className="block font-semibold underline" href="/schedule/?from=contact-pick-time">Pick a time for your free consultation</Link>
             Share four essentials below, then choose WhatsApp, phone, or email to arrange your consultation. The
             remaining planning questions arrive automatically by email so registration stays short.
           </p>

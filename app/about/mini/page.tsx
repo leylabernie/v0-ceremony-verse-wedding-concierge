@@ -57,7 +57,7 @@ export default function AboutMiniPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/contact/?service=mexico&from=about-mini"
+                href="/schedule/?from=about-mini"
                 className="inline-flex rounded-full bg-[#c5a059] px-7 py-3 text-sm font-semibold text-[#1f1f1f]"
               >
                 Request a Free 30-Minute Consultation
@@ -219,7 +219,7 @@ export default function AboutMiniPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact/?service=mexico&from=about-mini"
+              href="/schedule/?from=about-mini"
               className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
             >
               Schedule Free Consultation

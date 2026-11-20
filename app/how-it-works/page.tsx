@@ -27,7 +27,7 @@ import {
   buildServiceSchema,
 } from "@/lib/seo"
 
-const consultationHref = "/contact/?service=mexico&from=how-it-works"
+const consultationHref = "/schedule/?from=how-it-works"
 
 export const metadata = buildMetadata({
   path: "/how-it-works/",

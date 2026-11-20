@@ -1,10 +1,8 @@
+import { buildFaqSchema, JsonLd } from "@/lib/seo"
 import Image from "next/image"
 import Link from "next/link"
 import { destinationPackagePricingNote, mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 import { destinationFeasibilityPlan } from "@/lib/destination-feasibility-plan"
-import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
-import { CurrentTravelOffers } from "@/components/current-travel-offers"
-
 // Design: Editorial Proof, Not Pageantry. Preserve the existing charcoal, parchment,
 // antique-gold, serif-led CeremonyVerse visual system while helping a prospective bride
 // picture the wedding weekend before she is asked to evaluate the planning scope.
@@ -126,40 +124,6 @@ const faqs = [
   },
 ]
 
-const roleBoundaries = [
-  {
-    title: "Your family & officiant",
-    description: "Keep ceremony authority, cultural choices, and final family decisions.",
-  },
-  {
-    title: "Mini & CeremonyVerse",
-    description: "Organize the agreed family-facing planning scope: priorities, approvals, shared information, and handoffs.",
-  },
-  {
-    title: "Independent local providers",
-    description: "Carry only the local planning and on-site tasks identified in their own written scope.",
-  },
-  {
-    title: "Resorts & qualified providers",
-    description: "Issue their own contracts and control their bookings, fees, and delivery responsibilities.",
-  },
-]
-
-const proofPrinciples = [
-  {
-    title: "Family experience is labelled",
-    description: "Family wedding images are never presented as CeremonyVerse client projects.",
-  },
-  {
-    title: "Client stories require permission",
-    description: "A future testimonial or case study appears only with the real client’s documented approval.",
-  },
-  {
-    title: "Independent reviews stay independent",
-    description: "Public reviews remain on their original platform instead of being recreated as marketing copy.",
-  },
-]
-
 const startingRoutes = [
   {
     step: "00",
@@ -205,39 +169,10 @@ const startingRoutes = [
   },
 ]
 
-const weddingWeekMoments = [
-  {
-    eyebrow: "Arrival & welcome",
-    title: "Guests should feel considered before the first event.",
-    description: "The early questions—arrivals, room timing, welcome details, family groupings, and the first shared evening—shape the ease of the entire weekend.",
-    src: "/images/proof/family-destination-baarat.webp",
-    alt: "Family members celebrating at a destination wedding in Mexico",
-    note: "Mini's family wedding in Mexico — the baraat that started CeremonyVerse.",
-    position: "object-[58%_center]",
-  },
-  {
-    eyebrow: "Ceremony & tradition",
-    title: "Keep the ceremony yours; make the practical path visible.",
-    description: "Family and officiant authority stay where they belong while timing, venue needs, guest movement, and on-site responsibilities become clear around each moment.",
-    src: "/images/proof/family-wedding-mandap-couple.webp",
-    alt: "Couple beneath a floral mandap at a family destination wedding in Mexico",
-    note: "Mini's family wedding in Mexico — the mandap moment that inspired the process used today.",
-    position: "object-[center_35%]",
-  },
-  {
-    eyebrow: "Celebration & family style",
-    title: "Let the joyful parts feel effortless when they arrive.",
-    description: "A multi-day celebration works best when the decisions, guest information, handoffs, and visual details are connected before wedding week begins.",
-    src: "/images/proof/prior-outfit-wedding-party.webp",
-    alt: "Wedding party wearing coordinated Indian outfits from a completed pre-launch sourcing project",
-    note: "Completed pre-launch outfit coordination · shown as inspiration, not destination-planning client work.",
-    position: "object-center",
-  },
-]
-
 export function HomePage() {
   return (
     <main className="bg-[#faf8f5] text-[#1f1f1f]">
+      <JsonLd id="home-faq" data={buildFaqSchema(faqs)} />
       <section className="relative min-h-[680px] overflow-hidden">
         <Image
           src="/images/proof/family-destination-baarat.webp"
@@ -265,10 +200,10 @@ export function HomePage() {
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/contact/?service=mexico&from=homepage-hero"
+                href="/schedule/?from=homepage-hero"
                 className="inline-flex items-center justify-center rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d6bb7d]"
               >
-                Request Free Consultation
+                Book your free 30-minute call
               </Link>
               <a
                 href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20a%20free%20wedding%20consultation.%20Wedding%20timeframe%3A%20__.%20Destination%3A%20__.%20Estimated%20guests%3A%20__.%20My%20main%20question%3A%20__."
@@ -278,12 +213,6 @@ export function HomePage() {
               >
                 WhatsApp Mini Directly
               </a>
-              <Link
-                href="/before-signing-indian-wedding-resort-proposal/"
-                className="inline-flex items-center justify-center rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                See the 5 Decision Questions
-              </Link>
             </div>
             <p className="mt-6 text-sm leading-6 text-white/75">
               Your first 30-minute consultation is free · No payment, contract, or prior approval required
@@ -306,65 +235,17 @@ export function HomePage() {
         </div>
       </section>
 
-      <section aria-labelledby="first-call-heading" className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-12 sm:py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Your next step</p>
-            <h2 id="first-call-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">What should you ask before signing a wedding resort proposal?</h2>
-            <p className="mt-4 leading-7 text-[#4d403a]">Bring your resort shortlist or a proposal to a free 30-minute call with Mini. Where can the baraat finish? Who will confirm Jain meals for each event? What happens if relatives book outside the room block? Together, choose the questions your family needs the resort to answer in writing.</p>
-            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Still deciding on dates? <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20we%20are%20comparing%20wedding%20resorts.%20Our%20estimated%20guest%20count%20is%20__.%20Could%20we%20arrange%20a%20call%3F" className="font-semibold underline underline-offset-4">Message Mini on WhatsApp</a> with your approximate guest count.</p>
-          </div>
-          <div className="rounded-2xl border border-[#d9cfbf] bg-white p-6 sm:p-8">
-            <h3 className="font-serif text-2xl font-semibold">Talk to Mini about your wedding</h3>
-            <p className="mt-3 text-sm leading-6 text-[#4d403a]">Share your wedding timeframe, destination ideas, and approximate guest count. No payment or contract is required for the first call.</p>
-            <Link href="/contact/?service=mexico&from=homepage-first-call" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Request My Free Consultation</Link>
-            <a href="tel:+12153419990" className="mt-4 block text-center text-sm font-semibold text-[#7a6841] underline underline-offset-4">Or call Mini: +1 (215) 341-9990</a>
-          </div>
-        </div>
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <h2 className="font-serif text-4xl">The family weddings behind CeremonyVerse</h2>
+        <p className="my-5">These are Mini&apos;s family weddings, not client projects.</p>
+        <ul className="grid gap-4 sm:grid-cols-3">{['Hard Rock Hotel Cancún · 2019','Generations Riviera Maya · February 2023','Royalton · 2024'].map(wedding=><li key={wedding} className="rounded-xl border bg-white p-5">{wedding}</li>)}</ul>
+        <Link href="/real-weddings/" className="mt-5 inline-block underline">Read about the family weddings</Link>
       </section>
-
-      <section id="founding-families" aria-labelledby="founding-families-heading" className="border-b border-[#e6dfd5] bg-white px-6 py-12 sm:py-16">
-        <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.4fr_1fr] lg:items-center">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">The Founding Families program</p>
-            <h2 id="founding-families-heading" className="mt-3 font-serif text-3xl font-semibold sm:text-4xl">Plan your celebration with Mini, from the first questions onward.</h2>
-            <p className="mt-4 leading-7 text-[#4d403a]">The Founding Families program offers an introduction to CeremonyVerse with direct founder support and a reduced planning fee. Ask about availability for your destination and dates.</p>
-            <p className="mt-3 leading-7 text-[#4d403a]">The first five families to book full or partial planning are Founding Families. They receive 25% off the planning fee, and Mini personally handles every detail — no junior coordinators, no handoffs, because there is no one to hand off to. In exchange, each Founding Family agrees to three things: honest feedback in a private session after the wedding, a candid review on Trustpilot or Google (good or bad — we don&apos;t edit them), and permission to photograph their events for this website.</p>
-            <ul className="mt-5 space-y-3 text-sm leading-6 text-[#4d403a]">
-              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>25% off the published planning fee for Full or Partial Planning</span></li>
-              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Mini as your single point of contact from first call to last dance — no team handoffs</span></li>
-              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Private post-wedding feedback session (your complaints shape the company)</span></li>
-              <li className="flex gap-3"><span aria-hidden="true" className="text-[#7a6841]">✓</span><span>Event photography featured on this site with a written, revocable consent addendum</span></li>
-            </ul>
-            <p className="mt-4 leading-7 text-[#4d403a]">Bring your resort shortlist, guest estimate, and ceremony priorities to a free 30-minute consultation. Mini will help clarify your next planning questions and explain the available service scope before you commit.</p>
-          </div>
-          <div className="rounded-2xl border border-[#d9cfbf] bg-[#f4eee4] p-6 sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Founding Family availability</p>
-            <h3 className="mt-3 font-serif text-2xl font-semibold">Ask if a Founding Family spot is still open</h3>
-            <p className="mt-3 text-sm leading-6 text-[#4d403a]">No deposit required to ask. The 25% applies at contract signing, never upfront. If the spots are gone, the published prices on this page are the honest alternative.</p>
-            <Link href="/contact/?service=mexico&from=homepage-founding-families" className="mt-5 flex justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">Ask About a Founding Family Spot</Link>
-            <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20to%20ask%20about%20a%20Founding%20Family%20spot.%20Wedding%20timeframe%3A%20__.%20Destination%3A%20__.%20Estimated%20guests%3A%20__." target="_blank" rel="noopener noreferrer" className="mt-4 block text-center text-sm font-semibold text-[#7a6841] underline underline-offset-4">Or WhatsApp Mini directly</a>
-          </div>
-        </div>
-      </section>
-
-      <CurrentTravelOffers />
-
-      <section aria-labelledby="travel-booking-heading" className="border-b border-[#e6dfd5] bg-white px-6 py-10">
-        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">CeremonyVerse Travel</p>
-            <h2 id="travel-booking-heading" className="mt-3 font-serif text-3xl font-semibold">Resort stays, honeymoons &amp; wedding guest travel</h2>
-            <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">You can book travel with Mini without purchasing wedding planning. Compare resort options in Mexico, Jamaica, and Punta Cana, or ask about current offers matched to your dates and budget.</p>
-            <p className="mt-3 text-xs leading-5 text-[#5e4a40]">CeremonyVerse Travel is an independent affiliate of A.S.A.P. Cruises Inc. / OutsideAgents.com. Rates, promotions, and bookings are subject to supplier availability and terms.</p>
-          </div>
-          <div className="flex flex-col gap-3">
-            <a href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%20would%20like%20current%20resort%20offers.%20My%20dates%3A%20%20Departure%20airport%3A%20%20Travelers%3A%20%20Total%20budget%3A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-7 py-3.5 text-sm font-semibold text-white">Ask Mini for Resort Offers</a>
-            <a href="https://ceremonyversetravel.com/?utm_source=ceremonyverse&amp;utm_medium=referral&amp;utm_campaign=homepage_travel" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full border border-[#7a6841] px-7 py-3.5 text-sm font-semibold text-[#7a6841]">Browse CeremonyVerse Travel</a>
-          </div>
-        </div>
-      </section>
-
+      <section id="founding-families" className="bg-[#f4eee4] px-6 py-12"><div className="mx-auto max-w-6xl">
+        <h2 className="font-serif text-3xl">Founding Families: plan directly with Mini</h2>
+        <p className="my-4">Your written agreement names who runs each event. Mini either leads on site or coordinates your family while the contracted local team runs the events.</p>
+        <Link href="/schedule/?from=founding-families" className="underline">Ask about availability and written planning fees</Link>
+      </div></section>
       <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-3xl text-center">
@@ -385,121 +266,6 @@ export function HomePage() {
                 </Link>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-[#e6dfd5] bg-[#f4eee4] px-6 py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Before you commit</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Who does what, in one clear view</h2>
-            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              Your private proposal connects the work without blurring ceremony authority, booking control, or on-site delivery responsibilities.
-            </p>
-          </div>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {roleBoundaries.map((role, index) => (
-              <article key={role.title} className="rounded-2xl border border-[#d9cfbf] bg-white p-6">
-                <p className="text-xs font-semibold tracking-[0.18em] text-[#7a6841]">0{index + 1}</p>
-                <h3 className="mt-3 font-serif text-2xl font-semibold">{role.title}</h3>
-                <p className="mt-4 text-sm leading-6 text-[#4d403a]">{role.description}</p>
-              </article>
-            ))}
-          </div>
-          <p className="mx-auto mt-7 max-w-4xl text-center text-sm leading-6 text-[#5e4a40]">
-            The final written scope identifies the included work, exclusions, fees, payment milestones, approvals, and outside costs before paid planning begins.
-          </p>
-        </div>
-      </section>
-
-      <section className="border-b border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Picture the wedding week</p>
-              <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">The celebration should feel like yours. The plan should hold it together.</h2>
-            </div>
-            <p className="max-w-2xl text-lg leading-8 text-[#4d403a]">
-              Every destination wedding has its own rhythm. CeremonyVerse makes the decision path, guest information, and working handoffs visible so you can stay present for the moments that matter.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {weddingWeekMoments.map((moment) => (
-              <figure key={moment.eyebrow} className="group overflow-hidden rounded-2xl border border-[#e6dfd5] bg-[#faf8f5]">
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#e6dfd5]">
-                  <Image
-                    src={moment.src}
-                    alt={moment.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className={`object-cover transition duration-500 motion-safe:group-hover:scale-[1.03] ${moment.position}`}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
-                  <p className="absolute bottom-4 left-5 text-xs font-semibold uppercase tracking-[0.18em] text-white">{moment.eyebrow}</p>
-                </div>
-                <figcaption className="p-6">
-                  <h3 className="font-serif text-2xl font-semibold">{moment.title}</h3>
-                  <p className="mt-3 leading-7 text-[#4d403a]">{moment.description}</p>
-                  <p className="mt-5 text-xs leading-5 text-[#6a5b52]">{moment.note}</p>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-          <div className="mt-9 text-center">
-            <Link href="/how-it-works/" className="inline-flex rounded-full border border-[#7a6841] px-7 py-3.5 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white">
-              See how the planning path works
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Client proof, shared carefully</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">A truthful place for future client stories</h2>
-            <p className="mt-5 text-lg leading-8 text-[#4d403a]">
-              CeremonyVerse is building its public proof with care. Family experience, earlier sourcing work, client testimonials, and case studies are always labelled by what they are—not used interchangeably.
-            </p>
-          </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Family experience</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">Mini, founder and destination-wedding concierge</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">Based in Philadelphia, Mini keeps family priorities, approvals, guest information, and decision records connected through one named point of contact.</p>
-              <Link href="/about/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Meet Mini and read the background</Link>
-            </article>
-            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">How the process was shaped</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">Three Mexico wedding journeys</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">See the family wedding experiences that shaped the questions, safeguards, and family support used today. They are labeled as family events, not client projects.</p>
-              <Link href="/real-weddings/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">See the family experience</Link>
-            </article>
-            <article className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Clear role boundaries</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">Local scope is visible before payment</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">Local planning and on-site responsibilities are listed in your private proposal so you can see the working relationship before paying.</p>
-              <Link href="/how-it-works/" className="mt-6 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">Review the complete process</Link>
-            </article>
-          </div>
-          <div className="mt-8 rounded-3xl border border-[#d7c7a4] bg-[#f4eee4] p-7 sm:p-10">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Proof standards</p>
-              <h3 className="mt-3 font-serif text-3xl font-semibold">Testimonials and case studies will be earned, not invented</h3>
-              <p className="mt-4 leading-7 text-[#4d403a]">Client quotes, event stories, names, images, and outcomes appear only after real work is complete and public permission is documented.</p>
-            </div>
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
-              {proofPrinciples.map((principle) => (
-                <article key={principle.title} className="rounded-2xl border border-[#d9cfbf] bg-white p-7">
-                  <h4 className="font-serif text-2xl font-semibold">{principle.title}</h4>
-                  <p className="mt-4 text-sm leading-6 text-[#4d403a]">{principle.description}</p>
-                </article>
-              ))}
-            </div>
-            <div className="mt-7 text-center">
-              <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Read independent public reviews on Trustpilot</a>
-            </div>
           </div>
         </div>
       </section>
@@ -594,9 +360,6 @@ export function HomePage() {
             ))}
           </div>
           <p className="mt-8 text-sm leading-6 text-[#5e4a40]">{destinationPackagePricingNote}</p>
-          <div className="mt-6 text-center">
-            <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline underline-offset-4">Deciding who to trust with the planning? Read independent public reviews on Trustpilot</a>
-          </div>
         </div>
       </section>
 
@@ -634,43 +397,6 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white px-6 py-20 sm:py-28">
-        <div className="mx-auto max-w-6xl">
-          <div className="mx-auto mb-12 max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">One plan, clear owners</p>
-            <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Know who handles each part of the wedding</h2>
-            <p className="mt-5 text-lg leading-8 text-[#4d403a]">Your written scope connects the teams without blurring legal, booking, payment, or delivery responsibilities.</p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {roleBoundaries.map(({ title, description }) => (
-              <article key={title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-8">
-                <h3 className="font-serif text-2xl font-semibold">{title}</h3>
-                <p className="mt-4 leading-7 text-[#4d403a]">{description}</p>
-              </article>
-            ))}
-          </div>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-6 text-[#5e4a40]">
-            The final contract identifies included work, exclusions, fees, payment milestones, approvals, change rules,
-            and outside costs before paid planning starts.
-          </p>
-          <div className="mt-10 rounded-3xl bg-[#1f1f1f] p-8 text-white sm:p-10">
-            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c5a059]">A better standard than a badge</p>
-                <h3 className="mt-3 font-serif text-3xl font-semibold !text-white">How to evaluate CeremonyVerse before paying</h3>
-                <p className="mt-4 leading-7 !text-white/75">You should not have to rely on a logo, rating graphic, or sales promise to understand the risk.</p>
-              </div>
-              <ul className="space-y-4 text-sm leading-6 !text-white/85 sm:text-base sm:leading-7">
-                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">01</span><span>Your first 30-minute call is free, with no payment or contract required.</span></li>
-                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">02</span><span>Public prices, planning tools, process details, and policies are available without an email gate.</span></li>
-                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">03</span><span>Your private proposal lists the exact scope, owners, fees, exclusions, milestones, and outside costs before paid work begins.</span></li>
-                <li className="flex gap-3"><span aria-hidden="true" className="font-semibold text-[#c5a059]">04</span><span>Resorts and qualified travel, transfer, and vendor providers issue and control their own contracts, bookings, and payments.</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="px-6 py-20 sm:py-28">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
@@ -700,10 +426,10 @@ export function HomePage() {
             identify the right destination-planning scope, and explain any paid next step before you decide.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
-              Request Free Consultation
+            <Link href="/schedule/?from=homepage-final" className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+              Book your free 30-minute call
             </Link>
-            <ChatWithMinisAssistantButton variant="light" source="homepage-final" className="px-8 py-4" />
+            <a href="https://wa.me/12153419990" className="px-5 py-3 underline">WhatsApp Mini instead</a>
           </div>
         </div>
       </section>

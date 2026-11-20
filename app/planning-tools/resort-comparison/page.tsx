@@ -111,7 +111,7 @@ export default function ResortComparisonPage() {
             </article>
           ))}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=resort-calculator" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Private Resort Review</Link>
+            <Link href="/schedule/?from=resort-calculator" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Private Resort Review</Link>
             <Link href="/planning-tools/budget/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Open Budget Builder</Link>
           </div>
         </div>

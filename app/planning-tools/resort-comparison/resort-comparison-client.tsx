@@ -226,7 +226,7 @@ export function ResortComparisonClient() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row print:hidden">
-          <Link href="/contact/?service=mexico&from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
+          <Link href="/schedule/?from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
           <button type="button" onClick={printComparison} className="rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">Print or Save as PDF</button>
           <button type="button" onClick={reset} className="rounded-full border border-[#c7bcae] px-7 py-3 text-sm font-semibold text-[#5e4a40]">Clear comparison</button>
         </div>

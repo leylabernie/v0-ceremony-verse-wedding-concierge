@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 
 export default function MobileStickyCTA() {
   const pathname = usePathname()
+  if (pathname.startsWith("/schedule") || pathname.startsWith("/booking-confirmed")) return null
   const calculatorPage = pathname.startsWith("/planning-tools")
   const homePage = pathname === "/"
   const destinationPage =
@@ -13,10 +14,10 @@ export default function MobileStickyCTA() {
     pathname.startsWith("/destinations") || pathname.startsWith("/resorts")
 
   const consultationHref = homePage
-    ? "/contact/?service=mexico&from=mobile-home"
+    ? "/schedule/?from=mobile-home"
     : calculatorPage
-      ? "/contact/?service=mexico&from=mobile-calculator"
-      : "/contact/?from=mobile-consultation"
+      ? "/schedule/?from=mobile-calculator"
+      : "/schedule/?from=mobile-consultation"
   const prompt = calculatorPage
     ? "Need help with these numbers?"
     : homePage

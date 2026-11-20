@@ -75,7 +75,7 @@ export default function ResortsPage() {
             catering, room blocks, and weather backup to confirm in writing before you sign.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=resorts-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
+            <Link href="/schedule/?from=resorts-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
             <Link href="/planning-tools/resort-comparison/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Open Resort Comparison Calculator</Link>
           </div>
           <p className="mx-auto mt-8 max-w-3xl rounded-xl border border-white/15 bg-white/5 p-4 text-sm leading-6 !text-white/75">
@@ -169,7 +169,7 @@ export default function ResortsPage() {
             or start with the written $300 Feasibility &amp; Action Plan for a specific property.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link href="/contact/?service=mexico&from=resorts-final" className="rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
+            <Link href="/schedule/?from=resorts-final" className="rounded-full bg-white px-8 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
             <Link href="/destination-wedding-feasibility-plan/" className="rounded-full border border-white/60 px-8 py-4 text-sm font-semibold !text-white">See the $300 action plan</Link>
           </div>
         </div>

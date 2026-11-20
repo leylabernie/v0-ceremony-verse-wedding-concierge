@@ -7,6 +7,7 @@ interface SendEmailOptions {
   html: string
   text: string
   idempotencyKey?: string
+  attachments?: { filename: string; content: string; content_type: string }[]
 }
 
 export function ceremonyVerseBusinessEmail(): string {
@@ -54,6 +55,7 @@ export async function sendCeremonyVerseEmail(options: SendEmailOptions): Promise
         subject: safeHeader(options.subject),
         html: options.html,
         text: options.text,
+        attachments: options.attachments,
       }),
       cache: "no-store",
       signal: controller.signal,

@@ -118,7 +118,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-4xl font-semibold sm:text-5xl">Tell us what your family needs</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/85">Share your destination, dates, guest count, ceremonies, budget scope, and whether India outfit sourcing is needed. The first 30-minute consultation is free.</p>
-          <Link href="/contact/?service=mexico&from=about-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule Free Consultation</Link>
+          <Link href="/schedule/?from=about-final" className="mt-8 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">Schedule Free Consultation</Link>
         </div>
       </section>
     </main>

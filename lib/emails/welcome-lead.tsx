@@ -12,7 +12,7 @@ import { escapeHtml } from "@/lib/consultation-email"
  */
 
 const TRACKER_URL = "https://www.ceremonyverse.com/downloads/room-block-tracker.xlsx"
-const CONSULT_URL = "https://www.ceremonyverse.com/contact/?service=mexico&from=room-block-tracker-email"
+const CONSULT_URL = "https://www.ceremonyverse.com/schedule/?from=room-block-tracker-email"
 const MAIN_SITE = "https://www.ceremonyverse.com"
 // Deep link: this email is about room blocks, so guests land on the portal's
 // room-blocks page rather than the portal homepage (agents.md dual-site engine).

@@ -8,7 +8,7 @@ const sitemap = read("../app/sitemap.ts")
 
 test("the how-it-works page preserves the canonical route, consultation path, and fictional-scenario disclosure", () => {
   assert.match(page, /path: "\/how-it-works\/"/)
-  assert.match(page, /const consultationHref = "\/contact\/\?service=mexico&from=how-it-works"/)
+  assert.match(page, /const consultationHref = "\/schedule\/\?from=how-it-works"/)
   assert.match(page, /Fictional planning view/)
   assert.match(page, /not a client project, a provider quote, or a promise of availability/)
 })

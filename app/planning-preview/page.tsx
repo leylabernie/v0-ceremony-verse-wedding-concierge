@@ -6,7 +6,7 @@ import Link from "next/link"
 import { ArrowRight, Check, Compass, Sparkles, UsersRound } from "lucide-react"
 import { buildMetadata } from "@/lib/seo"
 
-const consultationHref = "/contact/?service=mexico&from=planning-preview"
+const consultationHref = "/schedule/?from=planning-preview"
 
 export const metadata = buildMetadata({
   path: "/planning-preview/",

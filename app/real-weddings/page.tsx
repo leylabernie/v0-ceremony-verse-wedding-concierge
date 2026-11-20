@@ -230,7 +230,7 @@ export default function WeddingExperiencePage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact/?service=mexico&from=real-weddings"
+              href="/schedule/?from=real-weddings"
               className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]"
             >
               Schedule Free Consultation

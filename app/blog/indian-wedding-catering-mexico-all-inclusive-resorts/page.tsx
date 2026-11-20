@@ -197,7 +197,7 @@ export default function BlogPost() {
               including food, line by line.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-4 sm:flex-row">
-              <Link href="/contact/?service=mexico&from=catering-article" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
+              <Link href="/schedule/?from=catering-article" className="rounded-full bg-[#c5a059] px-7 py-3 font-semibold text-[#1f1f1f]">
                 Request a Free 30-Minute Consultation
               </Link>
               <Link href="/destinations/cancun-indian-wedding/" className="rounded-full border border-[#c5a059] px-7 py-3 font-semibold text-white">

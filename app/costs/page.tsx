@@ -340,7 +340,7 @@ export default function CostsPage() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact/?service=mexico&from=costs-guide"
+              href="/schedule/?from=costs-guide"
               className="rounded-full bg-[#c5a059] px-8 py-4 text-sm font-semibold text-[#1f1f1f] transition hover:bg-[#d4b06a]"
             >
               Schedule Free 30-Minute Consultation

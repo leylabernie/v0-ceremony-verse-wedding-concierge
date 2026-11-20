@@ -171,7 +171,7 @@ export default function MexicoDestinationGuidePage() {
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact/?service=mexico"
+              href="/schedule/"
               className="rounded-lg bg-[#7a6841] px-8 py-4 text-lg font-bold text-white"
             >
               Request a Free 30-Minute Consultation
@@ -440,7 +440,7 @@ export default function MexicoDestinationGuidePage() {
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact/?service=mexico"
+              href="/schedule/"
               className="rounded-lg bg-white px-8 py-4 text-lg font-bold text-[#1f1f1f]"
             >
               Request a Free 30-Minute Consultation

@@ -353,7 +353,7 @@ export default function AuthorMiniArchivePage() {
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-4">
             <Link
-              href="/contact/?service=mexico&from=author-mini"
+              href="/schedule/?from=author-mini"
               className="inline-flex rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#1f1f1f]"
             >
               Schedule Free Consultation

@@ -135,25 +135,25 @@ const planningDecisionRoutes = [
     title: "You are still choosing a destination or resort",
     next: "Start with the free consultation",
     description: "Bring your date range, guest count, ceremony outline, and destination ideas. The first call identifies the next decision without payment or a contract.",
-    href: "/contact/?service=mexico&from=pricing-decision-guide",
+    href: "/schedule/?from=pricing-decision-guide",
   },
   {
     title: "You have proposals but need written answers",
     next: "Use the $300 feasibility plan",
     description: "Compare up to two current proposals, normalize guest and budget assumptions, and turn unanswered questions into a practical written action plan that makes the next conversation feel calmer.",
-    href: destinationFeasibilityPlan.href,
+    href: "/schedule/?from=pricing-feasibility",
   },
   {
     title: "Your venue and vendors are largely in place",
     next: "Discuss Event Coordination",
     description: "Use a final handover and on-site management scope when your core decisions and contracts are already complete, so the couple and family can be more present during wedding week.",
-    href: "/contact/?service=mexico&from=pricing-decision-guide-coordination",
+    href: "/schedule/?from=pricing-decision-guide-coordination",
   },
   {
     title: "You need ongoing planning from the beginning",
     next: "Discuss Partial or Full Planning",
     description: "Choose a written planning scope based on the dates, event count, guest complexity, local requirements, staffing, and responsibility lines still to be confirmed—without carrying every moving part alone.",
-    href: "/contact/?service=mexico&from=pricing-decision-guide-planning",
+    href: "/schedule/?from=pricing-decision-guide-planning",
   },
 ]
 
@@ -174,7 +174,7 @@ export default function PricingPage() {
             Destination Wedding Packages &amp; Pricing
           </h1>
           <p className="mx-auto max-w-3xl text-lg leading-8 text-white/80">
-            India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
+            Planning starts at $4,000 USD and India sourcing starts at $799 USD. India sourcing uses flat service fees instead of a percentage of the outfit price. Destination
             planning uses published starting fees and a wedding-specific written scope. Products, resorts, venues, vendors, travel, shipping, and customs
             are itemized outside the applicable CeremonyVerse service fee unless the proposal says otherwise.
           </p>
@@ -200,23 +200,6 @@ export default function PricingPage() {
             <p className="mt-5 font-semibold text-[#e8cf9d]">{mexicoAvailabilityMessage}</p>
           </div>
 
-          <section className="mb-10 rounded-3xl border border-white/15 bg-white/5 p-7 sm:p-9">
-            <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#c5a059]">Choose your next conversation</p>
-              <h3 className="mt-3 font-serif text-3xl font-semibold !text-[#f8f6f2]">Start with the decision you have in front of you</h3>
-              <p className="mt-4 leading-7 !text-[#e7ded3]">These routes help you select the right conversation. They do not replace a wedding-specific written scope, proposal, or third-party quote.</p>
-            </div>
-            <div className="mt-8 grid gap-5 md:grid-cols-2">
-              {planningDecisionRoutes.map((route) => (
-                <article key={route.title} className="flex flex-col rounded-2xl border border-white/15 bg-[#1f1f1f] p-6">
-                  <h4 className="font-serif text-2xl font-semibold !text-[#f8f6f2]">{route.title}</h4>
-                  <p className="mt-3 text-sm font-semibold !text-[#e8cf9d]">{route.next}</p>
-                  <p className="mt-4 flex-1 text-sm leading-6 !text-[#e7ded3]">{route.description}</p>
-                  <Link href={route.href} className="mt-6 inline-flex self-start font-semibold !text-[#e8cf9d] underline underline-offset-4">Choose this next step</Link>
-                </article>
-              ))}
-            </div>
-          </section>
 
           <article className="mb-10 rounded-3xl border border-[#c5a059]/50 bg-[#c5a059]/10 p-7 sm:p-10">
             <div className="grid gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-center">
@@ -281,9 +264,6 @@ export default function PricingPage() {
             in the signed proposal.
           </p>
           <p className="mt-8 text-sm leading-6 !text-white/65">{destinationPackagePricingNote}</p>
-          <div className="mt-6 text-center">
-            <a href="https://www.trustpilot.com/review/ceremonyverse.com" target="_blank" rel="noopener noreferrer" className="font-semibold !text-[#c5a059] underline underline-offset-4">Read independent public reviews on Trustpilot</a>
-          </div>
         </div>
       </section>
 
@@ -343,7 +323,7 @@ export default function PricingPage() {
                 </ul>
 
                 <Link
-                  href="/contact/"
+                  href="/schedule/?from=pricing"
                   className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white"
                 >
                   Discuss This Tier
@@ -353,7 +333,24 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-
+<div className="bg-[#1f1f1f] px-6 py-12"><div className="mx-auto max-w-6xl">          <section className="mb-10 rounded-3xl border border-white/15 bg-white/5 p-7 sm:p-9">
+            <div className="max-w-3xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] !text-[#c5a059]">Choose your next conversation</p>
+              <h3 className="mt-3 font-serif text-3xl font-semibold !text-[#f8f6f2]">Start with the decision you have in front of you</h3>
+              <p className="mt-4 leading-7 !text-[#e7ded3]">These routes help you select the right conversation. They do not replace a wedding-specific written scope, proposal, or third-party quote.</p>
+            </div>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              {planningDecisionRoutes.map((route) => (
+                <article key={route.title} className="flex flex-col rounded-2xl border border-white/15 bg-[#1f1f1f] p-6">
+                  <h4 className="font-serif text-2xl font-semibold !text-[#f8f6f2]">{route.title}</h4>
+                  <p className="mt-3 text-sm font-semibold !text-[#e8cf9d]">{route.next}</p>
+                  <p className="mt-4 flex-1 text-sm leading-6 !text-[#e7ded3]">{route.description}</p>
+                  <Link href={route.href} className="mt-6 inline-flex self-start font-semibold !text-[#e8cf9d] underline underline-offset-4">Choose this next step</Link>
+                </article>
+              ))}
+            </div>
+          </section>
+</div></div>
       <section className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
           <div>
@@ -427,7 +424,7 @@ export default function PricingPage() {
             contract is required for the call; any paid next step is presented separately in writing.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link href="/contact/" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
+            <Link href="/schedule/?from=pricing" className="inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#1f1f1f]">
               Request a Free 30-Minute Consultation
             </Link>
             <ChatWithMinisAssistantButton variant="light" source="pricing-final" className="px-8 py-4" />
