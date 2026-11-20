@@ -1,6 +1,11 @@
 "use client";
 import { useEffect, useState, type FormEvent } from "react";
 import { trackLead } from "@/lib/analytics";
+const easternTime = new Intl.DateTimeFormat("en-GB", {
+  timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+});
+const isPreferred = (iso: string) => easternTime.format(new Date(iso)) > "17:00";
+
 export function SchedulePage() {
   const [slots, setSlots] = useState<string[]>([]),
     [notice, setNotice] = useState("Loading available times…"),
@@ -66,13 +71,22 @@ export function SchedulePage() {
         Your first call is free. Choose a time shown in your local time zone,
         then confirm your contact details.
       </p>
+      <p>Mini prefers meetings after 5 p.m. Eastern. Other listed times are welcome too.</p>
+      <p>For a question or a time not listed, reach Mini anytime at +1 (215) 341-9990: {" "}
+        <a className="underline" href="sms:+12153419990">Text</a>, {" "}
+        <a className="underline" href="tel:+12153419990">call</a>, or {" "}
+        <a className="underline" href="https://wa.me/12153419990">WhatsApp</a>.
+      </p>
       <p role="status">{notice}</p>
       <form onSubmit={submit} className="space-y-4">
         <label className="block">
           Available times
           <select required name="startIso" className={field} defaultValue="">
             <option value="">Choose a time</option>
-            {slots.map((iso) => (
+            {[true, false].map(preferred => {
+              const group = slots.filter(iso => isPreferred(iso) === preferred);
+              return group.length ? <optgroup key={String(preferred)} label={preferred ? "Preferred · after 5 p.m. Eastern" : "Other available times"}>
+              {group.map((iso) => (
               <option key={iso} value={iso}>
                 {new Date(iso).toLocaleString(undefined, {
                   weekday: "short",
@@ -83,7 +97,8 @@ export function SchedulePage() {
                   timeZoneName: "short",
                 })}
               </option>
-            ))}
+            ))}</optgroup> : null;
+            })}
           </select>
         </label>
         {(
@@ -124,9 +139,7 @@ export function SchedulePage() {
           Confirm my time
         </button>
       </form>
-      <a className="underline" href="https://wa.me/12153419990">
-        Prefer to message? WhatsApp Mini
-      </a>
+
     </main>
   );
 }
