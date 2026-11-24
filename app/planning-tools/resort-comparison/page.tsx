@@ -1,3 +1,4 @@
+import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { ResortComparisonClient } from "./resort-comparison-client"
@@ -16,16 +17,11 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Resort Proposal Calculator", url: "/planning-tools/resort-comparison/" },
 ])
 
-const calculatorSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
+const calculatorSchema = buildCalculatorSchema({
   name: "Mexico, Jamaica, and Punta Cana Wedding Resort Proposal Comparison Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/resort-comparison/",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Any",
-  isAccessibleForFree: true,
   description: "A free client-entered comparison for two resort proposals, known host costs, room-block exposure, cultural requirements, and written terms.",
-}
+})
 
 const sections = [
   {

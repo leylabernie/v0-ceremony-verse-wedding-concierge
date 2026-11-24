@@ -1,3 +1,4 @@
+import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import { VisibleFaqs } from "@/components/visible-faqs"
 import { PlanningNextStep } from "@/components/planning-next-step"
 import { BudgetPlannerClient } from "./budget-planner-client"
@@ -18,16 +19,11 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Budget Calculator", url: "/planning-tools/budget/" },
 ])
 
-const calculatorSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
+const calculatorSchema = buildCalculatorSchema({
   name: "Indian Destination Wedding Budget Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/budget/",
-  applicationCategory: "FinanceApplication",
-  operatingSystem: "Any",
-  isAccessibleForFree: true,
   description: "A free calculator with dated official resort starting rates, manual quote fields, destination-wedding event costs, guest travel, shopping, contingency, and target-budget comparisons.",
-}
+})
 
 const faqSchema = buildFaqSchema([{"question": "Is this destination wedding cost calculator free?", "answer": "Yes. You can use the calculator without paying a planning fee. The optional $300 Feasibility Plan is a separate service for couples who want a working session and a written action brief."}, {"question": "Can I compare Mexico, Jamaica, and Punta Cana?", "answer": "Yes. Use the same guest count, event schedule, room assumptions, and currency for each destination. Enter current written proposals where available. Published resort starting packages are dated benchmarks, not complete wedding quotes."}, {"question": "What should I add beyond the resort wedding package?", "answer": "Include private-event overages, d\u00e9cor, production, outside-vendor charges, planning and staffing, host-paid travel, room-block exposure, taxes, service charges, and a reserve. Add outfits and shipping separately if they belong in the host budget. Do not duplicate costs already included in a quoted package."}, {"question": "What should I bring to the free consultation?", "answer": "Bring your preferred destinations and dates, likely guest range, event list, host budget, guest travel expectations, and up to two current resort proposals if available. Flag every calculator line that is still an estimate."}])
 

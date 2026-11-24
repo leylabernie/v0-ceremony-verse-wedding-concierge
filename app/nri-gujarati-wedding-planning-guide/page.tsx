@@ -1,3 +1,4 @@
+import { MexicoPlanningBenchmarks } from "@/components/mexico-planning-benchmarks"
 import Link from "next/link"
 import {
   buildBreadcrumb,
@@ -340,6 +341,7 @@ export default function NriGujaratiWeddingPlanningGuidePage() {
         </article>
       </section>
 
+      <MexicoPlanningBenchmarks />
       <section id="costs" className="bg-[#f4eee4] px-6 py-12 scroll-mt-24">
         <article className="mx-auto max-w-3xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Cost breakdown</p>

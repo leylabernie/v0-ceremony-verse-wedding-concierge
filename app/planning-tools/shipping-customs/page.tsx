@@ -1,3 +1,4 @@
+import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import { ShippingCustomsClient } from "./shipping-customs-client"
 import { JsonLd, buildBreadcrumb, buildMetadata } from "@/lib/seo"
 
@@ -15,17 +16,12 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Shipping & Customs Calculator", url: "/planning-tools/shipping-customs/" },
 ])
 
-const calculatorSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
+const calculatorSchema = buildCalculatorSchema({
   name: "North America Wedding Outfit Shipping & Customs Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/shipping-customs/",
-  applicationCategory: "FinanceApplication",
-  operatingSystem: "Any",
-  isAccessibleForFree: true,
   description:
     "A free USD landed-cost calculator for India-sourced wedding products delivered to the United States or Canada.",
-}
+})
 
 export default function ShippingCustomsPage() {
   return (

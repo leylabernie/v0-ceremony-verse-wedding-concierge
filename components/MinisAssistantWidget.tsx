@@ -1,4 +1,7 @@
 "use client";
+import { conciergeIntent } from "@/lib/planning-intent";
+import { consultationBookingUrl } from "@/lib/consultation-booking";
+
 
 import { usePathname } from "next/navigation";
 import {
@@ -46,7 +49,7 @@ type ChatMessage = { role: ChatRole; text: string };
 const OPENING_MESSAGE =
   "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Are you exploring destination weddings, reviewing resort proposals, shopping for Indian wedding outfits, or planning a resort stay or honeymoon?";
 
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
+
 
 const ACCENT = "#7a6841";
 
@@ -72,6 +75,7 @@ export default function MinisAssistantWidget() {
 
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const intent = useMemo(() => conciergeIntent(messages), [messages]);
   // Lazily restore any persisted conversation id (survives page navigations).
   const [conversationId, setConversationId] = useState<string | null>(() => {
     if (typeof window === "undefined") return null;
@@ -383,6 +387,11 @@ export default function MinisAssistantWidget() {
               </div>
             )}
 
+            {(intent.audience || intent.high) && <aside className="space-y-2 rounded-xl border bg-white p-3 text-sm">
+              {intent.audience === "parent" && <a className="block underline" href="/nri-gujarati-parents-guide-destination-wedding/">Family planning guide: dietary needs, room blocks and guest travel</a>}
+              {intent.audience === "couple" && <a className="block underline" href="/nri-gujarati-wedding-timeline-12-months/">Couple’s planning timeline: ceremonies, décor and attire</a>}
+              {intent.high && <><a className="block underline" href="/schedule/?from=ai-concierge">Book a free 30-minute call</a><a className="block underline" href="https://wa.me/12153419990">WhatsApp Mini directly</a></>}
+            </aside>}
             {/* Inline lead-capture form */}
             {showLeadForm && !leadSubmitted && (
               <form
@@ -427,17 +436,15 @@ export default function MinisAssistantWidget() {
 
           {/* Composer */}
           <div className="border-t bg-white p-2" style={{ borderColor: "#e6dfd5" }}>
-            {CALENDLY_URL && (
               <a
-                href={CALENDLY_URL}
+                href={consultationBookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mb-2 block text-center text-xs font-semibold underline"
                 style={{ color: ACCENT }}
               >
-                Or book a free consultation call →
+                Book a free consultation on Google Calendar →
               </a>
-            )}
             <form
               onSubmit={(e) => {
                 e.preventDefault();

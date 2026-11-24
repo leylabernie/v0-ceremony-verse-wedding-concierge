@@ -1,5 +1,6 @@
 "use client"
 
+import { proposalRisk } from "@/lib/planning-intent"
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
@@ -24,6 +25,8 @@ interface ResortValues {
   destination: string
   weddingQuote: string
   taxesFees: string
+  uncoveredNights: string
+  penaltyRate: string
   vendorFees: string
   familyRooms: string
   familyNights: string
@@ -49,7 +52,7 @@ function buildResort(name: string): ResortValues {
     destination: "",
     weddingQuote: "",
     taxesFees: "",
-    vendorFees: "",
+    vendorFees: "", uncoveredNights: "", penaltyRate: "",
     familyRooms: "",
     familyNights: "",
     nightlyRate: "",
@@ -75,7 +78,8 @@ function summarize(resort: ResortValues) {
   const documentation = Math.round((answered.length / termMetrics.length) * 100)
   const missingTerms = termMetrics.filter(({ key }) => resort.terms[key] === "unknown")
 
-  return { hostedRooms, hostedTransfers, knownHostCost, roomBlockExposure, termScore, documentation, missingTerms }
+  const risk = proposalRisk(numeric(resort.uncoveredNights), numeric(resort.penaltyRate), numeric(resort.vendorFees))
+  return { risk, hostedRooms, hostedTransfers, knownHostCost, roomBlockExposure, termScore, documentation, missingTerms }
 }
 
 const inputClass = "mt-1 w-full rounded-lg border border-[#d9cfbf] bg-[#faf8f5] px-3 py-2.5 font-normal"
@@ -177,6 +181,8 @@ export function ResortComparisonClient() {
                   <div className="mt-5 grid gap-4 sm:grid-cols-3">
                     <NumberInput label="Required rooms" value={resort.roomBlockRooms} onChange={(value) => updateResort(index, "roomBlockRooms", value)} />
                     <NumberInput label="Required nights" value={resort.roomBlockNights} onChange={(value) => updateResort(index, "roomBlockNights", value)} />
+                    <NumberInput label="Uncovered room-nights after credits and permitted attrition" value={resort.uncoveredNights} onChange={v => updateResort(index, "uncoveredNights", v)} />
+                    <MoneyInput label="Contract penalty per uncovered room-night (USD)" value={resort.penaltyRate} onChange={v => updateResort(index, "penaltyRate", v)} />
                     <MoneyInput label="Average guest room rate" value={resort.guestRoomRate} onChange={(value) => updateResort(index, "guestRoomRate", value)} />
                   </div>
                 </fieldset>
@@ -201,6 +207,7 @@ export function ResortComparisonClient() {
                 <div className="cv-calculator-summary mt-8 rounded-2xl bg-[#1f1f1f] p-6 text-white">
                   <h2 className="font-serif text-3xl font-semibold !text-white">{resort.name || `Resort ${index === 0 ? "A" : "B"}`} summary</h2>
                   <dl className="mt-5 grid gap-4 sm:grid-cols-2">
+                    <Result label="Estimated unhedged attrition penalty" value={currencyFormatter.format(summary.risk.penalty)} />
                     <Result label="Known host cost" value={currencyFormatter.format(summary.knownHostCost)} />
                     <Result label="Room-block retail value" value={currencyFormatter.format(summary.roomBlockExposure)} />
                     <Result label="Written-term strength" value={summary.documentation ? `${summary.termScore}%` : "Not scored"} />
@@ -232,6 +239,9 @@ export function ResortComparisonClient() {
         </div>
 
         {/* Lead-capture offer — appears with results; never gates the calculator. */}
+        {summaries.some(s => s.risk.high) && <aside className="my-6 rounded-xl border border-amber-600 bg-amber-50 p-5 text-stone-900">
+          <strong>⚠️ High Financial Risk Detected:</strong> Your figures indicate significant attrition penalty exposure or outside-vendor fees. <Link className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
+        </aside>}
         <CalculatorLeadCapture
           calculatorType="resort-comparison"
           results={summaries}

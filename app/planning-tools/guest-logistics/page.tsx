@@ -1,3 +1,4 @@
+import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { GuestLogisticsClient } from "./guest-logistics-client"
@@ -16,16 +17,11 @@ const breadcrumbSchema = buildBreadcrumb([
   { name: "Guest & VIP Cost Calculator", url: "/planning-tools/guest-logistics/" },
 ])
 
-const calculatorSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
+const calculatorSchema = buildCalculatorSchema({
   name: "Destination Wedding Guest and VIP Travel Cost Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/guest-logistics/",
-  applicationCategory: "FinanceApplication",
-  operatingSystem: "Any",
-  isAccessibleForFree: true,
   description: "A free client-entered calculator for guest room nights, hosted VIP rooms and flights, transfers, welcome items, and family-paid guest support.",
-}
+})
 
 const trackingGroups = [
   {

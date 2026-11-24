@@ -1,3 +1,4 @@
+import { MexicoPlanningBenchmarks } from "@/components/mexico-planning-benchmarks"
 import Link from "next/link"
 import { venuePlanningGuides } from "@/lib/venue-planning-guides"
 import type { DestinationPageData } from "@/lib/destination-pages"
@@ -42,6 +43,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
         </div>
       </section>
 
+      <MexicoPlanningBenchmarks destination={data.shortName} />
       {planningGuide && <section className="border-b border-[#e6dfd5] bg-[#f2ece2] px-6 py-8"><div className="mx-auto flex max-w-6xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"><div><h2 className="font-serif text-2xl font-semibold">Planning the event at {planningGuide.venue}?</h2><p className="mt-2 text-sm leading-6 text-[#4d403a]">Explore the layout, production and timing guide, then build your free ceremony timeline.</p></div><Link href={`/guides/${planningGuide.slug}/`} className="shrink-0 font-semibold text-[#7a6841] underline">Read the venue planning guide →</Link></div></section>}
 
       <section className="border-b border-[#e6dfd5] bg-white px-6 py-10">
