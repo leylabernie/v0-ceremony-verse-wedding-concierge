@@ -1,4 +1,6 @@
 "use client";
+import { consultationBookingUrl } from "@/lib/consultation-booking";
+
 
 import { usePathname } from "next/navigation";
 import {
@@ -46,7 +48,7 @@ type ChatMessage = { role: ChatRole; text: string };
 const OPENING_MESSAGE =
   "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Are you exploring destination weddings, reviewing resort proposals, shopping for Indian wedding outfits, or planning a resort stay or honeymoon?";
 
-const CALENDLY_URL = process.env.NEXT_PUBLIC_CALENDLY_URL ?? "";
+
 
 const ACCENT = "#7a6841";
 
@@ -427,17 +429,15 @@ export default function MinisAssistantWidget() {
 
           {/* Composer */}
           <div className="border-t bg-white p-2" style={{ borderColor: "#e6dfd5" }}>
-            {CALENDLY_URL && (
               <a
-                href={CALENDLY_URL}
+                href={consultationBookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mb-2 block text-center text-xs font-semibold underline"
                 style={{ color: ACCENT }}
               >
-                Or book a free consultation call →
+                Book a free consultation on Google Calendar →
               </a>
-            )}
             <form
               onSubmit={(e) => {
                 e.preventDefault();

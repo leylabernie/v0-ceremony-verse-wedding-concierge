@@ -1,5 +1,6 @@
 "use client";
 
+import { consultationBookingUrl } from "@/lib/consultation-booking";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import {
@@ -46,7 +47,7 @@ function ctaType(href: string): string | null {
   if (href.startsWith("sms:")) return "sms";
   if (href.startsWith("tel:")) return "phone";
   if (href.includes("wa.me/") || href.includes("api.whatsapp.com/")) return "whatsapp";
-  if (href.includes("calendly.com/")) return "calendly";
+  if (href === consultationBookingUrl) return "google_calendar";
   if (href.includes("trustpilot.com/review/ceremonyverse.com")) return "review_profile";
 
   try {
