@@ -1,5 +1,6 @@
 "use client";
-import { conciergeIntent } from "@/lib/planning-intent";
+import { captureEvent } from "@/lib/analytics";
+import { conciergeIntent, conciergeTopic } from "@/lib/planning-intent";
 import { consultationBookingUrl } from "@/lib/consultation-booking";
 
 
@@ -76,6 +77,15 @@ export default function MinisAssistantWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const intent = useMemo(() => conciergeIntent(messages), [messages]);
+  const segment = intent.audience ? (`nri_${intent.audience}` as const) : undefined;
+  const primaryTopic = useMemo(() => conciergeTopic(messages), [messages]);
+  const lastClass = useRef<string | undefined>(undefined);
+  useEffect(() => {
+    const key = segment && `${segment}:${primaryTopic}`;
+    if (segment && key !== lastClass.current) captureEvent({ name: "ai_concierge_intent_classified", properties: { audience_segment: segment, primary_topic: primaryTopic } });
+    lastClass.current = key;
+  }, [segment, primaryTopic]);
+  const handoff = (channel: "whatsapp" | "schedule_call") => captureEvent({ name: "ai_concierge_lead_converted", properties: { channel, audience_segment: segment ?? "unclassified" } });
   // Lazily restore any persisted conversation id (survives page navigations).
   const [conversationId, setConversationId] = useState<string | null>(() => {
     if (typeof window === "undefined") return null;
@@ -390,7 +400,7 @@ export default function MinisAssistantWidget() {
             {(intent.audience || intent.high) && <aside className="space-y-2 rounded-xl border bg-white p-3 text-sm">
               {intent.audience === "parent" && <a className="block underline" href="/nri-gujarati-parents-guide-destination-wedding/">Family planning guide: dietary needs, room blocks and guest travel</a>}
               {intent.audience === "couple" && <a className="block underline" href="/nri-gujarati-wedding-timeline-12-months/">Couple’s planning timeline: ceremonies, décor and attire</a>}
-              {intent.high && <><a className="block underline" href="/schedule/?from=ai-concierge">Book a free 30-minute call</a><a className="block underline" href="https://wa.me/12153419990">WhatsApp Mini directly</a></>}
+              {intent.high && <><a className="block underline" onClick={() => handoff("schedule_call")} href="/schedule/?from=ai-concierge">Book a free 30-minute call</a><a className="block underline" onClick={() => handoff("whatsapp")} href="https://wa.me/12153419990">WhatsApp Mini directly</a></>}
             </aside>}
             {/* Inline lead-capture form */}
             {showLeadForm && !leadSubmitted && (
@@ -437,7 +447,7 @@ export default function MinisAssistantWidget() {
           {/* Composer */}
           <div className="border-t bg-white p-2" style={{ borderColor: "#e6dfd5" }}>
               <a
-                href={consultationBookingUrl}
+                onClick={() => handoff("schedule_call")} href={consultationBookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mb-2 block text-center text-xs font-semibold underline"

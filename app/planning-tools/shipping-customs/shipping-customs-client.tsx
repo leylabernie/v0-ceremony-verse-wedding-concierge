@@ -1,9 +1,10 @@
 "use client"
 
 import { customsAlert } from "@/lib/planning-intent"
+import { useCalculatorThreshold } from "@/hooks/use-calculator-threshold"
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
-import { trackEvent } from "@/lib/analytics"
+import { captureEvent, trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 import { TravelPortalCta } from "@/components/travel-portal-cta"
 
@@ -42,6 +43,8 @@ export function ShippingCustomsClient() {
   const [trackingConfirmed, setTrackingConfirmed] = useState(false)
   const [customsResponsibilityConfirmed, setCustomsResponsibilityConfirmed] = useState(false)
   const started = useRef(false)
+
+  useCalculatorThreshold("shipping", "wardrobe_import_duty", customsAlert(item, numeric(costs.duty)), numeric(costs.duty))
 
   const markStarted = () => {
     if (started.current) return
@@ -220,13 +223,13 @@ export function ShippingCustomsClient() {
             assessments, and availability may change. The current written provider documents and government assessment control.
           </p>
           <p className="mt-3 text-xs leading-5 !text-white/60 print:hidden">
-            Your entries stay in this browser and are not sent to CeremonyVerse.
+            Analytics records the duty amount in USD when a wardrobe tariff alert appears. Your full worksheet is not sent automatically.
           </p>
           <Link href="/contact/?service=india&from=shipping-customs-calculator" className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold !text-[#1f1f1f] print:hidden">
             Discuss a Sourcing Quote
           </Link>
           {/* Lead-capture offer — appears with results; never gates the calculator. */}
-          {customsAlert(item,numeric(costs.duty)) && <aside className="my-5 rounded-xl bg-amber-50 p-4 text-stone-900"><strong>💡 Customs Tariff Alert:</strong> Check whether your carrier quote already includes duty before adding it again. <Link className="underline" href="/buy-indian-wedding-outfits-from-india/?from=customs-calc">Explore optional India outfit sourcing</Link> for help organizing declarations; customs authorities determine the final assessment.</aside>}
+          {customsAlert(item,numeric(costs.duty)) && <aside className="my-5 rounded-xl bg-amber-50 p-4 text-stone-900"><strong>💡 Customs Tariff Alert:</strong> Check whether your carrier quote already includes duty before adding it again. <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "shipping", cta_target: "outfit_sourcing", source_rule: "wardrobe_import_duty" } })} className="underline" href="/buy-indian-wedding-outfits-from-india/?from=customs-calc">Explore optional India outfit sourcing</Link> for help organizing declarations; customs authorities determine the final assessment.</aside>}
           <CalculatorLeadCapture
             calculatorType="shipping-customs"
             results={summary}

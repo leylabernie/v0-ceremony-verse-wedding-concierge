@@ -2,8 +2,10 @@
 
 import { consultationBookingUrl } from "@/lib/consultation-booking";
 import { useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { getAttributionParams, persistAttribution, readAttribution } from "@/lib/attribution";
+import { usePathname, useRouter } from "next/navigation";
 import {
+  captureEvent,
   ATTRIBUTION_STORAGE_KEY,
   type AcquisitionContext,
   getAcquisitionContext,
@@ -67,10 +69,13 @@ function ctaType(href: string): string | null {
 }
 
 export function AcquisitionAttribution() {
+  const router = useRouter();
   const pathname = usePathname();
 
   useEffect(() => {
     try {
+      const referral = persistAttribution();
+      if (referral) captureEvent({ name: "geo_referrer_detected", properties: referral });
       saveFirstTouch();
     } catch {
       // Storage can be disabled; the site and CTAs must continue to work.
@@ -99,14 +104,39 @@ export function AcquisitionAttribution() {
         cta_type: type,
         page_path: window.location.pathname,
         link_text: (link.textContent || "").trim().slice(0, 80),
-        cta_location: ctaLocation,
+        cta_location: ctaLocation || (type === "google_calendar" ? new URLSearchParams(window.location.search).get("from") || "" : ""),
+        utm_source: readAttribution().utm_source || "",
+        ref: readAttribution().ref || "",
         requested_service: requestedService,
       });
     };
 
+    // Next Link uses its href prop rather than a mutated DOM href. For decorated
+    // same-tab clicks route explicitly; modified clicks retain native behavior.
+    const decorate = (event: MouseEvent) => {
+      const link = event.target instanceof Element ? event.target.closest<HTMLAnchorElement>('a[href]') : null;
+      if (!link || event.defaultPrevented || link.hasAttribute('download')) return;
+      const href = getAttributionParams(link.href);
+      if (href === link.href) return;
+      if (event.type === 'click' && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey && (!link.target || link.target === '_self')) {
+        event.preventDefault();
+        const url = new URL(href);
+        router.push(url.pathname + url.search + url.hash);
+      } else {
+        const previous = link.getAttribute('href')!;
+        link.href = href;
+        setTimeout(() => { if (link.href === href) link.setAttribute('href', previous); }, 0);
+      }
+    };
+    document.addEventListener("click", decorate, true);
+    document.addEventListener("auxclick", decorate, true);
     document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
-  }, []);
+    return () => {
+      document.removeEventListener("click", decorate, true);
+      document.removeEventListener("auxclick", decorate, true);
+      document.removeEventListener("click", handleClick);
+    };
+  }, [router]);
 
   useEffect(() => {
     if (pathname === "/contact/" || pathname === "/contact") {
