@@ -1,3 +1,4 @@
+import { agencyFields } from "@/lib/schema"
 /**
  * SEO helpers for CeremonyVerse.
  *
@@ -543,12 +544,9 @@ export function buildHowToSchema(opts: {
 export function buildLocalBusinessSchema(): object {
   return {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    ...agencyFields(),
     "@id": `${SITE_URL}#business`,
-    name: "CeremonyVerse Destination Wedding Planning",
     alternateName: SITE_NAME,
-    description:
-      "CeremonyVerse is a destination-wedding planning concierge founded by Mini Patel, specializing in NRI Gujarati and Hindu destination weddings across Mexico, Jamaica, and Punta Cana for South Asian families across the United States and Canada, with optional India wedding-outfit sourcing.",
     url: SITE_URL,
     image: DEFAULT_OG_IMAGE,
     logo: buildLogoImageObject(),

@@ -1,4 +1,5 @@
 "use client";
+import { conciergeIntent } from "@/lib/planning-intent";
 import { consultationBookingUrl } from "@/lib/consultation-booking";
 
 
@@ -74,6 +75,7 @@ export default function MinisAssistantWidget() {
 
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const intent = useMemo(() => conciergeIntent(messages), [messages]);
   // Lazily restore any persisted conversation id (survives page navigations).
   const [conversationId, setConversationId] = useState<string | null>(() => {
     if (typeof window === "undefined") return null;
@@ -385,6 +387,11 @@ export default function MinisAssistantWidget() {
               </div>
             )}
 
+            {(intent.audience || intent.high) && <aside className="space-y-2 rounded-xl border bg-white p-3 text-sm">
+              {intent.audience === "parent" && <a className="block underline" href="/nri-gujarati-parents-guide-destination-wedding/">Family planning guide: dietary needs, room blocks and guest travel</a>}
+              {intent.audience === "couple" && <a className="block underline" href="/nri-gujarati-wedding-timeline-12-months/">Couple’s planning timeline: ceremonies, décor and attire</a>}
+              {intent.high && <><a className="block underline" href="/schedule/?from=ai-concierge">Book a free 30-minute call</a><a className="block underline" href="https://wa.me/12153419990">WhatsApp Mini directly</a></>}
+            </aside>}
             {/* Inline lead-capture form */}
             {showLeadForm && !leadSubmitted && (
               <form

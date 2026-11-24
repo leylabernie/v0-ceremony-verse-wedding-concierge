@@ -1,5 +1,6 @@
 "use client"
 
+import { customsAlert } from "@/lib/planning-intent"
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
 import { trackEvent } from "@/lib/analytics"
@@ -33,6 +34,7 @@ function numeric(value: string): number {
 }
 
 export function ShippingCustomsClient() {
+  const [item, setItem] = useState("Other")
   const [destination, setDestination] = useState<"United States" | "Canada">("United States")
   const [serviceFee, setServiceFee] = useState("0")
   const [costs, setCosts] = useState(initialCosts)
@@ -68,6 +70,7 @@ export function ShippingCustomsClient() {
   }
 
   const reset = () => {
+    setItem("Other")
     setDestination("United States")
     setServiceFee("0")
     setCosts(initialCosts)
@@ -104,6 +107,9 @@ export function ShippingCustomsClient() {
     <section className="px-6 pb-24">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.35fr_0.65fr]">
         <div className="rounded-3xl border border-[#e6dfd5] bg-white p-6 sm:p-9">
+          <label className="mb-5 block font-semibold">Item covered by the duty estimate
+            <select className="ml-2 rounded border p-2" value={item} onChange={e => {markStarted(); setItem(e.target.value)}}>{["Other", "Bridal lehenga", "Sherwani"].map(label => <option key={label}>{label}</option>)}</select>
+          </label>
           <div className="grid gap-5 sm:grid-cols-3">
             <label className="text-sm font-semibold text-[#1f1f1f]">
               Delivery country
@@ -220,6 +226,7 @@ export function ShippingCustomsClient() {
             Discuss a Sourcing Quote
           </Link>
           {/* Lead-capture offer — appears with results; never gates the calculator. */}
+          {customsAlert(item,numeric(costs.duty)) && <aside className="my-5 rounded-xl bg-amber-50 p-4 text-stone-900"><strong>💡 Customs Tariff Alert:</strong> Check whether your carrier quote already includes duty before adding it again. <Link className="underline" href="/buy-indian-wedding-outfits-from-india/?from=customs-calc">Explore optional India outfit sourcing</Link> for help organizing declarations; customs authorities determine the final assessment.</aside>}
           <CalculatorLeadCapture
             calculatorType="shipping-customs"
             results={summary}
