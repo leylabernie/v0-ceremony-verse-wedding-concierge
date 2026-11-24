@@ -1,9 +1,10 @@
 "use client"
 
 import { proposalRisk } from "@/lib/planning-intent"
+import { useCalculatorThreshold } from "@/hooks/use-calculator-threshold"
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
-import { trackEvent } from "@/lib/analytics"
+import { captureEvent, trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 import { TravelPortalCta } from "@/components/travel-portal-cta"
 
@@ -90,6 +91,11 @@ export function ResortComparisonClient() {
   const started = useRef(false)
 
   const summaries = useMemo(() => resorts.map(summarize) as [ReturnType<typeof summarize>, ReturnType<typeof summarize>], [resorts])
+
+  const attrition = Math.max(...summaries.map(s => s.risk.penalty))
+  const fees = Math.max(...resorts.map(r => numeric(r.vendorFees)))
+  useCalculatorThreshold("resort", "attrition_penalty", attrition > 5000, attrition)
+  useCalculatorThreshold("resort", "outside_vendor_fees", fees > 3000, fees)
 
   const markStarted = () => {
     if (started.current) return
@@ -228,7 +234,7 @@ export function ResortComparisonClient() {
             A lower entered total is not automatically the better resort. Compare what each total includes, the room-block liability, cultural requirements, backup spaces, and the strength of the written terms. “Not confirmed” is a question to resolve—not a negative score.
           </p>
           <p className="mt-3 text-sm leading-6 text-[#5e4a40] print:hidden">
-            Your entries stay in this browser and are not sent with the consultation form. Print or save the comparison if you want to discuss it.
+            Analytics records the risk category and USD amount when a warning appears. Your worksheet is not sent with the consultation form. Print or save the comparison if you want to discuss it.
           </p>
         </div>
 
@@ -240,7 +246,7 @@ export function ResortComparisonClient() {
 
         {/* Lead-capture offer — appears with results; never gates the calculator. */}
         {summaries.some(s => s.risk.high) && <aside className="my-6 rounded-xl border border-amber-600 bg-amber-50 p-5 text-stone-900">
-          <strong>⚠️ High Financial Risk Detected:</strong> Your figures indicate significant attrition penalty exposure or outside-vendor fees. <Link className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
+          <strong>⚠️ High Financial Risk Detected:</strong> Your figures indicate significant attrition penalty exposure or outside-vendor fees. <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "30min_consult", source_rule: "high_financial_risk" } })} className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "300_feasibility_plan", source_rule: "high_financial_risk" } })} className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
         </aside>}
         <CalculatorLeadCapture
           calculatorType="resort-comparison"

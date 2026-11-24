@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
-import { trackEvent } from "@/lib/analytics"
+import { captureEvent, trackEvent } from "@/lib/analytics"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 import { TravelPortalCta } from "@/components/travel-portal-cta"
 
@@ -157,7 +157,7 @@ export function GuestLogisticsClient() {
           <Link href="/planning-tools/budget/" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "budget" })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Open Wedding Budget Calculator</Link>
           <Link href="/schedule/?from=guest-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "guest_vip_cost", next_step: "consultation" })} className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Discuss Guest Logistics</Link>
           {/* Lead-capture offer — appears with results; never gates the calculator. */}
-          {(summary.hostPaidGuestCost > 0 || summary.roomBlockRetailValue > 0) && <p className="my-4 rounded-xl bg-white p-4 text-stone-900">Before committing to a resort deposit, bring these figures to the <Link className="underline" href="/destination-wedding-feasibility-plan/">$300 Destination Wedding Feasibility &amp; Action Plan</Link>.</p>}
+          {(summary.hostPaidGuestCost > 0 || summary.roomBlockRetailValue > 0) && <p className="my-4 rounded-xl bg-white p-4 text-stone-900">Before committing to a resort deposit, bring these figures to the <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "guest", cta_target: "300_feasibility_plan", source_rule: "guest_summary" } })} className="underline" href="/destination-wedding-feasibility-plan/">$300 Destination Wedding Feasibility &amp; Action Plan</Link>.</p>}
           <CalculatorLeadCapture
             calculatorType="guest-logistics"
             results={summary}

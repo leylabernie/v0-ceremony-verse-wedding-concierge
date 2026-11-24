@@ -200,8 +200,8 @@ export default function RootLayout({
             })();
           `}
         </Script>
-        <AcquisitionAttribution />
         <VisitorAnalytics />
+        <AcquisitionAttribution />
         {/* Service-area announcement bar — fixed at very top */}
         <div className="cv-announcement-bar">
           <span className="hidden lg:inline">Founding Families · Ask about planning rates for the first five wedding families</span>

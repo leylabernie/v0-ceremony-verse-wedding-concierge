@@ -59,7 +59,7 @@ export default function PrivacyPage() {
             The website records the landing page, referring page, and campaign parameters associated with a
             consultation request. Google Analytics is loaded after the page becomes interactive and may
             receive device, browser, referral, page, and interaction information under the site&apos;s analytics
-            configuration. Vercel Web Analytics measures visits to public pages; we remove query strings and
+            configuration. Google and Vercel Analytics measure calculator alert categories and threshold amounts in USD, recommendation clicks, assistant topic classifications, and booking or messaging clicks. These custom events do not include chat text, contact details, or the full worksheet. Recognized AI search referrals are recorded by origin, without the referring path or query. Vercel Web Analytics also measures visits to public pages; we remove query strings and
             fragments from the page URLs sent to it. Website hosting and security systems may also generate routine request and error logs.
           </p>
         </section>

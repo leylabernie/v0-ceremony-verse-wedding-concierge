@@ -1,3 +1,5 @@
+import { readAttribution } from "./attribution";
+import { track } from "@vercel/analytics";
 /**
  * Lead / conversion tracking helper.
  *
@@ -76,7 +78,8 @@ export function trackEvent(
     if (typeof window.gtag === "function") {
       window.gtag("event", eventName, parameters);
     } else {
-      window.dataLayer.push(["event", eventName, parameters]);
+      // Match the real gtag bootstrap command shape before it loads.
+      (function queue(..._command: unknown[]) { window.dataLayer!.push(arguments); })("event", eventName, parameters);
     }
   } catch {
     // Analytics must never block a visitor's next step.
@@ -103,4 +106,27 @@ export function getAcquisitionContext(): AcquisitionContext {
   } catch {
     return fallback;
   }
+}
+
+export type Calculator = 'resort' | 'shipping' | 'budget' | 'guest';
+export type Audience = 'nri_couple' | 'nri_parent';
+export type AnalyticsEvent =
+  | { name: 'calc_threshold_triggered'; properties: { calculator: Calculator; threshold_type: string; value: number } }
+  | { name: 'calc_cta_clicked'; properties: { calculator: Calculator; cta_target: '30min_consult' | '300_feasibility_plan' | 'outfit_sourcing'; source_rule: string } }
+  | { name: 'ai_concierge_intent_classified'; properties: { audience_segment: Audience; primary_topic: string } }
+  | { name: 'ai_concierge_lead_converted'; properties: { channel: 'whatsapp' | 'schedule_call'; audience_segment: Audience | 'unclassified' } }
+  | { name: 'geo_referrer_detected'; properties: { engine: 'perplexity' | 'chatgpt' | 'gemini' | 'claude' | 'other_ai'; referrer_url: string } };
+
+/** These events describe interactions, not verified bookings or revenue. */
+export function captureEvent({name, properties}: AnalyticsEvent) {
+  if (typeof window === 'undefined') return;
+  const first = readAttribution();
+  const data = { ...properties, ...(first.utm_source && { utm_source: first.utm_source }),
+    ...(first.utm_medium && { utm_medium: first.utm_medium }), ...(first.utm_campaign && { utm_campaign: first.utm_campaign }), ...(first.ref && { ref: first.ref }) };
+  try {
+    // An initial referrer event can precede the Analytics component's effect.
+    window.va ??= (...args) => { (window.vaq ??= []).push(args); };
+    track(name, data);
+  } catch { /* A blocked provider must not suppress GA or navigation. */ }
+  trackEvent(name, data);
 }

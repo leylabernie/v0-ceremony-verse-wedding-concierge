@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useMemo, useRef, useState } from "react"
-import { trackEvent } from "@/lib/analytics"
+import { captureEvent, trackEvent } from "@/lib/analytics"
 import { ResortRateSelector } from "./resort-rate-selector"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 import { TravelPortalCta } from "@/components/travel-portal-cta"
@@ -296,7 +296,7 @@ export function BudgetPlannerClient() {
           <Link href="/schedule/?from=budget-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "destination_wedding_budget", completion_percent: summary.completeness })} className="mt-6 inline-flex w-full justify-center rounded-full bg-[#c5a059] px-5 py-3 text-sm font-semibold text-[#1f1f1f] print:hidden">Request a Budget Review</Link>
           <Link href="/planning-tools/guest-logistics/" className="mt-3 inline-flex w-full justify-center rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white print:hidden">Calculate Hosted Guest Costs</Link>
           {/* Lead-capture offer — appears with results; never gates the calculator. */}
-          {(summary.total > 0) && <p className="my-4 rounded-xl bg-white p-4 text-stone-900">Before committing to a resort deposit, bring these figures to the <Link className="underline" href="/destination-wedding-feasibility-plan/">$300 Destination Wedding Feasibility &amp; Action Plan</Link>.</p>}
+          {(summary.total > 0) && <p className="my-4 rounded-xl bg-white p-4 text-stone-900">Before committing to a resort deposit, bring these figures to the <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "budget", cta_target: "300_feasibility_plan", source_rule: "budget_summary" } })} className="underline" href="/destination-wedding-feasibility-plan/">$300 Destination Wedding Feasibility &amp; Action Plan</Link>.</p>}
           <CalculatorLeadCapture
             calculatorType="budget-planner"
             results={summary}

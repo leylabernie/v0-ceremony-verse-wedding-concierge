@@ -1,0 +1,9 @@
+# Consultation funnel: reporting contract
+
+`captureEvent` sends the five Phase 2 custom event names to GA4 and Vercel Web Analytics. Enable custom events in the Vercel project/plan and register the desired GA4 event-scoped dimensions (calculator, threshold_type, source_rule, cta_target, primary_topic, audience_segment, channel, engine, ref). Avoid registering dollar amounts as dimensions. The `value` on calculator alerts is USD exposure, not revenue.
+
+- Threshold events fire on crossing into the alert state, not on every edit above the threshold. For resort comparison, the largest amount across the two proposals is used separately for attrition and fees. Lowering the value below the boundary rearms that rule. Shipping events correspond to the bridal lehenga/sherwani alert. Zero, equal-to-threshold and unrelated items do not trigger a warning.
+- `calc_cta_clicked` and `ai_concierge_lead_converted` are link clicks. A click to schedule or WhatsApp isn't a confirmed appointment, message, or sale. A direct handoff before classification is `unclassified`; no conversations are sent.
+- `cv_attribution` is first-touch per browser tab. Known AI referrers send the referring origin, not the full URL. A missing referrer (common in apps) cannot be attributed reliably. Internal booking links retain an explicit `from` and add first-touch labels. External calendar links are not modified. No tracking inside Google's booking flow is implied.
+
+Preview QA: open a fresh tab with `?utm_source=qa&utm_medium=test&utm_campaign=preview&ref=check`, enter a resort penalty above $5,000, edit it while still above the threshold, then click the recommendation. Check one threshold event, one CTA click, and placement/campaign on `/schedule/`. Check GA DebugView (debug mode enabled) and Vercel custom events separately. A blocked provider must not prevent navigation.
