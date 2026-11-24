@@ -9,8 +9,11 @@ const isPreferred = (iso: string) => easternTime.format(new Date(iso)) > "17:00"
 export function SchedulePage() {
   const [slots, setSlots] = useState<string[]>([]),
     [notice, setNotice] = useState("Loading available times…"),
+    [loading, setLoading] = useState(true),
     [busy, setBusy] = useState(false);
   async function load() {
+    setLoading(true);
+    setNotice("Loading available times…");
     try {
       const res = await fetch("/api/availability/", { cache: "no-store" });
       if (!res.ok) throw Error();
@@ -20,6 +23,8 @@ export function SchedulePage() {
     } catch {
       setSlots([]);
       setNotice("Calendar temporarily unavailable.");
+    } finally {
+      setLoading(false);
     }
   }
   useEffect(() => {
@@ -78,7 +83,15 @@ export function SchedulePage() {
         <a className="underline" href="https://wa.me/12153419990">WhatsApp</a>.
       </p>
       <p role="status">{notice}</p>
-      <form onSubmit={submit} className="space-y-4">
+      {!loading && !slots.length && (
+        <section className="space-y-4 rounded-2xl border bg-white p-6">
+          <h2 className="font-serif text-2xl">Arrange your call directly with Mini</h2>
+          <p>Send a time that works for you and your time zone. Your call is booked once Mini confirms it.</p>
+          <a className="inline-block rounded-full bg-[#7a6841] px-6 py-3 text-white" href="https://wa.me/12153419990?text=Hi%20Mini%2C%20I%27d%20like%20to%20arrange%20a%20free%2030-minute%20call.%20My%20preferred%20time%20and%20time%20zone%20are%3A%20">Ask for a time on WhatsApp</a>
+          <button type="button" onClick={() => void load()} className="block underline">Check the calendar again</button>
+        </section>
+      )}
+      {slots.length > 0 && <form onSubmit={submit} className="space-y-4">
         <label className="block">
           Available times
           <select required name="startIso" className={field} defaultValue="">
@@ -138,7 +151,7 @@ export function SchedulePage() {
         >
           Confirm my time
         </button>
-      </form>
+      </form>}
 
     </main>
   );

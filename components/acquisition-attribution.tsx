@@ -43,6 +43,7 @@ function saveFirstTouch(): void {
 
 function ctaType(href: string): string | null {
   if (href.startsWith("mailto:")) return "email";
+  if (href.startsWith("sms:")) return "sms";
   if (href.startsWith("tel:")) return "phone";
   if (href.includes("wa.me/") || href.includes("api.whatsapp.com/")) return "whatsapp";
   if (href.includes("calendly.com/")) return "calendly";
@@ -50,6 +51,7 @@ function ctaType(href: string): string | null {
 
   try {
     const url = new URL(href, window.location.origin);
+    if (url.origin === window.location.origin && /^\/schedule\/?$/.test(url.pathname)) return "schedule_page";
     if (
       url.origin === window.location.origin &&
       (url.pathname === "/contact/" || url.pathname === "/contact")
