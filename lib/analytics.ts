@@ -112,7 +112,7 @@ export type Calculator = 'resort' | 'shipping' | 'budget' | 'guest';
 export type Audience = 'nri_couple' | 'nri_parent';
 export type AnalyticsEvent =
   | { name: 'calc_threshold_triggered'; properties: { calculator: Calculator; threshold_type: string; value: number } }
-  | { name: 'calc_cta_clicked'; properties: { calculator: Calculator; cta_target: '30min_consult' | '300_feasibility_plan' | 'outfit_sourcing'; source_rule: string } }
+  | { name: 'calc_cta_clicked'; properties: { calculator: Calculator; cta_target: '30min_consult' | '300_feasibility_plan' | 'outfit_sourcing' | 'whatsapp'; source_rule: string } }
   | { name: 'ai_concierge_intent_classified'; properties: { audience_segment: Audience; primary_topic: string } }
   | { name: 'ai_concierge_lead_converted'; properties: { channel: 'whatsapp' | 'schedule_call'; audience_segment: Audience | 'unclassified' } }
   | { name: 'geo_referrer_detected'; properties: { engine: 'perplexity' | 'chatgpt' | 'gemini' | 'claude' | 'other_ai'; referrer_url: string } };
