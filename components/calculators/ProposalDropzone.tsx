@@ -21,10 +21,10 @@ export function ProposalDropzone() {
   function drop(event: DragEvent<HTMLDivElement>) {
     event.preventDefault(); setDragging(false); select(event.dataTransfer.files)
   }
-  return <section aria-labelledby="proposal-heading" className="rounded-3xl border border-[#EFE7DC] bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] sm:p-10">
+  return <section aria-labelledby="proposal-heading" className="rounded-3xl border border-warmBorder bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] sm:p-10">
     <h2 id="proposal-heading" className="font-serif text-2xl tracking-tight text-[#2C221E]">Have a Resort Proposal PDF or Quote Screenshot?</h2>
-    <div onDragOver={e => { e.preventDefault(); setDragging(true) }} onDragLeave={() => setDragging(false)} onDrop={drop} className={`mt-5 rounded-2xl border border-dashed p-7 sm:p-10 text-center ${dragging ? 'border-[#6B2A35] bg-[#F7F2EB]' : 'border-[#E8DCCB] bg-[#FDFBF7]'}`}>
-      <FileUp aria-hidden="true" className="mx-auto mb-4 size-8 text-[#8C5D37]" />
+    <div onDragOver={e => { e.preventDefault(); setDragging(true) }} onDragLeave={() => setDragging(false)} onDrop={drop} className={`mt-5 rounded-2xl border border-dashed p-7 sm:p-10 text-center ${dragging ? 'border-[#6B2A35] bg-bronze-100' : 'border-[#E8DCCB] bg-alabaster'}`}>
+      <FileUp aria-hidden="true" className="mx-auto mb-4 size-8 text-bronze-700" />
       <button type="button" onClick={() => input.current?.click()} className="rounded-lg font-semibold underline underline-offset-4 focus-visible:outline-2">Choose a proposal or drop it here</button>
       <input ref={input} type="file" accept=".pdf,.png,.jpg,.jpeg" className="sr-only" aria-label="Choose resort proposal" onChange={(e: ChangeEvent<HTMLInputElement>) => select(e.target.files)} />
       <p className="mt-2 text-sm text-[#6E635C]">PDF, PNG or JPG · One file, up to 10 MB</p>

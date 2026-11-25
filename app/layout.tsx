@@ -3,7 +3,7 @@ import { ChecklistPrompt } from "@/components/checklist-signup";
 import type { Viewport } from "next";
 import Script from "next/script";
 import Link from "next/link";
-import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import WhatsAppButton from "@/components/whatsapp-button";
 import MinisAssistantWidget from "@/components/MinisAssistantWidget";
 import MobileStickyCTA from "@/components/mobile-sticky-cta";
@@ -13,21 +13,22 @@ import { AcquisitionAttribution } from "@/components/acquisition-attribution";
 import { VisitorAnalytics } from "@/components/visitor-analytics";
 import { JsonLd, buildLocalBusinessSchema, buildOrganizationSchema, buildWebSiteSchema } from "@/lib/seo";
 
-// Build-time font loading via next/font — eliminates the render-blocking
-// Google Fonts @import that was in globals.css. Fonts are downloaded at
-// build time and self-hosted by Vercel; no runtime network roundtrip.
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// Licensed Latin variable fonts are bundled locally so production builds do not
+// depend on Google Fonts network availability. See app/fonts/README.md.
+const cormorant = localFont({
+  src: [
+    { path: "./fonts/cormorant-garamond-latin-wght-normal.woff2", weight: "300 700", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-wght-italic.woff2", weight: "300 700", style: "italic" },
+  ],
   variable: "--font-cormorant",
   display: "swap",
+  fallback: ["Georgia", "serif"],
 });
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const dmSans = localFont({
+  src: [{ path: "./fonts/dm-sans-latin-wght-normal.woff2", weight: "100 1000", style: "normal" }],
   variable: "--font-dm-sans",
   display: "swap",
+  fallback: ["system-ui", "sans-serif"],
 });
 
 // Root metadata: title/description are defaults; individual pages override.

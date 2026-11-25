@@ -69,12 +69,12 @@ const sections = [
 
 export default function ResortComparisonPage() {
   return (
-    <main className="bg-[#FDFBF7] pb-24 text-[#2C221E] sm:pb-0">
+    <main className="cv-resort-audit min-h-screen bg-alabaster pb-24 text-stone-800 sm:pb-0">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-calculator" data={calculatorSchema} />
-      <section className="border-b border-[#EFE7DC] bg-[#FDFBF7] px-6 py-16 text-center text-[#2C221E] sm:py-24">
+      <section className="border-b border-warmBorder bg-alabaster px-6 py-16 text-center text-[#2C221E] sm:py-24">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#8C5D37]">For families across the USA &amp; Canada</p>
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-bronze-700">For families across the USA &amp; Canada</p>
           <h1 className="font-serif text-3xl font-normal text-[#2C221E] tracking-tight sm:text-5xl">Resort Contract &amp; Risk Auditor</h1>
           <p className="mx-auto mt-6 max-w-3xl font-serif italic text-lg leading-8 text-[#6E635C]">
             Explore potential empty room penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
@@ -84,27 +84,27 @@ export default function ResortComparisonPage() {
 
       <ResortQuickAudit comparison={<ResortComparisonClient />} finePrint={
         <div className="mt-7 space-y-6">
-          {sections.map(section => <fieldset key={section.title} className="rounded-2xl border border-[#EFE7DC] p-5">
+          {sections.map(section => <fieldset key={section.title} className="rounded-2xl border border-warmBorder p-5">
             <legend className="px-2 font-serif text-xl">{section.title}</legend>
             <div className="space-y-4">{section.questions.map(question => <label key={question} className="flex cursor-pointer items-start gap-3 text-sm leading-6 text-[#6E635C]"><input type="checkbox" className="mt-1 size-5 shrink-0 accent-[#6B2A35]" /><span>{question}</span></label>)}</div>
           </fieldset>)}
         </div>
       } />
 
-      <section className="bg-[#F7F2EB] px-6 py-20 print:hidden">
+      <section className="bg-bronze-100 px-6 py-20 print:hidden">
         <div className="mx-auto max-w-5xl space-y-8">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#8C5D37]">Before a deposit</p>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-bronze-700">Before a deposit</p>
             <h2 className="font-serif text-4xl font-semibold">Questions the numbers cannot answer</h2>
             <p className="mt-4 leading-7 text-[#4d403a]">Ask both resorts the same questions and keep each answer with the proposal or contract section that supports it.</p>
           </div>
           {sections.map((section) => (
-            <article key={section.title} className="rounded-2xl border border-[#EFE7DC] bg-white p-7 sm:p-10">
+            <article key={section.title} className="rounded-2xl border border-warmBorder bg-white p-7 sm:p-10">
               <h2 className="font-serif text-3xl font-semibold">{section.title}</h2>
               <ol className="mt-6 space-y-4">
                 {section.questions.map((question, index) => (
                   <li key={question} className="grid gap-3 border-t border-[#eee7dd] pt-4 sm:grid-cols-[36px_1fr]">
-                    <span className="font-semibold text-[#8C5D37]">{String(index + 1).padStart(2, "0")}</span>
+                    <span className="font-semibold text-bronze-700">{String(index + 1).padStart(2, "0")}</span>
                     <div>
                       <p className="leading-7 text-[#4d403a]">{question}</p>
                       <div className="mt-3 h-8 border-b border-dashed border-[#c7bcae] print:h-12" aria-hidden="true" />
@@ -115,8 +115,8 @@ export default function ResortComparisonPage() {
             </article>
           ))}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/schedule/?from=resort-calculator" className="rounded-full bg-[#6B2A35] hover:bg-[#542129] px-7 py-3 text-center text-sm font-semibold text-white">Request a Private Resort Review</Link>
-            <Link href="/planning-tools/budget/" className="rounded-full border border-[#E8DCCB] px-7 py-3 text-center text-sm font-semibold text-[#8C5D37]">Open Budget Builder</Link>
+            <Link href="/schedule/?from=resort-calculator" className="rounded-full bg-burgundy-900 hover:bg-burgundy-800 px-7 py-3 text-center text-sm font-semibold text-white">Request a Private Resort Review</Link>
+            <Link href="/planning-tools/budget/" className="rounded-full border border-[#E8DCCB] px-7 py-3 text-center text-sm font-semibold text-bronze-700">Open Budget Builder</Link>
           </div>
         </div>
       </section>
