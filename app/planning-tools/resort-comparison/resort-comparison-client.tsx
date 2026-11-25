@@ -14,7 +14,7 @@ const termMetrics = [
   { key: "ceremonies", label: "Fire, baraat, music and ceremony approvals" },
   { key: "vendors", label: "Outside-vendor rules and fees" },
   { key: "weather", label: "Written weather-backup plan" },
-  { key: "roomBlock", label: "Room-block, attrition and cancellation terms" },
+  { key: "roomBlock", label: "Reserved-room fees and cancellation rules" },
   { key: "guestAccess", label: "Guest access, mobility and arrival logistics" },
 ] as const
 
@@ -182,13 +182,13 @@ export function ResortComparisonClient() {
                 </fieldset>
 
                 <fieldset className="mt-8">
-                  <legend className="font-serif text-2xl font-semibold">Room-block commitment</legend>
-                  <p className="mt-1 text-sm leading-6 text-[#5e4a40]">This is shown separately because guests may pay their own rooms, while the contract can still create liability.</p>
+                  <legend className="font-serif text-2xl font-semibold">Rooms you promised to fill</legend>
+                  <p className="mt-1 text-sm leading-6 text-[#5e4a40]">This is shown separately because guests may pay their own rooms, while the contract can still leave you with extra fees.</p>
                   <div className="mt-5 grid gap-4 sm:grid-cols-3">
                     <NumberInput label="Required rooms" value={resort.roomBlockRooms} onChange={(value) => updateResort(index, "roomBlockRooms", value)} />
                     <NumberInput label="Required nights" value={resort.roomBlockNights} onChange={(value) => updateResort(index, "roomBlockNights", value)} />
-                    <NumberInput label="Uncovered room-nights after credits and permitted attrition" value={resort.uncoveredNights} onChange={v => updateResort(index, "uncoveredNights", v)} />
-                    <MoneyInput label="Contract penalty per uncovered room-night (USD)" value={resort.penaltyRate} onChange={v => updateResort(index, "penaltyRate", v)} />
+                    <NumberInput label="Empty room nights still charged after free reductions and credits" value={resort.uncoveredNights} onChange={v => updateResort(index, "uncoveredNights", v)} />
+                    <MoneyInput label="Fee for each empty room, each night (USD)" value={resort.penaltyRate} onChange={v => updateResort(index, "penaltyRate", v)} />
                     <MoneyInput label="Average guest room rate" value={resort.guestRoomRate} onChange={(value) => updateResort(index, "guestRoomRate", value)} />
                   </div>
                 </fieldset>
@@ -213,9 +213,9 @@ export function ResortComparisonClient() {
                 <div className="cv-calculator-summary mt-8 rounded-2xl bg-[#1f1f1f] p-6 text-white">
                   <h2 className="font-serif text-3xl font-semibold !text-white">{resort.name || `Resort ${index === 0 ? "A" : "B"}`} summary</h2>
                   <dl className="mt-5 grid gap-4 sm:grid-cols-2">
-                    <Result label="Estimated unhedged attrition penalty" value={currencyFormatter.format(summary.risk.penalty)} />
+                    <Result label="Estimated Out-of-Pocket Empty Room Fee ($)" value={currencyFormatter.format(summary.risk.penalty)} />
                     <Result label="Known host cost" value={currencyFormatter.format(summary.knownHostCost)} />
-                    <Result label="Room-block retail value" value={currencyFormatter.format(summary.roomBlockExposure)} />
+                    <Result label="Reserved rooms at the listed price" value={currencyFormatter.format(summary.roomBlockExposure)} />
                     <Result label="Written-term strength" value={summary.documentation ? `${summary.termScore}%` : "Not scored"} />
                     <Result label="Terms documented" value={`${summary.documentation}%`} />
                   </dl>
@@ -231,7 +231,7 @@ export function ResortComparisonClient() {
         <div className="mt-8 rounded-2xl border border-[#d9cfbf] bg-[#f4eee4] p-6 sm:p-8">
           <h2 className="font-serif text-3xl font-semibold">How to read the comparison</h2>
           <p className="mt-3 leading-7 text-[#4d403a]">
-            A lower entered total is not automatically the better resort. Compare what each total includes, the room-block liability, cultural requirements, backup spaces, and the strength of the written terms. “Not confirmed” is a question to resolve—not a negative score.
+            A lower entered total is not automatically the better resort. Compare what each total includes, the fees for unfilled rooms, cultural requirements, backup spaces, and the strength of the written terms. “Not confirmed” is a question to resolve—not a negative score.
           </p>
           <p className="mt-3 text-sm leading-6 text-[#5e4a40] print:hidden">
             Analytics records the risk category and USD amount when a warning appears. Your worksheet is not sent with the consultation form. Print or save the comparison if you want to discuss it.
@@ -246,7 +246,7 @@ export function ResortComparisonClient() {
 
         {/* Lead-capture offer — appears with results; never gates the calculator. */}
         {summaries.some(s => s.risk.high) && <aside className="my-6 rounded-xl border border-amber-600 bg-amber-50 p-5 text-stone-900">
-          <strong>⚠️ High Financial Risk Detected:</strong> Your figures indicate significant attrition penalty exposure or outside-vendor fees. <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "30min_consult", source_rule: "high_financial_risk" } })} className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "300_feasibility_plan", source_rule: "high_financial_risk" } })} className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
+          <strong>⚠️ Warning: Potential Extra Fees Found:</strong> Your figures indicate potential empty room penalties or fees for bringing outside suppliers. <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "30min_consult", source_rule: "high_financial_risk" } })} className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "300_feasibility_plan", source_rule: "high_financial_risk" } })} className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
         </aside>}
         <CalculatorLeadCapture
           calculatorType="resort-comparison"

@@ -1,5 +1,6 @@
 import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import Link from "next/link"
+import { ResortQuickAudit } from "@/components/calculators/ResortQuickAudit"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { ResortComparisonClient } from "./resort-comparison-client"
 
@@ -7,7 +8,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/resort-comparison/",
   title: "Mexico, Jamaica & Punta Cana Wedding Resort Comparison Calculator",
   description:
-    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico, Jamaica, or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
+    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico, Jamaica, or Punta Cana, including known host costs, potential empty room fees, cultural needs, and written terms.",
   keywords:
     "Mexico Indian wedding resort comparison, Punta Cana wedding resort checklist, destination wedding room block questions, Indian wedding outside vendor fees",
 })
@@ -20,16 +21,16 @@ const breadcrumbSchema = buildBreadcrumb([
 const calculatorSchema = buildCalculatorSchema({
   name: "Mexico, Jamaica, and Punta Cana Wedding Resort Proposal Comparison Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/resort-comparison/",
-  description: "A free client-entered comparison for two resort proposals, known host costs, room-block exposure, cultural requirements, and written terms.",
+  description: "A free client-entered comparison for two resort proposals, known host costs, potential empty room fees, cultural requirements, and written terms.",
 })
 
 const sections = [
   {
     title: "Room block and guest costs",
     questions: [
-      "What minimum room nights or room count must the group guarantee?",
+      "How many rooms must your group fill, and for how many nights?",
       "Which room categories, occupancy limits, child policies, and single-occupancy rates apply?",
-      "What deposit schedule, attrition, cancellation, and unused-room liability apply?",
+      "When are deposits due, how many rooms can you release for free, and what fees apply to cancellations or empty rooms?",
       "Are complimentary rooms or concessions cash credits, upgrades, or limited-use benefits?",
       "What happens when guests book outside the block or through another website?",
     ],
@@ -68,20 +69,27 @@ const sections = [
 
 export default function ResortComparisonPage() {
   return (
-    <main className="bg-[#faf8f5] text-[#1f1f1f]">
+    <main className="bg-[#FAF9F6] pb-24 text-stone-900 sm:pb-0">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-calculator" data={calculatorSchema} />
-      <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
+      <section className="border-b border-stone-200/80 bg-[#f3ede7] px-6 py-16 text-center text-stone-900 sm:py-24">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">For families across the USA &amp; Canada</p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Proposal Comparison Calculator</h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Enter the figures and terms from two written resort proposals. The calculator keeps host-paid costs separate from room-block exposure and shows which important answers are still missing.
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-amber-800">For families across the USA &amp; Canada</p>
+          <h1 className="font-serif text-4xl font-semibold tracking-tight sm:text-6xl">Resort Contract &amp; Risk Auditor</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-stone-600">
+            Explore potential empty room penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
           </p>
         </div>
       </section>
 
-      <ResortComparisonClient />
+      <ResortQuickAudit comparison={<ResortComparisonClient />} finePrint={
+        <div className="mt-7 space-y-6">
+          {sections.map(section => <fieldset key={section.title} className="rounded-2xl border border-stone-200 p-5">
+            <legend className="px-2 font-serif text-xl">{section.title}</legend>
+            <div className="space-y-4">{section.questions.map(question => <label key={question} className="flex cursor-pointer items-start gap-3 text-sm leading-6 text-stone-600"><input type="checkbox" className="mt-1 size-5 shrink-0 accent-rose-900" /><span>{question}</span></label>)}</div>
+          </fieldset>)}
+        </div>
+      } />
 
       <section className="bg-[#f0ebe3] px-6 py-20 print:hidden">
         <div className="mx-auto max-w-5xl space-y-8">
