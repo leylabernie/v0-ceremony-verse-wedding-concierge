@@ -83,7 +83,7 @@ function summarize(resort: ResortValues) {
   return { risk, hostedRooms, hostedTransfers, knownHostCost, roomBlockExposure, termScore, documentation, missingTerms }
 }
 
-const inputClass = "mt-1 w-full rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] px-3 py-2.5 font-normal"
+const inputClass = "mt-1 w-full rounded-xl border border-[#E8DCCB] bg-alabaster px-3 py-2.5 font-normal"
 const labelClass = "text-xs font-semibold text-[#5e4a40]"
 
 export function ResortComparisonClient() {
@@ -143,7 +143,7 @@ export function ResortComparisonClient() {
             const index = resortIndex as 0 | 1
             const summary = summaries[index]
             return (
-              <article key={index} className="rounded-3xl border border-[#EFE7DC] bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] sm:p-10">
+              <article key={index} className="rounded-3xl border border-warmBorder bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] sm:p-10">
                 <div className="grid gap-4 sm:grid-cols-[1fr_180px]">
                   <label className={labelClass}>
                     Resort name
@@ -199,7 +199,7 @@ export function ResortComparisonClient() {
                     {termMetrics.map(({ key, label }) => (
                       <label key={key} className="grid items-center gap-3 rounded-xl border border-[#eee7dd] p-3 sm:grid-cols-[1fr_180px]">
                         <span className="text-sm leading-6 text-[#4d403a]">{label}</span>
-                        <select value={resort.terms[key]} onChange={(event) => updateTerm(index, key, event.target.value as TermRating)} className="rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] px-3 py-2.5 text-sm" aria-label={`${resort.name}: ${label}`}>
+                        <select value={resort.terms[key]} onChange={(event) => updateTerm(index, key, event.target.value as TermRating)} className="rounded-xl border border-[#E8DCCB] bg-alabaster px-3 py-2.5 text-sm" aria-label={`${resort.name}: ${label}`}>
                           <option value="unknown">Not confirmed</option>
                           <option value="concern">Written concern</option>
                           <option value="partial">Partly clear</option>
@@ -210,7 +210,7 @@ export function ResortComparisonClient() {
                   </div>
                 </fieldset>
 
-                <div className="cv-calculator-summary mt-8 rounded-2xl bg-[#6B2A35] p-6 text-white">
+                <div className="cv-calculator-summary mt-8 rounded-2xl bg-burgundy-900 p-6 text-white">
                   <h2 className="font-serif text-3xl font-semibold !text-white">{resort.name || `Resort ${index === 0 ? "A" : "B"}`} summary</h2>
                   <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                     <Result label="Estimated Out-of-Pocket Empty Room Fee ($)" value={currencyFormatter.format(summary.risk.penalty)} />
@@ -239,7 +239,7 @@ export function ResortComparisonClient() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row print:hidden">
-          <Link href="/schedule/?from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#6B2A35] hover:bg-[#542129] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
+          <Link href="/schedule/?from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-burgundy-900 hover:bg-burgundy-800 px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
           <button type="button" onClick={printComparison} className="rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">Print or Save as PDF</button>
           <button type="button" onClick={reset} className="rounded-full border border-[#c7bcae] px-7 py-3 text-sm font-semibold text-[#5e4a40]">Clear comparison</button>
         </div>
@@ -266,7 +266,7 @@ function MoneyInput({ label, value, onChange }: { label: string; value: string; 
       {label}
       <span className="relative mt-1 block">
         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6d625c]">$</span>
-        <input type="number" min="0" inputMode="decimal" value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] py-2.5 pl-7 pr-3 text-right font-normal" />
+        <input type="number" min="0" inputMode="decimal" value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-xl border border-[#E8DCCB] bg-alabaster py-2.5 pl-7 pr-3 text-right font-normal" />
       </span>
     </label>
   )
