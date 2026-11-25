@@ -83,7 +83,7 @@ function summarize(resort: ResortValues) {
   return { risk, hostedRooms, hostedTransfers, knownHostCost, roomBlockExposure, termScore, documentation, missingTerms }
 }
 
-const inputClass = "mt-1 w-full rounded-lg border border-[#d9cfbf] bg-[#faf8f5] px-3 py-2.5 font-normal"
+const inputClass = "mt-1 w-full rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] px-3 py-2.5 font-normal"
 const labelClass = "text-xs font-semibold text-[#5e4a40]"
 
 export function ResortComparisonClient() {
@@ -136,14 +136,14 @@ export function ResortComparisonClient() {
   }
 
   return (
-    <section className="px-6 py-20">
+    <section className="py-6 sm:py-10">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-6 xl:grid-cols-2">
           {resorts.map((resort, resortIndex) => {
             const index = resortIndex as 0 | 1
             const summary = summaries[index]
             return (
-              <article key={index} className="rounded-3xl border border-[#e6dfd5] bg-white p-6 sm:p-8">
+              <article key={index} className="rounded-3xl border border-[#EFE7DC] bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.03)] sm:p-10">
                 <div className="grid gap-4 sm:grid-cols-[1fr_180px]">
                   <label className={labelClass}>
                     Resort name
@@ -199,7 +199,7 @@ export function ResortComparisonClient() {
                     {termMetrics.map(({ key, label }) => (
                       <label key={key} className="grid items-center gap-3 rounded-xl border border-[#eee7dd] p-3 sm:grid-cols-[1fr_180px]">
                         <span className="text-sm leading-6 text-[#4d403a]">{label}</span>
-                        <select value={resort.terms[key]} onChange={(event) => updateTerm(index, key, event.target.value as TermRating)} className="rounded-lg border border-[#d9cfbf] bg-[#faf8f5] px-3 py-2.5 text-sm" aria-label={`${resort.name}: ${label}`}>
+                        <select value={resort.terms[key]} onChange={(event) => updateTerm(index, key, event.target.value as TermRating)} className="rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] px-3 py-2.5 text-sm" aria-label={`${resort.name}: ${label}`}>
                           <option value="unknown">Not confirmed</option>
                           <option value="concern">Written concern</option>
                           <option value="partial">Partly clear</option>
@@ -210,7 +210,7 @@ export function ResortComparisonClient() {
                   </div>
                 </fieldset>
 
-                <div className="cv-calculator-summary mt-8 rounded-2xl bg-[#1f1f1f] p-6 text-white">
+                <div className="cv-calculator-summary mt-8 rounded-2xl bg-[#6B2A35] p-6 text-white">
                   <h2 className="font-serif text-3xl font-semibold !text-white">{resort.name || `Resort ${index === 0 ? "A" : "B"}`} summary</h2>
                   <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                     <Result label="Estimated Out-of-Pocket Empty Room Fee ($)" value={currencyFormatter.format(summary.risk.penalty)} />
@@ -239,13 +239,13 @@ export function ResortComparisonClient() {
         </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row print:hidden">
-          <Link href="/schedule/?from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
+          <Link href="/schedule/?from=resort-calculator" onClick={() => trackEvent("calculator_cta_click", { calculator_name: "resort_quote_comparison" })} className="rounded-full bg-[#6B2A35] hover:bg-[#542129] px-7 py-3 text-center text-sm font-semibold text-white">Request a Proposal Review</Link>
           <button type="button" onClick={printComparison} className="rounded-full border border-[#7a6841] px-7 py-3 text-sm font-semibold text-[#7a6841]">Print or Save as PDF</button>
           <button type="button" onClick={reset} className="rounded-full border border-[#c7bcae] px-7 py-3 text-sm font-semibold text-[#5e4a40]">Clear comparison</button>
         </div>
 
         {/* Lead-capture offer — appears with results; never gates the calculator. */}
-        {summaries.some(s => s.risk.high) && <aside className="my-6 rounded-xl border border-amber-600 bg-amber-50 p-5 text-stone-900">
+        {summaries.some(s => s.risk.high) && <aside className="my-6 rounded-xl border border-amber-600 bg-amber-50 p-5 text-[#2C221E]">
           <strong>⚠️ Warning: Potential Extra Fees Found:</strong> Your figures indicate potential empty room penalties or fees for bringing outside suppliers. <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "30min_consult", source_rule: "high_financial_risk" } })} className="underline" href="/schedule/?from=resort-calc-high-risk">Review your proposal line by line with Mini on a free 30-minute call</Link> or <Link onClick={() => captureEvent({ name: "calc_cta_clicked", properties: { calculator: "resort", cta_target: "300_feasibility_plan", source_rule: "high_financial_risk" } })} className="underline" href="/destination-wedding-feasibility-plan/">apply your calculation to the $300 Feasibility &amp; Action Plan</Link>. The full fee is credited if you sign a planning contract within 30 days of plan delivery.
         </aside>}
         <CalculatorLeadCapture
@@ -266,7 +266,7 @@ function MoneyInput({ label, value, onChange }: { label: string; value: string; 
       {label}
       <span className="relative mt-1 block">
         <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#6d625c]">$</span>
-        <input type="number" min="0" inputMode="decimal" value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-lg border border-[#d9cfbf] bg-[#faf8f5] py-2.5 pl-7 pr-3 text-right font-normal" />
+        <input type="number" min="0" inputMode="decimal" value={value} onChange={(event) => onChange(event.target.value)} className="w-full rounded-xl border border-[#E8DCCB] bg-[#FDFBF7] py-2.5 pl-7 pr-3 text-right font-normal" />
       </span>
     </label>
   )
