@@ -8,7 +8,7 @@ export const metadata = buildMetadata({
   path: "/planning-tools/resort-comparison/",
   title: "Mexico, Jamaica & Punta Cana Wedding Resort Comparison Calculator",
   description:
-    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico, Jamaica, or Punta Cana, including known host costs, room-block exposure, cultural needs, and written terms.",
+    "For U.S. and Canadian families, compare two Indian destination-wedding resort proposals across Mexico, Jamaica, or Punta Cana, including known host costs, potential empty room fees, cultural needs, and written terms.",
   keywords:
     "Mexico Indian wedding resort comparison, Punta Cana wedding resort checklist, destination wedding room block questions, Indian wedding outside vendor fees",
 })
@@ -21,16 +21,16 @@ const breadcrumbSchema = buildBreadcrumb([
 const calculatorSchema = buildCalculatorSchema({
   name: "Mexico, Jamaica, and Punta Cana Wedding Resort Proposal Comparison Calculator",
   url: "https://www.ceremonyverse.com/planning-tools/resort-comparison/",
-  description: "A free client-entered comparison for two resort proposals, known host costs, room-block exposure, cultural requirements, and written terms.",
+  description: "A free client-entered comparison for two resort proposals, known host costs, potential empty room fees, cultural requirements, and written terms.",
 })
 
 const sections = [
   {
     title: "Room block and guest costs",
     questions: [
-      "What minimum room nights or room count must the group guarantee?",
+      "How many rooms must your group fill, and for how many nights?",
       "Which room categories, occupancy limits, child policies, and single-occupancy rates apply?",
-      "What deposit schedule, attrition, cancellation, and unused-room liability apply?",
+      "When are deposits due, how many rooms can you release for free, and what fees apply to cancellations or empty rooms?",
       "Are complimentary rooms or concessions cash credits, upgrades, or limited-use benefits?",
       "What happens when guests book outside the block or through another website?",
     ],
@@ -77,7 +77,7 @@ export default function ResortComparisonPage() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-amber-800">For families across the USA &amp; Canada</p>
           <h1 className="font-serif text-4xl font-semibold tracking-tight sm:text-6xl">Resort Contract &amp; Risk Auditor</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-stone-600">
-            Explore potential room-block penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
+            Explore potential empty room penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
           </p>
         </div>
       </section>

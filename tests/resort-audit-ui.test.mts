@@ -16,8 +16,19 @@ test('stepper exposes labeled touch controls and disables increments at the boun
 test('gauge describes risk in words and currency, and respects reduced motion', () => {
   const audit = calculateResortAudit({ guests: 250, rooms: 50, nights: 3, rate: 400, guarantee: 80, pickup: 60, catering: 0, mandap: 0 })
   const html = renderToStaticMarkup(createElement(RiskGauge, { audit, guarantee: 80 }))
-  assert.match(html, /High Financial Risk Detected/)
+  assert.match(html, /Potential Empty Room Penalty Found/)
   assert.match(html, /\$12,000/)
   assert.match(html, /motion-reduce:transition-none/)
   assert.match(html, /do not add them together/)
+})
+
+test('low fee scenarios never promise no extra fees or a safe contract', () => {
+  for (const rate of [0, 80]) {
+    const audit = calculateResortAudit({ guests: 250, rooms: 50, nights: 3, rate, guarantee: 80, pickup: 60, catering: 0, mandap: 0 })
+    const html = renderToStaticMarkup(createElement(RiskGauge, { audit, guarantee: 80 }))
+    assert.match(html, /Lower estimated fee/)
+    assert.doesNotMatch(html, /Safe \(No Extra Fees\)/)
+    assert.doesNotMatch(html, /attrition|unhedged|pickup|liability/i)
+    assert.match(html, /Estimated Out-of-Pocket Empty Room Fee/)
+  }
 })
