@@ -69,24 +69,27 @@ const sections = [
 
 export default function ResortComparisonPage() {
   return (
-    <main className="bg-[#faf8f5] text-[#1f1f1f]">
+    <main className="bg-[#FAF9F6] pb-24 text-stone-900 sm:pb-0">
       <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
       <JsonLd id="schema-calculator" data={calculatorSchema} />
-      <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
+      <section className="border-b border-stone-200/80 bg-[#f3ede7] px-6 py-16 text-center text-stone-900 sm:py-24">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">For families across the USA &amp; Canada</p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Contract &amp; Risk Auditor</h1>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-amber-800">For families across the USA &amp; Canada</p>
+          <h1 className="font-serif text-4xl font-semibold tracking-tight sm:text-6xl">Resort Contract &amp; Risk Auditor</h1>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-stone-600">
             Explore potential room-block penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
           </p>
         </div>
       </section>
 
-      <ResortQuickAudit />
-      <details className="mx-auto max-w-7xl px-6 pb-10">
-        <summary className="cursor-pointer rounded-xl border border-[#ded5c8] bg-white p-5 font-semibold focus-visible:outline-2">Compare two full resort proposals — detailed worksheet</summary>
-        <ResortComparisonClient />
-      </details>
+      <ResortQuickAudit comparison={<ResortComparisonClient />} finePrint={
+        <div className="mt-7 space-y-6">
+          {sections.map(section => <fieldset key={section.title} className="rounded-2xl border border-stone-200 p-5">
+            <legend className="px-2 font-serif text-xl">{section.title}</legend>
+            <div className="space-y-4">{section.questions.map(question => <label key={question} className="flex cursor-pointer items-start gap-3 text-sm leading-6 text-stone-600"><input type="checkbox" className="mt-1 size-5 shrink-0 accent-rose-900" /><span>{question}</span></label>)}</div>
+          </fieldset>)}
+        </div>
+      } />
 
       <section className="bg-[#f0ebe3] px-6 py-20 print:hidden">
         <div className="mx-auto max-w-5xl space-y-8">
