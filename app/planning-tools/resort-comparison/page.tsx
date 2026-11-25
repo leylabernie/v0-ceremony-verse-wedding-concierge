@@ -1,5 +1,6 @@
 import { calculatorSchema as buildCalculatorSchema } from "@/lib/schema"
 import Link from "next/link"
+import { ResortQuickAudit } from "@/components/calculators/ResortQuickAudit"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { ResortComparisonClient } from "./resort-comparison-client"
 
@@ -74,14 +75,18 @@ export default function ResortComparisonPage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">For families across the USA &amp; Canada</p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Proposal Comparison Calculator</h1>
+          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Resort Contract &amp; Risk Auditor</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Enter the figures and terms from two written resort proposals. The calculator keeps host-paid costs separate from room-block exposure and shows which important answers are still missing.
+            Explore potential room-block penalties and vendor fees with a quick, three-number scenario. Then check your actual written terms before paying a deposit.
           </p>
         </div>
       </section>
 
-      <ResortComparisonClient />
+      <ResortQuickAudit />
+      <details className="mx-auto max-w-7xl px-6 pb-10">
+        <summary className="cursor-pointer rounded-xl border border-[#ded5c8] bg-white p-5 font-semibold focus-visible:outline-2">Compare two full resort proposals — detailed worksheet</summary>
+        <ResortComparisonClient />
+      </details>
 
       <section className="bg-[#f0ebe3] px-6 py-20 print:hidden">
         <div className="mx-auto max-w-5xl space-y-8">
