@@ -66,8 +66,8 @@ const nextPaths = [
   {
     label: "Test the family cost",
     description: "Separate event costs, family travel, room assumptions, and missing areas before the total becomes a surprise.",
-    href: "/planning-tools/budget/",
-    cta: "Open the budget calculator →",
+    href: "/planning-tools/budget-tracker/",
+    cta: "Open the budget tracker →",
   },
   {
     label: "Bring the map to a conversation",

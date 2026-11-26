@@ -126,7 +126,7 @@ Open `ceremonyverse-brand-signals-package.docx` (downloaded separately) and work
 
 - Will not change the visual design, fonts, or layout of any existing page (the brand colors, Cormorant Garamond + DM Sans fonts, and all component styling are preserved)
 - Will not change any functionality (no API routes, no form behavior, no navigation logic changed)
-- Will not affect any of the calculators or interactive planning tools
+- Will not affect any of the interactive planning tools
 - Will not remove any existing content — only adds new content and updates authorship metadata
 
 ## Verification after deploy

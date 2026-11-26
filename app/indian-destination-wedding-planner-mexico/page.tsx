@@ -283,7 +283,7 @@ export default function MexicoDestinationGuidePage() {
                 count, room nights, event hours, inclusions, taxes, and service charges.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-                <Link href="/planning-tools/budget/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open the Budget Calculator</Link>
+                <Link href="/planning-tools/budget-tracker/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open the Budget Tracker</Link>
                 <Link href="/indian-destination-wedding-cost/" className="inline-flex justify-center rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]">Read the Complete-Cost Guide</Link>
               </div>
             </div>

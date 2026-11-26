@@ -151,7 +151,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
               <li>• Up to two current written proposals, if already received</li>
             </ul>
             <Link href="/planning-tools/" className="mt-7 inline-flex font-semibold text-[#7a6841] underline underline-offset-4">
-              Use the free calculators first
+              Use the free planning tools first
             </Link>
           </article>
 

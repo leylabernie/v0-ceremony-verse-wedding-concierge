@@ -132,8 +132,8 @@ const clusters = [
       { href: "/indian-wedding-room-block-mexico/", label: "Mexico room block guide" },
       { href: "/before-signing-indian-wedding-resort-proposal/", label: "5 questions to ask before signing a resort proposal" },
       { href: "/blog/hidden-resort-fees-4-day-indian-wedding-cancun/", label: "Hidden resort fees for a 4-day Indian wedding in Cancún" },
-      { href: "/planning-tools/budget/", label: "Free budget calculator (no email required)" },
-      { href: "/planning-tools/resort-comparison/", label: "Free resort proposal comparison tool" },
+      { href: "/planning-tools/budget-tracker/", label: "Free budget tracker (no email required)" },
+      { href: "/planning-tools/", label: "Free resort proposal comparison tool" },
     ],
   },
   {
@@ -161,7 +161,7 @@ const clusters = [
     links: [
       { href: "/blog/shipping-indian-wedding-outfits-usa-customs-duties/", label: "Shipping Indian wedding outfits — USA customs and duties" },
       { href: "/blog/us-tariffs-indian-wedding-outfits-2026/", label: "US tariffs on Indian wedding outfits in 2026" },
-      { href: "/planning-tools/shipping-customs/", label: "Free shipping and customs landed-cost calculator" },
+      { href: "/planning-tools/", label: "Free planning tools for costs and logistics" },
     ],
   },
   {
@@ -281,7 +281,7 @@ export default function NriGujaratiWeddingPlanningGuidePage() {
               Before you sign any resort proposal, ask these five questions in writing: (1) What is the outside-vendor fee for AV versus decor, and is it per vendor or per event? (2) What is the day-pass policy for non-resort guests, and is there a cap? (3) What staging is required for the mandap, and what are the dimension constraints? (4) What is the cleanup fee for turmeric after the Haldi? (5) What is the vendor meal rate, and at what point does a vendor qualify for it?
             </p>
             <p>
-              The full question list and a side-by-side comparison worksheet: <Link href="/before-signing-indian-wedding-resort-proposal/" className="text-[#7a6841] underline underline-offset-4">5 questions to ask before signing a resort proposal</Link>. Use our <Link href="/planning-tools/resort-comparison/" className="text-[#7a6841] underline underline-offset-4">free resort proposal comparison tool</Link> to compare two proposals line by line.
+              The full question list and a side-by-side comparison worksheet: <Link href="/before-signing-indian-wedding-resort-proposal/" className="text-[#7a6841] underline underline-offset-4">5 questions to ask before signing a resort proposal</Link>. Use our <Link href="/planning-tools/" className="text-[#7a6841] underline underline-offset-4">free resort proposal comparison tool</Link> to compare two proposals line by line.
             </p>
           </div>
         </article>
@@ -398,7 +398,7 @@ export default function NriGujaratiWeddingPlanningGuidePage() {
             </table>
           </div>
           <p className="mt-6 text-base leading-7 text-[#4d403a]">
-            For the complete line-item breakdown: <Link href="/indian-destination-wedding-cost/" className="text-[#7a6841] underline underline-offset-4">complete Indian destination wedding cost guide</Link>. For the fees resorts don't volunteer: <Link href="/blog/hidden-resort-fees-4-day-indian-wedding-cancun/" className="text-[#7a6841] underline underline-offset-4">hidden resort fees for a 4-day Indian wedding in Cancún</Link>. To model your own: <Link href="/planning-tools/budget/" className="text-[#7a6841] underline underline-offset-4">free budget calculator</Link>.
+            For the complete line-item breakdown: <Link href="/indian-destination-wedding-cost/" className="text-[#7a6841] underline underline-offset-4">complete Indian destination wedding cost guide</Link>. For the fees resorts don't volunteer: <Link href="/blog/hidden-resort-fees-4-day-indian-wedding-cancun/" className="text-[#7a6841] underline underline-offset-4">hidden resort fees for a 4-day Indian wedding in Cancún</Link>. To model your own: <Link href="/planning-tools/budget-tracker/" className="text-[#7a6841] underline underline-offset-4">free budget tracker</Link>.
           </p>
         </article>
       </section>

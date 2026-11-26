@@ -170,7 +170,7 @@ export default function MexicoCoordinationPage() {
               href="/planning-tools/"
               className="rounded-lg border-2 border-white/45 px-8 py-4 text-lg font-bold text-white"
             >
-              Use Free Wedding Calculators
+              Use Free Planning Tools
             </Link>
           </div>
           <p className="mt-5 text-sm text-[#cfc6bb]">

@@ -21,6 +21,6 @@ test("the Destination Decision Map keeps an immediate, no-email-gate planning va
 
 test("the Destination Decision Map preserves practical next paths and consultation attribution", () => {
   assert.match(map, /\/destinations\//)
-  assert.match(map, /\/planning-tools\/budget\//)
+  assert.match(map, /\/planning-tools\/budget-tracker\//)
   assert.match(map, /\/schedule\/\?from=destination-decision-map/)
 })

@@ -55,9 +55,9 @@ const faqItems = [
       "No. CeremonyVerse can coordinate shipment documents, carrier handoff, and available tracking. The vendor, carrier, Canada Border Services Agency, and other authorities control production, transportation, assessment, release, and final delivery timing.",
   },
   {
-    question: "Can Canadian families use the CeremonyVerse pricing plans and calculator?",
+    question: "Can Canadian families use the CeremonyVerse pricing plans and planning tools?",
     answer:
-      "Yes. The two standard sourcing service fees are in USD. The North America Shipping & Customs Calculator uses USD entries and separates the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
+      "Yes. The two standard sourcing service fees are in USD. Our planning tools and sourcing guidance use USD entries and separate the service fee from product, shipping, insurance, estimated import charges, brokerage, alterations, and contingency.",
   },
 ]
 
@@ -106,7 +106,7 @@ export default function IndianWeddingShoppingCanadaPage() {
             <Link href="/contact/?service=india&from=canada" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
               Request a Free 30-Minute Consultation
             </Link>
-            <Link href="/planning-tools/shipping-customs/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">
+            <Link href="/planning-tools/" className="rounded-full border border-white/50 px-7 py-4 text-sm font-semibold !text-white">
               Calculate Landed Cost
             </Link>
           </div>
@@ -117,8 +117,8 @@ export default function IndianWeddingShoppingCanadaPage() {
       </section>
 
       <NorthAmericaCoverage
-        ctaHref="/planning-tools/shipping-customs/"
-        ctaLabel="Open Shipping & Customs Calculator"
+        ctaHref="/planning-tools/"
+        ctaLabel="Open Planning Tools"
       />
 
       <section className="px-6 py-20 sm:py-24">

@@ -31,13 +31,13 @@ The pillar page is `/nri-gujarati-wedding-planning-guide/`. Every cluster page i
 - `/gujarati-destination-wedding-mexico/` · `/indian-destination-wedding-planner-mexico/` · `/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/` · `/blog/indian-destination-wedding-mexico-complete-guide/` — **all EXISTS**
 
 ### Cluster C — Cost & logistics
-- `/indian-destination-wedding-cost/` · `/indian-wedding-room-block-mexico/` · `/before-signing-indian-wedding-resort-proposal/` · `/blog/hidden-resort-fees-4-day-indian-wedding-cancun/` · `/planning-tools/budget/` · `/planning-tools/resort-comparison/` — **all EXISTS**
+- `/indian-destination-wedding-cost/` · `/indian-wedding-room-block-mexico/` · `/before-signing-indian-wedding-resort-proposal/` · `/blog/hidden-resort-fees-4-day-indian-wedding-cancun/` · `/planning-tools/budget-tracker/` · `/planning-tools/` — **all EXISTS**
 
 ### Cluster D — Outfit sourcing
 - `/gujarati-wedding-outfits-usa/` · `/blog/gujarati-wedding-outfit-guide/` · `/services/bridal-lehengas/` · `/blog/how-to-buy-bridal-lehenga-from-india-usa/` · `/buy-sherwani-from-india-usa/` · `/bridesmaid-and-family-outfits-from-india/` · `/blog/how-to-coordinate-bridesmaid-lehengas-india-usa/` · `/blog/indian-wedding-outfit-checklist-every-ceremony/` · `/blog/when-to-order-indian-wedding-outfits-nri-bride/` — **all EXISTS**
 
 ### Cluster E — Customs, shipping & legal
-- `/blog/shipping-indian-wedding-outfits-usa-customs-duties/` · `/blog/us-tariffs-indian-wedding-outfits-2026/` · `/planning-tools/shipping-customs/` · `/blog/indian-wedding-catering-mexico-all-inclusive-resorts/` — **all EXISTS**
+- `/blog/shipping-indian-wedding-outfits-usa-customs-duties/` · `/blog/us-tariffs-indian-wedding-outfits-2026/` · `/planning-tools/` · `/blog/indian-wedding-catering-mexico-all-inclusive-resorts/` — **all EXISTS**
 
 ### Cluster F — Deep-dive gap content (created in Task 3)
 - `/nri-gujarati-wedding-timeline-12-months/` — 12-month month-by-month checklist with HowTo schema

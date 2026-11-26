@@ -35,7 +35,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
             <Link href="/schedule/" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
               Schedule a Free 30-Minute Consultation
             </Link>
-            <Link href="/planning-tools/resort-comparison/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">
+            <Link href="/planning-tools/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">
               Compare Resort Proposals
             </Link>
           </div>
@@ -138,7 +138,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Evaluation list—not endorsements</p>
               <h2 className="mt-3 font-serif text-4xl font-semibold">{data.comparisonSection?.heading ?? `Which ${data.shortName} resorts can families compare?`}</h2>
               <p className="mt-5 leading-7 text-[#4d403a]">{data.comparisonSection?.intro ?? "These are properties families may ask CeremonyVerse to evaluate. Inclusion does not mean affiliation, preferred status, guaranteed South Asian capability, availability, or a recommendation. Current resort proposals and contracts control."}</p>
-              <Link href="/planning-tools/resort-comparison/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open Resort Comparison Calculator</Link>
+              <Link href="/planning-tools/" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">Open Resort Comparison Calculator</Link>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {data.resortExamples.map((resort) => {
@@ -248,7 +248,7 @@ export function DestinationLandingPage({ data }: { data: DestinationPageData }) 
             <div className="mt-8 text-sm font-semibold text-[#7a6841]">
               <Link href="/resorts/" className="underline underline-offset-4">Browse all resort profiles</Link>
               {" · "}
-              <Link href="/planning-tools/resort-comparison/" className="underline underline-offset-4">Open the Resort Comparison Calculator</Link>
+              <Link href="/planning-tools/" className="underline underline-offset-4">Open the Resort Comparison Calculator</Link>
             </div>
           </div>
         </section>

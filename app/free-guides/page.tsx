@@ -25,10 +25,10 @@ const destinationTools = [
   ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
   ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],
-  ["Budget Calculator", "Separate wedding-event, guest-travel, and optional shopping costs and compare the total with your target.", "/planning-tools/budget/"],
-  ["Resort Proposal Calculator", "Compare two written resort proposals, room-block exposure, cultural requirements, and missing terms.", "/planning-tools/resort-comparison/"],
+  ["Budget Tracker", "Track estimated vs. actual wedding costs by category and see what’s left in your budget.", "/planning-tools/budget-tracker/"],
+  ["Wedding Checklist", "Organize to-dos by timeline, track progress, and add your own tasks.", "/planning-tools/wedding-checklist/"],
   ["Family Responsibility Map", "Assign an owner, approver, due date, and status to each important decision.", "/planning-tools/family-responsibility-map/"],
-  ["Guest & VIP Cost Calculator", "Calculate family-paid rooms, flights, transfers, welcome items, and guest-support costs.", "/planning-tools/guest-logistics/"],
+  ["Guest List Manager", "Track guest names, RSVP status, party size, and notes in one simple place.", "/planning-tools/guest-list/"],
 ] as const
 
 const shoppingGuides = [
@@ -62,7 +62,7 @@ export default function FreeGuidesPage() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Free planning resources</p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Free Indian Wedding Planning Resources</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Explore the guides and calculator previews freely. The ceremony toolkit download asks for your details; planning follow-up has a separate, optional opt-in.
+            Explore the guides and planning tool previews freely. The ceremony toolkit download asks for your details; planning follow-up has a separate, optional opt-in.
           </p>
         </div>
       </section>

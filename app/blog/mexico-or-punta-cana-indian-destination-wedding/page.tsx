@@ -187,8 +187,8 @@ export default function BlogPost() {
           <p>
             A complimentary or low-cost ceremony package can still sit inside an expensive multi-event plan. A higher
             package price can include items that reduce later charges. Use the
-            <Link href="/planning-tools/resort-comparison/" className="ml-1 font-semibold text-[#7a6841] underline">resort proposal calculator</Link> and the
-            <Link href="/planning-tools/budget/" className="ml-1 font-semibold text-[#7a6841] underline">budget calculator</Link> to expose missing categories instead of choosing by the first total shown.
+            <Link href="/planning-tools/" className="ml-1 font-semibold text-[#7a6841] underline">planning tools</Link> and the
+            <Link href="/planning-tools/budget-tracker/" className="ml-1 font-semibold text-[#7a6841] underline">budget tracker</Link> to expose missing categories instead of choosing by the first total shown.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">5. Compare room-block risk and guest experience</h2>

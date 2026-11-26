@@ -141,7 +141,7 @@ export default function BlogPost() {
             other written charges, and contingency.
           </p>
           <p>
-            The free <Link href="/planning-tools/shipping-customs/" className="font-semibold text-[#7a6841] underline">Shipping and Customs Calculator</Link> provides separate U.S. and Canadian planning fields. It does not lock an exchange rate or guarantee a customs assessment, carrier scan, or delivery date.
+            The free <Link href="/planning-tools/" className="font-semibold text-[#7a6841] underline">shipping and customs planning estimate</Link> provides separate U.S. and Canadian planning fields. It does not lock an exchange rate or guarantee a customs assessment, carrier scan, or delivery date.
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">5. Understand the U.S. and Canadian difference</h2>

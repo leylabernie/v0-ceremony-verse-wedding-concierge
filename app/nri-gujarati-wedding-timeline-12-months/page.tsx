@@ -209,7 +209,7 @@ const relatedGuides = [
   { href: "/before-signing-indian-wedding-resort-proposal/", label: "5 questions to ask before signing a resort proposal" },
   { href: "/indian-destination-wedding-cost/", label: "Complete Indian destination wedding cost guide" },
   { href: "/blog/when-to-order-indian-wedding-outfits-nri-bride/", label: "When to order Indian wedding outfits — NRI bride timeline" },
-  { href: "/planning-tools/budget/", label: "Free budget calculator (no email required)" },
+  { href: "/planning-tools/budget-tracker/", label: "Free budget tracker (no email required)" },
   { href: "/about/mini/", label: "About Mini — the founder behind this timeline" },
 ]
 

@@ -79,7 +79,7 @@ export default function FamilyResponsibilityMapPage() {
 
         <div className="mt-10 flex flex-col gap-3 sm:flex-row print:hidden">
           <Link href="/schedule/" className="rounded-full bg-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-white">Organize a Private Planning Call</Link>
-          <Link href="/planning-tools/guest-logistics/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Next: Guest Logistics</Link>
+          <Link href="/planning-tools/guest-list/" className="rounded-full border border-[#7a6841] px-7 py-3 text-center text-sm font-semibold text-[#7a6841]">Open Guest List Manager</Link>
         </div>
       </div>
     </main>

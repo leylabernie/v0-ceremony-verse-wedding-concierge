@@ -228,7 +228,7 @@ export default function BlogPost() {
               Mexico room-block guide
             </Link>{" "}
             covers the resort-side mechanics, and{" "}
-            <Link href="/planning-tools/guest-logistics/" className="font-semibold text-[#7a6841] underline">
+            <Link href="/planning-tools/guest-list/" className="font-semibold text-[#7a6841] underline">
               the guest-logistics planning tool
             </Link>{" "}
             turns this checklist into a worksheet your family can actually fill in.

@@ -203,7 +203,7 @@ export default function TariffsBlogPost() {
           </p>
         </div>
               <SourcingCallout />
-      <ArticlePlanningUpdate title="Replace assumed rates with a shipment-specific estimate" paragraphs={["Tariff and import treatment must be checked for the shipment date, destination, item classification, material, origin, and value. Ask the carrier or a qualified broker for the basis of its estimate and which handling charges are additional. This update adds a decision worksheet; it does not certify a current tariff percentage.", "Compare the complete delivered cost with the local alternative and retain a reserve for uncertain charges. Keep the garment deadline separate from the wedding’s resort deposits. Use the shipping guide and calculator to organize estimates, then replace them when written information arrives."]} />
+      <ArticlePlanningUpdate title="Replace assumed rates with a shipment-specific estimate" paragraphs={["Tariff and import treatment must be checked for the shipment date, destination, item classification, material, origin, and value. Ask the carrier or a qualified broker for the basis of its estimate and which handling charges are additional. This update adds a decision worksheet; it does not certify a current tariff percentage.", "Compare the complete delivered cost with the local alternative and retain a reserve for uncertain charges. Keep the garment deadline separate from the wedding’s resort deposits. Use the shipping guide and our planning tools to organize estimates, then replace them when written information arrives."]} />
       </article>
     </main>
   );

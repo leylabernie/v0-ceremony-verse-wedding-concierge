@@ -336,7 +336,7 @@ export default function CostsPage() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/75">
             Bring the numbers you just read to a free 30-minute consultation, or run your own guest count
-            through the budget calculator first — no payment, no contract.
+            through the budget tracker first — no payment, no contract.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Link
@@ -349,7 +349,7 @@ export default function CostsPage() {
               href="/planning-tools/"
               className="rounded-full border border-[#c5a059] px-8 py-4 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Try Free Budget Calculator
+              Try Free Budget Tracker
             </Link>
           </div>
         </section>

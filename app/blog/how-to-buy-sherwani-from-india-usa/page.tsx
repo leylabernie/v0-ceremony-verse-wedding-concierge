@@ -306,7 +306,7 @@ export default function SherwaniGuidePage() {
               Want help comparing sherwani options?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Open CeremonyVerse&apos;s no-email-gate resource library for outfit checklists, complete-cost guidance, shopping timelines, vendor red flags, and planning calculators.
+              Open CeremonyVerse&apos;s no-email-gate resource library for outfit checklists, complete-cost guidance, shopping timelines, vendor red flags, and free planning tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Open Free Planning Resources →
