@@ -4,11 +4,11 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/",
-  title: "Free Wedding Planning Tools | CeremonyVerse",
+  title: "Free Gujarati & South Asian Wedding Planning Tools | CeremonyVerse",
   description:
-    "Free wedding planning tools for destination and multicultural weddings: checklist, guest list, budget tracker, vendor manager, vision boards, and more. Simple tools saved in your browser.",
+    "Free wedding planning tools designed for Gujarati and South Asian weddings: checklist, guest list, budget tracker, vendor manager, vision boards, and more. Simple tools saved in your browser.",
   keywords:
-    "free wedding planning tools, wedding checklist, guest list manager, wedding budget tracker, vendor manager, vision board, destination wedding planning",
+    "Gujarati wedding planning tools, South Asian wedding planning tools, wedding checklist, guest list manager, wedding budget tracker, vendor manager, vision board",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/planning-tools/" }])
@@ -16,7 +16,7 @@ const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/plann
 const tools = [
   {
     title: "Wedding Checklist",
-    description: "Organize to-dos by timeline, track progress, and add your own tasks so nothing important slips through the cracks.",
+    description: "Plan every milestone with a timeline built for Gujarati and South Asian weddings — from Garba and Sangeet to ceremony and reception.",
     href: "/planning-tools/wedding-checklist/",
     label: "Set Up Checklist",
     badge: "Free",
@@ -24,7 +24,7 @@ const tools = [
   },
   {
     title: "Guest List Manager",
-    description: "Track guest names, contact details, RSVP status, party size, and notes in one simple place.",
+    description: "Track households, family sides, RSVPs, party size, and event-by-event invites for multi-day celebrations.",
     href: "/planning-tools/guest-list/",
     label: "Manage Guests",
     badge: "Free",
@@ -32,7 +32,7 @@ const tools = [
   },
   {
     title: "Budget Tracker",
-    description: "Set your budget, track estimated vs. actual costs by category, and see what’s left at a glance.",
+    description: "Track estimated vs. actual costs across mandap, outfits, entertainment, ceremonies, and guest logistics.",
     href: "/planning-tools/budget-tracker/",
     label: "Build Your Budget",
     badge: "Free",
@@ -40,7 +40,7 @@ const tools = [
   },
   {
     title: "Vendor Manager",
-    description: "Keep vendor contacts, quotes, booking status, and notes organized as you plan your wedding.",
+    description: "Organize pandits, mehndi artists, DJs/dhol, decor, catering, and other vendors by event, quote, and booking status.",
     href: "/planning-tools/vendor-manager/",
     label: "Track Vendors",
     badge: "Free",
@@ -48,7 +48,7 @@ const tools = [
   },
   {
     title: "Vision Boards",
-    description: "Save inspiration links, images, and notes for decor, outfits, venues, and details you love.",
+    description: "Save inspiration for Garba, mandap, outfits, jewelry, and reception decor in one simple, visual place.",
     href: "/planning-tools/vision-boards/",
     label: "Save Inspiration",
     badge: "Free",
@@ -64,7 +64,7 @@ const tools = [
   },
   {
     title: "Family Responsibility Map",
-    description: "Assign one owner, approver, deadline, and status to key family decisions so planning stays clear.",
+    description: "Assign one owner, approver, deadline, and status to key family decisions so planning stays clear across both sides.",
     href: "/planning-tools/family-responsibility-map/",
     label: "Organize Decisions",
     badge: "Free",
@@ -72,7 +72,7 @@ const tools = [
   },
   {
     title: "Baraat & Event Logistics Planner",
-    description: "Select the events you’re hosting and get a practical checklist for venues, sound, power, and logistics.",
+    description: "Select the events you’re hosting and get a practical checklist for venues, sound, power, and baraat logistics.",
     href: "/planning-tools/baraat-event-planner/",
     label: "Plan Event Logistics",
     badge: "Free",
@@ -91,7 +91,7 @@ const tools = [
 const comingSoon = [
   {
     title: "Digital Invitations & RSVP",
-    description: "Beautiful invitations with guest tracking and simple RSVP collection — designed for destination weddings.",
+    description: "Beautiful invitations with guest tracking and simple RSVP collection — designed for multi-event South Asian weddings.",
   },
   {
     title: "Wedding Website",
@@ -119,8 +119,7 @@ export default function PlanningToolsPage() {
           </p>
           <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Free Wedding Planning Tools</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Simple tools to help you plan with clarity — from checklist and guest list to budget, vendors, and inspiration.
-            Built for destination and multicultural weddings, with no complicated calculators.
+            Simple tools designed for Gujarati and South Asian weddings — from Garba and Sangeet to mandap, guest logistics, and reception planning. No complicated calculators, just clear planning.
           </p>
         </div>
       </section>
@@ -169,7 +168,7 @@ export default function PlanningToolsPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Coming soon</p>
           <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl">More tools on the way</h2>
           <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">
-            We’re building a fuller CeremonyVerse planning suite inspired by the best simple wedding tools — with destination-wedding and multicultural planning needs in mind.
+            We’re building a fuller CeremonyVerse planning suite for Gujarati and South Asian weddings — with the multi-event, family, and destination details that matter most.
           </p>
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {comingSoon.map((tool) => (
@@ -187,7 +186,7 @@ export default function PlanningToolsPage() {
         <div className="mx-auto max-w-3xl">
           <h2 className="font-serif text-3xl font-semibold sm:text-4xl">Want help planning it all?</h2>
           <p className="mt-4 leading-7 text-[#4d403a]">
-            These free tools help you get organized. If you want expert support for destination venues, contracts, guest travel, or cultural logistics, CeremonyVerse can guide you.
+            These free tools help you get organized. If you want expert support for destination venues, contracts, guest travel, or Gujarati and South Asian wedding logistics, CeremonyVerse can guide you.
           </p>
           <Link
             href="/schedule/?from=planning-tools"

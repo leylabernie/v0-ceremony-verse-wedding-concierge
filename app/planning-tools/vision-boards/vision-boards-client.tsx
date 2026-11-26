@@ -7,8 +7,10 @@ type Item = { id: string; url: string; note: string }
 type Board = { id: string; name: string; items: Item[] }
 const uid = () => Math.random().toString(36).slice(2, 10)
 const DEFAULTS: Board[] = [
-  { id: uid(), name: "Ceremony Decor", items: [] },
+  { id: uid(), name: "Garba & Sangeet", items: [] },
+  { id: uid(), name: "Wedding Ceremony & Mandap", items: [] },
   { id: uid(), name: "Outfits & Jewelry", items: [] },
+  { id: uid(), name: "Reception & Decor", items: [] },
 ]
 
 export function VisionBoardsClient() {
@@ -31,7 +33,7 @@ export function VisionBoardsClient() {
       <section className="rounded-2xl border border-[#e6dfd5] bg-white p-6 sm:p-8">
         <h2 className="font-serif text-2xl font-semibold">Create a board</h2>
         <div className="mt-4 flex gap-2">
-          <input className="w-full rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Board name (e.g., Reception Florals)" value={newBoard} onChange={e => setNewBoard(e.target.value)} onKeyDown={e => e.key === "Enter" && addBoard()} />
+          <input className="w-full rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Board name (e.g., Pithi, Baraat, Reception Florals)" value={newBoard} onChange={e => setNewBoard(e.target.value)} onKeyDown={e => e.key === "Enter" && addBoard()} />
           <button type="button" onClick={addBoard} className="rounded-xl bg-[#7a6841] px-4 py-2.5 text-sm font-semibold text-white hover:bg-[#6a5938]">Add board</button>
         </div>
       </section>
@@ -68,7 +70,7 @@ export function VisionBoardsClient() {
           </section>
         )
       })}
-      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Image links are stored as URLs; they are not uploaded to CeremonyVerse.</p>
+      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed for Gujarati and South Asian wedding inspiration — from Garba and mandap looks to outfits, jewelry, and reception decor. Image links are stored as URLs; they are not uploaded to CeremonyVerse.</p>
     </div>
   )
 }

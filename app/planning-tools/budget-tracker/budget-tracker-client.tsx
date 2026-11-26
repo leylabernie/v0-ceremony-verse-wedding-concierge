@@ -7,11 +7,14 @@ type Row = { id: string; category: string; item: string; estimated: string; actu
 const uid = () => Math.random().toString(36).slice(2, 10)
 const money = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 })
 const DEFAULTS: Row[] = [
-  { id: uid(), category: "Venue & Catering", item: "Venue / resort package", estimated: "", actual: "" },
-  { id: uid(), category: "Attire", item: "Wedding outfits", estimated: "", actual: "" },
-  { id: uid(), category: "Photo & Video", item: "Photography / videography", estimated: "", actual: "" },
-  { id: uid(), category: "Decor & Production", item: "Decor / flowers / rentals", estimated: "", actual: "" },
-  { id: uid(), category: "Travel", item: "Flights / transfers", estimated: "", actual: "" },
+  { id: uid(), category: "Venue & Catering", item: "Venue / resort package & catering", estimated: "", actual: "" },
+  { id: uid(), category: "Mandap & Decor", item: "Mandap, florals, decor, and rentals", estimated: "", actual: "" },
+  { id: uid(), category: "Outfits & Jewelry", item: "Wedding, Garba/Sangeet, and reception outfits/jewelry", estimated: "", actual: "" },
+  { id: uid(), category: "Photo & Video", item: "Photography, videography, and content coverage", estimated: "", actual: "" },
+  { id: uid(), category: "Entertainment", item: "DJ, dhol, Garba/Sangeet entertainment", estimated: "", actual: "" },
+  { id: uid(), category: "Ceremony & Officiant", item: "Pandit/officiant, ceremony items, muhurat setup", estimated: "", actual: "" },
+  { id: uid(), category: "Beauty & Mehndi", item: "Hair, makeup, mehndi artists", estimated: "", actual: "" },
+  { id: uid(), category: "Guest Logistics", item: "Travel, transfers, welcome bags, room block extras", estimated: "", actual: "" },
 ]
 
 export function BudgetTrackerClient() {
@@ -38,7 +41,7 @@ export function BudgetTrackerClient() {
     <div className="mt-10 space-y-6">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="rounded-2xl border border-[#e6dfd5] bg-white p-5"><p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#7a6841]">Total budget</p><input className="mt-2 w-full rounded-xl border border-[#d9cfbf] px-3 py-2 text-lg font-semibold" type="number" min="0" placeholder="$0" value={totalBudget} onChange={e => setTotalBudget(e.target.value)} /></div>
-        {[["Estimated", totals.estimated], ["Actual", totals.actual], ["Remaining", totals.remaining]].map(([l, v]) => (
+        {[[ "Estimated", totals.estimated], ["Actual", totals.actual], ["Remaining", totals.remaining]].map(([l, v]) => (
           <div key={String(l)} className="rounded-2xl border border-[#e6dfd5] bg-white p-5"><p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#7a6841]">{l}</p><p className={`mt-2 font-serif text-3xl font-semibold ${l==="Remaining" && Number(v)<0 ? "text-[#9a2a2a]" : ""}`}>{money(Number(v))}</p></div>
         ))}
       </div>
@@ -46,7 +49,7 @@ export function BudgetTrackerClient() {
       <section className="rounded-2xl border border-[#e6dfd5] bg-white p-6 sm:p-8">
         <h2 className="font-serif text-2xl font-semibold">Add line item</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <input className="rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Category" value={draft.category} onChange={e => setDraft({ ...draft, category: e.target.value })} />
+          <input className="rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Category (e.g., Garba Entertainment)" value={draft.category} onChange={e => setDraft({ ...draft, category: e.target.value })} />
           <input className="rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Item *" value={draft.item} onChange={e => setDraft({ ...draft, item: e.target.value })} />
           <input className="rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Estimated $" type="number" min="0" value={draft.estimated} onChange={e => setDraft({ ...draft, estimated: e.target.value })} />
           <input className="rounded-xl border border-[#d9cfbf] px-4 py-2.5 text-sm" placeholder="Actual $" type="number" min="0" value={draft.actual} onChange={e => setDraft({ ...draft, actual: e.target.value })} />
@@ -78,7 +81,7 @@ export function BudgetTrackerClient() {
           </table>
         </div>
       </section>
-      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. This is a simple planning tracker, not a quote or contract. For detailed destination-wedding cost planning, <a href="/schedule/?from=budget-tracker" className="text-[#7a6841] underline">book a consultation</a>.</p>
+      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed for Gujarati and South Asian wedding budgets, including multi-event costs like Garba, Sangeet, mehndi, and ceremony essentials. This is a planning tracker, not a quote.</p>
     </div>
   )
 }

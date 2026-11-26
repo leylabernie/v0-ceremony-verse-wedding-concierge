@@ -10,34 +10,34 @@ const uid = () => Math.random().toString(36).slice(2, 10)
 
 const DEFAULTS: Group[] = [
   { id: "12m", title: "12+ months before", items: [
-    { id: uid(), text: "Set your total budget and who is contributing", done: false },
-    { id: uid(), text: "Draft your guest list estimate and key events", done: false },
-    { id: uid(), text: "Choose destination/venue direction and shortlist resorts", done: false },
-    { id: uid(), text: "Book a planning consultation or planner", done: false },
+    { id: uid(), text: "Set your total budget and confirm family contributions (both sides)", done: false },
+    { id: uid(), text: "Draft guest list estimate, households, and key events (Garba/Sangeet, Wedding, Reception)", done: false },
+    { id: uid(), text: "Choose destination/venue direction and confirm it can host Gujarati/South Asian ceremonies", done: false },
+    { id: uid(), text: "Book a planning consultation or planner familiar with multicultural weddings", done: false },
   ]},
   { id: "9m", title: "9–12 months before", items: [
-    { id: uid(), text: "Confirm venue/resort and key dates", done: false },
-    { id: uid(), text: "Book priority vendors (photo/video, makeup, entertainment)", done: false },
-    { id: uid(), text: "Start outfit planning and shopping timelines", done: false },
-    { id: uid(), text: "Set up room block and guest travel info", done: false },
+    { id: uid(), text: "Confirm venue/resort, event dates, and ceremony spaces (mandap, Garba/Sangeet, reception)", done: false },
+    { id: uid(), text: "Book priority vendors: photo/video, mehndi artist, DJ/entertainment, makeup, pandit/officiant", done: false },
+    { id: uid(), text: "Start outfit and jewelry planning for each event (Pithi/Haldi, Garba, Wedding, Reception)", done: false },
+    { id: uid(), text: "Set up room block, guest travel info, and airport transfer plan", done: false },
   ]},
   { id: "6m", title: "6–9 months before", items: [
-    { id: uid(), text: "Send save-the-dates / travel details to guests", done: false },
-    { id: uid(), text: "Finalize ceremony requirements and officiant plans", done: false },
-    { id: uid(), text: "Plan menu tastings and dietary requirements", done: false },
-    { id: uid(), text: "Review contracts, deposits, and payment schedule", done: false },
+    { id: uid(), text: "Send save-the-dates with travel details and event overview for guests", done: false },
+    { id: uid(), text: "Finalize ceremony requirements, muhurat timing, and mandap/ritual items", done: false },
+    { id: uid(), text: "Plan menu tastings, Jain/vegetarian/vegan options, and dietary requirements", done: false },
+    { id: uid(), text: "Review contracts, deposits, outside-vendor fees, and payment schedule", done: false },
   ]},
   { id: "3m", title: "3–6 months before", items: [
-    { id: uid(), text: "Finalize guest list and RSVP tracking", done: false },
-    { id: uid(), text: "Confirm decor, rentals, and event production details", done: false },
-    { id: uid(), text: "Arrange guest transportation and welcome details", done: false },
-    { id: uid(), text: "Schedule fittings and alterations", done: false },
+    { id: uid(), text: "Finalize guest list, RSVPs, meal preferences, and event-by-event attendance", done: false },
+    { id: uid(), text: "Confirm decor, mandap, Garba/Sangeet production, rentals, and baraat logistics", done: false },
+    { id: uid(), text: "Arrange guest transportation, welcome bags, and event itineraries", done: false },
+    { id: uid(), text: "Schedule outfit fittings, alterations, and jewelry/accessory checks", done: false },
   ]},
   { id: "1m", title: "Last month", items: [
-    { id: uid(), text: "Confirm final headcounts and vendor timelines", done: false },
-    { id: uid(), text: "Prepare ceremony items, favors, and day-of kits", done: false },
-    { id: uid(), text: "Share final itinerary with family and vendors", done: false },
-    { id: uid(), text: "Pack travel documents, outfits, and essentials", done: false },
+    { id: uid(), text: "Confirm final headcounts, vendor timelines, and ceremony item checklist", done: false },
+    { id: uid(), text: "Prepare favors, welcome bags, emergency/day-of kits, and ritual essentials", done: false },
+    { id: uid(), text: "Share final itinerary with family, wedding party, vendors, and key elders", done: false },
+    { id: uid(), text: "Pack travel documents, outfits by event, jewelry, and backup essentials", done: false },
   ]},
 ]
 
@@ -93,7 +93,7 @@ export function WeddingChecklistClient() {
           </div>
         </section>
       ))}
-      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. For a shared team plan or account-based syncing, ask us about CeremonyVerse planning support.</p>
+      <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed with Gujarati and South Asian wedding timelines in mind, but customizable for any celebration.</p>
     </div>
   )
 }
