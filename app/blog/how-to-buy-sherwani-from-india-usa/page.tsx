@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -96,6 +97,7 @@ export default function SherwaniGuidePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             How to Take Sherwani Measurements at Home for the Best Fit
           </h2>
+          <BlogFeasibilityInvitation />
 
           <p>
             Size labels and measurement charts vary by vendor and garment. Use the selected vendor&apos;s chart, record the intended layers and fit preference, and preserve time for a local fitting because remote measurements do not guarantee fit.

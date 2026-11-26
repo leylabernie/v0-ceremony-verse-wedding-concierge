@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -60,6 +61,7 @@ export default function ScamsGuidePage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>1. The Catalog Photo Scam</h2>
+          <BlogFeasibilityInvitation />
           <p><strong>How it works:</strong> The seller shows you a stunning professional photo of a lehenga. You pay. What arrives is a cheap replica made with lower-quality fabric, machine embroidery instead of handwork, and colors that look nothing like the photo.</p>
           <p style={{ marginTop: "0.8rem" }}><strong>How to reduce the risk:</strong> Ask for current item media when available and compare it with the written order references. Live video can add evidence, but it does not prove every material claim or guarantee that the delivered item will be identical.</p>
 

@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -267,6 +268,7 @@ export default function CustomSherwaniSizingGuideBlogPost() {
           >
             Choosing the Right Fabric for Your Wedding Theme
           </h2>
+          <BlogFeasibilityInvitation />
 
           <p>
             When browsing photos online, different fabrics can look strikingly

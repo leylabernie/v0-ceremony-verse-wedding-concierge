@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
@@ -88,6 +89,7 @@ export default function GujaratiWeddingOutfitGuideBlogPost() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             Pithi / Haldi: Keep It Light and Let It Get Stained
           </h2>
+          <BlogFeasibilityInvitation />
           <p>
             The Pithi ceremony — the Gujarati equivalent of the <Link href="/haldi-outfits-usa/" style={{ color: "#7a6841" }}>Haldi</Link> — is when turmeric paste is applied to the bride and groom&#39;s face and body by family members. It is joyful, messy, and deeply symbolic: the turmeric paste is believed to bless and beautify the couple before their wedding day.
           </p>

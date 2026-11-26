@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
@@ -82,6 +83,7 @@ export default function NriWeddingPlanningTimeline() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             12+ Months Out: Start the Conversation
           </h2>
+          <BlogFeasibilityInvitation />
           <p>
             At this stage, you don&apos;t need to have chosen anything. But you do need to start.
           </p>

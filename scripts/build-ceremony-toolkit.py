@@ -80,7 +80,7 @@ for h,b in steps:
 story.append(p('Your rehearsal card', 'CVH2'))
 story.append(table([['Decision / cue', 'Named owner or confirmed detail'], ['Final script approved by', '________________________________'], ['Music and microphone cues', '________________________________'], ['Rings / ritual materials', '________________________________'], ['Weather decision / deadline', '________________________________'], ['Guest directions / assistance', '________________________________']], [215,289]))
 story.append(Spacer(1, 10))
-story.append(p('Need help joining the pieces? Request a free 30-minute consultation or explore the $300 Feasibility Plan at www.ceremonyverse.com. Email: hello@ceremonyverse.com', 'CVSmall'))
+story.append(p('Need help joining the pieces? Request a free 30-minute consultation or explore the $300 Feasibility Plan at www.ceremonyverse.com. Email: bhamini@ceremonyverse.com', 'CVSmall'))
 
 def page(canvas, doc):
     canvas.saveState()

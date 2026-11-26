@@ -1,4 +1,8 @@
 import { escapeHtml } from "@/lib/consultation-email"
+import { GOOGLE_CALENDAR_BOOKING_URL } from "@/lib/consultation-booking"
+import { TOOLKIT_PDF } from "@/lib/ceremony-toolkit"
+
+export const CALCULATOR_TOOLKIT_PDF_URL = `https://www.ceremonyverse.com${TOOLKIT_PDF}`
 
 export const decisionQuestions = [
   "Is this the complete cost?",
@@ -19,15 +23,16 @@ function resultLines(value: unknown, label = "", depth = 0): string[] {
   return [`${label || "Result"}: ${value === null || value === undefined ? "Not entered" : String(value)}`]
 }
 
-export function buildCalculatorResultsEmail(lead: { name: string; calculatorType: string; results?: unknown }) {
-  const name = lead.name.trim().split(/\s+/)[0] || "there"
+export function buildCalculatorResultsEmail(lead: { name?: string; calculatorType: string; results?: unknown }) {
+  const name = (lead.name ?? "").trim().split(/\s+/)[0] || "there"
   const tool = lead.calculatorType.replace(/[_-]/g, " ") || "planning worksheet"
   const lines = lead.results === undefined ? ["No results were entered."] : resultLines(lead.results)
   const guide = "https://www.ceremonyverse.com/before-signing-indian-wedding-resort-proposal/"
+  const pdfUrl = CALCULATOR_TOOLKIT_PDF_URL
   const questions = decisionQuestions.map((question, i) => `${i + 1}. ${question}`).join("\n")
   return {
     subject: "Your CeremonyVerse results + the 5 Decision Questions",
-    text: `Hi ${name},\n\nHere is your ${tool} snapshot:\n\n${lines.join("\n")}\n\nThese are planning estimates based on your entries, not resort quotes or confirmed prices.\n\nThe 5 Decision Questions\n${questions}\n\nRead the guide: ${guide}\n\nFor help with your next decision, reply to this email.\n\nMini\nCeremonyVerse\nbhamini@ceremonyverse.com`,
-    html: `<div style="font-family:Arial,sans-serif;max-width:680px;color:#1f1f1f"><p>Hi ${escapeHtml(name)},</p><h1>Your ${escapeHtml(tool)} snapshot</h1><ul>${lines.map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul><p>These are planning estimates based on your entries, not resort quotes or confirmed prices.</p><h2>The 5 Decision Questions</h2><ol>${decisionQuestions.map(question => `<li>${escapeHtml(question)}</li>`).join("")}</ol><p><a href="${guide}">Read the complete decision guide</a></p><p>For help with your next decision, reply to this email.</p><p>Mini<br/>CeremonyVerse<br/>bhamini@ceremonyverse.com</p></div>`,
+    text: `Hi ${name},\n\nHere is your ${tool} snapshot:\n\n${lines.join("\n")}\n\nThese are planning estimates based on your entries, not resort quotes or confirmed prices.\n\nThe 5 Decision Questions\n${questions}\n\nRead the guide: ${guide}\nDownload the printable PDF toolkit: ${pdfUrl}\n\nGrab a free 30-minute intro slot directly on my calendar here: ${GOOGLE_CALENDAR_BOOKING_URL}\nFor help with your next decision, you can also reply to this email.\n\nMini\nCeremonyVerse\nbhamini@ceremonyverse.com`,
+    html: `<div style="font-family:Arial,sans-serif;max-width:680px;color:#1f1f1f"><p>Hi ${escapeHtml(name)},</p><h1>Your ${escapeHtml(tool)} snapshot</h1><ul>${lines.map(line => `<li>${escapeHtml(line)}</li>`).join("")}</ul><p>These are planning estimates based on your entries, not resort quotes or confirmed prices.</p><h2>The 5 Decision Questions</h2><ol>${decisionQuestions.map(question => `<li>${escapeHtml(question)}</li>`).join("")}</ol><p><a href="${guide}">Read the complete decision guide</a></p><p><a href="${pdfUrl}">Download the printable CeremonyVerse PDF toolkit</a></p><p><a href="${GOOGLE_CALENDAR_BOOKING_URL}">Grab a free 30-minute intro slot directly on my Google Calendar</a></p><p>For help with your next decision, reply to this email.</p><p>Mini<br/>CeremonyVerse<br/>bhamini@ceremonyverse.com</p></div>`,
   }
 }

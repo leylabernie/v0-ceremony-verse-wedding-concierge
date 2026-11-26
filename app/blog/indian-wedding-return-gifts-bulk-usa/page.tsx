@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -121,6 +122,7 @@ export default function BulkReturnGiftsGuideBlogPost() {
 
         <section className="mt-16 rounded-2xl bg-white p-7 md:p-10">
           <h2 className="text-3xl font-semibold">Build the timeline from the actual order</h2>
+          <BlogFeasibilityInvitation />
           <p className="mt-5 leading-8 text-[#4d403a]">
             Request current estimates for sample or proof preparation, family approval, production, evidence review,
             packing, carrier collection, customs, final delivery, and local assembly. Add contingency based on the item,

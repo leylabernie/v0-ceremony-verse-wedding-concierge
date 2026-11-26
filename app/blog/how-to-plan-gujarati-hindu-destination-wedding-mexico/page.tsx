@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -119,6 +120,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">2. Define what the total budget must cover</h2>
+          <BlogFeasibilityInvitation />
           <p>
             A resort&apos;s wedding-package price is only one part of the host budget. List the resort package, private
             venues, food and beverage, guest overages, decor, production, photography, entertainment, planner and

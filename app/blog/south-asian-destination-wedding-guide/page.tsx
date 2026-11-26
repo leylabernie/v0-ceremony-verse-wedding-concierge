@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
 import { VisibleFaqs } from "@/components/visible-faqs";
@@ -135,6 +136,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">Multi-day event spaces: five ceremonies, one property</h2>
+          <BlogFeasibilityInvitation />
           <p>
             Every event in a Gujarati or Hindu wedding needs its own space, and each one has a physical requirement
             the resort will not volunteer. The Haldi needs an outdoor area with shade and a wash-up station, because

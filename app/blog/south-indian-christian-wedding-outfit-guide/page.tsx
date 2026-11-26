@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
@@ -117,6 +118,7 @@ export default function SouthIndianChristianWeddingOutfitGuide() {
             <h2 className="mb-4 font-serif text-3xl font-semibold text-[#1f1f1f]">
               Build one ceremony-by-ceremony wardrobe brief
             </h2>
+            <BlogFeasibilityInvitation />
             <div className="overflow-x-auto rounded-2xl border border-[#dfd7cc] bg-white">
               <table className="w-full border-collapse text-left text-base">
                 <thead className="bg-[#f1ece5] text-[#1f1f1f]">

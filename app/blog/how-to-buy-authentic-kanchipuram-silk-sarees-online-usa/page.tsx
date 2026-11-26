@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -302,6 +303,7 @@ export default function KanchipuramSilkGuideBlogPost() {
           >
             Compare Local and Remote Options on Equivalent Terms
           </h2>
+          <BlogFeasibilityInvitation />
 
           <p>
             A brick-and-mortar boutique may provide in-person viewing, fitting,

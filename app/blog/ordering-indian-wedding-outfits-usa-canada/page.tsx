@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -107,6 +108,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">2. Ask for item-specific vendor evidence</h2>
+          <BlogFeasibilityInvitation />
           <p>
             A polished social account is not item evidence. Ask for the seller&apos;s legal or trading name, business
             location, current contact details, written price, payment recipient, item availability, materials,

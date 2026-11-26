@@ -68,8 +68,8 @@ export function CalculatorLeadCapture({
     event.preventDefault();
     if (status === "submitting") return;
 
-    if (!name.trim() || !email.trim()) {
-      setError("Please add your first name and email.");
+    if (!email.trim()) {
+      setError("Please add your email.");
       return;
     }
 
@@ -151,11 +151,10 @@ export function CalculatorLeadCapture({
           className="hidden"
         />
         <label className="flex flex-col text-sm font-medium text-[#4d453d]">
-          <span className="sr-only">First name</span>
+          <span className="sr-only">First name (optional)</span>
           <input
             type="text"
-            required
-            placeholder="First name"
+            placeholder="First name (optional)"
             value={name}
             onChange={(event) => setName(event.target.value)}
             className="rounded-lg border border-[#e6dfd5] bg-white px-3 py-2.5 text-sm text-[#2f2f2f] outline-none focus:border-[#7a6841]"

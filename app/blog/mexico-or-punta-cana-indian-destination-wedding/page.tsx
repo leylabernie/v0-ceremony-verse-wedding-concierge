@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -128,6 +129,7 @@ export default function BlogPost() {
           </div>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">1. Start with the guest travel map</h2>
+          <BlogFeasibilityInvitation />
           <p>
             List where guests will begin their trips, especially immediate family traveling from India, and identify
             which travelers may need an individual document check. Compare practical flight options, connection

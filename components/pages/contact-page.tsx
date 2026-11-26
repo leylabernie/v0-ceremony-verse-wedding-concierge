@@ -3,6 +3,8 @@
 import Link from "next/link"
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react"
 import { getAcquisitionContext, trackEvent, trackLead } from "@/lib/analytics"
+import { resolveConsultationBooking } from "@/lib/consultation-booking"
+import { destinationFeasibilityCredit, getFeasibilityPlanCta } from "@/lib/destination-feasibility-plan"
 
 interface LeadFormData {
   serviceInterest: string
@@ -72,7 +74,16 @@ const getContactEntryContext = () => {
   }
 }
 
-export function ContactPage() {
+export interface ContactPageProps {
+  stripeFeasibilityUrl?: string
+  calendarEmbedUrl?: string
+}
+
+export function ContactPage({ stripeFeasibilityUrl, calendarEmbedUrl }: ContactPageProps = {}) {
+  const feasibilityCta = getFeasibilityPlanCta(
+    stripeFeasibilityUrl ?? process.env.NEXT_PUBLIC_STRIPE_FEASIBILITY_URL,
+  )
+  const booking = resolveConsultationBooking(calendarEmbedUrl ?? process.env)
   const [formData, setFormData] = useState<LeadFormData>(initialFormData)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
@@ -376,12 +387,57 @@ export function ContactPage() {
           </p>
           <div className="mx-auto mt-7 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-white p-6">
             <h2 className="font-serif text-2xl font-semibold text-[#1f1f1f]">Prefer to speak with Mini directly?</h2>
-            <p className="mt-3 text-sm leading-6 text-[#4d403a]">You can request your free consultation by WhatsApp or phone. No registration is needed for this option; share your timeframe and the question you want help with.</p>
-            <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row">
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">You can book on Mini&apos;s Google Calendar, WhatsApp, call, or email <a href="mailto:bhamini@ceremonyverse.com" className="font-semibold text-[#7a6841] underline">bhamini@ceremonyverse.com</a> directly. No registration is needed for this option; share your timeframe and the question you want help with.</p>
+            {booking.mode === "embed" && booking.embedUrl ? (
+              <div className="mt-5 space-y-4">
+                <iframe
+                  src={booking.embedUrl}
+                  title="Schedule a free 30-minute consultation with Mini"
+                  className="h-[520px] w-full rounded-xl border border-[#e6dfd5] bg-[#faf8f5]"
+                  loading="lazy"
+                />
+                <p className="text-xs leading-5 text-[#4d403a]">
+                  Prefer a direct link?{" "}
+                  <a href={booking.directUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+                    Open the scheduling calendar directly
+                  </a>{" "}
+                  or{" "}
+                  <a href={booking.googleCalendarUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-[#7a6841] underline">
+                    use Mini&apos;s Google Calendar appointment page
+                  </a>
+                  .
+                </p>
+              </div>
+            ) : null}
+            <div className="mt-5 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+              <a href={booking.googleCalendarUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#1f1f1f] px-6 py-3.5 text-sm font-semibold text-white">Choose a Time on Google Calendar</a>
               <a href={whatsappFallbackUrl} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#7a6841] px-6 py-3.5 text-sm font-semibold text-white">WhatsApp Mini Directly</a>
               <a href="tel:+12153419990" className="rounded-full border border-[#7a6841] px-6 py-3.5 text-sm font-semibold text-[#7a6841]">Call +1 (215) 341-9990</a>
             </div>
             <a href="#consultation-form" className="mt-4 inline-block text-sm font-semibold text-[#7a6841] underline underline-offset-4">Prefer email? Use the short request form below</a>
+          </div>
+          <div className="mx-auto mt-7 max-w-2xl rounded-2xl border border-[#d7c7a4] bg-white p-6 text-left">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#7a6841]">Optional $300 Written Plan</p>
+            <h2 className="mt-2 font-serif text-2xl font-semibold text-[#1f1f1f]">$300 Destination Wedding Feasibility &amp; Action Plan</h2>
+            <p className="mt-3 text-sm leading-6 text-[#4d403a]">
+              Need a written feasibility decision before committing to full planning? The optional $300 Destination Wedding Feasibility &amp; Action Plan reviews your dates, guest range, budget scope, and up to two resort proposals. {destinationFeasibilityCredit}
+            </p>
+            <p className="mt-2 text-xs leading-5 text-[#6a5b52]">{feasibilityCta.note}</p>
+            <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={feasibilityCta.href}
+                {...(feasibilityCta.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="inline-flex items-center justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white"
+              >
+                {feasibilityCta.label}
+              </a>
+              <Link
+                href="/destination-wedding-feasibility-plan/"
+                className="inline-flex items-center justify-center rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]"
+              >
+                Read What the $300 Plan Includes
+              </Link>
+            </div>
           </div>
           <ol className="mx-auto mt-8 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
             <li className="rounded-2xl border border-[#e6dfd5] bg-white p-5">

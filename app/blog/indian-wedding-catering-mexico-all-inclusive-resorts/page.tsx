@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -108,6 +109,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">Path 1 — Your menu, cooked in the resort kitchen</h2>
+          <BlogFeasibilityInvitation />
           <p>
             This is the most common approach for multi-day weddings. The work happens months ahead: sharing complete
             menus and authentic recipes with the resort&apos;s banquet team, confirming spice and ingredient sourcing,

@@ -1,6 +1,7 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
 import { useLocalStorageState } from "@/hooks/use-local-storage-state"
 
 type Row = { id: string; category: string; item: string; estimated: string; actual: string }
@@ -81,6 +82,15 @@ export function BudgetTrackerClient() {
           </table>
         </div>
       </section>
+      <CalculatorLeadCapture
+        calculatorType="budget-tracker"
+        results={{
+          totalBudget: money(totals.budget),
+          estimated: money(totals.estimated),
+          actual: money(totals.actual),
+          remaining: money(totals.remaining),
+        }}
+      />
       <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed for Gujarati and South Asian wedding budgets, including multi-event costs like Garba, Sangeet, mehndi, and ceremony essentials. This is a planning tracker, not a quote.</p>
     </div>
   )

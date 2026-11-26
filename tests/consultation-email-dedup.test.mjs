@@ -33,7 +33,7 @@ function createMemoryRedisCommand() {
 
 test("repeated normalized consultation data reuses one delivery during the in-memory dedupe window", () => {
   const store = createConsultationDeliveryStore(1_000)
-  const key = consultationDedupeKey([" HELLO@CEREMONyverse.com ", "CeremonyVerse  Internal QA", "Destination wedding planning", " March 2027 "])
+  const key = consultationDedupeKey([" BHAMINI@CEREMONYverse.com ", "CeremonyVerse  Internal QA", "Destination wedding planning", " March 2027 "])
   const first = store.set(key, {
     requestId: "request-1",
     questionnaireUrl: "/consultation-questionnaire/?request=request-1&type=destination",

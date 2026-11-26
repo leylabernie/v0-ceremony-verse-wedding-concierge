@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { createHash } from "node:crypto";
 import { sendCeremonyVerseEmail, ceremonyVerseBusinessEmail, escapeHtml } from "@/lib/consultation-email";
+import { buildWarmLeadFeasibilityMessage } from "@/lib/consultation-booking";
 import { buildCalculatorResultsEmail } from "@/lib/emails/calculator-results";
 import { buildWelcomeLeadEmail } from "@/lib/emails/welcome-lead";
 import { buildStrategyMatchEmail } from "@/lib/emails/strategy-match-confirmation";
@@ -14,8 +15,8 @@ const optionalText = (max: number) =>
   z.string().trim().max(max).optional().default("");
 
 const leadCaptureSchema = z.object({
-  // Required
-  name: z.string().trim().min(1).max(120),
+  // Optional name; email alone is sufficient to request a calculator breakdown
+  name: optionalText(120),
   email: z.string().trim().email().max(254),
   // Optional contact
   whatsapp: optionalText(40),
@@ -119,12 +120,14 @@ async function sendConfirmationEmail(lead: LeadCapture, key: string): Promise<bo
 async function sendBusinessHandoff(lead: LeadCapture, requestId: string, key: string): Promise<boolean> {
   const { timestamp: _timestamp, ...record } = buildCrmRecord(lead, requestId);
   const details = JSON.stringify(record, null, 2);
+  const label = lead.name || lead.email;
+  const warmLeadReply = buildWarmLeadFeasibilityMessage(lead.name);
   return sendCeremonyVerseEmail({
     to: ceremonyVerseBusinessEmail(),
     replyTo: lead.email,
-    subject: `CeremonyVerse ${lead.source === "chat" ? "chat" : "calculator"} request — ${lead.name}`,
-    text: details,
-    html: `<h1>New CeremonyVerse request</h1><pre style="white-space:pre-wrap">${escapeHtml(details)}</pre>`,
+    subject: `CeremonyVerse ${lead.source === "chat" ? "chat" : "calculator"} request — ${label}`,
+    text: `${details}\n\nWarm-lead reply template:\n${warmLeadReply}`,
+    html: `<h1>New CeremonyVerse request</h1><pre style="white-space:pre-wrap">${escapeHtml(details)}</pre><h2>Warm-lead reply template</h2><p>${escapeHtml(warmLeadReply)}</p>`,
     idempotencyKey: `lead-business-${key}`,
   });
 }
@@ -151,7 +154,7 @@ export async function POST(request: NextRequest) {
   const parsed = leadCaptureSchema.safeParse(body);
   if (!parsed.success) {
     return NextResponse.json(
-      { success: false, error: "Please provide at least a name and a valid email." },
+      { success: false, error: "Please provide a valid email." },
       { status: 400 },
     );
   }

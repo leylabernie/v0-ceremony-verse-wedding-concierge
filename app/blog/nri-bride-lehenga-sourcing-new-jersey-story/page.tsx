@@ -1,4 +1,5 @@
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation";
 import Link from "next/link"
 import { SourcingCallout } from "@/components/sourcing-callout"
 import {
@@ -108,12 +109,13 @@ export default function BrideSourcingScenarioPage() {
         </p>
 
         <div className="my-12 space-y-5">
-          {planningSteps.map((step) => (
+          {planningSteps.map((step, index) => (
             <section
               key={step.title}
               className="rounded-2xl border border-[#e6dfd5] bg-white p-7"
             >
               <h2 className="mb-3 font-serif text-2xl font-semibold">{step.title}</h2>
+              {index === 0 ? <BlogFeasibilityInvitation /> : null}
               <p className="leading-7 text-[#4d403a]">{step.body}</p>
             </section>
           ))}

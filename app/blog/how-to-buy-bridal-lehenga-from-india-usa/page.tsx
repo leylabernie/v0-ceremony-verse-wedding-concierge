@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { SeoNav } from "@/components/seo-nav";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -73,6 +74,7 @@ export default function LehengaBuyingGuideBlogPost() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             Step 2: Build Your Full Budget — Not Just the Outfit Price
           </h2>
+          <BlogFeasibilityInvitation />
           <p>
             The number on the Instagram tag is just the beginning. When you buy a bridal lehenga from India and have it delivered to the USA, here is what the real budget looks like:
           </p>
