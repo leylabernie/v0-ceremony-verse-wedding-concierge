@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
@@ -19,6 +20,7 @@ const tools = [
     href: "/planning-tools/wedding-checklist/",
     label: "Set Up Checklist",
     badge: "Free",
+    image: "/images/planning-tools/wedding-checklist.jpg",
   },
   {
     title: "Guest List Manager",
@@ -26,6 +28,7 @@ const tools = [
     href: "/planning-tools/guest-list/",
     label: "Manage Guests",
     badge: "Free",
+    image: "/images/planning-tools/guest-list.jpg",
   },
   {
     title: "Budget Tracker",
@@ -33,6 +36,7 @@ const tools = [
     href: "/planning-tools/budget-tracker/",
     label: "Build Your Budget",
     badge: "Free",
+    image: "/images/planning-tools/budget-tracker.jpg",
   },
   {
     title: "Vendor Manager",
@@ -40,6 +44,7 @@ const tools = [
     href: "/planning-tools/vendor-manager/",
     label: "Track Vendors",
     badge: "Free",
+    image: "/images/planning-tools/vendor-manager.jpg",
   },
   {
     title: "Vision Boards",
@@ -47,6 +52,7 @@ const tools = [
     href: "/planning-tools/vision-boards/",
     label: "Save Inspiration",
     badge: "Free",
+    image: "/images/planning-tools/vision-board.jpg",
   },
   {
     title: "Ceremony Timeline & Toolkit",
@@ -54,6 +60,7 @@ const tools = [
     href: "/planning-tools/ceremony-timeline/",
     label: "Build Your Timeline",
     badge: "Free",
+    image: "/images/planning-tools/ceremony-timeline.jpg",
   },
   {
     title: "Family Responsibility Map",
@@ -61,6 +68,7 @@ const tools = [
     href: "/planning-tools/family-responsibility-map/",
     label: "Organize Decisions",
     badge: "Free",
+    image: "/images/planning-tools/family-responsibility.jpg",
   },
   {
     title: "Baraat & Event Logistics Planner",
@@ -68,6 +76,7 @@ const tools = [
     href: "/planning-tools/baraat-event-planner/",
     label: "Plan Event Logistics",
     badge: "Free",
+    image: "/images/planning-tools/baraat-logistics.jpg",
   },
   {
     title: "Catering Deadline Tracker",
@@ -75,6 +84,7 @@ const tools = [
     href: "/planning-tools/catering-deadline-tracker/",
     label: "Track Deadlines",
     badge: "Free",
+    image: "/images/planning-tools/catering-deadline.jpg",
   },
 ]
 
@@ -123,20 +133,31 @@ export default function PlanningToolsPage() {
               <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl">Tools you can use right now</h2>
             </div>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {tools.map((tool) => (
-              <article key={tool.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8 shadow-sm">
-                <div className="mb-4 inline-flex self-start rounded-full bg-[#f3ede3] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a6841]">
-                  {tool.badge}
+              <article key={tool.href} className="group flex flex-col overflow-hidden rounded-2xl border border-[#e6dfd5] bg-white shadow-sm transition hover:shadow-md">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#efe7dc]">
+                  <Image
+                    src={tool.image}
+                    alt={tool.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                    className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                  />
                 </div>
-                <h3 className="font-serif text-2xl font-semibold">{tool.title}</h3>
-                <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{tool.description}</p>
-                <Link
-                  href={tool.href}
-                  className="mt-7 inline-flex self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white"
-                >
-                  {tool.label} →
-                </Link>
+                <div className="flex flex-1 flex-col p-7">
+                  <div className="mb-4 inline-flex self-start rounded-full bg-[#f3ede3] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a6841]">
+                    {tool.badge}
+                  </div>
+                  <h3 className="font-serif text-2xl font-semibold">{tool.title}</h3>
+                  <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{tool.description}</p>
+                  <Link
+                    href={tool.href}
+                    className="mt-7 inline-flex self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white"
+                  >
+                    {tool.label} →
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
