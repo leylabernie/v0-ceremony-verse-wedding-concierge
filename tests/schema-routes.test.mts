@@ -10,6 +10,7 @@ const Checklist = load('../app/planning-tools/wedding-checklist/page').default
 const Guests = load('../app/planning-tools/guest-list/page').default
 const Vendors = load('../app/planning-tools/vendor-manager/page').default
 const Faq = load('../app/faq/page').default
+const Pricing = load('../app/pricing/page').default
 const Parents = load('../app/nri-gujarati-parents-guide-destination-wedding/page').default
 const Proposal = load('../app/before-signing-indian-wedding-resort-proposal/page').default
 const Timeline = load('../app/nri-gujarati-wedding-timeline-12-months/page').default
@@ -28,7 +29,7 @@ for (const Page of [Budget,Checklist,Guests,Vendors]) test(`${Page.name} emits o
  const apps=scripts(Page()).filter(s=>s['@type']==='WebApplication')
  assert.equal(apps.length,1);assert.equal(apps[0].offers.price,'0');assert.equal(apps[0].operatingSystem,'All')
 })
-for (const Page of [Faq,Parents,Proposal]) test(`${Page.name} emits answered questions`,()=>{
+for (const Page of [Faq,Pricing,Parents,Proposal]) test(`${Page.name} emits answered questions`,()=>{
  const faq=scripts(Page()).find(s=>s['@type']==='FAQPage');assert.ok(faq?.mainEntity.length)
  assert.ok(faq.mainEntity.every((q:any)=>q.name && q.acceptedAnswer?.text))
 })

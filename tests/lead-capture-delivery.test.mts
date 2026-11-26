@@ -1,8 +1,11 @@
 import assert from "node:assert/strict"
+import { existsSync } from "node:fs"
+import path from "node:path"
 import test from "node:test"
 import { NextRequest } from "next/server"
 import { POST } from "../app/api/lead-capture/route"
-import { buildCalculatorResultsEmail } from "../lib/emails/calculator-results"
+import { TOOLKIT_PDF } from "../lib/ceremony-toolkit"
+import { buildCalculatorResultsEmail, CALCULATOR_TOOLKIT_PDF_URL } from "../lib/emails/calculator-results"
 
 const lead = { name: "Test Person", email: "qa@example.com", source: "calculator", calculatorType: "budget-planner", results: { total: 13200, contingency: 1200 } }
 
@@ -12,7 +15,7 @@ async function withMail(deliver: (payload: any) => boolean, run: (emails: any[])
   const originalEnv = Object.fromEntries(keys.map(key => [key, process.env[key]]))
   for (const key of keys) delete process.env[key]
   process.env.RESEND_API_KEY = "local-test-key"
-  process.env.CEREMONYVERSE_LEAD_FROM_EMAIL = "qa@ceremonyverse.com"
+  process.env.CEREMONYVERSE_LEAD_FROM_EMAIL = "bhamini@ceremonyverse.com"
   const emails: any[] = []
   globalThis.fetch = async (url, options) => {
     assert.equal(String(url), "https://api.resend.com/emails")
@@ -44,6 +47,24 @@ test("calculator succeeds only after the worksheet and business request are acce
     assert.match(customer.text, /1200/)
     assert.match(customer.text, /Is this the complete cost\?/)
     assert.match(customer.text, /before-signing-indian-wedding-resort-proposal/)
+    assert.ok(customer.text.includes(CALCULATOR_TOOLKIT_PDF_URL))
+    assert.ok(customer.html.includes(CALCULATOR_TOOLKIT_PDF_URL))
+    assert.ok(existsSync(path.join(process.cwd(), "public", TOOLKIT_PDF)))
+  })
+})
+
+test("email alone is sufficient to request the calculator breakdown without a name", async () => {
+  await withMail(() => true, async emails => {
+    const emailOnlyLead = { email: "email-only@example.com", source: "calculator", calculatorType: "budget-tracker", results: { totalBudget: "$65,000" } }
+    const response = await POST(request(emailOnlyLead))
+    assert.equal(response.status, 200)
+    const body = await response.json()
+    assert.equal(body.success, true)
+    assert.equal(body.delivery.confirmationEmail, true)
+    const customer = emails.find(email => email.to.includes("email-only@example.com"))
+    assert.match(customer.text, /Hi there,/)
+    assert.ok(customer.text.includes(CALCULATOR_TOOLKIT_PDF_URL))
+    assert.ok(customer.html.includes(CALCULATOR_TOOLKIT_PDF_URL))
   })
 })
 

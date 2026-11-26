@@ -28,3 +28,37 @@ export const destinationFeasibilityPlan = {
 
 export const destinationFeasibilityCredit =
   `When you sign a CeremonyVerse destination-planning contract within ${destinationFeasibilityPlan.creditWindowDays} days after the written plan is delivered, the full ${destinationFeasibilityPlan.priceLabel} is credited toward your CeremonyVerse planning service fee. The credit does not apply to resort, venue, vendor, travel, or other third-party charges. If no planning contract is signed within that period, the ${destinationFeasibilityPlan.priceLabel} plan remains a completed standalone service and is non-refundable once work begins.`
+
+export const destinationFeasibilityPaymentNote =
+  "Start with a free 30-minute consultation on Google Calendar or review the written scope on the pricing page. When an interested client is ready to move forward, Mini shares direct payment instructions—including Venmo—after confirming the written scope."
+
+export type FeasibilityPlanCta = {
+  href: string
+  label: string
+  note: string
+  external: boolean
+  configured: boolean
+}
+
+export function getFeasibilityPlanCta(
+  envUrl: string | undefined = process.env.NEXT_PUBLIC_STRIPE_FEASIBILITY_URL,
+): FeasibilityPlanCta {
+  const configuredUrl = typeof envUrl === "string" ? envUrl.trim() : ""
+  if (!configuredUrl) {
+    return {
+      href: "/pricing/",
+      label: "Review $300 Feasibility Plan & Pricing",
+      note: destinationFeasibilityPaymentNote,
+      external: false,
+      configured: false,
+    }
+  }
+
+  return {
+    href: configuredUrl,
+    label: "Book the $300 Feasibility & Action Plan",
+    note: "Direct link to the $300 Destination Wedding Feasibility & Action Plan.",
+    external: /^https?:\/\//i.test(configuredUrl),
+    configured: true,
+  }
+}

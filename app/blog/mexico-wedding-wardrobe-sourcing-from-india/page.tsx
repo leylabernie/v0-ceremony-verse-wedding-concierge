@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Image from "next/image";
@@ -112,6 +113,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="font-serif text-3xl font-semibold text-[#1f1f1f]">Review what is actually available</h2>
+          <BlogFeasibilityInvitation />
           <p>
             Live video can be useful when a vendor and item allow it, but it is not a universal guarantee. The goal is
             to review the actual available piece, fabric, embroidery, color under reasonable lighting, measurements,

@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { SeoNav } from "@/components/seo-nav"
 import { SourcingCallout } from "@/components/sourcing-callout"
@@ -152,6 +153,7 @@ export default function HowToTakeLehengaMeasurementsPage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>
             Step-by-Step: Every Measurement Your Tailor Needs
           </h2>
+          <BlogFeasibilityInvitation />
 
           <ol style={{ paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "1.2rem" }}>
             <li>

@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
@@ -129,6 +130,7 @@ export default function HowToChooseIndianWeddingJewelryBlogPost() {
 
         <section className="mt-16 rounded-2xl bg-white p-7 md:p-10">
           <h2 className="text-3xl font-semibold">Seven questions before approval</h2>
+          <BlogFeasibilityInvitation />
           <ol className="mt-7 space-y-4">
             {approvalQuestions.map((question, index) => (
               <li key={question} className="grid gap-3 border-b border-[#e6dfd5] pb-4 last:border-b-0 md:grid-cols-[2rem_1fr]">

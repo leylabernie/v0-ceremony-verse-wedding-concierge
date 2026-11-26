@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import Image from "next/image"
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
@@ -39,6 +40,7 @@ export default function WeddingGuestRoute() {
         <p>Give the group desk the room category in your proposal. Ask them to mark the possible buildings, the breakfast room, the ceremony entrance and the closest restroom on one map. Then request a short phone video of the route from the elevator to the ceremony seats. A property map can hide the last few metres of sand or a flight of steps.</p>
         <p>If a guest wants a step-free route, ask privately what would make the day comfortable. One person may want to join the baraat for the final stretch. Another may prefer to be seated before the music starts. Arrange the meeting place with them and ask whom they would like to accompany them.</p>
         <h2>Test the return trip after garba</h2>
+        <BlogFeasibilityInvitation />
         <p>If the resort offers carts, ask where they actually stop, whether one can be reserved, who dispatches it and how late it runs. Ask the coordinator to walk the rain route too. A covered ceremony space only solves half the problem if the path back to the guest rooms is exposed.</p>
         <blockquote className="my-8 border-l-4 border-[#a3815b] pl-5 italic">“For our ceremony and garba dates, could you mark the step-free route from the room categories in our block to both venues? Please show the cart stops, seating along the way, last pickup, and the route you would use if the event moves indoors. Which arrangements can you confirm now, and when will you confirm the rest?”</blockquote>
         <h2>Give guests a plan they can use on the day</h2>

@@ -3,6 +3,7 @@ import { SeoNav } from "@/components/seo-nav"
 import {
   destinationFeasibilityCredit,
   destinationFeasibilityPlan,
+  getFeasibilityPlanCta,
 } from "@/lib/destination-feasibility-plan"
 import { buildBreadcrumb, buildFaqSchema, buildMetadata, buildServiceSchema, JsonLd } from "@/lib/seo"
 import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
@@ -58,6 +59,8 @@ const faqItems = [
 ]
 
 export default function DestinationWeddingFeasibilityPlanPage() {
+  const feasibilityCta = getFeasibilityPlanCta()
+
   return (
     <main className="min-h-screen bg-[#faf8f5] text-[#1f1f1f]">
       <JsonLd id="schema-service" data={serviceSchema} />
@@ -84,6 +87,13 @@ export default function DestinationWeddingFeasibilityPlanPage() {
             >
               Request a Free 30-Minute Consultation
             </Link>
+            <a
+              href={feasibilityCta.href}
+              {...(feasibilityCta.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className="inline-flex rounded-full border border-[#c5a059] px-8 py-4 text-sm font-semibold !text-white"
+            >
+              {feasibilityCta.label}
+            </a>
             <ChatWithMinisAssistantButton variant="light" source="feasibility-hero" className="px-8 py-4" />
             <span className="text-sm !text-white/70">No payment is collected through the inquiry form.</span>
           </div>
@@ -124,8 +134,8 @@ export default function DestinationWeddingFeasibilityPlanPage() {
           </div>
           <ol className="mt-12 grid gap-5 md:grid-cols-3">
             {[
-              ["01", "Free 30-minute consultation", "We listen first, understand what help you need, and identify which facts or documents are needed. The call is introductory and is not the paid written plan."],
-              ["02", "$300 working plan", "After you approve the written scope, we review your numbers and current information, hold the working session, and prepare the action brief."],
+              ["01", "Free 30-minute consultation", "Book on Mini's Google Calendar with no registration required. We listen first, understand what help you need, and identify which facts or documents are needed. The call is introductory and is not the paid written plan."],
+              ["02", "$300 working plan", "After you approve the written scope, Mini shares direct payment details (including Venmo for interested clients), reviews your numbers and current information, holds the working session, and prepares the action brief."],
               ["03", "Choose your next step", "Use the plan on its own, revise the wedding assumptions, or sign a CeremonyVerse destination-planning contract within 30 days after plan delivery and receive the full $300 credit toward your CeremonyVerse planning service fee."],
             ].map(([number, title, text]) => (
               <li key={number} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-7">
@@ -166,7 +176,7 @@ export default function DestinationWeddingFeasibilityPlanPage() {
               ))}
             </ul>
             <p className="mt-7 text-sm leading-6 !text-white/65">
-              Delivery timing, documents to be reviewed, payment instructions, and any project-specific limits are
+              Delivery timing, documents to be reviewed, payment instructions (including Venmo once the scope is agreed), and any project-specific limits are
               confirmed in writing before payment.
             </p>
           </article>

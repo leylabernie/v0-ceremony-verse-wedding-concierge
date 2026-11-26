@@ -330,9 +330,14 @@ interface BuildMetadataOpts {
   ogType?: "website" | "article" | "profile"
 }
 
+export function canonicalUrl(path: string): string {
+  const normalizedPath = path === "/" ? "/" : `/${path.replace(/^\/+|\/+$/g, "")}/`
+  return `${SITE_URL}${normalizedPath}`
+}
+
 export function buildMetadata(opts: BuildMetadataOpts): Metadata {
   const normalizedPath = opts.path === "/" ? "/" : opts.path.replace(/\/$/, "") + "/"
-  const canonical = `${SITE_URL}${normalizedPath}`
+  const canonical = canonicalUrl(normalizedPath)
   const image = resolveContextualImage(normalizedPath, opts.image)
   const serpTitle = formatSerpTitle(opts.title, normalizedPath)
   const serpDescription = formatSerpDescription(opts.description, normalizedPath)

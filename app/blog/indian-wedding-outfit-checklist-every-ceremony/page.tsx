@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -69,6 +70,7 @@ export default function OutfitChecklistPage() {
           <p style={{ marginTop: "0.8rem", fontSize: "0.95rem" }}><strong>Jewelry needed:</strong> Bridal set (necklace, earrings, maang tikka, bangles), matching jewelry for each secondary outfit, henna-appropriate rings and bracelets. Curious about costs? See <Link href="/blog/how-much-does-bridal-lehenga-cost-india-2026/" style={{ color: "#7a6841" }}>how much bridal lehengas cost from India</Link>.</p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Example Groom Wardrobe Categories</h2>
+          <BlogFeasibilityInvitation />
 
           <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "12px", padding: "1.5rem", marginTop: "1rem" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.95rem" }}>

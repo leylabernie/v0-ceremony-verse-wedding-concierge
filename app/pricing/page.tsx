@@ -110,7 +110,7 @@ const faqItems = [
   {
     question: "Can I start with a free consultation?",
     answer:
-      "Yes. Your first 30-minute introductory consultation is free and does not require a contract or payment. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services. Paid work begins only after you select a scope and approve its written terms.",
+      "Yes. Your first 30-minute introductory consultation on Google Calendar is free and does not require a contract or payment. The $300 Destination Wedding Feasibility & Action Plan and all planning or sourcing packages are separate paid services. Paid work begins only after you select a scope and approve its written terms, at which point Mini shares direct payment instructions (including Venmo).",
   },
   {
     question: "Is the $300 plan fee credited if I continue with CeremonyVerse planning?",

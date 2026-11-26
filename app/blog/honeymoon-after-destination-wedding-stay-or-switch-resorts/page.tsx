@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import { buildBlogPosting, buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
@@ -32,6 +33,7 @@ export default function HoneymoonResortGuide() {
         <h2>Ask the wedding resort what staying would look like</h2>
         <p>Give the group desk your last night in the block and your departure date. Ask for the total for the extra nights, the room category, and written confirmation of whether you can stay in that room. If they can only confirm the room assignment at check-in, ask where your bags can go on the changeover day. Check whether breakfast on the first morning and the return airport transfer are included in the quote.</p>
         <h2>Price the move door to door</h2>
+        <BlogFeasibilityInvitation />
         <p>For the second resort, start with the same dates, number of travelers and currency. Ask both properties for checkout and room-access times. Then ask the transfer provider for a pickup window, the total fare for two with bags, and where you will meet the driver. If the new resort can store luggage before the room is ready, ask which facilities you can use during that interval.</p>
         <p>Imagine checkout at 11 a.m., pickup at noon and access to the new room at 3 p.m. In that example, four hours pass between leaving one room and entering the next. Would lunch by the pool make that afternoon feel like a holiday? Or would you spend it waiting to unpack? Change those times to the ones in your own quotes.</p>
         <h2>Put the two quotes side by side</h2>

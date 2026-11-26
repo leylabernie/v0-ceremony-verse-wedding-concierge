@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { VisibleFaqs } from "@/components/visible-faqs";
 import Link from "next/link";
 import { SeoNav } from "@/components/seo-nav";
@@ -108,6 +109,7 @@ export default function BlogPost() {
           </p>
 
           <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">2. Outside-vendor fees</h2>
+          <BlogFeasibilityInvitation />
           <p>
             If your decorator, DJ, photographer, makeup artist, or mehndi artist is not on the resort&apos;s approved
             list, the resort may charge an outside-vendor fee. It may be calculated per vendor, per person, or per

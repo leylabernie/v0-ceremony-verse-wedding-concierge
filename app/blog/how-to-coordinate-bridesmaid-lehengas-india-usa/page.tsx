@@ -1,3 +1,4 @@
+import { BlogFeasibilityInvitation } from "@/components/blog-feasibility-invitation"
 import { ArticlePlanningUpdate } from "@/components/article-planning-update";
 import { buildMetadata, buildBlogPosting, buildBreadcrumb, JsonLd } from "@/lib/seo";
 import Link from "next/link";
@@ -68,6 +69,7 @@ export default function BridesmaidGuidePage() {
           </p>
 
           <h2 style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", fontSize: "1.7rem", fontWeight: 600, color: "#2f2f2f", marginTop: "2.5rem", marginBottom: "1rem" }}>Step 2: Pick the Right Style for Your Group</h2>
+          <BlogFeasibilityInvitation />
           <p>Not every bridesmaid wants (or looks good in) the same outfit. Here are the options:</p>
           <ul style={{ marginTop: "1rem", paddingLeft: "1.5rem" }}>
             <li style={{ marginBottom: "0.8rem" }}><strong>Matching lehengas:</strong> One approved style and color with each participant&apos;s measurements and comfort needs documented.</li>
