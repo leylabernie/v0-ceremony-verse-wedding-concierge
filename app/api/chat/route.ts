@@ -1,66 +1,31 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
+import {
+  buildGuidedAssistantResponse,
+  GUIDED_ASSISTANT_ACTIONS,
+  GUIDED_ASSISTANT_TOPICS,
+  isChatRateLimited,
+} from "@/lib/guided-assistant";
 
 export const runtime = "nodejs";
 
 /**
- * Server-side chat proxy for Mini's Assistant.
+ * Server-side chat proxy for Mini's Assistant with a $0-cost, zero-failure
+ * deterministic guided-assistant fallback.
  *
- * The browser widget POSTs { message, sessionId?, siteSource? } here. This
- * route forwards the message to the CeremonyVerse Abacus AI ChatLLM deployment
- * and returns { reply, conversationId }.
- *
- * SECURITY: The Abacus deployment token is read from a server-only env var
- * (ABACUS_DEPLOYMENT_TOKEN) and is NEVER exposed to the browser. All Abacus
- * calls happen here, on the server.
- *
- * Abacus REST call (verified working with the deployment token alone):
- *   POST {predictEndpoint}/api/v0/getConversationResponse
- *        ?deploymentId=<id>&deploymentToken=<token>
- *   body: { message, deploymentConversationId? }
- *   -> result.deployment_conversation_id   (create-on-first-call)
- *   -> result.messages[last].text          (assistant reply)
- *
- * The prediction endpoint for this deployment resolves to
- * https://apps.abacus.ai — kept overridable via ABACUS_PREDICT_ENDPOINT.
+ * The browser widget POSTs { message, sessionId?, conversationId?, siteSource? }.
+ * Whenever AI credentials (ABACUS_DEPLOYMENT_ID / ABACUS_DEPLOYMENT_TOKEN,
+ * OPENAI_API_KEY, or AI_GATEWAY_API_KEY) are missing, rate-limited, or
+ * upstream returns an error (401/402/429/500/etc.), this route seamlessly
+ * responds with the deterministic guided assistant instead of an error.
  */
 
-const ABACUS_DEPLOYMENT_ID = process.env.ABACUS_DEPLOYMENT_ID ?? "";
-const ABACUS_DEPLOYMENT_TOKEN = process.env.ABACUS_DEPLOYMENT_TOKEN ?? "";
-const ABACUS_PREDICT_ENDPOINT =
-  process.env.ABACUS_PREDICT_ENDPOINT ?? "https://apps.abacus.ai";
-
-// Allowed browser origins for CORS (WordPress site + main app domains).
 const ALLOWED_ORIGINS = new Set<string>([
   "https://ceremonyversetravel.com",
   "https://www.ceremonyversetravel.com",
   "https://ceremonyverse.com",
   "https://www.ceremonyverse.com",
+  ...(process.env.NODE_ENV === "development" ? ["http://localhost:3000"] : []),
 ]);
-
-// ── Simple in-memory rate limiter: max 30 requests / minute per IP ──────────
-const RATE_LIMIT = 30;
-const RATE_WINDOW_MS = 60_000;
-const rateBuckets = new Map<string, { count: number; resetAt: number }>();
-
-function isRateLimited(ip: string): boolean {
-  const now = Date.now();
-  const bucket = rateBuckets.get(ip);
-  if (!bucket || now > bucket.resetAt) {
-    rateBuckets.set(ip, { count: 1, resetAt: now + RATE_WINDOW_MS });
-    return false;
-  }
-  bucket.count += 1;
-  if (bucket.count > RATE_LIMIT) return true;
-  return false;
-}
-
-// Opportunistic cleanup so the Map does not grow unbounded.
-function sweepBuckets() {
-  const now = Date.now();
-  for (const [ip, bucket] of rateBuckets) {
-    if (now > bucket.resetAt) rateBuckets.delete(ip);
-  }
-}
 
 function clientIp(req: NextRequest): string {
   const fwd = req.headers.get("x-forwarded-for");
@@ -91,6 +56,7 @@ export async function OPTIONS(req: NextRequest) {
 type AbacusMessage = { is_user?: boolean; text?: string; role?: string };
 type AbacusResult = {
   deployment_conversation_id?: string;
+  deploymentConversationId?: string;
   messages?: AbacusMessage[];
   response?: string;
 };
@@ -99,25 +65,12 @@ export async function POST(req: NextRequest) {
   const origin = req.headers.get("origin");
   const cors = corsHeaders(origin);
 
-  if (!ABACUS_DEPLOYMENT_ID || !ABACUS_DEPLOYMENT_TOKEN) {
-    return NextResponse.json(
-      { error: "Chat is not configured yet. Please try again later." },
-      { status: 500, headers: cors },
-    );
-  }
-
-  // Rate limit.
-  sweepBuckets();
-  const ip = clientIp(req);
-  if (isRateLimited(ip)) {
-    return NextResponse.json(
-      { error: "Too many messages. Please wait a moment and try again." },
-      { status: 429, headers: cors },
-    );
-  }
-
-  // Parse + validate body.
-  let body: { message?: unknown; sessionId?: unknown; siteSource?: unknown };
+  let body: {
+    message?: unknown;
+    sessionId?: unknown;
+    conversationId?: unknown;
+    siteSource?: unknown;
+  };
   try {
     body = await req.json();
   } catch {
@@ -127,12 +80,15 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const message =
-    typeof body.message === "string" ? body.message.trim() : "";
-  const sessionId =
+  const message = typeof body.message === "string" ? body.message.trim() : "";
+  const rawSession =
     typeof body.sessionId === "string" && body.sessionId.trim()
       ? body.sessionId.trim()
-      : undefined;
+      : typeof body.conversationId === "string" && body.conversationId.trim()
+        ? body.conversationId.trim()
+        : undefined;
+  const sessionId =
+    rawSession && rawSession.length < 128 ? rawSession : undefined;
 
   if (!message) {
     return NextResponse.json(
@@ -147,33 +103,61 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  // Forward to Abacus. deploymentId + deploymentToken go in the query string;
-  // the message + (optional) conversation id go in the JSON body.
-  const url =
-    `${ABACUS_PREDICT_ENDPOINT}/api/v0/getConversationResponse` +
-    `?deploymentId=${encodeURIComponent(ABACUS_DEPLOYMENT_ID)}` +
-    `&deploymentToken=${encodeURIComponent(ABACUS_DEPLOYMENT_TOKEN)}`;
+  const ip = clientIp(req);
+  const abacusDeploymentId = process.env.ABACUS_DEPLOYMENT_ID?.trim() ?? "";
+  const abacusDeploymentToken =
+    process.env.ABACUS_DEPLOYMENT_TOKEN?.trim() ?? "";
+  const abacusPredictEndpoint =
+    process.env.ABACUS_PREDICT_ENDPOINT?.trim() || "https://apps.abacus.ai";
 
-  const abacusBody: Record<string, unknown> = { message };
-  if (sessionId) abacusBody.deploymentConversationId = sessionId;
+  // Zero-failure fallback when credentials are missing or upstream is rate-limited
+  if (
+    !abacusDeploymentId ||
+    !abacusDeploymentToken ||
+    isChatRateLimited(ip)
+  ) {
+    return NextResponse.json(
+      buildGuidedAssistantResponse(message, sessionId),
+      { status: 200, headers: cors },
+    );
+  }
+
+  const url =
+    `${abacusPredictEndpoint}/api/v0/getConversationResponse` +
+    `?deploymentId=${encodeURIComponent(abacusDeploymentId)}` +
+    `&deploymentToken=${encodeURIComponent(abacusDeploymentToken)}`;
+
+  const abacusBody: Record<string, unknown> = {
+    message,
+    messages: [{ is_user: true, text: message }],
+  };
+  if (sessionId && sessionId !== "guided-concierge") {
+    abacusBody.deploymentConversationId = sessionId;
+  }
 
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 30_000);
 
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(abacusBody),
-      signal: controller.signal,
-    });
-    clearTimeout(timeout);
+    let res: Response;
+    try {
+      res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(abacusBody),
+        signal: controller.signal,
+      });
+    } finally {
+      clearTimeout(timeout);
+    }
 
     if (!res.ok) {
-      console.error(`[api/chat] Abacus HTTP ${res.status}`);
+      console.warn(
+        `[api/chat] Abacus HTTP ${res.status}, switching to guided assistant`,
+      );
       return NextResponse.json(
-        { error: "The assistant is unavailable right now. Please try again." },
-        { status: 502, headers: cors },
+        buildGuidedAssistantResponse(message, sessionId),
+        { status: 200, headers: cors },
       );
     }
 
@@ -181,17 +165,22 @@ export async function POST(req: NextRequest) {
       await res.json();
 
     if (!data.success || !data.result) {
-      console.error(`[api/chat] Abacus error: ${data.error ?? "unknown"}`);
+      console.warn(
+        `[api/chat] Abacus error (${data.error ?? "unknown"}), switching to guided assistant`,
+      );
       return NextResponse.json(
-        { error: "The assistant could not respond. Please try again." },
-        { status: 502, headers: cors },
+        buildGuidedAssistantResponse(message, sessionId),
+        { status: 200, headers: cors },
       );
     }
 
     const result = data.result;
-    const conversationId = result.deployment_conversation_id ?? sessionId ?? "";
+    const conversationId =
+      result.deployment_conversation_id ??
+      result.deploymentConversationId ??
+      sessionId ??
+      "";
 
-    // The reply is the last non-user message; fall back to result.response.
     let reply = "";
     if (Array.isArray(result.messages) && result.messages.length > 0) {
       const assistantMessages = result.messages.filter(
@@ -199,25 +188,39 @@ export async function POST(req: NextRequest) {
       );
       reply =
         assistantMessages.length > 0
-          ? String(assistantMessages[assistantMessages.length - 1].text)
+          ? String(assistantMessages[assistantMessages.length - 1].text).trim()
           : "";
     }
-    if (!reply && typeof result.response === "string") reply = result.response;
+    if (!reply && typeof result.response === "string") {
+      reply = result.response.trim();
+    }
+
     if (!reply) {
-      reply =
-        "Sorry, I didn't catch that. Could you rephrase, or would you like to book a quick call?";
+      return NextResponse.json(
+        buildGuidedAssistantResponse(message, sessionId),
+        { status: 200, headers: cors },
+      );
     }
 
     return NextResponse.json(
-      { reply, conversationId },
+      {
+        reply,
+        conversationId,
+        mode: "ai",
+        quickReplies: GUIDED_ASSISTANT_TOPICS,
+        actions: GUIDED_ASSISTANT_ACTIONS,
+      },
       { status: 200, headers: cors },
     );
   } catch (err) {
     const aborted = err instanceof Error && err.name === "AbortError";
-    console.error(`[api/chat] ${aborted ? "timeout" : "fetch error"}`, err);
+    console.warn(
+      `[api/chat] ${aborted ? "timeout" : "fetch error"}, switching to guided assistant`,
+      err instanceof Error ? err.message : err,
+    );
     return NextResponse.json(
-      { error: "The assistant timed out. Please try again." },
-      { status: 504, headers: cors },
+      buildGuidedAssistantResponse(message, sessionId),
+      { status: 200, headers: cors },
     );
   }
 }
