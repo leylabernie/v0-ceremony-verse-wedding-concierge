@@ -1,8 +1,4 @@
 "use client";
-import { captureEvent } from "@/lib/analytics";
-import { conciergeIntent, conciergeTopic } from "@/lib/planning-intent";
-import { consultationBookingUrl } from "@/lib/consultation-booking";
-
 
 import { usePathname } from "next/navigation";
 import {
@@ -12,6 +8,14 @@ import {
   useRef,
   useState,
 } from "react";
+import { captureEvent } from "@/lib/analytics";
+import { consultationBookingUrl } from "@/lib/consultation-booking";
+import {
+  buildGuidedAssistantResponse,
+  GUIDED_ASSISTANT_ACTIONS,
+  GUIDED_ASSISTANT_TOPICS,
+} from "@/lib/guided-assistant";
+import { conciergeIntent, conciergeTopic } from "@/lib/planning-intent";
 import {
   botMeta,
   destinationNameFromSlug,
@@ -19,38 +23,11 @@ import {
   isWidgetExcludedPath,
 } from "@/lib/widget-config";
 
-/**
- * Mini's Assistant — global in-app chat widget for CeremonyVerse.
- *
- * Architecture:
- *   widget (browser)  ->  POST /api/chat (Next.js server)  ->  Abacus AI
- * The Abacus deployment token never touches the browser. This component only
- * ever talks to our own /api/chat route.
- *
- * Behaviour:
- *  - Renders nothing on excluded paths (/privacy-policy, /terms-of-service,
- *    /terms) — see isWidgetExcludedPath.
- *  - Floating "Chat with Mini's Assistant" pill/FAB in the bottom-right,
- *    lifted above the mobile sticky footer CTA.
- *  - Clicking opens a chat panel (400×550 desktop; full-width bottom drawer on
- *    mobile ≤640px).
- *  - Persists the Abacus conversation id in sessionStorage (keyed by hostname)
- *    so the thread survives page navigations.
- *  - Typing indicator + auto-scroll.
- *  - Inline name/email lead-capture form appears when the assistant asks for
- *    contact details; it POSTs to /api/lead-capture.
- *
- * NOTE: This component does NOT render a WhatsApp floating button. The site
- * already ships a global <WhatsAppButton /> in app/layout.tsx.
- */
-
 type ChatRole = "user" | "assistant";
 type ChatMessage = { role: ChatRole; text: string };
 
 const OPENING_MESSAGE =
-  "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Are you exploring destination weddings, reviewing resort proposals, shopping for Indian wedding outfits, or planning a resort stay or honeymoon?";
-
-
+  "Hi! I'm Mini's assistant for CeremonyVerse \uD83C\uDF38 Ask me about Mexico, Jamaica, or Punta Cana destination weddings, the $300 Feasibility & Action Plan (payable via Venmo after scope approval), $799 Guided India Sourcing, or Jain and satvik catering—or tap a topic below.";
 
 const ACCENT = "#7a6841";
 
@@ -64,9 +41,10 @@ function sessionKey(): string {
 function asksForContact(text: string): boolean {
   const t = text.toLowerCase();
   const mentionsEmail = t.includes("email");
-  const mentionsName = /\byour name\b|\bmay i have your name\b|\bwhat's your name\b|\bwhat is your name\b/.test(
-    t,
-  );
+  const mentionsName =
+    /\byour name\b|\bmay i have your name\b|\bwhat's your name\b|\bwhat is your name\b/.test(
+      t,
+    );
   return mentionsEmail || mentionsName;
 }
 
@@ -77,16 +55,28 @@ export default function MinisAssistantWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const intent = useMemo(() => conciergeIntent(messages), [messages]);
-  const segment = intent.audience ? (`nri_${intent.audience}` as const) : undefined;
+  const segment = intent.audience
+    ? (`nri_${intent.audience}` as const)
+    : undefined;
   const primaryTopic = useMemo(() => conciergeTopic(messages), [messages]);
   const lastClass = useRef<string | undefined>(undefined);
   useEffect(() => {
     const key = segment && `${segment}:${primaryTopic}`;
-    if (segment && key !== lastClass.current) captureEvent({ name: "ai_concierge_intent_classified", properties: { audience_segment: segment, primary_topic: primaryTopic } });
+    if (segment && key !== lastClass.current) {
+      captureEvent({
+        name: "ai_concierge_intent_classified",
+        properties: { audience_segment: segment, primary_topic: primaryTopic },
+      });
+    }
     lastClass.current = key;
   }, [segment, primaryTopic]);
-  const handoff = (channel: "whatsapp" | "schedule_call") => captureEvent({ name: "ai_concierge_lead_converted", properties: { channel, audience_segment: segment ?? "unclassified" } });
-  // Lazily restore any persisted conversation id (survives page navigations).
+
+  const handoff = (channel: "whatsapp" | "schedule_call") =>
+    captureEvent({
+      name: "ai_concierge_lead_converted",
+      properties: { channel, audience_segment: segment ?? "unclassified" },
+    });
+
   const [conversationId, setConversationId] = useState<string | null>(() => {
     if (typeof window === "undefined") return null;
     try {
@@ -113,7 +103,6 @@ export default function MinisAssistantWidget() {
     [pathname],
   );
 
-  // Auto-scroll to the newest message / typing indicator.
   useEffect(() => {
     if (scrollRef.current) {
       scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
@@ -136,46 +125,61 @@ export default function MinisAssistantWidget() {
           body: JSON.stringify({
             message: trimmed,
             sessionId: conversationId ?? undefined,
+            conversationId: conversationId ?? undefined,
             siteSource:
               typeof window !== "undefined" ? window.location.hostname : "",
           }),
         });
 
-        const data: { reply?: string; conversationId?: string; error?: string } =
-          await res.json();
+        const data: {
+          reply?: string;
+          conversationId?: string;
+          error?: string;
+        } | null = await res.json().catch(() => null);
 
-        if (!res.ok || data.error) {
-          setMessages((prev) => [
-            ...prev,
-            {
-              role: "assistant",
-              text:
-                data.error ??
-                "Sorry, something went wrong. Please try again in a moment.",
-            },
-          ]);
+        if (
+          res.ok &&
+          data &&
+          !data.error &&
+          typeof data.reply === "string" &&
+          data.reply.trim()
+        ) {
+          if (data.conversationId) {
+            setConversationId(data.conversationId);
+            try {
+              window.sessionStorage.setItem(sessionKey(), data.conversationId);
+            } catch {
+              /* ignore */
+            }
+          }
+
+          const reply = data.reply.trim();
+          setMessages((prev) => [...prev, { role: "assistant", text: reply }]);
+          if (asksForContact(reply) && !leadSubmitted) setShowLeadForm(true);
           return;
         }
 
-        if (data.conversationId) {
-          setConversationId(data.conversationId);
-          try {
-            window.sessionStorage.setItem(sessionKey(), data.conversationId);
-          } catch {
-            /* ignore */
-          }
-        }
-
-        const reply = data.reply ?? "";
-        setMessages((prev) => [...prev, { role: "assistant", text: reply }]);
-        if (asksForContact(reply) && !leadSubmitted) setShowLeadForm(true);
-      } catch {
+        // Zero-failure fallback: if /api/chat returns 401/402/429/500 or error,
+        // automatically answer with the deterministic guided assistant in the same chat UI
+        const fallback = buildGuidedAssistantResponse(
+          trimmed,
+          conversationId ?? undefined,
+        );
+        setConversationId(fallback.conversationId);
         setMessages((prev) => [
           ...prev,
-          {
-            role: "assistant",
-            text: "Sorry, I couldn't reach the assistant. Please try again.",
-          },
+          { role: "assistant", text: fallback.reply },
+        ]);
+      } catch {
+        // Zero-failure fallback on network error
+        const fallback = buildGuidedAssistantResponse(
+          trimmed,
+          conversationId ?? undefined,
+        );
+        setConversationId(fallback.conversationId);
+        setMessages((prev) => [
+          ...prev,
+          { role: "assistant", text: fallback.reply },
         ]);
       } finally {
         setLoading(false);
@@ -184,28 +188,27 @@ export default function MinisAssistantWidget() {
     [conversationId, loading, leadSubmitted],
   );
 
-  // Seed the opening message and send the first turn when the panel opens.
   const openPanel = useCallback(() => {
     setOpen(true);
     if (!initializedRef.current) {
       initializedRef.current = true;
       setMessages([{ role: "assistant", text: OPENING_MESSAGE }]);
     }
-    // Focus the input shortly after the panel animates in.
     setTimeout(() => inputRef.current?.focus(), 120);
   }, []);
 
-  // Allow CTA buttons elsewhere to open the widget.
   useEffect(() => {
     if (excluded) return;
     const handler = () => openPanel();
     window.addEventListener("minis-assistant:open", handler);
+    window.addEventListener("ceremonyverse:open-minis-assistant", handler);
     window.MinisAssistant = {
       open: openPanel,
       close: () => setOpen(false),
     };
     return () => {
       window.removeEventListener("minis-assistant:open", handler);
+      window.removeEventListener("ceremonyverse:open-minis-assistant", handler);
     };
   }, [excluded, openPanel]);
 
@@ -237,7 +240,6 @@ export default function MinisAssistantWidget() {
         }
         setLeadSubmitted(true);
         setShowLeadForm(false);
-        // Let the bot know the contact details were shared.
         void sendMessage(
           `My name is ${leadName.trim()} and my email is ${leadEmail.trim()}.`,
         );
@@ -251,7 +253,7 @@ export default function MinisAssistantWidget() {
   if (excluded) return null;
 
   return (
-    <>
+    <div data-minis-widget-shell>
       <style>{`
         :root { --minis-mobile-clearance: calc(env(safe-area-inset-bottom, 0px) + 72px); }
         .minis-fab {
@@ -330,7 +332,10 @@ export default function MinisAssistantWidget() {
             </div>
             <button
               type="button"
-              onClick={() => { setOpen(false); setTimeout(() => launcherRef.current?.focus(), 0); }}
+              onClick={() => {
+                setOpen(false);
+                setTimeout(() => launcherRef.current?.focus(), 0);
+              }}
               aria-label="Close chat"
               className="rounded-full p-1 text-white/90 transition hover:bg-white/20"
             >
@@ -383,6 +388,63 @@ export default function MinisAssistantWidget() {
               </div>
             ))}
 
+            {/* 4 Core Guided Assistant Quick-Reply Topics */}
+            <div
+              data-guided-topics
+              className="space-y-1.5 rounded-xl border bg-white p-2.5"
+              style={{ borderColor: "#e6dfd5" }}
+              aria-label="Guided wedding planning topics"
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#6b5d47]">
+                Quick answers
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {GUIDED_ASSISTANT_TOPICS.map((topic) => (
+                  <button
+                    key={topic.id}
+                    type="button"
+                    disabled={loading}
+                    onClick={() => sendMessage(topic.question)}
+                    className="rounded-full border px-2.5 py-1 text-left text-xs text-[#2b2b2b] transition hover:bg-[#f8f6f2] disabled:opacity-50"
+                    style={{ borderColor: "#d9cfc0" }}
+                  >
+                    {topic.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* 3 Direct Concierge Routing Quick-Reply Actions */}
+            <div
+              data-guided-actions
+              className="space-y-1.5 rounded-xl border bg-white p-2.5"
+              style={{ borderColor: "#e6dfd5" }}
+              aria-label="Direct concierge actions"
+            >
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#6b5d47]">
+                Direct actions
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {GUIDED_ASSISTANT_ACTIONS.map((action) => (
+                  <a
+                    key={action.id}
+                    href={action.href}
+                    onClick={() => {
+                      if (action.id === "book-call") handoff("schedule_call");
+                      if (action.id === "whatsapp-mini") handoff("whatsapp");
+                    }}
+                    {...(action.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                    className="inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-semibold text-[#2b2b2b] transition hover:bg-[#f8f6f2]"
+                    style={{ borderColor: ACCENT }}
+                  >
+                    {action.label}
+                  </a>
+                ))}
+              </div>
+            </div>
+
             {loading && (
               <div className="flex justify-start">
                 <div
@@ -397,11 +459,46 @@ export default function MinisAssistantWidget() {
               </div>
             )}
 
-            {(intent.audience || intent.high) && <aside className="space-y-2 rounded-xl border bg-white p-3 text-sm">
-              {intent.audience === "parent" && <a className="block underline" href="/nri-gujarati-parents-guide-destination-wedding/">Family planning guide: dietary needs, room blocks and guest travel</a>}
-              {intent.audience === "couple" && <a className="block underline" href="/nri-gujarati-wedding-timeline-12-months/">Couple’s planning timeline: ceremonies, décor and attire</a>}
-              {intent.high && <><a className="block underline" onClick={() => handoff("schedule_call")} href="/schedule/?from=ai-concierge">Book a free 30-minute call</a><a className="block underline" onClick={() => handoff("whatsapp")} href="https://wa.me/12153419990">WhatsApp Mini directly</a></>}
-            </aside>}
+            {(intent.audience || intent.high) && (
+              <aside className="space-y-2 rounded-xl border bg-white p-3 text-sm">
+                {intent.audience === "parent" && (
+                  <a
+                    className="block underline"
+                    href="/nri-gujarati-parents-guide-destination-wedding/"
+                  >
+                    Family planning guide: dietary needs, room blocks and guest
+                    travel
+                  </a>
+                )}
+                {intent.audience === "couple" && (
+                  <a
+                    className="block underline"
+                    href="/nri-gujarati-wedding-timeline-12-months/"
+                  >
+                    Couple’s planning timeline: ceremonies, décor and attire
+                  </a>
+                )}
+                {intent.high && (
+                  <>
+                    <a
+                      className="block underline"
+                      onClick={() => handoff("schedule_call")}
+                      href="/schedule/?from=ai-concierge"
+                    >
+                      Book a free 30-minute call
+                    </a>
+                    <a
+                      className="block underline"
+                      onClick={() => handoff("whatsapp")}
+                      href="https://wa.me/12153419990"
+                    >
+                      WhatsApp Mini directly
+                    </a>
+                  </>
+                )}
+              </aside>
+            )}
+
             {/* Inline lead-capture form */}
             {showLeadForm && !leadSubmitted && (
               <form
@@ -445,16 +542,20 @@ export default function MinisAssistantWidget() {
           </div>
 
           {/* Composer */}
-          <div className="border-t bg-white p-2" style={{ borderColor: "#e6dfd5" }}>
-              <a
-                onClick={() => handoff("schedule_call")} href={consultationBookingUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mb-2 block text-center text-xs font-semibold underline"
-                style={{ color: ACCENT }}
-              >
-                Book a free consultation on Google Calendar →
-              </a>
+          <div
+            className="border-t bg-white p-2"
+            style={{ borderColor: "#e6dfd5" }}
+          >
+            <a
+              onClick={() => handoff("schedule_call")}
+              href={consultationBookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-2 block text-center text-xs font-semibold underline"
+              style={{ color: ACCENT }}
+            >
+              Book a free consultation on Google Calendar →
+            </a>
             <form
               onSubmit={(e) => {
                 e.preventDefault();
@@ -468,7 +569,7 @@ export default function MinisAssistantWidget() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 aria-label="Type your message…"
-                  placeholder="Type your message…"
+                placeholder="Type your message…"
                 disabled={loading}
                 className="flex-1 rounded-full border px-4 py-2.5 text-sm outline-none focus:border-[#7a6841] disabled:opacity-60"
                 style={{ borderColor: "#e6dfd5" }}
@@ -498,7 +599,7 @@ export default function MinisAssistantWidget() {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

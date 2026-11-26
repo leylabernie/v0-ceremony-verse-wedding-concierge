@@ -1,30 +1,14 @@
 /**
  * Component render test for <MinisAssistantWidget />.
  *
- * ⚠️ REQUIRES a JSX test framework that is NOT yet configured in this repo.
- * The project's `npm test` uses the Node built-in test runner via tsx, which
- * cannot render React JSX. To run THIS file you must install vitest plus
- * @testing-library/react and jsdom, e.g.:
- *
- *   npm i -D vitest @testing-library/react @testing-library/jest-dom jsdom
- *
- * and add a "test:components" script (e.g. `vitest run __tests__`).
- *
- * This directory is intentionally excluded from `tsconfig.json` and the ESLint
- * config so the missing test-only dependencies never break `next build` or
- * `npm run lint`. The runnable logic coverage for the widget's excluded-path /
- * destination-slug behaviour lives in tests/minis-assistant-widget.test.mts.
- *
- * These tests exercise the new architecture: the widget talks to /api/chat
- * (mocked below) — never to Abacus directly.
+ * The runnable Node test runner coverage lives in tests/minis-assistant-widget.test.mts.
  */
 
 // @ts-nocheck
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import MinisAssistantWidget from "@/components/MinisAssistantWidget";
 
-// Mock next/navigation's usePathname so we can drive route context.
 let mockPathname = "/";
 vi.mock("next/navigation", () => ({
   usePathname: () => mockPathname,
@@ -32,7 +16,6 @@ vi.mock("next/navigation", () => ({
 
 beforeEach(() => {
   mockPathname = "/";
-  // Mock the /api/chat proxy.
   global.fetch = vi.fn(async (url: string) => {
     if (String(url).includes("/api/chat")) {
       return {
@@ -59,25 +42,34 @@ describe("MinisAssistantWidget", () => {
   it("returns null on excluded paths (no launcher)", () => {
     mockPathname = "/privacy-policy";
     const { container } = render(<MinisAssistantWidget />);
-    expect(container.querySelector(".minis-fab")).toBeNull();
+    expect(container.querySelector("[data-minis-widget-shell]")).toBeNull();
   });
 
   it("returns null on /terms", () => {
     mockPathname = "/terms/";
     const { container } = render(<MinisAssistantWidget />);
-    expect(container.querySelector(".minis-fab")).toBeNull();
+    expect(container.querySelector("[data-minis-widget-shell]")).toBeNull();
   });
 
-  it("opens the chat panel and shows the opening message", () => {
+  it("opens the chat panel, shows the welcome message, 4 core topics, and 3 routing links", () => {
     render(<MinisAssistantWidget />);
     fireEvent.click(screen.getByRole("button", { name: /chat with mini/i }));
-    expect(screen.getByText(/I'm Mini's assistant for CeremonyVerse/i)).toBeTruthy();
+    expect(screen.getByText(/I'm Mini's Assistant/i)).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: /Book Free 30-Min Call/i }).getAttribute("href"),
+    ).toBe("https://calendar.app.google/sgZc3odvDrbicVuW8");
+    expect(
+      screen.getByRole("link", { name: /WhatsApp Mini/i }).getAttribute("href"),
+    ).toBe("https://wa.me/12153419990");
+    expect(
+      screen.getByRole("link", { name: /View Pricing/i }).getAttribute("href"),
+    ).toBe("/pricing/");
   });
 
   it("POSTs a user message to /api/chat and renders the reply", async () => {
     render(<MinisAssistantWidget />);
     fireEvent.click(screen.getByRole("button", { name: /chat with mini/i }));
-    const input = screen.getByPlaceholderText(/type your message/i);
+    const input = screen.getByLabelText(/type your message/i);
     fireEvent.change(input, { target: { value: "Hello" } });
     fireEvent.submit(input.closest("form"));
     await waitFor(() => {
@@ -86,6 +78,28 @@ describe("MinisAssistantWidget", () => {
         expect.objectContaining({ method: "POST" }),
       );
       expect(screen.getByText(/share your name and email/i)).toBeTruthy();
+    });
+  });
+
+  it("falls back to the deterministic guided assistant when /api/chat returns 500", async () => {
+    global.fetch = vi.fn(async () => ({
+      ok: false,
+      status: 500,
+      json: async () => ({ error: "Chat is not configured yet." }),
+    })) as unknown as typeof fetch;
+
+    render(<MinisAssistantWidget />);
+    fireEvent.click(screen.getByRole("button", { name: /chat with mini/i }));
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: /\$300 Feasibility & Action Plan \(Venmo\)/i,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(
+        screen.getByText(/100% of the \$300 fee is credited/i),
+      ).toBeTruthy();
     });
   });
 });
