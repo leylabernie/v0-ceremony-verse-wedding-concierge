@@ -154,13 +154,13 @@ export default function ShippingGuidePage() {
               Shipping and customs uncertainty can affect both the budget and the time available for local alterations. Estimate each cost category separately and keep a meaningful schedule buffer.
             </p>
             <p style={{ fontWeight: 600, marginBottom: "0.8rem", color: "#2f2f2f" }}>
-              Want our shipping cost calculator?
+              Want a simple way to organize shipping costs?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              <strong>Use the free Shipping &amp; Customs Calculator</strong> to organize product cost, shipping, insurance, estimated import charges, brokerage, alterations, and contingency. It is a planning estimate, not a customs assessment, carrier quote, or delivery promise.
+              <strong>Use our free planning tools</strong> to organize product cost, shipping, insurance, estimated import charges, brokerage, alterations, and contingency. It is a planning estimate, not a customs assessment, carrier quote, or delivery promise.
             </p>
-            <Link href="/planning-tools/shipping-customs/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
-              Open the Shipping &amp; Customs Calculator →
+            <Link href="/planning-tools/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
+              Open Free Planning Tools →
             </Link>
             <p style={{ fontSize: "0.9rem", color: "#4d403a", marginTop: "0.8rem" }}>
               Need sourcing support? <Link href="/buy-indian-wedding-outfits-from-india/" style={{ color: "#7a6841", fontWeight: 600 }}>Review the available service scopes</Link>. Eligible tiers can include shipping-document coordination and tracking support; the selected vendor, carrier, insurer, and customs authority remain responsible for their work.

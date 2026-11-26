@@ -128,7 +128,7 @@ export default function TimelineGuidePage() {
               Want more free planning tools?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Open the no-email-gate resource library for the NRI shopping timeline, outfit checklist, vendor red flags, calculators, and other web-based planning tools.
+              Open the no-email-gate resource library for the NRI shopping timeline, outfit checklist, vendor red flags, budget tracker, and other free planning tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Open Free Planning Resources →

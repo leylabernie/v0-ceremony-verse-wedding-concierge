@@ -47,8 +47,8 @@ const data: EditorialGuideData = {
           "href": "/pricing/"
         },
         {
-          "label": "Free destination wedding cost calculator",
-          "href": "/planning-tools/budget/"
+          "label": "Free destination wedding budget tracker",
+          "href": "/planning-tools/budget-tracker/"
         }
       ]
     },

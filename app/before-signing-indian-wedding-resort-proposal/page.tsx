@@ -52,7 +52,7 @@ const faqs = [
   {
     question: "What if we have two resort proposals?",
     answer:
-      "Compare them using the same guest count, event outline, room assumptions, and cost categories. The Resort Proposal Calculator gives you a private place to organize the difference before your next call.",
+      "Compare them using the same guest count, event outline, room assumptions, and cost categories. Use our free planning tools to organize the details before your next call.",
   },
   {
     question: "Is this legal or travel advice?",
@@ -84,7 +84,7 @@ export default function BeforeSigningIndianWeddingResortProposalPage() {
             <Link href="/contact/?service=feasibility&from=five-question-guide-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">
               Bring Your Question to a Free Consultation
             </Link>
-            <Link href="/planning-tools/resort-comparison/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">
+            <Link href="/planning-tools/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">
               Compare Two Proposals
             </Link>
           </div>
@@ -121,10 +121,10 @@ export default function BeforeSigningIndianWeddingResortProposalPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">When you need more detail</p>
             <h2 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Use a tool only when it helps the decision</h2>
             <p className="mt-5 leading-7 text-[#4d403a]">
-              If you are comparing two written proposals, use the private Resort Proposal Calculator. If you have one question that is holding up the plan, start with the free 30-minute conversation instead.
+              If you are comparing two written proposals, bring them to a free 30-minute conversation and we’ll help you review the key terms. If you have one question holding up the plan, start there instead.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-start xl:flex-row">
-              <Link href="/planning-tools/resort-comparison/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
+              <Link href="/planning-tools/" className="inline-flex justify-center rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white">
                 Compare Two Resorts
               </Link>
               <Link href="/contact/?service=feasibility&from=five-question-guide-detail" className="inline-flex justify-center rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841]">

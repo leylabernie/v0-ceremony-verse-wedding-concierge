@@ -35,11 +35,8 @@ test("destination service schemas include Jamaica without treating Punta Cana as
 test("the inquiry and comparison flows accept Jamaica without inventing Jamaica package rates", () => {
   const questionnaire = read("../components/pages/consultation-questionnaire-page.tsx")
   assert.match(questionnaire, /placeholder="Mexico, Jamaica, Punta Cana, resort ideas, or not decided"/)
-  const comparison = read("../app/planning-tools/resort-comparison/resort-comparison-client.tsx")
-  for (const destination of ["Mexico", "Jamaica", "Punta Cana"]) {
-    assert.ok(comparison.includes(`<option value="${destination}">${destination}</option>`))
-  }
-  assert.match(read("../app/planning-tools/budget/resort-rate-selector.tsx"), /For Jamaica or an unlisted resort, use your written quote/)
+  const budgetTracker = read("../app/planning-tools/budget-tracker/budget-tracker-client.tsx")
+  assert.doesNotMatch(budgetTracker, /Jamaica package rate|Jamaica starting at/i)
 })
 
 test("Jamaica service coverage does not become a fabricated destination wedding portfolio", () => {

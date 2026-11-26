@@ -391,7 +391,7 @@ export default function PricingPage() {
             <Link href="/terms/" className="mt-8 inline-flex font-semibold !text-[#e8cf9d] underline underline-offset-4">
               Review website terms
             </Link>
-            <Link href="/planning-tools/shipping-customs/" className="mt-4 block font-semibold !text-[#e8cf9d] underline underline-offset-4">
+            <Link href="/planning-tools/" className="mt-4 block font-semibold !text-[#e8cf9d] underline underline-offset-4">
               Calculate U.S. or Canada landed cost
             </Link>
           </aside>

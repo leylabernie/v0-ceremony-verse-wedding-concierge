@@ -109,7 +109,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">Before you sign</p>
           <h2 className="mt-3 font-serif text-4xl font-semibold !text-white sm:text-5xl">Inspect the process before relying on claims</h2>
-          <p className="mt-5 text-lg leading-8 !text-white/75">Review public starting fees, the complete client journey, provider responsibilities, calculators, and the private written scope before paid work begins.</p>
+          <p className="mt-5 text-lg leading-8 !text-white/75">Review public starting fees, the complete client journey, provider responsibilities, planning tools, and the private written scope before paid work begins.</p>
           <Link href="/how-it-works/" className="mt-8 inline-flex rounded-full bg-[#c5a059] px-7 py-3.5 text-sm font-semibold !text-[#1f1f1f]">Review the Complete Process</Link>
         </div>
       </section>

@@ -312,7 +312,7 @@ export default function BridalLehengaPage() {
           </div>
           <p className="text-xs text-[#4d403a] text-center">
             Estimated shipping and import costs are itemized in your quote. Canadian estimates may include duty,
-            GST/HST, applicable provincial tax, and carrier brokerage or disbursement fees. Final assessments depend on the destination, classification, fiber content, value, current rules, and carrier terms. <Link href="/planning-tools/shipping-customs/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Build a landed-cost estimate →</Link>
+            GST/HST, applicable provincial tax, and carrier brokerage or disbursement fees. Final assessments depend on the destination, classification, fiber content, value, current rules, and carrier terms. <Link href="/planning-tools/" style={{ color: "var(--cv-accent)", textDecoration: "underline" }}>Build a landed-cost estimate →</Link>
           </p>
         </div>
       </section>

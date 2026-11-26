@@ -5,10 +5,10 @@ import assert from 'node:assert/strict'
 import { Children, isValidElement, type ReactNode } from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { JsonLd } from '../lib/seo'
-const Budget = load('../app/planning-tools/budget/page').default
-const Comparison = load('../app/planning-tools/resort-comparison/page').default
-const Guests = load('../app/planning-tools/guest-logistics/page').default
-const Customs = load('../app/planning-tools/shipping-customs/page').default
+const Budget = load('../app/planning-tools/budget-tracker/page').default
+const Checklist = load('../app/planning-tools/wedding-checklist/page').default
+const Guests = load('../app/planning-tools/guest-list/page').default
+const Vendors = load('../app/planning-tools/vendor-manager/page').default
 const Faq = load('../app/faq/page').default
 const Parents = load('../app/nri-gujarati-parents-guide-destination-wedding/page').default
 const Proposal = load('../app/before-signing-indian-wedding-resort-proposal/page').default
@@ -20,11 +20,11 @@ function scripts(tree: ReactNode): Record<string,any>[] {
     if (!isValidElement<{children?:ReactNode}>(child)) return []
     if (child.type !== JsonLd) return scripts(child.props.children)
     const html = renderToStaticMarkup(child)
-    assert.match(html,/type="application\/ld\+json"/)
+    assert.match(html,/type=\"application\/ld\+json\"/)
     return [JSON.parse(html.slice(html.indexOf('>')+1,html.lastIndexOf('</script>')))]
   })
 }
-for (const Page of [Budget,Comparison,Guests,Customs]) test(`${Page.name} emits one free WebApplication`,()=>{
+for (const Page of [Budget,Checklist,Guests,Vendors]) test(`${Page.name} emits one free WebApplication`,()=>{
  const apps=scripts(Page()).filter(s=>s['@type']==='WebApplication')
  assert.equal(apps.length,1);assert.equal(apps[0].offers.price,'0');assert.equal(apps[0].operatingSystem,'All')
 })

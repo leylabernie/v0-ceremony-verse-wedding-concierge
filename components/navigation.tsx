@@ -13,7 +13,7 @@ const navItems: { label: string; href: string }[] = [
   { label: "Destinations", href: "/destinations/" },
   { label: "Planning Services", href: "/indian-destination-wedding-planner-mexico/" },
   { label: "India Shopping", href: "/buy-indian-wedding-outfits-from-india/" },
-  { label: "Calculators", href: "/planning-tools/" },
+  { label: "Planning Tools", href: "/planning-tools/" },
   { label: "Pricing", href: "/pricing/" },
   { label: "How It Works", href: "/how-it-works/" },
   { label: "Blog", href: "/blog/" },

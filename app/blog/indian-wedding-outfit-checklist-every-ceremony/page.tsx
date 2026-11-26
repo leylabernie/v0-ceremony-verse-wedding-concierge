@@ -172,7 +172,7 @@ export default function OutfitChecklistPage() {
               Want more free planning tools?
             </p>
             <p style={{ fontSize: "0.95rem", lineHeight: 1.7, marginBottom: "1.2rem" }}>
-              Open CeremonyVerse&apos;s no-email-gate resource library for the wedding-outfit checklist, shopping timeline, destination budget calculator, family responsibility map, and other web-based tools.
+              Open CeremonyVerse&apos;s no-email-gate resource library for the wedding-outfit checklist, shopping timeline, budget tracker, family responsibility map, and other free planning tools.
             </p>
             <Link href="/free-guides/" style={{ display: "inline-block", background: "#2f2f2f", color: "#7a6841", padding: "12px 28px", borderRadius: "999px", fontSize: "0.9rem", fontWeight: 600, textDecoration: "none", marginBottom: "1.2rem" }}>
               Open Free Planning Resources →

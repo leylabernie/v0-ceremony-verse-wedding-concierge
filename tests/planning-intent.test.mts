@@ -18,7 +18,7 @@ test('segment recommendations and handoffs use only visitor turns',()=>{
  for(const text of ['review my contract','January 2028'])assert.equal(conciergeIntent([visitor(text)]).high,true)
 })
 test('schema describes a free finance app and attributes registrations to the travel affiliate',()=>{
- const schema=calculatorSchema({name:'Budget',url:'https://www.ceremonyverse.com/planning-tools/budget/',description:'Budget worksheet'})
+ const schema=calculatorSchema({name:'Budget',url:'https://www.ceremonyverse.com/planning-tools/budget-tracker/',description:'Budget worksheet'})
  assert.deepEqual(schema.offers,{'@type':'Offer',price:'0',priceCurrency:'USD'})
  assert.equal(schema.operatingSystem,'All');assert.equal(schema.applicationCategory,'FinanceApplication')
  assert.equal(agencyFields().memberOf.identifier.length,3);assert.match(agencyFields().description,/family weddings, not client projects/)

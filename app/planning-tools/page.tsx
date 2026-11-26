@@ -3,84 +3,97 @@ import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/",
-  title: "Free Indian Destination Wedding Calculators",
+  title: "Free Wedding Planning Tools | CeremonyVerse",
   description:
-    "Use free CeremonyVerse calculators for destination-wedding budgets, resort proposals, guest costs, and India-to-USA-or-Canada shipping and customs.",
+    "Free wedding planning tools for destination and multicultural weddings: checklist, guest list, budget tracker, vendor manager, vision boards, and more. Simple tools saved in your browser.",
   keywords:
-    "Indian destination wedding budget planner, Mexico wedding resort comparison, destination wedding guest tracker, Gujarati wedding planning checklist, Punta Cana Indian wedding planning",
+    "free wedding planning tools, wedding checklist, guest list manager, wedding budget tracker, vendor manager, vision board, destination wedding planning",
 })
 
 const breadcrumbSchema = buildBreadcrumb([{ name: "Planning Tools", url: "/planning-tools/" }])
 
 const tools = [
   {
-    title: "Resort Strategy Matcher",
-    description:
-      "Five questions — celebration type, guest count, elder mobility, cultural events, dietary rules — compiled into a personalized resort strategy that Mini Patel reviews personally.",
-    href: "/planning-tools/strategy-matcher/",
-    label: "Start Your Personalized Resort Strategy Match",
+    title: "Wedding Checklist",
+    description: "Organize to-dos by timeline, track progress, and add your own tasks so nothing important slips through the cracks.",
+    href: "/planning-tools/wedding-checklist/",
+    label: "Set Up Checklist",
+    badge: "Free",
   },
   {
-    title: "Ceremony Timeline & Free Toolkit",
-    description: "Preview your ceremony handoffs, then download your personalised timeline, an original symbolic script and a friend officiant guide. Planning follow-up is optional.",
+    title: "Guest List Manager",
+    description: "Track guest names, contact details, RSVP status, party size, and notes in one simple place.",
+    href: "/planning-tools/guest-list/",
+    label: "Manage Guests",
+    badge: "Free",
+  },
+  {
+    title: "Budget Tracker",
+    description: "Set your budget, track estimated vs. actual costs by category, and see what’s left at a glance.",
+    href: "/planning-tools/budget-tracker/",
+    label: "Build Your Budget",
+    badge: "Free",
+  },
+  {
+    title: "Vendor Manager",
+    description: "Keep vendor contacts, quotes, booking status, and notes organized as you plan your wedding.",
+    href: "/planning-tools/vendor-manager/",
+    label: "Track Vendors",
+    badge: "Free",
+  },
+  {
+    title: "Vision Boards",
+    description: "Save inspiration links, images, and notes for decor, outfits, venues, and details you love.",
+    href: "/planning-tools/vision-boards/",
+    label: "Save Inspiration",
+    badge: "Free",
+  },
+  {
+    title: "Ceremony Timeline & Toolkit",
+    description: "Preview ceremony handoffs and download a personalized timeline, symbolic script, and friend-officiant guide.",
     href: "/planning-tools/ceremony-timeline/",
-    label: "Build your ceremony timeline",
-  },
-  {
-    title: "Wedding Budget Calculator",
-    description:
-      "Separate event, family-travel, and shopping costs; see the total, target gap, quote confidence, and missing cost areas.",
-    href: "/planning-tools/budget/",
-    label: "Calculate the budget",
-  },
-  {
-    title: "Resort Proposal Calculator",
-    description:
-      "Compare two written proposals across known host costs, room-block exposure, cultural requirements, and contract clarity.",
-    href: "/planning-tools/resort-comparison/",
-    label: "Compare two resorts",
-  },
-  {
-    title: "Guest & VIP Cost Calculator",
-    description:
-      "Calculate room nights, family-paid rooms and flights, transfers, welcome items, and the host-paid guest-support total.",
-    href: "/planning-tools/guest-logistics/",
-    label: "Calculate guest costs",
-  },
-  {
-    title: "Room-Block Matrix Calculator",
-    description:
-      "Turn your guest count, elderly-grandparent share, and single-vs-family mix into a total room count with accessible, lobby-level rooms and a King vs Double-Queen split.",
-    href: "/planning-tools/room-block-matrix/",
-    label: "Build your room-block matrix",
-  },
-  {
-    title: "Baraat & Event Logistics Planner",
-    description:
-      "Tick the events you're hosting — Ganesh Puja through Reception — and get the resort venue checklist for procession pathways, sound permits, power, and vendor fees.",
-    href: "/planning-tools/baraat-event-planner/",
-    label: "Plan your event logistics",
-  },
-  {
-    title: "Catering Deadline Tracker",
-    description:
-      "Enter your wedding date and get the three food deadlines that make or break a South Asian destination wedding — chef requests at 180 days, strict Jain/Satvik/Halal ingredients at 90, vendor meal counts at 30.",
-    href: "/planning-tools/catering-deadline-tracker/",
-    label: "Start your catering countdown",
-  },
-  {
-    title: "USA & Canada Shipping & Customs Calculator",
-    description:
-      "Estimate the USD landed cost of India-sourced products, shipping, insurance, import charges, brokerage, alterations, and contingency.",
-    href: "/planning-tools/shipping-customs/",
-    label: "Calculate landed cost",
+    label: "Build Your Timeline",
+    badge: "Free",
   },
   {
     title: "Family Responsibility Map",
-    description:
-      "Assign one owner, approver, deadline, and status to the decisions that often become scattered across a large family.",
+    description: "Assign one owner, approver, deadline, and status to key family decisions so planning stays clear.",
     href: "/planning-tools/family-responsibility-map/",
-    label: "Organize decisions",
+    label: "Organize Decisions",
+    badge: "Free",
+  },
+  {
+    title: "Baraat & Event Logistics Planner",
+    description: "Select the events you’re hosting and get a practical checklist for venues, sound, power, and logistics.",
+    href: "/planning-tools/baraat-event-planner/",
+    label: "Plan Event Logistics",
+    badge: "Free",
+  },
+  {
+    title: "Catering Deadline Tracker",
+    description: "Enter your wedding date and get key catering deadlines for chef requests, dietary requirements, and vendor meals.",
+    href: "/planning-tools/catering-deadline-tracker/",
+    label: "Track Deadlines",
+    badge: "Free",
+  },
+]
+
+const comingSoon = [
+  {
+    title: "Digital Invitations & RSVP",
+    description: "Beautiful invitations with guest tracking and simple RSVP collection — designed for destination weddings.",
+  },
+  {
+    title: "Wedding Website",
+    description: "A shareable wedding website with your story, events, travel details, and updates for guests.",
+  },
+  {
+    title: "AI Wedding Planner",
+    description: "An AI assistant that helps organize planning details, vendor info, and next steps in one conversation.",
+  },
+  {
+    title: "Seating Chart",
+    description: "Plan tables and seating with guest households, meal preferences, and event-specific arrangements.",
   },
 ]
 
@@ -92,38 +105,73 @@ export default function PlanningToolsPage() {
       <section className="bg-[#1f1f1f] px-6 py-24 text-center text-white">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#c5a059]">
-            Free CeremonyVerse resources
+            Free CeremonyVerse planning tools
           </p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Calculate before you commit</h1>
+          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Free Wedding Planning Tools</h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[#e8dfd2]">
-            Use your own quotes and assumptions to test the complete budget, compare resorts, separate guest support,
-            and estimate India-to-USA-or-Canada shipping and customs. The calculators and ceremony preview are open; the ceremony toolkit download asks for your details, with optional planning follow-up.
+            Simple tools to help you plan with clarity — from checklist and guest list to budget, vendors, and inspiration.
+            Built for destination and multicultural weddings, with no complicated calculators.
           </p>
         </div>
       </section>
 
       <section className="px-6 py-20 sm:py-24">
-        <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2">
-          {tools.map((tool) => (
-            <article key={tool.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8 sm:p-10">
-              <h2 className="font-serif text-3xl font-semibold">{tool.title}</h2>
-              <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{tool.description}</p>
-              <Link href={tool.href} className="mt-7 inline-flex self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white">
-                {tool.label} →
-              </Link>
-            </article>
-          ))}
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 flex items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Plan with ease</p>
+              <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl">Tools you can use right now</h2>
+            </div>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {tools.map((tool) => (
+              <article key={tool.href} className="flex flex-col rounded-2xl border border-[#e6dfd5] bg-white p-8 shadow-sm">
+                <div className="mb-4 inline-flex self-start rounded-full bg-[#f3ede3] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a6841]">
+                  {tool.badge}
+                </div>
+                <h3 className="font-serif text-2xl font-semibold">{tool.title}</h3>
+                <p className="mt-4 flex-1 leading-7 text-[#4d403a]">{tool.description}</p>
+                <Link
+                  href={tool.href}
+                  className="mt-7 inline-flex self-start rounded-full border border-[#7a6841] px-6 py-3 text-sm font-semibold text-[#7a6841] transition hover:bg-[#7a6841] hover:text-white"
+                >
+                  {tool.label} →
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#e6dfd5] bg-white px-6 py-20 sm:py-24">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Coming soon</p>
+          <h2 className="mt-2 font-serif text-3xl font-semibold sm:text-4xl">More tools on the way</h2>
+          <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">
+            We’re building a fuller CeremonyVerse planning suite inspired by the best simple wedding tools — with destination-wedding and multicultural planning needs in mind.
+          </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {comingSoon.map((tool) => (
+              <article key={tool.title} className="rounded-2xl border border-[#e6dfd5] bg-[#faf8f5] p-6">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#7a6841]">Coming soon</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{tool.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-[#4d403a]">{tool.description}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section className="bg-[#f0ebe3] px-6 py-16 text-center">
         <div className="mx-auto max-w-3xl">
-          <h2 className="font-serif text-3xl font-semibold sm:text-4xl">Need help interpreting the numbers?</h2>
+          <h2 className="font-serif text-3xl font-semibold sm:text-4xl">Want help planning it all?</h2>
           <p className="mt-4 leading-7 text-[#4d403a]">
-            Bring the completed calculations to a private consultation. CeremonyVerse can help identify missing costs,
-            unclear resort language, and the next decisions that matter most—without asking you to start over.
+            These free tools help you get organized. If you want expert support for destination venues, contracts, guest travel, or cultural logistics, CeremonyVerse can guide you.
           </p>
-          <Link href="/schedule/?from=planning-calculators" className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white">
+          <Link
+            href="/schedule/?from=planning-tools"
+            className="mt-7 inline-flex rounded-full bg-[#7a6841] px-7 py-3 text-sm font-semibold text-white hover:bg-[#6a5938]"
+          >
             Request a Free 30-Minute Consultation
           </Link>
         </div>

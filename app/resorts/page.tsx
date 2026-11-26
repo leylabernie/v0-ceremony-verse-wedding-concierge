@@ -76,7 +76,7 @@ export default function ResortsPage() {
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/schedule/?from=resorts-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
-            <Link href="/planning-tools/resort-comparison/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Open Resort Comparison Calculator</Link>
+            <Link href="/planning-tools/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Open Resort Comparison Calculator</Link>
           </div>
           <p className="mx-auto mt-8 max-w-3xl rounded-xl border border-white/15 bg-white/5 p-4 text-sm leading-6 !text-white/75">
             <strong className="!text-white">Evaluation list — not endorsements.</strong> These are independent profiles
@@ -128,7 +128,7 @@ export default function ResortsPage() {
               <p className="mt-5 leading-7 text-[#4d403a]">
                 These are the terms families most often miss — and the ones that derail an Indian wedding if left verbal.
                 Run proposals side by side in the{" "}
-                <Link href="/planning-tools/resort-comparison/" className="font-semibold text-[#7a6841] underline underline-offset-4">Resort Comparison Calculator</Link>,
+                <Link href="/planning-tools/" className="font-semibold text-[#7a6841] underline underline-offset-4">Resort Comparison Calculator</Link>,
                 and review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline underline-offset-4">complete wedding cost breakdown</Link>.
               </p>
             </div>

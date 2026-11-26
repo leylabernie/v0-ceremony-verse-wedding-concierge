@@ -11,25 +11,25 @@ const calculatorTools = [
   {
     title: "Budget Calculator",
     description: "Separate event costs from family travel, test the target, and see which cost areas are still missing.",
-    href: "/planning-tools/budget/",
+    href: "/planning-tools/budget-tracker/",
     cta: "Calculate My Budget",
   },
   {
     title: "Resort Proposal Calculator",
     description: "Compare two written proposals across known costs, room-block exposure, cultural needs, and unclear terms.",
-    href: "/planning-tools/resort-comparison/",
+    href: "/planning-tools/",
     cta: "Compare Two Resorts",
   },
   {
     title: "Guest & VIP Cost Calculator",
     description: "Estimate family-paid rooms, flights, transfers, welcome items, and the guest-support total.",
-    href: "/planning-tools/guest-logistics/",
+    href: "/planning-tools/guest-list/",
     cta: "Calculate Guest Costs",
   },
   {
     title: "Shipping & Customs Calculator",
     description: "Estimate the USD landed cost of India-sourced items for delivery across the United States or Canada.",
-    href: "/planning-tools/shipping-customs/",
+    href: "/planning-tools/",
     cta: "Calculate Landed Cost",
   },
 ]

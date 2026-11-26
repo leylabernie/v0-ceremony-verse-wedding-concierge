@@ -94,7 +94,7 @@ export default function DestinationsPage() {
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <Link href="/schedule/?from=destinations-hero" className="rounded-full bg-[#c5a059] px-7 py-4 text-sm font-semibold !text-[#1f1f1f]">Schedule Free Consultation</Link>
             <Link href="/resorts/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Compare Resort Profiles</Link>
-            <Link href="/planning-tools/budget/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Calculate the Complete Budget</Link>
+            <Link href="/planning-tools/budget-tracker/" className="rounded-full border border-white/55 px-7 py-4 text-sm font-semibold !text-white">Calculate the Complete Budget</Link>
           </div>
         </div>
       </section>

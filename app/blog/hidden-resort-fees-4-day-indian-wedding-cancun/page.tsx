@@ -200,7 +200,7 @@ export default function BlogPost() {
 <h2 className="pt-4 font-serif text-3xl font-semibold text-[#1f1f1f]">How to protect the family budget</h2>
           <ol className="list-decimal space-y-3 pl-6">
             <li>Request a written, itemized estimate for every event day — minimums, vendor fees, production, setup, overtime, security, power, permits, day passes, taxes, and service charges.</li>
-            <li>Separate known quotes from estimates using the free <Link href="/planning-tools/budget/" className="font-semibold text-[#7a6841] underline">destination-wedding budget calculator</Link>, then review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline">complete-cost framework for Indian destination weddings</Link>.</li>
+            <li>Separate known quotes from estimates using the free <Link href="/planning-tools/budget-tracker/" className="font-semibold text-[#7a6841] underline">destination-wedding budget tracker</Link>, then review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline">complete-cost framework for Indian destination weddings</Link>.</li>
             <li>Before signing, work through the <Link href="/before-signing-indian-wedding-resort-proposal/" className="font-semibold text-[#7a6841] underline">five questions to answer before signing an Indian wedding resort proposal</Link>.</li>
           </ol>
           <p>

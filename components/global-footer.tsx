@@ -41,7 +41,7 @@ const companyLinks = [
   { label: "Pricing", href: "/pricing/" },
   { label: "FAQ", href: "/faq/" },
   { label: "Blog", href: "/blog/" },
-  { label: "Wedding Calculators", href: "/planning-tools/" },
+  { label: "Wedding Planning Tools", href: "/planning-tools/" },
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
   { label: "Meet Mini — Founder", href: "/about/mini/" },

@@ -27,7 +27,7 @@ test("the hidden-resort-fees article publishes the Cancún multi-day fee questio
 
 test("the hidden-resort-fees article connects to existing cost, budget, and proposal resources", () => {
   assert.match(hiddenFeesArticle, /href="\/indian-destination-wedding-cost\/"/)
-  assert.match(hiddenFeesArticle, /href="\/planning-tools\/budget\/"/)
+  assert.match(hiddenFeesArticle, /href="\/planning-tools\/budget-tracker\/"/)
   assert.match(hiddenFeesArticle, /href="\/before-signing-indian-wedding-resort-proposal\/"/)
   assert.match(hiddenFeesArticle, /href="\/indian-wedding-room-block-mexico\/"/)
   assert.match(hiddenFeesArticle, /href="\/destination-wedding-feasibility-plan\/"/)

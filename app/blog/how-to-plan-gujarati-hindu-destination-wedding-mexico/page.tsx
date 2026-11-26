@@ -127,7 +127,7 @@ export default function BlogPost() {
             explicitly.
           </p>
           <p>
-            Use the free <Link href="/planning-tools/budget/" className="font-semibold text-[#7a6841] underline">destination-wedding budget calculator</Link> to
+            Use the free <Link href="/planning-tools/budget-tracker/" className="font-semibold text-[#7a6841] underline">destination-wedding budget tracker</Link> to
             separate known quotes from estimates, then review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline">complete-cost framework</Link>. Do not assume that a particular guest count or resort is possible within a target budget until the important categories have current numbers.
           </p>
 
