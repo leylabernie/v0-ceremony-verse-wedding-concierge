@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import { NurturePreferencesPage } from "@/components/pages/nurture-preferences-page"
+import { canonicalUrl } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Planning Follow-Up Preferences — CeremonyVerse",
+  alternates: { canonical: canonicalUrl("/nurture-preferences/") },
   robots: { index: false, follow: false },
 }
 

@@ -11,7 +11,7 @@ const serviceLinks = [
   { label: "Bridal Lehengas", href: "/services/bridal-lehengas/" },
   { label: "Groom Sherwanis", href: "/buy-sherwani-from-india-usa/" },
   { label: "Bridesmaid & Family Outfits", href: "/bridesmaid-and-family-outfits-from-india/" },
-  { label: "Jewelry & Accessories", href: "/buy-indian-wedding-outfits-from-india/" },
+  { label: "Jewelry & Accessories", href: "/wedding-accessories-and-ceremony-items-from-india/" },
 ];
 
 const destinationLinks = [
@@ -22,6 +22,7 @@ const destinationLinks = [
   { label: "Los Cabos Indian Weddings", href: "/destinations/los-cabos-indian-wedding/" },
   { label: "Punta Cana Indian Weddings", href: "/destinations/punta-cana-indian-wedding/" },
   { label: "Complete Wedding Cost", href: "/indian-destination-wedding-cost/" },
+  { label: "2026 Costs & Logistics Guide", href: "/costs/" },
   { label: "Mexico Room Blocks", href: "/indian-wedding-room-block-mexico/" },
 ];
 
@@ -45,6 +46,7 @@ const companyLinks = [
   { label: "Free Guides", href: "/free-guides/" },
   { label: "About", href: "/about/" },
   { label: "Meet Mini — Founder", href: "/about/mini/" },
+  { label: "Articles by Mini", href: "/blog/author/mini/" },
   { label: "Family Wedding Experience", href: "/real-weddings/" },
   { label: "Contact", href: "/contact/" },
   { label: "For Wedding Vendors", href: "/vendors/" },

@@ -142,6 +142,12 @@ const posts = [
     date: "June 2026",
   },
   {
+    slug: "mexico-wedding-wardrobe-sourcing-from-india",
+    title: "Mexico Wedding Wardrobe Sourcing from India: What to Plan for Every Ceremony",
+    description: "Bride, groom, wedding party, and family outfits timed to a Mexico destination wedding weekend.",
+    date: "May 2026",
+  },
+  {
     slug: "nri-wedding-planning-timeline",
     title: "The NRI Wedding Planning Timeline: When to Order Everything from India",
     description: "A planning framework for recording item requirements, current vendor estimates, approvals, shipping responsibilities, and fitting buffers.",
@@ -168,6 +174,13 @@ const posts = [
 ];
 
 const destinationPostSlugs = new Set([
+  "honeymoon-after-destination-wedding-stay-or-switch-resorts",
+  "room-to-mandap-wedding-guest-route",
+  "south-asian-destination-wedding-guide",
+  "indian-destination-wedding-puerto-vallarta",
+  "indian-destination-wedding-mexico-complete-guide",
+  "hidden-resort-fees-4-day-indian-wedding-cancun",
+  "indian-wedding-catering-mexico-all-inclusive-resorts",
   "how-to-plan-gujarati-hindu-destination-wedding-mexico",
   "mexico-or-punta-cana-indian-destination-wedding",
 ])
@@ -214,6 +227,7 @@ export default function BlogIndexPage() {
         <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
           <a href="#destination-planning-guides" style={{ border: "1px solid #7a6841", borderRadius: "999px", padding: "10px 18px", color: "#7a6841", fontWeight: 600, textDecoration: "none" }}>Destination planning guides</a>
           <a href="#india-shopping-guides" style={{ border: "1px solid #7a6841", borderRadius: "999px", padding: "10px 18px", color: "#7a6841", fontWeight: 600, textDecoration: "none" }}>India shopping guides</a>
+          <Link href="/blog/author/mini/" style={{ border: "1px solid #7a6841", borderRadius: "999px", padding: "10px 18px", color: "#7a6841", fontWeight: 600, textDecoration: "none" }}>Articles by Mini</Link>
           <Link href="/destinations/" style={{ background: "#7a6841", borderRadius: "999px", padding: "10px 18px", color: "#fff", fontWeight: 600, textDecoration: "none" }}>Compare destinations</Link>
         </div>
       </div>
@@ -229,7 +243,7 @@ export default function BlogIndexPage() {
           {group.posts.map((post) => (
             <Link
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={`/blog/${post.slug}/`}
               style={{ textDecoration: "none" }}
             >
               <div style={{ background: "#fff", border: "1px solid #e6dfd5", borderRadius: "8px", padding: "2rem", transition: "box-shadow 0.2s" }}>

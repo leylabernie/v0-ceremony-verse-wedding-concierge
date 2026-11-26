@@ -15,7 +15,7 @@ import {
 } from "@/lib/destination-feasibility-plan";
 
 export const metadata = buildMetadata({
-  path: "/indian-wedding-coordination-mexico/",
+  path: "/indian-destination-wedding-planner-mexico/",
   title: "Indian Destination Wedding Planner Mexico",
   description:
     "Coordinated destination-wedding planning, family support, and optional India sourcing for Gujarati and Hindu weddings across Mexico, Jamaica, and Punta Cana.",
@@ -27,7 +27,7 @@ const serviceSchema = buildServiceSchema({
   name: "Gujarati and Hindu Destination Wedding Planning",
   description:
     "Coordinated destination planning and on-site execution across Mexico, Jamaica, and Punta Cana, with family support and guest logistics included by package level plus optional India sourcing.",
-  url: "/indian-wedding-coordination-mexico/",
+  url: "/indian-destination-wedding-planner-mexico/",
   areaServed: ["Mexico", "Jamaica", "Punta Cana, Dominican Republic"],
   offers: [
     {
@@ -46,7 +46,7 @@ const serviceSchema = buildServiceSchema({
 });
 
 const breadcrumbSchema = buildBreadcrumb([
-  { name: "Destination Wedding Planning", url: "/indian-wedding-coordination-mexico/" },
+  { name: "Destination Wedding Planning", url: "/indian-destination-wedding-planner-mexico/" },
 ]);
 
 const faqItems = [
@@ -93,7 +93,7 @@ const howToSchema = buildHowToSchema({
   name: "How to Start Planning a Gujarati or Hindu Destination Wedding",
   description:
     "A practical first-pass process for a Gujarati or Hindu wedding across Mexico or in Punta Cana.",
-  url: "/indian-wedding-coordination-mexico/",
+  url: "/indian-destination-wedding-planner-mexico/",
   totalTime: "PT30M",
   steps: [
     {

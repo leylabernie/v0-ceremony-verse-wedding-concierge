@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
 import { calculatorSchema } from "@/lib/schema"
 import { VendorManagerClient } from "./vendor-manager-client"
@@ -22,6 +23,9 @@ export default function Page() {
         <h1 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Vendor Manager</h1>
         <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">Keep vendor contacts, quotes, booking status, and notes in one place. Built for Gujarati and South Asian weddings — track pandits, mehndi artists, dhol/DJs, decor, catering, and more by event.</p>
         <VendorManagerClient />
+        <p className="mt-10 text-sm leading-7 text-[#4d403a]">
+          Related resources: Review <Link href="/nri-gujarati-wedding-vendor-questions/" className="font-semibold text-[#7a6841] underline underline-offset-4">questions to ask Gujarati wedding vendors</Link>, organize visual references in <Link href="/planning-tools/vision-boards/" className="font-semibold text-[#7a6841] underline underline-offset-4">Vision Boards</Link>, or see <Link href="/vendors/" className="font-semibold text-[#7a6841] underline underline-offset-4">how CeremonyVerse collaborates with wedding vendors</Link>.
+        </p>
       </div>
     </main>
   )

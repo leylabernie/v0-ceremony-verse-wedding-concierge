@@ -234,7 +234,7 @@ export default function AboutMiniPage() {
             </a>
           </div>
           <p className="mt-6 text-sm text-white/75">
-            Or email <a href={`mailto:${SITE_EMAIL}`} className="underline">{SITE_EMAIL}</a> · Read more <Link href="/about/" className="underline">about CeremonyVerse</Link> · See <Link href="/real-weddings/" className="underline">the family wedding experience behind the service</Link>
+            Or email <a href={`mailto:${SITE_EMAIL}`} className="underline">{SITE_EMAIL}</a> · Read more <Link href="/about/" className="underline">about CeremonyVerse</Link> · Browse <Link href="/blog/author/mini/" className="underline">all articles by Mini</Link> · See <Link href="/real-weddings/" className="underline">the family wedding experience behind the service</Link>
           </p>
         </div>
       </section>

@@ -24,11 +24,19 @@ const destinationTools = [
   ["5 Questions Before You Choose", "Start with five essential questions about cost, guests, cultural events, wedding-week ownership, and written commitments before choosing a Mexico, Jamaica, or Punta Cana resort.", "/before-signing-indian-wedding-resort-proposal/"],
   ["Destination Decision Map", "Use three lenses to clarify guest reality, celebration needs, and the next destination-wedding question before you choose a path.", "/destination-decision-map/"],
   ["Destination Cost Guide", "Build the complete host budget across resort, events, production, planning, family travel, and contingency.", "/indian-destination-wedding-cost/"],
+  ["2026 Hindu Wedding Costs & Logistics Guide", "Compare resort event minimums, room-block attrition rules, outside-vendor fees, and India outfit customs duties.", "/costs/"],
+  ["Resort Strategy Matcher", "Answer five questions on guest count, elder mobility, ceremonies, and Jain/Satvik catering for a personalized resort brief.", "/planning-tools/strategy-matcher/"],
   ["Mexico Room Block Guide", "Understand inventory, pickup, attrition, cut-off dates, concessions, guest booking, and event-access terms.", "/indian-wedding-room-block-mexico/"],
   ["Budget Tracker", "Track estimated vs. actual wedding costs by category and see what’s left in your budget.", "/planning-tools/budget-tracker/"],
   ["Wedding Checklist", "Organize to-dos by timeline, track progress, and add your own tasks.", "/planning-tools/wedding-checklist/"],
   ["Family Responsibility Map", "Assign an owner, approver, due date, and status to each important decision.", "/planning-tools/family-responsibility-map/"],
   ["Guest List Manager", "Track guest names, RSVP status, party size, and notes in one simple place.", "/planning-tools/guest-list/"],
+  ["Vendor Manager", "Organize pandits, mehndi artists, DJs/dhol, decor, catering, quotes, and booking status by event.", "/planning-tools/vendor-manager/"],
+  ["Vision Boards", "Save inspiration for Garba, mandap, outfits, jewelry, and reception decor in one visual board.", "/planning-tools/vision-boards/"],
+  ["Baraat & Event Logistics Planner", "Select the events you’re hosting and generate a checklist for venues, sound, power, and baraat logistics.", "/planning-tools/baraat-event-planner/"],
+  ["Catering Deadline Tracker", "Enter your wedding date to track catering deadlines for chef requests, Jain/Satvik menus, and vendor meals.", "/planning-tools/catering-deadline-tracker/"],
+  ["Post-Wedding Honeymoon Resort Guide", "Compare staying at your wedding resort versus switching properties for your honeymoon nights.", "/blog/honeymoon-after-destination-wedding-stay-or-switch-resorts/"],
+  ["Gujarati Wedding Guest Etiquette Guide", "Shareable ceremony, wardrobe, and gift etiquette guide for non-Gujarati and non-Indian wedding guests.", "/nri-gujarati-wedding-guest-etiquette/"],
 ] as const
 
 const shoppingGuides = [
@@ -37,6 +45,13 @@ const shoppingGuides = [
   ["NRI Shopping Timeline", "Understand when to research, measure, approve, produce, inspect, and ship.", "/blog/nri-wedding-planning-timeline/"],
   ["Vendor Red Flags", "Review evidence, payment, product, customization, and shipping risks before ordering.", "/avoid-indian-wedding-shopping-scams/"],
   ["Bridal Lehenga Cost Guide", "Separate product price from customization, shipping, duties, and alterations.", "/blog/how-much-does-bridal-lehenga-cost-india-2026/"],
+  ["Mexico Destination Wardrobe Sourcing", "Plan breathable fabrics, ceremony-by-ceremony outfits, and shipping timelines for a Mexico wedding weekend.", "/blog/mexico-wedding-wardrobe-sourcing-from-india/"],
+  ["Indian Wedding Jewelry Comparison Guide", "Compare Kundan, Polki, Temple, and Meenakari bridal jewelry sets, hallmarks, and US shipping.", "/blog/how-to-choose-indian-wedding-jewelry-usa/"],
+  ["Authentic Kanchipuram Silk Saree Guide", "Verify pure mulberry silk, zari testing, Silk Mark documentation, and landed US delivery costs.", "/blog/how-to-buy-authentic-kanchipuram-silk-sarees-online-usa/"],
+  ["Custom Groom Sherwani Sizing Guide", "Five critical sherwani measurements, fabric choices, and remote custom-fit risk reduction.", "/blog/custom-sherwani-sizing-guide-india-usa/"],
+  ["Bulk Indian Wedding Return Gifts Guide", "Compare favor options, quantities, packaging, shipping, and customs duties for US/Canada delivery.", "/blog/indian-wedding-return-gifts-bulk-usa/"],
+  ["South Indian Christian Wedding Outfit Guide", "Coordinate bridal Manthrakodi sarees, groom suits, and family attire with church and family traditions.", "/blog/south-indian-christian-wedding-outfit-guide/"],
+  ["Wedding Accessories & Ceremony Items Guide", "Review current sourcing scope for dupattas, pagris, juttis, kalire, and ceremony accessories.", "/wedding-accessories-and-ceremony-items-from-india/"],
 ] as const
 
 function ResourceCards({ resources }: { resources: ReadonlyArray<readonly [string, string, string]> }) {

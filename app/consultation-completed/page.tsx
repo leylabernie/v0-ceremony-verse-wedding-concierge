@@ -1,8 +1,10 @@
 import type { Metadata } from "next"
 import { ConsultationCompletedPage } from "@/components/pages/consultation-completed-page"
+import { canonicalUrl } from "@/lib/seo"
 
 export const metadata: Metadata = {
   title: "Consultation Completion — CeremonyVerse",
+  alternates: { canonical: canonicalUrl("/consultation-completed/") },
   robots: { index: false, follow: false },
 }
 

@@ -1,6 +1,8 @@
 import { createBookingStore } from "@/lib/booking-store.mjs";
+import { canonicalUrl } from "@/lib/seo";
 export const metadata = {
   title: "Consultation details",
+  alternates: { canonical: canonicalUrl("/booking-confirmed/") },
   robots: { index: false, follow: false },
   referrer: "no-referrer" as const,
 };

@@ -154,10 +154,17 @@ export default function DestinationsPage() {
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {[
               ["Complete wedding cost", "/indian-destination-wedding-cost/", "Build one budget across resort, events, rooms, vendors, planning, travel, and contingency."],
+              ["2026 costs & logistics", "/costs/", "Compare real 3-day budget ranges, room-block attrition rules, outside-vendor fees, and customs duties."],
               ["Room-block terms", "/indian-wedding-room-block-mexico/", "Understand deposits, attrition, concessions, release dates, guest booking, and responsible providers."],
               ["Gujarati wedding in Mexico", "/gujarati-destination-wedding-mexico/", "Map Vidhi, Garba or Sangeet with Mehendi, Baraat, Pheras with Vidai, and Reception through family decisions and written provider handoffs."],
               ["Gujarati & Hindu plan", "/blog/how-to-plan-gujarati-hindu-destination-wedding-mexico/", "Map family decisions, ceremonies, food, production, vendors, and multi-day timing."],
               ["Destination wardrobe", "/lehenga-for-destination-wedding-mexico/", "Plan outfits, fabrics, measurements, shipping, customs, alterations, and handoff timing."],
+              ["Destination decision map", "/destination-decision-map/", "Use three planning lenses to clarify guest reality, celebration rhythm, and ownership before picking a resort."],
+              ["Resort strategy matcher", "/planning-tools/strategy-matcher/", "Answer five questions on guest count, elder mobility, events, and Jain/Satvik catering for a custom brief."],
+              ["New York family planning", "/south-asian-destination-wedding-planning-new-york/", "Compare guest flights from JFK/EWR, room blocks, and multi-day event logistics for NY/NJ families."],
+              ["Toronto & GTA planning", "/gujarati-destination-wedding-planning-toronto/", "Coordinate CAD/USD budgets, YYZ flight cohorts, and multi-day Gujarati wedding logistics."],
+              ["Baraat & event planner", "/planning-tools/baraat-event-planner/", "Build a venue, sound, power, and procession checklist for every event you are hosting."],
+              ["Catering deadline tracker", "/planning-tools/catering-deadline-tracker/", "Track menu tastings, Jain/Satvik kitchen confirmations, and vendor meal deadlines."],
             ].map(([title, href, text]) => (
               <article key={href} className="flex flex-col rounded-2xl border border-[#d9cfbf] bg-white p-7">
                 <h2 className="font-serif text-2xl font-semibold">{title}</h2>

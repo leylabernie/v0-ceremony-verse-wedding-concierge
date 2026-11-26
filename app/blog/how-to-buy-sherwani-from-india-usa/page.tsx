@@ -4,7 +4,7 @@ import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
-  path: "/blog/how-to-buy-sherwani-from-india-usa/",
+  path: "/buy-sherwani-from-india-usa/",
   title: "How to Buy a Sherwani from India to USA in 2026 — Groom's Complete Guide",
   description: "Step-by-step guide for grooms buying a sherwani from India and shipping to USA: fabric choices (silk vs velvet), how to take sherwani measurements, customs duties, shipping costs, and coordinating groomsmen outfits.",
   keywords: ["how to buy sherwani from India to USA", "buy sherwani online USA 2026", "groom sherwani India shipping customs", "sherwani measurements guide", "Indian groom outfit USA"],
@@ -16,14 +16,14 @@ export const metadata = buildMetadata({
 const blogPostingSchema = buildBlogPosting({
   headline: "How to Buy a Sherwani from India for a US Wedding (Complete Guide with Prices)",
   description: "Complete guide for grooms and groomsmen buying a sherwani from India to the USA \u2014 fabric, fit, customs, shipping, and how to coordinate the full wedding party.",
-  url: "/blog/how-to-buy-sherwani-from-india-usa/",
+  url: "/buy-sherwani-from-india-usa/",
   datePublished: "2026-03-01",
   keywords: ["how to buy a sherwani from India USA", "sherwani price India 2026", "buy sherwani online USA", "groom sherwani customs duties"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Blog", url: "/blog/" },
-  { name: "How to Buy a Sherwani from India for a US Wedding (Complete ", url: "/blog/how-to-buy-sherwani-from-india-usa/" },
+  { name: "How to Buy a Sherwani from India for a US Wedding (Complete ", url: "/buy-sherwani-from-india-usa/" },
 ]);
 
 export default function SherwaniGuidePage() {
