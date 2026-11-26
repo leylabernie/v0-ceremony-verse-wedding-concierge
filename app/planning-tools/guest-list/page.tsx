@@ -1,38 +1,26 @@
-import { calculatorSchema } from "@/lib/schema"
 import { buildBreadcrumb, buildMetadata, JsonLd } from "@/lib/seo"
+import { calculatorSchema } from "@/lib/schema"
 import { GuestListClient } from "./guest-list-client"
 
 export const metadata = buildMetadata({
   path: "/planning-tools/guest-list/",
-  title: "Free Wedding Guest List Manager | CeremonyVerse",
-  description: "Track wedding guests, RSVPs, sides, and notes in a free browser-based guest list manager. No account required.",
-  keywords: "wedding guest list manager, wedding RSVP tracker, free wedding planning tool",
+  title: "Gujarati & South Asian Wedding Guest List Manager | Free Tool | CeremonyVerse",
+  description: "A free guest list manager for Gujarati and South Asian weddings. Track households, family sides, RSVP status, party size, event invites, and notes in your browser.",
+  keywords: "Gujarati wedding guest list, South Asian wedding guest list manager, wedding RSVP tracker, family guest list",
 })
 
-const breadcrumbSchema = buildBreadcrumb([
-  { name: "Planning Tools", url: "/planning-tools/" },
-  { name: "Guest List Manager", url: "/planning-tools/guest-list/" },
-])
+const breadcrumb = buildBreadcrumb([{ name: "Planning Tools", url: "/planning-tools/" }, { name: "Guest List Manager", url: "/planning-tools/guest-list/" }])
+const schema = calculatorSchema({ name: "Gujarati & South Asian Wedding Guest List Manager", description: "A free browser-saved guest list manager for Gujarati and South Asian weddings, with family sides, RSVP, and event tracking.", url: "/planning-tools/guest-list/" })
 
-const toolSchema = calculatorSchema({
-  name: 'Wedding Guest List Manager',
-  url: "https://www.ceremonyverse.com/planning-tools/guest-list/",
-  description: 'Track wedding guests, RSVPs, sides, and notes in a free browser-based guest list manager.',
-})
-
-export default function GuestListPage() {
+export default function Page() {
   return (
-    <main className="bg-[#faf8f5] px-6 py-20 text-[#1f1f1f] sm:py-24">
-      <JsonLd id="schema-breadcrumb" data={breadcrumbSchema} />
-      <JsonLd id="schema-tool" data={toolSchema} />
+    <main className="bg-[#faf8f5] px-6 py-16 text-[#1f1f1f] sm:py-20">
+      <JsonLd id="schema-breadcrumb" data={breadcrumb} />
+      <JsonLd id="schema-tool" data={schema} />
       <div className="mx-auto max-w-6xl">
-        <header className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#7a6841]">Free planning tool</p>
-          <h1 className="font-serif text-4xl font-semibold sm:text-6xl">Guest List Manager</h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#4d403a]">
-            Keep guests, contact details, RSVP status, and notes in one place. Saved in your browser for easy updates.
-          </p>
-        </header>
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7a6841]">Free planning tool</p>
+        <h1 className="mt-3 font-serif text-4xl font-semibold sm:text-5xl">Guest List Manager</h1>
+        <p className="mt-4 max-w-3xl leading-7 text-[#4d403a]">Track guests, households, family sides, RSVP status, party size, and event-by-event invites. Built with Gujarati and South Asian wedding celebrations in mind, and saved locally in your browser.</p>
         <GuestListClient />
       </div>
     </main>
