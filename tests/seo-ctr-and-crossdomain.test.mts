@@ -9,7 +9,12 @@ import {
   resolveContextualImage,
 } from "../lib/seo"
 import { GET as getImageSitemap } from "../app/sitemap-images.xml/route"
-import nextConfig from "../next.config.mjs"
+import sitemapMod from "../app/sitemap"
+import { venuePlanningGuides } from "../lib/venue-planning-guides"
+import nextConfigMod from "../next.config.mjs"
+
+const nextConfig = (nextConfigMod as { default?: typeof nextConfigMod }).default ?? nextConfigMod
+const sitemap = (sitemapMod as { default?: typeof sitemapMod }).default ?? sitemapMod
 
 const rootDir = join(import.meta.dirname, "..")
 
@@ -91,8 +96,15 @@ test("all entries in sitemap-images.xml exist on disk and render valid XML", asy
   }
 })
 
-test("next.config.mjs internal redirects avoid two-hop non-slash destinations", async () => {
+test("next.config.mjs internal redirects avoid two-hop non-slash destinations and resolve in 1 hop to live routes", async () => {
   const redirects = await nextConfig.redirects()
+  const redirectSources = new Set<string>()
+  for (const rule of redirects) {
+    if (!rule.has) {
+      redirectSources.add(rule.source)
+    }
+  }
+
   for (const rule of redirects) {
     if (
       rule.destination.startsWith("/") &&
@@ -103,6 +115,46 @@ test("next.config.mjs internal redirects avoid two-hop non-slash destinations", 
         rule.destination.endsWith("/"),
         `Redirect from ${rule.source} -> ${rule.destination} lacks trailing slash and causes 2-hop redirect`,
       )
+      const destNoSlash = rule.destination.replace(/\/$/, "")
+      assert.ok(
+        !redirectSources.has(rule.destination) && !redirectSources.has(destNoSlash),
+        `Redirect chain detected: ${rule.source} -> ${rule.destination} redirects again`,
+      )
+      const pageFile =
+        rule.destination === "/"
+          ? join(rootDir, "app/page.tsx")
+          : join(rootDir, "app", destNoSlash.slice(1), "page.tsx")
+      const isDynamicGuide = venuePlanningGuides.some(
+        (g) => `/guides/${g.slug}/` === rule.destination,
+      )
+      assert.ok(
+        existsSync(pageFile) || isDynamicGuide,
+        `Redirect target ${rule.destination} (from ${rule.source}) does not exist on disk`,
+      )
     }
+  }
+
+  const entries = sitemap()
+  const seen = new Set<string>()
+  for (const entry of entries) {
+    assert.ok(!seen.has(entry.url), `Duplicate sitemap URL: ${entry.url}`)
+    seen.add(entry.url)
+    const rel = entry.url.replace("https://www.ceremonyverse.com", "")
+    assert.ok(
+      !redirectSources.has(rel) && !redirectSources.has(rel.replace(/\/$/, "")),
+      `Sitemap URL ${entry.url} is a redirecting path`,
+    )
+  }
+
+  const llms = readFileSync(join(rootDir, "public/llms.txt"), "utf8")
+  const llmsUrls = Array.from(
+    llms.matchAll(/https:\/\/www\.ceremonyverse\.com(\/[a-z0-9\-\/\.]+)/g),
+    (m) => m[1],
+  )
+  for (const rel of llmsUrls) {
+    assert.ok(
+      !redirectSources.has(rel) && !redirectSources.has(rel.replace(/\/$/, "")),
+      `public/llms.txt contains redirecting URL: ${rel}`,
+    )
   }
 })

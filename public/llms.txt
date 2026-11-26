@@ -58,7 +58,7 @@ Products, tailoring, carrier charges, insurance, customs duties, taxes, brokerag
 - [Bridal Lehenga Sourcing](https://www.ceremonyverse.com/services/bridal-lehengas/)
 - [Groom Sherwani Sourcing](https://www.ceremonyverse.com/buy-sherwani-from-india-usa/)
 - [Bridesmaid and Family Outfits](https://www.ceremonyverse.com/bridesmaid-and-family-outfits-from-india/)
-- [Shipping and Customs Calculator](https://www.ceremonyverse.com/planning-tools/shipping-customs/)
+- [Shipping and Customs Guide](https://www.ceremonyverse.com/blog/shipping-indian-wedding-outfits-usa-customs-duties/)
 
 ## Service Area and Responsibilities
 
@@ -93,13 +93,13 @@ CeremonyVerse does not claim guaranteed savings, perfect fit, identical handmade
 
 ## Planning Tools
 
-CeremonyVerse provides free browser-based calculators that do not require an email address to show results:
+CeremonyVerse provides free browser-based planning tools that do not require an email address to use:
 
-- [Destination Wedding Budget Calculator](https://www.ceremonyverse.com/planning-tools/budget/)
-- [Resort Proposal Comparison](https://www.ceremonyverse.com/planning-tools/resort-comparison/)
-- [Guest & VIP Cost Calculator](https://www.ceremonyverse.com/planning-tools/guest-logistics/)
+- [Destination Wedding Budget Tracker](https://www.ceremonyverse.com/planning-tools/budget-tracker/)
+- [Resort Strategy Matcher](https://www.ceremonyverse.com/planning-tools/strategy-matcher/)
+- [Guest List Manager](https://www.ceremonyverse.com/planning-tools/guest-list/)
 - [Family Responsibility Map](https://www.ceremonyverse.com/planning-tools/family-responsibility-map/)
-- [Shipping & Customs Calculator](https://www.ceremonyverse.com/planning-tools/shipping-customs/)
+- [Wedding Planning Tools Hub](https://www.ceremonyverse.com/planning-tools/)
 
 ## Family Logistics and Regional Planning
 

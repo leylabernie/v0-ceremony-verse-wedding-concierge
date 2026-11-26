@@ -5,7 +5,7 @@ import Link from "next/link";
 import { SourcingCallout } from "@/components/sourcing-callout";
 
 export const metadata = buildMetadata({
-  path: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
+  path: "/how-to-buy-bridal-lehenga-from-india-to-usa/",
   title: "How to Buy a Bridal Lehenga from India to USA — Step-by-Step Guide",
   description: "How to research a bridal lehenga from India for US delivery: item evidence, measurements, written costs, customs variables, shipping, and remedies.",
   keywords: ["how to buy bridal lehenga from India to USA", "buy lehenga from India online USA", "NRI bridal lehenga shipping customs", "Indian bridal lehenga USA 2026 guide", "live video shopping lehenga India"],
@@ -17,14 +17,14 @@ export const metadata = buildMetadata({
 const blogPostingSchema = buildBlogPosting({
   headline: "How to Buy a Bridal Lehenga from India When You Live in the USA",
   description: "Step-by-step guide for NRI brides buying a bridal lehenga from India \u2014 live video shopping, sizing, customs, timeline, and how to avoid getting scammed.",
-  url: "/blog/how-to-buy-bridal-lehenga-from-india-usa/",
+  url: "/how-to-buy-bridal-lehenga-from-india-to-usa/",
   datePublished: "2026-03-01",
   keywords: ["how to buy lehenga from India", "buy bridal lehenga from India USA", "NRI bride lehenga India", "lehenga from India delivered USA"],
 });
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Blog", url: "/blog/" },
-  { name: "How to Buy a Bridal Lehenga from India When You Live in the ", url: "/blog/how-to-buy-bridal-lehenga-from-india-usa/" },
+  { name: "How to Buy a Bridal Lehenga from India When You Live in the ", url: "/how-to-buy-bridal-lehenga-from-india-to-usa/" },
 ]);
 
 export default function LehengaBuyingGuideBlogPost() {

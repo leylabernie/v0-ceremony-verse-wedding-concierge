@@ -129,7 +129,10 @@ export default function ResortsPage() {
                 These are the terms families most often miss — and the ones that derail an Indian wedding if left verbal.
                 Run proposals side by side in the{" "}
                 <Link href="/planning-tools/" className="font-semibold text-[#7a6841] underline underline-offset-4">Resort Comparison Calculator</Link>,
-                and review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline underline-offset-4">complete wedding cost breakdown</Link>.
+                use the <Link href="/planning-tools/strategy-matcher/" className="font-semibold text-[#7a6841] underline underline-offset-4">Resort Strategy Matcher</Link>{" "}
+                or <Link href="/destination-decision-map/" className="font-semibold text-[#7a6841] underline underline-offset-4">Destination Decision Map</Link>,
+                and review the <Link href="/indian-destination-wedding-cost/" className="font-semibold text-[#7a6841] underline underline-offset-4">complete wedding cost breakdown</Link>{" "}
+                and <Link href="/costs/" className="font-semibold text-[#7a6841] underline underline-offset-4">2026 costs &amp; logistics guide</Link>.
               </p>
             </div>
             <ul className="grid gap-4 sm:grid-cols-2">

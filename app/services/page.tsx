@@ -10,7 +10,7 @@ import {
 import { mexicoAvailabilityMessage, mexicoPackages } from "@/lib/mexico-packages"
 
 export const metadata = buildMetadata({
-  path: "/services/",
+  path: "/indian-destination-wedding-planner-mexico/",
   title: "Indian Wedding Shopping & Destination Planning Services",
   description:
     "CeremonyVerse offers India wedding shopping plus destination planning, family support, and on-site coordination across Mexico, Jamaica, and Punta Cana.",
@@ -22,10 +22,10 @@ const serviceSchema = buildServiceSchema({
   name: "Indian Wedding Shopping and Destination Planning",
   description:
     "U.S.-based India sourcing for families across the United States and Canada, plus destination-wedding planning, on-site coordination, and family support across Mexico, Jamaica, and Punta Cana.",
-  url: "/services/",
+  url: "/indian-destination-wedding-planner-mexico/",
 })
 
-const breadcrumbSchema = buildBreadcrumb([{ name: "Services", url: "/services/" }])
+const breadcrumbSchema = buildBreadcrumb([{ name: "Services", url: "/indian-destination-wedding-planner-mexico/" }])
 
 const faqItems = [
   {

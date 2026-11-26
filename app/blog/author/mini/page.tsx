@@ -17,7 +17,6 @@ export const metadata = buildMetadata({
 
 const breadcrumbSchema = buildBreadcrumb([
   { name: "Blog", url: "/blog/" },
-  { name: "Authors", url: "/blog/author/" },
   { name: "Mini", url: "/blog/author/mini/" },
 ])
 

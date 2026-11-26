@@ -1,9 +1,5 @@
 import Link from "next/link"
 
-export const metadata = {
-  robots: { index: false, follow: true },
-}
-
 export default function CeremonialItemsPauseLayout({ children }: { children: React.ReactNode }) {
   return (
     <>

@@ -36,7 +36,6 @@ const SERP_TITLE_OVERRIDES: Record<string, string> = {
   "/avoid-indian-wedding-shopping-scams/": "Avoid Indian Wedding Shopping Scams — NRI Buyer Guide",
   "/blog/author/mini/": "Articles by Mini Patel — Founder",
   "/blog/custom-sherwani-sizing-guide-india-usa/": "Custom Sherwani Sizing Guide — India to USA Fit Checklist",
-  "/blog/how-to-buy-bridal-lehenga-from-india-usa/": "How to Buy a Bridal Lehenga from India to USA (Guide)",
   "/blog/indian-wedding-outfit-checklist-every-ceremony/": "Indian Wedding Outfit Checklist: Every Ceremony Guide",
   "/blog/indian-wedding-outfit-scams-nri-brides/": "10 Remote Indian Wedding Outfit Risks & Buyer Checklist",
   "/blog/nri-wedding-planning-timeline/": "NRI Wedding Outfit Timeline: 12-Month Ordering Checklist",

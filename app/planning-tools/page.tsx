@@ -86,6 +86,14 @@ const tools = [
     badge: "Free",
     image: "/images/planning-tools/catering-deadline.jpg",
   },
+  {
+    title: "Resort Strategy Matcher",
+    description: "Answer five questions about your guest count, elder mobility, cultural events, and Jain/Satvik catering to build a resort strategy brief.",
+    href: "/planning-tools/strategy-matcher/",
+    label: "Match Your Strategy",
+    badge: "Free",
+    image: "/images/planning-tools/ceremony-timeline.jpg",
+  },
 ]
 
 const comingSoon = [
