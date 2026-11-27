@@ -1,6 +1,8 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import { ToolLeadBanner } from "@/components/planning-tools/ToolLeadBanner"
+import { toolLeadBanners } from "@/lib/tool-lead-banners"
 import { useLocalStorageState } from "@/hooks/use-local-storage-state"
 
 type Item = { id: string; text: string; done: boolean }
@@ -93,6 +95,8 @@ export function WeddingChecklistClient() {
           </div>
         </section>
       ))}
+      <ToolLeadBanner {...toolLeadBanners["wedding-checklist"]} />
+
       <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed with Gujarati and South Asian wedding timelines in mind, but customizable for any celebration.</p>
     </div>
   )

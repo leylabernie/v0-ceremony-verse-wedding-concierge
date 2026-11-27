@@ -1,6 +1,8 @@
 "use client"
 
 import { useMemo, useState } from "react"
+import { ToolLeadBanner } from "@/components/planning-tools/ToolLeadBanner"
+import { toolLeadBanners } from "@/lib/tool-lead-banners"
 import { useLocalStorageState } from "@/hooks/use-local-storage-state"
 
 type Vendor = { id: string; category: string; name: string; event: string; contact: string; email: string; phone: string; cost: string; status: "Researching" | "Contacted" | "Booked" | "Paid" | "Declined"; notes: string }
@@ -32,6 +34,8 @@ export function VendorManagerClient() {
         </div>
         <button type="button" onClick={add} className="mt-3 rounded-full bg-[#7a6841] px-6 py-3 text-sm font-semibold text-white hover:bg-[#6a5938]">Add vendor</button>
       </section>
+
+      <ToolLeadBanner {...toolLeadBanners["vendor-manager"]} />
 
       <section className="rounded-2xl border border-[#e6dfd5] bg-white p-6 sm:p-8">
         <h2 className="font-serif text-2xl font-semibold">Your vendors</h2>
