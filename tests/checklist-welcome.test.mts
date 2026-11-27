@@ -53,7 +53,7 @@ test('signup fulfils the resource, confirms the series once, and unsubscribe sup
  keys.forEach(k=>{process.env[k]='local-test'})
  process.env.CEREMONYVERSE_AUTOMATION_SECRET=secret
  process.env.UPSTASH_REDIS_REST_URL='https://redis.checklist.test'
- const hashes=new Map<string,Record<string,string>>(),locks=new Map<string,string>(),due=new Map<string,number>(),emails:Record<string,any>[]=[]
+ const hashes=new Map<string,Record<string,string>>(),locks=new Map<string,string>(),due=new Map<string,number>(),emails:Record<string,unknown>[]=[]
  let failEmail=false
  globalThis.fetch=async(input,init)=>{
   if(String(input)==='https://api.resend.com/emails') {
@@ -62,7 +62,7 @@ test('signup fulfils the resource, confirms the series once, and unsubscribe sup
   }
   assert.equal(String(input),'https://redis.checklist.test')
   const c=JSON.parse(String(init?.body)), [op,key]=c
-  let result:any=null
+  let result: unknown=null
   if(op==='PING') result='PONG'
   else if(op==='HGETALL') result=Object.entries(hashes.get(key)||{}).flat()
   else if(op==='HSET') {const state=hashes.get(key)!;for(let i=2;i<c.length;i+=2) state[c[i]]=String(c[i+1]);result=1}

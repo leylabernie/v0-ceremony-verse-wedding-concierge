@@ -145,7 +145,7 @@ test("Google Calendar works without registration when no embed is configured, an
 
     const scheduleDirectHtml = renderToStaticMarkup(React.createElement(SchedulePage))
     assert.ok(scheduleDirectHtml.includes(`href="${GOOGLE_CALENDAR_BOOKING_URL}"`))
-    assert.doesNotMatch(scheduleDirectHtml, /<iframe/i)
+    assert.match(scheduleDirectHtml, /<iframe src="https:\/\/calendar\.google\.com\/calendar\/appointments\/schedules\//i)
 
     const calFixture = "https://cal.com/ceremonyverse-fixture/30min"
     process.env.NEXT_PUBLIC_CAL_COM_URL = calFixture

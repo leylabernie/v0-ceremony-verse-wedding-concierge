@@ -15,8 +15,16 @@ const Parents = load('../app/nri-gujarati-parents-guide-destination-wedding/page
 const Proposal = load('../app/before-signing-indian-wedding-resort-proposal/page').default
 const Timeline = load('../app/nri-gujarati-wedding-timeline-12-months/page').default
 
+type SchemaNode = {
+  '@type': string
+  offers: { price: string }
+  mainEntity: { name: string; acceptedAnswer?: { text: string } }[]
+  totalTime: string
+  step: { '@type': string; text: string }[]
+}
+
 // Render the actual route's JSON-LD scripts without mounting interactive calculators.
-function scripts(tree: ReactNode): Record<string,any>[] {
+function scripts(tree: ReactNode): SchemaNode[] {
   return Children.toArray(tree).flatMap(child => {
     if (!isValidElement<{children?:ReactNode}>(child)) return []
     if (child.type !== JsonLd) return scripts(child.props.children)
@@ -31,9 +39,9 @@ for (const Page of [Budget,Checklist,Guests,Vendors]) test(`${Page.name} emits o
 })
 for (const Page of [Faq,Pricing,Parents,Proposal]) test(`${Page.name} emits answered questions`,()=>{
  const faq=scripts(Page()).find(s=>s['@type']==='FAQPage');assert.ok(faq?.mainEntity.length)
- assert.ok(faq.mainEntity.every((q:any)=>q.name && q.acceptedAnswer?.text))
+ assert.ok(faq.mainEntity.every((q)=>q.name && q.acceptedAnswer?.text))
 })
 test('timeline emits ordered HowTo instructions for the year',()=>{
  const how=scripts(Timeline()).find(s=>s['@type']==='HowTo');assert.equal(how?.totalTime,'P12M');assert.ok(how.step.length>1)
- assert.ok(how.step.every((s:any)=>s['@type']==='HowToStep' && s.text))
+ assert.ok(how.step.every((s)=>s['@type']==='HowToStep' && s.text))
 })

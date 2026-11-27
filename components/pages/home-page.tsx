@@ -73,7 +73,7 @@ const servicePillars = [
       "Multi-day timelines and on-site event management",
       "Family and guest coordination included at the selected planning-package level",
     ],
-    href: "/indian-destination-wedding-planner-mexico/",
+    href: "/destination-wedding-planning/",
     cta: "Explore Destination Planning",
   },
   {
@@ -198,6 +198,7 @@ export function HomePage() {
               ceremony, every guest — and now does the same for families across the USA and Canada.
               Start with a free 30-minute call about your dates, guest count, and biggest planning question.
             </p>
+            <p className="mb-6 max-w-2xl text-sm leading-6 text-white/90">Written satvik and Jain catering requirements · Mehndi to Reception event flow · Room-block risk review · Optional flat-fee India outfit sourcing</p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/schedule/?from=homepage-hero"

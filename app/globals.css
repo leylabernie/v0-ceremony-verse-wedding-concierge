@@ -454,7 +454,8 @@
   .cv-site-header,
   .cv-header-spacer,
   .cv-mobile-sticky-cta,
-  .cv-whatsapp-float,
+  .cv-whatsapp-contact,
+  [data-minis-widget-shell],
   footer {
     display: none !important;
   }
@@ -490,13 +491,6 @@
 .cv-skip-link:focus { transform: translateY(0); }
 #main-content { scroll-margin-top: calc(var(--cv-announcement-height) + var(--cv-navigation-height)); }
 
-/* Leave room for the resort audit dock without stacking duplicate mobile CTAs. */
-@media (max-width: 639px) {
-  body:has(.cv-audit-dock) .cv-whatsapp-float { display: none; }
-  body:has(.cv-audit-dock) .minis-fab {
-    bottom: calc(env(safe-area-inset-bottom, 0px) + 112px);
-  }
-}
 
 /* Route-scoped base rules: utility classes (font-serif/text-white/etc.) retain
    precedence. Do not change typography or colors on unrelated routes. */

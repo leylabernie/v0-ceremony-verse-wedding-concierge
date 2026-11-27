@@ -9,14 +9,16 @@ import { buildCalculatorResultsEmail, CALCULATOR_TOOLKIT_PDF_URL } from "../lib/
 
 const lead = { name: "Test Person", email: "qa@example.com", source: "calculator", calculatorType: "budget-planner", results: { total: 13200, contingency: 1200 } }
 
-async function withMail(deliver: (payload: any) => boolean, run: (emails: any[]) => Promise<void>) {
+type TestEmail = { to: string[]; text: string; html: string }
+
+async function withMail(deliver: (payload: TestEmail) => boolean, run: (emails: TestEmail[]) => Promise<void>) {
   const originalFetch = globalThis.fetch
   const keys = ["RESEND_API_KEY", "CEREMONYVERSE_LEAD_FROM_EMAIL", "LEAD_SHEET_WEBHOOK_URL", "FOLLOW_UP_WEBHOOK_URL", "ESCALATION_WEBHOOK_URL"]
   const originalEnv = Object.fromEntries(keys.map(key => [key, process.env[key]]))
   for (const key of keys) delete process.env[key]
   process.env.RESEND_API_KEY = "local-test-key"
   process.env.CEREMONYVERSE_LEAD_FROM_EMAIL = "bhamini@ceremonyverse.com"
-  const emails: any[] = []
+  const emails: TestEmail[] = []
   globalThis.fetch = async (url, options) => {
     assert.equal(String(url), "https://api.resend.com/emails")
     const payload = JSON.parse(String(options?.body))
@@ -43,6 +45,7 @@ test("calculator succeeds only after the worksheet and business request are acce
     assert.equal((await response.json()).delivery.confirmationEmail, true)
     assert.equal(emails.length, 2)
     const customer = emails.find(email => email.to.includes(lead.email))
+    assert.ok(customer)
     assert.match(customer.text, /13200/)
     assert.match(customer.text, /1200/)
     assert.match(customer.text, /Is this the complete cost\?/)
@@ -62,6 +65,7 @@ test("email alone is sufficient to request the calculator breakdown without a na
     assert.equal(body.success, true)
     assert.equal(body.delivery.confirmationEmail, true)
     const customer = emails.find(email => email.to.includes("email-only@example.com"))
+    assert.ok(customer)
     assert.match(customer.text, /Hi there,/)
     assert.ok(customer.text.includes(CALCULATOR_TOOLKIT_PDF_URL))
     assert.ok(customer.html.includes(CALCULATOR_TOOLKIT_PDF_URL))

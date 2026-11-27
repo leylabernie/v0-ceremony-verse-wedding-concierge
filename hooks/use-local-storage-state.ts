@@ -9,6 +9,8 @@ export function useLocalStorageState<T>(key: string, initialValue: T) {
   useEffect(() => {
     try {
       const raw = window.localStorage.getItem(key)
+      // Restore browser-only data after hydration to keep server markup stable.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (raw) setValue(JSON.parse(raw) as T)
     } catch {
       // ignore bad local data

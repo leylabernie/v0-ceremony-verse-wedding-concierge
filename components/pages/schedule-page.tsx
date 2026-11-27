@@ -1,10 +1,11 @@
-import { consultationBookingUrl, resolveConsultationBooking } from "@/lib/consultation-booking";
+import { consultationBookingUrl, GOOGLE_CALENDAR_EMBED_URL, resolveConsultationBooking } from "@/lib/consultation-booking";
 
 export function SchedulePage({ calendarEmbedUrl }: { calendarEmbedUrl?: string } = {}) {
-  const booking = resolveConsultationBooking(calendarEmbedUrl ?? process.env);
+  const resolved = resolveConsultationBooking(calendarEmbedUrl ?? process.env);
+  const booking = resolved.mode === "embed" ? resolved : { ...resolved, mode: "embed", embedUrl: GOOGLE_CALENDAR_EMBED_URL };
 
   return (
-    <main className="mx-auto max-w-xl space-y-6 px-6 py-16">
+    <main className="mx-auto max-w-5xl space-y-6 px-6 py-16">
       <p className="text-sm uppercase tracking-widest text-[#7a6841]">CeremonyVerse · Consultation</p>
       <h1 className="font-serif text-4xl">Book 30 minutes with Mini</h1>
       <p>Your first call is free. Bring your dates, destination ideas, and the question you want to discuss. Mini prefers meetings after 5 p.m. Eastern.</p>
@@ -13,8 +14,8 @@ export function SchedulePage({ calendarEmbedUrl }: { calendarEmbedUrl?: string }
           <iframe
             src={booking.embedUrl}
             title="Schedule a free 30-minute consultation with Mini"
-            className="h-[560px] w-full rounded-2xl border border-[#e6dfd5] bg-white"
-            loading="lazy"
+            className="h-[720px] sm:h-[800px] w-full rounded-2xl border border-[#e6dfd5] bg-white"
+            loading="eager"
           />
           <p className="text-sm">
             Prefer a direct link?{" "}

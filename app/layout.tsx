@@ -208,7 +208,7 @@ export default function RootLayout({
           <span className="hidden lg:inline">Founding Families · Ask about planning rates for the first five wedding families</span>
           <span className="lg:hidden">Ask about Founding Family planning rates</span>
           <span aria-hidden="true">&nbsp;·&nbsp;</span>
-          <Link href="/contact/?from=announcement-bar">Request Free Consultation</Link>
+          <Link href="/pricing/#founding-families">Founding Families Details</Link>
         </div>
 
         {/* Navigation — appears on ALL pages */}
@@ -218,15 +218,13 @@ export default function RootLayout({
         <div className="cv-header-spacer" />
         <div id="main-content" tabIndex={-1}>{children}</div>
 
-        {/* SINGLE WhatsApp Button (global) */}
-        <WhatsAppButton />
         {/* Mobile sticky CTA bar */}
         <MobileStickyCTA />
         <GlobalFooter />
+        {/* Contact launchers stay in document flow so they cannot cover content. */}
+        <WhatsAppButton />
         <ChecklistPrompt />
-        {/* Mini's Assistant — AI concierge chat widget. Rendered last so it
-            layers above page content; self-excludes on /privacy and /terms and
-            loads its embed script lazily to protect Lighthouse/CLS. */}
+        {/* The assistant panel overlays only when requested; legal pages exclude it. */}
         <MinisAssistantWidget />
       </body>
     </html>
