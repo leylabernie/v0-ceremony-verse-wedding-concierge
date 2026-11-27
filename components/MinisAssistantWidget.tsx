@@ -253,19 +253,18 @@ export default function MinisAssistantWidget() {
   if (excluded) return null;
 
   return (
-    <div data-minis-widget-shell>
+    <div data-minis-widget-shell className="flex justify-center px-6 py-6">
       <style>{`
         :root { --minis-mobile-clearance: calc(env(safe-area-inset-bottom, 0px) + 72px); }
         .minis-fab {
-          position: fixed; right: 16px; bottom: var(--minis-mobile-clearance);
-          z-index: 50;
+          position: relative;
+          z-index: 1;
         }
         .minis-panel {
           position: fixed; right: 16px; bottom: var(--minis-mobile-clearance);
           z-index: 50; width: 400px; height: 550px; max-height: calc(100vh - 96px);
         }
         @media (min-width: 1280px) {
-          .minis-fab { right: 24px; bottom: 24px; }
           .minis-panel { right: 24px; bottom: 24px; }
         }
         @media (max-width: 640px) {

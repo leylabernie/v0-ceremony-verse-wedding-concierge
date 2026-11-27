@@ -79,7 +79,11 @@ export function trackEvent(
       window.gtag("event", eventName, parameters);
     } else {
       // Match the real gtag bootstrap command shape before it loads.
-      (function queue(..._command: unknown[]) { window.dataLayer!.push(arguments); })("event", eventName, parameters);
+      // gtag consumes an IArguments command, not a rest-parameter array.
+      Reflect.apply(function queue() {
+        // eslint-disable-next-line prefer-rest-params
+        window.dataLayer!.push(arguments);
+      }, null, ["event", eventName, parameters]);
     }
   } catch {
     // Analytics must never block a visitor's next step.

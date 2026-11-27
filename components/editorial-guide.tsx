@@ -35,15 +35,15 @@ export function EditorialGuide({ data }: { data: EditorialGuideData }) {
   const sources = data.sources ?? []
   const showGuideNav = sections.length > 1
 
-  let headingCount = 0
-  const claimHeadingSlot = () => {
-    headingCount += 1
-    return headingCount === 2
-  }
-  const inviteAfterNav = showGuideNav ? claimHeadingSlot() : false
-  const sectionInviteFlags = sections.map(() => claimHeadingSlot())
-  const inviteAfterFaqs = faqs.length > 0 ? claimHeadingSlot() : false
-  const inviteAfterSources = sources.length > 0 ? claimHeadingSlot() : false
+  // The invitation belongs after the second visible h2; calculate its slot
+  // without mutating a counter inside callbacks during render.
+  const navHeadings = Number(showGuideNav)
+  const faqHeadings = Number(faqs.length > 0)
+  const headingCount = navHeadings + sections.length + faqHeadings + Number(sources.length > 0)
+  const inviteAfterNav = false // navigation, when present, is always the first h2
+  const sectionInviteFlags = sections.map((_, index) => navHeadings + index + 1 === 2)
+  const inviteAfterFaqs = faqs.length > 0 && navHeadings + sections.length + 1 === 2
+  const inviteAfterSources = sources.length > 0 && navHeadings + sections.length + faqHeadings + 1 === 2
   const inviteAsFallback = headingCount < 2
 
   return <main className="bg-[#faf8f5] px-6 py-16 text-[#1f1f1f]">

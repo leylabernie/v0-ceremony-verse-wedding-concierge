@@ -1,3 +1,4 @@
+import { FeasibilityBriefPreview } from "@/components/feasibility-brief-preview"
 import Link from "next/link"
 import { WeddingBudgetExamples } from "@/components/wedding-budget-examples"
 import { ChatWithMinisAssistantButton } from "@/components/chat-with-minis-assistant-button"
@@ -184,6 +185,15 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section id="founding-families" className="scroll-mt-40 bg-[#f4eee4] px-6 py-14">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-serif text-3xl">Founding Families: a written offer, not a mystery rate</h2>
+          <p className="mt-5 max-w-3xl leading-7">The program is for the first five planning contracts. Work directly with Mini, with planning responsibilities, service inclusions, payment milestones, and any Founding Family fee adjustment confirmed in your written agreement.</p>
+          <p className="mt-4 max-w-3xl leading-7">The package prices below are our published planning fees—not an advertised Founding Family discount. Ask Mini to confirm availability and the exact offer before signing. Participation terms, including any media and review consent, are part of the written agreement; event photography is shared only with written permission.</p>
+          <Link href="/schedule/?from=pricing-founding-families" className="mt-6 inline-block font-semibold underline">Ask about availability and your written offer</Link>
+        </div>
+      </section>
+
       <section id="mexico-concierge" className="bg-[#1f1f1f] px-6 py-20 text-white sm:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -351,6 +361,8 @@ export default function PricingPage() {
             </div>
           </section>
 </div></div>
+      <FeasibilityBriefPreview />
+
       <section className="bg-white px-6 py-20 sm:py-28">
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2">
           <div>

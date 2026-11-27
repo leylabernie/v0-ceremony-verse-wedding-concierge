@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react"
 import { CalculatorLeadCapture } from "@/components/calculator-lead-capture"
+import { ToolLeadBanner } from "@/components/planning-tools/ToolLeadBanner"
+import { toolLeadBanners } from "@/lib/tool-lead-banners"
 import { useLocalStorageState } from "@/hooks/use-local-storage-state"
 
 type Row = { id: string; category: string; item: string; estimated: string; actual: string }
@@ -46,6 +48,8 @@ export function BudgetTrackerClient() {
           <div key={String(l)} className="rounded-2xl border border-[#e6dfd5] bg-white p-5"><p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#7a6841]">{l}</p><p className={`mt-2 font-serif text-3xl font-semibold ${l==="Remaining" && Number(v)<0 ? "text-[#9a2a2a]" : ""}`}>{money(Number(v))}</p></div>
         ))}
       </div>
+
+      <ToolLeadBanner {...toolLeadBanners["budget-tracker"]} />
 
       <section className="rounded-2xl border border-[#e6dfd5] bg-white p-6 sm:p-8">
         <h2 className="font-serif text-2xl font-semibold">Add line item</h2>

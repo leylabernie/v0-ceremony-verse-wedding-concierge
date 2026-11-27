@@ -1,3 +1,4 @@
+import { FeasibilityBriefPreview } from "@/components/feasibility-brief-preview"
 import Link from "next/link"
 import { SeoNav } from "@/components/seo-nav"
 import {
@@ -125,6 +126,8 @@ export default function DestinationWeddingFeasibilityPlanPage() {
           </article>
         </div>
       </section>
+
+      <FeasibilityBriefPreview />
 
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">

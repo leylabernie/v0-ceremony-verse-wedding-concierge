@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import { ToolLeadBanner } from "@/components/planning-tools/ToolLeadBanner"
+import { toolLeadBanners } from "@/lib/tool-lead-banners"
 import { useLocalStorageState } from "@/hooks/use-local-storage-state"
 
 type Item = { id: string; url: string; note: string }
@@ -70,6 +72,8 @@ export function VisionBoardsClient() {
           </section>
         )
       })}
+      <ToolLeadBanner {...toolLeadBanners["vision-boards"]} />
+
       <p className="text-xs leading-5 text-[#6b6058]">Saved locally in your browser. Designed for Gujarati and South Asian wedding inspiration — from Garba and mandap looks to outfits, jewelry, and reception decor. Image links are stored as URLs; they are not uploaded to CeremonyVerse.</p>
     </div>
   )

@@ -1,5 +1,6 @@
 // Public Google Calendar appointment schedule shared by Mini.
 export const GOOGLE_CALENDAR_BOOKING_URL = "https://calendar.app.google/sgZc3odvDrbicVuW8";
+export const GOOGLE_CALENDAR_EMBED_URL = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2v0G6jchauNDBxKuAjpYzHCpMENSHuWm1q79aY4xt54AyoAuUWmg04sNf0a0AVoqnalCg5nHDl?gv=true";
 export const consultationBookingUrl = GOOGLE_CALENDAR_BOOKING_URL;
 
 export type ConsultationBookingResolution = {
